@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_base&quot;,&quot;label&quot;:&quot;Lanke_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_final&quot;,&quot;label&quot;:&quot;Lanke_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Van_2006_UFR&quot;,&quot;label&quot;:&quot;Van_2006 \u00b7 UFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/pd_Van_2006_UFR.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tolvaptan
 
@@ -50,6 +50,13 @@ Tolvaptan is a vasopressin receptor antagonist used to treat low blood sodium (h
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Castro-Suárez_2020_reference](drugs/drug_tolvaptan/Tolvaptan_CastroSurez2020_reference.md) | — | 2-compartment (no model) | 3 | Castro-Suárez N et al., Semi-Mechanistic Pharmacokinetic Model…, Pharmaceutics (2020) | [10.3390/pharmaceutics12121147](https://doi.org/10.3390/pharmaceutics12121147) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Kato_2023_reference](drugs/drug_tolvaptan/Tolvaptan_Kato2023_reference.md) | — | 1-compartment (no model) | 3 | Kato T et al., Total body fluid is the factor that aff…, Pharmacology research & per… (2023) | [10.1002/prp2.1088](https://doi.org/10.1002/prp2.1088) |
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Van_2006_UFR](drugs/drug_tolvaptan/pd_Van_2006_UFR.md) | urine flow rate ← tolvaptan · direct linear effect | ▶ model + simulator | Van Wart SA et al., Pharmacokinetic/Pharmacodynamic (PK/PD)… (2006) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [pasted_20261113_1313_UFR](drugs/drug_tolvaptan/pd_pasted_20261113_1313_UFR.md) | urine flow rate ← tolvaptan · direct linear effect | — | pasted_20261113, March 8, 2006 Posters (1313) | — |
+
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
@@ -98,24 +105,14 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-03 19:59 | 1:24:49 | 5/3/0 | 0/0/0 | 1/0/5 | 1,333,427/161,340 | einfracz / qwen3.8-27b | 60 | 36/21 | 26/34 | 0 |
+| 2026-11-13 16:47 | 0:12 | 5/3/0 | 2/0/0 | 1/0/5 | 21,213/196 | einfracz / qwen3.8-27b | 63 | 44/27 | 26/37 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 224 matched, 163 returned
-- **screened:** 35  ·  **relevant:** 16
+- **screened:** 47  ·  **relevant:** 17
 - **records:** 8  ·  extracted 2  ·  needs review 3  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Hines_2020.pdf` | Hines CB et al., Tolvaptan for Autosomal Dominant Polycy…, Nephrology nursing journal… (2020) | popPK | 5 |  | [32343088](https://pubmed.ncbi.nlm.nih.gov/32343088) | The paper is a narrative review describing the pharmacokinetics of tolvaptan, but the provided evidence contains no quantitative disposition parameters (CL, V, etc.). |
-
-<sub>queue written 2026-11-03 18:51 UTC</sub>
 
 ## Screened and excluded
 
@@ -162,8 +159,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Helmlinger_2019 | irrelevant | 0 | 0 | The paper is a review on QSP modeling workflows featuring case studies on SGLT2 inhibitors and immuno-oncology, with tolvaptan mentioned only as a reference for water clearance in a different context. |
 | PD | Helmlinger_2019 | not_relevant | 0 | 0 | The paper is a review of QSP modeling workflows and case studies for SGLT2 inhibitors and immuno-oncology drugs; it does not contain any data, analysis, or parameters for tolvaptan. |
 | popPK | Higashihara_2022 | irrelevant | 0 | 0 | The study reports clinical efficacy outcomes (kidney volume growth, eGFR) for ADPKD, not pharmacokinetic parameters. |
-| popPK | Hines_2020 | relevant | 5 | 0 | The paper is a narrative review describing the pharmacokinetics of tolvaptan, but the provided evidence contains no quantitative disposition parameters (CL, V, etc.). |
-| PD | Hines_2020 | not_relevant | 2 | 1 | The text is a review/case study summary that qualitatively mentions pharmacodynamics but does not provide specific numeric PD parameters or exposure-response data. |
+| popPK | Hines_2020 | irrelevant | 2 | 0 | The paper is a clinical review/nursing article on ADPKD management that provides general pharmacokinetic descriptions (e.g., Tmax 2-3 hours) but lacks quantitative disposition parameters (CL, V, ka) or population PK model estimates for tolvaptan. |
+| PD | Hines_2020 | not_relevant | 1 | 0 | The provided text is a qualitative review of tolvaptan's mechanism and approval, containing no concentration-effect data, dose-response curves, or numeric PD parameters. |
+| PGx | Hines_2020 | not_relevant | 0 | 0 | The paper discusses the general pharmacokinetics and disease pathophysiology of tolvaptan but does not report a pharmacogenomic effect of a specific gene variant on its PK/PD parameters. |
 | popPK | Hiramatsu_2015 | irrelevant | 0 | 0 | The study examines clinical outcomes (residual renal function) in dialysis patients, not the pharmacokinetic disposition parameters of tolvaptan. |
 | PGx | Honda_2024 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction (rifampicin inducing CYP3A4 metabolism of tolvaptan), not a pharmacogenomic effect based on a gene variant. |
 | popPK | Ikeda_2019 | irrelevant | 0 | 0 | The paper analyzes diuretic properties and clinical response (urine volume, osmolality) rather than pharmacokinetic parameters (CL, V, ka) for tolvaptan. |
@@ -174,7 +172,8 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PD | Komatsu_2015 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of digoxin, not tolvaptan, and does not report any pharmacodynamic or exposure-response relationships. |
 | popPK | Kwag_2026 | irrelevant | 0 | 0 | The study is an epidemiological analysis of kidney function decline in PKD patients, where tolvaptan is only a co-administered medication used for subgroup analysis, not the subject of a pharmacokinetic study. |
 | PD | Lanke_2019 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for tolvaptan, including dose-dependent bioavailability, but does not include any pharmacodynamic (PD) or exposure-response analysis. |
-| PGx | Lica-Miler_2026 | not_relevant | 2 | 1 | The text is an abstract of a narrative review that mentions exploring CYP3A5 and SVEP1 polymorphisms, but it does not report specific quantitative PK/PD changes or fitted effect sizes for tolvaptan. |
+| popPK | Lica-Miler_2026 | irrelevant | 2 | 0 | The paper is a narrative review of the vaptan class that discusses tolvaptan's clinical applications and general pharmacokinetic characteristics but does not report original quantitative disposition parameters (e.g., specific CL, V, or Q values). |
+| PGx | Lica-Miler_2026 | not_relevant | 4 | 3 | Although the review discusses CYP3A5 and SVEP1 polymorphisms in its abstract, the provided methods/captions focus on age and mechanism of action, lacking specific data or extracted results showing a genotype-driven change in a PK/PD parameter. |
 | popPK | Ma_2024 | irrelevant | 0 | 0 | The study focuses on the parent drug OPC-61815, where tolvaptan is merely a metabolite, and the paper presents analytical method validation rather than quantitative PK parameters. |
 | popPK | Marshall_2026 | irrelevant | 0 | 0 | The paper is a clinical efficacy study focused on kidney function decline (eGFR) rather than pharmacokinetic parameters. |
 | PGx | Mazzarino_2017 | not_relevant | 2 | 0 | The paper characterizes metabolic pathways and notes differences in metabolite profiles for CYP3A5 variants, but does not report pharmacokinetic parameters (e.g., AUC, Cmax) or pharmacodynamic effects. |
@@ -187,7 +186,6 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Mori_2013 | irrelevant | 0 | 0 | The study is a clinical efficacy trial assessing diuretic effects (urine volume, natriuresis) in peritoneal dialysis patients, reporting no pharmacokinetic parameters (CL, Vd, ka, half-life) or PK model. |
 | popPK | Mori_2016 | irrelevant | 0 | 0 | The study evaluates clinical outcomes (cardiac function, body composition) rather than pharmacokinetic parameters (CL, V, ka) for tolvaptan. |
 | popPK | Morris_2018 | irrelevant | 0 | 0 | The paper is a clinical pharmacodynamic study analyzing the rate of serum sodium correction (efficacy/toxicity) in response to tolvaptan, and does not report any quantitative pharmacokinetic parameters (CL, V, ka, half-life) for the drug. |
-| PGx | Nguyen_2023 | not_relevant | 2 | 0 | The paper reports a clinical adverse event (liver injury) in a patient with a genetic variant, but it does not quantify the effect of the genotype on specific pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic (e.g., response magnitude) parameters of the drug. |
 | popPK | Oka_2021 | irrelevant | 0 | 0 | This is a clinical outcomes study assessing renal function and diuretic dosing, not a pharmacokinetic study, so no disposition parameters are reported. |
 | popPK | Onogawa_2011 | irrelevant | 2 | 0 | The study focuses on hemodynamic and diuretic effects in dogs and does not report quantitative pharmacokinetic parameters such as clearance or volume. |
 | popPK | Oruc_2026 | irrelevant | 0 | 0 | The study is a clinical retrospective analysis of inflammatory markers and kidney volume progression in ADPKD patients and contains no pharmacokinetic parameters or population-PK modeling for tolvaptan. |
@@ -205,6 +203,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | PGx | Shoaf_2012_2 | not_relevant | 0 | 0 | The study investigates the effect of grapefruit juice (a food interaction) on tolvaptan pharmacokinetics, not a genetic variant. |
 | PD | Shoaf_2012_3 | not_relevant | 0 | 0 | The provided text consists of the title, abstract, and methods sections of a PK interaction study, containing no results, data, or numeric PD parameters for tolvaptan. |
 | popPK | Shoaf_2012_4 | relevant | 4 | 8 | The study reports non-compartmental pharmacokinetic parameters (AUC, Cmax, CL/F, t1/2) for tolvaptan in human subjects, but does not report compartmental model parameters like Volume of Distribution (V) or intercompartmental clearance (Q) explicitly. |
+| PGx | Shoaf_2017_2 | not_relevant | 0 | 0 | The paper reports tolvaptan PK/PD (plasma concentrations, urine osmolality suppression) and dose-tolerability in ADPKD subjects, but contains no gene variant, genotype, or pharmacogenomic phenotype affecting any PK or PD parameter. |
 | popPK | Shoaf_2020 | irrelevant | 0 | 0 | The study is a post hoc safety analysis examining concurrent statin use and adverse events, not a pharmacokinetic study reporting quantitative disposition parameters. |
 | popPK | Shoaf_2025 | irrelevant | 3 | 4 | Study reports only non-compartmental parameters (AUC, Cmax, Cmin, tmax) with small sample sizes and no compartmental model, clearance, or volume parameters. |
 | popPK | Slizgi_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter inhibition and intracellular accumulation, not a pharmacokinetic study reporting disposition parameters like clearance or volume for tolvaptan. |
@@ -220,6 +219,8 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Torres_2019 | irrelevant | 0 | 0 | The paper is a review/narrative summary of clinical trial outcomes for ADPKD and contains no quantitative pharmacokinetic parameter values. |
 | popPK | Trillini_2023 | irrelevant | 0 | 0 | The study evaluates renal outcomes (GFR and kidney volume) in ADPKD patients and does not report pharmacokinetic parameters (CL, V, t1/2) for tolvaptan. |
 | popPK | Utiel_2023 | irrelevant | 1 | 0 | The study focuses on predictors of urine output (pharmacodynamics) in ADPKD patients and does not report quantitative pharmacokinetic parameters (CL, V, ka, t1/2) for tolvaptan. |
+| popPK | Van_2006 | irrelevant | 2 | 0 | The paper focuses on the pharmacodynamics (AVP, urine flow) of tolvaptan, and the extracted evidence contains no quantitative pharmacokinetic parameter values (CL, V, etc.) for tolvaptan. |
+| PGx | Van_2006 | not_relevant | 0 | 0 | The paper describes a PK/PD model for tolvaptan in healthy subjects but does not report any analysis involving gene variants, genotypes, or pharmacogenomic factors. |
 | PD | Van_2013 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for tolvaptan but does not include a pharmacodynamic (PD) model or report any numeric exposure-response or dose-response parameters (e.g., Emax, EC50). |
 | PGx | Van_2013 | not_relevant | 0 | 10 | The paper investigates the impact of disease states (CHF, hepatic cirrhosis) and body weight on tolvaptan PK, but does not report any pharmacogenomic effects related to gene variants or genotypes. |
 | popPK | Van_2013_2 | irrelevant | 0 | 0 | The paper reports a population pharmacokinetic model for hydrochlorothiazide (HCTZ), while tolvaptan is only a co-administered agent in a small dataset without its own PK parameters being modeled or reported. |
@@ -236,6 +237,8 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Yamazaki_2012 | irrelevant | 0 | 0 | The paper is a clinical case report describing therapeutic outcomes (sodium levels, urine volume) and does not report pharmacokinetic parameters like clearance or volume. |
 | popPK | Yang_2015 | irrelevant | 0 | 0 | This is a meta-analysis of clinical efficacy and safety outcomes (body weight, sodium, edema) rather than a pharmacokinetic study, and it does not report quantitative PK parameters like clearance or volume. |
 | PD | Zhong_2025 | not_relevant | 0 | 0 | The paper focuses on the discovery of a new compound (XYDC2050) and reports in vitro binding/inhibition data (Ki, IC50) and qualitative in vivo efficacy, but does not report a pharmacodynamic exposure-response or dose-response relationship for tolvaptan. |
+| popPK | pasted_20261113_1313 | irrelevant | 4 | 2 | This is a tolvaptan PK/PD model in healthy subjects, but the PK component uses "previous models" and no disposition parameters (CL, V, ka, half-life) are numerically reported — only PD parameters (UFR slope, E0) appear, so no PK values are extractable here. |
+| PGx | pasted_20261113_1313 | not_relevant | 0 | 0 | No gene variant, genotype, or phenotype effects on tolvaptan PK/PD are reported; covariates are limited to concentration, water intake rate, and concomitant diuretics. |
 | popPK | unknown_2021 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
 | PD | unknown_2021 | not_relevant | 0 | 0 | The provided text is only a header for conference abstracts and contains no specific data, models, or parameters for tolvaptan. |
 

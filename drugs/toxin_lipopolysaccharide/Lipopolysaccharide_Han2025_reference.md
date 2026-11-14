@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Lipopolysaccharide&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/&quot;},{&quot;label&quot;:&quot;Han_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lipopolysaccharide_Grether2024_reference&quot;,&quot;label&quot;:&quot;Grether_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Grether2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lipopolysaccharide_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Han2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lipopolysaccharide_Jantarawong2025_reference&quot;,&quot;label&quot;:&quot;Jantarawong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Jantarawong2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lipopolysaccharide_Grether2024_reference&quot;,&quot;label&quot;:&quot;Grether_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Grether2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lipopolysaccharide_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Han2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lipopolysaccharide_Jantarawong2025_reference&quot;,&quot;label&quot;:&quot;Jantarawong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Jantarawong2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Lipopolysaccharide — `Lipopolysaccharide_Han2025_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Lipopolysaccharide" model-id="Lipopolysaccharide_Han2025_reference" status="extracted" stale="false" population="" measured-compound="lipopolysaccharide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Lipopolysaccharide" model-id="Lipopolysaccharide_Han2025_reference" status="curated_candidate" stale="false" population="" measured-compound="lipopolysaccharide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Han X, Yang C, Wang Z, Fan K, Liu K, Ye H et al. Characterization of a Long-Acting Anti-Human MASP-2 Antibody for the Treatment of Complement-Related Diseases. Journal of inflammation research 18:16247-16260 (2025).
@@ -38,7 +36,7 @@ Han X, Yang C, Wang Z, Fan K, Liu K, Ye H et al. Characterization of a Long-Acti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +46,11 @@ Han X, Yang C, Wang Z, Fan K, Liu K, Ye H et al. Characterization of a Long-Acti
 
 ### Reviewer guidance
 
+**Every check that could be run on this record passed.**
+
 Independently confirmed by `gpt-oss:120b`.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -100,6 +100,17 @@ _All readers agree on the compared fields of this record._
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0357 L/h | ['Han_2025:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 9.51 L | ['Han_2025:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=lipopolysaccharide) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>

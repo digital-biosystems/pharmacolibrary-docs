@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> This dose-response study established the 96-hour ID50 for immobilization (indicative of flaccid paralysis) caused by intracoelomic injection of botulinum neurotoxin type E (BoNT/E) in zebrafish. The paper reports the ID50 as 4.7 pg/fish for the replicate corresponding to the record, with a mean ID50 across three replicates of 3.7 ± 0.9 pg/fish, but does not provide PK or PD rate constants (e.g., ke0, kout).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Chatla_2016`
 - **model family:** `categorical`
 - **driver:** `dose_only`

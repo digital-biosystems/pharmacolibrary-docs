@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Hydrogen sulfide&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_sulfide/&quot;},{&quot;label&quot;:&quot;Cuevasanta_2012 \u00b7 h2s&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HydrogenSulfide_Jin2024_reference&quot;,&quot;label&quot;:&quot;Jin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HydrogenSulfide_Jin2024_reference&quot;,&quot;label&quot;:&quot;Jin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> no kinetic quantity — no half-life, rate constant, volume or clearance (exposure/outcome paper); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q410 unit mM/atm ([length] ** 2 * [time] ** 2 / [mass]) vs dimensionless.
 
 <div class="pk-model-meta" hidden drug="Hydrogen sulfide" model-id="HydrogenSulfide_Cuevasanta2012_h2s" status="rejected" stale="false" population="in vitro lipid membrane models and mathematical diffusion model; rat blood half-life cited from literature" measured-compound="total sulfide (H2S + HS-)" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,9 +50,13 @@ Cuevasanta E, Denicola A, Alvarez B, Möller MN. Solubility and permeation of hy
 
 ### Reviewer guidance
 
+**no kinetic quantity — no half-life, rate constant, volume or clearance (exposure/outcome paper); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q410 unit mM/atm ([length] ** 2 * [time] ** 2 / [mass]) vs dimensionless.**
+
+A reported unit could not be converted (Kp), so that value has no SI equivalent. Extracted — hydrogen sulfide: Kp 100 mM/atm.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has total sulfide (H2S + HS-), the second reading Hydrogen sulfide; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

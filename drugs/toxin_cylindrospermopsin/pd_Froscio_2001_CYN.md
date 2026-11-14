@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a description of the pharmacodynamic model or its mechanism. Cylindrospermopsin is reported to inhibit protein synthesis with an IC50 of 120 nM.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Froscio_2001`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;1-Hydroxypyrene&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/&quot;},{&quot;label&quot;:&quot;Verheyen_2021 \u00b7 PD hair cortisol concentration&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_1Hydroxypyrene_Viau1995_reference&quot;,&quot;label&quot;:&quot;Viau_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_1Hydroxypyrene_Viau1999_reference&quot;,&quot;label&quot;:&quot;Viau_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_1Hydroxypyrene_Jongeneelen1990_reference&quot;,&quot;label&quot;:&quot;Jongeneelen_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Jongeneelen1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# hair cortisol concentration — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span>
+# hair cortisol concentration — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +16,11 @@
 
 **As extracted:** 1-hydroxypyrene (concentrations from the PK model of Jongeneelen_1990) drives hair cortisol concentration (in pg/mg hair): direct log-linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
+
+> Urinary 1-hydroxypyrene concentrations act on hair cortisol concentration via a log-linear model, where a doubling in exposure is associated with a 1.13-fold increase in the biomarker. The study does not specify a mechanistic PD model (such as direct production or elimination inhibition) but reports this proportional stimulation effect derived from cross-sectional multiple regression.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Verheyen_2021`
 - **model family:** `log_linear`
@@ -38,25 +43,73 @@ Verheyen VJ et al., Urinary Polycyclic Aromatic Hydrocarbon…, Toxics (2021)
 </details>
 
 
+## Exposure-response model
+
+`D_1Hydroxypyrene_Verheyen2021_PD_hcc` — log_linear, `response = E0 + slope*log(exposure)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| slope | 1.13 | 1.13e+06 (1)/(kg/m3) |
+
+Closed-form check points (response, SI): `at_1` = 0, `per_e_fold` = 1.13e+06
+
+Deviations:
+
+- `defaulted_parameters` — E0
+- `pd_binding_slope_unit_assumed` — slope unit '(none)' read as response per µg/L
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Verheyen2021_PD_hcc/D_1Hydroxypyrene_Verheyen2021_PD_hcc_modelica.zip" download>D_1Hydroxypyrene_Verheyen2021_PD_hcc_modelica.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Verheyen2021_PD_hcc/D_1Hydroxypyrene_Verheyen2021_PD_hcc_matlab.zip" download>D_1Hydroxypyrene_Verheyen2021_PD_hcc_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Verheyen2021_PD_hcc/D_1Hydroxypyrene_Verheyen2021_PD_hcc_sbml.zip" download>D_1Hydroxypyrene_Verheyen2021_PD_hcc_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Verheyen2021_PD_hcc/D_1Hydroxypyrene_Verheyen2021_PD_hcc_cellml.zip" download>D_1Hydroxypyrene_Verheyen2021_PD_hcc_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `D_1Hydroxypyrene_Verheyen2021_PD_hcc`. <https://pharmacolibrary.github.io/#/drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Verheyen2021_PD_hcc>
+
+```bibtex
+@misc{pharmacolibrary_D1HydroxypyreneVerheyen2021PDhcc,
+  title  = {{Pharmacolibrary model D_1Hydroxypyrene_Verheyen2021_PD_hcc}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Verheyen2021_PD_hcc},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

@@ -43,7 +43,7 @@ Back HM, Lee JB, Kim A, Park SJ, Kim J, Chae JW et al. Exposure-Response and Cli
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -85,14 +85,14 @@ The record assigns clearance and volume parameters labeled for budesonide to for
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
 Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | secondary_empty | 0.0 | none |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this record) |
 
-_All readers agree on the compared fields of this record._
+_No second reader extracted anything for this record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

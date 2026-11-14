@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Ct has no unit.
 
 <div class="pk-model-meta" hidden drug="Microcystin-LR" model-id="MicrocystinLr_Yokoyama2003_reference" status="needs_review" stale="false" population="freshwater bivalves (Unio douglasiae)" measured-compound="Microcystin-LR" parameterization="mechanistic" topology="retention"></div>
 
@@ -49,9 +49,13 @@ Yokoyama A, Park HD. Depuration kinetics and persistence of the cyanobacterial t
 
 ### Reviewer guidance
 
+**Ct has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — microcystin lr: Ct 130 microg g(-1) dry weight, kel 0.142 day(-1).
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of concentrations of mcyst-lr on day 5 at 15 degrees c: this record has 130, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

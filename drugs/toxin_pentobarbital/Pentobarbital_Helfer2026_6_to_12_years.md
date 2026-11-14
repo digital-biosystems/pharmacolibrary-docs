@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Pentobarbital&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/&quot;},{&quot;label&quot;:&quot;Helfer_2026 \u00b7 6_to_12_years&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_estimate&quot;,&quot;label&quot;:&quot;Helfer_2026_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_estimate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_base&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Ketharanathan2023_base.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_final&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Ketharanathan2023_final.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Zuppa2011_reference&quot;,&quot;label&quot;:&quot;Zuppa_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Zuppa2011_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Drayer1982_reference&quot;,&quot;label&quot;:&quot;Drayer_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Drayer1982_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_12_years&quot;,&quot;label&quot;:&quot;Helfer_2026_12_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_12_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_2_to_6_years&quot;,&quot;label&quot;:&quot;Helfer_2026_2_to_6_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_2_to_6_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_2_years&quot;,&quot;label&quot;:&quot;Helfer_2026_2_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_2_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_6_to_12_years&quot;,&quot;label&quot;:&quot;Helfer_2026_6_to_12_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Pentobarbital — `Pentobarbital_Helfer2026_6_to_12_years`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life (paper 25.5, model 4.41).
 
-<div class="pk-model-meta" hidden drug="Pentobarbital" model-id="Pentobarbital_Helfer2026_6_to_12_years" status="extracted" stale="false" population="pediatric patients (birth to 21 years)" measured-compound="Pentobarbital" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Pentobarbital" model-id="Pentobarbital_Helfer2026_6_to_12_years" status="needs_review" stale="false" population="pediatric patients (birth to 21 years)" measured-compound="Pentobarbital" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Helfer VE, Medina-Aymerich L, Muller WJ, Meyer M, Al-Uzri A, McCulloh R et al. Population Pharmacokinetics and Dosing Simulations of Pentobarbital in the Pediatric Population. Journal of clinical pharmacology 66(5):e70204 (2026).
@@ -22,12 +23,16 @@ Helfer VE, Medina-Aymerich L, Muller WJ, Meyer M, Al-Uzri A, McCulloh R et al. P
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years.svg" alt="Pentobarbital_Helfer2026_6_to_12_years diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL (L/h/kg) | CL | 0.11 | L/h/kg |
@@ -35,7 +40,7 @@ Helfer VE, Medina-Aymerich L, Muller WJ, Meyer M, Al-Uzri A, McCulloh R et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,7 +48,13 @@ Helfer VE, Medina-Aymerich L, Muller WJ, Meyer M, Al-Uzri A, McCulloh R et al. P
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (paper 25.5, model 4.41).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — pentobarbital: CL 0.11 L/h/kg, V 0.7 L/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -92,6 +103,19 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.7 L/h | ['Helfer_2026_table_3:row2:col3'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 49 L | ['Helfer_2026_table_3:row2:col5'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=Pentobarbital) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| T1_t_half_terminal | reference | fail | 25.5 | 4.411 | 0.173 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 22.5 | 4.411 | 0.196 | h→SI vs simulated h |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -106,19 +130,63 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years_modelica.zip" download>Pentobarbital_Helfer2026_6_to_12_years_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years_fmi.zip" download>Pentobarbital_Helfer2026_6_to_12_years_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years_matlab.zip" download>Pentobarbital_Helfer2026_6_to_12_years_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years_matlab_simbio.zip" download>Pentobarbital_Helfer2026_6_to_12_years_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years_sbml.zip" download>Pentobarbital_Helfer2026_6_to_12_years_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years_cellml.zip" download>Pentobarbital_Helfer2026_6_to_12_years_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2263 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 4.7e-06 | kg |
+| input | model | `Cl` | 2.139e-06 | m3/s |
+| input | model | `VdPerKg` | 0.0007 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Helfer VE, Medina-Aymerich L, Muller WJ, Meyer M, Al-Uzri A, McCulloh R et al. Population Pharmacokinetics and Dosing Simulations of Pentobarbital in the Pediatric Population. Journal of clinical pharmacology 66(5):e70204 (2026). [doi:10.1002/jcph.70204](https://doi.org/10.1002/jcph.70204)
+
+**This record:** Pharmacolibrary, model `Pentobarbital_Helfer2026_6_to_12_years`. <https://pharmacolibrary.github.io/#/drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years>
+
+```bibtex
+@misc{pharmacolibrary_PentobarbitalHelfer20266to12years,
+  title  = {{Pharmacolibrary model Pentobarbital_Helfer2026_6_to_12_years}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years},
+  note   = {Parameters from doi:10.1002/jcph.70204},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 4.7 mg infusion over 10 min, single dose. Doses in the paper: 4.7–290 mg.
+
+<dbs-fmusim paramsurl="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/toxin_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years/Pentobarbital_Helfer2026_6_to_12_years_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Pentobarbital_Helfer2026_6_to_12_years_params.json` · controls `Pentobarbital_Helfer2026_6_to_12_years_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

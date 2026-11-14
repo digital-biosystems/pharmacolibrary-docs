@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record lacks a volume parameter and reports Vmax without units, preventing model construction and unit conversion for 1,3-butadiene metabolism.
 
 <div class="pk-model-meta" hidden drug="1,3-Butadiene" model-id="D_13Butadiene_Csandy1992_reference" status="needs_review" stale="false" population="humans, rats and mice" measured-compound="1,3-Butadiene" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -22,10 +22,10 @@ Csanády GA, Guengerich FP, Bond JA. Comparison of the biotransformation of 1,3-
 
 ## Model
 
-**Structure:** nonlinear / manual; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 1 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -44,7 +44,13 @@ Csanády GA, Guengerich FP, Bond JA. Comparison of the biotransformation of 1,3-
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record lacks a volume parameter and reports Vmax without units, preventing model construction and unit conversion for 1,3-butadiene metabolism.**
+
+Disposition data is incomplete because only clearance or metabolic rates were extracted from the abstract, leaving volume undefined and relying on library placeholders. The maximum metabolic rate Vmax for 1,3-butadiene is recorded as 0.2 nmol/mg protein/min, but the unit is not convertible to standard systems. Consequently, the model structure could not be properly parameterized for simulation. Extracted — 1,3-Butadiene: Vmax 0.2 nmol/mg protein/min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

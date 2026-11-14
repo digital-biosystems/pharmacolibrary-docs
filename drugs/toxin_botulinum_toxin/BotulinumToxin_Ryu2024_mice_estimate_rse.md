@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Botulinum toxin&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/&quot;},{&quot;label&quot;:&quot;Ryu_2024 \u00b7 mice_estimate_rse&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumToxin_AlSaleem2008_reference&quot;,&quot;label&quot;:&quot;Al-Saleem_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_AlSaleem2008_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Espinoza2019_reference&quot;,&quot;label&quot;:&quot;Espinoza_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Espinoza2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Ravichandran2006_reference&quot;,&quot;label&quot;:&quot;Ravichandran_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Ravichandran2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumToxin_AlSaleem2008_reference&quot;,&quot;label&quot;:&quot;Al-Saleem_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_AlSaleem2008_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Espinoza2019_reference&quot;,&quot;label&quot;:&quot;Espinoza_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Espinoza2019_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Ravichandran2006_reference&quot;,&quot;label&quot;:&quot;Ravichandran_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Ravichandran2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Botulinum toxin" model-id="BotulinumToxin_Ryu2024_mice_estimate_rse" status="rejected" stale="false" population="Institute of Cancer Research mice, Sprague-Dawley rats, humans" measured-compound="Botulinum neurotoxin type A" parameterization="mechanistic" topology="1C"></div>
 
@@ -43,7 +43,13 @@ _No resolved parameters._
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 

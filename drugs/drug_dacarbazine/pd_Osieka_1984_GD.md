@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Osieka_1984 \u00b7 PD Growth delay (GD)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Middleton2000_reference&quot;,&quot;label&quot;:&quot;Middleton_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Middleton2000_reference&quot;,&quot;label&quot;:&quot;Middleton_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Middleton2000_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Osieka_1984_GD&quot;,&quot;label&quot;:&quot;Osieka_1984 \u00b7 GD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/pd_Osieka_1984_GD.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Growth delay (GD) — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
@@ -18,7 +18,7 @@
 
 **As extracted:** Dacarbazine (the dose) drives Growth delay (GD): direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > In this study, the dose of dacarbazine (expressed in mg/kg as a fraction of LD10/30) was found to linearly inhibit the measured response of Growth Delay (GD) values in human melanoma xenografts, calculated via linear regression with a slope of 2.67. The paper does not specify the specific pharmacodynamic mechanism (e.g., production or elimination rates) or potency parameters like EC50 or IC50 for this model.
 >
@@ -53,13 +53,14 @@ Osieka R, Primary and acquired resistance to anti…, Cancer (1984)
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | 2.67 | — |
+| slope | 2.67 | 2.67e+06 (1)/(1) |
 
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 2.67
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 2.67e+06
 
 Deviations:
 
 - `defaulted_parameters` — E0
+- `pd_binding_slope_unit_assumed` — slope unit '(none)' read as response per mg/kg
 
 ## Review
 
@@ -107,15 +108,32 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_modelica.zip" download>Dacarbazine_Osieka1984_PD_gd_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_matlab.zip" download>Dacarbazine_Osieka1984_PD_gd_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_modelica.zip" download>Dacarbazine_Osieka1984_PD_gd_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_fmi.zip" download>Dacarbazine_Osieka1984_PD_gd_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_matlab.zip" download>Dacarbazine_Osieka1984_PD_gd_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_sbml.zip" download>Dacarbazine_Osieka1984_PD_gd_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_sbml.zip" download>Dacarbazine_Osieka1984_PD_gd_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_cellml.zip" download>Dacarbazine_Osieka1984_PD_gd_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `slope` | 2.67e+06 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -133,7 +151,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_dacarbazine/Dacarbazine_Osieka1984_PD_gd/Dacarbazine_Osieka1984_PD_gd_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Dacarbazine_Osieka1984_PD_gd_params.json` · controls `Dacarbazine_Osieka1984_PD_gd_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

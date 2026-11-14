@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> A virtual infusion rate of BoNT/A drives the inhibition of muscle contraction, measured as Digit Abduction Score (DAS), via an indirect response model that accounts for the toxin's inhibition of acetylcholine release. The estimated EDK50 values were 17.8 U day−1 in mice and 43.3 U day−1 in rats, with elimination rate constants (Kout) of 2.76 day−1 and 2.04 day−1, respectively.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Ryu_2024`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`

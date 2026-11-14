@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir disoproxil&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Jayachandran_2021_p24&quot;,&quot;label&quot;:&quot;Jayachandran_2021 \u00b7 p24&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_disoproxil/pd_Jayachandran_2021_p24.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tenofovir disoproxil
 
@@ -40,7 +41,7 @@ Tenofovir disoproxil is an antiviral used to treat HIV infection and chronic hep
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Jayachandran_2021_p24](drugs/drug_tenofovir_disoproxil/pd_Jayachandran_2021_p24.md) | cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) ← tenofovir-diphosphate (TFVdp) in rectal mononuclear cells (MMCs) · direct linear effect | model (no simulator) | Jayachandran P et al., A Mechanistic In Vivo/Ex Vivo Pharmacok…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12583](https://doi.org/10.1002/psp4.12583) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Jayachandran_2021_p24](drugs/drug_tenofovir_disoproxil/pd_Jayachandran_2021_p24.md) | cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) ← tenofovir-diphosphate (TFVdp) in rectal mononuclear cells (MMCs) · direct linear effect | ▶ model + simulator | Jayachandran P et al., A Mechanistic In Vivo/Ex Vivo Pharmacok…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12583](https://doi.org/10.1002/psp4.12583) |
 
 ## ADME sites
 

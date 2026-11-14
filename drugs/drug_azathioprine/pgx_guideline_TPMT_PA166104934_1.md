@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_1997_RCR&quot;,&quot;label&quot;:&quot;Simon_1997 \u00b7 RCR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/pd_Simon_1997_RCR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# TPMT — PGx  <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.2). Primary extraction retained.">cross-check: partial</span>
+# TPMT — PGx  <span class="pk-badge pk-badge--neutral" title="CPIC/DPWG-derived estimate, not a primary-paper estimate.">guideline estimate</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss:120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,23 +31,14 @@
 not matched (stem guideline)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.2 (1/5 fields) | 4 |
+| `gpt-oss:120b` | no answer | – | – (extracted nothing for this PGx record) |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `applies_to` | pk |  | mismatch |
-| `gpt-oss:120b` | `mechanism` | metabolism |  | mismatch |
-| `gpt-oss:120b` | `target_parameter_id` | Q22 |  | mismatch |
-| `gpt-oss:120b` | `theta[PM]` | -0.5 |  | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PGx record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

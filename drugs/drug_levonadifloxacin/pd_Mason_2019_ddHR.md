@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;levonadifloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_levonadifloxacin/&quot;},{&quot;label&quot;:&quot;Mason_2019 \u00b7 PD Heart Rate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Mason_2019_ddHR&quot;,&quot;label&quot;:&quot;Mason_2019 \u00b7 ddHR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levonadifloxacin/pd_Mason_2019_ddHR.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Mason_2019_ddQTcF&quot;,&quot;label&quot;:&quot;Mason_2019 \u00b7 ddQTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levonadifloxacin/pd_Mason_2019_ddQTcF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Heart Rate — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Levonadifloxacin (measured concentrations) drives Heart Rate (in bpm): direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 - **paper:** `Mason_2019`
 - **model family:** `linear`
@@ -46,9 +47,13 @@ Mason JW et al., Electrocardiographic Effects of a Supra…, Clinical and transl
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0.9456 bpm | — |
-| slope | 0.3937 bpm/(μg×mL−1) | — |
+| slope | 0.3937 bpm/(μg×mL−1) | 393.7 (1)/(kg/m3) |
 
-Closed-form check points (response, SI): `at_0` = 0.9456, `per_exposure_unit` = 0.3937
+Closed-form check points (response, SI): `at_0` = 0.9456, `per_exposure_unit` = 393.7
+
+Deviations:
+
+- `pd_binding_slope_unit_assumed` — slope unit 'bpm/(μg×mL−1)' read as bpm per μg/mL
 
 ## Review
 
@@ -91,15 +96,32 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_modelica.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_matlab.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_matlab.zip</a> <span class="pk-size">(1.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_modelica.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_fmi.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_matlab.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_matlab.zip</a> <span class="pk-size">(1.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_sbml.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_cellml.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_sbml.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_cellml.zip" download>Levonadifloxacin_Mason2019_PD_ddhr_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0.9456 |  |
+| input | model | `exposure_per_s` | 0.001 |  |
+| input | model | `slope` | 393.7 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -117,7 +139,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_levonadifloxacin/Levonadifloxacin_Mason2019_PD_ddhr/Levonadifloxacin_Mason2019_PD_ddhr_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Levonadifloxacin_Mason2019_PD_ddhr_params.json` · controls `Levonadifloxacin_Mason2019_PD_ddhr_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

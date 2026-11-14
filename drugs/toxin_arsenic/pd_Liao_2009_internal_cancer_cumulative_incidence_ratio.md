@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Liao_2009 \u00b7 PD internal cancer cumulative incidence ratio&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # internal cancer cumulative incidence ratio — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,6 +17,10 @@
 **As extracted:** Arsenic (concentrations from the PK model of Mardirosian_2017) drives internal cancer cumulative incidence ratio: time-to-event model.
 
 **Model:** No model was generated from this record.
+
+> Arsenic concentrations are linked to internal cancer cumulative incidence ratio using a time-to-event model with a stimulation effect. The specific pharmacodynamic mechanism and key potency or rate parameters (such as EC50 or IC50) are not stated in the provided excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Liao_2009`
 - **model family:** `tte`

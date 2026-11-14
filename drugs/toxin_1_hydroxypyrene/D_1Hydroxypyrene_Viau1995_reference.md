@@ -1,14 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;1-Hydroxypyrene&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/&quot;},{&quot;label&quot;:&quot;Viau_1995 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_1Hydroxypyrene_Viau1995_reference&quot;,&quot;label&quot;:&quot;Viau_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;D_1Hydroxypyrene_Viau1999_reference&quot;,&quot;label&quot;:&quot;Viau_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_1Hydroxypyrene_Jongeneelen1990_reference&quot;,&quot;label&quot;:&quot;Jongeneelen_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Jongeneelen1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 1-Hydroxypyrene — `D_1Hydroxypyrene_Viau1995_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="1-Hydroxypyrene" model-id="D_1Hydroxypyrene_Viau1995_reference" status="extracted" stale="false" population="well-informed human volunteers" measured-compound="1-hydroxypyrene" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="1-Hydroxypyrene" model-id="D_1Hydroxypyrene_Viau1995_reference" status="curated_candidate" stale="false" population="well-informed human volunteers" measured-compound="1-hydroxypyrene" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Viau C, Carrier G, Vyskocil A, Dodd C. Urinary excretion kinetics of 1-hydroxypyrene in volunteers exposed to pyrene by the oral and dermal route. The Science of the total environment 163(1-3):179–186 (1995).
@@ -22,10 +21,10 @@ Viau C, Carrier G, Vyskocil A, Dodd C. Urinary excretion kinetics of 1-hydroxypy
 
 ## Model
 
-**Structure:** retention function; no model was built for this record.  
+**Structure:** whole-body retention function, 1 exponential pool (burden and retained fraction; no volume) — template `TK_Retention`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
 | label | parameter | value | unit |
@@ -36,7 +35,7 @@ Viau C, Carrier G, Vyskocil A, Dodd C. Urinary excretion kinetics of 1-hydroxypy
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +43,13 @@ Viau C, Carrier G, Vyskocil A, Dodd C. Urinary excretion kinetics of 1-hydroxypy
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -60,6 +65,9 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `retention_function`: 1 pool(s); shares: one pool, A = 1; half-times: pool 1 from ln2 / 1-OHP is excreted with a first order apparent half-life (Q59)
 
 **Interpretation flags:**
 - linked '1-OHP is excreted with a first order apparent half-life' as 'kel/F' → Q47 (kel) for 1-hydroxypyrene — compound marker removed
@@ -95,6 +103,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q59 | pass | [time] |  | ['Viau_1995:abstract'] |
 | C8_topology | pass |  |  |  |
 
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | retainedFraction (measured=1-hydroxypyrene) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Validation definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
@@ -109,19 +128,59 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference/D_1Hydroxypyrene_Viau1995_reference_modelica.zip" download>D_1Hydroxypyrene_Viau1995_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference/D_1Hydroxypyrene_Viau1995_reference_fmi.zip" download>D_1Hydroxypyrene_Viau1995_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/TK_Retention_1.fmu" download>TK_Retention_1.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference/D_1Hydroxypyrene_Viau1995_reference_matlab.zip" download>D_1Hydroxypyrene_Viau1995_reference_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference/D_1Hydroxypyrene_Viau1995_reference_sbml.zip" download>D_1Hydroxypyrene_Viau1995_reference_sbml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference/D_1Hydroxypyrene_Viau1995_reference_cellml.zip" download>D_1Hydroxypyrene_Viau1995_reference_cellml.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>TK_Retention_1.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2203 | kg/mol |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `A[1]` | 1 |  |
+| input | model | `Tb[1]` | 4.32e+04 |  |
+| output | concentration | `retainedFraction` |  | kg/m3 |
+
+## Tested with
+
+- Template `TK_Retention_1`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Viau C, Carrier G, Vyskocil A, Dodd C. Urinary excretion kinetics of 1-hydroxypyrene in volunteers exposed to pyrene by the oral and dermal route. The Science of the total environment 163(1-3):179–186 (1995). [doi:10.1016/0048-9697(95)04494-l](https://doi.org/10.1016/0048-9697(95)04494-l)
+
+**This record:** Pharmacolibrary, model `D_1Hydroxypyrene_Viau1995_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference>
+
+```bibtex
+@misc{pharmacolibrary_D1HydroxypyreneViau1995reference,
+  title  = {{Pharmacolibrary model D_1Hydroxypyrene_Viau1995_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference},
+  note   = {Parameters from doi:10.1016/0048-9697(95)04494-l},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference/D_1Hydroxypyrene_Viau1995_reference_params.json" metaurl="assets/fmu/TK_Retention_1.vr.json" wasmurl="assets/fmu/TK_Retention_1.js" controlsurl="drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference/D_1Hydroxypyrene_Viau1995_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `TK_Retention_1` · parameters `D_1Hydroxypyrene_Viau1995_reference_params.json` · controls `D_1Hydroxypyrene_Viau1995_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

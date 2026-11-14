@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;arsenic trioxide&quot;,&quot;href&quot;:&quot;drugs/drug_arsenic_trioxide/&quot;},{&quot;label&quot;:&quot;Hariani_2014 \u00b7 PGx ABCC5&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ABCC5 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.00).">in vitro</span>
+# ABCC5 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.00).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -31,22 +31,14 @@ Hariani GD et al., Application of next generation sequenci…, BMC research note
   ·  DOI: [10.1186/1756-0500-7-360](https://doi.org/10.1186/1756-0500-7-360)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
 Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PGx record) |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `applies_to` | pk |  | mismatch |
-| `gpt-oss-120b` | `mechanism` | transport |  | mismatch |
-| `gpt-oss-120b` | `target_parameter_id` | Q321 |  | mismatch |
-
-</details>
+_No second reader extracted anything for this PGx record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

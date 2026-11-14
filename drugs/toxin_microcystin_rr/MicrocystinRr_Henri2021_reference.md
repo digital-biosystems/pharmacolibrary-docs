@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Microcystin-RR" model-id="MicrocystinRr_Henri2021_reference" status="rejected" stale="false" population="differentiated Caco-2 cell monolayers (human intestinal cell line)" measured-compound="Microcystin-RR" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,9 +46,13 @@ Henri J, Lanceleur R, Delmas JM, Fessard V, Huguet A. Permeability of the Cyanot
 
 ### Reviewer guidance
 
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. A reported unit could not be converted (equation variable), so that value has no SI equivalent. No parameter values were extracted.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a-b: this record has 1, the second reading none. That field does not shape the model.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

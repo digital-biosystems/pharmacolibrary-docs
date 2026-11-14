@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Contezolid&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/&quot;},{&quot;label&quot;:&quot;Wu_2020 \u00b7 PD QTc (\u0394QTcF interval)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Contezolid_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/Contezolid_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Contezolid_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/Contezolid_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wu_2020_QTcF&quot;,&quot;label&quot;:&quot;Wu_2020 \u00b7 \u0394QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/pd_Wu_2020_QTcF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # QTc (ΔQTcF interval) — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Contezolid (concentrations from the PK model of Bulitta_2024) drives QTc (ΔQTcF interval) (in ms): direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The paper does not provide full text to specify the mechanism by which contezolid concentrations drive the ΔQTcF interval, though the record indicates a linear stimulatory effect. The model characterizes this relationship with a slope of 0.227 ms per mg/liter.
 >
@@ -50,7 +50,7 @@ Wu J et al., Evaluation of the Effect of Contezolid…, Antimicrobial agents and
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | 0.227 ms per mg/liter | — |
+| slope | 0.227 ms per mg/liter | 0.227 meter ** 3 * second / kilogram |
 
 Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.227
 
@@ -82,15 +82,32 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf/Contezolid_Wu2020_PD_qtcf_modelica.zip" download>Contezolid_Wu2020_PD_qtcf_modelica.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf/Contezolid_Wu2020_PD_qtcf_modelica.zip" download>Contezolid_Wu2020_PD_qtcf_modelica.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf/Contezolid_Wu2020_PD_qtcf_fmi.zip" download>Contezolid_Wu2020_PD_qtcf_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf/Contezolid_Wu2020_PD_qtcf_matlab.zip" download>Contezolid_Wu2020_PD_qtcf_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf/Contezolid_Wu2020_PD_qtcf_sbml.zip" download>Contezolid_Wu2020_PD_qtcf_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf/Contezolid_Wu2020_PD_qtcf_cellml.zip" download>Contezolid_Wu2020_PD_qtcf_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `exposure_per_s` | 0.001 |  |
+| input | model | `slope` | 0.227 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -108,7 +125,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf/Contezolid_Wu2020_PD_qtcf_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_contezolid/Contezolid_Wu2020_PD_qtcf/Contezolid_Wu2020_PD_qtcf_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Contezolid_Wu2020_PD_qtcf_params.json` · controls `Contezolid_Wu2020_PD_qtcf_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

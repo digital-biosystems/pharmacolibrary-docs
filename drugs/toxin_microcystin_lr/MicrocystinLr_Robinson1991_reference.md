@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Cmax and Ct have no unit; a value printed only as a range — the record carries its midpoint (+1 more).
 
 <div class="pk-model-meta" hidden drug="Microcystin-LR" model-id="MicrocystinLr_Robinson1991_reference" status="needs_review" stale="false" population="mice" measured-compound="Microcystin-LR" parameterization="mechanistic" topology="retention"></div>
 
@@ -53,9 +53,13 @@ Robinson NA, Pace JG, Matson CF, Miura GA, Lawrence WB. Tissue distribution, exc
 
 ### Reviewer guidance
 
+**Cmax and Ct have no unit; a value printed only as a range — the record carries its midpoint (+1 more).**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — microcystin lr: t1/2α 0.8 min, t1/2β 6.9 min, Cmax 43, Ct 16, t1/2z 3.85 min.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has Microcystin-LR (radiolabeled [3H]microcystin-LR), the second reading Microcystin-LR; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

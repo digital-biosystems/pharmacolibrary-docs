@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Tawhidul_2025 \u00b7 PD cardiovascular diseases (CVD)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cardiovascular diseases (CVD) — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,6 +17,10 @@
 **As extracted:** Arsenic (concentrations from the PK model of Mardirosian_2017) drives cardiovascular diseases (CVD): categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> The study analyzes binary cardiovascular disease (CVD) and frequency of CVD morbidity as responses to environmental arsenic exposure categorized by contamination level rather than continuous pharmacodynamic concentrations. The paper does not describe a pharmacodynamic mechanism, potency, or rate parameters, instead reporting that high arsenic areas increase CVD morbidity probabilities compared to no arsenic areas via logit and ordered probit regression.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Tawhidul_2025`
 - **model family:** `categorical`

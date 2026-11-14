@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Ethylbenzene" model-id="Ethylbenzene_Tardif1997_reference" status="rejected" stale="false" population="rats and humans" measured-compound="ethylbenzene, toluene, m-xylene" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,13 @@ _No resolved parameters._
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 

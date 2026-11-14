@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> no kinetic quantity — no half-life, rate constant, volume or clearance (exposure/outcome paper); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q25 unit week ([time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="Microcystin-LR" model-id="MicrocystinLr_Ito2001_reference" status="rejected" stale="false" population="mice" measured-compound="Microcystin-LR" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,9 +48,13 @@ Ito E, Kondo F, Harada K. Intratracheal administration of microcystin-LR, and it
 
 ### Reviewer guidance
 
+**no kinetic quantity — no half-life, rate constant, volume or clearance (exposure/outcome paper); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q25 unit week ([time]) vs [length] ** 3 / [time].**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — microcystin lr: tlag 60 min, CLH 2 week.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[clearance from internal organs].parameter_id`: this record has Q25, the second reading Q22. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

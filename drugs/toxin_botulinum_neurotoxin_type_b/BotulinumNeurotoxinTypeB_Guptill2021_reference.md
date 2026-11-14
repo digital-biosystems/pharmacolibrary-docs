@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Botulinum neurotoxin type B&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_neurotoxin_type_b/&quot;},{&quot;label&quot;:&quot;Guptill_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumNeurotoxinTypeB_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_neurotoxin_type_b/BotulinumNeurotoxinTypeB_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumNeurotoxinTypeB_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_neurotoxin_type_b/BotulinumNeurotoxinTypeB_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Botulinum neurotoxin type B — `BotulinumNeurotoxinTypeB_Guptill2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Botulinum neurotoxin type B" model-id="BotulinumNeurotoxinTypeB_Guptill2021_reference" status="extracted" stale="false" population="" measured-compound="botulinum_neurotoxin_type_b" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Botulinum neurotoxin type B" model-id="BotulinumNeurotoxinTypeB_Guptill2021_reference" status="curated_candidate" stale="false" population="" measured-compound="botulinum_neurotoxin_type_b" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Guptill JT, Raja SM, Juel VC, Walter EB, Cohen-Wolkowiez M, Hill H et al. Safety, Tolerability, and Pharmacokinetics of NTM-1632, a Novel Mixture of Three Monoclonal Antibodies against Botulinum Toxin B. Antimicrobial agents and chemotherapy 65(7):e0232920 (2021).
@@ -36,7 +34,7 @@ Guptill JT, Raja SM, Juel VC, Walter EB, Cohen-Wolkowiez M, Hill H et al. Safety
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +42,11 @@ Guptill JT, Raja SM, Juel VC, Walter EB, Cohen-Wolkowiez M, Hill H et al. Safety
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -79,6 +81,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0189 L/h | ['Guptill_2021:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 17.5 L | ['Guptill_2021:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=botulinum_neurotoxin_type_b) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>

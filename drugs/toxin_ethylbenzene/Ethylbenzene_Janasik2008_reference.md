@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The volume of distribution of 250.0 mL is physiologically implausible, leading to rejection due to suspected unit or scale extraction errors.
 
 <div class="pk-model-meta" hidden drug="Ethylbenzene" model-id="Ethylbenzene_Janasik2008_reference" status="rejected" stale="false" population="six volunteers" measured-compound="Ethylbenzene" parameterization="mechanistic" topology="retention"></div>
 
@@ -44,7 +44,13 @@ Janasik B, Jakubowski M, Jałowiecki P. Excretion of unchanged volatile organic 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The volume of distribution of 250.0 mL is physiologically implausible, leading to rejection due to suspected unit or scale extraction errors.**
+
+The record lists a volume of distribution of 250.0 mL, a magnitude outside the physiological window for ethylbenzene. This specific parameter caused the clearance/volume check to fail. The data was derived solely from the paper's abstract, meaning reported summary statistics replaced a fitted model, which likely contributed to the scale error. Extracted — ethylbenzene: t1/2z 0.665 h, V 250 mL, kabs 0.88 1/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

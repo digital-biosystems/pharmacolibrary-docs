@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Hydrogen sulfide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HydrogenSulfide_Jin2024_reference&quot;,&quot;label&quot;:&quot;Jin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HydrogenSulfide_Jin2024_reference&quot;,&quot;label&quot;:&quot;Jin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Hydrogen sulfide
 
@@ -32,7 +32,7 @@ Hydrogen sulfide is a highly toxic and flammable gas. Because it is heavier than
 
 ## Start here
 
-> **Jin_2024_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> mice dosed orally with JZ-HND, n = 3 (kinetic subgroups); 6 in efficacy study. [Run it in the simulator](drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md?tab=Simulation) · [record](drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md)
+> **Jin_2024_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> mice dosed orally with JZ-HND, n = 3 (kinetic subgroups); 6 in efficacy study. [Run it in the simulator](drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md?tab=Simulation) · [record](drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -40,7 +40,7 @@ Hydrogen sulfide is a highly toxic and flammable gas. Because it is heavier than
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span> | [Jin_2024_reference](drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Jin H et al., Thio-ProTide strategy: A novel H2S dono…, Acta pharmaceutica Sinica. B (2024) | [10.1016/j.apsb.2024.10.017](https://doi.org/10.1016/j.apsb.2024.10.017) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span><br><sub>blocking: T1_t_half_terminal</sub> | [Jin_2024_reference](drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Jin H et al., Thio-ProTide strategy: A novel H2S dono…, Acta pharmaceutica Sinica. B (2024) | [10.1016/j.apsb.2024.10.017](https://doi.org/10.1016/j.apsb.2024.10.017) |
 | <span class="pk-rf" hidden data-species="in vitro" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Cuevasanta_2012_h2s](drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Cuevasanta2012_h2s.md) | — | 1-compartment (no model) | 1 | Cuevasanta E et al., Solubility and permeation of hydrogen s…, PloS one (2012) | [10.1371/journal.pone.0034562](https://doi.org/10.1371/journal.pone.0034562) |
 | <span class="pk-rf" hidden data-species="in vitro" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ no](drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Cuevasanta2012_no.md) | — | 1-compartment (no model) | 1 (+1 cov.) |  |  |
 
@@ -62,7 +62,7 @@ Hydrogen sulfide is a highly toxic and flammable gas. Because it is heavier than
 
 - **PubMed hits:** 235 matched, 173 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

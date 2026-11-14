@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cortisone acetate (mg/kg/day) acts as a dose driver to inhibit the incidence of cleft palate, a categorical response, though the specific mechanistic model (e.g., inhibition of production vs. elimination) is not detailed in the provided excerpt. No quantitative potency parameters (such as ED50 or Imax) or rate constants (such as ke0 or kout) are reported in the available text.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Freni_1994`
 - **model family:** `categorical`
 - **driver:** `dose_only`

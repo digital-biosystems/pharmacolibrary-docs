@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Ethylbenzene intercompartmental clearance (0.16) and volume (250.0 mL) are physiologically implausible, and a missing unit conversion prevents SI calculation.
 
 <div class="pk-model-meta" hidden drug="Ethylbenzene" model-id="Ethylbenzene_Sterner2023_toluene" status="rejected" stale="false" population="Long-Evans rats / Sprague-Dawley rats / F344 rats" measured-compound="Ethylbenzene" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,7 +52,13 @@ Sterner TR, Covington TR, Mattie DR. Complex Mixtures: Array PBPK Modeling of Je
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Ethylbenzene intercompartmental clearance (0.16) and volume (250.0 mL) are physiologically implausible, and a missing unit conversion prevents SI calculation.**
+
+The intercompartmental clearance (0.16) and volume of distribution (250.0 mL) fall outside expected physiological ranges for rats. These values suggest extraction errors regarding unit or scale. The model was rejected because the reported units could not be converted to standard SI units, leaving the parameters without valid international system values. Extracted — ethylbenzene: Q 0.16, MW 92.1 g/mol, Kp_derm 56.7, Vmax 3.44, Km 0.13 mg/L, V 250 mL, kabs 0.88 1/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

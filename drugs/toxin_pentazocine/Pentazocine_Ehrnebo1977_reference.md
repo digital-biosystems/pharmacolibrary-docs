@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Pentazocine&quot;,&quot;href&quot;:&quot;drugs/toxin_pentazocine/&quot;},{&quot;label&quot;:&quot;Ehrnebo_1977 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Pentazocine — `Pentazocine_Ehrnebo1977_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The pentazocine record is quarantined because clearance lacked an explicit value, forcing a default placeholder into the model.
 
-<div class="pk-model-meta" hidden drug="Pentazocine" model-id="Pentazocine_Ehrnebo1977_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="Pentazocine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Pentazocine" model-id="Pentazocine_Ehrnebo1977_reference" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="Pentazocine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ehrnebo M, Boréus LO, Lönroth U. Bioavailability and first-pass metabolism of oral pentazocine in man. Clinical pharmacology and therapeutics 22(6):888–892 (1977).
@@ -20,12 +21,14 @@ Ehrnebo M, Boréus LO, Lönroth U. Bioavailability and first-pass metabolism of 
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | average bioavailability | Fab | 18.4 |  |
@@ -34,7 +37,7 @@ Ehrnebo M, Boréus LO, Lönroth U. Bioavailability and first-pass metabolism of 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,7 +45,13 @@ Ehrnebo M, Boréus LO, Lönroth U. Bioavailability and first-pass metabolism of 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The pentazocine record is quarantined because clearance lacked an explicit value, forcing a default placeholder into the model.**
+
+The record was built from the abstract only, using summary statistics rather than a fitted model. While bioavailability, terminal half-life, and volume of distribution were extracted, no value for clearance was reported. Consequently, clearance remained at library defaults, causing the model to be held back to avoid publishing with an invented parameter. Extracted — pentazocine: Fab 18.4, t1/2β 203 min, V 5.56 L/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -88,6 +97,16 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Ehrnebo_1977:abstract', 'Ehrnebo_1977:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 389 L | ['Ehrnebo_1977:abstract', 'Ehrnebo_1977:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

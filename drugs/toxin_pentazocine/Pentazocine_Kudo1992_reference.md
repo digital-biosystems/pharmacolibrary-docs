@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Pentazocine&quot;,&quot;href&quot;:&quot;drugs/toxin_pentazocine/&quot;},{&quot;label&quot;:&quot;Kudo_1992 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentazocine_Omori2022_reference&quot;,&quot;label&quot;:&quot;Omori_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentazocine/Pentazocine_Omori2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The retention model for pentazocine is invalid because its defining parameters A1 and A2 are missing from the abstract-derived record.
 
 <div class="pk-model-meta" hidden drug="Pentazocine" model-id="Pentazocine_Kudo1992_reference" status="needs_review" stale="false" population="surgical patients" measured-compound="pentazocine" parameterization="mechanistic" topology="retention"></div>
 
@@ -19,10 +20,10 @@ Kudo T, Kudo M, Kimura F, Ishihara H, Matsuki A. [Pharmacokinetics of ketamine a
 
 ## Model
 
-**Structure:** retention function; no model was built for this record.  
+**Structure:** whole-body retention function, 2 exponential pools (burden and retained fraction; no volume) — template `TK_Retention`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -42,7 +43,13 @@ Kudo T, Kudo M, Kimura F, Ishihara H, Matsuki A. [Pharmacokinetics of ketamine a
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The retention model for pentazocine is invalid because its defining parameters A1 and A2 are missing from the abstract-derived record.**
+
+The structure is defined as a retention model, which requires the specific parameters A1 and A2 to describe the drug's disposition. These parameters were not extracted because the record was built solely from the paper's abstract, where only half-life values were available. Without A1 and A2, the retention mechanism cannot be mathematically defined, rendering the model incomplete. Extracted — pentazocine: t1/2α 33 min, t1/2β 60 min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -103,13 +110,29 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_pentazocine/Pentazocine_Kudo1992_reference/Pentazocine_Kudo1992_reference_matlab.zip" download>Pentazocine_Kudo1992_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_pentazocine/Pentazocine_Kudo1992_reference/Pentazocine_Kudo1992_reference_sbml.zip" download>Pentazocine_Kudo1992_reference_sbml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_pentazocine/Pentazocine_Kudo1992_reference/Pentazocine_Kudo1992_reference_cellml.zip" download>Pentazocine_Kudo1992_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**Source paper** (the parameters are its): Kudo T, Kudo M, Kimura F, Ishihara H, Matsuki A. [Pharmacokinetics of ketamine and pentazocine during total intravenous anesthesia with droperidol, pentazocine and ketamine]. Masui. The Japanese journal of anesthesiology 41(11):1772–1776 (1992).
+
+**This record:** Pharmacolibrary, model `Pentazocine_Kudo1992_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_pentazocine/Pentazocine_Kudo1992_reference>
+
+```bibtex
+@misc{pharmacolibrary_PentazocineKudo1992reference,
+  title  = {{Pharmacolibrary model Pentazocine_Kudo1992_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_pentazocine/Pentazocine_Kudo1992_reference},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

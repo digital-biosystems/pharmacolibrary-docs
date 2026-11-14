@@ -4,11 +4,11 @@
 
 # Cadmium — `Cadmium_Zhong2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="Cadmium" model-id="Cadmium_Zhong2024_reference" status="rejected" stale="false" population="six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)" measured-compound="cadmium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Cadmium" model-id="Cadmium_Zhong2024_reference" status="rejected" stale="false" population="bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)" measured-compound="Cadmium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhong G, Lin Z, Liu F, Xie M, Chen R, Tan QG. Toxicokinetics and Mussel Watch: Addressing Interspecies Differences for Coastal Cadmium Contamination Assessment. Environmental science & technology 58(33):14618–14628 (2024).
@@ -16,7 +16,9 @@ Zhong G, Lin Z, Liu F, Xie M, Chen R, Tan QG. Toxicokinetics and Mussel Watch: A
 
 ## Population and dosing
 
-**Population:** six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata) · condition chronic dietary exposure · age group adult.
+**Population:** bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata) · condition environmental exposure.
+
+> **Species: other animal.** This record comes from an animal study (other animal), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
@@ -32,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,26 +42,51 @@ _No resolved parameters._
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| elimination rate constants (ke | Q47 | llm_confirmed |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cadmium
+- dropped 'Cd uptake rate constants (ku' → Q349: a water-uptake rate in 'L g-1 d-1' (bioaccumulation from the medium), not a body toxicokinetic parameter
+- dropped 'uptake rate constants' → Q349: a water-uptake rate in 'L g-1 d-1' (bioaccumulation from the medium), not a body toxicokinetic parameter
+- dropped duplicate Q47 ('elimination rate constants', value '0.0125') — already have one for this compound
+- dropped 'ku' → Q410: the uptake rate from the exposure medium (bioaccumulation), not a body toxicokinetic parameter
+- dropped duplicate Q47 ('ke', value '0.0275') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=Cadmium
+- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available, and no PDF or abstract text to fall back on
+- no GROBID TEI available — transcribed from abstract in Zhong_2024_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- 4 value(s) printed only as a range — midpoint taken, record routed to review
+- 4 value(s) printed only as a range — midpoint taken, record routed to review
+- 4 value(s) printed only as a range — midpoint taken, record routed to review
+- 4 value(s) printed only as a range — midpoint taken, record routed to review
+- 4 value(s) printed only as a range — midpoint taken, record routed to review
+- 4 value(s) printed only as a range — midpoint taken, record routed to review
 
 ## Validation
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | fail | 0 |
-| C0b_disposition_core | fail |  |
-| C8_topology | pass |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | fail |  | 0 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Zhong_2024:abstract'] |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -83,4 +110,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcadmium%5D%20Cadmium_Zhong2024_reference&body=Drug%3A%20cadmium%0ARecord%3A%20Cadmium_Zhong2024_reference%0APaper%3A%20Zhong_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_cadmium/Cadmium_Zhong2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-09-08 13:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-12 20:52 UTC</sub>

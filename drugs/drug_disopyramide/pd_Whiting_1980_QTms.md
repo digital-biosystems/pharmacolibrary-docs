@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;disopyramide&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/&quot;},{&quot;label&quot;:&quot;Whiting_1980 \u00b7 PD prolongation of the QT interval&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Disopyramide_Bryson1978_reference&quot;,&quot;label&quot;:&quot;Bryson_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_reference&quot;,&quot;label&quot;:&quot;Aso_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Disopyramide_Bryson1978_reference&quot;,&quot;label&quot;:&quot;Bryson_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_reference&quot;,&quot;label&quot;:&quot;Aso_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Whiting_1980_QTms&quot;,&quot;label&quot;:&quot;Whiting_1980 \u00b7 \u0394QTms&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/pd_Whiting_1980_QTms.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Kelman_1980_QT&quot;,&quot;label&quot;:&quot;Kelman_1980 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/pd_Kelman_1980_QT.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kelman_1980_QT_2&quot;,&quot;label&quot;:&quot;Kelman_1980 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/pd_Kelman_1980_QT_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Thibonnier_1984_delta_QT&quot;,&quot;label&quot;:&quot;Thibonnier_1984 \u00b7 delta QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/pd_Thibonnier_1984_delta_QT.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prolongation of the QT interval — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Disopyramide (concentrations from the PK model of Aso_2001) drives prolongation of the QT interval (in ms): delayed effect through an effect compartment.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 - **paper:** `Whiting_1980`
 - **model family:** `effect_compartment`
@@ -47,7 +47,7 @@ Whiting B et al., Quantitative analysis of the disopyrami…, British journal of
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | 14.5 ms/jig ml-' | — |
+| slope | 14.5 ms/jig ml-' | 14.5 (1)/(kg/m3) |
 
 Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 14.5
 
@@ -55,6 +55,7 @@ Deviations:
 
 - `defaulted_parameters` — E0
 - `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
+- `pd_binding_slope_unit_assumed` — slope unit "ms/jig ml-'" read as response per mg/ml
 
 ## Review
 
@@ -80,15 +81,32 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_modelica.zip" download>Disopyramide_Whiting1980_PD_qtms_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_matlab.zip" download>Disopyramide_Whiting1980_PD_qtms_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_modelica.zip" download>Disopyramide_Whiting1980_PD_qtms_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_fmi.zip" download>Disopyramide_Whiting1980_PD_qtms_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_matlab.zip" download>Disopyramide_Whiting1980_PD_qtms_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_sbml.zip" download>Disopyramide_Whiting1980_PD_qtms_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_cellml.zip" download>Disopyramide_Whiting1980_PD_qtms_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_sbml.zip" download>Disopyramide_Whiting1980_PD_qtms_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_cellml.zip" download>Disopyramide_Whiting1980_PD_qtms_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `exposure_per_s` | 1 |  |
+| input | model | `slope` | 14.5 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -106,7 +124,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_disopyramide/Disopyramide_Whiting1980_PD_qtms/Disopyramide_Whiting1980_PD_qtms_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Disopyramide_Whiting1980_PD_qtms_params.json` · controls `Disopyramide_Whiting1980_PD_qtms_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="1,3-Butadiene" model-id="D_13Butadiene_Laib1988_reference" status="needs_review" stale="false" population="mice (B6C3F1) and rats (Sprague-Dawley)" measured-compound="1,3-Butadiene" parameterization="apparent" topology="1C"></div>
 
@@ -22,10 +22,10 @@ Laib RJ, Filser JG, Kreiling R. Species differences in butadiene metabolism betw
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 2 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -45,7 +45,13 @@ Laib RJ, Filser JG, Kreiling R. Species differences in butadiene metabolism betw
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is 13 butadiene's own; they describe 1,3-Butadiene. Extracted — 1,3-Butadiene: CLm/F 7.3e+03 mL/h/kg, Vmax 400 µg/h/kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

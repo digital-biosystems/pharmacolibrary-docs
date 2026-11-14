@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Ethylene Oxide&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/&quot;},{&quot;label&quot;:&quot;Valdez-Flores_2011 \u00b7 PD lymphoid mortality&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EthyleneOxide_Li2011_reference&quot;,&quot;label&quot;:&quot;Li_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lymphoid mortality — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,6 +17,10 @@
 **As extracted:** Ethylene_oxide drives lymphoid mortality: time-to-event model.
 
 **Model:** No model was generated from this record.
+
+> The paper describes a time-to-event model where ethylene oxide concentrations (in ppm) stimulate lymphoid mortality with a proportional effect, but the underlying pharmacodynamic mechanism is not specified in the available text.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Valdez-Flores_2011`
 - **model family:** `tte`

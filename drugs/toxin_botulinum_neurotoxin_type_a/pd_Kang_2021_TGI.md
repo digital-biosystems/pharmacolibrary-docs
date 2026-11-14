@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Botulinum neurotoxin type A inhibits tumor growth in a K-PD model by modulating a virtual PK compartment linked to tumor volume, with an EDK50 of 0.00116 Unit/h. The model estimates an EMAX of 0.164 mol and a first-order elimination rate constant (KCD) of 0.0427 h-1, alongside growth parameters L0 (0.013 h-1) and L1 (16.7 h-1).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Kang_2021`
 - **model family:** `emax`
 - **driver:** `not_resolved`

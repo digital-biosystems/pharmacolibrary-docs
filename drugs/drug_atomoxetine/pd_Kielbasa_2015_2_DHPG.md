@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;Simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Plasma DHPG — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+# Plasma DHPG — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss:120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -49,98 +49,14 @@ Kielbasa W et al., Pharmacodynamics of norepinephrine reup…, Journal of clinic
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
 Primary extraction: `qwen3.6:27b-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/79 fields) | 79 |
+| `gpt-oss:120b` | no answer | – | – (extracted nothing for this PD record) |
 
-<details><summary>79 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | atomoxetine, duloxetine, edivoxetine |  | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition |  | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown |  | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_i |  | mismatch |
-| `gpt-oss:120b` | `parameters[Q22]` | 75 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 67 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q22]` | 37 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q27]` | 17.7 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q27]` | 12.8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q27]` | 53.4 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q27]` | 44.6 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q27]` | 40.9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 36 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 68 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 18 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 13 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 8 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 11 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 9 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 12 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q317]` | 1.23 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q317]` | 3.18 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q317]` | 0.0874 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q317]` | 0.0839 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q317]` | 0.481 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.895 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.235 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 177 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 241 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 53.3209 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 18.3 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 2.37 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.367 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.313 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.329 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.334 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.309 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 24 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 25 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 25 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.529 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.415 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.378 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.747 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 0.514 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1240 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1080 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1160 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1130 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1080 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 29 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 15 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 23 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 2180 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1880 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 2260 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1850 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1678 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.777 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.525 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 1.37 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.507 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.411 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.166 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.0979 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.0850 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.166 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | 0.0413 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | 47 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | 74 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q76]` | 95.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q76]` | 76.5 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q76]` | 954 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q76]` | 542 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q76]` | 504 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 1.55 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 1.30 |  | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 1.13 |  | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

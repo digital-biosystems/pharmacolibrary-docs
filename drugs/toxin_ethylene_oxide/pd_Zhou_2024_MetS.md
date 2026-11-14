@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Ethylene Oxide&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/&quot;},{&quot;label&quot;:&quot;Zhou_2024 \u00b7 PD metabolic syndrome&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EthyleneOxide_Li2011_reference&quot;,&quot;label&quot;:&quot;Li_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metabolic syndrome — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -16,6 +17,10 @@
 **As extracted:** HbEO drives metabolic syndrome: direct linear effect.
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide sufficient information to identify a specific pharmacodynamic mechanism, as no full text is available to describe how ethylene oxide or its driver compound HbEO influences metabolic syndrome status.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhou_2024`
 - **model family:** `linear`

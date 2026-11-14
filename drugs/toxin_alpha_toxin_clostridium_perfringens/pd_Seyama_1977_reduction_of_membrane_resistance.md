@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Hemolysin concentrations (in µg/ml) produced a reversible reduction of membrane resistance in rabbit S-A node and right atrium cells, with the mechanism attributed to an increased conductance to Na⁺ rather than a classical PKPD production or elimination model. The concentration required to yield half-maximal reduction of membrane resistance was 7.5 µg/ml, and no other rate constants (e.g., kin, kout, ke0) or Hill coefficients were reported.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Seyama_1977`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

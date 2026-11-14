@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Botulinum neurotoxin type A is modeled as an efficacy response acting solely on dose without pharmacokinetic data or specified mechanistic parameters, with the effect direction and form remaining undefined.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Rahman_2026`
 - **model family:** `tmdd`
 - **driver:** `dose_only`

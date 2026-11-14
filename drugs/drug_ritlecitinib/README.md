@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ritlecitinib&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Huh_2025_QTcF&quot;,&quot;label&quot;:&quot;Huh_2025 \u00b7 \u2206QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ritlecitinib/pd_Huh_2025_QTcF.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # ritlecitinib
 
@@ -47,7 +48,7 @@ Ritlecitinib is a JAK inhibitor medicine used to treat alopecia areata, a condit
 | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Wang_2025_EBA](drugs/drug_ritlecitinib/pd_Wang_2025_EBA.md) | eyebrow assessment ← ritlecitinib · indirect response — drug stimulates the production of eyebrow assessment | model (no simulator) | Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13283](https://doi.org/10.1002/psp4.13283) |
 | <span class="pk-badge pk-badge--green">Reproduces with caveats</span> | [Wang_2025_ELA](drugs/drug_ritlecitinib/pd_Wang_2025_ELA.md) | eyelash assessment ← ritlecitinib · indirect response — drug stimulates the production of eyelash assessment | model (no simulator) | Wang Y et al., Population exposure-response analysis o…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13283](https://doi.org/10.1002/psp4.13283) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Huh_2024_SALT](drugs/drug_ritlecitinib/pd_Huh_2024_SALT.md) | SALT score ← ritlecitinib · indirect response — drug stimulates the production of SALT score | model (no simulator) | Huh Y et al., Moving Beyond Boundaries: Utilization o…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01347-6](https://doi.org/10.1007/s40262-024-01347-6) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Huh_2025_QTcF](drugs/drug_ritlecitinib/pd_Huh_2025_QTcF.md) | change from baseline heart rate– corrected QTcF (∆QTcF) ← ritlecitinib · direct linear effect | model (no simulator) | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Huh_2025_QTcF](drugs/drug_ritlecitinib/pd_Huh_2025_QTcF.md) | change from baseline heart rate– corrected QTcF (∆QTcF) ← ritlecitinib · direct linear effect | ▶ model + simulator | Huh Y et al., Comprehensive Safety Exposure-Response…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70030](https://doi.org/10.1002/psp4.70030) |
 
 ## ADME sites
 

@@ -52,9 +52,13 @@ Juul RV et al., Pharmacodynamic modelling of placebo an…, Basic & clinical pha
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 138 ms | 0.138 s |
-| slope | 0.266 -2 | — |
+| slope | 0.266 -2 | 0.000266 (s)/(1) |
 
-Closed-form check points (response, SI): `at_1` = 0.138, `per_e_fold` = 0.266
+Closed-form check points (response, SI): `at_1` = 0.138, `per_e_fold` = 0.000266
+
+Deviations:
+
+- `pd_binding_slope_unit_assumed` — slope unit '-2' read as ms per exposure unit
 
 ## Review
 
@@ -120,12 +124,12 @@ Primary extraction: `qwen3.6:27b-q8_0`; retained regardless of cross-check verdi
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peaklat/Buprenorphine_Juul2014_PD_peaklat_modelica.zip" download>Buprenorphine_Juul2014_PD_peaklat_modelica.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peaklat/Buprenorphine_Juul2014_PD_peaklat_modelica.zip" download>Buprenorphine_Juul2014_PD_peaklat_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peaklat/Buprenorphine_Juul2014_PD_peaklat_matlab.zip" download>Buprenorphine_Juul2014_PD_peaklat_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peaklat/Buprenorphine_Juul2014_PD_peaklat_matlab.zip" download>Buprenorphine_Juul2014_PD_peaklat_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peaklat/Buprenorphine_Juul2014_PD_peaklat_sbml.zip" download>Buprenorphine_Juul2014_PD_peaklat_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peaklat/Buprenorphine_Juul2014_PD_peaklat_cellml.zip" download>Buprenorphine_Juul2014_PD_peaklat_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peaklat/Buprenorphine_Juul2014_PD_peaklat_sbml.zip" download>Buprenorphine_Juul2014_PD_peaklat_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peaklat/Buprenorphine_Juul2014_PD_peaklat_cellml.zip" download>Buprenorphine_Juul2014_PD_peaklat_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
@@ -146,7 +150,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

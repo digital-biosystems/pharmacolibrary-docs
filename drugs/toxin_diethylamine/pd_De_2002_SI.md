@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Diethylamine (DEA) dosing stimulates a continuous Stimulation Index (SI) response, though the specific pharmacodynamic mechanism and model family are not defined in the provided text. No potency or rate parameters (such as IC50, EC50, Imax, or kout) are reported.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `De_2002`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Dede_2017 \u00b7 cr&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Arsenic" model-id="Arsenic_Dede2017_cr" status="rejected" stale="false" population="adult humans" measured-compound="Arsenic (As(III), As(V), MMA(V), DMA(V), MMA(III), DMA(III))" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -42,7 +43,13 @@ _No resolved parameters._
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No model template covers this structure. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Mendez_2020 \u00b7 PD Bladder cancer&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Bladder cancer — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,6 +17,10 @@
 **As extracted:** Inorganic arsenic (the dose) drives Bladder cancer: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> The paper models the probability of bladder cancer as a function of inorganic arsenic intake dose (µg/kg-day) using a dose–response model averaging approach. Specific pharmacodynamic potency parameters such as IC50, EC50, or Emax are not stated in the excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Mendez_2020`
 - **model family:** `categorical`

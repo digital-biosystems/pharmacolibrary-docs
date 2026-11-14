@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;ropeginterferon alfa-2b&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/&quot;},{&quot;label&quot;:&quot;Qin_2025 \u00b7 PD JAK2V617F allele burden reduction&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RopeginterferonAlfa2b_Zhu2021_reference&quot;,&quot;label&quot;:&quot;Zhu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Zhu2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_CHR&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 CHR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_CHR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RopeginterferonAlfa2b_Zhu2021_reference&quot;,&quot;label&quot;:&quot;Zhu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Zhu2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_ALT&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 ALT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_ALT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_AST&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 AST&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_AST.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_CHR&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 CHR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_CHR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_JAK2V617F_allele_burden_reduction&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 JAK2V617F allele burden reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_JAK2V617F_allele_burden_reduction.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_JAK2V617F_allele_burden_reduction_2&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 JAK2V617F allele burden reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_JAK2V617F_allele_burden_reduction_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Qin_2025_anemia&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 anemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_anemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# JAK2V617F allele burden reduction — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+# JAK2V617F allele burden reduction — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--neutral" title="einfracz:gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 **As extracted:** Ropeg drives JAK2V617F allele burden reduction: direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The paper does not describe the mechanism for JAK2V617F allele burden reduction, detailing instead indirect-effect models where serum ropeg concentrations inhibit the production of HCT, PLT, and WBC (e.g., HCT with IC50 of 137 ng mL−1 and PLT with IC50 of 61.9 ng mL−1). The provided record lists a linear additive model with an intercept of -8.528 and exposure effect of -0.43 for the allele burden, but the paper excerpts do not validate this model or provide potency parameters for this specific response.
 >
@@ -51,13 +51,14 @@ Qin A et al., Population Pharmacokinetics-Pharmacodyn…, Pharmacology research 
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | -0.43 | — |
+| slope | -0.43 | -4.3e+05 (1)/(kg/m3) |
 
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = -0.43
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = -4.3e+05
 
 Deviations:
 
 - `defaulted_parameters` — E0
+- `pd_binding_slope_unit_assumed` — slope unit '(none)' read as response per ng mL−1
 
 ## Review
 
@@ -77,25 +78,14 @@ Advisory:
 - defaulted: E0 — a row the paper has and the record lacks
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/6 fields) | 6 |
+| `einfracz:gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
-<details><summary>6 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | ropeg |  | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_direction` | inhibition |  | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | additive |  | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | linear |  | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q100]` | -8.528 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q335]` | -0.43 |  | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -109,15 +99,32 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_modelica.zip" download>RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_modelica.zip" download>RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_fmi.zip" download>RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_matlab.zip" download>RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_sbml.zip" download>RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_cellml.zip" download>RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_cellml.zip" download>RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `slope` | -4.3e+05 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -135,7 +142,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2/RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_params.json` · controls `RopeginterferonAlfa2b_Qin2025_PD_jak2v617f_allele_burden_2_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

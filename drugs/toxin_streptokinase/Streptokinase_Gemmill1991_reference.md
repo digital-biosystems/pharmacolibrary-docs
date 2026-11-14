@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Streptokinase&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/&quot;},{&quot;label&quot;:&quot;Gemmill_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Streptokinase_Adzerikho2022_reference&quot;,&quot;label&quot;:&quot;Adzerikho_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Adzerikho2022_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Been1986_reference&quot;,&quot;label&quot;:&quot;Been_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Been1986_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Brucato1990_reference&quot;,&quot;label&quot;:&quot;Brucato_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Brucato1990_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Col1989_reference&quot;,&quot;label&quot;:&quot;Col_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Col1989_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Dupe1985_reference&quot;,&quot;label&quot;:&quot;Dupe_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Dupe1985_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Gemmill1991_reference&quot;,&quot;label&quot;:&quot;Gemmill_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Gemmill1991_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Streptokinase_Grierson1987_reference&quot;,&quot;label&quot;:&quot;Grierson_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Grierson1987_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Hillis1987_reference&quot;,&quot;label&quot;:&quot;Hillis_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Hillis1987_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Shahbazmohammadi2026_native&quot;,&quot;label&quot;:&quot;Shahbazmohammadi_2026_native&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Shahbazmohammadi2026_native.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Shahbazmohammadi2026_polysialylated&quot;,&quot;label&quot;:&quot;Shahbazmohammadi_2026_polysialylated&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Shahbazmohammadi2026_polysialylated.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Streptokinase_Adzerikho2022_reference&quot;,&quot;label&quot;:&quot;Adzerikho_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Adzerikho2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Been1986_reference&quot;,&quot;label&quot;:&quot;Been_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Been1986_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Brucato1990_reference&quot;,&quot;label&quot;:&quot;Brucato_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Brucato1990_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Col1989_reference&quot;,&quot;label&quot;:&quot;Col_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Col1989_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Dupe1985_reference&quot;,&quot;label&quot;:&quot;Dupe_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Dupe1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Gemmill1991_reference&quot;,&quot;label&quot;:&quot;Gemmill_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Gemmill1991_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Streptokinase_Hillis1987_reference&quot;,&quot;label&quot;:&quot;Hillis_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Hillis1987_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Grierson1987_reference&quot;,&quot;label&quot;:&quot;Grierson_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Grierson1987_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Shahbazmohammadi2026_native&quot;,&quot;label&quot;:&quot;Shahbazmohammadi_2026_native&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Shahbazmohammadi2026_native.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Streptokinase_Shahbazmohammadi2026_polysialylated&quot;,&quot;label&quot;:&quot;Shahbazmohammadi_2026_polysialylated&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_streptokinase/Streptokinase_Shahbazmohammadi2026_polysialylated.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Streptokinase — `Streptokinase_Gemmill1991_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Streptokinase" model-id="Streptokinase_Gemmill1991_reference" status="extracted" stale="false" population="patients with acute myocardial infarction" measured-compound="Streptokinase" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Streptokinase" model-id="Streptokinase_Gemmill1991_reference" status="curated_candidate" stale="false" population="patients with acute myocardial infarction" measured-compound="Streptokinase" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gemmill JD, Hogg KJ, Burns JM, Rae AP, Dunn FG, Fears R et al. A comparison of the pharmacokinetic properties of streptokinase and anistreplase in acute myocardial infarction. British journal of clinical pharmacology 31(2):143–147 (1991).
@@ -37,7 +35,7 @@ Gemmill JD, Hogg KJ, Burns JM, Rae AP, Dunn FG, Fears R et al. A comparison of t
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +45,13 @@ Gemmill JD, Hogg KJ, Burns JM, Rae AP, Dunn FG, Fears R et al. A comparison of t
 
 ### Reviewer guidance
 
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of mean residence time: this record has 0.76, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -124,6 +126,18 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gemmill_1991:abstract', 'Gemmill_1991:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 5.68 L | ['Gemmill_1991:abstract', 'Gemmill_1991:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=Streptokinase) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>

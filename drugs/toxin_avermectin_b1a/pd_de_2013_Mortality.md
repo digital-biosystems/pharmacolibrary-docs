@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Abamectin concentrations cause mortality in Raoiella indica mites via a probit dose-response model, with an LC50 of 0.00004 mg/l, an LC90 of 0.00023 mg/l, and a probit slope of 1.69. The paper does not describe a specific pharmacodynamic mechanism (e.g., inhibition of production or elimination), reporting only empirical lethal concentration estimates.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `de_2013`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Hydrogen sulfide&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_sulfide/&quot;},{&quot;label&quot;:&quot;Jin_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HydrogenSulfide_Jin2024_reference&quot;,&quot;label&quot;:&quot;Jin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HydrogenSulfide_Jin2024_reference&quot;,&quot;label&quot;:&quot;Jin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_hydrogen_sulfide/HydrogenSulfide_Jin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Hydrogen sulfide — `HydrogenSulfide_Jin2024_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> The model does not reproduce the paper's terminal half-life (paper 1.03, model 1.25).
 
-<div class="pk-model-meta" hidden drug="Hydrogen sulfide" model-id="HydrogenSulfide_Jin2024_reference" status="extracted" stale="false" population="mice dosed orally with JZ-HND" measured-compound="hydrogen sulfide (H2S) / hydronidone (HND)" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Hydrogen sulfide" model-id="HydrogenSulfide_Jin2024_reference" status="needs_review" stale="false" population="mice dosed orally with JZ-HND" measured-compound="hydrogen sulfide (H2S) / hydronidone (HND)" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Jin H, Ma J, Xu B, Xu S, Hu T, Jin X et al. Thio-ProTide strategy: A novel H2S donor-drug conjugate (DDC) alleviates hepatic injury via innate lysosomal targeting. Acta pharmaceutica Sinica. B 14(12):5341–5356 (2024).
@@ -31,6 +31,8 @@ Jin H, Ma J, Xu B, Xu S, Hu T, Jin X et al. Thio-ProTide strategy: A novel H2S d
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | H2S release from JZ-6: k | kel | 0.0113 | min−1 |
@@ -38,7 +40,7 @@ Jin H, Ma J, Xu B, Xu S, Hu T, Jin X et al. Thio-ProTide strategy: A novel H2S d
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +50,13 @@ Jin H, Ma J, Xu B, Xu S, Hu T, Jin X et al. Thio-ProTide strategy: A novel H2S d
 
 ### Reviewer guidance
 
+**The model does not reproduce the paper's terminal half-life (paper 1.03, model 1.25).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is hydrogen sulfide's own; they describe hydrogen sulfide (H2S) / hydronidone (HND). Extracted — hydrogen sulfide (H2S) / hydronidone (HND): kel 0.0113 min−1, t1/2z 61.6 min.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has JZ-HND (H2S donor–drug conjugate), the second reading JZ-HND; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -128,6 +134,30 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0b_disposition_core | pass |  |
 | C0c_disposition_complete | pass |  |
 | C8_topology | pass |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | retainedFraction (measured=hydrogen sulfide (H2S) / hydronidone (HND)) | retainedFraction |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record |  | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | pass | 1.027 | 1.249 | 1.216 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.6483 | 1.249 | 1.926 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.87 | 1.249 | 1.435 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.045 | 1.249 | 1.195 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 1.249 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 0.6483 | 1.249 | 1.926 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.052 | 1.249 | 1.187 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.6383 | 1.249 | 1.956 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.6367 | 1.249 | 1.961 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.212 | 1.249 | 0.5645 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.848 | 1.249 | 0.6755 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.2 | 1.249 | 0.5675 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.3 | 1.249 | 0.5428 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

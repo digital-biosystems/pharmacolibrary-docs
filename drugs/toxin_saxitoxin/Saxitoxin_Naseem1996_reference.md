@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Saxitoxin&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/&quot;},{&quot;label&quot;:&quot;Naseem_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Saxitoxin_Bakke2010_reference&quot;,&quot;label&quot;:&quot;Bakke_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/Saxitoxin_Bakke2010_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxitoxin_Naseem1996_reference&quot;,&quot;label&quot;:&quot;Naseem_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/Saxitoxin_Naseem1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Saxitoxin_Bakke2010_reference&quot;,&quot;label&quot;:&quot;Bakke_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/Saxitoxin_Bakke2010_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxitoxin_Naseem1996_reference&quot;,&quot;label&quot;:&quot;Naseem_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/Saxitoxin_Naseem1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> VH has no unit.
 
 <div class="pk-model-meta" hidden drug="Saxitoxin" model-id="Saxitoxin_Naseem1996_reference" status="needs_review" stale="false" population="male Wistar rats" measured-compound="[3H]saxitoxinol" parameterization="mechanistic" topology="retention"></div>
 
@@ -50,9 +50,13 @@ Naseem SM. Toxicokinetics of [3H]saxitoxinol in peripheral and central nervous s
 
 ### Reviewer guidance
 
+**VH has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is saxitoxin's own; they describe [3H]saxitoxinol. Extracted — [3H]saxitoxinol: t1/2z 29.3 min, FR 91.2 % of the residual dose, VH 63.7 % of the residual dose, FH 17.4 % of the residual dose.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has [3H]saxitoxinol, the second reading saxitoxinol (radiolabeled); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record indicates that cylindrospermopsin (measured in μM) stimulates TNF-α release, but it lacks the specific pharmacodynamic model structure, mechanism of action, and kinetic parameters. The paper excerpts are unavailable, preventing the identification of potency values or rate constants.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Moosova_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

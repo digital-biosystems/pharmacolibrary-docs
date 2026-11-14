@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;ropeginterferon alfa-2b&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/&quot;},{&quot;label&quot;:&quot;Qin_2025 \u00b7 PD increased ALT&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RopeginterferonAlfa2b_Zhu2021_reference&quot;,&quot;label&quot;:&quot;Zhu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Zhu2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_CHR&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 CHR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_CHR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RopeginterferonAlfa2b_Zhu2021_reference&quot;,&quot;label&quot;:&quot;Zhu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Zhu2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_ALT&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 ALT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_ALT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Qin_2025_AST&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 AST&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_AST.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_CHR&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 CHR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_CHR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_JAK2V617F_allele_burden_reduction&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 JAK2V617F allele burden reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_JAK2V617F_allele_burden_reduction.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_JAK2V617F_allele_burden_reduction_2&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 JAK2V617F allele burden reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_JAK2V617F_allele_burden_reduction_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Qin_2025_anemia&quot;,&quot;label&quot;:&quot;Qin_2025 \u00b7 anemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ropeginterferon_alfa_2b/pd_Qin_2025_anemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # increased ALT — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Ropeg drives increased ALT: direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The relationship between ropeg exposure and increased ALT was described by a logistic regression model where exposure increased the log-odds of ALT elevation with an intercept of -4.099 and an exposure coefficient of 0.1156. The paper does not specify a physiological mechanism (e.g., direct toxicity or indirect effect) for this ALT increase, distinguishing it from the indirect effect models used for hematological parameters.
 >
@@ -51,13 +51,14 @@ Qin A et al., Population Pharmacokinetics-Pharmacodyn…, Pharmacology research 
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | 0.1156 | — |
+| slope | 0.1156 | 1.156e+05 (1)/(kg/m3) |
 
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.1156
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 1.156e+05
 
 Deviations:
 
 - `defaulted_parameters` — E0
+- `pd_binding_slope_unit_assumed` — slope unit '(none)' read as response per ng mL−1
 
 ## Review
 
@@ -106,15 +107,32 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_modelica.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_matlab.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_modelica.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_fmi.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_matlab.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_sbml.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_cellml.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_sbml.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_cellml.zip" download>RopeginterferonAlfa2b_Qin2025_PD_alt_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `slope` | 1.156e+05 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -132,7 +150,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_ropeginterferon_alfa_2b/RopeginterferonAlfa2b_Qin2025_PD_alt/RopeginterferonAlfa2b_Qin2025_PD_alt_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `RopeginterferonAlfa2b_Qin2025_PD_alt_params.json` · controls `RopeginterferonAlfa2b_Qin2025_PD_alt_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

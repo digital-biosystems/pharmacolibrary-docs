@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;De_2025 \u00b7 PD lung cancer&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lung cancer — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,6 +17,10 @@
 **As extracted:** Inorganic arsenic (concentrations from the PK model of Zhang_2022) drives lung cancer: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> The provided excerpts describe general benchmark dose modeling methodologies for case-control studies using inorganic arsenic exposure (in µg/L) as the driver for lung cancer, without specifying a mechanistic pharmacodynamic model or its parameters. Consequently, the paper does not provide specific potency (IC50, EC50) or rate values (kin, kout, ke0) or a defined kinetic mechanism for the arsenic-lung cancer relationship.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `De_2025`
 - **model family:** `categorical`

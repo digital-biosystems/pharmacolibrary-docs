@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Zhang_2024 \u00b7 PD sodium level&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sodium level — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span>
@@ -16,6 +17,10 @@
 **As extracted:** Arsenic (concentrations from the PK model of Mardirosian_2017) drives sodium level (in mmol/L): direct linear effect.
 
 **Model:** No model was generated from this record.
+
+> Arsenic acts as a continuous stimulant on serum sodium levels via a linear additive model, based on cited pharmacokinetic data. The study does not report specific potency (e.g., IC50, EC50) or rate (e.g., kin, kout, ke0) parameters.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhang_2024`
 - **model family:** `linear`

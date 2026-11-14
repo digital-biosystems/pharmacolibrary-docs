@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Zhang_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Arsenic — `Arsenic_Zhang2021_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> Clearance, volume of distribution, and absorption lag time for arsenic lack values, as extracted parameters describe AS4S4, forcing the use of library placeholders.
 
-<div class="pk-model-meta" hidden drug="Arsenic" model-id="Arsenic_Zhang2021_reference" status="extracted" stale="false" population="pediatric patients with acute promyelocytic leukemia" measured-compound="Arsenic" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Arsenic" model-id="Arsenic_Zhang2021_reference" status="model_quarantined" stale="false" population="pediatric patients with acute promyelocytic leukemia" measured-compound="Arsenic" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Zhang L, Yang XM, Chen J, Hu L, Yang F, Zhou Y et al. Population Pharmacokinetics and Safety of Oral Tetra-Arsenic Tetra-Sulfide Formula in Pediatric Acute Promyelocytic Leukemia. Drug design, development and therapy 15:1633-1640 (2021).
@@ -24,12 +25,14 @@ Zhang L, Yang XM, Chen J, Hu L, Yang F, Zhou Y et al. Population Pharmacokinetic
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | θ1 | kabs | 0.013 | 1/h | 17.3 | 0.353 (48.2% RSE) |
@@ -39,7 +42,7 @@ Zhang L, Yang XM, Chen J, Hu L, Yang F, Zhou Y et al. Population Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +50,13 @@ Zhang L, Yang XM, Chen J, Hu L, Yang F, Zhou Y et al. Population Pharmacokinetic
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Clearance, volume of distribution, and absorption lag time for arsenic lack values, as extracted parameters describe AS4S4, forcing the use of library placeholders.**
+
+The record attributes all four numerical parameters (kabs, CL/F, V/F, and allometric exponent) to Tetra-Arsenic Tetra-Sulfide (AS4S4) rather than the measured compound, arsenic. Consequently, the model builder defaulted arsenic-specific clearance, volume of distribution, and lag time to library placeholders. This mismatch between the specified drug entity and the source of parameter values prevented the model from being published. Extracted — Tetra-Arsenic Tetra-Sulfide Formula (AS4S4): kabs 0.013 1/h, CL/F 1.38e+03 L/h, V/F 7.08e+03 L, allometric_exponent 0.629.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
@@ -105,6 +114,17 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.38e+03 L/h | ['t0002:row7:col1'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 7.08e+03 L | ['t0002:row9:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;abrocitinib&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/&quot;},{&quot;label&quot;:&quot;Wang_2022_2 \u00b7 PD change from baseline in Fridericia-corrected QT (\u2206QTcF)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abrocitinib_Wojciechowski2022_reference&quot;,&quot;label&quot;:&quot;Wojciechowski_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wojciechowski_2022_2_CIRC&quot;,&quot;label&quot;:&quot;Wojciechowski_2022_2 \u00b7 CIRC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/pd_Wojciechowski_2022_2_CIRC.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abrocitinib_Wojciechowski2022_reference&quot;,&quot;label&quot;:&quot;Wojciechowski_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/Abrocitinib_Wojciechowski2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wojciechowski_2022_2_CIRC&quot;,&quot;label&quot;:&quot;Wojciechowski_2022_2 \u00b7 CIRC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/pd_Wojciechowski_2022_2_CIRC.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2022_2_HR&quot;,&quot;label&quot;:&quot;Wang_2022_2 \u00b7 \u2206HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/pd_Wang_2022_2_HR.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2022_2_QTcF&quot;,&quot;label&quot;:&quot;Wang_2022_2 \u00b7 \u2206QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abrocitinib/pd_Wang_2022_2_QTcF.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # change from baseline in Fridericia-corrected QT (∆QTcF) — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Abrocitinib (concentrations from the PK model of Wojciechowski_2022) drives change from baseline in Fridericia-corrected QT (∆QTcF) (in milliseconds): direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Abrocitinib plasma concentrations (ng/mL) directly stimulate change from baseline in Fridericia-corrected QT (∆QTcF) (milliseconds) via a linear additive mechanism with a slope of 0.0026 ms/(ng/mL) and an intercept of –0.0062 ms. The paper specifies this linear relationship but does not describe underlying physiological mechanisms such as effect compartments, production/elimination rates, or Emax parameters.
 >
@@ -61,9 +61,13 @@ Wang X et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | -0.0062 ms | -6.2e-06 s |
-| slope | 0.0026 ms/[ng/mL] | — |
+| slope | 0.0026 ms/[ng/mL] | 2.6 (s)/(kg/m3) |
 
-Closed-form check points (response, SI): `at_0` = -6.2e-06, `per_exposure_unit` = 0.0026
+Closed-form check points (response, SI): `at_0` = -6.2e-06, `per_exposure_unit` = 2.6
+
+Deviations:
+
+- `pd_binding_slope_unit_assumed` — slope unit 'ms/[ng/mL]' read as ms per ng/mL
 
 ## Review
 
@@ -114,7 +118,9 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_abrocitinib/Abrocitinib_Wang2022v2_PD_qtcf/Abrocitinib_Wang2022v2_PD_qtcf_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_abrocitinib/Abrocitinib_Wang2022v2_PD_qtcf/Abrocitinib_Wang2022v2_PD_qtcf_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Abrocitinib_Wang2022v2_PD_qtcf_params.json` · controls `Abrocitinib_Wang2022v2_PD_qtcf_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

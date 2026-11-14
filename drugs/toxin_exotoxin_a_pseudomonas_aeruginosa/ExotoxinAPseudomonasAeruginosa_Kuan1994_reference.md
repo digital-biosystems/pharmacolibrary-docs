@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Exotoxin A (Pseudomonas aeruginosa)&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/&quot;},{&quot;label&quot;:&quot;Kuan_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ExotoxinAPseudomonasAeruginosa_Benhar1995_reference&quot;,&quot;label&quot;:&quot;Benhar_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/ExotoxinAPseudomonasAeruginosa_Benhar1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ExotoxinAPseudomonasAeruginosa_Kuan1994_reference&quot;,&quot;label&quot;:&quot;Kuan_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/ExotoxinAPseudomonasAeruginosa_Kuan1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ExotoxinAPseudomonasAeruginosa_Benhar1995_reference&quot;,&quot;label&quot;:&quot;Benhar_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/ExotoxinAPseudomonasAeruginosa_Benhar1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ExotoxinAPseudomonasAeruginosa_Kuan1994_reference&quot;,&quot;label&quot;:&quot;Kuan_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/ExotoxinAPseudomonasAeruginosa_Kuan1994_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Exotoxin A (Pseudomonas aeruginosa) — `ExotoxinAPseudomonasAeruginosa_Kuan1994_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">mouse</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Reproduces with caveats</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">mouse</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Exotoxin A (Pseudomonas aeruginosa)" model-id="ExotoxinAPseudomonasAeruginosa_Kuan1994_reference" status="extracted" stale="false" population="unknown" measured-compound="Pseudomonas exotoxin A (PE-Cys(R313C), PEGylated and unmodified)" parameterization="mechanistic" topology="retention"></div>
+<div class="pk-model-meta" hidden drug="Exotoxin A (Pseudomonas aeruginosa)" model-id="ExotoxinAPseudomonasAeruginosa_Kuan1994_reference" status="accepted_with_caveats" stale="false" population="unknown" measured-compound="Pseudomonas exotoxin A (PE-Cys(R313C), PEGylated and unmodified)" parameterization="mechanistic" topology="retention"></div>
 
 ## Citation
 Kuan CT, Wang QC, Pastan I. Pseudomonas exotoxin A mutants. Replacement of surface exposed residues in domain II with cysteine residues that can be modified with polyethylene glycol in a site-specific manner. The Journal of biological chemistry 269(10):7610–7616 (1994).
@@ -34,9 +32,13 @@ Kuan CT, Wang QC, Pastan I. Pseudomonas exotoxin A mutants. Replacement of surfa
 |---|---|---|---|
 | mean residence time (t 1/2) | t1/2z | 72 | min |
 
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--green" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Reproduces with caveats</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +48,13 @@ Kuan CT, Wang QC, Pastan I. Pseudomonas exotoxin A mutants. Replacement of surfa
 
 ### Reviewer guidance
 
+**Accepted with a caveat: the covariate scenarios were not simulated.**
+
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is exotoxin a pseudomonas aeruginosa's own; they describe Pseudomonas exotoxin A (PE-Cys(R313C), PEGylated and unmodified).
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has PE-Cys(R313C) and mPEG-conjugated PE-Cys(R313C), the second reading PEGylated PE-Cys(R313C); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -124,6 +130,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Kuan_1994:abstract'] |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | retainedFraction (measured=Pseudomonas exotoxin A (PE-Cys(R313C), PEGylated and unmodified)) | retainedFraction | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 1 pool(s) with their shares and half-times | nPool, A and Tb match the record | retention pools emitted as read (nPool, A, Tb) |
+| T3_topology_template |  | pass | retention → TK_Retention* | TK_Retention | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

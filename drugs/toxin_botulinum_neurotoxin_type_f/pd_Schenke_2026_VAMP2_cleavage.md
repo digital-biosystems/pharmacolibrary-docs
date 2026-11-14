@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model describes botulinum neurotoxin type F inhibiting VAMP2 cleavage with an IC50 of 0.802 pM. The paper excerpts do not specify the underlying mechanistic model (e.g., Emax or effect compartment).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Schenke_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Tawhidul_2025 \u00b7 PD frequency of water-related diseases (FWRD)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # frequency of water-related diseases (FWRD) — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,6 +17,10 @@
 **As extracted:** Arsenic (concentrations from the PK model of Mardirosian_2017) drives frequency of water-related diseases (FWRD): categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> Arsenic concentration in water, categorized as no, medium, or high contamination levels (in ppb), acts on the frequency of water-related diseases (FWRD) by increasing the probability of experiencing multiple morbidity types. The study does not specify a mechanistic pharmacodynamic parameter such as IC50 or EC50, instead reporting marginal effects where high arsenic areas elevate the likelihood of FWRD-1, FWRD-2, and FWRD-3 morbidity by approximately 7%, 4%, and 1% respectively compared to no arsenic areas.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Tawhidul_2025`
 - **model family:** `categorical`

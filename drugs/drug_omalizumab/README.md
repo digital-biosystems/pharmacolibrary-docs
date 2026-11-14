@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;omalizumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Oh_2023_itch_severity_score&quot;,&quot;label&quot;:&quot;Oh_2023 \u00b7 itch severity score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # omalizumab
 
@@ -32,7 +33,7 @@ Omalizumab, a monoclonal antibody, is used to treat allergic conditions such as 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Oh_2023_itch_severity_score](drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md) | weekly itch severity score ← total omalizumab · delayed effect through an effect compartment | model (no simulator) | Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12953](https://doi.org/10.1002/psp4.12953) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Oh_2023_itch_severity_score](drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md) | weekly itch severity score ← total omalizumab · delayed effect through an effect compartment | ▶ model + simulator | Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12953](https://doi.org/10.1002/psp4.12953) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhao_2024_CFB_UAS7](drugs/drug_omalizumab/pd_Zhao_2024_CFB_UAS7.md) | change from baseline in Urticaria Activity Score ← omalizumab · inhibition effect | — | Zhao A et al., Time-course and dose-effect of omalizum…, European journal of clinica… (2024) | [10.1007/s00228-024-03725-2](https://doi.org/10.1007/s00228-024-03725-2) |
 
 ## ADME sites

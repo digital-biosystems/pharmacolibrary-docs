@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Botulinum toxin&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/&quot;},{&quot;label&quot;:&quot;Ryu_2024 \u00b7 PD compound muscle action potential&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumToxin_AlSaleem2008_reference&quot;,&quot;label&quot;:&quot;Al-Saleem_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_AlSaleem2008_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Espinoza2019_reference&quot;,&quot;label&quot;:&quot;Espinoza_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Espinoza2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Ravichandran2006_reference&quot;,&quot;label&quot;:&quot;Ravichandran_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Ravichandran2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumToxin_AlSaleem2008_reference&quot;,&quot;label&quot;:&quot;Al-Saleem_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_AlSaleem2008_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Espinoza2019_reference&quot;,&quot;label&quot;:&quot;Espinoza_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Espinoza2019_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Ravichandran2006_reference&quot;,&quot;label&quot;:&quot;Ravichandran_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Ravichandran2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # compound muscle action potential — PD  <span class="pk-badge pk-badge--green">Reproduces with caveats</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -19,6 +19,10 @@
 **As extracted:** Botulinum_toxin (the dose) drives compound muscle action potential: indirect response — drug inhibits the production of compound muscle action potential.
 
 **Model:** Model available in **Models**; browser simulation unavailable.
+
+> Botulinum toxin type A acts on the compound muscle action potential via an indirect response model that inhibits acetylcholine release, with EDK50 values of 1.07, 6.19, and 0.00938 U day⁻¹ in mice, rats, and humans, respectively. The key rate parameters Kin are 365, 217, and 255 day⁻¹, with Base values of 98.4, 91.9, and 100 for mice, rats, and humans.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Ryu_2024`
 - **model family:** `indirect_response_i`
@@ -123,7 +127,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

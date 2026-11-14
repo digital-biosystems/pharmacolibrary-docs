@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cylindrospermopsin concentrations (measured in μM) exert a stimulatory effect on interleukin-6 (IL-6) levels. The specific pharmacodynamic mechanism (e.g., Emax, effect compartment, or indirect response) is not provided in the available text.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Moosova_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

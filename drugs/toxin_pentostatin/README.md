@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Pentostatin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentostatin_McConnell1979_reference&quot;,&quot;label&quot;:&quot;McConnell_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentostatin/Pentostatin_McConnell1979_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Pentostatin
 
@@ -29,18 +30,24 @@ Pentostatin is only found in individuals that have used or taken this drug. It i
 |---|---|---|---|---|---|---|
 | 2'-deoxycoformycin (pentostatin) | parent | 268.273 | C11H16N4O4 | PubChem | [439693](https://pubchem.ncbi.nlm.nih.gov/compound/439693) | McConnell_1979 |
 
+## Start here
+
+> **McConnell_1979_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> normal and L1210 leukemic mice. [Run it in the simulator](drugs/toxin_pentostatin/Pentostatin_McConnell1979_reference.md?tab=Simulation) · [record](drugs/toxin_pentostatin/Pentostatin_McConnell1979_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: a value printed only as a range — the record carries its midpoint</sub> | [McConnell_1979_reference](drugs/toxin_pentostatin/Pentostatin_McConnell1979_reference.md) | — | retention function (no model) | 1 | McConnell WR et al., Pharmokinetics of 2'-deoxycoformycin in…, Drug metabolism and disposi… (1979) | — |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: a value printed only as a range — the record carries its midpoint</sub> | [McConnell_1979_reference](drugs/toxin_pentostatin/Pentostatin_McConnell1979_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | McConnell WR et al., Pharmokinetics of 2'-deoxycoformycin in…, Drug metabolism and disposi… (1979) | — |
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Geiger_1987_reference](drugs/toxin_pentostatin/Pentostatin_Geiger1987_reference.md) | — | 1-compartment (no model) | 0 | Geiger JD et al., Pharmacokinetics of 2'-deoxycoformycin,…, Neuropharmacology (1987) | [10.1016/0028-3908(87)90103-1](https://doi.org/10.1016/0028-3908(87)90103-1) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span> | [do_2019_LD50](drugs/toxin_pentostatin/pd_do_2019_LD50.md) | Lethal dose of epimastigotes ← pentostatin · inhibition effect | — | do Carmo GM et al., Cordycepin (3'-deoxyadenosine) and pent…, Experimental parasitology (2019) | [10.1016/j.exppara.2019.02.016](https://doi.org/10.1016/j.exppara.2019.02.016) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.95).">mouse</span> | [do_2019_LD50](drugs/toxin_pentostatin/pd_do_2019_LD50.md) | Lethal dose of epimastigotes ← pentostatin · inhibition effect | — | do Carmo GM et al., Cordycepin (3'-deoxyadenosine) and pent…, Experimental parasitology (2019) | [10.1016/j.exppara.2019.02.016](https://doi.org/10.1016/j.exppara.2019.02.016) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Venner_1981_plasma_concentrations_of_adenosine](drugs/toxin_pentostatin/pd_Venner_1981_plasma_concentrations_of_adenosine.md) | plasma concentrations of adenosine biomarker turnover ← pentostatin | — | Venner PM et al., Levels of 2'-deoxycoformycin, adenosine…, Cancer research (1981) | — |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Venner_1981_plasma_concentrations_of_deoxyadenosine](drugs/toxin_pentostatin/pd_Venner_1981_plasma_concentrations_of_deoxyadenosine.md) | plasma concentrations of deoxyadenosine biomarker turnover ← pentostatin | — | Venner PM et al., Levels of 2'-deoxycoformycin, adenosine…, Cancer research (1981) | — |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Venner_1981_urine_concentrations_of_deoxyadenosine](drugs/toxin_pentostatin/pd_Venner_1981_urine_concentrations_of_deoxyadenosine.md) | urine concentrations of deoxyadenosine biomarker turnover ← pentostatin | — | Venner PM et al., Levels of 2'-deoxycoformycin, adenosine…, Cancer research (1981) | — |

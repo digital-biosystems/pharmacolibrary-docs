@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/&quot;},{&quot;label&quot;:&quot;Siebinga_2024 \u00b7 PD PSA&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Siebinga_2024_PSA&quot;,&quot;label&quot;:&quot;Siebinga_2024 \u00b7 PSA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/pd_Siebinga_2024_PSA.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # PSA — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** [177Lu]Lu-PSMA-I&T drives PSA (in µg/L): delayed effect through an effect compartment.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The model describes the effect of [177Lu]Lu-PSMA-I&T on PSA using an effect compartment where the drug acts as a linear elimination term (Edrug) from the PSA compartment, with a direct effect parameter (KD, direct) of 0.000335 L·day−1·GBq−1 and a PSA growth rate (kG) of 0.000408 h−1. A delayed linear effect was also included, characterized by an effect compartment rate constant (ke0) of 0.00128 h−1 and a delayed effect parameter of 0.0000328 L·day−1·MBq−1.
 >
@@ -54,14 +54,15 @@ Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 140 µg/L | 0.00014 kg/m3 |
-| slope | 0.00335 L·day−1·GBq−1 | — |
+| slope | 0.00335 L·day−1·GBq−1 | 3.35e-09 (kg/m3)/(1) |
 
-Closed-form check points (response, SI): `at_0` = 0.00014, `per_exposure_unit` = 0.00335
+Closed-form check points (response, SI): `at_0` = 0.00014, `per_exposure_unit` = 3.35e-09
 
 Deviations:
 
 - `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
 - `pd_binding_off_target_driver` — driver compound '[177Lu]Lu-PSMA-I&T' is not 'lutetium_177lu_vipivotide_tetraxetan' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+- `pd_binding_slope_unit_assumed` — slope unit 'L·day−1·GBq−1' read as µg/L per MBq/L
 
 ## Review
 
@@ -118,7 +119,9 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2024_PD_psa/Lutetium177luVipivotideTetraxetan_Siebinga2024_PD_psa_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2024_PD_psa/Lutetium177luVipivotideTetraxetan_Siebinga2024_PD_psa_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Lutetium177luVipivotideTetraxetan_Siebinga2024_PD_psa_params.json` · controls `Lutetium177luVipivotideTetraxetan_Siebinga2024_PD_psa_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

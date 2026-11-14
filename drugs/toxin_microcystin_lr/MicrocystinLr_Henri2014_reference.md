@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.60).">in vitro</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> no kinetic quantity — no half-life, rate constant, volume or clearance (exposure/outcome paper).
 
 <div class="pk-model-meta" hidden drug="Microcystin-LR" model-id="MicrocystinLr_Henri2014_reference" status="rejected" stale="false" population="Caco-2 cell monolayers (human intestinal epithelial in vitro model)" measured-compound="Microcystin-LR" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,9 +47,13 @@ Henri J, Huguet A, Delmas JM, Besson A, Sanders P, Fessard V. Low in vitro perme
 
 ### Reviewer guidance
 
+**no kinetic quantity — no half-life, rate constant, volume or clearance (exposure/outcome paper).**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — microcystin lr: C0 0.3.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of loaded concentrations: this record has 0.3, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Botulinum neurotoxin type F (BoNT/F) was administered as a dose in zebrafish, causing 96-hour immobilization with a mean ID50 of 0.51 ± 0.12 pg/fish. The paper attributes this response to flaccid paralysis resulting from BoNT neurotoxicity.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Chatla_2016`
 - **model family:** `categorical`
 - **driver:** `dose_only`

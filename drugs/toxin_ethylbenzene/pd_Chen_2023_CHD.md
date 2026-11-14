@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes cumulative ethylbenzene exposure (in ppb-day) as a risk factor for incident coronary heart disease (CHD) events via a proportional hazard model, but does not define a specific pharmacodynamic mechanism (e.g., inhibition or stimulation kinetics) or provide potency/rate parameters such as IC50, EC50, or Imax. Proposed mechanisms in the discussion involve systemic inflammation and autonomic nervous system modulation, but these are not modeled with specific PK/PD rate constants or potency values.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Chen_2023`
 - **model family:** `tte`
 - **driver:** `dose_only`

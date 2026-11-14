@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Lead&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/&quot;},{&quot;label&quot;:&quot;Dede_2017 \u00b7 optimal&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lead_Blackman2026_reference&quot;,&quot;label&quot;:&quot;Blackman_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Blackman2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lead_Macente2023_reference&quot;,&quot;label&quot;:&quot;Macente_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Macente2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lead_Nguyen2021_reference&quot;,&quot;label&quot;:&quot;Nguyen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Nguyen2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lead_Janus2025_reference&quot;,&quot;label&quot;:&quot;Janus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Janus2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lead_Podgorek2023_reference&quot;,&quot;label&quot;:&quot;Podgor\u0161ek_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Podgorek2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lead_Ravix2024_reference&quot;,&quot;label&quot;:&quot;Ravix_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Ravix2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Lead — `Lead_Dede2017_optimal`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 17:01 UTC (Needs review), but the paper was screened again on 2026-09-08 17:26 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record was refused because the nonlinear arsenic metabolism structure could not be represented within the available model framework.
+> Disposition is incomplete with unconverted review values, and volume lacks a unit; nonlinear topology is unsupported.
 
-<div class="pk-model-meta" hidden drug="Lead" model-id="Lead_Dede2017_optimal" status="needs_review" stale="true" population="adult humans" measured-compound="arsenic, cadmium, chromium, nickel, lead" parameterization="mechanistic" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="Lead" model-id="Lead_Dede2017_optimal" status="needs_review" stale="false" population="adult humans" measured-compound="arsenic, cadmium, chromium, nickel, lead" parameterization="mechanistic" topology="manual_model_class"></div>
 
 ## Citation
 Dede E, Tindall MJ, Cherrie JW, Hankin S, Collins C. Physiologically-based pharmacokinetic and toxicokinetic models for estimating human exposure to five toxic elements through oral ingestion (2017).
@@ -20,9 +21,9 @@ Dede E, Tindall MJ, Cherrie JW, Hankin S, Collins C. Physiologically-based pharm
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
@@ -32,10 +33,12 @@ Dede E, Tindall MJ, Cherrie JW, Hankin S, Collins C. Physiologically-based pharm
 |---|---|---|---|
 | Pb | Pb:a | 1 |  |
 | V , As(III)→MMA max | V | 748.8 |  |
+| CL (mL/h/kg) | CL | 0.45 | mL/h/kg |
+| median value of the absorption rate constant | kabs | 1.22 | /h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,22 +48,24 @@ Dede E, Tindall MJ, Cherrie JW, Hankin S, Collins C. Physiologically-based pharm
 
 ### Reviewer guidance
 
-**The record was refused because the nonlinear arsenic metabolism structure could not be represented within the available model framework.**
+**Disposition is incomplete with unconverted review values, and volume lacks a unit; nonlinear topology is unsupported.**
 
-The model specifies nonlinear methylation steps from As(III) to MMA(V) and DMA(V) using Vmax and Km, which the current framework cannot implement. This structural limitation prevented the model from being built for the lead-based paper's context. Extracted — lead: Pb:a 1, V 749.
+The model lacks a self-consistent disposition core because volume and clearance values from other papers cannot replace this paper's evidence. The volume parameter lacks a unit, preventing SI conversion for model use. Additionally, the nonlinear metabolic topology exceeds the available structural templates. Extracted — lead: Pb:a 1, V 749; arsenic, cadmium, chromium, nickel, lead: CL 0.45 mL/h/kg, kabs 1.22 /h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | link | source |
-|---|---|---|---|---|---|
-| Pb | `Q411` · Pb:a | 1 |  | llm (0.6) | tab_2:row17:col2 |
-| V , As(III)→MMA max | `Q61` · V | 748.8 |  | llm (0.6) | Dede_2017_table_S1:row46:col6, Dede_2017_table_S2:row0:col4 |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Pb | `Q411` · Pb:a | 1 |  |  |  |  | llm (0.6) | tab_2:row17:col2 |
+| V , As(III)→MMA max | `Q61` · V | 748.8 |  |  |  |  | llm (0.6) | Dede_2017_table_S1:row46:col6, Dede_2017_table_S2:row0:col4 |
+| CL (mL/h/kg) | `Q22` · CL | 0.45 | mL/h/kg | 8.75e-09 | m3/s | L/h | review_gapfill (0.7) | Alfosea-Cuadrado_2024:review |
+| median value of the absorption rate constant | `Q49` · kabs | 1.22 | /h | 0.0003389 | 1/s | 1/h | review_gapfill (0.7) | Bandín-Vilar_2022:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -87,6 +92,11 @@ The model specifies nonlinear methylation steps from As(III) to MMA(V) and DMA(V
 - topology: prose indicates saturable/MM/TMDD/time-varying kinetics — manual_model_class
 - status held at "Needs review" — not promoted
 - population split: 'optimal' subgroup of Dede_2017 (paper reports 2 populations: exposure, optimal)
+- gap-filled Q22 (CL) from Alfosea-Cuadrado_2024's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Bandín-Vilar_2022's review values (primary lacked it)
+- skipped review gap-fill of TLAG from Biju_2026: its label names a different analyte ('exposure') — 'Time of exposure'
 
 **Extraction notes:**
 - unparsed cell tab_2:row5:col3 = '7 -14 days'
@@ -110,8 +120,12 @@ The model specifies nonlinear methylation steps from As(III) to MMA(V) and DMA(V
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Alfosea-Cuadrado_2024:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Bandín-Vilar_2022:review'] |
 | C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['Dede_2017_table_S1:row46:col6', 'Dede_2017_table_S2:row0:col4'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.45 | ['Alfosea-Cuadrado_2024:review'] |
 | C8_topology | fail |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0315 L/h | ['Alfosea-Cuadrado_2024:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,4 +159,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blead%5D%20Lead_Dede2017_optimal&body=Drug%3A%20lead%0ARecord%3A%20Lead_Dede2017_optimal%0APaper%3A%20Dede_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_lead/Lead_Dede2017_optimal%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-09-08 17:26 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-12 20:13 UTC</sub>

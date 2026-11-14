@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Heat-labile enterotoxin (Escherichia coli)" model-id="HeatLabileEnterotoxinEscherichiaColi_Lazorov1993_reference" status="rejected" stale="false" population="mouse intestine tissues and Caco-2 cell monolayers" measured-compound="LTB (B subunit of E. coli heat-labile enterotoxin)" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,9 +46,13 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorescein-labelled LTB / 125I-LTB, the second reading Heat-labile enterotoxin B subunit (LTB); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 

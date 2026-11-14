@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cylindrospermopsin concentrations (in $μ$M) act on nitric oxide (NO) levels, stimulating the response. The pharmacodynamic model is classified as unknown, so no mechanism or specific potency and rate parameters are stated.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Moosova_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

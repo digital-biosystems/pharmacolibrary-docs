@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;heparin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Heparin_Salem2022_reference&quot;,&quot;label&quot;:&quot;Salem_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_heparin/Heparin_Salem2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Heparin_Salem2022_reference&quot;,&quot;label&quot;:&quot;Salem_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_heparin/Heparin_Salem2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Salem_2022_aPTT&quot;,&quot;label&quot;:&quot;Salem_2022 \u00b7 aPTT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_heparin/pd_Salem_2022_aPTT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # heparin
 
@@ -40,7 +40,7 @@ Heparin is an anticoagulant (blood thinner) used to treat and prevent blood clot
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Delavenne_2017_ACT](drugs/drug_heparin/pd_Delavenne_2017_ACT.md) | activated clotting time biomarker turnover ← heparin | — | Delavenne X et al., Pharmacokinetic/pharmacodynamic model f…, British journal of anaesthe… (2017) | [10.1093/bja/aex044](https://doi.org/10.1093/bja/aex044) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Delavenne_2017_anti_Xa](drugs/drug_heparin/pd_Delavenne_2017_anti_Xa.md) | anti-factor Xa activity biomarker turnover ← heparin | — | Delavenne X et al., Pharmacokinetic/pharmacodynamic model f…, British journal of anaesthe… (2017) | [10.1093/bja/aex044](https://doi.org/10.1093/bja/aex044) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Salem_2022_aPTT](drugs/drug_heparin/pd_Salem_2022_aPTT.md) | activated partial thromboplastin time ← unfractionated heparin · direct linear effect | model (no simulator) | Salem AM et al., Reassessing the Pediatric Dosing Recomm…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2007](https://doi.org/10.1002/jcph.2007) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Salem_2022_aPTT](drugs/drug_heparin/pd_Salem_2022_aPTT.md) | activated partial thromboplastin time ← unfractionated heparin · direct linear effect | ▶ model + simulator | Salem AM et al., Reassessing the Pediatric Dosing Recomm…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2007](https://doi.org/10.1002/jcph.2007) |
 
 ## ADME sites
 

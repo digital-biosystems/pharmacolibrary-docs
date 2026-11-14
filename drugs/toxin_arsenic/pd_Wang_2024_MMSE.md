@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Wang_2024 \u00b7 PD mini-mental state examination (MMSE) score&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mini-mental state examination (MMSE) score — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -16,6 +17,10 @@
 **As extracted:** Urinary As drives mini-mental state examination (MMSE) score: direct log-linear effect.
 
 **Model:** No model was generated from this record.
+
+> The provided record indicates that urinary arsenic concentrations act on the Mini-Mental State Examination (MMSE) score via a log-linear model with an inhibition effect direction, though the specific mechanism of action is marked as unknown. No potency or rate parameters (e.g., IC50, kout) are available as no full paper text was provided.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2024`
 - **model family:** `log_linear`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Botulinum neurotoxin type B&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_neurotoxin_type_b/&quot;},{&quot;label&quot;:&quot;Cheng_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumNeurotoxinTypeB_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_neurotoxin_type_b/BotulinumNeurotoxinTypeB_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumNeurotoxinTypeB_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_neurotoxin_type_b/BotulinumNeurotoxinTypeB_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The retention function is incomplete because parameters A1 and A2 are missing, preventing the full definition of the disposition model.
 
 <div class="pk-model-meta" hidden drug="Botulinum neurotoxin type B" model-id="BotulinumNeurotoxinTypeB_Cheng2015_reference" status="needs_review" stale="false" population="mice" measured-compound="Botulinum neurotoxin type B" parameterization="mechanistic" topology="retention"></div>
 
@@ -49,7 +49,13 @@ Cheng LW, Henderson TD, Lam TI, Stanker LH. Use of Monoclonal Antibodies in the 
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The retention function is incomplete because parameters A1 and A2 are missing, preventing the full definition of the disposition model.**
+
+The record describes Botulinum neurotoxin type B kinetics in mice using a retention structure. Although initial and terminal half-lives and clearance are provided, the disposition is deemed incomplete because the retention function lacks the required A1 and A2 parameters. Consequently, the disposition component cannot be fully populated for simulation. Extracted — botulinum neurotoxin type b: t1/2α 2.3 min, t1/2β 105 min, CL 0.27 ml/h/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

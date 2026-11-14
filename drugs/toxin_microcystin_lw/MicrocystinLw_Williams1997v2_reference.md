@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Microcystin-LW" model-id="MicrocystinLw_Williams1997v2_reference" status="rejected" stale="false" population="saltwater mussels (Mytilus edulis)" measured-compound="microcystins (Adda-containing, incl. covalently bound fraction)" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,9 +48,13 @@ Williams DE, Dawe SC, Kent ML, Andersen RJ, Craig M, Holmes CF. Bioaccumulation 
 
 ### Reviewer guidance
 
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has microcystins (Microcystis aeruginosa dietary exposure, containing microcystin-LR and -LW congeners), the second reading microcystins; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record lacks a volume for 1,3-butadiene and has a unitless Vmax for 1,2-epoxybutene-3, preventing valid model construction.
 
 <div class="pk-model-meta" hidden drug="1,3-Butadiene" model-id="D_13Butadiene_Laib1990_reference" status="needs_review" stale="false" population="Sprague-Dawley rats and B6C3F1 mice" measured-compound="1,3-butadiene" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -22,10 +22,10 @@ Laib RJ, Filser JG, Kreiling R, Vangala RR, Bolt HM. Inhalation pharmacokinetics
 
 ## Model
 
-**Structure:** nonlinear / manual; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 1 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -44,7 +44,13 @@ Laib RJ, Filser JG, Kreiling R, Vangala RR, Bolt HM. Inhalation pharmacokinetics
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record lacks a volume for 1,3-butadiene and has a unitless Vmax for 1,2-epoxybutene-3, preventing valid model construction.**
+
+Only clearance was extracted for the parent drug, leaving the volume undefined and relying on invalid library defaults. The metabolic conversion rate for 1,2-epoxybutene-3 is listed as 400 without any units, making it impossible to convert to standard SI values. Extracted — 1,2-epoxybutene-3: Vmax 400.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

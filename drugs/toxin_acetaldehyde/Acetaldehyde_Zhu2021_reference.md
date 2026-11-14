@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Acetaldehyde" model-id="Acetaldehyde_Zhu2021_reference" status="rejected" stale="false" population="healthy adults" measured-compound="Acetaldehyde" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -42,7 +42,13 @@ _No resolved parameters._
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No model template covers this structure. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 

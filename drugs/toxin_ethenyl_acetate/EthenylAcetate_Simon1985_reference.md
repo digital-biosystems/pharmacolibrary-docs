@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Only clearance was extracted — no volume; cL has no unit (+1 more).
 
 <div class="pk-model-meta" hidden drug="Ethenyl acetate" model-id="EthenylAcetate_Simon1985_reference" status="needs_review" stale="false" population="rats" measured-compound="vinyl acetate" parameterization="mechanistic" topology="1C"></div>
 
@@ -22,10 +22,10 @@ Simon P, Filser JG, Bolt HM. Metabolism and pharmacokinetics of vinyl acetate. A
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 1 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -44,7 +44,13 @@ Simon P, Filser JG, Bolt HM. Metabolism and pharmacokinetics of vinyl acetate. A
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Only clearance was extracted — no volume; cL has no unit (+1 more).**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — ethenyl acetate: CL 3e+04 ml/h per kg body weight.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Ethylene Oxide&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/&quot;},{&quot;label&quot;:&quot;Song_2023 \u00b7 PD prevalence of kidney stones&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EthyleneOxide_Li2011_reference&quot;,&quot;label&quot;:&quot;Li_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prevalence of kidney stones — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -16,6 +17,10 @@
 **As extracted:** Hemoglobin ethylene oxide drives prevalence of kidney stones: direct log-linear effect.
 
 **Model:** No model was generated from this record.
+
+> The paper does not describe the pharmacodynamic mechanism linking ethylene oxide concentrations to the prevalence of kidney stones. The provided data reports only epidemiological odds ratios for kidney stone prevalence across exposure quartiles (Q2: 0.922, Q3: 1.004, Q4: 1.535) without specifying potency or rate parameters.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Song_2023`
 - **model family:** `log_linear`

@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> No mechanism or parameter values are provided in the available record or excerpts for the inhibition of growth by 1,4-naphthoquinone.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Cheng_2017`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

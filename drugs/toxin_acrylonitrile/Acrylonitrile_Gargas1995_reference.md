@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> This abstract-only acrylonitrile model lacks fitted clearance, using unlinked metabolites and borrowed external values instead of paper-specific disposition parameters.
 
 <div class="pk-model-meta" hidden drug="Acrylonitrile" model-id="Acrylonitrile_Gargas1995_reference" status="needs_review" stale="false" population="male F-344 rat" measured-compound="Acrylonitrile and 2-cyanoethylene oxide" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -24,10 +24,10 @@ Gargas ML, Andersen ME, Teo SK, Batra R, Fennell TR, Kedderis GL. A physiologica
 
 ## Model
 
-**Structure:** nonlinear / manual; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 5 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -50,7 +50,13 @@ Gargas ML, Andersen ME, Teo SK, Batra R, Fennell TR, Kedderis GL. A physiologica
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**This abstract-only acrylonitrile model lacks fitted clearance, using unlinked metabolites and borrowed external values instead of paper-specific disposition parameters.**
+
+The record was built from the abstract alone, relying on reported summary statistics rather than a fitted model. No volume of distribution was extracted for acrylonitrile, and clearance data were borrowed from external papers rather than derived from Gargas_1995. Metabolite definitions lack compartment assignments, and the specified absorption lag time of 0.003 seconds is likely a unit misinterpretation. Extracted — acrylonitrile: Vmax 6.5 mg/hr/kg, Km 1.5 mg/liter; Acrylonitrile and 2-cyanoethylene oxide: CL 6.3 L/h, kabs 0.0017 min−1, tlag 0.003 s.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;paclitaxel&quot;,&quot;href&quot;:&quot;drugs/drug_paclitaxel/&quot;},{&quot;label&quot;:&quot;Sun_2025 \u00b7 PD CIPN8&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paclitaxel_De2026_reference&quot;,&quot;label&quot;:&quot;De_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paclitaxel/Paclitaxel_De2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paclitaxel_De2026_reference&quot;,&quot;label&quot;:&quot;De_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paclitaxel/Paclitaxel_De2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sun_2025_CIPN8&quot;,&quot;label&quot;:&quot;Sun_2025 \u00b7 CIPN8&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_paclitaxel/pd_Sun_2025_CIPN8.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CIPN8 — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+# CIPN8 — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--neutral" title="einfracz:gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 **As extracted:** Paclitaxel (concentrations from the PK model of Ait-Oudhia_2012) drives CIPN8: delayed effect through an effect compartment.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The final PD model links paclitaxel plasma concentrations to CIPN8 scores via a hybrid structure that combines an effect compartment with a turnover mechanism, where the drug stimulates the response after exceeding a threshold value of 1735.75 ng/mL. The key population parameters reported are kout (0.0027), ke0 (0.00022 mL/ng), and k (21.65).
 >
@@ -54,13 +54,14 @@ Sun Y et al., Pharmacokinetic-Pharmacodynamic Model o…, Clinical and translati
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0.3 | — |
-| slope | 21.65 | — |
+| slope | 21.65 | 2.165e+07 (1)/(kg/m3) |
 
-Closed-form check points (response, SI): `at_0` = 0.3, `per_exposure_unit` = 21.65
+Closed-form check points (response, SI): `at_0` = 0.3, `per_exposure_unit` = 2.165e+07
 
 Deviations:
 
 - `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
+- `pd_binding_slope_unit_assumed` — slope unit '(none)' read as response per ng/mL
 
 ## Review
 
@@ -76,28 +77,14 @@ Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
 | `T4_defaults` | pass | nothing defaulted |
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
 Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `einfracz:gpt-oss-120b` | secondary_empty | 0.0 (0/9 fields) | 9 |
+| `einfracz:gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
-<details><summary>9 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `einfracz:gpt-oss-120b` | `driver_compound` | paclitaxel |  | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_direction` | stimulation |  | mismatch |
-| `einfracz:gpt-oss-120b` | `effect_form` | proportional |  | mismatch |
-| `einfracz:gpt-oss-120b` | `model_family` | effect_compartment |  | mismatch |
-| `einfracz:gpt-oss-120b` | `parameters[Q321]` | 1735.75 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q324]` | 0.3 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q326]` | 0.00022 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q328]` | 0.0027 |  | only_one_extracted |
-| `einfracz:gpt-oss-120b` | `parameters[Q335]` | 21.65 |  | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -111,15 +98,32 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paclitaxel/Paclitaxel_Sun2025_PD_cipn8/Paclitaxel_Sun2025_PD_cipn8_modelica.zip" download>Paclitaxel_Sun2025_PD_cipn8_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paclitaxel/Paclitaxel_Sun2025_PD_cipn8/Paclitaxel_Sun2025_PD_cipn8_modelica.zip" download>Paclitaxel_Sun2025_PD_cipn8_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_paclitaxel/Paclitaxel_Sun2025_PD_cipn8/Paclitaxel_Sun2025_PD_cipn8_fmi.zip" download>Paclitaxel_Sun2025_PD_cipn8_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_paclitaxel/Paclitaxel_Sun2025_PD_cipn8/Paclitaxel_Sun2025_PD_cipn8_matlab.zip" download>Paclitaxel_Sun2025_PD_cipn8_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_paclitaxel/Paclitaxel_Sun2025_PD_cipn8/Paclitaxel_Sun2025_PD_cipn8_sbml.zip" download>Paclitaxel_Sun2025_PD_cipn8_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_paclitaxel/Paclitaxel_Sun2025_PD_cipn8/Paclitaxel_Sun2025_PD_cipn8_cellml.zip" download>Paclitaxel_Sun2025_PD_cipn8_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0.3 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `slope` | 2.165e+07 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -137,7 +141,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_paclitaxel/Paclitaxel_Sun2025_PD_cipn8/Paclitaxel_Sun2025_PD_cipn8_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_paclitaxel/Paclitaxel_Sun2025_PD_cipn8/Paclitaxel_Sun2025_PD_cipn8_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Paclitaxel_Sun2025_PD_cipn8_params.json` · controls `Paclitaxel_Sun2025_PD_cipn8_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

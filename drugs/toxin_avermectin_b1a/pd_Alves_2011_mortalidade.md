@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Abamectin concentration (ppb) drives binary mortality in Culex quinquefasciatus larvae via a dose-response mechanism, modeled using probit regression. The paper reports a median lethal concentration (CL50) of 51.82 ppb, but does not specify the underlying pharmacodynamic mechanism (e.g., inhibition of production/elimination or direct Emax effect).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Alves_2011`
 - **model family:** `categorical`
 - **driver:** `dose_only`

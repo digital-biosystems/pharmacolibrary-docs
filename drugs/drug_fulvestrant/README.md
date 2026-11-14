@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;fulvestrant&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_TS&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 TS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # fulvestrant
 
@@ -24,7 +25,7 @@ Fulvestrant is an estrogen receptor antagonist used to treat breast cancer. It i
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Chigutsa_2026_TS](drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md) | Tumor size ← abemaciclib + fulvestrant · disease-progression model | model (no simulator) | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Chigutsa_2026_TS](drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md) | Tumor size ← abemaciclib + fulvestrant · disease-progression model | ▶ model + simulator | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
 
 ## ADME sites
 

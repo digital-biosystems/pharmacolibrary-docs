@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Abamectin concentration acts on mortality of Amblyseius largoensis via a probit dose-response model, with reported LC50 and LC90 values of 0.092 mg/l and 13.740 mg/l respectively. The paper does not describe a specific pharmacodynamic mechanism (e.g., inhibition of production or elimination) beyond the statistical probit fit for categorical mortality data.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `de_2013`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

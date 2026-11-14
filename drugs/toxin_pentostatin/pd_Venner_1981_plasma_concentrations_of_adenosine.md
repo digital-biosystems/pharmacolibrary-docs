@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Pentostatin&quot;,&quot;href&quot;:&quot;drugs/toxin_pentostatin/&quot;},{&quot;label&quot;:&quot;Venner_1981 \u00b7 PD plasma concentrations of adenosine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentostatin_McConnell1979_reference&quot;,&quot;label&quot;:&quot;McConnell_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_pentostatin/Pentostatin_McConnell1979_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # plasma concentrations of adenosine — PD  <span class="pk-badge pk-badge--red">Rejected</span>
@@ -16,6 +17,10 @@
 **As extracted:** Pentostatin drives plasma concentrations of adenosine (the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide sufficient information to determine the pharmacodynamic mechanism, potency, or rate parameters for pentostatin's effect on plasma adenosine concentrations.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Venner_1981`
 - **model family:** `unknown`

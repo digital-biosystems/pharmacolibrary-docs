@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/&quot;},{&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 PD Tumor size (sum of longest diameters of target lesions)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 Tumor size (sum of longest diameters of target lesions)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/pd_Chigutsa_2026_Tumor_size_sum_of_longest_diameters_of_target_.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Tumor size (sum of longest diameters of target lesions) — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:qwen3.8-27b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Abemaciclib (concentrations from the PK model of Chigutsa_2020::estimate_see) drives Tumor size (sum of longest diameters of target lesions) (in mm): delayed effect through transit (transduction) compartments.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Abemaciclib plasma concentrations (ng/mL) were linked to change in tumor size (sum of longest target-lesion diameters, mm); the record describes a proportional stimulatory transduction model, but the supplied paper excerpts do not specify the mechanism. Recorded values are 0.0399 week⁻¹ per unit plasma concentration for drug effect, 0.934 week⁻¹ transit rate, 0.00715 mm/week tumor growth rate, 8.44 weeks to half the initial drug effect, and 7.11 weeks’ delay before waning begins.
 >
@@ -113,15 +114,32 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_modelica.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_modelica.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_fmi.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_matlab.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_matlab.zip</a> <span class="pk-size">(2.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_sbml.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_cellml.zip" download>Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 36.7 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `slope` | 6.597e-08 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -139,7 +157,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_abemaciclib/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet/Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_params.json` · controls `Abemaciclib_Chigutsa2026_PD_tumor_size_sum_of_longest_diamet_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

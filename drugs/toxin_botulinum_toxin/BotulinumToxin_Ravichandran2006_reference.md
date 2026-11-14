@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Botulinum toxin&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/&quot;},{&quot;label&quot;:&quot;Ravichandran_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumToxin_AlSaleem2008_reference&quot;,&quot;label&quot;:&quot;Al-Saleem_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_AlSaleem2008_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Espinoza2019_reference&quot;,&quot;label&quot;:&quot;Espinoza_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Espinoza2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Ravichandran2006_reference&quot;,&quot;label&quot;:&quot;Ravichandran_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Ravichandran2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BotulinumToxin_AlSaleem2008_reference&quot;,&quot;label&quot;:&quot;Al-Saleem_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_AlSaleem2008_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Espinoza2019_reference&quot;,&quot;label&quot;:&quot;Espinoza_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Espinoza2019_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Guptill2021_reference&quot;,&quot;label&quot;:&quot;Guptill_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Guptill2021_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BotulinumToxin_Ravichandran2006_reference&quot;,&quot;label&quot;:&quot;Ravichandran_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_botulinum_toxin/BotulinumToxin_Ravichandran2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The record lists 245 min and 1640.0 L as midpoints of abstract-reported ranges, preventing use of precise fitted values for botulinum toxin.
 
 <div class="pk-model-meta" hidden drug="Botulinum toxin" model-id="BotulinumToxin_Ravichandran2006_reference" status="needs_review" stale="false" population="mice and rats" measured-compound="Botulinum toxin" parameterization="mechanistic" topology="retention"></div>
 
@@ -46,7 +46,13 @@ Ravichandran E, Gong Y, Al Saleem FH, Ancharski DM, Joshi SG, Simpson LL. An ini
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The record lists 245 min and 1640.0 L as midpoints of abstract-reported ranges, preventing use of precise fitted values for botulinum toxin.**
+
+The terminal half-life is recorded as 245 min and the volume of distribution as 1640.0 L, both derived as midpoints from ranges found only in the paper's abstract. This abstraction means no precise fitted parameter values were available, so reported summary statistics stood in for a complete model. Extracted — botulinum toxin: t1/2z 245 min, V 1.64e+03 L.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

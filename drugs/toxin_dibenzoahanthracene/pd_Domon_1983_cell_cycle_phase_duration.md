@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The provided record identifies 'dibenzoahanthracene' as the drug and 'cell cycle phase duration' as the response but contains no pharmacodynamic model parameters or mechanism details. Since no paper excerpts are available, the specific mechanism, potency, and rate values cannot be determined.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Domon_1983`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

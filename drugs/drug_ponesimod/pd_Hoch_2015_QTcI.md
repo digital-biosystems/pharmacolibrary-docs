@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ponesimod&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/&quot;},{&quot;label&quot;:&quot;Hoch_2015 \u00b7 PD QTcI&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ponesimod_Valenzuela2021_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Valenzuela_2021_TLC&quot;,&quot;label&quot;:&quot;Valenzuela_2021 \u00b7 TLC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/pd_Valenzuela_2021_TLC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ponesimod_Valenzuela2021_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/Ponesimod_Valenzuela2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hoch_2015_QTcI&quot;,&quot;label&quot;:&quot;Hoch_2015 \u00b7 QTcI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/pd_Hoch_2015_QTcI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Valenzuela_2021_TLC&quot;,&quot;label&quot;:&quot;Valenzuela_2021 \u00b7 TLC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ponesimod/pd_Valenzuela_2021_TLC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # QTcI — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Ponesimod (concentrations from the PK model of Valenzuela_2021) drives QTcI (in ms): direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The paper does not provide the mechanism, but the record describes a linear additive stimulation model for ponesimod. The model specifies that plasma ponesimod concentration (ng/mL) increases the QTcI interval (ms) with a slope of 0.0053 ms per ng/mL.
 >
@@ -50,9 +50,9 @@ Hoch M et al., Effect of ponesimod, a selective S1P1 r…, Basic & clinical phar
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | 0.0053 ms per ng/mL | — |
+| slope | 0.0053 ms per ng/mL | 5.3 meter ** 3 * second / kilogram |
 
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.0053
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 5.3
 
 Deviations:
 
@@ -83,14 +83,31 @@ Advisory:
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ponesimod/Ponesimod_Hoch2015_PD_qtci/Ponesimod_Hoch2015_PD_qtci_modelica.zip" download>Ponesimod_Hoch2015_PD_qtci_modelica.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ponesimod/Ponesimod_Hoch2015_PD_qtci/Ponesimod_Hoch2015_PD_qtci_fmi.zip" download>Ponesimod_Hoch2015_PD_qtci_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ponesimod/Ponesimod_Hoch2015_PD_qtci/Ponesimod_Hoch2015_PD_qtci_matlab.zip" download>Ponesimod_Hoch2015_PD_qtci_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ponesimod/Ponesimod_Hoch2015_PD_qtci/Ponesimod_Hoch2015_PD_qtci_sbml.zip" download>Ponesimod_Hoch2015_PD_qtci_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ponesimod/Ponesimod_Hoch2015_PD_qtci/Ponesimod_Hoch2015_PD_qtci_cellml.zip" download>Ponesimod_Hoch2015_PD_qtci_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `slope` | 5.3 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -108,7 +125,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_ponesimod/Ponesimod_Hoch2015_PD_qtci/Ponesimod_Hoch2015_PD_qtci_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_ponesimod/Ponesimod_Hoch2015_PD_qtci/Ponesimod_Hoch2015_PD_qtci_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Ponesimod_Hoch2015_PD_qtci_params.json` · controls `Ponesimod_Hoch2015_PD_qtci_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

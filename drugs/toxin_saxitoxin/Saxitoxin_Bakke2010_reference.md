@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Saxitoxin&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/&quot;},{&quot;label&quot;:&quot;Bakke_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Saxitoxin_Bakke2010_reference&quot;,&quot;label&quot;:&quot;Bakke_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/Saxitoxin_Bakke2010_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Saxitoxin_Naseem1996_reference&quot;,&quot;label&quot;:&quot;Naseem_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/Saxitoxin_Naseem1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Saxitoxin_Bakke2010_reference&quot;,&quot;label&quot;:&quot;Bakke_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/Saxitoxin_Bakke2010_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Saxitoxin_Naseem1996_reference&quot;,&quot;label&quot;:&quot;Naseem_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_saxitoxin/Saxitoxin_Naseem1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Saxitoxin — `Saxitoxin_Bakke2010_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
-
-<div class="pk-model-meta" hidden drug="Saxitoxin" model-id="Saxitoxin_Bakke2010_reference" status="extracted" stale="false" population="Atlantic salmon (Salmo salar) and Atlantic cod (Gadus morhua)" measured-compound="Saxitoxin (STX)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Saxitoxin" model-id="Saxitoxin_Bakke2010_reference" status="curated_candidate" stale="false" population="Atlantic salmon (Salmo salar) and Atlantic cod (Gadus morhua)" measured-compound="Saxitoxin (STX)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bakke MJ, Horsberg TE. Kinetic properties of saxitoxin in Atlantic salmon (Salmo salar) and Atlantic cod (Gadus morhua). Comparative biochemistry and physiology. Toxicology & pharmacology : CBP 152(4):444–450 (2010).
@@ -39,7 +37,7 @@ Bakke MJ, Horsberg TE. Kinetic properties of saxitoxin in Atlantic salmon (Salmo
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +47,13 @@ Bakke MJ, Horsberg TE. Kinetic properties of saxitoxin in Atlantic salmon (Salmo
 
 ### Reviewer guidance
 
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is saxitoxin's own; they describe Saxitoxin (STX).
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has Saxitoxin (STX), the second reading Saxitoxin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -125,6 +127,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 13.4 L/h | ['Bakke_2010:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 32.7 L | ['Bakke_2010:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=Saxitoxin (STX)) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Validation definitions</summary>

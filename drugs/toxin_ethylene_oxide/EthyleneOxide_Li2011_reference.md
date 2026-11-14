@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Ethylene Oxide&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/&quot;},{&quot;label&quot;:&quot;Li_2011 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EthyleneOxide_Li2011_reference&quot;,&quot;label&quot;:&quot;Li_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> VH has no unit.
 
 <div class="pk-model-meta" hidden drug="Ethylene Oxide" model-id="EthyleneOxide_Li2011_reference" status="needs_review" stale="false" population="male B6C3F1 mice, male Fischer 344 rats, humans" measured-compound="Ethylene Oxide" parameterization="mechanistic" topology="retention"></div>
 
@@ -24,10 +25,10 @@ Li Q, Csanády GA, Kessler W, Klein D, Pankratz H, Pütz C et al. Kinetics of et
 
 ## Model
 
-**Structure:** retention function; no model was built for this record.  
+**Structure:** whole-body retention function, 1 exponential pool (burden and retained fraction; no volume) — template `TK_Retention`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -48,7 +49,13 @@ Li Q, Csanády GA, Kessler W, Klein D, Pankratz H, Pütz C et al. Kinetics of et
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**VH has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — ethylene oxide: VH 2.87, kel 3.12 1/h, t1/2z 3.7 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -64,6 +71,9 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `retention_function`: 1 pool(s); shares: one pool, A = 1; half-times: pool 1 from elimination rate constant resulting from the nonenzymatic conjugation reaction only (Q47)
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Mouse' — extend the ontology if this is a real PK parameter (source ['Li_2011_table_2:row0:col2', 'Li_2011_table_2:row0:col3', 'Li_2011_table_2:row0:col4'])
@@ -87,6 +97,7 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is RETENTION (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- engineer: built from a record validation left at "Needs review" (toxins) — not yet confirmed by a reviewer (C5 dimensioned parameter(s) without a unit: Q368 — no SI value to build from)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -122,19 +133,61 @@ _No reviewer record yet — the status is the scholar's closed-form checks; simu
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference/EthyleneOxide_Li2011_reference_modelica.zip" download>EthyleneOxide_Li2011_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference/EthyleneOxide_Li2011_reference_fmi.zip" download>EthyleneOxide_Li2011_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/TK_Retention_1.fmu" download>TK_Retention_1.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference/EthyleneOxide_Li2011_reference_matlab.zip" download>EthyleneOxide_Li2011_reference_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference/EthyleneOxide_Li2011_reference_sbml.zip" download>EthyleneOxide_Li2011_reference_sbml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference/EthyleneOxide_Li2011_reference_cellml.zip" download>EthyleneOxide_Li2011_reference_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>TK_Retention_1.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.04405 | kg/mol |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `A[1]` | 1 |  |
+| input | model | `Tb[1]` | 799.8 |  |
+| output | concentration | `retainedFraction` |  | kg/m3 |
+
+## Tested with
+
+- Template `TK_Retention_1`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Li Q, Csanády GA, Kessler W, Klein D, Pankratz H, Pütz C et al. Kinetics of ethylene and ethylene oxide in subcellular fractions of lungs and livers of male B6C3F1 mice and male fischer 344 rats and of human livers. Toxicological sciences : an official journal of the Society of Toxicology 123(2):384–398 (2011). [doi:10.1093/toxsci/kfr194](https://doi.org/10.1093/toxsci/kfr194)
+
+**This record:** Pharmacolibrary, model `EthyleneOxide_Li2011_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference>
+
+```bibtex
+@misc{pharmacolibrary_EthyleneOxideLi2011reference,
+  title  = {{Pharmacolibrary model EthyleneOxide_Li2011_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference},
+  note   = {Parameters from doi:10.1093/toxsci/kfr194},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<span class="pk-missing">This model was built from a record that validation left at <b>needs review</b>: its values are not yet confirmed. See the record's blocking checks before relying on the curve.</span>
+
+<dbs-fmusim paramsurl="drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference/EthyleneOxide_Li2011_reference_params.json" metaurl="assets/fmu/TK_Retention_1.vr.json" wasmurl="assets/fmu/TK_Retention_1.js" controlsurl="drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference/EthyleneOxide_Li2011_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `TK_Retention_1` · parameters `EthyleneOxide_Li2011_reference_params.json` · controls `EthyleneOxide_Li2011_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

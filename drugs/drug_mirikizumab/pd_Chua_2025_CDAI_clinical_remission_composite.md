@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;mirikizumab&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/&quot;},{&quot;label&quot;:&quot;Chua_2025 \u00b7 PD clinical remission by CDAI&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirikizumab_Chua2023_reference&quot;,&quot;label&quot;:&quot;Chua_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirikizumab_Chua2023_reference&quot;,&quot;label&quot;:&quot;Chua_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/Mirikizumab_Chua2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chua_2025_CDAI_clinical_remission_composite&quot;,&quot;label&quot;:&quot;Chua_2025 \u00b7 CDAI clinical remission-composite&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/pd_Chua_2025_CDAI_clinical_remission_composite.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Chua_2025_endoscopic_response_composite&quot;,&quot;label&quot;:&quot;Chua_2025 \u00b7 endoscopic response-composite&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_mirikizumab/pd_Chua_2025_endoscopic_response_composite.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clinical remission by CDAI — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Mirikizumab (concentrations from this paper's PK model) drives clinical remission by CDAI: direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The model uses a linear additive logistic relationship where mirikizumab plasma concentrations (µg/mL) positively influence the probability of achieving clinical remission by CDAI, characterized by a slope of 0.0996 per µg/mL and a baseline logit intercept of -1.30. The paper does not specify a distinct pharmacodynamic mechanism (e.g., Emax or indirect response) beyond this linear exposure-response association.
 >
@@ -53,13 +53,14 @@ Chua L et al., Mirikizumab Pharmacokinetics and Exposu…, Clinical and translat
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| slope | 0.0996 | — |
+| slope | 0.0996 | 99.6 (1)/(kg/m3) |
 
-Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.0996
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 99.6
 
 Deviations:
 
 - `defaulted_parameters` — E0
+- `pd_binding_slope_unit_assumed` — slope unit '(none)' read as response per µg/mL
 
 ## Review
 
@@ -85,15 +86,32 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_modelica.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_matlab.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_modelica.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_fmi.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_matlab.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_sbml.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_cellml.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_sbml.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_cellml.zip" download>Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `exposure_per_s` | 0.001 |  |
+| input | model | `slope` | 99.6 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -111,7 +129,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_mirikizumab/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite/Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_params.json` · controls `Mirikizumab_Chua2025_PD_cdai_clinical_remission_composite_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

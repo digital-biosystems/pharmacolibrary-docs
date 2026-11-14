@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Farnesol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Farnesol_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_farnesol/Farnesol_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Farnesol
 
@@ -25,17 +26,23 @@ Farnesol is a signaling molecule that is derived from farnesyl diphosphate, an i
 |---|---|---|---|---|---|---|
 | farnesol | parent | 222.372 | C15H26O | PubChem | [1549107](https://pubchem.ncbi.nlm.nih.gov/compound/1549107) | Zhu_2024 |
 
+## Start here
+
+> **Zhu_2024_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> rats, n = 6. [Run it in the simulator](drugs/toxin_farnesol/Farnesol_Zhu2024_reference.md?tab=Simulation) · [record](drugs/toxin_farnesol/Farnesol_Zhu2024_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Zhu_2024_reference](drugs/toxin_farnesol/Farnesol_Zhu2024_reference.md) | — | retention function (no model) | 4 | Zhu Y et al., GC-MS method for simultaneous determina…, Heliyon (2024) | [10.1016/j.heliyon.2024.e32444](https://doi.org/10.1016/j.heliyon.2024.e32444) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub> | [Zhu_2024_reference](drugs/toxin_farnesol/Farnesol_Zhu2024_reference.md) | ▶ model + simulator | retention, 1 pool | 4 | Zhu Y et al., GC-MS method for simultaneous determina…, Heliyon (2024) | [10.1016/j.heliyon.2024.e32444](https://doi.org/10.1016/j.heliyon.2024.e32444) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Correll_1994_HMG_CoA_reductase_degradation](drugs/toxin_farnesol/pd_Correll_1994_HMG_CoA_reductase_degradation.md) | degradation of 3-hydroxy-3-methylglutaryl-coenzyme A reductase biomarker turnover ← farnesol | — | Correll CC et al., Identification of farnesol as the non-s…, The Journal of biological c… (1994) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.00).">in vitro</span> | [Correll_1994_HMG_CoA_reductase_degradation](drugs/toxin_farnesol/pd_Correll_1994_HMG_CoA_reductase_degradation.md) | degradation of 3-hydroxy-3-methylglutaryl-coenzyme A reductase biomarker turnover ← farnesol | — | Correll CC et al., Identification of farnesol as the non-s…, The Journal of biological c… (1994) | — |
 
 ## ADME sites
 
@@ -66,7 +73,7 @@ Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Comp
 
 - **PubMed hits:** 367 matched, 89 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

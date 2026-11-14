@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Tetanus toxin&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/&quot;},{&quot;label&quot;:&quot;Liu_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetanusToxin_Critchley1985_reference&quot;,&quot;label&quot;:&quot;Critchley_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetanusToxin_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/TetanusToxin_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetanusToxin_Critchley1985_reference&quot;,&quot;label&quot;:&quot;Critchley_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetanusToxin_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/TetanusToxin_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Tetanus toxin — `TetanusToxin_Liu2026_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="Tetanus toxin" model-id="TetanusToxin_Liu2026_reference" status="extracted" stale="false" population="" measured-compound="tetanus_toxin" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Tetanus toxin" model-id="TetanusToxin_Liu2026_reference" status="needs_review" stale="false" population="" measured-compound="tetanus_toxin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Liu X, Liu Z, Kuang X, Wang Y, Liu X, Ding J et al. Phase I Evaluation of Siltartoxatug, a First-in-Class Anti-Tetanus Monoclonal Antibody: Safety, Pharmacokinetics and Pharmacodynamics in Healthy Australian and Chinese Populations. Clinical pharmacology and therapeutics (2026).
@@ -29,6 +29,8 @@ Liu X, Liu Z, Kuang X, Wang Y, Liu X, Ding J et al. Phase I Evaluation of Siltar
 <figure class="pk-models-diagram"><img src="drugs/toxin_tetanus_toxin/TetanusToxin_Liu2026_reference/TetanusToxin_Liu2026_reference.svg" alt="TetanusToxin_Liu2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 7.8 | mL/h |
@@ -36,7 +38,7 @@ Liu X, Liu Z, Kuang X, Wang Y, Liu X, Ding J et al. Phase I Evaluation of Siltar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +48,13 @@ Liu X, Liu Z, Kuang X, Wang Y, Liu X, Ding J et al. Phase I Evaluation of Siltar
 
 ### Reviewer guidance
 
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
+
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tetanus toxin: CL/F 7.8 mL/h, V/F 7.44 L.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 7.8, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -114,6 +120,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.0078 L/h | ['Liu_2026:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 7.44 L | ['Liu_2026:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=tetanus_toxin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Validation definitions</summary>

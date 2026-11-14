@@ -41,7 +41,7 @@ Acetaldehyde is a colorless, flammable liquid used in the manufacture of acetic 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lachenmeier_2009_cancer_incidence](drugs/toxin_acetaldehyde/pd_Lachenmeier_2009_cancer_incidence.md) | cancer incidence ← acetaldehyde · stimulation effect | — | Lachenmeier DW et al., Carcinogenicity of acetaldehyde in alco…, Addiction (Abingdon, Englan… (2009) | [10.1111/j.1360-0443.2009.02516.x](https://doi.org/10.1111/j.1360-0443.2009.02516.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.50).">human + animal</span> | [Lachenmeier_2009_cancer_incidence](drugs/toxin_acetaldehyde/pd_Lachenmeier_2009_cancer_incidence.md) | cancer incidence ← acetaldehyde · stimulation effect | — | Lachenmeier DW et al., Carcinogenicity of acetaldehyde in alco…, Addiction (Abingdon, Englan… (2009) | [10.1111/j.1360-0443.2009.02516.x](https://doi.org/10.1111/j.1360-0443.2009.02516.x) |
 
 ## Pharmacogenomics (PGx)
 

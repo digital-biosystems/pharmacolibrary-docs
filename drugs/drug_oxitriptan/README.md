@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;oxitriptan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Guan_2020_cortisol&quot;,&quot;label&quot;:&quot;Guan_2020 \u00b7 cortisol&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_oxitriptan/pd_Guan_2020_cortisol.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # oxitriptan
 
@@ -33,7 +34,7 @@ Oxitriptan (5-HTP) is an antidepressant used for major depressive disorder. It i
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Guan_2020_cortisol](drugs/drug_oxitriptan/pd_Guan_2020_cortisol.md) | serum cortisol ← 5-HTP · direct linear effect | model (no simulator) | Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research & per… (2020) | [10.1002/prp2.574](https://doi.org/10.1002/prp2.574) |
+| <span class="pk-badge pk-badge--green">Reproduces paper</span> | [Guan_2020_cortisol](drugs/drug_oxitriptan/pd_Guan_2020_cortisol.md) | serum cortisol ← 5-HTP · direct linear effect | ▶ model + simulator | Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research & per… (2020) | [10.1002/prp2.574](https://doi.org/10.1002/prp2.574) |
 
 ## ADME sites
 

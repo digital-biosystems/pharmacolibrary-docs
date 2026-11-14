@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;scopolamine&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/&quot;},{&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 PD VAS internal perception&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ebert_2001_EEG_alpha_power&quot;,&quot;label&quot;:&quot;Ebert_2001 \u00b7 EEG alpha power&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Ebert_2001_EEG_alpha_power.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ebert_2001_EEG_alpha_power&quot;,&quot;label&quot;:&quot;Ebert_2001 \u00b7 EEG alpha power&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Ebert_2001_EEG_alpha_power.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Adaptive_tracking&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Adaptive tracking&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Adaptive_tracking.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Body_sway&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Body sway&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Body_sway.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Finger_tapping&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Finger tapping&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Finger_tapping.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Heart_rate&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Heart rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Heart_rate.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_SPV&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 SPV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_SPV.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_Smooth_pursuit&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 Smooth pursuit&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_Smooth_pursuit.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_alertness&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS alertness&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_alertness.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_external_perception&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS external perception&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_external_perception.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_feeling_high&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS feeling high&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_feeling_high.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Liem_Moolenaar_2011_VAS_internal_perception&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 VAS internal perception&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_VAS_internal_perception.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # VAS internal perception — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Scopolamine (concentrations from this paper's PK model) drives VAS internal perception (in log mm): delayed effect through an effect compartment.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > The model describes the effect of scopolamine plasma concentrations (pg ml-1) on VAS internal perception (log mm) using an effect compartment model with an equilibration half-life of 200 min. The relationship is characterized by an intercept of 0.336 log mm and a slope of 0.000331 log mm (pg ml-1), with no specific mechanism (e.g., inhibition of production or elimination) or potency parameters (e.g., IC50, Emax) provided in the excerpts.
 >
@@ -52,13 +52,14 @@ Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British jou
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0.336 log mm | — |
-| slope | 0.000331 log mm (pg ml-1) | — |
+| slope | 0.000331 log mm (pg ml-1) | 3.31e+05 (1)/(kg/m3) |
 
-Closed-form check points (response, SI): `at_0` = 0.336, `per_exposure_unit` = 0.000331
+Closed-form check points (response, SI): `at_0` = 0.336, `per_exposure_unit` = 3.31e+05
 
 Deviations:
 
 - `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: a slope and no Emax — linear
+- `pd_binding_slope_unit_assumed` — slope unit 'log mm (pg ml-1)' read as log mm per pg ml-1
 
 ## Review
 
@@ -104,15 +105,32 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_modelica.zip" download>Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_matlab.zip" download>Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_modelica.zip" download>Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_fmi.zip" download>Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_fmi.zip</a> <span class="pk-size">(4.7 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_matlab.zip" download>Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_sbml.zip" download>Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_cellml.zip" download>Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0.336 |  |
+| input | model | `exposure_per_s` | 1e-09 |  |
+| input | model | `slope` | 3.31e+05 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -130,7 +148,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception/Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_params.json` · controls `Scopolamine_LiemMoolenaar2011_PD_vas_internal_perception_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="Microcystin-LR" model-id="MicrocystinLr_Clarke2019_reference" status="rejected" stale="false" population="male rats with NAFLD (MCD or HFHC diet) and controls" measured-compound="Microcystin-LR" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,9 +45,13 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of single dose intraperitoneal toxicity study: this record has none, the second reading 60; it also differs on 1 more field. That field does not shape the model.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 

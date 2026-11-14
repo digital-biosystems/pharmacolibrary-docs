@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Cylindrospermopsin concentrations in micromolar units drive reactive oxygen species (ROS) production via a stimulation effect. The paper excerpts do not provide the specific mathematical model mechanism or key potency and rate parameters (such as Imax, IC50, or EC50).
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Moosova_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

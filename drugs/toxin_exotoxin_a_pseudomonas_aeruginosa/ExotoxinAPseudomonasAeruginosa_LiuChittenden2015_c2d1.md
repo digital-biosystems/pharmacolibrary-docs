@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Exotoxin A (Pseudomonas aeruginosa)&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/&quot;},{&quot;label&quot;:&quot;Liu-Chittenden_2015 \u00b7 c2d1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ExotoxinAPseudomonasAeruginosa_Benhar1995_reference&quot;,&quot;label&quot;:&quot;Benhar_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/ExotoxinAPseudomonasAeruginosa_Benhar1995_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ExotoxinAPseudomonasAeruginosa_Kuan1994_reference&quot;,&quot;label&quot;:&quot;Kuan_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/ExotoxinAPseudomonasAeruginosa_Kuan1994_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ExotoxinAPseudomonasAeruginosa_Benhar1995_reference&quot;,&quot;label&quot;:&quot;Benhar_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/ExotoxinAPseudomonasAeruginosa_Benhar1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ExotoxinAPseudomonasAeruginosa_Kuan1994_reference&quot;,&quot;label&quot;:&quot;Kuan_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_exotoxin_a_pseudomonas_aeruginosa/ExotoxinAPseudomonasAeruginosa_Kuan1994_reference.md&quot;,&quot;status&quot;:&quot;Reproduces with caveats&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Exotoxin A (Pseudomonas aeruginosa) — `ExotoxinAPseudomonasAeruginosa_LiuChittenden2015_c2d1`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Extracted and checked against closed-form rules; no simulation has been compared with the paper yet.
+> No value for exotoxin a pseudomonas aeruginosa's clearance and volume of distribution — all 8 extracted parameters describe IL-13-PE (recombinant human interleukin-13 fused to truncated Pseudomonas exotoxin A), not exotoxin a pseudomonas aeruginosa; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="Exotoxin A (Pseudomonas aeruginosa)" model-id="ExotoxinAPseudomonasAeruginosa_LiuChittenden2015_c2d1" status="extracted" stale="false" population="adult patients with metastatic adrenocortical carcinoma with confirmed IL-13 receptor alpha 2 (IL-13Ralpha2) expression in their tumors" measured-compound="IL-13-PE (serum concentration of the fusion protein, e.g. Cmax 21.0 ng/mL, terminal half-life 30-39 min at MTD)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Exotoxin A (Pseudomonas aeruginosa)" model-id="ExotoxinAPseudomonasAeruginosa_LiuChittenden2015_c2d1" status="model_quarantined" stale="false" population="adult patients with metastatic adrenocortical carcinoma with confirmed IL-13 receptor alpha 2 (IL-13Ralpha2) expression in their tumors" measured-compound="IL-13-PE (serum concentration of the fusion protein, e.g. Cmax 21.0 ng/mL, terminal half-life 30-39 min at MTD)" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Liu-Chittenden Y, Jain M, Kumar P, Patel D, Aufforth R, Neychev V et al. Phase I trial of systemic intravenous infusion of interleukin-13-Pseudomonas exotoxin in patients with metastatic adrenocortical carcinoma. Cancer medicine 4(7):1060–1068 (2015).
@@ -31,6 +31,8 @@ Liu-Chittenden Y, Jain M, Kumar P, Patel D, Aufforth R, Neychev V et al. Phase I
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cmax (ng/mL) / GM | Cmax | 79.9 | ng/mL |
@@ -44,7 +46,7 @@ Liu-Chittenden Y, Jain M, Kumar P, Patel D, Aufforth R, Neychev V et al. Phase I
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +56,13 @@ Liu-Chittenden Y, Jain M, Kumar P, Patel D, Aufforth R, Neychev V et al. Phase I
 
 ### Reviewer guidance
 
+**No value for exotoxin a pseudomonas aeruginosa's clearance and volume of distribution — all 8 extracted parameters describe IL-13-PE (recombinant human interleukin-13 fused to truncated Pseudomonas exotoxin A), not exotoxin a pseudomonas aeruginosa; t6_deviations.**
+
+The model was built, but exotoxin a pseudomonas aeruginosa's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax_ratio and AUC%ext), so that value has no SI equivalent. Extracted — IL-13-PE (recombinant human interleukin-13 fused to truncated Pseudomonas exotoxin A): Cmax 79.9 ng/mL, Cmax_ratio 665 ng/mL, AUClast 92 min·ng/mL, AUC∞ 79 min·ng/mL, AUC%ext 87 GM, t1/2z 15 min, V 78 mL, CL 87 mL/min.
+
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has IL-13-PE (recombinant fusion of human interleukin-13 and truncated Pseudomonas exotoxin A), given IV at 1-2 ug/kg on days 1, 3 and 5 of a 4-week cycle, the second reading IL-13-PE (interleukin-13-Pseudomonas exotoxin); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -178,6 +184,23 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.22 L/h | ['tbl3:row4:col18'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 0.078 L | ['tbl3:row4:col16'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 17.5 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 41.2 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

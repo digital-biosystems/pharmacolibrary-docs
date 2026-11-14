@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> The ethylbenzene intracellular partition coefficient lacks a convertible unit, causing the volume-of-distribution check to fail due to missing SI data.
 
 <div class="pk-model-meta" hidden drug="Ethylbenzene" model-id="Ethylbenzene_Sterner2023_ethylbenzene" status="rejected" stale="false" population="Long-Evans rats / Sprague-Dawley rats / F344 rats" measured-compound="Ethylbenzene" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,7 +53,13 @@ Sterner TR, Covington TR, Mattie DR. Complex Mixtures: Array PBPK Modeling of Je
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**The ethylbenzene intracellular partition coefficient lacks a convertible unit, causing the volume-of-distribution check to fail due to missing SI data.**
+
+The record includes an ethylbenzene partition coefficient value of 0.44 but specifies no unit, preventing conversion to standard units. Consequently, the volume parameter remained in milliliters (250.0 mL) rather than converting to liters. This unit mismatch caused the clearance-to-volume ratio to fall outside the physiological window, leading to rejection as a likely extraction error. Extracted — ethylbenzene: MW 106 g/mol, CLint 1.96, Vmax 6.39 mg/h/kg, Km 1.04 mg/L, CLu 0.04 L/h/kg, V 250 mL, kabs 0.88 1/h.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

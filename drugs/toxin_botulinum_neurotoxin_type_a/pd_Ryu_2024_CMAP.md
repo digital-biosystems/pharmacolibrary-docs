@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Botulinum neurotoxin type A inhibits compound muscle action potential (CMAP) via an indirect response model where a virtual infusion rate (A(1)*KDE) suppresses the production rate (Kin), with potency defined by EDK50 values of 1.07, 6.19, and 0.00938 U day−1 and production rates (Kin) of 365, 217, and 255 day−1 for mice, rats, and humans, respectively. The model describes a maximal inhibition effect (Emax) of approximately 1 (1.04 and 0.94 mol in specific fits) against baseline CMAP levels of 98.4, 91.9, and 100 mV.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `Ryu_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

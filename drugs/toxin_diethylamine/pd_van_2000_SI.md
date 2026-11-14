@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the pharmacodynamic mechanism for how diethylamine affects the stimulatory index. No potency or rate parameter values are available in the provided excerpts.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
+
 - **paper:** `van_2000`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

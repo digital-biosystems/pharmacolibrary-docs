@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Tetanus toxin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetanusToxin_Critchley1985_reference&quot;,&quot;label&quot;:&quot;Critchley_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetanusToxin_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/TetanusToxin_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;TetanusToxin_Critchley1985_reference&quot;,&quot;label&quot;:&quot;Critchley_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;TetanusToxin_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_tetanus_toxin/TetanusToxin_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Tetanus toxin
 
@@ -22,7 +22,7 @@ Tetanus toxin is a neurotoxin produced by Clostridium tetani. Tetanus toxin is a
 
 ## Start here
 
-> **Critchley_1985_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> primary mouse spinal cord neuron cultures. [Run it in the simulator](drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md?tab=Simulation) · [record](drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md)
+> **Critchley_1985_reference** — <span class="pk-badge pk-badge--green">Reproduces paper</span> primary mouse spinal cord neuron cultures. [Run it in the simulator](drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md?tab=Simulation) · [record](drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -30,8 +30,8 @@ Tetanus toxin is a neurotoxin produced by Clostridium tetani. Tetanus toxin is a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Critchley_1985_reference](drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Critchley DR et al., Fate of tetanus toxin bound to the surf…, The Journal of cell biology (1985) | [10.1083/jcb.100.5.1499](https://doi.org/10.1083/jcb.100.5.1499) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> | [Liu_2026_reference](drugs/toxin_tetanus_toxin/TetanusToxin_Liu2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Liu X et al., Phase I Evaluation of Siltartoxatug, a…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70467](https://doi.org/10.1002/cpt.70467) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Reproduces paper" data-sim="yes"></span><span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Critchley_1985_reference](drugs/toxin_tetanus_toxin/TetanusToxin_Critchley1985_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Critchley DR et al., Fate of tetanus toxin bound to the surf…, The Journal of cell biology (1985) | [10.1083/jcb.100.5.1499](https://doi.org/10.1083/jcb.100.5.1499) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Liu_2026_reference](drugs/toxin_tetanus_toxin/TetanusToxin_Liu2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Liu X et al., Phase I Evaluation of Siltartoxatug, a…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70467](https://doi.org/10.1002/cpt.70467) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Tetanus toxin is a neurotoxin produced by Clostridium tetani. Tetanus toxin is a
 
 - **PubMed hits:** 118 matched, 87 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 2  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

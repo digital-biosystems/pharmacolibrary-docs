@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Ethylene Oxide&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/&quot;},{&quot;label&quot;:&quot;Martis_1982 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EthyleneOxide_Li2011_reference&quot;,&quot;label&quot;:&quot;Li_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Total clearance has unit ml/kg per min ([length]³ × [time]) instead of volumetric flow ([length]³ / [time]), creating a dimension mismatch.
 
 <div class="pk-model-meta" hidden drug="Ethylene Oxide" model-id="EthyleneOxide_Martis1982_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="Ethylene Oxide" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +47,13 @@ Martis L, Kroes R, Darby TD, Woods EF. Disposition kinetics of ethylene oxide, e
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Total clearance has unit ml/kg per min ([length]³ × [time]) instead of volumetric flow ([length]³ / [time]), creating a dimension mismatch.**
+
+The clearance parameter value 20.0 is reported in ml/kg X min, which corresponds to dimensions of length cubed multiplied by time. Clearance is pharmacokinetically defined as a volumetric flow rate (length cubed divided by time). Consequently, the unit dimension conflicts with the parameter definition, leading to rejection. Extracted — ethylene oxide: kel 0.024 min-1, CL 20 ml/kg X min, t1/2z 221 min.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
 
 ### All parameter columns
 

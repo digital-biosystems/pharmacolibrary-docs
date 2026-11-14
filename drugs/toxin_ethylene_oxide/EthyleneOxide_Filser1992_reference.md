@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Ethylene Oxide&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/&quot;},{&quot;label&quot;:&quot;Filser_1992 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EthyleneOxide_Li2011_reference&quot;,&quot;label&quot;:&quot;Li_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ethylene_oxide/EthyleneOxide_Li2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> Only clearance was extracted — no volume; cLint and Ae  have no unit.
 
 <div class="pk-model-meta" hidden drug="Ethylene Oxide" model-id="EthyleneOxide_Filser1992_reference" status="needs_review" stale="false" population="man (70 kg)" measured-compound="Ethylene" parameterization="mechanistic" topology="1C"></div>
 
@@ -22,10 +23,10 @@ Filser JG, Denk B, Törnqvist M, Kessler W, Ehrenberg L. Pharmacokinetics of eth
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 7 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -50,7 +51,13 @@ Filser JG, Denk B, Törnqvist M, Kessler W, Ehrenberg L. Pharmacokinetics of eth
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+### Reviewer guidance
+
+**Only clearance was extracted — no volume; cLint and Ae  have no unit.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Kp, CLint, fm and Ae ), so that value has no SI equivalent. Extracted — Ethylene: Kp 0.33 70 kg, CL 16 L/h, CLint 27 related to concn. in organism, t1/2z 0.65 h, Ae 64 70 kg, body_burden 0.44 mg; ethylene oxide: fm 36 70 kg.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;venetoclax&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/&quot;},{&quot;label&quot;:&quot;Dave_2019 \u00b7 PD B-lymphocytes&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Venetoclax_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_deng_201915&quot;,&quot;label&quot;:&quot;Zhao_2024_deng_201915&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_deng_201915.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_gong_202316&quot;,&quot;label&quot;:&quot;Zhao_2024_gong_202316&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_gong_202316.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_jones_201611&quot;,&quot;label&quot;:&quot;Zhao_2024_jones_201611&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_jones_201611.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_minocha_201817&quot;,&quot;label&quot;:&quot;Zhao_2024_minocha_201817&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_minocha_201817.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_samineni_2022a18&quot;,&quot;label&quot;:&quot;Zhao_2024_samineni_2022a18&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022a18.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_samineni_2022b19&quot;,&quot;label&quot;:&quot;Zhao_2024_samineni_2022b19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Venetoclax_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_deng_201915&quot;,&quot;label&quot;:&quot;Zhao_2024_deng_201915&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_deng_201915.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_gong_202316&quot;,&quot;label&quot;:&quot;Zhao_2024_gong_202316&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_gong_202316.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_jones_201611&quot;,&quot;label&quot;:&quot;Zhao_2024_jones_201611&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_jones_201611.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_minocha_201817&quot;,&quot;label&quot;:&quot;Zhao_2024_minocha_201817&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_minocha_201817.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_samineni_2022a18&quot;,&quot;label&quot;:&quot;Zhao_2024_samineni_2022a18&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022a18.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venetoclax_Zhao2024_samineni_2022b19&quot;,&quot;label&quot;:&quot;Zhao_2024_samineni_2022b19&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/Venetoclax_Zhao2024_samineni_2022b19.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Dave_2019_B_lymphocytes&quot;,&quot;label&quot;:&quot;Dave_2019 \u00b7 B-lymphocytes&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_venetoclax/pd_Dave_2019_B_lymphocytes.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # B-lymphocytes — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Venetoclax (concentrations from this paper's PK model) drives B-lymphocytes: direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Venetoclax inhibits B-lymphocyte counts through a linear, semimechanistic pharmacodynamic model driven by a population PK estimate from Dave_2019, with a specified proliferation rate of 0.1 day−1. The paper attributes this depletion to venetoclax's inhibition of BCL-2, which induces apoptotic cell death, but it does not state whether the linear effect acts on production or elimination, nor does it provide values for Imax, IC50, EC50, Emax, kout, ke0, or gamma.
 >
@@ -109,15 +109,32 @@ Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_venetoclax/Venetoclax_Dave2019_PD_b_lymphocytes/Venetoclax_Dave2019_PD_b_lymphocytes_modelica.zip" download>Venetoclax_Dave2019_PD_b_lymphocytes_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_venetoclax/Venetoclax_Dave2019_PD_b_lymphocytes/Venetoclax_Dave2019_PD_b_lymphocytes_modelica.zip" download>Venetoclax_Dave2019_PD_b_lymphocytes_modelica.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_venetoclax/Venetoclax_Dave2019_PD_b_lymphocytes/Venetoclax_Dave2019_PD_b_lymphocytes_fmi.zip" download>Venetoclax_Dave2019_PD_b_lymphocytes_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_venetoclax/Venetoclax_Dave2019_PD_b_lymphocytes/Venetoclax_Dave2019_PD_b_lymphocytes_matlab.zip" download>Venetoclax_Dave2019_PD_b_lymphocytes_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_venetoclax/Venetoclax_Dave2019_PD_b_lymphocytes/Venetoclax_Dave2019_PD_b_lymphocytes_sbml.zip" download>Venetoclax_Dave2019_PD_b_lymphocytes_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_venetoclax/Venetoclax_Dave2019_PD_b_lymphocytes/Venetoclax_Dave2019_PD_b_lymphocytes_cellml.zip" download>Venetoclax_Dave2019_PD_b_lymphocytes_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0 |  |
+| input | model | `exposure_per_s` | 1 |  |
+| input | model | `slope` | 20.9 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -135,7 +152,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_venetoclax/Venetoclax_Dave2019_PD_b_lymphocytes/Venetoclax_Dave2019_PD_b_lymphocytes_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_venetoclax/Venetoclax_Dave2019_PD_b_lymphocytes/Venetoclax_Dave2019_PD_b_lymphocytes_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Venetoclax_Dave2019_PD_b_lymphocytes_params.json` · controls `Venetoclax_Dave2019_PD_b_lymphocytes_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

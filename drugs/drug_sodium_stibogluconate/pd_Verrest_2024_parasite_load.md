@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;sodium stibogluconate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/&quot;},{&quot;label&quot;:&quot;Verrest_2024 \u00b7 PD blood parasite load (Leishmania kDNA by qPCR)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # blood parasite load (Leishmania kDNA by qPCR) — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span>
@@ -16,7 +16,7 @@
 
 **As extracted:** Sodium stibogluconate (the dose) drives blood parasite load (Leishmania kDNA by qPCR) (in parasites/mL): direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Sodium stibogluconate dose (mg/kg) acts on blood Leishmania kDNA parasite load (parasites/mL) in a linear, dose-proportional model in which the drug stimulates parasite clearance (kill rate λSSG = 0.0112 mg⁻¹·kg·h⁻¹) against parasite growth (kGR = 0.0037 h⁻¹) from a baseline load (EBASE = 5324 parasites/mL); the paper does not state an Emax/IC50-type mechanism.
 >
@@ -52,9 +52,13 @@ Verrest L et al., Leishmania blood parasite dynamics duri…, PLoS neglected tro
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 5324 parasites/mL | — |
-| slope | 0.0112 mg-1*kg*h-1 | — |
+| slope | 0.0112 mg-1*kg*h-1 | 1.12e+04 (1)/(1) |
 
-Closed-form check points (response, SI): `at_0` = 5324, `per_exposure_unit` = 0.0112
+Closed-form check points (response, SI): `at_0` = 5324, `per_exposure_unit` = 1.12e+04
+
+Deviations:
+
+- `pd_binding_slope_unit_assumed` — slope unit 'mg-1*kg*h-1' read as parasites/mL per mg/kg
 
 ## Review
 
@@ -76,15 +80,32 @@ Verdict <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_modelica.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_matlab.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_modelica.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_fmi.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_matlab.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_sbml.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_cellml.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_sbml.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_cellml.zip" download>SodiumStibogluconate_Verrest2024_PD_parasite_load_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 5324 |  |
+| input | model | `exposure_per_s` | 1e-06 |  |
+| input | model | `slope` | 1.12e+04 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -102,7 +123,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2024_PD_parasite_load/SodiumStibogluconate_Verrest2024_PD_parasite_load_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `SodiumStibogluconate_Verrest2024_PD_parasite_load_params.json` · controls `SodiumStibogluconate_Verrest2024_PD_parasite_load_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 

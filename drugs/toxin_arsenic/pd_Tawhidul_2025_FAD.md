@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;Arsenic&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/&quot;},{&quot;label&quot;:&quot;Tawhidul_2025 \u00b7 PD frequency of any diseases (FAD)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arsenic_Juarez2022_reference&quot;,&quot;label&quot;:&quot;Juarez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_arsenic/Arsenic_Juarez2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # frequency of any diseases (FAD) — PD  <span class="pk-badge pk-badge--orange">Needs review</span>
@@ -16,6 +17,10 @@
 **As extracted:** Arsenic (concentrations from the PK model of Mardirosian_2017) drives frequency of any diseases (FAD): categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> Arsenic exposure (categorized as high or medium areas in ppb) is associated with an increased likelihood of frequency of any diseases (FAD), with living in high arsenic areas elevating the probability of FWRD morbidity by ~1-7% and medium/high salinity-arsenic areas increasing FCVD probability by ~1-7%, though no explicit PD mechanism (e.g., Emax, kin/kout) or potency parameters like IC50/EC50 are provided.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Tawhidul_2025`
 - **model family:** `categorical`

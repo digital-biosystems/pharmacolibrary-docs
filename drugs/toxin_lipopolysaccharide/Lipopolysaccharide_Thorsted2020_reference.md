@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Bacterial toxins&quot;,&quot;href&quot;:&quot;toxins/BACT.md&quot;},{&quot;label&quot;:&quot;Lipopolysaccharide&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/&quot;},{&quot;label&quot;:&quot;Thorsted_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lipopolysaccharide_Grether2024_reference&quot;,&quot;label&quot;:&quot;Grether_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Grether2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lipopolysaccharide_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Han2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lipopolysaccharide_Jantarawong2025_reference&quot;,&quot;label&quot;:&quot;Jantarawong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Jantarawong2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lipopolysaccharide_Grether2024_reference&quot;,&quot;label&quot;:&quot;Grether_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Grether2024_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lipopolysaccharide_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Han2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lipopolysaccharide_Jantarawong2025_reference&quot;,&quot;label&quot;:&quot;Jantarawong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lipopolysaccharide/Lipopolysaccharide_Jantarawong2025_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> The values below are the extraction as recorded and are not verified; Evidence & review says what failed.
+> T1/2γ has no unit; disposition incomplete — retention function missing λ1 or its half-life — TK_Retention cannot be filled; only a later phase was reported — the earlier, faster phase is not modelled.
 
 <div class="pk-model-meta" hidden drug="Lipopolysaccharide" model-id="Lipopolysaccharide_Thorsted2020_reference" status="needs_review" stale="false" population="in vitro static and dynamic time-kill cultures of Escherichia coli exposed to cefuroxime" measured-compound="Lipopolysaccharide (endotoxin, EU)" parameterization="mechanistic" topology="retention"></div>
 
@@ -55,9 +55,13 @@ Thorsted A, Tano E, Kaivonen K, Sjölin J, Friberg LE, Nielsen EI. Extension of 
 
 ### Reviewer guidance
 
+**T1/2γ has no unit; disposition incomplete — retention function missing λ1 or its half-life — TK_Retention cannot be filled; only a later phase was reported — the earlier, faster phase is not modelled.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — lipopolysaccharide: kfm 1.45 h−1, t1/2γ 3.37, kel 0.462 h−1; Lipopolysaccharide (endotoxin, EU): V 136 mL/kg, kabs 0.0583 h-1.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has Lipopolysaccharide (endotoxin, EU), the second reading lipopolysaccharide; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-_No reviewer record yet — the status is the scholar's closed-form checks; simulation-based reviewer checks have not been run._
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

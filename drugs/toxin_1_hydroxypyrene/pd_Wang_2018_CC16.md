@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Cigarette toxins&quot;,&quot;href&quot;:&quot;toxins/CIG.md&quot;},{&quot;label&quot;:&quot;1-Hydroxypyrene&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/&quot;},{&quot;label&quot;:&quot;Wang_2018 \u00b7 PD serum CC16&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_1Hydroxypyrene_Viau1995_reference&quot;,&quot;label&quot;:&quot;Viau_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1995_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_1Hydroxypyrene_Viau1999_reference&quot;,&quot;label&quot;:&quot;Viau_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Viau1999_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_1Hydroxypyrene_Jongeneelen1990_reference&quot;,&quot;label&quot;:&quot;Jongeneelen_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_1_hydroxypyrene/D_1Hydroxypyrene_Jongeneelen1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # serum CC16 — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span>
@@ -16,6 +17,10 @@
 **As extracted:** 1-hydroxypyrene (concentrations from the PK model of Jongeneelen_1990) drives serum CC16: direct linear effect.
 
 **Model:** No model was generated from this record.
+
+> The provided information indicates a linear model where 1-hydroxypyrene concentrations (measured in μmol/mol creatinine) inhibit serum CC16 levels via a proportional effect, but no specific potency (e.g., IC50) or rate constants are stated. The mechanism of inhibition is not further detailed in the available text.
+>
+> <sub>Source-based summary by qwen3.8-flash-next from the paper's text; not human-verified</sub>
 
 - **paper:** `Wang_2018`
 - **model family:** `linear`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014 \u00b7 PD QRS interval&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Horie2014_reference&quot;,&quot;label&quot;:&quot;Horie_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Horie2014_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sllstrm2014_reference&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Horie2014_reference&quot;,&quot;label&quot;:&quot;Horie_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Horie2014_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sllstrm2014_reference&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_S_llstr_m_2014_QRS&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014 \u00b7 QRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/pd_S_llstr_m_2014_QRS.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # QRS interval — PD  <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
@@ -18,7 +18,7 @@
 
 **As extracted:** Flecainide (concentrations from this paper's PK model) drives QRS interval (in ms): direct linear effect.
 
-**Model:** Model available in **Models**; browser simulation unavailable.
+**Model:** Model and browser simulation available in **Models** and **Simulation**.
 
 > Flecainide plasma concentrations (total and free, in μM) directly increase the QRS interval (ms) via a linear additive mechanism, with a baseline (E0) of 36.4 ms and slope parameters (pEC100) of 3.3 %/μM for total and 9.1 %/μM for free drug. The paper describes the underlying physiological mechanism as Nav1.5 channel inhibition causing use-dependent QRS prolongation, but the specific PKPD model fitted is a linear concentration-response relationship without explicit Emax or IC50 values.
 >
@@ -103,14 +103,31 @@ Primary extraction: `ollama:qwen3.8:27b-mtp-q8_0`; retained regardless of cross-
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_flecainide/Flecainide_Sllstrm2014_PD_qrs/Flecainide_Sllstrm2014_PD_qrs_modelica.zip" download>Flecainide_Sllstrm2014_PD_qrs_modelica.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_flecainide/Flecainide_Sllstrm2014_PD_qrs/Flecainide_Sllstrm2014_PD_qrs_fmi.zip" download>Flecainide_Sllstrm2014_PD_qrs_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><span class="pk-missing">generic PD_LinearSweep.fmu not published yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_flecainide/Flecainide_Sllstrm2014_PD_qrs/Flecainide_Sllstrm2014_PD_qrs_matlab.zip" download>Flecainide_Sllstrm2014_PD_qrs_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flecainide/Flecainide_Sllstrm2014_PD_qrs/Flecainide_Sllstrm2014_PD_qrs_sbml.zip" download>Flecainide_Sllstrm2014_PD_qrs_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_flecainide/Flecainide_Sllstrm2014_PD_qrs/Flecainide_Sllstrm2014_PD_qrs_cellml.zip" download>Flecainide_Sllstrm2014_PD_qrs_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | model | `E0` | 0.0364 |  |
+| input | model | `exposure_per_s` | 1 |  |
+| input | model | `slope` | 3.3e+04 |  |
+| output | concentration | `response` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -128,7 +145,9 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+<dbs-fmusim paramsurl="drugs/drug_flecainide/Flecainide_Sllstrm2014_PD_qrs/Flecainide_Sllstrm2014_PD_qrs_params.json" metaurl="assets/fmu/PD_LinearSweep.vr.json" wasmurl="assets/fmu/PD_LinearSweep.js" controlsurl="drugs/drug_flecainide/Flecainide_Sllstrm2014_PD_qrs/Flecainide_Sllstrm2014_PD_qrs_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_LinearSweep` · parameters `Flecainide_Sllstrm2014_PD_qrs_params.json` · controls `Flecainide_Sllstrm2014_PD_qrs_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
