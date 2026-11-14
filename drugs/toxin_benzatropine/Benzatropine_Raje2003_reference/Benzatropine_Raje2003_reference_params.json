@@ -1,0 +1,26 @@
+{
+ "dose_source": "WHO ATC DDD 2 mg parenteral (N04AC01)",
+ "model_id": "Benzatropine_Raje2003_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.4755256448569475e-05,
+  "F": 1.0,
+  "VdPerKg": 0.0009,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662087
+ },
+ "reference_peaks": {
+  "central.C": 2.828111817039748e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

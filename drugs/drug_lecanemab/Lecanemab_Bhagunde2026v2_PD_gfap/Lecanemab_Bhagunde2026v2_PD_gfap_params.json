@@ -1,0 +1,55 @@
+{
+ "model_id": "Lecanemab_Bhagunde2026v2_PD_gfap",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 3.15e-07,
+  "exposure_per_s": 1.0,
+  "slope": 2.37e-10
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 3.15e-07,
+  "1.0": 3.15237e-07
+ },
+ "stop_time": 1000.0,
+ "subtitle": "plasma GFAP (GFAP) against lecanemab concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "pg/mL",
+   "factor": 1e-09,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "pg/mL",
+  "slope": {
+   "display_only": false,
+   "display_unit": "logit",
+   "factor": 1e-09,
+   "si_unit": "(kg/m3)/(1)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "lecanemab concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "pg/mL",
+  "factor": 1e-09,
+  "label": "plasma GFAP (GFAP)"
+ }
+}

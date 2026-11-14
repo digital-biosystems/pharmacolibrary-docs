@@ -1,0 +1,49 @@
+{
+ "model_id": "Doxorubicin_Choi2021_PD_w",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 0.001,
+  "slope": 0.159722222222
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.0009999999999999998": 0.0001597222222222222
+ },
+ "stop_time": 1000.0,
+ "subtitle": "tumor volume (w) against Dox concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "cm 3",
+  "slope": {
+   "display_only": false,
+   "display_unit": "l/mg per day",
+   "factor": 0.011574074074074075,
+   "si_unit": "meter ** 3 / kilogram / second"
+  }
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "label": "Dox concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "cm 3",
+  "factor": 1.0,
+  "label": "tumor volume (w)"
+ }
+}

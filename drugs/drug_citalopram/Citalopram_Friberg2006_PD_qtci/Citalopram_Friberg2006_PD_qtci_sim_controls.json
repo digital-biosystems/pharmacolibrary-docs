@@ -1,0 +1,22 @@
+[
+ {
+  "key": "E0",
+  "label": "Baseline E0",
+  "unit": "ms",
+  "scale": 1000.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "stop_time",
+  "label": "Citalopram concentration range",
+  "unit": "mg l-1",
+  "scale": 1.0000000000000002,
+  "min": 100.0,
+  "max": 5000.0,
+  "step": 10.0,
+  "sim": true
+ }
+]

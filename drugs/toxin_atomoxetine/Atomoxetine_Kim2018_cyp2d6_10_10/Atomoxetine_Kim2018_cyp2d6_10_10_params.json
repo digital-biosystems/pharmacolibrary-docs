@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Atomoxetine_Kim2018_cyp2d6_10_10",
+ "molar_masses": {
+  "retainedFraction": 0.255361
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.255361,
+  "Tb[1]": 16848.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9976771440347246
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

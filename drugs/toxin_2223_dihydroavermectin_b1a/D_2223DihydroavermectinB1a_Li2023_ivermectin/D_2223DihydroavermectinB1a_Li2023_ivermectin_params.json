@@ -1,0 +1,32 @@
+{
+ "dose_source": "paper",
+ "model_id": "D_2223DihydroavermectinB1a_Li2023_ivermectin",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  21.0
+ ],
+ "parameters": {
+  "Cl": 2.9329999999999997e-06,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.03184255,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.1e-05,
+  "ka": 0.00019672222222222224,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 24240.48096192385
+ },
+ "reference_peaks": {
+  "central.C": 9.104811758871227e-06
+ },
+ "stop_time": 3024000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

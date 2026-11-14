@@ -1,0 +1,55 @@
+{
+ "model_id": "Miltefosine_Madu2023_PD_pbmc_concentration",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 0.001,
+  "slope": 0.8
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.0009999999999999998": 0.0007999999999999999
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Miltefosine intracellular concentration in PBMCs (PBMC concentration) against miltefosine concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "µg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "µg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "µg/mL",
+  "slope": {
+   "display_only": false,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "(kg/m3)/(kg/m3)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "µg/mL",
+  "factor": 0.0009999999999999998,
+  "label": "miltefosine concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "µg/mL",
+  "factor": 0.0009999999999999998,
+  "label": "Miltefosine intracellular concentration in PBMCs (PBMC concentration)"
+ }
+}

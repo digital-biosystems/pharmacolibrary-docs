@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg parenteral (M04AA01)",
+ "model_id": "Allopurinol_Deferm2021_reference",
+ "molar_masses": {
+  "central.C": 0.13611
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.1111111111111114e-08,
+  "F": 1.0,
+  "MM": 0.13611,
+  "VdPerKg": 2.057142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662122
+ },
+ "reference_peaks": {
+  "central.C": 0.2765596440383206
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Rifapentine_Conde2016_rifaquin_34",
+ "molar_masses": {
+  "central.C": 0.877
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  525.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 5.083333333333334e-07,
+  "F": 0.9,
+  "MM": 0.877,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00035714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.000525,
+  "ka": 3.3333333333333335e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 38400.44076557567
+ },
+ "reference_peaks": {
+  "central.C": 0.008723518104819663
+ },
+ "review_status": "needs_review",
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

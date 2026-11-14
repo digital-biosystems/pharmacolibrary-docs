@@ -1,0 +1,55 @@
+{
+ "model_id": "Abrocitinib_Wang2022v2_PD_qtcf",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": -6.2e-06,
+  "exposure_per_s": 1e-06,
+  "slope": 2.6
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": -6.2e-06,
+  "1e-06": -3.6e-06
+ },
+ "stop_time": 1000.0,
+ "subtitle": "change from baseline in Fridericia-corrected QT (∆QTcF) (∆QTcF) against abrocitinib concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "ms",
+   "factor": 0.001,
+   "si_unit": "s"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "milliseconds",
+  "slope": {
+   "display_only": false,
+   "display_unit": "ms/[ng/mL]",
+   "factor": 1000.0000000000001,
+   "si_unit": "(s)/(kg/m3)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "ng/mL",
+  "factor": 1e-06,
+  "label": "abrocitinib concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "ms",
+  "factor": 0.001,
+  "label": "change from baseline in Fridericia-corrected QT (∆QTcF) (∆QTcF)"
+ }
+}

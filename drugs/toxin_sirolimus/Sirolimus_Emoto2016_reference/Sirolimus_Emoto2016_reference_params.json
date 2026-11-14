@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 3 mg oral (L04AH01)",
+ "model_id": "Sirolimus_Emoto2016_reference",
+ "molar_masses": {
+  "central.C": 0.9142
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.975e-06,
+  "F": 0.9,
+  "MM": 0.9142,
+  "Tlag": 2268.0,
+  "VdPerKg": 0.004314285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-06,
+  "ka": 0.00013472222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 26664.52905811623
+ },
+ "reference_peaks": {
+  "central.C": 7.661010569295959e-06
+ },
+ "review_status": "needs_review",
+ "stop_time": 604800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

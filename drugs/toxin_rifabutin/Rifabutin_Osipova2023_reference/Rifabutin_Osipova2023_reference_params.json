@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Rifabutin_Osipova2023_reference",
+ "molar_masses": {
+  "retainedFraction": 0.847
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  193.2,
+  386.4,
+  798.0
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.847,
+  "Tb[1]": 6744.134729772441,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00019319999999999998
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9942110843744189
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

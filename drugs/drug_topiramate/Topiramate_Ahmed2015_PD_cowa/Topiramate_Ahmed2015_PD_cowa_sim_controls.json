@@ -1,0 +1,12 @@
+[
+ {
+  "key": "stop_time",
+  "label": "Topiramate concentration range",
+  "unit": "mg l(-1)",
+  "scale": 1.0000000000000002,
+  "min": 100.0,
+  "max": 5000.0,
+  "step": 10.0,
+  "sim": true
+ }
+]

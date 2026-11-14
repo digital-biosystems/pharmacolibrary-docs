@@ -1,0 +1,55 @@
+{
+ "model_id": "Sotatercept_AitOudhia2025_PD_pvr",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 719.9,
+  "exposure_per_s": 1e-06,
+  "slope": -51640.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 719.9,
+  "1e-06": 719.84836
+ },
+ "stop_time": 1000.0,
+ "subtitle": "pulmonary vascular resistance (PVR) against sotatercept concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "dynes.s/cm5",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "dynes.s/cm5",
+  "slope": {
+   "display_only": false,
+   "display_unit": "",
+   "factor": 1000000.0,
+   "si_unit": "(1)/(kg/m3)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "ng/mL",
+  "factor": 1e-06,
+  "label": "sotatercept concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "dynes.s/cm5",
+  "factor": 1.0,
+  "label": "pulmonary vascular resistance (PVR)"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "model_id": "Empagliflozin_van2023_PD_fpg",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1.0,
+  "slope": -0.16
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.0": -0.15999999999999998
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Fasting plasma glucose (FPG) against dose",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": true,
+   "display_unit": "nmol/L*h",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "mmol/L",
+  "slope": {
+   "display_only": false,
+   "display_unit": "mmol/L",
+   "factor": 0.9999999999999999,
+   "si_unit": "mole / meter ** 3"
+  }
+ },
+ "x_axis": {
+  "display_unit": "nmol/L*h",
+  "factor": 1.0,
+  "label": "dose",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mmol/L",
+  "factor": 1.0,
+  "label": "Fasting plasma glucose (FPG)"
+ }
+}

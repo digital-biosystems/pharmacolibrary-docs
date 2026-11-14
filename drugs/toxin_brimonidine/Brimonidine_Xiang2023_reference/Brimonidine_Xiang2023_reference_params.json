@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "Brimonidine_Xiang2023_reference",
+ "molar_masses": {
+  "retainedFraction": 0.29214
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.29214,
+  "Tb[1]": 224748.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662124
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.999075459216282
+ },
+ "stop_time": 1209600.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

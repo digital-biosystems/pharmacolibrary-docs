@@ -1,0 +1,49 @@
+{
+ "model_id": "Disopyramide_Whiting1980_PD_qtms",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1.0,
+  "slope": 14.5
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.9999999999999999": 14.5
+ },
+ "stop_time": 1000.0,
+ "subtitle": "prolongation of the QT interval (ΔQTms) against disopyramide concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/ml",
+   "factor": 0.9999999999999999,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "ms",
+  "slope": {
+   "display_only": false,
+   "display_unit": "ms/jig ml-'",
+   "factor": 1.0000000000000002,
+   "si_unit": "(1)/(kg/m3)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "mg/ml",
+  "factor": 0.9999999999999999,
+  "label": "disopyramide concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "ms",
+  "factor": 1.0,
+  "label": "prolongation of the QT interval (ΔQTms)"
+ }
+}

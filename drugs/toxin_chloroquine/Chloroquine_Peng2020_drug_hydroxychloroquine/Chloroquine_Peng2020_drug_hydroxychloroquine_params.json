@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 500 mg oral (P01BA01)",
+ "model_id": "Chloroquine_Peng2020_drug_hydroxychloroquine",
+ "molar_masses": {
+  "central.C": 0.319877
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.3111111111111113e-05,
+  "F": 74.6,
+  "MM": 0.319877,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0419,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "ka": 0.0002619444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 16181.52321296392
+ },
+ "reference_peaks": {
+  "central.C": 0.01184936883656429
+ },
+ "review_status": "needs_review",
+ "stop_time": 864000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

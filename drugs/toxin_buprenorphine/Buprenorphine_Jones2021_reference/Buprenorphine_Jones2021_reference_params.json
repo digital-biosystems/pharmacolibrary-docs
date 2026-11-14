@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Buprenorphine_Jones2021_reference",
+ "molar_masses": {
+  "central.C": 0.4676
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0,
+  300.0
+ ],
+ "parameters": {
+  "Cl": 1.45e-05,
+  "F": 1.0,
+  "MM": 0.4676,
+  "Tlag": 0.0,
+  "VdPerKg": 0.006171428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0007055555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4924.680862666833
+ },
+ "reference_peaks": {
+  "central.C": 0.0001987439879177174
+ },
+ "stop_time": 108000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

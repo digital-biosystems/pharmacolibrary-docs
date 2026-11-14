@@ -1,0 +1,51 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ropinirole_Shill2009_reference",
+ "molar_masses": {
+  "central.C": 0.260381
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.25,
+  0.5,
+  0.75,
+  1.0,
+  1.5,
+  2.0,
+  3.0,
+  4.0,
+  5.0,
+  6.0,
+  8.0,
+  10.0,
+  12.0,
+  15.0,
+  18.0,
+  24.0
+ ],
+ "parameters": {
+  "Cl": 1.684732730527645e-05,
+  "F": 0.9,
+  "MM": 0.260381,
+  "Tlag": 598.2,
+  "VdPerKg": 0.007500000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-07,
+  "ka": 0.003,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2460.120240480962
+ },
+ "reference_peaks": {
+  "central.C": 4.084570759771318e-07
+ },
+ "stop_time": 111600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

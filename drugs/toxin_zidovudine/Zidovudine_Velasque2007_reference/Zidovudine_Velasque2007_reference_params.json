@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 600 mg parenteral (J05AF01)",
+ "model_id": "Zidovudine_Velasque2007_reference",
+ "molar_masses": {
+  "central.C": 0.267245
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.7166666666666665e-05,
+  "F": 1.0,
+  "MM": 0.267245,
+  "VdPerKg": 0.0026203463928374687,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "k12": 6.193898171067274e-05,
+  "k21": 0.00115693595836162,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662001
+ },
+ "reference_peaks": {
+  "central.C": 0.003080364679318839
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

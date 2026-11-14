@@ -1,0 +1,55 @@
+{
+ "model_id": "Eribulin_van2013_PD_anc",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 4.03,
+  "exposure_per_s": 1e-06,
+  "slope": 4.51e-08
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 4.03,
+  "9.999999999999997e-07": 4.0300000000000455
+ },
+ "stop_time": 1000.0,
+ "subtitle": "absolute neutrophil counts (ANC) against eribulin concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "10^9 neutrophils l(-1)",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "μg l(-1)",
+   "factor": 9.999999999999997e-07,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "10^9 neutrophils l(-1)",
+  "slope": {
+   "display_only": false,
+   "display_unit": "μg l(-1)",
+   "factor": 9.999999999999997e-07,
+   "si_unit": "kilogram / meter ** 3"
+  }
+ },
+ "x_axis": {
+  "display_unit": "μg l(-1)",
+  "factor": 9.999999999999997e-07,
+  "label": "eribulin concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "10^9 neutrophils l(-1)",
+  "factor": 1.0,
+  "label": "absolute neutrophil counts (ANC)"
+ }
+}

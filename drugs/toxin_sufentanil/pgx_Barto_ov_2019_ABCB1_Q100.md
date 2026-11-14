@@ -1,0 +1,80 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Sufentanil&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/&quot;},{&quot;label&quot;:&quot;Barto\u0161ov\u00e1_2019 \u00b7 PGx ABCB1&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sufentanil_Bartkowskaniatkowska2016_reference&quot;,&quot;label&quot;:&quot;Bartkowska-\u015aniatkowska_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Bartkowskaniatkowska2016_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Borsuk2017_reference&quot;,&quot;label&quot;:&quot;Borsuk_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Borsuk2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Hahn2019_reference&quot;,&quot;label&quot;:&quot;Hahn_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Hahn2019_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_bovill_jg_1&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_bovill_jg_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_bovill_jg_1.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_cork_rc_2&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_cork_rc_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_cork_rc_2.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_estimatecpb_adjusted_model&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_estimatecpb_adjusted_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_estimatecpb_adjusted_model.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_ethuin_f_5&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_ethuin_f_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_ethuin_f_5.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_final_model_estimate&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_final_model_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_final_model_estimate.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_gepts_e_4&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_gepts_e_4&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_gepts_e_4.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_hahn_jecmo_8&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_hahn_jecmo_8&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_hahn_jecmo_8.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_hudson_rj_cpb_adjusted_model&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_hudson_rj_cpb_adjusted_model_6&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_hudson_rj_cpb_adjusted_model.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_jeleazcov_c_cpb_adjusted_mode&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_jeleazcov_c_cpb_adjusted_model_7&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_jeleazcov_c_cpb_adjusted_mode.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sufentanil_Khaowroongrueng2024_lehmann_ka_3&quot;,&quot;label&quot;:&quot;Khaowroongrueng_2024_lehmann_ka_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_sufentanil/Sufentanil_Khaowroongrueng2024_lehmann_ka_3.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# ABCB1 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model runs for this record's scenarios and each one changes the simulation, but the paper reports no values for them to compare with. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+- **what it is:** qualitative — Gene–drug association without a quantitative parameter effect.
+- **source:** this paper, `Bartošová_2019` — [doi](https://doi.org/10.33549/physiolres.934325)
+- **gene:** ABCB1
+- **mechanism:** transport — the gene's transporter moves the drug
+- **applies to:** pharmacokinetics (exposure)
+- **parameter it changes:** NIL (`Q100`)
+- **effect:** not quantified
+- **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
+
+### Notes from the extraction
+
+- association-only evidence (no extracted θ) — not a covariate
+- genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
+- reference category (θ=0) not captured — must not be inferred
+
+## Citation
+Bartošová O et al., Epidural analgesia with sufentanil in r…, Physiological research 68(S… (2019)
+  ·  DOI: [10.33549/physiolres.934325](https://doi.org/10.33549/physiolres.934325)
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
+
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `applies_to` | pk |  | mismatch |
+| `gpt-oss:120b` | `mechanism` | transport |  | mismatch |
+| `gpt-oss:120b` | `target_parameter_id` | Q100 |  | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model downloads
+
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsufentanil%5D%20pgx_Barto_ov_2019_ABCB1_Q100&body=Drug%3A%20sufentanil%0ARecord%3A%20pgx_Barto_ov_2019_ABCB1_Q100%0APaper%3A%20Barto%C5%A1ov%C3%A1_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_sufentanil/pgx_Barto_ov_2019_ABCB1_Q100%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>← back to [Sufentanil](drugs/toxin_sufentanil/)</sub>

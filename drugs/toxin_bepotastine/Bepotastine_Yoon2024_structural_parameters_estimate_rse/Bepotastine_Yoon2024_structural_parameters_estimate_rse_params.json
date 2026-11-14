@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Bepotastine_Yoon2024_structural_parameters_estimate_rse",
+ "molar_masses": {
+  "central.C": 0.388892
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3.0
+ ],
+ "parameters": {
+  "Cl": 7.777777777777777e-06,
+  "F": 0.9,
+  "MM": 0.388892,
+  "Tlag": 972.0000000000001,
+  "VdPerKg": 0.0014714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-06,
+  "ka": 0.0011694444444444445,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3809.218436873748
+ },
+ "reference_peaks": {
+  "central.C": 2.166733574593755e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

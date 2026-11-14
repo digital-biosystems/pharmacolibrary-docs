@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 80 mg oral (J05AF04)",
+ "model_id": "Stavudine_Zazo2022_stavudine_aunp",
+ "molar_masses": {
+  "central.C": 0.224216
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.277777777777778e-07,
+  "F": 0.9,
+  "MM": 0.224216,
+  "Tlag": 1476.0,
+  "VdPerKg": 0.00184,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8e-05,
+  "ka": 0.0006611111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12003.41792809714
+ },
+ "reference_peaks": {
+  "central.C": 0.0005535472499108571
+ },
+ "review_status": "needs_review",
+ "stop_time": 3628800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

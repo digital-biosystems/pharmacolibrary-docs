@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "PolymyxinBSulfate_Liang2023_final_model_mean",
+ "molar_masses": {
+  "central.C": 1.203499
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  50.0,
+  75.0,
+  100.0,
+  150.0
+ ],
+ "parameters": {
+  "Cl": 3.4444444444444444e-07,
+  "F": 1.0,
+  "MM": 1.203499,
+  "VdPerKg": 0.00023771428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "k12": 5.074786324786325e-05,
+  "k21": 1.2755958375293722e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662084
+ },
+ "reference_peaks": {
+  "central.C": 0.001419599680757897
+ },
+ "stop_time": 169200.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,0 +1,49 @@
+{
+ "model_id": "Ibuprofen_Hong2008_PD_platelet_aggregation",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 0.001,
+  "slope": 15.6
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.0009999999999999998": 0.0156
+ },
+ "stop_time": 1000.0,
+ "subtitle": "ex vivo whole blood platelet aggregation induced by collagen (platelet aggregation) against ibuprofen concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": false,
+   "display_unit": "μmol/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "mol/m3"
+  },
+  "response_unit": "ohms",
+  "slope": {
+   "display_only": false,
+   "display_unit": "(mg/L) -1",
+   "factor": 1000.0000000000002,
+   "si_unit": "(1)/(mol/m3)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "μmol/L",
+  "factor": 0.0009999999999999998,
+  "label": "ibuprofen concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "ohms",
+  "factor": 1.0,
+  "label": "ex vivo whole blood platelet aggregation induced by collagen (platelet aggregation)"
+ }
+}

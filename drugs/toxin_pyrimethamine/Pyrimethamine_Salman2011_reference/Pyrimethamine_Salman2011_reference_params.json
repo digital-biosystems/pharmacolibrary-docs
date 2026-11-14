@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "Pyrimethamine_Salman2011_reference",
+ "molar_masses": {
+  "retainedFraction": 0.248714
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.248714,
+  "Tb[1]": 1347840.0000000002,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662126
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9998457396898213
+ },
+ "stop_time": 7257600.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

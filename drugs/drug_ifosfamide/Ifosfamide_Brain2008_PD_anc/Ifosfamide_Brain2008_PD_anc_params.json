@@ -1,0 +1,55 @@
+{
+ "model_id": "Ifosfamide_Brain2008_PD_anc",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 4490.0,
+  "exposure_per_s": 1.0,
+  "slope": 0.014
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 4490.0,
+  "0.9999999999999999": 4490.014
+ },
+ "stop_time": 1000.0,
+ "subtitle": "absolute neutrophil count (ANC) against ifosfamide concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "mm-3",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mmol l-1",
+   "factor": 0.9999999999999999,
+   "si_unit": "mol/m3"
+  },
+  "response_unit": "mm-3",
+  "slope": {
+   "display_only": false,
+   "display_unit": "l mmol-1",
+   "factor": 1.0000000000000002,
+   "si_unit": "meter ** 3 / mole"
+  }
+ },
+ "x_axis": {
+  "display_unit": "mmol l-1",
+  "factor": 0.9999999999999999,
+  "label": "ifosfamide concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mm-3",
+  "factor": 1.0,
+  "label": "absolute neutrophil count (ANC)"
+ }
+}

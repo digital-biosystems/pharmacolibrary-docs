@@ -1,0 +1,55 @@
+{
+ "model_id": "Dasatinib_Ande2018_PD_active_caspase_3_activity",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 1.0,
+  "exposure_per_s": 1.0,
+  "slope": 63200.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 1.0,
+  "1.0": 63201.000000000015
+ },
+ "stop_time": 1000.0,
+ "subtitle": "active caspase-3 activity against dasatinib and everolimus concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "nM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "",
+  "slope": {
+   "display_only": false,
+   "display_unit": "L/nmol",
+   "factor": 1000000.0000000001,
+   "si_unit": "meter ** 3 / mole"
+  }
+ },
+ "x_axis": {
+  "display_unit": "nM",
+  "factor": 1.0,
+  "label": "dasatinib and everolimus concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "active caspase-3 activity"
+ }
+}

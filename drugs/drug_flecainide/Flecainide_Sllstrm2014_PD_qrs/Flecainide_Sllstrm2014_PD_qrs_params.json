@@ -1,0 +1,55 @@
+{
+ "model_id": "Flecainide_Sllstrm2014_PD_qrs",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0364,
+  "exposure_per_s": 1.0,
+  "slope": 33000.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0364,
+  "1.0": 33000.0364
+ },
+ "stop_time": 1000.0,
+ "subtitle": "QRS interval (QRS) against flecainide concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "ms",
+   "factor": 0.001,
+   "si_unit": "s"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "μM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "ms",
+  "slope": {
+   "display_only": false,
+   "display_unit": "%/μM",
+   "factor": 10000.0,
+   "si_unit": "1 / meter"
+  }
+ },
+ "x_axis": {
+  "display_unit": "μM",
+  "factor": 1.0,
+  "label": "flecainide concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "ms",
+  "factor": 0.001,
+  "label": "QRS interval (QRS)"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "model_id": "Dacarbazine_Osieka1984_PD_gd",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1e-06,
+  "slope": 2670000.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1e-06": 2.67
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Growth delay (GD) (GD) against dose",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/kg",
+   "factor": 1e-06,
+   "si_unit": "1"
+  },
+  "response_unit": "",
+  "slope": {
+   "display_only": false,
+   "display_unit": "",
+   "factor": 1000000.0,
+   "si_unit": "(1)/(1)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "mg/kg",
+  "factor": 1e-06,
+  "label": "dose",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "Growth delay (GD) (GD)"
+ }
+}

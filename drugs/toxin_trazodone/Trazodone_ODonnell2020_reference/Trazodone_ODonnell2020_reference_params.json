@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 300 mg oral (N06AX05)",
+ "model_id": "Trazodone_ODonnell2020_reference",
+ "molar_masses": {
+  "central.C": 0.371869
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.1568498082956493e-05,
+  "F": 639.0,
+  "MM": 0.371869,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0103,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.00010333333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 21700.20975465334
+ },
+ "reference_peaks": {
+  "central.C": 0.1887930691215252
+ },
+ "review_status": "needs_review",
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 1000 mg oral (J01MA02)",
+ "model_id": "Ciprofloxacin_Petkova2023_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.3027777777777776e-07,
+  "F": 0.9,
+  "Tlag": 194.4,
+  "VdPerKg": 3.0142857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "k12": 0.0005028962611901001,
+  "k21": 0.00026461623718481575,
+  "ka": 0.00035,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 15337.37075866446
+ },
+ "reference_peaks": {
+  "central.C": 0.007177243446200193
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

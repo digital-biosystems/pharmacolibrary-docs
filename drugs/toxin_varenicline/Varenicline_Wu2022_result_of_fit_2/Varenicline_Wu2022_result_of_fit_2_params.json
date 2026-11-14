@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Varenicline_Wu2022_result_of_fit_2",
+ "molar_masses": {
+  "central.C": 0.211268
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.06,
+  1.0
+ ],
+ "parameters": {
+  "Cl": 3.1444444444444443e-06,
+  "F": 0.9,
+  "MM": 0.211268,
+  "Tlag": 561.6,
+  "VdPerKg": 0.0027260428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 6e-08,
+  "ka": 0.0002955555555555556,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11427.65531062124
+ },
+ "reference_peaks": {
+  "central.C": 2.383894322330671e-07
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

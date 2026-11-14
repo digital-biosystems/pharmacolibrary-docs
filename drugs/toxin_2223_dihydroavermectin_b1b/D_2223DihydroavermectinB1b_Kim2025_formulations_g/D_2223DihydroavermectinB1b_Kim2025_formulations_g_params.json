@@ -1,0 +1,29 @@
+{
+ "dose_source": "WHO ATC DDD 12 mg oral (P02CF01)",
+ "model_id": "D_2223DihydroavermectinB1b_Kim2025_formulations_g",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.833333333333334e-07,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00035999999999999997,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.2e-05,
+  "ka": 2.4999999999999998e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 41843.6873747495
+ },
+ "reference_peaks": {
+  "central.C": 0.000181961056308101
+ },
+ "review_status": "needs_review",
+ "stop_time": 144000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

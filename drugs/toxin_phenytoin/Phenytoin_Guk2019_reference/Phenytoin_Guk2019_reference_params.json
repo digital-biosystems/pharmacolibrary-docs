@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 300 mg oral (N03AB02)",
+ "model_id": "Phenytoin_Guk2019_reference",
+ "molar_masses": {
+  "central.C": 0.25227299999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.7500000000000002e-07,
+  "F": 0.9,
+  "MM": 0.25227299999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0009741428571428571,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.0005527777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10152.340604771
+ },
+ "reference_peaks": {
+  "central.C": 0.003861440504185396
+ },
+ "stop_time": 1382400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

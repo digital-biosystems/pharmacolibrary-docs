@@ -1,0 +1,42 @@
+{
+ "dose_source": "paper",
+ "model_id": "Phenytoin_Tanaka2013_reference",
+ "molar_masses": {
+  "central.C": 0.25227299999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1050.0,
+  1260.0,
+  1575.0,
+  26250.0,
+  39410.0,
+  52500.0
+ ],
+ "parameters": {
+  "Cl": 4.4722222222222223e-07,
+  "F": 1.0,
+  "MM": 0.25227299999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0002971428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00105,
+  "ka": 0.0013944444444444442,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3420.105972905974
+ },
+ "reference_peaks": {
+  "central.C": 0.04726666793978225
+ },
+ "review_status": "needs_review",
+ "stop_time": 169200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

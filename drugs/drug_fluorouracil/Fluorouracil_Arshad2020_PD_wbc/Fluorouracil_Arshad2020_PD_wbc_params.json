@@ -1,0 +1,55 @@
+{
+ "model_id": "Fluorouracil_Arshad2020_PD_wbc",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 6.86,
+  "exposure_per_s": 0.001,
+  "slope": 2820.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 6.86,
+  "0.0009999999999999998": 9.68
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Total WBC count (WBC) against 5FU concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "× 109/L",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "× 109/L",
+  "slope": {
+   "display_only": false,
+   "display_unit": "L/mg",
+   "factor": 1000.0000000000002,
+   "si_unit": "meter ** 3 / kilogram"
+  }
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "label": "5FU concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "× 109/L",
+  "factor": 1.0,
+  "label": "Total WBC count (WBC)"
+ }
+}

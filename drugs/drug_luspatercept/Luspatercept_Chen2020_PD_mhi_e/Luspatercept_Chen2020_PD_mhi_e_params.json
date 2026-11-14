@@ -1,0 +1,49 @@
+{
+ "model_id": "Luspatercept_Chen2020_PD_mhi_e",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1.0,
+  "slope": 1.101
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.0": 1.101
+ },
+ "stop_time": 1000.0,
+ "subtitle": "modified hematologic improvement–erythroid (mHI-E) in weeks 1–24 (mHI-E) against luspatercept concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": true,
+   "display_unit": "day·μg/mL",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "",
+  "slope": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  }
+ },
+ "x_axis": {
+  "display_unit": "day·μg/mL",
+  "factor": 1.0,
+  "label": "luspatercept concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "modified hematologic improvement–erythroid (mHI-E) in weeks 1–24 (mHI-E)"
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "dose_source": "paper",
+ "model_id": "Farnesol_Zhu2024_reference",
+ "molar_masses": {
+  "retainedFraction": 0.22237200000000001
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  77000.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zhu_2024:other_prose",
+    "value_si": 0.0011085
+   },
+   {
+    "source": "Zhu_2024:other_prose",
+    "value_si": 0.0014137
+   },
+   {
+    "source": "Zhu_2024:prose",
+    "value_si": 0.0011085
+   },
+   {
+    "source": "Zhu_2024:prose",
+    "value_si": 0.0014137
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.22237200000000001,
+  "Tb[1]": 16200.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.077
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9975844220905421
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

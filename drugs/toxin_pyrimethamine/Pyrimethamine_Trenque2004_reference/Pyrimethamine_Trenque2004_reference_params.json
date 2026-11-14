@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 75 mg oral (P01BD01)",
+ "model_id": "Pyrimethamine_Trenque2004_reference",
+ "molar_masses": {
+  "central.C": 0.248714
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.365740740740741e-08,
+  "F": 0.9,
+  "MM": 0.248714,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0005142857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7.5e-05,
+  "ka": 3.611111111111111e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 87265.73146292585
+ },
+ "reference_peaks": {
+  "central.C": 0.001605219997907513
+ },
+ "stop_time": 1814400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

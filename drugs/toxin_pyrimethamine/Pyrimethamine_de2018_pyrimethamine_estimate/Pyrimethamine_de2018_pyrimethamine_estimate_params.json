@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Pyrimethamine_de2018_pyrimethamine_estimate",
+ "molar_masses": {
+  "central.C": 0.248714
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  25.0,
+  1500.0
+ ],
+ "parameters": {
+  "Cl": 2.3027777777777776e-07,
+  "F": 1.0,
+  "MM": 0.248714,
+  "Tlag": 0.0,
+  "VdPerKg": 0.001305714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "ka": 0.00038888888888888887,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13828.61397326977
+ },
+ "reference_peaks": {
+  "central.C": 0.0002646542370373557
+ },
+ "stop_time": 1468800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

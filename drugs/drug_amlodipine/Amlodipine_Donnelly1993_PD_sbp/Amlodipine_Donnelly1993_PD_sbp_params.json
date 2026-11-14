@@ -1,0 +1,49 @@
+{
+ "model_id": "Amlodipine_Donnelly1993_PD_sbp",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1e-06,
+  "slope": -310.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1e-06": -0.00031
+ },
+ "stop_time": 1000.0,
+ "subtitle": "erect systolic blood pressure (SBP) against amlodipine concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/ml",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "mm Hg",
+  "slope": {
+   "display_only": false,
+   "display_unit": "mm Hg/ng/ml",
+   "factor": 100.0,
+   "si_unit": "meter ** 4"
+  }
+ },
+ "x_axis": {
+  "display_unit": "ng/ml",
+  "factor": 1e-06,
+  "label": "amlodipine concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mm Hg",
+  "factor": 1.0,
+  "label": "erect systolic blood pressure (SBP)"
+ }
+}
