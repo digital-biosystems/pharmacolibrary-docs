@@ -1,0 +1,270 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Lovastatin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lovastatin_Guan2015_reference&quot;,&quot;label&quot;:&quot;Guan_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lovastatin/Lovastatin_Guan2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lovastatin_Kivist1998_reference&quot;,&quot;label&quot;:&quot;Kivist\u00f6_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lovastatin/Lovastatin_Kivist1998_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# Lovastatin
+
+- **generic name:** Lovastatin
+- **T3DB:** [T3D4787](http://www.t3db.ca/toxins/T3D4787) · **DrugBank:** [DB00227](https://go.drugbank.com/drugs/DB00227) · **PubChem:** [CID 53232](https://pubchem.ncbi.nlm.nih.gov/compound/53232)
+- **groups:** approved, investigational
+
+## About
+
+Lovastatin is a cholesterol-lowering agent that belongs to the class of medications called statins. It was the second agent of this class discovered. It was discovered by Alfred Alberts and his team at Merck in 1978 after screening only 18 compounds over 2 weeks. …
+
+- **Category:** Drug, Synthetic Toxin
+- **Route of exposure:** studies suggest that <5% of the oral dose reaches the general circulation as active inhibitors. Time to peak serum concentration is 2-4 hours. Lovastatin undergoes extensive first-pass metabolism so the availability of the drug in the system is low and variable.
+- **Sources and uses:** For management as an adjunct to diet to reduce elevated total-C, LDL-C, apo B, and TG levels in patients with primary hypercholesterolemia and mixed dyslipidemia. For primary prevention of coronary heart disease and to slow progression of coronary atherosclerosis in patients with coronary heart disease.
+- **Mechanism of toxicity:** Lovastatin is structurally similar to the HMG, a substituent of the endogenous substrate of HMG-CoA reductase. Lovastatin is a prodrug that is activated <i>in vivo</i> via hydrolysis of the lactone ring to form the ‘_-hydroxyacid. …
+- **Acute toxicity:** LD<sub>50</sub>>1000 mg/kg (orally in mice)
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D4787">T3DB T3D4787</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 75330-75-5 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:40303">ChEBI 40303</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| lovastatin | parent | 404.547 | C24H36O5 | PubChem | [53232](https://pubchem.ncbi.nlm.nih.gov/compound/53232) | Bucher_2002, Kivistö_1998, Peng_2021 |
+| Lovastatin acid | metabolite | — (mass units only) | — | — | — | — |
+
+## Start here
+
+> **Kivistö_1998_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy volunteers, n = 10. [Run it in the simulator](drugs/toxin_lovastatin/Lovastatin_Kivist1998_reference.md?tab=Simulation) · [record](drugs/toxin_lovastatin/Lovastatin_Kivist1998_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Guan_2015 · CL</text><circle cx="490.1" cy="30.0" r="4" fill="#78909c"><title>Guan_2015 · CL: 7.2 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kivistö_1998 · CL</text><circle cx="490.1" cy="46.0" r="4" fill="#78909c"><title>Kivistö_1998 · CL: 7.2 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Peng_2021 · CL</text><circle cx="490.1" cy="62.0" r="4" fill="#ef6c00"><title>Peng_2021 · CL: 7.2 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Guan_2015_reference](drugs/toxin_lovastatin/Lovastatin_Guan2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Guan Q et al., Development of lovastatin-loaded poly(l…, Drug design, development an… (2015) | [10.2147/DDDT.S76676](https://doi.org/10.2147/DDDT.S76676) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kivistö_1998_reference](drugs/toxin_lovastatin/Lovastatin_Kivist1998_reference.md) | ▶ model + simulator | retention, 1 pool | 4 | Kivistö KT et al., Different effects of itraconazole on th…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00034.x](https://doi.org/10.1046/j.1365-2125.1998.00034.x) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Peng_2021_reference](drugs/toxin_lovastatin/Lovastatin_Peng2021_reference.md) | held back | 1-compartment, IV | 2 | Peng WY et al., Preclinical Pharmacokinetics and Pharma…, ACS omega (2021) | [10.1021/acsomega.1c01201](https://doi.org/10.1021/acsomega.1c01201) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bucher_2002_reference](drugs/toxin_lovastatin/Lovastatin_Bucher2002_reference.md) | — | 1-compartment (no model) | 0 | Bucher M et al., Effect of roxithromycin on the pharmaco…, European journal of clinica… (2002) | [10.1007/s00228-001-0385-6](https://doi.org/10.1007/s00228-001-0385-6) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Illingworth_1992_LDL](drugs/toxin_lovastatin/pd_Illingworth_1992_LDL.md) | LDL cholesterol concentrations ← lovastatin · inhibition effect | — | Illingworth DR et al., Comparative hypolipidemic effects of lo…, Atherosclerosis (1992) | [10.1016/0021-9150(92)90037-h](https://doi.org/10.1016/0021-9150(92)90037-h) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 0.50).">human + animal</span> | [de_1993_cholesterol_synthesis](drugs/toxin_lovastatin/pd_de_1993_cholesterol_synthesis.md) | cholesterol synthesis ← lovastatin · direct sigmoid Emax (Hill) effect | — | de Vries AC et al., Different effects of the hypolipidemic…, Biochimica et biophysica ac… (1993) | [10.1016/0005-2760(93)90218-x](https://doi.org/10.1016/0005-2760(93)90218-x) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Liu_2016_lung_cancer_risk](drugs/toxin_lovastatin/pd_Liu_2016_lung_cancer_risk.md) | lung cancer risk ← lovastatin · time-to-event model | — | Liu JC et al., Statins dose-dependently exert a chemop…, Oncotarget (2016) | [10.18632/oncotarget.11162](https://doi.org/10.18632/oncotarget.11162) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lovastatin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor, `ABCC2` substrate, `SLCO1A2` inhibitor, `SLCO2B1` unknown | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` unknown, `SLCO2B1` unknown, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor, `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor, `ABCB11` substrate, `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: HDAC2 (inhibitor), HMGCR (inhibitor), ITGAL (inhibitor), PON3 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-15 12:45 | 40:13 | 3/1/0 | 3/0/0 | 0/0/0 | 756,837/54,614 | einfracz / qwen3.8-flash-next | 37 | 2/27 | 37/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 498 matched, 196 returned
+- **screened:** 7  ·  **relevant:** 7
+- **records:** 4  ·  extracted 2  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Liu_2008.pdf` | Liu Y et al., Bama miniature pigs (Sus scrofa domesti…, Comparative medicine (2008) | popPK | 10 |  | [19149415](https://pubmed.ncbi.nlm.nih.gov/19149415) | The paper reports pharmacokinetic parameters (bioavailability, excretion percentages) for lovastatin, but the specific numeric values are not present in the provided text, only summarized qualitatively or as percentages. |
+| `Pentikainen_1992.pdf` | Pentikainen PJ et al., Comparative pharmacokinetics of lovasta…, Journal of clinical pharmac… (1992) | popPK | 10 | [10.1002/j.1552-4604.1992.tb03818.x](https://doi.org/10.1002/j.1552-4604.1992.tb03818.x) | [1613123](https://pubmed.ncbi.nlm.nih.gov/1613123) | The paper reports kinetic comparisons (AUC fold differences) but lacks the specific numeric parameter values (e.g., clearance, half-life, volume) required for extraction in the provided evidence. |
+| `Sun_2002.pdf` | Sun JX et al., Comparative pharmacokinetics of lovasta…, Journal of clinical pharmac… (2002) | popPK | 10 | [10.1177/00912700222011111](https://doi.org/10.1177/00912700222011111) | [11831543](https://pubmed.ncbi.nlm.nih.gov/11831543) | The paper reports quantitative pharmacokinetic parameters (bioavailability percentages) for lovastatin in humans, but the specific numeric values for standard PK parameters (Cmax, Tmax, AUC, t1/2, CL/F, Vd) are absent from the provided text, likely residing in tables or supplementary materials not included in the evidence. |
+| `Bucher_2002.pdf` | Bucher M et al., Effect of roxithromycin on the pharmaco…, European journal of clinica… (2002) | popPK | 9 | [10.1007/s00228-001-0385-6](https://doi.org/10.1007/s00228-001-0385-6) | [11868800](https://pubmed.ncbi.nlm.nih.gov/11868800) | The paper explicitly reports quantitative pharmacokinetic parameters (Cmax, tmax, t1/2, AUC) for lovastatin in humans. |
+| `Mignini_2008.pdf` | Mignini F et al., Pharmacokinetics and bioequivalence stu…, Clinical and experimental h… (2008) | popPK | 9 | [10.1080/10641960801944249](https://doi.org/10.1080/10641960801944249) | [18293165](https://pubmed.ncbi.nlm.nih.gov/18293165) | The paper reports on the pharmacokinetics of lovastatin in humans, but the provided evidence text only describes the study design and statistical conclusions without listing any specific numeric values for kinetic parameters. |
+| `Kivistö_1998.pdf` | Kivistö KT et al., Different effects of itraconazole on th…, British journal of clinical… (1998) | popPK | 8 | [10.1046/j.1365-2125.1998.00034.x](https://doi.org/10.1046/j.1365-2125.1998.00034.x) | [9690949](https://pubmed.ncbi.nlm.nih.gov/9690949) | The paper reports quantitative pharmacokinetic parameters for lovastatin and its metabolite, specifically terminal half-lives (t1/2,z) and fold-changes in Cmax and AUC, in humans. |
+| `Neuvonen_2008.pdf` | Neuvonen PJ et al., Pharmacokinetic comparison of the poten…, Clinical pharmacokinetics (2008) | popPK | 8 | [10.2165/00003088-200847070-00003](https://doi.org/10.2165/00003088-200847070-00003) | [18563955](https://pubmed.ncbi.nlm.nih.gov/18563955) | The paper discusses quantitative changes in plasma concentrations (e.g., 20-fold) and interaction factors, but no specific numeric kinetic parameters (like half-life values or clearance rates) are provided in the text. |
+| `Li_2005.pdf` | Li Z et al., Plasma clearance of lovastatin versus c…, Journal of alternative and… (2005) | popPK | 7 | [10.1089/acm.2005.11.1031](https://doi.org/10.1089/acm.2005.11.1031) | [16398595](https://pubmed.ncbi.nlm.nih.gov/16398595) | The paper reports quantitative PK parameters (Cmax and AUC) for lovastatin and its hydroxy-acid metabolite in healthy human volunteers, comparing them to a supplement. |
+| `Lamson_2002.pdf` | Lamson M et al., Pharmacokinetics of lovastatin extended…, Biopharmaceutics & drug dis… (2002) | popPK | 6 | [10.1002/bdd.304](https://doi.org/10.1002/bdd.304) | [12015788](https://pubmed.ncbi.nlm.nih.gov/12015788) | The paper reports pharmacokinetic parameters (Cmax, AUC) for lovastatin and its metabolite in humans, providing exposure metrics relevant to TK assessment, though not rate constants or clearance. |
+| `Lankas_2004.pdf` | Lankas GR et al., The role of maternal toxicity in lovast…, Birth defects research. Par… (2004) | popPK | 6 | [10.1002/bdrb.20005](https://doi.org/10.1002/bdrb.20005) | [15282732](https://pubmed.ncbi.nlm.nih.gov/15282732) | The paper mentions conducting toxicokinetic studies to measure maternal and embryonic/fetal drug concentrations, but the actual numeric values are not provided in the text. |
+| `Olbricht_1997.pdf` | Olbricht C et al., Accumulation of lovastatin, but not pra…, Clinical pharmacology and t… (1997) | popPK | 5 | [10.1016/S0009-9236(97)90034-5](https://doi.org/10.1016/S0009-9236(97)90034-5) | [9333107](https://pubmed.ncbi.nlm.nih.gov/9333107) | The paper reports quantitative pharmacokinetic data for lovastatin in humans, specifically Area Under the Curve (AUC) values, which are relevant exposure metrics, although it lacks detailed kinetic parameters like clearance, volume of distribution, or half-life. |
+
+<sub>queue written 2026-11-15 12:30 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abdelkawy_2022 | irrelevant | 2 | 0 | The paper reports pharmacokinetic parameters for sofosbuvir and ledipasvir, with lovastatin acting only as a co-administered inhibitor (co-exposure) rather than the substance being characterized. |
+| popPK | Ahmed_2013 | irrelevant | 1 | 0 | The paper reports pharmacokinetic data for simvastatin, not lovastatin; lovastatin is mentioned only for comparison. |
+| popPK | Al-Ramahi_2012 | irrelevant | 0 | 0 | This is an epidemiological study of prescribing patterns where lovastatin is merely listed as a commonly prescribed medication, with no pharmacokinetic data or parameters provided. |
+| popPK | Alberts_1988 | irrelevant | 1 | 0 | The paper is a qualitative review of discovery and biology without any reported quantitative toxicokinetic parameters or numerical data. |
+| PGx | Arayne_2005 | not_relevant | 2 | 0 | The paper focuses on drug-drug interactions (grapefruit juice and CYP3A4 downregulation), not the effect of a gene variant on lovastatin PK/PD parameters. |
+| popPK | Asberg_2003 | irrelevant | 2 | 0 | The text is a review of drug interactions between cyclosporin and statins, mentioning lovastatin only as a subject of metabolic pathways (CYP3A4) and relative exposure changes, without reporting specific quantitative toxicokinetic parameter values like half-life or clearance for lovastatin itself. |
+| PGx | Asberg_2003 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions between cyclosporin and statins, not pharmacogenomic effects of gene variants. |
+| popPK | Atzmony_2020 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for porokeratosis and reports no quantitative toxicokinetic parameters for lovastatin. |
+| PGx | Atzmony_2020 | not_relevant | 0 | 0 | The paper discusses a therapeutic effect based on disease gene mutations (MVD/PMVK) and uses topical administration, not pharmacogenomic effects on systemic PK/PD parameters of lovastatin. |
+| popPK | Bae_1999 | irrelevant | 0 | 0 | The paper reports on the cloning and regulation of an enzyme (DHCR) with lovastatin used merely as a dietary treatment to induce enzyme activity, containing no quantitative toxicokinetic parameters for lovastatin. |
+| PGx | Bailey_1998 | not_relevant | 0 | 0 | The paper discusses a drug-food interaction (grapefruit juice) mediated by enzyme inhibition, not a pharmacogenomic effect (gene variant/genotype) on lovastatin. |
+| popPK | Bailey_2004 | irrelevant | 0 | 0 | The paper is a review of grapefruit juice interactions with various cardiovascular drugs; it mentions lovastatin only as a drug susceptible to these interactions but reports no quantitative toxicokinetic parameters for lovastatin itself. |
+| PGx | Balasubramanian_2021 | not_relevant | 2 | 1 | The text is a general review of drug-drug interactions involving CYP enzymes and transporters for statins, but it does not report specific pharmacogenomic effects (gene variants vs. PK/PD parameters). |
+| popPK | Berens_1990 | irrelevant | 2 | 1 | The paper investigates the pharmacokinetics of cyclosporine as the subject, with lovastatin serving only as a co-administered agent to test for drug interactions, and no kinetic parameters for lovastatin itself are reported. |
+| popPK | Berglund_1998 | irrelevant | 0 | 0 | The reported parameters are for LDL-apolipoprotein B metabolism, not lovastatin kinetics; lovastatin is the treatment agent altering host physiology, not the subject of the kinetic model. |
+| popPK | Bilheimer_1983 | irrelevant | 1 | 0 | The paper discusses pharmacodynamics of LDL clearance but provides no quantitative toxicokinetic parameters for lovastatin. |
+| popPK | Bilheimer_1983_2 | irrelevant | 0 | 0 | The study measures pharmacodynamic parameters (fractional catabolic rate and synthetic rate) of low density lipoprotein (LDL), not the toxicokinetic parameters of mevinolin (lovastatin) itself. |
+| popPK | Bischoff_1998 | irrelevant | 0 | 0 | Lovastatin is only mentioned as a comparator substance in enzyme inhibition and efficacy studies, with no toxicokinetic parameters reported for it. |
+| popPK | Bocan_1992 | relevant | 4 | 0 | The paper describes an animal study measuring tissue distribution of radiolabeled lovastatin, but no specific kinetic parameters or numeric values are provided in the text. |
+| popPK | Bray_2006 | irrelevant | 0 | 0 | Lovastatin is mentioned only as a drug interacting with exenatide, and the kinetic parameters provided belong to exenatide, not lovastatin. |
+| PGx | Busti_2004 | not_relevant | 0 | 0 | The text discusses atazanavir and mentions lovastatin only in the context of drug-drug interactions, without reporting any pharmacogenomic effects of gene variants on lovastatin parameters. |
+| popPK | Caglar_2013 | irrelevant | 0 | 0 | Lovastatin is used solely as an internal standard for the analytical determination of rosuvastatin; no kinetic data for lovastatin is reported. |
+| PGx | Caron_2007 | not_relevant | 0 | 0 | The paper focuses on validating the MetaSite software for predicting metabolic sites of statins via CYP enzymes, not on pharmacogenomic variations affecting PK/PD parameters. |
+| popPK | Cartier_2000 | irrelevant | 0 | 0 | The paper describes a study on simvastatin in mice and mentions lovastatin only as an analog with similar effects, reporting no quantitative kinetic parameters for lovastatin. |
+| popPK | Chastain_2017 | irrelevant | 1 | 0 | The paper is a review that mentions lovastatin's pharmacokinetic properties qualitatively (prodrug, CYP3A4 metabolism) but reports no specific quantitative kinetic parameters (half-life, clearance, Vmax, etc.) for lovastatin. |
+| popPK | Chung_2010 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for nicardipine, with lovastatin acting only as a co-administered inhibitor/comparator; no kinetic parameters for lovastatin itself are reported. |
+| popPK | Cianflone_1990 | irrelevant | 0 | 0 | The paper measures chylomicron/remnant clearance (a pharmacodynamic/pharmacokinetic parameter of triglycerides and retinol) as a response to lovastatin therapy, but does not report any kinetic parameters for lovastatin itself. |
+| PGx | Cooper-DeHoff_2022 | not_relevant | 2 | 0 | The text is an abstract of a CPIC guideline; it mentions lovastatin in a list of affected drugs but provides no specific data, tables, or quantitative effect sizes for lovastatin. |
+| popPK | Croons_2010 | irrelevant | 0 | 0 | The paper investigates statin-induced cell viability and apoptosis in macrophages and smooth muscle cells, reporting no pharmacokinetic parameters for lovastatin. |
+| popPK | Dhakal_2019 | irrelevant | 2 | 8 | The paper reports the percentage reduction of amyloid-beta levels in yeast treated with lovastatin, which is a pharmacodynamic effect on a heterologous protein, not a toxicokinetic parameter (e.g., half-life, clearance, volume of distribution) for lovastatin itself. |
+| PGx | Dimitroulakos_2006 | not_relevant | 0 | 0 | The text discusses drug-drug interactions and pharmacological mechanisms (mevalonate pathway inhibition) but contains no data on how genetic variants (gene/genotype/phenotype) affect lovastatin PK/PD parameters. |
+| popPK | Dutta_2020 | irrelevant | 0 | 0 | Lovastatin is not studied; the paper focuses on other statins (pravastatin, atorvastatin, etc.) in mice, and no quantitative kinetic parameters for lovastatin are present. |
+| popPK | East_1986 | irrelevant | 1 | 0 | The paper describes a clinical outcome (lowering of lipids) in a single patient but reports no quantitative toxicokinetic parameters for lovastatin (mevinolin). |
+| popPK | Fan_2020 | relevant | 8 | 2 | The paper reports quantitative PK parameters (AUC, Cmax, CL/F, t1/2) for lovastatin (measured as its metabolite LVA) in mice, but the specific numerical values are contained in Table 1 and Figure 4, which are referenced in the text but not provided in the evidence snippet (only text descriptions of fold-changes are present). |
+| popPK | Farkouh_2019 | irrelevant | 0 | 0 | The paper is a review article on red yeast rice safety that mentions lovastatin/monacolin K qualitatively but reports no quantitative toxicokinetic parameters. |
+| PGx | Feidt_2010 | not_relevant | 0 | 0 | The paper reports on the induction of CYP450 enzymes by statins in vitro (hepatocytes), not the effect of human genetic variants on the pharmacokinetics or pharmacodynamics of lovastatin in vivo. |
+| PGx | Fichtenbaum_2002 | not_relevant | 0 | 0 | The text discusses drug-drug interactions involving CYP450 enzymes and antiretrovirals, but contains no information regarding pharmacogenomics, gene variants, or genotypes affecting lovastatin parameters. |
+| popPK | García-Sabina_2012 | irrelevant | 1 | 0 | This is a qualitative review article discussing metabolic pathways and drug interactions without providing specific numeric toxicokinetic parameters for lovastatin. |
+| PGx | García_2003 | not_relevant | 0 | 0 | The text is a general review of statin pharmacokinetics, bioavailability, and metabolic pathways, with no mention of genetic variants or pharmacogenomic effects. |
+| popPK | Garnett_1995 | irrelevant | 1 | 0 | The paper is a review of drug interactions and does not report quantitative kinetic parameters for lovastatin; it only mentions effects on pharmacokinetics qualitatively. |
+| popPK | Gebhard_1991 | irrelevant | 0 | 0 | The paper focuses on probucol's effect on HMG CoA reductase activity and lovastatin is used as an inducing agent/comparator, not characterized for its own kinetic parameters. |
+| PGx | Ghorbannezhad_2024 | not_relevant | 2 | 1 | The paper mentions lovastatin briefly in lists or studies where results were negative (no significant difference) or reported for other statins (atorvastatin, fluvastatin), failing to report a specific gene-variant effect on a lovastatin PK/PD parameter. |
+| popPK | Gilch_2007 | irrelevant | 1 | 0 | The paper discusses lovastatin (mevinolin) only qualitatively as a cholesterol-lowering compound to alter PrP(c) localization, providing no quantitative toxicokinetic parameters. |
+| popPK | Hegele_1993 | irrelevant | 0 | 0 | Lovastatin is mentioned only as a treatment that ameliorated dyslipidemia, with no pharmacokinetic or toxicokinetic parameters reported. |
+| popPK | Hirota_2020 | irrelevant | 1 | 0 | The paper is a review discussing mechanisms of drug interactions without reporting original quantitative kinetic parameter values for lovastatin. |
+| PGx | Hirota_2020 | not_relevant | 2 | 1 | The text is only the abstract of a review article, which discusses general mechanisms and the need for further study but does not provide specific quantitative data or fitted effect sizes for gene variants affecting lovastatin PK/PD parameters. |
+| PGx | Hougaard_2020 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (DDI) between clarithromycin and statins mediated by enzyme/transporter inhibition, but does not report pharmacogenomic effects based on patient gene variants or genotypes. |
+| popPK | Hsu_1995 | irrelevant | 1 | 0 | The paper is a review of clinical efficacy and safety comparing four statins, but the provided evidence contains no specific quantitative toxicokinetic parameters for lovastatin. |
+| popPK | Hu_2025 | irrelevant | 1 | 0 | Lovastatin is used only as a positive control/comparator in an in vivo efficacy study; no toxicokinetic parameters are reported for it. |
+| popPK | Hurren_2012 | irrelevant | 2 | 0 | This is a review article summarizing drug-drug interactions of GLP-1RAs; lovastatin is mentioned as a comparator/co-medication with qualitative results (decreased AUC), but no specific quantitative kinetic parameters for lovastatin are reported in the provided evidence. |
+| PGx | Hylton_2017 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions between statins and antimicrobials via CYP3A4, but does not report any pharmacogenomic (gene variant/genotype) effects on lovastatin PK/PD parameters. |
+| popPK | Ishigami_2001 | irrelevant | 2 | 0 | The paper investigates lovastatin as an inhibitor of the metabolism of a probe substrate (mexazolam), reporting Ki values for inhibition, not toxicokinetic parameters (such as clearance, volume of distribution, or half-life) of lovastatin itself. |
+| PGx | Ishigami_2001 | not_relevant | 0 | 0 | The study investigates in vitro CYP3A4 inhibition by various statins using mexazolam as a probe, without examining human genetic variants or their effect on lovastatin PK/PD parameters. |
+| popPK | Izar_2005 | irrelevant | 2 | 1 | The paper is a narrative review of drug interactions in transplant patients, mentioning lovastatin qualitatively (e.g., AUC increase) without reporting primary quantitative toxicokinetic parameters for lovastatin itself. |
+| popPK | Jeerawattanawart_2025 | irrelevant | 0 | 0 | The paper reports on therapeutic efficacy and transcriptomic responses in mice and macrophage cells, but provides no quantitative toxicokinetic parameters (such as clearance, volume of distribution, half-life, or PBPK model parameters) for lovastatin. |
+| PGx | Jenkinson_2023 | not_relevant | 0 | 0 | The paper describes a computational method for mining fungal genomes to identify biosynthetic gene clusters for lovastatin production, not pharmacogenomic effects of human gene variants on lovastatin PK/PD parameters. |
+| popPK | Jensen_1995 | irrelevant | 1 | 0 | The paper reports pharmacokinetic parameters for cyclosporine, not lovastatin, as lovastatin is only mentioned as a comparator for previous cholesterol management. |
+| popPK | Jiang_2022 | irrelevant | 0 | 0 | Lovastatin appears only as a comparator drug for efficacy, with no quantitative kinetic parameters reported. |
+| popPK | Jungnickel_1992 | irrelevant | 0 | 0 | This is a review article focused on pravastatin, where lovastatin is only mentioned as a comparator without any quantitative kinetic parameters for lovastatin itself. |
+| PGx | Ke_2022 | not_relevant | 0 | 0 | The paper investigates the antiviral mechanism of lovastatin in vitro and does not report any effects of human gene variants or genotypes on lovastatin's PK/PD parameters. |
+| popPK | Kim_2015 | irrelevant | 0 | 0 | The text is a general review abstract mentioning lovastatin only as an example of a drug metabolized by gut microbiota, with no quantitative kinetic parameters provided. |
+| PGx | Klotz_2003 | not_relevant | 0 | 0 | The paper compares pharmacokinetic profiles and drug interactions (e.g., CYP3A4 inhibitors) of various statins, but does not report on genetic variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Kosoglou_2004 | irrelevant | 1 | 0 | The paper discusses lovastatin kinetics but reports only qualitative outcomes ("no significant changes", "apparent decrease") without any specific numeric kinetic parameters (e.g., half-life, clearance, Cmax, AUC) in the provided text. |
+| popPK | Kosoglou_2005 | irrelevant | 0 | 0 | The paper is a review of Ezetimibe; lovastatin is only mentioned as a statin with no significant interaction, with no kinetic parameters for lovastatin provided. |
+| popPK | Kovanen_1981 | irrelevant | 2 | 0 | The paper studies the LDL receptor in dogs treated with mevinolin (lovastatin), measuring LDL catabolic rate, not the toxicokinetic parameters (e.g., half-life, clearance, volume) of lovastatin itself. |
+| popPK | Kunze_2015 | irrelevant | 3 | 1 | The paper applies an in vitro-in vivo extrapolation model (ECCCS) to predict clearance, using lovastatin acid as one of several subjects, but does not report specific measured quantitative toxicokinetic parameters or detailed numeric values for lovastatin disposition in the provided evidence. |
+| popPK | Lam_2012 | irrelevant | 0 | 0 | Lovastatin is mentioned only as a contraindicated co-administered drug, with no kinetic parameters reported for it. |
+| PGx | Lam_2012 | not_relevant | 0 | 0 | The text mentions lovastatin only as an example of a drug contraindicated with boceprevir due to CYP interactions, providing no data on genetic variants affecting lovastatin PK or PD. |
+| popPK | Lankas_2004 | relevant | 6 | 0 | The paper mentions conducting toxicokinetic studies to measure maternal and embryonic/fetal drug concentrations, but the actual numeric values are not provided in the text. |
+| PGx | Law_2006 | not_relevant | 2 | 1 | The text discusses drug-drug interactions (CYP3A4 inhibition) and general adverse event incidence rates for statins, but does not report pharmacogenomic effects (gene variants) on specific PK or PD parameters. |
+| popPK | Lennernäs_1997 | irrelevant | 2 | 2 | The paper is a review discussing pharmacodynamic and pharmacokinetic similarities generally, noting that human PK data for lovastatin are "poor and incomplete," without providing specific quantitative kinetic parameters (like half-life, clearance, or Vd) specifically for lovastatin in the evidence text. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction (lovastatin inhibiting CYP2C8 to sensitize cells to paclitaxel) and does not analyze how a genetic variant affects lovastatin's PK/PD parameters. |
+| popPK | Liu_2008 | relevant | 10 | 2 | The paper reports pharmacokinetic parameters (bioavailability, excretion percentages) for lovastatin, but the specific numeric values are not present in the provided text, only summarized qualitatively or as percentages. |
+| popPK | Liu_2014 | irrelevant | 3 | 0 | The provided text contains no numeric toxicokinetic parameters, focusing instead on formulation characterization and therapeutic efficacy outcomes. |
+| popPK | Lodge_2008 | irrelevant | 2 | 1 | The paper describes an analytical method validation for quantifying lovastatin metabolite in mouse serum and does not report kinetic parameters such as half-lives, clearance, or volume of distribution. |
+| PGx | Lü_2009 | not_relevant | 0 | 0 | The paper investigates the immunological effect of lovastatin on T-cell activation but does not analyze or report any pharmacogenomic data (gene variants or genotypes) affecting PK/PD parameters. |
+| popPK | Mantell_1992 | irrelevant | 2 | 0 | The text is a general review summarizing pharmacological properties and safety without providing any specific quantitative toxicokinetic parameters or numeric values for lovastatin. |
+| PGx | Martin_2003 | not_relevant | 2 | 1 | The text is a qualitative review discussing general risks and mentioning genetic factors theoretically, but it provides no specific data, effect sizes, or concrete pharmacogenomic parameters for lovastatin. |
+| popPK | Mauro_1993 | irrelevant | 1 | 0 | The paper is a clinical review of simvastatin, not lovastatin; the data belongs to a different substance and contains no kinetic parameters for lovastatin. |
+| popPK | McKenney_1988 | irrelevant | 1 | 0 | The paper is a general review of the drug's efficacy and safety that mentions pharmacokinetics qualitatively but provides no specific numeric kinetic parameters in the text. |
+| popPK | Mignini_2008 | relevant | 9 | 2 | The paper reports on the pharmacokinetics of lovastatin in humans, but the provided evidence text only describes the study design and statistical conclusions without listing any specific numeric values for kinetic parameters. |
+| PGx | Molden_2001 | not_relevant | 1 | 0 | The text reviews CYP3A4 drug-drug interactions for lovastatin but does not report specific gene variants, genotypes, or phenotypes affecting PK/PD parameters. |
+| popPK | Morimoto_2006 | irrelevant | 0 | 0 | The paper describes a pharmacodynamic mechanism (efferocytosis enhancement) without reporting any quantitative toxicokinetic parameters or disposition data. |
+| popPK | Mtulo_2026 | irrelevant | 2 | 1 | The paper is an in silico computational study using ADMET prediction tools (SwissADME) rather than reporting experimental toxicokinetic parameters measured in humans or animals. |
+| PGx | Neuvonen_2006 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (CYP3A4 inhibitors, gemfibrozil, etc.) but does not report effects of specific gene variants or genotypes on lovastatin PK/PD parameters. |
+| popPK | Neuvonen_2008 | relevant | 8 | 0 | The paper discusses quantitative changes in plasma concentrations (e.g., 20-fold) and interaction factors, but no specific numeric kinetic parameters (like half-life values or clearance rates) are provided in the text. |
+| PGx | Neuvonen_2008 | not_relevant | 2 | 3 | The paper discusses a genetic polymorphism (SLCO1B1 c.521T&gt;C) but explicitly states it has 'no significant effect' on fluvastatin and focuses on simvastatin/pravastatin for that gene; it does not report specific genotype-dependent PK parameter changes for lovastatin, which is instead discussed in the context of CYP3A drug interactions. |
+| popPK | Neuvonen_2012 | irrelevant | 1 | 0 | This is a review article mentioning lovastatin only as an example of a CYP3A4 substrate in drug interactions, with no quantitative kinetic parameters or primary data reported. |
+| PGx | Pai_2025 | not_relevant | 0 | 0 | The paper reports the development and efficacy of a sulfated glycosaminoglycan from oysters for dyslipidemia, with lovastatin only mentioned as a comparator drug, without any pharmacogenomic data regarding gene variants affecting lovastatin's PK or PD parameters. |
+| PGx | Patel_2013 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (statins with macrolide antibiotics), not pharmacogenomic effects (gene variants/genotypes). |
+| popPK | Pentikainen_1992 | relevant | 10 | 1 | The paper reports kinetic comparisons (AUC fold differences) but lacks the specific numeric parameter values (e.g., clearance, half-life, volume) required for extraction in the provided evidence. |
+| PGx | Penzak_2002 | not_relevant | 0 | 0 | The text mentions CYP3A4 metabolism for lovastatin but does not report any specific gene variants, genotypes, or phenotypes modifying PK/PD parameters. |
+| popPK | Priani_2025 | irrelevant | 0 | 0 | The paper is a review focused on ezetimibe formulations and pharmacokinetics; lovastatin is mentioned only as a co-delivery partner in fixed-dose combinations without any reported kinetic parameters for it. |
+| popPK | Raghow_2017 | irrelevant | 1 | 0 | This is a commentary on another study (Schonewille et al.) describing metabolic changes in cholesterol synthesis, not the original report of toxicokinetic parameters for lovastatin; no numeric PK values are provided. |
+| PGx | Raghow_2017 | not_relevant | 0 | 0 | The paper discusses general mechanisms of statin action and metabolic adaptations in mice but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Reinoso_2002 | irrelevant | 3 | 1 | The paper is a review summarizing pharmacokinetics of statins in animals, presenting qualitative trends rather than specific quantitative kinetic parameters for lovastatin. |
+| popPK | Sadowska_2023 | irrelevant | 1 | 2 | The provided text is a review article focusing on the biosynthesis, chemical synthesis, and general pharmacokinetics of various statins; it does not report primary quantitative toxicokinetic parameters for lovastatin, and the few numbers visible (e.g., half-life column headers) lack associated values or context for lovastatin specifically in the evidence snippet. |
+| popPK | Sandoval_2019 | irrelevant | 0 | 0 | The paper is a clinical case report on the therapeutic efficacy of topical lovastatin for CHILD syndrome, reporting only clinical outcomes and treatment duration without any toxicokinetic parameters (e.g., half-life, clearance, plasma concentrations). |
+| popPK | Schneck_2004 | irrelevant | 0 | 0 | The paper reports pharmacokinetics for rosuvastatin, with lovastatin mentioned only in the conclusion as a comparator for drug-drug interaction magnitude, providing no kinetic parameters for lovastatin. |
+| popPK | Shakour_2019 | irrelevant | 0 | 0 | The paper reports molecular docking binding affinities (pKi), which are binding constants, not toxicokinetic disposition parameters like clearance, volume of distribution, or metabolic rates. |
+| PGx | Shi_2025 | not_relevant | 0 | 0 | The paper investigates a biological mechanism (SLC13A2 transport of citrate) affecting liver regeneration and uses lovastatin as a pharmacological tool to inhibit HMGCR, but it does not study human gene variants or report pharmacokinetic/pharmacodynamic changes in lovastatin caused by genetic polymorphisms. |
+| PGx | Shiozawa_2021 | not_relevant | 2 | 5 | The study investigates the effect of CYP2C9 variants on the inhibition of warfarin metabolism by lovastatin, not the effect of genetic variants on lovastatin's own pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Shitara_2006 | irrelevant | 3 | 0 | This is a review article that discusses lovastatin kinetics and mentions a PBPK model but does not report specific primary quantitative parameter values for lovastatin in the provided text. |
+| PGx | Shitara_2006 | not_relevant | 2 | 1 | The text is an abstract of a review article discussing general mechanisms of pharmacokinetic alterations and drug interactions for statins, but it does not report specific data on how a gene variant affects lovastatin parameters. |
+| popPK | Sirtori_1990 | irrelevant | 2 | 0 | The paper is a general review comparing three statins and mentions only qualitative kinetic trends (short half-life, 24h decay) without providing specific quantitative parameters for lovastatin. |
+| popPK | Sirtori_1993 | irrelevant | 1 | 0 | This is a qualitative review discussing tissue selectivity and physicochemical properties without reporting specific quantitative toxicokinetic parameters. |
+| PGx | Song_2023 | not_relevant | 0 | 0 | The paper discusses the role of lovastatin in inhibiting cholesterol synthesis to block viral replication in fish cells, but it does not report pharmacogenomic effects of human gene variants on lovastatin PK or PD parameters. |
+| PGx | Soto-Acosta_2017 | not_relevant | 0 | 0 | The paper investigates the antiviral mechanism of lovastatin and metformin in dengue virus infection via HMGCR/AMPK pathways, but does not report any pharmacogenomic associations (gene variants affecting drug PK/PD). |
+| PGx | Subhan_2018 | not_relevant | 0 | 0 | The paper discusses acquired drug resistance mechanisms in a fungal model (Candida glabrata) via HMGCR overexpression or efflux, rather than human pharmacogenomics affecting PK/PD parameters. |
+| popPK | Sun_2002 | relevant | 10 | 2 | The paper reports quantitative pharmacokinetic parameters (bioavailability percentages) for lovastatin in humans, but the specific numeric values for standard PK parameters (Cmax, Tmax, AUC, t1/2, CL/F, Vd) are absent from the provided text, likely residing in tables or supplementary materials not included in the evidence. |
+| popPK | Sun_2021 | irrelevant | 3 | 6 | The quantitative data provided describe in vitro drug release kinetics from a formulation (zero-order model parameters) and stability data, not in vivo toxicokinetic parameters like half-life, clearance, or volume of distribution in the test animals; the mention of bioavailability is cited from previous literature. |
+| popPK | Thiollier_2016 | irrelevant | 2 | 0 | The paper discusses lovastatin as a model substrate for blood-brain barrier permeability but provides no quantitative toxicokinetic parameters or numeric values in the provided evidence. |
+| popPK | Uauy_1991 | irrelevant | 0 | 0 | The paper reports kinetic parameters (FCR) for LDL, not lovastatin; lovastatin is only mentioned as a therapeutic intervention. |
+| popPK | Vaquero_2010 | irrelevant | 2 | 0 | The paper is a review of diet-drug interactions that mentions lovastatin qualitatively but reports no original quantitative toxicokinetic parameters. |
+| popPK | Vuorio_2022 | irrelevant | 0 | 0 | The paper is a clinical review/commentary on drug-drug interactions between Paxlovid and statins, mentioning lovastatin only in the context of contraindication due to CYP3A metabolism, with no quantitative toxicokinetic parameters reported. |
+| popPK | Wagner_2016 | irrelevant | 0 | 0 | This is a clinical review regarding pediatric guidelines and does not report quantitative toxicokinetic parameters. |
+| PGx | Wagner_2016 | not_relevant | 0 | 0 | The text is a general review of pediatric statin use and guidelines, mentioning variability but lacking specific pharmacogenomic data, gene variants, or quantitative PK/PD effect sizes for lovastatin. |
+| popPK | Wang_2018 | irrelevant | 4 | 0 | The abstract mentions pharmacokinetic behavior and tissue distribution but provides no quantitative numeric parameters in the provided text. |
+| PGx | Wang_2024 | not_relevant | 0 | 0 | The study investigates the subcellular localization of the HMGCR enzyme under statin treatment but does not report pharmacokinetic or pharmacodynamic parameters influenced by genetic variants. |
+| popPK | Whitehorn_2016 | irrelevant | 1 | 10 | The paper explicitly states that no pharmacokinetic analysis was performed ("our study did not include pharmacokinetic analysis") and reports only clinical outcomes and safety data, with no toxicokinetic parameters for lovastatin. |
+| popPK | Whitfield_2007 | irrelevant | 0 | 0 | The text is a theoretical review discussing the mechanism of statins in Alzheimer's disease and does not report any quantitative toxicokinetic parameters for lovastatin. |
+| popPK | Wijesekara_2016 | irrelevant | 0 | 0 | The paper discusses lovastatin (referred to as mevastatin) solely as a pharmacological tool to reduce cholesterol synthesis, with no toxicokinetic parameters measured for it. |
+| popPK | Xiong_2026 | irrelevant | 0 | 0 | The paper focuses on metabolic engineering for pravastatin production in fungi, reporting titers and fermentation yields rather than any toxicokinetic parameters (such as half-lives, clearance, or partition coefficients) for lovastatin or pravastatin. |
+| popPK | Xu_2000 | irrelevant | 0 | 0 | The paper discusses lovastatin only as a comparator or implied context for mevastatin-induced neurotoxicity, reporting no quantitative toxicokinetic parameters for lovastatin. |
+| popPK | Yamazaki_2018 | irrelevant | 2 | 0 | The paper discusses general relationships between DDI parameters for a group of statins including lovastatin but does not report specific quantitative kinetic parameters for lovastatin itself in the provided text. |
+| popPK | Yang_2020 | relevant | 9 | 4 | The paper reports a human PBPK model for lovastatin with quantitative predicted PK parameters (Cmax, AUC) and model-derived metrics (Vmax, Km, clearance) referenced in Tables/Figures, but the specific numeric values for lovastatin are largely confined to Tables 1-6 and Figures 1-2 which are not fully provided in the text evidence. |
+| popPK | Yee_1998 | irrelevant | 1 | 0 | The paper is a review of atorvastatin where lovastatin is mentioned only as a comparator, with no kinetic data for lovastatin. |
+| popPK | Yin_2012 | irrelevant | 4 | 1 | The paper reports only relative statistical changes in AUC and Clearance (percentages and ratios) between genotype groups without providing absolute numeric values for kinetic parameters (like specific L/h or L), fitting the exclusion for studies without absolute kinetic parameters. |
+| PGx | Zabielska_2025 | not_relevant | 0 | 0 | The study investigates the synergistic antiproliferative effect of lovastatin and 5-FU on colorectal cancer cells in vitro, but does not analyze pharmacokinetic or pharmacodynamic parameters influenced by genetic variants. |
+| PGx | Zhong_2018 | not_relevant | 0 | 0 | The paper reports on the anti-cancer synergistic effects of lovastatin and troglitazone in cell lines and mouse models, focusing on cell cycle arrest mechanisms, without any analysis of gene variants, genotypes, or phenotypes affecting pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Zhou_2014 | irrelevant | 2 | 1 | The paper is a review summarizing drug-drug interaction studies, repeating values from other papers (e.g., isradipine-lovastatin) without presenting original kinetic parameters for lovastatin. |
+| PGx | unknown_2023 | not_relevant | 0 | 0 | The provided text is merely a title for a Corrigendum with no scientific content, results, or parameter data included. |
+| PGx | von_1995 | not_relevant | 0 | 0 | The text discusses drug-drug interactions between macrolides and lovastatin mediated by CYP3A4 inhibition, not pharmacogenomic effects of gene variants on PK/PD parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blovastatin%5D&body=Drug%3A%20lovastatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_lovastatin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-15 12:30 UTC</sub>

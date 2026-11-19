@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Theophylline_Wedagedera2022_reference",
+ "molar_masses": {
+  "central.C": 0.180167
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  190.0,
+  268.0,
+  320.0
+ ],
+ "parameters": {
+  "Cl": 1.3611111111111113e-08,
+  "F": 0.9,
+  "MM": 0.180167,
+  "Tlag": 0.0,
+  "VdPerKg": 3.857142857142858e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00019,
+  "ka": 0.000738888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7166.719634483405
+ },
+ "reference_peaks": {
+  "central.C": 0.06119715166071948
+ },
+ "review_status": "needs_review",
+ "stop_time": 777600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

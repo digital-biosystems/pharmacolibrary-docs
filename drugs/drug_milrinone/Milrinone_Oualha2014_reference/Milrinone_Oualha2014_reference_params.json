@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 50 mg parenteral (C01CE02)",
+ "model_id": "Milrinone_Oualha2014_reference",
+ "molar_masses": {
+  "central.C": 0.2112194
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.8888888888888884e-05,
+  "F": 1.0,
+  "MM": 0.2112194,
+  "VdPerKg": 1.1428571428571429e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662216
+ },
+ "reference_peaks": {
+  "central.C": 0.002142857090322593
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

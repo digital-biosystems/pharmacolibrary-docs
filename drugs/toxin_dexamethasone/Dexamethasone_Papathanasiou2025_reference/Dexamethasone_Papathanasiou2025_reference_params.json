@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 1.5 mg parenteral (H02AB02)",
+ "model_id": "Dexamethasone_Papathanasiou2025_reference",
+ "molar_masses": {
+  "central.C": 0.392467
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0717592592592594e-08,
+  "F": 1.0,
+  "MM": 0.392467,
+  "VdPerKg": 0.00017571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662042
+ },
+ "reference_peaks": {
+  "central.C": 0.0001219193446020829
+ },
+ "stop_time": 4233600.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

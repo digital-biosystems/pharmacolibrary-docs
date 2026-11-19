@@ -1,0 +1,168 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;melphalan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melphalan_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melphalan/Melphalan_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# melphalan
+
+- **generic name:** melphalan
+- **ATC codes:** `L01AA03`
+- **DrugBank:** [DB01042](https://go.drugbank.com/drugs/DB01042) · **PubChem:** [CID 460612](https://pubchem.ncbi.nlm.nih.gov/compound/460612)
+- **molar mass:** 305.2 g/mol (C13H18Cl2N2O2) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Melphalan is an alkylating agent chemotherapy medication used to treat multiple myeloma, ovarian cancer, and several types of leukemia and lymphoma. It is administered orally or intravenously, with intra-arterial delivery also being a named route. The medication is authorised in the European Union and remains in approved clinical use worldwide.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2298283](https://www.wikidata.org/wiki/Q2298283), [Wikipedia](https://en.wikipedia.org/wiki/Melphalan?oldid=1338646971) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| melphalan | parent | 305.2 | C13H18Cl2N2O2 | DrugBank | [460612](https://pubchem.ncbi.nlm.nih.gov/compound/460612) | Buitrago_2016, Li_2022, Shah_2022 |
+
+## Start here
+
+> **Li_2022_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> pediatric patients undergoing hematopoietic cell transplantation, n = ,"condition":"unknown","species":"human","compounds":["melphalan | parent | yes | yes | yes"],"links":"none"}. [Run it in the simulator](drugs/drug_melphalan/Melphalan_Li2022_reference.md?tab=Simulation) · [record](drugs/drug_melphalan/Melphalan_Li2022_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shah_2022 · V</text><circle cx="324.3" cy="30.0" r="4" fill="#ef6c00"><title>Shah_2022 · V: 24.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2022 · V1 ·/kg</text><circle cx="321.8" cy="46.0" r="4" fill="#78909c"><title>Li_2022 · V1 ·/kg: 23.8 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Li_2022_reference](drugs/drug_melphalan/Melphalan_Li2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Li S et al., Population Pharmacokinetics of Melphala…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2030](https://doi.org/10.1002/jcph.2030) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Buitrago_2016_reference](drugs/drug_melphalan/Melphalan_Buitrago2016_reference.md) | — | 1-compartment (no model) | 2 | Buitrago E et al., Pharmacokinetics of Melphalan After Int…, Journal of ocular pharmacol… (2016) | [10.1089/jop.2015.0088](https://doi.org/10.1089/jop.2015.0088) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Shah_2022_reference](drugs/drug_melphalan/Melphalan_Shah2022_reference.md) | — | 1-compartment (no model) | 1 | Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chandra_2022_reference](drugs/drug_melphalan/Melphalan_Chandra2022_reference.md) | — | 1-compartment (no model) | 0 | Chandra S et al., Test-dose pharmacokinetics guided melph…, British journal of clinical… (2022) | [10.1111/bcp.14932](https://doi.org/10.1111/bcp.14932) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nath_2007_reference](drugs/drug_melphalan/Melphalan_Nath2007_reference.md) | — | 1-compartment (no model) | 0 | Nath CE et al., Population pharmacokinetics of melphala…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02862.x](https://doi.org/10.1111/j.1365-2125.2007.02862.x) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Cho_2018_ANC](drugs/drug_melphalan/pd_Cho_2018_ANC.md) | absolute neutrophil count (ANC) biomarker turnover ← melphalan | — | Cho YK et al., Pharmacokinetic-Pharmacodynamic Model o…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12345](https://doi.org/10.1002/psp4.12345) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=melphalan).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), SLC7A10 (substrate), SLC7A5 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 17:34 | 3:10 | 3/2/0 | 1/0/0 | 0/0/0 | 166,485/11,704 | einfracz / qwen3.8-27b | 12 | 3/9 | 10/2 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 114 matched, 63 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Buitrago_2016.pdf` | Buitrago E et al., Pharmacokinetics of Melphalan After Int…, Journal of ocular pharmacol… (2016) | popPK | 10 | [10.1089/jop.2015.0088](https://doi.org/10.1089/jop.2015.0088) | [26785130](https://pubmed.ncbi.nlm.nih.gov/26785130) | The study reports quantitative PK parameters (t1/2, Cmax, AUC ratios) for melphalan in rabbits. |
+| `Dahi_2022.pdf` | Dahi PB et al., Evaluation of Melphalan Exposure in Lym…, Transplantation and cellula… (2022) | popPK | 10 | [10.1016/j.jtct.2022.05.003](https://doi.org/10.1016/j.jtct.2022.05.003) | [35545213](https://pubmed.ncbi.nlm.nih.gov/35545213) | The abstract describes a population-PK study with a specific AUC target, but the actual numeric parameter values (CL, V, etc.) are not explicitly listed in the provided text. |
+| `Li_2022.pdf` | Li S et al., Population Pharmacokinetics of Melphala…, Journal of clinical pharmac… (2022) | popPK | 10 | [10.1002/jcph.2030](https://doi.org/10.1002/jcph.2030) | [35048362](https://pubmed.ncbi.nlm.nih.gov/35048362) | The paper reports a population PK model for melphalan with explicit numeric values for clearance, volumes, and intercompartmental clearance in the abstract. |
+| `Nath_2007.pdf` | Nath CE et al., Population pharmacokinetics of melphala…, British journal of clinical… (2007) | popPK | 10 | [10.1111/j.1365-2125.2007.02862.x](https://doi.org/10.1111/j.1365-2125.2007.02862.x) | [17324241](https://pubmed.ncbi.nlm.nih.gov/17324241) | The abstract provides explicit quantitative values for the population pharmacokinetic model parameters (clearance and volume of distribution equations and interpatient variability) for melphalan in humans. |
+| `Chandra_2022.pdf` | Chandra S et al., Test-dose pharmacokinetics guided melph…, British journal of clinical… (2022) | popPK | 8 | [10.1111/bcp.14932](https://doi.org/10.1111/bcp.14932) | [34075614](https://pubmed.ncbi.nlm.nih.gov/34075614) | The study reports quantitative population-PK parameters including AUC, clearance ratios, and target AUC ranges for melphalan in humans. |
+| `Taich_2014.pdf` | Taich P et al., Clinical pharmacokinetics of intra-arte…, Ophthalmology (2014) | popPK | 8 | [10.1016/j.ophtha.2013.10.045](https://doi.org/10.1016/j.ophtha.2013.10.045) | [24359624](https://pubmed.ncbi.nlm.nih.gov/24359624) | The study reports a population pharmacokinetic model for melphalan in humans, but the specific numeric parameter estimates are not provided in the abstract or text evidence. |
+| `Gallo_1995.pdf` | Gallo JM et al., Time-dependent pharmacodynamic models i…, Cancer research (1995) | pd | 5 |  | [7553617](https://www.ncbi.nlm.nih.gov/pubmed/7553617) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Cho_2017.pdf` | Cho YK et al., Associations of High-Dose Melphalan Pha…, Clinical pharmacology and t… (2017) | pgx | 8 | [10.1002/cpt.644](https://doi.org/10.1002/cpt.644) | [28160288](https://www.ncbi.nlm.nih.gov/pubmed/28160288) | metadata signals extractable PGX data (SLC7A5, PK/PD-context) |
+| `Li_2023.pdf` | Li J et al., Evaluating the Impacts of CYP3A4*1B and…, Cancer genomics & proteomics (2023) | pgx | 8 | [10.21873/cgp.20360](https://doi.org/10.21873/cgp.20360) | [36581339](https://www.ncbi.nlm.nih.gov/pubmed/36581339) | metadata signals extractable PGX data (CYP3A4*1B, PK/PD-context) |
+| `Giglia_2014.pdf` | Giglia JL et al., A single nucleotide polymorphism in SLC…, Biology of blood and marrow… (2014) | pgx | 5 | [10.1016/j.bbmt.2014.03.022](https://doi.org/10.1016/j.bbmt.2014.03.022) | [24704384](https://www.ncbi.nlm.nih.gov/pubmed/24704384) | metadata signals extractable PGX data (SLC7A5) |
+
+<sub>queue written 2026-10-07 17:32 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Ben_2021 | not_relevant | 1 | 0 | The paper focuses on pharmacogenomics for busulfan and only mentions melphalan as a candidate for future optimization without reporting any specific gene-melphalan PK/PD effects. |
+| PGx | Bhatla_2008 | not_relevant | 0 | 0 | The paper reports clinical outcomes of a transplant regimen in Shwachman-Diamond syndrome but does not assess pharmacogenomic effects on melphalan PK or PD. |
+| popPK | Canal_1998 | irrelevant | 0 | 0 | The paper is a review of dose individualization strategies and mentions melphalan only as a drug requiring dosage adjustment in renal/hepatic dysfunction, without reporting any specific quantitative pharmacokinetic parameters for it. |
+| PGx | Canal_1998 | not_relevant | 0 | 0 | The paper is a general review of dose individualization strategies (BSA, renal/hepatic function, TDM) and does not report specific pharmacogenomic effects on melphalan pharmacokinetics or pharmacodynamics. |
+| popPK | Cho_2018 | irrelevant | 3 | 0 | The paper develops a PD model for neutropenia and explicitly states that melphalan PK parameters were fixed from a previous publication, providing no original quantitative PK values (CL, V, etc.) for melphalan in the evidence. |
+| popPK | Dahi_2022 | relevant | 10 | 0 | The abstract describes a population-PK study with a specific AUC target, but the actual numeric parameter values (CL, V, etc.) are not explicitly listed in the provided text. |
+| PGx | Damiano_1999 | not_relevant | 0 | 0 | The paper discusses cell adhesion-mediated drug resistance (CAM-DR) in human myeloma cell lines, not the pharmacogenomic effect of a gene variant on melphalan PK/PD. |
+| PGx | Dasgupta_2003 | not_relevant | 1 | 0 | The paper reports associations between GSTP1 genotype and clinical outcomes (survival/progression), but does not measure or report specific pharmacokinetic (e.g., AUC, clearance) or pharmacodynamic (e.g., concentration-response) parameters of melphalan. |
+| PGx | David-Beabes_2000 | not_relevant | 0 | 0 | The paper studies drug resistance mechanisms in cell lines and does not report pharmacogenomic effects on the PK or PD of melphalan in humans. |
+| popPK | Delitheos_1995 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay in yeast, not a pharmacokinetic study, and reports no disposition parameters for melphalan. |
+| PD | Delitheos_1995 | not_relevant | 0 | 0 | The paper reports that melphalan was inactive up to 400 micrograms/ml in yeast strains and does not provide any numeric PD parameters or concentration-effect curves for melphalan. |
+| PGx | Dumontet_2010 | not_relevant | 3 | 2 | The paper reports associations between SNPs and clinical outcomes (response, toxicity) but does not report changes in specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, EC50) of melphalan. |
+| popPK | Fu_2025 | irrelevant | 0 | 0 | The study reports patient-reported outcomes (quality of life) for a chemotherapy regimen containing melphalan, but contains no pharmacokinetic data. |
+| popPK | Gallo_1995 | irrelevant | 0 | 0 | no_text gate: only 213 chars of text extracted (&lt; 400) |
+| PGx | Giglia_2014 | not_relevant | 3 | 5 | The paper reports an association between a genotype and a clinical toxicity outcome (TPN use), not a change in a specific pharmacokinetic or pharmacodynamic parameter. |
+| PGx | Grazziutti_2006 | not_relevant | 0 | 0 | The paper investigates clinical risk factors (creatinine, dose) for oral mucositis and explicitly states that pharmacogenomic studies are needed but not performed. |
+| PGx | Hao_2021 | not_relevant | 0 | 0 | The paper reports busulfan drug-drug interactions involving melphalan, not pharmacogenomic effects on melphalan PK/PD. |
+| popPK | Ishida_1982 | irrelevant | 0 | 0 | This is an in-vitro cytotoxicity study measuring EC50 values for DNA damage, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Joerger_2012 | irrelevant | 1 | 0 | The paper is a review describing the methodology of covariate modeling and lists melphalan as an example but does not provide original quantitative PK parameter values. |
+| PGx | Joerger_2012 | not_relevant | 1 | 0 | This is a methodological review article on pharmacokinetic modeling that mentions melphalan as an example of a drug studied, but does not report specific pharmacogenomic effects. |
+| PGx | Keenan_2004 | not_relevant | 0 | 0 | The paper investigates 2-deoxyglucose uptake in drug-resistant cell lines and does not report pharmacogenomic effects on the PK or PD of melphalan. |
+| PGx | Kharbanda_2014 | not_relevant | 0 | 0 | The paper reports clinical outcomes of a transplant conditioning regimen and does not analyze the impact of gene variants on the pharmacokinetics or pharmacodynamics of melphalan. |
+| PGx | Khodadadi_2025 | not_relevant | 1 | 0 | The paper evaluates the pharmacodynamic interaction (combination efficacy) of melphalan and arsenic trioxide in leukemia cells, but it does not assess how a patient's specific gene variant or genotype influences these effects. |
+| popPK | Koh_2013 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay of dental compounds where melphalan is only mentioned as a comparator drug, providing no pharmacokinetic parameters. |
+| PD | Koh_2013 | not_relevant | 0 | 0 | The paper investigates dental compounds (hydroquinone, benzoquinone, eugenol, phtharal) and only mentions melphalan as a reference for tumor-specificity indices without providing any specific concentration-effect data or PD parameters for melphalan. |
+| PGx | Kühne_2007 | not_relevant | 0 | 0 | The study explicitly found no significant correlations between the genotypes and melphalan pharmacokinetics or side effects. |
+| PGx | Kühne_2008 | not_relevant | 4 | 5 | The paper reports associations between GST polymorphisms and adverse effects (PD outcomes), not changes in PK or specific PD parameters of melphalan itself, and concludes genotyping is not helpful. |
+| PGx | Landini_2017 | not_relevant | 0 | 0 | The paper focuses on auranofin resistance in ovarian cancer cells and mentions melphalan only as a cross-resistance agent without analyzing pharmacogenomic effects on melphalan's PK/PD. |
+| PGx | Mendonça-Torres_2013 | not_relevant | 0 | 0 | The paper studies the effect of the TSPO ligand PK11195 on neuroblastoma cell lines, including in combination with melphalan, but does not investigate gene variants or their impact on melphalan's PK or PD parameters. |
+| PGx | Michalska_2023 | not_relevant | 1 | 1 | The paper reports a pharmacogenomic association with clinical survival, not with a pharmacokinetic or pharmacodynamic parameter of melphalan. |
+| PGx | Misund_2022 | not_relevant | 1 | 0 | The paper investigates tumor genomics and transcriptomic changes in response to treatment (including melphalan) but does not report pharmacokinetic or pharmacodynamic parameter changes driven by host germline variants or genotypes. |
+| PGx | Nampoothiri_2019 | not_relevant | 3 | 0 | The paper correlates the GSTP1 genotype with clinical toxicity outcomes (GI toxicity, infections) rather than quantifying its effect on melphalan pharmacokinetic parameters like AUC. |
+| popPK | Nath_2016 | irrelevant | 0 | 0 | The paper investigates the mechanism of action of lonidamine, not melphalan, and contains no pharmacokinetic data for melphalan. |
+| PD | Nath_2016 | not_relevant | 0 | 0 | The paper discusses the mechanism of action of lonidamine, not melphalan, and does not report any pharmacodynamic or exposure-response data for melphalan. |
+| PGx | Ocanto_2020 | not_relevant | 0 | 0 | The paper reports clinical outcomes (GVHD, survival, rejection) of a conditioning regimen but does not investigate the impact of any gene variants on the pharmacokinetics or pharmacodynamics of melphalan. |
+| PGx | Paioli_2014 | not_relevant | 0 | 0 | The paper analyzes the influence of sex and age on toxicity, not the influence of gene variants/genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Rabier_1991 | not_relevant | 0 | 0 | The study investigates multifactorial drug resistance in cell lines, not the effect of a specific germline gene variant or genotype on melphalan pharmacokinetics or pharmacodynamics. |
+| PGx | Rapoport_2002 | not_relevant | 0 | 0 | The paper reports clinical outcomes of a high-dose chemotherapy/autotransplant protocol but contains no pharmacogenomic data or analysis of gene variants affecting melphalan PK/PD. |
+| popPK | Taich_2014 | relevant | 8 | 3 | The study reports a population pharmacokinetic model for melphalan in humans, but the specific numeric parameter estimates are not provided in the abstract or text evidence. |
+| popPK | Testart-Paillet_2007 | irrelevant | 0 | 0 | The paper is a review of pharmacodynamic models for hematological toxicity, not a study reporting quantitative pharmacokinetic parameters for melphalan. |
+| PD | Testart-Paillet_2007 | not_relevant | 2 | 0 | The text is a review abstract that mentions melphalan as an example of a drug for which PD models exist, but it does not report specific numeric PD parameters or extractable concentration-effect data in this snippet. |
+| popPK | Trudel_2007 | irrelevant | 0 | 0 | The study focuses on the antimyeloma activity of ABT-737 and its synergy with melphalan, with no pharmacokinetic parameters reported for melphalan. |
+| PD | Trudel_2007 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50) for ABT-737, not melphalan; melphalan is only mentioned as a combination partner without specific dose-response data. |
+| PGx | Winter_2016 | not_relevant | 0 | 0 | The paper investigates the effect of different chemotherapy schedules (conventional vs. metronomic) on cytotoxicity and angiogenesis, but does not report on pharmacogenomic factors (genotypes/variants) influencing PK or PD parameters. |
+| PGx | Wojas-Pelc_2005 | not_relevant | 0 | 0 | The paper is a clinical case report regarding the efficacy of IVIG and melphalan in treating scleromyxedema, with no mention of pharmacogenomics or specific PK/PD parameters influenced by genetic variants. |
+| popPK | Xu_2018 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of daratumumab in patients with multiple myeloma, and melphalan is only mentioned as a co-administered drug in the VMP regimen, not as the subject of the PK analysis. |
+| PD | Xu_2018 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and exposure-response relationship for daratumumab, not melphalan. |
+| PGx | Yang_2015 | not_relevant | 0 | 0 | The study evaluates a novel combination therapy in a mouse model and does not investigate the impact of specific gene variants on the pharmacokinetics or pharmacodynamics of melphalan. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmelphalan%5D&body=Drug%3A%20melphalan%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_melphalan/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:32 UTC</sub>

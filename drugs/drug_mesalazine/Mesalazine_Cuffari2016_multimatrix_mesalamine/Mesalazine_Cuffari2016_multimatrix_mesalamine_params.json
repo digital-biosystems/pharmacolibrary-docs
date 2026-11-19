@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Mesalazine_Cuffari2016_multimatrix_mesalamine",
+ "molar_masses": {
+  "central.C": 0.1531354
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2100.0,
+  4200.0,
+  7000.0
+ ],
+ "parameters": {
+  "Cl": 2.3777777777777777e-05,
+  "F": 1.0,
+  "MM": 0.1531354,
+  "VdPerKg": 0.0015571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0021,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662039
+ },
+ "reference_peaks": {
+  "central.C": 0.01805847476025827
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

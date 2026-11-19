@@ -1,0 +1,26 @@
+{
+ "model_id": "Glycopyrronium_Bartels2021_mf",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.833333333333333e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.025714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 3.8580246913580246e-05,
+  "k21": 1.8768768768768768e-05,
+  "ka": 0.0006666666666666666,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 4.451336294034427e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

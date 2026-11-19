@@ -1,0 +1,49 @@
+{
+ "model_id": "Empagliflozin_van2023_PD_sbp",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1.0,
+  "slope": -0.65
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.0": -0.65
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Systolic blood pressure (SBP) against dose",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": true,
+   "display_unit": "nmol/L*h",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "mmHg",
+  "slope": {
+   "display_only": true,
+   "display_unit": "mmHg",
+   "factor": 1.0,
+   "si_unit": "1"
+  }
+ },
+ "x_axis": {
+  "display_unit": "nmol/L*h",
+  "factor": 1.0,
+  "label": "dose",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mmHg",
+  "factor": 1.0,
+  "label": "Systolic blood pressure (SBP)"
+ }
+}

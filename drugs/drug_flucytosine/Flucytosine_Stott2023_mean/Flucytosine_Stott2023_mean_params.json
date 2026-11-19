@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Flucytosine_Stott2023_mean",
+ "molar_masses": {
+  "central.C": 0.1290925
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1750.0
+ ],
+ "parameters": {
+  "Cl": 1.6333333333333333e-06,
+  "F": 1.0,
+  "MM": 0.1290925,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00025,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00175,
+  "ka": 0.0004916666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4540.244721362433
+ },
+ "reference_peaks": {
+  "central.C": 0.0677041630940064
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

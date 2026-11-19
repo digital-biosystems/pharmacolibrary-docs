@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "Pyronaridine_Tan2009_reference",
+ "molar_masses": {
+  "central.C": 0.51806
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.00033055555555555556,
+  "F": 1.0,
+  "MM": 0.51806,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0010071428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 2.2616233254531126e-05,
+  "k21": 1.317722681359045e-06,
+  "ka": 0.0010694444444444445,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 837.0421261858079
+ },
+ "reference_peaks": {
+  "central.C": 0.00018505908087594104
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

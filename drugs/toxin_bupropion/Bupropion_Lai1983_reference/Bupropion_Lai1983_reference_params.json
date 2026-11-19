@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 300 mg oral (N06AX12)",
+ "model_id": "Bupropion_Lai1983_reference",
+ "molar_masses": {
+  "central.C": 0.23974299999999998
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.8888888888888884e-05,
+  "F": 1.0,
+  "MM": 0.23974299999999998,
+  "Tlag": 864.0,
+  "VdPerKg": 0.03911428571428571,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.0007833333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6541.781345354716
+ },
+ "reference_peaks": {
+  "central.C": 0.0001017260035452224
+ },
+ "review_status": "needs_review",
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

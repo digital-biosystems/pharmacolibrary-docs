@@ -1,0 +1,55 @@
+{
+ "model_id": "Olaparib_Sterl2024_PD_hb",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 116.2,
+  "exposure_per_s": 0.001,
+  "slope": 0.56
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 116.19999999999997,
+  "0.0009999999999999998": 116.20055999999997
+ },
+ "stop_time": 1000.0,
+ "subtitle": "haemoglobinaemia (HB) against olaparib concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "g/dL",
+   "factor": 9.999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "g/dL",
+  "slope": {
+   "display_only": false,
+   "display_unit": "L/mg",
+   "factor": 1000.0000000000002,
+   "si_unit": "meter ** 3 / kilogram"
+  }
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "label": "olaparib concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "g/dL",
+  "factor": 9.999999999999998,
+  "label": "haemoglobinaemia (HB)"
+ }
+}

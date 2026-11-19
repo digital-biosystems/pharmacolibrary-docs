@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 0.45 mg parenteral (C02AC01)",
+ "model_id": "Clonidine_Larsson2011_reference",
+ "molar_masses": {
+  "central.C": 0.230094
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.9722222222222224e-06,
+  "F": 1.0,
+  "MM": 0.230094,
+  "VdPerKg": 0.08120000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4.5000000000000003e-07,
+  "k12": 5.913284854171553e-06,
+  "k21": 4.249192302289647e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662045
+ },
+ "reference_peaks": {
+  "central.C": 7.912446583379903e-08
+ },
+ "stop_time": 4233600.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

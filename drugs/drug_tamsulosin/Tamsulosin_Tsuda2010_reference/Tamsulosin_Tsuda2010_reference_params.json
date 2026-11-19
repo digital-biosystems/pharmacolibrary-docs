@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tamsulosin_Tsuda2010_reference",
+ "molar_masses": {
+  "central.C": 0.408512
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.1,
+  0.2,
+  0.4,
+  0.8
+ ],
+ "parameters": {
+  "Cl": 6.333333333333333e-07,
+  "F": 1.0,
+  "MM": 0.408512,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0005357142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.0000000000000001e-07,
+  "ka": 0.00010222222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 21296.99398797595
+ },
+ "reference_peaks": {
+  "central.C": 1.8676499123891927e-06
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

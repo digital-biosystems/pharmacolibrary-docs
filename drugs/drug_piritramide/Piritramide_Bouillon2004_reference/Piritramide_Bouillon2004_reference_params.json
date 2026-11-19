@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 45 mg parenteral (N02AC03)",
+ "model_id": "Piritramide_Bouillon2004_reference",
+ "molar_masses": {
+  "central.C": 0.4305851
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.8472222222222224e-05,
+  "F": 1.0,
+  "MM": 0.4305851,
+  "VdPerKg": 0.0006842857142857142,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4.5e-05,
+  "k12": 0.0012468104848063094,
+  "k21": 0.00014856274184632393,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066211
+ },
+ "reference_peaks": {
+  "central.C": 0.00012547024002234003
+ },
+ "stop_time": 345600.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,0 +1,162 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin (human)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InsulinHuman_Potocka2011_reference&quot;,&quot;label&quot;:&quot;Potocka_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_human/InsulinHuman_Potocka2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# insulin (human)
+
+- **generic name:** insulin (human)
+- **ATC codes:** `A10AB01`, `A10AB01;A10AC01`, `A10AC01`, `A10AD01`, `A10AE01`, `A10AF01`
+- **DrugBank:** [DB00030](https://go.drugbank.com/drugs/DB00030) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Insulin is a hormone medication used to treat diabetes. It is usually given by subcutaneous injection, while intravenous and intramuscular routes are also available for specific clinical situations. It is widely used, with products authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q50265665](https://www.wikidata.org/wiki/Q50265665), [Wikipedia](https://en.wikipedia.org/wiki/Insulin?oldid=1385953303) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| insulin_human | metabolite | 5807.63 | C257H383N65O77S6 | PubChem | [118984375](https://pubchem.ncbi.nlm.nih.gov/compound/118984375) | Nosadini_1988, Potocka_2011, Vølund_1987 |
+
+## Start here
+
+> **Potocka_2011_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers, n = &gt;=16. [Run it in the simulator](drugs/drug_insulin_human/InsulinHuman_Potocka2011_reference.md?tab=Simulation) · [record](drugs/drug_insulin_human/InsulinHuman_Potocka2011_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Potocka_2011_reference](drugs/drug_insulin_human/InsulinHuman_Potocka2011_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Potocka E et al., Population pharmacokinetic model of hum…, Journal of clinical pharmac… (2011) | [10.1177/0091270010378520](https://doi.org/10.1177/0091270010378520) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nosadini_1988_reference](drugs/drug_insulin_human/InsulinHuman_Nosadini1988_reference.md) | — | 1-compartment (no model) | 2 | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Vølund_1987_reference](drugs/drug_insulin_human/InsulinHuman_Vlund1987_reference.md) | — | general linear (no model) | 2 | Vølund A et al., Calculated pattern of intraportal insul…, Diabetes (1987) | [10.2337/diab.36.10.1195](https://doi.org/10.2337/diab.36.10.1195) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Miyazaki_2020_Glc](drugs/drug_insulin_human/pd_Miyazaki_2020_Glc.md) | plasma glucose concentration ← insulin_human · indirect response — drug inhibits the production of plasma glucose concentration | — | Miyazaki M et al., Pharmacokinetic-pharmacodynamic modelli…, Scientific reports (2020) | [10.1038/s41598-020-76007-3](https://doi.org/10.1038/s41598-020-76007-3) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Pierre-Eugene_2012_14C_thymidine](drugs/drug_insulin_human/pd_Pierre_Eugene_2012_14C_thymidine.md) | DNA synthesis ← insulin_human · direct sigmoid Emax (Hill) effect | — | Pierre-Eugene C et al., Effect of insulin analogues on insulin/…, PloS one (2012) | [10.1371/journal.pone.0041992](https://doi.org/10.1371/journal.pone.0041992) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Pierre-Eugene_2012_BRET](drugs/drug_insulin_human/pd_Pierre_Eugene_2012_BRET.md) | BRET signal (IR/IGF1R hybrid receptor activation) ← insulin_human · direct sigmoid Emax (Hill) effect | — | Pierre-Eugene C et al., Effect of insulin analogues on insulin/…, PloS one (2012) | [10.1371/journal.pone.0041992](https://doi.org/10.1371/journal.pone.0041992) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Pierre-Eugene_2012_PIP3](drugs/drug_insulin_human/pd_Pierre_Eugene_2012_PIP3.md) | PIP3 production ← insulin_human · direct sigmoid Emax (Hill) effect | — | Pierre-Eugene C et al., Effect of insulin analogues on insulin/…, PloS one (2012) | [10.1371/journal.pone.0041992](https://doi.org/10.1371/journal.pone.0041992) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Pierre-Eugene_2012_pAkt](drugs/drug_insulin_human/pd_Pierre_Eugene_2012_pAkt.md) | Akt phosphorylation ← insulin_human · direct sigmoid Emax (Hill) effect | — | Pierre-Eugene C et al., Effect of insulin analogues on insulin/…, PloS one (2012) | [10.1371/journal.pone.0041992](https://doi.org/10.1371/journal.pone.0041992) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Pierre-Eugene_2012_pERK1_2](drugs/drug_insulin_human/pd_Pierre_Eugene_2012_pERK1_2.md) | Erk1/2 phosphorylation ← insulin_human · direct sigmoid Emax (Hill) effect | — | Pierre-Eugene C et al., Effect of insulin analogues on insulin/…, PloS one (2012) | [10.1371/journal.pone.0041992](https://doi.org/10.1371/journal.pone.0041992) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2014_GIR](drugs/drug_insulin_human/pd_de_2014_GIR.md) | glucose infusion rate ← insulin_human · delayed effect through an effect compartment | — | de la Peña A et al., Application of PK/PD modeling and simul…, Journal of diabetes science… (2014) | [10.1177/1932296814532326](https://doi.org/10.1177/1932296814532326) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | **INS** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Nanjo_1987](drugs/drug_insulin_human/pgx_Nanjo_1987_INS_Q100.md) | Nanjo K et al., Insulin Wakayama: familial mutant insul…, Diabetologia (1987) | [10.1007/BF00274577](https://doi.org/10.1007/BF00274577) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=insulin_human).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CCN3 (downregulator), CPE (modulator), CPE (product), IDE (cleavage), IDE (substrate), IGF1R (activator), IGFBP7 (binder), IGFBP7 (inhibitor), INS (target), INSR (target), LRP2 (substrate), PCSK1 (activator), PCSK2 (activator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 22:28 | 15:32 | 1/2/0 | 3/0/0 | 0/0/1 | 396,123/35,116 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 7/12 | 16/3 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 80 matched, 46 returned
+- **screened:** 4  ·  **relevant:** 3
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 2
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Nosadini_1988.pdf` | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | popPK | 10 | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) | [3045144](https://pubmed.ncbi.nlm.nih.gov/3045144) | The study reports quantitative pharmacokinetic parameters (clearance, bioavailability, absorption rates) for human insulin in human subjects. |
+| `Potocka_2011.pdf` | Potocka E et al., Population pharmacokinetic model of hum…, Journal of clinical pharmac… (2011) | popPK | 10 | [10.1177/0091270010378520](https://doi.org/10.1177/0091270010378520) | [20940337](https://pubmed.ncbi.nlm.nih.gov/20940337) | The paper reports a population pharmacokinetic model for human insulin with explicit numeric values for clearance, volumes, intercompartmental clearance, and absorption rate constants in the text. |
+| `Lin_2002.pdf` | Lin S et al., Pharmacokinetic-pharmacodynamic modelli…, The Journal of pharmacy and… (2002) | popPK | 9 | [10.1211/0022357021779131](https://doi.org/10.1211/0022357021779131) | [12078995](https://pubmed.ncbi.nlm.nih.gov/12078995) | The study reports a two-compartment PK model for insulin in minipigs, but specific numeric parameter values (CL, V, Q) are not listed in the provided text, only fit statistics. |
+| `Vølund_1987.pdf` | Vølund A et al., Calculated pattern of intraportal insul…, Diabetes (1987) | popPK | 9 | [10.2337/diab.36.10.1195](https://doi.org/10.2337/diab.36.10.1195) | [2888696](https://pubmed.ncbi.nlm.nih.gov/2888696) | The study reports quantitative pharmacokinetic parameters (half-life and distribution volume) for human insulin in dogs, with values explicitly stated in the abstract. |
+| `Østerberg_2003.pdf` | Østerberg O et al., Pharmacokinetic and pharmacodynamic pro…, Journal of pharmacokinetics… (2003) | popPK | 9 | [10.1023/a:1025594110558](https://doi.org/10.1023/a:1025594110558) | [14571692](https://pubmed.ncbi.nlm.nih.gov/14571692) | The study reports quantitative PK parameters (elimination rate constant, absorption sigmoidicity) for human insulin in a compartmental model, but specific values for clearance (CL) or volume (V) are not explicitly listed in the provided text. |
+| `Chang_2025.pdf` | Chang YC et al., Comparing the Efficacy of Various Insul…, Journal of clinical pharmac… (2025) | pd | 5 | [10.1002/jcph.70010](https://doi.org/10.1002/jcph.70010) | [39982761](https://www.ncbi.nlm.nih.gov/pubmed/39982761) | metadata signals extractable PD data (PharmacodynamicModel) |
+
+<sub>queue written 2026-10-04 22:14 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Aitman_1999 | not_relevant | 0 | 0 | The paper identifies a gene (Cd36) associated with insulin resistance in rats but does not report pharmacokinetic or pharmacodynamic parameters of the drug insulin_human. |
+| PGx | Aslanzadeh_2025 | not_relevant | 0 | 0 | The paper investigates the functional impact of INSR gene variants on receptor expression and signaling, not the pharmacokinetic or pharmacodynamic parameters of the drug insulin_human. |
+| popPK | Baricevic_2015 | irrelevant | 0 | 0 | The study is an in vitro mechanistic evaluation of mitogenic potency and receptor binding, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Bhattacharjee_2023 | not_relevant | 0 | 0 | The paper analyzes structural and functional consequences of IRS1 gene variants on the protein itself, not the pharmacokinetic or pharmacodynamic parameters of insulin_human. |
+| popPK | Chang_2025 | irrelevant | 0 | 0 | no_text gate: only 140 chars of text extracted (&lt; 400) |
+| popPK | Chatterjee_2018 | irrelevant | 0 | 0 | The paper describes an in-vitro cell-based assay for detecting neutralizing antibodies against insulin, not a pharmacokinetic study reporting disposition parameters. |
+| PD | Chatterjee_2018 | not_relevant | 1 | 0 | The paper describes the development and validation of a cell-based assay for detecting neutralizing antibodies, not a pharmacodynamic or exposure-response analysis of insulin in humans or animals. |
+| popPK | Chen_2025 | irrelevant | 2 | 1 | The study focuses on a novel insulin analog (GZR33/GZR101) and reports in-vivo potency and half-life in animals, but does not provide quantitative population PK parameters (CL, V, Q) for insulin_human. |
+| PGx | Davenport_2022 | not_relevant | 0 | 0 | The paper studies the effects of insulin-like growth factor 1 (IGF-1) on placental signaling in guinea pigs, not the pharmacokinetics or pharmacodynamics of insulin_human, and does not involve pharmacogenomic variants. |
+| PGx | Dhayalan_2021 | not_relevant | 0 | 0 | The paper is a structural biology review of proinsulin folding and mutations, not a pharmacogenomic study of insulin pharmacokinetics or pharmacodynamics. |
+| PGx | Dhayalan_2021_2 | not_relevant | 0 | 0 | The paper discusses genetic mutations in the insulin gene causing diabetes via protein misfolding, not the pharmacokinetics or pharmacodynamics of exogenous insulin_human as a drug. |
+| PGx | Duc_2023 | not_relevant | 0 | 0 | The paper analyzes the physicochemical properties and ADME characteristics of quercetin and its metabolites, not the pharmacogenomics of insulin. |
+| PGx | Forsythe_2006 | not_relevant | 0 | 0 | The paper studies O-GlcNAc cycling in C. elegans and its effect on insulin-like signaling pathways, not the pharmacokinetics or pharmacodynamics of the drug insulin_human. |
+| PGx | Frittitta_2001 | not_relevant | 0 | 0 | The paper reports a genetic association with insulin resistance and PC-1 expression, but does not report a pharmacokinetic or pharmacodynamic effect of a specific gene variant on the drug insulin_human. |
+| PGx | Fumagalli_2019 | not_relevant | 3 | 5 | The paper reports a genetic variant affecting the insulin response (PD) via GLUT4 trafficking, but it does not report pharmacokinetic or pharmacodynamic parameters of the drug insulin_human itself (e.g., clearance, half-life, or specific receptor binding kinetics of the drug). |
+| PGx | Jarosinski_2021 | not_relevant | 0 | 0 | The paper reviews the structural biology and formulation design of insulin analogs, not the impact of human genetic variants on insulin pharmacokinetics or pharmacodynamics. |
+| PGx | Kohn_2007 | not_relevant | 0 | 0 | The paper describes the structural modification and pharmacological properties of insulin analogs, not the effect of human genetic variants on insulin pharmacokinetics or pharmacodynamics. |
+| PGx | Krishnan_2024 | not_relevant | 0 | 0 | The paper studies the catalytic activity of C. elegans DAF-2 kinase mutants, not the pharmacokinetics or pharmacodynamics of the drug insulin_human in humans. |
+| PGx | Kuuranne_2008 | not_relevant | 0 | 0 | The paper describes a mass spectrometry method for detecting insulin in equine urine for doping control and does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | Laudes_2004 | not_relevant | 0 | 0 | The paper investigates genetic variants in SREBP-1c and their association with insulin resistance and diabetes risk, but does not report pharmacokinetic or pharmacodynamic parameters of exogenous insulin_human. |
+| popPK | Lin_2002 | relevant | 9 | 2 | The study reports a two-compartment PK model for insulin in minipigs, but specific numeric parameter values (CL, V, Q) are not listed in the provided text, only fit statistics. |
+| PGx | Mandal_2021 | not_relevant | 0 | 0 | The paper investigates the physiological effects of insulin on urate homeostasis and genetic interactions in urate transporters, not the pharmacokinetics or pharmacodynamics of insulin itself. |
+| PGx | McGrattan_1998 | not_relevant | 0 | 0 | The paper studies the insulin receptor gene in sheep, not the pharmacokinetics or pharmacodynamics of the drug insulin_human in humans. |
+| popPK | Miyazaki_2020 | relevant | 9 | 2 | The study reports a compartmental PK model for human insulin in rats, but the specific numeric parameter values (CL, V, Q, etc.) are explicitly stated to be in Supplementary Table S1, which is not included in the provided evidence. |
+| PGx | Mori_2021 | not_relevant | 0 | 0 | The paper investigates the chemical degradation of insulin amyloids by minocycline and does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | Moyers_2022 | not_relevant | 0 | 0 | The paper describes the preclinical PK/PD profile of a novel insulin analog (LY3209590) in rats and does not report any pharmacogenomic effects or gene variant associations. |
+| PGx | Nair_2003 | not_relevant | 0 | 0 | The paper is a review on coprocytobiology and stool cell isolation, mentioning insulin receptors only in the context of cell surface markers, with no pharmacogenomic data on insulin PK/PD. |
+| popPK | Okumura_1985 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding insulin pharmacokinetics. |
+| popPK | Pierre-Eugene_2012 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor binding and signaling (EC50, PIP3 production) rather than a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | RamIrez-Expósito_2016 | not_relevant | 0 | 0 | The paper describes a genotyping method for the LNPEP gene and does not report any pharmacokinetic or pharmacodynamic effects of insulin_human. |
+| popPK | Rasmussen_2014 | irrelevant | 0 | 0 | The study focuses on insulin aspart, not insulin_human, and uses human insulin data only as a reference for systemic distribution without reporting new quantitative PK parameters for insulin_human. |
+| popPK | Schinner_2009 | irrelevant | 0 | 0 | The study investigates the transcriptional regulation of the insulin gene by PPARgamma and is not a pharmacokinetic study. |
+| popPK | Sommerfeld_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of receptor binding and signaling for insulin glargine and its metabolites, not a pharmacokinetic study reporting disposition parameters for insulin_human. |
+| popPK | Stage_2018 | irrelevant | 0 | 0 | The study investigates the effects of insulin regimens on bone turnover markers, not the pharmacokinetic parameters (CL, V, etc.) of insulin itself. |
+| PGx | Thompson_2023 | not_relevant | 0 | 0 | The paper studies the transcriptional regulation of the insulin receptor gene in Drosophila, not the pharmacokinetics or pharmacodynamics of the drug insulin_human in humans. |
+| PGx | Tovar_2025 | not_relevant | 0 | 0 | The paper investigates the regulatory function of noncoding variants using MPRA in cell lines, not the pharmacokinetic or pharmacodynamic effects of insulin_human. |
+| PGx | Tovar_2026 | not_relevant | 0 | 0 | The paper investigates regulatory activity of noncoding variants in the insulin gene promoter using reporter assays, not the pharmacokinetics or pharmacodynamics of exogenous insulin_human. |
+| popPK | de_2014 | relevant | 9 | 2 | The paper describes a population PK/PD model for human insulin (U-500R and U-100R) with specific parameters (Ka, CL, Vd), but the actual numeric values for these parameters are not present in the provided text, likely residing in tables or figures not included. |
+| popPK | Østerberg_2003 | relevant | 9 | 4 | The study reports quantitative PK parameters (elimination rate constant, absorption sigmoidicity) for human insulin in a compartmental model, but specific values for clearance (CL) or volume (V) are not explicitly listed in the provided text. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binsulin_human%5D&body=Drug%3A%20insulin_human%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_insulin_human/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 22:14 UTC</sub>

@@ -1,0 +1,46 @@
+{
+ "dose_source": "WHO ATC DDD 15 mg oral (N05CD08)",
+ "model_id": "Midazolam_Kim2026_final",
+ "molar_masses": {
+  "C_M1": 0.34176999999999996,
+  "central.C": 0.32577100000000003
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "1-hydroxymidazolam",
+  "C_central": "Midazolam"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 1.5722222222222225e-05,
+  "F": 0.9,
+  "MW": 0.32577100000000003,
+  "MW_m1": 0.34176999999999996,
+  "Tlag": 0.0,
+  "Vd1": 0.00825,
+  "Vd1m1": 0.00271,
+  "Vd2m1": 0.098,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-05,
+  "ka": 0.0017777777777777779,
+  "q1_m11": 1.5111111111111112e-06,
+  "qm11_m12": 3.1666666666666667e-07,
+  "qm12_m11": 3.1666666666666667e-07
+ },
+ "reference_peak_times": {
+  "C_M1": 2020.299281638442,
+  "central.C": 1814.678029047806
+ },
+ "reference_peaks": {
+  "C_M1": 0.0001232543150049224,
+  "central.C": 0.001254301049416921
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

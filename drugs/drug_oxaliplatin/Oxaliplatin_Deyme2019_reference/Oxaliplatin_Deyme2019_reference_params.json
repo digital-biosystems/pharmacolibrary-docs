@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Oxaliplatin_Deyme2019_reference",
+ "molar_masses": {
+  "central.C": 0.397294
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4166666666666668e-05,
+  "F": 1.0,
+  "MM": 0.397294,
+  "VdPerKg": 0.00031428571428571427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 7.575757575757576e-05,
+  "k21": 2.3809523809523807e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662111
+ },
+ "reference_peaks": {
+  "central.C": 0.00018090211169045616
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

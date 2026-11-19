@@ -1,0 +1,69 @@
+{
+ "model_id": "Ketoprofen_Nixon2022_PD_cortisol",
+ "note": "Values for the shared PD_IndirectTurnoverSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 90.9166666667,
+  "EC50": 0.00256,
+  "Emax": 73.0,
+  "exposure_per_s": 0.001,
+  "gamma": 1.9
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 90.91666666666666,
+  "0.0025599999999999993": 2.424444444444444
+ },
+ "stop_time": 3.9,
+ "subtitle": "plasma cortisol (cortisol) against S-(+)-ketoprofen concentration",
+ "template": "PD_IndirectTurnoverSweep",
+ "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "% difference",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "μg/ml",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "μg/ml",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "% difference"
+ },
+ "x_axis": {
+  "display_unit": "μg/ml",
+  "factor": 0.0009999999999999998,
+  "label": "S-(+)-ketoprofen concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "% difference",
+  "factor": 1.0,
+  "label": "plasma cortisol (cortisol)"
+ }
+}

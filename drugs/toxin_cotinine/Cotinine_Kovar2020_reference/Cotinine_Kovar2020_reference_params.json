@@ -1,0 +1,43 @@
+{
+ "dose_source": "paper",
+ "model_id": "Cotinine_Kovar2020_reference",
+ "molar_masses": {
+  "retainedFraction": 0.176219
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.0,
+  4.0,
+  15.0,
+  21.0,
+  30.0,
+  60.0
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.176219,
+  "Tb[1]": 57600.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-06
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662086
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9963993333924082
+ },
+ "stop_time": 345600.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

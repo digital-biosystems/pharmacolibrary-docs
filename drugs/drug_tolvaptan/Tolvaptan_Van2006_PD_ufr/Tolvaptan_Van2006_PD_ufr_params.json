@@ -1,0 +1,55 @@
+{
+ "model_id": "Tolvaptan_Van2006_PD_ufr",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 1.46111111111e-08,
+  "exposure_per_s": 1e-06,
+  "slope": 0.000261388888889
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 1.4611111111111113e-08,
+  "1e-06": 1.4872500000000003e-08
+ },
+ "stop_time": 1000.0,
+ "subtitle": "urine flow rate (UFR) against tolvaptan concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "mL/hr",
+   "factor": 2.777777777777778e-10,
+   "si_unit": "m3/s"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "mL/hr",
+  "slope": {
+   "display_only": false,
+   "display_unit": "mL/hr per ng/mL",
+   "factor": 0.0002777777777777779,
+   "si_unit": "meter ** 6 / kilogram / second"
+  }
+ },
+ "x_axis": {
+  "display_unit": "ng/mL",
+  "factor": 1e-06,
+  "label": "tolvaptan concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mL/hr",
+  "factor": 2.777777777777778e-10,
+  "label": "urine flow rate (UFR)"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Alfaxalone_Goodchild2020_reference",
+ "molar_masses": {
+  "central.C": 0.332484
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.8e-05,
+  "F": 1.0,
+  "MM": 0.332484,
+  "VdPerKg": 1.4142857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.014646464646464647,
+  "k21": 0.002279874213836478,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662095
+ },
+ "reference_peaks": {
+  "central.C": 2.5394579190576174e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

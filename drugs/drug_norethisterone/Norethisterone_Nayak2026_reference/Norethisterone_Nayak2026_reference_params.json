@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 5 mg oral (G03DC02)",
+ "model_id": "Norethisterone_Nayak2026_reference",
+ "molar_masses": {
+  "central.C": 0.29842599999999997
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.222222222222222e-09,
+  "F": 0.9,
+  "MM": 0.29842599999999997,
+  "Tlag": 7200.0,
+  "VdPerKg": 5.157142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "k12": 3.7626962142197606e-07,
+  "k21": 2.7221108884435537e-07,
+  "ka": 2.061111111111111e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1493213.6272545091
+ },
+ "reference_peaks": {
+  "central.C": 4.445809937513664e-05
+ },
+ "stop_time": 4233600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

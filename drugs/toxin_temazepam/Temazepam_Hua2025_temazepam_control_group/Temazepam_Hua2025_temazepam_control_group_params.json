@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 20 mg oral (N05CD07)",
+ "model_id": "Temazepam_Hua2025_temazepam_control_group",
+ "molar_masses": {
+  "central.C": 0.300742
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.0013041388888888885,
+  "F": 1.0,
+  "MM": 0.300742,
+  "Tlag": 0.0,
+  "VdPerKg": 0.19313,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9003.607214428857
+ },
+ "reference_peaks": {
+  "central.C": 6.456783327832528e-07
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

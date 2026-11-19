@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Dihydroergocristine_Grognet1992_reference",
+ "molar_masses": {
+  "central.C": 0.611743
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.361111111111111e-07,
+  "F": 1.0,
+  "MM": 0.611743,
+  "VdPerKg": 0.052000000000000005,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066221
+ },
+ "reference_peaks": {
+  "central.C": 2.7470860826059674e-06
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

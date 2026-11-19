@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 4000 mg parenteral (J01CA17)",
+ "model_id": "Temocillin_Ngougni2022_reference",
+ "molar_masses": {
+  "central.C": 0.41445
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.805555555555557e-07,
+  "F": 1.0,
+  "MM": 0.41445,
+  "VdPerKg": 0.00020514285714285713,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.004,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662085
+ },
+ "reference_peaks": {
+  "central.C": 0.27462843233873013
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model substanceUnits="mole" timeUnits="second" extentUnits="mole">
+    <listOfUnitDefinitions>
+      <unitDefinition id="per_second">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="c1" spatialDimensions="3" size="1" units="litre" constant="true"/>
+      <compartment id="body" spatialDimensions="3" size="1" units="litre" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="A_depot" compartment="body" initialAmount="0.0003" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="A_hepatic" compartment="body" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="A_central" compartment="body" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="A_peripheral" compartment="body" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="A_central_H4" compartment="body" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="A_central_carboxylic_acid" compartment="body" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="A_peripheral_carboxylic_acid" compartment="body" initialAmount="0" substanceUnits="mole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="V_hepatic" value="1.46392" units="per_second" constant="false"/>
+      <parameter id="V_central" value="1.46392" units="per_second" constant="false"/>
+      <parameter id="V_peripheral" value="2.82398" units="per_second" constant="false"/>
+      <parameter id="V_central_H4" value="0.05145" units="per_second" constant="false"/>
+      <parameter id="V_central_carboxylic_acid" value="0.01734" units="per_second" constant="false"/>
+      <parameter id="V_peripheral_carboxylic_acid" value="0.05189" units="per_second" constant="false"/>
+      <parameter id="ka" value="0.00545555555555556" units="per_second" constant="false"/>
+      <parameter id="Tlag" value="705.6" units="per_second" constant="false"/>
+      <parameter id="CL_Qc" value="0.000234916666666667" units="per_second" constant="false"/>
+      <parameter id="CL_Qp" value="0.000163313888888889" units="per_second" constant="false"/>
+      <parameter id="CL_Qm2" value="1.24333333333333e-06" units="per_second" constant="false"/>
+      <parameter id="CL_Qhm1" value="0.000308575" units="per_second" constant="false"/>
+      <parameter id="CL_Qhm2" value="0.00216003333333333" units="per_second" constant="false"/>
+      <parameter id="CLel_CLm11" value="0.000102858333333333" units="per_second" constant="false"/>
+      <parameter id="CLel_CLm1" value="2.0625e-05" units="per_second" constant="false"/>
+      <parameter id="CLel_CLm2" value="2.01333333333333e-06" units="per_second" constant="false"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="absorption" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_depot" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A_hepatic" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <piecewise>
+              <piece>
+                <cn type="integer"> 0 </cn>
+                <apply>
+                  <lt/>
+                  <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+                  <ci> Tlag </ci>
+                </apply>
+              </piece>
+              <otherwise>
+                <apply>
+                  <times/>
+                  <ci> ka </ci>
+                  <ci> A_depot </ci>
+                </apply>
+              </otherwise>
+            </piecewise>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transfer_Qc" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_hepatic" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A_central" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> CL_Qc </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <divide/>
+                  <ci> A_hepatic </ci>
+                  <ci> V_hepatic </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> A_central </ci>
+                  <ci> V_central </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transfer_Qp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_central" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A_peripheral" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> CL_Qp </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <divide/>
+                  <ci> A_central </ci>
+                  <ci> V_central </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> A_peripheral </ci>
+                  <ci> V_peripheral </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="transfer_Qm2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_central_carboxylic_acid" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A_peripheral_carboxylic_acid" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> CL_Qm2 </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <divide/>
+                  <ci> A_central_carboxylic_acid </ci>
+                  <ci> V_central_carboxylic_acid </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> A_peripheral_carboxylic_acid </ci>
+                  <ci> V_peripheral_carboxylic_acid </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="formation_Qhm1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_hepatic" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A_central_H4" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> CL_Qhm1 </ci>
+                <ci> A_hepatic </ci>
+              </apply>
+              <ci> V_hepatic </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="formation_Qhm2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_hepatic" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A_central_carboxylic_acid" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> CL_Qhm2 </ci>
+                <ci> A_hepatic </ci>
+              </apply>
+              <ci> V_hepatic </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="elim_CLm11" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_hepatic" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> CLel_CLm11 </ci>
+                <ci> A_hepatic </ci>
+              </apply>
+              <ci> V_hepatic </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="elim_CLm1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_central_H4" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> CLel_CLm1 </ci>
+                <ci> A_central_H4 </ci>
+              </apply>
+              <ci> V_central_H4 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="elim_CLm2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="A_central_carboxylic_acid" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> CLel_CLm2 </ci>
+                <ci> A_central_carboxylic_acid </ci>
+              </apply>
+              <ci> V_central_carboxylic_acid </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

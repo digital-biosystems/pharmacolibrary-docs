@@ -1,0 +1,160 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# methadone
+
+- **generic name:** methadone
+- **ATC codes:** `N07BC02`
+- **DrugBank:** [DB00333](https://go.drugbank.com/drugs/DB00333) · **PubChem:** [CID 4095](https://pubchem.ncbi.nlm.nih.gov/compound/4095)
+- **molar mass:** 309.4452 g/mol (C21H27NO) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Methadone is a synthetic opioid used to treat chronic pain and opioid dependence. It is typically given orally, which results in good absorption, or by injection into a muscle or vein.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q179996](https://www.wikidata.org/wiki/Q179996), [Wikipedia](https://en.wikipedia.org/wiki/Methadone?oldid=1376375440) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| methadone | parent | 309.445 | C21H27NO | DrugBank | [4095](https://pubchem.ncbi.nlm.nih.gov/compound/4095) | Foster_2004, Gittel_2021, Shin_2024, Ward_2014 |
+| (R)-methadone (l-methadone) | metabolite | 309.453 | C21H27NO | PubChem | [22267](https://pubchem.ncbi.nlm.nih.gov/compound/22267) | Foster_2004, Gittel_2021 |
+| EDDP | metabolite | 277.411 | C20H23N | PubChem | [5352621](https://pubchem.ncbi.nlm.nih.gov/compound/5352621) | Ward_2014 |
+| EMDP | metabolite | 263.384 | C19H21N | PubChem | [9879368](https://pubchem.ncbi.nlm.nih.gov/compound/9879368) | Ward_2014 |
+
+## Start here
+
+> **Shin_2024_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy adult ferrets, n = 8. [Run it in the simulator](drugs/drug_methadone/Methadone_Shin2024_reference.md?tab=Simulation) · [record](drugs/drug_methadone/Methadone_Shin2024_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">0.1</text><line x1="277.5" y1="18" x2="277.5" y2="90" stroke="#ddd"/><text x="277.5" y="104" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="452.5" y1="18" x2="452.5" y2="90" stroke="#ddd"/><text x="452.5" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Tang_2021 · CL</text><circle cx="441.6" cy="30.0" r="4" fill="#78909c"><title>Tang_2021 · CL: 75 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shin_2024 · CL</text><circle cx="443.5" cy="46.0" r="4" fill="#78909c"><title>Shin_2024 · CL: 78.9 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Ward_2014 · CL ·/kg</text><circle cx="524.3" cy="62.0" r="4" fill="#78909c"><title>Ward_2014 · CL ·/kg: 661.5 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Foster_2004 · CL/F</text><circle cx="214.4" cy="78.0" r="4" fill="#ef6c00"><title>Foster_2004 · CL/F: 0.19 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Tang_2021 · V ·/kg</text><circle cx="241.1" cy="30.0" r="4" fill="#78909c"><title>Tang_2021 · V ·/kg: 196 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shin_2024 · V ·/kg</text><circle cx="336.4" cy="46.0" r="4" fill="#78909c"><title>Shin_2024 · V ·/kg: 686 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Ward_2014 · V1 ·/kg</text><circle cx="396.1" cy="62.0" r="4" fill="#78909c"><title>Ward_2014 · V1 ·/kg: 1505 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>stale — current check: Not simulated</sub> | [Gittel_2021_reference](drugs/drug_methadone/Methadone_Gittel2021_reference.md) | — | 1-compartment (no model) | 4 | Gittel C et al., Pharmacokinetics and pharmacodynamics o…, Veterinary anaesthesia and… (2021) | [10.1016/j.vaa.2020.04.018](https://doi.org/10.1016/j.vaa.2020.04.018) |
+| <span class="pk-rf" hidden data-species="other animal" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Shin_2024_reference](drugs/drug_methadone/Methadone_Shin2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Shin CW et al., Pharmacokinetics of methadone after int…, Veterinary anaesthesia and… (2024) | [10.1016/j.vaa.2024.08.009](https://doi.org/10.1016/j.vaa.2024.08.009) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Tang_2021_reference](drugs/drug_methadone/Methadone_Tang2021_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Tang F et al., Clinical pharmacology and dosing regime…, Clinical and translational… (2021) | [10.1111/cts.12994](https://doi.org/10.1111/cts.12994) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Foster_2004_reference](drugs/drug_methadone/Methadone_Foster2004_reference.md) | — | 1-compartment (no model) | 5 | Foster DJ et al., Population pharmacokinetics of (R)-, (S…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02079.x](https://doi.org/10.1111/j.1365-2125.2004.02079.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Ward_2014_reference](drugs/drug_methadone/Methadone_Ward2014_reference.md) | model (no simulator) | 2-compartment general linear | 9 | Ward RM et al., The pharmacokinetics of methadone and i…, Paediatric anaesthesia (2014) | [10.1111/pan.12385](https://doi.org/10.1111/pan.12385) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Carlos_2002_reference](drugs/drug_methadone/Methadone_Carlos2002_reference.md) | — | 1-compartment (no model) | 0 | Carlos MA et al., Effect of omeprazole on oral and intrav…, Journal of pharmaceutical s… (2002) | [10.1002/jps.10031](https://doi.org/10.1002/jps.10031) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Carlos_2002_analgesic_response_tail_flick](drugs/drug_methadone/pd_Carlos_2002_analgesic_response_tail_flick.md) | analgesic response (tail flick) ← RS-methadone · direct Emax (saturable) effect | — | Carlos MA et al., Effect of omeprazole on oral and intrav…, Journal of pharmaceutical s… (2002) | [10.1002/jps.10031](https://doi.org/10.1002/jps.10031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Carlos_2002_analgesic_response_tail_flick_2](drugs/drug_methadone/pd_Carlos_2002_analgesic_response_tail_flick_2.md) | analgesic response (tail flick) ← RS-methadone · delayed effect through an effect compartment | — | Carlos MA et al., Effect of omeprazole on oral and intrav…, Journal of pharmaceutical s… (2002) | [10.1002/jps.10031](https://doi.org/10.1002/jps.10031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Carlos_2002_analgesic_response_tail_flick_3](drugs/drug_methadone/pd_Carlos_2002_analgesic_response_tail_flick_3.md) | analgesic response (tail flick) ← RS-methadone · direct sigmoid Emax (Hill) effect | — | Carlos MA et al., Effect of omeprazole on oral and intrav…, Journal of pharmaceutical s… (2002) | [10.1002/jps.10031](https://doi.org/10.1002/jps.10031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Garrido_1999_2_Analgesia_tail_flick](drugs/drug_methadone/pd_Garrido_1999_2_Analgesia_tail_flick.md) | Analgesia (tail-flick) ← methadone · direct sigmoid Emax (Hill) effect | — | Garrido MJ et al., Altered plasma and brain disposition an…, The Journal of pharmacology… (1999) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Gozalo-Marcilla_2019_ET](drugs/drug_methadone/pd_Gozalo_Marcilla_2019_ET.md) | electrical nociceptive threshold ← methadone · stimulation effect | — | Gozalo-Marcilla M et al., Characterisation of the in vivo interac…, Equine veterinary journal (2019) | [10.1111/evj.13031](https://doi.org/10.1111/evj.13031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Gozalo-Marcilla_2019_GIM](drugs/drug_methadone/pd_Gozalo_Marcilla_2019_GIM.md) | gastrointestinal motility ← methadone · inhibition effect | — | Gozalo-Marcilla M et al., Characterisation of the in vivo interac…, Equine veterinary journal (2019) | [10.1111/evj.13031](https://doi.org/10.1111/evj.13031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Gozalo-Marcilla_2019_HHAG](drugs/drug_methadone/pd_Gozalo_Marcilla_2019_HHAG.md) | height of the head above the ground ← methadone · inhibition effect | — | Gozalo-Marcilla M et al., Characterisation of the in vivo interac…, Equine veterinary journal (2019) | [10.1111/evj.13031](https://doi.org/10.1111/evj.13031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Gozalo-Marcilla_2019_MT](drugs/drug_methadone/pd_Gozalo_Marcilla_2019_MT.md) | mechanical nociceptive threshold ← methadone · stimulation effect | — | Gozalo-Marcilla M et al., Characterisation of the in vivo interac…, Equine veterinary journal (2019) | [10.1111/evj.13031](https://doi.org/10.1111/evj.13031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Gozalo-Marcilla_2019_TT](drugs/drug_methadone/pd_Gozalo_Marcilla_2019_TT.md) | thermal nociceptive threshold ← methadone · stimulation effect | — | Gozalo-Marcilla M et al., Characterisation of the in vivo interac…, Equine veterinary journal (2019) | [10.1111/evj.13031](https://doi.org/10.1111/evj.13031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Gozalo-Marcilla_2019_VAS](drugs/drug_methadone/pd_Gozalo_Marcilla_2019_VAS.md) | visual analogue scale for sedation ← methadone · inhibition effect | — | Gozalo-Marcilla M et al., Characterisation of the in vivo interac…, Equine veterinary journal (2019) | [10.1111/evj.13031](https://doi.org/10.1111/evj.13031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Inturrisi_1990_pain_relief](drugs/drug_methadone/pd_Inturrisi_1990_pain_relief.md) | pain relief ← methadone · direct sigmoid Emax (Hill) effect | — | Inturrisi CE et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacology and t… (1990) | [10.1038/clpt.1990.77](https://doi.org/10.1038/clpt.1990.77) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Inturrisi_1990_sedation](drugs/drug_methadone/pd_Inturrisi_1990_sedation.md) | sedation ← methadone · direct sigmoid Emax (Hill) effect | — | Inturrisi CE et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacology and t… (1990) | [10.1038/clpt.1990.77](https://doi.org/10.1038/clpt.1990.77) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lötsch_2005_pain_relief](drugs/drug_methadone/pd_L_tsch_2005_pain_relief.md) | Pain relief (chronic pain patients, single IV methadone dose) ← methadone · direct Emax (saturable) effect | — | Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and symptom… (2005) | [10.1016/j.jpainsymman.2005.01.012](https://doi.org/10.1016/j.jpainsymman.2005.01.012) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lötsch_2005_pain_relief_2](drugs/drug_methadone/pd_L_tsch_2005_pain_relief_2.md) | Pain relief (cancer pain patients, methadone infusion) ← methadone · direct sigmoid Emax (Hill) effect | — | Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and symptom… (2005) | [10.1016/j.jpainsymman.2005.01.012](https://doi.org/10.1016/j.jpainsymman.2005.01.012) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lötsch_2005_pupil_diameter](drugs/drug_methadone/pd_L_tsch_2005_pupil_diameter.md) | Pupil diameter (oral R-methadone) ← R-methadone · direct sigmoid Emax (Hill) effect | — | Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and symptom… (2005) | [10.1016/j.jpainsymman.2005.01.012](https://doi.org/10.1016/j.jpainsymman.2005.01.012) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lötsch_2005_sedation](drugs/drug_methadone/pd_L_tsch_2005_sedation.md) | Sedation (cancer pain patients, methadone infusion) ← methadone · direct sigmoid Emax (Hill) effect | — | Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and symptom… (2005) | [10.1016/j.jpainsymman.2005.01.012](https://doi.org/10.1016/j.jpainsymman.2005.01.012) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Guo_2022_QTc](drugs/drug_methadone/pd_Guo_2022_QTc.md) | QTc interval prolongation ← methadone (R- and S-) · direct linear effect | — | Guo D et al., A genetic-based population PK/PD modeli…, European journal of clinica… (2022) | [10.1007/s00228-021-03227-5](https://doi.org/10.1007/s00228-021-03227-5) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Guo_2022_urinalysis_illicit_drug_testing](drugs/drug_methadone/pd_Guo_2022_urinalysis_illicit_drug_testing.md) | urinalysis illicit drug testing ← methadone (R- and S-) · direct linear effect | — | Guo D et al., A genetic-based population PK/PD modeli…, European journal of clinica… (2022) | [10.1007/s00228-021-03227-5](https://doi.org/10.1007/s00228-021-03227-5) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=methadone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP1A2` substrate, `CYP2B6` inducer/substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
+| — | adipose tissue | `CYP19A1` substrate | DrugBank actor |
+| — | ovary | `CYP19A1` substrate | DrugBank actor |
+| — | testis | `CYP19A1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRNA3 (target), CHRNA4 (target), CHRNA7 (target), CHRNB2 (target), CYP2C18 (substrate), GRIN1 (target), HTR3A (target), OPRD1 (target), OPRM1 (target), UGT2B4 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 03:37 | 4:51 | 5/1/0 | 5/1/0 | 0/0/0 | 246,022/19,724 | ollama / glm-5.3-flash | 19 | 4/2 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 114 matched, 20 returned
+- **screened:** 7  ·  **relevant:** 6
+- **records:** 6  ·  extracted 3  ·  needs review 1  ·  rejected 1  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gittel_2021.pdf` | Gittel C et al., Pharmacokinetics and pharmacodynamics o…, Veterinary anaesthesia and… (2021) | popPK | 10 | [10.1016/j.vaa.2020.04.018](https://doi.org/10.1016/j.vaa.2020.04.018) | [33423953](https://pubmed.ncbi.nlm.nih.gov/33423953) | Original PK study in ponies with numeric CL, Vd, and half-life reported directly in the abstract. |
+| `Guo_2022.pdf` | Guo D et al., A genetic-based population PK/PD modeli…, European journal of clinica… (2022) | popPK | 10 | [10.1007/s00228-021-03227-5](https://doi.org/10.1007/s00228-021-03227-5) | [35013802](https://pubmed.ncbi.nlm.nih.gov/35013802) | Population PK model of (R)- and (S)-methadone in Chinese patients, but no numeric parameter values (CL, V, ka) appear in the evidence — likely in tables/supplement not provided. |
+| `Shin_2024.pdf` | Shin CW et al., Pharmacokinetics of methadone after int…, Veterinary anaesthesia and… (2024) | popPK | 10 | [10.1016/j.vaa.2024.08.009](https://doi.org/10.1016/j.vaa.2024.08.009) | [39384415](https://pubmed.ncbi.nlm.nih.gov/39384415) | Original PK study in ferrets with numeric CL, Vd, and half-life reported directly in the abstract. |
+| `Ward_2014.pdf` | Ward RM et al., The pharmacokinetics of methadone and i…, Paediatric anaesthesia (2014) | popPK | 10 | [10.1111/pan.12385](https://doi.org/10.1111/pan.12385) | [24666686](https://pubmed.ncbi.nlm.nih.gov/24666686) | Population PK model of methadone in children with full numeric parameter estimates (V1, V2, V3, CL, Q2, Q3, metabolite clearances) reported directly in the abstract. |
+| `Carlos_2002.pdf` | Carlos MA et al., Effect of omeprazole on oral and intrav…, Journal of pharmaceutical s… (2002) | popPK | 8 | [10.1002/jps.10031](https://doi.org/10.1002/jps.10031) | [12115824](https://pubmed.ncbi.nlm.nih.gov/12115824) | Rat PK study of methadone with numeric ka, Cmax, tmax, ke0 values present, but CL/V and other disposition parameters are not shown in the abstract. |
+| `Garrido_1999_2.pdf` | Garrido MJ et al., Altered plasma and brain disposition an…, The Journal of pharmacology… (1999) | popPK | 8 |  | [9862769](https://pubmed.ncbi.nlm.nih.gov/9862769) | Rat PK study of methadone disposition (CL, Q, Vss) but numeric parameter values are not shown in the abstract, likely in tables/figures not provided. |
+| `Gozalo-Marcilla_2019.pdf` | Gozalo-Marcilla M et al., Characterisation of the in vivo interac…, Equine veterinary journal (2019) | popPK | 8 | [10.1111/evj.13031](https://doi.org/10.1111/evj.13031) | [30298682](https://pubmed.ncbi.nlm.nih.gov/30298682) | Population PK/PD model of methadone in horses, but numeric PK parameters (CL, V, Q) are not shown in the evidence, likely in tables/supplementary material not provided. |
+| `Inturrisi_1990.pdf` | Inturrisi CE et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacology and t… (1990) | popPK | 6 | [10.1038/clpt.1990.77](https://doi.org/10.1038/clpt.1990.77) | [2188771](https://pubmed.ncbi.nlm.nih.gov/2188771) | Human PK-PD study of methadone infusions with a PK-PD model, but the abstract reports only Css50/slope values, not CL/V or other disposition parameters, which may be in the full text. |
+
+<sub>queue written 2026-10-07 03:32 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Baumann_1996 | irrelevant | 0 | 0 | Review of SSRI pharmacokinetics; methadone only mentioned as an interaction with fluoxetine/fluvoxamine, no methadone PK parameters reported. |
+| popPK | Garrido_1999 | irrelevant | 3 | 1 | This is a narrative review of methadone PK/PD properties with no numeric disposition parameters present in the evidence. |
+| popPK | Garrido_1999_2 | relevant | 8 | 3 | Rat PK study of methadone disposition (CL, Q, Vss) but numeric parameter values are not shown in the abstract, likely in tables/figures not provided. |
+| popPK | Gatti_2021_2 | irrelevant | 1 | 1 | Pharmacovigilance PK/PD index study; methadone is only one of many serotonergic agents with literature-derived VD/LogP values in supplementary tables not provided, no disposition PK model. |
+| popPK | Gozalo-Marcilla_2019 | relevant | 8 | 3 | Population PK/PD model of methadone in horses, but numeric PK parameters (CL, V, Q) are not shown in the evidence, likely in tables/supplementary material not provided. |
+| popPK | Guo_2022 | relevant | 10 | 3 | Population PK model of (R)- and (S)-methadone in Chinese patients, but no numeric parameter values (CL, V, ka) appear in the evidence — likely in tables/supplement not provided. |
+| popPK | Inturrisi_1990 | relevant | 6 | 4 | Human PK-PD study of methadone infusions with a PK-PD model, but the abstract reports only Css50/slope values, not CL/V or other disposition parameters, which may be in the full text. |
+| popPK | Lötsch_2005 | irrelevant | 3 | 4 | This is a PK/PD review of opioids; methadone appears only with PD parameters (t½,ke0, EC50) in a table, not disposition PK (CL/V) parameters of its own. |
+| popPK | McPhail_2021 | irrelevant | 2 | 0 | This is a review of opioid PK in neonates with no original quantitative methadone PK parameters reported in the evidence. |
+| popPK | Packiasabapathy_2020 | irrelevant | 4 | 2 | This is a narrative pharmacogenetics review; it discusses methadone clearance qualitatively but no actual numeric PK parameter values (CL, V, half-life) are present in the evidence. |
+| popPK | Paterson_2022 | irrelevant | 2 | 0 | This is a trial protocol for baclofen safety in methadone-maintained patients; methadone is a co-administered drug and no numeric PK parameters (CL, V, half-life) are reported, only planned plasma sampling. |
+| popPK | Wallen_2022 | irrelevant | 1 | 0 | This is a retrospective clinical study of sedation/analgesia doses around tracheostomy; methadone is only mentioned as a co-administered drug with no PK parameters reported. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethadone%5D&body=Drug%3A%20methadone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methadone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:33 UTC</sub>

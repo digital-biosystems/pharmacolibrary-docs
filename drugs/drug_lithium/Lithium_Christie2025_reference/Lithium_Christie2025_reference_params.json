@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "Lithium_Christie2025_reference",
+ "molar_masses": {
+  "central.C": 0.00694
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.584999999999999e-05,
+  "F": 0.9,
+  "MM": 0.00694,
+  "Tlag": 0.0,
+  "VdPerKg": 8.99e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.008268446421950315,
+  "k21": 0.001264172335600907,
+  "ka": 0.008066666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 943.0754401168647
+ },
+ "reference_peaks": {
+  "central.C": 0.00019977501086076424
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

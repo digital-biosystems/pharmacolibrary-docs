@@ -1,0 +1,157 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Nitrazepam&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nitrazepam_Jochemsen1983_reference&quot;,&quot;label&quot;:&quot;Jochemsen_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nitrazepam/Nitrazepam_Jochemsen1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nitrazepam_Kangas1979v2_reference&quot;,&quot;label&quot;:&quot;Kangas_1979_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nitrazepam/Nitrazepam_Kangas1979v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nitrazepam_Abernethy1986_reference&quot;,&quot;label&quot;:&quot;Abernethy_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nitrazepam/Nitrazepam_Abernethy1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nitrazepam_Jochemsen1982v2_reference&quot;,&quot;label&quot;:&quot;Jochemsen_1982_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nitrazepam/Nitrazepam_Jochemsen1982v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nitrazepam_Ochs1983_reference&quot;,&quot;label&quot;:&quot;Ochs_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nitrazepam/Nitrazepam_Ochs1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nitrazepam_van1998_reference&quot;,&quot;label&quot;:&quot;van_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_nitrazepam/Nitrazepam_van1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Nitrazepam
+
+- **generic name:** Nitrazepam
+- **T3DB:** [T3D3057](http://www.t3db.ca/toxins/T3D3057) · **DrugBank:** [DB01595](https://go.drugbank.com/drugs/DB01595) · **PubChem:** [CID 4506](https://pubchem.ncbi.nlm.nih.gov/compound/4506)
+- **groups:** approved
+
+## About
+
+Nitrazepam is only found in individuals that have used or taken this drug. It is a benzodiazepine derivative used as an anticonvulsant and hypnotic. Nitrazepam belongs to a group of medicines called benzodiazepines. …
+
+- **Category:** Drug, Synthetic Toxin
+- **Route of exposure:** bioavailability is 53-94% following oral administration.
+- **Sources and uses:** Used to treat short-term sleeping problems (insomnia), such as difficulty falling asleep, frequent awakenings during the night, and early-morning awakening.
+- **Mechanism of toxicity:** Nitrazepam belongs to a group of medicines called benzodiazepines. It acts on benzodiazepine receptors in the brain which are associated with the GABA receptors causing an enhanced binding of GABA (gamma amino butyric acid) to GABAA receptors. …
+- **Health effects:** They cause slurred speech, disorientation and "drunken" behavior. They are physically and psychologically addictive. …
+- **Treatment:** General supportive measures should be employed, along with intravenous fluids, and an adequate airway maintained. …
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D3057">T3DB T3D3057</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 146-22-5 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:111745">ChEBI 111745</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| nitrazepam | parent | 281.271 | C15H11N3O3 | PubChem | [4506](https://pubchem.ncbi.nlm.nih.gov/compound/4506) | Abernethy_1986, Brockmeyer_1990, Jochemsen_1982_2, Jochemsen_1983, Kangas_1979, Kangas_1979_2, Ochs_1983, van_1998 |
+
+## Start here
+
+> **Jochemsen_1983_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy young adults, healthy elderly subjects and patients with alcoholic liver cirrhosis, n = 29. [Run it in the simulator](drugs/toxin_nitrazepam/Nitrazepam_Jochemsen1983_reference.md?tab=Simulation) · [record](drugs/toxin_nitrazepam/Nitrazepam_Jochemsen1983_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="128" viewBox="0 0 560 128" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="106" stroke="#ddd"/><text x="190.0" y="120" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="106" stroke="#ddd"/><text x="540.0" y="120" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jochemsen_1983 · CL</text><circle cx="382.2" cy="30.0" r="4" fill="#78909c"><title>Jochemsen_1983 · CL: 3.54 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jochemsen_1982_2 · CL</text><circle cx="382.9" cy="46.0" r="4" fill="#ef6c00"><title>Jochemsen_1982_2 · CL: 3.558 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">van_1998 · CL ·/kg</text><circle cx="393.8" cy="62.0" r="4" fill="#ef6c00"><title>van_1998 · CL ·/kg: 3.822 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Ochs_1983 · CL ·/kg</text><circle cx="460.4" cy="78.0" r="4" fill="#ef6c00"><title>Ochs_1983 · CL ·/kg: 5.922 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Abernethy_1986 · CL/F</text><circle cx="463.9" cy="94.0" r="4" fill="#ef6c00"><title>Abernethy_1986 · CL/F: 6.06 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="138" stroke="#ddd"/><text x="190.0" y="152" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="138" stroke="#ddd"/><text x="540.0" y="152" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jochemsen_1983 · V ·/kg</text><circle cx="299.2" cy="30.0" r="4" fill="#78909c"><title>Jochemsen_1983 · V ·/kg: 205.1 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Abernethy_1986 · V</text><circle cx="351.8" cy="46.0" r="4" fill="#ef6c00"><title>Abernethy_1986 · V: 290 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Jochemsen_1982_2 · V</text><circle cx="357.0" cy="62.0" r="4" fill="#ef6c00"><title>Jochemsen_1982_2 · V: 300 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Kangas_1979_2 · V</text><circle cx="357.0" cy="78.0" r="4" fill="#78909c"><title>Kangas_1979_2 · V: 300 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Ochs_1983 · V</text><circle cx="357.0" cy="94.0" r="4" fill="#ef6c00"><title>Ochs_1983 · V: 300 L</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">van_1998 · V</text><circle cx="357.0" cy="110.0" r="4" fill="#ef6c00"><title>van_1998 · V: 300 L</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Abernethy_1986 · V/F</text><circle cx="237.9" cy="126.0" r="4" fill="#ef6c00"><title>Abernethy_1986 · V/F: 137 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Jochemsen_1983_reference](drugs/toxin_nitrazepam/Nitrazepam_Jochemsen1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Jochemsen R et al., Effect of age and liver cirrhosis on th…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb01502.x](https://doi.org/10.1111/j.1365-2125.1983.tb01502.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kangas_1979_2_reference](drugs/toxin_nitrazepam/Nitrazepam_Kangas1979v2_reference.md) | ▶ model + simulator | retention, 1 pool | 3 | Kangas L et al., Pharmacokinetics of nitrazepam in saliv…, Acta pharmacologica et toxi… (1979) | [10.1111/j.1600-0773.1979.tb02354.x](https://doi.org/10.1111/j.1600-0773.1979.tb02354.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: unreported model parameter default(s): ka, k12, k21</sub> | [Abernethy_1986_reference](drugs/toxin_nitrazepam/Nitrazepam_Abernethy1986_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Abernethy DR et al., Obesity effects on nitrazepam dispositi…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02934.x](https://doi.org/10.1111/j.1365-2125.1986.tb02934.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Jochemsen_1982_2_reference](drugs/toxin_nitrazepam/Nitrazepam_Jochemsen1982v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Jochemsen R et al., Influence of sex, menstrual cycle and o…, British journal of clinical… (1982) | [10.1111/j.1365-2125.1982.tb01381.x](https://doi.org/10.1111/j.1365-2125.1982.tb01381.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Ochs_1983_reference](drugs/toxin_nitrazepam/Nitrazepam_Ochs1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Ochs HR et al., Cimetidine impairs nitrazepam clearance, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.157](https://doi.org/10.1038/clpt.1983.157) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [van_1998_reference](drugs/toxin_nitrazepam/Nitrazepam_van1998_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | van Gerven JM et al., Pharmacodynamics and pharmacokinetics o…, Journal of clinical pharmac… (1998) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Brockmeyer_1990_reference](drugs/toxin_nitrazepam/Nitrazepam_Brockmeyer1990_reference.md) | — | 1-compartment (no model) | 7 | Brockmeyer NH et al., Comparative effects of rifampin and/or…, International journal of cl… (1990) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Kangas_1979_reference](drugs/toxin_nitrazepam/Nitrazepam_Kangas1979_reference.md) | — | 1-compartment (no model) | 4 | Kangas L et al., Human pharmacokinetics of nitrazepam: e…, European journal of clinica… (1979) | [10.1007/BF00563100](https://doi.org/10.1007/BF00563100) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nitrazepam).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2E1` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), SCN1A (other/unknown).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 08:14 | 15:00 | 6/2/0 | 0/0/0 | 0/0/0 | 353,905/60,400 | ollama / glm-5.3-flash | 5 | 2/1 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 115 matched, 84 returned
+- **screened:** 9  ·  **relevant:** 9
+- **records:** 8  ·  extracted 2  ·  needs review 4  ·  rejected 2  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Abernethy_1986.pdf` | Abernethy DR et al., Obesity effects on nitrazepam dispositi…, British journal of clinical… (1986) | popPK | 10 | [10.1111/j.1365-2125.1986.tb02934.x](https://doi.org/10.1111/j.1365-2125.1986.tb02934.x) | [3790401](https://pubmed.ncbi.nlm.nih.gov/3790401) | Abstract reports full numeric PK parameters (half-life, Vd, clearance, tmax, Cmax) for nitrazepam in humans. |
+| `Jochemsen_1982_2.pdf` | Jochemsen R et al., Influence of sex, menstrual cycle and o…, British journal of clinical… (1982) | popPK | 10 | [10.1111/j.1365-2125.1982.tb01381.x](https://doi.org/10.1111/j.1365-2125.1982.tb01381.x) | [7059433](https://pubmed.ncbi.nlm.nih.gov/7059433) | Full numeric pharmacokinetic parameters of nitrazepam (half-life, clearance, unbound fraction, intrinsic clearance) are present directly in the abstract with N values and SDs. |
+| `Jochemsen_1983.pdf` | Jochemsen R et al., Effect of age and liver cirrhosis on th…, British journal of clinical… (1983) | popPK | 10 | [10.1111/j.1365-2125.1983.tb01502.x](https://doi.org/10.1111/j.1365-2125.1983.tb01502.x) | [6849765](https://pubmed.ncbi.nlm.nih.gov/6849765) | Human PK study reporting half-life, volume of distribution, clearance and unbound fraction with full numeric values in the abstract. |
+| `Kangas_1979.pdf` | Kangas L et al., Human pharmacokinetics of nitrazepam: e…, European journal of clinica… (1979) | popPK | 10 | [10.1007/BF00563100](https://doi.org/10.1007/BF00563100) | [456400](https://pubmed.ncbi.nlm.nih.gov/456400) | Human pharmacokinetic study with numeric half-lives, volumes of distribution and clearance values reported directly in the abstract, no supplementary dependence. |
+| `Kangas_1979_2.pdf` | Kangas L et al., Pharmacokinetics of nitrazepam in saliv…, Acta pharmacologica et toxi… (1979) | popPK | 10 | [10.1111/j.1600-0773.1979.tb02354.x](https://doi.org/10.1111/j.1600-0773.1979.tb02354.x) | [474154](https://pubmed.ncbi.nlm.nih.gov/474154) | Human kinetic parameters (half-life, peak concentrations, Tmax, salivary:serum ratio, free fraction) are reported numerically in the abstract. |
+| `Ochs_1983.pdf` | Ochs HR et al., Cimetidine impairs nitrazepam clearance, Clinical pharmacology and t… (1983) | popPK | 10 | [10.1038/clpt.1983.157](https://doi.org/10.1038/clpt.1983.157) | [6872417](https://pubmed.ncbi.nlm.nih.gov/6872417) | Quantitative nitrazepam kinetic parameters (clearance, t1/2, Vd) are given directly in the abstract. |
+| `van_1998.pdf` | van Gerven JM et al., Pharmacodynamics and pharmacokinetics o…, Journal of clinical pharmac… (1998) | popPK | 10 |  | [11301565](https://pubmed.ncbi.nlm.nih.gov/11301565) | Quantitative clearance and half-life values for nitrazepam in humans are reported directly in the abstract. |
+| `Brockmeyer_1990.pdf` | Brockmeyer NH et al., Comparative effects of rifampin and/or…, International journal of cl… (1990) | popPK | 8 |  | [2228325](https://pubmed.ncbi.nlm.nih.gov/2228325) | Human volunteer study with nitrazepam clearance as subject (percent changes of 83%, 31%, 25% given), but absolute kinetic values (baseline clearance, t½, Vd) are not in the evidence, likely only percent changes from the abstract. |
+| `Ishizaki_1997.pdf` | Ishizaki J et al., Prediction of changes in the clinical p…, The Journal of pharmacy and… (1997) | popPK | 6 | [10.1111/j.2042-7158.1997.tb06108.x](https://doi.org/10.1111/j.2042-7158.1997.tb06108.x) | [9379352](https://pubmed.ncbi.nlm.nih.gov/9379352) | Nitrazepam is a subject drug in a physiologically based pharmacokinetic model, but actual numeric parameter values for it are not shown in the evidence (only model agreement statistics; detailed parameters/simulations likely in figures). |
+| `Jochemsen_1986.pdf` | Jochemsen R et al., Pharmacokinetics of temazepam compared…, Acta psychiatrica Scandinav… (1986) | popPK | 6 | [10.1111/j.1600-0447.1986.tb08976.x](https://doi.org/10.1111/j.1600-0447.1986.tb08976.x) | [2883825](https://pubmed.ncbi.nlm.nih.gov/2883825) | Nitrazepam PK is discussed qualitatively (slow elimination) as a comparator, with no numeric parameters extractable from the abstract; values presumably reside in tables/body text not provided. |
+| `Moriya_2003.pdf` | Moriya F et al., Tissue distribution of nitrazepam and 7…, Forensic science internatio… (2003) | popPK | 5 | [10.1016/s0379-0738(02)00421-8](https://doi.org/10.1016/s0379-0738(02)00421-8) | [12590048](https://pubmed.ncbi.nlm.nih.gov/12590048) | A fatal human poisoning case with quantitative tissue and fluid concentrations of nitrazepam and its metabolite reported directly, though only concentrations (not rate constants or half-lives) are given. |
+| `Szczawińska_1977.pdf` | Szczawińska K et al., Influence of cystamine on pharmacokinet…, Archivum immunologiae et th… (1977) | popPK | 5 |  | [869675](https://pubmed.ncbi.nlm.nih.gov/869675) | A pharmacokinetic study of nitrazepam itself (absorption, blood levels, elimination altered by cystamine), but no numeric parameter values appear in the evidence provided. |
+| `Yamazaki_2007.pdf` | Yamazaki A et al., Different effects of light food on phar…, Journal of clinical pharmac… (2007) | popPK | 5 | [10.1111/j.1365-2710.2007.00795.x](https://doi.org/10.1111/j.1365-2710.2007.00795.x) | [17286787](https://pubmed.ncbi.nlm.nih.gov/17286787) | Human volunteer PK study with nitrazepam as subject drug, but abstract offers mainly fold-changes/directions rather than numeric Cmax/AUC values for nitrazepam, which are not given in figures. |
+
+<sub>queue written 2026-11-14 08:08 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ameno_1991 | irrelevant | 0 | 0 | Nitrazepam is only an analytical internal standard; kinetic parameters (if any) concern amitraz in dog, not nitrazepam. |
+| popPK | Back_1990 | irrelevant | 0 | 0 | Nitrazepam is not mentioned at all; this is a review of oral contraceptive drug interactions with no kinetic parameters for nitrazepam. |
+| popPK | Boukhabza_1991 | irrelevant | 0 | 0 | This is an analytical method paper reporting no kinetic parameters for nitrazepam, only HPLC precision values. |
+| popPK | Cenajek_1977 | irrelevant | 4 | 1 | Rats were studied with plasma/urine nitrazepam levels, but no numeric kinetic parameters appear in the provided evidence. |
+| popPK | Greenblatt_1991 | irrelevant | 2 | 0 | A review with no numeric kinetic parameters for nitrazepam, only qualitative statements about its clearance with aging. |
+| popPK | Hewick_1978 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
+| popPK | Iisalo_1977 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
+| popPK | Ishizaki_1997 | relevant | 6 | 3 | Nitrazepam is a subject drug in a physiologically based pharmacokinetic model, but actual numeric parameter values for it are not shown in the evidence (only model agreement statistics; detailed parameters/simulations likely in figures). |
+| popPK | Jochemsen_1982 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
+| popPK | Jochemsen_1986 | irrelevant | 6 | 0 | Nitrazepam PK is discussed qualitatively (slow elimination) as a comparator, with no numeric parameters extractable from the abstract; values presumably reside in tables/body text not provided. |
+| PGx | Jones_2007 | not_relevant | 1 | 1 | Mentions CYP polymorphism as a general interpretation factor but reports no genotype-specific PK/PD effects for nitrazepam or any drug. |
+| popPK | Kangas_1981 | irrelevant | 0 | 0 | no_text gate: only 39 chars of text extracted (&lt; 400) |
+| popPK | Kar_1983 | irrelevant | 2 | 1 | This is a reproductive toxicity study of sperm head abnormalities in mice; no kinetic parameters of nitrazepam are reported, only a vague mention of "differential pharmacokinetics" with no numeric values. |
+| popPK | Kim_2015 | irrelevant | 0 | 0 | Review mentioning nitrazepam only qualitatively as a microbiota-reduced drug; no kinetic parameters of any kind in the evidence. |
+| popPK | Konishi_2017 | relevant | 4 | 1 | Enzyme identification (Vmax/Km-type kinetic parameters likely exist) for NZP metabolism in human liver fractions, but no numeric values appear in the evidence — they presumably live in figures/supplementary material not provided. |
+| PGx | Konishi_2017 | not_relevant | 3 | 0 | Identifies enzymes (AOX1, NAT2, AADAC, CYP3A4) in nitrazepam metabolism but reports no gene variant/genotype effect on PK/PD parameters. |
+| PGx | Kravetz_2021 | not_relevant | 2 | 2 | The KCNT1 variant relates to quinidine/topiramate efficacy; nitrazepam is only a co-medication with doses mentioned but no genetic effect on its PK or PD parameters. |
+| PGx | Luurila_1995 | not_relevant | 0 | 0 | Drug-drug interaction (erythromycin), no gene variant/genotype/phenotype effect on nitrazepam PK reported. |
+| popPK | Löscher_1985 | irrelevant | 2 | 0 | Nitrazepam is only mentioned qualitatively as having a short half-life in dogs compared with man; no numeric kinetic parameters for it appear in the evidence. |
+| PGx | Mizuno_2009 | not_relevant | 2 | 8 | In vitro CYP3A4-mediated cytotoxicity of nitrazepam in enzyme-supersomes, not a gene variant/genotype effect on PK/PD in humans. |
+| popPK | Moody_1977 | irrelevant | 0 | 0 | The kinetic parameters (half-life, volume of distribution, plasma levels) belong to protriptyline; nitrazepam appears only as a co-administered sedative with no kinetic values reported. |
+| popPK | Nicholson_1981 | irrelevant | 2 | 0 | A clinical review of benzodiazepine hypnotics with no specific numeric kinetic parameters for nitrazepam (values only generalized as half-life ranges and dosing). |
+| popPK | Posa_2011 | irrelevant | 2 | 3 | This is a physicochemical QSAR/HPLC study of nitrazepam partitioning into bile acid micelles, not in vivo toxicokinetic parameters (no half-life, clearance, tissue partition, or metabolic constants), and numeric Kp values are not shown in the evidence. |
+| popPK | Poša_2010 | irrelevant | 0 | 0 | Nitrazepam appears only as a chromatographic probe molecule; no kinetic parameters for nitrazepam are reported (partition coefficients relate to bile acid micelle interaction, not disposition). |
+| popPK | Poša_2011 | irrelevant | 3 | 2 | This is an in vitro physicochemical study of nitrazepam partitioning into bile-acid mixed micelles, not in vivo toxicokinetics; numeric values are not shown in the evidence (likely in tables/figures not provided). |
+| popPK | Saito_2021 | irrelevant | 4 | 5 | This is chemical degradation kinetics of nitrazepam in artificial gastric juice (in vitro stability study), not ADME/toxicokinetic disposition parameters in a living organism; Ea and ΔS values appear in text but rate constants live in supplementary figures. |
+| popPK | Serreau_2010 | irrelevant | 0 | 0 | Nitrazepam is only mentioned qualitatively regarding breastfeeding; no kinetic parameters or numeric values are reported. |
+| popPK | Szczawińska_1975 | irrelevant | 0 | 0 | no_text gate: only 176 chars of text extracted (&lt; 400) |
+| popPK | Szczawińska_1977 | relevant | 5 | 1 | A pharmacokinetic study of nitrazepam itself (absorption, blood levels, elimination altered by cystamine), but no numeric parameter values appear in the evidence provided. |
+| popPK | Tamminen_1987 | irrelevant | 1 | 0 | Clinical efficacy study with no quantitative toxicokinetic parameters for nitrazepam reported. |
+| popPK | Tokola_1983 | irrelevant | 2 | 3 | Review-style text gives only a range half-life (20-60 h) shared across diazepam, clonazepam and nitrazepam, with no nitrazepam-specific numeric parameters of its own. |
+| popPK | Velkov_2005 | relevant | 4 | 2 | Nitrazepam is the subject of an in-vitro binding study to I-FABP (binding affinity is a quantitative parameter), but the actual Kd/affinity numbers are not present in the evidence, only a rank order. |
+| popPK | Vikingsson_2017 | irrelevant | 0 | 0 | The paper studies meclonazepam, not nitrazepam, which is mentioned only as a comparator for metabolic pathways; no nitrazepam kinetic parameters are reported. |
+| PGx | Vrzal_2010 | not_relevant | 0 | 0 | In vitro study of benzodiazepine CYP induction with no gene variant/genotype effects on nitrazepam PK/PD parameters. |
+| popPK | Yamazaki_2007 | relevant | 5 | 4 | Human volunteer PK study with nitrazepam as subject drug, but abstract offers mainly fold-changes/directions rather than numeric Cmax/AUC values for nitrazepam, which are not given in figures. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnitrazepam%5D&body=Drug%3A%20nitrazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_nitrazepam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-14 08:09 UTC</sub>

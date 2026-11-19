@@ -1,0 +1,69 @@
+{
+ "model_id": "Isoprenaline_van2007_PD_hr",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 374.0,
+  "EC50": 1.38e-08,
+  "Emax": 130.0,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.18
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 374.0,
+  "1.38e-08": 439.0
+ },
+ "stop_time": 0.14,
+ "subtitle": "heart rate (HR) against isoprenaline concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "b.p.m.",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng ml À1",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "b.p.m.",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng ml À1",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "b.p.m."
+ },
+ "x_axis": {
+  "display_unit": "ng ml À1",
+  "factor": 1e-06,
+  "label": "isoprenaline concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "b.p.m.",
+  "factor": 1.0,
+  "label": "heart rate (HR)"
+ }
+}

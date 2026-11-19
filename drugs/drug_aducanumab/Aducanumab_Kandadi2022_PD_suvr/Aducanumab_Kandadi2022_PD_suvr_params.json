@@ -1,0 +1,63 @@
+{
+ "model_id": "Aducanumab_Kandadi2022_PD_suvr",
+ "note": "Values for the shared PD_IndirectTurnoverSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 1.4,
+  "EC50": 0.0464,
+  "Emax": 0.702,
+  "exposure_per_s": 0.001,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 1.4,
+  "0.04639999999999999": 1.0362694300518134
+ },
+ "stop_time": 280.0,
+ "subtitle": "composite SUVR (SUVR) against aducanumab concentration",
+ "template": "PD_IndirectTurnoverSweep",
+ "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "label": "aducanumab concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "composite SUVR (SUVR)"
+ }
+}

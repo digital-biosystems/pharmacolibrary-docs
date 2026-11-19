@@ -1,0 +1,43 @@
+{
+ "dose_source": "paper",
+ "model_id": "Olanzapine_Johnson2011_reference",
+ "molar_masses": {
+  "central.C": 0.31243200000000004
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.7,
+  44.1,
+  70.0,
+  210.0,
+  700.0,
+  2800.0
+ ],
+ "parameters": {
+  "Cl": 6.066666666666667e-05,
+  "F": 0.9,
+  "MM": 0.31243200000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00417,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-07,
+  "k12": 0.0001112443378630429,
+  "k21": 0.00020802192326856,
+  "ka": 0.00016666666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6060.120240480962
+ },
+ "reference_peaks": {
+  "central.C": 6.707126398469343e-07
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

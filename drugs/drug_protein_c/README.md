@@ -1,0 +1,151 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# protein C
+
+- **generic name:** protein C
+- **ATC codes:** `B01AD12`
+- **DrugBank:** [DB11312](https://go.drugbank.com/drugs/DB11312) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Protein C is a serine proteinase inhibitor used to treat conditions like protein C deficiency and purpura fulminans. It is given by intravenous or subcutaneous injection. One product is authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q28852357](https://www.wikidata.org/wiki/Q28852357), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Start here
+
+> **Cojutti_2024_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md?tab=Simulation) · [record](drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="138" stroke="#ddd"/><text x="190.0" y="152" font-size="10" text-anchor="middle">0.01</text><line x1="277.5" y1="18" x2="277.5" y2="138" stroke="#ddd"/><text x="277.5" y="152" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="138" stroke="#ddd"/><text x="365.0" y="152" font-size="10" text-anchor="middle">1</text><line x1="452.5" y1="18" x2="452.5" y2="138" stroke="#ddd"/><text x="452.5" y="152" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="138" stroke="#ddd"/><text x="540.0" y="152" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cojutti_2024 · CL</text><circle cx="233.0" cy="30.0" r="4" fill="#78909c"><title>Cojutti_2024 · CL: 0.031 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2025 · CL ·/kg</text><circle cx="320.6" cy="46.0" r="4" fill="#ef6c00"><title>Li_2025 · CL ·/kg: 0.3108 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Li_2025 · CL ·/kg</text><circle cx="325.9" cy="62.0" r="4" fill="#ef6c00"><title>Li_2025 · CL ·/kg: 0.3577 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Troisi_2024 · CL</text><circle cx="344.9" cy="78.0" r="4" fill="#78909c"><title>Troisi_2024 · CL: 0.59 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Li_2025 · CL</text><circle cx="352.2" cy="94.0" r="4" fill="#ef6c00"><title>Li_2025 · CL: 0.714 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Li_2025_2 · CL</text><circle cx="352.2" cy="110.0" r="4" fill="#ef6c00"><title>Li_2025_2 · CL: 0.714 L/h</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Li_2025 · CL ·/kg</text><circle cx="504.1" cy="126.0" r="4" fill="#ef6c00"><title>Li_2025 · CL ·/kg: 38.85 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="138" stroke="#ddd"/><text x="190.0" y="152" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="138" stroke="#ddd"/><text x="365.0" y="152" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="138" stroke="#ddd"/><text x="540.0" y="152" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Li_2025 · V</text><circle cx="327.1" cy="30.0" r="4" fill="#ef6c00"><title>Li_2025 · V: 6.07 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2025_2 · V</text><circle cx="327.1" cy="46.0" r="4" fill="#ef6c00"><title>Li_2025_2 · V: 6.07 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Li_2025 · V</text><circle cx="417.7" cy="62.0" r="4" fill="#ef6c00"><title>Li_2025 · V: 20 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Li_2025 · V</text><circle cx="417.7" cy="78.0" r="4" fill="#ef6c00"><title>Li_2025 · V: 20 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Li_2025 · V</text><circle cx="417.7" cy="94.0" r="4" fill="#ef6c00"><title>Li_2025 · V: 20 L</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Troisi_2024 · V</text><circle cx="417.7" cy="110.0" r="4" fill="#78909c"><title>Troisi_2024 · V: 20 L</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Cojutti_2024 · V1</text><circle cx="325.3" cy="126.0" r="4" fill="#78909c"><title>Cojutti_2024 · V1: 5.93 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Cojutti_2024_reference](drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Cojutti PG et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01410-2](https://doi.org/10.1007/s40262-024-01410-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Troisi_2024_reference](drugs/drug_protein_c/ProteinC_Troisi2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Troisi C et al., Impact of Continuous Infusion Meropenem…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01436-6](https://doi.org/10.1007/s40262-024-01436-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub> | [Li_2025_adolescents_12_to_16_y](drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y.md) | held back | 1-compartment, IV | 4 | Li Z et al., Evaluation of pharmacokinetics of intra…, Research and practice in th… (2025) | [10.1016/j.rpth.2025.102859](https://doi.org/10.1016/j.rpth.2025.102859) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub> | [↳ adults_16_y](drugs/drug_protein_c/ProteinC_Li2025_adults_16_y.md) | held back | 1-compartment, IV | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [↳ neonates_and_infants_birth_to_2_y](drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y.md) | — | 1-compartment (no model) | 2 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 2.2407)</sub> | [↳ population_estimate](drugs/drug_protein_c/ProteinC_Li2025_population_estimate.md) | — | 1-compartment (no model) | 2 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub> | [Li_2025_2_reference](drugs/drug_protein_c/ProteinC_Li2025v2_reference.md) | held back | 1-compartment, oral | 4 (+2 cov.) | Li Z et al., Pharmacokinetic Evidence Supporting Sub…, TH open : companion journal… (2025) | [10.1055/a-2731-5372](https://doi.org/10.1055/a-2731-5372) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Macias_2002_reference](drugs/drug_protein_c/ProteinC_Macias2002_reference.md) | — | 1-compartment (no model) | 0 | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=protein_c).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F5 (inactivator), F8 (inactivator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 15:41 | 22:00 | 7/1/0 | 0/0/0 | 0/0/0 | 385,276/53,737 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 4/23 | 27/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 143 matched, 62 returned
+- **screened:** 3  ·  **relevant:** 2
+- **records:** 8  ·  extracted 2  ·  needs review 5  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Matsunaga_2012.pdf` | Matsunaga N et al., Time-dependent interaction between diff…, Molecular pharmacology (2012) | pgx | 7 | [10.1124/mol.111.076406](https://doi.org/10.1124/mol.111.076406) | [22355045](https://www.ncbi.nlm.nih.gov/pubmed/22355045) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+
+<sub>queue written 2026-10-05 15:21 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Ali_2025 | not_relevant | 0 | 0 | The paper investigates the transcriptomic effects of MYBPC3 mutations on hypertrophic cardiomyopathy, not the pharmacokinetic or pharmacodynamic effects of a drug. |
+| PGx | Annane_2018 | not_relevant | 0 | 0 | The study investigates clinical outcomes (mortality) rather than pharmacokinetic or pharmacodynamic parameters of the drug. |
+| popPK | Bajzar_1996 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of fibrinolysis and TAFI, not a pharmacokinetic study of protein_c. |
+| PGx | Bansal_2024 | not_relevant | 0 | 0 | The study investigates the effect of a genetic variant on radiation-induced metabolic changes, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Bhattacharya_2014 | not_relevant | 0 | 0 | The paper investigates the role of the GIPC protein in autophagy and exosome biogenesis in pancreatic cancer, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Bombail_2004 | not_relevant | 0 | 0 | The paper investigates the molecular mechanisms of CYP3A4 gene regulation by transcription factors and xenobiotics, but does not report pharmacogenomic effects of human genetic variants on the PK or PD parameters of a specific drug (protein_c). |
+| popPK | Boyd_2022 | irrelevant | 0 | 0 | The study investigates coagulation and inflammation biomarkers in dogs, not the pharmacokinetics of protein_c. |
+| PGx | Carrera_2014 | not_relevant | 0 | 0 | The paper describes a genetic disease (ABCA3 null) and its clinical/pathological features, not the effect of a gene variant on the PK/PD of a specific drug. |
+| popPK | Chen_2021 | irrelevant | 0 | 0 | The paper describes the synthesis and biological evaluation of c-Myc inhibitors, not the pharmacokinetics of the drug protein_c. |
+| popPK | Cojutti_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dalbavancin, not protein_c. |
+| PGx | Desai_2025 | not_relevant | 0 | 0 | The paper reports seroprevalence of anti-AAV9 antibodies in patients with MYBPC3 variants to assess eligibility for gene therapy, but it does not report how a gene variant affects the PK or PD parameters of a specific drug. |
+| PGx | Douxfils_2020 | not_relevant | 2 | 0 | The paper is a review discussing VTE risk factors and testing for oral contraceptives, not a study reporting specific pharmacogenomic effects on the PK/PD parameters of protein C. |
+| PGx | Ducret_2021 | not_relevant | 0 | 0 | The paper analyzes transcriptomic differences related to locomotor performance in frogs and does not report pharmacogenomic effects on PK/PD parameters for any drug. |
+| PGx | Emmert_2013 | not_relevant | 0 | 0 | The paper investigates the frequency of BCRP+ cardiac resident cells in ischaemic myocardium, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Favory_2013 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of activated protein C on vascular reactivity, not the pharmacokinetic disposition parameters (CL, V, etc.) of the drug protein_c. |
+| PGx | Gale_2006 | not_relevant | 0 | 0 | The paper describes engineered protein variants for therapeutic stability, not the effect of a patient's genetic variant on the PK/PD of a drug. |
+| PGx | Giofrè_2017 | not_relevant | 0 | 0 | The paper reports a clinical case of hereditary thrombophilia and the efficacy of Rivaroxaban, but does not report pharmacokinetic or pharmacodynamic parameters of protein C or any other drug. |
+| PGx | Hancock_2018 | not_relevant | 0 | 0 | The paper investigates the pathophysiological role of MUC5B overexpression in lung fibrosis and the therapeutic effect of a mucolytic agent, not the pharmacokinetic or pharmacodynamic effects of a specific drug on a protein target. |
+| PGx | Johansson_2011 | not_relevant | 0 | 0 | The paper studies the effect of protein engineering (activation peptide insertion) on the pharmacokinetics of Factor VII, not the effect of a human gene variant or genotype on a drug's PK/PD. |
+| PGx | Karapurkar_2025 | not_relevant | 0 | 0 | The paper investigates the role of the deubiquitinase USP11 in stabilizing the SFTPC protein and its I73T mutant, focusing on disease mechanisms and therapeutic targeting, rather than reporting a pharmacogenomic effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Kepa_2015 | not_relevant | 0 | 0 | The study investigates FVIII pharmacokinetics and explicitly states that protein C (PC) levels had no influence on FVIII PK. |
+| popPK | Kumar_2015 | irrelevant | 0 | 0 | The paper is a mechanistic study on cardiac myosin-binding protein C phosphorylation in mouse myocytes and contains no pharmacokinetic data for the drug protein_c. |
+| popPK | Kuster_2019 | irrelevant | 0 | 0 | The paper is a mechanistic study on hypertrophic cardiomyopathy in transgenic mice and does not report pharmacokinetic parameters for protein_c. |
+| PGx | Li_2010 | not_relevant | 0 | 0 | The paper investigates the effect of a CYP2B6 polymorphism on the enzyme's expression and induction by rifampicin, but it does not report pharmacokinetic or pharmacodynamic parameters for a specific drug substrate (protein_c). |
+| PGx | Li_2023 | not_relevant | 0 | 0 | The paper investigates urinary metabolomics for predicting radiation-induced cardiac dysfunction in mice, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Lin_2018 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on the antiviral activity of lobohedleolide against Hepatitis C virus and does not report pharmacokinetic parameters for protein_c. |
+| PGx | Lind_1995 | not_relevant | 0 | 0 | The paper describes genetic mutations causing a congenital deficiency of the endogenous protein C, not the pharmacokinetic or pharmacodynamic effects of a drug. |
+| PGx | Liu_2021 | not_relevant | 0 | 0 | The paper investigates the role of the OPTN gene in bone metabolism and aging, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Macias_2002 | irrelevant | 1 | 0 | The study analyzes the pharmacokinetics of drotrecogin alfa (activated protein C), not protein_c. |
+| popPK | Manco-Johnson_1994 | irrelevant | 0 | 0 | The study measures steady-state plasma concentrations of protein C in sheep to assess the effects of glucose and insulin, but does not report pharmacokinetic disposition parameters (clearance, volume, half-life) or a compartmental model for protein C. |
+| PGx | Matsunaga_2012 | not_relevant | 0 | 0 | The paper describes the circadian regulation of CYP2D6 expression by DEC2 in cell lines, not a pharmacogenomic effect of a specific gene variant on a PK/PD parameter. |
+| popPK | Nakano_2019 | irrelevant | 0 | 0 | The paper is a mechanistic study of cardiomyocyte contractile properties and protein phosphorylation in dilated cardiomyopathy, not a pharmacokinetic study of protein_c. |
+| PGx | Neafsey_2015 | not_relevant | 0 | 0 | The paper investigates the effect of parasite genotype on vaccine efficacy, not the effect of host genetic variants on the pharmacokinetics or pharmacodynamics of a drug. |
+| PGx | Nevel_2025 | not_relevant | 0 | 0 | The paper describes genetic disorders of surfactant metabolism and their clinical consequences, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Nollet_2023 | not_relevant | 0 | 0 | The paper investigates the interaction between a genetic mutation (Mybpc3) and diet on cardiac disease progression, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Osti_2025 | not_relevant | 0 | 0 | The paper investigates genetic determinants of a plasma biomarker (FVIIa-AT) and mortality risk, not the pharmacokinetic or pharmacodynamic parameters of a specific drug. |
+| PGx | Pai_2016 | not_relevant | 0 | 0 | The paper is a qualitative review of package insert content and does not report primary pharmacokinetic or pharmacodynamic data for protein_c. |
+| popPK | Palareti_1996 | irrelevant | 0 | 0 | The paper discusses warfarin pharmacokinetics and withdrawal, not protein_c. |
+| PGx | Pankow_2017 | not_relevant | 0 | 0 | The paper investigates genetic determinants of endogenous Protein C levels (a hemostatic factor), not the pharmacokinetics or pharmacodynamics of a drug named "protein_c". |
+| PGx | Pravenec_2001 | not_relevant | 0 | 0 | The paper describes a genetic mutation in a transcription factor (SREBP-1c) affecting lipid metabolism in a rat model, but does not report the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Rios_2008 | irrelevant | 0 | 0 | The study investigates the effects of soy isoflavones on coagulation factors (including protein C) but does not report pharmacokinetic parameters (CL, V, etc.) for protein C. |
+| PGx | Rodríguez-Antona_2003 | not_relevant | 0 | 0 | The paper describes the transcriptional regulation of CYP3A4 expression by transcription factors (C/EBP alpha and HNF-3 gamma) in cell models, but does not report a pharmacogenomic effect of a specific gene variant on the PK or PD of a specific drug. |
+| PGx | Russell_2016 | not_relevant | 0 | 0 | The paper is a review discussing the potential for pharmacogenomics in sepsis and mentions protein C variants as prognostic biomarkers, but it does not report a specific pharmacogenomic effect on the PK or PD parameters of protein C. |
+| popPK | Schulte_2022 | irrelevant | 0 | 0 | The paper is a diagnostic biomarker study for myocardial infarction subtypes and does not report pharmacokinetic parameters (CL, V, ka) for protein_c. |
+| PGx | Sidorova_2016 | not_relevant | 0 | 0 | The paper investigates the molecular mechanism of menadione suppressing CYP1A activity but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Sinha_2019 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of recombinant protein C variants in a mouse model of GVHD, not the effect of human genetic variants on the PK/PD of a drug. |
+| popPK | Stahl_2022 | irrelevant | 0 | 0 | The paper is a clinical trial on therapeutic plasma exchange in septic shock and does not report pharmacokinetic parameters for protein_c. |
+| PGx | Strickland_2018 | not_relevant | 0 | 0 | The paper describes a case of vitamin K deficiency affecting coagulation factors (including protein C) due to genetic mutations, but it does not report a pharmacogenomic effect on the PK or PD parameters of a specific drug (protein_c is a coagulation factor, not a drug in this context). |
+| PGx | Te_2023 | not_relevant | 0 | 0 | The paper is a general review of radiotheranostics in oncology and does not report specific pharmacogenomic effects on PK/PD parameters for protein_c. |
+| PGx | Thielen_2024 | not_relevant | 0 | 0 | The paper investigates the therapeutic effect of an engineered protein variant (3K3A-aPC) on endothelial permeability, not the effect of a human genetic variant on the PK/PD of a drug. |
+| popPK | Troisi_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for meropenem, not protein_c. |
+| PGx | Verstraete_1995 | not_relevant | 0 | 0 | The paper reviews the development of new thrombolytic agents and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper is a survey of hospital diagnostic and therapeutic capabilities, not a study reporting pharmacogenomic effects on PK/PD parameters. |
+| PGx | Wu_2020 | not_relevant | 0 | 0 | The paper studies bacterial evolution and nitrate tolerance in Desulfovibrio vulgaris, not human pharmacogenomics or drug PK/PD parameters. |
+| PGx | Yang_2014 | not_relevant | 0 | 0 | The paper describes the transcriptional regulation of the CYP2D49 gene by transcription factors (C/EBPα and HNF4α) in chickens, not the effect of a specific gene variant or genotype on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Yang_2021 | not_relevant | 0 | 0 | The paper is a case report on aortic coarctation and hypertrophic cardiomyopathy, focusing on diagnosis and surgical management, and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Yang_2023 | not_relevant | 0 | 0 | The paper investigates the transcriptional regulation of the ACSL1 gene in pigs and its role in adipogenesis, not the pharmacokinetics or pharmacodynamics of a drug. |
+| popPK | Yokota_2024 | irrelevant | 0 | 0 | The study measures protein S activity as a biomarker of thrombosis risk in response to hormonal contraceptives, not the pharmacokinetics of a drug named protein_c. |
+| PGx | Zheng_2017 | not_relevant | 0 | 0 | The paper studies plant gene regulation and metabolism, not human pharmacogenomics or drug PK/PD parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotein_c%5D&body=Drug%3A%20protein_c%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protein_c/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 15:22 UTC</sub>

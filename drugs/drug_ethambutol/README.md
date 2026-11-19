@@ -1,0 +1,121 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;ethambutol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethambutol_Srivastava2022v2_reference&quot;,&quot;label&quot;:&quot;Srivastava_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Srivastava2022v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethambutol_Sundell2020_reference&quot;,&quot;label&quot;:&quot;Sundell_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Sundell2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ethambutol_Tikiso2022_reference&quot;,&quot;label&quot;:&quot;Tikiso_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ethambutol/Ethambutol_Tikiso2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# ethambutol
+
+- **generic name:** ethambutol
+- **ATC codes:** `J04AK02`, `J04AM03`, `J04AM06`, `J04AM07`
+- **DrugBank:** [DB00330](https://go.drugbank.com/drugs/DB00330) · **PubChem:** [CID 14052](https://pubchem.ncbi.nlm.nih.gov/compound/14052)
+- **molar mass:** 204.3098 g/mol (C10H24N2O2) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Ethambutol is an antimycobacterial medication primarily used to treat tuberculosis and certain non-tuberculous mycobacterial infections. It is usually taken by mouth, although it can also be given intravenously. It is a World Health Organization essential medicine and is available as a generic medication.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q412318](https://www.wikidata.org/wiki/Q412318), [Wikipedia](https://en.wikipedia.org/wiki/Ethambutol?oldid=1374867474) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| ethambutol | parent | 204.31 | C10H24N2O2 | DrugBank | [14052](https://pubchem.ncbi.nlm.nih.gov/compound/14052) | Sundell_2020 |
+
+## Start here
+
+> **Sundell_2020_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adult patients coinfected with tuberculosis and HIV, n = # This study aimed to characterize the population pharmacokinetics and pharmacogenetics of ethambutol in tuberculosis-HIV-coinfected adult patients. Ethambutol plasma concentrations, determined by liquid chromatography-tandem mass spectrometry, in 63 patients receiving ethambutol as part of rifampin-based fixed-dose combination therapy for tuberculosis were analyzed using nonlinear mixed-effects modeling. A one-compartment disposition model with first-order elimination and four transit compartments prior to first-order absorption was found to adequately describe the concentration-time profiles of ethambutol in plasma. Body weight was implemented as an allometric function on the clearance and volume parameters. Estimates of oral clearance and volume of distribution were 77.4 liters/h and 76.2 liters, respectively. A G/A mutation with regard to CYP1A2 2159 G&gt;A was associated with a 50% reduction in relative bioavailability. Simulations revealed that doses of 30 mg/kg of body weight and 50 mg/kg for G/G and G/A carriers, respectively, would result in clinically adequate exposure. The results presented here suggest that CYP1A2 polymorphism affects ethambutol exposure in this population and that current treatment guidelines may result in underexposure in patients coinfected with tuberculosis and HIV. Based on simulations, a dose increase from15 to 20 mg/kg to 30 mg/kg is suggested. However, the 50-mg/kg dose required to reach therapeutic exposure in G/A carriers may be inappropriate due to the dose-dependent toxicity of ethambutol. Additional studies are required to further investigate CYP450 polymorphism effects on ethambutol pharmacokinetics.. [Run it in the simulator](drugs/drug_ethambutol/Ethambutol_Sundell2020_reference.md?tab=Simulation) · [record](drugs/drug_ethambutol/Ethambutol_Sundell2020_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Srivastava_2022_2 · CL</text><circle cx="316.7" cy="30.0" r="4" fill="#ef6c00"><title>Srivastava_2022_2 · CL: 23.02 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tikiso_2022 · CL/F</text><circle cx="260.5" cy="46.0" r="4" fill="#ef6c00"><title>Tikiso_2022 · CL/F: 15.9 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Sundell_2020 · CL/F</text><circle cx="501.1" cy="62.0" r="4" fill="#ef6c00"><title>Sundell_2020 · CL/F: 77.4 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Sundell_2020 · V</text><circle cx="344.3" cy="30.0" r="4" fill="#ef6c00"><title>Sundell_2020 · V: 76.2 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Srivastava_2022_2 · V</text><circle cx="444.8" cy="46.0" r="4" fill="#ef6c00"><title>Srivastava_2022_2 · V: 285.8 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Tikiso_2022 · V1</text><circle cx="303.1" cy="62.0" r="4" fill="#ef6c00"><title>Tikiso_2022 · V1: 44.3 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="in vitro" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Srivastava_2022_2_reference](drugs/drug_ethambutol/Ethambutol_Srivastava2022v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Srivastava S et al., Rifampin Pharmacokinetics/Pharmacodynam…, Antimicrobial agents and ch… (2022) | [10.1128/aac.02320-21](https://doi.org/10.1128/aac.02320-21) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Sundell_2020_reference](drugs/drug_ethambutol/Ethambutol_Sundell2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Sundell J et al., Population Pharmacokinetics and Pharmac…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.01583-19](https://doi.org/10.1128/AAC.01583-19) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Tikiso_2022_reference](drugs/drug_ethambutol/Ethambutol_Tikiso2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Tikiso T et al., Population pharmacokinetics of ethambut…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac127](https://doi.org/10.1093/jac/dkac127) |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Deshpande_2024_reference](drugs/drug_ethambutol/Ethambutol_Deshpande2024_reference.md) | — | 2-compartment (no model) | 3 | Deshpande D et al., Antibacterial action of penicillin agai…, IJTLD open (2024) | [10.5588/ijtldopen.24.0238](https://doi.org/10.5588/ijtldopen.24.0238) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Srivastava_2022_bacterial_burden](drugs/drug_ethambutol/pd_Srivastava_2022_bacterial_burden.md) | bacterial burden ← ethambutol · direct sigmoid Emax (Hill) effect | — | Srivastava S et al., An overview of drugs for the treatment…, Journal of global antimicro… (2022) | [10.1016/j.jgar.2021.12.010](https://doi.org/10.1016/j.jgar.2021.12.010) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ethambutol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2A6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 12:50 | 4:40 | 3/1/0 | 1/0/0 | 0/0/0 | 190,998/14,882 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 79 matched, 20 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Jönsson_2011.pdf` | Jönsson S et al., Population pharmacokinetics of ethambut…, Antimicrobial agents and ch… (2011) | popPK | 10 | [10.1128/AAC.00274-11](https://doi.org/10.1128/AAC.00274-11) | [21690284](https://pubmed.ncbi.nlm.nih.gov/21690284) | The paper reports a population PK model for ethambutol and provides specific typical clearance and bioavailability values in the text, but lacks the full set of numeric parameter estimates (e.g., volume of distribution, half-life, absorption rates, inter-individual variability terms) typically required for comprehensive extraction, which are likely in supplementary tables or figures not included. |
+| `Sundell_2020.pdf` | Sundell J et al., Population Pharmacokinetics and Pharmac…, Antimicrobial agents and ch… (2020) | popPK | 10 | [10.1128/AAC.01583-19](https://doi.org/10.1128/AAC.01583-19) | [31712201](https://pubmed.ncbi.nlm.nih.gov/31712201) | The abstract explicitly provides quantitative population pharmacokinetic parameters (clearance 77.4 L/h, volume 76.2 L) for ethambutol in humans. |
+| `Zhu_2004.pdf` | Zhu M et al., Pharmacokinetics of ethambutol in child…, The international journal o… (2004) | popPK | 9 |  | [15581206](https://pubmed.ncbi.nlm.nih.gov/15581206) | The study describes population PK methods for ethambutol, but the provided text lacks specific numeric parameter values (CL, V, etc.), reporting only qualitative findings like low Cmax. |
+
+<sub>queue written 2026-10-07 12:47 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Chen_2023 | irrelevant | 0 | 0 | The study focuses on ecotoxicology and wastewater monitoring, reporting toxic effect concentrations (EC50) and environmental risks rather than pharmacokinetic parameters for ethambutol. |
+| popPK | Chirehwa_2017 | irrelevant | 0 | 0 | The study focuses on pyrazinamide pharmacokinetics, and while ethambutol was co-administered, no quantitative PK parameters for ethambutol are reported. |
+| popPK | Deshpande_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and efficacy of ceftazidime/avibactam against Mycobacterium avium, with ethambutol serving only as a comparator drug, and no PK parameters for ethambutol are reported. |
+| popPK | Deshpande_2024 | irrelevant | 0 | 0 | The study focuses on benzylpenicillin PK/PD against MAC; ethambutol is only mentioned as a comparator from prior studies, and no PK parameters for ethambutol are reported. |
+| popPK | Egelund_2011 | irrelevant | 4 | 0 | This is a review article summarizing population PK studies for TB drugs including ethambutol, but no specific quantitative parameter values are provided in the text. |
+| popPK | Fors_2020 | irrelevant | 4 | 0 | The paper presents an in-silico PK/PD simulation model for TB therapy where ethambutol is one of four drugs, but it does not report original quantitative pharmacokinetic parameter values (CL, V, etc.) for ethambutol in the provided text (referenced parameters are likely in supplementary materials not included). |
+| popPK | Jönsson_2011 | relevant | 10 | 2 | The paper reports a population PK model for ethambutol and provides specific typical clearance and bioavailability values in the text, but lacks the full set of numeric parameter estimates (e.g., volume of distribution, half-life, absorption rates, inter-individual variability terms) typically required for comprehensive extraction, which are likely in supplementary tables or figures not included. |
+| popPK | McIlleron_2019 | irrelevant | 2 | 0 | The paper is a review discussing ethambutol's PK generally, but explicitly states that the specific pharmacokinetic model values for ethambutol are presented in supplementary material which is not provided in the evidence. |
+| popPK | Srivastava_2018 | irrelevant | 0 | 0 | The study focuses on the antimicrobial efficacy of clofazimine against M. kansasii, with ethambutol only listed as a component of standard therapy without any pharmacokinetic parameter reporting. |
+| popPK | Srivastava_2022 | irrelevant | 0 | 0 | The study reports antimicrobial efficacy (MICs and time-kill) for ethambutol, not pharmacokinetic disposition parameters. |
+| popPK | Te_2015 | irrelevant | 0 | 0 | Ethambutol is only a co-administered comparator in a study focused on the PK/PD of rifampicin and moxifloxacin, with no ethambutol PK parameters reported. |
+| popPK | Zhu_2004 | relevant | 9 | 2 | The study describes population PK methods for ethambutol, but the provided text lacks specific numeric parameter values (CL, V, etc.), reporting only qualitative findings like low Cmax. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bethambutol%5D&body=Drug%3A%20ethambutol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ethambutol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 12:47 UTC</sub>

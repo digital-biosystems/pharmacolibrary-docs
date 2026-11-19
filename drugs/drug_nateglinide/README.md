@@ -1,0 +1,201 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;nateglinide&quot;}]"></div>
+
+# nateglinide
+
+- **generic name:** nateglinide
+- **ATC codes:** `A10BX03`
+- **DrugBank:** [DB00731](https://go.drugbank.com/drugs/DB00731) · **PubChem:** [CID 5311309](https://pubchem.ncbi.nlm.nih.gov/compound/5311309)
+- **molar mass:** 317.429 g/mol (C19H27NO3) — DrugBank
+- **groups:** approved
+
+## About
+
+Nateglinide is a meglitinide-class medication used to treat type 2 diabetes. It is given orally, usually as tablets, and is well absorbed from the gut. It remains authorised in the European Union for the management of diabetes.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2254797](https://www.wikidata.org/wiki/Q2254797), [Wikipedia](https://en.wikipedia.org/wiki/Nateglinide?oldid=1380329377) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **MTNR1B** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Song_2021](drugs/drug_nateglinide/pgx_Song_2021_MTNR1B_safety.md) | Song JF et al., Evaluation of the effect of MTNR1B rs10…, BMC medical genomics (2021) | [10.1186/s12920-021-01004-y](https://doi.org/10.1186/s12920-021-01004-y) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **NOS1AP** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Wang_2021](drugs/drug_nateglinide/pgx_Wang_2021_NOS1AP_Q100.md) | Wang T et al., PPARD rs2016520 (T/C) and NOS1AP rs1274…, BMC medical genomics (2021) | [10.1186/s12920-021-01108-5](https://doi.org/10.1186/s12920-021-01108-5) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **PPARD** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Wang_2021](drugs/drug_nateglinide/pgx_Wang_2021_PPARD_Q100.md) | Wang T et al., PPARD rs2016520 (T/C) and NOS1AP rs1274…, BMC medical genomics (2021) | [10.1186/s12920-021-01108-5](https://doi.org/10.1186/s12920-021-01108-5) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nateglinide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCC4` substrate, `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+| excretion | liver | `ABCC4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inhibitor), MTNR1B (safety_allele), NOS1AP (target), PPARD (target), PPARG (target), PTGS1 (substrate), SLC16A1 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 02:39 | 2:50 | 0/0/0 | 0/0/0 | 1/0/2 | 63,211/4,843 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/5 | 3/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 113 matched, 93 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Jones_2017.pdf` | Jones RS et al., Quercetin, Morin, Luteolin, and Phloret…, Molecular pharmaceutics (2017) | pd | 5 | [10.1021/acs.molpharmaceut.7b00264](https://doi.org/10.1021/acs.molpharmaceut.7b00264) | [28513167](https://www.ncbi.nlm.nih.gov/pubmed/28513167) | metadata signals extractable PD data (IC50) |
+| `Takanohashi_2012.pdf` | Takanohashi T et al., Comparison of the rapidity of onset of…, European journal of drug me… (2012) | pd | 5 | [10.1007/s13318-011-0068-3](https://doi.org/10.1007/s13318-011-0068-3) | [22012638](https://www.ncbi.nlm.nih.gov/pubmed/22012638) | metadata signals extractable PD data (PK/PD) |
+| `Sayama_2025.pdf` | Sayama M et al., Structural similarity-based search for…, Molecular pharmacology (2025) | pd | 4 | [10.1016/j.molpha.2025.100028](https://doi.org/10.1016/j.molpha.2025.100028) | [40186990](https://www.ncbi.nlm.nih.gov/pubmed/40186990) | metadata signals extractable PD data (IC50) |
+| `Sunaga_2001.pdf` | Sunaga Y et al., The effects of mitiglinide (KAD-1229),…, European journal of pharmac… (2001) | pd | 4 | [10.1016/s0014-2999(01)01412-1](https://doi.org/10.1016/s0014-2999(01)01412-1) | [11716850](https://www.ncbi.nlm.nih.gov/pubmed/11716850) | metadata signals extractable PD data (IC50) |
+| `Takanohashi_2010.pdf` | Takanohashi T et al., Inhibition of human liver microsomal CY…, The Journal of pharmacy and… (2010) | pd | 4 | [10.1211/jpp.62.05.0005](https://doi.org/10.1211/jpp.62.05.0005) | [20609060](https://www.ncbi.nlm.nih.gov/pubmed/20609060) | metadata signals extractable PD data (IC50) |
+| `Cheng_2013.pdf` | Cheng Y et al., Effect of CYP2C9 and SLCO1B1 polymorphi…, European journal of clinica… (2013) | pgx | 8 | [10.1007/s00228-012-1364-9](https://doi.org/10.1007/s00228-012-1364-9) | [22842957](https://www.ncbi.nlm.nih.gov/pubmed/22842957) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Fujino_2018.pdf` | Fujino R et al., Strategies to improve the prediction ac…, European journal of pharmac… (2018) | pgx | 8 | [10.1016/j.ejps.2018.09.021](https://doi.org/10.1016/j.ejps.2018.09.021) | [30287410](https://www.ncbi.nlm.nih.gov/pubmed/30287410) | metadata signals extractable PGX data (CYP2C, PK/PD-context) |
+| `Kalliokoski_2008.pdf` | Kalliokoski A et al., Effects of the SLCO1B1*1B haplotype on…, Pharmacogenetics and genomi… (2008) | pgx | 8 | [10.1097/FPC.0b013e32830d733e](https://doi.org/10.1097/FPC.0b013e32830d733e) | [18854776](https://www.ncbi.nlm.nih.gov/pubmed/18854776) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
+| `Kalliokoski_2010.pdf` | Kalliokoski A et al., SLCO1B1 polymorphism and oral antidiabe…, Basic & clinical pharmacolo… (2010) | pgx | 8 | [10.1111/j.1742-7843.2010.00581.x](https://doi.org/10.1111/j.1742-7843.2010.00581.x) | [20406215](https://www.ncbi.nlm.nih.gov/pubmed/20406215) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
+| `Kirchheiner_2004.pdf` | Kirchheiner J et al., Influence of CYP2C9 and CYP2D6 polymorp…, Clinical pharmacokinetics (2004) | pgx | 8 | [10.2165/00003088-200443040-00005](https://doi.org/10.2165/00003088-200443040-00005) | [15005635](https://www.ncbi.nlm.nih.gov/pubmed/15005635) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Kirchheiner_2005.pdf` | Kirchheiner J et al., Effect of genetic polymorphisms in cyto…, Clinical pharmacokinetics (2005) | pgx | 8 | [10.2165/00003088-200544120-00002](https://doi.org/10.2165/00003088-200544120-00002) | [16372821](https://www.ncbi.nlm.nih.gov/pubmed/16372821) | metadata signals extractable PGX data (CYP2C8, PK/PD-context) |
+| `Dey_2020.pdf` | Dey S et al., Simultaneous Pharmacokinetics Estimatio…, Journal of chromatographic… (2020) | pgx | 7 | [10.1093/chromsci/bmz116](https://doi.org/10.1093/chromsci/bmz116) | [31836899](https://www.ncbi.nlm.nih.gov/pubmed/31836899) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Kim_2010.pdf` | Kim Y et al., Effect of fluvastatin, lovastatin, nife…, Biopharmaceutics & drug dis… (2010) | pgx | 7 | [10.1002/bdd.724](https://doi.org/10.1002/bdd.724) | [20809476](https://www.ncbi.nlm.nih.gov/pubmed/20809476) | metadata signals extractable PGX data (CYP2C5, PK/PD-context) |
+| `Klatt_2013.pdf` | Klatt S et al., The influence of oral antidiabetic drug…, Basic & clinical pharmacolo… (2013) | pgx | 7 | [10.1111/bcpt.12031](https://doi.org/10.1111/bcpt.12031) | [23121773](https://www.ncbi.nlm.nih.gov/pubmed/23121773) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
+| `Sabia_2004.pdf` | Sabia H et al., Effect of a selective CYP2C9 inhibitor…, European journal of clinica… (2004) | pgx | 7 | [10.1007/s00228-004-0778-4](https://doi.org/10.1007/s00228-004-0778-4) | [15197517](https://www.ncbi.nlm.nih.gov/pubmed/15197517) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Sunkara_2004.pdf` | Sunkara G et al., The effect of nateglinide on the pharma…, Current medical research an… (2004) | pgx | 7 | [10.1185/030079903125002685](https://doi.org/10.1185/030079903125002685) | [14741071](https://www.ncbi.nlm.nih.gov/pubmed/14741071) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Takanohashi_2007.pdf` | Takanohashi T et al., Prediction of the metabolic interaction…, Drug metabolism and pharmac… (2007) | pgx | 7 | [10.2133/dmpk.22.409](https://doi.org/10.2133/dmpk.22.409) | [18159128](https://www.ncbi.nlm.nih.gov/pubmed/18159128) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Wang_2019.pdf` | Wang S et al., Predicted contributions of cytochrome P…, Xenobiotica; the fate of fo… (2019) | pgx | 7 | [10.1080/00498254.2018.1433902](https://doi.org/10.1080/00498254.2018.1433902) | [29375004](https://www.ncbi.nlm.nih.gov/pubmed/29375004) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
+
+<sub>queue written 2026-10-05 02:36 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Alanazi_2025 | irrelevant | 2 | 0 | The paper is a comprehensive review/profile of nateglinide without original quantitative PK parameter values in the provided evidence. |
+| PD | Alanazi_2025 | not_relevant | 2 | 0 | The text is a review chapter describing synthesis, analysis methods, and general pharmacology without reporting specific numeric PD parameters or exposure-response data. |
+| popPK | Amaliah_2025 | irrelevant | 0 | 0 | The paper is a review of ternary solid dispersions and does not report specific quantitative pharmacokinetic parameters for nateglinide. |
+| PD | Amaliah_2025 | not_relevant | 0 | 0 | The paper is a review of ternary solid dispersions and does not report any specific pharmacodynamic or exposure-response data for nateglinide. |
+| popPK | Anderson_2002 | irrelevant | 2 | 0 | The study focuses on warfarin as the subject drug with nateglinide as a co-administered agent, and no quantitative PK parameter values for nateglinide are provided in the evidence. |
+| PD | Anderson_2002 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (nateglinide on warfarin PK/PD) and reports no significant effects, but it does not model or report a concentration-effect or dose-response relationship for nateglinide itself. |
+| popPK | Anderson_2003 | relevant | 4 | 2 | The study reports nateglinide PK parameters (AUC, Cmax, Tmax, half-life) but lacks specific numeric values for clearance, volume, or rate constants, and the provided text only gives a range for half-life without a corresponding volume or compartmental model. |
+| PD | Anderson_2003 | not_relevant | 2 | 1 | The study reports PK parameters and qualitative changes in glucose/insulin metrics based on dosing timing, but does not provide a concentration-effect model or numeric PD parameters (e.g., Emax, EC50) for nateglinide. |
+| PGx | Bauer_2003 | not_relevant | 0 | 0 | The paper describes a method for analyzing nateglinide in plasma but does not report any pharmacogenomic effects or genotype-specific PK/PD data. |
+| popPK | Buslov_2025 | irrelevant | 0 | 0 | The paper describes the engineering of an enzyme for the synthesis of amino acids and contains no pharmacokinetic data for nateglinide. |
+| PD | Buslov_2025 | not_relevant | 0 | 0 | The paper describes the engineering of a biocatalyst (phenylalanine ammonia lyase) for the synthesis of amino acids and contains no pharmacodynamic or exposure-response data for nateglinide. |
+| popPK | Chen_2015 | irrelevant | 0 | 0 | The paper is a review of pharmacogenomics and does not report original quantitative pharmacokinetic parameters for nateglinide. |
+| PD | Chen_2015 | not_relevant | 1 | 0 | The text is a review of pharmacogenomics and does not report specific numeric PD parameters or exposure-response curves for nateglinide. |
+| PGx | Chen_2015 | not_relevant | 5 | 2 | The text is a review abstract that lists genes associated with glinide response but does not report specific quantitative pharmacokinetic or pharmacodynamic effect sizes for nateglinide. |
+| popPK | Cheng_2013 | irrelevant | 0 | 0 | no_text gate: only 137 chars of text extracted (&lt; 400) |
+| popPK | Courtois_2003 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics and tissue distribution at specific time points rather than reporting quantitative compartmental PK parameters like clearance or volume. |
+| PD | Courtois_2003 | not_relevant | 2 | 1 | The study compares two drugs at single fixed doses and reports qualitative differences in pharmacodynamics and tissue distribution, but does not provide concentration-effect curves or numeric PD parameters (e.g., Emax, EC50) for nateglinide. |
+| PGx | Dey_2020 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (pioglitazone inhibiting CYP2C9) affecting nateglinide PK, but does not report any pharmacogenomic effect (gene variant/genotype) on PK or PD parameters. |
+| popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review of sulfonamide therapies (specifically sulfonylureas) and does not report pharmacokinetic parameters for nateglinide. |
+| PD | Dinu_2025 | not_relevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants and does not report any specific pharmacodynamic or exposure-response data for nateglinide. |
+| popPK | Dunning_2003 | irrelevant | 2 | 0 | The study reports only descriptive pharmacokinetic observations (peak concentration and time) and pharmacodynamic data, lacking quantitative disposition parameters like clearance, volume, or half-life. |
+| PGx | Fujino_2018 | not_relevant | 0 | 0 | The paper focuses on improving in vitro-in vivo extrapolation (IVIVE) prediction methods for hepatic clearance and does not report specific pharmacogenomic effects of gene variants on nateglinide PK parameters. |
+| popPK | Hefnawy_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of encorafenib and binimetinib in rats, not nateglinide. |
+| PD | Hefnawy_2022 | not_relevant | 0 | 0 | The paper describes a bioanalytical method and PK parameters for encorafenib and binimetinib, not nateglinide, and contains no pharmacodynamic or exposure-response analysis. |
+| popPK | Hu_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of K(ATP) channel selectivity and does not report any pharmacokinetic parameters for nateglinide. |
+| popPK | Hu_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of insulinotropic effects on rat islets and does not report pharmacokinetic disposition parameters for nateglinide. |
+| popPK | Jones_2017 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
+| PD | Jones_2017 | not_relevant | 0 | 0 | The paper focuses on flavonoid inhibition of MCT6 and does not contain any pharmacodynamic or exposure-response data for nateglinide. |
+| popPK | Kalbag_2001 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic effects (insulin secretion and glucose control) and does not report quantitative pharmacokinetic disposition parameters (CL, V, ka) for nateglinide. |
+| PD | Kalbag_2001 | not_relevant | 3 | 2 | The study reports qualitative comparisons of pharmacodynamic effects (insulin secretion rates, glucose levels) between drugs but does not provide a concentration-effect model, dose-response curve, or numeric PD parameters (e.g., Emax, EC50) for nateglinide. |
+| popPK | Kaleemuddin_2013 | irrelevant | 2 | 0 | The study focuses on formulation and in vitro release, with in vivo data limited to pharmacodynamic (antidiabetic) effects rather than quantitative pharmacokinetic parameters. |
+| PD | Kaleemuddin_2013 | not_relevant | 2 | 1 | The paper reports qualitative in vivo pharmacodynamic effects (prolonged antidiabetic activity) and in vitro release data, but does not provide numeric concentration-effect parameters, dose-response curves, or a formal PK/PD model fit. |
+| popPK | Kalliokoski_2008 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
+| PD | Kalliokoski_2008 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, abstract, or data required to verify the presence of numeric PD parameters or exposure-response relationships. |
+| popPK | Kalliokoski_2008_2 | irrelevant | 2 | 0 | The study focuses on the effect of SLCO1B1 polymorphism, finding no significant effect on nateglinide PK, and does not report specific quantitative disposition parameters (CL, V, ka) for nateglinide in the provided evidence. |
+| PD | Kalliokoski_2008_2 | not_relevant | 2 | 1 | The paper reports a correlation coefficient (r=0.412) between repaglinide AUC and glucose decrease, but explicitly states that SLCO1B1 polymorphism had no significant effect on the pharmacodynamics of nateglinide, providing no numeric PD parameters or concentration-effect curve for nateglinide. |
+| PGx | Kalliokoski_2008_2 | not_relevant | 0 | 0 | The study explicitly states that SLCO1B1 polymorphism had no significant effect on the pharmacokinetics or pharmacodynamics of nateglinide. |
+| PGx | Kalliokoski_2010 | not_relevant | 5 | 2 | The paper mentions an association between SLCO1B1 and nateglinide plasma concentrations in Chinese individuals, but notes it was not replicated in Caucasians and provides no specific quantitative effect size or fitted parameter for nateglinide. |
+| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Nateglinide is a co-administered comparator drug in a study focused on tofogliflozin, and no specific quantitative PK parameters for nateglinide are provided in the evidence. |
+| PD | Kasahara_2016 | not_relevant | 0 | 0 | The study is a drug-drug interaction trial focusing on tofogliflozin; nateglinide is only a co-administered agent, and no PD parameters or exposure-response relationships for nateglinide are reported. |
+| PGx | Kim_2010 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (fluvastatin, nifedipine, etc.) in rabbits, not the effect of a gene variant or genotype on nateglinide pharmacokinetics. |
+| popPK | Kirchheiner_2004 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
+| PD | Kirchheiner_2004 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of nateglinide in relation to CYP polymorphisms and does not report any pharmacodynamic or exposure-response analysis. |
+| PGx | Kirchheiner_2005 | not_relevant | 3 | 0 | The paper mentions nateglinide is metabolized by CYP2C9 and suggests dose adjustments, but it does not report specific pharmacokinetic or pharmacodynamic data or effect sizes for nateglinide itself. |
+| PGx | Klatt_2013 | not_relevant | 0 | 0 | The paper investigates in vitro transporter inhibition by nateglinide, not the effect of a gene variant on nateglinide's PK or PD. |
+| popPK | Li_2025 | irrelevant | 0 | 0 | The paper describes a computational model for drug efficacy prediction in Traditional Chinese Medicine and does not contain any pharmacokinetic data for nateglinide. |
+| PD | Li_2025 | not_relevant | 0 | 0 | The paper describes a computational network-based drug efficacy prediction model (Meta-DEP) and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for nateglinide. |
+| popPK | Lo_2018 | irrelevant | 0 | 0 | This is a systematic review of clinical efficacy and safety outcomes (HbA1c, BP, etc.) for diabetes treatments in CKD, not a pharmacokinetic study, and it does not report PK parameters for nateglinide. |
+| PD | Lo_2018 | not_relevant | 0 | 0 | The paper is a systematic review of clinical trials in CKD and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for nateglinide. |
+| popPK | Luzio_2001 | irrelevant | 2 | 0 | The study describes pharmacokinetic characteristics (peak concentrations) but does not report quantitative disposition parameters (CL, V, ka, t1/2) or a compartmental model in the provided text. |
+| PD | Luzio_2001 | not_relevant | 3 | 1 | The paper reports qualitative comparisons of glucose and insulin profiles based on dosing timing and meal composition, but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect model. |
+| popPK | McKillop_2009 | irrelevant | 0 | 0 | The study focuses on the insulinotropic and DPP-IV inhibitory effects of nateglinide, reporting no pharmacokinetic disposition parameters such as clearance, volume, or half-life. |
+| popPK | Mele_2014 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of muscle atrophy and does not report pharmacokinetic parameters for nateglinide. |
+| popPK | Muddather_2026 | irrelevant | 0 | 0 | The paper is a review of DPP-4 inhibitors in cancer and does not contain pharmacokinetic data for nateglinide. |
+| PD | Muddather_2026 | not_relevant | 0 | 0 | The paper is a review of DPP-4 inhibitors in cancer and does not contain any pharmacodynamic or exposure-response data for nateglinide. |
+| popPK | Nagar_2024 | irrelevant | 0 | 0 | The paper is a methodological study on PBPK modeling frameworks and does not report specific pharmacokinetic parameters for nateglinide. |
+| PD | Nagar_2024 | not_relevant | 0 | 0 | The paper focuses on physiologically based pharmacokinetic (PBPK) models for predicting hepatic clearance and does not report any pharmacodynamic (PD) or exposure-response relationships for nateglinide. |
+| PGx | Naushad_2022 | not_relevant | 0 | 0 | The text describes general statistical model diagnostics (R-squared, power) and contains no information regarding nateglinide, gene variants, or pharmacokinetic/pharmacodynamic parameters. |
+| PD | Niemi_2003 | not_relevant | 2 | 1 | The study reports PK changes and a qualitative statement that blood glucose response was unchanged, but it does not provide numeric PD parameters (e.g., Emax, EC50) or a concentration-effect curve for nateglinide. |
+| PD | Niemi_2003_2 | not_relevant | 2 | 1 | The study reports PK changes and a qualitative conclusion that the glucose-lowering effect was not significantly altered, but it does not provide numeric PD parameters (e.g., Emax, EC50) or a concentration-effect curve. |
+| popPK | Niemi_2005 | relevant | 8 | 2 | The study reports PK parameters for nateglinide, but only provides relative changes (percentages) and qualitative statements (unchanged t1/2) rather than absolute numeric values for clearance, volume, or half-life. |
+| PD | Niemi_2005 | not_relevant | 2 | 1 | The study reports PK changes and a qualitative statement that blood glucose response was not significantly changed, but it does not provide numeric PD parameters (e.g., Emax, EC50) or a concentration-effect curve for nateglinide. |
+| PGx | Niemi_2005 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (gemfibrozil/itraconazole) rather than the effect of a gene variant or genotype on nateglinide pharmacokinetics. |
+| PGx | Pakkir_2018 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP enzymes and OATP1B1, not pharmacogenomic effects of genetic variants on nateglinide PK/PD. |
+| PGx | Plosker_2004 | not_relevant | 0 | 0 | The paper is a pharmacoeconomic review of repaglinide and does not report pharmacogenomic effects on nateglinide PK/PD parameters. |
+| PGx | Sabia_2004 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (CYP2C9 inhibition by sulfinpyrazone) rather than a pharmacogenomic effect based on genetic variants. |
+| popPK | Sahoo_2014 | irrelevant | 2 | 0 | The study focuses on formulation development and pharmacodynamic effects (blood glucose reduction) without reporting quantitative pharmacokinetic parameters (CL, V, ka) for nateglinide. |
+| PD | Sahoo_2014 | not_relevant | 2 | 1 | The paper reports a qualitative pharmacodynamic effect (reduction in blood glucose) in rats but does not provide numeric PD parameters, concentration-effect curves, or a formal PK/PD model. |
+| popPK | Sayama_2025 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
+| PD | Sayama_2025 | not_relevant | 0 | 0 | The paper focuses on the structural similarity and in vitro inhibitory activity of glinides toward uric acid transporter 1, not on the pharmacokinetic or pharmacodynamic exposure-response relationship of nateglinide in vivo. |
+| PGx | Scheen_2007 | not_relevant | 0 | 0 | The paper reviews drug-drug and food-drug interactions, not pharmacogenomic effects of gene variants on nateglinide PK/PD. |
+| popPK | Shore_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of darolutamide, not nateglinide. |
+| PD | Shore_2019 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of darolutamide and drug-drug interactions, containing no pharmacodynamic or exposure-response analysis for nateglinide. |
+| popPK | Sugiyama_2024 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of the MCT6 transporter using nateglinide only as a substrate in an expression system, and it does not report any pharmacokinetic disposition parameters for nateglinide. |
+| PD | Sugiyama_2024 | not_relevant | 0 | 0 | The paper characterizes the transport kinetics (Km, IC50) of the MCT6 transporter using a fluorescent probe, not the pharmacodynamic exposure-response relationship of nateglinide. |
+| popPK | Sunaga_2001 | irrelevant | 0 | 0 | no_text gate: only 166 chars of text extracted (&lt; 400) |
+| PD | Sunaga_2001 | not_relevant | 3 | 2 | The paper focuses on the mechanism of action (ATP-sensitive K+ channels) and qualitative comparison of insulin secretion, lacking a formal PK/PD model or numeric exposure-response parameters for nateglinide. |
+| popPK | Sunkara_2004 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
+| PD | Sunkara_2004 | not_relevant | 0 | 0 | The paper investigates the effect of nateglinide on the PK/PD of acenocoumarol, not the PD of nateglinide itself. |
+| PGx | Sunkara_2004 | not_relevant | 0 | 0 | The paper investigates the drug-drug interaction between nateglinide and acenocoumarol, not the effect of a gene variant on nateglinide's PK/PD. |
+| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (CYP inhibition) rather than pharmacogenomic effects of genetic variants on nateglinide PK/PD. |
+| popPK | Takanohashi_2010 | irrelevant | 0 | 0 | no_text gate: only 55 chars of text extracted (&lt; 400) |
+| PD | Takanohashi_2010 | not_relevant | 0 | 0 | The paper reports in vitro CYP inhibition (IC50/Ki) for nateglinide, which is a pharmacokinetic/metabolic property, not a pharmacodynamic exposure-response or dose-response relationship for a therapeutic effect. |
+| PGx | Takanohashi_2010 | not_relevant | 0 | 0 | The paper investigates the inhibition of CYP enzymes by nateglinide, which is a drug-drug interaction mechanism, not a pharmacogenomic effect of a gene variant on nateglinide's PK/PD. |
+| popPK | Takanohashi_2012 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
+| PGx | Wang_2019 | not_relevant | 0 | 0 | The paper discusses in vitro CYP450 metabolism predictions using the RAF method and does not report any pharmacogenomic effects (gene variants) on nateglinide PK or PD parameters. |
+| popPK | Yoshida_2011 | irrelevant | 0 | 0 | The study focuses on the mechanism of action of AS1535907, using nateglinide only as a comparator for insulin secretion, and does not report pharmacokinetic parameters for nateglinide. |
+| PD | Yoshida_2011 | not_relevant | 0 | 0 | The paper focuses on the GPR119 agonist AS1535907; nateglinide is only mentioned as a comparator in a qualitative in vitro assay without any reported PD parameters or exposure-response analysis. |
+| popPK | de_2001 | irrelevant | 1 | 0 | The study reports pharmacodynamic parameters (insulin secretion, glucose excursions) rather than quantitative pharmacokinetic disposition parameters (CL, V, ka) for nateglinide. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnateglinide%5D&body=Drug%3A%20nateglinide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nateglinide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

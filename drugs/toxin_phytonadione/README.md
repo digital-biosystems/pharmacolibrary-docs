@@ -1,0 +1,223 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Phytonadione&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phytonadione_Hindley2023_reference&quot;,&quot;label&quot;:&quot;Hindley_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_phytonadione/Phytonadione_Hindley2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phytonadione_KieronskaRudek2025_reference&quot;,&quot;label&quot;:&quot;Kieronska-Rudek_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_phytonadione/Phytonadione_KieronskaRudek2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phytonadione_Mi2020_reference&quot;,&quot;label&quot;:&quot;Mi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_phytonadione/Phytonadione_Mi2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phytonadione_Park1984v2_reference&quot;,&quot;label&quot;:&quot;Park_1984_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_phytonadione/Phytonadione_Park1984v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phytonadione_Wilson1984_reference&quot;,&quot;label&quot;:&quot;Wilson_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_phytonadione/Phytonadione_Wilson1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phytonadione_Pereira2005_reference&quot;,&quot;label&quot;:&quot;Pereira_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_phytonadione/Phytonadione_Pereira2005_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Phytonadione
+
+- **generic name:** Phytonadione
+- **T3DB:** [T3D2959](http://www.t3db.ca/toxins/T3D2959) · **DrugBank:** [DB01022](https://go.drugbank.com/drugs/DB01022) · **PubChem:** [CID 5284607](https://pubchem.ncbi.nlm.nih.gov/compound/5284607)
+- **groups:** approved, investigational
+
+## About
+
+Phylloquinone is often called vitamin K1. It is a fat-soluble vitamin that is stable to air and moisture but decomposes in sunlight. It is found naturally in a wide variety of green plants. …
+
+- **Category:** Drug, Food Toxin, Synthetic Toxin
+- **Route of exposure:** subcutaneous, Intramuscular, Intravenous injection. Oral phylloquinone is adequately absorbed from the gastrointestinal tract only if bile salts are present. After absorption, phylloquinone is initially concentrated in the liver, but the concentration declines rapidly. Very little vitamin K accumulates in tissues.
+- **Sources and uses:** For the treatment of haemorrhagic conditions in infants, antidote for coumarin anticoagulants in hypoprothrombinaemia.
+- **Mechanism of toxicity:** Vitamin K is an essential cofactor for the gamma-carboxylase enzymes which catalyze the posttranslational gamma-carboxylation of glutamic acid residues in inactive hepatic precursors of coagulation factors II (prothrombin), VII, IX and X. Gamma-carboxylation converts these inactive precursors into active coagulation factors which are secreted by hepatocytes into the blood. …
+- **Carcinogenicity:** IARC group 3, not classifiable as to its carcinogenicity to humans.
+- **Acute toxicity:** LD50: 41.5 mL/kg at 0.2% (Intravenous, Mouse)
+LD50: 52 mL/kg at 1% (Intravenous, Mouse)
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D2959">T3DB T3D2959</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 84-80-0 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18067">ChEBI 18067</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| phytonadione (Phylloquinone, vitamin K1) | parent | 450.707 | C31H46O2 | PubChem | [5284607](https://pubchem.ncbi.nlm.nih.gov/compound/5284607) | Kieronska-Rudek_2025, Mi_2020, Mi_2026, Park_1984_2, Pereira_2005, Wilson_1984 |
+
+## Start here
+
+> **Mi_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> rats. [Run it in the simulator](drugs/toxin_phytonadione/Phytonadione_Mi2020_reference.md?tab=Simulation) · [record](drugs/toxin_phytonadione/Phytonadione_Mi2020_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hindley_2023 · CL</text><circle cx="371.5" cy="30.0" r="4" fill="#78909c"><title>Hindley_2023 · CL: 3.3 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wilson_1984 · CL</text><circle cx="371.5" cy="46.0" r="4" fill="#78909c"><title>Wilson_1984 · CL: 3.3 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Hindley_2023_reference](drugs/toxin_phytonadione/Phytonadione_Hindley2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hindley B et al., Pharmacokinetics and pharmacodynamics o…, Expert opinion on drug meta… (2023) | [10.1080/17425255.2023.2287472](https://doi.org/10.1080/17425255.2023.2287472) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Kieronska-Rudek_2025_reference](drugs/toxin_phytonadione/Phytonadione_KieronskaRudek2025_reference.md) | ▶ model + simulator | retention, 1 pool | 3 | Kieronska-Rudek A et al., Rapid Replenishment of Phylloquinone in…, Nanotechnology, science and… (2025) | [10.2147/NSA.S520030](https://doi.org/10.2147/NSA.S520030) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mi_2020_reference](drugs/toxin_phytonadione/Phytonadione_Mi2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Mi YN et al., Determination of pharmacokinetic parame…, Clinical and experimental p… (2020) | [10.1111/1440-1681.13314](https://doi.org/10.1111/1440-1681.13314) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Park_1984_2_reference](drugs/toxin_phytonadione/Phytonadione_Park1984v2_reference.md) | ▶ model + simulator | retention, 1 pool | 3 | Park BK et al., Plasma disposition of vitamin K1 in rel…, British journal of clinical… (1984) | [10.1111/j.1365-2125.1984.tb02526.x](https://doi.org/10.1111/j.1365-2125.1984.tb02526.x) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span> | [Wilson_1984_reference](drugs/toxin_phytonadione/Phytonadione_Wilson1984_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Wilson AC et al., The effect of phenobarbitone pre-treatm…, Biochemical pharmacology (1984) | [10.1016/0006-2952(84)90381-2](https://doi.org/10.1016/0006-2952(84)90381-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_t_half_beta</sub> | [Pereira_2005_reference](drugs/toxin_phytonadione/Phytonadione_Pereira2005_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Pereira SP et al., Pharmacokinetics and efficacy of oral v…, Journal of hepatology (2005) | [10.1016/j.jhep.2004.11.030](https://doi.org/10.1016/j.jhep.2004.11.030) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Mi_2026_reference](drugs/toxin_phytonadione/Phytonadione_Mi2026_reference.md) | — | 1-compartment (no model) | 3 | Mi YN et al., Constant-Speed Intravenous Infusion Mod…, Current drug metabolism (2026) | [10.2174/0113892002447026260402063559](https://doi.org/10.2174/0113892002447026260402063559) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Park_2019_reference](drugs/toxin_phytonadione/Phytonadione_Park2019_reference.md) | — | 1-compartment (no model) | 0 | Park JW et al., Effects of Ketoconazole, a CYP4F2 Inhib…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1444](https://doi.org/10.1002/jcph.1444) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Winn_1989_reference](drugs/toxin_phytonadione/Phytonadione_Winn1989_reference.md) | — | 1-compartment (no model) | 0 | Winn MJ et al., The bioavailability of a mixed micellar…, The Journal of pharmacy and… (1989) | [10.1111/j.2042-7158.1989.tb06446.x](https://doi.org/10.1111/j.2042-7158.1989.tb06446.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [van_2014_reference](drugs/toxin_phytonadione/Phytonadione_van2014_reference.md) | — | 1-compartment (no model) | 0 | van Rein N et al., Vitamin K1 in oral solution or tablets:…, Journal of thrombosis and h… (2014) | [10.1111/jth.12753](https://doi.org/10.1111/jth.12753) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phytonadione).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | `CYP4F2` substrate | DrugBank actor |
+| metabolism | liver | `CYP4F2` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: BGLAP (target), F2 (cofactor), GGCX (cofactor), GGCX (inducer), GGCX (substrate), UBIAD1 (substrate), VKORC1 (product), VKORC1 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 15:36 | 24:09 | 6/4/0 | 0/0/0 | 0/0/0 | 729,830/93,623 | ollama / glm-5.3-flash | 25 | 5/19 | 25/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 72 matched, 118 returned
+- **screened:** 10  ·  **relevant:** 10
+- **records:** 10  ·  extracted 5  ·  needs review 1  ·  rejected 4  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Mi_2020.pdf` | Mi YN et al., Determination of pharmacokinetic parame…, Clinical and experimental p… (2020) | popPK | 10 | [10.1111/1440-1681.13314](https://doi.org/10.1111/1440-1681.13314) | [32222983](https://pubmed.ncbi.nlm.nih.gov/32222983) | Quantitative T1/2, Vd, and CL for phytonadione (vitamin K1) with numeric values directly reported in the abstract. |
+| `Mi_2026.pdf` | Mi YN et al., Constant-Speed Intravenous Infusion Mod…, Current drug metabolism (2026) | popPK | 10 | [10.2174/0113892002447026260402063559](https://doi.org/10.2174/0113892002447026260402063559) | [42003058](https://pubmed.ncbi.nlm.nih.gov/42003058) | The paper directly reports numeric PK parameters (t1/2, CL, Vd) for phylloquinone (phytonadione-related) with explicit values in the abstract; species = Sprague-Dawley rats (non-human). |
+| `Soedirman_1996.pdf` | Soedirman JR et al., Pharmacokinetics and tolerance of intra…, British journal of clinical… (1996) | popPK | 9 | [10.1046/j.1365-2125.1996.03847.x](https://doi.org/10.1046/j.1365-2125.1996.03847.x) | [8799516](https://pubmed.ncbi.nlm.nih.gov/8799516) | Human PK study of phylloquinone (phytonadione) itself, but only a passing bioavailability figure (~65%) appears; the actual Cmax, half-life, clearance etc. presumably live in tables/figures not provided. |
+| `Wilson_1984.pdf` | Wilson AC et al., The effect of phenobarbitone pre-treatm…, Biochemical pharmacology (1984) | popPK | 9 | [10.1016/0006-2952(84)90381-2](https://doi.org/10.1016/0006-2952(84)90381-2) | [6704138](https://pubmed.ncbi.nlm.nih.gov/6704138) | Reports quantitative PK of vitamin K1 (phytonadione) in rat and rabbit, with numeric terminal half-lives (2.08 vs 0.99 hr) in the abstract; clearance change is stated but its numeric value may be in text/tables not shown. |
+| `Winn_1989.pdf` | Winn MJ et al., The bioavailability of a mixed micellar…, The Journal of pharmacy and… (1989) | popPK | 9 | [10.1111/j.2042-7158.1989.tb06446.x](https://doi.org/10.1111/j.2042-7158.1989.tb06446.x) | [2568466](https://pubmed.ncbi.nlm.nih.gov/2568466) | Quantitative pharmacokinetic parameters (Cmax, tmax, AUC, bioavailability) for phytonadione measured in rabbits are reported directly in the abstract. |
+| `Hagstrom_1995.pdf` | Hagstrom JN et al., The pharmacokinetics and lipoprotein fr…, Thrombosis and haemostasis (1995) | popPK | 8 |  | [8772225](https://pubmed.ncbi.nlm.nih.gov/8772225) | Human pharmacokinetics of vitamin K1 (phytonadione) after IM and oral dosing; only limited numeric values (Tmax, percent in VLDL) are in the evidence, with fuller PK parameters not shown. |
+| `Ma_2015.pdf` | Ma L et al., Pharmacokinetics and pharmacodynamics o…, Drug research (2015) | popPK | 8 | [10.1055/s-0034-1374599](https://doi.org/10.1055/s-0034-1374599) | [24764252](https://pubmed.ncbi.nlm.nih.gov/24764252) | PK/pharmacodynamic comparison of vitamin K1 formulations in rats with AUC and tissue distribution reported, but the numeric values (AUC, clearance, tissue concentrations) appear to live in tables/figures not included in the evidence. |
+| `Park_1984_2.pdf` | Park BK et al., Plasma disposition of vitamin K1 in rel…, British journal of clinical… (1984) | popPK | 8 | [10.1111/j.1365-2125.1984.tb02526.x](https://doi.org/10.1111/j.1365-2125.1984.tb02526.x) | [6508974](https://pubmed.ncbi.nlm.nih.gov/6508974) | Reports phytonadione (vitamin K1) terminal half-life (1.7 h IV), oral bioavailability (10–63%) and clearance discussion with readable numeric values in the abstract; some rabbit data details may be in full text. |
+| `Winn_1988.pdf` | Winn MJ et al., An investigation of the pharmacological…, British journal of pharmaco… (1988) | popPK | 8 | [10.1111/j.1476-5381.1988.tb11625.x](https://doi.org/10.1111/j.1476-5381.1988.tb11625.x) | [3207975](https://pubmed.ncbi.nlm.nih.gov/3207975) | Reports disposition (tri-exponential decline, tissue concentrations, implied clearance) of vitamin K1 (phytonadione) in rabbits, but the numeric kinetic parameters (rate constants, half-lives) are not shown in the abstract text beyond tissue concentration values. |
+| `Park_2019.pdf` | Park JW et al., Effects of Ketoconazole, a CYP4F2 Inhib…, Journal of clinical pharmac… (2019) | popPK | 7 | [10.1002/jcph.1444](https://doi.org/10.1002/jcph.1444) | [31134657](https://pubmed.ncbi.nlm.nih.gov/31134657) | Human pharmacokinetic study of vitamin K1 (phytonadione) with numeric AUC and Cmax changes reported directly; fuller parameters (e.g., clearance, t½) may be in tables not shown. |
+| `van_2014.pdf` | van Rein N et al., Vitamin K1 in oral solution or tablets:…, Journal of thrombosis and h… (2014) | popPK | 7 | [10.1111/jth.12753](https://doi.org/10.1111/jth.12753) | [25308231](https://pubmed.ncbi.nlm.nih.gov/25308231) | Human crossover trial reports quantitative bioavailability of vitamin K1 (AUC difference 365 μg/L·h with CI, and 24-h concentration increases 3.2 vs 3.4 μg/L) directly in the text, though no full PK profile (tmax, half-life, clearance) is given. |
+| `Choonara_1986.pdf` | Choonara IA et al., Enantiomers of warfarin and vitamin K1…, British journal of clinical… (1986) | popPK | 6 | [10.1111/j.1365-2125.1986.tb02966.x](https://doi.org/10.1111/j.1365-2125.1986.tb02966.x) | [3567019](https://pubmed.ncbi.nlm.nih.gov/3567019) | Phytonadione (vitamin K1) epoxide kinetics (Cmax, AUC) are the subject in humans, but no numeric values for the epoxide appear in the evidence, only qualitative comparisons. |
+| `Park_1984.pdf` | Park BK et al., Enzyme induction by phenobarbitone and…, British journal of clinical… (1984) | popPK | 6 | [10.1111/j.1365-2125.1984.tb05028.x](https://doi.org/10.1111/j.1365-2125.1984.tb05028.x) | [6743493](https://pubmed.ncbi.nlm.nih.gov/6743493) | A human disposition study of IV vitamin K1 (phytonadione) itself, but the abstract gives no numeric kinetic values, so the actual parameters (likely plasma concentrations, clearance, half-life) are not present in the evidence. |
+
+<sub>queue written 2026-11-14 15:29 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ageno_2012 | irrelevant | 1 | 0 | A clinical guidelines review on oral anticoagulants with no quantitative kinetic parameters for vitamin K1/phytonadione in the evidence, only discussion of reversal therapy. |
+| popPK | Arbit_2016 | irrelevant | 0 | 0 | Review of DOAC reversal agents; phytonadione is not the subject substance and no kinetic parameters for it appear in the evidence. |
+| popPK | Bellesoeur_2018 | irrelevant | 1 | 0 | A narrative review of anticoagulant PK variability in cancer with no quantitative kinetic parameters for phytonadione present. |
+| popPK | Bellmann_2025 | irrelevant | 0 | 0 | A German review of drug interactions in ICU patients with no quantitative toxicokinetic parameters for phytonadione; it is mentioned only in the context of vitamin-K antagonists. |
+| popPK | Berling_2017 | irrelevant | 1 | 1 | Warfarin is the subject substance; vitamin K1 (phytonadione) appears only as treatment dosing with no kinetic parameters for it. |
+| popPK | Beulens_2013 | irrelevant | 2 | 1 | A narrative review on menaquinones that only qualitatively mentions phylloquinone's short half-life and kinetics from other studies, with no numeric toxicokinetic parameters of its own (values live in cited primary papers). |
+| popPK | Bodewes_2023 | irrelevant | 0 | 0 | Paper measures hemostatic protein production in machine-perfused livers; phytonadione is not administered or modeled and no kinetic parameters for it appear. |
+| popPK | Canfield_1989 | irrelevant | 1 | 0 | A review-style essay on vitamin K in human milk mentioning that pharmacokinetic studies are needed, with no quantitative kinetic parameters present. |
+| popPK | Choonara_1986 | relevant | 6 | 2 | Phytonadione (vitamin K1) epoxide kinetics (Cmax, AUC) are the subject in humans, but no numeric values for the epoxide appear in the evidence, only qualitative comparisons. |
+| popPK | Cole_1985 | irrelevant | 0 | 0 | The paper measures serum osteocalcin concentrations in children; phytonadione does not appear at all and no kinetic parameters of it are reported. |
+| popPK | Dabbous_2014 | irrelevant | 0 | 0 | Pediatric anticoagulant review; phytonadione (vitamin K) appears only as a bleeding-reversal treatment with no kinetic parameters for it. |
+| popPK | Davies_2010 | irrelevant | 0 | 0 | Phytonadione appears only as vitamin K₁ concentration monitoring in a warfarin–oseltamivir interaction study; no phytonadione kinetic parameters are reported. |
+| popPK | Derebail_2020 | irrelevant | 0 | 0 | The paper is a review of DOAC pharmacokinetics in kidney disease with no kinetic parameters for phytonadione. |
+| popPK | Di_2017 | irrelevant | 0 | 0 | Review of NOACs in CKD; phytonadione (vitamin K1) not the subject substance and no kinetic parameters for it appear in the evidence. |
+| popPK | Di_2017_2 | irrelevant | 0 | 0 | Review of NOAC pharmacokinetics in CKD; phytonadione/vitamin K antagonists appear only as comparators, with no kinetic parameters for phytonadione itself. |
+| popPK | Dong_2026 | irrelevant | 0 | 0 | Phytonadione (vitamin K1) appears only as therapy duration/outcome; no kinetic parameter of phytonadione itself is reported, and the rodenticide concentrations do not count. |
+| popPK | Dung_2024 | irrelevant | 0 | 0 | Clinical prescribing survey of anticoagulants (warfarin as vitamin K antagonist therapy only) with no kinetic parameters for phytonadione itself. |
+| popPK | Díez-Villanueva_2023 | irrelevant | 0 | 0 | Phytonadione never appears as a subject; the paper reports creatinine clearance for NOAC dosing in elderly AF patients, not any kinetic parameter of phytonadione. |
+| popPK | Elenjickal_2024 | irrelevant | 0 | 0 | Review of anticoagulant use in CKD; no kinetic parameters for phytonadione are reported, it is only mentioned as vitamin K. |
+| popPK | Escolar_2014 | irrelevant | 0 | 0 | The paper is a review of edoxaban's pharmacokinetics; phytonadione appears only indirectly via vitamin K antagonists, with no kinetic parameters for phytonadione. |
+| popPK | Escolar_2015 | irrelevant | 0 | 0 | This is a review of rivaroxaban dosing with no quantitative kinetic parameters for phytonadione. |
+| popPK | Farag_2015 | irrelevant | 0 | 0 | Phytonadione (vitamin K1) appears only as part of "vitamin K antagonists" comparator context; no kinetic parameters reported. |
+| popPK | Fawzy_2019 | irrelevant | 4 | 0 | A review of VKA/NOAC pharmacokinetics with no numeric phytonadione parameters in the evidence; values presumably reside elsewhere. |
+| popPK | Feinstein_2020 | irrelevant | 1 | 3 | The kinetic parameters (half-lives, plasma levels) belong to the rodenticides brodifacoum, difenacoum and bromadiolone; phytonadione (vitamin K1) appears only as a treatment modality with no kinetic parameters of its own. |
+| popPK | Fender_2019 | irrelevant | 0 | 0 | The paper is about warfarin kinetics and albumin binding; phytonadione does not appear as subject of any kinetic parameter. |
+| popPK | Fitzpatrick_1982 | irrelevant | 0 | 0 | The paper is about moxalactam's pharmacokinetics; phytonadione (vitamin K) appears only in passing as a cause of bleeding toxicity, with no kinetic parameters for it. |
+| popPK | Galli_1984 | irrelevant | 0 | 0 | The paper is about osteocalcin plasma levels measured by RIA; phytonadione plays no role and no phytonadione kinetic parameters are reported. |
+| popPK | Griffin_1982 | irrelevant | 0 | 0 | The paper concerns plasma protein C levels in patients with intravascular coagulation, with no phytonadione kinetic parameters; phytonadione does not appear as a subject substance at all. |
+| popPK | Haider_2023 | irrelevant | 1 | 0 | Phytonadione is only a treatment given to the patient; the only half-life reported (90 days) belongs to brodifacoum, and no kinetic parameters for phytonadione itself are present. |
+| popPK | Hartmann_1987 | irrelevant | 2 | 2 | The paper measures plasma concentrations of phytomenadione but reports only etretinate ratios and no numeric pharmacokinetic parameter values for vitamin K1 itself; the abstract is truncated and numeric parameters for phytomenadione are not given in the evidence. |
+| popPK | Hassan_2013 | irrelevant | 0 | 0 | The paper concerns menadione (vitamin K3), a different substance from phytonadione, and no numeric toxicokinetic values are present; it is an analytical/properties chapter. |
+| popPK | Hindley_2023 | irrelevant | 0 | 0 | This is a review of DOAC pharmacokinetics (apixaban, edoxaban, rivaroxaban, dabigatran); phytonadione does not appear as a subject substance and no parameters for it are reported. |
+| popPK | Hirai_2019 | irrelevant | 1 | 1 | This is a review of PK/PGx studies on warfarin (with vitamin K only as a measured biomarker of metabolism, not as phytonadione kinetics); no quantitative phytonadione kinetic parameters or numeric values are present. |
+| popPK | Jadhav_2022 | irrelevant | 0 | 0 | The paper reviews vitamin K2-7 (menaquinone-7) pharmacokinetics/bioavailability; phytonadione (vitamin K1) appears only as a comparator, with no kinetic parameters for it; the few MK-7 numbers are partial trial references, not full parameter values. |
+| popPK | Kamath_2016 | irrelevant | 0 | 0 | Review paper on anticoagulants mentioning phytonadione family (vitamin K) only as context, with no kinetic parameters extracted or present in evidence. |
+| popPK | Karcioglu_2022 | irrelevant | 0 | 0 | Review of DOAC pharmacokinetics; phytonadione (vitamin K1) is only a comparator with no kinetic parameters of its own. |
+| popPK | Khan_2020 | irrelevant | 0 | 0 | A review of NOACs in cancer patients where kinetic parameters (half-lives, clearances) belong to rivaroxaban, dabigatran, apixaban and edoxaban; phytonadione (vitamin K1) appears only in the phrase "vitamin K antagonist" with no kinetic data for it. |
+| popPK | Khoo_2009 | irrelevant | 0 | 0 | This is a review of oral anticoagulants (warfarin, thrombin/factor Xa inhibitors) with no phytonadione toxicokinetic parameters of any kind. |
+| popPK | Kim_2019 | irrelevant | 0 | 0 | Paper is a clinical review of DOACs and LMWH in cancer-associated VTE; phytonadione (vitamin K1) is only mentioned as VKA class, with no kinetic parameters for it. |
+| popPK | Kolbrink_2022 | irrelevant | 1 | 0 | This is a ferroptosis/AKI efficacy study with no quantitative toxicokinetic parameters (half-life, clearance, Vd, rate constants) for phytonadione; doses in µM/mg are pharmacology, not kinetics, and no numeric PK values appear. |
+| popPK | Kreutz_2014 | irrelevant | 0 | 0 | This is a review of rivaroxaban's PK; phytonadione appears only contextually as a vitamin K antagonist, with no kinetic parameters for phytonadione. |
+| popPK | Lal_2006 | irrelevant | 0 | 0 | Paper concerns warfarin pharmacogenetics; phytonadione (vitamin K1) appears only in mechanistic context with no kinetic parameters. |
+| popPK | Leppert_1993 | irrelevant | 0 | 0 | A narrative review on pregnancy and epilepsy; no kinetic parameters for phytonadione/vitamin K, only a recommendation for prophylactic use. |
+| popPK | Li_2025 | irrelevant | 2 | 4 | Phytonadione (vitamin K1) appears only as an antidote; kinetic parameters reported are for dichlorvos and brodifacoum, with general literature PK properties of vitamin K1 (Vd, protein binding) lacking numeric substance-specific values; Table 2 has some qualitative/numeric PK for vitamin K1, but no measured half-life or clearance of the substance itself. |
+| popPK | Lurie_2010 | irrelevant | 0 | 0 | A commentary/review on warfarin–vitamin K interactions with no quantitative toxicokinetic parameters for phytonadione. |
+| popPK | Lutz_2017 | irrelevant | 0 | 0 | Phytonadione is not studied; the paper is a review of anticoagulants in CKD with no kinetic parameters. |
+| popPK | Ma_2015 | relevant | 8 | 3 | PK/pharmacodynamic comparison of vitamin K1 formulations in rats with AUC and tissue distribution reported, but the numeric values (AUC, clearance, tissue concentrations) appear to live in tables/figures not included in the evidence. |
+| popPK | Mammen_1992 | irrelevant | 0 | 0 | Paper discusses coagulation abnormalities in liver disease with no quantitative kinetic parameters for phytonadione. |
+| popPK | Mammen_1994 | irrelevant | 0 | 0 | A narrative review of coagulation defects in liver disease with no kinetic parameters, no numeric data, and no toxicokinetics of phytonadione. |
+| popPK | McConnico_1997 | irrelevant | 2 | 3 | Phytonadione (vitamin K1) is only the treatment for brodifacoum toxicosis in horses; no kinetic parameters for phytonadione itself are reported, though serum brodifacoum concentrations and clotting times were monitored. |
+| popPK | Millar_2017 | irrelevant | 0 | 0 | Review of anticoagulant drug selection where phytonadione is not the subject substance and no kinetic parameters appear in the evidence. |
+| popPK | Mitchell_2014 | irrelevant | 0 | 0 | This is a clinical review of rivaroxaban for VTE; phytonadione (vitamin K1) appears only obliquely via "vitamin K antagonists" with no kinetic parameters at all. |
+| popPK | Mohebbi_2018 | irrelevant | 0 | 0 | Review of oral anticoagulants in CKD with no quantitative kinetic parameters for phytonadione itself. |
+| popPK | Montouris_2007 | irrelevant | 0 | 0 | Paper discusses vitamin K supplementation risk in epilepsy management without any phytonadione kinetic parameters or quantitative data. |
+| popPK | Moore_2018 | irrelevant | 0 | 0 | The paper concerns rivaroxaban pharmacokinetics; phytonadione does not appear as a subject substance and no kinetic parameters for it are reported. |
+| popPK | Muchiri_2024 | irrelevant | 2 | 1 | Vitamin K1 is a co-treatment; kinetic parameters (half-lives, clearance) belong to the rodenticides, and no quantitative VK1 values appear in the evidence. |
+| popPK | Naqib_2025 | irrelevant | 0 | 0 | The paper studies brodifacoum's microbiome/metabolic effects in rabbits; phytonadione (vitamin K1) is only mentioned as the inhibited pathway, with no kinetic parameters for it. |
+| popPK | Niemeier_2008 | irrelevant | 1 | 1 | phytonadione appears only as content of injected chylomicron remnants with no quantitative kinetic parameters for vitamin K1 reported; no numbers in the evidence. |
+| popPK | Nosal_2021 | irrelevant | 0 | 0 | The subject substance is brodifacoum; phytonadione (vitamin K1) appears only as the administered treatment, with no kinetic parameters for it. |
+| popPK | Olmos_2007 | irrelevant | 0 | 5 | The kinetic parameters (56-day half-life, elimination curve) belong to brodifacoum, not phytonadione, which appears only as the administered treatment. |
+| popPK | Ouatu_2024 | irrelevant | 0 | 0 | A clinical review of NOAC vs VKA use in valvular heart disease; phytonadione (vitamin K1) is never quantitatively discussed and no kinetic parameters for it appear. |
+| popPK | Park_1984 | relevant | 6 | 2 | A human disposition study of IV vitamin K1 (phytonadione) itself, but the abstract gives no numeric kinetic values, so the actual parameters (likely plasma concentrations, clearance, half-life) are not present in the evidence. |
+| popPK | Parmar_2005 | irrelevant | 0 | 0 | Clinical review on thyrotoxic atrial fibrillation management; phytonadione is not a subject substance and no kinetic parameters are reported. |
+| popPK | Patel_2020 | irrelevant | 0 | 0 | Narrative review of anticoagulants in cancer-associated VTE with no kinetic parameters for phytonadione. |
+| popPK | Pathak_2015 | irrelevant | 0 | 0 | Phytonadione (vitamin K) appears only as a comparator class, not as the study subject; no kinetic parameters of any kind are reported. |
+| popPK | Payne_2023 | irrelevant | 0 | 0 | The paper reports PK of apixaban in children; phytonadione (vitamin K) is not the subject and no quantitative phytonadione kinetic parameters appear. |
+| popPK | Polzin_2023 | irrelevant | 0 | 2 | Paper is an outcome study of NOACs; phytonadione (vitamin K) never appears as subject, and any PK values mentioned belong to rivaroxaban/apixaban as background statements. |
+| popPK | Price_1981 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
+| popPK | Radulescu_2017 | irrelevant | 0 | 0 | A narrative review of pediatric anticoagulation with no phytonadione (vitamin K1) kinetic parameters; vitamin K appears only as an antagonist target, not as the subject substance. |
+| popPK | Samama_2007 | irrelevant | 0 | 0 | Review of new anticoagulants; phytonadione is not the subject and no kinetic parameters for it are reported. |
+| popPK | Saupe_1993 | irrelevant | 1 | 2 | Population plasma concentrations and correlations only, with no kinetic parameters (half-life, clearance, rates) for phylloquinone. |
+| popPK | Savelieva_2014 | irrelevant | 0 | 0 | Review of novel oral anticoagulants with no quantitative kinetic parameters for phytonadione; phytonadione is not even the subject. |
+| popPK | Schirmer_2019 | irrelevant | 0 | 0 | Clinical review on anticoagulation in CKD with no kinetic parameters for phytonadione. |
+| popPK | Schwarb_2016 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters (Cmax, bioavailability, renal clearance) for DOACs like dabigatran, rivaroxaban and apixaban, not for phytonadione, which appears at most in the context of vitamin K antagonism without any kinetic parameter. |
+| popPK | Shetty_1989 | irrelevant | 1 | 2 | This is a review of warfarin pharmacokinetics; phytonadione (vitamin K1) is only mentioned qualitatively (short elimination half-life) with no numeric kinetic parameters and no values reported. |
+| popPK | Soedirman_1996 | relevant | 9 | 4 | Human PK study of phylloquinone (phytonadione) itself, but only a passing bioavailability figure (~65%) appears; the actual Cmax, half-life, clearance etc. presumably live in tables/figures not provided. |
+| popPK | Sorodoc_2024 | irrelevant | 0 | 0 |  |
+| popPK | Storelli_2016 | irrelevant | 0 | 0 | A pharmacogenomics review of antithrombotic drugs with no kinetic parameters for phytonadione (vitamin K1) itself. |
+| popPK | Sun_2020 | irrelevant | 1 | 0 | The subject substance is dicoumarol; phytonadione (vitamin K) appears only as a mechanistic comparator, and no numeric kinetic parameters appear in the evidence. |
+| popPK | Takahashi_2000 | irrelevant | 2 | 1 | The subject substance is warfarin; phytonadione (vitamin K1) appears only as a measured analyte/comparator with no kinetic parameters reported, and its values are not shown in the evidence. |
+| popPK | Toorop_2020 | irrelevant | 0 | 0 | An opinion article on DOAC levels and outcomes; no phytonadione kinetic parameters appear anywhere. |
+| popPK | Ufer_2005 | irrelevant | 0 | 0 | The paper reviews kinetics of vitamin K antagonists (warfarin, phenprocoumon, acenocoumarol); phytonadione (vitamin K1) is not the studied substance and no numeric parameters for it appear. |
+| popPK | Vranckx_2018 | irrelevant | 0 | 0 | Phytonadione is not the subject substance; the paper reviews VKA (warfarin) and DOAC interactions with no kinetic parameters for phytonadione. |
+| popPK | Wahab_2021 | irrelevant | 0 | 0 | This is a review of direct oral anticoagulants; phytonadione (vitamin K1) is not the subject substance and no kinetic parameters for it are reported. |
+| popPK | Watson_2022 | irrelevant | 0 | 0 | The kinetic parameters (30-h half-life, first-order elimination) belong to warfarin, not phytonadione, which appears only as a reversal treatment without any kinetic parameters. |
+| popPK | Werth_2015 | irrelevant | 0 | 0 | Review of NOAC bleeding management; phytonadione (vitamin K) not the kinetic subject and no quantitative kinetic parameters are present. |
+| popPK | Winn_1988 | relevant | 8 | 3 | Reports disposition (tri-exponential decline, tissue concentrations, implied clearance) of vitamin K1 (phytonadione) in rabbits, but the numeric kinetic parameters (rate constants, half-lives) are not shown in the abstract text beyond tissue concentration values. |
+| popPK | Yalçin_2022 | irrelevant | 0 | 0 | A systematic review of pharmacogenetics in neonates covering caffeine, morphine, tacrolimus, warfarin, etc., with no kinetic parameters for phytonadione itself (only VKORC1 anticoagulant response). |
+| popPK | Zheng_2016 | irrelevant | 0 | 0 | The paper reviews apixaban pharmacokinetics; phytonadione (vitamin K) appears only as a mention of vitamin K antagonist therapy, with no phytonadione kinetic parameters reported. |
+| popPK | Zhi_1996 | irrelevant | 2 | 1 | Phytonadione (vitamin K1) levels are measured only as nutritional-status biomarkers; no quantitative kinetic parameters for phytonadione are reported, and any values would be in tables/figures not provided. |
+| popPK | Zhu_2014 | irrelevant | 0 | 0 | Case report ofdrug interaction; no quantitative kinetic parameters for phytonadione (vitamin K1) are reported, and it appears only as a cause of skin rash in one patient. |
+| popPK | Zoughaib_2024 | irrelevant | 0 | 0 | The paper concerns menadione (not phytonadione) in in vitro cancer-cell assays with no in vivo toxicokinetic parameters. |
+| popPK | van_2015 | irrelevant | 0 | 0 | A clinical review of perioperative antithrombotic therapy with no kinetic parameters for phytonadione itself; any mention is only as a comparator/therapy, and no numeric values appear in the evidence. |
+| popPK | van_2024 | irrelevant | 0 | 0 | A review of pediatric anticoagulation for VTE with no quantitative toxicokinetic parameters for phytonadione; it appears only as a topic class, not the subject substance. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphytonadione%5D&body=Drug%3A%20phytonadione%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_phytonadione/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-14 15:30 UTC</sub>

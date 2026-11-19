@@ -1,0 +1,49 @@
+{
+ "dose_source": "paper",
+ "model_id": "Anidulafungin_Elkayal2025_final",
+ "molar_masses": {
+  "central.C": 1.1402539999999999
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0,
+  200.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Elkayal_2025:other_prose",
+    "value_si": 0.0060999999999999995
+   },
+   {
+    "source": "Elkayal_2025:other_prose",
+    "value_si": 0.0058
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 2.722222222222222e-07,
+  "F": 1.0,
+  "MM": 1.1402539999999999,
+  "VdPerKg": 8.3e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0009992350353796135,
+  "k21": 0.00021034621578099836,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662014
+ },
+ "reference_peaks": {
+  "central.C": 0.0004879773376265586
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

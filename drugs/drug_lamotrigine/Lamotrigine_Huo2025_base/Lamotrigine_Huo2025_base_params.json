@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Lamotrigine_Huo2025_base",
+ "molar_masses": {
+  "central.C": 0.256091
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  25.0,
+  800.0
+ ],
+ "parameters": {
+  "Cl": 9.527777777777779e-07,
+  "F": 0.9,
+  "MM": 0.256091,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000982857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "ka": 0.0005361111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7414.742599597386
+ },
+ "reference_peaks": {
+  "central.C": 0.00029678283960838726
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

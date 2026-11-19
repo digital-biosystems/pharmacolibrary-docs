@@ -1,0 +1,111 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01J&quot;,&quot;href&quot;:&quot;atc/S01J.md&quot;},{&quot;label&quot;:&quot;Rose bengal&quot;}]"></div>
+
+# Rose bengal
+
+- **generic name:** Rose bengal
+- **ATC codes:** `S01JA02`
+- **DrugBank:** [DB11182](https://go.drugbank.com/drugs/DB11182) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Rose Bengal is a diagnostic colouring agent used in ophthalmology. It is approved for use, with some applications remaining investigational.
+
+<small>⚠️ **Unverified** — written by `qwen3.8-27b` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_1992_reference](drugs/drug_rose_bengal/RoseBengal_Wang1992_reference.md) | — | 1-compartment (no model) | 0 | Wang HK et al., Nonlinear pharmacokinetics of hepatobil…, Biopharmaceutics & drug dis… (1992) | [10.1002/bdd.2510130903](https://doi.org/10.1002/bdd.2510130903) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.80).">in vitro</span> | [Furumiya_2008_CYP3A4](drugs/drug_rose_bengal/pd_Furumiya_2008_CYP3A4.md) | CYP3A4 activity ← rose bengal · direct Emax (saturable) effect | — | Furumiya K et al., Inhibition of human CYP3A4, UGT1A6, and…, Journal of toxicology and e… (2008) | [10.1080/15287390802240751](https://doi.org/10.1080/15287390802240751) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.80).">in vitro</span> | [Furumiya_2008_P_gp](drugs/drug_rose_bengal/pd_Furumiya_2008_P_gp.md) | P-glycoprotein activity ← rose bengal · direct Emax (saturable) effect | — | Furumiya K et al., Inhibition of human CYP3A4, UGT1A6, and…, Journal of toxicology and e… (2008) | [10.1080/15287390802240751](https://doi.org/10.1080/15287390802240751) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.80).">in vitro</span> | [Furumiya_2008_UGT1A6](drugs/drug_rose_bengal/pd_Furumiya_2008_UGT1A6.md) | UGT1A6 activity ← rose bengal · direct Emax (saturable) effect | — | Furumiya K et al., Inhibition of human CYP3A4, UGT1A6, and…, Journal of toxicology and e… (2008) | [10.1080/15287390802240751](https://doi.org/10.1080/15287390802240751) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rose_bengal).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: LTF (binder), LYZ (target), TF (binder).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 21:12 | 2:00 | 0/1/0 | 0/1/0 | 0/0/0 | 239,343/10,672 | einfracz / qwen3.8-27b | 9 | 1/5 | 9/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 86 matched, 41 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Pirotte_1980.pdf` | Pirotte J, Study of 131I-rose bengal kinetics in n…, Biomedicine / [publiee pour… (1980) | popPK | 10 |  | [7370377](https://pubmed.ncbi.nlm.nih.gov/7370377) | The paper describes a 3-compartment PK model for rose bengal in humans, but the evidence text contains only qualitative descriptions of the model assumptions without the specific numeric parameter values (CL, V, Q, ka). |
+| `Wang_1992.pdf` | Wang HK et al., Nonlinear pharmacokinetics of hepatobil…, Biopharmaceutics & drug dis… (1992) | popPK | 10 | [10.1002/bdd.2510130903](https://doi.org/10.1002/bdd.2510130903) | [1467452](https://pubmed.ncbi.nlm.nih.gov/1467452) | The paper reports nonlinear PK parameters (Vmax, Km, Tm) and qualitative clearance changes for rose bengal in rats with specific numeric values provided in the abstract. |
+| `Galli_1981.pdf` | Galli G et al., Functional study with 131I-rose bengal…, European journal of nuclear… (1981) | popPK | 9 | [10.1007/BF00266419](https://doi.org/10.1007/BF00266419) | [7215372](https://pubmed.ncbi.nlm.nih.gov/7215372) | The paper reports a quantitative three-compartment pharmacokinetic model for rose bengal in humans, but the abstract only provides specific coefficients for the discrimination function (L) and qualitative significance statements (lower K32) without listing the actual parameter values (K12, K21, K32, RI) for the compartments. |
+| `Dickinson_1997.pdf` | Dickinson KE et al., Nucleotide regulation and characteristi…, Molecular pharmacology (1997) | pd | 4 | [10.1124/mol.52.3.473](https://doi.org/10.1124/mol.52.3.473) | [9281610](https://www.ncbi.nlm.nih.gov/pubmed/9281610) | metadata signals extractable PD data (EC50) |
+| `Fukuzawa_1998.pdf` | Fukuzawa K et al., Singlet oxygen scavenging by alpha-toco…, BioFactors (Oxford, England) (1998) | pd | 4 | [10.1002/biof.5520070106](https://doi.org/10.1002/biof.5520070106) | [9523026](https://www.ncbi.nlm.nih.gov/pubmed/9523026) | metadata signals extractable PD data (IC50) |
+| `Yachi_1989.pdf` | Yachi K et al., Characterization of Rose Bengal binding…, Biochimica et biophysica ac… (1989) | pd | 4 | [10.1016/0005-2736(89)90490-2](https://doi.org/10.1016/0005-2736(89)90490-2) | [2914125](https://www.ncbi.nlm.nih.gov/pubmed/2914125) | metadata signals extractable PD data (IC50) |
+| `Kazmi_2014.pdf` | Kazmi F et al., In vitro inhibition of human liver cyto…, Xenobiotica; the fate of fo… (2014) | pgx | 7 | [10.3109/00498254.2013.878814](https://doi.org/10.3109/00498254.2013.878814) | [24405273](https://www.ncbi.nlm.nih.gov/pubmed/24405273) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-07 21:10 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Chuman_2014 | not_relevant | 0 | 0 | The paper discusses the use of rose bengal as a tool to create a photochemical model of disease (NAION) and tests the efficacy of other treatments (L-arginine), but it does not report on pharmacogenomic effects (gene variants) on the pharmacokinetics or pharmacodynamics of rose bengal itself. |
+| popPK | Cui_2025 | irrelevant | 0 | 0 | The paper is a study on antimicrobial photodynamic therapy against fungi where Rose Bengal is used only as a commercial comparator, with no pharmacokinetic parameters reported. |
+| popPK | Dickinson_1997 | irrelevant | 0 | 0 | The paper is an in-vitro binding study on skeletal muscle membranes where rose bengal is used only as a test ligand/inhibitor, not a subject of pharmacokinetic analysis. |
+| PGx | Furumiya_2008 | not_relevant | 0 | 0 | The paper reports drug-enzyme/transporter interactions (DII) caused by food dyes, not pharmacogenomic (gene variant) effects on the PK/PD of rose bengal. |
+| popPK | Galli_1981 | relevant | 9 | 3 | The paper reports a quantitative three-compartment pharmacokinetic model for rose bengal in humans, but the abstract only provides specific coefficients for the discrimination function (L) and qualitative significance statements (lower K32) without listing the actual parameter values (K12, K21, K32, RI) for the compartments. |
+| popPK | Kaibara_1988 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of intracellular protons on calcium channels in guinea-pig ventricular myocytes, using Rose Bengal only as a tool for photo-oxidation to probe histidine residues, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Kazmi_2014 | not_relevant | 0 | 0 | The study evaluates in vitro CYP and UGT inhibition (drug-drug interaction potential) rather than any gene variant or genotype effect on the PK/PD of rose bengal. |
+| PGx | Kim_2012 | not_relevant | 0 | 0 | The paper investigates retinoic acid's effect on corneal cell differentiation and uses rose bengal as a barrier function assay; it does not report pharmacogenomic effects on the PK/PD of rose bengal. |
+| PGx | Mizutani_2009 | not_relevant | 0 | 0 | The study investigates the toxicological inhibitory effects of rose bengal on drug-metabolizing enzymes and transporters, not how a specific gene variant or genotype affects the PK or PD of rose bengal. |
+| popPK | Nigam_1993 | irrelevant | 0 | 0 | Rose Bengal is used as a glutathione S-transferase inhibitor in an in-vitro study of glyceryl trinitrate, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Okabe_2025 | irrelevant | 0 | 0 | The paper is a neuroscience study on stroke recovery in mice and does not report pharmacokinetic parameters for rose bengal. |
+| popPK | Pirotte_1979 | irrelevant | 4 | 0 | The paper discusses the suitability of 131I Rose Bengal for compartmental analysis of hepatic clearance but does not report specific quantitative PK parameters (CL, V, t1/2) in the provided evidence. |
+| popPK | Pirotte_1980 | relevant | 10 | 2 | The paper describes a 3-compartment PK model for rose bengal in humans, but the evidence text contains only qualitative descriptions of the model assumptions without the specific numeric parameter values (CL, V, Q, ka). |
+| popPK | Poirel_2020 | irrelevant | 0 | 0 | The paper is a pharmacological study on VGLUT inhibitors (LSP5-2157) using in vitro and ex vivo models, and Rose Bengal is only mentioned as a reference compound without any pharmacokinetic parameter data. |
+| popPK | Shiao_2019 | irrelevant | 0 | 0 | The paper investigates rose bengal as a comparator photosensitizer for photodynamic insecticidal activity (EC50 for larvicidal effect), not as a subject for pharmacokinetic or population-PK analysis. |
+| popPK | Sugimoto_1993 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters for indocyanine green (ICG), not rose bengal; rose bengal is only used as a substrate for in vitro binding studies. |
+| popPK | Tassonyi_1995 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of pipecuronium, using rose bengal only as a radiolabeled reagent for quantification, not as the subject drug. |
+| popPK | Turco_1966 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
+| popPK | Turco_1968 | irrelevant | 0 | 0 | no_text gate: only 154 chars of text extracted (&lt; 400) |
+| PGx | Vig_2024 | not_relevant | 2 | 2 | The study investigates the transport of rose bengal by overexpressed ABC transporters in cell lines, focusing on intracellular accumulation and PDT resistance, but it does not report in vivo pharmacokinetic or pharmacodynamic parameters modulated by specific human gene variants/polymorphisms in a clinical cohort. |
+| popPK | Wesołowski_2026 | irrelevant | 0 | 0 | The paper is a review of oxidative stress mechanisms in Acanthamoeba keratitis and contains no pharmacokinetic data for rose bengal. |
+| popPK | Zinsstag_2005 | irrelevant | 0 | 0 | The paper discusses a brucellosis transmission model where the Rose Bengal test is used as a serological diagnostic, not a pharmacokinetic study of the dye itself. |
+| popPK | de_1980 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brose_bengal%5D&body=Drug%3A%20rose_bengal%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rose_bengal/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:10 UTC</sub>

@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg parenteral (C01BC04)",
+ "model_id": "Flecainide_McQuinn1988_reference",
+ "molar_masses": {
+  "central.C": 0.414346
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0616666666666666e-05,
+  "F": 1.0,
+  "MM": 0.414346,
+  "VdPerKg": 0.007500000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662087
+ },
+ "reference_peaks": {
+  "central.C": 0.000378650592543886
+ },
+ "stop_time": 172800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

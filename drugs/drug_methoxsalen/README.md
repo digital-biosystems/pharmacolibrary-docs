@@ -1,0 +1,107 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D05A&quot;,&quot;href&quot;:&quot;atc/D05A.md&quot;},{&quot;label&quot;:&quot;methoxsalen&quot;}]"></div>
+
+# methoxsalen
+
+- **generic name:** methoxsalen
+- **ATC codes:** `D05AD02`, `D05BA02`
+- **DrugBank:** [DB00553](https://go.drugbank.com/drugs/DB00553) · **PubChem:** [CID 4114](https://pubchem.ncbi.nlm.nih.gov/compound/4114)
+- **molar mass:** 216.192 g/mol (C12H8O4) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Methoxsalen is a psoralen derivative used to treat conditions such as psoriasis, eczema, vitiligo, and certain skin lymphomas when combined with ultraviolet light exposure. It is typically given orally, applied topically, or used via extracorporeal circulation. The medication is approved and used in clinical practice for these dermatological and oncological conditions.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q408570](https://www.wikidata.org/wiki/Q408570), [Wikipedia](https://en.wikipedia.org/wiki/Methoxsalen?oldid=1353659867) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Guillon_2018_keratinocyte_growth_inhibition](drugs/drug_methoxsalen/pd_Guillon_2018_keratinocyte_growth_inhibition.md) | keratinocyte growth inhibition ← methoxsalen (8-MOP; compound 3) · inhibition effect | — | Guillon CD et al., SYNTHESIS AND EVALUATION OF WATER-SOLUB…, Heterocyclic letters (2018) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Li_2015_PTP1B](drugs/drug_methoxsalen/pd_Li_2015_PTP1B.md) | PTP1B inhibitory effect ← methoxsalen · inhibition effect | — | Li JL et al., PTP1B inhibitors from stems of Angelica…, Bioorganic & medicinal chem… (2015) | [10.1016/j.bmcl.2015.04.003](https://doi.org/10.1016/j.bmcl.2015.04.003) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Lim_2026_skin_cancer](drugs/drug_methoxsalen/pd_Lim_2026_skin_cancer.md) | skin cancer ← methoxsalen · time-to-event model | — | Lim W et al., IARC Group 1 Pharmaceuticals and Associ…, Cancer research and treatme… (2026) | [10.4143/crt.2024.1201](https://doi.org/10.4143/crt.2024.1201) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Arora_1976_duration_of_methoxsalen_s_phototoxic_potentially](drugs/drug_methoxsalen/pd_Arora_1976_duration_of_methoxsalen_s_phototoxic_potentially.md) | duration of methoxsalen's phototoxic potentially ← methoxsalen · direct linear effect | — | Arora SK et al., Factors influencing methoxsalen phototo…, Archives of dermatology (1976) | — |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Lake_1995_coumarin_7_hydroxylase_activity](drugs/drug_methoxsalen/pd_Lake_1995_coumarin_7_hydroxylase_activity.md) | coumarin 7-hydroxylase activity ← methoxsalen · inhibition effect | — | Lake BG et al., Metabolism of coumarin by precision-cut…, Xenobiotica; the fate of fo… (1995) | [10.3109/00498259509061839](https://doi.org/10.3109/00498259509061839) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Mäenpää_1993_COH_activity](drugs/drug_methoxsalen/pd_M_enp_1993_COH_activity.md) | coumarin 7-hydroxylase activity ← methoxsalen · inhibition effect | — | Mäenpää J et al., Differential inhibition of coumarin 7-h…, Biochemical pharmacology (1993) | [10.1016/0006-2952(93)90247-t](https://doi.org/10.1016/0006-2952(93)90247-t) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Mäenpää_1993_COH_activity_2](drugs/drug_methoxsalen/pd_M_enp_1993_COH_activity_2.md) | coumarin 7-hydroxylase activity ← methoxsalen · inhibition effect | — | Mäenpää J et al., Differential inhibition of coumarin 7-h…, Biochemical pharmacology (1993) | [10.1016/0006-2952(93)90247-t](https://doi.org/10.1016/0006-2952(93)90247-t) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=methoxsalen).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2A6` binder/inhibitor | DrugBank actor |
+| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CYP2A13 (inhibitor), DNA (intercalation).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 15:16 | 5:23 | 0/0/0 | 3/3/0 | 0/0/0 | 84,885/12,702 | openai / gpt-6-luna | 4 | 1/0 | 4/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 55 matched, 55 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Ehrsson_1979.pdf` | Ehrsson H et al., Effect of food on kinetics of 8-methoxs…, Clinical pharmacology and t… (1979) | popPK | 8 | [10.1002/cpt1979252167](https://doi.org/10.1002/cpt1979252167) | [759069](https://pubmed.ncbi.nlm.nih.gov/759069) | Human methoxsalen kinetics were modeled, but numeric parameter values are not present in the provided evidence. |
+| `Lake_1995.pdf` | Lake BG et al., Metabolism of coumarin by precision-cut…, Xenobiotica; the fate of fo… (1995) | pd | 4 | [10.3109/00498259509061839](https://doi.org/10.3109/00498259509061839) | [7618341](https://www.ncbi.nlm.nih.gov/pubmed/7618341) | metadata signals extractable PD data (IC50) |
+| `Li_2015.pdf` | Li JL et al., PTP1B inhibitors from stems of Angelica…, Bioorganic & medicinal chem… (2015) | pd | 4 | [10.1016/j.bmcl.2015.04.003](https://doi.org/10.1016/j.bmcl.2015.04.003) | [25891102](https://www.ncbi.nlm.nih.gov/pubmed/25891102) | metadata signals extractable PD data (IC50) |
+| `Lv_2024.pdf` | Lv Z et al., Spectrum-effect relationship study betw…, Biomedical chromatography :… (2024) | pd | 4 | [10.1002/bmc.5847](https://doi.org/10.1002/bmc.5847) | [38368628](https://www.ncbi.nlm.nih.gov/pubmed/38368628) | metadata signals extractable PD data (IC50) |
+| `Tantcheva-Poór_2001.pdf` | Tantcheva-Poór I et al., Liver cytochrome P450 CYP1A2 is markedl…, The British journal of derm… (2001) | pgx | 7 | [10.1046/j.1365-2133.2001.04233.x](https://doi.org/10.1046/j.1365-2133.2001.04233.x) | [11422031](https://www.ncbi.nlm.nih.gov/pubmed/11422031) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Sellers_2000.pdf` | Sellers EM et al., Mimicking gene defects to treat drug de…, Annals of the New York Acad… (2000) | pgx | 5 | [10.1111/j.1749-6632.2000.tb06685.x](https://doi.org/10.1111/j.1749-6632.2000.tb06685.x) | [10911933](https://www.ncbi.nlm.nih.gov/pubmed/10911933) | metadata signals extractable PGX data (CYP2D6*10) |
+
+<sub>queue written 2026-10-07 15:13 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Di_2009 | not_relevant | 0 | 0 | Mentions methoxsalen only as a CYP2A6 inhibitor; reports no genotype-dependent methoxsalen PK or PD effect. |
+| popPK | Ehrsson_1979 | relevant | 8 | 0 | Human methoxsalen kinetics were modeled, but numeric parameter values are not present in the provided evidence. |
+| PGx | Gu_1998 | not_relevant | 0 | 0 | Methoxsalen is used as an inhibitor in the study; no gene variant or phenotype effect on a methoxsalen PK or PD parameter is reported. |
+| PGx | Kharasch_2000 | not_relevant | 0 | 0 | Methoxsalen is used as a CYP2A6 inhibitor; the paper reports no genotype- or phenotype-dependent effect on methoxsalen PK or PD. |
+| PGx | Li_1997 | not_relevant | 0 | 0 | Methoxsalen is studied as a CYP2A6 inhibitor; the paper does not report a genetic effect on methoxsalen PK or PD. |
+| popPK | Micheal_2021 | irrelevant | 2 | 0 | Human bioequivalence study reports exposure measures, but no quantitative disposition parameters for methoxsalen. |
+| PGx | Minoda_2001 | not_relevant | 0 | 0 | The paper studies methoxsalen inhibition of CYP2A6-mediated halothane metabolism, not a genetic effect on methoxsalen pharmacokinetics or pharmacodynamics. |
+| PGx | Ono_1996 | not_relevant | 0 | 0 | Methoxsalen is studied as an in vitro CYP inhibitor, with no gene-variant effect on its pharmacokinetic or pharmacodynamic parameters reported. |
+| PGx | Palacharla_2019 | not_relevant | 0 | 0 | The study evaluates methoxsalen’s in vitro enzyme inhibition, not a genetic or phenotypic effect on its PK or PD. |
+| PGx | Rheeders_2006 | not_relevant | 0 | 0 | The paper reports a drug–drug interaction affecting cyclosporine exposure, not a genetic effect on methoxsalen PK or PD. |
+| PGx | Rodríguez-Morató_2017 | not_relevant | 0 | 0 | Methoxsalen is mentioned only as a CYP inhibitor; the reported genotype effects concern tyrosol-to-hydroxytyrosol conversion, not methoxsalen PK or PD. |
+| PGx | Sellers_2000 | not_relevant | 0 | 0 | Methoxsalen is mentioned as a CYP2A6 inhibitor, but no genetic effect on its pharmacokinetic or pharmacodynamic parameters is reported. |
+| PGx | Tantcheva-Poór_2001 | not_relevant | 0 | 0 | The paper reports route-dependent inhibition of CYP1A2 by PUVA, not an effect of a gene variant, genotype, or phenotype on methoxsalen PK/PD. |
+| PGx | Yamaguchi_2023 | not_relevant | 0 | 0 | The study evaluates CYP2A6 inhibition by coumarin derivatives and does not report a pharmacogenomic effect on methoxsalen PK or PD. |
+| PGx | Zhang_2001 | not_relevant | 0 | 0 | The paper evaluates methoxsalen as a CYP inhibitor in vitro and does not report a gene variant, genotype, or phenotype effect on its PK or PD parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethoxsalen%5D&body=Drug%3A%20methoxsalen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methoxsalen/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

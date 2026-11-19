@@ -1,0 +1,85 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin icodec&quot;}]"></div>
+
+# insulin icodec
+
+- **generic name:** insulin icodec
+- **ATC codes:** `A10AE07`
+- **DrugBank:** [DB16693](https://go.drugbank.com/drugs/DB16693) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+It is given as a subcutaneous injection once weekly.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q111982305](https://www.wikidata.org/wiki/Q111982305), [Wikipedia](https://en.wikipedia.org/wiki/Insulin_icodec?oldid=1378100935) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Eto_2025_GIR](drugs/drug_insulin_icodec/pd_Eto_2025_GIR.md) | glucose infusion rate ← insulin_icodec · delayed effect through an effect compartment | — | Eto T et al., Pharmacological characteristics of once…, Journal of diabetes investi… (2025) | [10.1111/jdi.14384](https://doi.org/10.1111/jdi.14384) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Lingvay_2025_SMBG](drugs/drug_insulin_icodec/pd_Lingvay_2025_SMBG.md) | prebreakfast self-measured blood glucose ← insulin_icodec · delayed effect through an effect compartment | — | Lingvay I et al., Pharmacokinetic/Pharmacodynamic Modelin…, Endocrine practice : offici… (2025) | [10.1016/j.eprac.2024.11.009](https://doi.org/10.1016/j.eprac.2024.11.009) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=insulin_icodec).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IDE (substrate), IGF1R (target), INSR (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 22:30 | 1:22 | 0/0/0 | 0/2/0 | 0/0/0 | 48,070/1,047 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/2 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 16 matched, 16 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Eto_2025 | relevant | 8 | 2 | The study reports PK parameters for insulin icodec, but specific numeric values for clearance, volume, or half-life are located in supplementary tables (Table S5) and figures not provided in the evidence. |
+| popPK | Hubálek_2024 | irrelevant | 4 | 2 | The paper is primarily a mechanistic study on disulphide bond stability and crystal structure, reporting only a terminal half-life (~50h) in minipigs without providing a compartmental model or quantitative clearance/volume parameters. |
+| PD | Hubálek_2024 | not_relevant | 0 | 0 | The paper focuses on the structural stability and degradation mechanisms (thiol-disulphide exchange) of insulin icodec, not on pharmacodynamic modeling or exposure-response relationships. |
+| popPK | Hövelmann_2024 | relevant | 10 | 0 | The title confirms the study is about the PK of insulin icodec, but the provided evidence contains no numeric parameter values. |
+| popPK | Lingvay_2025 | irrelevant | 2 | 0 | The paper describes a PK/PD model for insulin icodec but does not report specific quantitative PK parameters (CL, V, ka) in the text, referring instead to supplemental materials for model details. |
+| popPK | Nishimura_2021 | relevant | 9 | 2 | The paper is a primary source for insulin icodec PK/PD properties including a half-life of 196 hours, but specific compartmental parameters (CL, V, Q) are not explicitly listed in the provided text and are likely in supplementary material or figures. |
+| popPK | Pham_2025 | relevant | 4 | 3 | The paper is a review that reports some quantitative PK parameters (half-life 196 h, tmax 16 h, AUC ratios) for insulin icodec, but it lacks a full compartmental model (CL, V, Q, ka) and relies on summarized values from primary trials. |
+| popPK | Pieber_2023 | relevant | 10 | 0 | The title confirms the study is about the PK/PD of insulin icodec, but the provided evidence contains no numeric parameter values. |
+| PD | Pieber_2023 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, abstract, or data required to verify the presence of numeric PD parameters or exposure-response relationships. |
+| popPK | Plum-Mörschel_2023 | relevant | 9 | 4 | The study reports a compartmental PK model for insulin icodec in humans, but the specific numeric parameter values (CL, V, ka) are located in the Online Resource (Supplementary Material) which is not included in the evidence. |
+| popPK | Rosenstock_2022 | irrelevant | 0 | 0 | The paper is a review of investigational once-weekly insulins and does not report original quantitative pharmacokinetic parameters for insulin icodec. |
+| PD | Rosenstock_2022 | not_relevant | 1 | 0 | The text is a narrative review discussing the molecular strategies and clinical development status of once-weekly insulins, without reporting specific pharmacodynamic models, exposure-response analyses, or numeric PD parameters. |
+| PGx | Rosenstock_2022 | not_relevant | 0 | 0 | The paper is a review of once-weekly insulin development and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Rosenstock_2024 | irrelevant | 0 | 0 | The paper is a prescribing information document for insulin degludec (TRESIBA), not insulin icodec, and contains no PK parameters for the target drug. |
+| PD | Rosenstock_2024 | not_relevant | 0 | 0 | The provided text is the prescribing information for insulin degludec (Tresiba), not insulin icodec, and contains no numeric pharmacodynamic parameters or exposure-response data. |
+| popPK | Tou_2026 | irrelevant | 2 | 0 | The study focuses on a novel insulin analog (LPJT-026) with insulin icodec serving only as a comparator, and no specific quantitative PK parameters (CL, V, ka) for insulin icodec are reported in the evidence. |
+| PD | Tou_2026 | not_relevant | 2 | 1 | The paper reports qualitative PK/PD profiles (duration of effect, mortality rates) and PK parameters (AUC, t1/2) but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect relationship for insulin icodec. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binsulin_icodec%5D&body=Drug%3A%20insulin_icodec%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_insulin_icodec/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

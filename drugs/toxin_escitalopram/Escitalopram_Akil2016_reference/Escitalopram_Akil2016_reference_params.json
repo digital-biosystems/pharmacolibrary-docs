@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "Escitalopram_Akil2016_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0,
+  30.0
+ ],
+ "parameters": {
+  "Cl": 9.333333333333334e-06,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.019857142857142858,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.0002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14544.28857715431
+ },
+ "reference_peaks": {
+  "central.C": 6.55919753194194e-06
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

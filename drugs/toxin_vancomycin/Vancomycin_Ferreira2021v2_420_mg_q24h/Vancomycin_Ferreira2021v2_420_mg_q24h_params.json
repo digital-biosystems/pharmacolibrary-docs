@@ -1,0 +1,31 @@
+{
+ "dose_source": "WHO ATC DDD 2000 mg parenteral (J01XA01)",
+ "model_id": "Vancomycin_Ferreira2021v2_420_mg_q24h",
+ "molar_masses": {
+  "central.C": 1.449265
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.944444444444445e-07,
+  "F": 1.0,
+  "MM": 1.449265,
+  "VdPerKg": 1.6999999999999996e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662036
+ },
+ "reference_peaks": {
+  "central.C": 1.352782686050819
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

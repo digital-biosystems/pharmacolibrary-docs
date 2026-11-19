@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Osimertinib_Rodier2022_reference",
+ "molar_masses": {
+  "central.C": 0.49961900000000004
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  40.0,
+  160.0
+ ],
+ "parameters": {
+  "Cl": 3.8055555555555556e-06,
+  "F": 1.0,
+  "MM": 0.49961900000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.013914285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4e-05,
+  "ka": 6.666666666666667e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 45710.62124248497
+ },
+ "reference_peaks": {
+  "central.C": 3.4419053335480736e-05
+ },
+ "stop_time": 950400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

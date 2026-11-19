@@ -1,0 +1,50 @@
+{
+ "dose_source": "paper",
+ "model_id": "Neomycin_Qu2026_reference",
+ "molar_masses": {
+  "central.C": 0.61465
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2100.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Qu_2026:other_prose",
+    "value_si": 4.05
+   },
+   {
+    "source": "Qu_2026:other_prose",
+    "value_si": 59.41
+   },
+   {
+    "source": "Qu_2026:discussion_prose",
+    "value_si": 4.05
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.277713044591084e-07,
+  "F": 1.0,
+  "MM": 0.61465,
+  "VdPerKg": 0.00030469,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0021,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662027
+ },
+ "reference_peaks": {
+  "central.C": 0.09828398800654485
+ },
+ "stop_time": 604800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

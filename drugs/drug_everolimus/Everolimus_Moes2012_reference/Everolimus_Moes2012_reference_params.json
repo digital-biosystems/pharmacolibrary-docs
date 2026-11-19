@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1.5 mg oral (L04AH02)",
+ "model_id": "Everolimus_Moes2012_reference",
+ "molar_masses": {
+  "central.C": 0.95824
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.9722222222222224e-06,
+  "F": 1.0,
+  "MM": 0.95824,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0021142857142857144,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-06,
+  "ka": 0.0020444444444444447,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2380.7615230460924
+ },
+ "reference_peaks": {
+  "central.C": 9.454057566159023e-06
+ },
+ "stop_time": 108000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

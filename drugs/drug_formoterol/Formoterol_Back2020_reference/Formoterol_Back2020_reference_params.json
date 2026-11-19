@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 0.16 mg oral (R03CC15)",
+ "model_id": "Formoterol_Back2020_reference",
+ "molar_masses": {
+  "central.C": 0.3444049
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.111111111111111e-06,
+  "F": 0.9,
+  "MM": 0.3444049,
+  "Tlag": 0.0,
+  "VdPerKg": 0.003085714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.6e-07,
+  "k12": 0.0001135545267489712,
+  "k21": 0.00023139412997903565,
+  "ka": 0.005472222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1183.1663326653306
+ },
+ "reference_peaks": {
+  "central.C": 5.772297318610219e-07
+ },
+ "stop_time": 147600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

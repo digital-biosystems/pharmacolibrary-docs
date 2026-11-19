@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 50 mg oral (J04BA02)",
+ "model_id": "Dapsone_Zuidema1986_reference",
+ "molar_masses": {
+  "central.C": 0.24830000000000002
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.738930922110579e-07,
+  "F": 0.9,
+  "MM": 0.24830000000000002,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0015,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "ka": 0.00017503716680806696,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 20209.03071803645
+ },
+ "reference_peaks": {
+  "central.C": 0.0003778810008096847
+ },
+ "stop_time": 604800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

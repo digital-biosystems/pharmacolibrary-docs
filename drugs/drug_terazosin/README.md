@@ -1,0 +1,137 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04C&quot;,&quot;href&quot;:&quot;atc/G04C.md&quot;},{&quot;label&quot;:&quot;terazosin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terazosin_Sonders1986_reference&quot;,&quot;label&quot;:&quot;Sonders_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terazosin/Terazosin_Sonders1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Achari_2000_diastolic_blood_pressure&quot;,&quot;label&quot;:&quot;Achari_2000 \u00b7 diastolic blood pressure&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_terazosin/pd_Achari_2000_diastolic_blood_pressure.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Achari_2000_systolic_blood_pressure&quot;,&quot;label&quot;:&quot;Achari_2000 \u00b7 systolic blood pressure&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_terazosin/pd_Achari_2000_systolic_blood_pressure.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Campanero_2008_DBP&quot;,&quot;label&quot;:&quot;Campanero_2008 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_terazosin/pd_Campanero_2008_DBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Campanero_2008_SBP&quot;,&quot;label&quot;:&quot;Campanero_2008 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_terazosin/pd_Campanero_2008_SBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# terazosin
+
+- **generic name:** terazosin
+- **ATC codes:** `G04CA03`
+- **DrugBank:** [DB01162](https://go.drugbank.com/drugs/DB01162) · **PubChem:** [CID 5401](https://pubchem.ncbi.nlm.nih.gov/compound/5401)
+- **molar mass:** 387.4329 g/mol (C19H25N5O4) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Terazosin is an alpha-blocker medication used to treat high blood pressure and symptoms of an enlarged prostate. It is taken by mouth. It is used for blood pressure but is considered a less preferred option.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q280786](https://www.wikidata.org/wiki/Q280786), [Wikipedia](https://en.wikipedia.org/wiki/Terazosin?oldid=1377720145) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| terazosin | parent | 387.433 | C19H25N5O4 | DrugBank | [5401](https://pubchem.ncbi.nlm.nih.gov/compound/5401) | Sonders_1986 |
+
+## Start here
+
+> **Sonders_1986_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> human volunteers, hypertensive patients, elderly volunteers, patients with congestive heart failure. [Run it in the simulator](drugs/drug_terazosin/Terazosin_Sonders1986_reference.md?tab=Simulation) · [record](drugs/drug_terazosin/Terazosin_Sonders1986_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Sonders_1986_reference](drugs/drug_terazosin/Terazosin_Sonders1986_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Sonders RC, Pharmacokinetics of terazosin, The American journal of med… (1986) | [10.1016/0002-9343(86)90847-8](https://doi.org/10.1016/0002-9343(86)90847-8) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Patterson_1985_reference](drugs/drug_terazosin/Terazosin_Patterson1985_reference.md) | — | 1-compartment (no model) | 0 | Patterson SE, Terazosin kinetics after oral and intra…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.198](https://doi.org/10.1038/clpt.1985.198) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Caprino_2000_urinary_flow](drugs/drug_terazosin/pd_Caprino_2000_urinary_flow.md) | urinary flow ← Terazosin · stimulation effect | — | Caprino L, [Drugs for the treatment of benign pros…, Minerva urologica e nefrolo… (2000) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Leier_1986_hemodynamic_responses](drugs/drug_terazosin/pd_Leier_1986_hemodynamic_responses.md) | hemodynamic responses ← terazosin · inhibition effect | — | Leier CV et al., The hemodynamic and clinical responses…, The American journal of the… (1986) | [10.1097/00000441-198609000-00002](https://doi.org/10.1097/00000441-198609000-00002) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Witte_2002_IUP](drugs/drug_terazosin/pd_Witte_2002_IUP.md) | blockade of phenylephrine-induced intraurethral pressure response ← terazosin · direct sigmoid Emax (Hill) effect | — | Witte DG et al., Modeling of relationships between pharm…, The Journal of pharmacology… (2002) | [10.1124/jpet.300.2.495](https://doi.org/10.1124/jpet.300.2.495) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">dog</span> | [Witte_2002_MAP](drugs/drug_terazosin/pd_Witte_2002_MAP.md) | blockade of phenylephrine-induced mean arterial pressure response ← terazosin · direct sigmoid Emax (Hill) effect | — | Witte DG et al., Modeling of relationships between pharm…, The Journal of pharmacology… (2002) | [10.1124/jpet.300.2.495](https://doi.org/10.1124/jpet.300.2.495) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Achari_2000_diastolic_blood_pressure](drugs/drug_terazosin/pd_Achari_2000_diastolic_blood_pressure.md) | diastolic blood pressure ← terazosin · direct Emax (saturable) effect | ▶ model + simulator | Achari R et al., The relationship between terazosin dose…, Journal of clinical pharmac… (2000) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Achari_2000_systolic_blood_pressure](drugs/drug_terazosin/pd_Achari_2000_systolic_blood_pressure.md) | systolic blood pressure ← terazosin · direct Emax (saturable) effect | ▶ model + simulator | Achari R et al., The relationship between terazosin dose…, Journal of clinical pharmac… (2000) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Campanero_2008_DBP](drugs/drug_terazosin/pd_Campanero_2008_DBP.md) | diastolic blood pressure ← terazosin · delayed effect through an effect compartment | ▶ model + simulator | Campanero MA et al., Pharmacokinetic and pharmacodynamic mod…, Clinical drug investigation (2008) | [10.2165/00044011-200828030-00001](https://doi.org/10.2165/00044011-200828030-00001) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Campanero_2008_SBP](drugs/drug_terazosin/pd_Campanero_2008_SBP.md) | systolic blood pressure ← terazosin · delayed effect through an effect compartment | ▶ model + simulator | Campanero MA et al., Pharmacokinetic and pharmacodynamic mod…, Clinical drug investigation (2008) | [10.2165/00044011-200828030-00001](https://doi.org/10.2165/00044011-200828030-00001) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Simmering_2021_PD](drugs/drug_terazosin/pd_Simmering_2021_PD.md) | Risk of Developing Parkinson Disease ← terazosin · time-to-event model | — | Simmering JE et al., Association of Glycolysis-Enhancing α-1…, JAMA neurology (2021) | [10.1001/jamaneurol.2020.5157](https://doi.org/10.1001/jamaneurol.2020.5157) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=terazosin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), KCNH2 (inhibitor), KCNH6 (inhibitor), KCNH7 (inhibitor), TGFB1 (inducer).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 09:36 | 9:13 | 1/1/0 | 6/0/0 | 0/0/0 | 428,894/12,884 | einfracz / qwen3.8-27b | 16 | 0/11 | 16/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 82 matched, 57 returned
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Patterson_1985.pdf` | Patterson SE, Terazosin kinetics after oral and intra…, Clinical pharmacology and t… (1985) | popPK | 10 | [10.1038/clpt.1985.198](https://doi.org/10.1038/clpt.1985.198) | [4042526](https://pubmed.ncbi.nlm.nih.gov/4042526) | The abstract reports key pharmacokinetic metrics (half-life, peak concentrations, urinary recovery) for terazosin in humans, but explicit values for clearance and volume of distribution are not provided in the text. |
+| `Sonders_1986.pdf` | Sonders RC, Pharmacokinetics of terazosin, The American journal of med… (1986) | popPK | 10 | [10.1016/0002-9343(86)90847-8](https://doi.org/10.1016/0002-9343(86)90847-8) | [2872802](https://pubmed.ncbi.nlm.nih.gov/2872802) | The text explicitly provides quantitative pharmacokinetic parameters for terazosin in humans, including volume of distribution (25-30 L), clearances (80/10 ml/min), and half-life (12 h). |
+| `Campanero_2008.pdf` | Campanero MA et al., Pharmacokinetic and pharmacodynamic mod…, Clinical drug investigation (2008) | popPK | 8 | [10.2165/00044011-200828030-00001](https://doi.org/10.2165/00044011-200828030-00001) | [18266399](https://pubmed.ncbi.nlm.nih.gov/18266399) | The study describes a one-compartment PK model for terazosin but the provided text only lists pharmacodynamic parameters (Emax, EC50, kpe); specific PK values (CL, V, t1/2) are not explicitly listed in the abstract, though the model was fitted. |
+| `Samara_1996.pdf` | Samara EE et al., Assessment of the pharmacokinetic-pharm…, Journal of clinical pharmac… (1996) | popPK | 5 | [10.1002/j.1552-4604.1996.tb04172.x](https://doi.org/10.1002/j.1552-4604.1996.tb04172.x) | [9013375](https://pubmed.ncbi.nlm.nih.gov/9013375) | The paper describes a relevant human PK study, but the evidence text contains no quantitative numeric values for clearance, volume, or half-life, only qualitative descriptions of non-significant changes. |
+
+<sub>queue written 2026-10-07 09:33 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Achari_2000 | irrelevant | 0 | 0 | The study reports dose-response pharmacodynamic parameters (Emax, ED50) for blood pressure, not pharmacokinetic parameters (CL, V, ka, etc.) for terazosin. |
+| popPK | Aledavood_2025 | irrelevant | 0 | 0 | The paper is an in silico study on CHI3L1 inhibitors and mentions terazosin only as one of many FDA-approved drugs screened for similarity, without reporting any pharmacokinetic parameters for it. |
+| popPK | Battini_2024 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study on drug-drug interaction signal detection in the FAERS database and does not report pharmacokinetic parameters for terazosin. |
+| popPK | Bertin_2023 | irrelevant | 0 | 0 | The paper is an in vitro machine learning study on drug synergy in cancer cells and does not report pharmacokinetic parameters for terazosin. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report any pharmacokinetic parameters for terazosin. |
+| popPK | Donnelly_1989 | irrelevant | 2 | 0 | The text is a qualitative review/discussion of PK-PD relationships without reporting any specific quantitative numerical values (CL, V, ka, etc.) for terazosin. |
+| popPK | Gretler_1992 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacology study on fenoldopam in canine tracheal smooth muscle, where terazosin is only used as a weak antagonist/comparator, and no PK parameters are reported. |
+| popPK | Hein_2001 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study characterizing receptor binding and signaling, not a pharmacokinetic study of terazosin. |
+| popPK | Ito_2007 | irrelevant | 1 | 0 | The study focuses on receptor occupancy and pharmacological effects (Qmax) for therapeutic assessment, not on quantitative pharmacokinetic disposition parameters (CL, V, ka) for terazosin. |
+| popPK | Kester_2003 | irrelevant | 0 | 0 | The paper reports in vitro pharmacological receptor binding (IC50) data, not pharmacokinetic disposition parameters (CL, V, etc.) for terazosin. |
+| popPK | Korstanje_2011 | irrelevant | 0 | 0 | The paper studies tamsulosin, not terazosin. |
+| popPK | Langenstroer_1993 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on endothelin-1 in prostate tissue where terazosin is used only as a preincubation inhibitor, not a PK subject. |
+| PGx | Lewandrowski_2024 | not_relevant | 0 | 0 | The paper discusses opioid pharmacogenomics and mentions terazosin only as a chemical with protein interactions in a network, without reporting any effect of gene variants on terazosin PK/PD. |
+| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and mentions terazosin only as an example of an alpha-blocker class, without reporting any pharmacokinetic parameters for it. |
+| popPK | Popp_2022 | irrelevant | 0 | 0 | The paper is a review of ivermectin for COVID-19 and does not contain pharmacokinetic data for terazosin. |
+| popPK | Preston_2003 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of alpha-1 adrenoceptor effects in cultured cells using terazosin as a pharmacological antagonist, not a pharmacokinetic study. |
+| popPK | Pruimboom-Brees_2023 | irrelevant | 0 | 0 | The paper is a review on intravitreal drug development and does not report pharmacokinetic parameters for terazosin. |
+| popPK | Samara_1996 | relevant | 5 | 0 | The paper describes a relevant human PK study, but the evidence text contains no quantitative numeric values for clearance, volume, or half-life, only qualitative descriptions of non-significant changes. |
+| popPK | Simpson_1985 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on rat heart cells where terazosin is used only as a pharmacological antagonist, not as a subject of pharmacokinetic analysis. |
+| popPK | Staudacher_2014 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on glioblastoma cells where terazosin is used as a non-apoptotic hERG ligand to antagonize doxazosin, with no pharmacokinetic parameters reported. |
+| popPK | Subhan_2025 | irrelevant | 0 | 0 | This is an in-vitro pharmacology study examining the vasorelaxant mechanism of Schiff bases (SB1/SB2), using terazosin only as a standard alpha-1 receptor blocker comparator rather than analyzing its pharmacokinetic profile. |
+| popPK | Sun_2015 | irrelevant | 0 | 0 | The paper is a computational study on predicting drug synergy in cancer and does not contain any pharmacokinetic data or parameters for terazosin. |
+| popPK | Yonpiam_2021 | irrelevant | 0 | 0 | The study examines the pharmacodynamic effect of terazosin as a receptor antagonist in isolated sheep arteries, not its pharmacokinetic disposition parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterazosin%5D&body=Drug%3A%20terazosin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terazosin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:33 UTC</sub>

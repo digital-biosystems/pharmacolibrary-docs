@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 150 mg parenteral (L04AX01)",
+ "model_id": "Azathioprine_Singh2024_reference",
+ "molar_masses": {
+  "central.C": 0.277262
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.7777777777777776e-07,
+  "F": 1.0,
+  "MM": 0.277262,
+  "VdPerKg": 0.006924936196267024,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00015,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662053
+ },
+ "reference_peaks": {
+  "central.C": 0.0003093875144752052
+ },
+ "stop_time": 6048000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

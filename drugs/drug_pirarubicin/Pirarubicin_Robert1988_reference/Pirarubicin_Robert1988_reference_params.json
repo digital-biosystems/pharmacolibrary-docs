@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Pirarubicin_Robert1988_reference",
+ "molar_masses": {
+  "central.C": 0.6276430000000001
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.4999999999999998e-05,
+  "F": 1.0,
+  "MM": 0.6276430000000001,
+  "VdPerKg": 0.019714285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662124
+ },
+ "reference_peaks": {
+  "central.C": 7.207153307625856e-06
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

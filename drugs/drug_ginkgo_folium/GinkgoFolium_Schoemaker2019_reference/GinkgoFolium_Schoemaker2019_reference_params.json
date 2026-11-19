@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 120 mg oral (N06DX02)",
+ "model_id": "GinkgoFolium_Schoemaker2019_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.111111111111111e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00012,
+  "k12": 1.587301587301587e-05,
+  "k21": 2.7777777777777776e-05,
+  "ka": 0.0002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11068.363077403523
+ },
+ "reference_peaks": {
+  "central.C": 0.000897400420863494
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

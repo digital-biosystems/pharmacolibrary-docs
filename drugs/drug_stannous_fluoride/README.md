@@ -1,0 +1,113 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;stannous fluoride&quot;}]"></div>
+
+# stannous fluoride
+
+- **generic name:** stannous fluoride
+- **ATC codes:** `A01AA04`
+- **DrugBank:** [DB11092](https://go.drugbank.com/drugs/DB11092) · **PubChem:** [CID 24550](https://pubchem.ncbi.nlm.nih.gov/compound/24550)
+- **molar mass:** 156.71 g/mol (F2Sn) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Stannous fluoride is a chemical compound used as a caries prophylactic agent in toothpastes. It is applied topically to teeth or taken orally in forms like paste, gel, or rinse. It is widely used in dental care products.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q204962](https://www.wikidata.org/wiki/Q204962), [Wikipedia](https://en.wikipedia.org/wiki/Tin(II)_fluoride?oldid=1336471422) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=stannous_fluoride).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 03:37 | 1:24 | 0/0/0 | 0/0/0 | 0/0/0 | 50,458/1,317 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/6 | 4/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 26 matched, 32 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Scott_2009.pdf` | Scott DC et al., Topical oral cavity pharmacokinetic mod…, Journal of pharmaceutical s… (2009) | popPK | 9 | [10.1002/jps.21691](https://doi.org/10.1002/jps.21691) | [19189400](https://pubmed.ncbi.nlm.nih.gov/19189400) | The paper describes a quantitative two-compartment pharmacokinetic model for stannous fluoride in humans, but the specific numeric parameter values (clearance, volume, rate constants) are not present in the provided evidence text. |
+
+<sub>queue written 2026-10-04 03:37 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Biesbrock_2019 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical trials assessing the efficacy of stannous fluoride dentifrices on gingivitis (bleeding scores), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Claydon_2002 | irrelevant | 0 | 0 | The study is a clinical trial assessing plaque inhibition efficacy, not a pharmacokinetic study, and contains no disposition parameters for stannous fluoride. |
+| PD | Claydon_2002 | not_relevant | 2 | 1 | The paper reports a qualitative dose-response pattern for chlorhexidine and compares stannous fluoride as a single-dose benchmark, but it does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect curve for stannous fluoride. |
+| popPK | Clayer_1989 | irrelevant | 0 | 0 | The study uses stannous fluoride as a radiolabeled diagnostic colloid to assess splenic phagocytic function, not to characterize the pharmacokinetic disposition parameters of the drug itself. |
+| popPK | EFSA_2025 | irrelevant | 0 | 0 | The paper is a toxicological risk assessment of fluoride exposure and does not report pharmacokinetic parameters for stannous fluoride. |
+| PD | EFSA_2025 | not_relevant | 1 | 0 | The paper is a consumer risk assessment establishing health-based guidance values (HBGVs) and tolerable upper intake levels (ULs) based on epidemiological associations, not a pharmacodynamic study reporting numeric PD parameters (e.g., Emax, EC50) or a concentration-effect curve for stannous fluoride. |
+| popPK | Faller_1995 | irrelevant | 0 | 0 | The paper is a review of in situ models for fluoride efficacy and does not report any pharmacokinetic parameters for stannous fluoride. |
+| PD | Faller_1995 | not_relevant | 1 | 0 | The text is a review discussing the lack of clinical dose-response data for stannous fluoride and proposing in situ testing guidelines, without reporting any numeric PD parameters or concentration-effect curves. |
+| popPK | Faller_1995_2 | irrelevant | 0 | 0 | The paper reports on anticaries efficacy and fluoride uptake in enamel, not pharmacokinetic disposition parameters (CL, V, t1/2) for stannous fluoride. |
+| popPK | Fernando_2024 | irrelevant | 0 | 0 | The study is an in situ remineralization trial measuring ion bioavailability and lesion recovery, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Fiorillo_2020 | irrelevant | 0 | 0 | The paper is a systematic review of clinical trials regarding the dental efficacy (enamel loss, plaque, sensitivity) of stannous fluoride, containing no pharmacokinetic parameters or disposition data. |
+| PD | Fiorillo_2020 | not_relevant | 1 | 0 | The paper is a systematic review and meta-analysis of clinical trials that reports statistical significance (p-values) and qualitative effects on enamel loss, but it does not provide numeric pharmacodynamic parameters (e.g., Emax, EC50) or a quantitative exposure-response curve for stannous fluoride. |
+| popPK | Fisher_2003 | irrelevant | 0 | 0 | The study evaluates anticaries efficacy and fluoride uptake in enamel, not systemic pharmacokinetic parameters (CL, V, t1/2) for stannous fluoride. |
+| popPK | Grusovin_2008 | irrelevant | 0 | 0 | The paper is a clinical review of dental implant maintenance interventions and does not report any pharmacokinetic parameters for stannous fluoride. |
+| PD | Grusovin_2008 | not_relevant | 0 | 0 | The paper is a systematic review of clinical interventions for dental implants and does not report any pharmacokinetic or pharmacodynamic modeling, concentration-effect relationships, or numeric PD parameters for stannous fluoride. |
+| popPK | Gómez_2026 | irrelevant | 0 | 0 | The paper is a systematic review on proteolytic enzymes in dentin erosion where stannous fluoride is mentioned only as a synthetic inhibitor, with no pharmacokinetic parameters reported. |
+| PD | Gómez_2026 | not_relevant | 1 | 0 | The paper is a systematic review that qualitatively summarizes the efficacy of stannous fluoride as an inhibitor but does not report or provide extractable numeric pharmacodynamic parameters (e.g., IC50, Emax) or concentration-effect curves. |
+| popPK | Haught_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of stannous fluoride's effect on Toll-like receptor activation and cytokine secretion, containing no pharmacokinetic parameters. |
+| popPK | He_2024 | irrelevant | 0 | 0 | The paper is a clinical efficacy study on gingivitis outcomes, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | He_2025 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of stannous fluoride dentifrices on gingivitis, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
+| popPK | Hirsch_1989 | irrelevant | 0 | 0 | The study evaluates stannous fluoride as a radiolabeling agent for leukocytes, not as a therapeutic drug subject to pharmacokinetic modeling. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study is an in vitro investigation of dentinal fluid flow reduction and tubule occlusion by toothpastes, not a pharmacokinetic study reporting disposition parameters for stannous fluoride. |
+| popPK | Kong_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the radiotracer 99mTc-PQQ, where stannous fluoride is used only as a reagent for radiolabeling, not as the subject drug. |
+| popPK | Ledder_2010 | irrelevant | 0 | 0 | The study is a microbiological evaluation of oral hygiene actives in biofilm models and does not report any pharmacokinetic parameters for stannous fluoride. |
+| PD | Ledder_2010 | not_relevant | 1 | 0 | The paper reports qualitative microbiological effects (viable counts, diversity) of stannous fluoride in biofilm models but does not provide a concentration-effect curve, dose-response analysis, or numeric PD parameters (e.g., EC50, Emax). |
+| popPK | Lippert_2009 | irrelevant | 0 | 0 | The study is an in-vitro assessment of anticaries potential (enamel fluoride uptake) and does not report pharmacokinetic parameters for stannous fluoride. |
+| PD | Lippert_2009 | not_relevant | 3 | 1 | The study reports qualitative dose-response trends and statistical comparisons (ANOVA) for stannous fluoride but does not provide numeric PD parameters (e.g., EC50, Emax) or a fitted concentration-effect curve. |
+| popPK | Miller_1994 | irrelevant | 0 | 0 | The paper focuses on the antibacterial efficacy and mechanism of action (surface deposition/occlusion) of stannous fluoride, not on pharmacokinetic disposition parameters. |
+| popPK | Scott_2009 | relevant | 9 | 0 | The paper describes a quantitative two-compartment pharmacokinetic model for stannous fluoride in humans, but the specific numeric parameter values (clearance, volume, rate constants) are not present in the provided evidence text. |
+| popPK | Shapiro_2002 | irrelevant | 0 | 0 | The study is an in vitro efficacy assessment of mouthrinses on biofilm clearance, not a pharmacokinetic study, and reports no disposition parameters for stannous fluoride. |
+| popPK | Sim_2015 | irrelevant | 0 | 0 | The study is a clinical trial assessing caries prevention efficacy, not a pharmacokinetic study, and reports no disposition parameters for stannous fluoride. |
+| popPK | Sim_2019 | irrelevant | 0 | 0 | The study evaluates the anticariogenic efficacy of a saliva biomimetic and fluoride gel, reporting caries progression and saliva flow rates, but does not report pharmacokinetic parameters (CL, V, t1/2) for stannous fluoride. |
+| popPK | Stalteri_1996 | irrelevant | 0 | 0 | The study focuses on the radiolabeling of an antibody with Technetium-99m, using stannous fluoride only as a chemical reducing agent, and does not report pharmacokinetic parameters for stannous fluoride itself. |
+| popPK | Stephen_1994 | irrelevant | 0 | 0 | The paper is a review of fluoride dental products and caries prevention, containing no pharmacokinetic parameters or quantitative disposition data for stannous fluoride. |
+| PD | Stephen_1994 | not_relevant | 1 | 0 | The text is a general review of fluoride products that qualitatively mentions dose-response relationships but provides no specific numeric PD parameters or extractable concentration-effect data for stannous fluoride. |
+| popPK | Stephen_1995 | irrelevant | 0 | 0 | The paper is a review of dental caries prevention efficacy and does not report any pharmacokinetic parameters for stannous fluoride. |
+| PD | Stephen_1995 | not_relevant | 2 | 1 | The text is a historical review that qualitatively mentions dose-response trends (e.g., &gt;1000 ppm vs 500 ppm) and cites specific clinical outcomes from other studies, but it does not present original PK/PD data, concentration-effect curves, or derivable numeric PD parameters (like Emax or EC50) for stannous fluoride. |
+| popPK | White_1995 | irrelevant | 0 | 0 | The paper describes a method for evaluating antimicrobial efficacy on dental plaque and does not report pharmacokinetic parameters for stannous fluoride. |
+| popPK | Xie_2024 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on the interaction of stannous fluoride with bacterial outer membrane vesicles and LPS, containing no pharmacokinetic parameters. |
+| popPK | Zero_2018 | irrelevant | 0 | 0 | The paper is an in situ clinical trial evaluating the anticaries efficacy of dentifrices, not a pharmacokinetic study, and stannous fluoride is only a component of a comparator dentifrice. |
+| PD | Zero_2018 | not_relevant | 0 | 0 | The paper reports clinical efficacy outcomes (EFU) for different dentifrice formulations but does not provide pharmacokinetic data or fit a pharmacodynamic model to derive numeric PD parameters like Emax or EC50. |
+| popPK | unknown_2017 | irrelevant | 0 | 0 | no_text gate: only 7 chars of text extracted (&lt; 400) |
+| PD | unknown_2017 | not_relevant | 0 | 0 | The provided text is a conference header (EANM'17) and contains no scientific content, data, or analysis regarding stannous fluoride or any pharmacodynamic relationship. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bstannous_fluoride%5D&body=Drug%3A%20stannous_fluoride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_stannous_fluoride/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

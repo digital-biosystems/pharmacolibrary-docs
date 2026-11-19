@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Vancomycin_Xu2026v2_reference",
+ "molar_masses": {
+  "central.C": 1.449265
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1050.0,
+  1750.0
+ ],
+ "parameters": {
+  "Cl": 2.1e-06,
+  "F": 1.0,
+  "MM": 1.449265,
+  "VdPerKg": 0.0012228571428571427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00105,
+  "k12": 2.4208203530633437e-05,
+  "k21": 7.2455322455322445e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662022
+ },
+ "reference_peaks": {
+  "central.C": 0.01122328909241741
+ },
+ "stop_time": 144000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

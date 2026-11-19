@@ -1,0 +1,69 @@
+{
+ "model_id": "Canakinumab_Krause2014_PD_pflare",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 25.0,
+  "EC50": 0.00113,
+  "Emax": -50.0,
+  "exposure_per_s": 0.001,
+  "gamma": 4.22
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 25.0,
+  "0.0011299999999999997": 0.0
+ },
+ "stop_time": 12.0,
+ "subtitle": "probability of a flare in inflammatory symptoms (Pflare) against canakinumab concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "Base effect",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "µg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "Maximum effect",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "µg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "µg/mL",
+  "factor": 0.0009999999999999998,
+  "label": "canakinumab concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "Base effect",
+  "factor": 1.0,
+  "label": "probability of a flare in inflammatory symptoms (Pflare)"
+ }
+}

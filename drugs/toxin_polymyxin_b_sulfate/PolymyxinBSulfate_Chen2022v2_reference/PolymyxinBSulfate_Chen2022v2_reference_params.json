@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 150 mg parenteral (J01XB02)",
+ "model_id": "PolymyxinBSulfate_Chen2022v2_reference",
+ "molar_masses": {
+  "central.C": 1.203499
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.750000000000001e-07,
+  "F": 1.0,
+  "MM": 1.203499,
+  "VdPerKg": 0.00019142857142857142,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00015,
+  "k12": 0.00018200663349917078,
+  "k21": 4.7265288544358304e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662012
+ },
+ "reference_peaks": {
+  "central.C": 0.00181126625960472
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

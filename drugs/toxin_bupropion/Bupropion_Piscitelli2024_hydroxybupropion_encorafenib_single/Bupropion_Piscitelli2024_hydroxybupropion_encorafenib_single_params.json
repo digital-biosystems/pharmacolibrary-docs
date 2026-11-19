@@ -1,0 +1,150 @@
+{
+ "dose_source": "library default",
+ "model_id": "Bupropion_Piscitelli2024_hydroxybupropion_encorafenib_single",
+ "molar_masses": {
+  "retainedFraction": 0.23974299999999998
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 6.98e-06
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 3.0299999999999998e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 1.8699999999999997e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 9.4e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 7.09e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 7.099999999999999e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 0.00018099999999999998
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 0.00018899999999999999
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 0.000256
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 5.5e-06
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 2.95e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 2.26e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 8.859999999999999e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 7.58e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 6.59e-05
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 0.000213
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 0.00020999999999999998
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 0.000285
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 1.8
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 2.51
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 3.38
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 2.19
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 2.63
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 3.31
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 0.006059999999999999
+   },
+   {
+    "source": "Piscitelli_2024:other_prose",
+    "value_si": 0.00294
+   },
+   {
+    "source": "Piscitelli_2024:discussion_prose",
+    "value_si": 4.3
+   },
+   {
+    "source": "Piscitelli_2024:discussion_prose",
+    "value_si": 2.7
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.23974299999999998,
+  "Tb[1]": 11700.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9966569192814635
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

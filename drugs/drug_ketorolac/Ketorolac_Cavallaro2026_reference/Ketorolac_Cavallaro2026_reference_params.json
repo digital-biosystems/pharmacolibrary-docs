@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 30 mg parenteral (M01AB15)",
+ "model_id": "Ketorolac_Cavallaro2026_reference",
+ "molar_masses": {
+  "central.C": 0.2552686
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2658333333333334e-05,
+  "F": 1.0,
+  "MM": 0.2552686,
+  "VdPerKg": 0.0047,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662026
+ },
+ "reference_peaks": {
+  "central.C": 9.01410361563085e-05
+ },
+ "stop_time": 93600.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

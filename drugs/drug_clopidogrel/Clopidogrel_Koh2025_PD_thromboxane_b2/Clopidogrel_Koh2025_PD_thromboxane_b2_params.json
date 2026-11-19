@@ -1,0 +1,66 @@
+{
+ "model_id": "Clopidogrel_Koh2025_PD_thromboxane_b2",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 2.639999999999999e-05,
+  "EC50": 3.5999999999999996,
+  "Emax": -9.999999999999997e-07,
+  "exposure_per_s": 999.9999999999999,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 2.639999999999999e-05,
+  "3.5999999999999996": 2.5899999999999993e-05
+ },
+ "stop_time": 0.036,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "μg/L",
+   "factor": 9.999999999999997e-07,
+   "si_unit": "kg/m3"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mol/L",
+   "factor": 999.9999999999999,
+   "si_unit": "mol/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "μg/L",
+   "factor": 9.999999999999997e-07,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mol/L",
+   "factor": 999.9999999999999,
+   "si_unit": "mol/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "μg/L"
+ },
+ "x_axis": {
+  "display_unit": "mol/L",
+  "factor": 999.9999999999999,
+  "per_s": 999.9999999999999,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "μg/L",
+  "factor": 9.999999999999997e-07,
+  "label": "response"
+ }
+}

@@ -1,0 +1,76 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01B&quot;,&quot;href&quot;:&quot;atc/S01B.md&quot;},{&quot;label&quot;:&quot;bromfenac&quot;}]"></div>
+
+# bromfenac
+
+- **generic name:** bromfenac
+- **ATC codes:** `S01BC11`
+- **DrugBank:** [DB00963](https://go.drugbank.com/drugs/DB00963) · **PubChem:** [CID 60726](https://pubchem.ncbi.nlm.nih.gov/compound/60726)
+- **molar mass:** 334.165 g/mol (C15H12BrNO3) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Bromfenac is a non-steroidal anti-inflammatory drug used to treat pain and ocular inflammation following cataract surgery. It is administered ophthalmically as eye drops. The drug is authorised in the European Union and marketed in the US, although an older formulation was discontinued.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2487682](https://www.wikidata.org/wiki/Q2487682), [Wikipedia](https://en.wikipedia.org/wiki/Bromfenac?oldid=1268659641) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=bromfenac).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 18:34 | 0:19 | 0/0/0 | 0/0/0 | 0/0/0 | 39,401/467 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 5 matched, 5 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Chiang_1996.pdf` | Chiang ST et al., Pharmacokinetic-pharmacodynamic relatio…, Pharmacotherapy (1996) | popPK | 5 |  | [8947993](https://pubmed.ncbi.nlm.nih.gov/8947993) | The study describes pharmacokinetic-pharmacodynamic modeling of bromfenac, but specific disposition parameters like clearance (CL) and volume (V) are not explicitly provided in the extracted evidence. |
+
+<sub>queue written 2026-10-07 18:34 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Chiang_1996 | relevant | 5 | 0 | The study describes pharmacokinetic-pharmacodynamic modeling of bromfenac, but specific disposition parameters like clearance (CL) and volume (V) are not explicitly provided in the extracted evidence. |
+| popPK | Park_2026 | irrelevant | 0 | 0 | This is a clinical study on the anatomical effects of topical bromfenac on macular thickness, not a pharmacokinetic study, and contains no disposition parameters. |
+| popPK | Sharif_2013 | irrelevant | 0 | 0 | Bromfenac is mentioned only as a cyclooxygenase inhibitor used in in vitro mechanistic experiments, with no pharmacokinetic parameters reported. |
+| popPK | Sharif_2014 | irrelevant | 0 | 0 | Bromfenac is used only as a pharmacological antagonist to block a pathway, not as the subject of a pharmacokinetic study. |
+| popPK | Sharif_2014_2 | irrelevant | 0 | 0 | Bromfenac is used only as a cyclooxygenase inhibitor to block prostaglandin release in an in-vitro mechanistic study of bradykinin signaling, with no pharmacokinetic parameters reported for bromfenac. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbromfenac%5D&body=Drug%3A%20bromfenac%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bromfenac/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

@@ -1,0 +1,137 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P03B&quot;,&quot;href&quot;:&quot;atc/P03B.md&quot;},{&quot;label&quot;:&quot;dibutylphthalate&quot;}]"></div>
+
+# dibutylphthalate
+
+- **generic name:** dibutylphthalate
+- **ATC codes:** `P03BX03`
+- **DrugBank:** [DB13716](https://go.drugbank.com/drugs/DB13716) · **PubChem:** none
+- **molar mass:** 278.3435 g/mol (C16H22O4) — DrugBank
+- **groups:** experimental
+
+## About
+
+Dibutyl phthalate is a phthalate ester classified as an insecticide and repellent. It is primarily recognized for its industrial application as a plasticizer rather than as a therapeutic medicine for human patients.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q415612](https://www.wikidata.org/wiki/Q415612), [Wikipedia](https://en.wikipedia.org/wiki/Dibutyl_phthalate?oldid=1380123154) (CC BY-SA 4.0) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| dibutyl phthalate | parent | 278.344 | C16H22O4 | DrugBank | — | Chang_2013 |
+| dibutylphthalate | parent | 278.344 | C16H22O4 | DrugBank | — | Chang_2013 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67, Q88 — no SI value to build from</sub> | [Chang_2013_reference](drugs/drug_dibutylphthalate/Dibutylphthalate_Chang2013_reference.md) | — | 1-compartment (no model) | 8 | Chang LW et al., Pharmacokinetics of dibutyl phthalate (…, International journal of mo… (2013) | [10.3390/ijms14010836](https://doi.org/10.3390/ijms14010836) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ahmad_2021_hsALDH_inhibition](drugs/drug_dibutylphthalate/pd_Ahmad_2021_hsALDH_inhibition.md) | Inhibition of human salivary aldehyde dehydrogenase (hsALDH) activity ← Dibutyl phthalate (DBP) · inhibition effect | — | Ahmad S et al., A comparative study based on activity,…, Toxicology (2021) | [10.1016/j.tox.2021.152947](https://doi.org/10.1016/j.tox.2021.152947) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Duan_2020_E2](drugs/drug_dibutylphthalate/pd_Duan_2020_E2.md) | estradiol (E2) level in H295R cells ← dibutyl phthalate (DBP) and metabolites · stimulation effect | — | Duan C et al., Effects of fast food packaging plastici…, The Science of the total en… (2020) | [10.1016/j.scitotenv.2020.138500](https://doi.org/10.1016/j.scitotenv.2020.138500) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Duan_2020_H295R_cell_viability](drugs/drug_dibutylphthalate/pd_Duan_2020_H295R_cell_viability.md) | H295R cell viability ← dibutyl phthalate (DBP) · inhibition effect | — | Duan C et al., Effects of fast food packaging plastici…, The Science of the total en… (2020) | [10.1016/j.scitotenv.2020.138500](https://doi.org/10.1016/j.scitotenv.2020.138500) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Duan_2020_T](drugs/drug_dibutylphthalate/pd_Duan_2020_T.md) | testosterone (T) level in H295R cells ← dibutyl phthalate (DBP) and metabolites · inhibition effect | — | Duan C et al., Effects of fast food packaging plastici…, The Science of the total en… (2020) | [10.1016/j.scitotenv.2020.138500](https://doi.org/10.1016/j.scitotenv.2020.138500) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hsieh_2012_tumor_formation](drugs/drug_dibutylphthalate/pd_Hsieh_2012_tumor_formation.md) | tumor formation ← dibutylphthalate · stimulation effect | — | Hsieh TH et al., Phthalates induce proliferation and inv…, FASEB journal : official pu… (2012) | [10.1096/fj.11-191742](https://doi.org/10.1096/fj.11-191742) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Jensen_2001_adult_reproduction](drugs/drug_dibutylphthalate/pd_Jensen_2001_adult_reproduction.md) | adult reproduction ← dibutyl phthalate (DBP) · inhibition effect | — | Jensen J et al., Effects of di(2-ethylhexyl) phthalate a…, Environmental toxicology an… (2001) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Liu_2009_normal_embryonic_development_at_blastula_stage](drugs/drug_dibutylphthalate/pd_Liu_2009_normal_embryonic_development_at_blastula_stage.md) | normal embryonic development at blastula stage ← dibutylphthalate · inhibition effect | — | Liu Y et al., Toxicity of seven phthalate esters to e…, Ecotoxicology (London, Engl… (2009) | [10.1007/s10646-008-0283-0](https://doi.org/10.1007/s10646-008-0283-0) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pérez-Albaladejo_2017_P450_aromatase_activity](drugs/drug_dibutylphthalate/pd_P_rez_Albaladejo_2017_P450_aromatase_activity.md) | P450 aromatase activity ← dibutylphthalate · inhibition effect | — | Pérez-Albaladejo E et al., Comparative toxicity, oxidative stress…, Toxicology in vitro : an in… (2017) | [10.1016/j.tiv.2016.11.003](https://doi.org/10.1016/j.tiv.2016.11.003) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [van_2007_MCF_7_bus_cell_proliferation](drugs/drug_dibutylphthalate/pd_van_2007_MCF_7_bus_cell_proliferation.md) | MCF-7(bus) cell proliferation ← dibutyl phthalate · direct Emax (saturable) effect | — | van Meeuwen JA et al., Mixture effects of estrogenic compounds…, Food and chemical toxicolog… (2007) | [10.1016/j.fct.2007.06.011](https://doi.org/10.1016/j.fct.2007.06.011) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [van_2007_pS2](drugs/drug_dibutylphthalate/pd_van_2007_pS2.md) | pS2 expression level ← dibutyl phthalate · direct Emax (saturable) effect | — | van Meeuwen JA et al., Mixture effects of estrogenic compounds…, Food and chemical toxicolog… (2007) | [10.1016/j.fct.2007.06.011](https://doi.org/10.1016/j.fct.2007.06.011) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Cunha_2019_growth](drugs/drug_dibutylphthalate/pd_Cunha_2019_growth.md) | microalgal growth inhibition ← dibutyl phthalate (DBP) · inhibition effect | — | Cunha C et al., Ecotoxicological and biochemical effect…, Aquatic toxicology (Amsterd… (2019) | [10.1016/j.aquatox.2019.105281](https://doi.org/10.1016/j.aquatox.2019.105281) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shen_2009_AR_agonist](drugs/drug_dibutylphthalate/pd_Shen_2009_AR_agonist.md) | Androgen receptor agonist activity (androgenic, luciferase reporter gene assay) ← dibutyl phthalate (DBP) · stimulation effect | — | Shen O et al., Comparison of in vitro hormone activiti…, Toxicology letters (2009) | [10.1016/j.toxlet.2009.07.019](https://doi.org/10.1016/j.toxlet.2009.07.019) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shen_2009_AR_antagonist](drugs/drug_dibutylphthalate/pd_Shen_2009_AR_antagonist.md) | Androgen receptor antagonist activity (antiandrogenic, luciferase reporter gene assay) ← dibutyl phthalate (DBP) · inhibition effect | — | Shen O et al., Comparison of in vitro hormone activiti…, Toxicology letters (2009) | [10.1016/j.toxlet.2009.07.019](https://doi.org/10.1016/j.toxlet.2009.07.019) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shen_2009_ER_agonist](drugs/drug_dibutylphthalate/pd_Shen_2009_ER_agonist.md) | Estrogen receptor agonist activity (ER-mediated reporter gene assay) ← dibutyl phthalate (DBP) · stimulation effect | — | Shen O et al., Comparison of in vitro hormone activiti…, Toxicology letters (2009) | [10.1016/j.toxlet.2009.07.019](https://doi.org/10.1016/j.toxlet.2009.07.019) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Shen_2009_TR_antagonist](drugs/drug_dibutylphthalate/pd_Shen_2009_TR_antagonist.md) | Thyroid receptor antagonist activity (TR antagonist, luciferase reporter gene assay) ← dibutyl phthalate (DBP) · inhibition effect | — | Shen O et al., Comparison of in vitro hormone activiti…, Toxicology letters (2009) | [10.1016/j.toxlet.2009.07.019](https://doi.org/10.1016/j.toxlet.2009.07.019) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_2016_bioluminescence_inhibition](drugs/drug_dibutylphthalate/pd_Wang_2016_bioluminescence_inhibition.md) | bioluminescence inhibition of Photobacterium phosphoreum T3 ← dibutyl phthalate (DBP) · inhibition effect | — | Wang W et al., Eco-toxicological bioassay of atmospher…, Ecotoxicology and environme… (2016) | [10.1016/j.ecoenv.2016.07.024](https://doi.org/10.1016/j.ecoenv.2016.07.024) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dibutylphthalate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: TRPA1 (activator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 13:06 | 11:22 | 1/0/0 | 7/3/0 | 0/0/0 | 447,083/19,186 | ollama / glm-5.3-flash | 13 | 1/7 | 12/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 143 matched, 79 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Baralić_2023 | not_relevant | 2 | 3 | Computational toxicogenomic gene-network study of sulforaphane vs phthalates in CRC; no gene variant effect on DBP PK/PD parameters reported. |
+| popPK | Barua_2026 | irrelevant | 0 | 0 | This is a review of AI/ML toxicity prediction tools; dibutyl phthalate is only mentioned as a plasticizer/endocrine disruptor with no PK parameters reported. |
+| PGx | Chen_2018 | not_relevant | 2 | 5 | Reports phthalate inhibition of CYP2C9*1/CYP2C19*1 enzyme activity in vitro, not a gene variant/genotype effect on a PK/PD parameter of a drug. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The paper models diethyl phthalate (DEP), a different drug/chemical, not dibutylphthalate; no dibutylphthalate parameters are present. |
+| popPK | Chi_2015 | irrelevant | 1 | 2 | This is an environmental plant-water uptake/degradation kinetic study of DBP, not a pharmacokinetic disposition study; rate constants k1–k4 are not CL/V/ka parameters and no numeric values are given in the evidence. |
+| PGx | Costa_2026 | not_relevant | 0 | 0 | Ecotoxicology study of DBP in mussels with no gene variant/genotype effects on PK/PD parameters. |
+| popPK | Cunha_2019 | irrelevant | 0 | 0 | Ecotoxicological study in microalgae with no pharmacokinetic disposition parameters for DBP. |
+| popPK | Ding_2017 | irrelevant | 0 | 0 | This is an in vitro ecotoxicity study of phthalate mixtures in bacteria, with no pharmacokinetic disposition parameters for dibutyl phthalate. |
+| popPK | EFSA_2023 | irrelevant | 0 | 0 | This is a BPA risk assessment with no dibutylphthalate PK parameters. |
+| PGx | Euling_2013_2 | not_relevant | 0 | 0 | This is a risk assessment methodology paper for dibutyl phthalate; no gene variant effects on PK/PD parameters are reported. |
+| popPK | Fang_2014 | irrelevant | 0 | 0 | This is an environmental sorption study on aged refuse, not a pharmacokinetic study; no disposition parameters for dibutyl phthalate in any organism. |
+| popPK | Hsieh_2012 | irrelevant | 0 | 0 | In-vitro mechanistic cancer study with no PK parameters for DBP. |
+| popPK | Jensen_2001 | irrelevant | 0 | 0 | Ecotoxicity study of DBP effects on collembolans; no PK disposition parameters reported. |
+| popPK | Jin_2024 | irrelevant | 0 | 0 | Toxicology/ecotoxicity study in Daphnia magna with no PK disposition parameters for DBP. |
+| popPK | Jonsson_2003 | irrelevant | 0 | 0 | This is an ecotoxicity study reporting EC50 values, not pharmacokinetic disposition parameters for dibutylphthalate. |
+| popPK | Khalidi_2022 | irrelevant | 0 | 0 | This is a software workflow paper (SimRFlow/Simcyp PBPK tool) with no dibutylphthalate-specific PK parameters reported; no numeric values for the compound appear. |
+| PGx | Kruger_2026 | not_relevant | 0 | 0 | Paper reports in vitro Tox21 assay bioactivity of cosmetic chemicals including dibutyl phthalate, with no gene variant/genotype effect on PK or PD parameters. |
+| popPK | Krüger_2008 | irrelevant | 0 | 0 | In vitro receptor reporter assay with no pharmacokinetic parameters for dibutyl phthalate. |
+| popPK | Leung_2022 | irrelevant | 0 | 0 | Human allergen-challenge study of DBP airway immune effects; no PK disposition parameters (CL, V, ka, half-life) for DBP or metabolites are reported. |
+| popPK | Li_2014 | irrelevant | 0 | 0 | In-vitro yeast bioassay of thyroid receptor antagonism; no PK parameters for dibutyl phthalate. |
+| popPK | Li_2025 | irrelevant | 0 | 0 | Dibutyl phthalate is only an isolated natural product with MIC data; no pharmacokinetic parameters are reported. |
+| PGx | Liang_2023 | not_relevant | 0 | 0 | No gene variant/genotype effect on PK/PD parameters of dibutyl phthalate; only PXR binding/agonism assays. |
+| popPK | Liu_2009 | irrelevant | 0 | 0 | This is an embryonic toxicity (EC50) study in abalone, not a pharmacokinetic study with disposition parameters for DBP. |
+| popPK | Pérez-Albaladejo_2017 | irrelevant | 0 | 0 | In-vitro toxicity study in placental cells with no PK disposition parameters for dibutyl phthalate. |
+| popPK | Reinoso_2001 | irrelevant | 0 | 0 | The drug studied is teicoplanin; dibutyl phthalate is only used as a centrifugation separation layer, not a PK subject. |
+| popPK | Rouaz_2021 | irrelevant | 0 | 0 | This is a review of excipient safety in paediatric formulations; dibutylphthalate is not the subject and no PK parameters for it appear in the evidence. |
+| popPK | Shen_2009 | irrelevant | 0 | 0 | In vitro reporter gene assay of hormone activity; no pharmacokinetic disposition parameters for DBP. |
+| popPK | Singthong_2026 | irrelevant | 0 | 0 | Network pharmacology study of a Thai herbal formula with no dibutylphthalate PK data or parameters. |
+| popPK | Song_2015 | irrelevant | 0 | 0 | Environmental soil release study of DBP, not a pharmacokinetic study in any organism; no CL/V/ka disposition parameters. |
+| popPK | Tarkpea_1986 | irrelevant | 0 | 0 | Ecotoxicity (LC50/Microtox) study, not a pharmacokinetic study with disposition parameters for dibutyl phthalate. |
+| popPK | Tauheed_2022 | irrelevant | 0 | 0 | Dibutyl phthalate is merely one GC-MS-identified phytochemical constituent of a plant extract; no PK parameters for it are reported. |
+| popPK | Tu_2018 | irrelevant | 0 | 0 | Toxicity study in algae (EC50), no pharmacokinetic disposition parameters for DBP. |
+| popPK | Wang_2015 | irrelevant | 0 | 0 | This is an environmental soil-to-water release study of DBP, not a pharmacokinetic study with disposition parameters in any organism. |
+| popPK | Wang_2016 | irrelevant | 0 | 0 | This is an in-vitro ecotoxicity bioassay of PM2.5 with only EC50 toxicity rankings; DBP is a test toxicant, not a PK study, and no disposition parameters appear. |
+| popPK | Wei_2018 | irrelevant | 0 | 0 | This is an ISO standard for Vibrio fischeri luminescence toxicity testing, not a pharmacokinetic study of dibutylphthalate. |
+| PGx | Williams_2016 | not_relevant | 2 | 3 | DBP is treated as an environmental toxicant, not a drug with PK/PD parameters; no gene variant effect on its pharmacokinetics or pharmacodynamics is reported. |
+| popPK | Xu_2018 | irrelevant | 0 | 0 | Developmental toxicity study in Xenopus embryos with LC50/EC50 and gene expression, no PK disposition parameters for DBP. |
+| popPK | Xu_2022 | irrelevant | 0 | 0 | Toxicity assay (LC50/EC50) in Xenopus embryos, no pharmacokinetic disposition parameters for DBP. |
+| popPK | Yamasaki_2002 | irrelevant | 0 | 0 | This is an in vitro reporter gene and rat uterotrophic estrogenicity study with no pharmacokinetic parameters for dibutyl phthalate. |
+| popPK | Zeng_2019 | irrelevant | 1 | 2 | In-vitro dermal bioaccessibility/release study of DBP from dust and clothing, not a pharmacokinetic disposition study; only a release rate constant k1 is mentioned without values. |
+| PGx | Zhao_2018 | not_relevant | 2 | 2 | Plant proteomics study of DBP accumulation in cultivars; no gene variant effect on a PK/PD parameter of a drug is reported. |
+| PGx | Zhao_2018_2 | not_relevant | 2 | 3 | Plant cultivar differences in DBP accumulation, not a pharmacogenomic effect on a PK/PD parameter in humans. |
+| popPK | de_2015 | irrelevant | 0 | 0 | This is an ecotoxicology study of lightstick leachates; DBP is only a chemical constituent identified by GC-MS, with no PK parameters. |
+| popPK | van_2007 | irrelevant | 0 | 0 | In-vitro cell proliferation study with dibutyl phthalate only as a test compound; no PK parameters reported. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdibutylphthalate%5D&body=Drug%3A%20dibutylphthalate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dibutylphthalate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 13:01 UTC</sub>

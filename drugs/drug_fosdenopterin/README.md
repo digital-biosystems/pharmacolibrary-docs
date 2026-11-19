@@ -1,0 +1,186 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;fosdenopterin&quot;}]"></div>
+
+# fosdenopterin
+
+- **generic name:** fosdenopterin
+- **ATC codes:** `A16AX19`
+- **DrugBank:** [DB16628](https://go.drugbank.com/drugs/DB16628) · **PubChem:** none
+- **molar mass:** 363.223 g/mol (C10H14N5O8P) — DrugBank
+- **groups:** approved
+
+## About
+
+Fosdenopterin is a medication used to treat the rare genetic disease molybdenum cofactor deficiency type A. It is given intravenously as a powder to be reconstituted into a solution. It is authorised in the European Union and approved for use in the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q5198226](https://www.wikidata.org/wiki/Q5198226), [Wikipedia](https://en.wikipedia.org/wiki/Fosdenopterin?oldid=1369266260) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fosdenopterin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `XDH` cofactor | DrugBank actor |
+| metabolism | small intestine | `XDH` cofactor | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor, `SLC47A1` substrate, `SLC47A2` inhibitor | DrugBank actor |
+| excretion | liver | `SLC47A1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: MOCS1 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 10:35 | 2:39 | 0/0/0 | 0/0/0 | 0/0/0 | 87,882/3,328 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/21 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 11015 matched, 72 returned
+- **screened:** 3  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Stahl_2002.pdf` | Stahl M et al., Human microdialysis, Current pharmaceutical biot… (2002) | pd | 5 | [10.2174/1389201023378373](https://doi.org/10.2174/1389201023378373) | [12022259](https://www.ncbi.nlm.nih.gov/pubmed/12022259) | metadata signals extractable PD data (PK-PD) |
+
+<sub>queue written 2026-10-05 10:34 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aardema_2008 | irrelevant | 0 | 0 | The paper evaluates the genotoxicity of dextromethorphan, not the pharmacokinetics of fosdenopterin. |
+| PD | Aardema_2008 | not_relevant | 0 | 0 | The paper evaluates the genotoxicity of Dextromethorphan, not the pharmacodynamics of fosdenopterin. |
+| PGx | Alonzo_2020 | not_relevant | 0 | 0 | The paper reports a case of molybdenum cofactor deficiency and prenatal findings, but does not discuss fosdenopterin pharmacokinetics or pharmacodynamics. |
+| popPK | Arrigoni_2007 | irrelevant | 0 | 0 | The paper is a review on QT liability assessment methods and does not contain any pharmacokinetic data or parameters for fosdenopterin. |
+| PD | Arrigoni_2007 | not_relevant | 0 | 0 | The text is a general review of QT liability assessment methodologies and does not contain any specific data, analysis, or PD parameters for fosdenopterin. |
+| popPK | Avila_2007 | irrelevant | 0 | 0 | The paper is an immunogenicity study of an influenza vaccine and does not involve fosdenopterin or pharmacokinetic parameters. |
+| popPK | Baroudi_2026 | irrelevant | 0 | 0 | The study focuses on tacrolimus pharmacokinetics and model selection methodology, not fosdenopterin. |
+| PD | Baroudi_2026 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (popPK) model selection for tacrolimus and does not report any pharmacodynamic (PD) or exposure-response relationships for fosdenopterin. |
+| popPK | Barry_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vancomycin, not fosdenopterin. |
+| PD | Barry_2026 | not_relevant | 0 | 0 | The paper analyzes vancomycin, not fosdenopterin. |
+| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic models for therapeutic enzymes in lysosomal storage diseases and does not report quantitative parameters for fosdenopterin. |
+| PD | Barzel_2026 | not_relevant | 1 | 0 | The paper is a review of population PK/PD models for lysosomal storage diseases and does not report specific PD parameters or exposure-response relationships for fosdenopterin. |
+| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using neural ODEs and LASSO, demonstrating it on warfarin and generic data, but does not study fosdenopterin. |
+| PD | Bräm_2026 | not_relevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using NODEs and LASSO, demonstrating it on warfarin PK/PD data, but does not report any PD or exposure-response relationship for fosdenopterin. |
+| PGx | Cantoreggi_2026 | not_relevant | 0 | 0 | The paper focuses on Plasmodium falciparum genotyping for malaria efficacy studies and does not mention fosdenopterin or human pharmacogenomics. |
+| popPK | Carter_2008 | irrelevant | 0 | 0 | The paper is a review of an influenza H5N1 vaccine and does not contain any pharmacokinetic data for fosdenopterin. |
+| popPK | Champeroux_2000 | irrelevant | 0 | 0 | The paper is a review on preclinical assessment of QT interval prolongation and does not report pharmacokinetic parameters for fosdenopterin. |
+| PD | Champeroux_2000 | not_relevant | 0 | 0 | The text is a general review of preclinical methods for assessing QT prolongation risk and does not report any specific pharmacodynamic data, exposure-response analysis, or numeric PD parameters for fosdenopterin. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rivaroxaban, not fosdenopterin. |
+| PD | Chen_2026 | not_relevant | 0 | 0 | The paper focuses on the external validation of population pharmacokinetic (PK) models for rivaroxaban and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| PGx | Crenshaw_2026 | not_relevant | 0 | 0 | The paper is a case report of a patient with Molybdenum Cofactor Deficiency who died before treatment could be initiated, and it does not report any pharmacokinetic or pharmacodynamic data for fosdenopterin. |
+| popPK | De_2015 | irrelevant | 0 | 0 | The paper is a review on OPRM1 as a biomarker for breast cancer pain and does not involve fosdenopterin or pharmacokinetic parameters. |
+| PD | De_2015 | not_relevant | 0 | 0 | The paper is a review on OPRM1 as a biomarker for opioid response in breast cancer and does not report any pharmacodynamic or exposure-response data for fosdenopterin. |
+| PGx | De_2015 | not_relevant | 0 | 0 | The paper discusses OPRM1 and opioid pharmacodynamics in breast cancer, not fosdenopterin. |
+| popPK | Disse_2002 | irrelevant | 0 | 0 | The paper is a review of clinical trial endpoints for mucoactive drugs in respiratory diseases and does not mention fosdenopterin or report any pharmacokinetic parameters. |
+| popPK | Draper_1980 | irrelevant | 0 | 0 | The paper discusses guidelines for mutagenicity testing and does not contain any pharmacokinetic data or parameters for fosdenopterin. |
+| PD | Draper_1980 | not_relevant | 0 | 0 | The paper discusses guidelines for mutagenicity testing and does not contain any pharmacodynamic or exposure-response data for fosdenopterin. |
+| popPK | Eleveld_2026 | irrelevant | 0 | 0 | The paper is a methodological comparison of software tools (OpenPMX vs NONMEM) and does not report pharmacokinetic parameters for fosdenopterin. |
+| PD | Eleveld_2026 | not_relevant | 0 | 0 | The paper is a methodological comparison of software tools (OpenPMX vs NONMEM) using simulation studies and does not report any pharmacodynamic or exposure-response data for fosdenopterin. |
+| PGx | Forcić_2001 | not_relevant | 0 | 0 | The paper discusses HCV RNA screening in plasma pools and is unrelated to fosdenopterin or pharmacogenomics. |
+| popPK | Gleiter_1998 | irrelevant | 0 | 0 | The paper is a regulatory review of bioavailability study requirements and does not report any pharmacokinetic parameters for fosdenopterin. |
+| PD | Gleiter_1998 | not_relevant | 0 | 0 | The paper is a regulatory review of bioavailability study requirements and does not report any pharmacodynamic or exposure-response data for fosdenopterin. |
+| popPK | Goeyvaerts_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mosnodenvir, not fosdenopterin. |
+| popPK | Hanke_1990 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on acetylcholinesterase reactivation by oximes and does not involve fosdenopterin or pharmacokinetic parameters. |
+| PD | Hanke_1990 | not_relevant | 0 | 0 | The paper discusses oxime reactivation of acetylcholinesterase and does not mention fosdenopterin or report any pharmacodynamic parameters for it. |
+| popPK | Hoeben_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of calaspargase pegol (CalPEG), not fosdenopterin. |
+| PGx | Holzschuh_2025 | not_relevant | 0 | 0 | The paper focuses on nanopore sequencing for distinguishing malaria recrudescence from new infections and does not involve fosdenopterin or pharmacogenomics. |
+| popPK | Hover_2015 | irrelevant | 0 | 0 | The paper describes the biochemical mechanism of molybdenum cofactor biosynthesis and does not involve fosdenopterin or pharmacokinetic parameters. |
+| PD | Hover_2015 | not_relevant | 0 | 0 | The paper describes the biochemical mechanism of molybdenum cofactor biosynthesis and does not contain any pharmacokinetic or pharmacodynamic data for fosdenopterin. |
+| popPK | Hsu_2026 | irrelevant | 0 | 0 | The paper is a methodological simulation study on covariate identification in PopPK modeling and does not report quantitative disposition parameters for fosdenopterin. |
+| PD | Hsu_2026 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (PopPK) covariate identification methods and simulation power, containing no pharmacodynamic (PD) or exposure-response analysis for fosdenopterin. |
+| popPK | Jia_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for rivaroxaban, not fosdenopterin. |
+| PD | Jia_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for rivaroxaban, not fosdenopterin, and does not provide a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The study focuses on multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not mention fosdenopterin. |
+| PD | Kang_2026 | not_relevant | 0 | 0 | The paper focuses on multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not mention fosdenopterin or report any PD parameters for it. |
+| popPK | Karges_1996 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of Factor XIII, not fosdenopterin. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bevacizumab (CT-P16), not fosdenopterin. |
+| PD | Kim_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bevacizumab (CT-P16) and compares exposure to a published benchmark, but it does not fit a pharmacodynamic (PD) model or report numeric PD parameters (e.g., Emax, EC50) for the drug. |
+| popPK | Knox_2021 | irrelevant | 0 | 0 | The paper studies the delivery of argininosuccinate synthetase (AS) using a cell-permeant miniature protein, not the pharmacokinetics of fosdenopterin. |
+| PD | Knox_2021 | not_relevant | 0 | 0 | The paper describes the delivery of a protein (ZF-AS) for citrullinemia, not fosdenopterin, and reports only delivery concentrations without any pharmacodynamic or exposure-response analysis. |
+| popPK | Kong_2025 | irrelevant | 0 | 0 | The paper describes a software framework (PKPy) and uses theophylline as a demonstration dataset, containing no data for fosdenopterin. |
+| PD | Kong_2025 | not_relevant | 0 | 0 | The paper describes a pharmacokinetic (PK) software framework and validation studies; it contains no pharmacodynamic (PD) or exposure-response analysis for fosdenopterin or any other drug. |
+| popPK | Lazar_2002 | irrelevant | 0 | 0 | The paper describes viral inactivation studies in horse plasma IgG and does not involve fosdenopterin or any pharmacokinetic parameters. |
+| PGx | Lerch_2017 | not_relevant | 0 | 0 | The paper focuses on genotyping methods for malaria parasites and does not mention fosdenopterin or human pharmacogenomics. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of PF-06804103, not fosdenopterin. |
+| PD | Li_2026 | not_relevant | 0 | 0 | The paper discusses PF-06804103, not fosdenopterin, and does not report PD parameters for the target drug. |
+| popPK | Liao_2016 | irrelevant | 0 | 0 | The paper is a meta-analysis of influenza vaccine immunogenicity in SLE patients and contains no pharmacokinetic data for fosdenopterin. |
+| popPK | Lina_2000 | irrelevant | 0 | 0 | The paper describes the safety and immunogenicity of an influenza vaccine and does not involve fosdenopterin or any pharmacokinetic parameters. |
+| popPK | Lodge_1988 | irrelevant | 0 | 0 | The paper studies NMDA antagonists (CPP, CPMP, etc.) and does not involve fosdenopterin. |
+| PD | Lodge_1988 | not_relevant | 0 | 0 | The paper studies NMDA antagonists (CPP, D-AP5, etc.) and does not mention fosdenopterin. |
+| popPK | Manzoli_2011 | irrelevant | 0 | 0 | The paper is a meta-analysis of influenza vaccine immunogenicity and safety, containing no data on fosdenopterin pharmacokinetics. |
+| popPK | Milanetti_2014 | irrelevant | 0 | 0 | The paper is a clinical study on influenza vaccine safety and immunogenicity in rheumatoid arthritis patients and does not involve fosdenopterin or any pharmacokinetic parameters. |
+| popPK | Ooi_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of elafibranor, not fosdenopterin. |
+| PD | Ooi_2026 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and pharmacodynamics of elafibranor, not fosdenopterin. |
+| popPK | Powell_2000 | irrelevant | 0 | 0 | The paper is a regulatory review of antibacterial agents and does not contain any pharmacokinetic data for fosdenopterin. |
+| PD | Powell_2000 | not_relevant | 0 | 0 | The text is a regulatory overview of EU licensing procedures for antibacterial agents and does not contain any pharmacodynamic data, models, or parameters for fosdenopterin. |
+| popPK | Sarsenbayeva_2020 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the immunogenicity and safety of an influenza vaccine, not a pharmacokinetic study of fosdenopterin. |
+| PGx | Schnoz_2024 | not_relevant | 0 | 0 | The paper focuses on genotyping methods for Plasmodium falciparum to assess antimalarial drug efficacy and does not involve fosdenopterin or human pharmacogenomics. |
+| popPK | Schwahn_2024 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic biomarkers of enzyme activity in patients treated with cyclic pyranopterin monophosphate, not the pharmacokinetics of fosdenopterin. |
+| popPK | Sethuramalingam_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of asparaginase, not fosdenopterin. |
+| PD | Sethuramalingam_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of asparaginase (N-Asp and P-Asp) and compares asparaginase activity levels, but it does not report a pharmacodynamic model or exposure-response relationship for fosdenopterin. |
+| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of meropenem and colistin/polymyxin B, not fosdenopterin. |
+| PD | Soeorg_2026 | not_relevant | 0 | 0 | The paper describes a PK/PD model for meropenem and colistin/polymyxin B, not fosdenopterin. |
+| PGx | Spiegel_2022 | not_relevant | 0 | 0 | The paper describes the natural history of Molybdenum cofactor deficiency and does not report pharmacokinetic or pharmacodynamic parameters of fosdenopterin. |
+| popPK | Stahl_2002 | irrelevant | 0 | 0 | The text is a general review of the microdialysis technique and contains no specific pharmacokinetic data or parameters for fosdenopterin. |
+| PD | Stahl_2002 | not_relevant | 0 | 0 | The text is a general review of the microdialysis technique and does not contain any specific data, analysis, or PD parameters for fosdenopterin. |
+| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of pharmacokinetic models for 5-fluorouracil, not fosdenopterin. |
+| PD | Suthahar_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for 5-fluorouracil, not fosdenopterin, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The study focuses on busulfan pharmacokinetics and sampling strategies, not fosdenopterin. |
+| PD | Tan_2026 | not_relevant | 0 | 0 | The paper focuses on busulfan pharmacokinetics and limited sampling strategies, not fosdenopterin, and does not report any pharmacodynamic or exposure-response parameters. |
+| popPK | Tosca_2025 | irrelevant | 0 | 0 | The paper is a review on the application of Large Language Models in pharmacometrics and does not contain any pharmacokinetic data or parameters for fosdenopterin. |
+| PD | Tosca_2025 | not_relevant | 0 | 0 | The paper is a conceptual review on the application of Large Language Models in pharmacometrics and does not report any specific pharmacodynamic data or parameters for fosdenopterin. |
+| popPK | Trijzelaar_1993 | irrelevant | 0 | 0 | The paper is a review of regulatory guidelines for virus removal validation in biotechnology and contains no pharmacokinetic data for fosdenopterin. |
+| popPK | Vajo_2017 | irrelevant | 0 | 0 | The paper is a clinical trial regarding influenza vaccine immunogenicity and does not involve fosdenopterin or pharmacokinetic parameters. |
+| PD | Vajo_2017 | not_relevant | 0 | 0 | The paper studies influenza vaccine dose-response, not fosdenopterin pharmacodynamics. |
+| popPK | Vicente_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for infliximab, not fosdenopterin. |
+| PD | Vicente_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for subcutaneous infliximab, not fosdenopterin, and contains no pharmacodynamic or exposure-response analysis. |
+| popPK | Vinnemeier_2014 | irrelevant | 0 | 0 | The paper is an immunogenicity and safety study of an influenza vaccine and does not involve fosdenopterin or any pharmacokinetic parameters. |
+| popPK | Walenga_2002 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of fondaparinux, not fosdenopterin. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper focuses on population pharmacokinetic models for polymyxin B, not fosdenopterin. |
+| PD | Wang_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PK) modeling of polymyxin B and does not report any pharmacodynamic (PD) or exposure-response relationships for fosdenopterin. |
+| popPK | Wanika_2026 | irrelevant | 0 | 0 | The paper is a methodological study using simulated data to demonstrate a statistical metric (95% CDIRAs) and does not report pharmacokinetic parameters for fosdenopterin. |
+| PD | Wanika_2026 | not_relevant | 0 | 0 | The paper is a methodological case study on uncertainty quantification using simulated PK data and does not report any pharmacodynamic or exposure-response data for fosdenopterin. |
+| popPK | Wu_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bosutinib, not fosdenopterin. |
+| PD | Wu_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bosutinib, not fosdenopterin, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Xajil-Ramos_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tacrolimus, not fosdenopterin. |
+| PD | Xajil-Ramos_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PopPK) of tacrolimus and does not report any pharmacodynamic (PD) or exposure-response relationships for fosdenopterin or any other drug. |
+| popPK | Xie_2026 | irrelevant | 0 | 0 | The paper focuses on daptomycin pharmacokinetics, not fosdenopterin. |
+| PD | Xie_2026 | not_relevant | 0 | 0 | The paper focuses on daptomycin population pharmacokinetics (PopPK) and precision dosing, not fosdenopterin, and does not report any pharmacodynamic (PD) or exposure-response models. |
+| popPK | Xu_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polymyxin B, not fosdenopterin. |
+| PD | Xu_2026 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic (PK) exposure prediction (AUC) for polymyxin B using Bayesian and machine learning methods, and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Zaidi_2026 | irrelevant | 0 | 0 | The paper is a systematic review of opioid pharmacokinetics in pregnancy and does not study fosdenopterin. |
+| PD | Zaidi_2026 | not_relevant | 0 | 0 | The paper is a systematic review of opioid PK models in pregnancy and does not contain any data, analysis, or parameters for fosdenopterin. |
+| popPK | Zasztowt-Sternicka_2025 | irrelevant | 0 | 0 | The study investigates the immunogenicity of an influenza vaccine in pregnant women and contains no pharmacokinetic data for fosdenopterin. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a systematic review of imipenem pharmacokinetics, not fosdenopterin. |
+| PD | Zhang_2025 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for imipenem and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | unknown_1999 | irrelevant | 0 | 0 | The paper is a regulatory guidance document for Parkinson's disease and does not contain any pharmacokinetic data for fosdenopterin. |
+| PD | unknown_1999 | not_relevant | 0 | 0 | The text is a regulatory guidance document for Parkinson's disease and does not contain any data, analysis, or parameters for fosdenopterin. |
+| popPK | van_2015 | irrelevant | 0 | 0 | The paper is a clinical trial of influenza vaccines and does not involve fosdenopterin or its pharmacokinetics. |
+| popPK | van_2026 | irrelevant | 0 | 0 | The paper is a systematic review of pharmacokinetics for immunoglobulins (IVIg/SCIg) and does not mention fosdenopterin. |
+| PD | van_2026 | not_relevant | 0 | 0 | The paper is a systematic review of immunoglobulin (IVIg/SCIg) pharmacokinetics and does not contain any data, models, or parameters for fosdenopterin. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfosdenopterin%5D&body=Drug%3A%20fosdenopterin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fosdenopterin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

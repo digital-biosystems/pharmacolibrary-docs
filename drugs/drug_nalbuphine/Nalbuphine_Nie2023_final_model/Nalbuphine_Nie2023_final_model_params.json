@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Nalbuphine_Nie2023_final_model",
+ "molar_masses": {
+  "central.C": 0.3574434
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  15.0
+ ],
+ "parameters": {
+  "Cl": 9.13888888888889e-06,
+  "F": 0.9,
+  "MM": 0.3574434,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0004642857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-05,
+  "k12": 0.0020940170940170937,
+  "k21": 0.0008150365934797071,
+  "ka": 0.00022944444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9003.607214428857
+ },
+ "reference_peaks": {
+  "central.C": 4.605296139186951e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

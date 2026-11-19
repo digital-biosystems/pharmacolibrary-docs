@@ -1,0 +1,33 @@
+{
+ "dose_source": "library default",
+ "model_id": "Cisplatin_Schneider2019_reference",
+ "molar_masses": {
+  "central.C": 0.300042
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.5266203703703706e-06,
+  "F": 1.0,
+  "MM": 0.300042,
+  "VdPerKg": 0.00018428571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 1.8572351421188632e-05,
+  "k21": 7.088264299802763e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662023
+ },
+ "reference_peaks": {
+  "central.C": 0.0005452405733531684
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,0 +1,48 @@
+{
+ "dose_source": "paper",
+ "model_id": "D_17HydroxyprogesteroneCaproate_Caritis2011_reference",
+ "molar_masses": {
+  "central.C": 0.428613
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  250.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Caritis_2011:other_prose",
+    "value_si": 1.73e-05
+   },
+   {
+    "source": "Caritis_2011:other_prose",
+    "value_si": 1.2
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 3.583333333333334e-07,
+  "F": 1.0,
+  "MM": 0.428613,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0008928571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00025,
+  "ka": 1.736111111111111e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 96078.47546461679
+ },
+ "reference_peaks": {
+  "central.C": 0.002316362305207196
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

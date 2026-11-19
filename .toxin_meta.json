@@ -1,0 +1,5274 @@
+{
+ "toxins": {
+  "111_trichloroethane": {
+   "category": "FOOD",
+   "chem_class": "Organohalogen compounds",
+   "label": "Food toxins"
+  },
+  "112_trichloroethane": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "11_dichloroethane": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "11_dichloroethene": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "11_dimethylbiguanide": {
+   "category": "FOOD",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Food toxins"
+  },
+  "1267_tetrachlorodibenzo_p_dioxin": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "12_dichlorobenzene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "12_dichloroethane": {
+   "category": "FOOD",
+   "chem_class": "Organochlorides",
+   "label": "Food toxins"
+  },
+  "13_butadiene": {
+   "category": "CIG",
+   "chem_class": "Hydrocarbons",
+   "label": "Cigarette toxins"
+  },
+  "14_dioxane": {
+   "category": "HOUS",
+   "chem_class": "Dioxanes",
+   "label": "Household toxins"
+  },
+  "14_naphthoquinone": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "15_acetyl_4_deoxynivalenol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "17_hydroxyprogesterone": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "17_hydroxyprogesterone_caproate": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "18_hydroxycorticosterone": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "1_hexadecanol": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "1_hydroxypyrene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "1_methyl_2_pyrrolidone": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
+  },
+  "1_methyl_6_phenyl_1h_imidazo45_bpyridin_2_amine": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "1_methylnaphthalene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "1_naphthol": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "2223_dihydroavermectin_b1a": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "2223_dihydroavermectin_b1b": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "22346_pentachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22356_pentachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "223_trimethylbutane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
+  "224455_hexachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "224_trimethylpentane": {
+   "category": "AIR",
+   "chem_class": "Hydrocarbons",
+   "label": "Airborne pollutants"
+  },
+  "2345_tetrachlorophenol": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "2356_tetrachlorophenol": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "2378_tetrachlorodibenzo_p_dioxin": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "246_tribromophenol": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "246_trinitrotoluene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "24_dinitrotoluene": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "24_toluene_diisocyanate": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
+  "24_toluenediamine": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "25_dimethylfuran": {
+   "category": "FOOD",
+   "chem_class": "Heteroaromatic compounds",
+   "label": "Food toxins"
+  },
+  "26_di_tert_butyl_4_methylphenol": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "26_dimethyl_4_heptanone": {
+   "category": "FOOD",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Food toxins"
+  },
+  "26_dimethylaniline": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "26_toluene_diisocyanate": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
+  "2_ethoxyethanol": {
+   "category": "FOOD",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Food toxins"
+  },
+  "2_hydroxyflutamide": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "2_isopropylphenol": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "2_methylnaphthalene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "2_phenoxyethanol": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "2s4r5s_muscarine": {
+   "category": "FUNG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Fungal toxins"
+  },
+  "33445_pentachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "3344_tetrachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "3_aminobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "3_chlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "3_hydroxy_carbofuran": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "3_hydroxyfluorene": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "3_methoxytyrosine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "3_methyl_2_oxovaleric_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "3_oxo_carbofuran": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "44_methylenedianiline": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "4_aminobiphenyl": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "4_aminophenol": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "4_aminopyridine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "4_hydroxybutyric_acid": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "4_hydroxyproline": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "4_nonylphenol": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "4_tert_octylphenol": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "5_aminolevulinic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "5_hydroxy_l_tryptophan": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "9_2_carboxyphenyl_36_bisdiethylaminoxanthylium1": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "9_cis_retinoic_acid": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "9_hydroxyphenanthrene": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "acamprosate": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "acenaphthene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "acenaphthylene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "acenocoumarol": {
+   "category": "DRUG",
+   "chem_class": "Coumarins and derivatives",
+   "label": "Drugs"
+  },
+  "acetaldehyde": {
+   "category": "CIG",
+   "chem_class": "Organooxygen compounds",
+   "label": "Cigarette toxins"
+  },
+  "acetamide": {
+   "category": "CIG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Cigarette toxins"
+  },
+  "acetic_acid": {
+   "category": "CIG",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Cigarette toxins"
+  },
+  "acetone": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "acetonitrile": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "acetyl_tributyl_citrate": {
+   "category": "FOOD",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "acetyldeoxynivalenol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "acridine": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "acrylamide": {
+   "category": "CIG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Cigarette toxins"
+  },
+  "acrylonitrile": {
+   "category": "CIG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Cigarette toxins"
+  },
+  "actinium_227": {
+   "category": "AIR",
+   "chem_class": "Homogeneous metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "adapalene": {
+   "category": "DRUG",
+   "chem_class": "Prenol lipids",
+   "label": "Drugs"
+  },
+  "adenine": {
+   "category": "ANIM",
+   "chem_class": "Imidazopyrimidines",
+   "label": "Animal toxins"
+  },
+  "adenosine": {
+   "category": "ANIM",
+   "chem_class": "Purine nucleosides",
+   "label": "Animal toxins"
+  },
+  "adenosine_triphosphate": {
+   "category": "ANIM",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Animal toxins"
+  },
+  "adenosylcobalamin": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "aflatoxicol": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "aflatoxin_b1": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "aflatoxin_b2": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "aflatoxin_g": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "aflatoxin_m1": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "albendazole": {
+   "category": "DRUG",
+   "chem_class": "Benzimidazoles",
+   "label": "Drugs"
+  },
+  "alendronic_acid": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "alfentanil": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "allantoin": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "allopurinol": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "allyl_isothiocyanate": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "almotriptan": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "alpha_amanitin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "alpha_bungarotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "alpha_conotoxin_conus_geographus": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "alpha_linolenic_acid": {
+   "category": "ANIM",
+   "chem_class": "Fatty Acyls",
+   "label": "Animal toxins"
+  },
+  "alpha_tocopherol": {
+   "category": "FOOD",
+   "chem_class": "Prenol lipids",
+   "label": "Food toxins"
+  },
+  "alpha_toxin_clostridium_perfringens": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "alpha_zearalenol": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "alprazolam": {
+   "category": "DRUG",
+   "chem_class": "Benzodiazepines",
+   "label": "Drugs"
+  },
+  "alteplase": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "alternariol": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "alternariol_methyl_ether": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "altertoxin_1": {
+   "category": "FUNG",
+   "chem_class": "Benzenoids",
+   "label": "Fungal toxins"
+  },
+  "aluminium_chlorohydrate": {
+   "category": "FOOD",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Food toxins"
+  },
+  "aluminium_hydroxide": {
+   "category": "FOOD",
+   "chem_class": "Post-transition metal organides",
+   "label": "Food toxins"
+  },
+  "aluminium_monochloride": {
+   "category": "HOUS",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Household toxins"
+  },
+  "aluminium_sulfate": {
+   "category": "FOOD",
+   "chem_class": "Post-transition metal oxoanionic compounds",
+   "label": "Food toxins"
+  },
+  "aluminiumi_oxide": {
+   "category": "HOUS",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Household toxins"
+  },
+  "aluminum": {
+   "category": "FOOD",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Food toxins"
+  },
+  "amanin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "amantadine": {
+   "category": "DRUG",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Drugs"
+  },
+  "ambenonium": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "americium": {
+   "category": "AIR",
+   "chem_class": "Homogeneous metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "americium_241": {
+   "category": "AIR",
+   "chem_class": "Homogeneous metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "aminoadipic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "aminoglutethimide": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "aminopterin": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "amiodarone": {
+   "category": "DRUG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Drugs"
+  },
+  "amitriptyline": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "ammonia": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
+  },
+  "ammonium_diuranate": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "ammonium_nitrate": {
+   "category": "HOUS",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Household toxins"
+  },
+  "ammonium_perchlorate": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
+  },
+  "amobarbital": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "amosite_asbestos": {
+   "category": "AIR",
+   "chem_class": "Minerals and fibres",
+   "label": "Airborne pollutants"
+  },
+  "amoxapine": {
+   "category": "DRUG",
+   "chem_class": "Benzoxazepines",
+   "label": "Drugs"
+  },
+  "amphetamine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "amprenavir": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "amsacrine": {
+   "category": "DRUG",
+   "chem_class": "Quinolines and derivatives",
+   "label": "Drugs"
+  },
+  "anastrozole": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "anatoxin_a": {
+   "category": "BACT",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Bacterial toxins"
+  },
+  "anatoxin_as": {
+   "category": "BACT",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Bacterial toxins"
+  },
+  "androstenedione": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "anidulafungin": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "anthanthrene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "anthracene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "antimony": {
+   "category": "FOOD",
+   "chem_class": "Antimony and its compounds",
+   "label": "Food toxins"
+  },
+  "antimony_monosulfide": {
+   "category": "FOOD",
+   "chem_class": "Antimony and its compounds",
+   "label": "Food toxins"
+  },
+  "antimony_pentoxide": {
+   "category": "FOOD",
+   "chem_class": "Antimony and its compounds",
+   "label": "Food toxins"
+  },
+  "antimony_potassium_tartrate": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "antimony_tetramer": {
+   "category": "FOOD",
+   "chem_class": "Antimony and its compounds",
+   "label": "Food toxins"
+  },
+  "antimony_trioxide": {
+   "category": "FOOD",
+   "chem_class": "Antimony and its compounds",
+   "label": "Food toxins"
+  },
+  "antimony_trisulfide": {
+   "category": "FOOD",
+   "chem_class": "Antimony and its compounds",
+   "label": "Food toxins"
+  },
+  "apamin_apis_mellifera": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "apomorphine": {
+   "category": "DRUG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Drugs"
+  },
+  "arenobufagin": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "argininosuccinic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "aripiprazole": {
+   "category": "FOOD",
+   "chem_class": "Diazinanes",
+   "label": "Food toxins"
+  },
+  "aroclor_1254": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "aroclor_1260": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "arsenic": {
+   "category": "CIG",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "arsenic_disulfide": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenic_trisulfide": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "arsenobetaine": {
+   "category": "ANIM",
+   "chem_class": "Organometallic compounds",
+   "label": "Animal toxins"
+  },
+  "arsine": {
+   "category": "AIR",
+   "chem_class": "Miscellaneous inorganic compounds",
+   "label": "Airborne pollutants"
+  },
+  "ascorbyl_palmitate": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "aspirin": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "astemizole": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "atenolol": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "atomoxetine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "atorvastatin": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "avermectin_b1a": {
+   "category": "BACT",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Bacterial toxins"
+  },
+  "avermectin_b1b": {
+   "category": "BACT",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Bacterial toxins"
+  },
+  "azacitidine": {
+   "category": "DRUG",
+   "chem_class": "Organooxygen compounds",
+   "label": "Drugs"
+  },
+  "azaspiracid": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "azathioprine": {
+   "category": "DRUG",
+   "chem_class": "Thioethers",
+   "label": "Drugs"
+  },
+  "azelastine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "baclofen": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "balsalazide": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "barium": {
+   "category": "FOOD",
+   "chem_class": "Barium and its compounds",
+   "label": "Food toxins"
+  },
+  "barium_chloride": {
+   "category": "HOUS",
+   "chem_class": "Barium and its compounds",
+   "label": "Household toxins"
+  },
+  "barium_sulfate": {
+   "category": "HOUS",
+   "chem_class": "Barium and its compounds",
+   "label": "Household toxins"
+  },
+  "basic_beryllium_carbonate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "basic_lead_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "batrachotoxin": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "benzatropine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "benzene": {
+   "category": "CIG",
+   "chem_class": "Unclassified",
+   "label": "Cigarette toxins"
+  },
+  "benzeneacetonitrile": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "benzidine": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "benzoaanthracene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "benzoapyrene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "benzobfluoranthene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "benzocaine": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "benzoepyrene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "benzoghiperylene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "benzokfluoranthene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "benzonitrile": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "benzphetamine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "benzyl_butyl_phthalate": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
+  "benzylideneacetone": {
+   "category": "FOOD",
+   "chem_class": "Cinnamic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "bepotastine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "beryllium": {
+   "category": "CIG",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "beryllium_copper": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_oxide": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beryllium_telluride": {
+   "category": "AIR",
+   "chem_class": "Beryllium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "beta_alanine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "beta_aminopropionitrile": {
+   "category": "FOOD",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Food toxins"
+  },
+  "beta_bungarotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "beta_hemolysin": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "beta_methylamino_l_alanine": {
+   "category": "BACT",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Bacterial toxins"
+  },
+  "bethanechol": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "bicalutamide": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "bifunctional_hemolysin_adenylate_cyclase_bordetella_pertussis": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "bilirubin": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "biotin": {
+   "category": "ANIM",
+   "chem_class": "Biotin and derivatives",
+   "label": "Animal toxins"
+  },
+  "biperiden": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "biphenyl": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "bleomycin": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "boron_arsenide": {
+   "category": "AIR",
+   "chem_class": "Boron and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "botulinum_neurotoxin_type_a": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "botulinum_neurotoxin_type_b": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "botulinum_neurotoxin_type_e": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "botulinum_neurotoxin_type_f": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "botulinum_toxin": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "brevetoxin": {
+   "category": "ANIM",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Animal toxins"
+  },
+  "brevetoxin_b": {
+   "category": "ANIM",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Animal toxins"
+  },
+  "brimonidine": {
+   "category": "DRUG",
+   "chem_class": "Diazanaphthalenes",
+   "label": "Drugs"
+  },
+  "bromazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "bromic_acid": {
+   "category": "IND",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "bromide_ion": {
+   "category": "ANIM",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Animal toxins"
+  },
+  "bromobenzene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "bromocriptine": {
+   "category": "DRUG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Drugs"
+  },
+  "bromodeoxyuridine": {
+   "category": "IND",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Industrial and workplace toxins"
+  },
+  "bromodiphenhydramine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "bromoform": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "brompheniramine": {
+   "category": "FOOD",
+   "chem_class": "Pyridines and derivatives",
+   "label": "Food toxins"
+  },
+  "brotizolam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "bupivacaine": {
+   "category": "DRUG",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Drugs"
+  },
+  "buprenorphine": {
+   "category": "DRUG",
+   "chem_class": "Phenanthrenes and derivatives",
+   "label": "Drugs"
+  },
+  "bupropion": {
+   "category": "FOOD",
+   "chem_class": "Organooxygen compounds",
+   "label": "Food toxins"
+  },
+  "buspirone": {
+   "category": "DRUG",
+   "chem_class": "Diazinanes",
+   "label": "Drugs"
+  },
+  "busulfan": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "butorphanol": {
+   "category": "DRUG",
+   "chem_class": "Phenanthrenes and derivatives",
+   "label": "Drugs"
+  },
+  "butylate": {
+   "category": "PEST",
+   "chem_class": "Organosulfur compounds",
+   "label": "Pesticides"
+  },
+  "butylparaben": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "butyric_acid": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "cabergoline": {
+   "category": "DRUG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Drugs"
+  },
+  "cadmium": {
+   "category": "CIG",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "cadmium_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_chloride": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_cyclohexane_butyrate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_fluoride": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_iodide": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_nitrate": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_oxide_fume": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cadmium_telluride": {
+   "category": "AIR",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "caffeic_acid": {
+   "category": "CIG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Cigarette toxins"
+  },
+  "caffeine": {
+   "category": "FOOD",
+   "chem_class": "Imidazopyrimidines",
+   "label": "Food toxins"
+  },
+  "calcicludine": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "calcidiol": {
+   "category": "FOOD",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Food toxins"
+  },
+  "calcipotriol": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "calciseptine": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "calcitriol": {
+   "category": "FOOD",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Food toxins"
+  },
+  "calcium": {
+   "category": "ANIM",
+   "chem_class": "Calcium and its compounds",
+   "label": "Animal toxins"
+  },
+  "calcium_chromate_dihydrate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "camazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "capecitabine": {
+   "category": "DRUG",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Drugs"
+  },
+  "caproic_acid": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "caprylic_acid": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "captan": {
+   "category": "PEST",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Pesticides"
+  },
+  "carbamazepine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "carbamic_acid": {
+   "category": "CIG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Cigarette toxins"
+  },
+  "carbendazim": {
+   "category": "PEST",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Pesticides"
+  },
+  "carbinoxamine": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "carbofuran": {
+   "category": "PEST",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Pesticides"
+  },
+  "carbon_dioxide": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
+  },
+  "carbon_disulfide": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
+  },
+  "carbon_monoxide": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
+  },
+  "carbon_tetrachloride": {
+   "category": "PEST",
+   "chem_class": "Organohalogen compounds",
+   "label": "Pesticides"
+  },
+  "carbonyl_cyanide_m_chlorophenyl_hydrazone": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "carbonyl_cyanide_p_trifluoromethoxyphenylhydrazone": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "carbosulfan": {
+   "category": "PEST",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Pesticides"
+  },
+  "carfentrazone_ethyl": {
+   "category": "PEST",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Pesticides"
+  },
+  "carisoprodol": {
+   "category": "DRUG",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Drugs"
+  },
+  "carmustine": {
+   "category": "DRUG",
+   "chem_class": "Organic carbonic acids and derivatives",
+   "label": "Drugs"
+  },
+  "ceftriaxone": {
+   "category": "DRUG",
+   "chem_class": "Lactams",
+   "label": "Drugs"
+  },
+  "celecoxib": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "cephalosporin": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "cesium": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous alkali metal compounds",
+   "label": "Food toxins"
+  },
+  "cesium_137": {
+   "category": "AIR",
+   "chem_class": "Cesium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cetirizine": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "charybdotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "chlorambucil": {
+   "category": "DRUG",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Drugs"
+  },
+  "chloramphenicol": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "chlordiazepoxide": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "chloride_ion": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
+  },
+  "chlormezanone": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "chloroform": {
+   "category": "CIG",
+   "chem_class": "Organohalogen compounds",
+   "label": "Cigarette toxins"
+  },
+  "chloroneb": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "chlorophyllin": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "chloroprocaine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "chloroquine": {
+   "category": "DRUG",
+   "chem_class": "Quinolines and derivatives",
+   "label": "Drugs"
+  },
+  "chlorotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "chlorpromazine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "chlorprothixene": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "cholecalciferol": {
+   "category": "FOOD",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Food toxins"
+  },
+  "cholera_toxin": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "cholesterol": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "cholic_acid": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "chromated_copper_arsenate": {
+   "category": "AIR",
+   "chem_class": "Copper and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromic_acid": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromium": {
+   "category": "CIG",
+   "chem_class": "Chromium and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "chromium_chromate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumii_chloride": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumii_oxide": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_chloride": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumiii_sulfate": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chromiumvi_oxide": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "chrysene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "ciclopirox": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "ciguatoxin_1": {
+   "category": "ANIM",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Animal toxins"
+  },
+  "cimetidine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "cinobufagin": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "ciprofloxacin": {
+   "category": "DRUG",
+   "chem_class": "Quinolines and derivatives",
+   "label": "Drugs"
+  },
+  "cis_citral": {
+   "category": "FOOD",
+   "chem_class": "Prenol lipids",
+   "label": "Food toxins"
+  },
+  "cisapride": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "cisplatin": {
+   "category": "DRUG",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Drugs"
+  },
+  "citalopram": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "citrulline": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "cladribine": {
+   "category": "DRUG",
+   "chem_class": "Purine nucleosides",
+   "label": "Drugs"
+  },
+  "clindamycin": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "clobazam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "clodronate": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "clofibrate": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "clomifene": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "clomipramine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "clonazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "clonidine": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "clorazepate": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "clotiazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "clotrimazole": {
+   "category": "FOOD",
+   "chem_class": "Triphenyl compounds",
+   "label": "Food toxins"
+  },
+  "clozapine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "cobalt": {
+   "category": "CIG",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "cobalt_sulfate": {
+   "category": "FOOD",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Food toxins"
+  },
+  "cobaltii_iii_oxide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltii_mesoporphyrin": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltiii_oxide": {
+   "category": "AIR",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "cobaltous_chloride": {
+   "category": "FOOD",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Food toxins"
+  },
+  "cocaine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "codeine": {
+   "category": "FOOD",
+   "chem_class": "Morphinans",
+   "label": "Food toxins"
+  },
+  "copper": {
+   "category": "FOOD",
+   "chem_class": "Copper and its compounds",
+   "label": "Food toxins"
+  },
+  "copper_gluconate": {
+   "category": "FOOD",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Food toxins"
+  },
+  "coronene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "cotinine": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "creatine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "crotamine": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "crotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "cyanide": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
+  },
+  "cyanocobalamin": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "cyclohexane": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "cyclophosphamide": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "cylindrospermopsin": {
+   "category": "BACT",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Bacterial toxins"
+  },
+  "cyproheptadine": {
+   "category": "FOOD",
+   "chem_class": "Dibenzocycloheptenes",
+   "label": "Food toxins"
+  },
+  "cyproterone_acetate": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "cytarabine": {
+   "category": "DRUG",
+   "chem_class": "Pyrimidine nucleosides",
+   "label": "Drugs"
+  },
+  "d_2_hydroxyglutaric_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "d_fructose": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "d_glucose": {
+   "category": "ANIM",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Animal toxins"
+  },
+  "d_lactic_acid": {
+   "category": "ANIM",
+   "chem_class": "Hydroxy acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "dacarbazine": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "dapsone": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "darifenacin": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "daunorubicin": {
+   "category": "DRUG",
+   "chem_class": "Anthracyclines",
+   "label": "Drugs"
+  },
+  "dehydroepiandrosterone_sulfate": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "delorazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "deltamethrin": {
+   "category": "PEST",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Pesticides"
+  },
+  "demeclocycline": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "dendrotoxin_dendroaspis_polylepis_polylepis": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "deoxyadenosine": {
+   "category": "ANIM",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Animal toxins"
+  },
+  "deoxyadenosine_triphosphate": {
+   "category": "ANIM",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Animal toxins"
+  },
+  "deoxycholic_acid": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "deoxycorticosterone": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "dermonecrotic_toxin_pasteurella_multocida": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "desflurane": {
+   "category": "DRUG",
+   "chem_class": "Organofluorides",
+   "label": "Drugs"
+  },
+  "desipramine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "desloratadine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "dexamethasone": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "dexfenfluramine": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "dexmethylphenidate": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "dexrazoxane": {
+   "category": "FOOD",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "dextroamphetamine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "dextromethorphan": {
+   "category": "FOOD",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Food toxins"
+  },
+  "di2_ethylhexylphthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "di_n_hexyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "diacetyl": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "diazenedicarboxamide": {
+   "category": "FOOD",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Food toxins"
+  },
+  "diazepam": {
+   "category": "FOOD",
+   "chem_class": "Benzodiazepines",
+   "label": "Food toxins"
+  },
+  "diazinon": {
+   "category": "PEST",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Pesticides"
+  },
+  "diazoxon": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "dibenzoahanthracene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "dibromochloromethane": {
+   "category": "FOOD",
+   "chem_class": "Organohalogen compounds",
+   "label": "Food toxins"
+  },
+  "dibutyl_decanedioate": {
+   "category": "FOOD",
+   "chem_class": "Fatty Acyls",
+   "label": "Food toxins"
+  },
+  "dibutyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "dicamba": {
+   "category": "PEST",
+   "chem_class": "Benzenoids",
+   "label": "Pesticides"
+  },
+  "dichloromethane": {
+   "category": "PEST",
+   "chem_class": "Organohalogen compounds",
+   "label": "Pesticides"
+  },
+  "dichlorvos": {
+   "category": "PEST",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Pesticides"
+  },
+  "diclofenac": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "diclofop_methyl": {
+   "category": "PEST",
+   "chem_class": "Benzenoids",
+   "label": "Pesticides"
+  },
+  "dicobalt_edetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "dicofol": {
+   "category": "PEST",
+   "chem_class": "Benzenoids",
+   "label": "Pesticides"
+  },
+  "dicyclohexyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "didanosine": {
+   "category": "DRUG",
+   "chem_class": "Purine nucleosides",
+   "label": "Drugs"
+  },
+  "dieldrin": {
+   "category": "PEST",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Pesticides"
+  },
+  "diethanolamine": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "diethyl_mercury": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "diethylamine": {
+   "category": "CIG",
+   "chem_class": "Amines",
+   "label": "Cigarette toxins"
+  },
+  "diethylenetriamine": {
+   "category": "FOOD",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Food toxins"
+  },
+  "diethylphosphate": {
+   "category": "PEST",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Pesticides"
+  },
+  "diethylstilbestrol": {
+   "category": "FOOD",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Food toxins"
+  },
+  "diethylthiophosphate": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "difenacoum": {
+   "category": "PEST",
+   "chem_class": "Benzenoids",
+   "label": "Pesticides"
+  },
+  "diflunisal": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "digitoxin": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "dihydroergotamine": {
+   "category": "DRUG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Drugs"
+  },
+  "dihydrotachysterol": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "dihydrotestosterone": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "dihydrothymine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "diisodecyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "diisoheptyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "diisohexyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "diisononyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "diisooctyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "diltiazem": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazepines",
+   "label": "Drugs"
+  },
+  "dimanganese_decacarbonyl": {
+   "category": "FOOD",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Food toxins"
+  },
+  "dimethyl_mercury": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "dimethyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "dimethyl_sulfoxide": {
+   "category": "FOOD",
+   "chem_class": "Sulfoxides",
+   "label": "Food toxins"
+  },
+  "dimethylethanolamine": {
+   "category": "FOOD",
+   "chem_class": "Amines",
+   "label": "Food toxins"
+  },
+  "din_octyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "dinophysistoxin_1": {
+   "category": "ANIM",
+   "chem_class": "Hydroxy acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "diphenhydramine": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "diphenoxylate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "diphenyl_diselenide": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "diphtheria_toxin_corynephage_omega": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "disulfiram": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "diundecyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "docetaxel": {
+   "category": "DRUG",
+   "chem_class": "Prenol lipids",
+   "label": "Drugs"
+  },
+  "dodecyl_gallate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "domoic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "donepezil": {
+   "category": "FOOD",
+   "chem_class": "Piperidines",
+   "label": "Food toxins"
+  },
+  "dopamine": {
+   "category": "ANIM",
+   "chem_class": "Phenols",
+   "label": "Animal toxins"
+  },
+  "doxepin": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "doxorubicin": {
+   "category": "DRUG",
+   "chem_class": "Anthracyclines",
+   "label": "Drugs"
+  },
+  "doxycycline": {
+   "category": "DRUG",
+   "chem_class": "Tetracyclines",
+   "label": "Drugs"
+  },
+  "doxylamine": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "duloxetine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "econazole": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "edema_factor": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "edetic_acid": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "eledoisin_eledone_cirrhosa": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "emamectin_b1a": {
+   "category": "BACT",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Bacterial toxins"
+  },
+  "emamectin_b1b": {
+   "category": "BACT",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Bacterial toxins"
+  },
+  "encainide": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "enflurane": {
+   "category": "DRUG",
+   "chem_class": "Organohalogen compounds",
+   "label": "Drugs"
+  },
+  "entacapone": {
+   "category": "FOOD",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Food toxins"
+  },
+  "enterolactone": {
+   "category": "ANIM",
+   "chem_class": "Lignans, neolignans and related compounds",
+   "label": "Animal toxins"
+  },
+  "enterotoxin_type_a": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "enterotoxin_type_b": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "ephedrine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "epibatidine": {
+   "category": "ANIM",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Animal toxins"
+  },
+  "epirubicin": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "equilin": {
+   "category": "DRUG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Drugs"
+  },
+  "equol": {
+   "category": "ANIM",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Animal toxins"
+  },
+  "ergocalciferol": {
+   "category": "FOOD",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Food toxins"
+  },
+  "erioglaucine_a_disodium_salt": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "erythromycin": {
+   "category": "DRUG",
+   "chem_class": "Organooxygen compounds",
+   "label": "Drugs"
+  },
+  "escitalopram": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "esomeprazole": {
+   "category": "DRUG",
+   "chem_class": "Benzimidazoles",
+   "label": "Drugs"
+  },
+  "estazolam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "estradiol": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "estriol": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "estrone": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "eszopiclone": {
+   "category": "FOOD",
+   "chem_class": "Pyrrolopyrazines",
+   "label": "Food toxins"
+  },
+  "ethanol": {
+   "category": "FOOD",
+   "chem_class": "Organooxygen compounds",
+   "label": "Food toxins"
+  },
+  "ethanolamine": {
+   "category": "ANIM",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Animal toxins"
+  },
+  "ethchlorvynol": {
+   "category": "DRUG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Drugs"
+  },
+  "ethenyl_acetate": {
+   "category": "CIG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Cigarette toxins"
+  },
+  "ethinyl_estradiol": {
+   "category": "FOOD",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Food toxins"
+  },
+  "ethosuximide": {
+   "category": "DRUG",
+   "chem_class": "Pyrrolidines",
+   "label": "Drugs"
+  },
+  "ethotoin": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "ethyl_carbamate": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "ethyl_loflazepate": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "ethylbenzene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "ethylene_oxide": {
+   "category": "CIG",
+   "chem_class": "Epoxides",
+   "label": "Cigarette toxins"
+  },
+  "ethylmercury_chloride": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "ethylparaben": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "ethylphosphate": {
+   "category": "FOOD",
+   "chem_class": "Organic phosphoric acids and derivatives",
+   "label": "Food toxins"
+  },
+  "ethyltrimethyl_lead": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "etidronic_acid": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "etizolam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "etoposide": {
+   "category": "DRUG",
+   "chem_class": "Lignan lactones",
+   "label": "Drugs"
+  },
+  "exotoxin_a_pseudomonas_aeruginosa": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "farnesol": {
+   "category": "CIG",
+   "chem_class": "Unclassified",
+   "label": "Cigarette toxins"
+  },
+  "fdc_red_no_3": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "felbamate": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "fenofibrate": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "fentanyl": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "fexofenadine": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "finasteride": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "flecainide": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "fluconazole": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "flucytosine": {
+   "category": "DRUG",
+   "chem_class": "Diazines",
+   "label": "Drugs"
+  },
+  "fludarabine": {
+   "category": "DRUG",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Drugs"
+  },
+  "fludiazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "flunitrazepam": {
+   "category": "DRUG",
+   "chem_class": "Benzodiazepines",
+   "label": "Drugs"
+  },
+  "fluoranthene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "fluorene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "fluorescein": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "fluorescein_isothiocyanate": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "fluorine": {
+   "category": "FOOD",
+   "chem_class": "Fluorine and its compounds",
+   "label": "Food toxins"
+  },
+  "fluorouracil": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "fluoxetine": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "fluoxymesterone": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "flupenthixol": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "fluphenazine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "flurazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "flurbiprofen": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "flutamide": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "fluvoxamine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "forchlorfenuron": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "formaldehyde": {
+   "category": "CIG",
+   "chem_class": "Organooxygen compounds",
+   "label": "Cigarette toxins"
+  },
+  "fosphenytoin": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "frovatriptan": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "fulvestrant": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "fumaric_acid": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "furan": {
+   "category": "CIG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Cigarette toxins"
+  },
+  "gabapentin": {
+   "category": "FOOD",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "galantamine": {
+   "category": "DRUG",
+   "chem_class": "Amaryllidaceae alkaloids",
+   "label": "Drugs"
+  },
+  "gallium_arsenide": {
+   "category": "AIR",
+   "chem_class": "Gallium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "gamma_amanitin": {
+   "category": "FUNG",
+   "chem_class": "Proteins and peptides",
+   "label": "Fungal toxins"
+  },
+  "gamma_aminobutyric_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "gamma_butyrolactone": {
+   "category": "FOOD",
+   "chem_class": "Lactones",
+   "label": "Food toxins"
+  },
+  "gatifloxacin": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "gemfibrozil": {
+   "category": "DRUG",
+   "chem_class": "Phenol ethers",
+   "label": "Drugs"
+  },
+  "gentian_violet": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "gliotoxin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "glipizide": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "glutathione": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "glyceraldehyde": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "glycerol": {
+   "category": "ANIM",
+   "chem_class": "Organooxygen compounds",
+   "label": "Animal toxins"
+  },
+  "glycidol": {
+   "category": "CIG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Cigarette toxins"
+  },
+  "glycine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "gonyautoxin_i": {
+   "category": "ANIM",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Animal toxins"
+  },
+  "griseofulvin": {
+   "category": "DRUG",
+   "chem_class": "Benzofurans",
+   "label": "Drugs"
+  },
+  "halazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "haloperidol": {
+   "category": "DRUG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Drugs"
+  },
+  "halothane": {
+   "category": "DRUG",
+   "chem_class": "Organofluorides",
+   "label": "Drugs"
+  },
+  "heat_labile_enterotoxin_escherichia_coli": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "heparin": {
+   "category": "ANIM",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Animal toxins"
+  },
+  "heptachlor": {
+   "category": "CIG",
+   "chem_class": "Organohalogen compounds",
+   "label": "Cigarette toxins"
+  },
+  "heroin": {
+   "category": "DRUG",
+   "chem_class": "Morphinans",
+   "label": "Drugs"
+  },
+  "hexachlorobutadiene": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "hexamethylene_diisocyanate": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "hexavalent_chromium": {
+   "category": "AIR",
+   "chem_class": "Chromium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "hexobarbital": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "histrionicotoxin": {
+   "category": "ANIM",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Animal toxins"
+  },
+  "homogentisic_acid": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "ht_2_toxin": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "huwentoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "hydrazine": {
+   "category": "CIG",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Cigarette toxins"
+  },
+  "hydrochloric_acid": {
+   "category": "IND",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "hydrocodone": {
+   "category": "DRUG",
+   "chem_class": "Morphinans",
+   "label": "Drugs"
+  },
+  "hydrogen_isocyanide": {
+   "category": "AIR",
+   "chem_class": "Unclassified",
+   "label": "Airborne pollutants"
+  },
+  "hydrogen_sulfide": {
+   "category": "BACT",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Bacterial toxins"
+  },
+  "hydromorphone": {
+   "category": "DRUG",
+   "chem_class": "Morphinans",
+   "label": "Drugs"
+  },
+  "hydroquinone": {
+   "category": "CIG",
+   "chem_class": "Phenols",
+   "label": "Cigarette toxins"
+  },
+  "hydroxychloroquine": {
+   "category": "DRUG",
+   "chem_class": "Quinolines and derivatives",
+   "label": "Drugs"
+  },
+  "hydroxyurea": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "hydroxyzine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "ibandronate": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "ifosfamide": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "imipenem": {
+   "category": "DRUG",
+   "chem_class": "Lactams",
+   "label": "Drugs"
+  },
+  "indeno123_cdpyrene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "infliximab": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "insulin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "iodine_131": {
+   "category": "AIR",
+   "chem_class": "Iodine and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "isoprenaline": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "itraconazole": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "kaliotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "ketamine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "kojic_acid": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "kurtoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "l_alanine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_arginine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_asparagine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_glutamic_acid": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_glutamine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_histidine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_isoleucine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_lactic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_leucine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_lysine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_methionine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_phenylalanine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_proline": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_serine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_threonine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_tryptophan": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "l_tyrosine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "l_valine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "labetalol": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "lead": {
+   "category": "CIG",
+   "chem_class": "Lead and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "lead_210": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_carbonate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "lead_chromate": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_oxide": {
+   "category": "AIR",
+   "chem_class": "Lead and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "lead_subacetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "lethal_factor": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "letrozole": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "levetiracetam": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "levobupivacaine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "levomethadyl_acetate": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "levonorgestrel": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "levorphanol": {
+   "category": "DRUG",
+   "chem_class": "Morphinans",
+   "label": "Drugs"
+  },
+  "lidocaine": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "linezolid": {
+   "category": "DRUG",
+   "chem_class": "Oxazinanes",
+   "label": "Drugs"
+  },
+  "lipopolysaccharide": {
+   "category": "BACT",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Bacterial toxins"
+  },
+  "lithocholic_acid": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "lolitrem_b": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "lomustine": {
+   "category": "DRUG",
+   "chem_class": "Organic carbonic acids and derivatives",
+   "label": "Drugs"
+  },
+  "loprazolam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "lorazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "lovastatin": {
+   "category": "DRUG",
+   "chem_class": "Lactones",
+   "label": "Drugs"
+  },
+  "loxapine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "lymecycline": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "lyngbyatoxin_a": {
+   "category": "BACT",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Bacterial toxins"
+  },
+  "lysergol": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "maitotoxin": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "malaoxon": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "mangafodipir": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "maprotiline": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "marinobufagenin": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "maurocalcin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "maurotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "mazindol": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "mechlorethamine": {
+   "category": "CIG",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Cigarette toxins"
+  },
+  "meclizine": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "medazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "melittin_apis_mellifera": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "meloxicam": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "melphalan": {
+   "category": "DRUG",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Drugs"
+  },
+  "memantine": {
+   "category": "DRUG",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Drugs"
+  },
+  "meperidine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "mepivacaine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "mercuric_chloride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercury_cadmium_telluride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercury_selenide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryi_chloride": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_iodide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_nitrate": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_oxide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_sulfate": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mercuryii_sulfide": {
+   "category": "AIR",
+   "chem_class": "Mercury and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "mesoridazine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "mestranol": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "methadone": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "methamphetamine": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "methanol": {
+   "category": "FOOD",
+   "chem_class": "Organooxygen compounds",
+   "label": "Food toxins"
+  },
+  "methdilazine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "methohexital": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "methotrexate": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "methotrimeprazine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "methoxyflurane": {
+   "category": "DRUG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Drugs"
+  },
+  "methsuximide": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "methyl_2_hydroxybenzoate": {
+   "category": "FUNG",
+   "chem_class": "Benzenoids",
+   "label": "Fungal toxins"
+  },
+  "methyl_thiocyanate": {
+   "category": "FOOD",
+   "chem_class": "Organosulfur compounds",
+   "label": "Food toxins"
+  },
+  "methylcobalamin": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "methylcyclopentadienyl_manganese_tricarbonyl": {
+   "category": "FOOD",
+   "chem_class": "Hydrocarbons",
+   "label": "Food toxins"
+  },
+  "methylcyclopentane": {
+   "category": "FOOD",
+   "chem_class": "Hydrocarbons",
+   "label": "Food toxins"
+  },
+  "methyldopa": {
+   "category": "FOOD",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Food toxins"
+  },
+  "methylene_bis4_cyclohexylisocyanate": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "methylergonovine": {
+   "category": "DRUG",
+   "chem_class": "Ergoline and derivatives",
+   "label": "Drugs"
+  },
+  "methylmalonic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "methylmercury": {
+   "category": "AIR",
+   "chem_class": "Unclassified",
+   "label": "Airborne pollutants"
+  },
+  "methylphenidate": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "methyltestosterone": {
+   "category": "DRUG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Drugs"
+  },
+  "methyprylon": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "methysergide": {
+   "category": "DRUG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Drugs"
+  },
+  "miconazole": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "microcystin_ll": {
+   "category": "BACT",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Bacterial toxins"
+  },
+  "microcystin_lr": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "microcystin_lw": {
+   "category": "BACT",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Bacterial toxins"
+  },
+  "microcystin_rr": {
+   "category": "BACT",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Bacterial toxins"
+  },
+  "midazolam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "mifepristone": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "mirtazapine": {
+   "category": "FOOD",
+   "chem_class": "Piperazinoazepines",
+   "label": "Food toxins"
+  },
+  "mitomycin": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "mitoxantrone": {
+   "category": "DRUG",
+   "chem_class": "Anthracenes",
+   "label": "Drugs"
+  },
+  "moclobemide": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "modafinil": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "molybdenum": {
+   "category": "FOOD",
+   "chem_class": "Molybdenum and its compounds",
+   "label": "Food toxins"
+  },
+  "moniliformin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "monobutylphthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "monoethyl_phthalate": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "monoethylhexyl_phthalic_acid": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "monoisobutyl_phthalic_acid": {
+   "category": "ANIM",
+   "chem_class": "Benzenoids",
+   "label": "Animal toxins"
+  },
+  "monomethyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "morphine": {
+   "category": "DRUG",
+   "chem_class": "Morphinans",
+   "label": "Drugs"
+  },
+  "muscimol": {
+   "category": "FUNG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Fungal toxins"
+  },
+  "mycophenolic_acid": {
+   "category": "DRUG",
+   "chem_class": "Isocoumarans",
+   "label": "Drugs"
+  },
+  "n_butane": {
+   "category": "FOOD",
+   "chem_class": "Saturated hydrocarbons",
+   "label": "Food toxins"
+  },
+  "n_butyl_isocyanate": {
+   "category": "AIR",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "n_nitrosodimethylamine": {
+   "category": "CIG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Cigarette toxins"
+  },
+  "n_nitrosonornicotine": {
+   "category": "CIG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Cigarette toxins"
+  },
+  "n_octyl_n_decyl_phthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "nafarelin": {
+   "category": "DRUG",
+   "chem_class": "Unclassified",
+   "label": "Drugs"
+  },
+  "naftidrofuryl": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "nalbuphine": {
+   "category": "DRUG",
+   "chem_class": "Phenanthrenes and derivatives",
+   "label": "Drugs"
+  },
+  "naltrexone": {
+   "category": "DRUG",
+   "chem_class": "Phenanthrenes and derivatives",
+   "label": "Drugs"
+  },
+  "naphthalene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "naratriptan": {
+   "category": "DRUG",
+   "chem_class": "Indoles and derivatives",
+   "label": "Drugs"
+  },
+  "nefazodone": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "neomycin": {
+   "category": "DRUG",
+   "chem_class": "Organooxygen compounds",
+   "label": "Drugs"
+  },
+  "neosaxitoxin": {
+   "category": "ANIM",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Animal toxins"
+  },
+  "neptunium_237": {
+   "category": "AIR",
+   "chem_class": "Homogeneous metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel": {
+   "category": "FOOD",
+   "chem_class": "Nickel and its compounds",
+   "label": "Food toxins"
+  },
+  "nickel_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "nickel_chloride": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_hydroxide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_oxide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_subsulfide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_sulfate": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nickel_trioxide": {
+   "category": "AIR",
+   "chem_class": "Nickel and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "nicotinic_acid": {
+   "category": "FOOD",
+   "chem_class": "Pyridines and derivatives",
+   "label": "Food toxins"
+  },
+  "nilutamide": {
+   "category": "DRUG",
+   "chem_class": "Azolidines",
+   "label": "Drugs"
+  },
+  "nitrazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "nitrobenzene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "nitrofurantoin": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "nivalenol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "nn_dimethylformamide": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "nodularin_r": {
+   "category": "BACT",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Bacterial toxins"
+  },
+  "nordiazepam": {
+   "category": "DRUG",
+   "chem_class": "Benzodiazepines",
+   "label": "Drugs"
+  },
+  "norethindrone": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "nortriptyline": {
+   "category": "DRUG",
+   "chem_class": "Dibenzocycloheptenes",
+   "label": "Drugs"
+  },
+  "noxiustoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "nystatin": {
+   "category": "DRUG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Drugs"
+  },
+  "o_cresol": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "o_desmethylangolensin": {
+   "category": "ANIM",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Animal toxins"
+  },
+  "o_xylene": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "ochratoxin_a": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "ochratoxin_b": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "octane": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "octyl_gallate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "okadaic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Animal toxins"
+  },
+  "olanzapine": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "olopatadine": {
+   "category": "DRUG",
+   "chem_class": "Benzoxepines",
+   "label": "Drugs"
+  },
+  "omega_agatoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "omega_conotoxin_conus_striatus": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "omeprazole": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "ondansetron": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "orellanine": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "ornithine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "orotic_acid": {
+   "category": "ANIM",
+   "chem_class": "Diazines",
+   "label": "Animal toxins"
+  },
+  "orphenadrine": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "ouabain": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "oxaliplatin": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "oxazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "oxazolam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "oxcarbazepine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "oxycodone": {
+   "category": "DRUG",
+   "chem_class": "Phenanthrenes and derivatives",
+   "label": "Drugs"
+  },
+  "oxymorphone": {
+   "category": "DRUG",
+   "chem_class": "Phenanthrenes and derivatives",
+   "label": "Drugs"
+  },
+  "oxytetracycline": {
+   "category": "FOOD",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Food toxins"
+  },
+  "ozone": {
+   "category": "AIR",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "p_xylene": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "pamidronate": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "paroxetine": {
+   "category": "FOOD",
+   "chem_class": "Piperidines",
+   "label": "Food toxins"
+  },
+  "pentabromodiphenyl_ethers": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "pentadecane": {
+   "category": "FOOD",
+   "chem_class": "Hydrocarbons",
+   "label": "Food toxins"
+  },
+  "pentamidine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "pentazocine": {
+   "category": "DRUG",
+   "chem_class": "6,7-benzomorphans",
+   "label": "Drugs"
+  },
+  "pentobarbital": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "pentostatin": {
+   "category": "DRUG",
+   "chem_class": "Imidazodiazepines",
+   "label": "Drugs"
+  },
+  "perfluorodecanoic_acid": {
+   "category": "FOOD",
+   "chem_class": "Organohalogen compounds",
+   "label": "Food toxins"
+  },
+  "perfluorooctanoic_acid": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "perfluoroundecanoic_acid": {
+   "category": "FOOD",
+   "chem_class": "Organohalogen compounds",
+   "label": "Food toxins"
+  },
+  "pergolide": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "perhexiline": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "perphenazine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "pertussis_toxin": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "phenanthrene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "phenelzine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "phenmetrazine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "phenobarbital": {
+   "category": "DRUG",
+   "chem_class": "Diazines",
+   "label": "Drugs"
+  },
+  "phenol": {
+   "category": "FOOD",
+   "chem_class": "Phenols",
+   "label": "Food toxins"
+  },
+  "phenprocoumon": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "phentermine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "phenyldichloroarsine": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "phenytoin": {
+   "category": "DRUG",
+   "chem_class": "Azolidines",
+   "label": "Drugs"
+  },
+  "phoneutriatoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "phosphoric_acid": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
+  },
+  "phytonadione": {
+   "category": "FOOD",
+   "chem_class": "Prenol lipids",
+   "label": "Food toxins"
+  },
+  "picene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "pilocarpine": {
+   "category": "DRUG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Drugs"
+  },
+  "pimozide": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "pinazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "pioglitazone": {
+   "category": "DRUG",
+   "chem_class": "Phenol ethers",
+   "label": "Drugs"
+  },
+  "plutonium": {
+   "category": "AIR",
+   "chem_class": "Plutonium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "plutonium_238": {
+   "category": "AIR",
+   "chem_class": "Plutonium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "plutonium_239": {
+   "category": "AIR",
+   "chem_class": "Plutonium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "plutonium_240": {
+   "category": "AIR",
+   "chem_class": "Plutonium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "pneumolysin": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "podofilox": {
+   "category": "DRUG",
+   "chem_class": "Lignans, neolignans and related compounds",
+   "label": "Drugs"
+  },
+  "polonium_210": {
+   "category": "CIG",
+   "chem_class": "Polonium and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "polyethylene_terephthalate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "polymyxin_b_sulfate": {
+   "category": "DRUG",
+   "chem_class": "Polypeptides",
+   "label": "Drugs"
+  },
+  "polypropylene_glycol_m_w_1200_3000": {
+   "category": "FOOD",
+   "chem_class": "Alcohols and polyols",
+   "label": "Food toxins"
+  },
+  "porphobilinogen": {
+   "category": "ANIM",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Animal toxins"
+  },
+  "posaconazole": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "potassium": {
+   "category": "ANIM",
+   "chem_class": "Potassium and its compounds",
+   "label": "Animal toxins"
+  },
+  "potassium_40": {
+   "category": "FOOD",
+   "chem_class": "Potassium and its compounds",
+   "label": "Food toxins"
+  },
+  "potassium_arsenite": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "potassium_bromate": {
+   "category": "FOOD",
+   "chem_class": "Potassium and its compounds",
+   "label": "Food toxins"
+  },
+  "potassium_bromide": {
+   "category": "IND",
+   "chem_class": "Potassium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "potassium_chloride": {
+   "category": "FOOD",
+   "chem_class": "Potassium and its compounds",
+   "label": "Food toxins"
+  },
+  "potassium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "potassium_dichromate": {
+   "category": "HOUS",
+   "chem_class": "Chromium and its compounds",
+   "label": "Household toxins"
+  },
+  "potassium_ferrocyanide": {
+   "category": "FOOD",
+   "chem_class": "Potassium and its compounds",
+   "label": "Food toxins"
+  },
+  "potassium_nitrate": {
+   "category": "FOOD",
+   "chem_class": "Potassium and its compounds",
+   "label": "Food toxins"
+  },
+  "potassium_perchlorate": {
+   "category": "FOOD",
+   "chem_class": "Potassium and its compounds",
+   "label": "Food toxins"
+  },
+  "pramipexole": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "prazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "prednisone": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "procaine": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "procarbazine": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "prochlorperazine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "procyclidine": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "progabide": {
+   "category": "DRUG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Drugs"
+  },
+  "progesterone": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "promazine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "promethazine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "propionic_acid": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "propionyl_coa": {
+   "category": "ANIM",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Animal toxins"
+  },
+  "propofol": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "propoxyphene": {
+   "category": "DRUG",
+   "chem_class": "Stilbenes",
+   "label": "Drugs"
+  },
+  "propylene_glycol": {
+   "category": "FOOD",
+   "chem_class": "Organooxygen compounds",
+   "label": "Food toxins"
+  },
+  "propylene_glycol_mono_and_diesters_of_fats_and_fatty_acids": {
+   "category": "FOOD",
+   "chem_class": "Fatty Acyls",
+   "label": "Food toxins"
+  },
+  "propylparaben": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "propylthiouracil": {
+   "category": "DRUG",
+   "chem_class": "Diazines",
+   "label": "Drugs"
+  },
+  "protective_antigen": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "protoporphyrin_ix": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "protriptyline": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "pseudoephedrine": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "pyrene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "pyridinium_chlorochromate": {
+   "category": "AIR",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Airborne pollutants"
+  },
+  "pyridinium_dichromate": {
+   "category": "AIR",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Airborne pollutants"
+  },
+  "pyridostigmine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "pyridoxine": {
+   "category": "FOOD",
+   "chem_class": "Pyridines and derivatives",
+   "label": "Food toxins"
+  },
+  "pyrimethamine": {
+   "category": "DRUG",
+   "chem_class": "Diazines",
+   "label": "Drugs"
+  },
+  "pyrocatechol": {
+   "category": "CIG",
+   "chem_class": "Phenols",
+   "label": "Cigarette toxins"
+  },
+  "pyroglutamic_acid": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "pyrophosphate": {
+   "category": "ANIM",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Animal toxins"
+  },
+  "pyruvic_acid": {
+   "category": "ANIM",
+   "chem_class": "Keto acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "quazepam": {
+   "category": "DRUG",
+   "chem_class": "Benzodiazepines",
+   "label": "Drugs"
+  },
+  "quetiapine": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "quinapril": {
+   "category": "DRUG",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Drugs"
+  },
+  "quinone": {
+   "category": "FOOD",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Food toxins"
+  },
+  "radium_226": {
+   "category": "AIR",
+   "chem_class": "Radium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "radium_228": {
+   "category": "AIR",
+   "chem_class": "Radium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "radon": {
+   "category": "CIG",
+   "chem_class": "Radon and its compounds",
+   "label": "Cigarette toxins"
+  },
+  "radon_220": {
+   "category": "AIR",
+   "chem_class": "Radon and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "radon_222": {
+   "category": "AIR",
+   "chem_class": "Radon and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "reboxetine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "reserpine": {
+   "category": "DRUG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Drugs"
+  },
+  "retinol_acetate": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "rhodamine_6g": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
+  },
+  "ridogrel": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "rifabutin": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "rifampin": {
+   "category": "DRUG",
+   "chem_class": "Unclassified",
+   "label": "Drugs"
+  },
+  "rifapentine": {
+   "category": "DRUG",
+   "chem_class": "Unclassified",
+   "label": "Drugs"
+  },
+  "riluzole": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazoles",
+   "label": "Drugs"
+  },
+  "risedronate": {
+   "category": "DRUG",
+   "chem_class": "Organic phosphonic acids and derivatives",
+   "label": "Drugs"
+  },
+  "risperidone": {
+   "category": "FOOD",
+   "chem_class": "Pyridopyrimidines",
+   "label": "Food toxins"
+  },
+  "rituximab": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "rizatriptan": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "ropinirole": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "ropivacaine": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "rosuvastatin": {
+   "category": "DRUG",
+   "chem_class": "Diazines",
+   "label": "Drugs"
+  },
+  "roxarsone": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "s_adenosylhomocysteine": {
+   "category": "ANIM",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Animal toxins"
+  },
+  "s_adenosylmethionine": {
+   "category": "ANIM",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Animal toxins"
+  },
+  "s_bioallethrin": {
+   "category": "HOUS",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Household toxins"
+  },
+  "s_sulfocysteine": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "safrole": {
+   "category": "CIG",
+   "chem_class": "Benzodioxoles",
+   "label": "Cigarette toxins"
+  },
+  "salmeterol": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "sarcosine": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "saxitoxin": {
+   "category": "BACT",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Bacterial toxins"
+  },
+  "sebacic_acid": {
+   "category": "ANIM",
+   "chem_class": "Fatty Acyls",
+   "label": "Animal toxins"
+  },
+  "secobarbital": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "selegiline": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "selenic_acid": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenium_dioxide": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "selenous_acid": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "sertaconazole": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "sertraline": {
+   "category": "FOOD",
+   "chem_class": "Tetralins",
+   "label": "Food toxins"
+  },
+  "sevoflurane": {
+   "category": "DRUG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Drugs"
+  },
+  "sibutramine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "silver": {
+   "category": "FOOD",
+   "chem_class": "Silver and its compounds",
+   "label": "Food toxins"
+  },
+  "silver_sulfadiazine": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "silveri_selenide": {
+   "category": "AIR",
+   "chem_class": "Silver and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sirolimus": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "sodium_aluminum_phosphate": {
+   "category": "FOOD",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Food toxins"
+  },
+  "sodium_arsenate": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_arsenite": {
+   "category": "AIR",
+   "chem_class": "Arsenic and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_bromide": {
+   "category": "HOUS",
+   "chem_class": "Sodium and its compounds",
+   "label": "Household toxins"
+  },
+  "sodium_chloride": {
+   "category": "FOOD",
+   "chem_class": "Sodium and its compounds",
+   "label": "Food toxins"
+  },
+  "sodium_cyanide": {
+   "category": "AIR",
+   "chem_class": "Organic salts",
+   "label": "Airborne pollutants"
+  },
+  "sodium_nitrate": {
+   "category": "FOOD",
+   "chem_class": "Sodium and its compounds",
+   "label": "Food toxins"
+  },
+  "sodium_nitrite": {
+   "category": "FOOD",
+   "chem_class": "Sodium and its compounds",
+   "label": "Food toxins"
+  },
+  "sodium_nitroprusside": {
+   "category": "DRUG",
+   "chem_class": "Sodium and its compounds",
+   "label": "Drugs"
+  },
+  "sodium_perchlorate": {
+   "category": "FOOD",
+   "chem_class": "Sodium and its compounds",
+   "label": "Food toxins"
+  },
+  "sodium_selenate": {
+   "category": "HOUS",
+   "chem_class": "Selenium and its compounds",
+   "label": "Household toxins"
+  },
+  "sodium_selenite": {
+   "category": "AIR",
+   "chem_class": "Selenium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "sodium_tetradecyl_sulfate": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "sorafenib": {
+   "category": "DRUG",
+   "chem_class": "Organooxygen compounds",
+   "label": "Drugs"
+  },
+  "sorbitan_oleate": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "spironolactone": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "stavudine": {
+   "category": "DRUG",
+   "chem_class": "Nucleoside and nucleotide analogues",
+   "label": "Drugs"
+  },
+  "stibine": {
+   "category": "FOOD",
+   "chem_class": "Inorganic salts",
+   "label": "Food toxins"
+  },
+  "streptokinase": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "streptolysin_o_streptococcus_pyogenes": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "streptozocin": {
+   "category": "DRUG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Drugs"
+  },
+  "stromatoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "strontium_90": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_chromate": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "strontium_nitrate": {
+   "category": "AIR",
+   "chem_class": "Strontium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "styrene": {
+   "category": "CIG",
+   "chem_class": "Benzenoids",
+   "label": "Cigarette toxins"
+  },
+  "succinic_acid": {
+   "category": "ANIM",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "succinylacetone": {
+   "category": "ANIM",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Animal toxins"
+  },
+  "sufentanil": {
+   "category": "DRUG",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Drugs"
+  },
+  "sulfasalazine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "sumatriptan": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "tacrolimus": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "tamoxifen": {
+   "category": "DRUG",
+   "chem_class": "Stilbenes",
+   "label": "Drugs"
+  },
+  "telithromycin": {
+   "category": "DRUG",
+   "chem_class": "Unclassified",
+   "label": "Drugs"
+  },
+  "temazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "teniposide": {
+   "category": "DRUG",
+   "chem_class": "Lignans, neolignans and related compounds",
+   "label": "Drugs"
+  },
+  "terazosin": {
+   "category": "DRUG",
+   "chem_class": "Diazinanes",
+   "label": "Drugs"
+  },
+  "testosterone": {
+   "category": "ANIM",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Animal toxins"
+  },
+  "testosterone_propionate": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "tetanus_toxin": {
+   "category": "BACT",
+   "chem_class": "Proteins and peptides",
+   "label": "Bacterial toxins"
+  },
+  "tetrabromodiphenyl_ethers": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "tetrachloroethylene": {
+   "category": "CIG",
+   "chem_class": "Organohalogen compounds",
+   "label": "Cigarette toxins"
+  },
+  "tetracycline": {
+   "category": "DRUG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Drugs"
+  },
+  "tetraethyl_lead": {
+   "category": "AIR",
+   "chem_class": "Organometallic compounds",
+   "label": "Airborne pollutants"
+  },
+  "tetrazepam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "tetrodotoxin": {
+   "category": "ANIM",
+   "chem_class": "Diazanaphthalenes",
+   "label": "Animal toxins"
+  },
+  "thalidomide": {
+   "category": "DRUG",
+   "chem_class": "Isoindoles and derivatives",
+   "label": "Drugs"
+  },
+  "thallium": {
+   "category": "AIR",
+   "chem_class": "Thallium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "theophylline": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "thiamine": {
+   "category": "FOOD",
+   "chem_class": "Diazines",
+   "label": "Food toxins"
+  },
+  "thiomersal": {
+   "category": "AIR",
+   "chem_class": "Benzenoids",
+   "label": "Airborne pollutants"
+  },
+  "thiopental": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "thioridazine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "thiotepa": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "thiourea": {
+   "category": "FOOD",
+   "chem_class": "Organosulfur compounds",
+   "label": "Food toxins"
+  },
+  "thorium": {
+   "category": "FOOD",
+   "chem_class": "Thorium and its compounds",
+   "label": "Food toxins"
+  },
+  "thorium_227": {
+   "category": "AIR",
+   "chem_class": "Thorium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "tiagabine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "tinii_oxide": {
+   "category": "HOUS",
+   "chem_class": "Tin and its compounds",
+   "label": "Household toxins"
+  },
+  "tioguanine": {
+   "category": "DRUG",
+   "chem_class": "Imidazopyrimidines",
+   "label": "Drugs"
+  },
+  "tiratricol": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "titanium_aluminide": {
+   "category": "IND",
+   "chem_class": "Titanium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tityustoxin_tityus_serrulatus": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "tizanidine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiadiazoles",
+   "label": "Drugs"
+  },
+  "tofisopam": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "tolazamide": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "tolcapone": {
+   "category": "DRUG",
+   "chem_class": "Benzenoids",
+   "label": "Drugs"
+  },
+  "toluene": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "toluene_diisocyanate": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
+  "topiramate": {
+   "category": "FOOD",
+   "chem_class": "Dioxolopyrans",
+   "label": "Food toxins"
+  },
+  "tramadol": {
+   "category": "DRUG",
+   "chem_class": "Phenol ethers",
+   "label": "Drugs"
+  },
+  "tranylcypromine": {
+   "category": "DRUG",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Drugs"
+  },
+  "trazodone": {
+   "category": "DRUG",
+   "chem_class": "Diazinanes",
+   "label": "Drugs"
+  },
+  "tremolite_asbestos": {
+   "category": "AIR",
+   "chem_class": "Minerals and fibres",
+   "label": "Airborne pollutants"
+  },
+  "triamcinolone": {
+   "category": "DRUG",
+   "chem_class": "Steroids and steroid derivatives",
+   "label": "Drugs"
+  },
+  "triazolam": {
+   "category": "DRUG",
+   "chem_class": "Benzodiazepines",
+   "label": "Drugs"
+  },
+  "trichloroacetic_acid": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
+  },
+  "trichloroethylene": {
+   "category": "CIG",
+   "chem_class": "Organohalogen compounds",
+   "label": "Cigarette toxins"
+  },
+  "triclosan": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "triethanolamine": {
+   "category": "FOOD",
+   "chem_class": "Amines",
+   "label": "Food toxins"
+  },
+  "triethyl_citrate": {
+   "category": "FOOD",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "triethylaluminium": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "trifluoperazine": {
+   "category": "DRUG",
+   "chem_class": "Benzothiazines",
+   "label": "Drugs"
+  },
+  "triflupromazine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "trihexyphenidyl": {
+   "category": "DRUG",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Drugs"
+  },
+  "trimethadione": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "trimethylaluminium": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "trimetrexate": {
+   "category": "DRUG",
+   "chem_class": "Diazanaphthalenes",
+   "label": "Drugs"
+  },
+  "trimipramine": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "tritium": {
+   "category": "AIR",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "triuranium_octaoxide": {
+   "category": "AIR",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Airborne pollutants"
+  },
+  "tungsten": {
+   "category": "FOOD",
+   "chem_class": "Tungsten and its compounds",
+   "label": "Food toxins"
+  },
+  "tyramine": {
+   "category": "ANIM",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Animal toxins"
+  },
+  "uranium": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous actinide compounds",
+   "label": "Food toxins"
+  },
+  "uranium_234": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_235": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_238": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_carbide": {
+   "category": "AIR",
+   "chem_class": "Hydrocarbon derivatives",
+   "label": "Airborne pollutants"
+  },
+  "uranium_dioxide": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_hexafluoride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_nitride": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranium_trioxide": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_acetate": {
+   "category": "AIR",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Airborne pollutants"
+  },
+  "uranyl_nitrate": {
+   "category": "AIR",
+   "chem_class": "Uranium and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "uroporphyrin_iii": {
+   "category": "ANIM",
+   "chem_class": "Unclassified",
+   "label": "Animal toxins"
+  },
+  "valaciclovir": {
+   "category": "DRUG",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Drugs"
+  },
+  "valproic_acid": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "vanadium": {
+   "category": "FOOD",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Food toxins"
+  },
+  "vanadyl_sulfate": {
+   "category": "FOOD",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Food toxins"
+  },
+  "vancomycin": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "vanillin": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "vapreotide": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "varenicline": {
+   "category": "DRUG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Drugs"
+  },
+  "venlafaxine": {
+   "category": "FOOD",
+   "chem_class": "Phenol ethers",
+   "label": "Food toxins"
+  },
+  "verapamil": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "vigabatrin": {
+   "category": "DRUG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Drugs"
+  },
+  "vinblastine": {
+   "category": "DRUG",
+   "chem_class": "Vinca alkaloids",
+   "label": "Drugs"
+  },
+  "vincristine": {
+   "category": "DRUG",
+   "chem_class": "Vinca alkaloids",
+   "label": "Drugs"
+  },
+  "vindesine": {
+   "category": "DRUG",
+   "chem_class": "Vinca alkaloids",
+   "label": "Drugs"
+  },
+  "vinyl_bromide": {
+   "category": "AIR",
+   "chem_class": "Organohalogen compounds",
+   "label": "Airborne pollutants"
+  },
+  "vinyl_chloride": {
+   "category": "CIG",
+   "chem_class": "Organohalogen compounds",
+   "label": "Cigarette toxins"
+  },
+  "viperotoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "vipoxin": {
+   "category": "ANIM",
+   "chem_class": "Proteins and peptides",
+   "label": "Animal toxins"
+  },
+  "vitamin_a": {
+   "category": "FOOD",
+   "chem_class": "Prenol lipids",
+   "label": "Food toxins"
+  },
+  "white_phosphorus": {
+   "category": "AIR",
+   "chem_class": "Phosphorus and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "xanthine": {
+   "category": "ANIM",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Animal toxins"
+  },
+  "zalcitabine": {
+   "category": "DRUG",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Drugs"
+  },
+  "zaleplon": {
+   "category": "DRUG",
+   "chem_class": "Diazines",
+   "label": "Drugs"
+  },
+  "zidovudine": {
+   "category": "DRUG",
+   "chem_class": "Nucleosides, nucleotides, and analogues",
+   "label": "Drugs"
+  },
+  "zinc": {
+   "category": "FOOD",
+   "chem_class": "Zinc and its compounds",
+   "label": "Food toxins"
+  },
+  "zinc_acetate": {
+   "category": "FOOD",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "zinc_chloride": {
+   "category": "FOOD",
+   "chem_class": "Zinc and its compounds",
+   "label": "Food toxins"
+  },
+  "zinc_oxide": {
+   "category": "FOOD",
+   "chem_class": "Zinc and its compounds",
+   "label": "Food toxins"
+  },
+  "zinc_pyrithione": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
+  },
+  "zinc_selenide": {
+   "category": "AIR",
+   "chem_class": "Zinc and its compounds",
+   "label": "Airborne pollutants"
+  },
+  "zinc_stearate": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "zinc_sulfate": {
+   "category": "FOOD",
+   "chem_class": "Zinc and its compounds",
+   "label": "Food toxins"
+  },
+  "zincii_gluconate": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "zoledronate": {
+   "category": "DRUG",
+   "chem_class": "Organic phosphonic acids and derivatives",
+   "label": "Drugs"
+  },
+  "zolmitriptan": {
+   "category": "DRUG",
+   "chem_class": "Indoles and derivatives",
+   "label": "Drugs"
+  },
+  "zolpidem": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "zonisamide": {
+   "category": "DRUG",
+   "chem_class": "Benzisoxazoles",
+   "label": "Drugs"
+  },
+  "zopiclone": {
+   "category": "DRUG",
+   "chem_class": "Pyrrolopyrazines",
+   "label": "Drugs"
+  }
+ }
+}

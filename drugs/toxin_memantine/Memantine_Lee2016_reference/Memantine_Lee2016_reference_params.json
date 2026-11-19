@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 20 mg oral (N06DX01)",
+ "model_id": "Memantine_Lee2016_reference",
+ "molar_masses": {
+  "central.C": 0.179307
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.2000000000000003e-06,
+  "F": 41.0,
+  "MM": 0.179307,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002242857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "ka": 0.0003666666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8713.95510798282
+ },
+ "reference_peaks": {
+  "central.C": 0.004405505260073004
+ },
+ "review_status": "needs_review",
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

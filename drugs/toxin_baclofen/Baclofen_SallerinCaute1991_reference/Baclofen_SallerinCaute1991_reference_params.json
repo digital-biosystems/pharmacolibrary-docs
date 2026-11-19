@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 50 mg oral (M03BX01)",
+ "model_id": "Baclofen_SallerinCaute1991_reference",
+ "molar_masses": {
+  "central.C": 0.213661
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.611111111111111e-09,
+  "F": 0.9,
+  "MM": 0.213661,
+  "Tlag": 0.0,
+  "VdPerKg": 0.001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "ka": 0.0004555555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 20258.11623246493
+ },
+ "reference_peaks": {
+  "central.C": 0.0006421951125616665
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

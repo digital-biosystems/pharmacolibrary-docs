@@ -1,0 +1,47 @@
+{
+ "dose_source": "paper",
+ "model_id": "Busulfan_Dadkhah2022_reference",
+ "molar_masses": {
+  "C_M1": 0.120166,
+  "central.C": 0.246292
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "Sulfolane",
+  "C_central": "Busulfan"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  56.0,
+  224.0
+ ],
+ "parameters": {
+  "CL1": 4.209022222222223e-06,
+  "CLm1": 4.4722222222222223e-07,
+  "F": 1.0,
+  "MW": 0.246292,
+  "MW_m1": 0.120166,
+  "Vd1": 0.0615,
+  "Vd1m1": 0.048799999999999996,
+  "adminCount": 1.0,
+  "adminMass": 0.0,
+  "infusionDuration": 600.0,
+  "infusionMass": 5.6e-05,
+  "q1_m11": 3.187555555555556e-07
+ },
+ "reference_peak_times": {
+  "C_M1": 32724.64929859719,
+  "central.C": 660.0000000662087
+ },
+ "reference_peaks": {
+  "C_M1": 2.931003615783544e-05,
+  "central.C": 0.0008907513084229125
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

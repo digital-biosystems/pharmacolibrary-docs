@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg oral (N05AL05)",
+ "model_id": "Amisulpride_Wang2022_reference",
+ "molar_masses": {
+  "central.C": 0.369479
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.888888888888889e-05,
+  "F": 1.0,
+  "MM": 0.369479,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0011257142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "ka": 2.2222222222222223e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8553.665137846114
+ },
+ "reference_peaks": {
+  "central.C": 0.00025674649677643734
+ },
+ "stop_time": 147600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

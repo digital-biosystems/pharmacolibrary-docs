@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 20 mg parenteral (H02AB04)",
+ "model_id": "Methylprednisolone_Dvokov2026_reference",
+ "molar_masses": {
+  "central.C": 0.3744706
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.6666666666666667e-08,
+  "F": 1.0,
+  "MM": 0.3744706,
+  "VdPerKg": 1.9785531989334357e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662078
+ },
+ "reference_peaks": {
+  "central.C": 0.01438855905089396
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

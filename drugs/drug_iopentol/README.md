@@ -1,0 +1,75 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V08A&quot;,&quot;href&quot;:&quot;atc/V08A.md&quot;},{&quot;label&quot;:&quot;iopentol&quot;}]"></div>
+
+# iopentol
+
+- **generic name:** iopentol
+- **ATC codes:** `V08AB08`
+- **DrugBank:** [DB13861](https://go.drugbank.com/drugs/DB13861) · **PubChem:** none
+- **molar mass:** 835.1644 g/mol (C20H28I3N3O9) — DrugBank
+- **groups:** experimental
+
+## About
+
+Iopentol is an iodinated, water-soluble contrast agent used for X-ray imaging. It is administered via parenteral route as an injection solution. It is currently an experimental compound, though it was previously used in Europe.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q6063892](https://www.wikidata.org/wiki/Q6063892), [Wikipedia](https://en.wikipedia.org/wiki/Iopentol?oldid=1365022762) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 22:58 | 0:48 | 0/0/0 | 0/0/0 | 0/0/0 | 18,876/1,252 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 13 matched, 13 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Svaland_1992.pdf` | Svaland MG et al., Pharmacokinetics of iopentol in patient…, Acta radiologica (Stockholm… (1992) | popPK | 8 |  | [1389660](https://pubmed.ncbi.nlm.nih.gov/1389660) | Human PK study of iopentol with numeric half-life (28.4 h), volume of distribution (0.27 l/kg), and clearance data reported directly in the abstract. |
+| `Waaler_1987.pdf` | Waaler A et al., Pharmacokinetics of iopentol in healthy…, Acta radiologica. Supplemen… (1987) | popPK | 8 |  | [2980304](https://pubmed.ncbi.nlm.nih.gov/2980304) | Human PK study of iopentol as subject drug, but the abstract gives no numeric CL/V values — they likely appear in tables/figures not provided. |
+| `Berg_1992.pdf` | Berg KJ et al., Iopentol in patients with chronic renal…, Scandinavian journal of cli… (1992) | popPK | 6 | [10.3109/00365519209085437](https://doi.org/10.3109/00365519209085437) | [1594886](https://pubmed.ncbi.nlm.nih.gov/1594886) | Human PK study of iopentol with clearance values discussed, but only relative percentages given; absolute numeric parameters not shown in evidence. |
+| `Lehnert_1998.pdf` | Lehnert T et al., Effect of haemodialysis after contrast…, Nephrology, dialysis, trans… (1998) | popPK | 6 | [10.1093/oxfordjournals.ndt.a027830](https://doi.org/10.1093/oxfordjournals.ndt.a027830) | [9509446](https://pubmed.ncbi.nlm.nih.gov/9509446) | Human PK study of iopentol with quantitative clearance values (71 ml/min extracorporeal, 32% eliminated), but no full disposition parameters (V, half-life, total CL) reported. |
+| `Michelet_1987.pdf` | Michelet AA et al., Pharmacokinetics of iopentol in the rat, Acta radiologica. Supplemen… (1987) | popPK | 6 |  | [2980301](https://pubmed.ncbi.nlm.nih.gov/2980301) | Rat PK study of iopentol with a half-life value (24 min) reported in the abstract, but no CL/V or full parameter set is present. |
+
+<sub>queue written 2026-10-07 22:58 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Berg_1992 | relevant | 6 | 3 | Human PK study of iopentol with clearance values discussed, but only relative percentages given; absolute numeric parameters not shown in evidence. |
+| popPK | Jakobsen_1990 | irrelevant | 2 | 0 | Study reports renal effects (diuresis, enzymes, GFR) of iopentol in humans, not quantitative disposition parameters like CL, V, or a PK model. |
+| popPK | Jakobsen_1991 | irrelevant | 2 | 1 | Renal safety study with no PK disposition parameters (CL, V, half-life) for iopentol reported; only creatinine clearance as a safety marker. |
+| popPK | Jakobsen_1992 | irrelevant | 2 | 1 | Iopentol is a co-administered comparator in a renal-function/CT study; no PK disposition parameters (CL, V, half-life) are reported, only qualitative renal effects. |
+| popPK | Jakobsen_1993 | irrelevant | 1 | 1 | Study of renal tubular enzyme excretion effects; iopentol is a contrast agent studied for nephrotoxicity, not PK disposition parameters, and no numeric PK values appear. |
+| popPK | Jakobsen_1994 | irrelevant | 2 | 1 | This is a renal safety study of iopentol as contrast agent; no PK disposition parameters (CL, V, half-life) are reported, only creatinine clearance as a safety biomarker. |
+| popPK | Michelet_1987 | relevant | 6 | 4 | Rat PK study of iopentol with a half-life value (24 min) reported in the abstract, but no CL/V or full parameter set is present. |
+| popPK | Waaler_1987 | relevant | 8 | 2 | Human PK study of iopentol as subject drug, but the abstract gives no numeric CL/V values — they likely appear in tables/figures not provided. |
+| popPK | Wieslander_1987 | irrelevant | 0 | 0 | This is an endothelial toxicity study in rabbits with no PK disposition parameters for iopentol. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biopentol%5D&body=Drug%3A%20iopentol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iopentol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

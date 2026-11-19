@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "TebipenemPivoxil_Ganesan2023_reference",
+ "molar_masses": {
+  "central.C": 0.383481
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  600.0
+ ],
+ "parameters": {
+  "Cl": 1.3305555555555554e-07,
+  "F": 1.0,
+  "MM": 0.383481,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00055,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "k12": 1.608946608946609e-05,
+  "k21": 0.00012798438934802573,
+  "ka": 0.00034166666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14385.847175390896
+ },
+ "reference_peaks": {
+  "central.C": 0.012410557246696539
+ },
+ "stop_time": 1036800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

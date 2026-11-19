@@ -1,0 +1,127 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;chlorpromazine&quot;}]"></div>
+
+# chlorpromazine
+
+- **generic name:** chlorpromazine
+- **ATC codes:** `N05AA01`
+- **DrugBank:** [DB00477](https://go.drugbank.com/drugs/DB00477) · **PubChem:** [CID 2726](https://pubchem.ncbi.nlm.nih.gov/compound/2726)
+- **molar mass:** 318.864 g/mol (C17H19ClN2S) — DrugBank
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+Chlorpromazine belongs to the phenothiazine group of typical antipsychotics. It is prescribed for schizophrenia, severe hiccups, vomiting, and anxiety. The medication is usually taken by mouth as a tablet. Injections into a muscle or vein offer alternative routes for delivery. This generic drug is widely available as a WHO essential medicine.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q407972](https://www.wikidata.org/wiki/Q407972), [Wikipedia](https://en.wikipedia.org/wiki/Chlorpromazine?oldid=1368875372) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| chlorpromazine | parent | 318.864 | C17H19ClN2S | DrugBank | [2726](https://pubchem.ncbi.nlm.nih.gov/compound/2726) | Nawaz_1981, Nielsen_1983 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="goat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Nawaz_1981_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nawaz1981_reference.md) | — | 1-compartment (no model) | 2 | Nawaz M, Pharmacokinetics and dosage of chlorpro…, Journal of veterinary pharm… (1981) | [10.1111/j.1365-2885.1981.tb00725.x](https://doi.org/10.1111/j.1365-2885.1981.tb00725.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Nielsen_1983_reference](drugs/drug_chlorpromazine/Chlorpromazine_Nielsen1983_reference.md) | — | 1-compartment (no model) | 2 | Nielsen HC et al., Chlorpromazine excretion by the neonate…, Pediatric pharmacology (New… (1983) | — |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Galbiati_2017_IL_18_SI2](drugs/drug_chlorpromazine/pd_Galbiati_2017_IL_18_SI2.md) | IL-18 release (sensitization induction, IL-18 SI2) ← chlorpromazine · stimulation effect | — | Galbiati V et al., Development of an in vitro method to es…, Toxicology letters (2017) | [10.1016/j.toxlet.2017.01.016](https://doi.org/10.1016/j.toxlet.2017.01.016) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Korth_2001_PrP_Sc](drugs/drug_chlorpromazine/pd_Korth_2001_PrP_Sc.md) | PrP(Sc) formation ← chlorpromazine · inhibition effect | — | Korth C et al., Acridine and phenothiazine derivatives…, Proceedings of the National… (2001) | [10.1073/pnas.161274798](https://doi.org/10.1073/pnas.161274798) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lee_2017_INa](drugs/drug_chlorpromazine/pd_Lee_2017_INa.md) | hNav1.7 peak sodium current ← chlorpromazine · direct sigmoid Emax (Hill) effect | — | Lee SJ et al., Mechanism of inhibition by chlorpromazi…, Neuroscience letters (2017) | [10.1016/j.neulet.2016.12.051](https://doi.org/10.1016/j.neulet.2016.12.051) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Purohit_2023_metric_tensor_g](drugs/drug_chlorpromazine/pd_Purohit_2023_metric_tensor_g.md) | metric tensor component of perceived visual space (spatial distortion threshold-derived) ← chlorpromazine · direct sigmoid Emax (Hill) effect | — | Purohit P et al., Empirically validated theoretical analy…, Frontiers in computational… (2023) | [10.3389/fncom.2023.1136985](https://doi.org/10.3389/fncom.2023.1136985) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Santone_1989_GSH_depletion](drugs/drug_chlorpromazine/pd_Santone_1989_GSH_depletion.md) | intracellular glutathione depletion ← chlorpromazine · inhibition effect | — | Santone KS et al., Studies of chemical toxicity to fresh a…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90341-4](https://doi.org/10.1016/0041-008x(89)90341-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Santone_1989_LDH_release](drugs/drug_chlorpromazine/pd_Santone_1989_LDH_release.md) | lactate dehydrogenase release ← chlorpromazine · inhibition effect | — | Santone KS et al., Studies of chemical toxicity to fresh a…, Toxicology and applied phar… (1989) | [10.1016/0041-008x(89)90341-4](https://doi.org/10.1016/0041-008x(89)90341-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Thomas_2003_HERG_block](drugs/drug_chlorpromazine/pd_Thomas_2003_HERG_block.md) | HERG potassium channel block ← chlorpromazine · direct sigmoid Emax (Hill) effect | — | Thomas D et al., The antipsychotic drug chlorpromazine i…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705283](https://doi.org/10.1038/sj.bjp.0705283) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlorpromazine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` unknown, `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `BCHE` inhibitor, `CYP1A2` substrate, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor, `CYP3A4` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
+| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA2A (target), CALM1 (inhibitor), CHRM1 (target), CHRM3 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (inhibitor), HRH1 (target), HRH4 (binder), HTR1A (target), HTR2A (binder), HTR2A (target), HTR2C (target), HTR6 (target), HTR7 (target), KCNH2 (inhibitor), SMPD1 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 15:31 | 1:36 | 2/0/0 | 6/0/0 | 0/0/0 | 91,530/4,691 | ollama / glm-5.3-flash | 5 | 3/2 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 81 matched, 20 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Nawaz_1981.pdf` | Nawaz M, Pharmacokinetics and dosage of chlorpro…, Journal of veterinary pharm… (1981) | popPK | 10 | [10.1111/j.1365-2885.1981.tb00725.x](https://doi.org/10.1111/j.1365-2885.1981.tb00725.x) | [7349328](https://pubmed.ncbi.nlm.nih.gov/7349328) | Original goat PK study with numeric CL (80±25 ml/min/kg), half-life (1.51±0.48 h), and two-compartment model parameters reported directly in the abstract. |
+| `Chetty_1994.pdf` | Chetty M et al., Smoking and body weight influence the c…, European journal of clinica… (1994) | popPK | 8 | [10.1007/BF00196109](https://doi.org/10.1007/BF00196109) | [7995319](https://pubmed.ncbi.nlm.nih.gov/7995319) | Population PK (NONMEM) of chlorpromazine in 31 patients, but no numeric parameter values appear in the evidence provided. |
+| `Nielsen_1983.pdf` | Nielsen HC et al., Chlorpromazine excretion by the neonate…, Pediatric pharmacology (New… (1983) | popPK | 6 |  | [6646875](https://pubmed.ncbi.nlm.nih.gov/6646875) | Single-case newborn PK with two-compartment half-lives reported, but no CL/V values and only one infant. |
+
+<sub>queue written 2026-10-06 15:31 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Chetty_1994 | relevant | 8 | 3 | Population PK (NONMEM) of chlorpromazine in 31 patients, but no numeric parameter values appear in the evidence provided. |
+| popPK | Chetty_2001 | irrelevant | 3 | 1 | A case report of a drug interaction within a population PK study, but no quantitative disposition parameters (CL, V, half-life) for chlorpromazine are reported. |
+| popPK | Conus_2015 | irrelevant | 0 | 0 | This is a clinical efficacy/safety trial with no pharmacokinetic parameters reported for chlorpromazine. |
+| popPK | Galbiati_2017 | irrelevant | 0 | 0 | In vitro skin sensitization assay; chlorpromazine is only a test chemical, no PK parameters. |
+| popPK | Haider_2023 | irrelevant | 0 | 0 | Chlorpromazine appears only as an equivalent-dose unit for antipsychotic prescribing outcomes; no PK parameters (CL, V, ka, half-life) are reported. |
+| popPK | Hatanaka_1988 | irrelevant | 0 | 0 | The evidence contains no readable text or numeric parameters, only a GROBID processing header, so nothing can be assessed. |
+| popPK | Korth_2001 | irrelevant | 0 | 0 | In-vitro antiprion efficacy study (EC50 only), no pharmacokinetic disposition parameters for chlorpromazine. |
+| popPK | Lee_2017 | irrelevant | 0 | 0 | In-vitro electrophysiology (patch-clamp IC50) with no PK disposition parameters for chlorpromazine. |
+| popPK | Mori_2026 | irrelevant | 0 | 0 | Chlorpromazine appears only as a chlorpromazine-equivalent dose metric in an outcomes study; no PK parameters are reported. |
+| popPK | Purohit_2023 | irrelevant | 1 | 1 | This is a computational model of visual-spatial perception; chlorpromazine is only a hypoactivation-inducing agent, with no PK disposition parameters (CL, V, half-life) reported for it. |
+| popPK | Santone_1989 | irrelevant | 0 | 0 | In-vitro hepatocyte toxicity study with EC50 values, not a PK disposition study of chlorpromazine. |
+| popPK | Sato_1995 | irrelevant | 0 | 0 | The evidence contains no usable text or numeric PK data for chlorpromazine; only a GROBID processing header is present. |
+| popPK | Sato_1995_2 | irrelevant | 0 | 0 | The extracted text contains only GROBID boilerplate with no paper content, so no PK parameters for chlorpromazine are present. |
+| popPK | Schoedel_2018 | irrelevant | 0 | 0 | This is a human abuse-potential study of brivaracetam; chlorpromazine appears only as part of the PCAG scale name, with no PK parameters reported. |
+| popPK | Thomas_2003 | irrelevant | 0 | 0 | In-vitro electrophysiology (HERG channel block in Xenopus oocytes), no PK disposition parameters for chlorpromazine. |
+| popPK | Yahata_2020 | irrelevant | 2 | 0 | Chlorpromazine is only mentioned as an excluded compound (Vdss &lt; V1 deviation); no numeric PK parameters for it are reported, and the study concerns other compounds. |
+| popPK | Zeng_1997 | irrelevant | 0 | 0 | In vitro receptor pharmacology study with no PK parameters for chlorpromazine. |
+| popPK | de_2016 | irrelevant | 0 | 0 | Ecotoxicity study in Daphnia magna reporting EC50 values, not pharmacokinetic disposition parameters for chlorpromazine. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlorpromazine%5D&body=Drug%3A%20chlorpromazine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlorpromazine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 15:31 UTC</sub>

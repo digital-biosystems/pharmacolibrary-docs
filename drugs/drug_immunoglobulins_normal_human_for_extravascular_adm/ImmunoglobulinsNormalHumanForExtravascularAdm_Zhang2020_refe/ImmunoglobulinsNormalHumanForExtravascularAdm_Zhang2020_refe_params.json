@@ -1,0 +1,28 @@
+{
+ "dose_source": "library default",
+ "model_id": "ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.5972222222222225e-09,
+  "F": 1.0,
+  "VdPerKg": 5.6428571428571435e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 7.618377871542429e-07,
+  "k21": 6.777610944277612e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662093
+ },
+ "reference_peaks": {
+  "central.C": 0.0023906658199214473
+ },
+ "stop_time": 9072000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

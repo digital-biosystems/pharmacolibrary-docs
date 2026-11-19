@@ -1,0 +1,88 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01E&quot;,&quot;href&quot;:&quot;atc/S01E.md&quot;},{&quot;label&quot;:&quot;unoprostone&quot;}]"></div>
+
+# unoprostone
+
+- **generic name:** unoprostone
+- **ATC codes:** `S01EE02`
+- **DrugBank:** [DB06826](https://go.drugbank.com/drugs/DB06826) · **PubChem:** [CID 5311236](https://pubchem.ncbi.nlm.nih.gov/compound/5311236)
+- **molar mass:** 382.541 g/mol (C22H38O5) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Unoprostone is a prostaglandin analogue used to treat open-angle glaucoma and ocular hypertension. It is administered as ophthalmic solution drops. The drug has been discontinued in the U.S.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q4859684](https://www.wikidata.org/wiki/Q4859684), [Wikipedia](https://en.wikipedia.org/wiki/Unoprostone?oldid=1384990379) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_2002_PI](drugs/drug_unoprostone/pd_Sharif_2002_PI.md) | phosphoinositide (PI) turnover ← unoprostone isopropyl ester · stimulation effect | — | Sharif NA et al., Agonist activity of bimatoprost, travop…, Journal of ocular pharmacol… (2002) | [10.1089/10807680260218489](https://doi.org/10.1089/10807680260218489) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Sharif_2008_2_contraction_of_isolated_non_pregnant_female_rat_uterus](drugs/drug_unoprostone/pd_Sharif_2008_2_contraction_of_isolated_non_pregnant_female_ra.md) | contraction of isolated non-pregnant female rat uterus ← unoprostone · direct Emax (saturable) effect | — | Sharif NA, Synthetic FP-prostaglandin-induced cont…, Prostaglandins, leukotriene… (2008) | [10.1016/j.plefa.2008.01.005](https://doi.org/10.1016/j.plefa.2008.01.005) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=unoprostone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 19:36 | 0:30 | 0/0/0 | 0/2/0 | 0/0/0 | 33,376/1,466 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 9 matched, 9 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Kelly_2003.pdf` | Kelly CR et al., Real-time intracellular Ca2+ mobilizati…, The Journal of pharmacology… (2003) | pd | 4 | [10.1124/jpet.102.042556](https://doi.org/10.1124/jpet.102.042556) | [12490597](https://www.ncbi.nlm.nih.gov/pubmed/12490597) | metadata signals extractable PD data (EC50) |
+| `Sharif_2002.pdf` | Sharif NA et al., Agonist activity of bimatoprost, travop…, Journal of ocular pharmacol… (2002) | pd | 4 | [10.1089/10807680260218489](https://doi.org/10.1089/10807680260218489) | [12222762](https://www.ncbi.nlm.nih.gov/pubmed/12222762) | metadata signals extractable PD data (EC50) |
+| `Sharif_2003.pdf` | Sharif NA et al., Ocular hypotensive FP prostaglandin (PG…, Journal of ocular pharmacol… (2003) | pd | 4 | [10.1089/108076803322660422](https://doi.org/10.1089/108076803322660422) | [14733708](https://www.ncbi.nlm.nih.gov/pubmed/14733708) | metadata signals extractable PD data (EC50) |
+
+<sub>queue written 2026-10-07 19:36 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Cuppoletti_2007 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study examining ion channel activation and neuroprotection, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Cuppoletti_2012 | irrelevant | 0 | 0 | The study is mechanistic and reports pharmacodynamic endpoints (channel activity, intracellular calcium) rather than pharmacokinetic parameters such as clearance or volume. |
+| popPK | Kelly_2003 | irrelevant | 0 | 0 | The study is an in vitro pharmacological assessment of receptor binding and calcium mobilization, not a pharmacokinetic study of unoprostone. |
+| popPK | Sharif_2002 | irrelevant | 0 | 0 | The study measures receptor agonist potency (pharmacodynamics) in an in vitro assay, not pharmacokinetic parameters. |
+| popPK | Sharif_2003 | irrelevant | 0 | 0 | The paper is an in vitro receptor binding and potency study, not a pharmacokinetic study, and unoprostone is only a comparator. |
+| popPK | Sharif_2003_2 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor potency (EC50) in cell lines, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Sharif_2003_3 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of receptor signaling in human ciliary muscle cells, not a pharmacokinetic study of unoprostone. |
+| popPK | Sharif_2008 | irrelevant | 0 | 0 | This is an in vitro pharmacology study measuring receptor potency (EC50) in cat iris, not a pharmacokinetic study reporting disposition parameters for unoprostone. |
+| popPK | Sharif_2008_2 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic assay measuring receptor potency (EC50) on rat uterus, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for unoprostone. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bunoprostone%5D&body=Drug%3A%20unoprostone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_unoprostone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

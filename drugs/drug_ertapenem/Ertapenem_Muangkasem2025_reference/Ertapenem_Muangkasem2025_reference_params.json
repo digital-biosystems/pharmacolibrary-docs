@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1000 mg parenteral (J01DH03)",
+ "model_id": "Ertapenem_Muangkasem2025_reference",
+ "molar_masses": {
+  "central.C": 0.47551499999999997
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.305555555555555e-07,
+  "F": 1.0,
+  "MM": 0.47551499999999997,
+  "VdPerKg": 0.00015142857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "k12": 0.0005778301886792454,
+  "k21": 0.001444575471698113,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662056
+ },
+ "reference_peaks": {
+  "central.C": 0.029157022406263194
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

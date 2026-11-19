@@ -1,0 +1,129 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03A&quot;,&quot;href&quot;:&quot;atc/B03A.md&quot;},{&quot;label&quot;:&quot;saccharated iron oxide&quot;}]"></div>
+
+# saccharated iron oxide
+
+- **generic name:** saccharated iron oxide
+- **ATC codes:** `B03AB02`
+- **DrugBank:** [DB09146](https://go.drugbank.com/drugs/DB09146) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Saccharated iron oxide is an iron preparation used to treat iron deficiency anemia. It is given intravenously as a solution or injection, or orally as tablets and capsules. It is widely used and approved for medical use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q27888379](https://www.wikidata.org/wiki/Q27888379), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Cao_2025_ferritin](drugs/drug_saccharated_iron_oxide/pd_Cao_2025_ferritin.md) | serum ferritin ← iron · indirect response — drug stimulates the production of serum ferritin | — | Cao K et al., Computational Prediction of Tissue Iron…, International journal of na… (2025) | [10.2147/ijn.s534063](https://doi.org/10.2147/ijn.s534063) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=saccharated_iron_oxide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 20:36 | 3:13 | 0/0/0 | 0/1/0 | 0/0/0 | 123,069/3,210 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 1/12 | 11/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 27 matched, 46 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Beshara_1999.pdf` | Beshara S et al., Kinetic analysis of 52Fe-labelled iron(…, British journal of haematol… (1999) | popPK | 9 | [10.1046/j.1365-2141.1999.01170.x](https://doi.org/10.1046/j.1365-2141.1999.01170.x) | [10050710](https://pubmed.ncbi.nlm.nih.gov/10050710) | The study reports a three-compartment PK model for saccharated iron oxide (Venofer) in minipigs, but specific numeric parameter values (CL, V, Q, ka) are not explicitly listed in the provided text. |
+
+<sub>queue written 2026-10-05 20:36 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Adham_2015 | irrelevant | 0 | 0 | The study is a toxicology/toxicokinetic assessment of iron overload in rats, reporting tissue iron burden and physiological markers, but it does not report pharmacokinetic parameters (CL, V, ka, t1/2) for saccharated iron oxide. |
+| popPK | Auerbach_2018 | irrelevant | 2 | 0 | The paper is a review of ferumoxytol (a different drug) and does not report quantitative PK parameters for saccharated iron oxide. |
+| popPK | Beguin_2014 | irrelevant | 0 | 0 | The paper is a review of iron sucrose, not saccharated iron oxide, and contains no original quantitative PK parameters. |
+| popPK | Berry_1965 | irrelevant | 0 | 0 | The study uses saccharated iron oxide as a tool to activate the reticuloendothelial system in mice to study endotoxin tolerance, not to characterize its pharmacokinetic parameters. |
+| popPK | Beshara_1999 | relevant | 9 | 2 | The study reports a three-compartment PK model for saccharated iron oxide (Venofer) in minipigs, but specific numeric parameter values (CL, V, Q, ka) are not explicitly listed in the provided text. |
+| popPK | Beshara_1999_2 | irrelevant | 2 | 0 | The study investigates iron(III) hydroxide-sucrose complex, not saccharated iron oxide, and reports qualitative PET uptake and utilization percentages rather than standard PK parameters for the target drug. |
+| popPK | Beshara_2003 | irrelevant | 0 | 0 | The study investigates iron polymaltose, not saccharated iron oxide. |
+| popPK | Borawski_2004 | irrelevant | 0 | 0 | The study investigates endothelial injury markers in response to iron sucrose, not the pharmacokinetic disposition parameters of saccharated iron oxide. |
+| popPK | Branson_2011 | irrelevant | 0 | 0 | no_text gate: only 39 chars of text extracted (&lt; 400) |
+| PD | Branson_2011 | not_relevant | 0 | 0 | The provided text is a title about oxygen and does not contain any information regarding saccharated iron oxide, pharmacodynamics, or exposure-response relationships. |
+| popPK | Breborowicz_2006 | irrelevant | 0 | 0 | The study investigates the nephrotoxicity and morphological changes in rat kidneys caused by iron sucrose, not the pharmacokinetic parameters (CL, V, etc.) of saccharated iron oxide. |
+| popPK | Breymann_2002 | irrelevant | 0 | 0 | The paper is a review of iron deficiency in pregnancy and discusses iron sucrose, not saccharated iron oxide, and contains no quantitative PK parameters. |
+| popPK | Cao_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ferric carboxymaltose (FCM), not saccharated iron oxide. |
+| popPK | Cernaro_2016 | irrelevant | 0 | 0 | The paper is a review of sucroferric oxyhydroxide (a different drug), not saccharated iron oxide, and contains no quantitative PK parameters for the target drug. |
+| popPK | Chauhan_2023 | irrelevant | 0 | 0 | The study compares iron sucrose and ferrous sulfate for treating anemia and reports clinical outcomes (Hb, ferritin), not pharmacokinetic parameters for saccharated iron oxide. |
+| popPK | Chong_2014 | irrelevant | 0 | 0 | The study investigates the effect of sucroferric oxyhydroxide on the pharmacokinetics of other drugs (losartan, furosemide, etc.), not the pharmacokinetic parameters of sucroferric oxyhydroxide itself. |
+| popPK | Cozzolino_2014 | irrelevant | 0 | 0 | The paper studies sucroferric oxyhydroxide (Velphoro), which is a different drug from saccharated iron oxide, and does not report PK parameters for the target drug. |
+| popPK | Danielson_1996 | irrelevant | 0 | 0 | The study investigates iron(III)-hydroxide sucrose complex (Venofer), which is a different drug from saccharated iron oxide (SIO). |
+| popPK | Danielson_2003 | irrelevant | 0 | 0 | no_text gate: only 48 chars of text extracted (&lt; 400) |
+| popPK | Deng_2017 | irrelevant | 0 | 0 | The study investigates the efficacy of iron sucrose (not saccharated iron oxide) for restless legs syndrome and reports clinical outcomes and iron status markers, not pharmacokinetic parameters. |
+| popPK | Funk_2022 | irrelevant | 0 | 0 | The study investigates ferric carboxymaltose, iron sucrose, iron isomaltoside, and iron dextran, but does not include saccharated iron oxide as a subject drug. |
+| popPK | Garbowski_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ferric carboxymaltose, iron sucrose, and iron isomaltoside, not saccharated iron oxide. |
+| popPK | Georgopoulos_2005 | irrelevant | 0 | 0 | The study focuses on the efficacy of recombinant human erythropoietin (rHuEPO) in critically ill patients, using iron saccharate as a co-administered agent, and does not report pharmacokinetic parameters for saccharated iron oxide. |
+| popPK | Halamoda-Kenzaoui_2022 | irrelevant | 0 | 0 | The paper is a regulatory science review regarding nanotechnology and does not contain any pharmacokinetic data for saccharated iron oxide. |
+| PD | Halamoda-Kenzaoui_2022 | not_relevant | 0 | 0 | The paper is a regulatory science perspective on nanotechnology standardization and does not report any pharmacodynamic or exposure-response data for saccharated iron oxide. |
+| popPK | Hasa_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tetraene (an Echinacea component), not saccharated iron oxide. |
+| PD | Hasa_2020 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PK) of a transdermal patch for tetraene (Echinacea extract) and does not report any pharmacodynamic (PD) or exposure-response relationship for saccharated iron oxide. |
+| popPK | Hollands_2006 | irrelevant | 0 | 0 | The study focuses on the safety of iron sucrose (a different drug) and does not report pharmacokinetic parameters for saccharated iron oxide. |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The paper describes a computational model for predicting drug-food interactions and does not report pharmacokinetic parameters for saccharated iron oxide. |
+| PD | Kang_2026 | not_relevant | 0 | 0 | The paper describes a machine learning model for predicting drug-food interactions and does not report any pharmacodynamic or exposure-response data for saccharated iron oxide. |
+| popPK | Koutroubakis_2006 | irrelevant | 0 | 0 | The study investigates the clinical efficacy of darbepoetin-alfa and iron sucrose for anemia, not the pharmacokinetics of saccharated iron oxide. |
+| popPK | Manley_2004 | irrelevant | 0 | 0 | The study is an in-vitro dialyzability experiment for iron sucrose and iron dextran, not a pharmacokinetic study of saccharated iron oxide. |
+| popPK | Meadows_2022 | irrelevant | 0 | 0 | The study focuses on iron sucrose, not saccharated iron oxide, and is a case report without compartmental PK parameters. |
+| popPK | Mesgarpour_2017 | irrelevant | 0 | 0 | The paper is a systematic review of erythropoiesis-stimulating agents (ESAs) in critically ill patients and does not contain pharmacokinetic data for saccharated iron oxide. |
+| PD | Mesgarpour_2017 | not_relevant | 0 | 0 | The paper is a systematic review of clinical trials regarding the safety and mortality outcomes of erythropoiesis-stimulating agents, containing no pharmacokinetic or pharmacodynamic modeling or numeric PD parameters. |
+| popPK | Neven_2020 | irrelevant | 0 | 0 | The study investigates the renoprotective and mineral homeostasis effects of sucroferric oxyhydroxide (PA21) in rats, not the pharmacokinetic parameters (CL, V, etc.) of saccharated iron oxide. |
+| popPK | Okada_1983 | irrelevant | 0 | 0 | The study reports pharmacodynamic effects (hypophosphatemia) and renal phosphate handling, not pharmacokinetic disposition parameters (CL, V, t1/2) for saccharated iron oxide. |
+| popPK | Pai_2018 | irrelevant | 0 | 0 | The study focuses on labile iron release from various IV iron formulations (Venofer, Ferrlecit, etc.) and does not report pharmacokinetic parameters for saccharated iron oxide. |
+| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a general review of pharmacokinetic modeling for nanoparticles and does not report specific quantitative PK parameters for saccharated iron oxide. |
+| PD | Parrot_2026 | not_relevant | 0 | 0 | The text is a review of pharmacokinetic modeling frameworks for nanoparticles and does not report any specific pharmacodynamic or exposure-response data for saccharated iron oxide. |
+| popPK | Rhee_2023 | irrelevant | 0 | 0 | The study evaluates sucroferric oxyhydroxide (a phosphate binder) in hemodialysis patients and does not report pharmacokinetic parameters for saccharated iron oxide. |
+| popPK | Rostoker_2022 | irrelevant | 0 | 0 | The study investigates iron sucrose, ferric carboxymaltose, and iron isomaltoside, not saccharated iron oxide. |
+| popPK | Silverberg_2001 | irrelevant | 0 | 0 | The study uses iron sucrose (Venofer) as a therapeutic agent to treat anemia and reports clinical outcomes (hematocrit/hemoglobin), not pharmacokinetic parameters for saccharated iron oxide. |
+| popPK | Silverberg_2005 | irrelevant | 0 | 0 | The study focuses on clinical outcomes of epoetin beta and iron sucrose in heart failure patients, not the pharmacokinetics of saccharated iron oxide. |
+| popPK | Toblli_2007 | irrelevant | 0 | 0 | The study evaluates clinical outcomes (NT-proBNP, CRP) of iron sucrose therapy and does not report pharmacokinetic parameters for saccharated iron oxide. |
+| popPK | Toblli_2009 | irrelevant | 0 | 0 | The study investigates iron sucrose (not saccharated iron oxide) and focuses on safety/toxicology markers (hemodynamics, oxidative stress) rather than pharmacokinetic parameters. |
+| popPK | Toblli_2010 | irrelevant | 0 | 0 | The study compares toxicity of other iron compounds (dextran, ferric gluconate, etc.) and does not include saccharated iron oxide or report PK parameters for it. |
+| popPK | Wood_2005 | irrelevant | 1 | 0 | The paper is a case report of iron sucrose (a different iron formulation) toxicity in a child and does not report quantitative pharmacokinetic parameters for saccharated iron oxide. |
+| popPK | Wu_2010 | irrelevant | 0 | 0 | The study compares iron sucrose and ferric chloride, not saccharated iron oxide, and reports clinical efficacy indices rather than pharmacokinetic parameters. |
+| popPK | Yee_2002 | irrelevant | 1 | 1 | The paper discusses iron sucrose, not saccharated iron oxide, and provides only general pharmacokinetic descriptors (volume, half-life) for the wrong drug. |
+| popPK | unknown_2010 | irrelevant | 0 | 0 | no_text gate: only 39 chars of text extracted (&lt; 400) |
+| PD | unknown_2010 | not_relevant | 0 | 0 | The provided text is only a header for a poster session and contains no scientific content, data, or PD parameters. |
+| popPK | unknown_2017 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
+| PD | unknown_2017 | not_relevant | 0 | 0 | The provided text is only a title for a conference abstract collection and contains no data, analysis, or parameters regarding saccharated iron oxide. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsaccharated_iron_oxide%5D&body=Drug%3A%20saccharated_iron_oxide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_saccharated_iron_oxide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

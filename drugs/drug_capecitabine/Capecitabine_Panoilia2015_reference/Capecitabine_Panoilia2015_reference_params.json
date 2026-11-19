@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Capecitabine_Panoilia2015_reference",
+ "molar_masses": {
+  "central.C": 0.3593501
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.967592592592593e-09,
+  "F": 1.0,
+  "MM": 0.3593501,
+  "VdPerKg": 4.485714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 1.3269639065817406e-06,
+  "k21": 1.5842839036755384e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662023
+ },
+ "reference_peaks": {
+  "central.C": 0.00281430189298066
+ },
+ "stop_time": 6048000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

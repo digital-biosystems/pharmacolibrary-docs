@@ -1,0 +1,49 @@
+{
+ "model_id": "Quinine_Alvan2017_PD_hearing_threshold_shift_2",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1.0,
+  "slope": 0.15
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.0": 0.15
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Hearing threshold shift (audiometry, 0.5–8 kHz; 1000 and 2000 Hz modelled) (hearing threshold shift) against quinine concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": true,
+   "display_unit": "µM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "dB",
+  "slope": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  }
+ },
+ "x_axis": {
+  "display_unit": "µM",
+  "factor": 1.0,
+  "label": "quinine concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "dB",
+  "factor": 1.0,
+  "label": "Hearing threshold shift (audiometry, 0.5–8 kHz; 1000 and 2000 Hz modelled) (hearing threshold shift)"
+ }
+}

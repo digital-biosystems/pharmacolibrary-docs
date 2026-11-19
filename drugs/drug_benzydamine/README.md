@@ -1,0 +1,120 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;benzydamine&quot;}]"></div>
+
+# benzydamine
+
+- **generic name:** benzydamine
+- **ATC codes:** `A01AD02`, `G02CC03`, `M01AX07`, `M02AA05`, `R02AX03`
+- **DrugBank:** [DB09084](https://go.drugbank.com/drugs/DB09084) · **PubChem:** [CID 12555](https://pubchem.ncbi.nlm.nih.gov/compound/12555)
+- **molar mass:** 309.413 g/mol (C19H23N3O) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+It is administered via oral, sublingual, topical, and vaginal routes in forms such as solutions, gels, sprays, creams, lozenges, and rinses. The drug is approved for use and branded under various names in some countries.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q793143](https://www.wikidata.org/wiki/Q793143), [Wikipedia](https://en.wikipedia.org/wiki/Benzydamine?oldid=1380994610) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=benzydamine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-03 23:47 | 1:02 | 0/0/0 | 0/0/0 | 0/0/0 | 28,776/1,414 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 2/1 | 1/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 43 matched, 43 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Anfossi_1993.pdf` | Anfossi P et al., Pharmacokinetics of benzydamine in dair…, Veterinary research communi… (1993) | popPK | 10 | [10.1007/BF01839222](https://doi.org/10.1007/BF01839222) | [8146956](https://pubmed.ncbi.nlm.nih.gov/8146956) | The paper reports quantitative pharmacokinetic parameters (CL, Vd, half-lives) for benzydamine in dairy cows, with all numeric values explicitly provided in the text. |
+| `Jansen_1987.pdf` | Jansen JW, [Antithrombotic action of benzydamine], Arzneimittel-Forschung (1987) | pd | 4 |  | [3619983](https://www.ncbi.nlm.nih.gov/pubmed/3619983) | metadata signals extractable PD data (IC50) |
+| `Miró_2020.pdf` | Miró V et al., In vitro inhibition of the hepatic S-ox…, Xenobiotica; the fate of fo… (2020) | pd | 4 | [10.1080/00498254.2019.1644390](https://doi.org/10.1080/00498254.2019.1644390) | [31305200](https://www.ncbi.nlm.nih.gov/pubmed/31305200) | metadata signals extractable PD data (IC50) |
+| `Moncada_1976.pdf` | Moncada S et al., Prostaglandin endoperoxide and thrombox…, Prostaglandins (1976) | pd | 4 | [10.1016/0090-6980(76)90014-9](https://doi.org/10.1016/0090-6980(76)90014-9) | [968048](https://www.ncbi.nlm.nih.gov/pubmed/968048) | metadata signals extractable PD data (IC50) |
+| `Müller-Peddinghaus_1987.pdf` | Müller-Peddinghaus R et al., [The effect of benzydamine on the gener…, Arzneimittel-Forschung (1987) | pd | 4 |  | [3040020](https://www.ncbi.nlm.nih.gov/pubmed/3040020) | metadata signals extractable PD data (IC50) |
+| `Giri_2022.pdf` | Giri P et al., ZY12201, A Potent TGR5 Agonist: Identif…, Drug metabolism letters (2022) | pgx | 7 | [10.2174/1872312815666220315145945](https://doi.org/10.2174/1872312815666220315145945) | [35293300](https://www.ncbi.nlm.nih.gov/pubmed/35293300) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
+
+<sub>queue written 2026-10-03 23:46 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Bortolussi_2021 | not_relevant | 2 | 5 | The paper reports in vitro catalytic rates of FMO3 variants with benzydamine, but does not report in vivo pharmacokinetic or pharmacodynamic parameters in humans. |
+| popPK | Collier_1968 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study on bronchoconstriction antagonism in guinea pigs and does not report any pharmacokinetic parameters for benzydamine. |
+| PD | Collier_1968 | not_relevant | 2 | 1 | The paper reports that benzydamine was inactive in the tested model and provides no numeric PD parameters or concentration-effect data for it. |
+| popPK | Damerau_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of benzydamine's effect on granulocyte function and does not report any pharmacokinetic parameters. |
+| PGx | Gao_2016 | not_relevant | 2 | 0 | The paper focuses on structural modeling and molecular docking of hFMO3 variants with benzydamine, providing mechanistic insights into binding but reporting no in vivo or in vitro pharmacokinetic/pharmacodynamic parameter changes. |
+| popPK | Gentile_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on ER stress and cell viability, not a pharmacokinetic study, and contains no PK parameters for benzydamine. |
+| PD | Gentile_2025 | not_relevant | 2 | 1 | The paper reports qualitative cytoprotective effects and mentions nanomolar concentrations for benzydamine, but provides no numeric dose-response curves, Emax, or EC50 values in the text. |
+| popPK | Giri_2022 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
+| PD | Giri_2022 | not_relevant | 0 | 0 | The paper focuses on ZY12201, a TGR5 agonist and CYP450 inhibitor, and does not contain any pharmacodynamic or exposure-response data for benzydamine. |
+| PGx | Giri_2022 | not_relevant | 0 | 0 | The paper describes a CYP450 inhibitor tool compound (ZY12201) and does not report pharmacogenomic effects on benzydamine. |
+| popPK | Guglielmotti_1997 | irrelevant | 0 | 0 | The study is a pharmacodynamic/toxicology investigation of benzydamine's protective effects in a mouse model of endotoxemia and does not report any pharmacokinetic parameters. |
+| PGx | Hoskins_2001 | not_relevant | 0 | 0 | The paper investigates the metabolism of moclobemide, not benzydamine, and does not report pharmacogenomic effects on benzydamine PK/PD. |
+| PGx | Ichinose_2024 | not_relevant | 0 | 0 | The paper compares species differences in xenobiotic metabolism using liver slices and does not investigate the effect of specific gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Jansen_1987 | irrelevant | 0 | 0 | no_text gate: only 38 chars of text extracted (&lt; 400) |
+| PD | Jansen_1987 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters to assess pharmacodynamic relationships. |
+| popPK | Kalil_2014 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy for preventing postoperative sore throat and does not report any pharmacokinetic parameters for benzydamine. |
+| PD | Kalil_2014 | not_relevant | 1 | 0 | The paper is a review of clinical trials regarding the efficacy of benzydamine for sore throat and explicitly states that dose-response relationships need to be explored in future trials, providing no numeric PD parameters. |
+| popPK | Kaval_2022 | irrelevant | 0 | 0 | The study is an in-vitro investigation of anti-inflammatory cytokine expression and cytotoxicity, containing no pharmacokinetic parameters for benzydamine. |
+| PGx | Lang_2000 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics for benzydamine metabolism by FMO and P450 isoforms but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Larsen_2023 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of acaricides on liver enzymes in bovine microsomes and does not report any pharmacogenomic effects (gene variants) on the PK/PD of benzydamine. |
+| popPK | Miró_2020 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
+| PD | Miró_2020 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibition of albendazole metabolism by thymol, not the pharmacodynamics of benzydamine. |
+| popPK | Moncada_1976 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
+| PD | Moncada_1976 | not_relevant | 0 | 0 | The provided text is a title regarding prostaglandin systems and does not contain any data, analysis, or mention of benzydamine or its pharmacodynamic parameters. |
+| popPK | Müller-Peddinghaus_1987 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
+| PD | Müller-Peddinghaus_1987 | not_relevant | 0 | 0 | The paper investigates the biochemical mechanism of benzydamine on reactive oxygen species and enzyme pathways, not a pharmacokinetic-pharmacodynamic (PK/PD) or exposure-response relationship with numeric PD parameters. |
+| popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain any pharmacokinetic data for benzydamine. |
+| PD | Obrador_2026 | not_relevant | 0 | 0 | The text is a general review of radiomitigators and does not contain any specific data, analysis, or mention of benzydamine or its pharmacodynamic parameters. |
+| popPK | Ohnishi_1980 | irrelevant | 0 | 0 | The study focuses on the pharmacological activity of protizinic acid, with benzydamine serving only as a comparator in platelet aggregation assays without any pharmacokinetic parameters reported. |
+| PD | Ohnishi_1980 | not_relevant | 0 | 0 | The paper focuses on protizinic acid and only mentions benzydamine as a reference agent in a ranking list without providing specific numeric PD parameters or exposure-response data for it. |
+| PGx | Pike_2001 | not_relevant | 0 | 0 | The paper studies the metabolism of a disulfiram metabolite by FMO1, using benzydamine only as a probe for enzyme activity, and does not report pharmacogenomic effects on benzydamine's PK or PD. |
+| popPK | Quane_1998 | irrelevant | 1 | 0 | The paper is a pharmacological review discussing mechanism of action and in vitro activities, lacking quantitative population pharmacokinetic parameters (CL, V, ka) for benzydamine. |
+| PD | Quane_1998 | not_relevant | 3 | 4 | The text is a qualitative review that lists specific in vitro concentrations for various effects (e.g., TNF-alpha EC50 25 µM, neutrophil inhibition 30-100 µM) but does not present a formal PK/PD model, dose-response curve, or population-level analysis linking exposure to effect in a clinical or pharmacokinetic context. |
+| PGx | Reddy_2018 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling for FMO substrates including benzydamine but does not report specific pharmacogenomic effects (gene variants) on PK parameters. |
+| popPK | Riboldi_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of benzydamine's effect on monocyte migration and MAPK activation, reporting no pharmacokinetic parameters. |
+| PGx | Taniguchi-Takizawa_2015 | not_relevant | 0 | 0 | The study characterizes species differences in liver microsomal metabolism and enzyme identification (FMO vs CYP), but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters. |
+| PGx | Uehara_2015 | not_relevant | 0 | 0 | The paper focuses on MPTP metabolism in marmosets and uses benzydamine only as a probe substrate for FMO activity, not as the primary drug of interest for pharmacogenomic analysis. |
+| PGx | Xu_2017 | not_relevant | 2 | 5 | The paper reports genetic associations with FMO3 protein abundance and mRNA expression, but does not report changes in specific pharmacokinetic (e.g., AUC, clearance) or pharmacodynamic parameters of benzydamine in humans. |
+| PGx | Yeung_2007 | not_relevant | 0 | 0 | The paper studies FMO3 variants and their effect on trimethylamine and benzydamine metabolism in vitro, but does not report pharmacogenomic effects on PK/PD parameters in humans or for the specific clinical context of benzydamine. |
+| popPK | Ősz_2023 | irrelevant | 1 | 0 | The paper is a review of pharmacodynamic properties and mechanisms of action, not a pharmacokinetic study, and it lacks quantitative disposition parameters like clearance or volume of distribution. |
+| PD | Ősz_2023 | not_relevant | 2 | 0 | The paper is a qualitative review of chemical structure and proposed mechanisms, lacking any quantitative exposure-response or dose-response data with numeric PD parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbenzydamine%5D&body=Drug%3A%20benzydamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_benzydamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

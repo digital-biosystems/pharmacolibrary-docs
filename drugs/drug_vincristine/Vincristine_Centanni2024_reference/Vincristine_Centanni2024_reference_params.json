@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Vincristine_Centanni2024_reference",
+ "molar_masses": {
+  "central.C": 0.8249719999999999
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2555555555555557e-05,
+  "F": 1.0,
+  "MM": 0.8249719999999999,
+  "VdPerKg": 0.0003328571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.0013590844062947066,
+  "k21": 5.4976851851851844e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662092
+ },
+ "reference_peaks": {
+  "central.C": 1.8001170950839763e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

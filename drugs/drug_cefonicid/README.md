@@ -1,0 +1,74 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefonicid&quot;}]"></div>
+
+# cefonicid
+
+- **generic name:** cefonicid
+- **ATC codes:** `J01DC06`
+- **DrugBank:** [DB01328](https://go.drugbank.com/drugs/DB01328) · **PubChem:** [CID 43594](https://pubchem.ncbi.nlm.nih.gov/compound/43594)
+- **molar mass:** 542.566 g/mol (C18H18N6O8S3) — DrugBank
+- **groups:** approved
+
+## About
+
+Cefonicid is a second-generation cephalosporin antibiotic used to treat bacterial infections. It is administered as an injection via intramuscular or intravenous routes. The drug is currently approved and in use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q5057286](https://www.wikidata.org/wiki/Q5057286), [Wikipedia](https://en.wikipedia.org/wiki/Cefonicid?oldid=1330776786) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Phelps_1986_reference](drugs/drug_cefonicid/Cefonicid_Phelps1986_reference.md) | — | 1-compartment (no model) | 0 | Phelps RT et al., Multiple-dose pharmacokinetics of cefon…, Antimicrobial agents and ch… (1986) | [10.1128/AAC.29.5.913](https://doi.org/10.1128/AAC.29.5.913) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [Benson_1993_PB](drugs/drug_cefonicid/pd_Benson_1993_PB.md) | protein binding ← cefonicid · model not identified | — | Benson JM et al., In vitro protein binding of cefonicid a…, Antimicrobial agents and ch… (1993) | [10.1128/AAC.37.6.1343](https://doi.org/10.1128/AAC.37.6.1343) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefonicid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` other/unknown | DrugBank actor |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 11:16 | 1:06 | 0/1/0 | 1/0/0 | 0/0/0 | 40,621/1,140 | einfracz / qwen3.8-27b | 1 | 0/0 | 1/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 18 matched, 18 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Phelps_1986.pdf` | Phelps RT et al., Multiple-dose pharmacokinetics of cefon…, Antimicrobial agents and ch… (1986) | popPK | 10 | [10.1128/AAC.29.5.913](https://doi.org/10.1128/AAC.29.5.913) | [3729349](https://pubmed.ncbi.nlm.nih.gov/3729349) | Reports a two-compartment PK model and elimination half-life range for cefonicid in humans, but specific values for clearance, volume, and intercompartmental clearance are not explicitly listed in the provided evidence text. |
+| `Pochini_2008.pdf` | Pochini L et al., Interaction of beta-lactam antibiotics…, Chemico-biological interact… (2008) | pd | 4 | [10.1016/j.cbi.2008.03.003](https://doi.org/10.1016/j.cbi.2008.03.003) | [18452908](https://www.ncbi.nlm.nih.gov/pubmed/18452908) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-07 11:15 UTC</sub>
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefonicid%5D&body=Drug%3A%20cefonicid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefonicid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:15 UTC</sub>

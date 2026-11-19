@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 3000 mg parenteral (J01DB04)",
+ "model_id": "Cefazolin_Ryan2022_reference",
+ "molar_masses": {
+  "central.C": 0.454507
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9e-06,
+  "F": 1.0,
+  "MM": 0.454507,
+  "VdPerKg": 0.00026000000000000003,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.003,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662075
+ },
+ "reference_peaks": {
+  "central.C": 0.1426308370803278
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

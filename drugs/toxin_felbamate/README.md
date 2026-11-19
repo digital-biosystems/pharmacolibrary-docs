@@ -1,0 +1,221 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Felbamate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Felbamate_Kelley1997_reference&quot;,&quot;label&quot;:&quot;Kelley_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_felbamate/Felbamate_Kelley1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Felbamate_Adusumalli1991_reference&quot;,&quot;label&quot;:&quot;Adusumalli_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_felbamate/Felbamate_Adusumalli1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Felbamate_Richens1997_reference&quot;,&quot;label&quot;:&quot;Richens_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_felbamate/Felbamate_Richens1997_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Felbamate
+
+- **generic name:** Felbamate
+- **T3DB:** [T3D2937](http://www.t3db.ca/toxins/T3D2937) · **DrugBank:** [DB00949](https://go.drugbank.com/drugs/DB00949) · **PubChem:** [CID 3331](https://pubchem.ncbi.nlm.nih.gov/compound/3331)
+- **groups:** approved
+
+## About
+
+Felbamate is an anticonvulsant drug used in the treatment of epilepsy. It is used to treat partial seizures (with and without generalization) in adults and partial and generalized seizures associated with Lennox-Gastaut syndrome in children. It has a weak inhibitory effect on GABA receptor binding sites.
+
+- **Category:** Drug, Synthetic Toxin
+- **Route of exposure:** oral. >90%
+- **Sources and uses:** For use only in those patients who respond inadequately to alternative treatments and whose epilepsy is so severe that a substantial risk of aplastic anemia and/or liver failure is deemed acceptable in light of the benefits conferred by its use.
+- **Mechanism of toxicity:** The mechanism by which felbamate exerts its anticonvulsant activity is unknown, but in animal test systems designed to detect anticonvulsant activity, felbamate has properties in common with other marketed anticonvulsants. <i>In vitro</i> receptor binding studies suggest that felbamate may be an antagonist at the strychnine-insensitive glycine-recognition site of the N-methyl-D-aspartate (NMDA) receptor-ionophore complex. Antagonism of the NMDA receptor glycine binding site may block the effects of the excitatory amino acids and suppress seizure activity. …
+- **Health effects:** May cause a potentially dangerous rash that may develop into Stevens Johnson syndrome, an extremely rare but potentially fatal skin disease.
+- **Acute toxicity:** LD50: 5000 mg/kg (Oral, Rat)
+- **Treatment:** General supportive measures should be employed if overdosage occurs. …
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D2937">T3DB T3D2937</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 25451-15-4 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4995">ChEBI 4995</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| felbamate | parent | 238.243 | C11H14N2O4 | PubChem | [3331](https://pubchem.ncbi.nlm.nih.gov/compound/3331) | Adusumalli_1991, Cornford_1992, Graves_1989, Kelley_1997, Richens_1997 |
+
+## Start here
+
+> **Kelley_1997_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> children. [Run it in the simulator](drugs/toxin_felbamate/Felbamate_Kelley1997_reference.md?tab=Simulation) · [record](drugs/toxin_felbamate/Felbamate_Kelley1997_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Richens_1997 · CL</text><circle cx="237.7" cy="30.0" r="4" fill="#ef6c00"><title>Richens_1997 · CL: 1.872 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kelley_1997 · CL ·/kg</text><circle cx="270.3" cy="46.0" r="4" fill="#78909c"><title>Kelley_1997 · CL ·/kg: 2.877 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Adusumalli_1991 · CL ·/kg</text><circle cx="427.9" cy="62.0" r="4" fill="#ef6c00"><title>Adusumalli_1991 · CL ·/kg: 22.89 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="128" viewBox="0 0 560 128" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="106" stroke="#ddd"/><text x="190.0" y="120" font-size="10" text-anchor="middle">10</text><line x1="306.7" y1="18" x2="306.7" y2="106" stroke="#ddd"/><text x="306.7" y="120" font-size="10" text-anchor="middle">100</text><line x1="423.3" y1="18" x2="423.3" y2="106" stroke="#ddd"/><text x="423.3" y="120" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="106" stroke="#ddd"/><text x="540.0" y="120" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Graves_1989 · V</text><circle cx="272.5" cy="30.0" r="4" fill="#ef6c00"><title>Graves_1989 · V: 51 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kelley_1997 · V ·/kg</text><circle cx="283.7" cy="46.0" r="4" fill="#78909c"><title>Kelley_1997 · V ·/kg: 63.56 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Adusumalli_1991 · V</text><circle cx="320.3" cy="62.0" r="4" fill="#ef6c00"><title>Adusumalli_1991 · V: 131 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Cornford_1992 · V ·/kg</text><circle cx="508.7" cy="78.0" r="4" fill="#ef6c00"><title>Cornford_1992 · V ·/kg: 5390 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Richens_1997 · V ·/kg</text><circle cx="508.7" cy="94.0" r="4" fill="#ef6c00"><title>Richens_1997 · V ·/kg: 5390 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kelley_1997_reference](drugs/toxin_felbamate/Felbamate_Kelley1997_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kelley MT et al., Population pharmacokinetics of felbamat…, Therapeutic drug monitoring (1997) | [10.1097/00007691-199702000-00005](https://doi.org/10.1097/00007691-199702000-00005) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Adusumalli_1991_reference](drugs/toxin_felbamate/Felbamate_Adusumalli1991_reference.md) | ▶ model + simulator | 1-compartment, IV | 6 | Adusumalli VE et al., Felbamate pharmacokinetics in the rat,…, Drug metabolism and disposi… (1991) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Cornford_1992_reference](drugs/toxin_felbamate/Felbamate_Cornford1992_reference.md) | held back | 1-compartment, IV | 2 | Cornford EM et al., Blood-brain barrier penetration of felb…, Epilepsia (1992) | [10.1111/j.1528-1157.1992.tb02205.x](https://doi.org/10.1111/j.1528-1157.1992.tb02205.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Graves_1989_reference](drugs/toxin_felbamate/Felbamate_Graves1989_reference.md) | held back | 1-compartment, IV | 1 | Graves NM et al., Pharmacokinetics of felbamate, a novel…, Pharmacotherapy (1989) | [10.1002/j.1875-9114.1989.tb04151.x](https://doi.org/10.1002/j.1875-9114.1989.tb04151.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Richens_1997_reference](drugs/toxin_felbamate/Felbamate_Richens1997_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Richens A et al., Single and multiple dose pharmacokineti…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.00642.x](https://doi.org/10.1046/j.1365-2125.1997.00642.x) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Leppik_1991_seizure_freq](drugs/toxin_felbamate/pd_Leppik_1991_seizure_freq.md) | partial seizures ← felbamate · inhibition effect | — | Leppik IE et al., Felbamate for partial seizures: results…, Neurology (1991) | [10.1212/wnl.41.11.1785](https://doi.org/10.1212/wnl.41.11.1785) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=felbamate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2E1` substrate, `CYP3A4` inducer/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: GRIN2A (target), GRIN2B (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 17:24 | 14:50 | 5/0/0 | 1/0/0 | 0/0/0 | 358,082/25,338 | einfracz / qwen3.8-flash-next | 7 | 1/6 | 7/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 198 matched, 162 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 1  ·  needs review 4  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Adusumalli_1991.pdf` | Adusumalli VE et al., Felbamate pharmacokinetics in the rat,…, Drug metabolism and disposi… (1991) | popPK | 10 |  | [1687019](https://pubmed.ncbi.nlm.nih.gov/1687019) | The evidence explicitly reports quantitative pharmacokinetic parameters (half-life, Cmax, Vd, clearance) for felbamate in rats, rabbits, and dogs. |
+| `Adusumalli_1992.pdf` | Adusumalli VE et al., Pharmacokinetics of felbamate in pediat…, Epilepsia (1992) | popPK | 10 | [10.1111/j.1528-1157.1992.tb02206.x](https://doi.org/10.1111/j.1528-1157.1992.tb02206.x) | [1396441](https://pubmed.ncbi.nlm.nih.gov/1396441) | The paper reports kinetic parameters for felbamate in dogs, but the specific numeric values for these parameters are not present in the provided abstract/evidence. |
+| `Gram_1996.pdf` | Gram L, Pharmacokinetics of new antiepileptic d…, Epilepsia 37 Suppl (1996) | popPK | 10 | [10.1111/j.1528-1157.1996.tb06034.x](https://doi.org/10.1111/j.1528-1157.1996.tb06034.x) | [8941037](https://pubmed.ncbi.nlm.nih.gov/8941037) | The evidence is a review abstract that references kinetic parameters like half-life but does not present any actual numeric values or tables in the provided text. |
+| `Graves_1989.pdf` | Graves NM et al., Pharmacokinetics of felbamate, a novel…, Pharmacotherapy (1989) | popPK | 10 | [10.1002/j.1875-9114.1989.tb04151.x](https://doi.org/10.1002/j.1875-9114.1989.tb04151.x) | [2694113](https://pubmed.ncbi.nlm.nih.gov/2694113) | The paper explicitly reports the volume of distribution (51 L) and clearance equation parameters for felbamate in humans. |
+| `Kelley_1997.pdf` | Kelley MT et al., Population pharmacokinetics of felbamat…, Therapeutic drug monitoring (1997) | popPK | 9 | [10.1097/00007691-199702000-00005](https://doi.org/10.1097/00007691-199702000-00005) | [9029743](https://pubmed.ncbi.nlm.nih.gov/9029743) | The text explicitly reports quantitative pharmacokinetic parameters (clearance and volume of distribution) for felbamate in children. |
+| `Richens_1997.pdf` | Richens A et al., Single and multiple dose pharmacokineti…, British journal of clinical… (1997) | popPK | 9 | [10.1046/j.1365-2125.1997.00642.x](https://doi.org/10.1046/j.1365-2125.1997.00642.x) | [9278196](https://pubmed.ncbi.nlm.nih.gov/9278196) | The paper reports quantitative pharmacokinetic parameters (clearance, half-life) for felbamate in humans, though only summary means are provided in the text rather than full individual data or complex model parameters. |
+| `Cornford_1992.pdf` | Cornford EM et al., Blood-brain barrier penetration of felb…, Epilepsia (1992) | popPK | 8 | [10.1111/j.1528-1157.1992.tb02205.x](https://doi.org/10.1111/j.1528-1157.1992.tb02205.x) | [1396440](https://pubmed.ncbi.nlm.nih.gov/1396440) | The paper reports quantitative kinetic parameters including extraction ratios, PS products for rats, rabbits, and mice, and partition coefficients directly in the text. |
+| `Pai_1996.pdf` | Pai SM et al., Characterization of AUCs from sparsely…, Pharmaceutical research (1996) | popPK | 8 | [10.1023/a:1016097227603](https://doi.org/10.1023/a:1016097227603) | [8893263](https://pubmed.ncbi.nlm.nih.gov/8893263) | The paper reports PK parameters (ka, ke, Vd) for felbamate in rats, but the numeric values are not explicitly listed in the text and likely reside in tables or figures not provided in the evidence. |
+| `Sachdeo_1998.pdf` | Sachdeo RC et al., Evaluation of the potential interaction…, Journal of clinical pharmac… (1998) | popPK | 8 | [10.1002/j.1552-4604.1998.tb04409.x](https://doi.org/10.1002/j.1552-4604.1998.tb04409.x) | [9549651](https://pubmed.ncbi.nlm.nih.gov/9549651) | The paper reports on felbamate pharmacokinetic parameters (clearance, Cmax, etc.) in humans, but the evidence text only states that these values were "not statistically different" or "unchanged" without providing the specific numeric values themselves. |
+| `Banfield_1996.pdf` | Banfield CR et al., The effect of age on the apparent clear…, Therapeutic drug monitoring (1996) | popPK | 6 | [10.1097/00007691-199602000-00004](https://doi.org/10.1097/00007691-199602000-00004) | [8848816](https://pubmed.ncbi.nlm.nih.gov/8848816) | The paper analyzes felbamate pharmacokinetics using a population model, but no specific numeric kinetic parameters (e.g., clearance values, volumes) are provided in the text, only relative percentage changes. |
+| `Sachdeo_1997.pdf` | Sachdeo R et al., Tolerability and pharmacokinetics of mo…, Epilepsia (1997) | popPK | 6 | [10.1111/j.1528-1157.1997.tb01253.x](https://doi.org/10.1111/j.1528-1157.1997.tb01253.x) | [9579889](https://pubmed.ncbi.nlm.nih.gov/9579889) | The paper reports pharmacokinetic parameters (Cmax, AUC, clearance) for felbamate in humans, but the specific numeric values are not present in the provided text, which only describes trends and statistical significance. |
+| `Wagner_1994.pdf` | Wagner ML, Felbamate: a new antiepileptic drug, American journal of hospita… (1994) | popPK | 6 |  | [7942890](https://pubmed.ncbi.nlm.nih.gov/7942890) | The paper is a review that mentions felbamate's half-life (~1 day) and absorption (&gt;90%) as qualitative summaries from prior studies, rather than reporting original quantitative kinetic parameters. |
+
+<sub>queue written 2026-11-14 17:21 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Adusumalli_1992 | relevant | 10 | 2 | The paper reports kinetic parameters for felbamate in dogs, but the specific numeric values for these parameters are not present in the provided abstract/evidence. |
+| PGx | Anderson_1998 | not_relevant | 0 | 0 | The paper discusses general drug-drug interactions and enzyme induction/inhibition mechanisms for felbamate but does not report on pharmacogenomic (gene variant/genotype) effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Armijo_1997 | irrelevant | 0 | 0 | The paper is a clinical review comparing multiple antiepileptic drugs and contains no quantitative toxicokinetic parameters for felbamate. |
+| popPK | Armijo_2002 | irrelevant | 2 | 0 | The paper is a review of therapeutic monitoring considerations for new antiepileptics, including felbamate, but reports no specific quantitative toxicokinetic parameters or numeric values. |
+| popPK | Asconapé_2014 | irrelevant | 0 | 0 | This is a general review article listing antiepileptic drugs eliminated by various pathways without providing any specific quantitative kinetic parameters or numeric values for felbamate. |
+| PGx | Aylón_2026 | not_relevant | 0 | 0 | The paper is a review of P-glycoprotein substrates and explicitly states there is insufficient information to categorize felbamate, providing no specific pharmacogenomic effect data on PK/PD parameters for it. |
+| popPK | Banfield_1996 | relevant | 6 | 2 | The paper analyzes felbamate pharmacokinetics using a population model, but no specific numeric kinetic parameters (e.g., clearance values, volumes) are provided in the text, only relative percentage changes. |
+| popPK | Battino_1995 | irrelevant | 0 | 0 | The paper is a review article summarizing existing literature and contains no original numeric kinetic parameters for felbamate in the text. |
+| popPK | Baulac_1997 | irrelevant | 0 | 0 | The paper is a clinical review of new antiepileptic drugs where felbamate is mentioned only as a comparator or co-drug in a therapeutic context, with no quantitative toxicokinetic parameters reported. |
+| PGx | Benedetti_2000 | not_relevant | 0 | 0 | The paper reviews enzyme induction/inhibition (drug-drug interactions) and does not report on the effects of specific gene variants, genotypes, or phenotypes (pharmacogenomics) on felbamate's pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Benetello_1995 | irrelevant | 1 | 0 | The paper is a general review of new antiepileptic drugs mentioning felbamate only in the context of its mechanism of action, with no quantitative kinetic parameters provided. |
+| PGx | Bergin_2002 | not_relevant | 0 | 0 | The text mentions pharmacogenetics in the future tense as an anticipated advance but reports no specific gene-variant effects on felbamate PK or PD parameters. |
+| popPK | Bialer_1993 | irrelevant | 2 | 0 | The paper is a comparative review of multiple drugs that mentions general elimination pathways for felbamate but does not report specific quantitative kinetic parameters (like half-life, Vd, or clearance) for felbamate in the text. |
+| popPK | Bialer_2005 | irrelevant | 2 | 0 | This is a review article overviewing the pharmacokinetics of multiple drugs, and the provided evidence contains no numeric kinetic parameters for felbamate. |
+| popPK | Bialer_2006 | irrelevant | 0 | 0 | The paper is a review of second-generation antiepileptic drugs where felbamate appears only as a chemical reference point for a derivative (fluorofelbamate), with no quantitative kinetic parameters for felbamate reported. |
+| popPK | Bialer_2012 | irrelevant | 1 | 0 | The paper is a general review of chemical properties of antiepileptic drugs with no quantitative toxicokinetic parameters for felbamate. |
+| popPK | Bourdet_2001 | irrelevant | 0 | 0 | This is a general review article about epilepsy management in the elderly that mentions felbamate only as one of several antiepileptic drugs without providing any specific quantitative toxicokinetic parameters. |
+| popPK | Bourgeois_2000 | irrelevant | 2 | 0 | The paper is a general review/comparison of AED pharmacokinetic properties without reporting specific quantitative kinetic parameters for felbamate. |
+| PGx | Burns_2016 | not_relevant | 2 | 1 | The paper focuses on clobazam pharmacokinetics; felbamate is only mentioned as a comedication affecting clobazam levels, with no data on felbamate's own PK/PD or pharmacogenomic effects. |
+| popPK | Carmant_1994 | irrelevant | 2 | 1 | The paper reports clinical efficacy and mentions correlations with clearance/concentration but does not provide specific quantitative toxicokinetic parameter values (e.g., specific CL, Vd, t1/2) in the extracted evidence. |
+| PGx | Cokley_2022 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions between Paxlovid (ritonavir) and felbamate via CYP3A4 inhibition, not pharmacogenomic effects of gene variants. |
+| popPK | Colucci_1996 | irrelevant | 1 | 0 | Felbamate is the perpetrator, not the subject; the kinetic parameters reported are for clonazepam and its metabolites, with no specific numeric kinetic parameters for felbamate provided. |
+| popPK | Colucci_1996_2 | irrelevant | 1 | 1 | The paper reports kinetic parameters for lamotrigine, with felbamate only acting as the interacting agent/co-exposure. |
+| popPK | Contin_1999 | irrelevant | 1 | 0 | The paper focuses on the kinetics of clobazam and its metabolite when felbamate is used as a co-administered interacting drug, not felbamate itself. |
+| popPK | De_1998 | irrelevant | 0 | 0 | The paper reports on pharmacodynamic interactions and seizure efficacy, not kinetic parameters; it explicitly states plasma levels were not influenced but provides no numeric kinetic data. |
+| popPK | De_2000 | irrelevant | 1 | 10 | The paper reports pharmacodynamic interactions in mice and explicitly states that no significant pharmacokinetic interactions (plasma levels) were observed, providing no quantitative toxicokinetic parameters for felbamate. |
+| popPK | De_2000_2 | irrelevant | 1 | 0 | The paper reports drug-drug interaction outcomes (seizure protection) where felbamate is a comparator, and explicitly states no significant changes in plasma levels, providing no kinetic parameters. |
+| popPK | De_2001 | irrelevant | 0 | 0 | The paper reports on pharmacodynamic interactions (seizure protection) and explicitly states no significant pharmacokinetic changes (plasma levels) occurred, offering no kinetic parameters for felbamate. |
+| popPK | Deckers_2003 | irrelevant | 2 | 0 | The paper is a review article summarizing pharmacokinetics of multiple newer AEDs, but the extracted evidence contains no specific quantitative kinetic parameters for felbamate. |
+| PGx | Dieckhaus_2000 | not_relevant | 3 | 4 | The paper discusses potential UGT genotype/phenotype effects on felbamate metabolism but concludes with a null finding ("no effect") rather than reporting a quantified pharmacogenomic effect on a PK parameter. |
+| popPK | Dieckhaus_2002 | irrelevant | 1 | 0 | The paper is a qualitative review of mechanisms of idiosyncratic drug reactions without reporting quantitative toxicokinetic parameters for felbamate. |
+| PGx | Egnell_2003 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (felbamate and carbamazepine) and enzyme kinetics (heteroactivation), but does not report any pharmacogenomic (genetic) variants or phenotypes. |
+| popPK | Gareri_1999 | irrelevant | 1 | 0 | The paper is a general review of epilepsy management in the elderly that mentions felbamate only qualitatively and contains no quantitative kinetic parameters. |
+| popPK | Gareri_2004 | irrelevant | 2 | 0 | Felbamate is used here only as a comparator drug in an efficacy study to assess interactions with carbenoxolone, with no kinetic parameters reported for felbamate itself. |
+| popPK | Gatti_2000 | irrelevant | 1 | 0 | The provided evidence is a general review abstract that discusses pharmacokinetic characteristics qualitatively (e.g., enzyme induction/inhibition) but contains no specific quantitative toxicokinetic parameters or numeric values for felbamate. |
+| popPK | Gidal_1994 | irrelevant | 1 | 2 | The paper is a clinical case report on a drug-drug interaction; it reports phenobarbital concentrations resulting from the interaction, not quantitative kinetic parameters for felbamate itself. |
+| popPK | Gidal_1997 | irrelevant | 2 | 2 | The paper reports kinetic parameters for lamotrigine (the subject drug) in the presence of felbamate (the perpetrator/co-exposure), but does not report quantitative kinetic parameters for felbamate itself. |
+| PGx | Glue_1997_2 | not_relevant | 0 | 0 | The paper reports drug-drug interactions involving felbamate and CYP450 enzymes, but does not assess the effect of human genetic variants (pharmacogenomics) on felbamate PK/PD parameters. |
+| popPK | Gram_1996 | relevant | 10 | 0 | The evidence is a review abstract that references kinetic parameters like half-life but does not present any actual numeric values or tables in the provided text. |
+| popPK | Graves_1998 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for carbamazepine, with felbamate appearing only as a co-administered drug affecting carbamazepine clearance. |
+| PGx | Hachad_2002 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions and general pharmacokinetic characteristics but does not report any pharmacogenomic effects of gene variants or phenotypes on felbamate's PK or PD parameters. |
+| popPK | Hooper_1996 | irrelevant | 3 | 6 | The paper reports valproic acid kinetics; felbamate is a co-exposure where only steady-state trough concentrations are reported, which are not kinetic parameters like clearance, half-life, or Vd. |
+| PGx | Hosomi_2011 | not_relevant | 0 | 0 | The paper evaluates cytotoxicity of felbamate metabolites via CYP3A4 expression in cell lines but does not analyze human gene variants or report PK/PD parameters affected by genotype. |
+| popPK | Hulsman_1995 | irrelevant | 1 | 0 | The paper reports pharmacokinetic parameters for oxcarbazepine metabolites, with felbamate acting only as a comparator/co-exposure agent; no kinetic parameters for felbamate itself are reported. |
+| popPK | Italiano_2013 | irrelevant | 1 | 0 | The paper is a review focusing on other drugs (lamotrigine, levetiracetam, etc.) and mentions felbamate only as one of several drugs where aging effects have been studied, but provides no specific numeric kinetic parameters for felbamate in the evidence. |
+| PGx | Italiano_2014 | not_relevant | 0 | 0 | The text is a general review of drug-drug interactions and does not report any pharmacogenomic effects on felbamate PK/PD parameters. |
+| popPK | Jacob_2016 | irrelevant | 2 | 0 | The paper is a general review of TDM for multiple AEDs that mentions felbamate only in the abstract list, with no specific kinetic parameters or data for felbamate in the provided text. |
+| PGx | Jaisupa_2026 | not_relevant | 0 | 0 | The paper studies drug-drug interactions involving felbamate as an inhibitor/substrate affecting cannabidiol metabolism, not pharmacogenomic effects on felbamate's own PK/PD parameters. |
+| popPK | Johannessen_2006 | irrelevant | 2 | 0 | This is a review article discussing the utility of therapeutic drug monitoring with no specific quantitative kinetic parameters or models provided for felbamate. |
+| popPK | Johannessen_2010 | irrelevant | 1 | 0 | This is a review of drug interactions for multiple antiepileptic drugs; it mentions felbamate qualitatively regarding interaction potential but provides no quantitative toxicokinetic parameters or model data. |
+| popPK | Johannessen_2010_2 | irrelevant | 0 | 0 | The paper is a review of drug interactions where felbamate is only mentioned in the context of half-life changes caused by enzyme inducers (reference [38, 39]), with no primary quantitative kinetic parameters reported by this paper itself. |
+| popPK | Kaufman_2026 | irrelevant | 0 | 0 | The paper is a case report about spinal muscular atrophy complications; felbamate is only mentioned as a prescribed medication with dosage, without any toxicokinetic parameters or concentration data. |
+| popPK | Ketter_1999 | irrelevant | 1 | 0 | The paper is a review of drug-drug interactions and pharmacokinetics profiles without reporting specific quantitative kinetic parameters for felbamate. |
+| popPK | Lacerda_2006 | irrelevant | 0 | 0 | The paper is a general review of AED therapy in renal/hepatic dysfunction where felbamate is only mentioned qualitatively as being hepatotoxic, with no quantitative toxicokinetic parameters reported. |
+| popPK | Landmark_2008 | irrelevant | 2 | 1 | The paper is a qualitative review of chemical modifications of antiepileptic drugs that mentions felbamate analogues but reports no specific quantitative kinetic parameters for felbamate. |
+| PGx | Levy_1995 | not_relevant | 0 | 0 | The text mentions felbamate only as an inhibitor of CYP2C19 affecting Phenytoin metabolism, not as a victim drug with its own PK parameters altered by a gene variant. |
+| popPK | Levy_2003 | irrelevant | 2 | 1 | Felbamate is mentioned only as one of six inhibitors in a qualitative literature review, with no specific toxicokinetic parameters (e.g., half-life, clearance, Vd) reported for it in the provided text. |
+| popPK | Lukka_2021 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of lacosamide, with felbamate appearing only as a co-administered drug that affects lacosamide's clearance, not as the substance being kinetically modeled. |
+| popPK | Nassiri_2000 | irrelevant | 0 | 0 | The paper is a general clinical review of antiepileptic drugs and does not report any quantitative toxicokinetic parameters for felbamate in the provided evidence. |
+| popPK | Obach_2008 | irrelevant | 0 | 0 | Felbamate is used only as a comparator in a screening study and explicitly noted for having NO covalent binding; no kinetic parameters are reported. |
+| popPK | Onat_2004 | irrelevant | 0 | 0 | The paper is a general review of adverse effects of antiepileptic drugs and contains no quantitative toxicokinetic parameters for felbamate. |
+| popPK | Pai_1996 | relevant | 8 | 3 | The paper reports PK parameters (ka, ke, Vd) for felbamate in rats, but the numeric values are not explicitly listed in the text and likely reside in tables or figures not provided in the evidence. |
+| popPK | Patsalos_1994 | irrelevant | 1 | 0 | This is a broad review of 12 new antiepileptic drugs that qualitatively discusses felbamate's pharmacokinetics and interactions but provides no specific quantitative kinetic parameters. |
+| popPK | Perucca_1996 | irrelevant | 1 | 0 | The paper is a review focusing on topiramate, zonisamide, and tiagabine, mentioning felbamate only as a comparator from the early 1990s without providing any quantitative kinetic parameters for it. |
+| popPK | Perucca_1996_2 | irrelevant | 2 | 0 | The paper is a broad comparative review of multiple antiepileptic drugs with no quantitative pharmacokinetic parameters or specific kinetic data for felbamate reported in the provided text. |
+| popPK | Perucca_2001 | irrelevant | 1 | 0 | The provided evidence is a review of clinical pharmacology that mentions felbamate but contains no specific quantitative toxicokinetic parameters or numeric values. |
+| popPK | Perucca_2006 | irrelevant | 2 | 0 | This is a review article discussing qualitative age-related changes in clearance for a group of new-generation antiepileptic drugs without providing specific quantitative PK parameters for felbamate. |
+| popPK | Pietrzak_2004 | irrelevant | 0 | 0 | The study reports pharmacodynamic effects (sleeping time, motor coordination) of felbamate-ethanol interaction in mice but contains no quantitative toxicokinetic parameters for felbamate. |
+| PGx | Plissonneau_2026 | not_relevant | 0 | 0 | The study investigates the effect of hepatic steatosis (pathology), not a gene variant/genotype, on felbamate metabolism. |
+| popPK | Podell_1998 | irrelevant | 0 | 0 | The paper is a general veterinary review on antiepileptic drug therapy that mentions felbamate only as a clinical option without reporting any quantitative toxicokinetic parameters. |
+| popPK | Rambeck_1996 | irrelevant | 0 | 0 | The paper describes qualitative pharmacokinetic interactions affecting felbamate concentrations but provides no quantitative kinetic parameters (e.g., half-life, clearance, Vd) for felbamate itself. |
+| PGx | Reidenberg_1995 | not_relevant | 1 | 0 | The paper reports a drug-drug interaction (felbamate affecting phenobarbital PK) in healthy volunteers without any genetic stratification or genotyping. |
+| PGx | Russell_2018 | not_relevant | 0 | 0 | The study reports drug-drug interactions affecting clobazam pharmacokinetics, not a pharmacogenomic effect on felbamate. |
+| popPK | Saano_1995 | irrelevant | 0 | 0 | The paper reports kinetic parameters for oral contraceptive steroids (gestodene and ethinyl estradiol) with felbamate acting as an interacting agent, not as the subject substance whose kinetics are characterized. |
+| popPK | Sachdeo_1997 | relevant | 6 | 1 | The paper reports pharmacokinetic parameters (Cmax, AUC, clearance) for felbamate in humans, but the specific numeric values are not present in the provided text, which only describes trends and statistical significance. |
+| popPK | Sachdeo_1998 | relevant | 8 | 2 | The paper reports on felbamate pharmacokinetic parameters (clearance, Cmax, etc.) in humans, but the evidence text only states that these values were "not statistically different" or "unchanged" without providing the specific numeric values themselves. |
+| popPK | Sachdeo_1999 | irrelevant | 2 | 0 | The paper reports pharmacokinetic interaction results (concentrations and qualitative trends) but does not provide specific quantitative toxicokinetic parameters for felbamate such as half-life, volume of distribution, or clearance values in the evidence text. |
+| popPK | Scollo-Lavizzari_1995 | irrelevant | 0 | 0 | no_text gate: only 399 chars of text extracted (&lt; 400) |
+| popPK | Stephen_2003 | irrelevant | 0 | 0 | Felbamate is mentioned only as a co-medication affecting valproic acid levels; the kinetic parameters provided are for valproic acid, not felbamate. |
+| popPK | Thomas_1997 | irrelevant | 1 | 0 | The paper is a review on seizures in the elderly that mentions felbamate only as a comparator regarding drug interactions, with no quantitative toxicokinetic parameters. |
+| popPK | Tolbert_2016 | irrelevant | 1 | 0 | Felbamate is mentioned only as a CYP2C19 inhibitor comparator in a study focused on clobazam pharmacokinetics, with no kinetic parameters reported for felbamate. |
+| PGx | Tolbert_2016 | not_relevant | 0 | 0 | The paper studies Clobazam PK and drug-drug interactions where Felbamate is listed merely as a CYP2C19 inhibitor agent, not as the drug whose PK/PD is being characterized, and no pharmacogenomic (gene variant) data is reported for Felbamate. |
+| popPK | Tribut_2010 | relevant | 4 | 6 | The paper reports half-life and qualitative kinetics (clearance dependence on renal function) for felbamate, but it is a review of existing data rather than an original study generating new parameters. |
+| PGx | Turnheim_2004 | not_relevant | 0 | 0 | The text discusses pharmacokinetic drug interactions and enzyme induction/inhibition (CYP) but does not mention genetic variants, genotypes, or pharmacogenomics. |
+| popPK | Vohora_2010 | irrelevant | 0 | 0 | The paper is a review of sodium channel blockers that lists felbamate among many drugs but contains no quantitative toxicokinetic parameters for felbamate. |
+| popPK | Wagner_1994 | relevant | 6 | 3 | The paper is a review that mentions felbamate's half-life (~1 day) and absorption (&gt;90%) as qualitative summaries from prior studies, rather than reporting original quantitative kinetic parameters. |
+| popPK | Wagner_1994_2 | irrelevant | 2 | 8 | The paper focuses on the effect of felbamate on valproic acid disposition, reporting kinetic parameters primarily for valproic acid rather than felbamate itself, except for steady-state concentrations which are insufficient for a full kinetic model. |
+| popPK | Walker_1994 | irrelevant | 1 | 0 | The paper is a general review of new antiepileptic drugs that mentions felbamate but does not provide any quantitative toxicokinetic parameters or numeric data. |
+| popPK | Walker_1995 | irrelevant | 2 | 1 | The paper is a review summarizing pharmacokinetics of multiple drugs, including felbamate, but does not present original quantitative kinetic parameters in the provided text. |
+| PGx | Walzer_2012 | not_relevant | 0 | 0 | The study investigates drug-drug interactions involving clobazam, not pharmacogenomic effects of gene variants on felbamate. |
+| popPK | Weintraub_2005 | irrelevant | 0 | 0 | The paper reports kinetic parameters for lamotrigine, with felbamate appearing only as a comedication/comparator, not as the subject of the kinetic study. |
+| popPK | White_2009 | irrelevant | 3 | 1 | The paper reports a statistical association between age and clearance but does not provide specific quantitative kinetic parameters (such as clearance values, half-lives, or volumes) in the evidence. |
+| popPK | Wilensky_1985 | irrelevant | 0 | 10 | The paper reports pharmacokinetic parameters for W-554 (ADD 03055), which is a different substance from felbamate, so the kinetic data do not belong to the subject substance. |
+| popPK | Wilson_1996 | irrelevant | 1 | 0 | The paper is a review article summarizing various drugs including felbamate, but the provided evidence contains no specific quantitative kinetic parameters or numeric values. |
+| PGx | Yap_2008 | not_relevant | 0 | 0 | The paper is a general review of drug-drug interactions and does not report on pharmacogenomic effects (gene variants) on felbamate parameters. |
+| popPK | Zaccara_2014 | irrelevant | 1 | 0 | The paper is a general review of drug interactions that mentions felbamate only qualitatively as an enzyme inducer without providing any quantitative kinetic parameters or numeric values. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfelbamate%5D&body=Drug%3A%20felbamate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_felbamate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-14 17:21 UTC</sub>

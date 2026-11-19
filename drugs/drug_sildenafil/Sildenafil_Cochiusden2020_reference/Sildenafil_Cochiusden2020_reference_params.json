@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Sildenafil_Cochiusden2020_reference",
+ "molar_masses": {
+  "central.C": 0.474576
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.8611111111111113e-06,
+  "F": 1.0,
+  "MM": 0.474576,
+  "VdPerKg": 0.0010728571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.00016385559994081965,
+  "k21": 0.0012305555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662021
+ },
+ "reference_peaks": {
+  "central.C": 0.00011998068031943182
+ },
+ "stop_time": 140400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

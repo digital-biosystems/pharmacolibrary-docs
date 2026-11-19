@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Thiopental_Russo1997v3_reference",
+ "molar_masses": {
+  "central.C": 0.242338
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.823333333333333e-06,
+  "F": 0.9,
+  "MM": 0.242338,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00218,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00046666666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7592.144483244283
+ },
+ "reference_peaks": {
+  "central.C": 0.0005161304103670208
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,92 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;chlordiazepoxide&quot;}]"></div>
+
+# chlordiazepoxide
+
+- **generic name:** chlordiazepoxide
+- **ATC codes:** `N05BA02`
+- **DrugBank:** [DB00475](https://go.drugbank.com/drugs/DB00475) · **PubChem:** [CID 2712](https://pubchem.ncbi.nlm.nih.gov/compound/2712)
+- **molar mass:** 299.755 g/mol (C16H14ClN3O) — DrugBank
+- **groups:** approved, illicit
+
+## About
+
+Chlordiazepoxide is a benzodiazepine medication used to treat anxiety disorders, insomnia, and alcohol withdrawal. It is administered orally in forms such as capsules and tablets. It is an approved medication that is widely used.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q178566](https://www.wikidata.org/wiki/Q178566), [Wikipedia](https://en.wikipedia.org/wiki/Chlordiazepoxide?oldid=1384267917) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Simasko_1984_TRH_binding_displacement_pituitary](drugs/drug_chlordiazepoxide/pd_Simasko_1984_TRH_binding_displacement_pituitary.md) | Displacement of [3H](3MeHis2)TRH binding (pituitary tissue) ← chlordiazepoxide · direct sigmoid Emax (Hill) effect | — | Simasko S et al., Chlordiazepoxide displaces thyrotropin-…, European journal of pharmac… (1984) | [10.1016/0014-2999(84)90291-7](https://doi.org/10.1016/0014-2999(84)90291-7) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [McEachern_1988_Enhancement_of_submaximal_GABA_response_by_chlordiazepoxide](drugs/drug_chlordiazepoxide/pd_McEachern_1988_Enhancement_of_submaximal_GABA_response_by_ch.md) | Enhancement of submaximal GABA response by chlordiazepoxide ← chlordiazepoxide · direct Emax (saturable) effect | — | McEachern AE et al., Benzodiazepine interactions with GABAA…, Molecular pharmacology (1988) | — |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Simasko_1984_TRH_binding_displacement_brain](drugs/drug_chlordiazepoxide/pd_Simasko_1984_TRH_binding_displacement_brain.md) | Displacement of [3H](3MeHis2)TRH binding (brain tissue) ← chlordiazepoxide · direct sigmoid Emax (Hill) effect | — | Simasko S et al., Chlordiazepoxide displaces thyrotropin-…, European journal of pharmac… (1984) | [10.1016/0014-2999(84)90291-7](https://doi.org/10.1016/0014-2999(84)90291-7) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlordiazepoxide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), TSPO (modulator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 18:55 | 1:17 | 0/0/0 | 1/1/0 | 0/0/0 | 101,019/2,384 | ollama / glm-5.3-flash | 6 | 1/5 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 55 matched, 20 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Calvi_2022 | irrelevant | 0 | 0 | This is an MRI study of slowly expanding lesions in multiple sclerosis with no chlordiazepoxide pharmacokinetic data whatsoever. |
+| popPK | Daneshmend_1988 | irrelevant | 0 | 0 | This is a review of ketoconazole pharmacokinetics; chlordiazepoxide is only mentioned as an interacting drug, with no PK parameters for it. |
+| popPK | Du_2015 | irrelevant | 0 | 0 | This is a zebrafish developmental cardiotoxicity study of flame retardants with no chlordiazepoxide PK data. |
+| popPK | File_1986 | irrelevant | 0 | 0 | Behavioral place-conditioning study in rats with no pharmacokinetic parameters or numeric disposition values for chlordiazepoxide. |
+| popPK | Fricks_2008 | irrelevant | 0 | 0 | Receptor pharmacology study of UDP at P2Y14 receptors with no chlordiazepoxide or pharmacokinetic parameters. |
+| popPK | Jost_2026 | irrelevant | 0 | 0 | This is a real-world effectiveness/safety study of foslevodopa/foscarbidopa in Parkinson's disease with no chlordiazepoxide PK parameters; no quantitative disposition values appear. |
+| popPK | Kalinowski_2022 | irrelevant | 0 | 0 | This is a clinical outcome study of the timed 25-foot walk in multiple sclerosis patients; no chlordiazepoxide PK parameters are reported anywhere. |
+| popPK | Laliberté_2002 | irrelevant | 0 | 0 | In vitro enzyme study of PDE4A4 with no chlordiazepoxide PK parameters; CDP-840 is a different drug. |
+| popPK | Mathews_1996 | irrelevant | 0 | 0 | In-vitro electrophysiology study of GABAA receptor modulation; chlordiazepoxide is a pharmacological tool, no PK parameters reported. |
+| popPK | McEachern_1988 | irrelevant | 0 | 0 | In vitro receptor pharmacology study (GABAA binding/electrophysiology in chick neurons), not a PK study; EC50 values are pharmacodynamic, not disposition parameters. |
+| popPK | Merlo_1989 | irrelevant | 0 | 0 | Behavioral pharmacology study in rats; chlordiazepoxide is only a test drug with doses, no PK parameters reported. |
+| popPK | Nedelman_2018 | irrelevant | 0 | 0 | This is a population PK study of pasireotide, not chlordiazepoxide; no chlordiazepoxide parameters are reported. |
+| popPK | Niespodziany_2020 | irrelevant | 0 | 0 | In vitro electrophysiology study of padsevonil on GABAA receptors; chlordiazepoxide is only a comparator agonist, no PK parameters. |
+| popPK | Nonomura_2026 | irrelevant | 0 | 0 | This is a synthetic biology paper about a caffeine-operated protein dissociation system; chlordiazepoxide is not mentioned and no PK parameters for it appear. |
+| popPK | Percival_1997 | irrelevant | 0 | 0 | This is an in-vitro enzymology study of PDE4A with no chlordiazepoxide PK data. |
+| popPK | Sanger_1985 | irrelevant | 0 | 0 | Behavioral pharmacology study in mice with no PK parameters or numeric disposition values. |
+| popPK | Selzer_2015 | irrelevant | 0 | 0 | This is a skin absorption/diffusion modeling study of flufenamic acid, not a PK study of chlordiazepoxide, and no chlordiazepoxide parameters appear. |
+| popPK | Simasko_1984 | irrelevant | 0 | 0 | In-vitro receptor binding study (IC50 for TRH displacement), not a PK study with disposition parameters. |
+| popPK | Teh_2023 | irrelevant | 0 | 0 | This is an in-vitro enzyme inhibition/siRNA study on Entamoeba histolytica choline kinase; chlordiazepoxide is not mentioned and no PK parameters exist. |
+| popPK | Tsuboi_2026 | irrelevant | 0 | 0 | The paper is about foslevodopa/foscarbidopa clinical outcomes in Parkinson's disease, with no chlordiazepoxide PK parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlordiazepoxide%5D&body=Drug%3A%20chlordiazepoxide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlordiazepoxide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

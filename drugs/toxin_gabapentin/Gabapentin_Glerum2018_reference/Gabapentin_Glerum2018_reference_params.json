@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Gabapentin_Glerum2018_reference",
+ "molar_masses": {
+  "central.C": 0.17124
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  800.0
+ ],
+ "parameters": {
+  "Cl": 2e-06,
+  "F": 0.9,
+  "MM": 0.17124,
+  "Tlag": 1116.0,
+  "VdPerKg": 0.0006372857142857144,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0008,
+  "ka": 0.00021611111111111112,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10663.92088194826
+ },
+ "reference_peaks": {
+  "central.C": 0.01069145216720968
+ },
+ "review_status": "needs_review",
+ "stop_time": 93600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

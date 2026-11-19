@@ -1,0 +1,43 @@
+{
+ "dose_source": "paper",
+ "model_id": "Eflornithine_Jansson2008_value_for_d_eflornithine",
+ "molar_masses": {
+  "central.C": 0.182171
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  26250.0,
+  52500.0,
+  70000.0,
+  105000.0,
+  140000.0,
+  210000.0
+ ],
+ "parameters": {
+  "Cl": 1.47e-05,
+  "F": 62.3,
+  "MM": 0.182171,
+  "Tlag": 1609.2,
+  "VdPerKg": 0.00040100000000000004,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.02625,
+  "k12": 4.9875311720698244e-05,
+  "k21": 4.484304932735426e-05,
+  "ka": 0.0003222222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 5008.900425812764
+ },
+ "reference_peaks": {
+  "central.C": 8.329060465858122
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

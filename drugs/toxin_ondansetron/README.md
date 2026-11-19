@@ -1,0 +1,229 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Ondansetron&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Cai2025_reference&quot;,&quot;label&quot;:&quot;Cai_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ondansetron/Ondansetron_Cai2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Job2022_reference&quot;,&quot;label&quot;:&quot;Job_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ondansetron/Ondansetron_Job2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Ondansetron
+
+- **generic name:** Ondansetron
+- **T3DB:** [T3D2925](http://www.t3db.ca/toxins/T3D2925) · **DrugBank:** [DB00904](https://go.drugbank.com/drugs/DB00904) · **PubChem:** [CID 4595](https://pubchem.ncbi.nlm.nih.gov/compound/4595)
+- **groups:** approved, investigational, withdrawn
+
+## About
+
+Ondansetron is a well tolerated drug with few side effects. Headache, constipation, and dizziness are the most commonly reported side effects associated with its use. There have been no significant drug interactions reported with this drugs use. …
+
+- **Category:** Drug, Food Toxin, Synthetic Toxin
+- **Route of exposure:** ondansetron is well absorbed after oral administration and undergoes limited first-pass metabolism.
+- **Sources and uses:** For the prevention of nausea and vomiting associated with emetogenic cancer chemotherapy, postoperation, and radiation. Also used for the treatment of postoperative nausea and vomiting.
+- **Mechanism of toxicity:** Ondansetron is a selective serotonin 5-HT<sub>3</sub> receptor antagonist. The antiemetic activity of the drug is brought about through the inhibition of 5-HT<sub>3</sub> receptors present both centrally (medullary chemoreceptor zone) and peripherally (GI tract). …
+- **Treatment:** There is no specific antidote for ondansetron overdose. …
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D2925">T3DB T3D2925</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 99614-02-5 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:103183">ChEBI 103183</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| ondansetron | parent | 293.37 | C18H19N3O | PubChem | [4595](https://pubchem.ncbi.nlm.nih.gov/compound/4595) | Alqahtani_2023, Cai_2025, Ezuruike_2022, Job_2022, Lam_2025, Tenjarla_1998 |
+
+## Start here
+
+> **Cai_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> simulated population sample of 1000 subjects, n = 1000. [Run it in the simulator](drugs/toxin_ondansetron/Ondansetron_Cai2025_reference.md?tab=Simulation) · [record](drugs/toxin_ondansetron/Ondansetron_Cai2025_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cai_2025 · CL ·/kg</text><circle cx="299.1" cy="30.0" r="4" fill="#78909c"><title>Cai_2025 · CL ·/kg: 2.05 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Tenjarla_1998 · CL ·/kg</text><circle cx="299.1" cy="46.0" r="4" fill="#ef6c00"><title>Tenjarla_1998 · CL ·/kg: 2.05 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Alqahtani_2023 · CL ·/kg</text><circle cx="419.8" cy="62.0" r="4" fill="#ef6c00"><title>Alqahtani_2023 · CL ·/kg: 4.536 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Ezuruike_2022 · CL</text><circle cx="479.1" cy="78.0" r="4" fill="#ef6c00"><title>Ezuruike_2022 · CL: 6.7 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Cai_2025_reference](drugs/toxin_ondansetron/Ondansetron_Cai2025_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Cai Y et al., Cardiotoxicity of different 5-HT3 recep…, Scientific reports (2025) | [10.1038/s41598-025-23217-2](https://doi.org/10.1038/s41598-025-23217-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Alqahtani_2023_reference](drugs/toxin_ondansetron/Ondansetron_Alqahtani2023_reference.md) | held back | 1-compartment, IV | 2 | Alqahtani F et al., A Physiologically Based Pharmacokinetic…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph16121693](https://doi.org/10.3390/ph16121693) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ezuruike_2022_47_b](drugs/toxin_ondansetron/Ondansetron_Ezuruike2022_47_b.md) | held back | 1-compartment, IV | 4 | Ezuruike U et al., Guide to development of compound files…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12791](https://doi.org/10.1002/psp4.12791) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ value](drugs/toxin_ondansetron/Ondansetron_Ezuruike2022_value.md) | — | 1-compartment (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q91 — no SI value to build from</sub> | [Job_2022_reference](drugs/toxin_ondansetron/Ondansetron_Job2022_reference.md) | ▶ model + simulator | retention, 1 pool | 5 (+4 cov.) | Job KM et al., Development of a Generic Physiologicall…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2530](https://doi.org/10.1002/cpt.2530) |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q414 — no SI value to build from</sub> | [Tenjarla_1998_reference](drugs/toxin_ondansetron/Ondansetron_Tenjarla1998_reference.md) | held back | 1-compartment, IV | 2 | Tenjarla SN et al., Ondansetron Suppositories: Extemporaneo…, International journal of ph… (1998) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chiang_2021_reference](drugs/toxin_ondansetron/Ondansetron_Chiang2021_reference.md) | — | 1-compartment (no model) | 0 | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Lam_2025_reference](drugs/toxin_ondansetron/Ondansetron_Lam2025_reference.md) | — | 2-compartment (no model) | 6 | Lam K et al., Bayesian Population Pharmacokinetic Mod…, Clinical and translational… (2025) | [10.1111/cts.70147](https://doi.org/10.1111/cts.70147) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darpo_2015_2_QTcF](drugs/toxin_ondansetron/pd_Darpo_2015_2_QTcF.md) | QTcF change ← ondansetron · direct linear effect | — | Darpo B et al., Results from the IQ-CSRC prospective st…, Clinical pharmacology and t… (2015) | [10.1002/cpt.60](https://doi.org/10.1002/cpt.60) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Komatsu_2019_QTca](drugs/toxin_ondansetron/pd_Komatsu_2019_QTca.md) | QTca ← ondansetron · direct linear effect | — | Komatsu R et al., Exposure-response analysis of drug-indu…, Journal of pharmacological… (2019) | [10.1016/j.vascn.2019.106606](https://doi.org/10.1016/j.vascn.2019.106606) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lam_2025_delta_Finnegan](drugs/toxin_ondansetron/pd_Lam_2025_delta_Finnegan.md) | average change in mean Finnegan scores ← ondansetron · inhibition effect | — | Lam K et al., Bayesian Population Pharmacokinetic Mod…, Clinical and translational… (2025) | [10.1111/cts.70147](https://doi.org/10.1111/cts.70147) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sun_2024_SIH](drugs/toxin_ondansetron/pd_Sun_2024_SIH.md) | spinal-induced hypotension ← ondansetron · model not identified | — | Sun XX et al., Dose-Response Study of Phenylephrine fo…, Drug design, development an… (2024) | [10.2147/DDDT.S452983](https://doi.org/10.2147/DDDT.S452983) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Darpo_2015_DDQTcF](drugs/toxin_ondansetron/pd_Darpo_2015_DDQTcF.md) | DDQTcF ← ondansetron · direct linear effect | model (no simulator) | Darpo B et al., Implications of the IQ-CSRC Prospective…, Drug safety (2015) | [10.1007/s40264-015-0325-5](https://doi.org/10.1007/s40264-015-0325-5) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Edwards_2022](drugs/toxin_ondansetron/pgx_Edwards_2022_CYP2D6_Q100.md) | Edwards A et al., Influence of CYP2D6 metabolizer status…, Clinical and translational… (2022) | [10.1111/cts.13171](https://doi.org/10.1111/cts.13171) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ABCB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Ribeiro_2024](drugs/toxin_ondansetron/pgx_Ribeiro_2024_ABCB1_Q100.md) | Ribeiro AHS et al., CYP2D6 isoenzyme and ABCB1 gene polymor…, Brazilian journal of anesth… (2024) | [10.1016/j.bjane.2023.02.002](https://doi.org/10.1016/j.bjane.2023.02.002) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Ribeiro_2024](drugs/toxin_ondansetron/pgx_Ribeiro_2024_CYP2D6_Q100.md) | Ribeiro AHS et al., CYP2D6 isoenzyme and ABCB1 gene polymor…, Brazilian journal of anesth… (2024) | [10.1016/j.bjane.2023.02.002](https://doi.org/10.1016/j.bjane.2023.02.002) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ondansetron).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` transport | PGx paper |
+| distribution | blood-brain barrier | `ABCB1` transport | PGx paper |
+| distribution | placenta | `ABCB1` transport | PGx paper |
+| distribution | testis | `ABCB1` transport | PGx paper |
+| metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C9` substrate, `CYP2D6` metabolism/substrate, `CYP2E1` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` transport | PGx paper |
+| excretion | liver | `ABCB1` transport | PGx paper |
+
+<sub>Actors without a tissue in the table: HTR1A (other/unknown), HTR1B (other/unknown), HTR3A (target), HTR4 (target), OPRM1 (other/unknown).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-16 05:11 | 41:34 | 5/3/0 | 5/0/0 | 0/0/3 | 1,064,428/58,524 | einfracz / qwen3.8-flash-next | 44 | 8/31 | 44/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 265 matched, 144 returned
+- **screened:** 9  ·  **relevant:** 9
+- **records:** 8  ·  extracted 1  ·  needs review 4  ·  rejected 3  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Chiang_2021.pdf` | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | popPK | 9 | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) | [32495990](https://pubmed.ncbi.nlm.nih.gov/32495990) | The paper reports quantitative population PK modeling parameters, specifically CSF-to-plasma partition coefficients (0.09-0.20) and penetration ratios, for ondansetron in humans. |
+| `Elkomy_2015.pdf` | Elkomy MH et al., Ondansetron pharmacokinetics in pregnan…, Clinical pharmacology and t… (2015) | popPK | 9 | [10.1002/cpt.5](https://doi.org/10.1002/cpt.5) | [25670522](https://pubmed.ncbi.nlm.nih.gov/25670522) | The paper reports a PBPK/population kinetic model for ondansetron in humans, but the abstract only provides qualitative findings and a dosing regimen, with no explicit numeric parameter values (e.g., clearances, volumes, half-lives) present in the provided evidence. |
+| `de_1998.pdf` | de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal of clinical… (1998) | popPK | 9 | [10.1046/j.1365-2125.1998.00756.x](https://doi.org/10.1046/j.1365-2125.1998.00756.x) | [9723819](https://pubmed.ncbi.nlm.nih.gov/9723819) | The paper describes a population PK model for ondansetron in humans, which is relevant, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract/text evidence. |
+| `Mashru_2005.pdf` | Mashru RC et al., Effect of pH on in vitro permeation of…, Pharmaceutical development… (2005) | popPK | 8 | [10.1081/pdt-54437](https://doi.org/10.1081/pdt-54437) | [15926673](https://pubmed.ncbi.nlm.nih.gov/15926673) | The paper explicitly reports numeric values for the permeability coefficients (Pu and Pi) of ondansetron, which are valid toxicokinetic parameters for dermal/mucosal absorption. |
+| `Qian_2019.pdf` | Qian CQ et al., Simultaneously predict pharmacokinetic…, European journal of pharmac… (2019) | popPK | 8 | [10.1016/j.ejps.2019.04.026](https://doi.org/10.1016/j.ejps.2019.04.026) | [31047967](https://pubmed.ncbi.nlm.nih.gov/31047967) | The paper uses ondansetron as a CYP3A substrate in a semi-PBPK model for human DDI prediction, but the specific numeric kinetic parameters for ondansetron are cited from literature and not explicitly detailed in the provided abstract/evidence. |
+| `Maqbool_2024.pdf` | Maqbool T et al., Cellulose ether and carbopol 971 based…, International journal of bi… (2024) | popPK | 7 | [10.1016/j.ijbiomac.2024.133841](https://doi.org/10.1016/j.ijbiomac.2024.133841) | [39032888](https://pubmed.ncbi.nlm.nih.gov/39032888) | The paper reports an in silico PBPK model for ondansetron, comparing bioavailability of formulations, which constitutes a mechanistic toxicokinetic/pharmacokinetic assessment, but specific numeric parameter values are not explicitly listed in the provided abstract text. |
+| `Tenjarla_1998.pdf` | Tenjarla SN et al., Ondansetron Suppositories: Extemporaneo…, International journal of ph… (1998) | popPK | 6 |  | [23989486](https://pubmed.ncbi.nlm.nih.gov/23989486) | The paper reports quantitative in vitro permeability (flux) values for ondansetron across rabbit rectal membrane, which is a kinetic parameter, though it is a formulation study rather than a systemic disposition study. |
+
+<sub>queue written 2026-11-16 04:45 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aguado-Sierra_2024 | irrelevant | 0 | 0 | The paper uses ondansetron as a reference compound in an in silico cardiotoxicity (QT prolongation) model; it does not report quantitative toxicokinetic parameters (like half-life, clearance, or volume of distribution) for ondansetron, but rather relies on literature concentration-QT data and IC50 values. |
+| PGx | Aka_2017 | not_relevant | 2 | 1 | The text explicitly states there are no data from studies including pediatric patient populations to support or refute the ondansetron-CYP interaction, and only mentions adult associations qualitatively without reporting fitted effect sizes. |
+| popPK | Akbor_2025 | irrelevant | 0 | 0 | The paper investigates thymol as an antiemetic, with ondansetron used only as a comparator drug in efficacy assays (latency/retch counts) and molecular docking; no toxicokinetic parameters for ondansetron are reported. |
+| PGx | Al-Ghobashy_2018 | not_relevant | 1 | 0 | The paper describes a bioanalytical method (LC-MS/MS) for quantifying drugs, but does not report results linking genotype to PK/PD parameters; it only mentions that genetic polymorphisms will be used in future modeling. |
+| PGx | Arias_2012 | not_relevant | 2 | 0 | The text is a review article discussing pharmacogenetics of alcohol dependence treatments. While it mentions an association between SLC6A4 variation and treatment response to ondansetron, it does not report specific pharmacokinetic (PK) or pharmacodynamic (PD) parameters, nor does it provide fitted effect sizes or detailed mechanistic data suitable for quantitative PK/PD modeling. |
+| PGx | Aroke_2019 | not_relevant | 6 | 1 | The text mentions CYP2D6 polymorphisms and their association with PONV risk but does not report specific pharmacokinetic or pharmacodynamic parameter changes for ondansetron. |
+| PGx | Black_2023 | not_relevant | 0 | 0 | The study investigates the association between CYP2D6 metabolizer status and the clinical outcome of postoperative nausea and vomiting (PONV), finding no significant difference; it does not measure or report changes in pharmacokinetic parameters (e.g., AUC, Cmax) or specific pharmacodynamic parameters directly attributable to the genotype. |
+| popPK | Bolliger_2025 | irrelevant | 1 | 0 | The paper reports metabolomics profiles and detection of ondansetron in sweat but does not report quantitative pharmacokinetic parameters such as half-life, clearance, or volume of distribution. |
+| popPK | Borst_2013 | irrelevant | 2 | 0 | This is a historical review article ("Hindsight") discussing the discovery of P-glycoprotein; while it mentions ondansetron as a substrate in knockout mice, it reports no new quantitative toxicokinetic parameters (such as half-life, clearance, or partition coefficients) and references the data to other cited papers. |
+| popPK | Bétat_2024 | irrelevant | 1 | 0 | The paper focuses on QTc pharmacodynamics and exposure-response modeling, reporting no quantitative toxicokinetic parameters (e.g., clearance, volume, half-life) for ondansetron. |
+| PGx | Carron_2017 | not_relevant | 0 | 0 | The study investigates genetic predictors of cisplatin-induced vomiting severity in patients who received ondansetron as supportive care, but does not assess the pharmacokinetic or pharmacodynamic effect of ondansetron itself. |
+| popPK | Cavero_2016 | irrelevant | 0 | 0 | The paper discusses a clinical trial design for proarrhythmia assessment using ondansetron as a comparator/drug, but reports no quantitative toxicokinetic parameters. |
+| popPK | Coppola_2023 | irrelevant | 2 | 0 | The paper is a regulatory review of existing PBPK models for various drugs including ondansetron, reporting no specific numeric kinetic parameters of its own. |
+| PGx | Cservenka_2017 | not_relevant | 2 | 1 | The text is a review focusing on clinical efficacy/response to ondansetron in alcoholism treatment, not specific PK/PD parameter changes. |
+| popPK | Dallmann_2018 | irrelevant | 2 | 0 | The paper describes a PBPK model for multiple drugs including ondansetron, but the evidence provides no specific numeric kinetic parameters for ondansetron, only aggregate validation statistics for all drugs. |
+| popPK | Darpo_2015 | irrelevant | 0 | 0 | The paper discusses a study comparing methods for QT assessment using ondansetron as a positive control, but it does not report quantitative toxicokinetic parameters (half-life, clearance, volume, etc.) for ondansetron in this text; it references other publications for the specific drug data. |
+| popPK | Darpo_2015_2 | irrelevant | 0 | 0 | The paper reports pharmacodynamic QT effects and exposure-response slopes, not toxicokinetic parameters (half-life, clearance, volume, etc.) for ondansetron. |
+| PGx | Dixon_1995 | not_relevant | 3 | 2 | The paper characterizes metabolic pathways and enzyme involvement in vitro but does not report specific gene variant effects on PK/PD parameters, explicitly noting the absence of clinically relevant PK differences linked to single enzyme phenotypes. |
+| popPK | Dubey_2020 | irrelevant | 0 | 0 | This is a clinical efficacy/outcome study comparing antiemetic effects with no pharmacokinetic parameters reported. |
+| popPK | Elkomy_2015 | relevant | 9 | 2 | The paper reports a PBPK/population kinetic model for ondansetron in humans, but the abstract only provides qualitative findings and a dosing regimen, with no explicit numeric parameter values (e.g., clearances, volumes, half-lives) present in the provided evidence. |
+| popPK | Ferber_2017 | irrelevant | 0 | 0 | The paper discusses statistical bias in QT interval measurements and uses ondansetron as a comparator for false-negative prediction limits, reporting no toxicokinetic parameters. |
+| PGx | Fernandes_2011 | not_relevant | 0 | 0 | The study investigates cyclophosphamide pharmacokinetics; ondansetron is only mentioned as concomitant medication, not the subject of the pharmacogenomic analysis. |
+| PGx | Fischer_1994 | not_relevant | 2 | 1 | The paper investigates enzyme involvement (CYP2D6/CYP3A) using inhibitors and recombinant cells, but does not analyze human genetic variants or report their specific effects on PK/PD parameters. |
+| PGx | Gunn_2019 | not_relevant | 2 | 8 | The paper reports pharmacodynamic efficacy/responsiveness (clinical outcomes and transit time) associated with genotypes, but does not report the effect of genotypes on the drug's pharmacokinetic parameters (e.g., AUC, Cmax, clearance) or intrinsic pharmacodynamic parameters (e.g., IC50, receptor occupancy) of ondansetron. |
+| PGx | Ho_2006 | not_relevant | 2 | 1 | This is a narrative review discussing pharmacogenetics generally; it does not report specific fitted effect sizes or primary data for ondansetron PK/PD parameters influenced by gene variants. |
+| PGx | Hoffecker_2024 | not_relevant | 1 | 0 | The study reports prescribing rates and drug-gene interaction frequencies in a cohort, but does not report specific pharmacokinetic or pharmacodynamic parameter changes for ondansetron based on genotype. |
+| PGx | Horn_2014 | not_relevant | 2 | 0 | The text is a general review of PONV mechanisms and briefly mentions that genetic studies are shedding light on variability, but it reports no specific gene variant effects on ondansetron PK or PD parameters. |
+| PGx | Hsu_2010 | not_relevant | 1 | 0 | The text is an abstract of a review that briefly mentions potential genetic polymorphism affecting CYP2D6 metabolism for ondansetron but provides no specific gene-phenotype data or PK/PD effect sizes. |
+| PGx | Ianni_2025 | not_relevant | 0 | 0 | The paper is a scoping review of medication utilization rates (prescription frequencies) and does not report on pharmacokinetic or pharmacodynamic parameters resulting from gene-ondansetron interactions. |
+| popPK | Komatsu_2019 | irrelevant | 3 | 2 | The paper reports pharmacokinetic profiles and exposure-response slopes for QT effects in monkeys, but no specific quantitative toxicokinetic parameters (e.g., half-life, clearance, Vd) for ondansetron are provided in the text. |
+| popPK | Lee_2016 | irrelevant | 1 | 10 | Ondansetron is used only as a comparator drug for efficacy; the reported pharmacokinetic parameters (V1, V2, CL, Q) belong to ramosetron. |
+| PGx | Lewis_2010 | not_relevant | 2 | 1 | The paper focuses on in vitro binding interactions and molecular modeling of CYP enzymes with ondansetron, without reporting pharmacokinetic or pharmacodynamic parameters based on human gene variants or phenotypes. |
+| PGx | Litonius_2025 | not_relevant | 0 | 0 | The paper reports ondansetron prevalence and cost-benefit model inputs but does not report any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Liu_2021 | relevant | 4 | 2 | Ondansetron is one of eight drugs in a multi-drug PBPK model of placental transfer; specific kinetic parameters (fu, permeability, partition coefficients) are listed in tables not fully provided in the text, with only sparse numeric fragments visible. |
+| PGx | Liu_2021_2 | not_relevant | 1 | 0 | The paper reports administrative claims data on the dispensing rates of medications with pharmacogenomic biomarkers (including ondansetron) but does not measure or report specific changes in pharmacokinetic or pharmacodynamic parameters due to genotypes. |
+| PGx | López-Morales_2018 | not_relevant | 2 | 1 | The paper is a systematic review of genetic associations with PONV incidence rather than a study reporting specific pharmacokinetic or pharmacodynamic parameters of ondansetron. |
+| PGx | MacKenzie_2017 | not_relevant | 2 | 1 | This is a narrative review article that mentions ondansetron as an example of a drug affected by CYP genetic variation but does not report original data or specific fitted parameters for ondansetron itself. |
+| popPK | Maqbool_2024 | relevant | 7 | 3 | The paper reports an in silico PBPK model for ondansetron, comparing bioavailability of formulations, which constitutes a mechanistic toxicokinetic/pharmacokinetic assessment, but specific numeric parameter values are not explicitly listed in the provided abstract text. |
+| PGx | Mazhindu_2025 | not_relevant | 2 | 0 | The paper is a retrospective review of prescribing patterns and guideline implementation status; it does not report measured changes in PK/PD parameters due to genotypes. |
+| PGx | McIntire_2025 | not_relevant | 1 | 0 | The paper reports the prevalence of ondansetron prescriptions among children to highlight testing opportunities, but does not report any pharmacokinetic or pharmacodynamic data linked to specific gene variants. |
+| PGx | Mehta_2022 | not_relevant | 1 | 2 | The study investigates the effect of SLCO1B1 variants on methotrexate toxicity; ondansetron is only included as a confounding covariate for nausea, not as the study drug whose PK/PD is affected by genotype. |
+| popPK | Momper_2020 | irrelevant | 3 | 0 | The paper focuses on clinical trial design and efficacy extrapolation; while it mentions ondansetron concentrations, no specific numerical pharmacokinetic parameters (e.g., t1/2, CL, Vd) are provided in the text. |
+| PGx | Monte_2014 | not_relevant | 0 | 0 | The study examines CYP2D6 drug-drug interactions (environmental/other drugs), not genetic genotypes/variants. |
+| PGx | Moore_2025 | not_relevant | 2 | 1 | The paper reports on the prevalence of pharmacogenomic phenotypes and prescribing rates but does not report any changes in PK or PD parameters of ondansetron associated with these genotypes. |
+| PGx | Moore_2025_2 | not_relevant | 2 | 1 | Systematic review of clinical efficacy (PD outcome of nausea/vomiting) and qualitative PK associations, not a primary study reporting fitted effect sizes for PK/PD parameters. |
+| popPK | Mu_2025 | relevant | 9 | 1 | The paper reports a validated PBPK model for ondansetron in humans with quantitative dose-optimization results (AUC ratios), but the specific drug-specific kinetic parameters (Vmax, Km, fu, etc.) are located in Supplementary Tables S1 and S2 which are not provided in the text. |
+| PGx | Nguyen_2022 | not_relevant | 2 | 0 | The paper reports on clinician adherence rates to CDS alerts and mentions the number of alerts for CYP2D6/ondansetron but does not report specific PK or PD parameter values or their quantitative changes due to genotype. |
+| PGx | Nichols_2019 | not_relevant | 1 | 0 | The paper is a prevalence study counting how many patients take drugs with known PGx associations; it does not report any specific PK/PD parameter changes due to genotype for ondansetron. |
+| PGx | Nimmagadda_2020 | not_relevant | 0 | 0 | The paper reports on drug-drug interactions involving opioids and CYP inhibitors in patients undergoing tonsillectomy; ondansetron is mentioned only as a commonly prescribed medication without any data on how gene variants affect its pharmacokinetics or pharmacodynamics. |
+| PGx | Niwa_2006 | not_relevant | 1 | 2 | The paper reports on in vitro CYP inhibition potential of ondansetron as a perpetrator, not on how genetic variants affect ondansetron's own PK or PD parameters. |
+| PGx | OBrien_2013 | not_relevant | 0 | 0 | The paper focuses on the regulation of OCT1 gene expression by HNF1 and does not report pharmacokinetic or pharmacodynamic parameters for ondansetron, mentioning the drug only in future work suggestions. |
+| PGx | Patel_2021 | not_relevant | 2 | 0 | The paper estimates the prevalence of patients with pharmacogenetic variants based on population frequencies and prescription records, but does not report measured pharmacokinetic or pharmacodynamic parameter changes caused by these variants in this cohort. |
+| popPK | Qian_2019 | relevant | 8 | 2 | The paper uses ondansetron as a CYP3A substrate in a semi-PBPK model for human DDI prediction, but the specific numeric kinetic parameters for ondansetron are cited from literature and not explicitly detailed in the provided abstract/evidence. |
+| popPK | Qian_2020 | irrelevant | 1 | 0 | The paper is a clinical efficacy study measuring the ED50 of phenylephrine (a different substance) to prevent hypotension, with ondansetron used as a fixed-dose intervention; no toxicokinetic parameters (e.g., clearance, volume of distribution, half-life, partition coefficients) for ondansetron are reported. |
+| PGx | Qu_2010 | not_relevant | 0 | 0 | The paper discusses antibody-dependent cell-mediated cytotoxicity (ADCC) and mentions ondansetron only as a drug that can enhance ADCC effects, with no mention of pharmacogenomic effects on PK or PD parameters. |
+| PGx | Ramoz_2007 | not_relevant | 0 | 0 | The text mentions ondansetron in the context of eating disorder treatment and broadly discusses future potential of genetic research, but does not report specific pharmacogenomic effects on PK/PD parameters. |
+| PGx | Rauers_2010 | not_relevant | 3 | 2 | The study analyzed CYP2D6 genotypes but explicitly found no genetic influence on ondansetron plasma concentrations (PK), meaning no pharmacogenomic effect on ondansetron parameters was reported. |
+| PGx | Sandritter_2023 | not_relevant | 2 | 1 | The paper is a general educational tutorial on pharmacogenetic testing that mentions ondansetron as an example of a drug-gene pair but provides no specific data, parameters, or effect sizes for ondansetron. |
+| popPK | Sharma_2023 | irrelevant | 1 | 0 | The paper is a review of niosome technology that only mentions ondansetron as one of many drugs studied for nasal delivery, with no quantitative toxicokinetic parameters or original data provided. |
+| popPK | Sheng_2024 | irrelevant | 0 | 0 | The paper reports ED50/ED90 values for norepinephrine and clinical outcomes for ondansetron co-administration, but provides no toxicokinetic parameters (half-life, clearance, etc.) for ondansetron itself. |
+| PGx | Shinohara_2019 | not_relevant | 0 | 0 | The study investigates ondansetron as a modulator of apoE secretion (drug repurposing) in cells expressing different APOE genotypes, but does not study how APOE genotypes affect ondansetron's pharmacokinetics or its therapeutic pharmacodynamics (anti-emetic effect). |
+| popPK | Siemiątkowska_2023 | irrelevant | 1 | 0 | The paper describes an analytical method development and reports static concentration ranges from a pilot study, but contains no quantitative toxicokinetic parameters (e.g., half-life, clearance, volume of distribution) for ondansetron. |
+| PGx | Stevenson_2021 | not_relevant | 2 | 1 | The paper reports an epidemiological simulation of PGx testing utility in COVID-19 patients, mentioning ondansetron only as a frequently ordered drug; it cites external literature regarding CYP2D6 and vomiting incidence but does not report new pharmacokinetic or pharmacodynamic data or effect sizes for ondansetron. |
+| popPK | Sun_2024 | irrelevant | 0 | 0 | The study measures the ED50 and ED90 of phenylephrine in the presence of ondansetron, which are pharmacodynamic dose-response parameters, not toxicokinetic parameters for ondansetron. |
+| PGx | Tang_2022 | not_relevant | 1 | 0 | The paper is a broad pediatric pharmacogenetics review that mentions ondansetron only in the abstract to signal a future section not present in the provided text; no specific PK/PD effects are reported. |
+| PGx | Theodosopoulou_2023 | not_relevant | 8 | 3 | This is a review article summarizing qualitative associations (e.g., reduced efficacy) rather than reporting original quantitative effect sizes (theta/parameters) from primary experimental data. |
+| popPK | Thompson_2024 | irrelevant | 2 | 0 | The paper models cisplatin pharmacokinetics and toxicity, using ondansetron only as a categorical covariate (co-exposure), with no quantitative kinetic parameters for ondansetron itself. |
+| popPK | Urien_2011 | irrelevant | 0 | 10 | The paper reports pharmacokinetic parameters for etoposide; ondansetron is only mentioned as a concomitant antiemetic medication, with no kinetic parameters provided for it. |
+| PGx | Urien_2011 | not_relevant | 0 | 0 | The study reports PK for etoposide, not ondansetron; ondansetron is only used as an antiemetic and its genetics are not the subject of the analysis. |
+| popPK | Weibel_2020 | irrelevant | 1 | 1 | The paper is a network meta-analysis of clinical efficacy and safety outcomes (vomiting, adverse events) and does not report quantitative toxicokinetic parameters such as clearance, half-life, or volume of distribution. |
+| PGx | Wittwer_2025 | not_relevant | 0 | 0 | The paper is an epidemiological study on the utilization frequency of pharmacogenomic drugs in children; it mentions ondansetron only in the context of prescription prevalence and does not report any specific changes in PK or PD parameters based on genotypes. |
+| PGx | Wong_2021 | not_relevant | 3 | 2 | The paper reports an acute adverse event (dystonia/PD phenotype) in a case study but explicitly states that pharmacokinetic metabolism for ondansetron with the *41 allele has not been studied and provides no quantitative PK/PD parameter estimates. |
+| popPK | Xiao_2020 | irrelevant | 1 | 0 | The paper is a clinical outcome study measuring the ED50 of phenylephrine (the subject substance of interest for the kinetic parameter) in the presence of ondansetron as a co-exposure; it does not report any toxicokinetic parameters (e.g., half-life, clearance, Vd) for ondansetron itself. |
+| popPK | Yang_2021 | irrelevant | 2 | 1 | The paper models metformin's toxicokinetics, treating ondansetron solely as a perpetrator/comparator for drug-drug interactions without reporting specific kinetic parameters for ondansetron itself. |
+| popPK | Zhou_2018 | relevant | 4 | 0 | The paper validates a PBPK model for ondansetron in children, confirming relevance to toxicokinetics, but the provided evidence contains only summary statistics (prediction accuracy counts) and no actual kinetic parameters or numeric model values. |
+| PGx | Zhou_2018 | not_relevant | 0 | 0 | The study evaluates the predictive performance of PBPK models for ondansetron in children generally, without analyzing specific genetic variants or genotype-dependent PK changes. |
+| PGx | Zigler_2026 | not_relevant | 1 | 0 | The paper estimates population-level prescription volumes and genotype frequencies but does not report specific pharmacokinetic or pharmacodynamic parameter changes for ondansetron. |
+| popPK | de_1996 | relevant | 4 | 8 | The paper reports quantitative pharmacokinetic parameters (AUC, Cmax, Tmax) for ondansetron in humans, but lacks the specific elimination/kinetic parameters (half-life, clearance, volume of distribution) typically requested for toxicokinetic modeling; values are present in the text. |
+| popPK | de_1998 | relevant | 9 | 2 | The paper describes a population PK model for ondansetron in humans, which is relevant, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract/text evidence. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bondansetron%5D&body=Drug%3A%20ondansetron%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_ondansetron/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-16 04:47 UTC</sub>

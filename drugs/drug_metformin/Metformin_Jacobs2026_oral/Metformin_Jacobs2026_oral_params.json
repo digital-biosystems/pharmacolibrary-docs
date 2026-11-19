@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 2000 mg oral (A10BA02)",
+ "model_id": "Metformin_Jacobs2026_oral",
+ "molar_masses": {
+  "central.C": 0.1291636
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.6388888888888888e-08,
+  "F": 7.86,
+  "MM": 0.1291636,
+  "Tlag": 1224.0,
+  "VdPerKg": 0.0005,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "ka": 0.00011388888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 50031.67968356938
+ },
+ "reference_peaks": {
+  "central.C": 0.43906926918100436
+ },
+ "stop_time": 1641600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

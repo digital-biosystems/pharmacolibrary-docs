@@ -1,0 +1,88 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R05D&quot;,&quot;href&quot;:&quot;atc/R05D.md&quot;},{&quot;label&quot;:&quot;ethylmorphine&quot;}]"></div>
+
+# ethylmorphine
+
+- **generic name:** ethylmorphine
+- **ATC codes:** `R05DA01`, `S01XA06`
+- **DrugBank:** [DB01466](https://go.drugbank.com/drugs/DB01466) · **PubChem:** [CID 5359271](https://pubchem.ncbi.nlm.nih.gov/compound/5359271)
+- **molar mass:** 313.3908 g/mol (C19H23NO3) — DrugBank
+- **groups:** illicit, investigational
+
+## About
+
+Ethylmorphine is an opioid analgesic and antitussive used to treat pain and cough. It is given as an oral tablet. It is classified as an illicit substance and is currently under investigation.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q554881](https://www.wikidata.org/wiki/Q554881), [Wikipedia](https://en.wikipedia.org/wiki/Ethylmorphine?oldid=1359024613) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [Mizuta_2012_AP](drugs/drug_ethylmorphine/pd_Mizuta_2012_AP.md) | AP of the Aα/β neuron ← ethylmorphine · direct sigmoid Emax (Hill) effect | — | Mizuta K et al., Inhibition by morphine and its analogs…, Journal of neuroscience res… (2012) | [10.1002/jnr.23059](https://doi.org/10.1002/jnr.23059) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ethylmorphine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `POR` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: OPRM1 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 22:25 | 3:46 | 0/0/0 | 1/0/0 | 0/0/0 | 64,976/2,637 | einfracz / qwen3.8-27b | 2 | 0/1 | 1/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 52 matched, 51 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Aasmundstad_1995 | not_relevant | 6 | 8 | The paper reports an association between CYP2D6 genotypes/phenotypes and ethylmorphine metabolism (urinary recovery of metabolites) but does not provide fitted effect sizes or specific PK parameter estimates (like AUC or CL) stratified by genotype. |
+| PGx | Cottrill_2021 | not_relevant | 1 | 2 | The paper provides a pharmacogenomics dataset for 30 patients and general metabolic pathways for ethylmorphine, but it does not measure or report changes in specific PK or PD parameters (e.g., AUC, Cmax, response) of ethylmorphine. |
+| PGx | Daniel_2005 | not_relevant | 0 | 0 | The study investigates CYP2D inhibition by neuroleptics using ethylmorphine as a probe substrate, but does not report pharmacogenomic effects (gene variants) on the PK/PD of ethylmorphine itself. |
+| PGx | Fritz_2005 | not_relevant | 0 | 0 | The study examines the effect of hypothermia (temperature) on fentanyl pharmacokinetics and CYP3A4 activity, not the effect of a gene variant or genotype. |
+| PGx | Helland_2010 | not_relevant | 1 | 2 | The paper is a case report describing a death and mentions the genotype only to confirm normal metabolic capacity, without reporting any quantitative pharmacogenomic effect on PK or PD parameters. |
+| popPK | Ho_1996 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of nalbuphine, using ethylmorphine only as an internal standard for the assay. |
+| popPK | Hostler_2010 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of midazolam, not ethylmorphine. |
+| PGx | Jones_1996 | not_relevant | 0 | 0 | The paper concerns dextromethorphan pharmacogenomics; ethylmorphine is used only as an internal standard. |
+| PGx | Kastelova_2002 | not_relevant | 0 | 0 | The paper studies drug-drug inhibition of ethylmorphine metabolism by propranolol in rat microsomes, not the effect of genetic variants on ethylmorphine pharmacokinetics or pharmacodynamics. |
+| PGx | Lewis_2000 | not_relevant | 0 | 0 | The study investigates structure-activity relationships for CYP3A induction, not the effect of a gene variant or genotype on ethylmorphine pharmacokinetics. |
+| PGx | Monshouwer_1998 | not_relevant | 0 | 0 | The paper characterizes CYP enzymes in pig hepatocytes using ethylmorphine as a marker substrate for enzyme induction, but it does not report a pharmacogenomic effect (gene variant) on a PK/PD parameter. |
+| PGx | Moorthy_1997 | not_relevant | 0 | 0 | The paper investigates the effect of CYP inducers on tamoxifen genotoxicity and uses ethylmorphine only as a marker enzyme for CYP2D6 activity, not as the subject drug for pharmacogenomic PK/PD analysis. |
+| PGx | Ozdemir_2000 | not_relevant | 2 | 2 | The paper uses ethylmorphine as a probe to estimate the general genetic contribution to CYP3A4 variability, but it does not report specific gene variants or genotypes associated with ethylmorphine PK parameters. |
+| PGx | Sen_2000 | not_relevant | 0 | 0 | The paper characterizes fish CYP1A1 and notes it does not metabolize ethylmorphine, but it does not report human pharmacogenomic effects on PK/PD parameters. |
+| PGx | Shimada_1997 | not_relevant | 0 | 0 | The paper reports interspecies comparison of CYP450 activities and does not investigate the effect of specific human gene variants or genotypes on ethylmorphine pharmacokinetics. |
+| PGx | Valoti_1998 | not_relevant | 0 | 0 | The study investigates the metabolism of chlorimipramine and chlorpromazine in rat liver microsomes, using ethylmorphine as a control probe, and does not report pharmacogenomic effects on the PK or PD of ethylmorphine. |
+| PGx | Vengurlekar_2002 | not_relevant | 0 | 0 | The paper describes an assay for dextromethorphan and uses ethylmorphine only as an internal standard, without investigating pharmacogenomic effects on ethylmorphine's PK or PD parameters. |
+| PGx | Xu_1997 | not_relevant | 2 | 5 | The study is an in vitro mechanistic investigation in rat liver microsomes and does not report pharmacogenomic effects on PK/PD parameters in humans or a direct genotype-phenotype relationship for ethylmorphine. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bethylmorphine%5D&body=Drug%3A%20ethylmorphine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ethylmorphine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

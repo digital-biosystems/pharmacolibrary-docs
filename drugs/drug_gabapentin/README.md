@@ -1,0 +1,181 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhou_2026_VAS&quot;,&quot;label&quot;:&quot;Zhou_2026 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/pd_Zhou_2026_VAS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# gabapentin
+
+- **generic name:** gabapentin
+- **ATC codes:** `N02BF01`
+- **DrugBank:** [DB00996](https://go.drugbank.com/drugs/DB00996) · **PubChem:** [CID 3446](https://pubchem.ncbi.nlm.nih.gov/compound/3446)
+- **molar mass:** 171.2368 g/mol (C9H17NO2) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Gabapentin is an anticonvulsant used to treat epilepsy and neuropathic pain. It is given orally in capsule or tablet form, while a topical route is also listed. The medication is widely used and available as a generic in the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q410352](https://www.wikidata.org/wiki/Q410352), [Wikipedia](https://en.wikipedia.org/wiki/Gabapentin?oldid=1386105557) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| gabapentin | parent | 171.237 | C9H17NO2 | DrugBank | [3446](https://pubchem.ncbi.nlm.nih.gov/compound/3446) | Ahmed_2017, Al-Zubaydi_2024, Hampton_2021, Larsen_2016 |
+
+## Start here
+
+> **Siao_2010_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adult cats, n = 6. [Run it in the simulator](drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md?tab=Simulation) · [record](drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Ahmed_2017 · CL</text><circle cx="271.7" cy="30.0" r="4" fill="#ef6c00"><title>Ahmed_2017 · CL: 2.93 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Adrian_2018 · CL ·/kg</text><circle cx="373.9" cy="46.0" r="4" fill="#ef6c00"><title>Adrian_2018 · CL ·/kg: 11.25 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Siao_2010 · CL ·/kg</text><circle cx="382.6" cy="62.0" r="4" fill="#ef6c00"><title>Siao_2010 · CL ·/kg: 12.6 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Siao_2010 · V/F ·/kg</text><circle cx="470.4" cy="30.0" r="4" fill="#ef6c00"><title>Siao_2010 · V/F ·/kg: 6.328 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Adrian_2018 · V1 ·/kg</text><circle cx="524.6" cy="46.0" r="4" fill="#ef6c00"><title>Adrian_2018 · V1 ·/kg: 9.036 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="cat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Adrian_2018_reference](drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md) | — | 1-compartment (no model) | 4 | Adrian D et al., The pharmacokinetics of gabapentin in c…, Journal of veterinary inter… (2018) | [10.1111/jvim.15313](https://doi.org/10.1111/jvim.15313) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ahmed_2017_reference](drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md) | — | 1-compartment (no model) | 3 | Ahmed GF et al., Pharmacokinetics and Saturable Absorpti…, The AAPS journal (2017) | [10.1208/s12248-016-0022-z](https://doi.org/10.1208/s12248-016-0022-z) |
+| <span class="pk-rf" hidden data-species="cat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>blocking: T6_deviations</sub> | [Siao_2010_reference](drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Siao KT et al., Pharmacokinetics of gabapentin in cats, American journal of veterin… (2010) | [10.2460/ajvr.71.7.817](https://doi.org/10.2460/ajvr.71.7.817) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Al-Zubaydi_2024_reference](drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md) | — | 1-compartment (no model) | 4 | Al-Zubaydi F et al., Development of a Population Pharmacokin…, Pharmaceutics (2024) | [10.3390/pharmaceutics16121514](https://doi.org/10.3390/pharmaceutics16121514) |
+| <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hampton_2021_reference](drugs/drug_gabapentin/Gabapentin_Hampton2021_reference.md) | — | 1-compartment (no model) | 10 | Hampton CE et al., Pharmacokinetics of oral and compounded…, Journal of veterinary pharm… (2021) | [10.1111/jvp.12977](https://doi.org/10.1111/jvp.12977) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Larsen_2016_reference](drugs/drug_gabapentin/Gabapentin_Larsen2016_reference.md) | — | 1-compartment (no model) | 5 | Larsen MS et al., Pharmacokinetic/Pharmacodynamic Relatio…, Pharmaceutical research (2016) | [10.1007/s11095-016-1859-7](https://doi.org/10.1007/s11095-016-1859-7) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Ouellet_2001_reference](drugs/drug_gabapentin/Gabapentin_Ouellet2001_reference.md) | — | 1-compartment (no model) | 0 | Ouellet D et al., Population pharmacokinetics of gabapent…, Epilepsy research (2001) | [10.1016/s0920-1211(01)00311-4](https://doi.org/10.1016/s0920-1211(01)00311-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Silvola_2025_reference](drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md) | — | nonlinear / manual (no model) | 0 | Silvola R et al., Population Pharmacokinetics and Transfe…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13295](https://doi.org/10.1002/psp4.13295) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Zhou_2026_reference](drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md) | — | 2-compartment (no model) | 8 (+1 cov.) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Larsen_2016_CFA_evoked_mechanical_hyperalgesia](drugs/drug_gabapentin/pd_Larsen_2016_CFA_evoked_mechanical_hyperalgesia.md) | mechanical hypersensitivity ← gabapentin · direct sigmoid Emax (Hill) effect | — | Larsen MS et al., Pharmacokinetic/Pharmacodynamic Relatio…, Pharmaceutical research (2016) | [10.1007/s11095-016-1859-7](https://doi.org/10.1007/s11095-016-1859-7) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2016_hot_flashes](drugs/drug_gabapentin/pd_Li_2016_hot_flashes.md) | hot flashes ← gabapentin · direct Emax (saturable) effect | — | Li L et al., Comparative efficacy of nonhormonal dru…, European journal of clinica… (2016) | [10.1007/s00228-016-2090-5](https://doi.org/10.1007/s00228-016-2090-5) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Zhou_2026_VAS](drugs/drug_gabapentin/pd_Zhou_2026_VAS.md) | pain intensity ← gabapentin · direct Emax (saturable) effect | ▶ model + simulator | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **SLC22A2** | `Q326` · ke0 | transport | [Zhou_2026](drugs/drug_gabapentin/pgx_Zhou_2026_SLC22A2_Q326.md) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gabapentin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC22A2` transport | PGx paper |
+
+<sub>Actors without a tissue in the table: ADORA1 (target), BCAT1 (inhibitor), CACNA2D1 (inhibitor), CACNA2D2 (inhibitor), GABBR1 (target), GABBR2 (target), KCNQ3 (activator), KCNQ5 (activator), SLC7A5 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 06:15 | 4:30 | 3/6/0 | 3/0/0 | 0/0/1 | 301,746/29,105 | einfracz / qwen3.8-27b | 14 | 4/11 | 13/1 | 1 |
+
+## Coverage
+
+- **PubMed hits:** 143 matched, 62 returned
+- **screened:** 10  ·  **relevant:** 10
+- **records:** 9  ·  extracted 0  ·  needs review 3  ·  rejected 6  ·  stale 4
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_18 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Ahmed_2017.pdf` | Ahmed GF et al., Pharmacokinetics and Saturable Absorpti…, The AAPS journal (2017) | popPK | 10 | [10.1208/s12248-016-0022-z](https://doi.org/10.1208/s12248-016-0022-z) | [28070716](https://pubmed.ncbi.nlm.nih.gov/28070716) | The study reports a quantitative population PK model for gabapentin with specific numeric values for clearance (2.93 L/h) and a description of saturable absorption parameters, although other specific numeric values (like Vd or absorption constants) are not explicitly listed in the abstract text. |
+| `Hampton_2021.pdf` | Hampton CE et al., Pharmacokinetics of oral and compounded…, Journal of veterinary pharm… (2021) | popPK | 10 | [10.1111/jvp.12977](https://doi.org/10.1111/jvp.12977) | [33978255](https://pubmed.ncbi.nlm.nih.gov/33978255) | The study reports explicit quantitative population PK parameters (Vc, CL, Vss, t1/2, ka, F) for gabapentin in pigs within the provided text. |
+| `Larsen_2016.pdf` | Larsen MS et al., Pharmacokinetic/Pharmacodynamic Relatio…, Pharmaceutical research (2016) | popPK | 10 | [10.1007/s11095-016-1859-7](https://doi.org/10.1007/s11095-016-1859-7) | [26780452](https://pubmed.ncbi.nlm.nih.gov/26780452) | The study reports a population PK model for gabapentin in rats with specific quantitative parameters (Km, Vmax, EC50) provided in the abstract evidence. |
+| `Ouellet_2001.pdf` | Ouellet D et al., Population pharmacokinetics of gabapent…, Epilepsy research (2001) | popPK | 10 | [10.1016/s0920-1211(01)00311-4](https://doi.org/10.1016/s0920-1211(01)00311-4) | [11738930](https://pubmed.ncbi.nlm.nih.gov/11738930) | Reports population PK parameters for gabapentin with specific quantitative values for the creatinine clearance slope (0.116) and variability estimates (approx 30%), though central estimates for CL, V, and ka are not explicitly listed as raw numbers in the abstract. |
+| `Papathanasiou_2016.pdf` | Papathanasiou T et al., Population Pharmacokinetic Modelling of…, Pharmaceutical research (2016) | popPK | 10 | [10.1007/s11095-016-1988-z](https://doi.org/10.1007/s11095-016-1988-z) | [27380190](https://pubmed.ncbi.nlm.nih.gov/27380190) | The paper describes a population PK model for gabapentin in rats, but the specific numeric parameter values are not present in the provided evidence text. |
+| `Siao_2010.pdf` | Siao KT et al., Pharmacokinetics of gabapentin in cats, American journal of veterin… (2010) | popPK | 10 | [10.2460/ajvr.71.7.817](https://doi.org/10.2460/ajvr.71.7.817) | [20594085](https://pubmed.ncbi.nlm.nih.gov/20594085) | The study provides explicit quantitative PK parameters (CL, Vd, t1/2) for gabapentin in cats. |
+| `Chen_2013.pdf` | Chen C, Meta-analyses of dose-exposure relation…, European journal of clinica… (2013) | pd | 5 | [10.1007/s00228-013-1545-1](https://doi.org/10.1007/s00228-013-1545-1) | [23743781](https://www.ncbi.nlm.nih.gov/pubmed/23743781) | metadata signals extractable PD data (Emax) |
+| `Falcão_2012.pdf` | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | pd | 5 | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) | [22171585](https://www.ncbi.nlm.nih.gov/pubmed/22171585) | metadata signals extractable PD data (exposure-response) |
+| `Ahmad_2021.pdf` | Ahmad KA et al., Microglial IL-10 and β-endorphin expres…, Brain, behavior, and immuni… (2021) | pd | 4 | [10.1016/j.bbi.2021.04.007](https://doi.org/10.1016/j.bbi.2021.04.007) | [33862171](https://www.ncbi.nlm.nih.gov/pubmed/33862171) | metadata signals extractable PD data (Emax) |
+| `Manville_2018.pdf` | Manville RW et al., Gabapentin Is a Potent Activator of KCN…, Molecular pharmacology (2018) | pd | 4 | [10.1124/mol.118.112953](https://doi.org/10.1124/mol.118.112953) | [30021858](https://www.ncbi.nlm.nih.gov/pubmed/30021858) | metadata signals extractable PD data (EC50) |
+| `Safgren_2025.pdf` | Safgren SL et al., The impact of coadministration of venla…, Breast cancer research and… (2025) | pgx | 8 | [10.1007/s10549-025-07644-3](https://doi.org/10.1007/s10549-025-07644-3) | [40011368](https://www.ncbi.nlm.nih.gov/pubmed/40011368) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Tran_2017.pdf` | Tran P et al., Population pharmacokinetics of gabapent…, Journal of pharmacokinetics… (2017) | pgx | 8 | [10.1007/s10928-017-9549-6](https://doi.org/10.1007/s10928-017-9549-6) | [29018999](https://www.ncbi.nlm.nih.gov/pubmed/29018999) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Yamamoto_2019.pdf` | Yamamoto PA et al., Pharmacogenetics-based population pharm…, Basic & clinical pharmacolo… (2019) | pgx | 8 | [10.1111/bcpt.13126](https://doi.org/10.1111/bcpt.13126) | [30192429](https://www.ncbi.nlm.nih.gov/pubmed/30192429) | metadata signals extractable PGX data (SLC22A2, PK/PD-context) |
+| `Alcantara-Montero_2017.pdf` | Alcantara-Montero A, [Desvenlafaxine and neuropathic pain: a…, Revista de neurologia (2017) | pgx | 7 |  | [28229443](https://www.ncbi.nlm.nih.gov/pubmed/28229443) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Benedetti_2000.pdf` | Benedetti MS, Enzyme induction and inhibition by new…, Fundamental & clinical phar… (2000) | pgx | 7 | [10.1111/j.1472-8206.2000.tb00411.x](https://doi.org/10.1111/j.1472-8206.2000.tb00411.x) | [11030437](https://www.ncbi.nlm.nih.gov/pubmed/11030437) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Kakuda_2011.pdf` | Kakuda TN et al., Pharmacokinetic interactions between et…, Clinical pharmacokinetics (2011) | pgx | 7 | [10.2165/11534740-000000000-00000](https://doi.org/10.2165/11534740-000000000-00000) | [21142266](https://www.ncbi.nlm.nih.gov/pubmed/21142266) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Syvänen_2006.pdf` | Syvänen S et al., Pharmacokinetic consequences of active…, Pharmaceutical research (2006) | pgx | 7 | [10.1007/s11095-006-9780-0](https://doi.org/10.1007/s11095-006-9780-0) | [16575498](https://www.ncbi.nlm.nih.gov/pubmed/16575498) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Turnheim_2004.pdf` | Turnheim K, [Drug interactions with antiepileptic a…, Wiener klinische Wochenschr… (2004) | pgx | 7 | [10.1007/BF03040747](https://doi.org/10.1007/BF03040747) | [15038401](https://www.ncbi.nlm.nih.gov/pubmed/15038401) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
+
+<sub>queue written 2026-10-07 06:11 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ahmad_2021 | irrelevant | 0 | 0 | The study focuses on the mechanism of action (microglial IL-10/β-endorphin) and efficacy (ED50/EC50) in a rat model, not pharmacokinetic disposition parameters. |
+| PGx | Alcantara-Montero_2017 | not_relevant | 0 | 0 | The paper reviews desvenlafaxine in neuropathic pain and does not report any pharmacogenomic effect on the pharmacokinetic or pharmacodynamic parameters of gabapentin. |
+| PGx | Anderson_1998 | not_relevant | 0 | 0 | The paper discusses general pharmacokinetic interactions of antiepileptic drugs, specifically noting that gabapentin is not an enzyme inducer or inhibitor, but it does not report any pharmacogenomic effects (gene variants/genotypes) on gabapentin's PK or PD parameters. |
+| PGx | Aylón_2026 | not_relevant | 0 | 0 | The paper states gabapentin is not a substrate of P-gp and does not report a pharmacogenomic effect on its pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Benedetti_2000 | not_relevant | 0 | 0 | The paper discusses gabapentin's lack of enzyme induction/inhibition but does not report pharmacogenomic variants affecting gabapentin PK/PD. |
+| PGx | Burand_2023 | not_relevant | 0 | 0 | The paper studies behavioral outcomes (sniffing, movement) in Fabry rats and does not report pharmacokinetic parameters (e.g., AUC, Cmax) or specific pharmacodynamic biomarkers for gabapentin in relation to genotype, but rather clinical-like behavioral responses. |
+| popPK | Chen_2013 | relevant | 4 | 4 | The paper reports quantitative dose-exposure parameters (ED50, Emax, power) for gabapentin, but lacks standard compartmental PK parameters like clearance, volume, or half-life. |
+| PGx | Costa_2021 | not_relevant | 0 | 0 | The study explicitly tested SLC22A2 and SLC22A4 genotypes as covariates and concluded there was no significant association with gabapentin pharmacokinetics. |
+| PGx | Desmarais_2010 | not_relevant | 0 | 0 | The paper is a review of drug interactions regarding tamoxifen and gabapentin, and does not report on pharmacogenomic (gene variant) effects on PK/PD parameters. |
+| popPK | Falcão_2012 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of eslicarbazepine, and gabapentin is mentioned only as a co-administered concomitant antiepileptic drug without specific PK parameters being reported for it. |
+| PD | Falcão_2012 | not_relevant | 0 | 0 | The paper focuses on eslicarbazepine acetate; gabapentin is only mentioned as a concomitant medication with no effect on eslicarbazepine PK, and no PD parameters for gabapentin are reported. |
+| PGx | Hachad_2002 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions for gabapentin and other AEDs but does not discuss pharmacogenomics or the impact of genetic variants on gabapentin pharmacokinetics or pharmacodynamics. |
+| PGx | Kakuda_2011 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions for etravirine, not pharmacogenomic effects on gabapentin PK/PD. |
+| PGx | Kang_2007 | not_relevant | 6 | 8 | The study reports no significant differences in gabapentin PK parameters across MDR1 genotypes, only a non-significant trend. |
+| PGx | Karroum_2008 | not_relevant | 0 | 0 | The text is a general overview of Restless Legs Syndrome and mentions gabapentin only as a treatment option, without discussing pharmacogenomics or specific PK/PD parameter changes based on genetic variants. |
+| PGx | Kawakami_2015 | not_relevant | 0 | 0 | The paper mentions gabapentin pharmacokinetics only in the context of a drug-drug interaction with magnesium oxide, not a gene variant/genotype effect. |
+| PGx | Knox_2025 | not_relevant | 1 | 2 | The study reports differential efficacy (PD) of gabapentin in mouse models with AD genotypes, but it does not report specific pharmacokinetic or pharmacodynamic parameter values (e.g., AUC, Emax, EC50) that can be extracted for quantitative pharmacogenomic analysis. |
+| PGx | Krivoy_2006 | not_relevant | 0 | 0 | The paper discusses the clinical features and mechanisms of antiepileptic drug-induced hypersensitivity syndrome and mentions gabapentin only to state a lack of cross-reactivity, without reporting any pharmacogenomic effects on gabapentin's PK or PD. |
+| popPK | Kumar_2020 | irrelevant | 0 | 0 | The study focuses on lamotrigine pharmacokinetics in an epilepsy model, where gabapentin is used only as a comparator drug for efficacy testing, and no gabapentin PK parameters are reported. |
+| PD | Kumar_2020 | not_relevant | 0 | 0 | The paper focuses on lamotrigine kindling and drug resistance; gabapentin is only mentioned as a drug to which the model is resistant, with no PK/PD modeling or numeric exposure-response parameters provided. |
+| popPK | Li_2016 | irrelevant | 1 | 0 | The study is a pharmacodynamic model-based meta-analysis comparing the efficacy (Emax) of nonhormonal drugs for hot flashes, not a pharmacokinetic study reporting disposition parameters for gabapentin. |
+| popPK | Manville_2018 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating gabapentin's activation of potassium channels (KCNQ3/KCNQ5) and does not report pharmacokinetic parameters. |
+| PGx | McNary_2025 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (enzyme induction) rather than a pharmacogenomic effect, and does not report PK/PD parameters for gabapentin. |
+| popPK | Oggianu_2023 | relevant | 9 | 3 | The study develops a population PK model for gabapentin in mice (subject drug), but the specific numeric parameter values are in a Table not fully provided in the evidence (only quartiles/ranges are partially visible). |
+| popPK | Papathanasiou_2016 | relevant | 10 | 2 | The paper describes a population PK model for gabapentin in rats, but the specific numeric parameter values are not present in the provided evidence text. |
+| PGx | Parker_2024 | not_relevant | 1 | 0 | The paper identifies gabapentin as a potential drug target for schizophrenia using genetic enrichment but does not report any specific gene variant affecting gabapentin's pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Radtke_2022 | not_relevant | 0 | 0 | The paper investigates PARK2 copy number variants and gene expression in cell lines; it does not report pharmacokinetic or pharmacodynamic effects of gabapentin. |
+| PGx | Rodríguez-Arias_2015 | not_relevant | 0 | 0 | The paper is a review of therapies for opiate addiction and does not discuss gabapentin or pharmacogenomic effects on its PK/PD. |
+| PGx | Safgren_2025 | not_relevant | 0 | 0 | The paper studies drug-drug interactions (gabapentin's effect on tamoxifen metabolism) and does not report pharmacogenomic effects (gene variants changing gabapentin's PK/PD). |
+| PGx | Sloan_2022 | not_relevant | 0 | 0 | The paper is a review of treatments for diabetic neuropathy and does not report specific pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of gabapentin. |
+| PGx | Soyka_2015 | not_relevant | 0 | 0 | The paper is a general review of alcoholism pharmacotherapy that mentions gabapentin and pharmacogenetics only in broad terms without reporting specific gene-variant effects on gabapentin PK/PD parameters. |
+| PGx | Syvänen_2006 | not_relevant | 0 | 0 | The paper is a simulation study using gabapentin parameters to model blood-brain barrier transport mechanisms, and it does not report the effect of a specific gene variant/genotype on a PK or PD parameter. |
+| PGx | Turnheim_2004 | not_relevant | 0 | 0 | The paper discusses general drug-drug interactions of antiepileptics and explicitly states gabapentin is not involved in PK interactions, without mentioning any genetic variants. |
+| PGx | Wadman_2020 | not_relevant | 0 | 0 | The paper is a clinical trial review evaluating the efficacy of drugs for spinal muscular atrophy and does not report on pharmacogenomic influences on the pharmacokinetics or pharmacodynamics of gabapentin. |
+| PGx | Yakhchalian_2024 | not_relevant | 0 | 0 | The paper is a case report on serotonin syndrome management and mentions gabapentin only as a supportive treatment, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| PGx | Yamamoto_2019 | not_relevant | 5 | 2 | The study reports a null result for the tested polymorphism (SLC22A4) and insufficient power to determine the effect of the other (SLC22A2), providing no significant pharmacogenomic effect size. |
+| PGx | Yap_2008 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions between chemotherapeutic agents and antiepileptics; it contains no pharmacogenomic data (gene variants/genotypes) affecting gabapentin's PK or PD parameters. |
+| PGx | Zervou_2025 | not_relevant | 1 | 0 | The paper describes gabapentin's clinical efficacy in treating HPP-associated pain but does not report any pharmacogenomic analysis of how genetic variants affect gabapentin's pharmacokinetics or pharmacodynamics. |
+| popPK | Zhang_2019 | irrelevant | 0 | 0 | The paper focuses on pharmacodynamic efficacy (symptom reduction) rather than pharmacokinetic disposition parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgabapentin%5D&body=Drug%3A%20gabapentin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gabapentin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 06:11 UTC</sub>

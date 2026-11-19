@@ -1,0 +1,196 @@
+{
+ "dose_source": "paper",
+ "model_id": "Aripiprazole_BediakoKakari2025_second_trimester",
+ "molar_masses": {
+  "retainedFraction": 0.44838799999999995
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  15.0,
+  300.0,
+  405.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 9.64e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 8.49e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 0.000126
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 0.000113
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 5.7799999999999995e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 4.3299999999999995e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 7.42e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 5.7499999999999995e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 0.000148
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 0.000108
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 0.000197
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 0.000143
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 9.449999999999999e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 7.11e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 0.00013199999999999998
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 9.14e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 1.64
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 1.78
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 1.59
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 3.01e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 2.91e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 4.3799999999999994e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 4.16e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 1.44e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 9.3e-06
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 2.08e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 1.2699999999999999e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 2.71e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 2.7199999999999997e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 3.65e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 2.4699999999999997e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 2.61e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 3.5e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 3.3299999999999996e-05
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 1.72
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 2.81
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 1.68
+   },
+   {
+    "source": "Bediako-Kakari_2025:other_prose",
+    "value_si": 2.62
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.44838799999999995,
+  "Tb[1]": 146.784108824459,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.7746905908949137
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

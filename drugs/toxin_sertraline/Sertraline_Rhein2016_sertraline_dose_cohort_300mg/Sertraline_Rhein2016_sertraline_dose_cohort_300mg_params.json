@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Sertraline_Rhein2016_sertraline_dose_cohort_300mg",
+ "molar_masses": {
+  "retainedFraction": 0.30623
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0,
+  200.0,
+  300.0,
+  400.0
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.30623,
+  "Tb[1]": 25200.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001
+ },
+ "reference_peak_times": {
+  "retainedFraction": 295.7915831663327
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.996765035681726
+ },
+ "stop_time": 147600.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

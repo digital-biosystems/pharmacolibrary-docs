@@ -1,0 +1,572 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;carboplatin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carboplatin_Brandon2026_reference&quot;,&quot;label&quot;:&quot;Brandon_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Schneider2025_reference&quot;,&quot;label&quot;:&quot;Schneider_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Schneider2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_VarelaGonzlezAller2025_reference&quot;,&quot;label&quot;:&quot;Varela-Gonz\u00e1lez-Aller_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_VarelaGonzlezAller2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_1_14&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_1_14&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_1_14.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_2_15&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_2_15&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_2_15.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_3_16&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_3_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_3_16.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_B_guin_2024_Thrombocyte_reduction&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024 \u00b7 Thrombocyte reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/pd_B_guin_2024_Thrombocyte_reduction.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_B_guin_2024_Thrombocyte_reduction_2&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024 \u00b7 Thrombocyte reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/pd_B_guin_2024_Thrombocyte_reduction_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+
+# carboplatin
+
+- **generic name:** carboplatin
+- **ATC codes:** `L01XA02`
+- **DrugBank:** [DB00958](https://go.drugbank.com/drugs/DB00958) · **PubChem:** [CID 38904](https://pubchem.ncbi.nlm.nih.gov/compound/38904)
+- **molar mass:** 371.254 g/mol (C6H12N2O4Pt) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Carboplatin is a platinum-based antineoplastic agent used to treat various cancers, including ovarian, lung, head and neck, and brain tumors. It is given by intravenous injection, either directly into a vein or through a port.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q415588](https://www.wikidata.org/wiki/Q415588), [Wikipedia](https://en.wikipedia.org/wiki/Carboplatin?oldid=1381050383) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| carboplatin | parent | 371.254 | C6H12N2O4Pt | DrugBank | [38904](https://pubchem.ncbi.nlm.nih.gov/compound/38904) | Béguin_2024, Calvert_1989, Chatelut_1995, Ekhart_2009, Gareau_2026, Gotoh_1991, Jeon_2026, Kicken_2025, Moeung_2017, Newell_1993, Schmitt_2009, el-Yazigi_1989 |
+| platinum (total and ultrafilterable) | metabolite | 195.08 | Pt | PubChem | [23939](https://pubchem.ncbi.nlm.nih.gov/compound/23939) | el-Yazigi_1989 |
+
+## Start here
+
+> **Brandon_2026_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md?tab=Simulation) · [record](drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="240" viewBox="0 0 560 240" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="218" stroke="#ddd"/><text x="190.0" y="232" font-size="10" text-anchor="middle">0.001</text><line x1="260.0" y1="18" x2="260.0" y2="218" stroke="#ddd"/><text x="260.0" y="232" font-size="10" text-anchor="middle">0.01</text><line x1="330.0" y1="18" x2="330.0" y2="218" stroke="#ddd"/><text x="330.0" y="232" font-size="10" text-anchor="middle">0.1</text><line x1="400.0" y1="18" x2="400.0" y2="218" stroke="#ddd"/><text x="400.0" y="232" font-size="10" text-anchor="middle">1</text><line x1="470.0" y1="18" x2="470.0" y2="218" stroke="#ddd"/><text x="470.0" y="232" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="218" stroke="#ddd"/><text x="540.0" y="232" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Schneider_2025 · CL</text><circle cx="256.8" cy="30.0" r="4" fill="#78909c"><title>Schneider_2025 · CL: 0.009 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Varela-González-Aller_2025 · CL</text><circle cx="438.9" cy="46.0" r="4" fill="#78909c"><title>Varela-González-Aller_2025 · CL: 3.6 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Kicken_2025 · CL</text><circle cx="458.0" cy="62.0" r="4" fill="#ef6c00"><title>Kicken_2025 · CL: 6.744 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Jeon_2026 · CL</text><circle cx="459.1" cy="78.0" r="4" fill="#ef6c00"><title>Jeon_2026 · CL: 6.99 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Schmitt_2009 · CL</text><circle cx="459.5" cy="94.0" r="4" fill="#ef6c00"><title>Schmitt_2009 · CL: 7.068 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Moeung_2017 · CL</text><circle cx="462.6" cy="110.0" r="4" fill="#ef6c00"><title>Moeung_2017 · CL: 7.842 L/h</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Jeon_2026 · CL</text><circle cx="464.4" cy="126.0" r="4" fill="#ef6c00"><title>Jeon_2026 · CL: 8.33 L/h</title></circle><text x="184" y="146.0" font-size="11" text-anchor="end">Jeon_2026 · CL</text><circle cx="464.6" cy="142.0" r="4" fill="#ef6c00"><title>Jeon_2026 · CL: 8.38 L/h</title></circle><text x="184" y="162.0" font-size="11" text-anchor="end">Gareau_2026 · CL ·/kg</text><circle cx="475.8" cy="158.0" r="4" fill="#ef6c00"><title>Gareau_2026 · CL ·/kg: 12.1 L/h</title></circle><text x="184" y="178.0" font-size="11" text-anchor="end">Brandon_2026 · CL</text><circle cx="485.0" cy="174.0" r="4" fill="#78909c"><title>Brandon_2026 · CL: 16.4 L/h</title></circle><text x="184" y="194.0" font-size="11" text-anchor="end">Centanni_2024 · CL</text><circle cx="515.9" cy="190.0" r="4" fill="#ef6c00"><title>Centanni_2024 · CL: 45.2 L/h</title></circle><text x="184" y="210.0" font-size="11" text-anchor="end">Terranova_2021 · CL</text><circle cx="526.9" cy="206.0" r="4" fill="#78909c"><title>Terranova_2021 · CL: 65 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="256" viewBox="0 0 560 256" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="234" stroke="#ddd"/><text x="190.0" y="248" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="234" stroke="#ddd"/><text x="306.7" y="248" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="234" stroke="#ddd"/><text x="423.3" y="248" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="234" stroke="#ddd"/><text x="540.0" y="248" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Gareau_2026 · V ·/kg</text><circle cx="325.2" cy="30.0" r="4" fill="#ef6c00"><title>Gareau_2026 · V ·/kg: 14.41 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jeon_2026 · V</text><circle cx="328.5" cy="46.0" r="4" fill="#ef6c00"><title>Jeon_2026 · V: 15.4 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Jeon_2026 · V</text><circle cx="331.4" cy="62.0" r="4" fill="#ef6c00"><title>Jeon_2026 · V: 16.3 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Ekhart_2009 · V ·/kg</text><circle cx="474.6" cy="78.0" r="4" fill="#ef6c00"><title>Ekhart_2009 · V ·/kg: 275.1 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Kicken_2025 · V ·/kg</text><circle cx="474.6" cy="94.0" r="4" fill="#ef6c00"><title>Kicken_2025 · V ·/kg: 275.1 L</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Moeung_2017 · V ·/kg</text><circle cx="474.6" cy="110.0" r="4" fill="#ef6c00"><title>Moeung_2017 · V ·/kg: 275.1 L</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Schmitt_2009 · V ·/kg</text><circle cx="474.6" cy="126.0" r="4" fill="#ef6c00"><title>Schmitt_2009 · V ·/kg: 275.1 L</title></circle><text x="184" y="146.0" font-size="11" text-anchor="end">Schneider_2025 · V1</text><circle cx="242.2" cy="142.0" r="4" fill="#78909c"><title>Schneider_2025 · V1: 2.8 L</title></circle><text x="184" y="162.0" font-size="11" text-anchor="end">Jeon_2026 · V1</text><circle cx="325.1" cy="158.0" r="4" fill="#ef6c00"><title>Jeon_2026 · V1: 14.4 L</title></circle><text x="184" y="178.0" font-size="11" text-anchor="end">Brandon_2026 · V1</text><circle cx="349.3" cy="174.0" r="4" fill="#78909c"><title>Brandon_2026 · V1: 23.2 L</title></circle><text x="184" y="194.0" font-size="11" text-anchor="end">Centanni_2024 · V1</text><circle cx="349.5" cy="190.0" r="4" fill="#ef6c00"><title>Centanni_2024 · V1: 23.3 L</title></circle><text x="184" y="210.0" font-size="11" text-anchor="end">Varela-González-Aller_2025 · V1</text><circle cx="378.4" cy="206.0" r="4" fill="#78909c"><title>Varela-González-Aller_2025 · V1: 41.2 L</title></circle><text x="184" y="226.0" font-size="11" text-anchor="end">Terranova_2021 · V1</text><circle cx="431.7" cy="222.0" r="4" fill="#78909c"><title>Terranova_2021 · V1: 118 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Brandon_2026_reference](drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Brandon AM et al., Population pharmacokinetics and dose-re…, British journal of clinical… (2026) | [10.1002/bcp.70436](https://doi.org/10.1002/bcp.70436) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Schneider_2025_reference](drugs/drug_carboplatin/Carboplatin_Schneider2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Schneider BK et al., Optimizing First-Line Therapeutics in N…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70079](https://doi.org/10.1002/psp4.70079) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Terranova_2021_reference](drugs/drug_carboplatin/Carboplatin_Terranova2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Terranova N et al., Population pharmacokinetics of ATR inhi…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04184-z](https://doi.org/10.1007/s00280-020-04184-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Varela-González-Aller_2025_reference](drugs/drug_carboplatin/Carboplatin_VarelaGonzlezAller2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub> | [Centanni_2024_reference](drugs/drug_carboplatin/Carboplatin_Centanni2024_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Centanni M et al., Model-Informed Precision Dosing to Redu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-023-01336-1](https://doi.org/10.1007/s40262-023-01336-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Ekhart_2009_reference](drugs/drug_carboplatin/Carboplatin_Ekhart2009_reference.md) | — | 1-compartment (no model) | 4 | Ekhart C et al., Carboplatin dosing in overweight and ob…, Cancer chemotherapy and pha… (2009) | [10.1007/s00280-008-0856-x](https://doi.org/10.1007/s00280-008-0856-x) |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q86 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Gareau_2026_mean](drugs/drug_carboplatin/Carboplatin_Gareau2026_mean.md) | — | 1-compartment (no model) | 9 | Gareau A et al., Serum Symmetric Dimethylarginine as a P…, Veterinary and comparative… (2026) | [10.1111/vco.70034](https://doi.org/10.1111/vco.70034) |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ estimate](drugs/drug_carboplatin/Carboplatin_Gareau2026_estimate.md) | — | 1-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Gotoh_1991_reference](drugs/drug_carboplatin/Carboplatin_Gotoh1991_reference.md) | — | 1-compartment (no model) | 2 | Gotoh T et al., [Evaluation of carboplatin administrati…, Gan to kagaku ryoho. Cancer… (1991) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: unreported model parameter default(s): F</sub> | [Jeon_2026_reference_1_14](drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_1_14.md) | ▶ model + simulator | 1-compartment, oral | 6 | Jeon J et al., Calvert Formula Modification for Optimi…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040398](https://doi.org/10.3390/pharmaceutics18040398) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [↳ reference_2_15](drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_2_15.md) | ▶ model + simulator | 2-compartment, oral | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: unreported model parameter default(s): F</sub> | [↳ reference_3_16](drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_3_16.md) | ▶ model + simulator | 1-compartment, oral | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Kicken_2025_reference](drugs/drug_carboplatin/Carboplatin_Kicken2025_reference.md) | — | 1-compartment (no model) | 4 | Kicken MP et al., Pharmacokinetic Study of Carboplatin Us…, Therapeutic drug monitoring (2025) | [10.1097/ftd.0000000000001328](https://doi.org/10.1097/ftd.0000000000001328) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Moeung_2017_reference](drugs/drug_carboplatin/Carboplatin_Moeung2017_reference.md) | — | 1-compartment (no model) | 4 | Moeung S et al., Therapeutic Drug Monitoring of Carbopla…, Clinical cancer research :… (2017) | [10.1158/1078-0432.CCR-17-1344](https://doi.org/10.1158/1078-0432.CCR-17-1344) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Schmitt_2009_reference](drugs/drug_carboplatin/Carboplatin_Schmitt2009_reference.md) | — | 1-compartment (no model) | 4 | Schmitt A et al., A universal formula based on cystatin C…, Clinical cancer research :… (2009) | [10.1158/1078-0432.CCR-09-0017](https://doi.org/10.1158/1078-0432.CCR-09-0017) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [el-Yazigi_1989_reference](drugs/drug_carboplatin/Carboplatin_elYazigi1989_reference.md) | — | 1-compartment (no model) | 3 | el-Yazigi A et al., Pharmacokinetics of platinum in cancer…, Pharmaceutical research (1989) | [10.1023/a:1015920524065](https://doi.org/10.1023/a:1015920524065) |
+| <span class="pk-rf" hidden data-species="dog" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Béguin_2024_reference](drugs/drug_carboplatin/Carboplatin_Bguin2024_reference.md) | — | 1-compartment (no model) | 4 (+2 cov.) | Béguin J et al., Population pharmacokinetics modelling f…, BMC veterinary research (2024) | [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Calvert_1989_reference](drugs/drug_carboplatin/Carboplatin_Calvert1989_reference.md) | — | 1-compartment (no model) | 0 | Calvert AH et al., Carboplatin dosage: prospective evaluat…, Journal of clinical oncolog… (1989) | [10.1200/JCO.1989.7.11.1748](https://doi.org/10.1200/JCO.1989.7.11.1748) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Chatelut_1995_reference](drugs/drug_carboplatin/Carboplatin_Chatelut1995_reference.md) | — | 1-compartment (no model) | 0 | Chatelut E et al., Prediction of carboplatin clearance fro…, Journal of the National Can… (1995) | [10.1093/jnci/87.8.573](https://doi.org/10.1093/jnci/87.8.573) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Newell_1993_reference](drugs/drug_carboplatin/Carboplatin_Newell1993_reference.md) | — | 1-compartment (no model) | 0 | Newell DR et al., Carboplatin pharmacokinetics in childre…, Journal of clinical oncolog… (1993) | [10.1200/JCO.1993.11.12.2314](https://doi.org/10.1200/JCO.1993.11.12.2314) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Ahmed_2014_anti_proliferative_activity](drugs/drug_carboplatin/pd_Ahmed_2014_anti_proliferative_activity.md) | anti-proliferative activity ← carboplatin · inhibition effect | — | Ahmed F et al., Carboplatin loaded protein nanoparticle…, International journal of bi… (2014) | [10.1016/j.ijbiomac.2014.07.041](https://doi.org/10.1016/j.ijbiomac.2014.07.041) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Alavi_2022_cytotoxicity_effects_against_mouse_breast_cancer_4T1_cells](drugs/drug_carboplatin/pd_Alavi_2022_cytotoxicity_effects_against_mouse_breast_cancer_.md) | cytotoxicity effects against mouse breast cancer 4T1 cells ← carboplatin (CB) · inhibition effect | — | Alavi SE et al., Carboplatin Niosomal Nanoplatform for P…, Journal of pharmaceutical s… (2022) | [10.1016/j.xphs.2022.06.002](https://doi.org/10.1016/j.xphs.2022.06.002) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bedia_2025_cell_growth_inhibitory_effects](drugs/drug_carboplatin/pd_Bedia_2025_cell_growth_inhibitory_effects.md) | cell growth inhibitory effects ← carboplatin · inhibition effect | — | Bedia JS et al., Coordinated protein modules define DNA…, Cell reports. Medicine (2025) | [10.1016/j.xcrm.2025.102295](https://doi.org/10.1016/j.xcrm.2025.102295) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Fridley_2016_Caspase_3_7](drugs/drug_carboplatin/pd_Fridley_2016_Caspase_3_7.md) | Caspase3/7 activity (carboplatin) ← carboplatin · direct sigmoid Emax (Hill) effect | — | Fridley BL et al., Genome-Wide Study of Response to Platin…, Frontiers in genetics (2016) | [10.3389/fgene.2016.00037](https://doi.org/10.3389/fgene.2016.00037) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Fridley_2016_MTT](drugs/drug_carboplatin/pd_Fridley_2016_MTT.md) | MTT cell viability (carboplatin) ← carboplatin · direct sigmoid Emax (Hill) effect | — | Fridley BL et al., Genome-Wide Study of Response to Platin…, Frontiers in genetics (2016) | [10.3389/fgene.2016.00037](https://doi.org/10.3389/fgene.2016.00037) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Garcia-Cremades_2017_tumor_volume](drugs/drug_carboplatin/pd_Garcia_Cremades_2017_tumor_volume.md) | tumor volume ← carboplatin · inhibition effect | — | Garcia-Cremades M et al., Characterizing Gemcitabine Effects Admi…, The Journal of pharmacology… (2017) | [10.1124/jpet.116.237610](https://doi.org/10.1124/jpet.116.237610) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gorski_2021_cell_viability](drugs/drug_carboplatin/pd_Gorski_2021_cell_viability.md) | cell viability ← carboplatin · model not identified | — | Gorski JW et al., Utilizing Patient-Derived Epithelial Ov…, Biomedicines (2021) | [10.3390/biomedicines9081021](https://doi.org/10.3390/biomedicines9081021) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hayes_2013_platelet_counts](drugs/drug_carboplatin/pd_Hayes_2013_platelet_counts.md) | platelet counts ← carboplatin · indirect response — drug inhibits the production of platelet counts | — | Hayes S et al., Population PK/PD modeling of eltrombopa…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-013-2150-9](https://doi.org/10.1007/s00280-013-2150-9) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Henrich_2017_Neutrophil_concentrations](drugs/drug_carboplatin/pd_Henrich_2017_Neutrophil_concentrations.md) | Neutrophil concentrations ← carboplatin · model not identified | — | Henrich A et al., Semimechanistic Bone Marrow Exhaustion…, The Journal of pharmacology… (2017) | [10.1124/jpet.117.240309](https://doi.org/10.1124/jpet.117.240309) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kajiwara_2009_AUC](drugs/drug_carboplatin/pd_Kajiwara_2009_AUC.md) | area under the curve for tumor colony volumes ← carboplatin · direct Emax (saturable) effect | — | Kajiwara Y et al., Melding a New 3-Dimensional Agarose Col…, Technology in cancer resear… (2009) | [10.1177/153303460900800210](https://doi.org/10.1177/153303460900800210) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Li_2006_2_anti_proliferation_in_hRPTECs](drugs/drug_carboplatin/pd_Li_2006_2_anti_proliferation_in_hRPTECs.md) | anti-proliferation in hRPTECs ← carboplatin · inhibition effect | — | Li W et al., Human primary renal cells as a model fo…, Toxicology in vitro : an in… (2006) | [10.1016/j.tiv.2005.09.016](https://doi.org/10.1016/j.tiv.2005.09.016) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span> | [Létourneau_2012_Response_to_paclitaxel_and_carboplatin](drugs/drug_carboplatin/pd_L_tourneau_2012_Response_to_paclitaxel_and_carboplatin.md) | Response to paclitaxel and carboplatin ← carboplatin · model not identified | — | Létourneau IJ et al., Derivation and characterization of matc…, BMC cancer (2012) | [10.1186/1471-2407-12-379](https://doi.org/10.1186/1471-2407-12-379) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Maestri_2026_cell_viability](drugs/drug_carboplatin/pd_Maestri_2026_cell_viability.md) | cell viability ← carboplatin · direct sigmoid Emax (Hill) effect | — | Maestri C et al., Heterogeneity of Ex Vivo Tumor Response…, Cancer reports (Hoboken, N.… (2026) | [10.1002/cnr2.70554](https://doi.org/10.1002/cnr2.70554) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Maxwell_2018_cell_viability](drugs/drug_carboplatin/pd_Maxwell_2018_cell_viability.md) | cell viability ← carboplatin · inhibition effect | — | Maxwell EA et al., In vitro chemosensitivity of feline inj…, Veterinary surgery : VS (2018) | [10.1111/vsu.12709](https://doi.org/10.1111/vsu.12709) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Paraskar_2010_cytotoxicity](drugs/drug_carboplatin/pd_Paraskar_2010_cytotoxicity.md) | cytotoxicity ← carboplatin · inhibition effect | — | Paraskar AS et al., Harnessing structure-activity relations…, Proceedings of the National… (2010) | [10.1073/pnas.1007026107](https://doi.org/10.1073/pnas.1007026107) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Parveen_2010_antiproliferative_activity](drugs/drug_carboplatin/pd_Parveen_2010_antiproliferative_activity.md) | antiproliferative activity ← carboplatin · inhibition effect | — | Parveen S et al., Enhanced antiproliferative activity of…, Acta biomaterialia (2010) | [10.1016/j.actbio.2010.02.010](https://doi.org/10.1016/j.actbio.2010.02.010) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Poradowski_2022_Cell_viability_D_17_cell_line](drugs/drug_carboplatin/pd_Poradowski_2022_Cell_viability_D_17_cell_line.md) | Cell viability (D-17 cell line) ← carboplatin · inhibition effect | — | Poradowski D et al., Synergistic Antitumor Interaction of Ri…, Animals : an open access jo… (2022) | [10.3390/ani12070866](https://doi.org/10.3390/ani12070866) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Poradowski_2022_Cell_viability_U_2_OS_cell_line](drugs/drug_carboplatin/pd_Poradowski_2022_Cell_viability_U_2_OS_cell_line.md) | Cell viability (U-2 OS cell line) ← carboplatin · inhibition effect | — | Poradowski D et al., Synergistic Antitumor Interaction of Ri…, Animals : an open access jo… (2022) | [10.3390/ani12070866](https://doi.org/10.3390/ani12070866) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Schneider_2025_longest_diameter_of_each_tumor](drugs/drug_carboplatin/pd_Schneider_2025_longest_diameter_of_each_tumor.md) | longest diameter of each tumor ← carboplatin · disease-progression model | — | Schneider BK et al., Optimizing First-Line Therapeutics in N…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70079](https://doi.org/10.1002/psp4.70079) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sculier_1999_antitumour_response_rate](drugs/drug_carboplatin/pd_Sculier_1999_antitumour_response_rate.md) | antitumour response rate ← carboplatin · model not identified | — | Sculier JP et al., A comparison of methods of calculation…, European journal of cancer… (1999) | [10.1016/s0959-8049(99)00029-5](https://doi.org/10.1016/s0959-8049(99)00029-5) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sculier_1999_haematological_toxicity_mainly_thrombopenia](drugs/drug_carboplatin/pd_Sculier_1999_haematological_toxicity_mainly_thrombopenia.md) | haematological toxicity, mainly thrombopenia ← carboplatin · model not identified | — | Sculier JP et al., A comparison of methods of calculation…, European journal of cancer… (1999) | [10.1016/s0959-8049(99)00029-5](https://doi.org/10.1016/s0959-8049(99)00029-5) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sculier_1999_patient_survival](drugs/drug_carboplatin/pd_Sculier_1999_patient_survival.md) | patient survival ← carboplatin · model not identified | — | Sculier JP et al., A comparison of methods of calculation…, European journal of cancer… (1999) | [10.1016/s0959-8049(99)00029-5](https://doi.org/10.1016/s0959-8049(99)00029-5) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Theile_2012_cell_proliferation](drugs/drug_carboplatin/pd_Theile_2012_cell_proliferation.md) | cell proliferation ← carboplatin · inhibition effect | — | Theile D et al., Cellular pharmacokinetic/pharmacodynami…, The Journal of pharmacology… (2012) | [10.1124/jpet.111.189621](https://doi.org/10.1124/jpet.111.189621) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Woo_2008_EPO](drugs/drug_carboplatin/pd_Woo_2008_EPO.md) | endogenous rat erythropoietin ← carboplatin · indirect response — drug stimulates the loss of endogenous rat erythropoietin | — | Woo S et al., Pharmacodynamic model for chemotherapy-…, Cancer chemotherapy and pha… (2008) | [10.1007/s00280-007-0582-9](https://doi.org/10.1007/s00280-007-0582-9) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Woo_2008_RBC](drugs/drug_carboplatin/pd_Woo_2008_RBC.md) | red blood cells ← carboplatin · indirect response — drug stimulates the loss of red blood cells | — | Woo S et al., Pharmacodynamic model for chemotherapy-…, Cancer chemotherapy and pha… (2008) | [10.1007/s00280-007-0582-9](https://doi.org/10.1007/s00280-007-0582-9) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Woo_2008_hemoglobin](drugs/drug_carboplatin/pd_Woo_2008_hemoglobin.md) | hemoglobin ← carboplatin · indirect response — drug stimulates the loss of hemoglobin | — | Woo S et al., Pharmacodynamic model for chemotherapy-…, Cancer chemotherapy and pha… (2008) | [10.1007/s00280-007-0582-9](https://doi.org/10.1007/s00280-007-0582-9) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Woo_2008_reticulocytes](drugs/drug_carboplatin/pd_Woo_2008_reticulocytes.md) | reticulocytes ← carboplatin · indirect response — drug stimulates the loss of reticulocytes | — | Woo S et al., Pharmacodynamic model for chemotherapy-…, Cancer chemotherapy and pha… (2008) | [10.1007/s00280-007-0582-9](https://doi.org/10.1007/s00280-007-0582-9) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Béguin_2024_Thrombocyte_reduction](drugs/drug_carboplatin/pd_B_guin_2024_Thrombocyte_reduction.md) | Thrombocyte reduction ← carboplatin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Béguin J et al., Population pharmacokinetics modelling f…, BMC veterinary research (2024) | [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chisaki_2016_PLT](drugs/drug_carboplatin/pd_Chisaki_2016_PLT.md) | platelet (PLT) counts biomarker turnover ← endogenous kinetics | — | Chisaki Y et al., Population Pharmacodynamic Model for Ba…, Pharmacology (2016) | [10.1159/000449228](https://doi.org/10.1159/000449228) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chisaki_2016_RBC](drugs/drug_carboplatin/pd_Chisaki_2016_RBC.md) | red blood cell (RBC) counts biomarker turnover ← endogenous kinetics | — | Chisaki Y et al., Population Pharmacodynamic Model for Ba…, Pharmacology (2016) | [10.1159/000449228](https://doi.org/10.1159/000449228) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chisaki_2016_WBC](drugs/drug_carboplatin/pd_Chisaki_2016_WBC.md) | white blood cell (WBC) counts biomarker turnover ← endogenous kinetics | — | Chisaki Y et al., Population Pharmacodynamic Model for Ba…, Pharmacology (2016) | [10.1159/000449228](https://doi.org/10.1159/000449228) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [De_2026_NT](drugs/drug_carboplatin/pd_De_2026_NT.md) | Neutrophils ← carboplatin · indirect response — drug inhibits the production of Neutrophils | — | De Carlo A et al., Model-informed precision dosing of carb…, British journal of clinical… (2026) | [10.1002/bcp.70413](https://doi.org/10.1002/bcp.70413) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [De_2026_PLT](drugs/drug_carboplatin/pd_De_2026_PLT.md) | Platelets ← carboplatin · indirect response — drug inhibits the production of Platelets | — | De Carlo A et al., Model-informed precision dosing of carb…, British journal of clinical… (2026) | [10.1002/bcp.70413](https://doi.org/10.1002/bcp.70413) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Krzyzanski_2015_eTPO](drugs/drug_carboplatin/pd_Krzyzanski_2015_eTPO.md) | endogenous thrombopoietin biomarker turnover ← carboplatin | — | Krzyzanski W et al., Pharmacodynamic model for chemoradiothe…, Journal of pharmacokinetics… (2015) | [10.1007/s10928-015-9440-2](https://doi.org/10.1007/s10928-015-9440-2) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Krzyzanski_2015_platelet_counts](drugs/drug_carboplatin/pd_Krzyzanski_2015_platelet_counts.md) | platelet counts biomarker turnover ← carboplatin | — | Krzyzanski W et al., Pharmacodynamic model for chemoradiothe…, Journal of pharmacokinetics… (2015) | [10.1007/s10928-015-9440-2](https://doi.org/10.1007/s10928-015-9440-2) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Béguin_2024_Thrombocyte_reduction_2](drugs/drug_carboplatin/pd_B_guin_2024_Thrombocyte_reduction_2.md) | Thrombocyte reduction ← carboplatin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Béguin J et al., Population pharmacokinetics modelling f…, BMC veterinary research (2024) | [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Fridley_2016_Caspase_3_7_2](drugs/drug_carboplatin/pd_Fridley_2016_Caspase_3_7_2.md) | Caspase3/7 activity (combination) ← carboplatin and paclitaxel · direct sigmoid Emax (Hill) effect | — | Fridley BL et al., Genome-Wide Study of Response to Platin…, Frontiers in genetics (2016) | [10.3389/fgene.2016.00037](https://doi.org/10.3389/fgene.2016.00037) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Fridley_2016_MTT_2](drugs/drug_carboplatin/pd_Fridley_2016_MTT_2.md) | MTT cell viability (combination) ← carboplatin and paclitaxel · direct sigmoid Emax (Hill) effect | — | Fridley BL et al., Genome-Wide Study of Response to Platin…, Frontiers in genetics (2016) | [10.3389/fgene.2016.00037](https://doi.org/10.3389/fgene.2016.00037) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Maestri_2026_cell_viability_2](drugs/drug_carboplatin/pd_Maestri_2026_cell_viability_2.md) | cell viability ← Carboplatin + Paclitaxel · direct sigmoid Emax (Hill) effect | — | Maestri C et al., Heterogeneity of Ex Vivo Tumor Response…, Cancer reports (Hoboken, N.… (2026) | [10.1002/cnr2.70554](https://doi.org/10.1002/cnr2.70554) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **TYMS** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Takizawa_2006](drugs/drug_carboplatin/pgx_Takizawa_2006_TYMS_Q100.md) | Takizawa M et al., In vitro sensitivity to platinum-derive…, Oncology reports (2006) | — |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Adverse drug reactions (ADR)
+
+25 reaction(s) reported in 17 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Neutropenia | 20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity. | 30-40% | germline genetic variation (unknown unknown); elevated serum SDMA; reduced glomerular filtration rate (GFR); maropitant | laboratory: neutrophil count; laboratory: complete blood count (CBC) | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361), [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457), [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Béguin 2024](https://pubmed.ncbi.nlm.nih.gov/39716213), [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) |
+| Thrombocytopenia | Thrombocytopenia is a myelosuppressive adverse effect associated with carboplatin administration in dogs, characterized by a reduction in thrombocyte blood count, with the nadir generally occurring 14 days after administration. | 66 ± 16% | AUC0-∞; dose (mg/kg); elevated SDMA; n/a (n/a n/a) | laboratory: thrombocytes blood count; hospital: complete blood count (CBC) | [Béguin 2024](https://pubmed.ncbi.nlm.nih.gov/39716213), [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217), [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252), [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829), [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) |
+| Anemia | In a phase II trial of carboplatin and bevacizumab, 29 out of 38 patients (76%) experienced adverse events classified as Hemoglobin abnormalities, with 44% of the HER2-negative cohort (4/9) and 34% of the HER2-positive cohort (10/29) affected. | 29 (76%) | — | — | [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829), [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) |
+| Febrile neutropenia | One dog with elevated SDMA was hospitalized for febrile neutropenia 13 days following carboplatin chemotherapy. | 1/4 (25%) | elevated SDMA | laboratory: CBC | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) |
+| Myelosuppression | In cancer patients, myelosuppression (defined as excessive reduction of blood cell levels, specifically thrombocytopenia and neutropenia) is the main dose-limiting toxicity for carboplatin, frequently leading to dose reductions, treatment delays, or interruptions. | — | low serum albumin (&lt; 44 g/L); reduced renal function (lower eGFR); older age (95th percentile: 84 years); higher serum creatinine values (95th percentile: 139 μmol/L) | laboratory: unknown; primary_care: unknown | [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252), [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094) |
+| Myelotoxicity | The paper states that escalation of the carboplatin target area under the curve (AUC) beyond 7 mg·min/mL increases myelotoxicity without improving response. | — | — | — | [Jeon 2026](https://pubmed.ncbi.nlm.nih.gov/42076051), [Vella 2011](https://pubmed.ncbi.nlm.nih.gov/21687948) |
+| Hematological toxicities | Individualized dosing of carboplatin using PK measurements compared with weight-based dosing demonstrated decreased incidence in hematological toxicities in neonates. | — | individualized dosing using PK measurements | — | [Centanni 2024](https://pubmed.ncbi.nlm.nih.gov/38141094) |
+| Hematological toxicity | In common arm trials for non-small cell lung cancer comparing Japanese and US patients, the frequency of hematological toxicity was significantly higher in the Japanese trials than in the SWOG trial. | — | ethnicity (Japanese) | — | [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) |
+| Leukopenia | Leukopenia was one of the myelosuppressive toxicities induced by gemcitabine/carboplatin treatment in non-small cell lung cancer patients, with a total incidence of 59.4% (CTCAE grades 0-4) and a severe (grade 3-4) incidence of 29.2%. The paper states that severe myelosuppression is roughly… | Grade 1: 7.3%, Grade 2: 22.9%, Grade 3: 25.0%, Grade 4: 4.2% | 62 genetic variants in the toxicity module (e.g., rs10898940, rs11629627, rs11629694, rs11794611, rs11996440, rs12034981, rs12046258, rs12117788, rs1247572, rs12981050, rs13431476, rs1367216, rs1498830, rs1652456, rs1740430, rs17404301, rs2465836, rs2569538, rs2569543, rs2590763, rs2590807, rs2590827, rs2590829, rs2616405, rs2616431, rs2616433, rs34285220, rs4864488, rs4864820, rs531650, rs5858236, rs5858241, rs58982282, rs59065201, rs59481386, rs61825739, rs62225956, rs62225957, rs62225958, rs62436699, rs66628040, rs67425308, rs6815433, rs6826915, rs6828755, rs6842780, rs6877573, rs7184277, rs7249753, rs7256793, rs72808733, rs73559035, rs7378471, rs74464209, rs7703879, rs77321629, rs77456162, rs783176, rs904414, rs9626751, rs9627100, rs9759545) | — | [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) |
+| Sepsis | 2 of the 96 patients treated with cabazitaxel plus carboplatin in the clinical trial suffered grade 4 sepsis. | 2 (2%) | — | — | [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) |
+
+<details><summary>Evidence: neutropenia (6)</summary>
+
+> “20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(case report)</sub>
+
+> “It is well known that the use of classical chemotherapeutic agents is associated with the induction of considerable adverse drug reactions (ADRs). This is also the case for gemcitabine/carboplatin treatment, which commonly induces severe myelosuppression (mainly expressed in the form of neutropenia, leukopenia, and thrombocytopenia) that may lead to non-optimal treatments in terms of postponements, reduction, or…” — [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) <sub>(cohort)</sub>
+
+> “Follow‐up CBCs were available for four of the five dogs with elevated serum SDMA post‐carboplatin chemotherapy; three (75%) developed grade 4 neutropenia. In comparison, 10 of 25 dogs (40%) with normal serum SDMA experienced asymptomatic grade 3 or 4 neutropenia (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “carboplatin is still associated however with a strong risk of myelosuppression, characterized by thrombocytopenia and neutropenia, which generally occurs 14 days after administration in dogs [4, 5].” — [Béguin 2024](https://pubmed.ncbi.nlm.nih.gov/39716213) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Thrombocytopenia (6)</summary>
+
+> “carboplatin is still associated however with a strong risk of myelosuppression, characterized by thrombocytopenia and neutropenia, which generally occurs 14 days after administration in dogs [4, 5].” — [Béguin 2024](https://pubmed.ncbi.nlm.nih.gov/39716213) <sub>(case series)</sub>
+
+> “Two dogs experienced grade 1 thrombocytopenia (one with elevated SDMA).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “The most common grade ≥3 TEAEs were anemia (n = 15, 16%) and thrombocytopenia (n = 8, 8%)” — [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) <sub>(case series)</sub>
+
+> “Despite its established role in oncology, myelosuppression, i.e., excessive reduction of blood cells levels, remains the main dose‐limiting toxicity for carboplatin, with thrombocytopenia and neutropenia frequently leading to dose reductions, treatment delays or interruptions. The target population was focused on the most frequent tumour diagnoses in which carboplatin is a standard treatment (i.e., lung…” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: anemia (2)</summary>
+
+> “The most common reason for dose delay or hold was hematological toxicity (thrombocytopenia, neutropenia without fever), which was most likely due to the carboplatin.” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case series)</sub>
+
+> “The most common grade ≥3 TEAEs were anemia (n = 15, 16%) and thrombocytopenia (n = 8, 8%), but 2 (2%) patients suffered grade 4 sepsis, and 1 (1%) patient died of unspecified causes.” — [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: febrile neutropenia (2)</summary>
+
+> “Of the four dogs that had follow‐up CBCs, one was hospitalised for febrile neutropenia 13 days following carboplatin chemotherapy and was euthanized 2 days later.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “In addition the frequency of hematological toxicities such as grade IV neutropenia and febrile neutropenia were significantly higher among the Japanese patients (Table 4).” — [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: myelosuppression (2)</summary>
+
+> “Despite its established role in oncology, myelosuppression, i.e., excessive reduction of blood cells levels, remains the main dose‐limiting toxicity for carboplatin, with thrombocytopenia and neutropenia frequently leading to dose reductions, treatment delays or interruptions.” — [De 2026](https://pubmed.ncbi.nlm.nih.gov/41431252) <sub>(case report)</sub>
+
+> “For the GDPT regimen, adverse event data from included RCTs only reported general bone marrow suppression without specific grading for grade ≥3 hematologic toxicity; thus, detailed analysis was not conducted.” — [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: myelotoxicity (2)</summary>
+
+> “The target AUC was set at 4–6 mg·min/mL, as this range is most appropriate in previously treated patients, while escalation beyond 7 mg·min/mL increases myelotoxicity without improving response [13].” — [Jeon 2026](https://pubmed.ncbi.nlm.nih.gov/42076051) <sub>(in vitro)</sub>
+
+> “A platinum derivative, carboplatin, has a similar activity to cisplatin, but is different and gene rally less toxic (absence of nephrotoxicity, ototoxicity and neurotoxicity, but substantial myelotoxicity).” — [Vella 2011](https://pubmed.ncbi.nlm.nih.gov/21687948) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hematological toxicities (1)</summary>
+
+> “Indeed, individualized dosing of carboplatin using PK measurements compared with weight-based dosing demonstrated reduced variability in PK and decreased incidence in hematological toxicities in neonates [18].” — [Centanni 2024](https://pubmed.ncbi.nlm.nih.gov/38141094) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: hematological toxicity (1)</summary>
+
+> “In common arm trials conducted in Japan and by Southwest Oncology Group (SWOG) that used the same doses and schedules for the administration of carboplatin plus paclitaxel, the frequency of hematological toxicity was significantly higher in the Japanese trials than in the SWOG trial, despite demonstrating similar response rates.” — [Saijo 2013](https://pubmed.ncbi.nlm.nih.gov/23225792) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Leukopenia (1)</summary>
+
+> “It is well known that the use of classical chemotherapeutic agents is associated with the induction of considerable adverse drug reactions (ADRs). This is also the case for gemcitabine/carboplatin treatment, which commonly induces severe myelosuppression (mainly expressed in the form of neutropenia, leukopenia, and thrombocytopenia) that may lead to non-optimal treatments in terms of postponements, reduction, or…” — [Björn 2020](https://pubmed.ncbi.nlm.nih.gov/32839457) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Sepsis (1)</summary>
+
+> “The most common grade ≥3 TEAEs were anemia (n = 15, 16%) and thrombocytopenia (n = 8, 8%), but 2 (2%) patients suffered grade 4 sepsis” — [Subramani 2026](https://pubmed.ncbi.nlm.nih.gov/42291217) <sub>(case series)</sub>
+
+</details>
+
+### Ear
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Ototoxicity | Among 900 pediatric cancer survivors treated with cisplatin, carboplatin, or both, patients were categorized into no hearing loss (n=222), minor hearing loss (n=481), and clinically relevant hearing loss (n=197) based on post-treatment audiograms. | clinically relevant hearing loss (n = 197) / 900 | TPMT, ABCC3, OTOS, SLC22A2, NFE2L2, SLC16A5, LRP2, GSTP1, SOD2, WFS1, ACYP2 variants (TPMT, ABCC3, OTOS, SLC22A2, NFE2L2, SLC16A5, LRP2, GSTP1, SOD2, WFS1, ACYP2 rs1872328, rs2075252, rs6721961, rs2291767, rs62283056, rs12201199, rs1142345, rs1800460, rs1800462, rs4880, rs316019, rs1695, rs1051640, rs4788863) | hospital: hearing loss | [Langer 2020](https://pubmed.ncbi.nlm.nih.gov/32939381) |
+
+<details><summary>Evidence: ototoxicity (1)</summary>
+
+> “Based on the assessment of original audiograms, patients were assigned to three phenotype categories: no, minor, and clinically relevant hearing loss.” — [Langer 2020](https://pubmed.ncbi.nlm.nih.gov/32939381) <sub>(cohort)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Diarrhea | Diarrhea was documented as part of GI toxicity (along with mucositis and vomiting) in ovarian cancer patients treated with carboplatin and a taxane (paclitaxel or docetaxel) in the SCOTROC1 trial, with 20% of patients facing grade III/IV GI toxicity. | 20% grade III/IV gastrointestinal (GI) toxicity | rs1061472 (ATP7B), rs1801249 (ATP7B), rs3594 (GSR), rs6900017 (VEGFA), rs879825 (VEGFA), rs9369421 (VEGFA), rs9825762 (SCN10A) (ATP7B, GSR, VEGFA, SCN10A risk genotypes); VEGFA rs879825 GG (VEGFA GG); taxane (paclitaxel or docetaxel); unknown (unknown unknown) | hospital: GI toxicity; home: owner assessment forms to record their impressions of their dogs' clinical status and confirm drug administration (anti-nausea and/or antidiarrheals) | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361), [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140), [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) |
+| Vomiting | Vomiting was documented as one of the major gastrointestinal toxicities encountered by ovarian cancer patients treated with carboplatin combined with either docetaxel or paclitaxel in the SCOTROC1 trial. | unknown | SNP rs879825 in VEGFA (GG carriers) (VEGFA G); Composite genetic risk score (number of risk genotypes across ATP7B, GSR, VEGFA, SCN10A); normal SDMA concentrations (≤ 14 μg/dL) | home: vomiting; primary_care: vomiting | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361), [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+| Anorexia | In dogs receiving carboplatin, persistent grade 4 anorexia occurred in one dog with elevated SDMA, leading to euthanasia 13 days post-chemotherapy. | 1/5 (20% of elevated SDMA group) | elevated SDMA (&gt; 14 μg/dL); 300 mg/m2; NSAIDs | home: adverse events; laboratory: CBC | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+| Gastrointestinal toxicity | In the SCOTROC1 trial of 1077 ovarian cancer patients treated with carboplatin and a taxane, 20% experienced grade III/IV gastrointestinal toxicity, which presented as mucositis, diarrhea, and vomiting. | 20% grade III/IV | ATP7B rs1061472 (ATP7B unknown) | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+| Mucositis | Mucositis occurred in 20% of patients as part of grade III/IV gastrointestinal toxicity during carboplatin/taxane treatment. | 20% grade III/IV gastrointestinal (GI) toxicity | VEGFA rs879825 GG (VEGFA G); ATP7B risk genotypes (ATP7B unknown); GSR risk genotypes (GSR unknown); SCN10A risk genotypes (SCN10A unknown) | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+| Nausea and vomiting | The paper states that the chemotherapy combining etoposide and carboplatin is often associated to nausea and vomiting in children during and after the treatment period. | — | — | — | [Urien 2011](https://pubmed.ncbi.nlm.nih.gov/20490798) |
+| Regurgitation | One dog with elevated serum SDMA (19 μg/dL) developed severe regurgitation and was euthanized 5 days after receiving carboplatin. | 1/5 | elevated serum SDMA | — | [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) |
+
+<details><summary>Evidence: diarrhea (3)</summary>
+
+> “Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial, which recruited 1077 ovarian cancer patients to treatment with either docetaxel-carboplatin or paclitaxelcarboplatin. ... The GI toxicity including mucositis, vomiting and diarrhea was documented.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+> “In comparison, three dogs (12%) with normal SDMA concentrations developed grade 3 lethargy and anorexia, with one dog experiencing grade 3 vomiting and grade 4 diarrhoea (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+> “Diarrhea w/o prior colostomy11 (29%)1(11%)1(11%)7 (24%)2 (7%)” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: vomiting (2)</summary>
+
+> “Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+> “In comparison, three dogs (12%) with normal SDMA concentrations developed grade 3 lethargy and anorexia, with one dog experiencing grade 3 vomiting and grade 4 diarrhoea (Table 4).” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: anorexia (1)</summary>
+
+> “Another dog was euthanized 13 days post‐chemotherapy due to persistent grade 4 anorexia and lethargy.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: gastrointestinal toxicity (1)</summary>
+
+> “20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity. 5 Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial, which recruited 1077 ovarian cancer patients to treatment with either docetaxel-carboplatin or paclitaxelcarboplatin.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: mucositis (1)</summary>
+
+> “20% grade III/IV gastrointestinal (GI) toxicity. 5 Carboplatin/taxane-induced mucositis, diarrhea and vomiting represent a major GI toxicity that patients encountered in the SCOTROC1 trial” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: nausea and vomiting (1)</summary>
+
+> “This highly potent chemotherapy is often associated to nausea and vomiting in children during and after the treatment period.” — [Urien 2011](https://pubmed.ncbi.nlm.nih.gov/20490798) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: regurgitation (1)</summary>
+
+> “The fifth dog with an elevated serum SDMA (19 μg/dL) was euthanized due to severe regurgitation and respiratory complications 5 days after receiving carboplatin.” — [Gareau 2026](https://pubmed.ncbi.nlm.nih.gov/41432140) <sub>(animal)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Cell death (apoptosis) | In UWB1.289 BRCA1- and BRCA1+ cell lines treated with carboplatin, the proportion of apoptotic cells increased over time, reaching 15% for BRCA1− cells and 16% for BRCA+ cells at 72 hours. | reaching 15% for BRCA1− cells and 16% for BRCA+ cells at 72 h | — | — | [Bedia 2025](https://pubmed.ncbi.nlm.nih.gov/40848720) |
+| DNA damage | Carboplatin treatment in TYK-nu, UWB1.289, and CIOV ovarian carcinoma cell lines induced a DNA damage response (DDR) characterized by S-phase arrest and activation of DDR protein modules containing pH2AX, pATM, pCHK1, pp53, and pRPA. | — | BRCA1 (BRCA1 mutation 2594delC / loss of heterozygosity); talazoparib; rucaparib | — | [Bedia 2025](https://pubmed.ncbi.nlm.nih.gov/40848720) |
+| Poor tolerability | The paper states that cisplatin and carboplatin have significant adverse effects and several contraindications, making PARP inhibitors the choice for patients with poor tolerability to platinum compounds, but does not specify who is affected or how often. | — | — | — | [Imyanitov 2021](https://pubmed.ncbi.nlm.nih.gov/34454564) |
+
+<details><summary>Evidence: Cell death (apoptosis) (1)</summary>
+
+> “The number of apoptotic cells increased over time, reaching 15% for BRCA1− cells and 16% for BRCA+ cells at 72 h (Figure S13B).” — [Bedia 2025](https://pubmed.ncbi.nlm.nih.gov/40848720) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: DNA damage (1)</summary>
+
+> “Module 6 comprised pH2AX, pATM, pCHK1, pp53, and pRPA, proteins with critical roles in the DDR that function in damage sensing, signaling, and checkpoint activation following double-strand breaks.” — [Bedia 2025](https://pubmed.ncbi.nlm.nih.gov/40848720) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: poor tolerability (1)</summary>
+
+> “Cisplatin and carboplatin have significant adverse effects and several contraindications, which are not applicable to PARPi, therefore PARP inhibitors are certainly the choice for patients with poor tolerability to platinum compounds [50–52].” — [Imyanitov 2021](https://pubmed.ncbi.nlm.nih.gov/34454564) <sub>(review)</sub>
+
+</details>
+
+### Kidney and urinary tract
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Creatinine | Creatinine abnormality was observed in 4 of 38 patients (11%) treated with the combination regimen. | 4 (11%) | — | laboratory: Creatinine | [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) |
+| Nephrotoxicity | The paper states that large amounts of ginseng, aristolochic acid-containing herbs, and some green tea extracts can cause acute tubular necrosis, interstitial nephritis, or chronic kidney disease, either alone or in combination with nephrotoxic chemotherapy agents such as carboplatin. | — | large amounts of ginseng, aristolochic acid-containing herbs and some green tea extracts; nephrotoxic chemotherapy agents (e.g., cisplatin, carboplatin; or methotrexate) | — | [Talath 2026](https://pubmed.ncbi.nlm.nih.gov/42147231) |
+
+<details><summary>Evidence: creatinine (1)</summary>
+
+> “Creatinine4 (11%)2(22%)2 (7%)” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Nephrotoxicity (1)</summary>
+
+> “Large amounts of ginseng, aristolochic acid-containing herbs and some green tea extracts cause acute tubular necrosis, interstitial nephritis, or CKD either alone or in combination with nephrotoxic chemotherapy agents (e.g., cisplatin, carboplatin; or methotrexate).” — [Talath 2026](https://pubmed.ncbi.nlm.nih.gov/42147231) <sub>(review)</sub>
+
+</details>
+
+### Nervous system
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Peripheral neuropathy | 20-30% of patients treated with platinum-based chemotherapy in combination with a taxane agent experience grade III/IV peripheral neuropathy. | 20-30% | — | — | [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) |
+
+<details><summary>Evidence: peripheral neuropathy (1)</summary>
+
+> “Despite the therapeutic impact of platinum in conjunction with taxane agents in the management of ovarian cancer, 20-30% of patients will face grade III/IV peripheral neuropathy, 30-40% grade IV neutropenia and 20% grade III/IV gastrointestinal (GI) toxicity.” — [He 2016](https://pubmed.ncbi.nlm.nih.gov/26194361) <sub>(review)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Alopecia | Alopecia occurred in 16% of the 38 patients treated with carboplatin and bevacizumab, with 11% in the HER2-negative cohort and 14% in the HER2-positive cohort. | 6 (16%) | — | — | [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) |
+
+<details><summary>Evidence: alopecia (1)</summary>
+
+> “Alopecia6 (16%)1(11%)4 (14%)1 (3%)” — [Leone 2020](https://pubmed.ncbi.nlm.nih.gov/33256829) <sub>(case series)</sub>
+
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=carboplatin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCC2` substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
+| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
+| distribution | testis | `ABCG2` substrate | DrugBank actor |
+| metabolism | blood | `GSTT1` substrate | DrugBank actor |
+| metabolism | liver | `GSTM1` substrate, `GSTP1` substrate, `GSTT1` substrate, `NQO1` substrate, `XDH` inducer | DrugBank actor |
+| metabolism | lung | `GSTP1` substrate | DrugBank actor |
+| metabolism | small intestine | `XDH` inducer | DrugBank actor |
+| excretion | kidney | `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCC2` substrate, `ABCG2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ATP7A (substrate), ATP7B (substrate), DNA (cross-linking/alkylation), MPO (substrate), MT1A (substrate), MT2A (substrate), SLC31A1 (substrate), SLC31A2 (substrate), SOD1 (inhibitor), TYMS (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 22:16 | 1:06:08 | 15/5/0 | 24/0/0 | 0/0/1 | 1,451,814/234,545 | openai / gpt-6-luna | 65 | 10/48 | 62/3 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 1348 matched, 205 returned
+- **screened:** 12  ·  **relevant:** 12
+- **records:** 20  ·  extracted 4  ·  needs review 11  ·  rejected 5  ·  stale 2
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Calvert_1989.pdf` | Calvert AH et al., Carboplatin dosage: prospective evaluat…, Journal of clinical oncolog… (1989) | popPK | 10 | [10.1200/JCO.1989.7.11.1748](https://doi.org/10.1200/JCO.1989.7.11.1748) | [2681557](https://pubmed.ncbi.nlm.nih.gov/2681557) | Human carboplatin clearance is quantified through the dose–AUC–GFR formulas, with numeric coefficients reported. |
+| `Chatelut_1995.pdf` | Chatelut E et al., Prediction of carboplatin clearance fro…, Journal of the National Can… (1995) | popPK | 10 | [10.1093/jnci/87.8.573](https://doi.org/10.1093/jnci/87.8.573) | [7752255](https://pubmed.ncbi.nlm.nih.gov/7752255) | Human population pharmacokinetics reports a numeric formula for carboplatin clearance. |
+| `Chatelut_1995_2.pdf` | Chatelut E et al., [Prediction of carboplatin clearance fr…, Bulletin du cancer (1995) | popPK | 10 |  | [8535021](https://pubmed.ncbi.nlm.nih.gov/8535021) | Human population pharmacokinetics reports carboplatin clearance, but the quantitative prediction formula is referenced as “see text” and is not provided. |
+| `Guillet_1997.pdf` | Guillet P et al., A Bayesian dosing method for carboplati…, Cancer chemotherapy and pha… (1997) | popPK | 10 | [10.1007/s002800050639](https://doi.org/10.1007/s002800050639) | [9182836](https://pubmed.ncbi.nlm.nih.gov/9182836) | The study estimates carboplatin population pharmacokinetics, but numeric disposition parameter values are not shown in the provided evidence. |
+| `Ito_1992.pdf` | Ito K et al., [Usefulness of intraperitoneal carbopla…, Nihon Sanka Fujinka Gakkai… (1992) | popPK | 10 |  | [1453047](https://pubmed.ncbi.nlm.nih.gov/1453047) | Human carboplatin pharmacokinetics were modeled, but no numeric disposition parameter values are provided. |
+| `Lindauer_2010.pdf` | Lindauer A et al., Population pharmacokinetics of high-dos…, Therapeutic drug monitoring (2010) | popPK | 10 | [10.1097/FTD.0b013e3181cc6e21](https://doi.org/10.1097/FTD.0b013e3181cc6e21) | [20110851](https://pubmed.ncbi.nlm.nih.gov/20110851) | This is a human population-PK study of carboplatin, but numeric clearance estimates are not provided. |
+| `Moeung_2017.pdf` | Moeung S et al., Therapeutic Drug Monitoring of Carbopla…, Clinical cancer research :… (2017) | popPK | 10 | [10.1158/1078-0432.CCR-17-1344](https://doi.org/10.1158/1078-0432.CCR-17-1344) | [28928162](https://pubmed.ncbi.nlm.nih.gov/28928162) | Human carboplatin PK analysis reports a quantitative clearance equation and exposure values in the evidence. |
+| `Newell_1993.pdf` | Newell DR et al., Carboplatin pharmacokinetics in childre…, Journal of clinical oncolog… (1993) | popPK | 10 | [10.1200/JCO.1993.11.12.2314](https://doi.org/10.1200/JCO.1993.11.12.2314) | [8246021](https://pubmed.ncbi.nlm.nih.gov/8246021) | Pediatric human carboplatin pharmacokinetics report a two-compartment model and a quantitative clearance equation. |
+| `Peng_1995.pdf` | Peng B et al., Comparison of methods for the estimatio…, European journal of cancer… (1995) | popPK | 10 | [10.1016/0959-8049(95)00382-s](https://doi.org/10.1016/0959-8049(95)00382-s) | [8541105](https://pubmed.ncbi.nlm.nih.gov/8541105) | A two-compartment carboplatin PK model was fitted, but its numeric disposition parameter values are not shown. |
+| `Schmitt_2009.pdf` | Schmitt A et al., A universal formula based on cystatin C…, Clinical cancer research :… (2009) | popPK | 10 | [10.1158/1078-0432.CCR-09-0017](https://doi.org/10.1158/1078-0432.CCR-09-0017) | [19401344](https://pubmed.ncbi.nlm.nih.gov/19401344) | Reports a quantitative population-PK clearance equation for carboplatin with values present in the evidence. |
+| `el-Yazigi_1989.pdf` | el-Yazigi A et al., Pharmacokinetics of platinum in cancer…, Pharmaceutical research (1989) | popPK | 9 | [10.1023/a:1015920524065](https://doi.org/10.1023/a:1015920524065) | [2668915](https://pubmed.ncbi.nlm.nih.gov/2668915) | Human patients received carboplatin and numeric plasma platinum disposition parameters are reported. |
+| `Dowell_2000.pdf` | Dowell JA et al., Noninvasive measurements for studying t…, Advanced drug delivery revi… (2000) | popPK | 8 | [10.1016/s0169-409x(99)00059-9](https://doi.org/10.1016/s0169-409x(99)00059-9) | [10699308](https://pubmed.ncbi.nlm.nih.gov/10699308) | Compartmental models and drug biodistribution are described, but no numeric parameter values are provided in the evidence. |
+| `Gotoh_1991.pdf` | Gotoh T et al., [Evaluation of carboplatin administrati…, Gan to kagaku ryoho. Cancer… (1991) | popPK | 8 |  | [1877819](https://pubmed.ncbi.nlm.nih.gov/1877819) | Intracavitary carboplatin pharmacokinetics were analyzed with a two-compartment model and a reported beta half-life of 18.60 hours. |
+| `Harsha_2014.pdf` | Harsha S et al., Pharmacokinetics and tissue distributio…, Archives of pharmacal resea… (2014) | popPK | 8 | [10.1007/s12272-013-0151-1](https://doi.org/10.1007/s12272-013-0151-1) | [23712379](https://pubmed.ncbi.nlm.nih.gov/23712379) | Carboplatin plasma concentrations are described by a two-compartment model, but no numeric PK parameter values are provided. |
+
+<sub>queue written 2026-10-07 21:39 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abegesah_2025 | irrelevant | 0 | 0 | The reported population-PK parameters are for durvalumab, not carboplatin. |
+| popPK | Armstrong_2008 | irrelevant | 0 | 0 | This is an in-vitro drug-response study and reports no carboplatin pharmacokinetic parameters. |
+| PGx | Avan_2015 | not_relevant | 1 | 0 | The review mentions genetic polymorphisms broadly in relation to platinum neurotoxicity and treatment response but reports no gene-specific effect on a carboplatin PK or PD parameter. |
+| popPK | Awdishu_2026 | irrelevant | 0 | 0 | This review concerns cystatin C and GFR estimation, with no carboplatin pharmacokinetic parameters. |
+| PGx | Balaji_2020 | not_relevant | 0 | 0 | The paper studies acquired cellular resistance and marker expression, not genetic variation effects on carboplatin PK or PD parameters. |
+| PGx | Baumhäkel_2001 | not_relevant | 0 | 0 | No gene variant, genotype, or phenotype effect is reported; carboplatin showed no CYP3A4 inhibition. |
+| popPK | Bedia_2025 | irrelevant | 1 | 0 | This in-vitro cell study reports platinum uptake and DNA-damage responses, not quantitative carboplatin disposition parameters. |
+| PGx | Bergmann_2011 | not_relevant | 0 | 0 | Genetic effects are reported for paclitaxel clearance only; no carboplatin PK or PD parameter is analyzed. |
+| PGx | Björn_2020 | not_relevant | 0 | 0 | The text describes sample quality control and outlier removal, not a genetic effect on carboplatin PK or PD. |
+| PGx | Björn_2020_2 | not_relevant | 0 | 0 | Genetic variants are associated with myelosuppression toxicity, but the paper does not report effects on a carboplatin pharmacokinetic or pharmacodynamic parameter. |
+| popPK | Brandon_2026 | irrelevant | 0 | 0 | The study models mitoxantrone, and reports no carboplatin disposition parameters. |
+| popPK | Budha_2023 | irrelevant | 0 | 0 | The population-PK model and reported values are for tislelizumab, not carboplatin. |
+| PGx | Buffoni_2016 | not_relevant | 0 | 0 | This review mentions unsuccessful pharmacogenomic approaches but reports no gene-related effect on a carboplatin PK or PD parameter. |
+| popPK | Canal_1998 | irrelevant | 0 | 0 | This is a treatment guide, not an original PK study, and it reports no quantitative carboplatin disposition parameters. |
+| PGx | Canal_1998 | not_relevant | 0 | 0 | Discusses carboplatin dose individualisation by patient characteristics, but reports no pharmacogenomic effect on a carboplatin PK or PD parameter. |
+| popPK | Centanni_2024 | irrelevant | 0 | 0 | This is a pediatric vincristine PK study; carboplatin is only mentioned as background, with no carboplatin parameter values. |
+| popPK | Chatelut_1995_2 | relevant | 10 | 1 | Human population pharmacokinetics reports carboplatin clearance, but the quantitative prediction formula is referenced as “see text” and is not provided. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The population-PK model and numeric disposition values are for adebrelimab; carboplatin is only co-administered. |
+| popPK | Cheng_2024 | irrelevant | 0 | 0 | The study reports trilaciclib pharmacokinetics, not quantitative disposition parameters for carboplatin. |
+| popPK | Chisaki_2016 | irrelevant | 0 | 0 | This models myelosuppression pharmacodynamics, not carboplatin disposition parameters. |
+| popPK | Choi_2026 | irrelevant | 0 | 0 | The population-PK model and numeric parameters are for melphalan; carboplatin is only co-administered. |
+| popPK | Cui_2026 | irrelevant | 0 | 0 | This drug-response prediction study reports no carboplatin disposition parameters. |
+| popPK | Dai_2024 | irrelevant | 0 | 0 | The population-PK model and numeric parameters are for trilaciclib, not carboplatin. |
+| PGx | DeLoia_2008 | not_relevant | 0 | 0 | The paper reports gene-expression associations with docetaxel metabolism, not a pharmacogenomic effect on carboplatin PK or PD. |
+| popPK | De_2026 | relevant | 7 | 3 | The human pop-PK-PD model uses a two-compartment carboplatin PK model, but its PK details are largely in supplementary material and only a fragmentary CL value appears here. |
+| popPK | Defize_2020 | irrelevant | 0 | 0 | This study measures tumor-volume regression during treatment, not carboplatin pharmacokinetics or disposition parameters. |
+| popPK | Doolittle_2014 | irrelevant | 1 | 0 | This review only mentions a two-compartment model and provides no numeric carboplatin parameters. |
+| popPK | Dowell_2000 | relevant | 8 | 0 | Compartmental models and drug biodistribution are described, but no numeric parameter values are provided in the evidence. |
+| popPK | Duffull_1997 | irrelevant | 2 | 1 | This is a review describing a two-compartment model, but it provides no numeric compartmental parameter values. |
+| popPK | Egorin_2008 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
+| PGx | Ekhart_2008 | not_relevant | 0 | 0 | Reports genotype associations with toxicity from combination chemotherapy, but no carboplatin-specific PK or PD parameter effect. |
+| PGx | Ekhart_2008_2 | not_relevant | 0 | 0 | The study evaluates pharmacogenomic effects on cyclophosphamide and 4-hydroxycyclophosphamide pharmacokinetics, not carboplatin. |
+| PGx | Ekhart_2009_2 | not_relevant | 0 | 0 | The reported genetic effects are on thiotepa and tepa pharmacokinetics, not carboplatin. |
+| PGx | Elbaiomy_2020 | not_relevant | 0 | 0 | OPN mutation and serum levels are associated with treatment response and survival, but no carboplatin-specific pharmacokinetic or pharmacodynamic parameter is reported. |
+| popPK | Feng_2025 | irrelevant | 0 | 0 | Carboplatin is only a combination-treatment covariate; no carboplatin PK parameter values are reported. |
+| popPK | Fridley_2016 | irrelevant | 0 | 0 | This is an in vitro pharmacogenomics study, not a carboplatin disposition study, and reports no numeric PK parameters. |
+| popPK | Garcia-Cremades_2017 | irrelevant | 0 | 0 | This is a tumor-response model, with no quantitative carboplatin disposition parameters reported. |
+| popPK | Gorski_2021 | irrelevant | 0 | 0 | This in-vitro organoid sensitivity study reports EC50 values, not carboplatin disposition parameters. |
+| PGx | Green_2008 | not_relevant | 0 | 0 | The text discusses pharmacogenomics of paclitaxel and reports no gene-related PK or PD effects for carboplatin. |
+| PGx | Gréen_2009 | not_relevant | 0 | 0 | The reported pharmacogenomic effects concern paclitaxel, not carboplatin. |
+| popPK | Guillet_1997 | relevant | 10 | 1 | The study estimates carboplatin population pharmacokinetics, but numeric disposition parameter values are not shown in the provided evidence. |
+| PGx | Hamidovic_2010 | not_relevant | 0 | 0 | The review reports an ABCB1 genotype association with relapse in patients treated with paclitaxel/carboplatin, but no carboplatin pharmacokinetic or pharmacodynamic parameter. |
+| popPK | Harsha_2014 | relevant | 8 | 0 | Carboplatin plasma concentrations are described by a two-compartment model, but no numeric PK parameter values are provided. |
+| PGx | Hasmats_2012 | not_relevant | 2 | 0 | Reports SNP associations with toxicity during carboplatin/paclitaxel treatment, not changes in a carboplatin PK or PD parameter. |
+| popPK | Hayes_2013 | irrelevant | 0 | 0 | Carboplatin is only modeled for its platelet-production effect, with no carboplatin PK parameters reported. |
+| PGx | He_2016 | not_relevant | 1 | 8 | Genotypes are associated with gastrointestinal toxicity during combined carboplatin/taxane therapy, but the study reports no carboplatin-specific pharmacokinetic or pharmacodynamic parameter. |
+| popPK | Helal_2026 | irrelevant | 0 | 0 | Carboplatin is tested for tumor response, but no quantitative pharmacokinetic disposition parameters are reported. |
+| PGx | Hellweg_2019 | not_relevant | 0 | 0 | The protocol describes identifying genes associated with cellular chemoresistance but reports no gene-related change in a carboplatin PK or PD parameter. |
+| popPK | Henrich_2017 | irrelevant | 1 | 0 | The model reports paclitaxel PK and includes carboplatin only as a toxicity effect, with no carboplatin PK values. |
+| PGx | Hu_2016 | not_relevant | 1 | 0 | CYP3A5 genotype is associated with toxicity from combined paclitaxel/carboplatin treatment, but no carboplatin-specific PK or PD parameter is reported. |
+| popPK | Huizing_1997 | irrelevant | 2 | 1 | The study reports an AUC comparison but no numeric carboplatin disposition parameters; actual values are not provided. |
+| popPK | Hulin_2010 | irrelevant | 2 | 0 | This appears to be a review and provides no numeric carboplatin disposition parameters in the evidence. |
+| PGx | Imyanitov_2021 | not_relevant | 0 | 0 | The review discusses BRCA-associated tumor sensitivity and treatment outcomes, not genotype effects on carboplatin pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Ito_1992 | relevant | 10 | 1 | Human carboplatin pharmacokinetics were modeled, but no numeric disposition parameter values are provided. |
+| popPK | Kajiwara_2009 | irrelevant | 0 | 0 | This is an in-vitro drug-combination efficacy study and reports no carboplatin pharmacokinetic parameters. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The PopPK model is for bevacizumab; carboplatin is only co-administered and has no disposition parameters reported. |
+| PGx | Kleffel_2016 | not_relevant | 2 | 1 | ABCB5 expression is associated with carboplatin resistance, but the text does not report a pharmacokinetic or pharmacodynamic parameter effect. |
+| popPK | Kobayashi_1993 | irrelevant | 1 | 0 | This review discusses carboplatin pharmacodynamic models but provides no quantitative disposition parameters. |
+| popPK | Krzyzanski_2015 | irrelevant | 1 | 0 | This is a mouse pharmacodynamic model; it mentions carboplatin half-lives but reports no quantitative carboplatin disposition parameters. |
+| popPK | Kuchimanchi_2026 | irrelevant | 1 | 0 | Carboplatin is only co-administered; the PK model and exposure analyses concern dostarlimab, with no carboplatin disposition parameters reported. |
+| PGx | Langer_2013 | not_relevant | 1 | 0 | The review discusses genetic risk factors for platinum-associated ototoxicity but does not report genotype effects on a carboplatin PK or PD parameter. |
+| PGx | Langer_2020 | not_relevant | 0 | 0 | The study examines genetic associations with hearing loss after platinum treatment, not effects on a carboplatin pharmacokinetic or pharmacodynamic parameter. |
+| PGx | Leone_2020 | not_relevant | 0 | 0 | VEGF genotypes were assessed for association with PFS and OS, not for an effect on carboplatin pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Leporini_2014 | not_relevant | 0 | 0 | No gene variant, genotype, or phenotype effect on a carboplatin PK or PD parameter is reported. |
+| popPK | Li_2002 | irrelevant | 0 | 0 | Carboplatin is only used to induce thrombocytopenia; no carboplatin PK parameters are reported. |
+| popPK | Li_2006 | irrelevant | 0 | 0 | This is an in-vitro activity and toxicity study, not a carboplatin pharmacokinetic study. |
+| popPK | Li_2006_2 | irrelevant | 0 | 0 | This is an in vitro toxicity study and reports no carboplatin disposition parameters. |
+| popPK | Lin_2023 | irrelevant | 0 | 0 | The population PK model reports carfilzomib parameters, not carboplatin parameters. |
+| popPK | Lindauer_2010 | relevant | 10 | 2 | This is a human population-PK study of carboplatin, but numeric clearance estimates are not provided. |
+| PGx | Liu_2022 | not_relevant | 0 | 0 | Carboplatin IC50 is reported for an organoid, but no gene variant or genotype is linked to its pharmacokinetic or pharmacodynamic effect. |
+| PGx | Lv_2019 | not_relevant | 0 | 0 | Reports SNP associations with lobaplatin-induced thrombocytopenia, not carboplatin pharmacokinetics or pharmacodynamics. |
+| popPK | Lévi_2000 | irrelevant | 0 | 0 | This review reports oxaliplatin pharmacokinetics, while carboplatin is only mentioned as a comparator. |
+| popPK | Maestri_2026 | irrelevant | 0 | 0 | The study reports ex vivo tumor-response variability, not carboplatin disposition parameters. |
+| popPK | Maillard_2020 | irrelevant | 0 | 0 | This review provides no numeric carboplatin disposition parameter values. |
+| PGx | Marsh_2009 | not_relevant | 0 | 0 | The text mentions pharmacogenomic studies of taxane/platinum therapy but reports no gene-specific effect on a carboplatin PK or PD parameter. |
+| PGx | McWhinney_2009 | not_relevant | 2 | 1 | The text reviews genetic associations with platinum-induced neurotoxicity but reports no carboplatin-specific genotype effect on a PK or PD parameter. |
+| popPK | Mehrotra_2017 | irrelevant | 0 | 0 | Carboplatin is only co-administered, and no carboplatin disposition parameters are reported. |
+| PGx | Metro_2011 | not_relevant | 0 | 0 | The study assessed SNP associations with clinical outcomes, but reported no carboplatin pharmacokinetic or pharmacodynamic parameter effects. |
+| popPK | Moeung_2020 | irrelevant | 0 | 0 | The PK model and reported clearance values are for etoposide, not carboplatin. |
+| PGx | Moeung_2020 | not_relevant | 0 | 0 | The reported pharmacogenetic association concerns UGT1A1*28 and late neutropenia with etoposide, not a carboplatin PK or PD parameter. |
+| popPK | Morita_2026 | irrelevant | 0 | 0 | Carboplatin is only a coadministered platinum agent and no quantitative carboplatin disposition parameters are reported. |
+| popPK | Muddather_2026 | irrelevant | 0 | 0 | This review does not report quantitative carboplatin pharmacokinetic parameters. |
+| popPK | Nuthalapati_2019 | irrelevant | 1 | 0 | The population-PK analysis reports veliparib parameters, while carboplatin is only co-administered and has no numeric disposition values here. |
+| PGx | Osawa_2009 | not_relevant | 0 | 0 | The text reports clinical outcome associations with platinum-based chemotherapy, but no gene effect on a carboplatin PK or PD parameter. |
+| popPK | Paci_2014 | irrelevant | 1 | 0 | This is a review and provides no numeric carboplatin disposition parameters. |
+| PGx | Park_2016 | not_relevant | 0 | 0 | Reports genotype associations with anemia and survival during combination therapy, but no carboplatin-specific PK or PD parameter effect. |
+| PGx | Parker_1991 | not_relevant | 0 | 0 | The study measures platinum-DNA adducts and their association with response, but reports no gene variant, genotype, or phenotype effect on a carboplatin PK or PD parameter. |
+| popPK | Peng_1995 | relevant | 10 | 2 | A two-compartment carboplatin PK model was fitted, but its numeric disposition parameter values are not shown. |
+| popPK | Penning_2009 | irrelevant | 0 | 0 | Carboplatin is mentioned only in a combination efficacy study, with no carboplatin disposition parameters reported. |
+| popPK | Penning_2010 | irrelevant | 0 | 0 | Carboplatin is only a combination-treatment agent, with no carboplatin disposition parameters reported. |
+| popPK | Perez-Soler_1990 | irrelevant | 0 | 0 | The pharmacokinetic model is for liposomal NDDP, not carboplatin, and no carboplatin parameter values are reported. |
+| popPK | Poradowski_2022 | irrelevant | 0 | 0 | This is an in-vitro cytotoxicity study, not a carboplatin pharmacokinetic study; no disposition parameters are reported. |
+| popPK | Robson_2002 | irrelevant | 0 | 0 | This is an in-vitro cytotoxicity study and reports no carboplatin disposition parameters. |
+| popPK | Rosson_2002 | irrelevant | 0 | 0 | This is an in-vitro drug-sensitivity study and reports no carboplatin pharmacokinetic parameters. |
+| PGx | Saijo_2013 | not_relevant | 0 | 0 | The paper mentions genotype associations with outcomes during carboplatin/paclitaxel treatment, but does not attribute a PK or PD effect to carboplatin or report how a genotype changes a carboplatin parameter. |
+| PGx | Sato_2011 | not_relevant | 0 | 0 | Reports genotype associations with overall survival, not effects on a carboplatin pharmacokinetic or pharmacodynamic parameter. |
+| PGx | Schmidtova_2020 | not_relevant | 0 | 0 | Reports acquired cellular cross-resistance to carboplatin, but no pharmacogenomic effect on a carboplatin PK or PD parameter. |
+| popPK | Schneider_2025 | irrelevant | 1 | 0 | This is a tumor-response model using literature PK inputs; no numeric carboplatin disposition values are shown, and the referenced PK table is not provided. |
+| popPK | Sculier_1999 | irrelevant | 2 | 1 | This is a human AUC-dosing and pharmacodynamic analysis, not a carboplatin disposition-parameter study, and no numeric PK parameter values are provided. |
+| PGx | Smit_2009 | not_relevant | 0 | 0 | MTHFR genotype was associated with progression-free survival, but no carboplatin pharmacokinetic or pharmacodynamic parameter was reported. |
+| popPK | Smith_2003 | irrelevant | 0 | 0 | Carboplatin was coadministered to target an AUC, but the reported pharmacokinetic parameters are for mesna. |
+| PGx | Socinski_2009 | not_relevant | 0 | 0 | No gene variant, genotype, or phenotype effects on carboplatin PK or PD are reported; pharmacogenomic analyses are only mentioned as planned. |
+| PGx | Soliman_2018 | not_relevant | 0 | 0 | Tested genetic variants were not associated with ototoxicity, and no genotype-related carboplatin PK or PD parameter was reported. |
+| popPK | Stodtmann_2021 | irrelevant | 0 | 0 | The population-PK model and numeric parameters are for veliparib; carboplatin is only mentioned as combination chemotherapy. |
+| PGx | Stodtmann_2021 | not_relevant | 0 | 0 | The paper models veliparib pharmacokinetics, not carboplatin, and reports no gene variant, genotype, or phenotype effects. |
+| popPK | Stodtmann_2022 | irrelevant | 0 | 0 | The analysis concerns veliparib exposure-response and reports no carboplatin disposition parameters. |
+| PGx | Subhani_2015 | not_relevant | 0 | 0 | The study reports molecular docking of carboplatin to CYP3A4, but does not assess a gene variant’s effect on a carboplatin PK or PD parameter. |
+| PGx | Subramani_2026 | not_relevant | 0 | 0 | The paper links tumor metabolic gene-expression patterns to resistance to combination chemotherapy, but reports no gene-associated change in a carboplatin pharmacokinetic or pharmacodynamic parameter. |
+| PGx | Sugiyama_2007 | not_relevant | 0 | 0 | CDA *3 affected gemcitabine clearance and was associated with neutropenia during combination treatment, but no carboplatin PK or PD parameter effect is reported. |
+| PGx | Sullivan_2014 | not_relevant | 1 | 0 | Genetic variants were associated with treatment response or radiotherapy toxicity, but no carboplatin-specific PK or PD parameter was reported. |
+| PGx | Súarez-Zaizar_2020 | not_relevant | 0 | 0 | The review mentions pharmacogenetic differences as a possible explanation for trial outcomes but reports no gene-specific effect on a carboplatin PK or PD parameter. |
+| popPK | Talath_2026 | irrelevant | 0 | 0 | This is a review of natural supplements and reports no quantitative carboplatin disposition parameters. |
+| PGx | Talwelkar_2021 | not_relevant | 0 | 0 | The paper reports ex vivo sensitivity to carboplatin plus etoposide, but does not link a gene variant, genotype, or phenotype to a carboplatin PK or PD parameter. |
+| popPK | Terranova_2021 | irrelevant | 0 | 0 | The population-PK parameters are for berzosertib, not carboplatin, and no numeric carboplatin PK values are provided. |
+| popPK | Tham_2008 | irrelevant | 0 | 0 | This models tumor response to gemcitabine, and reports no carboplatin disposition parameters. |
+| popPK | Theile_2012 | irrelevant | 0 | 0 | This is an in-vitro cellular uptake and efficacy study, not a quantitative pharmacokinetic disposition study. |
+| popPK | Torres_2019 | irrelevant | 0 | 0 | This mouse efficacy study uses carboplatin but reports no carboplatin pharmacokinetic disposition parameters. |
+| popPK | Toxopeus_2019 | irrelevant | 0 | 0 | Carboplatin is co-administered, but the reported clearance and exposure analysis is for paclitaxel only. |
+| PGx | Travis_2014 | not_relevant | 0 | 0 | The commentary mentions carboplatin-associated ototoxicity but reports no gene-related effect on a carboplatin PK or PD parameter. |
+| PGx | Urien_2011 | not_relevant | 0 | 0 | Genotypes were evaluated for effects on etoposide pharmacokinetics, not on a pharmacokinetic or pharmacodynamic parameter of carboplatin. |
+| popPK | Varela-González-Aller_2025 | irrelevant | 0 | 0 | This is a human fludarabine population-PK study and reports no carboplatin parameters. |
+| PGx | Vella_2011 | not_relevant | 0 | 0 | The review associates XPD variants with clinical outcome during carboplatin treatment, but reports no effect on a carboplatin pharmacokinetic or pharmacodynamic parameter. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | Carboplatin is used to induce thrombocytopenia, with no carboplatin pharmacokinetic parameters reported. |
+| PGx | Wen_2009 | not_relevant | 0 | 0 | The study reports carboplatin IC50 differences in an acquired drug-resistant cell line, not a gene variant/genotype/phenotype effect on a PK or PD parameter. |
+| PGx | Wong_2011 | not_relevant | 1 | 8 | The reported genotype associations concern hematologic toxicity during gemcitabine/carboplatin combination treatment and are not attributed specifically to carboplatin; no carboplatin PK/PD effect is reported. |
+| popPK | Woo_2008 | irrelevant | 0 | 0 | This is a rat pharmacodynamic anemia study and reports no quantitative carboplatin disposition parameters. |
+| popPK | Wright_2001 | irrelevant | 1 | 0 | The population-PK model is for 51Cr-EDTA, while carboplatin appears only as dosing context and no carboplatin disposition parameters are reported. |
+| popPK | Yang_2010 | irrelevant | 0 | 0 | This review discusses panitumumab pharmacokinetics; carboplatin is only mentioned as part of a chemotherapy regimen. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The population-PK parameters are for osimertinib and AZ5104; carboplatin is only a co-administered chemotherapy agent. |
+| popPK | Yang_2025_2 | irrelevant | 0 | 0 | The study models iruplinalkib, while carboplatin is mentioned only as a prior treatment. |
+| popPK | Yao_2025 | irrelevant | 0 | 0 | This is a bibliometric analysis and reports no quantitative carboplatin disposition parameters. |
+| popPK | You_2008 | irrelevant | 0 | 0 | The study models etoposide; carboplatin is only a co-administered treatment and has no reported PK parameters. |
+| popPK | Yuan_2026 | irrelevant | 0 | 0 | Carboplatin is coadministered, but the reported PK model is for amivantamab and no carboplatin disposition values are provided. |
+| PGx | Zhang_2022 | not_relevant | 0 | 0 | The study examines acquired, treatment-induced gene-expression changes and carboplatin resistance, not a gene variant, genotype, or phenotype effect on a carboplatin PK/PD parameter. |
+| popPK | Zhao_2026 | irrelevant | 0 | 0 | The population-PK model reports durvalumab parameters, not carboplatin parameters. |
+| popPK | Zhao_2026_2 | irrelevant | 0 | 0 | This is a human-treatment systematic review with no carboplatin pharmacokinetic parameters reported. |
+| PGx | Zhou_2020 | not_relevant | 0 | 0 | The study examines adipocyte-derived ANGPTL4-mediated carboplatin resistance, not an effect of a gene variant, genotype, or phenotype on a carboplatin PK/PD parameter. |
+| popPK | de_2022 | irrelevant | 0 | 0 | The population-PK analysis reports pemetrexed parameters, not carboplatin parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarboplatin%5D&body=Drug%3A%20carboplatin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carboplatin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:41 UTC</sub>

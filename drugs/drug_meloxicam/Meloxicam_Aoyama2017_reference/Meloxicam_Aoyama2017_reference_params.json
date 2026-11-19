@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Meloxicam_Aoyama2017_reference",
+ "molar_masses": {
+  "central.C": 0.351401
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  7.5
+ ],
+ "parameters": {
+  "Cl": 1.0861111111111112e-07,
+  "F": 0.425,
+  "MM": 0.351401,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00011128571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7.5e-06,
+  "ka": 0.0005555555555555556,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7207.772596017861
+ },
+ "reference_peaks": {
+  "central.C": 0.0003721004543688478
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

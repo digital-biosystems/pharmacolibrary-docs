@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ivermectin_Kobylinski2017_reference",
+ "molar_masses": {
+  "central.C": 1.7361849999999999
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  14.0
+ ],
+ "parameters": {
+  "Cl": 2.505555555555556e-06,
+  "F": 1.0,
+  "MM": 1.7361849999999999,
+  "Tlag": 0.0,
+  "VdPerKg": 0.001642857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.4e-05,
+  "k12": 3.913043478260869e-05,
+  "k21": 2.8662420382165606e-05,
+  "ka": 8.805555555555556e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 24933.06613226453
+ },
+ "reference_peaks": {
+  "central.C": 5.009048020370198e-05
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

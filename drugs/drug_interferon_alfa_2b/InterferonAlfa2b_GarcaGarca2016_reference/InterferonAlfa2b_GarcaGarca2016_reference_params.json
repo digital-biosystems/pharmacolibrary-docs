@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "InterferonAlfa2b_GarcaGarca2016_reference",
+ "molar_masses": {
+  "central.C": 0.746528
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.000000000000001e-07,
+  "F": 0.22,
+  "MM": 0.746528,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0005485714285714285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 4.1666666666666665e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 40862.5250501002
+ },
+ "reference_peaks": {
+  "central.C": 0.0003376546167562173
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 1500 mg oral (N03AX14)",
+ "model_id": "Levetiracetam_Mimram2026_reference",
+ "molar_masses": {
+  "central.C": 0.170212
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.186111111111111e-06,
+  "F": 0.9,
+  "MM": 0.170212,
+  "Tlag": 7056.0,
+  "VdPerKg": 0.0006642857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0015,
+  "k12": 1.045400238948626e-05,
+  "k21": 7.96903460837887e-05,
+  "ka": 0.0003805555555555556,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 15244.6764388154
+ },
+ "reference_peaks": {
+  "central.C": 0.02070655955831175
+ },
+ "stop_time": 144000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

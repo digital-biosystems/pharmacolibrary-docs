@@ -1,0 +1,47 @@
+{
+ "dose_source": "paper",
+ "model_id": "Labetalol_van2022_papatsonis_et_al_58",
+ "molar_masses": {
+  "central.C": 0.328412
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0,
+  20.0,
+  250.0,
+  500.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "van_2022:other_prose",
+    "value_si": 0.000178
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 4.047222222222222e-05,
+  "F": 1.0,
+  "MM": 0.328412,
+  "Tlag": 0.0,
+  "VdPerKg": 0.006200000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.0055000000000000005,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1201.542905709044
+ },
+ "reference_peaks": {
+  "central.C": 2.13233488779634e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

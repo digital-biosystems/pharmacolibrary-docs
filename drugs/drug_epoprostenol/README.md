@@ -1,0 +1,273 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;epoprostenol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Nicolas_2012_CIn&quot;,&quot;label&quot;:&quot;Nicolas_2012 \u00b7 CIn&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/pd_Nicolas_2012_CIn.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# epoprostenol
+
+- **generic name:** epoprostenol
+- **ATC codes:** `B01AC09`
+- **DrugBank:** [DB01240](https://go.drugbank.com/drugs/DB01240) · **PubChem:** [CID 5280427](https://pubchem.ncbi.nlm.nih.gov/compound/5280427)
+- **molar mass:** 352.4651 g/mol (C20H32O5) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Epoprostenol is a prostaglandin that inhibits platelet activation and dilates blood vessels, primarily treating pulmonary hypertension. It is given intravenously. Epoprostenol is used in clinical practice for these conditions.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q412050](https://www.wikidata.org/wiki/Q412050), [Wikipedia](https://en.wikipedia.org/wiki/Prostacyclin?oldid=1382415405) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| epoprostenol | parent | 352.465 | C20H32O5 | DrugBank | [5280427](https://pubchem.ncbi.nlm.nih.gov/compound/5280427) | Nicolas_2012 |
+| 6-keto-prostacyclin F1a | metabolite | — (mass units only) | — | — | — | — |
+
+## Start here
+
+> **Keizer_2010_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md?tab=Simulation) · [record](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Keizer_2010 · CL</text><circle cx="327.1" cy="30.0" r="4" fill="#78909c"><title>Keizer_2010 · CL: 6.07 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Vucicevic_2025 · CL/F</text><circle cx="390.0" cy="46.0" r="4" fill="#ef6c00"><title>Vucicevic_2025 · CL/F: 13.9 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Vizza_2017 · CL/F</text><circle cx="477.4" cy="62.0" r="4" fill="#78909c"><title>Vizza_2017 · CL/F: 43.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Vucicevic_2025 · V/F</text><circle cx="430.6" cy="30.0" r="4" fill="#ef6c00"><title>Vucicevic_2025 · V/F: 237 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Vizza_2017 · V/F</text><circle cx="480.7" cy="46.0" r="4" fill="#78909c"><title>Vizza_2017 · V/F: 458 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Keizer_2010 · V1</text><circle cx="199.3" cy="62.0" r="4" fill="#78909c"><title>Keizer_2010 · V1: 11.3 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Keizer_2010_reference](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Keizer RJ et al., A model of hypertension and proteinuria…, Journal of pharmacokinetics… (2010) | [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Vizza_2017_reference](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Vizza CD et al., Efficacy of 1, 5, and 20 mg oral silden…, BMC pulmonary medicine (2017) | [10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T6_deviations</sub> | [Nicolas_2012_reference](drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 (+3 cov.) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Vucicevic_2025_reference](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Nicolas_2012_CIn](drugs/drug_epoprostenol/pd_Nicolas_2012_CIn.md) | cardiac index ← 6-keto-prostacyclin F1a · direct linear effect | ▶ model + simulator | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=epoprostenol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: P2RY12 (target), PTGIR (target), PTGIS (inducer).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 15:51 | 33:51 | 4/0/0 | 1/0/0 | 0/0/0 | 709,767/80,619 | ollama / qwen3.8:27b-mtp-q8_0 | 39 | 21/22 | 38/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 2856 matched, 141 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 4  ·  extracted 2  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Baxter_1989.pdf` | Baxter GM et al., Reactivity of equine palmar digital art…, Veterinary surgery : VS (1989) | pd | 4 | [10.1111/j.1532-950x.1989.tb01075.x](https://doi.org/10.1111/j.1532-950x.1989.tb01075.x) | [2773284](https://www.ncbi.nlm.nih.gov/pubmed/2773284) | metadata signals extractable PD data (EC50) |
+| `Felsch_1994.pdf` | Felsch A et al., Adenosine A1 and A2 receptor agonists a…, European journal of pharmac… (1994) | pd | 4 | [10.1016/0014-2999(94)90721-8](https://doi.org/10.1016/0014-2999(94)90721-8) | [7843263](https://www.ncbi.nlm.nih.gov/pubmed/7843263) | metadata signals extractable PD data (EC50) |
+| `Gryglewski_1987.pdf` | Gryglewski RJ et al., On the mechanism of antithrombotic acti…, Biochemical pharmacology (1987) | pd | 4 | [10.1016/0006-2952(87)90288-7](https://doi.org/10.1016/0006-2952(87)90288-7) | [3101704](https://www.ncbi.nlm.nih.gov/pubmed/3101704) | metadata signals extractable PD data (EC50) |
+| `Tan_2018.pdf` | Tan CS et al., Anti-hypertensive and vasodilatory effe…, Biomedicine & pharmacothera… (2018) | pd | 4 | [10.1016/j.biopha.2017.11.021](https://doi.org/10.1016/j.biopha.2017.11.021) | [29136777](https://www.ncbi.nlm.nih.gov/pubmed/29136777) | metadata signals extractable PD data (EC50) |
+| `Azzam_2016.pdf` | Azzam H et al., VKORC1 and CYP2C9 genotypes in Egyptian…, Blood coagulation & fibrino… (2016) | pgx | 8 | [10.1097/MBC.0000000000000168](https://doi.org/10.1097/MBC.0000000000000168) | [24978953](https://www.ncbi.nlm.nih.gov/pubmed/24978953) | metadata signals extractable PGX data (VKORC1, PK/PD-context) |
+| `Fu_2023.pdf` | Fu D et al., Personalizing atomoxetine dosing in chi…, European journal of clinica… (2023) | pgx | 8 | [10.1007/s00228-022-03449-1](https://doi.org/10.1007/s00228-022-03449-1) | [36645468](https://www.ncbi.nlm.nih.gov/pubmed/36645468) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Anfinogenova_2026.pdf` | Anfinogenova ND et al., Pharmacogenetic Drug Administration and…, Archives of medical research (2026) | pgx | 5 | [10.1016/j.arcmed.2025.103307](https://doi.org/10.1016/j.arcmed.2025.103307) | [40997434](https://www.ncbi.nlm.nih.gov/pubmed/40997434) | metadata signals extractable PGX data (CYP3A5) |
+| `Matey_2022.pdf` | Matey ET et al., Nine-gene pharmacogenomics profile serv…, The pharmacogenomics journal (2022) | pgx | 5 | [10.1038/s41397-021-00258-0](https://doi.org/10.1038/s41397-021-00258-0) | [34671112](https://www.ncbi.nlm.nih.gov/pubmed/34671112) | metadata signals extractable PGX data (CYP1A2) |
+| `Patel_2021.pdf` | Patel JN et al., Potentially actionable pharmacogenetic…, Supportive care in cancer :… (2021) | pgx | 5 | [10.1007/s00520-021-06170-4](https://doi.org/10.1007/s00520-021-06170-4) | [33758969](https://www.ncbi.nlm.nih.gov/pubmed/33758969) | metadata signals extractable PGX data (CYP2B6) |
+| `Schuh_2020.pdf` | Schuh MJ et al., Improving Pain Management with Pharmaco…, Journal of pain & palliativ… (2020) | pgx | 5 | [10.1080/15360288.2020.1734140](https://doi.org/10.1080/15360288.2020.1734140) | [32186418](https://www.ncbi.nlm.nih.gov/pubmed/32186418) | metadata signals extractable PGX data (COMT) |
+| `Serretti_2026.pdf` | Serretti A et al., Longitudinal impact of CYP2D6 and CYP2C…, Journal of affective disord… (2026) | pgx | 5 | [10.1016/j.jad.2025.120724](https://doi.org/10.1016/j.jad.2025.120724) | [41260361](https://www.ncbi.nlm.nih.gov/pubmed/41260361) | metadata signals extractable PGX data (CYP2D6) |
+| `Voicu_2024.pdf` | Voicu V et al., Antiplatelet therapy guided by CYP2C19…, Pharmacogenomics (2024) | pgx | 5 | [10.2217/pgs-2023-0200](https://doi.org/10.2217/pgs-2023-0200) | [38230622](https://www.ncbi.nlm.nih.gov/pubmed/38230622) | metadata signals extractable PGX data (CYP2C19) |
+
+<sub>queue written 2026-10-05 15:23 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Adaikan_1984 | irrelevant | 0 | 0 | The study focuses on the pharmacological actions (pharmacodynamics) of PGE1, 6-oxo-PGE1, and PGI2, not the pharmacokinetics of epoprostenol. |
+| PD | Adaikan_1984 | not_relevant | 0 | 0 | The paper studies PGE1, 6-oxo-PGE1, and PGI2, but does not mention or report any pharmacodynamic data for epoprostenol. |
+| PD | Agúndez_2021 | not_relevant | 0 | 0 | The paper is an editorial on NSAID pharmacogenomics and does not contain any pharmacodynamic or exposure-response data for epoprostenol. |
+| popPK | Ait-Oudhia_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of sotatercept, not epoprostenol. |
+| PD | Albeldas_2022 | not_relevant | 0 | 0 | The text describes a precision medicine platform for depression and does not mention epoprostenol or report any pharmacodynamic parameters. |
+| PD | Ampong_2018 | not_relevant | 0 | 0 | The text is a general review of depression and pharmacogenetics, containing no mention of epoprostenol or any pharmacodynamic modeling. |
+| PGx | Ampong_2018 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics in the context of depression and antidepressants, not epoprostenol. |
+| PGx | Anfinogenova_2026 | not_relevant | 0 | 0 | The paper is a population-level survey of pharmacogenetic drug usage patterns and does not report specific PK/PD effects of gene variants on epoprostenol. |
+| PGx | Arbitrio_2024 | not_relevant | 0 | 0 | The text is a general introduction to pharmacogenomics challenges and does not mention epoprostenol or specific gene-drug interactions. |
+| popPK | Arner_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular reactivity and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Arner_1991 | not_relevant | 0 | 0 | The paper studies iloprost (a prostacyclin analogue) and prostacyclin, not epoprostenol, and focuses on isolated tissue pharmacology rather than systemic exposure-response relationships. |
+| popPK | Axelsen_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of selexipag and its metabolite ACT-333679, not epoprostenol. |
+| PD | Axelsen_2021 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic drug-drug interaction study for selexipag (not epoprostenol) and contains no pharmacodynamic or exposure-response modeling. |
+| popPK | Axelsen_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for selexipag and its metabolite, not epoprostenol. |
+| PD | Axelsen_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for selexipag to support dose selection based on exposure matching, but it does not report any pharmacodynamic (PD) model, exposure-response relationship, or numeric PD parameters (e.g., Emax, EC50). |
+| PGx | Azzam_2016 | not_relevant | 0 | 0 | The paper investigates warfarin, not epoprostenol. |
+| PGx | Bar-Peled_2024 | not_relevant | 0 | 0 | The paper surveys caregiver interest in pharmacogenomics for Prader-Willi syndrome and does not report any pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| popPK | Baxter_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular reactivity in horses and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Baxter_1989 | not_relevant | 0 | 0 | The paper studies equine vascular reactivity to other agents (acetylcholine, PGE2, etc.) and does not mention epoprostenol or report any PD parameters for it. |
+| PGx | Blake_2026 | not_relevant | 0 | 0 | The paper focuses on SSRIs and depression outcomes, not epoprostenol. |
+| popPK | Blaser_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metamizole metabolites and naproxen, not epoprostenol. |
+| PGx | Brady_2025 | not_relevant | 0 | 0 | The paper studies the effect of CYP2D6 on opioids, not epoprostenol. |
+| popPK | Campbell_1996 | irrelevant | 0 | 0 | The paper investigates the mechanism of endothelium-derived hyperpolarizing factors (EETs) in bovine coronary arteries and does not involve epoprostenol or pharmacokinetic parameters. |
+| popPK | Carlton_1996 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of furosemide, with epoprostenol acting only as a co-administered agent to assess drug-drug interactions, not as the subject drug. |
+| PD | Carlton_1996 | not_relevant | 0 | 0 | The paper investigates the effect of epoprostenol on the pharmacokinetics of furosemide (drug-drug interaction), not the pharmacodynamic (exposure-response) relationship of epoprostenol itself. |
+| popPK | Carlton_1996_2 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for digoxin, with epoprostenol serving only as a co-administered agent/covariate. |
+| popPK | Cheng_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Guizhi Fuling capsule components (gallic acid, amygdalin, etc.) in rats, not epoprostenol. |
+| PD | Cheng_2018 | not_relevant | 0 | 0 | The paper studies Guizhi Fuling capsule, not epoprostenol. |
+| PGx | Chierchia_1987 | not_relevant | 0 | 0 | The paper discusses the pathophysiology of ischemic heart disease and eicosanoids but does not report pharmacogenomic effects on the PK or PD of epoprostenol. |
+| popPK | Chng_2017 | irrelevant | 0 | 0 | The study investigates the vasorelaxant mechanism of a plant extract (Vernonia amygdalina) in rat aortic rings and does not involve epoprostenol pharmacokinetics. |
+| PD | Chng_2017 | not_relevant | 0 | 0 | The paper investigates the vasorelaxant properties of a plant extract (Vernonia amygdalina), not the drug epoprostenol. |
+| PGx | Chumnumwat_2019 | not_relevant | 0 | 0 | The paper is a review of the Southeast Asian Pharmacogenomics Research Network and does not report specific pharmacogenomic effects on epoprostenol PK/PD parameters. |
+| PGx | Cook_2025 | not_relevant | 0 | 0 | The paper is an institutional profile of a pharmacogenomics program and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| popPK | Dachman_1993 | irrelevant | 0 | 0 | The study investigates the mechanism of bradykinin-induced venodilation and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | De_1989 | not_relevant | 0 | 0 | The paper focuses on the pharmacodynamics of organic nitrates (nitroglycerin, ISDN) on platelet function and does not report any exposure-response or dose-response data for epoprostenol. |
+| PD | Domenichiello_2017 | not_relevant | 0 | 0 | The paper studies Prostaglandin E2 (PGE2), not epoprostenol, and does not report any pharmacodynamic parameters for the target drug. |
+| PD | Domi_2021 | not_relevant | 0 | 0 | The paper is a review of the interaction between arachidonic acid metabolism and homocysteine, with no mention of epoprostenol or any specific pharmacodynamic modeling. |
+| popPK | Drobnjak_2017 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics (vasodilation) of Placental Protein 13 in rat arteries and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Drobnjak_2017 | not_relevant | 0 | 0 | The paper reports a concentration-response relationship for Placental protein 13 (PP13), not epoprostenol. |
+| popPK | Dvorakova_2021 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro inhibitory activity of COX-1 inhibitors, not the pharmacokinetics of epoprostenol. |
+| PD | Dvorakova_2021 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for quinazoline derivatives against COX-1/COX-2, not pharmacodynamic or exposure-response data for epoprostenol. |
+| PGx | El_2022 | not_relevant | 0 | 0 | The paper is a review on the challenges of pharmacogenetics in developing countries and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| popPK | Felsch_1994 | irrelevant | 0 | 0 | The study investigates adenosine receptor effects on prostacyclin release in guinea-pig hearts, not the pharmacokinetics of epoprostenol. |
+| PD | Felsch_1994 | not_relevant | 0 | 0 | The paper studies adenosine receptor agonists (CCPA, CGS 21680) and does not report any pharmacodynamic or exposure-response data for epoprostenol. |
+| popPK | Feugray_2022 | irrelevant | 0 | 0 | The study focuses on arachidonic acid metabolites (HETEs) in hypertension and diabetes, not the pharmacokinetics of epoprostenol. |
+| PD | Feugray_2022 | not_relevant | 0 | 0 | The paper analyzes arachidonic acid metabolites in hypertension and diabetes and does not involve epoprostenol or any pharmacodynamic modeling. |
+| popPK | Fu_2023 | irrelevant | 0 | 0 | The paper is a review of atomoxetine pharmacokinetics, not epoprostenol. |
+| PGx | Fu_2023 | not_relevant | 0 | 0 | The paper focuses on atomoxetine, not epoprostenol. |
+| popPK | Garrity_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding and enzyme activity in rat liver membranes, not a pharmacokinetic study of epoprostenol. |
+| PD | Garrity_1983 | not_relevant | 0 | 0 | The paper studies PGE1 and PGI2, not epoprostenol, and focuses on receptor binding and enzyme stimulation in rat liver membranes rather than clinical pharmacodynamics. |
+| popPK | Gatfield_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and receptor signaling of selexipag and its metabolite, not the pharmacokinetics of epoprostenol. |
+| PD | Genecand_2021 | not_relevant | 1 | 0 | The text is a review of selexipag, not epoprostenol, and contains no numeric PD parameters or exposure-response data. |
+| PD | González-Covarrubias_2020 | not_relevant | 0 | 0 | The paper is a review of pharmacogenomics and does not report any pharmacodynamic or exposure-response data for epoprostenol. |
+| PGx | González-Covarrubias_2020 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenomics guidelines and allele frequencies in Mexican populations, with no specific data or analysis regarding epoprostenol. |
+| popPK | Gryglewski_1987 | irrelevant | 0 | 0 | The study focuses on the antithrombotic mechanisms of flavonoids and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Gryglewski_1987 | not_relevant | 0 | 0 | The paper studies flavonoids (quercetin, rutin, etc.) and their antithrombotic mechanisms, not epoprostenol. |
+| PGx | Haga_2017 | not_relevant | 0 | 0 | The paper is a review on the implementation of pharmacogenetic testing in primary care and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| PGx | Haga_2023 | not_relevant | 0 | 0 | The paper is a review on the collection of family medication history and does not report specific pharmacogenomic effects on epoprostenol PK/PD parameters. |
+| PGx | Halliday_2018 | not_relevant | 2 | 1 | The study reports genetic associations with clinical response (functional class/survival) to prostacyclin therapy, but does not report pharmacokinetic or pharmacodynamic parameters (e.g., AUC, clearance, receptor binding) for epoprostenol. |
+| PD | Hayashi_2022 | not_relevant | 0 | 0 | The paper describes a pharmacogenomics education program for pharmacists and does not contain any pharmacokinetic or pharmacodynamic data for epoprostenol. |
+| PGx | Hildebrand_1991 | not_relevant | 0 | 0 | The paper studies iloprost formulation in pigs and does not involve epoprostenol or pharmacogenomics. |
+| popPK | Hildebrand_1994 | irrelevant | 0 | 0 | The study focuses on prostacyclin mimetics (cicaprost, eptaloprost, iloprost) and does not report pharmacokinetic parameters for epoprostenol. |
+| PGx | Huang_2026 | not_relevant | 0 | 0 | The paper reports on the implementation of pharmacogenomic clinical decision support and prescribing concordance, not on the pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| PGx | Hulshof_2023 | not_relevant | 0 | 0 | The paper discusses the pharmacogenetics of irinotecan and UGT1A1, not epoprostenol. |
+| popPK | Hung_1998 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of O-acyl esters of salicylic acid (aspirin analogues) in rat livers, not epoprostenol. |
+| PGx | Jeiziner_2021 | not_relevant | 0 | 0 | The paper is a systematic analysis of Swiss drug labels for pharmacogenetic information and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| PGx | Ji_2024 | not_relevant | 0 | 0 | The paper is a technical review on NGS methodology for pharmacogenetics and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| popPK | Jia_2023 | irrelevant | 0 | 0 | The paper is a review of traditional Chinese medications for gastric mucosal injury and does not study epoprostenol pharmacokinetics. |
+| PD | Jia_2023 | not_relevant | 0 | 0 | The paper is a review of traditional Chinese medications for gastric mucosal injury and does not mention epoprostenol or report any pharmacodynamic parameters. |
+| popPK | Jiang_2021 | irrelevant | 0 | 0 | The paper focuses on the mechanism of action of sonlicromanol's metabolite KH176m regarding PGE2 biosynthesis and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Jiang_2021 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of KH176m (a metabolite of sonlicromanol) on PGE2 biosynthesis and does not report any pharmacodynamic or exposure-response data for epoprostenol. |
+| PGx | Jones_2018 | not_relevant | 0 | 0 | The paper is a qualitative study on the communication of pharmacogenomic reports and does not report any specific pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| popPK | Kaur_2025 | irrelevant | 0 | 0 | The paper studies novel NSAID analogues and their COX inhibition, not the pharmacokinetics of epoprostenol. |
+| PD | Kaur_2025 | not_relevant | 0 | 0 | The paper studies novel NSAID analogues (aspirin/ibuprofen derivatives) and does not report any pharmacodynamic or exposure-response data for epoprostenol. |
+| popPK | Keizer_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of the drug E7080, not epoprostenol. |
+| popPK | Kennedy_1999 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of perhexiline in rat coronary vasculature and does not report pharmacokinetic parameters for epoprostenol. |
+| popPK | Kihara_1995 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of cilostazol in rats, and while it mentions epoprostenol (prostacyclin) only as a comparator for EC50 values, it does not report PK parameters for epoprostenol. |
+| popPK | Kim_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of CG100649, a COX-2 inhibitor, not epoprostenol. |
+| PD | Kim_2015 | not_relevant | 0 | 0 | The paper studies CG100649, not epoprostenol. |
+| PD | Kisor_2019 | not_relevant | 0 | 0 | The paper is an educational study evaluating pharmacists' self-assessed competence in pharmacogenomics and contains no pharmacodynamic or exposure-response data for epoprostenol. |
+| popPK | Klein_2007 | irrelevant | 0 | 0 | The study investigates the vascular effects of celecoxib in guinea pigs and rats, not the pharmacokinetics of epoprostenol. |
+| PD | Klein_2007 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of celecoxib, not epoprostenol. |
+| popPK | Kojom_2024 | irrelevant | 0 | 0 | The paper studies the antioxidant and vasorelaxant properties of a plant extract (Ricinodendron heudelotii) and does not involve epoprostenol or pharmacokinetic parameters. |
+| popPK | Krause_2017 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for selexipag and its metabolite ACT-333679, not for epoprostenol. |
+| popPK | Lawrence_2018 | irrelevant | 0 | 0 | The study evaluates the clinical efficacy of treprostinil (a different drug) in infants and does not report pharmacokinetic parameters for epoprostenol. |
+| popPK | Loh_2017 | irrelevant | 0 | 0 | The study investigates the vasodilatory mechanisms of Uncaria rhynchophylla extract in rat aortic rings and does not involve epoprostenol pharmacokinetics. |
+| PD | Loh_2017 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Uncaria rhynchophylla extract, not epoprostenol. |
+| PGx | Lovati_1988 | not_relevant | 0 | 0 | The paper studies a rat strain with hypertriglyceridemia and its effect on platelet function and prostacyclin formation, but does not report pharmacogenomic effects on the PK or PD of epoprostenol. |
+| PGx | Magavern_2025 | not_relevant | 0 | 0 | The paper analyzes adverse drug reaction reports for a broad range of drugs and does not report pharmacokinetic or pharmacodynamic parameters for epoprostenol. |
+| PGx | Matey_2022 | not_relevant | 0 | 0 | The paper describes a general pharmacogenomics profile service for common drugs (e.g., warfarin, CYP substrates) and does not mention epoprostenol or its PK/PD parameters. |
+| popPK | McGiff_1979 | irrelevant | 0 | 0 | The paper is a review of renal physiology and prostaglandin compartmentalization, containing no pharmacokinetic parameters for epoprostenol. |
+| PGx | McInnes_2021 | not_relevant | 0 | 0 | The paper is a review of pharmacogenomic GWAS demographics and does not report specific PK/PD effects for epoprostenol. |
+| PGx | McInnes_2021_2 | not_relevant | 0 | 0 | The paper analyzes population-level allele frequencies for 14 CPIC genes in the UK Biobank and does not report specific pharmacokinetic or pharmacodynamic effects for epoprostenol. |
+| popPK | Mejdrová_2023 | irrelevant | 0 | 0 | The paper describes the discovery of novel human constitutive androstane receptor (CAR) agonists and does not involve epoprostenol or its pharmacokinetics. |
+| PD | Mejdrová_2023 | not_relevant | 0 | 0 | The paper focuses on the discovery of CAR agonists and does not involve epoprostenol or report any pharmacodynamic parameters for it. |
+| PGx | Misasi_2016 | not_relevant | 0 | 0 | The paper focuses on pharmacogenomics of Vitamin K Antagonists (warfarin), not epoprostenol. |
+| popPK | Mohamed_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tacrolimus, not epoprostenol. |
+| PGx | Mohamed_2026 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus pharmacokinetics, not epoprostenol. |
+| PGx | Monnin_2019 | not_relevant | 0 | 0 | The paper describes a semantic ontology (PGxO) for reconciling pharmacogenomic knowledge bases and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| popPK | Ni_2010 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacogenetics of flavopiridol, not epoprostenol. |
+| PGx | Ni_2010 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the PK of flavopiridol, not epoprostenol. |
+| PD | Nikolov_1983 | not_relevant | 3 | 1 | The paper describes a qualitative shift in the dose-response curve of prostacyclin by indomethacin but does not provide numeric PD parameters or extractable concentration-effect data for epoprostenol. |
+| PD | Nikolov_1984 | not_relevant | 1 | 0 | The paper discusses a qualitative shift in the dose-response curve of prostacyclin (PGI2) by cinnarizine, but does not report numeric PD parameters or an extractable concentration-effect relationship for epoprostenol. |
+| PD | Nikolova_1984 | not_relevant | 1 | 0 | The paper discusses a qualitative shift in the dose-response curve of prostacyclin (PGI2) by piracetam but does not provide numeric PD parameters or data for epoprostenol. |
+| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not contain pharmacokinetic data for epoprostenol. |
+| PD | Nureye_2025 | not_relevant | 0 | 0 | The paper is a review of medicinal plants for hypertension in Ethiopia and does not contain any pharmacodynamic or exposure-response data for epoprostenol. |
+| PGx | Patel_2021 | not_relevant | 0 | 0 | The paper discusses pharmacogenetic variants for symptom control medications (e.g., opioids, antiemetics) in oncology and does not mention epoprostenol. |
+| PD | Piriyapongsa_2021 | not_relevant | 0 | 0 | The paper describes a pharmacogenomics software tool (PharmVIP) for analyzing genetic variants and does not report any pharmacodynamic or exposure-response data for epoprostenol. |
+| PGx | Pratt_2024 | not_relevant | 0 | 0 | The paper discusses DPYD variants for fluoropyrimidine therapy, not epoprostenol. |
+| popPK | Rabinovici_1992 | irrelevant | 0 | 0 | The study investigates the hemodynamic and hematologic effects of hypertonic saline in rats, focusing on eicosanoid ratios (6-keto-PGF1 alpha/Thromboxane B2) rather than the pharmacokinetic parameters of epoprostenol. |
+| PD | Rabinovici_1992 | not_relevant | 0 | 0 | The paper studies the effects of hypertonic saline (HTS) on hemorrhagic shock and does not report any pharmacodynamic or exposure-response relationship for epoprostenol. |
+| popPK | Renard_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of imatinib, bosentan, and sildenafil, not epoprostenol. |
+| PD | Renard_2015 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of imatinib and drug-drug interactions, not on the pharmacodynamics or exposure-response relationship of epoprostenol. |
+| popPK | Rösen_1994 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of PGI2 analogues (iloprost, taprostene) on platelet adhesion molecules, not the pharmacokinetics of epoprostenol. |
+| PGx | Schuh_2020 | not_relevant | 0 | 0 | The paper is a general introduction to pharmacogenomics in pain management and does not report specific PK/PD effects of gene variants on epoprostenol. |
+| popPK | Sekeroglu_2017 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of PGD2 on rat vasculature and gene expression, not the pharmacokinetics of epoprostenol. |
+| PD | Sekeroglu_2017 | not_relevant | 0 | 0 | The paper studies PGD2, not epoprostenol. |
+| popPK | Serretti_2026 | irrelevant | 0 | 0 | The study investigates pharmacogenetics of antidepressants and does not involve epoprostenol or its pharmacokinetics. |
+| PGx | Serretti_2026 | not_relevant | 0 | 0 | The paper studies antidepressants, not epoprostenol. |
+| popPK | Shah_2013 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for treprostinil, not epoprostenol. |
+| popPK | Sharif_2011 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor signaling in human iridial cells and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Sharif_2011 | not_relevant | 0 | 0 | The paper reports in vitro pharmacology for various prostaglandins and other agents, but does not contain any data, analysis, or parameters for epoprostenol. |
+| popPK | Sharif_2011_2 | irrelevant | 0 | 0 | The study investigates receptor signal transduction in human choroidal melanocytes and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Sharif_2011_2 | not_relevant | 0 | 0 | The paper investigates endothelin receptors in choroidal melanocytes and does not report any pharmacodynamic or exposure-response data for epoprostenol. |
+| popPK | Shilbayeh_2024 | irrelevant | 0 | 0 | The study investigates pharmacogenetic markers for risperidone, not epoprostenol. |
+| PGx | Shilbayeh_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on risperidone, not epoprostenol. |
+| PGx | Simopoulos_1990 | not_relevant | 0 | 0 | The paper discusses energy imbalance, exercise, and cancer risk, with no mention of epoprostenol or pharmacogenomics. |
+| popPK | Skrinska_1986 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of prostacyclin (PGI2), not epoprostenol. |
+| PGx | Smith_1992 | not_relevant | 0 | 0 | The paper studies arachidonic acid metabolism in murine cells and does not involve the drug epoprostenol or human pharmacogenomics. |
+| popPK | Stitham_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding and activation, not a pharmacokinetic study reporting disposition parameters for epoprostenol. |
+| popPK | Säfholm_2019 | irrelevant | 0 | 0 | The study is an ex vivo mechanistic investigation of bronchoconstriction and does not report pharmacokinetic parameters for epoprostenol. |
+| PGx | Tabor_2014 | not_relevant | 0 | 0 | The paper analyzes the frequency of pharmacogenomic variants in a population cohort but does not report any specific effects on the pharmacokinetics or pharmacodynamics of epoprostenol. |
+| popPK | Tan_2018 | irrelevant | 0 | 0 | The study investigates the vasodilatory mechanism of a Traditional Chinese Medicine formulation in rat aortic rings and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Tan_2018 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of a Traditional Chinese Medicine formulation (ABBT-50), not epoprostenol. |
+| PGx | Tokar_1990 | not_relevant | 0 | 0 | The paper studies age-related changes in endogenous prostaglandin levels in hypertension, not the pharmacokinetics or pharmacodynamics of the drug epoprostenol. |
+| PD | Tsunoda_1982 | not_relevant | 4 | 3 | The paper reports dose-response relationships for PGI2 and 6-keto-PGE1, not epoprostenol, and focuses on organ extraction ratios rather than standard PD parameters like Emax or EC50 for the target drug. |
+| popPK | Tunaru_2016 | irrelevant | 0 | 0 | The paper investigates the pharmacological mechanism of 19(S)-HETE as an IP receptor agonist and does not report pharmacokinetic parameters for epoprostenol. |
+| PGx | Uber_2023 | not_relevant | 0 | 0 | The paper describes a pilot study on the implementation of pre-emptive pharmacogenomic testing in elderly patients and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on epoprostenol. |
+| PD | Vane_1995 | not_relevant | 1 | 0 | The text is a general review of prostacyclin/epoprostenol pharmacology and history, containing no specific exposure-response data, dose-effect curves, or numeric PD parameters. |
+| popPK | Vigstedt_2026 | irrelevant | 0 | 0 | The study investigates the anti-inflammatory effects of iloprost (a different prostacyclin analog) in SARS-CoV-2 patients and does not report pharmacokinetic parameters for epoprostenol. |
+| popPK | Vinge_1984 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of fenflumizole on platelet aggregation and prostanoid formation, not the pharmacokinetics of epoprostenol. |
+| PD | Vinge_1984 | not_relevant | 0 | 0 | The paper reports pharmacodynamic data for fenflumizole, not epoprostenol. |
+| popPK | Vizza_2017 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for sildenafil, not epoprostenol, which is only mentioned as a background therapy in a different trial. |
+| PGx | Voicu_2024 | not_relevant | 0 | 0 | The paper discusses CYP2C19 pharmacogenetics for antiplatelet therapy (e.g., clopidogrel), not epoprostenol. |
+| popPK | Vucicevic_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for efavirenz, not epoprostenol. |
+| PGx | Vucicevic_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of efavirenz, not epoprostenol. |
+| PGx | Wake_2019 | not_relevant | 0 | 0 | The text is a general review of pharmacogenomics principles and does not report specific data or effects for epoprostenol. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The study investigates the vasodilatory mechanism of a novel pyridine amide derivative (A24) and does not report pharmacokinetic parameters for epoprostenol. |
+| PD | Wang_2026 | not_relevant | 0 | 0 | The paper reports pharmacological data for a novel pyridine amide derivative (A24), not for epoprostenol. |
+| popPK | Watanabe_2001 | irrelevant | 0 | 0 | The study investigates platelet sensitivity to a prostacyclin analog (iloprost) in Takayasu arteritis patients and does not report pharmacokinetic parameters for epoprostenol. |
+| PGx | Wei_2025 | not_relevant | 0 | 0 | The paper analyzes pharmacogenetic risk variants for azathioprine, clopidogrel, statins, and NSAIDs, but does not mention or analyze epoprostenol. |
+| popPK | Wilson_2018 | irrelevant | 0 | 0 | The paper describes a computational method (PathFX) for drug safety and efficacy analysis and does not contain any pharmacokinetic data for epoprostenol. |
+| PD | Wilson_2018 | not_relevant | 0 | 0 | The paper describes a computational method (PathFX) for identifying drug-disease associations via protein interaction networks and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for epoprostenol or any other drug. |
+| popPK | Woyke_2022 | irrelevant | 0 | 0 | The study is an in vitro/ex vivo mechanistic experiment measuring hemoglobin oxygen affinity, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Zhang_2005 | irrelevant | 0 | 0 | The study investigates the pharmacology of arachidonic acid metabolism in rabbit arteries and does not involve epoprostenol. |
+| PD | Zhang_2005 | not_relevant | 0 | 0 | The paper studies arachidonic acid and its metabolites in isolated rabbit arteries, not epoprostenol. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepoprostenol%5D&body=Drug%3A%20epoprostenol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epoprostenol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 15:23 UTC</sub>

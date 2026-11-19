@@ -1,0 +1,103 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S01E&quot;,&quot;href&quot;:&quot;atc/S01E.md&quot;},{&quot;label&quot;:&quot;travoprost&quot;}]"></div>
+
+# travoprost
+
+- **generic name:** travoprost
+- **ATC codes:** `S01EE04`
+- **DrugBank:** [DB00287](https://go.drugbank.com/drugs/DB00287) · **PubChem:** [CID 5282226](https://pubchem.ncbi.nlm.nih.gov/compound/5282226)
+- **molar mass:** 500.5477 g/mol (C26H35F3O6) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Travoprost is a prostaglandin analogue used to treat glaucoma and ocular hypertension. It is given as eye drops, typically via the ophthalmic or conjunctival routes. It is authorised in the European Union and widely used in the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2193376](https://www.wikidata.org/wiki/Q2193376), [Wikipedia](https://en.wikipedia.org/wiki/Travoprost?oldid=1370544334) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_2003_PI_turnover](drugs/drug_travoprost/pd_Sharif_2003_PI_turnover.md) | phosphoinositide turnover ← Travoprost acid · direct sigmoid Emax (Hill) effect | — | Sharif NA et al., Ocular hypotensive FP prostaglandin (PG…, Journal of ocular pharmacol… (2003) | [10.1089/108076803322660422](https://doi.org/10.1089/108076803322660422) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Bastia_2021_IOP_2](drugs/drug_travoprost/pd_Bastia_2021_IOP_2.md) | intraocular pressure biomarker turnover ← travoprost | — | Bastia E et al., NCX 1741, a Novel Nitric Oxide-Donating…, Journal of ocular pharmacol… (2021) | [10.1089/jop.2020.0126](https://doi.org/10.1089/jop.2020.0126) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Raber_2015_IOP](drugs/drug_travoprost/pd_Raber_2015_IOP.md) | IOP reduction ← travoprost · direct Emax (saturable) effect | — | Raber S et al., A model-based dose-response meta-analys…, Journal of ocular pharmacol… (2015) | [10.1089/jop.2014.0106](https://doi.org/10.1089/jop.2014.0106) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Raber_2015_hyperemia](drugs/drug_travoprost/pd_Raber_2015_hyperemia.md) | incidence of hyperemia ← travoprost · direct Emax (saturable) effect | — | Raber S et al., A model-based dose-response meta-analys…, Journal of ocular pharmacol… (2015) | [10.1089/jop.2014.0106](https://doi.org/10.1089/jop.2014.0106) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_2002_PI_turnover](drugs/drug_travoprost/pd_Sharif_2002_PI_turnover.md) | phosphoinositide (PI) turnover biomarker turnover ← travoprost | — | Sharif NA et al., Agonist activity of bimatoprost, travop…, Journal of ocular pharmacol… (2002) | [10.1089/10807680260218489](https://doi.org/10.1089/10807680260218489) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=travoprost).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: PTGFR (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 19:36 | 2:42 | 0/0/0 | 4/0/0 | 0/0/0 | 120,883/3,918 | einfracz / qwen3.8-27b | 5 | 0/3 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 35 matched, 35 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Kelly_2003.pdf` | Kelly CR et al., Real-time intracellular Ca2+ mobilizati…, The Journal of pharmacology… (2003) | pd | 4 | [10.1124/jpet.102.042556](https://doi.org/10.1124/jpet.102.042556) | [12490597](https://www.ncbi.nlm.nih.gov/pubmed/12490597) | metadata signals extractable PD data (EC50) |
+| `Sharif_2002.pdf` | Sharif NA et al., Agonist activity of bimatoprost, travop…, Journal of ocular pharmacol… (2002) | pd | 4 | [10.1089/10807680260218489](https://doi.org/10.1089/10807680260218489) | [12222762](https://www.ncbi.nlm.nih.gov/pubmed/12222762) | metadata signals extractable PD data (EC50) |
+| `Sharif_2003.pdf` | Sharif NA et al., Ocular hypotensive FP prostaglandin (PG…, Journal of ocular pharmacol… (2003) | pd | 4 | [10.1089/108076803322660422](https://doi.org/10.1089/108076803322660422) | [14733708](https://www.ncbi.nlm.nih.gov/pubmed/14733708) | metadata signals extractable PD data (EC50) |
+| `Yamane_2015.pdf` | Yamane S et al., IOP-Lowering Effect of ONO-9054, A Nove…, Investigative ophthalmology… (2015) | pd | 4 | [10.1167/iovs.14-16181](https://doi.org/10.1167/iovs.14-16181) | [25788650](https://www.ncbi.nlm.nih.gov/pubmed/25788650) | metadata signals extractable PD data (EC50) |
+| `Çalışkan_2022.pdf` | Çalışkan B et al., Ophthalmic drugs: in vitro paraoxonase…, Biotechnology and applied b… (2022) | pd | 4 | [10.1002/bab.2284](https://doi.org/10.1002/bab.2284) | [34786760](https://www.ncbi.nlm.nih.gov/pubmed/34786760) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-07 19:35 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bastia_2021 | irrelevant | 0 | 0 | Travoprost is used only as a positive comparator for intraocular pressure (IOP) efficacy, and no pharmacokinetic parameters (CL, V, t1/2) are reported for it. |
+| popPK | Cardozo_2010 | irrelevant | 0 | 0 | The paper focuses on the dose-response modeling of fesoterodine, not travoprost, and contains no pharmacokinetic data for travoprost. |
+| popPK | Ismail_2020 | irrelevant | 2 | 0 | The study reports pharmacokinetic improvements (Cmax, AUC) for a formulation but lacks specific quantitative disposition parameters (CL, V, ka) and the numeric values are not present in the provided evidence. |
+| popPK | Kelly_2003 | irrelevant | 0 | 0 | This is a pharmacodynamic study measuring intracellular calcium mobilization and receptor binding affinity (EC50/Ki) for travoprost, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Lu_2026 | irrelevant | 0 | 0 | The paper is an in silico toxicology study using machine learning to predict ocular toxicity of PGF2α analogs, reporting no pharmacokinetic parameters for travoprost. |
+| popPK | Mackay_2012 | irrelevant | 1 | 0 | The study reports pharmacodynamic effects (intraocular pressure and pupil size) but contains no pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Raber_2015 | irrelevant | 0 | 0 | The paper is a pharmacodynamic dose-response meta-analysis focused on IOP reduction and safety, not pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Romano_2007 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study measuring muscle contractions, not a pharmacokinetic study reporting disposition parameters for travoprost. |
+| popPK | Sharif_2002 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay measuring receptor agonist potency (EC50), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Sharif_2003 | irrelevant | 0 | 0 | The paper reports in vitro receptor binding affinities and agonist potencies, not pharmacokinetic disposition parameters. |
+| popPK | Sharif_2003_2 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study reporting pharmacodynamic parameters (EC50, Ki) in ciliary muscle cells, not pharmacokinetic disposition parameters. |
+| popPK | Sharif_2003_3 | irrelevant | 0 | 0 | This is an in vitro pharmacodynamic study measuring receptor agonist potency (EC50) in human trabecular meshwork cells, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Sharif_2003_4 | irrelevant | 0 | 0 | The paper is an in-vitro receptor pharmacology study of bimatoprost using travoprost only as a radioligand, and it does not report pharmacokinetic parameters. |
+| popPK | Sharif_2008 | irrelevant | 0 | 0 | The study is a pharmacodynamic receptor assay measuring potency (EC50) and maximal response, not pharmacokinetic disposition parameters. |
+| popPK | Sharif_2008_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay measuring receptor binding/contraction (EC50, Ki), not pharmacokinetic disposition parameters (CL, V, t1/2, population PK) for travoprost. |
+| popPK | Yamane_2015 | irrelevant | 0 | 0 | The study focuses on the IOP-lowering efficacy of ONO-9054 in monkeys, using travoprost only as a comparator for efficacy, and contains no pharmacokinetic data for travoprost. |
+| PGx | Zhou_2022 | not_relevant | 2 | 1 | The paper reviews genetic associations with general response to prostaglandin analogs but does not report specific pharmacogenomic effects on PK/PD parameters for travoprost. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btravoprost%5D&body=Drug%3A%20travoprost%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_travoprost/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

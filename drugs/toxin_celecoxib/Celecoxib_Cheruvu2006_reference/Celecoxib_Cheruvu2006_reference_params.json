@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg oral (M01AH01)",
+ "model_id": "Celecoxib_Cheruvu2006_reference",
+ "molar_masses": {
+  "central.C": 0.381372
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.00014388888888888887,
+  "F": 0.9,
+  "MM": 0.381372,
+  "Tlag": 0.0,
+  "VdPerKg": 9.97e-06,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "ka": 5.555555555555556e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 672.0396429489188
+ },
+ "reference_peaks": {
+  "central.C": 6.938258428252499e-06
+ },
+ "review_status": "needs_review",
+ "stop_time": 604800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

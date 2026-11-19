@@ -1,0 +1,151 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;brivaracetam&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brivaracetam_Klein2026_reference&quot;,&quot;label&quot;:&quot;Klein_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Li2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_all_patients&quot;,&quot;label&quot;:&quot;Pressler_2024_all_patients&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_all_patients.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_individual_patient_data&quot;,&quot;label&quot;:&quot;Pressler_2024_individual_patient_data&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# brivaracetam
+
+- **generic name:** brivaracetam
+- **ATC codes:** `N03AX23`
+- **DrugBank:** [DB05541](https://go.drugbank.com/drugs/DB05541) · **PubChem:** [CID 9837243](https://pubchem.ncbi.nlm.nih.gov/compound/9837243)
+- **molar mass:** 212.2887 g/mol (C11H20N2O2) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Brivaracetam is an antiepileptic drug used to treat partial-onset seizures in combination with other antiepileptic drugs. It is administered orally or intravenously. It is authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q408099](https://www.wikidata.org/wiki/Q408099), [Wikipedia](https://en.wikipedia.org/wiki/Brivaracetam?oldid=1380845110) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| brivaracetam | parent | 212.289 | C11H20N2O2 | DrugBank | [9837243](https://pubchem.ncbi.nlm.nih.gov/compound/9837243) | Pressler_2024, Schoemaker_2017_2 |
+
+## Start here
+
+> **Klein_2026_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md?tab=Simulation) · [record](drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="144" viewBox="0 0 560 144" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="122" stroke="#ddd"/><text x="190.0" y="136" font-size="10" text-anchor="middle">0.1</text><line x1="277.5" y1="18" x2="277.5" y2="122" stroke="#ddd"/><text x="277.5" y="136" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="122" stroke="#ddd"/><text x="365.0" y="136" font-size="10" text-anchor="middle">10</text><line x1="452.5" y1="18" x2="452.5" y2="122" stroke="#ddd"/><text x="452.5" y="136" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="122" stroke="#ddd"/><text x="540.0" y="136" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Pressler_2024 · CL</text><circle cx="220.0" cy="30.0" r="4" fill="#ef6c00"><title>Pressler_2024 · CL: 0.22 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Pressler_2024 · CL</text><circle cx="221.7" cy="46.0" r="4" fill="#ef6c00"><title>Pressler_2024 · CL: 0.23 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Klein_2026 · CL</text><circle cx="357.6" cy="62.0" r="4" fill="#ef6c00"><title>Klein_2026 · CL: 8.23 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Yu_2026 · CL/F</text><circle cx="302.3" cy="78.0" r="4" fill="#ef6c00"><title>Yu_2026 · CL/F: 1.92 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Schoemaker_2018 · CL/F</text><circle cx="323.8" cy="94.0" r="4" fill="#ef6c00"><title>Schoemaker_2018 · CL/F: 3.38 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Li_2025 · CL/F ·/kg</text><circle cx="454.6" cy="110.0" r="4" fill="#ef6c00"><title>Li_2025 · CL/F ·/kg: 105.7 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="144" viewBox="0 0 560 144" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="122" stroke="#ddd"/><text x="190.0" y="136" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="122" stroke="#ddd"/><text x="365.0" y="136" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="122" stroke="#ddd"/><text x="540.0" y="136" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Klein_2026 · V</text><circle cx="222.4" cy="30.0" r="4" fill="#ef6c00"><title>Klein_2026 · V: 1.532 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Pressler_2024 · V</text><circle cx="249.2" cy="46.0" r="4" fill="#ef6c00"><title>Pressler_2024 · V: 2.18 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Pressler_2024 · V</text><circle cx="261.7" cy="62.0" r="4" fill="#ef6c00"><title>Pressler_2024 · V: 2.57 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Yu_2026 · V ·/kg</text><circle cx="474.1" cy="78.0" r="4" fill="#ef6c00"><title>Yu_2026 · V ·/kg: 42 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Li_2025 · V/F</text><circle cx="430.6" cy="94.0" r="4" fill="#ef6c00"><title>Li_2025 · V/F: 23.7 L</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Schoemaker_2018 · V/F</text><circle cx="485.3" cy="110.0" r="4" fill="#ef6c00"><title>Schoemaker_2018 · V/F: 48.7 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Klein_2026_reference](drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026) | [10.1111/epi.18643](https://doi.org/10.1111/epi.18643) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Li_2025_reference](drugs/drug_brivaracetam/Brivaracetam_Li2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (2025) | [10.1038/s41525-025-00519-y](https://doi.org/10.1038/s41525-025-00519-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Pressler_2024_all_patients](drugs/drug_brivaracetam/Brivaracetam_Pressler2024_all_patients.md) | ▶ model + simulator | 1-compartment, oral | 7 | Pressler R et al., Pharmacokinetics and safety of brivarac…, Epilepsia open (2024) | [10.1002/epi4.12875](https://doi.org/10.1002/epi4.12875) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [↳ individual_patient_data](drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data.md) | ▶ model + simulator | 1-compartment, oral | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27, Q76 — no SI value to build from</sub> | [Schoemaker_2017_2_reference](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md) | — | 1-compartment (no model) | 3 | Schoemaker R et al., Brivaracetam population pharmacokinetic…, European journal of clinica… (2017) | [10.1007/s00228-017-2230-6](https://doi.org/10.1007/s00228-017-2230-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Schoemaker_2018_reference](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0597-2](https://doi.org/10.1007/s40262-017-0597-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Yu_2026_reference](drugs/drug_brivaracetam/Brivaracetam_Yu2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Yu L et al., Development and validation of a populat…, BMC pharmacology & toxicolo… (2026) | [10.1186/s40360-026-01114-2](https://doi.org/10.1186/s40360-026-01114-2) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span> | [Brochot_2010_proportion_of_animals_protected_against_convulsions](drugs/drug_brivaracetam/pd_Brochot_2010_proportion_of_animals_protected_against_convuls.md) | proportion of animals protected against convulsions ← brivaracetam · categorical (graded) response model | — | Brochot A et al., Physiologically based pharmacokinetic/p…, Basic & clinical pharmacolo… (2010) | [10.1111/j.1742-7843.2009.00536.x](https://doi.org/10.1111/j.1742-7843.2009.00536.x) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Schoemaker_2016_daily_seizure_counts](drugs/drug_brivaracetam/pd_Schoemaker_2016_daily_seizure_counts.md) | daily seizure counts ← brivaracetam · categorical (graded) response model | — | Schoemaker R et al., Brivaracetam Population Pharmacokinetic…, Journal of clinical pharmac… (2016) | [10.1002/jcph.761](https://doi.org/10.1002/jcph.761) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brivaracetam).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: SCN1A (inhibitor), SV2A (unknown).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 07:07 | 13:36 | 7/0/0 | 2/0/0 | 0/0/0 | 350,129/24,305 | einfracz / qwen3.8-27b | 23 | 4/16 | 23/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 105 matched, 89 returned
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 7  ·  extracted 0  ·  needs review 7  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Schoemaker_2016.pdf` | Schoemaker R et al., Brivaracetam Population Pharmacokinetic…, Journal of clinical pharmac… (2016) | popPK | 10 | [10.1002/jcph.761](https://doi.org/10.1002/jcph.761) | [27146213](https://pubmed.ncbi.nlm.nih.gov/27146213) | The study describes a population PK model for brivaracetam in humans, but the abstract provided contains no specific numeric parameter values (e.g., CL, V) which are likely in the full text or supplementary materials not included here. |
+| `Jukier_2024.pdf` | Jukier T et al., Single intravenous and oral dose pharma…, Journal of veterinary pharm… (2024) | popPK | 9 | [10.1111/jvp.13473](https://doi.org/10.1111/jvp.13473) | [39018069](https://pubmed.ncbi.nlm.nih.gov/39018069) | The paper reports quantitative non-compartmental pharmacokinetic parameters (Cmax, Tmax, AUC, t1/2, bioavailability) for brivaracetam in healthy cats. |
+| `Daripelli_2026.pdf` | Daripelli S et al., Model-based steady state pharmacokineti…, Xenobiotica; the fate of fo… (2026) | popPK | 8 | [10.1080/00498254.2026.2637031](https://doi.org/10.1080/00498254.2026.2637031) | [41744318](https://pubmed.ncbi.nlm.nih.gov/41744318) | The study reports PK parameters (clearance, distribution, steady-state concentration) for brivaracetam in mice, but specific numeric values for brivaracetam's clearance or volume are not explicitly listed in the provided text (only relative rankings and a target Css of 60 ng/mL). |
+| `Schoemaker_2017.pdf` | Schoemaker R et al., Evaluation of brivaracetam efficacy as…, Epilepsy research (2017) | popPK | 8 | [10.1016/j.eplepsyres.2017.09.014](https://doi.org/10.1016/j.eplepsyres.2017.09.014) | [28982069](https://pubmed.ncbi.nlm.nih.gov/28982069) | The paper describes an extension of a population PK model for brivaracetam and reports the model structure, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
+| `Schoemaker_2024.pdf` | Schoemaker R et al., Brivaracetam exposure-response predicti…, Epilepsy research (2024) | popPK | 8 | [10.1016/j.eplepsyres.2024.107332](https://doi.org/10.1016/j.eplepsyres.2024.107332) | [38518434](https://pubmed.ncbi.nlm.nih.gov/38518434) | The paper reports a population PK/PD model for brivaracetam in pediatric patients, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which contains only dosing recommendations and qualitative descriptions. |
+| `Liu_2026.pdf` | Liu XQ et al., Bayesian-Based Pharmacokinetic Framewor…, Journal of medical Internet… (2026) | popPK | 6 | [10.2196/77917](https://doi.org/10.2196/77917) | [41493949](https://pubmed.ncbi.nlm.nih.gov/41493949) | The study uses validated population PK models for brivaracetam for adherence simulation, but the specific numeric parameter values are not explicitly listed in the provided text and are likely embedded in the simulation code or supplementary materials. |
+
+<sub>queue written 2026-10-07 07:03 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aicua-Rapun_2019 | irrelevant | 1 | 0 | The study is a retrospective clinical analysis of loading doses and response in status epilepticus that references a population PK model for exposure calculation, but it does not report the underlying PK parameter values (CL, V, etc.) nor provide the specific values from the model in the evidence. |
+| PGx | Aylón_2026 | not_relevant | 2 | 1 | The paper is a narrative review classifying drugs as P-gp substrates; it does not report specific pharmacogenomic effect sizes (e.g., AUC change) for a specific genotype of brivaracetam. |
+| PGx | Bender_2025 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (Cenobamate inhibiting CYP2C19), but explicitly states that no genetic testing was performed and does not report genotype-specific PK/PD changes. |
+| PGx | Brandt_2016 | not_relevant | 0 | 0 | The paper is a general review of brivaracetam's efficacy and safety and does not report any pharmacogenomic studies or genotype-PK/PD interactions. |
+| popPK | Brochot_2010 | irrelevant | 2 | 0 | The study focuses on physiological PBPK modeling and dose prediction in mice/humans rather than reporting standard quantitative disposition parameters (CL, V, Q) for brivaracetam, and no numeric values are present in the evidence. |
+| PGx | Cohen_2026 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions between antiseizure medications and oral contraceptives, not the effect of genetic variants on brivaracetam pharmacokinetics or pharmacodynamics. |
+| popPK | Daripelli_2026 | relevant | 8 | 3 | The study reports PK parameters (clearance, distribution, steady-state concentration) for brivaracetam in mice, but specific numeric values for brivaracetam's clearance or volume are not explicitly listed in the provided text (only relative rankings and a target Css of 60 ng/mL). |
+| popPK | Dono_2026 | irrelevant | 0 | 0 | This is a clinical efficacy and safety study comparing seizure outcomes; brivaracetam is used only as a comparator agent and no pharmacokinetic parameters are reported. |
+| popPK | Faison_2020 | irrelevant | 0 | 0 | The study focuses exclusively on oxcarbazepine and its metabolite MHD; brivaracetam is only mentioned in passing as another drug with a similar FDA approval history. |
+| popPK | Henry_2025 | irrelevant | 0 | 0 | The paper is a meta-analysis regarding graphical representation of seizure frequency data in clinical trials, containing no pharmacokinetic parameters. |
+| popPK | Hussein_2022 | irrelevant | 0 | 0 | The study focuses exclusively on the pharmacokinetics of perampanel, and brivaracetam is only mentioned in passing as a comparator drug with an available IV formulation. |
+| popPK | Karaźniewicz-Łada_2021 | irrelevant | 3 | 0 | This is a review article that discusses brivaracetam's drug interactions but does not report original quantitative population-pharmacokinetic parameters (CL, V, Q, ka) for brivaracetam. |
+| popPK | Klein_2026 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for alprazolam, not brivaracetam (brivaracetam is only mentioned as a concomitant medication). |
+| PGx | Klotz_2019 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic interaction caused by a concomitant drug (cannabidiol), not a pharmacogenomic effect mediated by a gene variant or genotype. |
+| popPK | Laurell_2023 | irrelevant | 0 | 0 | The paper reports kinetic models for PET target occupancy, not the pharmacokinetic disposition parameters (CL, V, etc.) of brivaracetam. |
+| popPK | Li_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lacosamide, not brivaracetam, which is only mentioned in the discussion. |
+| popPK | Liu_2026 | relevant | 6 | 1 | The study uses validated population PK models for brivaracetam for adherence simulation, but the specific numeric parameter values are not explicitly listed in the provided text and are likely embedded in the simulation code or supplementary materials. |
+| popPK | Maglalang_2024 | irrelevant | 0 | 0 | This is a review article discussing PK variability of various antiseizure medications in children, but it does not contain specific quantitative PK parameters or models for brivaracetam. |
+| popPK | Muglia_2020 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics and pharmacodynamics of padsevonil, with brivaracetam only mentioned as a comparator or co-administered agent without any quantitative PK parameters reported. |
+| PGx | Nicolas_2012 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (gemfibrozil) rather than a pharmacogenomic effect of a genetic variant on brivaracetam PK/PD. |
+| popPK | Prajapati_2025 | irrelevant | 0 | 0 | The paper is a metabolomics study of a fungal extract where brivaracetam is only mentioned as a predicted Keap1 inhibitor in silico, with no pharmacokinetic data. |
+| popPK | Reed_2020 | irrelevant | 1 | 1 | This is a pharmacodynamic study measuring time to EEG effect, reporting only plasma concentrations without any compartmental PK parameters like clearance or volume. |
+| PGx | Riva_2023 | not_relevant | 3 | 0 | The study mentions that CYP2C19 variants may affect brivaracetam (implying increased ADR risk/levels), but it does not report a specific quantitative pharmacokinetic or pharmacodynamic effect size (e.g., change in AUC or clearance) for brivaracetam, nor does it isolate brivaracetam data in the provided tables. |
+| PGx | Rolan_2008 | not_relevant | 0 | 0 | The paper describes pharmacokinetics in healthy subjects without analyzing genetic variants or pharmacogenomics. |
+| popPK | Ruijs_2022 | irrelevant | 0 | 0 | The study focuses on transcranial magnetic stimulation (TMS) biomarkers for levetiracetam, valproic acid, and lorazepam, and does not study brivaracetam or report brivaracetam PK parameters. |
+| popPK | Schoedel_2018 | irrelevant | 0 | 0 | The study evaluates abuse potential and subjective effects (VAS/ARCI scales) rather than pharmacokinetic parameters, and no PK values are reported. |
+| popPK | Schoemaker_2016 | relevant | 10 | 0 | The study describes a population PK model for brivaracetam in humans, but the abstract provided contains no specific numeric parameter values (e.g., CL, V) which are likely in the full text or supplementary materials not included here. |
+| popPK | Schoemaker_2017 | relevant | 8 | 0 | The paper describes an extension of a population PK model for brivaracetam and reports the model structure, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
+| popPK | Schoemaker_2018 | relevant | 7 | 2 | The paper develops a PK/PD model for brivaracetam in humans, but the quantitative PK parameters (CL, V) for brivaracetam are not explicitly listed in the provided text (only levetiracetam PK parameters are shown in the table); brivaracetam PK values are referenced from a previous study [12] or embedded in the PD model description without explicit numeric CL/V lines for the subject drug. |
+| popPK | Schoemaker_2024 | relevant | 8 | 1 | The paper reports a population PK/PD model for brivaracetam in pediatric patients, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which contains only dosing recommendations and qualitative descriptions. |
+| popPK | Sibarov_2025 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of SK channels and Na/K-ATPase in rat neurons, with no mention of brivaracetam pharmacokinetics or disposition parameters. |
+| PGx | Stockis_2016 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (rifampin) rather than a pharmacogenomic variant/genotype. |
+| popPK | Yip_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of carbamazepine and its metabolites, not brivaracetam. |
+| popPK | Yu_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for lacosamide, not brivaracetam. |
+| PGx | de_2021 | not_relevant | 0 | 0 | The paper uses genetic data as features in a machine learning model to predict clinical seizure response (efficacy), but does not report specific pharmacogenomic effects on a defined PK or PD parameter of brivaracetam. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrivaracetam%5D&body=Drug%3A%20brivaracetam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brivaracetam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:03 UTC</sub>

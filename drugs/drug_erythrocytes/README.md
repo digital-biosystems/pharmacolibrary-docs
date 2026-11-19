@@ -1,0 +1,321 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;erythrocytes&quot;}]"></div>
+
+# erythrocytes
+
+- **generic name:** erythrocytes
+- **ATC codes:** `B05AX01`
+- **DrugBank:** none · **PubChem:** none
+- **groups:** not captured
+
+## About
+
+Erythrocytes are blood substitutes and perfusion solutions used primarily for blood transfusion to replace lost red blood cells. Red blood cells are widely used in clinical settings for managing anemia and acute blood loss.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q37187](https://www.wikidata.org/wiki/Q37187), [Wikipedia](https://en.wikipedia.org/wiki/Red_blood_cell?oldid=1380241183) (CC BY-SA 4.0) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **TPMT** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Bajaj_2022](drugs/drug_erythrocytes/pgx_Bajaj_2022_TPMT_safety.md) | Bajaj AO et al., LC-MS/MS Method for Measurement of Thio…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.836812](https://doi.org/10.3389/fphar.2022.836812) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ATP2B4** | `Q322` · IC50 | target | [Agrohi_2026](drugs/drug_erythrocytes/pgx_Agrohi_2026_ATP2B4_Q322.md) | Agrohi P et al., Decoding the multifaceted role of eryth…, mBio (2026) | [10.1128/mbio.01738-25](https://doi.org/10.1128/mbio.01738-25) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP3A5** | `Q27` · CL/F | metabolism | [Cai_2022](drugs/drug_erythrocytes/pgx_Cai_2022_CYP3A5_Q27.md) | Cai XJ et al., Prospective population pharmacokinetic…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1031969](https://doi.org/10.3389/fphar.2022.1031969) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **GSTP1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Hajdinák_2020](drugs/drug_erythrocytes/pgx_Hajdin_k_2020_GSTP1_Q100.md) | Hajdinák P et al., Genetic Polymorphism of GSTP-1 Affects…, Molecules (Basel, Switzerla… (2020) | [10.3390/molecules25071542](https://doi.org/10.3390/molecules25071542) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=erythrocytes).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | `TPMT` safety_allele | PGx paper |
+| metabolism | kidney | `CYP3A5` metabolism | PGx paper |
+| metabolism | liver | `CYP3A5` metabolism, `GSTP1` metabolism, `TPMT` safety_allele | PGx paper |
+| metabolism | lung | `GSTP1` metabolism | PGx paper |
+| metabolism | small intestine | `CYP3A5` metabolism | PGx paper |
+
+<sub>Actors without a tissue in the table: ATP2B4 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 22:15 | 20:42 | 0/0/0 | 0/0/0 | 1/0/3 | 734,370/24,195 | ollama / qwen3.8:27b-mtp-q8_0 | 59 | 13/65 | 59/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 2647 matched, 215 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Dimitriou_1990.pdf` | Dimitriou PA et al., Kinetics of heat-damaged homologous ery…, European journal of nuclear… (1990) | popPK | 9 | [10.1007/BF00819404](https://doi.org/10.1007/BF00819404) | [2083543](https://pubmed.ncbi.nlm.nih.gov/2083543) | The paper describes a quantitative 5-compartmental pharmacokinetic model for the clearance of heat-damaged erythrocytes in humans, but specific numeric parameter values are not present in the provided abstract text. |
+| `Alfonso-González_2025.pdf` | Alfonso-González L et al., C-model: A comprehensive enhanced pharm…, British journal of pharmaco… (2025) | pd | 5 | [10.1111/bph.70054](https://doi.org/10.1111/bph.70054) | [40355805](https://www.ncbi.nlm.nih.gov/pubmed/40355805) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Peterson_1985.pdf` | Peterson DP et al., Hematological responses to arsine expos…, Fundamental and applied tox… (1985) | pd | 5 | [10.1016/0272-0590(85)90097-1](https://doi.org/10.1016/0272-0590(85)90097-1) | [4007307](https://www.ncbi.nlm.nih.gov/pubmed/4007307) | metadata signals extractable PD data (exposureresponse) |
+| `Tan_2024.pdf` | Tan JM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2024) | pd | 5 | [10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158) | [38967300](https://www.ncbi.nlm.nih.gov/pubmed/38967300) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Ciftci_2022.pdf` | Ciftci E et al., Inhibition effect of thymoquinone and l…, Journal of biomolecular str… (2022) | pd | 4 | [10.1080/07391102.2021.1939787](https://doi.org/10.1080/07391102.2021.1939787) | [34138692](https://www.ncbi.nlm.nih.gov/pubmed/34138692) | metadata signals extractable PD data (IC50) |
+| `Hollander_1972.pdf` | Hollander d' F et al., Movement of cholesterol in vitro in rat…, Journal of lipid research (1972) | pd | 4 |  | [4641415](https://www.ncbi.nlm.nih.gov/pubmed/4641415) | metadata signals extractable PD data (turnovermodel) |
+| `Leinders_1992.pdf` | Leinders T et al., Single Ca(2+)-activated K+ channels in…, Biochimica et biophysica ac… (1992) | pd | 4 | [10.1016/0005-2736(92)90255-k](https://doi.org/10.1016/0005-2736(92)90255-k) | [1420271](https://www.ncbi.nlm.nih.gov/pubmed/1420271) | metadata signals extractable PD data (sigmoid) |
+| `Ruiz_1986.pdf` | Ruiz J et al., A dose-response study of forskolin, sti…, Archives of biochemistry an… (1986) | pd | 4 | [10.1016/0003-9861(86)90060-3](https://doi.org/10.1016/0003-9861(86)90060-3) | [3024568](https://www.ncbi.nlm.nih.gov/pubmed/3024568) | metadata signals extractable PD data (EC50) |
+| `Scheufler_1990.pdf` | Scheufler E et al., Uptake of catamphiphilic drugs into ery…, The Journal of pharmacology… (1990) | pd | 4 |  | [2299596](https://www.ncbi.nlm.nih.gov/pubmed/2299596) | metadata signals extractable PD data (EC50) |
+| `Sidhaye_2016.pdf` | Sidhaye AA et al., Bio-inspired artemether-loaded human se…, Nanomedicine (London, Engla… (2016) | pd | 4 | [10.2217/nnm-2016-0235](https://doi.org/10.2217/nnm-2016-0235) | [27759489](https://www.ncbi.nlm.nih.gov/pubmed/27759489) | metadata signals extractable PD data (IC50) |
+| `Tuttle_1983.pdf` | Tuttle JV et al., Effects of acyclovir and its metabolite…, Biochemical pharmacology (1983) | pd | 4 | [10.1016/0006-2952(83)90242-3](https://doi.org/10.1016/0006-2952(83)90242-3) | [6639669](https://www.ncbi.nlm.nih.gov/pubmed/6639669) | metadata signals extractable PD data (EC50) |
+| `Alonge_2024.pdf` | Alonge M et al., Determining Plasma Tacrolimus Concentra…, Therapeutic drug monitoring (2024) | pgx | 8 | [10.1097/FTD.0000000000001135](https://doi.org/10.1097/FTD.0000000000001135) | [38193880](https://www.ncbi.nlm.nih.gov/pubmed/38193880) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
+| `Gilissen_2005.pdf` | Gilissen LP et al., The pharmacokinetic effect of discontin…, Alimentary pharmacology & t… (2005) | pgx | 8 | [10.1111/j.1365-2036.2005.02630.x](https://doi.org/10.1111/j.1365-2036.2005.02630.x) | [16181300](https://www.ncbi.nlm.nih.gov/pubmed/16181300) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
+| `Lin_2009.pdf` | Lin CH et al., Genetic polymorphism of catechol O-meth…, Methods and findings in exp… (2009) | pgx | 8 | [10.1358/mf.2009.31.6.1386990](https://doi.org/10.1358/mf.2009.31.6.1386990) | [19798454](https://www.ncbi.nlm.nih.gov/pubmed/19798454) | metadata signals extractable PGX data (COMT, PK/PD-context) |
+| `Buchan_2002.pdf` | Buchan P et al., Frovatriptan: a review of drug-drug int…, Headache (2002) | pgx | 7 | [10.1046/j.1526-4610.42.s2.4.x](https://doi.org/10.1046/j.1526-4610.42.s2.4.x) | [12028322](https://www.ncbi.nlm.nih.gov/pubmed/12028322) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Nielsen_2015.pdf` | Nielsen SN et al., Pharmacokinetics of 6-Thioguanine and 6…, Journal of pediatric hemato… (2015) | pgx | 7 | [10.1097/MPH.0000000000000246](https://doi.org/10.1097/MPH.0000000000000246) | [25171455](https://www.ncbi.nlm.nih.gov/pubmed/25171455) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
+| `Choi_2024.pdf` | Choi R et al., Genetic polymorphisms and their associa…, European journal of pharmac… (2024) | pgx | 5 | [10.1016/j.ejps.2024.106878](https://doi.org/10.1016/j.ejps.2024.106878) | [39159789](https://www.ncbi.nlm.nih.gov/pubmed/39159789) | metadata signals extractable PGX data (TPMT) |
+| `Kröplin_1998.pdf` | Kröplin T et al., Thiopurine S-methyltransferase activity…, European journal of clinica… (1998) | pgx | 5 | [10.1007/s002280050457](https://doi.org/10.1007/s002280050457) | [9681671](https://www.ncbi.nlm.nih.gov/pubmed/9681671) | metadata signals extractable PGX data (TPMT) |
+| `Kurilovich_2015.pdf` | Kurilovich SA et al., [VISCOELASTISITY AND ELECTRICAL PARAMET…, Eksperimental'naia i klinic… (2015) | pgx | 5 |  | [27214984](https://www.ncbi.nlm.nih.gov/pubmed/27214984) | metadata signals extractable PGX data (UGT1A1) |
+| `Li_2024.pdf` | Li L et al., Determination of Thiopurine S-Methyltra…, Methods in molecular biolog… (2024) | pgx | 5 | [10.1007/978-1-0716-3541-4_43](https://doi.org/10.1007/978-1-0716-3541-4_43) | [38036847](https://www.ncbi.nlm.nih.gov/pubmed/38036847) | metadata signals extractable PGX data (TPMT) |
+| `McLeod_1994.pdf` | McLeod HL et al., Thiopurine methyltransferase activity i…, Clinical pharmacology and t… (1994) | pgx | 5 | [10.1038/clpt.1994.4](https://doi.org/10.1038/clpt.1994.4) | [8299312](https://www.ncbi.nlm.nih.gov/pubmed/8299312) | metadata signals extractable PGX data (TPMT) |
+| `McLeod_1995.pdf` | McLeod HL et al., Higher activity of polymorphic thiopuri…, Pharmacogenetics (1995) | pgx | 5 | [10.1097/00008571-199510000-00003](https://doi.org/10.1097/00008571-199510000-00003) | [8563768](https://www.ncbi.nlm.nih.gov/pubmed/8563768) | metadata signals extractable PGX data (TPMT) |
+| `Reuther_2003.pdf` | Reuther LO et al., Pharmacological monitoring of azathiopr…, Scandinavian journal of gas… (2003) | pgx | 5 | [10.1080/00365520310005082](https://doi.org/10.1080/00365520310005082) | [14531535](https://www.ncbi.nlm.nih.gov/pubmed/14531535) | metadata signals extractable PGX data (TPMT) |
+| `Rucci_2019.pdf` | Rucci F et al., Combined evaluation of genotype and phe…, Drug metabolism and persona… (2019) | pgx | 5 | [10.1515/dmpt-2018-0037](https://doi.org/10.1515/dmpt-2018-0037) | [30840585](https://www.ncbi.nlm.nih.gov/pubmed/30840585) | metadata signals extractable PGX data (TPMT) |
+| `Stocco_2015.pdf` | Stocco G et al., Thiopurine metabolites variations durin…, World journal of gastroente… (2015) | pgx | 5 | [10.3748/wjg.v21.i12.3571](https://doi.org/10.3748/wjg.v21.i12.3571) | [25834322](https://www.ncbi.nlm.nih.gov/pubmed/25834322) | metadata signals extractable PGX data (NAT2) |
+| `Xiang_2021.pdf` | Xiang GQ et al., [Gilbert's syndrome: hyperbilirubinemia…, Zhonghua gan zang bing za z… (2021) | pgx | 5 | [10.3760/cma.j.cn501113-20200212-00041](https://doi.org/10.3760/cma.j.cn501113-20200212-00041) | [34814402](https://www.ncbi.nlm.nih.gov/pubmed/34814402) | metadata signals extractable PGX data (UGT1A1) |
+
+<sub>queue written 2026-10-05 22:01 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PD | Abdelmalek_2015 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and antimicrobial assays (IC50) for polysaccharides and notes a lack of hemolytic activity, but does not report a pharmacodynamic exposure-response or dose-response relationship for a drug with numeric PD parameters. |
+| PGx | Aflaki_2017 | not_relevant | 0 | 0 | The paper investigates the pathophysiology of Gaucher disease (impaired efferocytosis in macrophages) and does not report on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Alfonso-González_2025 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
+| PD | Alfonso-González_2025 | not_relevant | 0 | 0 | The paper describes a simulation environment (C-model) for the complement system and does not report specific pharmacodynamic data or numeric PD parameters for erythrocytes. |
+| popPK | Almeida_2004 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levodopa and 3-OMD, using erythrocyte COMT activity only as a pharmacodynamic biomarker, not as the subject drug. |
+| PGx | Alonge_2024 | not_relevant | 2 | 5 | The study reports no difference in dose-adjusted concentrations between CYP3A5 genotypes, indicating a lack of pharmacogenomic effect on the PK parameter. |
+| popPK | Alonso-Castro_2015 | irrelevant | 0 | 0 | The study evaluates the pharmacological effects of kramecyne, using erythrocytes only as a tool for in-vitro hemolysis assays, and does not report any pharmacokinetic parameters for erythrocytes. |
+| popPK | Amador_2024 | irrelevant | 0 | 0 | The paper studies the antiplasmodial activity of marine natural products (plakortinic acids) and uses erythrocytes only as a target for a hemolysis/toxicity assay, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Amooei_2026 | irrelevant | 0 | 0 | The paper is a systematic review of tacrolimus pharmacokinetics, not a study of erythrocytes as a drug. |
+| PD | Amooei_2026 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacokinetic (PK) and machine learning models for tacrolimus dose prediction, focusing on concentration prediction rather than pharmacodynamic (PD) or exposure-response relationships. |
+| PD | Babii_2018 | not_relevant | 3 | 2 | The paper reports single-point potency metrics (HC50, MIC, IC50) for structure-activity relationships but does not provide full concentration-effect curves or dynamic PK/PD parameters (Emax, EC50, slope) for erythrocytes. |
+| popPK | Bai_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tacrolimus, not erythrocytes. |
+| PD | Bai_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for tacrolimus but does not include any pharmacodynamic (PD) modeling, exposure-response analysis, or dose-response relationship. |
+| popPK | Baroudi_2026 | irrelevant | 0 | 0 | The study focuses on population pharmacokinetic models for tacrolimus, not erythrocytes. |
+| PD | Baroudi_2026 | not_relevant | 0 | 0 | The paper focuses on the external evaluation and selection of population pharmacokinetic (popPK) models for tacrolimus, reporting on AUC prediction and model ranking, but does not present any pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Bauer_2025 | irrelevant | 0 | 0 | The paper is a software tutorial on modeling delays in biological systems (specifically erythropoietin's effect on red blood cell maturation), not a pharmacokinetic study of erythrocytes as a drug. |
+| popPK | Bayoumy_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for thioguanine, not erythrocytes. |
+| PD | Bayoumy_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for thioguanine but does not include any pharmacodynamic (PD) or exposure-response analysis, nor does it report numeric PD parameters. |
+| PGx | Boddy_1993 | not_relevant | 2 | 0 | The text is a general review discussing the concept of pharmacogenetics in chemotherapy and mentions 6MP/TPMT as a historical example, but it does not report specific quantitative PK/PD data or fitted effect sizes for erythrocytes. |
+| PGx | Bogusławska_2022 | not_relevant | 0 | 0 | The paper reports a genetic cause for a hereditary enzymopathy (pyrimidine 5'-nucleotidase deficiency) affecting erythrocyte function, but it does not report a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Boughroud_2025 | irrelevant | 0 | 0 | The study investigates the chemical and biological properties of Syzygium aromaticum extracts, using erythrocytes only as a model for biocompatibility/hemolysis, not as a subject drug for pharmacokinetic analysis. |
+| PD | Boughroud_2025 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant (IC50/EC50) and antimicrobial (MIC/MBC) activities, but does not report a pharmacodynamic (exposure-response) relationship for the drug in a biological system with derivable PD parameters like Emax or EC50 for a therapeutic effect. |
+| PGx | Bouguerra_2021 | not_relevant | 0 | 0 | The paper investigates the pathophysiology of eryptosis in G6PD deficiency (a disease state) and does not report the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Bouvier_2022 | not_relevant | 0 | 0 | The study investigates sex-dependent effects of antipsychotics on erythrocytes and liver iron metabolism in rats, but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Bower_1982 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of fentanyl and alfentanil, using erythrocytes only as a tissue compartment for partitioning analysis rather than as the subject drug. |
+| PGx | Buchan_2002 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions and general pharmacokinetics of frovatriptan but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Buchan_2002_2 | not_relevant | 0 | 0 | The paper reviews general clinical pharmacokinetics of frovatriptan and mentions CYP1A2 metabolism, but it does not report specific pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Cai_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug tacrolimus, not for erythrocytes (which are mentioned only as a binding site contributing to nonlinearity). |
+| popPK | Camargo-Ayala_2024 | irrelevant | 0 | 0 | The study focuses on the synthesis and cholinesterase inhibition of acetamide derivatives, using erythrocytes only as a subject for hemolysis testing, not as a drug for PK analysis. |
+| popPK | Cao_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for busulfan, not erythrocytes. |
+| PD | Cao_2025 | not_relevant | 0 | 0 | The paper reports a semi-mechanistic population PK model for busulfan incorporating glutathione metabolism, but it does not model or report any pharmacodynamic (PD) or exposure-response relationship for erythrocytes or any other clinical endpoint. |
+| popPK | Carlin_1977 | irrelevant | 0 | 0 | The study measures the partition coefficients of xenon and iodoantipyrine in erythrocytes, not the pharmacokinetic parameters (CL, V, etc.) of erythrocytes as a drug. |
+| popPK | Carvalho_2010 | irrelevant | 0 | 0 | The study investigates the antioxidant and antiproliferative effects of walnut extracts on human erythrocytes and cancer cells, not the pharmacokinetics of erythrocytes as a drug. |
+| popPK | Cendrós_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of enflicoxib, not erythrocytes. |
+| PD | Cendrós_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model validation and safety data (hematology/biochemistry) but does not contain any pharmacodynamic (PD) modeling, exposure-response analysis, or numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Cherkaoui-Rbati_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug DSM265, not for erythrocytes (which are the target cells of the parasite). |
+| PGx | Christensen_2017 | not_relevant | 0 | 0 | The paper investigates the mechanism of sphingosine-1-phosphate efflux from erythrocytes mediated by apolipoprotein M and the ABCC1 transporter, but does not report a pharmacogenomic effect of a gene variant on the pharmacokinetic or pharmacodynamic parameters of a specific drug. |
+| popPK | Cilento_1980 | irrelevant | 0 | 0 | The study analyzes the circulation of erythrocytes through the spleen (hemodynamics/physiology), not the pharmacokinetic disposition of a drug named erythrocytes. |
+| popPK | Coburn_1988 | irrelevant | 0 | 0 | The paper is a review of a metabolic model for vitamin B6 where erythrocytes are a compartment, not the subject drug, and no PK parameters for erythrocytes are reported. |
+| PGx | Coleman_1996 | not_relevant | 0 | 0 | The study evaluates the toxicity of dapsone analogues using in-vitro systems and does not report pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Cooper_1989 | irrelevant | 0 | 0 | The study investigates the pulmonary transvascular flux of transferrin and albumin, using 99mTc-erythrocytes only as a marker for the vascular blood pool, not as the subject drug for PK analysis. |
+| popPK | Couffignal_2019 | irrelevant | 0 | 0 | The study models the pharmacokinetics of lithium, not erythrocytes, which are merely a biological compartment for distribution. |
+| popPK | Cuartas_2020 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on antimicrobial agents where erythrocytes are used only as a cytotoxicity assay target, not as the subject drug for pharmacokinetic analysis. |
+| PD | Cuartas_2020 | not_relevant | 1 | 0 | The paper reports IC50/EC50 values for antimicrobial and antiprotozoal activities and mentions low cytotoxicity toward erythrocytes, but it does not provide a dose-response curve or numeric PD parameters (such as EC50 for hemolysis) for the erythrocyte effect. |
+| popPK | Dao_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the drug sultiame, with erythrocytes serving as a distribution compartment or matrix rather than being the subject drug. |
+| popPK | Delasoud_2015 | irrelevant | 0 | 0 | The study investigates the enzymatic (peroxidase) activity of hemoglobin in an in-vitro setting, not the pharmacokinetic disposition of erythrocytes as a drug. |
+| PGx | Demirbas_2019 | not_relevant | 0 | 0 | The paper reports on a diagnostic assay for a genetic metabolic disorder (galactosemia) and its correlation with clinical complications, not a pharmacogenomic effect on the PK/PD of a specific drug. |
+| popPK | Dias_2026 | irrelevant | 0 | 0 | The paper investigates the antimalarial activity of 6-anilinopurine derivatives against Plasmodium falciparum, not the pharmacokinetics of erythrocytes. |
+| popPK | Dienemann_2023 | irrelevant | 0 | 0 | The paper describes a chemical proteomic strategy for discovering lipoate protein ligase inhibitors in bacteria and parasites, not a pharmacokinetic study of erythrocytes. |
+| PGx | Dierickx_2026 | not_relevant | 0 | 0 | The paper describes an antigen delivery system using red blood cells for immune tolerance in iTTP, not a pharmacogenomic effect on the PK/PD of a drug. |
+| popPK | Dimitriou_1990 | relevant | 9 | 2 | The paper describes a quantitative 5-compartmental pharmacokinetic model for the clearance of heat-damaged erythrocytes in humans, but specific numeric parameter values are not present in the provided abstract text. |
+| popPK | Dingemanse_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tolcapone and levodopa, using erythrocytes only as a source for measuring COMT enzyme activity, not as the subject drug. |
+| popPK | Dunlap_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tacrolimus, not erythrocytes. |
+| PD | Dunlap_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for tacrolimus and dosing simulations to achieve target trough concentrations, but it does not report any pharmacodynamic (PD) or exposure-response relationship for erythrocytes or any other effect. |
+| popPK | El-Fakharany_2020 | irrelevant | 0 | 0 | The paper studies a lectin from a cyanobacterium and uses erythrocytes only as a substrate for agglutination assays, not as a drug subject for pharmacokinetic analysis. |
+| popPK | El-Khateeb_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tacrolimus, not erythrocytes. |
+| PD | El-Khateeb_2023 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic (PK) modeling of tacrolimus clearance in chronic kidney disease and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Eymard_2023 | irrelevant | 0 | 0 | The study models the pharmacokinetics of methionine and methionine-gamma-lyase (an enzyme) in mice, not the pharmacokinetics of erythrocytes as a drug. |
+| PD | Eymard_2023 | not_relevant | 4 | 2 | The paper describes a mechanistic PK/PD model and simulations but does not report specific numeric PD parameters (like Emax or EC50) or an explicit concentration-effect curve in the provided text. |
+| PGx | Farcet_1987 | not_relevant | 0 | 0 | The paper discusses the clinical association between hairy-cell leukemia and vasculitis, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a drug. |
+| PGx | Fasinu_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (chloroquine/quinine inhibiting CYP2D6) in vitro, not the effect of a specific gene variant or genotype on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Ferreira_2016 | irrelevant | 0 | 0 | The study investigates the antimicrobial and cytotoxic properties of spider venom, not the pharmacokinetics of erythrocytes. |
+| popPK | Francke_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tacrolimus, not erythrocytes. |
+| PD | Francke_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model and dosing algorithm for tacrolimus, but it does not contain any pharmacodynamic (PD) or exposure-response analysis, nor does it report numeric PD parameters such as Emax or EC50. |
+| PGx | Fujise_1993 | not_relevant | 0 | 0 | The paper describes a genetic variant affecting erythrocyte ion transport and amino acid metabolism, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Gebhard_2023 | irrelevant | 0 | 0 | The study models the pharmacokinetics of methotrexate (MTX) and 6-mercaptopurine (6MP) in red blood cells, not the pharmacokinetics of erythrocytes as a drug. |
+| PGx | Gebhardt_2024 | not_relevant | 0 | 0 | The paper investigates metabolic biomarkers in erythrocytes for diagnosing genetic variants, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Gilissen_2005 | not_relevant | 2 | 5 | The study reports a drug-drug interaction (mesalazine affecting mercaptopurine metabolites) in patients with wild-type TPMT genotypes, not a pharmacogenomic effect where a specific gene variant alters PK/PD. |
+| PGx | Gomez_1994 | not_relevant | 0 | 0 | The paper studies macrophage function in alcoholic cirrhosis, not the effect of a gene variant on the PK/PD of a specific drug. |
+| PGx | Guengerich_1995 | not_relevant | 0 | 0 | The paper discusses the role of glutathione S-transferases in carcinogen bioactivation and mutagenicity, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Hajdinák_2020 | not_relevant | 2 | 5 | The study reports a pharmacogenomic association with clinical disease remission (efficacy) and notes unchanged erythrocyte GSH levels, but does not report a change in a specific PK or PD parameter of erythrocytes. |
+| PGx | Hallier_1993 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect on a cytogenetic endpoint (SCE) rather than a pharmacokinetic or pharmacodynamic parameter of erythrocytes. |
+| popPK | Hawwa_2009 | irrelevant | 0 | 0 | The paper describes an analytical method for measuring mercaptopurine and its metabolites in erythrocytes, not the pharmacokinetics of erythrocytes as a drug. |
+| PGx | Hawwa_2009 | not_relevant | 0 | 0 | The paper describes the development and validation of an HPLC analytical method for measuring drug concentrations, not the reporting of pharmacogenomic effects on PK/PD parameters. |
+| PGx | Hermans_2022 | not_relevant | 0 | 0 | The paper investigates metabolomic biomarkers in erythrocytes for galactosemia prognosis, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Herrinton_1995 | not_relevant | 0 | 0 | The paper investigates the association between galactose metabolism and ovarian cancer risk, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Hollander_1972 | irrelevant | 0 | 0 | no_text gate: only 130 chars of text extracted (&lt; 400) |
+| PD | Hollander_1972 | not_relevant | 0 | 0 | The paper describes in vitro cholesterol exchange kinetics between plasma and erythrocytes, which is a physicochemical/biochemical process, not a pharmacodynamic drug-response relationship. |
+| popPK | Husheng_2026 | irrelevant | 0 | 0 | The paper is a review of vancomycin pharmacokinetics, not erythrocytes. |
+| PD | Husheng_2026 | not_relevant | 0 | 0 | The paper is a review of population pharmacokinetic (PK) models for vancomycin and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| PGx | Illamola_2019 | not_relevant | 0 | 0 | The paper describes the development and validation of an analytical method for measuring TPMT enzyme activity, not the effect of a gene variant on a pharmacokinetic or pharmacodynamic parameter. |
+| popPK | Janssen_2020 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug bortezomib, not for erythrocytes (which are mentioned only as a binding site/comparator for the drug). |
+| PGx | Jenkins_2022 | not_relevant | 0 | 0 | The paper characterizes the proteome of a parasite (Theileria orientalis) across different genotypes and does not report any pharmacogenomic effects on drug pharmacokinetics or pharmacodynamics. |
+| popPK | Jovanović_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for adalimumab, not erythrocytes. |
+| PD | Jovanović_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PK) modeling of adalimumab, reporting PK parameters like clearance and volume of distribution, but contains no pharmacodynamic (PD) or exposure-response analysis. |
+| PGx | Kassa_2022 | not_relevant | 0 | 0 | The paper describes an assay for antibody-dependent phagocytosis of malaria-infected erythrocytes and does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Kawata_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of propofol, not erythrocytes. |
+| PD | Kawata_2024 | not_relevant | 0 | 0 | The paper reports population pharmacokinetic (PK) parameters (clearance, volume, partition coefficient) for propofol but does not model or report any pharmacodynamic (PD) effect or exposure-response relationship. |
+| PD | Kerbusch_2001 | not_relevant | 0 | 0 | The paper reports pharmacokinetic distribution parameters (partition coefficients) between plasma and erythrocytes, not a pharmacodynamic exposure-response or dose-response relationship. |
+| popPK | Kir_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atenolol and metoprolol in rats, not erythrocytes. |
+| PD | Kir_2025 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetic (PK) modeling (absorption, distribution, clearance) of atenolol and metoprolol in rats and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| PGx | Kurilovich_2015 | not_relevant | 0 | 0 | The paper describes baseline physiological properties of erythrocytes in a genetic condition (Gilbert's syndrome) without administering a drug or measuring pharmacokinetic/pharmacodynamic parameters of a therapeutic agent. |
+| popPK | Kurotschka_2025 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating diagnostic tests for urinary tract infections where erythrocytes are a diagnostic marker, not a drug subject to pharmacokinetic analysis. |
+| PGx | Laiolo_2024 | not_relevant | 0 | 0 | The paper reports on the synthesis and molecular modeling of P-gp inhibitors, not on pharmacogenomic effects of gene variants on PK/PD parameters. |
+| PGx | Lawrence_1984 | not_relevant | 0 | 0 | The paper investigates reticulophagocytic function and HLA associations in diabetes, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Lee_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for everolimus, not erythrocytes. |
+| PD | Lee_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for everolimus dosing but does not contain any pharmacodynamic (PD) or exposure-response analysis, nor does it report numeric PD parameters. |
+| popPK | Leinders_1992 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
+| PGx | Li_2024 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring TPMT enzyme activity in erythrocytes but does not report pharmacokinetic or pharmacodynamic parameters of a drug or the effect of a genotype on those parameters. |
+| PGx | Li_2024_2 | not_relevant | 0 | 0 | The paper describes an analytical method (LC-MS/MS) for quantifying metabolites in erythrocytes and does not report specific pharmacogenomic effect sizes or genotype-phenotype associations. |
+| PGx | Lin_2009 | not_relevant | 0 | 0 | The study reports no significant difference in pharmacokinetic parameters of levodopa based on COMT genotype. |
+| popPK | Lin_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug pozelimab, not for erythrocytes. |
+| PD | Lin_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model using target-mediated drug disposition (TMDD) to describe the PK of pozelimab and C5, but it does not report a pharmacodynamic (PD) model or exposure-response relationship for a clinical effect (e.g., hemolysis, complement activity, or symptom improvement) with numeric PD parameters like Emax or EC50. |
+| PGx | Lorentz_2015 | not_relevant | 0 | 0 | The paper reports on the pharmacokinetics and immunological tolerance of a protein drug (asparaginase) in mice, but does not investigate the effect of any gene variant or genotype on these parameters. |
+| popPK | Ludwików_1993 | irrelevant | 0 | 0 | The paper models micronucleus formation kinetics in erythrocytes (a cytogenetic endpoint), not the pharmacokinetic disposition (CL, V, etc.) of a drug. |
+| PGx | Luo_2015 | not_relevant | 0 | 0 | The paper investigates the role of annexin A7 in insulin sensitivity and glucose metabolism, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Lévi_2000 | irrelevant | 0 | 0 | The paper describes the pharmacokinetics of oxaliplatin, where erythrocytes are merely a compartment for platinum distribution, not the subject drug. |
+| PGx | Maas_1983 | not_relevant | 2 | 5 | The paper investigates the mechanism of action of anti-D immunoglobulin on Rh-positive erythrocytes in Rh-negative volunteers, focusing on clearance rates and organ involvement (spleen/liver), but does not report a pharmacogenomic effect (gene variant altering PK/PD) of a drug on a specific parameter. |
+| popPK | Maciel_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug quinine (and its nanocapsule formulations), not for erythrocytes, which are the biological matrix/subject of the partitioning study. |
+| popPK | Magalhães_2009 | irrelevant | 0 | 0 | The study investigates the antioxidant effects of quince fruit extracts on erythrocytes (hemolysis), not the pharmacokinetics of erythrocytes as a drug. |
+| PGx | Mahmoudi_2015 | not_relevant | 0 | 0 | The paper reports a genetic association with a disease phenotype (Alzheimer's) and a biomarker (CR1 density), but does not report the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Maiga_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of antimalarial drugs (cabamiquine and pyronaridine) on P. falciparum parasites, not the pharmacokinetics of erythrocytes. |
+| popPK | Mao_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ciclosporin, not erythrocytes, which are only mentioned as a binding site contributing to nonlinearity. |
+| popPK | Marković_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug vedolizumab, not for erythrocytes (which are mentioned only as a laboratory variable). |
+| PGx | Martinelli_2020 | not_relevant | 0 | 0 | The paper investigates the effect of malaria infection on transporter expression in the yolk sac, not the effect of a gene variant on a drug's pharmacokinetic or pharmacodynamic parameter. |
+| popPK | McIntosh_1974 | irrelevant | 0 | 0 | The study investigates calcium transport kinetics in rabbit tissues, and erythrocytes are only mentioned as a site for carbonic anhydrase activity assay, not as the subject drug. |
+| PGx | McLeod_1995 | not_relevant | 2 | 5 | The paper reports age-related differences in enzyme activity (neonates vs adults) rather than a specific pharmacogenomic effect of a gene variant on a drug's PK/PD parameter. |
+| PGx | Meryhew_1996 | not_relevant | 0 | 0 | The paper describes a genetic effect on immune clearance of erythrocytes, not a pharmacokinetic or pharmacodynamic parameter of a drug. |
+| popPK | Meunier_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bupivacaine, not erythrocytes, which are only mentioned as a binding compartment for the drug. |
+| popPK | Michels_2019 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug quinine, not for erythrocytes (which are the biological target/subject of the infection). |
+| popPK | Migliorini_2019 | irrelevant | 0 | 0 | The study investigates the chemical stability and antioxidant activity of red chicory extract, using erythrocytes only as a biological assay system for hemolysis, not as the subject drug for pharmacokinetic analysis. |
+| PD | Migliorini_2019 | not_relevant | 3 | 2 | The paper reports an EC50 for antioxidant activity (DPPH) and qualitative protection of erythrocytes against hemolysis, but does not provide a dose-response curve or numeric PD parameters specifically for the erythrocyte effect. |
+| PD | Miller_1987 | not_relevant | 1 | 0 | The text is a conceptual proposal for a biomarker (erythrocyte membrane fluidity) and contains no numeric data, dose-response curves, or PD parameters. |
+| popPK | Miller_2000 | irrelevant | 0 | 0 | The study models zinc metabolism where erythrocytes are a sampling compartment, not the subject drug. |
+| popPK | Monti_1990 | irrelevant | 0 | 0 | The study models proton (H+) kinetics in erythrocytes during dialysis, not the pharmacokinetics of erythrocytes as a drug. |
+| PGx | Müller_2021 | not_relevant | 0 | 0 | The paper investigates the intercellular transfer of GPI-anchored proteins between cell membranes and its regulation by metabolic state, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Naganarasimha_2025 | irrelevant | 0 | 0 | The study focuses on the in vitro antioxidant and enzyme inhibition properties of coconut milk peptides, using erythrocytes only as a substrate for a hemolysis assay, not as a subject for pharmacokinetic analysis. |
+| PD | Naganarasimha_2025 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and antioxidant assays, but does not report a pharmacodynamic (exposure-response) relationship for erythrocytes or any other biological system; the mention of erythrocytes is limited to a qualitative safety assessment (hemolytic activity). |
+| popPK | Nguyen_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tacrolimus, not erythrocytes. |
+| PD | Nguyen_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for tacrolimus clearance influenced by CYP3A5 genotype, but it does not report any pharmacodynamic (PD) or exposure-response relationship (e.g., effect vs. concentration, Emax, EC50). |
+| popPK | Nie_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of uricase (UOX) conjugated to erythrocytes, where erythrocytes serve as a delivery vehicle/carrier rather than the subject drug itself. |
+| popPK | Niu_2024 | irrelevant | 0 | 0 | The paper studies the mechanism of action of leucinostatins against malaria parasites and their hemolytic effects on erythrocytes, but does not report pharmacokinetic parameters for erythrocytes as a drug. |
+| popPK | OWENS_1965 | irrelevant | 0 | 0 | The paper describes a colorimetric method for measuring glutathione and does not report pharmacokinetic parameters for erythrocytes. |
+| PD | OWENS_1965 | not_relevant | 0 | 0 | The paper describes a colorimetric assay method for determining glutathione levels and does not report any pharmacodynamic or exposure-response relationship for a drug. |
+| PGx | Padmanabhan_2018 | not_relevant | 0 | 0 | The paper investigates the effects of a genetic mutation (Mtrr) on erythrocyte parameters in the absence of any drug administration, so it does not report a pharmacogenomic effect on a PK or PD parameter. |
+| PGx | Page_2021 | not_relevant | 0 | 0 | The paper reports genetic associations with erythrocyte hemolysis (osmotic, oxidative, storage) and disease severity, not the pharmacokinetic or pharmacodynamic parameters of a specific drug. |
+| PGx | Peltenburg_2016 | not_relevant | 0 | 0 | The study reports no significant difference in ITPase expression based on genotype, and it focuses on leukocytes rather than erythrocytes. |
+| popPK | Peterson_1985 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
+| popPK | Pogosyan_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the contrast agent ferumoxytol in swine, not erythrocytes, which are only mentioned as the biological component of the hemorrhage being imaged. |
+| popPK | Portnoy_2018 | irrelevant | 0 | 0 | The paper characterizes MRI relaxation and susceptibility properties of erythrocytes, not pharmacokinetic parameters (CL, V, ka) for a drug. |
+| popPK | Poust_1976 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lithium, using erythrocytes as a tissue compartment for distribution, rather than studying erythrocytes as the subject drug. |
+| popPK | Poust_1976_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lithium, not erythrocytes, which are merely a biological compartment for measurement. |
+| popPK | Prause_2025 | irrelevant | 0 | 0 | The paper investigates the toxicology and sterol binding kinetics of karmitoxin, not the pharmacokinetics of erythrocytes (which are used only as a substrate for hemolysis assays). |
+| popPK | Ramanathan-Girish_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of doxorubicin and epirubicin, using erythrocytes only as a binding site/comparator for drug distribution, not as the subject drug. |
+| PGx | Rapozzi_2021 | not_relevant | 0 | 0 | The paper discusses the mechanism of SARS-CoV-2 interaction with erythrocytes and haemoglobin, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Redhi_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the drug berzosertib, not erythrocytes. |
+| popPK | Ren_2026 | irrelevant | 0 | 0 | The study evaluates the efficacy of anticoagulants (rivaroxaban, LMWH, fondaparinux) for DVT prevention and does not report pharmacokinetic parameters for erythrocytes. |
+| PD | Ren_2026 | not_relevant | 0 | 0 | The paper is a clinical trial comparing fixed-dose anticoagulants based on clinical outcomes (DVT incidence) and surrogate markers (coagulation/inflammatory), without reporting any concentration-effect or dose-response modeling or numeric PD parameters. |
+| popPK | Reynaldo_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of erythropoietin (rHuEPO) drugs, not erythrocytes (red blood cells) as the subject drug. |
+| PGx | Rivkin_2017 | not_relevant | 0 | 0 | The paper investigates the role of microRNA-142 in erythrocyte biology and survival, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Rocha_2016 | not_relevant | 0 | 0 | The study investigates the effect of genetic variants on environmental toxicant levels (mercury/selenium) and oxidative stress markers, not on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Rognås_2025 | irrelevant | 0 | 0 | The study models the pharmacokinetics of the drug bitopertin and its pharmacodynamic effects on erythropoiesis (erythrocyte production), rather than the pharmacokinetic disposition of erythrocytes as a drug. |
+| popPK | Ruiz_1986 | irrelevant | 0 | 0 | no_text gate: only 132 chars of text extracted (&lt; 400) |
+| PD | Ruiz_1986 | not_relevant | 0 | 0 | The paper studies adenylate cyclase enzyme kinetics, not the pharmacodynamics of erythrocytes. |
+| PGx | Ruiz_1990 | not_relevant | 0 | 0 | The paper investigates macrophage function in end-stage renal disease and does not report any pharmacogenomic effects of gene variants on drug pharmacokinetics or pharmacodynamics. |
+| popPK | SOLOMON_1955 | irrelevant | 0 | 0 | The study investigates potassium transport in erythrocytes, not the pharmacokinetics of erythrocytes as a drug. |
+| popPK | Sbardelotto_2021 | irrelevant | 0 | 0 | The study investigates the cytotoxic and mechanistic effects of Oncocalyxone A on cell lines and erythrocytes, not the pharmacokinetics of erythrocytes as a drug. |
+| PD | Sbardelotto_2021 | not_relevant | 3 | 2 | The study reports qualitative cytotoxicity and minimal hemolysis on erythrocytes but does not provide a quantitative exposure-response curve or numeric PD parameters (e.g., EC50) for erythrocytes in the provided text. |
+| popPK | Scharff_1978 | irrelevant | 0 | 0 | The paper describes in-vitro enzymatic kinetics of Ca2+-ATPase in erythrocyte membranes, not the pharmacokinetics of erythrocytes as a drug. |
+| popPK | Scheufler_1990 | irrelevant | 0 | 0 | no_text gate: only 162 chars of text extracted (&lt; 400) |
+| PD | Scheufler_1990 | not_relevant | 0 | 0 | The paper investigates the physicochemical mechanism of drug uptake (membrane enrichment and Ca displacement) rather than a pharmacodynamic exposure-response or dose-response relationship with numeric PD parameters. |
+| popPK | Sikma_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the drug tacrolimus, not erythrocytes, which are only the binding site for the drug. |
+| popPK | Sluyter_2007 | irrelevant | 0 | 0 | The study investigates P2X7 receptor function and ion permeability in erythrocytes, not the pharmacokinetic disposition parameters of a drug. |
+| PGx | Soni_1988 | not_relevant | 0 | 0 | The paper describes a genetic variant affecting endogenous galactokinase activity in erythrocytes, not the pharmacokinetics or pharmacodynamics of an exogenous drug. |
+| popPK | Souza_2021 | irrelevant | 0 | 0 | The paper investigates antitrypanosomal compounds and mentions erythrocytes only as a subject for a hemolysis assay, not as a drug for PK analysis. |
+| PGx | Stanik_2017 | not_relevant | 0 | 0 | The paper reports a genetic cause for a disease phenotype (hyperinsulinism/glycogenosis) and mentions increased glycogen in erythrocytes, but it does not report a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Stepanova_2026 | irrelevant | 0 | 0 | The study measures oxidative stress markers in erythrocytes as a biological compartment, not the pharmacokinetics of erythrocytes as a drug. |
+| popPK | Tan_2024 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
+| PD | Tan_2024 | not_relevant | 0 | 0 | The provided text is only the title of a paper and does not contain the full text, data, or numeric PD parameters required to assess the relationship. |
+| popPK | Tariku_2010 | irrelevant | 0 | 0 | The study is an in vitro toxicity and antileishmanial assay where erythrocytes are used as a biological target for toxicity testing, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Teisseire_1987 | irrelevant | 0 | 0 | The study investigates the physiological effects of transfusing erythrocytes loaded with inositol hexaphosphate (InsP6) to alter oxygen affinity, not the pharmacokinetic disposition (clearance, volume, half-life) of erythrocytes as a drug. |
+| popPK | Ter_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug eculizumab, not for erythrocytes (which are the subject of the disease PNH but not the drug being modeled). |
+| popPK | Titus_1989 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of chloroquine, not erythrocytes, which are only mentioned as the site of parasite residence. |
+| popPK | Tod_2005 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ribavirin and its effect on erythrocytes (anaemia), not the pharmacokinetic parameters of erythrocytes as a drug. |
+| PGx | Tummolo_2022 | not_relevant | 0 | 0 | The paper describes a metabolic disorder (MADD/IBDD) and its effect on endogenous riboflavin homeostasis and enzyme activities, not the pharmacokinetics or pharmacodynamics of an exogenous drug. |
+| popPK | Tuttle_1983 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
+| PD | Tuttle_1983 | not_relevant | 0 | 0 | The paper investigates the in vitro enzymatic inhibition of HGPRT by acyclovir and its metabolites, which is a mechanistic biochemical study, not a pharmacodynamic exposure-response or dose-response analysis in a biological system (e.g., plasma, tissue, or whole organism) with derivable PD parameters like Emax or EC50 in a clinical or PK/PD context. |
+| popPK | Umpiérrez_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tacrolimus, not erythrocytes. |
+| PD | Umpiérrez_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the evaluation of tacrolimus population pharmacokinetic (popPK) models and Bayesian forecasting for dose prediction, with no mention of pharmacodynamic (PD) endpoints, exposure-response relationships, or PD parameters. |
+| PGx | Urban_2018 | not_relevant | 0 | 0 | The paper describes a complement factor B mutation affecting convertase stability and hemolysis, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Valentine_1975 | not_relevant | 0 | 0 | The paper discusses genetic polymorphisms in erythrocyte enzymes and their role in hemolytic anemia, but does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Valton_2017 | not_relevant | 0 | 0 | The study investigates P-gp expression as a biomarker for environmental pollution in fish, not the effect of a genetic variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Vaucher_2010 | irrelevant | 0 | 0 | The study evaluates the in vitro cytotoxicity and hemolytic activity of antimicrobial peptides on erythrocytes, not the pharmacokinetics of erythrocytes as a drug. |
+| PGx | Versino_2025 | not_relevant | 2 | 1 | The paper is a review of clinical management and patient profiling for PNH, mentioning genetic polymorphisms only in the context of drug efficacy, not reporting specific pharmacokinetic or pharmacodynamic parameter changes. |
+| popPK | Vorontsova_2011 | irrelevant | 0 | 0 | The study investigates the in vitro cytotoxic and hemolytic mechanisms of the antimicrobial peptide Ltc2a on erythrocytes, not the pharmacokinetics of erythrocytes as a drug. |
+| popPK | Wagner_2003 | irrelevant | 0 | 0 | The paper describes a mechanistic model of osmotic lysis in infected red blood cells, not the pharmacokinetics of a drug. |
+| PGx | Wang_2016 | not_relevant | 0 | 0 | The paper investigates the biofunction of a complement protein (Factor H) and its genetic variants in disease pathology, not the pharmacokinetics or pharmacodynamics of a drug. |
+| PGx | Wei_2025 | not_relevant | 0 | 0 | The paper investigates genetic biomarkers and iron metabolism in beta-thalassemia, not the pharmacokinetic or pharmacodynamic effects of a specific drug. |
+| PD | White_2017 | not_relevant | 3 | 1 | The paper is a review discussing PK/PD concepts and referencing other studies for data, but it does not present original numeric PD parameters or extractable concentration-effect curves in the provided text. |
+| popPK | White_2025 | irrelevant | 0 | 0 | The study models the pharmacokinetics of phosphatidylethanol (PEth), a biomarker of ethanol consumption, not the drug erythrocytes. |
+| PD | White_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for the elimination of phosphatidylethanol (PEth), not a pharmacodynamic (PD) or exposure-response relationship for a drug. |
+| PGx | Wong_2017 | not_relevant | 2 | 5 | The paper reports the predictive value of a metabolite concentration for toxicity risk, but does not report how a specific gene variant changes a PK or PD parameter. |
+| popPK | Wu_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of methyl mercury (MeHg) uptake by erythrocytes, not the disposition of erythrocytes as the subject drug. |
+| PGx | Xiang_2021 | not_relevant | 0 | 0 | The paper discusses the pathophysiology of Gilbert's syndrome and bilirubin effects on erythrocytes, but does not report a pharmacogenomic effect on the PK or PD of a specific drug. |
+| popPK | Ye_2020 | irrelevant | 0 | 0 | The paper describes the antiviral activity of an oleanolic acid derivative against influenza virus in cell cultures and does not report pharmacokinetic parameters for erythrocytes. |
+| popPK | Yee_2018 | irrelevant | 0 | 0 | The study analyzes the clearance of transfused hemoglobin A (HbA) in patients with sickle cell anemia, not the pharmacokinetics of erythrocytes as a drug. |
+| PGx | Yee_2018 | not_relevant | 0 | 0 | The study investigates the clearance of transfused red blood cells (HbA) based on immunologic factors (antibodies, splenectomy) and antigen mismatches, not the effect of a specific gene variant on the pharmacokinetics or pharmacodynamics of a drug. |
+| popPK | Yu_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for lacosamide, not erythrocytes. |
+| PD | Yu_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for lacosamide, focusing on clearance and covariates, but does not include any pharmacodynamic (PD) or exposure-response analysis. |
+| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper is a review on ALDH2 in cancer biology and does not report pharmacokinetic or pharmacodynamic parameters of erythrocytes. |
+| PGx | Zhou_2005 | not_relevant | 0 | 0 | The paper describes the physiological role of the ABCG2 transporter in regulating endogenous protoporphyrin IX levels during erythroid maturation, not the pharmacokinetics or pharmacodynamics of an exogenous drug. |
+| PGx | Zhou_2024 | not_relevant | 5 | 2 | The paper reports that gene-based dosing reduced toxicity (PD) but explicitly states there were no significant differences in steady-state metabolite concentrations (PK) in erythrocytes between the groups, and no specific genotype-to-PK/PD effect sizes are provided. |
+| PGx | de_2007 | not_relevant | 0 | 0 | The paper investigates the mechanism of cGMP transport in erythrocytes using knockout mice, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | de_2007_2 | not_relevant | 2 | 5 | The study reports metabolite levels and correlations with TPMT activity but does not report a specific gene variant/genotype effect on PK/PD parameters. |
+| popPK | van_2016 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug everolimus, not for erythrocytes (which are the subject of accumulation but not the drug being modeled). |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Berythrocytes%5D&body=Drug%3A%20erythrocytes%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_erythrocytes/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

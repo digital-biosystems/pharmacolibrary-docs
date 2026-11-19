@@ -1,0 +1,66 @@
+{
+ "dose_source": "library default",
+ "model_id": "Tizanidine_Zaman2018_tzn_oral_solution",
+ "molar_masses": {
+  "retainedFraction": 0.253708
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zaman_2018:other_prose",
+    "value_si": 9.192e-05
+   },
+   {
+    "source": "Zaman_2018:other_prose",
+    "value_si": 9.462e-05
+   },
+   {
+    "source": "Zaman_2018:other_prose",
+    "value_si": 9.412e-05
+   },
+   {
+    "source": "Zaman_2018:other_prose",
+    "value_si": 4.22e-05
+   },
+   {
+    "source": "Zaman_2018:other_prose",
+    "value_si": 3.997999999999999e-05
+   },
+   {
+    "source": "Zaman_2018:other_prose",
+    "value_si": 4.438e-05
+   },
+   {
+    "source": "Zaman_2018:other_prose",
+    "value_si": 0.00044789999999999994
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.253708,
+  "Tb[1]": 9036.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.995674546097331
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

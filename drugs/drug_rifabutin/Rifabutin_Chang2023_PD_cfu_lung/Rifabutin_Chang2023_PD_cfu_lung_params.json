@@ -1,0 +1,55 @@
+{
+ "model_id": "Rifabutin_Chang2023_PD_cfu_lung",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 4.46,
+  "exposure_per_s": 0.001,
+  "slope": -1.4880952381e-07
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 4.46,
+  "0.0009999999999999998": 4.45999999985119
+ },
+ "stop_time": 1000.0,
+ "subtitle": "M. tuberculosis lung burden (CFU/lung) against rifabutin concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "log10 CFU/lung",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "µg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "log10 CFU/lung",
+  "slope": {
+   "display_only": false,
+   "display_unit": "wk−1",
+   "factor": 1.6534391534391533e-06,
+   "si_unit": "1 / second"
+  }
+ },
+ "x_axis": {
+  "display_unit": "µg/mL",
+  "factor": 0.0009999999999999998,
+  "label": "rifabutin concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "log10 CFU/lung",
+  "factor": 1.0,
+  "label": "M. tuberculosis lung burden (CFU/lung)"
+ }
+}

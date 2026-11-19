@@ -1,0 +1,55 @@
+{
+ "model_id": "Isatuximab_Koiwai2021_PD_m_protein_3",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 21.4,
+  "exposure_per_s": 1.0,
+  "slope": 0.0125
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 21.399999999999995,
+  "1.0": 21.412499999999994
+ },
+ "stop_time": 1000.0,
+ "subtitle": "serum M-protein concentrations (M-protein) against isatuximab and pomalidomide concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "g·L−1",
+   "factor": 0.9999999999999999,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "molar units",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "g/L",
+  "slope": {
+   "display_only": false,
+   "display_unit": "mol−1·d−1",
+   "factor": 0.9999999999999999,
+   "si_unit": "(kg/m3)/(1)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "molar units",
+  "factor": 1.0,
+  "label": "isatuximab and pomalidomide concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "g·L−1",
+  "factor": 0.9999999999999999,
+  "label": "serum M-protein concentrations (M-protein)"
+ }
+}

@@ -1,0 +1,142 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;Drotrecogin alfa&quot;}]"></div>
+
+# Drotrecogin alfa
+
+- **generic name:** Drotrecogin alfa
+- **ATC codes:** `B01AD10`
+- **DrugBank:** [DB00055](https://go.drugbank.com/drugs/DB00055) · **PubChem:** none
+- **groups:** approved, withdrawn
+
+## About
+
+Drotrecogin alfa is a recombinant serine protease that was used to treat sepsis. The drug was administered via intravenous injection. It was withdrawn from the market after studies showed no efficacy in improving patient outcomes.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q412888](https://www.wikidata.org/wiki/Q412888), [Wikipedia](https://en.wikipedia.org/wiki/Drotrecogin_alfa?oldid=1352057587) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Macias_2002_reference](drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Macias2002_reference.md) | — | 1-compartment (no model) | 3 | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Dömötör_2003_Ca2_i](drugs/drug_drotrecogin_alfa/pd_D_m_t_r_2003_Ca2_i.md) | intracellular calcium concentration ← APC · direct sigmoid Emax (Hill) effect | — | Dömötör E et al., Activated protein C alters cytosolic ca…, Blood (2003) | [10.1182/blood-2002-12-3680](https://doi.org/10.1182/blood-2002-12-3680) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=drotrecogin_alfa).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F2 (unknown), F5 (inhibitor), F8 (inhibitor), PF4 (unknown), PROCR (unknown), PROS1 (unknown), SERPINA5 (unknown), SERPINB6 (unknown), SERPINE1 (unknown), THBD (unknown).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 14:39 | 6:56 | 1/0/0 | 1/0/0 | 0/0/0 | 156,780/16,568 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/11 | 8/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 132 matched, 60 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Macias_2002.pdf` | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | popPK | 10 | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) | [12386641](https://pubmed.ncbi.nlm.nih.gov/12386641) | The paper reports quantitative pharmacokinetic parameters (median plasma clearance and steady-state concentration) for drotrecogin alfa in humans. |
+| `Koppelman_1995.pdf` | Koppelman SJ et al., Inhibition of the intrinsic factor X ac…, Blood (1995) | pd | 5 |  | [7620160](https://www.ncbi.nlm.nih.gov/pubmed/7620160) | metadata signals extractable PD data (IC50) |
+| `Geng_1995.pdf` | Geng JP et al., Transfer of specific endothelial cell-b…, Biochemistry (1995) | pd | 4 | [10.1021/bi00026a028](https://doi.org/10.1021/bi00026a028) | [7541242](https://www.ncbi.nlm.nih.gov/pubmed/7541242) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-05 14:33 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abboud_2009 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for epinephrine, not drotrecogin alfa. |
+| PD | Abboud_2009 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of epinephrine and its interaction with endogenous neurohormones, not on drotrecogin alfa, and does not report a PD model or numeric PD parameters for the target drug. |
+| PD | Aliter_2024 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for a novel APC inhibitor, not pharmacodynamic or exposure-response data for drotrecogin alfa. |
+| PGx | Annane_2018 | not_relevant | 0 | 0 | The study investigates pharmacogenomic biomarkers for clinical response (mortality) to drotrecogin alfa, not for pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Bajzar_1996 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on the profibrinolytic effect of activated protein C and TAFI, containing no pharmacokinetic parameters for drotrecogin alfa. |
+| PGx | Bansal_2023 | not_relevant | 0 | 0 | The study investigates the metabolic effects of APC in irradiated rats and does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Bansal_2024 | not_relevant | 0 | 0 | The paper studies the effect of a protein C variant on radiation-induced metabolic changes in mice, not the pharmacokinetics or pharmacodynamics of drotrecogin alfa. |
+| PD | Barton_2004 | not_relevant | 3 | 2 | The paper reports qualitative pharmacodynamic changes (percent changes in D-dimer, protein C, and antithrombin) and PK parameters, but does not provide a concentration-effect model, dose-response curve, or numeric PD parameters like Emax or EC50. |
+| PD | Bennet_1998 | not_relevant | 0 | 0 | The paper is a retrospective case-control study on the prevalence of APC resistance in women with thromboembolism and does not report any pharmacokinetic or pharmacodynamic data for drotrecogin alfa. |
+| PGx | Berg_2003 | not_relevant | 0 | 0 | The paper focuses on protein engineering and structural modeling of activated protein C, not on pharmacogenomic effects of drotrecogin alfa. |
+| popPK | Chung_2023 | irrelevant | 0 | 0 | The paper is a review of QSP models for the coagulation cascade and does not report pharmacokinetic parameters for drotrecogin alfa. |
+| PD | Chung_2023 | not_relevant | 0 | 0 | The paper is a review of QSP models for the coagulation cascade and does not report specific PD parameters or exposure-response relationships for drotrecogin alfa. |
+| PD | DAngelo_1989 | not_relevant | 3 | 2 | The paper evaluates the sensitivity of commercial APTT reagents to activated protein C (APC) and protein S, describing qualitative dose-response curve shapes (linear, log-linear, log-log) but does not report specific numeric PD parameters (e.g., EC50, Emax) for drotrecogin alfa. |
+| PGx | Del_2009 | not_relevant | 0 | 0 | The paper discusses genetic risk factors for pediatric stroke but does not mention drotrecogin alfa or any pharmacokinetic/pharmacodynamic parameters. |
+| PD | Douxfils_2020 | not_relevant | 0 | 0 | The paper describes the validation of an assay for activated protein C resistance and does not report any pharmacodynamic or exposure-response data for drotrecogin alfa. |
+| PGx | Douxfils_2020_2 | not_relevant | 0 | 0 | The paper discusses oral contraceptives and venous thromboembolism risk, not drotrecogin alfa. |
+| popPK | Dömötör_2003 | irrelevant | 0 | 0 | The study investigates the cellular mechanism of activated protein C (drotrecogin alfa) on calcium flux in endothelial cells and does not report pharmacokinetic parameters. |
+| PD | Faioni_1993 | not_relevant | 0 | 0 | The paper discusses activated protein C resistance and protein S assays in thrombophilic families, but does not report any pharmacodynamic or exposure-response data for drotrecogin alfa. |
+| popPK | Favory_2013 | irrelevant | 0 | 0 | The study investigates the hemodynamic and vascular reactivity effects of activated protein C (drotrecogin alfa) rather than its pharmacokinetic disposition parameters (CL, V, etc.). |
+| popPK | Futane_2023 | irrelevant | 0 | 0 | The paper is a review on aptamer-based biosensors for point-of-care diagnosis and does not contain any pharmacokinetic data for drotrecogin alfa. |
+| PD | Futane_2023 | not_relevant | 0 | 0 | The paper is a review on aptamer-based point-of-care diagnostics and contains no pharmacodynamic or exposure-response data for drotrecogin alfa. |
+| PGx | Gale_1997 | not_relevant | 0 | 0 | The paper studies the mechanism of a mutant activated protein C (S360A) and its interaction with Factor Va, not the pharmacokinetics or pharmacodynamics of drotrecogin alfa in the context of human genetic variants. |
+| PGx | Gale_2006 | not_relevant | 0 | 0 | The paper discusses engineered variants of coagulation factor VIII, not the pharmacogenomics of drotrecogin alfa. |
+| PD | Geng_1995 | not_relevant | 0 | 0 | The paper describes a structural biology study on chimeric coagulation proteins and reports binding affinities (IC50) for endothelial cell receptors, but it does not report a pharmacodynamic exposure-response or dose-response relationship for the drug drotrecogin alfa. |
+| PD | Guglielmone_1992 | not_relevant | 0 | 0 | The paper describes a laboratory assay for measuring protein C activity and does not report any pharmacodynamic or exposure-response relationship for drotrecogin alfa. |
+| PD | Hamedani_2020 | not_relevant | 0 | 0 | The paper studies an aptamer (G-NB3) targeting Protein C, not drotrecogin alfa, and reports in vitro IC50 values for the aptamer, not PD parameters for the drug in question. |
+| PGx | Incalcaterra_2004 | not_relevant | 0 | 0 | The paper discusses genetic risk factors for myocardial infarction and does not mention drotrecogin alfa or its pharmacokinetics/pharmacodynamics. |
+| PGx | Iqbal_2003 | not_relevant | 0 | 0 | The paper discusses risk factors for venous thromboembolism associated with air travel and does not mention drotrecogin alfa or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Komitopoulou_2006 | not_relevant | 0 | 0 | The paper investigates genetic risk factors for childhood arterial ischemic stroke and does not mention drotrecogin alfa or its pharmacokinetics/pharmacodynamics. |
+| PD | Koppelman_1995 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of Protein S, not drotrecogin alfa. |
+| PD | Koster_1995 | not_relevant | 0 | 0 | The paper analyzes the association between Factor VIII/vWF levels and DVT risk, but does not report any pharmacodynamic or exposure-response relationship for drotrecogin alfa. |
+| PGx | Li_2023 | not_relevant | 0 | 0 | The paper investigates urinary metabolomics for predicting radiation-induced cardiac dysfunction in mice and does not involve the drug drotrecogin alfa or its pharmacokinetics/pharmacodynamics. |
+| PD | Macias_2002 | not_relevant | 3 | 2 | The paper analyzes PD effects by C(ss) quartiles but explicitly states that no correlation was detected between concentration quartiles and biomarker effects, providing no numeric PD parameters or derivable exposure-response relationship. |
+| popPK | McDaniel_2019 | irrelevant | 0 | 0 | The paper describes a general mathematical model of sepsis pathophysiology and does not report specific pharmacokinetic parameters for drotrecogin alfa. |
+| PD | McDaniel_2019 | not_relevant | 0 | 0 | The paper describes a mechanistic mathematical model of sepsis pathophysiology and does not report any pharmacodynamic or exposure-response analysis for drotrecogin alfa. |
+| PD | Morimont_2021 | not_relevant | 0 | 0 | The paper describes the interlaboratory variability of an assay for activated protein C resistance and does not report any pharmacodynamic or exposure-response data for drotrecogin alfa. |
+| popPK | Muir_2024 | irrelevant | 0 | 0 | The paper models the effects of 4-factor prothrombin complex concentrate on coagulation and does not report pharmacokinetic parameters for drotrecogin alfa. |
+| PD | Muir_2024 | not_relevant | 0 | 0 | The paper models the effects of 4-factor prothrombin complex concentrate (4F-PCC) on coagulation, not drotrecogin alfa. |
+| PGx | Nakhoul_2004 | not_relevant | 0 | 0 | The paper studies the effect of B-vitamins on homocysteine levels in hemodialysis patients, not the pharmacokinetics or pharmacodynamics of drotrecogin alfa. |
+| popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain any pharmacokinetic data for drotrecogin alfa. |
+| PD | Obrador_2026 | not_relevant | 0 | 0 | The paper is a general review of radiomitigators and does not mention drotrecogin alfa or report any specific pharmacodynamic or exposure-response data. |
+| PGx | Ocal_1997 | not_relevant | 0 | 0 | The paper investigates the association between MTHFR mutations and venous thrombosis risk, and does not mention drotrecogin alfa or its pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Petruk_2023 | irrelevant | 0 | 0 | The paper describes a novel peptide compound (sHVF18) and does not report pharmacokinetic parameters for drotrecogin alfa. |
+| PD | Petruk_2023 | not_relevant | 0 | 0 | The paper studies a different compound (sHVF18) and does not report any pharmacodynamic or exposure-response data for drotrecogin alfa. |
+| PGx | Reda_2026 | not_relevant | 0 | 0 | The paper investigates the effect of genetic variants on the endogenous protein C pathway response to factor VIIa, not on the pharmacokinetics or pharmacodynamics of drotrecogin alfa. |
+| PGx | Rolla_2014 | not_relevant | 0 | 0 | The paper investigates the prothrombin G20210A polymorphism and its effect on coagulation assays, but does not mention drotrecogin alfa or any pharmacokinetic/pharmacodynamic parameters of this drug. |
+| PGx | Seed_2004 | not_relevant | 0 | 0 | The paper discusses hormone-replacement therapy and cardiovascular risk factors, not drotrecogin alfa. |
+| PGx | Shetty_2015 | not_relevant | 0 | 0 | The paper is a review of novel therapeutic approaches for haemophilia and does not mention drotrecogin alfa or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Sim_2025 | not_relevant | 0 | 0 | The paper investigates the effects of antibody amino acid substitutions on the function of activated protein C, not the effect of human gene variants on the pharmacokinetics or pharmacodynamics of drotrecogin alfa. |
+| PGx | Sinha_2019 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of activated protein C (drotrecogin alfa) in a mouse model of GVHD, focusing on PAR1 signaling, but does not report pharmacogenomic effects on PK or PD parameters in humans. |
+| PD | Slungaard_1993 | not_relevant | 0 | 0 | The paper investigates the mechanism of thrombosis in eosinophilic endocarditis involving Major Basic Protein (MBP) and Thrombomodulin, and does not contain any data, analysis, or mention of drotrecogin alfa. |
+| PD | Stocker_1988 | not_relevant | 0 | 0 | The paper discusses Protac (a protein C activator) and its use in assays, not drotrecogin alfa, and does not report any pharmacodynamic or exposure-response parameters for the target drug. |
+| PGx | Tapon-Bretaudière_2000 | not_relevant | 0 | 0 | The text discusses laboratory testing for venous thromboembolism and genetic risk factors for thrombophilia, with no mention of drotrecogin alfa or its pharmacokinetics/pharmacodynamics. |
+| PGx | Thielen_2024 | not_relevant | 0 | 0 | The paper studies the pharmacodynamic effects of an engineered variant (3K3A-aPC) on endothelial permeability in vitro, but does not report how a human gene variant/genotype alters the PK or PD of drotrecogin alfa. |
+| popPK | Verdonck_2026 | irrelevant | 0 | 0 | The study investigates the VWF-ADAMTS13 coagulation axis in trauma patients and does not report pharmacokinetic parameters for drotrecogin alfa. |
+| PGx | Wan_2022 | not_relevant | 0 | 0 | The paper investigates the genetic determinants of thrombin generation and the protein C pathway, but does not mention or test drotrecogin alfa. |
+| popPK | Winn_1990 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of protein C on vascular relaxation in dog coronary arteries and does not report pharmacokinetic parameters for drotrecogin alfa. |
+| PD | Winn_1990 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of activated protein C and thrombin, not drotrecogin alfa. |
+| popPK | Yang_2013 | irrelevant | 2 | 0 | This is a review of labeling and literature for therapeutic proteins; while it mentions a 25% higher clearance for drotrecogin alfa in hepatic impairment, it does not provide the specific quantitative PK parameter values (CL, V, etc.) required for extraction. |
+| popPK | Yokota_2024 | irrelevant | 0 | 0 | The study investigates the effects of dienogest and combined oral contraceptives on protein S activity in endometriosis patients and does not involve drotrecogin alfa. |
+| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 89 chars of text extracted (&lt; 400) |
+| PD | unknown_2023 | not_relevant | 0 | 0 | The provided text is only a conference title and contains no data, analysis, or mention of drotrecogin alfa or pharmacodynamic parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdrotrecogin_alfa%5D&body=Drug%3A%20drotrecogin_alfa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_drotrecogin_alfa/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 14:33 UTC</sub>

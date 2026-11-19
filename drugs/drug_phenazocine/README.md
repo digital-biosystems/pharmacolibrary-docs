@@ -1,0 +1,83 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;phenazocine&quot;}]"></div>
+
+# phenazocine
+
+- **generic name:** phenazocine
+- **ATC codes:** `N02AD02`
+- **DrugBank:** [DB13606](https://go.drugbank.com/drugs/DB13606) · **PubChem:** none
+- **molar mass:** 321.464 g/mol (C22H27NO) — DrugBank
+- **groups:** experimental
+
+## About
+
+Phenazocine is an opioid analgesic related to pentazocine, developed for the treatment of severe pain conditions including biliary or pancreatic pain. The specific administration route is not stated in the provided facts. It is currently an experimental drug, not yet widely used or authorized for clinical practice.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q7181332](https://www.wikidata.org/wiki/Q7181332), [Wikipedia](https://en.wikipedia.org/wiki/Phenazocine?oldid=1362481960) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phenazocine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: OPRD1 (inhibitor), OPRK1 (inhibitor), OPRM1 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 05:39 | 0:02 | 0/0/0 | 0/0/0 | 0/0/0 | 5,794/100 | einfracz / qwen3.8-27b | 5 | 5/0 | 4/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 3 matched, 4 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `King_1983.pdf` | King CT et al., Benzomorphan interactions with acetylch…, European journal of pharmac… (1983) | pd | 4 | [10.1016/0014-2999(83)90564-2](https://doi.org/10.1016/0014-2999(83)90564-2) | [6309536](https://www.ncbi.nlm.nih.gov/pubmed/6309536) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-07 05:39 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Heyman_1989 | irrelevant | 0 | 0 | The study is a pharmacological investigation of antinociception modulation in mice and does not report any pharmacokinetic parameters for phenazocine. |
+| PD | Heyman_1989 | not_relevant | 3 | 0 | The paper describes a qualitative leftward shift in the dose-response curve for phenazocine (and others) but does not provide numeric PD parameters or extractable concentration-effect data in the text. |
+| popPK | King_1983 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study reporting IC50 values, not a pharmacokinetic study with disposition parameters. |
+| popPK | Matsuno_1999 | irrelevant | 0 | 0 | The paper is a review of sigma-receptor agonists' effects on learning and memory, and does not report pharmacokinetic parameters for phenazocine. |
+| popPK | Noda_1999 | irrelevant | 0 | 0 | The paper is a review of sigma receptor pharmacology and stress models, and does not report pharmacokinetic parameters for phenazocine. |
+| popPK | SMITH_1961 | irrelevant | 0 | 0 | The paper is a clinical study evaluating the efficacy and safety of phenazocine in children, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Sheldon_1989 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of opioid receptor modulation on bladder motility and does not report any pharmacokinetic parameters for phenazocine. |
+| PD | Sheldon_1989 | not_relevant | 4 | 2 | The paper reports qualitative dose-response interactions (displacement/potentiation) for phenazocine but does not provide numeric PD parameters (Emax, EC50) or a quantitative concentration-effect curve for phenazocine specifically. |
+| popPK | Tierney_1989 | irrelevant | 0 | 0 | The paper is a clinical case report regarding respiratory arrest in a patient with sleep apnea, and contains no pharmacokinetic parameters or quantitative disposition data for phenazocine. |
+| popPK | Weibel_2020 | irrelevant | 0 | 0 | The paper is a network meta-analysis of antiemetics for postoperative nausea and vomiting and does not mention phenazocine or report any pharmacokinetic parameters. |
+| PD | Weibel_2020 | not_relevant | 0 | 0 | The paper is a network meta-analysis of antiemetics for PONV and does not mention phenazocine or report any pharmacodynamic or exposure-response parameters. |
+| popPK | Wolozin_1982 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study of ketocyclazocine and other opiates, not a pharmacokinetic study of phenazocine. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenazocine%5D&body=Drug%3A%20phenazocine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenazocine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 600 mg parenteral (J05AF01)",
+ "model_id": "Zidovudine_Zhou1999_reference",
+ "molar_masses": {
+  "central.C": 0.267245
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4805555555555555e-08,
+  "F": 1.0,
+  "MM": 0.267245,
+  "VdPerKg": 0.00117,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662201
+ },
+ "reference_peaks": {
+  "central.C": 0.007325610031368841
+ },
+ "stop_time": 15552000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,0 +1,69 @@
+{
+ "model_id": "Ketamine_Douglas2025_PD_pain_score",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 6.4,
+  "EC50": 4.16666666667e-10,
+  "Emax": -0.11,
+  "exposure_per_s": 2.77777777778e-10,
+  "gamma": 0.26
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 6.4,
+  "4.166666666666667e-10": 6.345000000000001
+ },
+ "stop_time": 15.0,
+ "subtitle": "pain score against dose",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "pain units (0–10)",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/kg/h",
+   "factor": 2.7777777777777777e-10,
+   "si_unit": "1/s"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "fractional pain units",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/kg/h",
+   "factor": 2.7777777777777777e-10,
+   "si_unit": "1/s"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "pain units (0–10)"
+ },
+ "x_axis": {
+  "display_unit": "mg/kg/h",
+  "factor": 2.7777777777777777e-10,
+  "label": "dose",
+  "per_s": 2.77777777778e-10,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "pain units (0–10)",
+  "factor": 1.0,
+  "label": "pain score"
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "PotassiumCyanide_Sousa2003_goats",
+ "molar_masses": {
+  "central.C": 0.026018
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  210.0
+ ],
+ "parameters": {
+  "Cl": 2.5666666666666666e-07,
+  "F": 1.0,
+  "MM": 0.026018,
+  "VdPerKg": 0.00041,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00021,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662019
+ },
+ "reference_peaks": {
+  "central.C": 0.007297477067560875
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

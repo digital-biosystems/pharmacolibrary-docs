@@ -1,0 +1,49 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fentanyl_Valtola2021_reference",
+ "molar_masses": {
+  "central.C": 0.336479
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.1,
+  0.2
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Valtola_2021:other_prose",
+    "value_si": 1.3e-06
+   },
+   {
+    "source": "Valtola_2021:other_prose",
+    "value_si": 2e-06
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 8.616666666666667e-06,
+  "F": 1.0,
+  "MM": 0.336479,
+  "VdPerKg": 0.00044571428571428567,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.0000000000000001e-07,
+  "k12": 0.0005662393162393163,
+  "k21": 0.0008789386401326699,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662169
+ },
+ "reference_peaks": {
+  "central.C": 1.425399811568549e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

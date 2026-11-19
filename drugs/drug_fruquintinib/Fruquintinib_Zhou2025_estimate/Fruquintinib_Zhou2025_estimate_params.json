@@ -1,0 +1,47 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fruquintinib_Zhou2025_estimate",
+ "molar_masses": {
+  "central.C": 0.393399
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "M11",
+  "C_central": "fruquintinib"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  1.0,
+  6.0
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 4.4722222222222223e-08,
+  "F": 1.0,
+  "MW": 0.393399,
+  "MW_m1": 0.0,
+  "Tlag": 1666.8000000000002,
+  "Vd1": 0.0504,
+  "Vd1m1": 0.0117,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-06,
+  "ka": 0.0007,
+  "q1_m11": 2.2444444444444445e-07
+ },
+ "reference_peak_times": {
+  "C_M1": 245867.73547094187,
+  "central.C": 8657.314629258517
+ },
+ "reference_peaks": {
+  "C_M1": 3.387245539051647e-05,
+  "central.C": 1.9191733286698757e-05
+ },
+ "stop_time": 864000.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

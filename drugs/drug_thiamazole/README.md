@@ -1,0 +1,153 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03B&quot;,&quot;href&quot;:&quot;atc/H03B.md&quot;},{&quot;label&quot;:&quot;thiamazole&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Thiamazole_Kharouba2025_reference&quot;,&quot;label&quot;:&quot;Kharouba_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# thiamazole
+
+- **generic name:** thiamazole
+- **ATC codes:** `H03BB02`
+- **DrugBank:** [DB00763](https://go.drugbank.com/drugs/DB00763) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Thiamazole is an antithyroid medication used to treat hyperthyroidism, goiter, and thyroid crisis. It is taken by mouth, commonly as a tablet or film-coated tablet. The drug is widely used and available in Europe, Asia, and the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q419663](https://www.wikidata.org/wiki/Q419663), [Wikipedia](https://en.wikipedia.org/wiki/Thiamazole?oldid=1366300968) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| methimazole (thiamazole) | parent | 114.166 | C4H6N2S | PubChem | [1349907](https://pubchem.ncbi.nlm.nih.gov/compound/1349907) | Okamura_1986 |
+
+## Start here
+
+> **Kharouba_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md?tab=Simulation) · [record](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kharouba_2025_reference](drugs/drug_thiamazole/Thiamazole_Kharouba2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kharouba M et al., The Impact of Augmented Renal Clearance…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70007](https://doi.org/10.1002/jcph.70007) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Okamura_1986_reference](drugs/drug_thiamazole/Thiamazole_Okamura1986_reference.md) | — | 1-compartment (no model) | 0 | Okamura Y et al., Pharmacokinetics of methimazole in norm…, Endocrinologia japonica (1986) | [10.1507/endocrj1954.33.605](https://doi.org/10.1507/endocrj1954.33.605) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=thiamazole).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `FMO3` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: TPO (inhibitor), TPO (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 10:02 | 13:13 | 1/1/0 | 0/0/0 | 0/0/0 | 477,545/17,825 | einfracz / qwen3.8-27b | 18 | 2/14 | 18/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 690 matched, 82 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Syrenicz_1991.pdf` | Syrenicz A et al., [Comparison of thiamazole pharmacokinet…, Polski tygodnik lekarski (W… (1991) | popPK | 9 |  | [1669174](https://pubmed.ncbi.nlm.nih.gov/1669174) | The paper reports a pharmacokinetic study of thiamazole in humans using a one-compartment model, but the specific numeric parameter values are not provided in the evidence. |
+| `Leonard_2016.pdf` | Leonard JA et al., Estimating Margin of Exposure to Thyroi…, Toxicological sciences : an… (2016) | pd | 5 | [10.1093/toxsci/kfw022](https://doi.org/10.1093/toxsci/kfw022) | [26865668](https://www.ncbi.nlm.nih.gov/pubmed/26865668) | metadata signals extractable PD data (PharmacodynamicModel) |
+| `Chin_1992.pdf` | Chin JP et al., Classification of the beta-adrenoceptor…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90330-7](https://doi.org/10.1016/0014-2999(92)90330-7) | [1350995](https://www.ncbi.nlm.nih.gov/pubmed/1350995) | metadata signals extractable PD data (IC50) |
+| `Lagorce_1997.pdf` | Lagorce JF et al., Anti-inflammatory action of methimazole, Pharmacology (1997) | pd | 4 | [10.1159/000139525](https://doi.org/10.1159/000139525) | [9396076](https://www.ncbi.nlm.nih.gov/pubmed/9396076) | metadata signals extractable PD data (IC50) |
+| `Störmer_2000.pdf` | Störmer E et al., Cytochrome P-450 enzymes and FMO3 contr…, Psychopharmacology (2000) | pgx | 8 | [10.1007/s002130000489](https://doi.org/10.1007/s002130000489) | [11026737](https://www.ncbi.nlm.nih.gov/pubmed/11026737) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Mushiroda_2000.pdf` | Mushiroda T et al., The involvement of flavin-containing mo…, Drug metabolism and disposi… (2000) | pgx | 7 |  | [10997945](https://www.ncbi.nlm.nih.gov/pubmed/10997945) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Xie_2021.pdf` | Xie Y et al., Metabolic Retroversion of Piperaquine (…, Drug metabolism and disposi… (2021) | pgx | 7 | [10.1124/dmd.120.000306](https://doi.org/10.1124/dmd.120.000306) | [33674271](https://www.ncbi.nlm.nih.gov/pubmed/33674271) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Nnane_2003.pdf` | Nnane IP et al., Involvement of cytochrome P450 and the…, Life sciences (2003) | pgx | 5 | [10.1016/s0024-3205(03)00290-x](https://doi.org/10.1016/s0024-3205(03)00290-x) | [12757843](https://www.ncbi.nlm.nih.gov/pubmed/12757843) | metadata signals extractable PGX data (CYP450) |
+
+<sub>queue written 2026-10-07 09:58 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Alshabeeb_2022 | not_relevant | 0 | 0 | The paper investigates DILI susceptibility to flucloxacillin and co-amoxiclav, not the pharmacokinetics or pharmacodynamics of thiamazole. |
+| PGx | Chen_2019 | not_relevant | 2 | 10 | The paper reports associations between HLA genotypes and the adverse event of agranulocytosis, which is a toxicity outcome rather than a change in a pharmacokinetic (e.g., AUC, clearance) or pharmacodynamic (e.g., receptor affinity, concentration-response) parameter of the drug's primary action. |
+| popPK | Cheng_2026 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic models for antibody-drug conjugates (ADCs) and does not mention thiamazole or provide any data for it. |
+| popPK | Codea_2026 | irrelevant | 0 | 0 | The study is a longitudinal clinical trial in cats focusing on haematological markers as surrogate indicators of thyroid status during methimazole therapy; it contains no pharmacokinetic modeling or quantitative PK parameters (CL, V, t1/2) for thiamazole. |
+| PGx | Dolphin_2000 | not_relevant | 0 | 0 | The paper discusses FMO3 mutations and their impact on methimazole S-oxidation, not thiamazole. |
+| popPK | Dunkelmann_2007 | irrelevant | 1 | 0 | The study investigates the kinetics of radioiodine in the thyroid and the effect of thiamazole on that process, rather than measuring the pharmacokinetic parameters of thiamazole itself. |
+| popPK | Esmaeili_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and viral dynamics of nirmatrelvir (a SARS-CoV-2 antiviral), not thiamazole. |
+| popPK | Fetter_2015 | irrelevant | 0 | 0 | This is a toxicology study on zebrafish embryos measuring goitrogenic effects (gene expression/malformations), not a pharmacokinetic study with disposition parameters. |
+| PGx | Gao_2016 | not_relevant | 2 | 0 | The paper discusses the structural modeling and drug binding mechanisms of hFMO3 with methimazole (a thionamide related to thiamazole), but it is a structural bioinformatics study and does not report human pharmacogenomic data linking specific genotypes to measured pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Guo_1997 | not_relevant | 0 | 0 | The study investigates drug-drug interaction (enzyme inhibition) in vitro and does not report on pharmacogenomic variants affecting thiamazole (methimazole) PK or PD. |
+| popPK | Hanada_2000 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cisplatin, and thiamazole is not the subject drug (methimazole is a different thionamide compound and serves as a protective agent in this context). |
+| popPK | Huang_2025 | irrelevant | 0 | 0 | The paper describes a method for generating initial estimates for PK models using various drugs (e.g., cefaclor, ceftriaxone) as test cases, but thiamazole is not the subject of the study. |
+| PGx | Hugonnard_2004 | not_relevant | 0 | 0 | The paper studies the metabolism of methimazole (not thiamazole) and does not report PK/PD parameters for thiamazole. |
+| PGx | Jin_2019 | not_relevant | 0 | 0 | The study investigates the association between SLCO1B1 genotypes and susceptibility to adverse drug reactions (DILI), but does not report changes in pharmacokinetic (PK) or pharmacodynamic (PD) parameters of thiamazole. |
+| popPK | Ju_2024 | irrelevant | 0 | 0 | The paper is a population pharmacokinetic review of isoniazid (an anti-tuberculosis drug), not thiamazole (an antithyroid drug). |
+| popPK | Kharouba_2025 | irrelevant | 0 | 0 | The paper is a review of the pharmacokinetics of levetiracetam, not thiamazole. |
+| popPK | Khorshidi-Behzadi_2013 | irrelevant | 0 | 0 | This is a vascular physiology study investigating the effects of methimazole (a thiamazole isomer) on arterial reactivity in rats, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Kousba_2007 | not_relevant | 0 | 0 | The paper investigates the metabolism of the Src kinase inhibitor TG100435, not thiamazole. |
+| PGx | Krueger_2005 | not_relevant | 0 | 0 | The study analyzes FMO2 polymorphisms and their effect on substrate oxidation (methimazole), but does not report pharmacokinetic or pharmacodynamic parameters for thiamazole in humans. |
+| PGx | Lattard_2003 | not_relevant | 2 | 5 | The study investigates the metabolism of methimazole (a thionamide) by FMO3 variants, not thiamazole, and reports in vitro catalytic efficiency rather than in vivo PK/PD parameters for the specific drug inquired about. |
+| popPK | Leonard_2016 | irrelevant | 0 | 0 | The study focuses on PBPK modeling for other TPO inhibitors (methimazole, PTU, etc.) and does not report pharmacokinetic parameters for thiamazole. |
+| PGx | Li_2008 | not_relevant | 0 | 0 | The study examines the association between the Fas gene polymorphism and the clinical response to methimazole, finding no association; it does not report any changes in pharmacokinetic parameters (e.g., AUC, clearance) or specific pharmacodynamic effect sizes (e.g., IC50) driven by the gene. |
+| PGx | Li_2020 | not_relevant | 3 | 2 | The paper investigates the mechanism of adverse drug reactions (hepatotoxicity) and identifies a genetic determinant (UGT1A1*6), but it does not report quantitative changes in standard pharmacokinetic parameters (e.g., clearance, half-life, Cmax) or primary pharmacodynamic parameters (e.g., TSH, T3/T4 levels) due to genotype. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a systematic review of the pharmacokinetics of anakinra (an IL-1 receptor antagonist), not thiamazole. |
+| popPK | Mi_2026 | irrelevant | 0 | 0 | The paper is a database curation and machine learning study regarding nanoparticles in mice, not a pharmacokinetic study of the drug thiamazole. |
+| popPK | Mortimer_1997 | irrelevant | 2 | 8 | The study reports placental transfer clearances (in vitro/ex vivo model) for methimazole rather than systemic population pharmacokinetic parameters (V, t1/2, etc.). |
+| PGx | Mostyn_2008 | not_relevant | 0 | 0 | The paper uses methimazole as a general antithyroid agent to modulate thyroid levels for a physiological study on uncoupling proteins in pigs, rather than investigating pharmacogenomic effects on thiamazole's own PK/PD. |
+| popPK | Mukker_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the ATR inhibitor tuvusertib, not for thiamazole. |
+| PGx | Mushiroda_2000 | not_relevant | 0 | 0 | The study investigates the metabolism of itopride and drug interactions with CYP3A4 inhibitors, not the pharmacogenomics of thiamazole. |
+| popPK | Newcomer_1978 | irrelevant | 0 | 0 | The study investigates iodine transport in chickens using methimazole (a thiamazole analog) as an inhibitor, not the pharmacokinetics of thiamazole itself. |
+| PGx | Nguyen_2019 | not_relevant | 0 | 0 | The paper describes a pharmacogenomic effect on the pharmacokinetics of ethionamide, not thiamazole. |
+| PGx | Nnane_2003 | not_relevant | 0 | 0 | The paper investigates the metabolism of simple sulphides and the inhibitory effect of methimazole, a chemical precursor to thiamazole, but does not report any pharmacogenomic effects on thiamazole PK/PD parameters. |
+| popPK | Ortega_2005 | irrelevant | 0 | 0 | The study investigates vascular reactivity and nitric oxide mechanisms in thyroid arteries ex vivo, not the pharmacokinetics of thiamazole. |
+| PGx | Pike_2001 | not_relevant | 0 | 0 | The paper studies the metabolism of a disulfiram metabolite (MeDDC) by FMO1 in the kidney, which is a different compound and metabolic pathway than thiamazole (methimazole), although methimazole is used only as an inhibitor probe in the study. |
+| PGx | Prueksaritanont_2000 | not_relevant | 0 | 0 | The paper investigates the metabolism of L-775,606, not thiamazole. |
+| PGx | Ramsbottom_2020 | not_relevant | 1 | 5 | The paper investigates the structural mechanism of HLA-mediated adverse drug reactions (agranulocytosis) using molecular docking, not pharmacokinetic or pharmacodynamic parameter changes caused by gene variants. |
+| PGx | Rawden_2000 | not_relevant | 0 | 0 | The paper investigates the metabolism of albendazole, not thiamazole. |
+| popPK | Rocmans_1977 | irrelevant | 0 | 0 | The study investigates iodide transport in dog thyroid slices and does not report pharmacokinetic parameters for thiamazole. |
+| popPK | Rodallec_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of paclitaxel and its polymer prodrug in mice, not thiamazole. |
+| PGx | Siddens_2008 | not_relevant | 0 | 0 | The paper focuses on FMO enzyme expression in mice and the metabolism of methimazole (a different drug), not thiamazole, and does not report human pharmacogenomic effects. |
+| PGx | Störmer_2000 | not_relevant | 0 | 0 | The study investigates the metabolism of perazine, not thiamazole. |
+| popPK | Syrenicz_1991 | relevant | 9 | 0 | The paper reports a pharmacokinetic study of thiamazole in humans using a one-compartment model, but the specific numeric parameter values are not provided in the evidence. |
+| PGx | Taniguchi-Takizawa_2015 | not_relevant | 0 | 0 | The paper studies benzydamine metabolism, not thiamazole. |
+| PGx | Uehara_2015 | not_relevant | 0 | 0 | The paper studies MPTP metabolism and explicitly tests methimazole (a structural isomer of thiamazole) as a pharmacological inhibitor, not the effect of genetic variants on thiamazole pharmacokinetics or pharmacodynamics. |
+| PGx | Uno_2019 | not_relevant | 1 | 5 | The paper investigates methimazole metabolism in cynomolgus macaques, not thiamazole in humans. |
+| PGx | Wang_2012 | not_relevant | 0 | 0 | The paper investigates trimethylamine (TMA) metabolism in laying hens, not the pharmacokinetics or pharmacodynamics of thiamazole in humans. |
+| PGx | Wolford_2012 | not_relevant | 0 | 0 | The paper discusses levamisole-induced agranulocytosis and only mentions thiamazole (as methimazole) in a comparative list of drugs associated with blood dyscrasias, without providing any pharmacogenomic data or PK/PD parameter analysis for thiamazole. |
+| popPK | Wu_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for linezolid, not thiamazole. |
+| PGx | Wynalda_2003 | not_relevant | 0 | 0 | The paper investigates the in vitro metabolism of clindamycin (a different drug), not thiamazole. |
+| PGx | Xie_2021 | not_relevant | 0 | 0 | The paper focuses on Piperaquine, not thiamazole. |
+| PGx | van_2011 | not_relevant | 0 | 0 | The study focuses on irinotecan pharmacokinetics and does not report on the pharmacokinetics or pharmacodynamics of thiamazole. |
+| popPK | van_2013 | irrelevant | 0 | 0 | The study investigates the teratogenic effects of propylthiouracil and methimazole in Xenopus embryos, not the pharmacokinetics of thiamazole. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiamazole%5D&body=Drug%3A%20thiamazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiamazole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:58 UTC</sub>

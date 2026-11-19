@@ -1,0 +1,55 @@
+{
+ "model_id": "Savolitinib_Jones2023_PD_tgi",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 90.2,
+  "exposure_per_s": 1.0,
+  "slope": 0.0837
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 90.2,
+  "1.0": 90.2837
+ },
+ "stop_time": 1000.0,
+ "subtitle": "tumor growth (TGI) against savolitinib and osimertinib concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "mm3",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "mm3",
+  "slope": {
+   "display_only": true,
+   "display_unit": "—",
+   "factor": 1.0,
+   "si_unit": "1"
+  }
+ },
+ "x_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "savolitinib and osimertinib concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mm3",
+  "factor": 1.0,
+  "label": "tumor growth (TGI)"
+ }
+}

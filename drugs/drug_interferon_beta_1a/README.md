@@ -1,0 +1,112 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;interferon beta-1a&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InterferonBeta1a_Savic2017_reference&quot;,&quot;label&quot;:&quot;Savic_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# interferon beta-1a
+
+- **generic name:** interferon beta-1a
+- **ATC codes:** `L03AB07`
+- **DrugBank:** [DB00060](https://go.drugbank.com/drugs/DB00060) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Interferon beta-1a is an immunomodulating agent used to treat various forms of multiple sclerosis. It is administered by subcutaneous or intramuscular injection. It is an approved medication widely used in the treatment of the disease.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2450337](https://www.wikidata.org/wiki/Q2450337), [Wikipedia](https://en.wikipedia.org/wiki/Interferon_beta-1a?oldid=1375120943) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| neopterin triphosphate | metabolite | — (mass units only) | — | — | — | — |
+
+## Start here
+
+> **Savic_2017_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md?tab=Simulation) · [record](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F, k21</sub> | [Savic_2017_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Savic2017_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Mager_2003_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Mager2003_reference.md) | — | parent + metabolite (no model) | 2 | Mager DE et al., Receptor-mediated pharmacokinetics and…, The Journal of pharmacology… (2003) | [10.1124/jpet.103.049502](https://doi.org/10.1124/jpet.103.049502) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Salmon_1996_reference](drugs/drug_interferon_beta_1a/InterferonBeta1a_Salmon1996_reference.md) | — | 1-compartment (no model) | 0 | Salmon P et al., Pharmacokinetics and pharmacodynamics o…, Journal of interferon & cyt… (1996) | [10.1089/jir.1996.16.759](https://doi.org/10.1089/jir.1996.16.759) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mager_2002_neopterin](drugs/drug_interferon_beta_1a/pd_Mager_2002_neopterin.md) | neopterin ← interferon_beta_1a · indirect response — drug stimulates the production of neopterin | — | Mager DE et al., Receptor-mediated pharmacokinetic/pharm…, Pharmaceutical research (2002) | [10.1023/a:1020468902694](https://doi.org/10.1023/a:1020468902694) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=interferon_beta_1a).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IFNAR1 (target), IFNAR2 (target), IFNB1 (modulator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 23:05 | 4:15 | 1/2/0 | 1/0/0 | 0/0/0 | 166,091/42,288 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 16 matched, 16 returned
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Mager_2002.pdf` | Mager DE et al., Receptor-mediated pharmacokinetic/pharm…, Pharmaceutical research (2002) | popPK | 10 | [10.1023/a:1020468902694](https://doi.org/10.1023/a:1020468902694) | [12425473](https://pubmed.ncbi.nlm.nih.gov/12425473) | The paper describes a quantitative PK/PD model for interferon-beta 1a in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided evidence text, only model characteristics like F=0.33 and Smax are mentioned. |
+| `Salmon_1996.pdf` | Salmon P et al., Pharmacokinetics and pharmacodynamics o…, Journal of interferon & cyt… (1996) | popPK | 10 | [10.1089/jir.1996.16.759](https://doi.org/10.1089/jir.1996.16.759) | [8910759](https://pubmed.ncbi.nlm.nih.gov/8910759) | The paper is a primary PK study for interferon_beta_1a in humans reporting key quantitative parameters (CL ~100 L/h, t1/2 ~5h) in the abstract text, though individual compartmental values (V, Q) are not explicitly listed. |
+| `Mager_2003.pdf` | Mager DE et al., Receptor-mediated pharmacokinetics and…, The Journal of pharmacology… (2003) | popPK | 9 | [10.1124/jpet.103.049502](https://doi.org/10.1124/jpet.103.049502) | [12660309](https://pubmed.ncbi.nlm.nih.gov/12660309) | The paper is a PK/PD study of interferon-beta 1a in monkeys that reports specific quantitative values (Tmax, F, Smax) and a mechanistic model, though standard compartmental parameters like CL and V are not explicitly listed in the abstract text. |
+| `Rogge_1998.pdf` | Rogge MC et al., Impaired bioavailability of interferon…, Drug delivery (1998) | popPK | 8 | [10.3109/10717549809065758](https://doi.org/10.3109/10717549809065758) | [19569995](https://pubmed.ncbi.nlm.nih.gov/19569995) | The paper reports qualitative PK parameters (Cmax, Tmax, AUC) for interferon beta-1a in humans, but lacks quantitative disposition parameters like clearance or volume, and the available AUC/Cmax values are activity-based rather than concentration-based. |
+| `Scheinin_2022.pdf` | Scheinin M et al., A randomized pharmacokinetic-pharmacody…, Expert opinion on biologica… (2022) | popPK | 8 | [10.1080/14712598.2021.1895745](https://doi.org/10.1080/14712598.2021.1895745) | [33678097](https://pubmed.ncbi.nlm.nih.gov/33678097) | The paper is a PK bioequivalence study for interferon_beta_1a, but the specific quantitative parameter values are not present in the provided text. |
+
+<sub>queue written 2026-10-06 23:01 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Brearley_2007 | irrelevant | 2 | 0 | The study describes PK profiles but the provided evidence contains no numeric parameter values (only qualitative descriptions of variability and similarity). |
+| popPK | Chekka_2025 | irrelevant | 0 | 0 | The study reports pharmacodynamic (PD) biomarkers (protein expression changes) rather than pharmacokinetic (PK) disposition parameters (CL, V, etc.) for interferon_beta_1a. |
+| popPK | David_2012 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of fingolimod, with interferon_beta_1a serving only as a comparator agent in efficacy studies. |
+| popPK | Hu_2011 | irrelevant | 3 | 0 | The study is a preclinical evaluation in non-human primates (Rhesus monkeys) and provides no specific numeric parameter values in the evidence. |
+| popPK | Kolind_2022 | irrelevant | 0 | 0 | The paper is a myelin water imaging (MRI) study evaluating demyelination outcomes and does not report any pharmacokinetic parameters for interferon_beta_1a. |
+| popPK | Liang_2005 | irrelevant | 0 | 0 | The paper focuses on statistical methods for gene expression microarray data, not pharmacokinetic disposition parameters for interferon_beta_1a. |
+| popPK | Mager_2002 | relevant | 10 | 2 | The paper describes a quantitative PK/PD model for interferon-beta 1a in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided evidence text, only model characteristics like F=0.33 and Smax are mentioned. |
+| popPK | Mehanna_2025 | irrelevant | 0 | 0 | The study is a pharmacodynamic biomarker discovery (miRNA sequencing) paper, not a pharmacokinetic study, and reports no PK parameters such as clearance, volume, or half-life for the drug itself. |
+| popPK | Rogge_1998 | relevant | 8 | 2 | The paper reports qualitative PK parameters (Cmax, Tmax, AUC) for interferon beta-1a in humans, but lacks quantitative disposition parameters like clearance or volume, and the available AUC/Cmax values are activity-based rather than concentration-based. |
+| popPK | Savic_2017 | irrelevant | 0 | 0 | The study focuses on the population PK of cladribine, with interferon_beta_1a used only as a co-administered agent in a drug-drug interaction study. |
+| popPK | Scheinin_2022 | relevant | 8 | 2 | The paper is a PK bioequivalence study for interferon_beta_1a, but the specific quantitative parameter values are not present in the provided text. |
+| popPK | Varhaug_2018 | irrelevant | 0 | 0 | The study is a biomarker investigation for multiple sclerosis and does not report pharmacokinetic parameters (CL, V, ka, etc.) for interferon-beta 1a. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binterferon_beta_1a%5D&body=Drug%3A%20interferon_beta_1a%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_interferon_beta_1a/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 23:04 UTC</sub>

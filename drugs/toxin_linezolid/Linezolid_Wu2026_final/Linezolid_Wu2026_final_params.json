@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Linezolid_Wu2026_final",
+ "molar_masses": {
+  "central.C": 0.337351
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  600.0
+ ],
+ "parameters": {
+  "Cl": 2.0472222222222225e-06,
+  "F": 0.9,
+  "MM": 0.337351,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0004385714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "ka": 0.0003388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6338.802475515606
+ },
+ "reference_peaks": {
+  "central.C": 0.0118071248427495
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

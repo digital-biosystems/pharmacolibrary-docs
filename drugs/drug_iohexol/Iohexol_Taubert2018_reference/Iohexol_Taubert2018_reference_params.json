@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Iohexol_Taubert2018_reference",
+ "molar_masses": {
+  "central.C": 0.8211379
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3235.0
+ ],
+ "parameters": {
+  "Cl": 9.566666666666667e-07,
+  "F": 1.0,
+  "MM": 0.8211379,
+  "VdPerKg": 7.714285714285715e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.003235,
+  "k12": 0.0006172839506172839,
+  "k21": 0.00101010101010101,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662064
+ },
+ "reference_peaks": {
+  "central.C": 0.07974893879975159
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

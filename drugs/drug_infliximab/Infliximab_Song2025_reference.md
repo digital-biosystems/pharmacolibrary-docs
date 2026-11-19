@@ -1,0 +1,177 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;infliximab&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/&quot;},{&quot;label&quot;:&quot;Song_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Infliximab_Eser2021_reference&quot;,&quot;label&quot;:&quot;Eser_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Eser2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Infliximab_Little2022_reference&quot;,&quot;label&quot;:&quot;Little_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/Infliximab_Little2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_ESR&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 ESR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_ESR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_albumin&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 albumin&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_albumin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_nCD64&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 nCD64&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_nCD64.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Samuels_2025_weight&quot;,&quot;label&quot;:&quot;Samuels_2025 \u00b7 weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_infliximab/pd_Samuels_2025_weight.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# infliximab — `Infliximab_Song2025_reference`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
+
+> Infliximab model rejected due to double correction involving absolute clearance, bioavailability, and apparent clearance parameters.
+
+<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Song2025_reference" status="rejected" stale="false" population="patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="apparent" topology="2C"></div>
+
+## Citation
+Song JH, Hong SN, Kim MG, Kim M, Kim SK, Kim ER et al. Population Pharmacokinetic Model for the Use of Intravenous or Subcutaneous Infliximab in Patients with Inflammatory Bowel Disease: Real-World Data from a Prospective Cohort Study. Gut and liver 19(3):376–387 (2025).
+  ·  DOI: [10.5009/gnl240503](https://doi.org/10.5009/gnl240503)
+
+## Population and dosing
+
+**Population:** patients with inflammatory bowel disease · condition inflammatory bowel disease · age group adult · n = &gt;=0.
+
+**Dosing:** 5, 10, 120 mixed (mg/kg, mg), iv, sc, multiple, every 56 h.
+
+## Model
+
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 7 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| CL (L/day) | CL | 0.248 | L/day | 20 |
+| Vc (L) | V1 | 1.87 | L | 61 |
+| Vp (L) | V2 | 1.96 | L |  |
+| Q (L/day) | Q | 0.599 | L/day |  |
+| F | Fab | 0.667 |  | 19 |
+| ka (day-1) | kabs | 0.083 | day-1 | 26 |
+| CovCL-F | CL/F | 0.017 |  |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.941). Primary extraction retained.">cross-check: partial</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**Infliximab model rejected due to double correction involving absolute clearance, bioavailability, and apparent clearance parameters.**
+
+The record defines both total clearance (CL) and apparent clearance (CL/F) alongside bioavailability (Fab), violating parameter coherence for a subcutaneously administered drug. A second reader disagreed on a model parameter value, citing a discrepancy between null and -0.213, though the specific parameter identity is unclear from the record. Extracted — infliximab: CL 0.248 L/day, V1 1.87 L, V2 1.96 L, Q 0.599 L/day, Fab 0.667, kabs 0.083 day-1, CL/F 0.017.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θada-f: this record has none, the second reading -0.213. That field does not shape the model.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| CL (L/day) | `Q22` · CL | 0.248 | L/day | 2.87e-09 | m3/s | l/d | 20 | exact (1) | T2:row1:col1 |
+| Vc (L) | `Q63` · V1 | 1.87 | L | 0.00187 | m3 | l | 61 | exact (1) | T2:row2:col1 |
+| Vp (L) | `Q64` · V2 | 1.96 | L | 0.00196 | m3 | l |  | exact (1) | T2:row3:col1 |
+| Q (L/day) | `Q30` · Q | 0.599 | L/day | 6.933e-09 | m3/s | l/d |  | exact (1) | T2:row4:col1 |
+| F | `Q40` · Fab | 0.667 |  |  |  |  | 19 | exact (1) | T2:row5:col1 |
+| ka (day-1) | `Q49` · kabs | 0.083 | day-1 | 9.606e-07 | 1/s | 1/d | 26 | exact (1) | T2:row6:col1 |
+| CovCL-F | `Q27` · CL/F | 0.017 |  |  |  |  |  | llm (0.6) | T2:row15:col1 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- column 'estimates (rse %)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped duplicate Q22 ('θALB-CL', value '-0.372') — already have one for this compound
+- dropped duplicate Q22 ('θCRP-CL', value '0.022') — already have one for this compound
+- dropped duplicate Q22 ('θADA-CL', value '0.022') — already have one for this compound
+- dropped duplicate Q22 ('θBMI-CL', value '0.360') — already have one for this compound
+- dropped unlinked row (NIL): 'θADA-F' — extend the ontology if this is a real PK parameter (source ['T2:row11:col1'])
+- dropped unlinked row (NIL): 'θBMI-F' — extend the ontology if this is a real PK parameter (source ['T2:row12:col1'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=infliximab
+- molar mass: none found for 'infliximab' — its concentrations stay mass-only
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- unparsed cell T2:row1:col2 = '0.249 (0.173 to 0.344)'
+- unparsed cell T2:row2:col2 = '1.88 (0.23 to 4.36)'
+- unparsed cell T2:row5:col2 = '0.677 (0.477 to 0.921)'
+- unparsed cell T2:row6:col2 = '0.083 (0.051 to 0.151)'
+- unparsed cell T2:row7:col2 = '–0.383 (–0.592 to –0.154)'
+- unparsed cell T2:row8:col2 = '0.023 (0.010 to 0.036)'
+- unparsed cell T2:row9:col2 = '0.021 (0.001 to 0.042)'
+- unparsed cell T2:row10:col2 = '0.354 (0.150 to 0.627)'
+- unparsed cell T2:row11:col2 = '–0.209 (–0.298 to –0.057)'
+- unparsed cell T2:row12:col2 = '–0.838 (–1.450 to –0.300)'
+- unparsed cell T2:row13:col2 = '20.0 (17.2 to 23.4)'
+- unparsed cell T2:row14:col2 = '21.0 (10.8 to 29.3)'
+- unparsed cell T2:row15:col2 = '0.017 (–0.002 to 0.039)'
+- unparsed cell T2:row16:col2 = '0.328 (0.290 to 0.368)'
+- unparsed cell T2:row17:col2 = '0.571 (0.438 to 0.732)'
+- LLM selected parameter table(s) 2
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.941 (16/17 fields) | 1 |
+
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[θada-f]` |  | -0.213 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 7 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T2:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['T2:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['T2:row6:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['T2:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['T2:row3:col1'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] |  | ['T2:row15:col1'] |
+| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.667 with apparent parameterization |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0103 L/h | ['T2:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.87 L | ['T2:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.96 L | ['T2:row3:col1'] |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binfliximab%5D%20Infliximab_Song2025_reference&body=Drug%3A%20infliximab%0ARecord%3A%20Infliximab_Song2025_reference%0APaper%3A%20Song_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_infliximab/Infliximab_Song2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:53 UTC</sub>

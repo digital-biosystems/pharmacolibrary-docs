@@ -1,0 +1,113 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;cyproheptadine&quot;}]"></div>
+
+# cyproheptadine
+
+- **generic name:** cyproheptadine
+- **ATC codes:** `R06AX02`
+- **DrugBank:** [DB00434](https://go.drugbank.com/drugs/DB00434) · **PubChem:** [CID 2913](https://pubchem.ncbi.nlm.nih.gov/compound/2913)
+- **molar mass:** 287.3981 g/mol (C21H21N) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Cyproheptadine is a first-generation antihistamine used primarily to treat allergies and various allergic conditions. It is administered orally in forms such as tablets, capsules, and syrup. Cyproheptadine is widely used, with significant prescription volume in the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q417884](https://www.wikidata.org/wiki/Q417884), [Wikipedia](https://en.wikipedia.org/wiki/Cyproheptadine?oldid=1384714194) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Madani_2016_CIG](drugs/drug_cyproheptadine/pd_Madani_2016_CIG.md) | clinical improvement ← cyproheptadine · categorical (graded) response model | — | Madani S et al., Cyproheptadine Use in Children With Fun…, Journal of pediatric gastro… (2016) | [10.1097/MPG.0000000000000964](https://doi.org/10.1097/MPG.0000000000000964) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">pig</span> | [Dohmoto_2003_Ca_2_currents](drugs/drug_cyproheptadine/pd_Dohmoto_2003_Ca_2_currents.md) | Ca(2+) currents ← cyproheptadine · inhibition effect | — | Dohmoto H et al., Cardiac Ca(2+) channel-blocking effects…, Journal of pharmacological… (2003) | [10.1254/jphs.91.163](https://doi.org/10.1254/jphs.91.163) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cyproheptadine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `SLC22A1` inhibitor, `UGT1A3` substrate, `UGT1A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), HRH1 (target), HRH2 (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR7 (target), UGT2B10 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 21:26 | 6:45 | 0/0/0 | 1/1/0 | 0/0/0 | 304,948/5,281 | einfracz / qwen3.8-27b | 14 | 3/9 | 14/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 164 matched, 78 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | An_2005 | irrelevant | 0 | 0 | The paper is an electrophysiological study in rat neurons where cyproheptadine is used as a tool compound (5-HT2 antagonist) to determine receptor mechanism, not as a subject for pharmacokinetic analysis. |
+| popPK | Balfanz_2014 | irrelevant | 0 | 0 | The study is an in vitro pharmacological characterization of honeybee octopamine receptors using cyproheptadine as a competitor antagonist, not a pharmacokinetic study. |
+| PGx | Bianconi_2022 | not_relevant | 0 | 0 | The paper focuses on tramadol pharmacokinetics and toxicity, and while cyproheptadine is administered, the paper does not report any pharmacogenomic effects on cyproheptadine's PK or PD parameters. |
+| popPK | Bilder_1990 | irrelevant | 0 | 0 | The study is a vascular physiology/pharmacology experiment in rats investigating PKC-mediated vasoconstriction, where cyproheptadine is used only as a pharmacological antagonist to rule out serotonergic involvement, not as a subject of pharmacokinetic analysis. |
+| popPK | Brazenor_1981 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological experiment on canine coronary arteries investigating receptor mechanisms, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PGx | Broccatelli_2010 | not_relevant | 2 | 0 | The paper discusses cyproheptadine only as an example of a non-effluxed drug in a broader analysis of H1 antagonists; it does not report a specific pharmacogenomic study or effect size for cyproheptadine's PK/PD parameters. |
+| PGx | Cheung_2026 | not_relevant | 0 | 0 | The paper is a clinical case report describing a treatment regimen; it does not report pharmacogenomic associations or specific genotype-based effects on cyproheptadine pharmacokinetics or pharmacodynamics. |
+| popPK | Chodera_1984 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of amphetamine (AMPH), with cyproheptadine serving only as a pretreatment agent to study interactions, and no PK parameters for cyproheptadine are reported. |
+| popPK | Clineschmidt_1985 | irrelevant | 0 | 0 | The study is a pharmacological characterization of 5-HT receptors in rat stomach fundus, not a pharmacokinetic study of cyproheptadine. |
+| popPK | Connell_1989 | irrelevant | 0 | 0 | The paper is a pharmacological study on serotonin receptors in neonatal rat spinal cord where cyproheptadine is used as a non-specific antagonist, with no pharmacokinetic data reported. |
+| popPK | Costall_1988 | irrelevant | 0 | 0 | This is a behavioral pharmacology study in mice where cyproheptadine is used only as a negative control/comparator and no pharmacokinetic parameters are reported. |
+| popPK | Enguix_2003 | irrelevant | 0 | 0 | The study is an in vitro/receptor pharmacology investigation of 5-HT receptor regulation using cyproheptadine as a drug treatment, not a pharmacokinetic study. |
+| PGx | Ericson_2008 | not_relevant | 0 | 0 | The paper reports off-target effects of psychoactive drugs (including cyproheptadine) using yeast gene deletion screening, but does not report human pharmacogenomic variations affecting cyproheptadine's PK or PD parameters. |
+| popPK | Hashemzadeh-Gargari_1992 | irrelevant | 0 | 0 | The paper is a physiological study on lobster neurons where cyproheptadine is used only as a pharmacological probe for receptor antagonism, not for pharmacokinetic analysis. |
+| popPK | Jaklin_2022 | irrelevant | 0 | 0 | The paper describes a teratogenicity assay using stem cells and does not involve cyproheptadine or report any pharmacokinetic parameters. |
+| popPK | Kamikawa_1983 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study examining the mechanism of 5-HT action on guinea-pig oesophagus, not a pharmacokinetic study of cyproheptadine. |
+| PGx | Levin_2008 | not_relevant | 0 | 0 | The paper discusses a drug-drug interaction involving CYP2C19 inhibition but does not report any pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter of cyproheptadine. |
+| popPK | Meddah_2014 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study using Ussing chambers to assess antisecretory effects, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Muramatsu_1988 | irrelevant | 0 | 0 | The study is an in vitro pharmacological assay of EGF-urogastrone in guinea pig stomach, where cyproheptadine is used only as a negative control antagonist with no PK parameters reported. |
+| popPK | Nakijoba_2025 | irrelevant | 0 | 0 | The study is a cross-sectional survey on medication use during breastfeeding and does not report any pharmacokinetic parameters for cyproheptadine. |
+| popPK | Nakijoba_2025_2 | irrelevant | 0 | 0 | The paper is a cross-sectional survey of medicine use during breastfeeding and only mentions cyproheptadine as a drug requiring cautious use, without reporting any pharmacokinetic parameters or models for it. |
+| PGx | Ozdener_2005 | not_relevant | 1 | 5 | The paper reports a genetic effect on baseline platelet aggregation (38% higher in T/T) but explicitly states that the pharmacodynamic effect of cyproheptadine (inhibition of aggregation) was not influenced by the genotype. |
+| popPK | Paluzzi_2015 | irrelevant | 0 | 0 | The paper is a mechanistic study of a serotonin receptor in an insect, using cyproheptadine only as a pharmacological antagonist, not a PK study. |
+| PGx | Peredy_2025 | not_relevant | 0 | 0 | The paper reports a drug-herb interaction (kava affecting cyproheptadine response) rather than a gene variant affecting the pharmacokinetics or pharmacodynamics of cyproheptadine. |
+| popPK | Peters_1990 | irrelevant | 0 | 0 | The paper describes in vivo antimalarial efficacy (ED90) and in vitro activity, not pharmacokinetic disposition parameters (CL, V, t1/2, etc.) for cyproheptadine. |
+| popPK | Qiu_2012 | irrelevant | 0 | 0 | Cyproheptadine is used as a pharmacological tool (5-HT2 receptor antagonist) to block effects in a mechanistic study, not as the subject of pharmacokinetic analysis. |
+| PGx | Ramoz_2007 | not_relevant | 0 | 0 | The paper is a general overview of eating disorder treatments and mentions cyproheptadine only as one of many tested agents, without reporting specific pharmacogenomic effects on its PK/PD. |
+| popPK | Santamaría_2017 | irrelevant | 0 | 0 | The paper reports population PK parameters for rupatadine, not cyproheptadine. |
+| popPK | Schaduangrat_2023 | irrelevant | 0 | 0 | The paper is a machine learning study for identifying estrogen receptor antagonists and contains no pharmacokinetic data for cyproheptadine. |
+| popPK | Schlicker_1992 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of anpirtoline, using cyproheptadine only as a receptor antagonist to verify mechanism, with no PK parameters reported. |
+| PGx | Scott_2007 | not_relevant | 2 | 2 | This is a case report attributing the effect to an acute drug-drug interaction (fluvoxamine) rather than a genetic polymorphism (CYP2D6 genotype). |
+| popPK | Spilker_1975 | irrelevant | 0 | 0 | This study investigates pharmacodynamic smooth muscle relaxant activity and ED50 values, not quantitative pharmacokinetic disposition parameters (CL, V, half-life) for cyproheptadine. |
+| PGx | Tuttle_2026 | not_relevant | 0 | 0 | The paper is a case report of serotonin toxicity treated with cyproheptadine, but it does not report a pharmacogenomic effect on the pharmacokinetic or pharmacodynamic parameters of cyproheptadine itself. |
+| popPK | Venugopalan_1995 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology experiment using cyproheptadine as a receptor antagonist in catfish, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Villazón_2002 | irrelevant | 0 | 0 | The study is an in-vitro receptor pharmacology experiment using cyproheptadine as an antagonist, not a pharmacokinetic study. |
+| popPK | Wang_1998 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study measuring cardiac electrophysiological effects (QT prolongation) and potency (EC50), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Wilson_2018 | irrelevant | 0 | 0 | The paper is a methodological study on a drug safety/efficacy algorithm (PathFX) and mentions cyproheptadine only as a comparator for urticaria, containing no pharmacokinetic data. |
+| popPK | Xin_1993 | irrelevant | 0 | 0 | The study reports in-vitro radical scavenging activity (EC50/IC50) and does not provide any pharmacokinetic disposition parameters (CL, V, t1/2, etc.). |
+| PGx | Zhou_2002 | not_relevant | 0 | 0 | The paper focuses on DMXAA pharmacology and PK, and only mentions cyproheptadine as a co-administered drug in mouse models; it does not report gene variants affecting cyproheptadine PK/PD. |
+| PGx | Zhou_2003 | not_relevant | 0 | 0 | The study focuses on interindividual variability in DMXAA metabolism using a liver bank and mentions cyproheptadine only as an inhibitor of CYP1A2/UGT enzymes; it does not report a pharmacogenomic effect of a gene variant on a PK/PD parameter of cyproheptadine itself. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcyproheptadine%5D&body=Drug%3A%20cyproheptadine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cyproheptadine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

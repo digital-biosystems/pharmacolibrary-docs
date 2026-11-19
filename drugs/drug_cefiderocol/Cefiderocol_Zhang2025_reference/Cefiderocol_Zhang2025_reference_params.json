@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 6000 mg parenteral (J01DI04)",
+ "model_id": "Cefiderocol_Zhang2025_reference",
+ "molar_masses": {
+  "central.C": 0.75221
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4777777777777779e-06,
+  "F": 1.0,
+  "MM": 0.75221,
+  "VdPerKg": 0.00027714285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.006,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662054
+ },
+ "reference_peaks": {
+  "central.C": 0.30231710243071386
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

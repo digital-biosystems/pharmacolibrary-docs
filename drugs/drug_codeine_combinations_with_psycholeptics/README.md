@@ -1,0 +1,127 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine, combinations with psycholeptics&quot;}]"></div>
+
+# codeine, combinations with psycholeptics
+
+- **generic name:** codeine, combinations with psycholeptics
+- **ATC codes:** `N02AA79`
+- **DrugBank:** none · **PubChem:** none
+- **groups:** not captured
+
+## About
+
+These combinations are opioids used to treat pain.
+
+<small>⚠️ **Unverified** — written by `qwen3.8-27b` from general knowledge (no Wikidata entry found) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q3` · CLint | formation | [Anderson_2026](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Anderson_2026_CYP2D6_Q3.md) | Anderson BJ et al., Codeine and Metabolite Concentrations i…, Paediatric anaesthesia (2026) | [10.1002/pan.70227](https://doi.org/10.1002/pan.70227) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Ashraf_2024](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Ashraf_2024_CYP2D6_Q100.md) | Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q22` · CL | metabolism | [Chen_1991](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Chen_1991_CYP2D6_Q22.md) | Chen ZR et al., Disposition and metabolism of codeine a…, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05550.x](https://doi.org/10.1111/j.1365-2125.1991.tb05550.x) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q305` · kfm | metabolism | [Ciszkowski_2009](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Ciszkowski_2009_CYP2D6_Q305.md) | Ciszkowski C et al., Codeine, ultrarapid-metabolism genotype…, The New England journal of… (2009) | [10.1056/NEJMc0904266](https://doi.org/10.1056/NEJMc0904266) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **COMT** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Crews_2021](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Crews_2021_COMT_Q100.md) | Crews KR et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2149](https://doi.org/10.1002/cpt.2149) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Crews_2021](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Crews_2021_CYP2D6_Q100.md) | Crews KR et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2149](https://doi.org/10.1002/cpt.2149) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **OPRM1** | `Q320` · Emax | target | [Crews_2021](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Crews_2021_OPRM1_Q320.md) | Crews KR et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2149](https://doi.org/10.1002/cpt.2149) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Persson_1995](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Persson_1995_CYP2D6_Q100.md) | Persson K et al., Patient-controlled analgesia (PCA) with…, British journal of clinical… (1995) | [10.1111/j.1365-2125.1995.tb04428.x](https://doi.org/10.1111/j.1365-2125.1995.tb04428.x) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Wilcox_2000](drugs/drug_codeine_combinations_with_psycholeptics/pgx_Wilcox_2000_CYP2D6_Q100.md) | Wilcox RA et al., Variable cytochrome P450 2D6 expression…, Anaesthesia and intensive c… (2000) | [10.1177/0310057X0002800602](https://doi.org/10.1177/0310057X0002800602) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=codeine_combinations_with_psycholeptics).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `COMT` target, `CYP2D6` formation | PGx paper |
+| metabolism | kidney | `COMT` target | PGx paper |
+| metabolism | liver | `COMT` target, `CYP2D6` formation | PGx paper |
+
+<sub>Actors without a tissue in the table: OPRM1 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-27 15:32 | 28:47 | 0/0/0 | 0/0/0 | 0/0/9 | 189,331/3,684 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 5/3 | 13/4 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 654 matched, 129 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Ballester_2022.pdf` | Ballester P et al., CYP2D6 phenotypes and opioid metabolism…, Expert opinion on drug meta… (2022) | pgx | 8 | [10.1080/17425255.2022.2085552](https://doi.org/10.1080/17425255.2022.2085552) | [35649041](https://www.ncbi.nlm.nih.gov/pubmed/35649041) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Grond_2004.pdf` | Grond S et al., Clinical pharmacology of tramadol, Clinical pharmacokinetics (2004) | pgx | 8 | [10.2165/00003088-200443130-00004](https://doi.org/10.2165/00003088-200443130-00004) | [15509185](https://www.ncbi.nlm.nih.gov/pubmed/15509185) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
+| `Hertz_2021.pdf` | Hertz DL et al., Analysis Approaches to Identify Pharmac…, Clinical pharmacology and t… (2021) | pgx | 8 | [10.1002/cpt.2312](https://doi.org/10.1002/cpt.2312) | [34043820](https://www.ncbi.nlm.nih.gov/pubmed/34043820) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Leppert_2011.pdf` | Leppert W, CYP2D6 in the metabolism of opioids for…, Pharmacology (2011) | pgx | 8 | [10.1159/000326085](https://doi.org/10.1159/000326085) | [21494059](https://www.ncbi.nlm.nih.gov/pubmed/21494059) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Linares_2015.pdf` | Linares OA et al., CYP2D6 phenotype-specific codeine popul…, Journal of pain & palliativ… (2015) | pgx | 8 | [10.3109/15360288.2014.997854](https://doi.org/10.3109/15360288.2014.997854) | [25562725](https://www.ncbi.nlm.nih.gov/pubmed/25562725) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Magarbeh_2021.pdf` | Magarbeh L et al., Reviewing pharmacogenetics to advance p…, Biomedicine & pharmacothera… (2021) | pgx | 8 | [10.1016/j.biopha.2021.112060](https://doi.org/10.1016/j.biopha.2021.112060) | [34523422](https://www.ncbi.nlm.nih.gov/pubmed/34523422) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Nahid_2025.pdf` | Nahid NA et al., CYP2D6 Phenotypes and Emergency Departm…, JAMA network open (2025) | pgx | 8 | [10.1001/jamanetworkopen.2025.23543](https://doi.org/10.1001/jamanetworkopen.2025.23543) | [40720122](https://www.ncbi.nlm.nih.gov/pubmed/40720122) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Peiró_2018.pdf` | Peiró AM, Pharmacogenetics in Pain Treatment, Advances in pharmacology (S… (2018) | pgx | 8 | [10.1016/bs.apha.2018.04.004](https://doi.org/10.1016/bs.apha.2018.04.004) | [29801577](https://www.ncbi.nlm.nih.gov/pubmed/29801577) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Somogyi_2007.pdf` | Somogyi AA et al., Pharmacogenetics of opioids, Clinical pharmacology and t… (2007) | pgx | 8 | [10.1038/sj.clpt.6100095](https://doi.org/10.1038/sj.clpt.6100095) | [17339873](https://www.ncbi.nlm.nih.gov/pubmed/17339873) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Ereshefsky_1995.pdf` | Ereshefsky L et al., Antidepressant drug interactions and th…, Clinical pharmacokinetics (1995) | pgx | 7 | [10.2165/00003088-199500291-00004](https://doi.org/10.2165/00003088-199500291-00004) | [8846618](https://www.ncbi.nlm.nih.gov/pubmed/8846618) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Cavallari_2026.pdf` | Cavallari LH et al., CYP2D6-Guided Opioid Management and Pos…, JAMA network open (2026) | pgx | 5 | [10.1001/jamanetworkopen.2025.58299](https://doi.org/10.1001/jamanetworkopen.2025.58299) | [41719044](https://www.ncbi.nlm.nih.gov/pubmed/41719044) | metadata signals extractable PGX data (CYP2D6) |
+| `Johansson_1991.pdf` | Johansson I et al., Genetic analysis of the interethnic dif…, European journal of clinica… (1991) | pgx | 5 | [10.1007/BF00279968](https://doi.org/10.1007/BF00279968) | [1679392](https://www.ncbi.nlm.nih.gov/pubmed/1679392) | metadata signals extractable PGX data (CYP2D6) |
+| `Kiang_2005.pdf` | Kiang TK et al., UDP-glucuronosyltransferases and clinic…, Pharmacology & therapeutics (2005) | pgx | 5 | [10.1016/j.pharmthera.2004.10.013](https://doi.org/10.1016/j.pharmthera.2004.10.013) | [15781124](https://www.ncbi.nlm.nih.gov/pubmed/15781124) | metadata signals extractable PGX data (UGT1A7) |
+| `Mikus_1994.pdf` | Mikus G et al., Endogenous codeine and morphine in poor…, The Journal of pharmacology… (1994) | pgx | 5 |  | [8113966](https://www.ncbi.nlm.nih.gov/pubmed/8113966) | metadata signals extractable PGX data (CYP2D6) |
+| `Piccininni_2024.pdf` | Piccininni M et al., Using Negative Control Populations to A…, Epidemiology (Cambridge, Ma… (2024) | pgx | 5 | [10.1097/EDE.0000000000001724](https://doi.org/10.1097/EDE.0000000000001724) | [38465949](https://www.ncbi.nlm.nih.gov/pubmed/38465949) | metadata signals extractable PGX data (CYP2D6) |
+| `Sindrup_1995.pdf` | Sindrup SH et al., The pharmacogenetics of codeine hypoalg…, Pharmacogenetics (1995) | pgx | 5 | [10.1097/00008571-199512000-00001](https://doi.org/10.1097/00008571-199512000-00001) | [8845855](https://www.ncbi.nlm.nih.gov/pubmed/8845855) | metadata signals extractable PGX data (CYP2D6) |
+| `de_2008.pdf` | de Leon J, CYP2D6 genotyping and codeine, Paediatric anaesthesia (2008) | pgx | 5 | [10.1111/j.1460-9592.2008.02420.x](https://doi.org/10.1111/j.1460-9592.2008.02420.x) | [18230077](https://www.ncbi.nlm.nih.gov/pubmed/18230077) | metadata signals extractable PGX data (CYP2D6) |
+
+<sub>queue written 2026-08-27 15:24 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Armstrong_2025 | not_relevant | 2 | 1 | The paper is a review discussing CYP2D6 pharmacogenomics for opioids (codeine) but does not report data on codeine combinations with psycholeptics. |
+| PGx | Baldo_2023 | not_relevant | 2 | 1 | The paper is a review of adverse drug reactions and mentions codeine pharmacogenomics (CYP2D6) only in the context of ADRs and general metabolic pathways, without reporting specific quantitative PK/PD parameter changes for codeine combinations with psycholeptics. |
+| PGx | Hendrickson_2012 | not_relevant | 0 | 0 | The paper is a review of opioid transfer into breast milk and does not report specific pharmacogenomic effect sizes on PK/PD parameters for codeine combinations with psycholeptics. |
+| PGx | Kalow_1989 | not_relevant | 0 | 0 | The paper discusses codeine metabolism in the context of debrisoquine polymorphism but does not report pharmacogenomic effects on PK/PD parameters for codeine combinations with psycholeptics. |
+| PGx | Leppert_2016 | not_relevant | 2 | 0 | The paper discusses dihydrocodeine (not codeine combinations) and mentions CYP2D6 phenotypes qualitatively, but provides no quantitative pharmacogenomic effect sizes or specific PK/PD parameter changes. |
+| popPK | Lyngstad_2023 | irrelevant | 0 | 0 | The study is a pharmacodynamic/clinical trial assessing analgesic efficacy and does not report pharmacokinetic parameters (CL, V, ka, etc.) for codeine or its combinations. |
+| PD | Lyngstad_2023 | not_relevant | 2 | 1 | The study is a fixed-dose clinical trial comparing efficacy outcomes (SPI, SPID) between groups but does not report pharmacokinetic data or fit a concentration-effect/dose-response model to derive PD parameters like Emax or EC50. |
+| popPK | Medina_2026 | irrelevant | 0 | 0 | The paper is a retrospective cohort study on delirium risk associated with opioid use, not a pharmacokinetic study, and reports no PK parameters for codeine combinations. |
+| PD | Medina_2026 | not_relevant | 3 | 2 | The study reports hazard ratios for delirium risk based on categorical dose bands (MME/day) and opioid type, but explicitly states no clear dose-response association was observed and does not provide a continuous exposure-response curve or specific PD parameters like Emax or EC50. |
+| PGx | Rollinson_2020 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenomics in primary care and does not report specific pharmacokinetic or pharmacodynamic data for codeine combinations with psycholeptics. |
+| popPK | Smith_2001 | irrelevant | 0 | 0 | The paper is a clinical efficacy meta-analysis of paracetamol/codeine combinations reporting NNT and pain relief rates, not a pharmacokinetic study with disposition parameters. |
+| PGx | Sobczak_2020 | not_relevant | 4 | 5 | The paper discusses CYP2D6 polymorphisms affecting codeine metabolism (PK) but is a general review on misuse and does not report specific quantitative pharmacogenomic effect sizes or focus on the specific combination with psycholeptics. |
+| popPK | Sohns_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on GABA and chloride transport in DRG neurons, using codeine only as a tool to induce itch, and contains no pharmacokinetic parameters for codeine or its combinations. |
+| PD | Sohns_2024 | not_relevant | 0 | 0 | The paper investigates GABA and NKCC1 inhibition on pain/itch; codeine is used only as a tool to induce itch, and no exposure-response or dose-response relationship for codeine combinations with psycholeptics is reported. |
+| PGx | Wong_2022 | not_relevant | 0 | 0 | The paper is a narrative review of opioid pharmacogenomics and does not report specific pharmacokinetic or pharmacodynamic parameters for codeine combinations with psycholeptics. |
+| popPK | Zhang_1996 | irrelevant | 0 | 0 | The paper is a meta-analysis of analgesic efficacy (pain relief scores) and does not report any pharmacokinetic parameters for codeine or its combinations. |
+| PD | Zhang_1996 | not_relevant | 3 | 2 | The paper is a meta-analysis of clinical trials that explicitly states there was no significant dose-response relationship and does not report pharmacokinetic data or numeric PD parameters (Emax, EC50) for codeine combinations. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcodeine_combinations_with_psycholeptics%5D&body=Drug%3A%20codeine_combinations_with_psycholeptics%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_codeine_combinations_with_psycholeptics/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

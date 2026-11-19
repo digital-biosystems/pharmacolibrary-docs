@@ -1,0 +1,26 @@
+{
+ "dose_source": "WHO ATC DDD 3.75 mg parenteral (L04AB02)",
+ "model_id": "Infliximab_Little2022_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.1087962962962965e-09,
+  "F": 1.0,
+  "VdPerKg": 7.90184683824041e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.75e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662047
+ },
+ "reference_peaks": {
+  "central.C": 0.0006778097983610831
+ },
+ "stop_time": 4838400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

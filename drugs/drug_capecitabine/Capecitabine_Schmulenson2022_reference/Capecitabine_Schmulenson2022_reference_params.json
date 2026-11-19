@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Capecitabine_Schmulenson2022_reference",
+ "molar_masses": {
+  "central.C": 0.3593501
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  40.0,
+  80.0,
+  120.0,
+  825.0
+ ],
+ "parameters": {
+  "Cl": 2.6000000000000005e-07,
+  "F": 1.0,
+  "MM": 0.3593501,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0001485714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4e-05,
+  "k12": 0.00036057692307692304,
+  "k21": 5.868544600938968e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 37983.96793587174
+ },
+ "reference_peaks": {
+  "central.C": 9.805333163433905e-05
+ },
+ "stop_time": 140400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

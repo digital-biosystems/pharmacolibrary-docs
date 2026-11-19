@@ -1,0 +1,63 @@
+{
+ "model_id": "Levodopa_Westin2011_PD_motor_rating",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.00155,
+  "Emax": 3.96868837472e-27,
+  "exposure_per_s": 0.001,
+  "gamma": 11.6
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.0015499999999999997": 1.9843441873594e-27
+ },
+ "stop_time": 16.0,
+ "subtitle": "motor ratings (clinical assessment of motor function on a 7-point treatment response scale ranging from \"very off\" to \"very hyperkinetic\") (motor rating) against levodopa concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "U",
+   "factor": 1.66053906892e-27,
+   "si_unit": "kg"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "U"
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "label": "levodopa concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "U",
+  "factor": 1.66053906892e-27,
+  "label": "motor ratings (clinical assessment of motor function on a 7-point treatment response scale ranging from \"very off\" to \"very hyperkinetic\") (motor rating)"
+ }
+}

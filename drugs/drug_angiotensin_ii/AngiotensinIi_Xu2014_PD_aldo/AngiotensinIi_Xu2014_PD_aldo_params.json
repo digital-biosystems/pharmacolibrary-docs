@@ -1,0 +1,63 @@
+{
+ "model_id": "AngiotensinIi_Xu2014_PD_aldo",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 9.4129e-08,
+  "Emax": 9.263e-07,
+  "exposure_per_s": 1e-09,
+  "gamma": 9.97
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "9.412900000000001e-08": 4.631499999999999e-07
+ },
+ "stop_time": 950.0,
+ "subtitle": "aldosterone (Aldo) against angiotensin ii concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "pg/ml",
+   "factor": 1e-09,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "ng/dl",
+   "factor": 9.999999999999999e-09,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "pg/ml",
+   "factor": 1e-09,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "ng/dl"
+ },
+ "x_axis": {
+  "display_unit": "pg/ml",
+  "factor": 1e-09,
+  "label": "angiotensin ii concentration",
+  "per_s": 1e-09,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "ng/dl",
+  "factor": 9.999999999999999e-09,
+  "label": "aldosterone (Aldo)"
+ }
+}

@@ -1,0 +1,152 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V09E&quot;,&quot;href&quot;:&quot;atc/V09E.md&quot;},{&quot;label&quot;:&quot;xenon (133Xe) gas&quot;}]"></div>
+
+# xenon (133Xe) gas
+
+- **generic name:** xenon (133Xe) gas
+- **ATC codes:** `V09EX03`
+- **DrugBank:** [DB09315](https://go.drugbank.com/drugs/DB09315) · **PubChem:** [CID 66376](https://pubchem.ncbi.nlm.nih.gov/compound/66376)
+- **molar mass:** 132.9059 g/mol (Xe) — DrugBank
+- **groups:** approved
+
+## About
+
+Xenon-133 is a diagnostic radiopharmaceutical used for respiratory system investigations. It is administered by inhalation as a gas. It is approved for clinical use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2451397](https://www.wikidata.org/wiki/Q2451397), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Uchida_2022_PS](drugs/drug_xenon_133xe_gas/pd_Uchida_2022_PS.md) | steady-state response ratio ← Xe · direct sigmoid Emax (Hill) effect | — | Uchida T et al., Behavior of Stimulus Response Signals i…, Neuroscience (2022) | [10.1016/j.neuroscience.2022.05.027](https://doi.org/10.1016/j.neuroscience.2022.05.027) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Le_2020_DA](drugs/drug_xenon_133xe_gas/pd_Le_2020_DA.md) | DA cell rescue ← xenon · stimulation effect | — | Le Nogue D et al., Neuroprotection of dopamine neurons by…, Journal of neural transmiss… (2020) | [10.1007/s00702-019-02112-x](https://doi.org/10.1007/s00702-019-02112-x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Nagele_2005_duration_of_backward_locomotion](drugs/drug_xenon_133xe_gas/pd_Nagele_2005_duration_of_backward_locomotion.md) | duration of backward locomotion ← xenon · inhibition effect | — | Nagele P et al., Xenon acts by inhibition of non-N-methy…, Anesthesiology (2005) | [10.1097/00000542-200509000-00013](https://doi.org/10.1097/00000542-200509000-00013) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Nagele_2005_frequency_of_backward_locomotion](drugs/drug_xenon_133xe_gas/pd_Nagele_2005_frequency_of_backward_locomotion.md) | frequency of backward locomotion ← xenon · inhibition effect | — | Nagele P et al., Xenon acts by inhibition of non-N-methy…, Anesthesiology (2005) | [10.1097/00000542-200509000-00013](https://doi.org/10.1097/00000542-200509000-00013) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Wilhelm_2002_LDH](drugs/drug_xenon_133xe_gas/pd_Wilhelm_2002_LDH.md) | lactate dehydrogenase release ← xenon · inhibition effect | — | Wilhelm S et al., Effects of xenon on in vitro and in viv…, Anesthesiology (2002) | [10.1097/00000542-200206000-00031](https://doi.org/10.1097/00000542-200206000-00031) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Wilhelm_2002_LDH_2](drugs/drug_xenon_133xe_gas/pd_Wilhelm_2002_LDH_2.md) | lactate dehydrogenase release ← xenon · inhibition effect | — | Wilhelm S et al., Effects of xenon on in vitro and in viv…, Anesthesiology (2002) | [10.1097/00000542-200206000-00031](https://doi.org/10.1097/00000542-200206000-00031) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Wilhelm_2002_LDH_3](drugs/drug_xenon_133xe_gas/pd_Wilhelm_2002_LDH_3.md) | lactate dehydrogenase release ← xenon · inhibition effect | — | Wilhelm S et al., Effects of xenon on in vitro and in viv…, Anesthesiology (2002) | [10.1097/00000542-200206000-00031](https://doi.org/10.1097/00000542-200206000-00031) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Wilhelm_2002_neuronal_degeneration](drugs/drug_xenon_133xe_gas/pd_Wilhelm_2002_neuronal_degeneration.md) | neuronal degeneration ← xenon · inhibition effect | — | Wilhelm S et al., Effects of xenon on in vitro and in viv…, Anesthesiology (2002) | [10.1097/00000542-200206000-00031](https://doi.org/10.1097/00000542-200206000-00031) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=xenon_133xe_gas).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 19:47 | 15:12 | 0/0/0 | 1/3/0 | 0/0/0 | 508,302/26,708 | openai / gpt-6-luna | 23 | 2/17 | 23/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 138 matched, 93 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Lavini_2000.pdf` | Lavini C et al., Intravenous delivery of hyperpolarized…, NMR in biomedicine (2000) | popPK | 8 | [10.1002/1099-1492(200006)13:4&lt;238::aid-nbm633&gt;3.0.co;2-5](https://doi.org/10.1002/1099-1492(200006)13:4<238::aid-nbm633>3.0.co;2-5) | [10867703](https://pubmed.ncbi.nlm.nih.gov/10867703) | A compartmental model describes xenon disposition, but no numeric parameter values are provided in the evidence. |
+| `Martin_1997.pdf` | Martin CC et al., The pharmacokinetics of hyperpolarized…, Journal of magnetic resonan… (1997) | popPK | 8 | [10.1002/jmri.1880070512](https://doi.org/10.1002/jmri.1880070512) | [9307910](https://pubmed.ncbi.nlm.nih.gov/9307910) | The xenon compartmental model reports numerical T1 and concentration values, but no numeric clearance, volume, or other disposition parameters. |
+| `Novotny_1993.pdf` | Novotny JA et al., Contribution of tissue lipid to long xe…, Journal of applied physiolo… (1993) | popPK | 8 | [10.1152/jappl.1993.74.5.2127](https://doi.org/10.1152/jappl.1993.74.5.2127) | [8335539](https://pubmed.ncbi.nlm.nih.gov/8335539) | Canine muscle xenon residence times and a compartmental gas-exchange model are studied, but numeric parameter values are not provided. |
+| `Rezvani_1986.pdf` | Rezvani M et al., The validity of different methods of an…, International journal of ra… (1986) | popPK | 8 | [10.1016/0883-2897(86)90103-0](https://doi.org/10.1016/0883-2897(86)90103-0) | [3771258](https://pubmed.ncbi.nlm.nih.gov/3771258) | A two-compartment in vivo xenon clearance model is described, but no numeric parameter values are provided in the evidence. |
+| `Kilian_2004.pdf` | Kilian W et al., Dynamic NMR spectroscopy of hyperpolari…, Magnetic resonance in medic… (2004) | popPK | 7 | [10.1002/mrm.10726](https://doi.org/10.1002/mrm.10726) | [15065259](https://pubmed.ncbi.nlm.nih.gov/15065259) | A compartment model analyzes xenon uptake, but no numeric disposition parameter values are provided. |
+
+<sub>queue written 2026-10-07 19:44 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Alam_2026 | irrelevant | 0 | 0 | This pediatric imaging study reports ventilation metrics, not xenon pharmacokinetic disposition parameters. |
+| popPK | Andrade_2014 | irrelevant | 0 | 0 | This is an auranofin antiparasitic study, not a pharmacokinetic study of xenon-133. |
+| popPK | Baba_1979 | irrelevant | 0 | 0 | Xenon-133 is used as a diagnostic tracer to estimate cerebral blood flow, with no quantitative pharmacokinetic disposition parameters reported. |
+| popPK | Barakat_2008 | irrelevant | 0 | 0 | Xenon is co-administered as an anesthetic, while the reported EC50 and EC95 values are for propofol, not xenon pharmacokinetics. |
+| popPK | Baumert_2002 | irrelevant | 0 | 0 | This measures respiratory compliance and resistance in pigs, not xenon pharmacokinetic disposition parameters. |
+| popPK | Brake_2024 | irrelevant | 0 | 0 | This EEG study concerns propofol, not xenon-133, and reports no xenon pharmacokinetic parameters. |
+| popPK | Butt_1983 | irrelevant | 1 | 1 | Xenon-133 is used as a renal blood-flow tracer, and the reported values are flow-analysis results rather than xenon pharmacokinetic parameters. |
+| popPK | Carlin_1977 | irrelevant | 2 | 8 | Numeric xenon partition coefficients are reported, but the study uses xenon as a diagnostic tracer and gives no qualifying PK disposition parameters. |
+| popPK | Cascino_2022 | irrelevant | 0 | 0 | The study models diazepam, not xenon-133Xe gas, and its parameter estimates are not shown in the provided evidence. |
+| popPK | Cekanova_2012 | irrelevant | 0 | 0 | The study reports pharmacokinetics of fluorocoxib A, not xenon-133Xe gas. |
+| popPK | Choquet_2003 | irrelevant | 2 | 1 | The rat study reports xenon tissue relaxation time, not a pharmacokinetic disposition parameter. |
+| popPK | Cinotti_1991 | irrelevant | 0 | 0 | The study models Xe-127 rather than xenon-133 and reports no numeric disposition parameter values. |
+| popPK | Daniels_1998 | irrelevant | 0 | 0 | This is an in-vitro receptor study reporting pharmacodynamic effects, not xenon disposition parameters. |
+| popPK | Devroe_2021 | irrelevant | 0 | 0 | Xenon is co-administered in a rabbit neurodevelopment study, with no pharmacokinetic parameters reported. |
+| popPK | Dinse_2005 | irrelevant | 0 | 0 | This in-vitro receptor study reports no quantitative pharmacokinetic disposition parameters for xenon. |
+| popPK | EFSA_2026 | irrelevant | 0 | 0 | This is a sucralose food-safety evaluation and reports no xenon-133 pharmacokinetic parameters. |
+| popPK | Eger_2006 | irrelevant | 0 | 0 | The study measures anesthetic MAC effects, not xenon-133’s pharmacokinetic disposition parameters. |
+| popPK | Fixley_1978 | irrelevant | 0 | 0 | Xenon-133 is used as a tracer to study lung gas distribution, with no quantitative pharmacokinetic disposition parameters reported. |
+| popPK | Franco_2022 | irrelevant | 0 | 0 | This is an assay study of cannabidiol in humans, not xenon-133Xe pharmacokinetics. |
+| popPK | Friedrich_2014 | irrelevant | 0 | 0 | The quantitative PK values are for evacetrapib, not xenon-133Xe gas. |
+| popPK | Gherase_2006 | irrelevant | 0 | 0 | This is an in vitro NMR exchange model, reporting droplet size and membrane permeability rather than xenon pharmacokinetic parameters. |
+| popPK | Greisen_1984 | irrelevant | 2 | 9 | Numeric two-compartment clearance rates are reported, but xenon is used as a diagnostic tracer rather than studied as a pharmacokinetic subject drug. |
+| popPK | Heikkonen_1987 | irrelevant | 1 | 0 | Xenon is a diagnostic clearance tracer, and the reported values are tumour perfusion rates rather than xenon pharmacokinetic parameters. |
+| PGx | Hemnes_2020 | not_relevant | 0 | 0 | The paper discusses xenon MRI as an imaging modality but reports no genotype-dependent pharmacokinetic or pharmacodynamic effect for xenon-133 gas. |
+| popPK | Henry_2025 | irrelevant | 0 | 0 | This paper reviews graphical reporting in anti-seizure medication trials and provides no xenon-133 disposition parameters. |
+| popPK | Honda_1989 | irrelevant | 2 | 1 | This is a diagnostic Xe-133 washout study, and it reports no actual numeric disposition parameter values. |
+| popPK | Iakab_2026 | irrelevant | 0 | 0 | This is an in vitro 3D MALDI imaging platform study and reports no xenon-133Xe pharmacokinetic parameters. |
+| popPK | Iliff_1974 | irrelevant | 1 | 0 | Xenon-133 was a cerebral blood-flow tracer, and no numeric xenon disposition parameters are reported. |
+| popPK | Khanppnavar_2022 | irrelevant | 0 | 0 | This is a human OCT3 structure and transport-function study, not a xenon-133 pharmacokinetic study. |
+| popPK | Kilian_2004 | relevant | 7 | 0 | A compartment model analyzes xenon uptake, but no numeric disposition parameter values are provided. |
+| popPK | Kodaka_2006 | irrelevant | 0 | 0 | The study measures uniconazole-P degradation in water-sediment systems; xenon is only the illumination source. |
+| popPK | Konstantopoulos_2022 | irrelevant | 0 | 0 | This nanomaterials review reports no xenon-133 pharmacokinetic parameters or measured species. |
+| popPK | Kumar_2022 | irrelevant | 0 | 0 | This computational BBB-classification study reports no xenon-133 disposition parameters or numeric PK values. |
+| popPK | Kuprat_2025 | irrelevant | 0 | 0 | This is a review of aerosol modeling, not a xenon-133 pharmacokinetic study, and reports no xenon disposition parameters. |
+| popPK | Laurent_1982 | irrelevant | 0 | 0 | Xenon-133 is used as a cerebral blood-flow measurement tracer, with no xenon pharmacokinetic parameters reported. |
+| popPK | Lavini_2000 | relevant | 8 | 0 | A compartmental model describes xenon disposition, but no numeric parameter values are provided in the evidence. |
+| popPK | Lin_1999 | irrelevant | 0 | 0 | Xenon refers to a weathering instrument, and no xenon drug pharmacokinetic parameters are reported. |
+| popPK | Madders_2025 | irrelevant | 0 | 0 | The paper studies isoprenaline signaling in cardiac cells and reports no xenon-133 pharmacokinetic parameters. |
+| popPK | Mahmoud_2020 | irrelevant | 0 | 0 | This narrative review reports dexmedetomidine—not xenon-133—as the subject drug, so no xenon PK values are provided. |
+| popPK | Marc-Vergnes_1980 | irrelevant | 1 | 0 | Xenon-133 is used as a cerebral blood-flow tracer, and no numeric xenon disposition parameters are reported in the provided evidence. |
+| popPK | Martin_1997 | relevant | 8 | 2 | The xenon compartmental model reports numerical T1 and concentration values, but no numeric clearance, volume, or other disposition parameters. |
+| popPK | McGuigan_2021 | irrelevant | 0 | 0 | This human EEG study reports no quantitative pharmacokinetic disposition parameters. |
+| popPK | Meric_1979 | irrelevant | 1 | 0 | Xenon-133 is used as a diagnostic tracer to measure cerebral blood flow, with no quantitative PK disposition parameters reported. |
+| popPK | Miao_2018 | irrelevant | 1 | 0 | This is a therapeutic animal study, not a pharmacokinetic analysis, and no xenon disposition parameters are reported in the evidence. |
+| popPK | Miraldi_1992 | irrelevant | 1 | 0 | Xenon-133 is used as a diagnostic tracer to measure penile blood flow; no xenon disposition parameters are reported. |
+| popPK | Mäntylä_1988 | irrelevant | 1 | 1 | Xenon is used as a co-injected perfusion tracer, and no quantitative xenon pharmacokinetic parameters are reported. |
+| popPK | Nagele_2005 | irrelevant | 0 | 0 | This behavioral mechanism study reports no quantitative pharmacokinetic disposition parameters. |
+| popPK | Novotny_1993 | relevant | 8 | 1 | Canine muscle xenon residence times and a compartmental gas-exchange model are studied, but numeric parameter values are not provided. |
+| popPK | Obrist_1975 | irrelevant | 2 | 1 | Xenon is used as a cerebral blood-flow tracer, and no numeric pharmacokinetic parameter values are provided. |
+| popPK | Odano_1999 | irrelevant | 0 | 0 | Xenon-133 was only a comparator for cerebral blood flow, with no xenon pharmacokinetic parameters reported. |
+| popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | This is a review of marine-derived cosmetic bioactives and reports no xenon-133 pharmacokinetic parameters. |
+| popPK | Pinborg_2002 | irrelevant | 0 | 0 | Xenon-133 was used only for cerebral blood-flow imaging; reported kinetic values are for the PE2I ligand. |
+| popPK | Rezvani_1986 | relevant | 8 | 0 | A two-compartment in vivo xenon clearance model is described, but no numeric parameter values are provided in the evidence. |
+| popPK | Thaler_1982 | irrelevant | 1 | 0 | This is a simulation of xenon CT blood-flow measurements, with no readable numeric xenon pharmacokinetic parameter values. |
+| popPK | Uchida_2022 | irrelevant | 0 | 0 | This is an in-vitro neuronal response study, not a pharmacokinetic study, and reports no xenon disposition parameters. |
+| popPK | Watson_1977 | irrelevant | 2 | 0 | It describes xenon wash-in/washout models but reports no numeric disposition parameter values in the evidence. |
+| popPK | Weibel_2020 | irrelevant | 0 | 0 | This is a review of antiemetics and reports no pharmacokinetic parameters for xenon-133. |
+| popPK | Younkin_1982 | irrelevant | 1 | 0 | Xenon-133 is used as a diagnostic tracer to estimate cerebral blood flow, and no numeric PK disposition parameters are reported. |
+| popPK | Younkin_1987 | irrelevant | 0 | 0 | Xenon-133 is used as a cerebral blood-flow tracer, with no quantitative xenon disposition parameters reported. |
+| popPK | Zhou_2026 | irrelevant | 0 | 0 | Xenon is used as irradiation light, not studied as a drug, and no pharmacokinetic parameters are reported. |
+| popPK | Zvidzayi_2021 | irrelevant | 0 | 0 | The study evaluates topical corticosteroid potency in humans and reports no xenon-133 gas pharmacokinetic parameters. |
+| popPK | unknown_2018 | irrelevant | 1 | 1 | The study measures xenon microbubble properties and gas dose, not xenon pharmacokinetic disposition parameters. |
+| popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bxenon_133xe_gas%5D&body=Drug%3A%20xenon_133xe_gas%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_xenon_133xe_gas/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

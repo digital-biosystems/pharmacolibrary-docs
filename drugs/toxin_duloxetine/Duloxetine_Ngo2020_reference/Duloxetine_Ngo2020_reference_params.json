@@ -1,0 +1,64 @@
+{
+ "dose_source": "paper",
+ "model_id": "Duloxetine_Ngo2020_reference",
+ "molar_masses": {
+  "central.C": 0.297416
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2800.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ngo_2020:other_prose",
+    "value_si": 8.35
+   },
+   {
+    "source": "Ngo_2020:other_prose",
+    "value_si": 20.2
+   },
+   {
+    "source": "Ngo_2020:other_prose",
+    "value_si": 10.2
+   },
+   {
+    "source": "Ngo_2020:other_prose",
+    "value_si": 24.6
+   },
+   {
+    "source": "Ngo_2020:discussion_prose",
+    "value_si": 20.2
+   },
+   {
+    "source": "Ngo_2020:discussion_prose",
+    "value_si": 24.6
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.5527777777777776e-05,
+  "F": 0.9,
+  "MM": 0.297416,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0146,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0028,
+  "ka": 0.00040555555555555554,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8787.456020797243
+ },
+ "reference_peaks": {
+  "central.C": 0.002169662877977471
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

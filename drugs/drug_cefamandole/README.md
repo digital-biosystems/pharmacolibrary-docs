@@ -1,0 +1,95 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;cefamandole&quot;}]"></div>
+
+# cefamandole
+
+- **generic name:** cefamandole
+- **ATC codes:** `J01DC03`
+- **DrugBank:** [DB01326](https://go.drugbank.com/drugs/DB01326) · **PubChem:** [CID 456255](https://pubchem.ncbi.nlm.nih.gov/compound/456255)
+- **molar mass:** 462.503 g/mol (C18H18N6O5S2) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Cefamandole is a second-generation cephalosporin antibiotic used to treat bacterial infections such as pneumonia, urinary tract infections, and bone infections. It is given as an intramuscular injection using a powder form that is prepared for solution.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2601530](https://www.wikidata.org/wiki/Q2601530), [Wikipedia](https://en.wikipedia.org/wiki/Cefamandole?oldid=1329246037) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| cefamandole | parent | 462.503 | C18H18N6O5S2 | DrugBank | [456255](https://pubchem.ncbi.nlm.nih.gov/compound/456255) | Campillo_1979, Nielsen_1979 |
+| cefamandole nafate | metabolite | 490.509 | C19H18N6O6S2 | PubChem | [5284527](https://pubchem.ncbi.nlm.nih.gov/compound/5284527) | Nielsen_1979 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Campillo_1979_reference](drugs/drug_cefamandole/Cefamandole_Campillo1979_reference.md) | — | 2-compartment (no model) | 8 | Campillo JA et al., Pharmacokinetics of cefamandole in pati…, International journal of cl… (1979) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Nielsen_1979_disappearance_of_cn](drugs/drug_cefamandole/Cefamandole_Nielsen1979_disappearance_of_cn.md) | — | general linear (no model) | 2 | Nielsen RL et al., Hydrolysis of cefamandole nafate in dia…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.16.5.683](https://doi.org/10.1128/AAC.16.5.683) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ rate_constant](drugs/drug_cefamandole/Cefamandole_Nielsen1979_rate_constant.md) | — | general linear (no model) | 2 |  |  |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cefamandole).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `SLC22A7` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC22A11 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 10:49 | 2:02 | 0/3/0 | 0/0/0 | 0/0/0 | 99,271/6,105 | einfracz / qwen3.8-27b | 3 | 3/0 | 3/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 10 matched, 10 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Campillo_1979.pdf` | Campillo JA et al., Pharmacokinetics of cefamandole in pati…, International journal of cl… (1979) | popPK | 10 |  | [500264](https://pubmed.ncbi.nlm.nih.gov/500264) | The paper provides quantitative two-compartment PK parameters (Vc, Vp, Vdss, rate constants) for cefamandole in human patients. |
+| `Klimova_1982.pdf` | Klimova VS et al., [Pharmacokinetics of cefamandole in rab…, Antibiotiki (1982) | popPK | 10 |  | [7165292](https://pubmed.ncbi.nlm.nih.gov/7165292) | The paper reports quantitative compartmental pharmacokinetic parameters (volume, clearance constants, half-life) for cefamandole in rabbits. |
+| `Wang_2008.pdf` | Wang Y et al., Semiparametric mixed-effects analysis o…, Journal of pharmacokinetics… (2008) | popPK | 10 | [10.1007/s10928-008-9096-2](https://doi.org/10.1007/s10928-008-9096-2) | [18781382](https://pubmed.ncbi.nlm.nih.gov/18781382) | The paper describes a population PK/PD modeling method applied to cefamandole data, but the specific numeric parameter values are not present in the provided evidence. |
+| `Yeh_2001.pdf` | Yeh PH et al., Determination of unbound cefamandole in…, Biomedical chromatography :… (2001) | popPK | 9 | [10.1002/bmc.20](https://doi.org/10.1002/bmc.20) | [11180295](https://pubmed.ncbi.nlm.nih.gov/11180295) | The study reports quantitative PK data for cefamandole in rats, including a specific half-life value and mention of a two-compartmental model fit, but full parameter sets (CL, V) are not explicitly listed in the text provided. |
+| `Veng-Pedersen_1988.pdf` | Veng-Pedersen P, Linear and nonlinear system approaches…, Journal of pharmacokinetics… (1988) | popPK | 6 | [10.1007/BF01062384](https://doi.org/10.1007/BF01062384) | [3199318](https://pubmed.ncbi.nlm.nih.gov/3199318) | The study demonstrates PK methods on cefamandole in humans, but the specific numeric parameter values are not included in the provided evidence. |
+
+<sub>queue written 2026-10-07 10:48 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Mattie_1990 | irrelevant | 2 | 0 | This is a pharmacodynamic study in mice comparing antibacterial effects, and no quantitative pharmacokinetic parameters (e.g., CL, V, t1/2) for cefamandole are provided in the evidence. |
+| popPK | Murakawa_1980 | irrelevant | 2 | 0 | Cefamandole is used only as a reference/comparator drug in a study of ceftizoxime, and specific pharmacokinetic parameters for cefamandole are not reported. |
+| popPK | Veng-Pedersen_1988 | relevant | 6 | 0 | The study demonstrates PK methods on cefamandole in humans, but the specific numeric parameter values are not included in the provided evidence. |
+| popPK | Wang_2008 | relevant | 10 | 0 | The paper describes a population PK/PD modeling method applied to cefamandole data, but the specific numeric parameter values are not present in the provided evidence. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcefamandole%5D&body=Drug%3A%20cefamandole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cefamandole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:48 UTC</sub>

@@ -1,0 +1,90 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06D&quot;,&quot;href&quot;:&quot;atc/N06D.md&quot;},{&quot;label&quot;:&quot;donanemab&quot;}]"></div>
+
+# donanemab
+
+- **generic name:** donanemab
+- **ATC codes:** `N06DX05`
+- **DrugBank:** [DB16647](https://go.drugbank.com/drugs/DB16647) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Donanemab is an anti-dementia drug used to treat Alzheimer disease. It is authorised in the European Union.
+
+<small>⚠️ **Unverified** — written by `qwen3.8-27b` from general knowledge (no Wikidata entry found) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Gueorguieva_2025_reference](drugs/drug_donanemab/Donanemab_Gueorguieva2025_reference.md) | — | 2-compartment (no model) | 3 | Gueorguieva I et al., Donanemab exposure-response in early sy…, Alzheimer's & dementia : th… (2025) | [10.1002/alz.70491](https://doi.org/10.1002/alz.70491) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Lim_2025_reference](drugs/drug_donanemab/Donanemab_Lim2025_reference.md) | — | 2-compartment (no model) | 3 | Lim S et al., Sex differences in efficacy/safety of a…, Translational and clinical… (2025) | [10.12793/tcp.2025.33.e19](https://doi.org/10.12793/tcp.2025.33.e19) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gueorguieva_2023_2_CDR_SB](drugs/drug_donanemab/pd_Gueorguieva_2023_2_CDR_SB.md) | Clinical Dementia Rating Scale‐Sum of Boxes ← donanemab · disease-progression model | — | Gueorguieva I et al., Donanemab exposure and efficacy relatio…, Alzheimer's & dementia (New… (2023) | [10.1002/trc2.12404](https://doi.org/10.1002/trc2.12404) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gueorguieva_2023_2_iADRS](drugs/drug_donanemab/pd_Gueorguieva_2023_2_iADRS.md) | Integrated Alzheimer's Disease Rating Scale ← donanemab · disease-progression model | — | Gueorguieva I et al., Donanemab exposure and efficacy relatio…, Alzheimer's & dementia (New… (2023) | [10.1002/trc2.12404](https://doi.org/10.1002/trc2.12404) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gueorguieva_2025_CDR_SB](drugs/drug_donanemab/pd_Gueorguieva_2025_CDR_SB.md) | Clinical Dementia Rating Scale-Sum of Boxes ← donanemab · disease-progression model | — | Gueorguieva I et al., Donanemab exposure-response in early sy…, Alzheimer's & dementia : th… (2025) | [10.1002/alz.70491](https://doi.org/10.1002/alz.70491) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gueorguieva_2025_amyloid_plaque](drugs/drug_donanemab/pd_Gueorguieva_2025_amyloid_plaque.md) | amyloid plaque level ← donanemab · indirect response — drug stimulates the loss of amyloid plaque level | — | Gueorguieva I et al., Donanemab exposure-response in early sy…, Alzheimer's & dementia : th… (2025) | [10.1002/alz.70491](https://doi.org/10.1002/alz.70491) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gueorguieva_2025_iADRS](drugs/drug_donanemab/pd_Gueorguieva_2025_iADRS.md) | integrated Alzheimer's Disease Rating Scale ← donanemab · disease-progression model | — | Gueorguieva I et al., Donanemab exposure-response in early sy…, Alzheimer's & dementia : th… (2025) | [10.1002/alz.70491](https://doi.org/10.1002/alz.70491) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2025_amyloid_plaque](drugs/drug_donanemab/pd_van_2025_amyloid_plaque.md) | amyloid plaque burden ← donanemab · indirect response — drug stimulates the loss of amyloid plaque burden | — | van Maanen E et al., Modeling amyloid plaque turnover dynami…, Alzheimer's & dementia (New… (2025) | [10.1002/trc2.70169](https://doi.org/10.1002/trc2.70169) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=donanemab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: Beta amyloid plaque (antibody), Beta amyloid plaque (binder).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-13 13:23 | 3:35 | 0/2/0 | 3/0/0 | 0/0/0 | 66,298/17,745 | einfracz / qwen3.8-27b | 6 | 1/5 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 9 matched, 9 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gueorguieva_2023.pdf` | Gueorguieva I et al., Donanemab Population Pharmacokinetics,…, Clinical pharmacology and t… (2023) | popPK | 10 | [10.1002/cpt.2875](https://doi.org/10.1002/cpt.2875) | [36805552](https://pubmed.ncbi.nlm.nih.gov/36805552) | Population PK model of donanemab in humans with half-life reported, but CL/V and other parameter values likely in tables/supplement not fully shown in the evidence. |
+
+<sub>queue written 2026-10-13 13:20 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Gueorguieva_2023 | relevant | 10 | 4 | Population PK model of donanemab in humans with half-life reported, but CL/V and other parameter values likely in tables/supplement not fully shown in the evidence. |
+| popPK | Gueorguieva_2023_2 | relevant | 6 | 3 | Population PK/PD modeling of donanemab in humans is described, but the PK parameters (two-compartment model) are only referenced from a prior publication; tables here contain biomarker/disease-progression parameters, not donanemab CL/V values. |
+| popPK | Hartz_2024 | irrelevant | 0 | 0 | This is a clinical outcomes study modeling CDR-SB and time to loss of independence; no PK parameters (CL, V, half-life, population-PK model) for donanemab are reported. |
+| popPK | Hartz_2025 | irrelevant | 0 | 0 | Clinical meaningfulness study of CDR-SB and independence in AD; no PK parameters for donanemab are reported. |
+| popPK | Lim_2025 | irrelevant | 3 | 1 | This is a review of sex differences; for donanemab, sex was not retained in the final population PK model, and no numeric donanemab PK parameter values are present (they live in cited references/supplementary tables). |
+| popPK | van_2025 | irrelevant | 2 | 3 | This is an exposure-response model of amyloid plaque turnover, not a PK study; donanemab appears only as a comparator with a plaque-elimination slope, and no donanemab PK parameters (CL, V, half-life) are reported. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdonanemab%5D&body=Drug%3A%20donanemab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_donanemab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:06 UTC</sub>

@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Levetiracetam_Johnson2025_sharpe_et_al_20247",
+ "molar_masses": {
+  "central.C": 0.170212
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  4200.0,
+  8400.0,
+  10500.0
+ ],
+ "parameters": {
+  "Cl": 3.15e-07,
+  "F": 0.9,
+  "MM": 0.170212,
+  "Tlag": 7056.0,
+  "VdPerKg": 0.00098,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0042,
+  "ka": 0.0003805555555555556,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 19172.49226361695
+ },
+ "reference_peaks": {
+  "central.C": 0.05220656267966347
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

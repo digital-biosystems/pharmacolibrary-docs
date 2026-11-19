@@ -1,0 +1,185 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;inebilizumab&quot;,&quot;href&quot;:&quot;drugs/drug_inebilizumab/&quot;},{&quot;label&quot;:&quot;Yan_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Yan_2022_2_CD20&quot;,&quot;label&quot;:&quot;Yan_2022_2 \u00b7 CD20+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_inebilizumab/pd_Yan_2022_2_CD20.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# inebilizumab — `Inebilizumab_Yan2022_reference`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> This record was reviewed on 2026-11-07 16:55 UTC (Rejected), but the paper was screened again on 2026-10-06 23:51 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The inebilizumab record was rejected because the daily unit of the elimination rate constant could not be standardized, and weight-covariate exponents were misassigned.
+
+<div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="true" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Yan L, Kimko H, Wang B, Cimbora D, Katz E, Rees WA. Population Pharmacokinetic Modeling of Inebilizumab in Subjects with Neuromyelitis Optica Spectrum Disorders, Systemic Sclerosis, or Relapsing Multiple Sclerosis. Clinical pharmacokinetics 61(3):387–400 (2022).
+  ·  DOI: [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5)
+
+## Population and dosing
+
+**Population:** adult subjects with NMOSD, SSc, or MS · condition NMOSD, SSc, MS · age group adult.
+
+**Dosing:** 0.1, 0.3, 1, 3, 10, 60, 300 mg/kg, mg, iv, sc, single.
+
+## Model
+
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 7 extracted, plus 4 covariate effects.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% | IIV |
+|---|---|---|---|---|---|
+| CL (mL/day) | CL | 188 | mL/day | 25 | 27 (None% RSE) |
+| Vc (mL) | V1 | 2950 | mL | 30 | 17 (None% RSE) |
+| weight_on_vca | weight_on_vca | 0.39 |  | 22.4 |  |
+| Q (mL/day) | Q | 363 | mL/day | 6.0 |  |
+| Vp (mL) | V2 | 2570 | mL | 45 | 16 (None% RSE) |
+| Vmax (µg/day) | Vmax | 832 | µg/day | 61 | 30 (None% RSE) |
+| Kdec (/day) | kel | 0.00294 | /day | 55.1 |  |
+| Km (µg/mL) | Km | 5.89 | µg/mL | 25.5 |  |
+| theta_km_weight | theta_km_weight | 0.57 |  | 15.8 |  |
+| theta_q900_weight | theta_q900_weight | 0.84 |  | 21.1 |  |
+| theta_q321_weight | theta_q321_weight | 0.40 |  | 27.9 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). Primary extraction retained.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**The inebilizumab record was rejected because the daily unit of the elimination rate constant could not be standardized, and weight-covariate exponents were misassigned.**
+
+The elimination rate constant (0.00294) was recorded in /day, a unit for which no standard SI equivalent was applied, causing a dimensional consistency failure. Additionally, the weight-dependent exponents for clearance and the maximum metabolic rate were swapped, with 0.57 assigned to the latter instead of the former. The exponents for the intercompartmental clearance parameters were also incorrectly linked to the wrong structural parameters. Extracted — inebilizumab: CL 188 mL/day, V1 2.95e+03 mL, Q 363 mL/day, V2 2.57e+03 mL, Vmax 832 µg/day, kel 0.00294 /day, Km 5.89 µg/mL.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[km].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| CL (mL/day) | `Q22` · CL | 188 | mL/day | 2.176e-09 | m3/s | ml/d | 25 | exact (1) | Tab6:row1:col1, Tab6:row1:col2, Tab6:row1:col3, Tab6:row1:col5, Tab6:row1:col6 | 27 (None% RSE) |
+| Vc (mL) | `Q63` · V1 | 2950 | mL | 0.00295 | m3 | ml | 30 | exact (1) | Tab6:row3:col1, Tab6:row3:col2, Tab6:row3:col3, Tab6:row3:col5, Tab6:row3:col6 | 17 (None% RSE) |
+| weight_on_vca | `Q900` · weight_on_vca | 0.39 |  |  |  |  | 22.4 |  | Tab6:row4:col1, Tab6:row4:col2, Tab6:row4:col3 |  |
+| Q (mL/day) | `Q30` · Q | 363 | mL/day | 4.201e-09 | m3/s | ml/d | 6.0 | exact (1) | Tab6:row5:col1, Tab6:row5:col2, Tab6:row5:col3 |  |
+| Vp (mL) | `Q64` · V2 | 2570 | mL | 0.00257 | m3 | ml | 45 | exact (1) | Tab6:row7:col1, Tab6:row7:col2, Tab6:row7:col3, Tab6:row7:col5, Tab6:row7:col6 | 16 (None% RSE) |
+| Vmax (µg/day) | `Q66` · Vmax | 832 | µg/day |  |  | µg/d | 61 | special_case (0.95) | Tab6:row9:col1, Tab6:row9:col2, Tab6:row9:col3, Tab6:row9:col5, Tab6:row9:col6 | 30 (None% RSE) |
+| Kdec (/day) | `Q47` · kel | 0.00294 | /day | 3.403e-08 | 1/s | 1/d | 55.1 | llm (0.6) | Tab6:row11:col1, Tab6:row11:col2, Tab6:row11:col3 |  |
+| Km (µg/mL) | `Q1` · Km | 5.89 | µg/mL |  |  | µg/ml | 25.5 | exact (1) | Tab6:row12:col1, Tab6:row12:col2, Tab6:row12:col3 |  |
+| theta_km_weight | `Q900` · theta_km_weight | 0.57 |  |  |  |  | 15.8 |  | Tab6:row2:col1, Tab6:row2:col2, Tab6:row2:col3 |  |
+| theta_q900_weight | `Q900` · theta_q900_weight | 0.84 |  |  |  |  | 21.1 |  | Tab6:row6:col1, Tab6:row6:col2, Tab6:row6:col3 |  |
+| theta_q321_weight | `Q900` · theta_q321_weight | 0.40 |  |  |  |  | 27.9 |  | Tab6:row8:col1, Tab6:row8:col2, Tab6:row8:col3 |  |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- table section iiv: 'CL (mL/day)' routed out of structural estimates ('IIV (CV%)')
+- table section iiv: 'Vc (mL)' routed out of structural estimates ('IIV (CV%)')
+- table section iiv: 'Vp (mL)' routed out of structural estimates ('IIV (CV%)')
+- table section iiv: 'Vmax (µg/day)' routed out of structural estimates ('IIV (CV%)')
+- table section residual_error: 'Proportional error (%CV)' routed out of structural estimates ('Residual variability')
+- covariate level 'Weight on Vca' → Q900:weight_on_vca = 0.39 (linear_fractional on Q22)
+- unit_dimension_mismatch: 'Vmax (µg/day)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q66 ('Study CP200 on Vmax (%)', value '210') — already have one for this compound
+- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q321 has no base parameter row (kept as unattached equation-variable)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=inebilizumab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
+- molar mass: none found for 'inebilizumab' — its concentrations stay mass-only
+
+**Extraction notes:**
+- LLM selected parameter table(s) 6
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.655 (19/29 fields) | 10 |
+
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[km].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_weight]` |  | 0.57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_km_weight]` | 0.57 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q321_weight]` | 0.40 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q49_weight]` |  | 0.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_weight]` |  | 0.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_weight]` | 0.84 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_weight]` |  | 0.40 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[weight_on_vca]` | 0.39 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 7 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Tab6:row12:col1', 'Tab6:row12:col2', 'Tab6:row12:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab6:row1:col1', 'Tab6:row1:col2', 'Tab6:row1:col3', 'Tab6:row1:col5', 'Tab6:row1:col6'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab6:row5:col1', 'Tab6:row5:col2', 'Tab6:row5:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Tab6:row11:col1', 'Tab6:row11:col2', 'Tab6:row11:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab6:row3:col1', 'Tab6:row3:col2', 'Tab6:row3:col3', 'Tab6:row3:col5', 'Tab6:row3:col6'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab6:row7:col1', 'Tab6:row7:col2', 'Tab6:row7:col3', 'Tab6:row7:col5', 'Tab6:row7:col6'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | µg/day ([mass] / [time]) | ['Tab6:row9:col1', 'Tab6:row9:col2', 'Tab6:row9:col3', 'Tab6:row9:col5', 'Tab6:row9:col6'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 188 | ['Tab6:row1:col1', 'Tab6:row1:col2', 'Tab6:row1:col3', 'Tab6:row1:col5', 'Tab6:row1:col6'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00783 L/h | ['Tab6:row1:col1', 'Tab6:row1:col2', 'Tab6:row1:col3', 'Tab6:row1:col5', 'Tab6:row1:col6'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 2.95 L | ['Tab6:row3:col1', 'Tab6:row3:col2', 'Tab6:row3:col3', 'Tab6:row3:col5', 'Tab6:row3:col6'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.57 L | ['Tab6:row7:col1', 'Tab6:row7:col2', 'Tab6:row7:col3', 'Tab6:row7:col5', 'Tab6:row7:col6'] |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binebilizumab%5D%20Inebilizumab_Yan2022_reference&body=Drug%3A%20inebilizumab%0ARecord%3A%20Inebilizumab_Yan2022_reference%0APaper%3A%20Yan_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_inebilizumab/Inebilizumab_Yan2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:51 UTC</sub>

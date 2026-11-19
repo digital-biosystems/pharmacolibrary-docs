@@ -1,0 +1,98 @@
+{
+ "dose_source": "paper",
+ "model_id": "Vigabatrin_Zheng2024_vgb_racemate_s_vgb",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3500.0,
+  7000.0,
+  14000.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.040362
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.034421
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.027566
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.025120999999999997
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.021033000000000003
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.018632000000000003
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.17481800000000003
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.08325400000000001
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.125499
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.086382
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.06788
+   },
+   {
+    "source": "Zheng_2024:other_prose",
+    "value_si": 0.029098
+   },
+   {
+    "source": "Zheng_2024:discussion_prose",
+    "value_si": 0.5
+   },
+   {
+    "source": "Zheng_2024:discussion_prose",
+    "value_si": 6.0
+   },
+   {
+    "source": "Zheng_2024:discussion_prose",
+    "value_si": 1.0
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.4602777777777779e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002444,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0035,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9458.53947901221
+ },
+ "reference_peaks": {
+  "central.C": 0.009411703301670859
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

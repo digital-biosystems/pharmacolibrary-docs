@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Propofol_Bluss2019_bs_pk_model_mean_cv",
+ "molar_masses": {
+  "central.C": 0.17827500000000002
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  280.0
+ ],
+ "parameters": {
+  "Cl": 2.3e-05,
+  "F": 1.0,
+  "MM": 0.17827500000000002,
+  "VdPerKg": 4.928571428571429e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00028,
+  "k12": 0.005603864734299516,
+  "k21": 0.0002501078050884002,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662144
+ },
+ "reference_peaks": {
+  "central.C": 0.0002778558896488677
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

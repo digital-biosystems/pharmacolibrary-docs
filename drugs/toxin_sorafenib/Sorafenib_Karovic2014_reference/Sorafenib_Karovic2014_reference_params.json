@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 800 mg oral (L01EX02)",
+ "model_id": "Sorafenib_Karovic2014_reference",
+ "molar_masses": {
+  "central.C": 0.46482799999999996
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.055555555555555e-06,
+  "F": 1.0,
+  "MM": 0.46482799999999996,
+  "Tlag": 0.0,
+  "VdPerKg": 0.041428571428571426,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0008,
+  "ka": 0.00036111111111111115,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 17765.56384483764
+ },
+ "reference_peaks": {
+  "central.C": 0.0002711260151752368
+ },
+ "stop_time": 3628800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

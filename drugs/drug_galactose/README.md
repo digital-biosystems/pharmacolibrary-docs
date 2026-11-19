@@ -1,0 +1,107 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;galactose&quot;}]"></div>
+
+# galactose
+
+- **generic name:** galactose
+- **ATC codes:** `V04CE01`, `V08DA02`
+- **DrugBank:** [DB11735](https://go.drugbank.com/drugs/DB11735) · **PubChem:** [CID 3037556](https://pubchem.ncbi.nlm.nih.gov/compound/3037556)
+- **molar mass:** 180.1559 g/mol (C6H12O6) — DrugBank
+- **groups:** approved, investigational, withdrawn
+
+## About
+
+Galactose is a simple sugar used as a diagnostic agent to test liver function or as an ultrasound contrast medium. It is given by intravenous injection or intrauterine instillation, typically as a powder prepared into a solution.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q66589593](https://www.wikidata.org/wiki/Q66589593), [Wikipedia](https://en.wikipedia.org/wiki/Galactose?oldid=1378169616) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| galactose | parent | 180.156 | C6H12O6 | DrugBank | [3037556](https://pubchem.ncbi.nlm.nih.gov/compound/3037556) | Henderson_1982 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Henderson_1982_reference](drugs/drug_galactose/Galactose_Henderson1982_reference.md) | — | 1-compartment (no model) | 6 | Henderson JM et al., First-order clearance of plasma galacto…, Gastroenterology (1982) | — |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Boehm_2019_sensor_reaction_rate_enzyme_kinetic_response_of_amperometric_GOx_sensor_to_galactose](drugs/drug_galactose/pd_Boehm_2019_sensor_reaction_rate_enzyme_kinetic_response_of_a.md) | sensor reaction rate (enzyme kinetic response of amperometric GOx sensor to galactose) ← galactose · direct sigmoid Emax (Hill) effect | — | Boehm R et al., In Vitro Sugar Interference Testing Wit…, Journal of diabetes science… (2019) | [10.1177/1932296818791538](https://doi.org/10.1177/1932296818791538) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=galactose).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 21:53 | 23:26 | 0/1/0 | 1/0/0 | 0/0/0 | 426,919/22,895 | ollama / glm-5.3-flash | 8 | 0/8 | 8/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 105 matched, 20 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Henderson_1982.pdf` | Henderson JM et al., First-order clearance of plasma galacto…, Gastroenterology (1982) | popPK | 8 |  | [7117792](https://pubmed.ncbi.nlm.nih.gov/7117792) | Reports quantitative galactose clearance values (CL ml/min) with compartmental model fit directly in the abstract. |
+| `Hu_1995.pdf` | Hu OY et al., Determination of galactose in human blo…, Journal of pharmaceutical s… (1995) | popPK | 8 | [10.1002/jps.2600840223](https://doi.org/10.1002/jps.2600840223) | [7738808](https://pubmed.ncbi.nlm.nih.gov/7738808) | Human PK study of galactose with a nonlinear two-compartment Michaelis-Menten model, but no numeric parameter values are given in the evidence (likely in figures/tables not provided). |
+
+<sub>queue written 2026-10-07 21:32 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Andreasen_1976 | irrelevant | 0 | 0 | Galactose is only used as a liver-function diagnostic (galactose elimination capacity); the PK parameters reported are for diazepam, not galactose. |
+| popPK | Boehm_2019 | irrelevant | 0 | 0 | In vitro sensor interference study, not a PK study of galactose disposition; no CL/V/compartmental parameters. |
+| popPK | Filip_2026 | irrelevant | 0 | 0 | Galactose (α-GAL) is only an oligosaccharide epitope on antivenoms studied for adverse reactions; no PK disposition parameters for galactose are reported. |
+| popPK | Hu_1995 | relevant | 8 | 2 | Human PK study of galactose with a nonlinear two-compartment Michaelis-Menten model, but no numeric parameter values are given in the evidence (likely in figures/tables not provided). |
+| popPK | Huang_2024 | irrelevant | 0 | 0 | Galactose is only used as an oxidative-stress inducing agent in mice; no PK parameters for galactose are reported. |
+| popPK | Ibrahim_2024 | irrelevant | 0 | 0 | This is a structural characterization study of a fungal exopolysaccharide; galactose appears only as a monosaccharide component, with no PK parameters. |
+| popPK | Ichihara_1997 | irrelevant | 0 | 0 | This is a hepatic receptor imaging study with 99mTc-GSA radiotracer; galactose is not the subject drug and no galactose PK parameters are reported. |
+| popPK | Keiding_2018 | irrelevant | 3 | 1 | This is a review of PET liver-function imaging using the galactose analog tracer 18F-FDGal; no numeric PK disposition parameters for galactose are reported in the evidence. |
+| popPK | Luo_2019 | irrelevant | 0 | 0 | This is a structural/bioactivity study of a polysaccharide; galactose appears only as a sugar component, with no PK parameters. |
+| popPK | Muñoz-Castiblanco_2022 | irrelevant | 0 | 0 | This is a polysaccharide characterization/antioxidant study; galactose appears only as a monosaccharide component/reference standard, with no PK parameters. |
+| popPK | Nataraj_2022 | irrelevant | 0 | 0 | This is a structural/antioxidant characterization of a mushroom polysaccharide; galactose appears only as a monosaccharide component, with no PK parameters. |
+| popPK | Nguimbou_2014 | irrelevant | 0 | 0 | This is a food chemistry study on taro mucilage composition; galactose appears only as a sugar constituent, with no pharmacokinetic parameters. |
+| popPK | Perfetti_2024 | irrelevant | 1 | 1 | The PK model and parameters (CL, V, half-life) describe govorestat, not galactose; galactose/galactitol are only PD biomarkers, and no galactose disposition values are given. |
+| popPK | Sabutski_2020 | irrelevant | 0 | 0 | This is a synthetic chemistry paper on naphthoquinone-thioglycoside conjugates; galactose is only a sugar building block, with no PK parameters reported. |
+| popPK | Ueda_1975 | irrelevant | 0 | 0 | This is a chemoreception/taxis study in slime mold, not a pharmacokinetic study of galactose; no PK parameters are reported. |
+| popPK | Uesugi_1999 | irrelevant | 4 | 2 | Galactose is used only as a diagnostic probe for liver function in perfused pig livers; Vmax values are not given numerically in the evidence. |
+| popPK | Wang_2023 | irrelevant | 0 | 0 | This is a polysaccharide extraction/structure/bioactivity study; galactose appears only as a monosaccharide component of a polysaccharide, with no PK parameters. |
+| popPK | Winne_1987 | irrelevant | 3 | 2 | Galactose is only one of many probe substrates in an intestinal absorption/diffusion-resistance study in rats; no galactose disposition PK parameters (CL, V, half-life) are reported numerically. |
+| popPK | Winterdahl_2011 | irrelevant | 2 | 2 | This is a hepatic blood-perfusion PET study in pigs using tracers (18F-FDG, 11C-MG, 18F-FDGal); galactose itself is not the subject drug, and the numeric K1/Q values are in Table 1/Fig. 1 which are not included in the evidence. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgalactose%5D&body=Drug%3A%20galactose%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_galactose/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 21:32 UTC</sub>

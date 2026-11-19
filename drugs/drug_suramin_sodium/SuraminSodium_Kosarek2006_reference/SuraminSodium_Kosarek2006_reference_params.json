@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 270 mg parenteral (P01CX02)",
+ "model_id": "SuraminSodium_Kosarek2006_reference",
+ "molar_masses": {
+  "central.C": 1.29728
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.6166666666666666e-08,
+  "F": 1.0,
+  "MM": 1.29728,
+  "VdPerKg": 0.00034,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00027,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662105
+ },
+ "reference_peaks": {
+  "central.C": 0.011339367613019066
+ },
+ "stop_time": 2419200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

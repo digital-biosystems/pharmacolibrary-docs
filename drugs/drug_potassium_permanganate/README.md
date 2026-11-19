@@ -1,0 +1,117 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;potassium permanganate&quot;}]"></div>
+
+# potassium permanganate
+
+- **generic name:** potassium permanganate
+- **ATC codes:** `D08AX06`, `V03AB18`
+- **DrugBank:** [DB13831](https://go.drugbank.com/drugs/DB13831) · **PubChem:** none
+- **molar mass:** 158.032 g/mol (KMnO4) — DrugBank
+- **groups:** investigational
+
+## About
+
+Potassium permanganate is an antiseptic and disinfectant used for dermatitis, wound cleaning, and general disinfection. It is given orally in tablet form or topically as a powder or solution.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q190865](https://www.wikidata.org/wiki/Q190865), [Wikipedia](https://en.wikipedia.org/wiki/Potassium_permanganate?oldid=1384688286) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 22:40 | 1:07 | 0/0/0 | 0/0/0 | 0/0/0 | 98,217/1,269 | einfracz / qwen3.8-27b | 3 | 3/9 | 1/2 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 36 matched, 34 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Ding_2018.pdf` | Ding T et al., Biodegradation of triclosan in diatom N…, Journal of hazardous materi… (2018) | pd | 5 | [10.1016/j.jhazmat.2017.09.033](https://doi.org/10.1016/j.jhazmat.2017.09.033) | [29035714](https://www.ncbi.nlm.nih.gov/pubmed/29035714) | metadata signals extractable PD data (EC50) |
+| `Al-Saleh_2002.pdf` | Al-Saleh SS, Biochemical characterization of the sol…, Journal of natural toxins (2002) | pd | 4 |  | [12503880](https://www.ncbi.nlm.nih.gov/pubmed/12503880) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-07 22:40 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abuladze_2009 | irrelevant | 0 | 0 | The paper is a thermal analysis study of bacterial cells using differential scanning calorimetry and does not report any pharmacokinetic parameters for potassium permanganate. |
+| popPK | Al-Saleh_2002 | irrelevant | 0 | 0 | The paper is a biochemical study on snake venom alkaline phosphatase where permanganate is used only as an inhibitor, not as a subject drug for pharmacokinetic analysis. |
+| PD | Al-Saleh_2002 | not_relevant | 0 | 0 | The paper reports biochemical enzyme kinetics (Km, Vmax, IC50) for alkaline phosphatase inhibition by permanganate, which is an in vitro enzymatic assay, not a pharmacodynamic (exposure-response) relationship for the drug in a biological system. |
+| popPK | Alhamhoom_2026 | irrelevant | 0 | 0 | The study focuses on the formulation and characterization of a topical cream, using potassium permanganate only as a reagent for antioxidant assays, not as a subject drug for pharmacokinetic evaluation. |
+| PD | Alhamhoom_2026 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (DPPH/Permanganate) and ex vivo permeation, but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug in a biological system with numeric PD parameters (e.g., Emax, EC50 for effect). |
+| popPK | Aliyari_2025 | irrelevant | 0 | 0 | The paper studies the antiviral activity of hydrogen peroxide against SARS-CoV-2 and does not involve potassium permanganate or pharmacokinetic parameters. |
+| PD | Aliyari_2025 | not_relevant | 0 | 0 | The paper studies hydrogen peroxide, not potassium permanganate. |
+| popPK | Asser_2019 | irrelevant | 0 | 0 | The study is a toxicological dose-response analysis in mice focusing on behavioral effects and lethal doses, not a pharmacokinetic study reporting quantitative disposition parameters for potassium permanganate. |
+| popPK | Berner_2020 | irrelevant | 0 | 0 | The paper is an in vitro study on antiseptics (sodium hypochlorite, hydrogen peroxide, chlorhexidine, benzalkonium chloride) and does not involve potassium permanganate or pharmacokinetic parameters. |
+| PD | Berner_2020 | not_relevant | 0 | 0 | The paper investigates sodium hypochlorite, hydrogen peroxide, chlorhexidine, and benzalkonium chloride, but does not study potassium permanganate. |
+| popPK | Chase_2012 | irrelevant | 0 | 0 | no_text gate: only 31 chars of text extracted (&lt; 400) |
+| PD | Chase_2012 | not_relevant | 0 | 0 | The provided text is a conference session header and file link, containing no scientific content, data, or pharmacodynamic analysis for potassium permanganate. |
+| popPK | Chen_2021 | irrelevant | 0 | 0 | The paper is an ecological study on water quality in agricultural ponds, where "potassium permanganate" is only mentioned as an index for chemical oxygen demand (CODMn), not as a pharmacokinetic subject. |
+| popPK | Chhetri_2020 | irrelevant | 0 | 0 | The paper studies the ecotoxicity of peracetic acid, where potassium permanganate is only used as a reagent to remove hydrogen peroxide, and no pharmacokinetic parameters for potassium permanganate are reported. |
+| PD | Chhetri_2020 | not_relevant | 0 | 0 | The paper evaluates the ecotoxicity of peracetic acid (PAA), not potassium permanganate, and does not report any pharmacodynamic or exposure-response relationship for the target drug. |
+| popPK | De_1991 | irrelevant | 0 | 0 | The paper is a genotoxicity study (Ames test and DNA damage) and does not report any pharmacokinetic parameters for potassium permanganate. |
+| PD | De_1991 | not_relevant | 3 | 2 | The paper reports qualitative dose-response relationships and specific mutagenic potencies (revertants/nmole) for manganese salts, but lacks a formal pharmacodynamic model (e.g., Emax, EC50) or a continuous concentration-effect curve for potassium permanganate itself. |
+| popPK | Deady_1999 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on topoisomerase inhibitors and does not report pharmacokinetic parameters for potassium permanganate. |
+| PD | Deady_1999 | not_relevant | 0 | 0 | The paper reports IC50 values for novel topoisomerase inhibitors, not for potassium permanganate, which is only mentioned as a reagent in the synthesis. |
+| popPK | Ding_2018 | irrelevant | 0 | 0 | This study is an ecotoxicology investigation of triclosan in diatoms where potassium permanganate is only tested as a co-treatment/modifier, not as the subject drug for pharmacokinetic analysis. |
+| PD | Ding_2018 | not_relevant | 0 | 0 | The paper reports toxicity (EC50) of triclosan and qualitative effects of potassium permanganate on that toxicity, but does not provide a concentration-effect or dose-response relationship for potassium permanganate itself with numeric PD parameters. |
+| popPK | Dorey_1995 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on beta-carbolines where potassium permanganate is used only as a reagent in synthesis, not as a subject drug for pharmacokinetic analysis. |
+| PD | Dorey_1995 | not_relevant | 0 | 0 | The paper is a medicinal chemistry study on beta-carboline derivatives; potassium permanganate is used only as a reagent in the synthesis, and no pharmacodynamic or exposure-response data for it are reported. |
+| popPK | Jafarisani_2024 | irrelevant | 0 | 0 | The study focuses on cadmium nanoclusters and crocin, with potassium permanganate serving only as a comparator for genotoxicity, and no PK parameters for potassium permanganate are reported. |
+| PD | Jafarisani_2024 | not_relevant | 0 | 0 | The paper focuses on cadmium nanoclusters and crocin; potassium permanganate is only mentioned as a positive control for genotoxicity without any exposure-response or PD analysis. |
+| popPK | Joun_2025 | irrelevant | 0 | 0 | The paper investigates the mechanism of drug tolerance in glioblastoma involving PRDM9 and contains no pharmacokinetic data or parameters for potassium permanganate. |
+| PD | Joun_2025 | not_relevant | 0 | 0 | The paper investigates the mechanism of drug tolerance in glioblastoma (PRDM9) and mentions potassium permanganate only as a TLC stain in the chemistry methods, containing no pharmacodynamic or exposure-response data for it. |
+| popPK | Khan_2023 | irrelevant | 0 | 0 | The paper is a study on the efficacy of fat taste receptor agonists for obesity in mice and does not involve the drug potassium_permanganate. |
+| PD | Khan_2023 | not_relevant | 0 | 0 | The paper studies fat taste receptor agonists (NKS-3 and NKS-5) and does not mention or analyze potassium permanganate. |
+| popPK | Lai_2022 | irrelevant | 0 | 0 | The paper is an environmental engineering study on water pollution modeling where potassium permanganate is used as a chemical indicator for COD (Chemical Oxygen Demand), not as a subject drug for pharmacokinetic analysis. |
+| PD | Lai_2022 | not_relevant | 0 | 0 | The paper uses "potassium permanganate" as a chemical oxidant to measure Chemical Oxygen Demand (CODMn) in environmental water quality modeling, not as a pharmacological drug, and reports no pharmacodynamic or dose-response parameters. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a meta-analysis of microplastics' effects on soil organic carbon and does not involve the pharmacokinetics of potassium permanganate. |
+| popPK | Moura_2025 | irrelevant | 0 | 0 | The study focuses on the synthesis and anticancer mechanism of carnosic acid derivatives, not the pharmacokinetics of potassium permanganate. |
+| PD | Moura_2025 | not_relevant | 0 | 0 | The paper studies carnosic acid derivatives, not potassium permanganate. |
+| popPK | Paixão_2008 | irrelevant | 0 | 0 | The paper is an ecotoxicology study using potassium permanganate as a reference toxicant in an algal bioassay, not a pharmacokinetic study. |
+| PD | Paixão_2008 | not_relevant | 3 | 0 | The paper reports an EC50 value for potassium permanganate as part of a method validation study, but the specific numeric value is not provided in the text, and it is an ecotoxicity endpoint rather than a pharmacodynamic model. |
+| popPK | Poddar_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of DI-87, a dCK inhibitor, and does not report data for potassium permanganate. |
+| PD | Poddar_2020 | not_relevant | 0 | 0 | The paper reports pharmacology for DI-87, not potassium permanganate. |
+| popPK | Rai_2026 | irrelevant | 0 | 0 | The study investigates NIRF theranostic probes for Alzheimer's disease in mice and humans, not the pharmacokinetics of potassium permanganate. |
+| popPK | Saeed_2026 | irrelevant | 0 | 0 | The paper is a phytochemical and in-vitro study of Nicotiana glauca where potassium permanganate is used only as a reagent for an antioxidant assay, not as a subject drug for pharmacokinetic analysis. |
+| PD | Saeed_2026 | not_relevant | 0 | 0 | The paper studies the antioxidant and anticancer properties of a plant extract, using potassium permanganate only as a reagent in a chemical assay, not as a drug subject to pharmacodynamic modeling. |
+| popPK | Sloan_2015 | irrelevant | 0 | 0 | The study models bacillary elimination rates for Mycobacterium tuberculosis and does not involve potassium_permanganate pharmacokinetics. |
+| PD | Sloan_2015 | not_relevant | 0 | 0 | The paper models bacterial elimination rates (BER) and lipid body counts in tuberculosis patients, not the pharmacodynamic exposure-response relationship of potassium permanganate. |
+| popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review on nanocarrier delivery of phytochemicals for wound healing and does not report any pharmacokinetic data for potassium permanganate. |
+| PD | Wahyuningsih_2026 | not_relevant | 0 | 0 | The paper is a review on nanocarrier delivery of phytochemicals for diabetic wound healing and does not report any pharmacodynamic or exposure-response data for potassium permanganate. |
+| popPK | Wei_2011 | irrelevant | 0 | 0 | The paper describes an immunoassay for dibutyl phthalate (DBP) and uses potassium permanganate only as a chemical reagent for surface modification, not as a subject drug for pharmacokinetic analysis. |
+| PD | Wei_2011 | not_relevant | 0 | 0 | The paper describes an immunoassay for dibutyl phthalate; potassium permanganate is used only as a chemical reagent for surface oxidation, not as a drug with a pharmacodynamic effect. |
+| popPK | Wei_2021 | irrelevant | 0 | 0 | The paper is a review of acyclovir, a completely different drug from potassium_permanganate. |
+| PD | Wei_2021 | not_relevant | 0 | 0 | The paper is a review of acyclovir synthesis and detection methods, not potassium permanganate, and contains no pharmacodynamic or exposure-response data. |
+| popPK | Xiong_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ibuprofen using potassium permanganate only as a reagent for the detection method, not as the subject drug. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper is a water-quality study of Nansi Lake and contains no pharmacokinetic data or parameters for potassium permanganate. |
+| popPK | Zhou_2024 | irrelevant | 0 | 0 | The paper is about the pharmacology of CDDO-Me (an EGFR inhibitor) for lung cancer, and potassium permanganate is only mentioned as a compound excluded from a dataset preprocessing step. |
+| popPK | Zufferey_2025 | irrelevant | 0 | 0 | The paper is a study protocol for tranexamic acid, not potassium_permanganate, and reports no PK parameters for the subject drug. |
+| PD | Zufferey_2025 | not_relevant | 3 | 2 | The paper is a study protocol for a future trial and only cites assumed parameters (Emax 40%, ED50 400 mg) from a prior meta-analysis for sample size calculation, rather than reporting new PD data or a fitted model from the study itself. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_permanganate%5D&body=Drug%3A%20potassium_permanganate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_permanganate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

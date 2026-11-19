@@ -1,0 +1,159 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Etidronic acid&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EtidronicAcid_Lin1997_reference&quot;,&quot;label&quot;:&quot;Lin_1997_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_etidronic_acid/EtidronicAcid_Lin1997_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# Etidronic acid
+
+- **generic name:** Etidronic acid
+- **T3DB:** [T3D3483](http://www.t3db.ca/toxins/T3D3483) · **DrugBank:** [DB01077](https://go.drugbank.com/drugs/DB01077) · **PubChem:** [CID 3305](https://pubchem.ncbi.nlm.nih.gov/compound/3305)
+- **groups:** approved, investigational
+
+## About
+
+Etidronic acid is only found in individuals that have used or taken this drug. It is a diphosphonate which affects calcium metabolism. It inhibits ectopic calcification and slows down bone resorption and bone turnover. [PubChem] Bisphosphonates, when attached to bone tissue, are absorbed by osteoclasts, the bone cells that breaks down bone tissue. …
+
+- **Category:** Drug, Household Toxin, Food Toxin, Synthetic Toxin
+- **Route of exposure:** the amount of drug absorbed after an oral dose is approximately 3%.
+- **Sources and uses:** For the treatment of symptomatic Paget's disease of bone and in the prevention and treatment of heterotopic ossification following total hip replacement or due to spinal cord injury.
+- **Mechanism of toxicity:** Bisphosphonates, when attached to bone tissue, are absorbed by osteoclasts, the bone cells that breaks down bone tissue. Although the mechanism of action of non-nitrogenous bisphosphonates has not been fully elucidated, available data suggest that they bind strongly to hydroxyapatite crystals in the bone matrix, preferentially at the sites of increased bone turnover and inhibit the formation and dissolution of the crystals. …
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D3483">T3DB T3D3483</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 7414-83-7 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4907">ChEBI 4907</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| etidronic_acid | metabolite | 206.027 | C2H8O7P2 | PubChem | [3305](https://pubchem.ncbi.nlm.nih.gov/compound/3305) | Hughes_1977, Kasting_1992, Lin_1997, Luurila_1999, Molloi_1989, Schümichen_1979 |
+
+## Start here
+
+> **Lin_1997_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> rats (biodistribution) and New Zealand rabbits with induced tibial bone lesions (L/N ratio). [Run it in the simulator](drugs/toxin_etidronic_acid/EtidronicAcid_Lin1997_reference.md?tab=Simulation) · [record](drugs/toxin_etidronic_acid/EtidronicAcid_Lin1997_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Lin_1997_reference](drugs/toxin_etidronic_acid/EtidronicAcid_Lin1997_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Lin WY et al., Rhenium-188 hydroxyethylidene diphospho…, European journal of nuclear… (1997) | [10.1007/BF00841394](https://doi.org/10.1007/BF00841394) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Citrin_1975_reference](drugs/toxin_etidronic_acid/EtidronicAcid_Citrin1975_reference.md) | — | 1-compartment (no model) | 0 | Citrin DL et al., Dynamic studies with 99mTc-HEDP in norm…, Journal of nuclear medicine… (1975) | — |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Hughes_1977_reference](drugs/toxin_etidronic_acid/EtidronicAcid_Hughes1977_reference.md) | — | 1-compartment (no model) | 2 | Hughes S, The distribution of 99mTc-EHDP in the t…, Annals of the Royal College… (1977) | — |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Kasting_1992_reference](drugs/toxin_etidronic_acid/EtidronicAcid_Kasting1992_reference.md) | — | 1-compartment (no model) | 2 | Kasting GB et al., Retention of etidronate in human, dog,…, Journal of bone and mineral… (1992) | [10.1002/jbmr.5650070507](https://doi.org/10.1002/jbmr.5650070507) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Luurila_1999_reference](drugs/toxin_etidronic_acid/EtidronicAcid_Luurila1999_reference.md) | — | 1-compartment (no model) | 0 | Luurila S et al., Pharmacokinetics of bisphosphonates in…, Pharmacology & toxicology (1999) | [10.1111/j.1600-0773.1999.tb02106.x](https://doi.org/10.1111/j.1600-0773.1999.tb02106.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Molloi_1989_reference](drugs/toxin_etidronic_acid/EtidronicAcid_Molloi1989_reference.md) | — | retention function (no model) | 3 | Molloi S et al., Whole body and regional retention of Tc…, Calcified tissue internatio… (1989) | [10.1007/BF02556311](https://doi.org/10.1007/BF02556311) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Schümichen_1979_reference](drugs/toxin_etidronic_acid/EtidronicAcid_Schmichen1979_reference.md) | — | 1-compartment (no model) | 0 | Schümichen C et al., The short-term fixation of radiopharmac…, European journal of nuclear… (1979) | [10.1007/BF00300839](https://doi.org/10.1007/BF00300839) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [van_1997_reference](drugs/toxin_etidronic_acid/EtidronicAcid_van1997_reference.md) | — | 1-compartment (no model) | 0 | van Aswegen A et al., Radiation dose estimates of 186Re-hydro…, Nuclear medicine communicat… (1997) | [10.1097/00006231-199706000-00015](https://doi.org/10.1097/00006231-199706000-00015) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=etidronic_acid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ATP6V1A (inhibitor), Hydroxylapatite (target), PTPRS (inhibitor), SLC25A4 (inhibitor), SLC25A5 (inhibitor), SLC25A6 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-15 08:58 | 12:27 | 1/7/0 | 0/0/0 | 0/0/0 | 474,309/78,514 | ollama / glm-5.3-flash | 10 | 2/8 | 10/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 61 matched, 61 returned
+- **screened:** 12  ·  **relevant:** 12
+- **records:** 8  ·  extracted 1  ·  needs review 0  ·  rejected 7  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_16 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Luurila_1999.pdf` | Luurila S et al., Pharmacokinetics of bisphosphonates in…, Pharmacology & toxicology (1999) | popPK | 9 | [10.1111/j.1600-0773.1999.tb02106.x](https://doi.org/10.1111/j.1600-0773.1999.tb02106.x) | [9974186](https://pubmed.ncbi.nlm.nih.gov/9974186) | Reports quantitative etidronate PK (plasma clearance, AUC, %dose remaining, tissue:plasma ratios) measured in rabbits, with numeric values present in the abstract itself. |
+| `Hughes_1977.pdf` | Hughes S, The distribution of 99mTc-EHDP in the t…, Annals of the Royal College… (1977) | popPK | 8 |  | [879636](https://pubmed.ncbi.nlm.nih.gov/879636) | Quantitative kinetic parameters for 99mTc-EHDP (etidronate) in dog are given in the abstract, including renal clearance of 24 ml/min and capillary permeability ratios; no supplementary-only data apparent. |
+| `Hughes_1977_2.pdf` | Hughes SP et al., Bone extraction and blood clearance of…, The American journal of phy… (1977) | popPK | 8 | [10.1152/ajpheart.1977.232.3.H341](https://doi.org/10.1152/ajpheart.1977.232.3.H341) | [402827](https://pubmed.ncbi.nlm.nih.gov/402827) | Quantitative extraction, permeability, blood clearance and fractional urinary excretion values for EHDP are reported directly in the abstract. |
+| `Kasting_1992.pdf` | Kasting GB et al., Retention of etidronate in human, dog,…, Journal of bone and mineral… (1992) | popPK | 8 | [10.1002/jbmr.5650070507](https://doi.org/10.1002/jbmr.5650070507) | [1615760](https://pubmed.ncbi.nlm.nih.gov/1615760) | Whole-body retention power-law decay of radiolabeled etidronate with exponents reported directly in the abstract across three species; values present though full curves may be in figures. |
+| `Lin_1997.pdf` | Lin WY et al., Rhenium-188 hydroxyethylidene diphospho…, European journal of nuclear… (1997) | popPK | 8 | [10.1007/BF00841394](https://doi.org/10.1007/BF00841394) | [9169563](https://pubmed.ncbi.nlm.nih.gov/9169563) | Quantitative biodistribution and biological half-lives of 188Re-labeled HEDP (etidronic acid as the carrier) in bone (60.86 h), muscle (2.99 h) and blood (6.21 h) are given directly in the text. |
+| `Molloi_1989.pdf` | Molloi S et al., Whole body and regional retention of Tc…, Calcified tissue internatio… (1989) | popPK | 8 | [10.1007/BF02556311](https://doi.org/10.1007/BF02556311) | [2496903](https://pubmed.ncbi.nlm.nih.gov/2496903) | Whole-body retention (17.7% ± 2.2 at 24h) and biexponential clearance half-times (~1h and 22h) for HEDP (etidronic acid) are given numerically in the abstract, measured in normal male volunteers. |
+| `Citrin_1975.pdf` | Citrin DL et al., Dynamic studies with 99mTc-HEDP in norm…, Journal of nuclear medicine… (1975) | popPK | 7 |  | [809552](https://pubmed.ncbi.nlm.nih.gov/809552) | HEDP (etidronate) blood clearance, urinary excretion and bone uptake kinetics are reported in human subjects, but only summary values (biexponential clearance from 15 min, ~70% urinary excretion in 6 h) appear; detailed rate constants are not shown in the evidence. |
+| `Hughes_1975.pdf` | Hughes SP et al., Phosphate compounds in bone scanning, The Journal of bone and joi… (1975) | popPK | 7 |  | [1141288](https://pubmed.ncbi.nlm.nih.gov/1141288) | EHDP (etidronate) blood clearance and tissue retention studied in rabbits, but no numeric kinetic values appear in the provided evidence (all data in paper/figures not given). |
+| `Ketring_1987.pdf` | Ketring AR, 153Sm-EDTMP and 186Re-HEDP as bone ther…, International journal of ra… (1987) | popPK | 7 | [10.1016/0883-2897(87)90046-8](https://doi.org/10.1016/0883-2897(87)90046-8) | [3117736](https://pubmed.ncbi.nlm.nih.gov/3117736) | 186Re-HEDP is the rhenium radiolabeled form of etidronic acid and the paper reports its biokinetics/whole-body skeleton retention in humans and animals, but the excerpt contains no numeric values—they appear to live in figures or later patient/animal data not provided. |
+| `Buffa_2003.pdf` | Buffa FM et al., A model-based method for the prediction…, European journal of nuclear… (2003) | popPK | 6 | [10.1007/s00259-003-1197-y](https://doi.org/10.1007/s00259-003-1197-y) | [12761596](https://pubmed.ncbi.nlm.nih.gov/12761596) | The paper models whole-body retention/cumulated activity pharmacokinetics of 186Re-HEDP (radiolabeled etidronic acid) plus 51Cr-EDTA clearance in patients, but the fitted kinetic parameter values are not shown in the evidence (only correlations, P-values and an average 15% prediction difference). |
+| `Creutzig_1975.pdf` | Creutzig H, [A comparison of osteotropic radiopharm…, RoFo : Fortschritte auf dem… (1975) | popPK | 6 | [10.1055/s-0029-1230204](https://doi.org/10.1055/s-0029-1230204) | [129388](https://pubmed.ncbi.nlm.nih.gov/129388) | EHDP (etidronic acid) plasma/renal/extrarenal clearance is the study subject, but the abstract only states relative comparisons with no numeric values presented. |
+| `Schümichen_1979.pdf` | Schümichen C et al., The short-term fixation of radiopharmac…, European journal of nuclear… (1979) | popPK | 6 | [10.1007/BF00300839](https://doi.org/10.1007/BF00300839) | [520356](https://pubmed.ncbi.nlm.nih.gov/520356) | Reports quantitative bone clearance and extraction efficiency (~40%) for 113Sn-EHDP (etidronate) in rats, though values are sparse and partly in figures; substance is a radiolabeled etidronate complex, a comparator among several radiopharmaceuticals rather than the primary subject. |
+| `van_1997.pdf` | van Aswegen A et al., Radiation dose estimates of 186Re-hydro…, Nuclear medicine communicat… (1997) | popPK | 6 | [10.1097/00006231-199706000-00015](https://doi.org/10.1097/00006231-199706000-00015) | [9259533](https://pubmed.ncbi.nlm.nih.gov/9259533) | Biodistribution/compartmental residence times and absorbed doses of 186Re-HEDP (etidronate) are reported, though substance is a radiolabelled form and key residence-time values may rely on model output rather than full tables. |
+| `De_1997.pdf` | De Klerk JM et al., Treatment of metastatic bone pain using…, Anticancer research (1997) | popPK | 5 |  | [9179233](https://pubmed.ncbi.nlm.nih.gov/9179233) | The abstract mentions pharmacokinetics and dosimetry of 186Re-HEDP (etidronate complex) in cancer patients, but no numeric kinetic parameters are present in the evidence; values likely live in tables/figures not provided. |
+| `Graham_1999.pdf` | Graham MC et al., Rhenium-186-labeled hydroxyethylidene d…, Clinical cancer research :… (1999) | popPK | 5 |  | [10389913](https://pubmed.ncbi.nlm.nih.gov/10389913) | Radiolabeled HEDP (etidronate) whole-body kinetics, clearance and urinary excretion were measured in patients, but the abstract gives no numeric kinetic values (likely in figures/tables not provided). |
+| `Subramanian_1975.pdf` | Subramanian G et al., Technetium-99m-methylene diphosphonate-…, Journal of nuclear medicine… (1975) | popPK | 5 |  | [170385](https://pubmed.ncbi.nlm.nih.gov/170385) | Total-body retention, fecal and urinary excretion, and blood clearance of the 99mTc-EHDP (etidronate) complex are reported in dogs, rodents and humans, but only as descriptive comparisons with no numeric parameter values in the provided evidence. |
+
+<sub>queue written 2026-11-15 08:51 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bevan_1980 | irrelevant | 2 | 1 | The paper is about Tc-99m HMDP with etidronic acid (HEDP) only as a comparator, and no numeric kinetic values are given in the evidence. |
+| popPK | Buffa_2003 | relevant | 6 | 2 | The paper models whole-body retention/cumulated activity pharmacokinetics of 186Re-HEDP (radiolabeled etidronic acid) plus 51Cr-EDTA clearance in patients, but the fitted kinetic parameter values are not shown in the evidence (only correlations, P-values and an average 15% prediction difference). |
+| popPK | Creutzig_1975 | relevant | 6 | 2 | EHDP (etidronic acid) plasma/renal/extrarenal clearance is the study subject, but the abstract only states relative comparisons with no numeric values presented. |
+| popPK | De_1997 | irrelevant | 5 | 1 | The abstract mentions pharmacokinetics and dosimetry of 186Re-HEDP (etidronate complex) in cancer patients, but no numeric kinetic parameters are present in the evidence; values likely live in tables/figures not provided. |
+| popPK | Denis-Bacelar_2018 | relevant | 4 | 2 | Human 186Re-HEDP (rhenium-labeled etidronate) biodistribution/retention data underlie the analysis, but the actual biological half-life values are only referenced from literature/other studies, not given numerically here. |
+| popPK | Erfani_2017 | irrelevant | 1 | 3 | The subject substance is rhenium-188-pamidronate (PMA) in mice; etidronic acid (HEDP) appears only as a comparator/mention, and its own kinetic parameters are not reported. |
+| popPK | Fleisch_1993 | irrelevant | 2 | 1 | A narrative review describing bisphosphonate disposition qualitatively (20–60% bone deposition, long bone half-life) without etidronate-specific numeric kinetic parameters, values not attributable to a species or given precisely. |
+| popPK | Gertz_1993 | irrelevant | 0 | 0 | The paper's kinetic parameters all pertain to alendronate; etidronic acid appears only as a potency comparator with no kinetic data of its own. |
+| popPK | Goddu_2000 | irrelevant | 0 | 0 | The subject substances are 32P/33P-orthophosphate; etidronic acid (HEDP) appears only as a mentioned radiopharmaceutical comparator, with no kinetic parameters for it and no numeric HEDP values in the evidence. |
+| popPK | Graham_1999 | relevant | 5 | 2 | Radiolabeled HEDP (etidronate) whole-body kinetics, clearance and urinary excretion were measured in patients, but the abstract gives no numeric kinetic values (likely in figures/tables not provided). |
+| popPK | Hasan_2014 | irrelevant | 0 | 0 | Etidronic acid (etidronate) appears only as an internal standard; all kinetic parameters belong to clodronate. |
+| popPK | Henne_1975 | relevant | 4 | 2 | Human kinetic data (blood clearance, renal excretion) for 99mTc-EHDP are described, but only qualitatively — no numeric parameter values appear in the evidence. |
+| popPK | Hildebrand_2021 | irrelevant | 0 | 0 | A narrative review discussing clinical outcomes with no kinetic parameters for etidronate and no numeric toxicokinetic values present. |
+| popPK | Hughes_1975 | relevant | 7 | 2 | EHDP (etidronate) blood clearance and tissue retention studied in rabbits, but no numeric kinetic values appear in the provided evidence (all data in paper/figures not given). |
+| popPK | Hughes_1992 | irrelevant | 0 | 0 | The paper concerns gallium nitrate; etidronic acid does not appear as the subject substance and no kinetic parameters for it are reported. |
+| popPK | Hugi_1979 | irrelevant | 0 | 0 | EHDP (etidronic acid) appears only as an experimental agent suppressing 1,25(OH)2D3 production, with no kinetic parameters for it reported. |
+| popPK | Ketring_1987 | relevant | 7 | 2 | 186Re-HEDP is the rhenium radiolabeled form of etidronic acid and the paper reports its biokinetics/whole-body skeleton retention in humans and animals, but the excerpt contains no numeric values—they appear to live in figures or later patient/animal data not provided. |
+| popPK | Kothari_2001 | relevant | 4 | 6 | Etidronic acid (HEDP) appears only as a comparator; quantitative biodistribution/retention values (e.g., 1.8%/g femur at 3 h) belong to 186Re-CTMP, with HEDP kinetics not reported. |
+| popPK | Lavelle_1980 | relevant | 4 | 3 | Tracer amounts of 99mTc-HEDP (etidronate) measured renal localization/retention time course in rabbits, but reported as fold-changes and scintigraphic quantitation rather than kinetic parameters, with full values likely in figures/tables not provided. |
+| popPK | Li_2024 | irrelevant | 2 | 2 | Etidronic acid (HEDP) appears only as a chelating agent for uranium decorporation; the kinetic parameters (tissue uranium clearance rates) belong to uranium, not etidronic acid itself, and some values live in supplementary Table S1/figures. |
+| popPK | Lin_1992 | irrelevant | 2 | 2 | The subject substance is alendronate in rats; etidronate appears only as a comparator/inhibitor without numeric kinetic parameters of its own. |
+| popPK | Lobaz_2019 | irrelevant | 1 | 1 | 99mTc-HEDP (etidronic acid) appears only as an in situ labeling radiotracer for hydroxyapatite nanoparticles; no kinetic parameter of etidronic acid itself is reported. |
+| popPK | Ogawa_2005 | irrelevant | 2 | 2 | Etidronic acid (HEDP) appears only as a comparator radiopharmaceutical; the kinetic/biodistribution parameters of interest belong to the novel 186Re-MAG3-HBP compound, and exact numeric values are not given in the text. |
+| popPK | Ogawa_2012 | irrelevant | 4 | 2 | HEDP appears only as a comparator to the novel 186Re-MAG3-HBP radiopharmaceutical; qualitative blood clearance comparisons cited, with quantitative biodistribution values in figures not provided. |
+| popPK | Oh_2002 | irrelevant | 2 | 2 | Etidronic acid (HEDP) appears only as a comparator; the kinetic/biodistribution parameters reported are for 188Re-EDTMP, and the actual numeric biodistribution values for HEDP are not present in the evidence. |
+| popPK | Pinkerton_1982 | irrelevant | 3 | 1 | Qualitative biodistribution description of 99mTc-HEDP complexes with no numeric kinetic parameters in the evidence; species not stated. |
+| popPK | Price_2003 | irrelevant | 3 | 3 | The paper characterizes a serum fetuin-mineral complex formed after etidronate injection in rats; etidronate is an inducer/co-exposure, not the kinetic subject, and only FMC amounts and clearance timing (not etidronate kinetic parameters) appear in the text. |
+| popPK | Quirijnen_1996 | irrelevant | 1 | 0 | Clinical efficacy/pain study of rhenium-186-etidronate in patients; etidronic acid is only a radiolabel carrier and no kinetic parameters are reported. |
+| popPK | Recker_1975 | irrelevant | 1 | 0 | This is a phosphorus renal-handling interaction study; EHDP is the treatment but no kinetic parameters (half-life, clearance, etc.) or numeric TK values for etidronic acid are reported. |
+| popPK | Stoll_1980 | irrelevant | 1 | 0 | EHDP is used as a treatment to study phosphate transport in rats; no kinetic parameters (half-life, clearance, retention) for etidronic acid itself are reported. |
+| popPK | Subramanian_1975 | relevant | 5 | 2 | Total-body retention, fecal and urinary excretion, and blood clearance of the 99mTc-EHDP (etidronate) complex are reported in dogs, rodents and humans, but only as descriptive comparisons with no numeric parameter values in the provided evidence. |
+| popPK | Tishchenko_2020 | relevant | 4 | 1 | Rat biodistribution of 68Ga-HEDP (etidronate) is relevant TK, but only qualitative comparisons are given; numeric values appear absent from the provided text (likely in tables/figures not shown). |
+| popPK | Uehara_2007 | irrelevant | 2 | 2 | Etidronate (HEDP) serves only as a comparator/co-administered agent in a radiopharmaceutical study of 186Re-labeled conjugates, with no numeric kinetic parameters of etidronic acid itself provided in the evidence. |
+| popPK | Umland_2001 | irrelevant | 1 | 0 | Review of risedronate mentioning etidronate only as a comparator with no kinetic parameters and no numeric values present. |
+| popPK | Vaidyanathan_2005 | irrelevant | 0 | 0 | Clinical case report of etidronate therapy effects on biomarkers; no pharmacokinetic parameters of etidronic acid. |
+| popPK | Vélez_2023 | irrelevant | 0 | 0 | Etidronic acid appears only as an auxiliary ligand/recrystallization reagent; all kinetic-like parameters (solubility, binding) concern risedronate complexes, with no toxicokinetic parameters for etidronic acid. |
+| popPK | Walton_1985 | irrelevant | 1 | 1 | A clinical outcome study reporting skeletal blood flow changes, with no kinetic parameters (half-life, clearance, excretion rates) for etidronic acid itself. |
+| popPK | Weininger_1984 | irrelevant | 2 | 2 | The paper describes biodistribution/imaging of 186Re-labeled HEDP in animals with only qualitative clearance ("slow") and uptake ratios, no quantitative kinetic parameters (half-life, rate constants, clearance) for etidronic acid itself; ratio values present but not toxicokinetic parameters. |
+| popPK | Wiesner_2021 | irrelevant | 2 | 5 | This is a literature review on food-drug interactions; the only etidronate kinetic value (oral bioavailability ~3%) is a cited literature value, not a measurement made in this paper, and detailed numbers for other drugs dominate. |
+| popPK | Zecca_2026 | irrelevant | 2 | 5 | Etidronate appears only as the potency reference (value=1) and in a class-wide oral bioavailability constant (0.0064) with a 10-year bone half-life attributed to alendronate; no etidronate-specific kinetic parameters of its own are reported, and it is an exposure/risk-index modeling paper, not a kinetic study. |
+| popPK | Zinnen_2019 | relevant | 5 | 3 | Etidronate is released as a metabolite of MBC-11 in humans with kinetic discussion, but etidronate's own time course is shown only in Figure 3 (not provided) and its numeric elimination half-life (1–6 h) is cited from prior literature; the extracted T1/2/Vd table values belong to MBC-11/araC metabolites, not etidronate. |
+| popPK | de_1992 | irrelevant | 2 | 5 | The kinetic parameters (half-lives, urinary excretion) are for rhenium-186, using etidronic acid (HEDP) only as a chelating carrier, so etidronic acid is not the subject substance; numeric values are present but pertain to the radiolabel, not HEDP itself. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betidronic_acid%5D&body=Drug%3A%20etidronic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_etidronic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-15 08:52 UTC</sub>

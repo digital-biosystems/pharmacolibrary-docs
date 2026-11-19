@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 600 mg parenteral (J05AF01)",
+ "model_id": "Zidovudine_Bazzoli2011_reference",
+ "molar_masses": {
+  "retainedFraction": 0.267245
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.267245,
+  "Tb[1]": 76176.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662079
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9972756345614691
+ },
+ "stop_time": 432000.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

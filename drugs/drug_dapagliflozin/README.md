@@ -1,0 +1,188 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dapagliflozin&quot;}]"></div>
+
+# dapagliflozin
+
+- **generic name:** dapagliflozin
+- **ATC codes:** `A10BD15`, `A10BD21`, `A10BD25`, `A10BD29`, `A10BD30`, `A10BK01`
+- **DrugBank:** [DB06292](https://go.drugbank.com/drugs/DB06292) · **PubChem:** [CID 9887712](https://pubchem.ncbi.nlm.nih.gov/compound/9887712)
+- **molar mass:** 408.873 g/mol (C21H25ClO6) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Dapagliflozin is an oral blood glucose-lowering drug used to manage type 2 diabetes, type 1 diabetes, and heart failure. The drug is administered orally in tablet form. It is authorized in the European Union and widely used in the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q409898](https://www.wikidata.org/wiki/Q409898), [Wikipedia](https://en.wikipedia.org/wiki/Dapagliflozin?oldid=1383708537) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| dapagliflozin | parent | 408.873 | C21H25ClO6 | DrugBank | [9887712](https://pubchem.ncbi.nlm.nih.gov/compound/9887712) | Melin_2022, Melin_2024, Penland_2023 |
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Melin_2022 · CL/F</text><circle cx="299.1" cy="30.0" r="4" fill="#ef6c00"><title>Melin_2022 · CL/F: 20.5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Melin_2024 · CL/F</text><circle cx="316.6" cy="46.0" r="4" fill="#ef6c00"><title>Melin_2024 · CL/F: 23 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Kobuchi_2025 · V/F</text><circle cx="494.0" cy="30.0" r="4" fill="#ef6c00"><title>Kobuchi_2025 · V/F: 73.9 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Melin_2022 · V/F</text><circle cx="494.0" cy="46.0" r="4" fill="#ef6c00"><title>Melin_2022 · V/F: 73.9 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Melin_2024 · V/F</text><circle cx="494.0" cy="62.0" r="4" fill="#ef6c00"><title>Melin_2024 · V/F: 73.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub> | [Kobuchi_2025_reference](drugs/drug_dapagliflozin/Dapagliflozin_Kobuchi2025_reference.md) | — | 1-compartment (no model) | 3 | Kobuchi S et al., Population Pharmacokinetic-pharmacodyna…, International journal of me… (2025) | [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Melin_2022_reference](drugs/drug_dapagliflozin/Dapagliflozin_Melin2022_reference.md) | — | 1-compartment (no model) | 3 | Melin J et al., Dapagliflozin Pharmacokinetics Is Simil…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2062](https://doi.org/10.1002/jcph.2062) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Melin_2024_reference](drugs/drug_dapagliflozin/Dapagliflozin_Melin2024_reference.md) | — | 1-compartment (no model) | 3 | Melin J et al., Dapagliflozin pharmacokinetics is simil…, British journal of clinical… (2024) | [10.1111/bcp.15939](https://doi.org/10.1111/bcp.15939) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Penland_2023_reference](drugs/drug_dapagliflozin/Dapagliflozin_Penland2023_reference.md) | — | 1-compartment (no model) | 2 | Penland RC et al., Evaluation of the Pharmacokinetics of D…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2196](https://doi.org/10.1002/jcph.2196) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomen_2020_FPG](drugs/drug_dapagliflozin/pd_Koomen_2020_FPG.md) | fasting plasma glucose ← dapagliflozin · direct Emax (saturable) effect | — | Koomen JV et al., Exposure-response relationships of dapa…, British journal of clinical… (2020) | [10.1111/bcp.14318](https://doi.org/10.1111/bcp.14318) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomen_2020_GTI](drugs/drug_dapagliflozin/pd_Koomen_2020_GTI.md) | genital tract infection ← dapagliflozin · direct Emax (saturable) effect | — | Koomen JV et al., Exposure-response relationships of dapa…, British journal of clinical… (2020) | [10.1111/bcp.14318](https://doi.org/10.1111/bcp.14318) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomen_2020_HCT](drugs/drug_dapagliflozin/pd_Koomen_2020_HCT.md) | haematocrit ← dapagliflozin · stimulation effect | — | Koomen JV et al., Exposure-response relationships of dapa…, British journal of clinical… (2020) | [10.1111/bcp.14318](https://doi.org/10.1111/bcp.14318) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomen_2020_SBP](drugs/drug_dapagliflozin/pd_Koomen_2020_SBP.md) | systolic blood pressure ← dapagliflozin · direct log-linear effect | — | Koomen JV et al., Exposure-response relationships of dapa…, British journal of clinical… (2020) | [10.1111/bcp.14318](https://doi.org/10.1111/bcp.14318) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomen_2020_SCr](drugs/drug_dapagliflozin/pd_Koomen_2020_SCr.md) | serum creatinine ← dapagliflozin · inhibition effect | — | Koomen JV et al., Exposure-response relationships of dapa…, British journal of clinical… (2020) | [10.1111/bcp.14318](https://doi.org/10.1111/bcp.14318) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomen_2020_UA](drugs/drug_dapagliflozin/pd_Koomen_2020_UA.md) | uric acid ← dapagliflozin · direct log-linear effect | — | Koomen JV et al., Exposure-response relationships of dapa…, British journal of clinical… (2020) | [10.1111/bcp.14318](https://doi.org/10.1111/bcp.14318) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomen_2020_UACR](drugs/drug_dapagliflozin/pd_Koomen_2020_UACR.md) | urinary albumin–creatinine ratio ← dapagliflozin · direct log-linear effect | — | Koomen JV et al., Exposure-response relationships of dapa…, British journal of clinical… (2020) | [10.1111/bcp.14318](https://doi.org/10.1111/bcp.14318) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomen_2020_UTI](drugs/drug_dapagliflozin/pd_Koomen_2020_UTI.md) | urinary tract infection ← dapagliflozin · direct log-linear effect | — | Koomen JV et al., Exposure-response relationships of dapa…, British journal of clinical… (2020) | [10.1111/bcp.14318](https://doi.org/10.1111/bcp.14318) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Tang_2016_UGE](drugs/drug_dapagliflozin/pd_Tang_2016_UGE.md) | urinary glucose excretion ← dapagliflozin · direct Emax (saturable) effect | — | Tang W et al., Comparison of the pharmacokinetics and…, Diabetes, obesity & metabol… (2016) | [10.1111/dom.12594](https://doi.org/10.1111/dom.12594) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wang_2022_change_rate_of_body_weight_from_baseline_value](drugs/drug_dapagliflozin/pd_Wang_2022_change_rate_of_body_weight_from_baseline_value.md) | change rate of body weight from baseline value ← dapagliflozin · direct Emax (saturable) effect | — | Wang DD et al., Quantifying the relationship between da…, Journal of clinical pharmac… (2022) | [10.1111/jcpt.13572](https://doi.org/10.1111/jcpt.13572) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kobuchi_2025_HbA1c](drugs/drug_dapagliflozin/pd_Kobuchi_2025_HbA1c.md) | HbA1c ← dapagliflozin · indirect response — drug inhibits the production of HbA1c | — | Kobuchi S et al., Population Pharmacokinetic-pharmacodyna…, International journal of me… (2025) | [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Sokolov_2023_HbA1c](drugs/drug_dapagliflozin/pd_Sokolov_2023_HbA1c.md) | HbA1c ← dapagliflozin · direct Emax (saturable) effect | — | Sokolov V et al., Effectiveness of dapagliflozin as an in…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1229255](https://doi.org/10.3389/fphar.2023.1229255) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Sokolov_2023_basal_insulin](drugs/drug_dapagliflozin/pd_Sokolov_2023_basal_insulin.md) | basal insulin dose ← dapagliflozin · direct Emax (saturable) effect | — | Sokolov V et al., Effectiveness of dapagliflozin as an in…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1229255](https://doi.org/10.3389/fphar.2023.1229255) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Sokolov_2023_glucose](drugs/drug_dapagliflozin/pd_Sokolov_2023_glucose.md) | plasma glucose ← dapagliflozin · direct Emax (saturable) effect | — | Sokolov V et al., Effectiveness of dapagliflozin as an in…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1229255](https://doi.org/10.3389/fphar.2023.1229255) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2023_Body_weight](drugs/drug_dapagliflozin/pd_van_2023_Body_weight.md) | Body weight ← dapagliflozin · direct linear effect | — | van der Hoek S et al., Exposure-Response Analysis of the Sodiu…, Journal of personalized med… (2023) | [10.3390/jpm13050747](https://doi.org/10.3390/jpm13050747) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2023_ERPF](drugs/drug_dapagliflozin/pd_van_2023_ERPF.md) | Effective renal plasma flow ← dapagliflozin · direct linear effect | — | van der Hoek S et al., Exposure-Response Analysis of the Sodiu…, Journal of personalized med… (2023) | [10.3390/jpm13050747](https://doi.org/10.3390/jpm13050747) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2023_FF](drugs/drug_dapagliflozin/pd_van_2023_FF.md) | Filtration fraction ← dapagliflozin · direct linear effect | — | van der Hoek S et al., Exposure-Response Analysis of the Sodiu…, Journal of personalized med… (2023) | [10.3390/jpm13050747](https://doi.org/10.3390/jpm13050747) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2023_FPG](drugs/drug_dapagliflozin/pd_van_2023_FPG.md) | Fasting plasma glucose ← dapagliflozin · direct linear effect | — | van der Hoek S et al., Exposure-Response Analysis of the Sodiu…, Journal of personalized med… (2023) | [10.3390/jpm13050747](https://doi.org/10.3390/jpm13050747) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2023_HbA1c](drugs/drug_dapagliflozin/pd_van_2023_HbA1c.md) | Hemoglobin A1c ← dapagliflozin · direct linear effect | — | van der Hoek S et al., Exposure-Response Analysis of the Sodiu…, Journal of personalized med… (2023) | [10.3390/jpm13050747](https://doi.org/10.3390/jpm13050747) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2023_SBP](drugs/drug_dapagliflozin/pd_van_2023_SBP.md) | Systolic blood pressure ← dapagliflozin · direct linear effect | — | van der Hoek S et al., Exposure-Response Analysis of the Sodiu…, Journal of personalized med… (2023) | [10.3390/jpm13050747](https://doi.org/10.3390/jpm13050747) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2023_UGE](drugs/drug_dapagliflozin/pd_van_2023_UGE.md) | Urinary glucose excretion ← dapagliflozin · direct linear effect | — | van der Hoek S et al., Exposure-Response Analysis of the Sodiu…, Journal of personalized med… (2023) | [10.3390/jpm13050747](https://doi.org/10.3390/jpm13050747) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2023_mGFR](drugs/drug_dapagliflozin/pd_van_2023_mGFR.md) | Measured glomerular filtration rate ← dapagliflozin · direct linear effect | — | van der Hoek S et al., Exposure-Response Analysis of the Sodiu…, Journal of personalized med… (2023) | [10.3390/jpm13050747](https://doi.org/10.3390/jpm13050747) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **UGT1A9** | `Q27` · CL/F | metabolism | [Golovina_2023](drugs/drug_dapagliflozin/pgx_Golovina_2023_UGT1A9_Q27.md) | Golovina EL et al., [Clinical effectiveness and pharmacokin…, Terapevticheskii arkhiv (2023) | [10.26442/00403660.2023.08.202326](https://doi.org/10.26442/00403660.2023.08.202326) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.60).">human + animal</span> | **GSK3B** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Song_2026](drugs/drug_dapagliflozin/pgx_Song_2026_GSK3B_Q100.md) | Song J et al., GSK3B variations influence renoprotecti…, iScience (2026) | [10.1016/j.isci.2026.116862](https://doi.org/10.1016/j.isci.2026.116862) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dapagliflozin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` substrate | DrugBank actor |
+| distribution | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `UGT1A9` metabolism/substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `UGT1A9` metabolism/substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` substrate | DrugBank actor |
+| excretion | liver | `ABCB1` substrate | DrugBank actor |
+| — | kidney | `SLC5A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: GSK3B (target), UGT2B4 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 22:51 | 16:30 | 3/1/0 | 6/0/0 | 0/0/2 | 358,921/32,169 | ollama / qwen3.8:27b-mtp-q8_0 | 20 | 4/16 | 17/3 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 81 matched, 50 returned
+- **screened:** 16  ·  **relevant:** 4
+- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Melin_2022.pdf` | Melin J et al., Dapagliflozin Pharmacokinetics Is Simil…, Journal of clinical pharmac… (2022) | popPK | 10 | [10.1002/jcph.2062](https://doi.org/10.1002/jcph.2062) | [35403243](https://pubmed.ncbi.nlm.nih.gov/35403243) | The paper reports a population PK model for dapagliflozin in humans with specific quantitative parameters (apparent clearance 20.5 L/h), but other key parameters like volume and half-life are not explicitly listed in the provided text. |
+| `Melin_2024.pdf` | Melin J et al., Dapagliflozin pharmacokinetics is simil…, British journal of clinical… (2024) | popPK | 10 | [10.1111/bcp.15939](https://doi.org/10.1111/bcp.15939) | [37897064](https://pubmed.ncbi.nlm.nih.gov/37897064) | The paper reports a population PK model for dapagliflozin in humans with specific numeric values for apparent clearance provided in the abstract. |
+| `Penland_2023.pdf` | Penland RC et al., Evaluation of the Pharmacokinetics of D…, Journal of clinical pharmac… (2023) | popPK | 10 | [10.1002/jcph.2196](https://doi.org/10.1002/jcph.2196) | [36543754](https://pubmed.ncbi.nlm.nih.gov/36543754) | The paper reports a population PK model for dapagliflozin with specific quantitative values for apparent clearance (21.6 L/h) and AUC ratios, though full parameter estimates (V, Q, etc.) may be in supplementary material. |
+| `Kroonen_2020.pdf` | Kroonen MYAM et al., Exposure-response relationships for the…, Diabetes, obesity & metabol… (2020) | pd | 5 | [10.1111/dom.13976](https://doi.org/10.1111/dom.13976) | [31984620](https://www.ncbi.nlm.nih.gov/pubmed/31984620) | metadata signals extractable PD data (Exposure-response) |
+| `Yao_2023.pdf` | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | pd | 5 | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) | [36890732](https://www.ncbi.nlm.nih.gov/pubmed/36890732) | metadata signals extractable PD data (PK/PD) |
+| `Hwang_2022.pdf` | Hwang JG et al., Common ABCB1 SNP, C3435T could affect s…, Translational and clinical… (2022) | pgx | 8 | [10.12793/tcp.2022.30.e23](https://doi.org/10.12793/tcp.2022.30.e23) | [36632075](https://www.ncbi.nlm.nih.gov/pubmed/36632075) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Naagaard_2022.pdf` | Naagaard MD et al., Common UGT1A9 polymorphisms do not have…, British journal of clinical… (2022) | pgx | 8 | [10.1111/bcp.15117](https://doi.org/10.1111/bcp.15117) | [34687551](https://www.ncbi.nlm.nih.gov/pubmed/34687551) | metadata signals extractable PGX data (UGT1A9, PK/PD-context) |
+| `Bansal_2025.pdf` | Bansal S et al., Predicting in vivo cannabinoid-drug int…, Drug metabolism and disposi… (2025) | pgx | 7 | [10.1016/j.dmd.2025.100096](https://doi.org/10.1016/j.dmd.2025.100096) | [40482431](https://www.ncbi.nlm.nih.gov/pubmed/40482431) | metadata signals extractable PGX data (UGT1A9, PK/PD-context) |
+| `He_2022.pdf` | He X et al., Development of UPLC-MS/MS Method to Stu…, Molecules (Basel, Switzerla… (2022) | pgx | 7 | [10.3390/molecules27196190](https://doi.org/10.3390/molecules27196190) | [36234746](https://www.ncbi.nlm.nih.gov/pubmed/36234746) | metadata signals extractable PGX data (UGT1A9, PK/PD-context) |
+| `Pattanawongsa_2015.pdf` | Pattanawongsa A et al., Inhibition of Human UDP-Glucuronosyltra…, Drug metabolism and disposi… (2015) | pgx | 7 | [10.1124/dmd.115.065870](https://doi.org/10.1124/dmd.115.065870) | [26180128](https://www.ncbi.nlm.nih.gov/pubmed/26180128) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+| `Sarhan_2025.pdf` | Sarhan N et al., Effect of Pharmacogenetics on Renal Out…, Pharmaceutics (2025) | pgx | 5 | [10.3390/pharmaceutics17080959](https://doi.org/10.3390/pharmaceutics17080959) | [40870982](https://www.ncbi.nlm.nih.gov/pubmed/40870982) | metadata signals extractable PGX data (SLC5A2) |
+| `Yang_2023.pdf` | Yang L et al., Case report: Gitelman syndrome with dia…, Medicine (2023) | pgx | 5 | [10.1097/MD.0000000000033959](https://doi.org/10.1097/MD.0000000000033959) | [37327293](https://www.ncbi.nlm.nih.gov/pubmed/37327293) | metadata signals extractable PGX data (SLC12A3) |
+
+<sub>queue written 2026-10-13 13:22 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Abou_2025 | not_relevant | 0 | 0 | The study reports associations between SLC5A2 variants and clinical outcomes (mortality/hospitalization) and secondary biomarkers (NT-proBNP, eGFR), but does not report pharmacokinetic (PK) parameters or direct pharmacodynamic (PD) parameters of dapagliflozin (e.g., plasma concentration, glucose lowering effect). |
+| PGx | Alami_2025 | not_relevant | 0 | 0 | The study investigates neuroprotective mechanisms and transporter-mediated brain distribution in cellular/animal models, but does not report pharmacogenomic effects of human gene variants on PK or PD parameters. |
+| PGx | Anitha_2022 | not_relevant | 0 | 0 | The paper is a clinical review of dapagliflozin's therapeutic aspects and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Banerjee_2023 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical outcomes (gout risk) and does not report pharmacokinetic parameters for dapagliflozin. |
+| PGx | Bansal_2025 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (cannabinoids inhibiting UGTs) affecting dapagliflozin PK, but does not report any pharmacogenomic effects (gene variants/genotypes) on the drug's parameters. |
+| popPK | Battaglia_2026 | irrelevant | 0 | 0 | The study reports clinical efficacy outcomes (proteinuria, eGFR) rather than pharmacokinetic parameters (CL, V, ka). |
+| popPK | Butt_2023 | irrelevant | 0 | 0 | The paper is a clinical outcome analysis of the DAPA-HF trial focusing on quality of life (KCCQ scores) and does not report any pharmacokinetic parameters for dapagliflozin. |
+| PGx | Delshad_2023 | not_relevant | 0 | 0 | The paper is a case report of colchicine toxicity and does not report pharmacogenomic effects on dapagliflozin PK/PD. |
+| PGx | Eriksson_2018 | not_relevant | 0 | 0 | The study reports a pharmacodynamic interaction between the PNPLA3 polymorphism and liver fat reduction, but does not report any pharmacokinetic parameters or pharmacodynamic effects of dapagliflozin itself. |
+| PGx | Frechen_2024 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of vericiguat; dapagliflozin is only mentioned as a reference substrate for model qualification, not as the subject of the pharmacogenomic analysis. |
+| PGx | Golovina_2023 | not_relevant | 5 | 2 | The paper is a review discussing the general pharmacokinetics of gliflozins and the role of UGT1A9, but it does not report specific quantitative pharmacogenomic effect sizes for dapagliflozin. |
+| PGx | Grünert_2024 | not_relevant | 0 | 0 | The paper is a consensus guideline for treating GSD Ib with empagliflozin and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Güven_2024 | not_relevant | 0 | 0 | The study investigates the effect of dapagliflozin on CYP3A4 protein expression in rats, not the effect of a gene variant on dapagliflozin's PK/PD. |
+| PGx | He_2022 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (Sorafenib and Dapagliflozin) in rats, not a pharmacogenomic effect (gene variant/genotype) on PK/PD parameters. |
+| PGx | Herat_2020 | not_relevant | 0 | 0 | The study investigates the effects of SGLT2 inhibitors on metabolic markers in diabetic mouse models, not the impact of genetic variants on the pharmacokinetics or pharmacodynamics of dapagliflozin. |
+| PGx | Kaur_2021 | not_relevant | 2 | 1 | The text is an abstract of a review article that discusses pharmacogenomics in general terms but does not report specific quantitative pharmacogenomic effects on PK/PD parameters for dapagliflozin. |
+| popPK | Koomen_2020 | irrelevant | 2 | 0 | The study focuses on population pharmacodynamic (PD) and exposure-response modeling, using a previously published PK model to predict exposure rather than reporting original quantitative PK parameters (CL, V, etc.) for dapagliflozin. |
+| popPK | Kroonen_2020 | irrelevant | 0 | 0 | no_text gate: only 129 chars of text extracted (&lt; 400) |
+| PD | Kroonen_2020 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, results, or any numeric PD parameters required to assess the exposure-response relationship. |
+| PGx | Okada_2020 | not_relevant | 2 | 5 | The paper investigates the effect of UGT1A9 expression levels (knockdown/overexpression) on the pharmacodynamic effect (cell adhesion) of dapagliflozin, but it does not report a specific human gene variant/genotype or its effect on standard PK/PD parameters in a pharmacogenomic context. |
+| PGx | Pattanawongsa_2015 | not_relevant | 0 | 0 | The paper investigates in vitro UGT enzyme inhibition by dapagliflozin to assess drug-drug interaction potential, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Pereira_2018 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic association with bodyweight loss (a clinical outcome), not with a pharmacokinetic or pharmacodynamic parameter of dapagliflozin. |
+| PGx | Qureshi_2024 | not_relevant | 0 | 0 | The paper reports a case of drug-induced psoriasis (adverse event) and does not discuss pharmacogenomics or changes in PK/PD parameters based on genetic variants. |
+| popPK | Russo_2026 | irrelevant | 0 | 0 | The study is a clinical trial assessing hemodynamic and renal outcomes (blood pressure, arterial stiffness, eGFR) rather than pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Sato_2024 | irrelevant | 0 | 0 | The study is a model-based meta-analysis of pharmacodynamic (HbA1c reduction) data, not a pharmacokinetic study reporting disposition parameters like clearance or volume for dapagliflozin. |
+| popPK | Sokolov_2023 | irrelevant | 2 | 0 | The study is a pharmacodynamic exposure-response model using AUC as a covariate, not a pharmacokinetic study reporting disposition parameters (CL, V, ka) for dapagliflozin. |
+| popPK | Tang_2016 | irrelevant | 2 | 0 | The study reports pharmacodynamic parameters (EC50) and qualitative PK trends (Cmax, AUC) but does not provide quantitative disposition parameters (CL, V, ka) or a compartmental PK model for dapagliflozin. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The study models the pharmacodynamic effect of dapagliflozin on body weight loss, not its pharmacokinetic disposition parameters. |
+| popPK | Wang_2024 | irrelevant | 2 | 0 | The paper is a model-based meta-analysis of SGLT2 inhibitors in heart failure, but the provided evidence contains only study characteristics (dose, demographics) and figure captions, lacking the specific quantitative PK parameter values (CL, V, etc.) for dapagliflozin. |
+| PGx | Yang_2023 | not_relevant | 0 | 0 | The paper is a case report on Gitelman syndrome diagnosis and management; it mentions dapagliflozin use for glucose control but does not report any pharmacogenomic effect of a gene variant on the PK or PD parameters of dapagliflozin. |
+| popPK | Yao_2023 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
+| PD | Yao_2023 | not_relevant | 0 | 0 | The provided text is only the title of a meta-analysis and does not contain the full text, data, or specific numeric PD parameters for dapagliflozin. |
+| popPK | van_2023 | irrelevant | 3 | 2 | The study is an exposure-response analysis using non-compartmental analysis (NCA) to estimate AUC, not a population pharmacokinetic study reporting compartmental parameters (CL, V, Q, ka) or a population PK model. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdapagliflozin%5D&body=Drug%3A%20dapagliflozin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dapagliflozin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 22:37 UTC</sub>

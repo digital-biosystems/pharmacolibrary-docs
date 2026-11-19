@@ -1,0 +1,81 @@
+{
+ "dose_source": "paper",
+ "model_id": "Cabotegravir_Renou2026_thoueille_et_al",
+ "molar_masses": {
+  "central.C": 0.405358
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  600.0
+ ],
+ "parameters": {
+  "Cl": 5.583333333333334e-08,
+  "F": 1.0,
+  "MM": 0.405358,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00010628571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "ka": 0.0003111111111111111,
+  "weight": 70.0
+ },
+ "pgx": {
+  "effects": {
+   "Intermediate": [
+    {
+     "compound": "cabotegravir",
+     "parameter": "CL/F (L/h)",
+     "reference": 0.201,
+     "scale": "linear_fractional",
+     "theta": 194.0,
+     "value": 3.600191039461418e+83
+    },
+    {
+     "compound": "cabotegravir",
+     "parameter": "ka oral (h−1)",
+     "reference": 1.12,
+     "scale": "linear_fractional",
+     "theta": 0.00102,
+     "value": 1.1211429828221429
+    }
+   ]
+  },
+  "gene": "genotype",
+  "labels": {
+   "Intermediate": "Intermediate metabolizer",
+   "Normal": "Normal metabolizer (reference)"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Intermediate",
+   "Normal"
+  ],
+  "phenotypes": {
+   "Intermediate": {
+    "Cl": 1.0000530665170606e+77,
+    "ka": 0.0003114286063394841
+   },
+   "Normal": {}
+  },
+  "record": "Renou_2026::thoueille_et_al",
+  "reference": "Normal",
+  "sources": [
+   "Renou_2026::thoueille_et_al covariate im",
+   "Renou_2026::thoueille_et_al covariate theta_kabs_im"
+  ]
+ },
+ "reference_peak_times": {
+  "central.C": 12633.490450687455
+ },
+ "reference_peaks": {
+  "central.C": 0.07354944051390931
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

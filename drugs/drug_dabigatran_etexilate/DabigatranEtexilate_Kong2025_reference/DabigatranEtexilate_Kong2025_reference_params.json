@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "DabigatranEtexilate_Kong2025_reference",
+ "molar_masses": {
+  "central.C": 0.6277332
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.01,
+  0.05,
+  0.1,
+  0.375
+ ],
+ "parameters": {
+  "Cl": 0.00010083333333333334,
+  "F": 1.0,
+  "MM": 0.6277332,
+  "Tlag": 0.0,
+  "VdPerKg": 0.011928571428571427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-08,
+  "k21": 0.00018677339432056413,
+  "ka": 0.0020916666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4848.09619238477
+ },
+ "reference_peaks": {
+  "central.C": 2.952568039970645e-11
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

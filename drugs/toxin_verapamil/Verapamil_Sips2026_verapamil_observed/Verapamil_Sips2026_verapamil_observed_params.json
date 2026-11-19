@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Verapamil_Sips2026_verapamil_observed",
+ "molar_masses": {
+  "central.C": 0.454611
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.125,
+  0.5
+ ],
+ "parameters": {
+  "Cl": 2.1e-05,
+  "F": 1.0,
+  "MM": 0.454611,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002857142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.25e-07,
+  "ka": 0.0002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6060.120240480962
+ },
+ "reference_peaks": {
+  "central.C": 3.455558436623106e-07
+ },
+ "stop_time": 100800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

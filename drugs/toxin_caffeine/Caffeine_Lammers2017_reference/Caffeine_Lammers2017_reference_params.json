@@ -1,0 +1,35 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg oral (N06BC01)",
+ "model_id": "Caffeine_Lammers2017_reference",
+ "molar_masses": {
+  "central.C": 0.19419399999999998
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.8527777777777777e-06,
+  "F": 0.97,
+  "MM": 0.19419399999999998,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0007214285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "k12": 0.00040979097909790973,
+  "k21": 0.00021203324225865208,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 20161.88623931295
+ },
+ "reference_peaks": {
+  "central.C": 0.001813720916226022
+ },
+ "review_status": "needs_review",
+ "stop_time": 97200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

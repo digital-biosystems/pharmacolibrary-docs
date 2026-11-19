@@ -1,0 +1,272 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Potassium Chloride&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumChloride_Adachi2021_reference&quot;,&quot;label&quot;:&quot;Adachi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_potassium_chloride/PotassiumChloride_Adachi2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Potassium Chloride
+
+- **generic name:** Potassium Chloride
+- **T3DB:** [T3D4731](http://www.t3db.ca/toxins/T3D4731) · **DrugBank:** [DB00761](https://go.drugbank.com/drugs/DB00761) · **PubChem:** [CID 4873](https://pubchem.ncbi.nlm.nih.gov/compound/4873)
+- **groups:** approved, investigational, withdrawn
+
+## About
+
+A white crystal or crystalline powder used as an electrolyte replenisher, in the treatment of hypokalemia, in buffer solutions, and in fertilizers and explosives.
+
+- **Category:** Drug, Household Toxin, Food Toxin, Natural Toxin
+- **Route of exposure:** potassium is a normal dietary constituent and under steady-state conditions the amount of potassium absorbed from the gastrointestinal tract is equal to the amount excreted in the urine.
+- **Sources and uses:** For use as an electrolyte replenisher and in the treatment of hypokalemia.
+- **Mechanism of toxicity:** Supplemental potassium in the form of high potassium food or potassium chloride may be able to restore normal potassium levels.
+- **Health effects:** The administration of oral potassium salts to persons with normal excretory mechanisms for potassium rarely causes serious hyperkalemia. However, if excretory mechanisms are impaired, of if potassium is administered too rapidly intravenously, potentially fatal hyperkalemia can result. …
+- **Treatment:** EYES: irrigate opened eyes for several minutes under running water. …
+- **Detected in:** blood, cerebrospinal fluid, saliva, urine
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D4731">T3DB T3D4731</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 7447-40-7 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32588">ChEBI 32588</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| potassium chloride (potassium_chloride) | parent | 74.548 | ClK | PubChem | [4873](https://pubchem.ncbi.nlm.nih.gov/compound/4873) | Arnold_1980, Bia_1983, Budtz-Olsen_1975, Hinderling_2016, Li_2025, Perez_1983 |
+| potassium ion | metabolite | — (mass units only) | — | — | — | — |
+
+## Start here
+
+> **Adachi_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> review reference. [Run it in the simulator](drugs/toxin_potassium_chloride/PotassiumChloride_Adachi2021_reference.md?tab=Simulation) · [record](drugs/toxin_potassium_chloride/PotassiumChloride_Adachi2021_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Adachi_2021_reference](drugs/toxin_potassium_chloride/PotassiumChloride_Adachi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Adachi K et al., Pharmacokinetics of caffeine self-admin…, Journal of pharmaceutical h… (2021) | [10.1186/s40780-021-00220-z](https://doi.org/10.1186/s40780-021-00220-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Arnold_1980_reference](drugs/toxin_potassium_chloride/PotassiumChloride_Arnold1980_reference.md) | — | 1-compartment (no model) | 1 | Arnold J et al., Bioavailability and pharmacokinetics of…, Journal of pharmaceutical s… (1980) | [10.1002/jps.2600691217](https://doi.org/10.1002/jps.2600691217) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Betlach_1987_reference](drugs/toxin_potassium_chloride/PotassiumChloride_Betlach1987_reference.md) | — | 1-compartment (no model) | 0 | Betlach CJ et al., Bioavailability and pharmacokinetics of…, Pharmaceutical research (1987) | [10.1023/a:1016438413297](https://doi.org/10.1023/a:1016438413297) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Bia_1983_reference](drugs/toxin_potassium_chloride/PotassiumChloride_Bia1983_reference.md) | — | 1-compartment (no model) | 2 | Bia MJ et al., The effect of dexamethasone on renal po…, Endocrinology (1983) | [10.1210/endo-113-5-1690](https://doi.org/10.1210/endo-113-5-1690) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Budtz-Olsen_1975_reference](drugs/toxin_potassium_chloride/PotassiumChloride_BudtzOlsen1975_reference.md) | — | 1-compartment (no model) | 1 | Budtz-Olsen OE et al., Changes in renal haemodynamics and elec…, Quarterly journal of experi… (1975) | [10.1113/expphysiol.1975.sp002312](https://doi.org/10.1113/expphysiol.1975.sp002312) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Hinderling_2016_reference](drugs/toxin_potassium_chloride/PotassiumChloride_Hinderling2016_reference.md) | — | 1-compartment (no model) | 2 | Hinderling PH, The Pharmacokinetics of Potassium in Hu…, Journal of clinical pharmac… (2016) | [10.1002/jcph.713](https://doi.org/10.1002/jcph.713) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Li_2025_1_dose_administration_group_extended_release_tablets_0_5245](drugs/toxin_potassium_chloride/PotassiumChloride_Li2025_1_dose_administration_group_extende.md) | — | retention function (no model) | 6 | Li X et al., Plasma pharmacokinetics of the combinat…, Frontiers in cardiovascular… (2025) | [10.3389/fcvm.2025.1636090](https://doi.org/10.3389/fcvm.2025.1636090) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 2_dose_administration_group_extended_release_tablets_1_049](drugs/toxin_potassium_chloride/PotassiumChloride_Li2025_2_dose_administration_group_extende.md) | — | retention function (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ 3_dose_administration_group_extended_release_tablets_1_5735](drugs/toxin_potassium_chloride/PotassiumChloride_Li2025_3_dose_administration_group_extende.md) | — | retention function (no model) | 7 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ literature_1_granules_64_meq](drugs/toxin_potassium_chloride/PotassiumChloride_Li2025_literature_1_granules_64_meq.md) | — | retention function (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ literature_2_granules_50_meq](drugs/toxin_potassium_chloride/PotassiumChloride_Li2025_literature_2_granules_50_meq.md) | — | retention function (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Perez_1983_reference](drugs/toxin_potassium_chloride/PotassiumChloride_Perez1983_reference.md) | — | 1-compartment (no model) | 2 | Perez GO et al., Blunted kaliuresis after an acute potas…, Kidney international (1983) | [10.1038/ki.1983.208](https://doi.org/10.1038/ki.1983.208) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Senel_1991_reference](drugs/toxin_potassium_chloride/PotassiumChloride_Senel1991_reference.md) | — | 1-compartment (no model) | 0 | Senel S et al., Formulation, bioavailability, and pharm…, Pharmaceutical research (1991) | [10.1023/a:1015868232590](https://doi.org/10.1023/a:1015868232590) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Toner_1985_reference](drugs/toxin_potassium_chloride/PotassiumChloride_Toner1985_reference.md) | — | 1-compartment (no model) | 0 | Toner JM et al., Pharmacokinetics of potassium chloride…, British journal of clinical… (1985) | [10.1111/j.1365-2125.1985.tb02674.x](https://doi.org/10.1111/j.1365-2125.1985.tb02674.x) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **SLC12A3** | `Q38` · E | target | [Xu_2026](drugs/toxin_potassium_chloride/pgx_Xu_2026_SLC12A3_Q38.md) | Xu C et al., Unmasking of a Heterozygous SLC12A3 Var…, Kidney medicine (2026) | [10.1016/j.xkme.2026.101255](https://doi.org/10.1016/j.xkme.2026.101255) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=potassium_chloride).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: SLC12A1 (binder), SLC12A1 (substrate), SLC12A2 (substrate), SLC12A2 (unknown), SLC12A3 (target), SLC12A4 (substrate), SLC12A4 (unknown), SLC12A5 (substrate), SLC12A5 (unknown), SLC12A6 (substrate), SLC12A6 (unknown), SLC12A7 (substrate), SLC12A7 (unknown).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 17:42 | 41:02 | 1/13/0 | 0/0/0 | 0/0/1 | 883,339/114,241 | ollama / glm-5.3-flash | 39 | 6/26 | 39/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 412 matched, 176 returned
+- **screened:** 10  ·  **relevant:** 10
+- **records:** 14  ·  extracted 0  ·  needs review 1  ·  rejected 13  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Senel_1991.pdf` | Senel S et al., Formulation, bioavailability, and pharm…, Pharmaceutical research (1991) | popPK | 10 | [10.1023/a:1015868232590](https://doi.org/10.1023/a:1015868232590) | [1796051](https://pubmed.ncbi.nlm.nih.gov/1796051) | Human pharmacokinetic data (urinary recovery percentages of potassium chloride from formulations) are clearly presented in the abstract, but some detail (e.g., full excretion rate curves) may be in figures/tables not provided. |
+| `Hinderling_2016.pdf` | Hinderling PH, The Pharmacokinetics of Potassium in Hu…, Journal of clinical pharmac… (2016) | popPK | 9 | [10.1002/jcph.713](https://doi.org/10.1002/jcph.713) | [26854277](https://pubmed.ncbi.nlm.nih.gov/26854277) | Review summarizing PK parameters (absorption efficiency 70–90%, renal clearance ~200 mL/min) for potassium from KCl in humans, with some numeric values present in the abstract though many details reside in the reviewed literature. |
+| `Toner_1985.pdf` | Toner JM et al., Pharmacokinetics of potassium chloride…, British journal of clinical… (1985) | popPK | 8 | [10.1111/j.1365-2125.1985.tb02674.x](https://doi.org/10.1111/j.1365-2125.1985.tb02674.x) | [3994896](https://pubmed.ncbi.nlm.nih.gov/3994896) | Reports quantitative absorption/bioavailability (87.3%, 78.8%), urinary excretion amounts and plasma concentration time course for KCl in humans. |
+| `Betlach_1987.pdf` | Betlach CJ et al., Bioavailability and pharmacokinetics of…, Pharmaceutical research (1987) | popPK | 7 | [10.1023/a:1016438413297](https://doi.org/10.1023/a:1016438413297) | [3508550](https://pubmed.ncbi.nlm.nih.gov/3508550) | Reports quantitative urinary excretion kinetics (time to peak excretion rate, 24-hr excretion) for potassium chloride itself in the evidence text; limited full kinetic parameters. |
+| `Budtz-Olsen_1975.pdf` | Budtz-Olsen OE et al., Changes in renal haemodynamics and elec…, Quarterly journal of experi… (1975) | popPK | 7 | [10.1113/expphysiol.1975.sp002312](https://doi.org/10.1113/expphysiol.1975.sp002312) | [1041405](https://pubmed.ncbi.nlm.nih.gov/1041405) | Renal clearance and electrolyte excretion parameters during KCl infusion in adrenalectomized sheep, with numeric values (ratios of PAH and inulin clearance) given in the abstract. |
+| `Mittapalli_2017.pdf` | Mittapalli RK et al., Development of In Vitro-In Vivo Correla…, Pharmaceutical research (2017) | popPK | 7 | [10.1007/s11095-017-2179-2](https://doi.org/10.1007/s11095-017-2179-2) | [28512718](https://pubmed.ncbi.nlm.nih.gov/28512718) | Reports an IVIVC absorption/excretion model with urinary PK for potassium chloride in humans, but numeric values (%PE, Ae0-24h, Rmax) are only summarized, not tabulated in the evidence. |
+| `Silva_1981.pdf` | Silva P et al., Sympathetic system in potassium homeost…, The American journal of phy… (1981) | popPK | 7 | [10.1152/ajprenal.1981.241.2.F151](https://doi.org/10.1152/ajprenal.1981.241.2.F151) | [7270686](https://pubmed.ncbi.nlm.nih.gov/7270686) | Rat study of extrarenal disposal/volume of distribution of infused KCl, but the numeric values for volume of distribution are not shown in the abstract evidence provided. |
+| `Arnold_1980.pdf` | Arnold J et al., Bioavailability and pharmacokinetics of…, Journal of pharmaceutical s… (1980) | popPK | 6 | [10.1002/jps.2600691217](https://doi.org/10.1002/jps.2600691217) | [7463329](https://pubmed.ncbi.nlm.nih.gov/7463329) | Human pharmacokinetic study of KCl reporting fractional urinary recovery (50.8%, 53.9%, 63.1%) and time to max excretion rate (2.0, 6.8, 4.0 hr), with numeric values present in the abstract. |
+| `Bia_1983.pdf` | Bia MJ et al., The effect of dexamethasone on renal po…, Endocrinology (1983) | popPK | 6 | [10.1210/endo-113-5-1690](https://doi.org/10.1210/endo-113-5-1690) | [6628322](https://pubmed.ncbi.nlm.nih.gov/6628322) | KCl is the administered substance and renal potassium clearance values (µl/min) are reported numerically in rats after KCl loading. |
+| `Bundgaard_1997.pdf` | Bundgaard H et al., K+ supplementation increases muscle [Na…, Journal of applied physiolo… (1997) | popPK | 6 | [10.1152/jappl.1997.82.4.1136](https://doi.org/10.1152/jappl.1997.82.4.1136) | [9104850](https://pubmed.ncbi.nlm.nih.gov/9104850) | Quantitative kinetic data (plasma K+ rise, muscle K+ content time course, and extrarenal K+ clearance during KCl infusion) measured directly in KCl-supplemented rats, not just as vehicle or comparator. |
+| `Li_2023.pdf` | Li Q et al., Pharmacokinetic and Bioequivalent Study…, Clinical pharmacology in dr… (2023) | popPK | 6 | [10.1002/cpdd.1180](https://doi.org/10.1002/cpdd.1180) | [36321352](https://pubmed.ncbi.nlm.nih.gov/36321352) | Human bioequivalence study reporting urinary excretion-rate and cumulative excretion kinetics for KCl, but the actual numeric parameter values are not provided in the evidence. |
+| `Perez_1983.pdf` | Perez GO et al., Blunted kaliuresis after an acute potas…, Kidney international (1983) | popPK | 6 | [10.1038/ki.1983.208](https://doi.org/10.1038/ki.1983.208) | [6663988](https://pubmed.ncbi.nlm.nih.gov/6663988) | Reports quantitative handling of an acute oral KCl load in humans (fraction of load excreted, retained K translocated intracellularly, plasma K rise), with numeric values directly in the abstract; not a formal compartmental/PBPK model but measured disposition kinetics of potassium itself. |
+| `Youn_2022.pdf` | Youn JH et al., Estimating in vivo potassium distributi…, American journal of physiol… (2022) | popPK | 6 | [10.1152/ajpcell.00351.2021](https://doi.org/10.1152/ajpcell.00351.2021) | [35080924](https://pubmed.ncbi.nlm.nih.gov/35080924) | Compartmental model of K+ (as KCl) disposition with rate constants in rats is directly relevant toxicokinetics, but the abstract gives no numeric parameter values (likely in figures/tables not provided). |
+| `Bundgaard_2002.pdf` | Bundgaard H et al., Potassium depletion increases potassium…, American journal of physiol… (2002) | popPK | 5 | [10.1152/ajpcell.00588.2001](https://doi.org/10.1152/ajpcell.00588.2001) | [12225980](https://pubmed.ncbi.nlm.nih.gov/12225980) | Rat in vivo K clearance/uptake kinetics during KCl infusion are reported, but only as percent changes; actual numeric rate constants appear absent or in figures not provided. |
+
+<sub>queue written 2026-11-14 17:24 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aburada_1980 | irrelevant | 1 | 0 | The extracted evidence contains only GROBID metadata with no full text, tables, or numeric kinetic parameters for potassium chloride. |
+| popPK | Adachi_2021 | irrelevant | 0 | 0 | Potassium chloride appears only as a treatment infusion in a caffeine overdose case; all kinetic parameters (half-life, clearances, PBPK) belong to caffeine/paraxanthine, not potassium chloride. |
+| PGx | Akhter_2019 | not_relevant | 0 | 0 |  |
+| popPK | Akimoto_2006 | irrelevant | 0 | 0 | KCl is only a treatment given to a case-report patient; no toxicokinetic parameters (half-life, clearance, rates, Vd) are reported. |
+| popPK | Araújo_2020 | irrelevant | 1 | 4 | This is a fungal osmotolerance assay using KCl as an osmolyte, with IC50/IC90 growth-inhibition values, not toxicokinetic parameters of KCl disposition in humans or animals. |
+| popPK | Argaw_1990 | irrelevant | 0 | 0 | The paper's kinetic parameters (half-life, clearance, Vd) all belong to sulphadimidine in sheep; potassium chloride does not appear as the subject substance. |
+| popPK | Baldwin_1991 | irrelevant | 0 | 0 | Potassium chloride appears only as an analytical/probe depolarizing agent; kinetic parameters (t1/2, clearance) belong to tacrine, not KCl. |
+| popPK | Beitchman_2023 | irrelevant | 1 | 2 | KCl is only a depolarizing stimulus for evoking glutamate overflow in rat brain; the kinetic parameters (glutamate uptake rate, T80) are for glutamate, not for KCl's own disposition. |
+| popPK | Beitchman_2023_2 | irrelevant | 0 | 0 | KCl appears only as a depolarizing stimulus/vehicle to evoke glutamate release; kinetic parameters (uptake rate, T80) belong to glutamate, not potassium chloride. |
+| popPK | Bellucci_2016 | irrelevant | 0 | 0 | KCl appears only as a depolarizing analytical stimulus for tachykinin release; the pharmacokinetic parameters reported are for ibodutant, not potassium chloride, and no KCl kinetic values are present. |
+| PGx | Bloothooft_2025 | not_relevant | 1 | 0 | The study describes a KCC1 (SLC12A4) variant's cell-biological effects; potassium chloride is a compound in buffers, not a drug with PK/PD parameters. |
+| popPK | Boczek_2014 | irrelevant | 0 | 0 | KCl is used only as a depolarizing stimulus to study Ca2+/pH dynamics in PC12 cells; no toxicokinetic parameters (half-life, clearance, partition coefficients, etc.) for potassium chloride itself are reported. |
+| popPK | Bonislawski_2007 | irrelevant | 0 | 0 | Study of KCC2 expression and chloride homeostasis after brain injury in mouse; no quantitative toxicokinetic parameters for potassium chloride. |
+| popPK | Bou_2013 | irrelevant | 0 | 0 | Potassium chloride never appears as a subject substance; the study is a rat nephropathy/EGFR-inhibitor experiment with renal physiology endpoints, no KCl kinetic parameters. |
+| popPK | Brennan_2013 | irrelevant | 0 | 0 | Symptom burden in ESKD patient care; no kinetic parameters for potassium chloride are reported or even referenced. |
+| popPK | Bundgaard_2002 | relevant | 5 | 4 | Rat in vivo K clearance/uptake kinetics during KCl infusion are reported, but only as percent changes; actual numeric rate constants appear absent or in figures not provided. |
+| popPK | Bäcklund_1975 | irrelevant | 1 | 1 | Potassium chloride appears only as a measured ion in reflux/lymph transport samples, with no kinetic parameter (half-life, rate constant, clearance, partition coefficient) for KCl itself; the study's subject is dextran backflow in hydronephrotic dogs, and no numeric values are provided in the evidence. |
+| popPK | Cataldi_2014 | irrelevant | 3 | 0 | Potassium chloride appears only as airway cotransporters mentioned mechanistically; no numeric kinetic parameters for KCl are present. |
+| popPK | Cazenave-Loustalet_2007 | irrelevant | 0 | 0 | Computational electrophysiology model of rat optic nerve action potentials; K+ clearance is neuronal microenvironment simulation, not toxicokinetic parameters for potassium chloride. |
+| PGx | Conte_2018 | not_relevant | 1 | 1 | Mini-review of Bartter syndrome genetics with no specific gene-variant effect on potassium chloride PK/PD parameters reported. |
+| popPK | Cullis_2021 | irrelevant | 1 | 2 | Clinical guideline on peritoneal dialysis with no kinetic parameter of KCl; KCl appears only as dialysate additive; no numeric kinetic data in evidence. |
+| popPK | DAngio_1987 | irrelevant | 2 | 1 | A case report of theophylline overdose where potassium chloride is only used to treat hypokalemia, with no quantitative kinetic parameters for KCl reported. |
+| popPK | DeGregorio_1981 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
+| popPK | De_1990 | irrelevant | 0 | 0 | KCl appears only as a component of the agar bridge electrode, not as the subject substance; clearance measured is for 99mTc-DTPA, with no kinetic parameters for potassium chloride. |
+| popPK | Deetz_1981 | irrelevant | 3 | 8 | KCl is a treatment/exposure, not a toxicokinetic subject; reported parameters (renal clearance of Mg, Ca, P) belong to other substances, with no kinetic parameters for KCl itself beyond plasma potassium levels. |
+| popPK | Dekel_1997 | irrelevant | 2 | 3 | Physiological adaptation study in rats measuring plasma/urinary potassium and excretion rates, not toxicokinetic parameters such as half-life, clearance or partition coefficients for potassium chloride. |
+| popPK | Di_1980 | irrelevant | 0 | 0 | Potassium and chloride are measured only as urinary electrolyte excretion outcome in a drug study on PGA1; no toxicokinetic parameters for potassium_chloride appear. |
+| popPK | Elliott_2022 | irrelevant | 2 | 2 | This is a clinical outcome study of serum potassium in peritoneal dialysis patients; KCl appears only as therapy in a few patients, and the numeric parameters (KT/V) concern urea clearance, not potassium chloride toxicokinetics. |
+| popPK | English_2020 | irrelevant | 0 | 0 | KCl appears only as a depolarization stimulus/reagent in cisplatin neurotoxicity experiments, with no toxicokinetic parameters for potassium chloride. |
+| PGx | Fatemi_2019 | not_relevant | 0 | 0 | Plant stress gene expression study with no pharmacokinetic or pharmacodynamic effect of genetic variants on potassium chloride in humans or animals. |
+| popPK | Findley_2024 | irrelevant | 0 | 0 | KCl appears only as a local depolarizing stimulant to evoke glutamate release; the kinetic parameters (T80 glutamate clearance) concern glutamate, not potassium chloride. |
+| popPK | Findley_2024_2 | irrelevant | 0 | 0 | KCl appears only as a local 70mM stimulation reagent in mouse glutamate recordings; no toxicokinetic parameters of potassium chloride are reported. |
+| popPK | Foia_1996 | irrelevant | 0 | 0 | KCl is only used as a depolarizing stimulus in calcium physiology; no toxicokinetic parameters for potassium chloride are reported. |
+| popPK | Friedberg_1991 | irrelevant | 2 | 3 | KCl is a co-infusion used to prevent hypokalemia; no kinetic parameters (half-life, clearance, Vd) of KCl itself are reported. |
+| popPK | Friedlaender_1985 | irrelevant | 0 | 0 |  |
+| popPK | Futaki_2023 | irrelevant | 0 | 0 | The study concerns fluorescein isothiocyanate dextran (FD-4); potassium chloride does not appear as the subject substance, and no KCl kinetic parameters are present. |
+| popPK | Goncalves_2023 | irrelevant | 0 | 0 | The paper reports PK parameters (AUC, Cmax, CL/F, Vz/F, half-life) for KCL-286, a retinoic acid receptor agonist — not for potassium_chloride, which does not appear as the subject substance. |
+| popPK | Guerrero-Cázares_2007 | irrelevant | 0 | 0 | Potassium chloride appears only as a depolarizing stimulus in an in vitro C6 cell study with no toxicokinetic parameters for KCl. |
+| popPK | Gunja_2011 | irrelevant | 2 | 1 | Clinical poisoning case report with no numeric kinetic parameters; any values are only qualitatively mentioned (haemodialysis/WBI) and appear only in the full text, not the evidence provided. |
+| popPK | Główka_2013 | irrelevant | 0 | 0 | Potassium chloride appears only as a reagent to adjust ionic strength; all kinetic/partition parameters concern treosulfan, not potassium chloride. |
+| popPK | Han_2008 | irrelevant | 0 | 0 | KCl appears only as an analytical depolarizing stimulus for glutamate release, with no toxicokinetic parameters for potassium chloride. |
+| popPK | Hanslik_1994 | irrelevant | 0 | 0 | No toxicokinetic parameters for potassium chloride; only fractional excretion of electrolytes measured (urinary excretion, not kinetics). |
+| popPK | Hashida_2006 | irrelevant | 1 | 1 | KCl is only a treatment (24 mEq/day oral) in a Gitelman's syndrome case report; no kinetic parameters for potassium chloride are reported. |
+| PGx | He_2020 | not_relevant | 1 | 4 | SLC12A3 variants cause Gitelman syndrome hypokalemia (disease pathology), not an effect of genotype on PK/PD of potassium chloride; KCl is only given as replacement therapy. |
+| popPK | Hoffman_1999 | irrelevant | 0 | 0 | KCl is used only as a depolarizing tool/experimental reagent; no kinetic parameters for potassium chloride itself. |
+| popPK | Hoffmann_2016 | irrelevant | 0 | 0 | Potassium chloride appears only as an inappropriately dosed drug in a renal insufficiency prevalence study, with no kinetic parameters for it; creatinine clearance belongs to a different analyte. |
+| popPK | Homeida_1977 | irrelevant | 0 | 0 | Potassium chloride appears only as a component of the saline-dextrose-KCl infusion vehicle; all kinetic parameters (clearance, half-life, volume) belong to furosemide, not KCl. |
+| popPK | Hoskins_2012 | irrelevant | 0 | 0 | Potassium chloride appears only as the asystole-inducing agent (KCl arrest) in swine, not as the substance whose kinetics are measured; the studied drugs are adrenaline/evans blue/indocyanine green. |
+| popPK | Hsieh_2022 | irrelevant | 0 | 0 | This is a review of the NKCC1 transporter in acute lung injury; potassium chloride is not the subject substance and no quantitative kinetic parameters for it are reported (values only referenced to cited studies). |
+| popPK | Humphrey_1995 | irrelevant | 1 | 1 | KCl is given only as a kaliuresis-inducing co-exposure; no kinetic parameters (half-life, clearance, Vd, rate constants) for potassium chloride itself are reported. |
+| popPK | Jacobson_1996 | irrelevant | 0 | 0 | Potassium chloride is not a subject substance; only fractional excretion of electrolytes in a clinical outcome study, no kinetic parameters. |
+| popPK | Jenkins_1985 | irrelevant | 0 | 0 | KCl appears only as an analytical reagent (NaCl replaced by KCl in uptake medium), not as a subject substance with kinetic parameters. |
+| popPK | Jensen_2015 | irrelevant | 0 | 0 | Potassium chloride appears only as part of the NKCC2 transporter name; no toxicokinetic parameters for potassium chloride itself are reported. |
+| popPK | Kang_2004 | irrelevant | 0 | 0 | Potassium chloride appears only as a measured urinary/plasma electrolyte in a cisplatin nephrotoxicity study; no kinetic parameters for potassium_chloride itself, and data live in figures not provided. |
+| PGx | Khairy_2016 | not_relevant | 0 | 0 | Plant study of nitric oxide and heavy metal stress in tobacco; no gene variant effect on potassium chloride PK/PD parameters reported. |
+| popPK | Kolesnichenko_2023 | irrelevant | 0 | 0 | KCl appears only as a supporting electrolyte/test solution component (0.05 M) for electrochemical detection of anesthetics; no kinetic parameter of potassium chloride is reported, and no numeric KCl kinetic values exist in the evidence. |
+| popPK | Koren_1989 | irrelevant | 0 | 0 | Potassium chloride appears only as excreted electrolyte (fractional excretion) in a deferoxamine renal-function study; no kinetic parameters for potassium_chloride itself. |
+| popPK | Krishna_2020 | irrelevant | 1 | 2 | KCl appears only as a local depolarizing stimulus to evoke glutamate release; the kinetic parameters (glutamate uptake rate constants, clearance times) describe glutamate, not potassium chloride. |
+| popPK | Lacerda_2009 | irrelevant | 0 | 0 | Potassium chloride appears only as an ionic-strength medium for potentiometry; the subject substances are a chelator and its lanthanide complexes, with no kinetic parameters for KCl itself. |
+| popPK | Lai_1998 | irrelevant | 0 | 0 | Potassium chloride appears only as a component of an analytical buffer reagent in an HPLC assay for bisnafide, with no kinetic parameters for KCl itself. |
+| popPK | Lane_1974 | irrelevant | 1 | 1 | KCl is merely a low-molecular-weight test solute in an in vitro tube-flow dispersion study, with no reported toxicokinetic parameters or numeric values for KCl. |
+| popPK | Lang_2003 | irrelevant | 0 | 0 | No kinetic parameters for potassium chloride; KCl loss is discussed mechanistically in erythrocyte apoptosis, not as toxicokinetics. |
+| popPK | Lang_2004 | irrelevant | 0 | 0 | Review of erythrocyte ion channels with no kinetic parameters for potassium chloride, which appears only in a physiological context (KCl loss). |
+| popPK | Laurent_2002 | irrelevant | 0 | 0 | The kinetic parameters (k(cl), t½) belong to the MRI contrast agent Gd(DTPA) in hypertensive rats, not to potassium chloride; potassium chloride does not even appear as substance in the abstract. |
+| popPK | Lee_1989 | irrelevant | 0 | 0 | KCl is used only to induce cardiac arrest (no kinetic parameters for potassium itself); only CBF values are reported. |
+| popPK | Leloux_1990 | irrelevant | 1 | 1 | Potassium chloride appears only as an antidotal treatment for thallium intoxication; kinetic parameters concern thallium, with no quantitative KCl kinetics present. |
+| popPK | Li_2023 | relevant | 6 | 2 | Human bioequivalence study reporting urinary excretion-rate and cumulative excretion kinetics for KCl, but the actual numeric parameter values are not provided in the evidence. |
+| popPK | Lin_2015 | irrelevant | 0 | 0 | Potassium chloride appears only as part of the NKCC cotransporter name; no kinetic parameters for KCl as a substance are reported. |
+| PGx | Liu_2021 | not_relevant | 3 | 2 | SLC12A3 genotype determines Gitelman syndrome disease state and electrolyte levels, but no genotype-specific effect on KCl pharmacokinetics/pharmacodynamics (dose-response, serum K+, etc.) is reported; glucose/insulin outcomes relate to electrolyte correction, not KCl PK/PD. |
+| popPK | Madeira_2025 | irrelevant | 0 | 0 | KCl appears only as an analytical buffer component, not as the subject substance with any kinetic parameters. |
+| popPK | Matsushima_1996 | irrelevant | 0 | 0 | KCl is only an experimental agent to elicit cortical spreading depression; no kinetic parameters of KCl are reported. |
+| popPK | Mbula_2023 | irrelevant | 0 | 0 | Potassium chloride appears only as a KCC3 transporter name in molecular docking; the clearance numeric line is unrelated to potassium_chloride toxicokinetics and no kinetic parameters for the substance are reported. |
+| popPK | Mittapalli_2017 | relevant | 7 | 2 | Reports an IVIVC absorption/excretion model with urinary PK for potassium chloride in humans, but numeric values (%PE, Ae0-24h, Rmax) are only summarized, not tabulated in the evidence. |
+| popPK | Morimoto_1992 | irrelevant | 0 | 0 | KCl appears only as the euthanasia agent in cats; no kinetic parameters for potassium chloride are reported. |
+| popPK | Mukherjee_2019 | irrelevant | 1 | 2 | This is a clinical outcome study of serum electrolytes and renal function after PCNL; potassium chloride is only an irrigation fluid/analyte, with no toxicokinetic parameter for potassium_chloride itself. |
+| popPK | Murakami_2016 | irrelevant | 2 | 2 | This is a computational single-cell astrocyte electrophysiology model, not whole-body toxicokinetic data for potassium chloride; no species-level kinetic parameters like half-life, clearance, or partition coefficients are reported. |
+| popPK | Navali_2026 | irrelevant | 0 | 0 | KCl is only a local therapeutic injection; the study reports β-hCG clearance and outcomes with no toxicokinetic parameters for potassium chloride itself. |
+| popPK | Niepsch_2021 | irrelevant | 0 | 0 | KCl appears only as an extraction reagent/solution, with no toxicokinetic parameters for potassium chloride itself. |
+| popPK | Olesen_1980 | irrelevant | 1 | 4 | KCl is an infusion challenge for studying renal responses; no toxicokinetic parameters for potassium itself beyond excretion correlations in rats. |
+| popPK | Osterhout_1939 | irrelevant | 2 | 4 | Potassium chloride is only the unity reference for mobilities/partition coefficients measured on other alkali chlorides in the alga Nitella, so no kinetic parameter of KCl itself is reported (though the relative numeric values are present in the abstract). |
+| popPK | Parrish_2023 | irrelevant | 1 | 1 | This is an optogenetic neurophysiology study measuring extracellular K+ dynamics in mouse brain slices, not a toxicokinetic study of potassium chloride; no kinetic parameters such as half-life, clearance, or partition coefficients are reported. |
+| popPK | Petelska_2005 | irrelevant | 1 | 3 | KCl is only the electrolyte/reagent; the stability constant and partition coefficient describe the valinomycin-K+ complex, not KCl toxicokinetics. |
+| popPK | Pierpont_1980 | irrelevant | 0 | 0 | Potassium chloride is not the subject substance (study is on prazosin); potassium/chloride are only mentioned as unchanged serum and urinary electrolytes with no kinetic parameters. |
+| popPK | Pritchard_2010 | irrelevant | 1 | 1 | Potassium chloride is only an analytical/co-exposure reagent used to induce contraction; no kinetic parameters for KCl itself are reported, only relaxation half-times for Ca2+ clearance. |
+| popPK | Rabinowitz_1985 | relevant | 4 | 6 | Reports quantitative potassium kinetics in sheep (rates of change of K excretion vs plasma K) during KCl infusion, but data are physiologic renal excretion responses rather than classic toxicokinetic parameters; numeric values are present in the abstract. |
+| popPK | Ralph_2024 | irrelevant | 2 | 2 | KCl is a dietary intervention; no kinetic parameters (half-life, clearance, rate constants) for potassium's disposition are reported, only transporter abundances and physiology outcomes. |
+| popPK | Reinberg_1982 | irrelevant | 1 | 0 | This is a review mentioning potassium chloride only in a list of chronopharmacokinetic drugs, with no kinetic parameters of any kind in the evidence. |
+| popPK | Reinberg_1984 | irrelevant | 2 | 0 | Potassium chloride is merely listed among drugs in a chronopharmacokinetics review; no quantitative kinetic parameters for KCl appear in the evidence, and any values would reside in unprovided tables/figures. |
+| popPK | Rigby_2001 | irrelevant | 0 | 0 | KCl is only used as a depolarizing stimulus in in vitro uterine muscle contraction assays; no toxicokinetic parameters for potassium chloride are reported. |
+| popPK | Risler_1994 | irrelevant | 0 | 0 | The paper's kinetic parameters concern loop diuretics (furosemide, torasemide, etc.); potassium/chloride appear only as excretion outputs, so no kinetic parameter of potassium_chloride as subject substance is reported, and none are numeric in the provided evidence. |
+| popPK | Sakhaee_1991 | irrelevant | 1 | 0 | KCl appears only as a comparator/vehicle in a renal citrate excretion study with no toxicokinetic parameters (no half-life, clearance of KCl, rate constants, etc.) reported for it. |
+| PGx | Salleh_2016 | not_relevant | 0 | 0 | KCl is only a lab reagent (buffer constituent), not a studied drug; no gene variants or pharmacogenomic effects are reported. |
+| popPK | Sawyer_1990 | irrelevant | 0 | 0 | KCl is only a pretreatment reagent for Candida in a perfused mouse liver study, with no toxicokinetic parameters for potassium_chloride itself. |
+| PGx | Schurman_2001 | not_relevant | 2 | 4 | The paper describes ClC-Kb genotype in Bartter syndrome and clinical treatment (including potassium chloride use) but does not report a genotype effect on any PK or PD parameter of potassium chloride. |
+| popPK | Scibelli_2011 | irrelevant | 0 | 0 | KCl appears only as a taste-sensitivity test substance in methamphetamine study; no kinetic parameters for KCl are reported. |
+| popPK | Sebastian_1990 | irrelevant | 2 | 1 | This is a physiological outcome study of dietary K+ effects on phosphorus/calcitriol in humans, with no kinetic parameters (half-life, clearance, rate constants) for potassium chloride itself. |
+| popPK | Shafqat_2023 | irrelevant | 0 | 0 | KCl appears only as an analytical reagent/effector in L-asparaginase enzyme characterization; no toxicokinetic parameter for potassium chloride is reported. |
+| popPK | Shankar_2003 | irrelevant | 0 | 0 | Review of loop diuretic pharmacokinetics; no quantitative kinetic parameters for potassium chloride itself appear in the evidence. |
+| popPK | Shehata_2012 | irrelevant | 0 | 0 | KCl appears only as a depolarization stimulus in cultured rat neurons to study autophagy; no kinetic parameters of KCl are reported. |
+| popPK | Shen_2020 | irrelevant | 0 | 0 | Potassium chloride appears only as an 80 mM depolarizing/cytotoxic agent in cell experiments; no kinetic parameters for KCl are reported. |
+| popPK | Silva_1981 | relevant | 7 | 4 | Rat study of extrarenal disposal/volume of distribution of infused KCl, but the numeric values for volume of distribution are not shown in the abstract evidence provided. |
+| PGx | Suman_2016 | not_relevant | 0 | 0 | KCl is used as a laboratory reagent for fractionating mitochondrial arginase; no genetic variant effect on any in vivo PK/PD parameter of potassium chloride is reported. |
+| popPK | Sundqvist_2021 | irrelevant | 0 | 0 | Kinetic parameters (clearance, FE) are for nitrate/nitrite; potassium chloride is only a placebo co-treatment, not the subject substance. |
+| popPK | Sutherland_2000 | irrelevant | 0 | 0 | Kinetic parameters belong to AR-R15896AR, not potassium_chloride, which appears only as a measured physiological parameter (saline control). |
+| popPK | Suzuki_2009 | irrelevant | 2 | 2 | KCl is a tracer in an oral-clearance dental study; only qualitative half-time findings reported, no numeric values present (likely in figures/tables not provided). |
+| popPK | Tanaka_2001 | irrelevant | 1 | 2 | KCl is an exposure/treatment in an outcome study of rats, with no toxicokinetic parameters for potassium_chloride reported. |
+| popPK | Tarssanen_1980 | irrelevant | 0 | 0 | Clinical case report on amiloride-induced hyponatremia with no kinetic parameters for potassium chloride, which appears only as a supplementation agent. |
+| popPK | Tattoli_2015 | irrelevant | 1 | 1 | This is a case report of hypokalemia where potassium chloride is only a supplement with a serum potassium level, not a kinetic parameter. |
+| popPK | Terata_1999 | irrelevant | 1 | 0 | KCl appears only as a tool to alter vascular responses in a rat vasodilation study; no toxicokinetic parameters (concentrations, rate constants, or kinetic model values) for potassium chloride are reported. |
+| popPK | Tirloni_2018 | irrelevant | 0 | 0 | Potassium chloride appears only as a measured urinary electrolyte outcome, not a substance with kinetic parameters. |
+| PGx | Tom_2014 | not_relevant | 0 | 0 | No potassium chloride or gene variant/genotype effects on PK/PD parameters are reported; this is an herbal extract study in rats. |
+| popPK | Turner_2006 | irrelevant | 0 | 0 | All kinetic parameters (half-life, clearance, Cmax, AUC) belong to meloxicam; potassium and chloride appear only as monitored serum chemistry, not toxicokinetic parameters of potassium_chloride. |
+| popPK | Underwood_1999 | irrelevant | 0 | 0 | KCl appears only as a vascular contractility comparator, with no toxicokinetic parameters for potassium chloride. |
+| popPK | Verbrugge_2020 | irrelevant | 0 | 0 | This is a clinical outcome study of loop diuretic efficiency in CKD patients; potassium chloride has no kinetic parameters (diuretics are the subject, and no PK values are reported). |
+| popPK | Vijayakumaran_2019 | irrelevant | 0 | 0 | KCl appears only as a depolarizing agent to induce α-syn aggregation in vitro, with no kinetic, partition, clearance or disposition parameters of potassium chloride reported. |
+| PGx | Vormfelde_2004 | not_relevant | 2 | 8 | The drug studied is torsemide; potassium/chloride are only excretion endpoints, not parameters of potassium_chloride as the drug. |
+| popPK | Walter_1991 | irrelevant | 0 | 0 | KCl appears only as a fluid-balance vehicle infusion; kinetic parameters reported are for lithium, not potassium. |
+| popPK | Walz_2000 | irrelevant | 1 | 0 | A narrative review of astrocytic potassium clearance mechanisms with no numeric kinetic parameters (no rate constants, half-lives, or model values) reported. |
+| popPK | Wang_1995 | irrelevant | 0 | 0 | KCl appears only as an evoking stimulus for dopamine release measurement; no kinetic parameters of potassium chloride itself are reported. |
+| popPK | Wang_1996 | irrelevant | 1 | 2 | KCl appears only as a tool to depolarize dopamine release in a rat striatum study; no kinetic parameters of potassium chloride itself. |
+| popPK | Watanabe_1992 | irrelevant | 3 | 2 | Reports local oral salivary clearance halftimes of KCl as a diffusant in children, not systemic toxicokinetic parameters, and numeric values are not given in the text. |
+| popPK | Weaver_2001 | irrelevant | 0 | 0 | All kinetic parameters are for propofol in sheep; potassium chloride appears only as a euthanasia agent, not the subject substance. |
+| popPK | Xie_2025 | irrelevant | 1 | 1 | A rat renal-function/biomarker study with NaCl as dietary variable, no kinetic parameters (half-life, clearance of distribution, rate constants) for potassium chloride; potassium chloride appears only in transporter names. |
+| popPK | Xu_2021 | irrelevant | 1 | 2 | KCl is only a dietary component; the paper reports renal clearance/NCC physiology, not kinetic parameters (half-life, clearance, Vd, rate constants) for KCl itself. |
+| PGx | Xu_2026 | not_relevant | 7 | 5 | Case report speculates that SLC12A3 heterozygosity unmasked a Gitelman-like response to chlorthalidone (PD effect), but the drug of interest is potassium chloride given as replacement, with no variant effect on KCl PK/PD parameters. |
+| popPK | Yanamoto_1998 | irrelevant | 0 | 0 | KCl is only a tool to induce cortical spreading depression in a rat ischemia study; no kinetic parameters for potassium chloride are reported. |
+| popPK | Youn_2022 | relevant | 6 | 4 | Compartmental model of K+ (as KCl) disposition with rate constants in rats is directly relevant toxicokinetics, but the abstract gives no numeric parameter values (likely in figures/tables not provided). |
+| popPK | Yu_2012 | irrelevant | 0 | 0 | Potassium chloride appears only as a local stimulant for dopamine release in a methamphetamine toxicity study, with no kinetic parameters for KCl itself. |
+| popPK | Zamani_2017 | irrelevant | 0 | 0 | Potassium chloride is only a placebo comparator; the kinetic parameters (nitrate half-life, NOx concentrations) belong to KNO3/nitrate, not KCl. |
+| popPK | Zhao_2024 | irrelevant | 1 | 4 | Potassium chloride appears only as urinary electrolyte excretion measured in diuresis rats, with no kinetic parameters (half-life, clearance, rate constants, partition coefficients) for potassium chloride itself; some excretion values exist but for the drug, not KCl kinetics. |
+| popPK | Zuch_1998 | irrelevant | 0 | 0 | Potassium chloride appears only as a depolarizing stimulus to evoke dopamine overflow in a lead exposure study; no kinetic parameters of KCl itself are reported. |
+| popPK | Zuim_2024 | relevant | 4 | 2 | KCl is a subject salt in airway transport modeling and an inhaled human study, but no numeric rate constants or parameters for KCl appear in the provided evidence (values likely in figures/supplement). |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_chloride%5D&body=Drug%3A%20potassium_chloride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_potassium_chloride/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-14 17:25 UTC</sub>

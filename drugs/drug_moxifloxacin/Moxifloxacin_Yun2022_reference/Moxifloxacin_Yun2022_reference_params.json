@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Moxifloxacin_Yun2022_reference",
+ "molar_masses": {
+  "central.C": 0.4014314
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  400.0,
+  800.0
+ ],
+ "parameters": {
+  "Cl": 2.027777777777778e-06,
+  "F": 100.0,
+  "MM": 0.4014314,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00014428571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "k12": 0.0005748074807480748,
+  "k21": 0.00023793260473588344,
+  "ka": 0.005611111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 679.3660562467771
+ },
+ "reference_peaks": {
+  "central.C": 0.2752268761739393
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Cabozantinib_DAngelo2020_reference",
+ "molar_masses": {
+  "central.C": 0.501514
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.5277777777777776e-06,
+  "F": 1.0,
+  "MM": 0.501514,
+  "VdPerKg": 0.004557142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662188
+ },
+ "reference_peaks": {
+  "central.C": 3.130296797577408e-05
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

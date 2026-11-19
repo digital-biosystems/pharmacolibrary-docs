@@ -1,0 +1,166 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;phenylbutazone&quot;}]"></div>
+
+# phenylbutazone
+
+- **generic name:** phenylbutazone
+- **ATC codes:** `M01AA01`, `M01BA01`, `M02AA01`
+- **DrugBank:** [DB00812](https://go.drugbank.com/drugs/DB00812) · **PubChem:** [CID 4781](https://pubchem.ncbi.nlm.nih.gov/compound/4781)
+- **molar mass:** 308.3743 g/mol (C19H20N2O2) — DrugBank
+- **groups:** approved, vet_approved, withdrawn
+
+## About
+
+Phenylbutazone is a non-steroidal anti-inflammatory drug used for short-term relief of pain and fever in animals. It is administered via the oral route in tablets or capsules and can also be applied topically as a cream or ointment. Approval for human use has been withdrawn in the United States and is restricted in the United Kingdom to ankylosing spondylitis due to severe blood-related risks.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q421342](https://www.wikidata.org/wiki/Q421342), [Wikipedia](https://en.wikipedia.org/wiki/Phenylbutazone?oldid=1363040560) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| phenylbutazone | parent | 308.374 | C19H20N2O2 | DrugBank | [4781](https://pubchem.ncbi.nlm.nih.gov/compound/4781) | Kadir_1997, Lees_1987 |
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lees_1987 · V ·/kg</text><circle cx="350.0" cy="30.0" r="4" fill="#ef6c00"><title>Lees_1987 · V ·/kg: 8.211 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kadir_1997 · V ·/kg</text><circle cx="380.0" cy="46.0" r="4" fill="#78909c"><title>Kadir_1997 · V ·/kg: 12.18 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="camelid" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span><br><sub>stale — current check: Not simulated</sub> | [Kadir_1997_reference](drugs/drug_phenylbutazone/Phenylbutazone_Kadir1997_reference.md) | — | 1-compartment (no model) | 6 | Kadir A et al., Phenylbutazone pharmacokinetics and bio…, Journal of veterinary pharm… (1997) | [10.1046/j.1365-2885.1997.04427.x](https://doi.org/10.1046/j.1365-2885.1997.04427.x) |
+| <span class="pk-rf" hidden data-species="horse" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Lees_1987_reference](drugs/drug_phenylbutazone/Phenylbutazone_Lees1987_reference.md) | — | 1-compartment (no model) | 5 | Lees P et al., Metabolism, excretion, pharmacokinetics…, The Cornell veterinarian (1987) | — |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Delbeke_1993_reference](drugs/drug_phenylbutazone/Phenylbutazone_Delbeke1993_reference.md) | — | 1-compartment (no model) | 0 | Delbeke FT et al., The disposition of suxibuzone in the ho…, Journal of veterinary pharm… (1993) | [10.1111/j.1365-2885.1993.tb00175.x](https://doi.org/10.1111/j.1365-2885.1993.tb00175.x) |
+| <span class="pk-rf" hidden data-species="horse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Ekstrand_2026_reference](drugs/drug_phenylbutazone/Phenylbutazone_Ekstrand2026_reference.md) | — | 2-compartment (no model) | 5 | Ekstrand C et al., Differences in Plasma Exposure of Canna…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70027](https://doi.org/10.1111/jvp.70027) |
+| <span class="pk-rf" hidden data-species="cattle" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Lees_1988_reference](drugs/drug_phenylbutazone/Phenylbutazone_Lees1988_reference.md) | — | 1-compartment (no model) | 0 | Lees P et al., Pharmacokinetics, metabolism and excret…, Research in veterinary scie… (1988) | — |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Toutain_1994_local_skin_temperature](drugs/drug_phenylbutazone/pd_Toutain_1994_local_skin_temperature.md) | local skin temperature biomarker turnover ← phenylbutazone | — | Toutain PL et al., Plasma concentrations and therapeutic e…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00278.x](https://doi.org/10.1111/j.1365-2885.1994.tb00278.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Toutain_1994_rest_angle_flexion](drugs/drug_phenylbutazone/pd_Toutain_1994_rest_angle_flexion.md) | rest angle flexion biomarker turnover ← phenylbutazone | — | Toutain PL et al., Plasma concentrations and therapeutic e…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00278.x](https://doi.org/10.1111/j.1365-2885.1994.tb00278.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Toutain_1994_stride_length](drugs/drug_phenylbutazone/pd_Toutain_1994_stride_length.md) | stride length biomarker turnover ← phenylbutazone | — | Toutain PL et al., Plasma concentrations and therapeutic e…, Journal of veterinary pharm… (1994) | [10.1111/j.1365-2885.1994.tb00278.x](https://doi.org/10.1111/j.1365-2885.1994.tb00278.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=phenylbutazone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C9` inhibitor/substrate, `CYP3A4` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: PTGIS (inhibitor), PTGS1 (inhibitor), PTGS2 (inhibitor), SLC22A11 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 01:57 | 11:44 | 2/3/0 | 1/0/0 | 0/0/0 | 414,037/28,616 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 164 matched, 100 returned
+- **screened:** 6  ·  **relevant:** 6
+- **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Houck_2022.pdf` | Houck EL et al., Phenylbutazone pharmacokinetics in sout…, Journal of veterinary pharm… (2022) | popPK | 10 | [10.1111/jvp.13036](https://doi.org/10.1111/jvp.13036) | [34894412](https://pubmed.ncbi.nlm.nih.gov/34894412) | The study is a population pharmacokinetic analysis of phenylbutazone in rhinoceroses reporting key parameters (Cmax, Tmax, t1/2) in the abstract, but detailed numeric values for clearance, volume, or Q are not present in the provided evidence. |
+| `Kadir_1997.pdf` | Kadir A et al., Phenylbutazone pharmacokinetics and bio…, Journal of veterinary pharm… (1997) | popPK | 10 | [10.1046/j.1365-2885.1997.04427.x](https://doi.org/10.1046/j.1365-2885.1997.04427.x) | [9049950](https://pubmed.ncbi.nlm.nih.gov/9049950) | The study reports quantitative pharmacokinetic parameters (Vd, half-lives, bioavailability) for phenylbutazone in camels, with key values provided in the abstract text. |
+| `Lees_1987.pdf` | Lees P et al., Metabolism, excretion, pharmacokinetics…, The Cornell veterinarian (1987) | popPK | 10 |  | [3568689](https://pubmed.ncbi.nlm.nih.gov/3568689) | The abstract provides specific numeric pharmacokinetic parameters (beta, t1/2 beta, Vdarea, C1B) for phenylbutazone in horses. |
+| `Lees_1988.pdf` | Lees P et al., Pharmacokinetics, metabolism and excret…, Research in veterinary scie… (1988) | popPK | 10 |  | [3375589](https://pubmed.ncbi.nlm.nih.gov/3375589) | The abstract provides explicit quantitative PK parameters for phenylbutazone in cattle, including a three-compartment model description, mean elimination half-life (35.9 h), and clearance (2.77 ml kg-1 h-1). |
+| `Wasfi_1997.pdf` | Wasfi IA et al., Pharmacokinetics of phenylbutazone in c…, American journal of veterin… (1997) | popPK | 10 |  | [9185972](https://pubmed.ncbi.nlm.nih.gov/9185972) | The paper reports quantitative disposition parameters (half-life and clearance) for phenylbutazone in camels within the text. |
+| `Zaghloul_2024.pdf` | Zaghloul IY et al., Comparative pharmacokinetics of phenylb…, American journal of veterin… (2024) | popPK | 10 | [10.2460/ajvr.24.01.0012](https://doi.org/10.2460/ajvr.24.01.0012) | [38942059](https://pubmed.ncbi.nlm.nih.gov/38942059) | The paper describes a pharmacokinetic study of phenylbutazone in horses but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text. |
+| `Delbeke_1993.pdf` | Delbeke FT et al., The disposition of suxibuzone in the ho…, Journal of veterinary pharm… (1993) | popPK | 9 | [10.1111/j.1365-2885.1993.tb00175.x](https://doi.org/10.1111/j.1365-2885.1993.tb00175.x) | [8230399](https://pubmed.ncbi.nlm.nih.gov/8230399) | The paper reports quantitative PK parameters (half-life, terminal rate constant, peak concentration) for phenylbutazone, which is the major metabolite of the subject drug suxibuzone, fulfilling the criteria for metabolite kinetics. |
+| `Landuyt_1993.pdf` | Landuyt J et al., The intramuscular bioavailability of a…, Journal of veterinary pharm… (1993) | popPK | 8 | [10.1111/j.1365-2885.1993.tb00216.x](https://doi.org/10.1111/j.1365-2885.1993.tb00216.x) | [8126767](https://pubmed.ncbi.nlm.nih.gov/8126767) | The study reports quantitative PK parameters (bioavailability, compartment models) for phenylbutazone, but specific numeric values for clearance, volume, or rate constants are not present in the provided text. |
+| `Sioufi_1980.pdf` | Sioufi A et al., Pharmacokinetics of phenylbutazone in h…, Journal of pharmaceutical s… (1980) | popPK | 8 | [10.1002/jps.2600691216](https://doi.org/10.1002/jps.2600691216) | [7463328](https://pubmed.ncbi.nlm.nih.gov/7463328) | The study reports pharmacokinetic parameters for phenylbutazone in humans, but specific numeric values for clearance, volume of distribution, and intercompartmental clearance are not explicitly listed in the provided text (only half-life). |
+| `Toutain_1994.pdf` | Toutain PL et al., Plasma concentrations and therapeutic e…, Journal of veterinary pharm… (1994) | popPK | 8 | [10.1111/j.1365-2885.1994.tb00278.x](https://doi.org/10.1111/j.1365-2885.1994.tb00278.x) | [7707492](https://pubmed.ncbi.nlm.nih.gov/7707492) | The study is a PK/PD model of phenylbutazone in horses, but the evidence only reports pharmacodynamic parameters (EC50) and lacks explicit numeric PK disposition parameters (CL, V, half-life). |
+| `Whittem_1996.pdf` | Whittem T et al., Pharmacokinetic interactions between re…, Journal of veterinary pharm… (1996) | popPK | 8 | [10.1111/j.1365-2885.1996.tb00082.x](https://doi.org/10.1111/j.1365-2885.1996.tb00082.x) | [8971674](https://pubmed.ncbi.nlm.nih.gov/8971674) | The study is a relevant pharmacokinetic investigation of phenylbutazone in horses, but the specific numeric parameter values for phenylbutazone (such as clearance or half-life) are not present in the provided text, which only reports the qualitative result that no changes were detected by gentamicin. |
+| `Jaraiz_1999.pdf` | Jaraiz MV et al., Disposition and tolerance of suxibuzone…, Equine veterinary journal (1999) | popPK | 6 | [10.1111/j.2042-3306.1999.tb03841.x](https://doi.org/10.1111/j.2042-3306.1999.tb03841.x) | [10505957](https://pubmed.ncbi.nlm.nih.gov/10505957) | The study measures pharmacokinetic parameters (MRT, Cmax) for phenylbutazone in horses, but it is a non-compartmental analysis following administration of suxibuzone (a prodrug), and key parameters like clearance and volume of distribution are not explicitly reported. |
+| `Young_1994.pdf` | Young DB et al., Effects of phenylbutazone on thiamylal…, Journal of veterinary pharm… (1994) | popPK | 6 | [10.1111/j.1365-2885.1994.tb00265.x](https://doi.org/10.1111/j.1365-2885.1994.tb00265.x) | [7853465](https://pubmed.ncbi.nlm.nih.gov/7853465) | The study reports that phenylbutazone pharmacokinetics were described by a two-compartment model, but specific numeric parameter values (CL, V, t1/2) are not present in the provided evidence. |
+| `Maitho_1986.pdf` | Maitho TE et al., Absorption and pharmacokinetics of phen…, Journal of veterinary pharm… (1986) | popPK | 5 | [10.1111/j.1365-2885.1986.tb00009.x](https://doi.org/10.1111/j.1365-2885.1986.tb00009.x) | [3701913](https://pubmed.ncbi.nlm.nih.gov/3701913) | The study describes a compartmental model and reports bioavailability, but specific numeric values for clearance, volume of distribution, or absorption rate constants are not present in the provided evidence. |
+
+<sub>queue written 2026-10-07 01:55 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aledavood_2025 | irrelevant | 0 | 0 | The paper is a computational in-silico study on CHI3L1 inhibition where phenylbutazone is only listed as a screen hit, with no PK parameters reported. |
+| PGx | Ashirmetov_1989 | not_relevant | 0 | 0 | The study investigates the effect of surgical liver denervation on pharmacokinetics, not the effect of a genetic variant/genotype. |
+| popPK | Bartelink_2014 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of lopinavir/ritonavir and efavirenz in HIV patients, not phenylbutazone. |
+| popPK | Benz-de_2014 | irrelevant | 0 | 0 | The study focuses on methotrexate pharmacokinetics and does not report any data for phenylbutazone. |
+| popPK | Bertin_2023 | irrelevant | 0 | 0 | The paper describes a machine learning platform (RECOVER) for identifying synergistic drug combinations in vitro and does not contain pharmacokinetic data or parameters for phenylbutazone. |
+| PGx | Bochsler_1996 | not_relevant | 0 | 0 | The paper investigates bovine macrophage biology and nitric oxide generation, with no mention of human or animal genetics, genotypes, or pharmacogenomic effects on phenylbutazone PK/PD. |
+| popPK | Brouwers_1994 | irrelevant | 0 | 0 | This is a review article discussing general drug interactions with NSAIDs and does not report specific quantitative pharmacokinetic parameters for phenylbutazone. |
+| popPK | Burgos_2003 | irrelevant | 0 | 0 | Phenylbutazone is used only as a comparative standard (positive control) in an in-vitro physiological study of rat uterine smooth muscle, with no pharmacokinetic parameters reported. |
+| popPK | Chan_1994 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of warfarin, and phenylbutazone is only used as a co-administered enzyme inhibitor to assess drug interactions, not as the subject drug. |
+| popPK | Cheng_1998 | irrelevant | 0 | 0 | The study focuses on pharmacodynamics (in vivo COX inhibition) rather than population pharmacokinetics, and no PK parameters (CL, V, etc.) are reported for phenylbutazone. |
+| popPK | Clarke_1989 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of a tissue-chamber implant model in cattle, using phenylbutazone as a probe drug to characterize tissue distribution rather than reporting systemic disposition parameters for the drug itself. |
+| popPK | DeLouise_2023 | irrelevant | 0 | 0 | The paper is a drug screening study for radioprotection in mice, using phenylbutazone only as a candidate agent; it does not report quantitative PK parameters for phenylbutazone (only cites general literature values). |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper evaluates post-mortem inspection delays for disease and contaminant detection in ungulates and does not contain pharmacokinetic parameter estimates for phenylbutazone. |
+| popPK | Ekstrand_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cannabidiol (CBD) and cannabidiolic acid (CBDA) in horses, not phenylbutazone. |
+| PGx | Han_2012 | not_relevant | 0 | 0 | The paper studies the glucuronidation of salvianolic acid A and uses phenylbutazone only as a chemical inhibitor, not as the drug of interest in a pharmacogenomic study. |
+| popPK | Houck_2022 | relevant | 10 | 3 | The study is a population pharmacokinetic analysis of phenylbutazone in rhinoceroses reporting key parameters (Cmax, Tmax, t1/2) in the abstract, but detailed numeric values for clearance, volume, or Q are not present in the provided evidence. |
+| popPK | Hughes_2020 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics of piperaquine, not phenylbutazone. |
+| PGx | Joo_2015 | not_relevant | 0 | 0 | The paper reports in vitro UGT inhibition of phenylbutazone but does not report any genetic variants or pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Kappers_1996 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (inhibition) of CYP2C10 activity by NSAIDs like phenylbutazone in a cell line, not a pharmacogenomic effect of a genetic variant on a pharmacokinetic or pharmacodynamic parameter. |
+| PGx | Kerdpin_2008 | not_relevant | 0 | 0 | The study focuses on the glucuronidation of frusemide (furosemide) and identifies UGT enzymes, using phenylbutazone only as a non-specific inhibitor in an in vitro setting, rather than investigating the pharmacogenomics of phenylbutazone itself. |
+| popPK | Knych_2016 | irrelevant | 1 | 0 | The study's primary subject is methocarbamol, with phenylbutazone included only as a co-administered drug for comparison, and no specific quantitative PK parameters for phenylbutazone are provided in the evidence. |
+| popPK | Krause_1981 | irrelevant | 4 | 0 | The paper describes a method for estimating PK parameters using phenylbutazone data as an example, but the evidence provided contains only the abstract/description without any specific numeric parameter values (CL, V, etc.). |
+| popPK | Landuyt_1993 | relevant | 8 | 0 | The study reports quantitative PK parameters (bioavailability, compartment models) for phenylbutazone, but specific numeric values for clearance, volume, or rate constants are not present in the provided text. |
+| popPK | Lees_2004 | irrelevant | 2 | 0 | This is a review article describing PK-PD modeling principles for NSAIDs, including phenylbutazone, but the provided evidence contains no original quantitative PK parameter values (CL, V, ka, etc.). |
+| PGx | Levy_1995 | not_relevant | 0 | 0 | The paper discusses phenylbutazone only as a general inhibitor of CYP2C9 affecting other drugs, rather than reporting a pharmacogenomic effect on phenylbutazone's own PK/PD parameters. |
+| popPK | Maitho_1986 | irrelevant | 5 | 0 | The study describes a compartmental model and reports bioavailability, but specific numeric values for clearance, volume of distribution, or absorption rate constants are not present in the provided evidence. |
+| popPK | McIntyre_1977 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacology study on isolated guinea-pig trachea, containing no pharmacokinetic data for phenylbutazone. |
+| popPK | Milligan_2002 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for sildenafil, not phenylbutazone. |
+| PGx | Miners_1998 | not_relevant | 0 | 0 | The paper is a general review of CYP2C9 and mentions phenylbutazone only as an inhibitor of the enzyme, not as the study drug being pharmacogenomically modulated. |
+| popPK | Munn_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of carprofen in sheep, not phenylbutazone. |
+| PGx | Muzeeb_2006 | not_relevant | 0 | 0 | The paper studies the glucuronidation of DRF-6574, and phenylbutazone is only mentioned as an inhibitor of the reaction, not as the substrate undergoing pharmacogenomic analysis. |
+| PGx | Nerusu_2019 | not_relevant | 5 | 0 | The study investigates in vitro protein-ligand binding changes via recombinant mutants using spectroscopy, and does not report in vivo pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Nielsen-Kudsk_1980 | irrelevant | 2 | 0 | The study validates an HPLC method for phenylbutazone but only reports specific PK parameter values for naproxen in a single subject; no quantitative PK data for phenylbutazone are provided. |
+| PGx | Nozaki_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (transporter inhibition) involving phenylbutazone but does not report any gene variants or pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Ogg_1997 | not_relevant | 0 | 0 | The paper develops an assay for CYP3A4 induction using phenylbutazone as a tool compound, not a study on how a gene variant changes phenylbutazone's PK or PD. |
+| PGx | Ogg_1999 | not_relevant | 0 | 0 | The paper reports an in vitro gene induction study of CYP3A4 without any pharmacogenomic analysis or specific data on phenylbutazone PK/PD changes. |
+| popPK | Piraino_2025 | irrelevant | 0 | 0 | The paper is a radioprotection study using phenylbutazone as a candidate drug in mice, not a pharmacokinetic study, and the only PK-like values mentioned are cited literature for horses, not data from this study. |
+| popPK | Saso_1999 | irrelevant | 0 | 0 | Phenylbutazone is only mentioned as a non-steroidal anti-inflammatory drug comparator in a mechanistic discussion regarding protein denaturation inhibition, with no pharmacokinetic parameters reported. |
+| popPK | Sathe_1999 | irrelevant | 0 | 0 | Phenylbutazone is only used as a case example in Monte-Carlo simulations for a bioequivalence methodology study, and no quantitative pharmacokinetic parameters for it are reported in the provided evidence. |
+| popPK | Sioufi_1980 | relevant | 8 | 3 | The study reports pharmacokinetic parameters for phenylbutazone in humans, but specific numeric values for clearance, volume of distribution, and intercompartmental clearance are not explicitly listed in the provided text (only half-life). |
+| PGx | Song_2014 | not_relevant | 0 | 0 | The study investigates the metabolism of bergenin, and phenylbutazone is only mentioned as a non-specific UGT inhibitor, not as the target drug for pharmacogenomic analysis. |
+| popPK | Squires_1993 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of GABA receptor binding interactions, and phenylbutazone is only listed as a comparator that did not potentiate the effect, with no pharmacokinetic parameters reported. |
+| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The study investigates drug-drug interactions involving phenylbutazone as an inhibitor of nateglinide metabolism, not the effect of gene variants on phenylbutazone pharmacokinetics or pharmacodynamics. |
+| popPK | Toutain_1994 | relevant | 8 | 0 | The study is a PK/PD model of phenylbutazone in horses, but the evidence only reports pharmacodynamic parameters (EC50) and lacks explicit numeric PK disposition parameters (CL, V, half-life). |
+| PGx | Uchaipichat_2006 | not_relevant | 0 | 0 | The paper focuses on in vitro UGT enzyme selectivity using phenylbutazone as a nonselective inhibitor probe and does not involve genetic variants affecting the pharmacokinetics or pharmacodynamics of phenylbutazone. |
+| PGx | Vesell_1968_2 | not_relevant | 1 | 0 | The paper focuses on the genetic control of antipyrine levels and explicitly states there was no significant correlation between antipyrine and phenylbutazone half-lives, reporting no specific pharmacogenomic effect on phenylbutazone. |
+| popPK | Whittem_1996 | relevant | 8 | 1 | The study is a relevant pharmacokinetic investigation of phenylbutazone in horses, but the specific numeric parameter values for phenylbutazone (such as clearance or half-life) are not present in the provided text, which only reports the qualitative result that no changes were detected by gentamicin. |
+| popPK | Young_1994 | relevant | 6 | 0 | The study reports that phenylbutazone pharmacokinetics were described by a two-compartment model, but specific numeric parameter values (CL, V, t1/2) are not present in the provided evidence. |
+| popPK | Zaghloul_2024 | relevant | 10 | 3 | The paper describes a pharmacokinetic study of phenylbutazone in horses but the specific numeric parameter values (CL, V, t1/2) are not listed in the provided evidence text. |
+| PGx | Zhang_2016 | not_relevant | 0 | 0 | Phenylbutazone is used only as a chemical inhibitor for UGTs; the paper does not report pharmacogenomic effects on phenylbutazone's PK/PD. |
+| PGx | Zweers-Zeilmaker_1997 | not_relevant | 0 | 0 | The study investigates in vitro enzyme inhibition potency of phenylbutazone and other drugs in goat liver, containing no pharmacogenomic data or human PK/PD parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenylbutazone%5D&body=Drug%3A%20phenylbutazone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenylbutazone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:55 UTC</sub>

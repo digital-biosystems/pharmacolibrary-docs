@@ -1,0 +1,22 @@
+[
+ {
+  "key": "E0",
+  "label": "Baseline E0",
+  "unit": "mm-3",
+  "scale": 1.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "stop_time",
+  "label": "Ifosfamide concentration range",
+  "unit": "mmol l-1",
+  "scale": 1.0000000000000002,
+  "min": 100.0,
+  "max": 5000.0,
+  "step": 10.0,
+  "sim": true
+ }
+]

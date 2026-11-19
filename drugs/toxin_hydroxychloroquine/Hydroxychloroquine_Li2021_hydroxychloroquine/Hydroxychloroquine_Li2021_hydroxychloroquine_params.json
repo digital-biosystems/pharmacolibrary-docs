@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 516 mg oral (P01BA02)",
+ "model_id": "Hydroxychloroquine_Li2021_hydroxychloroquine",
+ "molar_masses": {
+  "central.C": 0.33587599999999995
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.3861111111111112e-06,
+  "F": 0.9,
+  "MM": 0.33587599999999995,
+  "Tlag": 1400.4,
+  "VdPerKg": 0.0006757142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.000516,
+  "ka": 0.0003194444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10000.4254921949
+ },
+ "reference_peaks": {
+  "central.C": 0.007712313116106904
+ },
+ "review_status": "needs_review",
+ "stop_time": 129600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

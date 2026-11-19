@@ -1,0 +1,28 @@
+{
+ "dose_source": "library default",
+ "model_id": "Pegaspargase_Sassen2017_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2222222222222222e-07,
+  "F": 1.0,
+  "VdPerKg": 4.5714285714285716e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 1.302083333333333e-05,
+  "k21": 1.4367816091954022e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662046
+ },
+ "reference_peaks": {
+  "central.C": 0.0012175897936210246
+ },
+ "stop_time": 93600.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

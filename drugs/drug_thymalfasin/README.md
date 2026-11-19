@@ -1,0 +1,71 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;thymalfasin&quot;}]"></div>
+
+# thymalfasin
+
+- **generic name:** thymalfasin
+- **ATC codes:** `L03AX25`
+- **DrugBank:** [DB04900](https://go.drugbank.com/drugs/DB04900) · **PubChem:** none
+- **groups:** investigational
+
+## About
+
+Thymalfasin is an immunostimulant used to treat conditions where the immune system needs support. It is given by subcutaneous injection. It is currently in the investigational phase.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q20817234](https://www.wikidata.org/wiki/Q20817234), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.30).">human + animal</span> | [Hadden_2003_CD45RA_T_cells](drugs/drug_thymalfasin/pd_Hadden_2003_CD45RA_T_cells.md) | CD(45)RA(+) 'naïve' T cells ← thymosin alpha(1) · stimulation effect | — | Hadden JW, Immunodeficiency and cancer: prospects…, International immunopharmac… (2003) | [10.1016/S1567-5769(03)00060-2](https://doi.org/10.1016/S1567-5769(03)00060-2) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Costantini_2020_pulmonary_aspergillosis_risk_immune_homeostasis](drugs/drug_thymalfasin/pd_Costantini_2020_pulmonary_aspergillosis_risk_immune_homeosta.md) | pulmonary aspergillosis risk / immune homeostasis ← thymalfasin · stimulation effect | — | Costantini C et al., Covid-19-Associated Pulmonary Aspergill…, Vaccines (2020) | [10.3390/vaccines8040713](https://doi.org/10.3390/vaccines8040713) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.40).">human + animal</span> | [Sjogren_2004_immune_system_parameters_T_cell_differentiation_and_maturation](drugs/drug_thymalfasin/pd_Sjogren_2004_immune_system_parameters_T_cell_differentiation.md) | immune system parameters / T-cell differentiation and maturation ← thymalfasin · stimulation effect | — | Sjogren MH, Thymalfasin: an immune system enhancer…, Journal of gastroenterology… (2004) | [10.1111/j.1440-1746.2004.03635.x](https://doi.org/10.1111/j.1440-1746.2004.03635.x) |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 23:23 | 6:57 | 0/0/0 | 1/2/0 | 0/0/0 | 185,702/2,414 | einfracz / qwen3.8-27b | 13 | 2/2 | 13/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 78 matched, 52 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Amer_2025 | irrelevant | 0 | 0 | The paper is a general review on peptide delivery via oral mucosa and does not report specific pharmacokinetic parameters for thymalfasin. |
+| PGx | Baek_2007 | not_relevant | 0 | 0 | The paper is a case report on the clinical efficacy of Thymosin Alpha-1 in combination therapy and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Carraro_2012 | irrelevant | 0 | 0 | The study evaluates the immunogenicity of an influenza vaccine with Thymosin-alpha 1 and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Garaci_2007 | not_relevant | 0 | 0 | The text describes the general efficacy and mechanism of action of thymosin alpha 1 in cancer and hepatitis but does not report any pharmacogenomic studies linking gene variants to PK or PD parameters. |
+| popPK | Gastine_2020 | irrelevant | 0 | 0 | The study models SARS-CoV-2 viral dynamics and clearance, not the pharmacokinetics of thymalfasin. |
+| popPK | Gastine_2021 | irrelevant | 0 | 0 | The paper is a meta-analysis of SARS-CoV-2 viral dynamics and does not contain any pharmacokinetic data for the drug thymalfasin. |
+| popPK | Islam_2022 | irrelevant | 0 | 0 | The paper is a review on immune system rejuvenation against coronavirus and does not contain pharmacokinetic data for thymalfasin. |
+| popPK | Klimentzou_2006 | irrelevant | 0 | 0 | The study focuses on the development and immunochemical evaluation of antibodies against prothymosin alpha, not on the pharmacokinetics of thymalfasin. |
+| PGx | Poo_2008 | not_relevant | 0 | 0 | The paper evaluates the clinical efficacy of thymalfasin in HCV patients without investigating any pharmacogenomic influences on its pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Rustgi_2005 | not_relevant | 0 | 0 | The text describes clinical efficacy and treatment outcomes for thymalfasin in hepatitis C patients but does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Rustgi_2007 | not_relevant | 0 | 0 | The paper is a clinical review of thymalfasin efficacy in Hepatitis C and contains no data on genetic variants or pharmacogenomics. |
+| popPK | Xu_2015 | irrelevant | 0 | 0 | The paper focuses on the immunogenicity of a vaccine in pigs, using thymosin α-1 as an adjuvant, and does not report any pharmacokinetic parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthymalfasin%5D&body=Drug%3A%20thymalfasin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thymalfasin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

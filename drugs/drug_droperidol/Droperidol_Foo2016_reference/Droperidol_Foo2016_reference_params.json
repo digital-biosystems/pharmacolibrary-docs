@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Droperidol_Foo2016_reference",
+ "molar_masses": {
+  "central.C": 0.37942739999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.1638888888888889e-05,
+  "F": 0.9,
+  "MM": 0.37942739999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0010514285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1497.3060082619222
+ },
+ "reference_peaks": {
+  "central.C": 0.001021962394427948
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

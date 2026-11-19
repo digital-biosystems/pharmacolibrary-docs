@@ -1,0 +1,115 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fostamatinib&quot;}]"></div>
+
+# fostamatinib
+
+- **generic name:** fostamatinib
+- **ATC codes:** `B02BX09`
+- **DrugBank:** [DB12010](https://go.drugbank.com/drugs/DB12010) · **PubChem:** [CID 11671467](https://pubchem.ncbi.nlm.nih.gov/compound/11671467)
+- **molar mass:** 580.4595 g/mol (C23H26FN6O9P) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Fostamatinib is a tyrosine kinase inhibitor used to treat chronic immune thrombocytopenia. The medication is given by mouth as a tablet. It is authorised in the European Union for thrombocytopenia.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q5473550](https://www.wikidata.org/wiki/Q5473550), [Wikipedia](https://en.wikipedia.org/wiki/Fostamatinib?oldid=1379786946) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| fostamatinib | parent | 580.46 | C23H26FN6O9P | DrugBank | [11671467](https://pubchem.ncbi.nlm.nih.gov/compound/11671467) | Boström_2014 |
+| R406 | metabolite | 628.632 | C28H29FN6O8S | PubChem | [11984591](https://pubchem.ncbi.nlm.nih.gov/compound/11984591) | Boström_2014 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Boström_2014_reference](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md) | — | 1-compartment (no model) | 1 | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Boström_2014_DBP](drugs/drug_fostamatinib/pd_Bostr_m_2014_DBP.md) | DBP ← R406 · direct Emax (saturable) effect | — | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Boström_2014_SBP](drugs/drug_fostamatinib/pd_Bostr_m_2014_SBP.md) | SBP ← R406 · direct linear effect | — | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Maringwa_2015_ACR20](drugs/drug_fostamatinib/pd_Maringwa_2015_ACR20.md) | ACR20 ← R406 · categorical (graded) response model | — | Maringwa J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2015) | [10.1002/jcph.406](https://doi.org/10.1002/jcph.406) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fostamatinib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
+| distribution | blood | `SLC29A1` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCG2` inhibitor | DrugBank actor |
+| distribution | liver | `SLC29A1` inhibitor | DrugBank actor |
+| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| distribution | testis | `ABCG2` inhibitor | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `UGT1A1` inhibitor, `UGT1A9` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | `ABCG2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: AAK1 (inhibitor), ABCB5 (substrate), ABL1 (inhibitor), ABL2 (inhibitor), ACVR1 (inhibitor), ACVR1B (inhibitor), ADORA3 (target), ALK (inhibitor), ALOX5 (inhibitor), ANKK1 (inhibitor), AURKA (inhibitor), AURKB (inhibitor), AURKC (inhibitor), AXL (inhibitor), BLK (inhibitor), BMP2K (inhibitor), BMPR1B (inhibitor), BMPR2 (inhibitor), BMX (inhibitor), BRAF (inhibitor), BTK (inhibitor), CAMK1 (inhibitor), CAMK1D (inhibitor), CAMK1G (inhibitor), CAMK2A (inhibitor), CAMK2B (inhibitor), CAMK2D (inhibitor), CAMK2G (inhibitor), CAMKK1 (inhibitor), CAMKK2 (inhibitor), CASK (inhibitor), CDC42BPG (inhibitor), CDK1 (inhibitor), CDK15 (inhibitor), CDK16 (inhibitor), CDK17 (inhibitor), CDK4 (inhibitor), CDKL1 (inhibitor), CDKL2 (inhibitor), CHEK1 (inhibitor), CHEK2 (inhibitor), CILK1 (inhibitor), CIT (inhibitor), CLASP1 (inhibitor), CLK1 (inhibitor), CLK2 (inhibitor), CLK3 (inhibitor), CLK4 (inhibitor), COQ8A (inhibitor), COQ8B (inhibitor), CSF1R (inhibitor), CSK (inhibitor), CSN3 (inhibitor), CSNK1A1 (inhibitor), CSNK2A1 (inhibitor), CSNK2A2 (inhibitor), CTSL (inhibitor), CTSS (inhibitor), DAPK1 (inhibitor), DAPK2 (inhibitor), DAPK3 (inhibitor), DCLK1 (inhibitor), DCLK2 (inhibitor), DCLK3 (inhibitor), DDR1 (inhibitor), DDR2 (inhibitor), DYRK1A (inhibitor), DYRK1B (inhibitor), EGFR (inhibitor), EIF2AK1 (inhibitor), EIF2AK2 (inhibitor), EIF2AK4 (inhibitor), EPHA1 (inhibitor), EPHA2 (inhibitor), EPHA3 (inhibitor), EPHA4 (inhibitor), EPHA5 (inhibitor), EPHA6 (inhibitor), EPHA7 (inhibitor), EPHA8 (inhibitor), EPHB1 (inhibitor), EPHB2 (inhibitor), EPHB4 (inhibitor), EPHB6 (inhibitor), ERBB2 (inhibitor), ERBB4 (inhibitor), ERN1 (inhibitor), FAAH (inhibitor), FER (inhibitor), FES (inhibitor), FGFR1 (inhibitor), FGFR2 (inhibitor), FGFR3 (inhibitor), FGR (inhibitor), FLT1 (inhibitor), FLT3 (inhibitor), FLT4 (inhibitor), FRK (inhibitor), FYN (inhibitor), GAK (inhibitor), GSK3A (inhibitor), GSK3B (inhibitor), HCK (inhibitor), HIPK2 (inhibitor), HIPK3 (inhibitor), IKBKB (inhibitor), IKBKE (inhibitor), INSR (inhibitor), INSRR (inhibitor), IRAK1 (inhibitor), IRAK3 (inhibitor), IRAK4 (inhibitor), ITK (inhibitor), JAK1 (inhibitor), JAK2 (inhibitor), JAK3 (inhibitor), KDR (inhibitor), KIT (inhibitor), LATS1 (inhibitor), LCK (inhibitor), LIMK1 (inhibitor), LIMK2 (inhibitor), LRRK2 (inhibitor), LTK (inhibitor), LYN (inhibitor), MAP2K2 (inhibitor), MAP2K3 (inhibitor), MAP2K5 (inhibitor), MAP2K6 (inhibitor), MAP3K1 (inhibitor), MAP3K10 (inhibitor), MAP3K11 (inhibitor), MAP3K12 (inhibitor), MAP3K13 (inhibitor), MAP3K15 (inhibitor), MAP3K19 (inhibitor), MAP3K2 (inhibitor), MAP3K20 (inhibitor), MAP3K3 (inhibitor), MAP3K4 (inhibitor), MAP3K6 (inhibitor), MAP3K9 (inhibitor), MAP4K1 (inhibitor), MAP4K2 (inhibitor), MAP4K3 (inhibitor), MAP4K4 (inhibitor), MAP4K5 (inhibitor), MAPK10 (inhibitor), MAPK13 (inhibitor), MAPK14 (inhibitor), MAPK15 (inhibitor), MAPK4 (inhibitor), MAPK7 (inhibitor), MAPK9 (inhibitor), MAPKAPK5 (inhibitor), MARK1 (inhibitor), MARK2 (inhibitor), MARK3 (inhibitor), MARK4 (inhibitor), MAST1 (inhibitor), MATK (inhibitor), MELK (inhibitor), MERTK (inhibitor), MET (inhibitor), MINK1 (inhibitor), MKNK1 (inhibitor), MKNK2 (inhibitor), MST1R (inhibitor), MTOR (inhibitor), MUSK (inhibitor), MYLK (inhibitor), MYLK2 (inhibitor), MYLK3 (inhibitor), MYLK4 (inhibitor), MYO3A (inhibitor), NEK1 (inhibitor), NEK11 (inhibitor), NEK2 (inhibitor), NEK3 (inhibitor), NEK4 (inhibitor), NEK5 (inhibitor), NEK9 (inhibitor), NIM1K (inhibitor), NTRK1 (inhibitor), NTRK2 (inhibitor), NTRK3 (inhibitor), NUAK1 (inhibitor), NUAK2 (inhibitor), OXSR1 (inhibitor), PAK1 (inhibitor), PAK2 (inhibitor), PAK3 (inhibitor), PAK4 (inhibitor), PAK5 (inhibitor), PAK6 (inhibitor), PDE5A (inhibitor), PDGFRA (inhibitor), PDGFRB (inhibitor), PDPK1 (inhibitor), PHKG1 (inhibitor), PI4KB (inhibitor), PIK3C2B (inhibitor), PIK3C2G (inhibitor), PIK3CD (inhibitor), PIK3CG (inhibitor), PIM1 (inhibitor), PIM3 (inhibitor), PIP4K2B (inhibitor), PIP4K2C (inhibitor), PKMYT1 (inhibitor), PKN1 (inhibitor), PKN2 (inhibitor), PLK1 (inhibitor), PLK2 (inhibitor), PLK3 (inhibitor), PLK4 (inhibitor), PRKAA1 (inhibitor), PRKACA (inhibitor), PRKACB (inhibitor), PRKCD (inhibitor), PRKCE (inhibitor), PRKCG (inhibitor), PRKCI (inhibitor), PRKCQ (inhibitor), PRKD1 (inhibitor), PRKG2 (inhibitor), PRP4K (inhibitor), PTK2 (inhibitor), PTK2B (inhibitor), PTK6 (inhibitor), RAF1 (inhibitor), RET (inhibitor), RIOK1 (inhibitor), RIOK2 (inhibitor), RIOK3 (inhibitor), RIPK1 (inhibitor), RIPK2 (inhibitor), RIPK4 (inhibitor), ROCK2 (inhibitor), ROS1 (inhibitor), RPS6KA1 (inhibitor), RPS6KA3 (inhibitor), RPS6KA6 (inhibitor), SBK1 (inhibitor), SBK3 (inhibitor), SGK3 (inhibitor), SIK1 (inhibitor), SIK2 (inhibitor), SIK3 (inhibitor), SLC18A2 (inhibitor), SLK (inhibitor), SNRK (inhibitor), SRC (inhibitor), SRMS (inhibitor), STK10 (inhibitor), STK16 (inhibitor), STK17A (inhibitor), STK17B (inhibitor), STK24 (inhibitor), STK26 (inhibitor), STK3 (inhibitor), STK32A (inhibitor), STK33 (inhibitor), STK35 (inhibitor), STK36 (inhibitor), STK38 (inhibitor), STK38L (inhibitor), STK39 (inhibitor), SYK (inhibitor), TAOK1 (inhibitor), TAOK2 (inhibitor), TAOK3 (inhibitor), TBK1 (inhibitor), TEC (inhibitor), TEK (inhibitor), TESK1 (inhibitor), TGFBR1 (inhibitor), TGFBR2 (inhibitor), TIE1 (inhibitor), TLK1 (inhibitor), TLK2 (inhibitor), TNIK (inhibitor), TNK1 (inhibitor), TNK2 (inhibitor), TNNI3K (inhibitor), TSSK1B (inhibitor), TTK (inhibitor), TXK (inhibitor), TYK2 (inhibitor), TYRO3 (inhibitor), ULK1 (inhibitor), ULK2 (inhibitor), ULK3 (inhibitor), WEE1 (inhibitor), YES1 (inhibitor), ZAP70 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 19:47 | 2:34 | 1/0/0 | 2/0/0 | 0/0/0 | 28,196/6,762 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 15 matched, 15 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Boström_2014.pdf` | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | popPK | 9 | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) | [24895144](https://pubmed.ncbi.nlm.nih.gov/24895144) | The study reports a population PK model for the active metabolite R406 (CL/F 18.7 L/h) following fostamatinib dosing, but other specific parameters like V and Q are not explicitly listed in the text. |
+| `Maringwa_2015.pdf` | Maringwa J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2015) | pd | 5 | [10.1002/jcph.406](https://doi.org/10.1002/jcph.406) | [25280085](https://www.ncbi.nlm.nih.gov/pubmed/25280085) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Moore_2019.pdf` | Moore DC et al., Fostamatinib for the treatment of immun…, American journal of health-… (2019) | pgx | 7 | [10.1093/ajhp/zxz052](https://doi.org/10.1093/ajhp/zxz052) | [30951590](https://www.ncbi.nlm.nih.gov/pubmed/30951590) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-05 19:45 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Ahmadinia_2026 | not_relevant | 0 | 0 | The paper is a narrative review discussing the therapeutic mechanisms of fostamatinib in autoimmune diseases and does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Costa_2025 | not_relevant | 0 | 0 | The paper is a review of pathogenesis and therapeutic strategies for autoimmune hemolytic anemia and does not report pharmacogenomic effects on fostamatinib PK/PD. |
+| PGx | Duran_2019 | not_relevant | 0 | 0 | The paper investigates the effect of fostamatinib's metabolite (R406) on P-glycoprotein-mediated drug resistance, not the effect of a gene variant on fostamatinib's PK/PD. |
+| PGx | Flinn_2016 | not_relevant | 0 | 0 | The paper reports clinical efficacy based on cell-of-origin subtypes (GCB/ABC) but does not report pharmacokinetic or pharmacodynamic parameters or specific gene variants affecting drug metabolism. |
+| PGx | Gkouskou_2024 | not_relevant | 0 | 0 | The paper is a review on nutrigenetics and obesity that only mentions fostamatinib as a potential repurposing target based on in silico predictions, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Maringwa_2015 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic modeling of efficacy (ACR20) and exposure-response relationships rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for fostamatinib. |
+| PGx | Martin_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions with CYP3A4 inhibitors/inducators, not the effect of a specific gene variant or genotype on pharmacokinetics. |
+| PGx | Moore_2019 | not_relevant | 0 | 0 | The paper is a general review of fostamatinib's pharmacology and clinical use, mentioning CYP3A4 metabolism but not reporting any specific pharmacogenomic effects of gene variants on PK or PD parameters. |
+| popPK | Thoma_2015 | irrelevant | 0 | 0 | The study focuses on a different Syk inhibitor (Compound 5) in rats, not fostamatinib. |
+| PD | Thoma_2015 | not_relevant | 0 | 0 | The text is an abstract that mentions activity in a rat PK/PD model but provides no numeric PD parameters, curves, or specific exposure-response data. |
+| PGx | Xu_2025 | not_relevant | 0 | 0 | The paper identifies fostamatinib as a potential anti-aging drug via computational screening but does not report any pharmacogenomic effects on its PK or PD parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfostamatinib%5D&body=Drug%3A%20fostamatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fostamatinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 19:45 UTC</sub>

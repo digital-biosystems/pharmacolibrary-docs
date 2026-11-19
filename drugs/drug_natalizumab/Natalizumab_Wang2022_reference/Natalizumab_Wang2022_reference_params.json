@@ -1,0 +1,26 @@
+{
+ "dose_source": "WHO ATC DDD 10 mg parenteral (L04AG03)",
+ "model_id": "Natalizumab_Wang2022_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.175925925925926e-09,
+  "F": 1.0,
+  "VdPerKg": 8.291786697863539e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662073
+ },
+ "reference_peaks": {
+  "central.C": 0.001722681525560687
+ },
+ "stop_time": 9676800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

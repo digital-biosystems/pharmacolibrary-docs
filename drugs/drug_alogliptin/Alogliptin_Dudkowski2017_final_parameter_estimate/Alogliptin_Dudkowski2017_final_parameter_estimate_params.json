@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Alogliptin_Dudkowski2017_final_parameter_estimate",
+ "molar_masses": {
+  "central.C": 0.33939159999999996
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  12.5,
+  25.0
+ ],
+ "parameters": {
+  "Cl": 4.000000000000001e-06,
+  "F": 1.0,
+  "MM": 0.33939159999999996,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0017857142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.25e-05,
+  "k12": 2.6000000000000002e-05,
+  "k21": 2.777777777777778e-05,
+  "ka": 0.00016388888888888887,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13505.410821643287
+ },
+ "reference_peaks": {
+  "central.C": 4.961688790972882e-05
+ },
+ "stop_time": 129600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

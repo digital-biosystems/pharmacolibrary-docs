@@ -1,0 +1,223 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Neomycin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Neomycin_Errecalde1990_reference&quot;,&quot;label&quot;:&quot;Errecalde_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Errecalde1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Liu2021_reference&quot;,&quot;label&quot;:&quot;Liu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Liu2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Qu2026_cattle&quot;,&quot;label&quot;:&quot;Qu_2026_cattle&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Qu2026_cattle.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Qu2026_intramuscular&quot;,&quot;label&quot;:&quot;Qu_2026_intramuscular&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Qu2026_intramuscular.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Qu2026_intravenous&quot;,&quot;label&quot;:&quot;Qu_2026_intravenous&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Qu2026_intravenous.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Qu2026_oral&quot;,&quot;label&quot;:&quot;Qu_2026_oral&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Qu2026_oral.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Qu2026_reference&quot;,&quot;label&quot;:&quot;Qu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Qu2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Qu2026_sheep&quot;,&quot;label&quot;:&quot;Qu_2026_sheep&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Qu2026_sheep.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Qu2026_subcutaneous&quot;,&quot;label&quot;:&quot;Qu_2026_subcutaneous&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Qu2026_subcutaneous.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Neomycin_Qu2026_swine&quot;,&quot;label&quot;:&quot;Qu_2026_swine&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_neomycin/Neomycin_Qu2026_swine.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Neomycin
+
+- **generic name:** Neomycin
+- **T3DB:** [T3D2951](http://www.t3db.ca/toxins/T3D2951) · **DrugBank:** [DB00994](https://go.drugbank.com/drugs/DB00994) · **PubChem:** [CID 8378](https://pubchem.ncbi.nlm.nih.gov/compound/8378)
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+A component of neomycin that is produced by Streptomyces fradiae. On hydrolysis it yields neamine and neobiosamine B. (From Merck Index, 11th ed). Neomycin is a bactericidal aminoglycoside antibiotic that binds to the 30S ribosome of susceptible organisms. …
+
+- **Category:** Drug, Synthetic Toxin
+- **Route of exposure:** eye contact, topical (eye drops). Poorly absorbed from the normal gastrointestinal tract. Although only approximately 3% of neomycin is absorbed through intact intestinal mucosa, significant amounts may be absorbed through ulcerated or denuded mucosa or if inflammation is present.
+- **Sources and uses:** Topical uses include treatment for superficial eye infections caused by susceptible bacteria (used in combination with other antiinfectives), treatment of otitis externa caused by susceptible bacteria, treatment or prevention of bacterial infections in skin lesions, and use as a continuous short-term irrigant or rinse to prevent bacteriuria and gram negative rod bacteremia in abacteriuric patients with indwelling catheters. May be used orally to treat hepatic encephalopathy, as a perioperative prophylactic agent, and as an adjunct to fluid and electrolyte replacement in the treatment of diarrhea caused to enteropathogenic E. coli (EPEC).
+- **Mechanism of toxicity:** Aminoglycosides like neomycin "irreversibly" bind to specific 30S-subunit proteins and 16S rRNA. Specifically neomycin binds to four nucleotides of 16S rRNA and a single amino acid of protein S12. …
+- **Health effects:** Antibiotic resistance
+- **Acute toxicity:** LD50: 200 mg/kg (Rat)
+- **Treatment:** Hemodialysis will remove neomycin sulfate from the blood.
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D2951">T3DB T3D2951</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 1404-04-2 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7507">ChEBI 7507</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| neomycin | parent | 614.65 | C23H46N6O13 | PubChem | [8378](https://pubchem.ncbi.nlm.nih.gov/compound/8378) | Baggot_1981, Black_1983, Errecalde_1990, Liu_2021, Qu_2026, Zhang_2023 |
+
+## Start here
+
+> **Errecalde_1990_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> sheep. [Run it in the simulator](drugs/toxin_neomycin/Neomycin_Errecalde1990_reference.md?tab=Simulation) · [record](drugs/toxin_neomycin/Neomycin_Errecalde1990_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Qu_2026 · V ·/kg</text><circle cx="305.1" cy="30.0" r="4" fill="#ef6c00"><title>Qu_2026 · V ·/kg: 21.33 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Errecalde_1990 · V/F ·/kg</text><circle cx="305.1" cy="46.0" r="4" fill="#78909c"><title>Errecalde_1990 · V/F ·/kg: 21.33 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="sheep" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Errecalde_1990_reference](drugs/toxin_neomycin/Neomycin_Errecalde1990_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Errecalde JO et al., Pharmacokinetics of neomycin in sheep a…, Zentralblatt fur Veterinarm… (1990) | [10.1111/j.1439-0442.1990.tb00890.x](https://doi.org/10.1111/j.1439-0442.1990.tb00890.x) |
+| <span class="pk-rf" hidden data-species="pig" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Liu_2021_reference](drugs/toxin_neomycin/Neomycin_Liu2021_reference.md) | ▶ model + simulator | retention, 1 pool | 5 | Liu Y et al., Pharmacokinetics of neomycin sulfate af…, Journal of veterinary pharm… (2021) | [10.1111/jvp.12981](https://doi.org/10.1111/jvp.12981) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub> | [Qu_2026_cattle](drugs/toxin_neomycin/Neomycin_Qu2026_cattle.md) | ▶ model + simulator | retention, 1 pool | 2 | Qu H et al., Pharmacokinetics of neomycin in plasma,…, Frontiers in veterinary sci… (2026) | [10.3389/fvets.2026.1800606](https://doi.org/10.3389/fvets.2026.1800606) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub> | [↳ intramuscular](drugs/toxin_neomycin/Neomycin_Qu2026_intramuscular.md) | ▶ model + simulator | retention, 1 pool | 3 |  |  |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub> | [↳ intravenous](drugs/toxin_neomycin/Neomycin_Qu2026_intravenous.md) | ▶ model + simulator | retention, 1 pool | 3 |  |  |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub> | [↳ oral](drugs/toxin_neomycin/Neomycin_Qu2026_oral.md) | ▶ model + simulator | retention, 1 pool | 3 |  |  |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub> | [↳ reference](drugs/toxin_neomycin/Neomycin_Qu2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 |  |  |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub> | [↳ sheep](drugs/toxin_neomycin/Neomycin_Qu2026_sheep.md) | ▶ model + simulator | retention, 1 pool | 2 |  |  |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub> | [↳ subcutaneous](drugs/toxin_neomycin/Neomycin_Qu2026_subcutaneous.md) | ▶ model + simulator | retention, 1 pool | 3 |  |  |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub> | [↳ swine](drugs/toxin_neomycin/Neomycin_Qu2026_swine.md) | ▶ model + simulator | retention, 1 pool | 4 |  |  |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ neomycin](drugs/toxin_neomycin/Neomycin_Qu2026_neomycin.md) | — | retention function (no model) | 8 |  |  |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Baggot_1981_reference](drugs/toxin_neomycin/Neomycin_Baggot1981_reference.md) | — | 1-compartment (no model) | 4 | Baggot JD et al., The pharmacokinetics of some aminoglyco…, Journal of veterinary pharm… (1981) | [10.1111/j.1365-2885.1981.tb00863.x](https://doi.org/10.1111/j.1365-2885.1981.tb00863.x) |
+| <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Black_1983_reference](drugs/toxin_neomycin/Neomycin_Black1983_reference.md) | — | 2-compartment (no model) | 9 | Black WD et al., Pharmacokinetic study of neomycin in ca…, Canadian journal of compara… (1983) | — |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Zhang_2023_reference](drugs/toxin_neomycin/Neomycin_Zhang2023_reference.md) | — | 1-compartment (no model) | 1 | Zhang Y et al., Influence of konjac glucomannan and its…, International journal of bi… (2023) | [10.1016/j.ijbiomac.2023.126306](https://doi.org/10.1016/j.ijbiomac.2023.126306) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=neomycin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CASR (activator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 07:55 | 23:53 | 10/4/0 | 0/0/0 | 0/0/0 | 572,985/73,956 | ollama / glm-5.3-flash | 34 | 6/15 | 34/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 183 matched, 139 returned
+- **screened:** 6  ·  **relevant:** 6
+- **records:** 14  ·  extracted 2  ·  needs review 8  ·  rejected 4  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Black_1983.pdf` | Black WD et al., Pharmacokinetic study of neomycin in ca…, Canadian journal of compara… (1983) | popPK | 10 |  | [6667431](https://pubmed.ncbi.nlm.nih.gov/6667431) | Reports complete numeric two-compartment pharmacokinetic parameters (half-lives, volumes, clearance, rate constants) for neomycin in calves directly in the abstract. |
+| `Errecalde_1990.pdf` | Errecalde JO et al., Pharmacokinetics of neomycin in sheep a…, Zentralblatt fur Veterinarm… (1990) | popPK | 10 | [10.1111/j.1439-0442.1990.tb00890.x](https://doi.org/10.1111/j.1439-0442.1990.tb00890.x) | [2114710](https://pubmed.ncbi.nlm.nih.gov/2114710) | Full numeric PK parameters (half-lives, Vd, absorption rates, bioavailability) for neomycin in sheep are given directly in the abstract. |
+| `Federspil_1979.pdf` | Federspil P, [Neomycin resorption from the normal an…, Fortschritte der Medizin (1979) | popPK | 10 |  | [535846](https://pubmed.ncbi.nlm.nih.gov/535846) | A pharmacokinetic study of neomycin in guinea pigs with kinetic parameters in serum/perilymph, but abstract gives no numeric values (likely in full text or tables). |
+| `Liu_2021.pdf` | Liu Y et al., Pharmacokinetics of neomycin sulfate af…, Journal of veterinary pharm… (2021) | popPK | 10 | [10.1111/jvp.12981](https://doi.org/10.1111/jvp.12981) | [34165196](https://pubmed.ncbi.nlm.nih.gov/34165196) | Full PK parameters (half-life, AUC, Cmax, bioavailability) for neomycin in swine are given in the abstract with numeric values. |
+| `Baggot_1981.pdf` | Baggot JD et al., The pharmacokinetics of some aminoglyco…, Journal of veterinary pharm… (1981) | popPK | 9 | [10.1111/j.1365-2885.1981.tb00863.x](https://doi.org/10.1111/j.1365-2885.1981.tb00863.x) | [7349342](https://pubmed.ncbi.nlm.nih.gov/7349342) | Neomycin half-life (2.10 ± 0.97 h) and approximate Vd (~230 ml/kg) are reported in the abstract, though its clearance/bioavailability values are only described comparatively rather than given numerically. |
+| `Burrows_1987.pdf` | Burrows GE et al., Comparative pharmacokinetics of gentami…, Journal of veterinary pharm… (1987) | popPK | 8 | [10.1111/j.1365-2885.1987.tb00077.x](https://doi.org/10.1111/j.1365-2885.1987.tb00077.x) | [3586124](https://pubmed.ncbi.nlm.nih.gov/3586124) | Neomycin pharmacokinetic parameters (two-compartment model, half-life, Vd) were determined in newborn calves, but the evidence shown reports only oxytetracycline's numeric values, so neomycin numbers likely reside in tables/body text not provided. |
+| `Mishra_2024.pdf` | Mishra A et al., Concurrent determination of anti-microb…, Journal of pharmaceutical a… (2024) | popPK | 6 | [10.1016/j.jpba.2023.115920](https://doi.org/10.1016/j.jpba.2023.115920) | [38113826](https://pubmed.ncbi.nlm.nih.gov/38113826) | Ocular PK-PD of neomycin in rabbit tear/cornea is reported, but the actual numeric PK parameter values appear only in figures/simulations not included in the evidence. |
+| `Nouws_1977.pdf` | Nouws JF et al., Tissue distribution and residues of ami…, Tijdschrift voor diergenees… (1977) | popPK | 6 |  | [411195](https://pubmed.ncbi.nlm.nih.gov/411195) | Tissue residue/persistence data for neomycin in dairy cows, but the actual numeric concentrations are not present in the evidence (likely in figures/tables not provided). |
+| `Zhang_2023.pdf` | Zhang Y et al., Influence of konjac glucomannan and its…, International journal of bi… (2023) | popPK | 6 | [10.1016/j.ijbiomac.2023.126306](https://doi.org/10.1016/j.ijbiomac.2023.126306) | [37573922](https://pubmed.ncbi.nlm.nih.gov/37573922) | Neomycin is a subject antibiotic in the cocktail with some numeric PK data (distribution values 1.25→1.62 h) shown, though key parameters (AUC, absorption, elimination rates) appear only as relative changes or in figures/tables not fully provided. |
+| `Zu_2018.pdf` | Zu M et al., Rapid analysis of neomycin in cochlear…, Journal of chromatography.… (2018) | popPK | 5 | [10.1016/j.jchromb.2018.06.055](https://doi.org/10.1016/j.jchromb.2018.06.055) | [29990713](https://pubmed.ncbi.nlm.nih.gov/29990713) | Applied to a neomycin toxicokinetics study in guinea pig perilymph, but only analytical validation numbers are present; the actual kinetic parameter values are not shown. |
+
+<sub>queue written 2026-11-14 07:48 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aguilera_2010 | irrelevant | 0 | 0 | Neomycin is only a treatment component in a clinical outcome study; no kinetic parameters are reported. |
+| PGx | Akman_2011 | not_relevant | 0 | 0 | Neomycin is only a selection cassette in mouse gene targeting, not a administered drug with PK/PD effects. |
+| popPK | Apperloo-Renkema_1991 | irrelevant | 0 | 0 | Neomycin appears only as an analytical selection agent (agar marker) for an E. coli strain; no toxicokinetic parameters of neomycin itself are reported, and concentrations are bacterial faecal counts, not chemical kinetics. |
+| PGx | Biswas_2025 | not_relevant | 3 | 6 | The paper reports MT-RNR1 m.1555A&gt;G association with aminoglycoside-induced ototoxicity (a toxicity endpoint), not with any PK parameter (e.g., clearance, AUC) or PD parameter of neomycin; no fitted drug-level effect sizes are given. |
+| popPK | Bolt_1985 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
+| popPK | Browning_1983 | irrelevant | 3 | 2 | This is a nephrotoxicity/interaction study with doses and transport findings but no quantitative toxicokinetic parameters (no half-life, clearance, tissue concentrations with time course, or rate constants) for neomycin reported. |
+| popPK | Burrows_1987 | relevant | 8 | 3 | Neomycin pharmacokinetic parameters (two-compartment model, half-life, Vd) were determined in newborn calves, but the evidence shown reports only oxytetracycline's numeric values, so neomycin numbers likely reside in tables/body text not provided. |
+| popPK | Cao_2003 | irrelevant | 0 | 0 | Neomycin is used only as a pharmacological tool (PLC pathway inhibitor) in an in vitro rat atria physiology study; no kinetic parameters of neomycin are reported. |
+| popPK | Carli_1982 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
+| popPK | Chan_2020 | irrelevant | 0 | 5 | The kinetic parameters (cellular uptake, rat PK) belong to amikacin, not neomycin; neomycin is not reported as the subject substance. |
+| popPK | Chaudhary_1993 | irrelevant | 1 | 0 | Neomycin is used only as an interventional agent to block enterohepatic circulation; the reported kinetic parameters (clearances) belong to lorazepam, not neomycin. |
+| popPK | Chow_1975 | irrelevant | 0 | 0 | Neomycin appears only as a 0.1% dietary additive in a rat amino-acid analog study with no kinetic parameters for neomycin. |
+| popPK | Chumpol_2026 | irrelevant | 0 | 0 | In vitro antibiotic susceptibility/combination study against S. suis; neomycin appears only as test antibiotic with MICs/FIC values, no toxicokinetic parameters. |
+| popPK | Cornetta_1989 | irrelevant | 0 | 0 | Neomycin appears only as a gene-transfer marker (neomycin resistance gene), not as a chemical substance with any toxicokinetic parameters. |
+| popPK | Crowell_1981 | irrelevant | 4 | 0 | A toxicosis study in calves with renal neomycin residues mentioned but no numeric kinetic parameters (half-life, clearance, etc.) given, and none appear in the evidence. |
+| popPK | Do_2026 | irrelevant | 1 | 2 | This is an antimicrobial efficacy study (MIC, time–kill, mouse survival) with no toxicokinetic parameters (no half-life, clearance, Vd, or partition coefficients) for neomycin; only dosing concentrations are given. |
+| popPK | Duffy_1990 | irrelevant | 1 | 0 | In vitro cytotoxicity study of antibiotics in rabbit kidney cells; neomycin is only one tested compound with no kinetic parameters reported. |
+| popPK | Duvall_1991 | relevant | 4 | 2 | Kinetic uptake/clearance of neomycin in cochlear tissue is the subject, but the evidence shows only qualitative immunohistochemical findings with no numeric kinetic values (any numbers may appear in figures not provided). |
+| popPK | Federspil_1979 | relevant | 10 | 3 | A pharmacokinetic study of neomycin in guinea pigs with kinetic parameters in serum/perilymph, but abstract gives no numeric values (likely in full text or tables). |
+| popPK | Frankild_2000 | irrelevant | 0 | 0 | This is a contact allergy sensitization potency study (dose-response for allergenicity), with no toxicokinetic parameters for neomycin of any kind. |
+| popPK | Ga_2026 | irrelevant | 0 | 0 | This is a cell-culture Mycoplasma eradication study using G418 (a neomycin analogue) as a selection reagent; no toxicokinetic parameters of neomycin in any organism are reported. |
+| popPK | Garland_1994 | irrelevant | 2 | 2 | This is a renal physiological response study; no kinetic parameters (half-life, clearance, etc.) for neomycin are reported, only urinary electrolyte effects. Neomycin is one of three drugs compared as an exposure, not as a toxicokinetic subject. |
+| popPK | Germovsek_2017 | irrelevant | 1 | 1 | A review of aminoglycoside PK (mostly gentamicin) with generic class parameters (Vd 0.2-0.3 L/kg, half-life 2-3 h); neomycin appears only as a named drug with no neomycin-specific kinetic values. |
+| PGx | Gill_2004 | not_relevant | 2 | 4 | Bacterial rpsL mutations affect MIC (resistance) not host PK/PD pharmacogenomics of neomycin; no S12 mutation found with neomycin and no fitted effect sizes. |
+| popPK | Goran_2004 | irrelevant | 0 | 0 | Clinical efficacy trial of a neomycin-containing vaginal capsule with no kinetic parameters of any kind. |
+| popPK | Grigoriev_1991 | irrelevant | 0 | 0 | Neomycin appears only as an experimental modulation mention with no kinetic parameters of neomycin reported. |
+| popPK | Guaguere_1996 | irrelevant | 1 | 0 | A review merely mentioning neomycin pharmacokinetics with no numeric kinetic parameters in the evidence. |
+| popPK | Harris_2016 | irrelevant | 0 | 0 | This is a clinical effectiveness/ototoxicity review of topical aminoglycosides with no kinetic parameters for neomycin of any kind. |
+| popPK | Herman_1989 | irrelevant | 1 | 5 | Neomycin appears only as a co-administered干预/modifier of lorazepam disposition; the kinetic parameters (half-life, clearance) are for lorazepam, not neomycin itself. |
+| popPK | Herman_1994 | irrelevant | 1 | 1 | Neomycin appears only as an intervention (EHC blocker); all kinetic parameters belong to lorazepam, not neomycin. |
+| popPK | Herman_1995 | irrelevant | 0 | 0 | Neomycin is only a co-administered interrupting agent; all kinetic parameters (clearance, Vd) belong to lorazepam, not neomycin. |
+| popPK | Hu_2001 | irrelevant | 0 | 0 | Paper is a mechanistic angiogenesis inhibition study with no toxicokinetic parameters for neomycin. |
+| popPK | Johnson_2025 | irrelevant | 0 | 0 | Neomycin is only a comparator antibiotic; "clearance" refers to Salmonella, not a kinetic parameter of neomycin. |
+| popPK | Kang_2001 | irrelevant | 0 | 0 | Neomycin appears only as a transgene marker (neo gene) in a murine gene-marking study; no toxicokinetic parameter of neomycin is reported. |
+| popPK | Kesäniemi_1984 | irrelevant | 3 | 2 | The paper reports kinetic parameters (LDL apoLDL turnover, absorption and clearance changes) for cholesterol/LDL during neomycin treatment, not kinetic parameters of neomycin itself; specific numeric per-subject values are not given in the abstract. |
+| popPK | Korach_1996 | irrelevant | 0 | 0 | Neomycin appears only as a gene-targeting cassette in a transgenic mouse study; no toxicokinetic parameters are reported. |
+| PGx | Krueger_2024 | not_relevant | 0 | 0 | Study examines antibiotic effects on cnidarian development/microbiome/gene expression; no host gene variant affecting neomycin PK/PD. |
+| popPK | Lacerda_2006 | irrelevant | 0 | 0 | Neomycin appears only as a treatment mention for hepatic encephalopathy; no kinetic parameters for any substance, and AED pharmacokinetics concern other drugs. |
+| popPK | Lee_2012 | irrelevant | 0 | 0 | Neomycin is only a component of the antibiotic cocktail used to make pseudo germ-free rats; no kinetic parameters for neomycin are reported. |
+| popPK | Li_2023_2 | irrelevant | 0 | 0 | Neomycin is only used as a gut-depleting antibiotic cocktail component (200 mg/kg gavage); no kinetic parameters (half-life, clearance, etc.) are reported. |
+| popPK | Licht_1997 | irrelevant | 0 | 0 | This is a review of gene therapy concepts; neomycin appears only as a selection marker example with no kinetic parameters. |
+| PGx | Liu_2018 | not_relevant | 0 | 0 | Paper examines quail gut microbiota and atherosclerosis; neomycin appears only as a predicted biosynthesis pathway, with no gene variant effect on neomycin PK/PD. |
+| popPK | Liu_2019 | irrelevant | 0 | 0 | Neomycin is used only as a co-exposure/antibiotic pretreatment; the kinetic parameters belong to other substances (SGD constituents). |
+| popPK | Machida_1990 | irrelevant | 0 | 0 | Neomycin appears only as a selection marker (pRSVneo resistance) in a cloning study; no toxicokinetic parameters for neomycin reported. |
+| popPK | Maina_1998 | irrelevant | 1 | 1 | This is an in vitro efficacy study of aminoglycosides against Trypanosoma brucei; neomycin appears only in a rank-order activity comparison, with no kinetic parameters for neomycin (IC50 values given are for paromomycin, and these are pharmacodynamic, not toxicokinetic). |
+| popPK | Malfatti_2020 | irrelevant | 1 | 0 | All kinetic parameters (Cmax, T1/2, AUC, excretion) belong to acetaminophen; neomycin appears only as a microbiome-disrupting antibiotic co-treatment with no kinetic data of its own. |
+| popPK | Matz_1993 | irrelevant | 0 | 0 | no_text gate: only 380 chars of text extracted (&lt; 400) |
+| popPK | Meza-Perez_2024 | irrelevant | 0 | 0 | Neomycin is only used as an antibiotic to alter gut microbiota; no toxicokinetic parameters are reported. |
+| popPK | Mishra_2024 | relevant | 6 | 3 | Ocular PK-PD of neomycin in rabbit tear/cornea is reported, but the actual numeric PK parameter values appear only in figures/simulations not included in the evidence. |
+| popPK | Mitch_1977 | irrelevant | 2 | 1 | Kinetic parameters (urea kinetics) are for urea metabolism in uremic patients, with neomycin only as an intervention, and no numeric neomycin kinetic values (only mention that absorption "occurred") are given. |
+| popPK | Motheová_1986 | irrelevant | 1 | 0 | Neomycin appears only as a pretreatment modifier; kinetic parameters belong to exaprolol and propranolol, not to neomycin itself. |
+| PGx | Nakamura_2008 | not_relevant | 1 | 2 | Neomycin appears only as a reporter gene marker in an HCV replicon system, not as a drug with measured PK/PD parameters affected by a variant. |
+| popPK | Namasivayam_2023 | irrelevant | 1 | 1 | Neomycin is only a component of the VANM pretreatment cocktail; kinetic parameters (AUC, plasma concentrations) are for rifampicin/moxifloxacin/isoniazid/pyrazinamide, not neomycin, and values live in figures not included. |
+| popPK | Nouws_1977 | relevant | 6 | 2 | Tissue residue/persistence data for neomycin in dairy cows, but the actual numeric concentrations are not present in the evidence (likely in figures/tables not provided). |
+| popPK | Nouws_1978 | irrelevant | 3 | 2 | Residue concentrations of neomycin (as part of co-exposure with multiple antibiotics) are measured in tissues, but no kinetic parameters (half-life, clearance, rate constants) are reported and the numeric values are not present in the evidence. |
+| PGx | Pettan-Brewer_2012 | not_relevant | 1 | 0 | Neomycin is only a gene-targeting cassette; no pharmacokinetic or pharmacodynamic effect of a variant on neomycin is reported. |
+| popPK | Remmel_1981 | irrelevant | 0 | 0 | Neomycin appears only as an antibiotic treatment to alter gut microflora; all kinetic parameters (half-life, Vd) belong to warfarin, not neomycin. |
+| popPK | Roa-Bautista_2023 | irrelevant | 0 | 0 | Neomycin appears only as a treatment drug in a clinical Campylobacter/CVID outcome study; no kinetic parameters for neomycin are reported. |
+| popPK | Robert-Cooperman_2010 | irrelevant | 0 | 0 | Neomycin appears only as a knockout selection marker gene; no toxicokinetic parameters of neomycin are reported (the clearance measured is that of insulin in mice). |
+| popPK | Rodin_1988 | irrelevant | 0 | 0 | Neomycin appears only as a qualitative mention among drugs altering digoxin absorption; no kinetic parameters for neomycin and no numeric values anywhere. |
+| popPK | Romanovskaya-Romanko_2026 | irrelevant | 0 | 0 | This is an immunomodulatory/antiviral efficacy study of neomycin in mice and human PBMCs, with no toxicokinetic parameters (no half-life, clearance, Vd, or rate constants) reported. |
+| popPK | Sarnicola_2016 | irrelevant | 0 | 0 | Neomycin is only mentioned as part of a co-treatment protocol; no kinetic parameters of any kind are reported. |
+| popPK | Scarff_2003 | irrelevant | 0 | 0 | Neomycin appears only as a genetic selection cassette, not a substance with kinetic parameters. |
+| PGx | Scheuenpflug_2005 | not_relevant | 0 | 0 | Neomycin is only a selectable marker gene in the vector; no pharmacokinetic or pharmacodynamic effect of NAT2 genotype on neomycin is reported. |
+| PGx | Shimma_1997 | not_relevant | 2 | 3 | Reports yeast gene mutants' hypersensitivity (viability phenotype) to neomycin, not a gene effect on neomycin PK or PD parameters. |
+| popPK | Simmons_2026 | irrelevant | 2 | 2 | In vitro release of neomycin from keratose hydrogels (a biomaterial/drug-delivery study), not in vivo toxicokinetics; actual release-parameter values appear in figures/results not provided in the evidence. |
+| popPK | Sirtori_1991 | irrelevant | 0 | 0 | A narrative review of mechanisms of lipid-lowering agents; neomycin is only mentioned as a nonabsorbable agent with no kinetic parameters. |
+| popPK | Soback_1986 | irrelevant | 0 | 0 | The kinetic parameters belong to mecillinam; neomycin appears only as an MIC comparator, not a subject of toxicokinetic measurement. |
+| popPK | Stanley_1985 | irrelevant | 0 | 0 | Neomycin is only a component of a nasal preparation in a ciliary function study; no kinetic parameters of any kind are reported. |
+| popPK | Sugamori_2007 | irrelevant | 0 | 0 | Neomycin appears only as a neomycin-resistance cassette in the knockout construct, not as a studied substance; no kinetic parameters for neomycin are reported. |
+| PGx | Sugamori_2007 | not_relevant | 0 | 0 | Neomycin appears only as a neomycin-resistance cassette in knockout construction, not as a drug with measured PK/PD parameters. |
+| popPK | Sykes_1986 | irrelevant | 0 | 0 | Clinical outcome study of neomycin nasal spray with no kinetic parameters reported. |
+| popPK | Sällberg_1998 | irrelevant | 0 | 0 | Neomycin appears only as neomycin phosphotransferase II in a fusion-protein vaccine vector; no toxicokinetic parameters of neomycin are measured. |
+| popPK | Tong_2017 | irrelevant | 1 | 1 | This is a drug-delivery/efficacy study for enzyme replacement in mice; neomycin is a conjugated transporter moiety, not the subject of any kinetic parameters, and no numeric toxicokinetic values appear in the evidence. |
+| popPK | Tufarelli_1998 | irrelevant | 0 | 0 | Neomycin appears only as a resistance cassette used in gene targeting, with no kinetic parameters for neomycin anywhere. |
+| popPK | Verbsky_2005 | irrelevant | 0 | 0 | Neomycin appears only as part of a beta-galactosidase/neomycin gene-trap reporter construct; no kinetic parameters of neomycin are reported. |
+| PGx | Verma_2011 | not_relevant | 0 | 0 | Neomycin is used only as aselection marker for gene replacement, not as a drug with measured PK or PD effects. |
+| popPK | Weber_1982 | irrelevant | 0 | 0 | Neomycin is used as a treatment; only urea metabolism rates are reported, no kinetic parameters of neomycin itself. |
+| popPK | White_1994 | irrelevant | 0 | 0 | Neomycin appears only as a treatment given in a case report; no kinetic parameters of any kind are reported. |
+| popPK | Workman_2017 | irrelevant | 0 | 0 | Neomycin is only one of several tested ophthalmologic solutions; no kinetic parameters of neomycin are reported, only qualitative ciliary beat frequency effects. |
+| popPK | Wu_2022 | irrelevant | 0 | 0 | Neomycin is used only as an antibiotic tool to deplete gut microbiota; no kinetic parameters of neomycin are reported. |
+| popPK | Xing_2005 | irrelevant | 0 | 0 | Neomycin is used only as a co-treatment agent to alter gut flora; all kinetic parameters (bioavailability, absorption) are for baicalin/baicalein, not neomycin. |
+| popPK | Xu_2024 | irrelevant | 0 | 0 | Neomycin appears only as a component of an antibiotic cocktail in a mouse cancer study; no toxicokinetic parameters are reported. |
+| popPK | Yamamura_1995 | irrelevant | 0 | 0 | The evidence contains only a Grobid processing header with no paper content, so no kinetic parameters for neomycin are available. |
+| PGx | Yu_2013 | not_relevant | 0 | 0 | The paper studies viral genotype effects on in vitro antiviral drug activity, not host pharmacogenomic effects on neomycin PK/PD parameters, and neomycin is not mentioned. |
+| popPK | Yurdaydin_1995 | irrelevant | 0 | 0 | Neomycin is used only as an antibiotic intervention; no kinetic parameters of neomycin itself (half-life, clearance, etc.) are reported. |
+| popPK | Yusuf_1999 | irrelevant | 0 | 0 | Neomycin appears solely as an analytical internal standard in a gentamicin assay; no kinetic parameters of neomycin are reported. |
+| popPK | Zhang_2005 | irrelevant | 0 | 0 | Neomycin appears only as a selection-marker resistance gene; kinetic parameters (coumarin clearance) refer to another substance, not neomycin. |
+| popPK | Ziv_1985 | irrelevant | 2 | 2 | Kinetic parameters (half-lives, volumes, urinary recovery) are all for apramycin; neomycin appears only as an MIC comparator, and no neomycin kinetics are reported. |
+| popPK | Zu_2018 | relevant | 5 | 2 | Applied to a neomycin toxicokinetics study in guinea pig perilymph, but only analytical validation numbers are present; the actual kinetic parameter values are not shown. |
+| popPK | de_2003 | irrelevant | 0 | 0 | Neomycin appears only as nptII marker conferring kanamycin/neomycin resistance in a gene-transfer detection assay, with no kinetic parameters of neomycin itself. |
+| PGx | de_2006 | not_relevant | 2 | 3 | Pharmacogenomic effects (UGT1A1*28, SN-38 exposure, diarrhea) pertain to irinotecan, not to neomycin's PK/PD parameters; neomycin acts only as a prophylactic co-intervention. |
+| popPK | du_1985 | irrelevant | 1 | 1 | Neomycin is only the administered drug; quantified endpoints are thyroid hormone levels, not any kinetic parameter of neomycin itself. |
+| popPK | unknown_1987 | irrelevant | 0 | 0 | no_text gate: only 60 chars of text extracted (&lt; 400) |
+| popPK | van_1974 | relevant | 5 | 2 | Mouse study measuring faecal clearance/elimination time course of neomycin after stopping dosing, but the numeric concentration-vs-time values appear only in Fig. 1, which is not provided. |
+| PGx | van_1991 | not_relevant | 0 | 0 | Neomycin appears only as a selection marker in gene targeting; no PK/PD or pharmacogenomic data. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bneomycin%5D&body=Drug%3A%20neomycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_neomycin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-14 07:48 UTC</sub>

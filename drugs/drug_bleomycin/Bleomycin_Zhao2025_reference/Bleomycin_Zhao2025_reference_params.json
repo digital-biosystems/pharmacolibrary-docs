@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Bleomycin_Zhao2025_reference",
+ "molar_masses": {
+  "central.C": 1.415552
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.577777777777778e-06,
+  "F": 1.0,
+  "MM": 1.415552,
+  "VdPerKg": 0.0010291428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 4.164353137146029e-06,
+  "k21": 3.1598904571308196e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066211
+ },
+ "reference_peaks": {
+  "central.C": 0.000134454208739998
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

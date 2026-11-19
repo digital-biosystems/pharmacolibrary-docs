@@ -1,0 +1,45 @@
+{
+ "dose_source": "paper",
+ "model_id": "Creatine_Alraddadi2018_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0,
+  4900.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Alraddadi_2018:other_prose",
+    "value_si": 0.01359
+   },
+   {
+    "source": "Alraddadi_2018:other_prose",
+    "value_si": 0.00714
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.4166666666666666e-08,
+  "F": 15.69,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000304,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "ka": 0.0017972222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4786.160734188485
+ },
+ "reference_peaks": {
+  "central.C": 0.5145999168523124
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

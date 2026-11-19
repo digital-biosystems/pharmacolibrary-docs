@@ -1,0 +1,76 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;ceftobiprole medocaril&quot;}]"></div>
+
+# ceftobiprole medocaril
+
+- **generic name:** ceftobiprole medocaril
+- **ATC codes:** `J01DI01`
+- **DrugBank:** [DB14733](https://go.drugbank.com/drugs/DB14733) · **PubChem:** none
+- **molar mass:** 690.66 g/mol (C26H26N8O11S2) — DrugBank
+- **groups:** approved
+
+## About
+
+Ceftobiprole medocaril is a beta-lactam antibacterial belonging to the cephalosporin class that is indicated for treating skin and soft tissue infections. It is administered intravenously using a powder form for solution. The drug is approved in the European Union, where it is authorized for infectious skin diseases.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q27294766](https://www.wikidata.org/wiki/Q27294766), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ceftobiprole_medocaril).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCC2` inhibitor | DrugBank actor |
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| excretion | kidney | `ABCC2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor, `ABCC2` inhibitor | DrugBank actor |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 10:44 | 0:13 | 0/0/0 | 0/0/0 | 0/0/0 | 27,733/871 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 4 matched, 4 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Ramzy_2025.pdf` | Ramzy S et al., Eco-Friendly Fluorescent Probe-Based Qu…, Luminescence : the journal… (2025) | popPK | 10 | [10.1002/bio.70393](https://doi.org/10.1002/bio.70393) | [41432924](https://pubmed.ncbi.nlm.nih.gov/41432924) | The paper reports quantitative pharmacokinetic parameters (clearance, half-life, Cmax) for ceftobiprole medocaril in rats, and these numeric values are explicitly listed in the evidence text. |
+
+<sub>queue written 2026-10-07 10:44 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Barbour_2009 | irrelevant | 2 | 1 | The text is a general review/overview providing only qualitative descriptions and rough ranges (e.g., "approximately 3-4h", "22%") rather than specific quantitative PK parameter estimates (CL, V, Q, ka) from a compartmental or population model. |
+| popPK | Torres_2016 | irrelevant | 2 | 3 | The paper is a review that summarizes pharmacokinetic parameters, but it does not report the results of a primary population pharmacokinetic study or modeling for ceftobiprole_medocaril. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bceftobiprole_medocaril%5D&body=Drug%3A%20ceftobiprole_medocaril%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ceftobiprole_medocaril/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

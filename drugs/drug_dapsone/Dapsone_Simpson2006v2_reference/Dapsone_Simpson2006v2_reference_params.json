@@ -1,0 +1,32 @@
+{
+ "dose_source": "paper",
+ "model_id": "Dapsone_Simpson2006v2_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  140.0
+ ],
+ "parameters": {
+  "Cl": 2e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0007142857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00014,
+  "ka": 0.00025833333333333334,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3457.2770299148337
+ },
+ "reference_peaks": {
+  "central.C": 0.0008134939858274249
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

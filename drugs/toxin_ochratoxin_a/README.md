@@ -1,0 +1,219 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Fungal toxins&quot;,&quot;href&quot;:&quot;toxins/FUNG.md&quot;},{&quot;label&quot;:&quot;Ochratoxin A&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;OchratoxinA_Bernhoft2017_reference&quot;,&quot;label&quot;:&quot;Bernhoft_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ochratoxin_a/OchratoxinA_Bernhoft2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;OchratoxinA_Fuchs1992_reference&quot;,&quot;label&quot;:&quot;Fuchs_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_ochratoxin_a/OchratoxinA_Fuchs1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# Ochratoxin A
+
+- **generic name:** Ochratoxin A
+- **T3DB:** [T3D3605](http://www.t3db.ca/toxins/T3D3605) · **PubChem:** [CID 442530](https://pubchem.ncbi.nlm.nih.gov/compound/442530)
+
+## About
+
+Ochratoxin A is found in barley. Mycotoxin. Ochratoxin A is produced by Aspergillus melleus, Aspergillus sulphureus and Penicillium viridicatum.Potential contaminant of foodstuffs, especially cereals. …
+
+- **Category:** Fungal Toxin, Food Toxin, Natural Toxin
+- **Route of exposure:** oral, dermal, inhalation, and parenteral (contaminated drugs).
+- **Sources and uses:** Human exposure occurs mainly through consumption of improperly stored food products, particularly contaminated grain and pork products, as well as coffee, wine grapes and dried grapes.
+- **Mechanism of toxicity:** Ochratoxin A has been shown to be weakly mutagenic, possibly by induction of oxidative DNA damage. The nephrotoxin ochratoxin A (OTA) causes a reduction of glomerular filtration rate (GFR) and of para-aminohippuric acid (PAH) clearance. …
+- **Health effects:** Ochratoxin exposure has been associated with acute tubular necrosis and Balkan endemic nephropathy. Ochratoxin A has been shown to be nephrotoxic and might delay sexual maturation. …
+- **Carcinogenicity:** IARC group 2B, possibly carcinogenic to humans.
+- **Acute toxicity:** LD50: 20 mg/kg (Oral, Rat) 
+LD50: 12,600 ug/kg (Intraperitoneal, Rat) 
+LD50: 12,750 ug/kg (Intravenous, Rat ) 
+LD50: 46 mg/kg (Oral, Mouse)
+- **Treatment:** Care is symptomatic and supportive.
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D3605">T3DB T3D3605</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 303-47-9 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7719">ChEBI 7719</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| ochratoxin A (ochratoxin_a) | parent | 403.815 | C20H18ClNO6 | PubChem | [442530](https://pubchem.ncbi.nlm.nih.gov/compound/442530) | Bernhoft_2017, Breitholtz-Emanuelsson_1995, Devreese_2018, Fuchs_1992, Hagelberg_1989, Jilek_2022, Kang_2023, Ruprich_1991, Su_2024, Zhu_2024 |
+| DON-3-sulphate (DON-3S) | metabolite | — (mass units only) | — | — | — | — |
+| Ochratoxin alpha (OTα) | metabolite | — (mass units only) | — | — | — | — |
+
+## Start here
+
+> **Bernhoft_2017_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> post-smolt Atlantic salmon (Salmo salar). [Run it in the simulator](drugs/toxin_ochratoxin_a/OchratoxinA_Bernhoft2017_reference.md?tab=Simulation) · [record](drugs/toxin_ochratoxin_a/OchratoxinA_Bernhoft2017_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span> | [Bernhoft_2017_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Bernhoft2017_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Bernhoft A et al., Tissue distribution and elimination of…, Food additives & contaminan… (2017) | [10.1080/19440049.2017.1321149](https://doi.org/10.1080/19440049.2017.1321149) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.80).">human + animal</span> | [Fuchs_1992_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Fuchs1992_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Fuchs R et al., Ochratoxin A in blood and its pharmacok…, Food and chemical toxicolog… (1992) | [10.1016/0278-6915(92)90034-i](https://doi.org/10.1016/0278-6915(92)90034-i) |
+| <span class="pk-rf" hidden data-species="bird" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Devreese_2018_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Devreese2018_reference.md) | held back | 1-compartment, IV | 2 | Devreese M et al., Comparative Toxicokinetics and Plasma P…, Journal of agricultural and… (2018) | [10.1021/acs.jafc.7b06048](https://doi.org/10.1021/acs.jafc.7b06048) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub> | [Kang_2023_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Kang2023_reference.md) | held back | 1-compartment, IV | 8 | Kang R et al., Toxicokinetics of a Single Oral Dose of…, Toxins (2023) | [10.3390/toxins15020088](https://doi.org/10.3390/toxins15020088) |
+| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q414, Q22, Q76 — no SI value to bui…</sub> | [Ruprich_1991_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Ruprich1991_reference.md) | held back | 1-compartment, oral | 6 | Ruprich J et al., [Long-term administration of the mycoto…, Veterinarni medicina (1991) | — |
+| <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub> | [Zhu_2024_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Zhu2024_reference.md) | held back | 1-compartment, IV | 5 | Zhu Q et al., The Toxicokinetics, Excretion Patterns,…, Toxins (2024) | [10.3390/toxins16030128](https://doi.org/10.3390/toxins16030128) |
+| <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub> | [↳ value_of_ot](drugs/toxin_ochratoxin_a/OchratoxinA_Zhu2024_value_of_ot.md) | held back | 1-compartment, IV | 8 |  |  |
+| <span class="pk-rf" hidden data-species="pig" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub> | [↳ value_of_ota](drugs/toxin_ochratoxin_a/OchratoxinA_Zhu2024_value_of_ota.md) | held back | 1-compartment, IV | 8 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Breitholtz-Emanuelsson_1995_reference](drugs/toxin_ochratoxin_a/OchratoxinA_BreitholtzEmanuelsson1995_reference.md) | — | 1-compartment (no model) | 4 | Breitholtz-Emanuelsson A et al., Toxicokinetics of ochratoxin A in rat f…, Natural toxins (1995) | [10.1002/nt.2620030207](https://doi.org/10.1002/nt.2620030207) |
+| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Gallissot_2024_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Gallissot2024_reference.md) | — | 1-compartment (no model) | 7 | Gallissot M et al., An Algoclay-Based Decontaminant Decreas…, Toxins (2024) | [10.3390/toxins16050207](https://doi.org/10.3390/toxins16050207) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Hagelberg_1989_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Hagelberg1989_reference.md) | — | 1-compartment (no model) | 6 | Hagelberg S et al., Toxicokinetics of ochratoxin A in sever…, Journal of applied toxicolo… (1989) | [10.1002/jat.2550090204](https://doi.org/10.1002/jat.2550090204) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Jilek_2022_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Jilek2022_reference.md) | — | 1-compartment (no model) | 3 | Jilek JL et al., Attenuated Ochratoxin A Transporter Exp…, Drug metabolism and disposi… (2022) | [10.1124/dmd.121.000451](https://doi.org/10.1124/dmd.121.000451) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Su_2024_reference](drugs/toxin_ochratoxin_a/OchratoxinA_Su2024_reference.md) | — | 1-compartment (no model) | 4 | Su BD et al., Development and application of the phys…, Ecotoxicology and environme… (2024) | [10.1016/j.ecoenv.2024.116277](https://doi.org/10.1016/j.ecoenv.2024.116277) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q1` · Km | metabolism | [Dorne_2022](drugs/toxin_ochratoxin_a/pgx_Dorne_2022_CYP2D6_Q1.md) | Dorne JLCM et al., A Computational Understanding of Inter-…, Toxins (2022) | [10.3390/toxins14030207](https://doi.org/10.3390/toxins14030207) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ochratoxin_a).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` metabolism | PGx paper |
+| metabolism | liver | `CYP2D6` metabolism | PGx paper |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-15 15:57 | 37:10 | 8/5/0 | 0/0/0 | 0/0/1 | 985,241/128,361 | ollama / glm-5.3-flash | 49 | 5/34 | 49/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 390 matched, 157 returned
+- **screened:** 11  ·  **relevant:** 11
+- **records:** 13  ·  extracted 2  ·  needs review 6  ·  rejected 5  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Breitholtz-Emanuelsson_1995.pdf` | Breitholtz-Emanuelsson A et al., Toxicokinetics of ochratoxin A in rat f…, Natural toxins (1995) | popPK | 10 | [10.1002/nt.2620030207](https://doi.org/10.1002/nt.2620030207) | [7613733](https://pubmed.ncbi.nlm.nih.gov/7613733) | Full numeric kinetic parameters (half-life 127 h, Vd 168 ml/kg, clearance 0.92 ml/kg·h, bioavailability 98%) for ochratoxin A in rats are present directly in the evidence. |
+| `Devreese_2018.pdf` | Devreese M et al., Comparative Toxicokinetics and Plasma P…, Journal of agricultural and… (2018) | popPK | 10 | [10.1021/acs.jafc.7b06048](https://doi.org/10.1021/acs.jafc.7b06048) | [29417821](https://pubmed.ncbi.nlm.nih.gov/29417821) | Directly reports numeric toxicokinetic parameters (Tmax, bioavailability, Vd, protein binding) for OTA in four avian species, with values present in the evidence. |
+| `Hagelberg_1989.pdf` | Hagelberg S et al., Toxicokinetics of ochratoxin A in sever…, Journal of applied toxicolo… (1989) | popPK | 10 | [10.1002/jat.2550090204](https://doi.org/10.1002/jat.2550090204) | [2715571](https://pubmed.ncbi.nlm.nih.gov/2715571) | Numeric half-lives, volumes, clearances, bioavailability and plasma binding values are given directly in the abstract. |
+| `Su_2024.pdf` | Su BD et al., Development and application of the phys…, Ecotoxicology and environme… (2024) | popPK | 10 | [10.1016/j.ecoenv.2024.116277](https://doi.org/10.1016/j.ecoenv.2024.116277) | [38604061](https://pubmed.ncbi.nlm.nih.gov/38604061) | OTA PBTK model in rats and humans with numeric Vmax, Km, Fup, DAF and ECF values reported directly in the abstract. |
+| `Jilek_2022.pdf` | Jilek JL et al., Attenuated Ochratoxin A Transporter Exp…, Drug metabolism and disposi… (2022) | popPK | 9 | [10.1124/dmd.121.000451](https://doi.org/10.1124/dmd.121.000451) | [34921099](https://pubmed.ncbi.nlm.nih.gov/34921099) | Quantitative OTA toxicokinetics (AUC exposure, urinary excretion amounts and percentages, kidney-bound OTA) are reported directly in the abstract. |
+| `Ruprich_1991.pdf` | Ruprich J et al., [Long-term administration of the mycoto…, Veterinarni medicina (1991) | popPK | 9 |  | [1841479](https://pubmed.ncbi.nlm.nih.gov/1841479) | Reports numeric toxicokinetic parameters (t1/2 3.3 h, CL 34.2 ml/min/kg, Vd 9.8 l/kg) for ochratoxin A measured in chicks via two-compartment model. |
+| `Kuhn_2024.pdf` | Kuhn M et al., Role of albumin in the metabolism and e…, Mycotoxin research (2024) | popPK | 8 | [10.1007/s12550-024-00538-1](https://doi.org/10.1007/s12550-024-00538-1) | [38743341](https://pubmed.ncbi.nlm.nih.gov/38743341) | Mouse study directly on OTA kinetics (plasma clearance, biliary/urinary excretion, metabolites), but abstract contains no numeric values — they appear to live in figures not provided. |
+| `Fuchs_1992.pdf` | Fuchs R et al., Ochratoxin A in blood and its pharmacok…, Food and chemical toxicolog… (1992) | popPK | 7 | [10.1016/0278-6915(92)90034-i](https://doi.org/10.1016/0278-6915(92)90034-i) | [1618443](https://pubmed.ncbi.nlm.nih.gov/1618443) | Numeric elimination half-lives for ochratoxin A are given (monkey 510 h, fish 0.68 h), though full parameter values likely reside in the underlying papers/figures not provided. |
+| `Bernhoft_2017.pdf` | Bernhoft A et al., Tissue distribution and elimination of…, Food additives & contaminan… (2017) | popPK | 6 | [10.1080/19440049.2017.1321149](https://doi.org/10.1080/19440049.2017.1321149) | [28490257](https://pubmed.ncbi.nlm.nih.gov/28490257) | Reports quantitative tissue elimination and half-life data for ochratoxin A in dietary-exposed Atlantic salmon, with numeric values (e.g. DON t1/2 values) present; OTA-specific kinetics discussed but OTA half-life numbers partly summarized less explicitly than DON's. |
+| `Degen_2017.pdf` | Degen GH et al., Daily uptake of mycotoxins - TDI might…, Toxicology letters (2017) | popPK | 6 | [10.1016/j.toxlet.2017.06.002](https://doi.org/10.1016/j.toxlet.2017.06.002) | [28602893](https://pubmed.ncbi.nlm.nih.gov/28602893) | In silico toxicokinetic modelling of OTA lactational transfer and infant exposure, but the underlying numeric kinetic parameter values are not shown in the evidence (only a 29.2-fold exceedance figure; values likely in tables/supplements not provided). |
+| `Roth_1988.pdf` | Roth A et al., Evidence for an enterohepatic circulati…, Toxicology (1988) | popPK | 6 | [10.1016/0300-483x(88)90110-2](https://doi.org/10.1016/0300-483x(88)90110-2) | [3344528](https://pubmed.ncbi.nlm.nih.gov/3344528) | Mouse toxicokinetic study of OTA with time-course elimination and biliary excretion data, but numeric values largely appear in figures/profiles not included; only a 28-68% biliary range is given. |
+| `Lillehoj_1979.pdf` | Lillehoj EB et al., Tissue distribution of radioactivity fr…, Mycopathologia (1979) | popPK | 5 | [10.1007/BF00578526](https://doi.org/10.1007/BF00578526) | [530296](https://pubmed.ncbi.nlm.nih.gov/530296) | Tissue distribution/retention time course of ochratoxin A in rats is reported, but the evidence contains only qualitative descriptions; numeric counts likely reside in tables/figures not provided. |
+
+<sub>queue written 2026-11-15 15:42 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ali_2014 | irrelevant | 1 | 4 | Human biomonitoring study reporting measured plasma concentrations and dietary intake estimates only, with no kinetic parameters (half-life, clearance, rate constants, etc.) for OTA. |
+| popPK | Ali_2016 | irrelevant | 0 | 5 | This is a human exposure biomonitoring study reporting only urinary OTA/CIT concentrations and intake estimates, with no kinetic parameters (no half-life, clearance, rate constants, or model). |
+| popPK | Ali_2018 | irrelevant | 0 | 0 | Review of OTA occurrence in rice and exposure, with no kinetic parameters of any kind. |
+| PGx | Amminikutty_2025 | not_relevant | 2 | 3 | Study reports OTA effects on CYP/transporter expression and oxidant status in chickens, not a gene variant/genotype effect on OTA PK or PD parameters. |
+| PGx | Anelli_2024 | not_relevant | 0 | 0 | Study of fungal/mycotoxin contamination in pistachios; no gene-PK/PD effect on ochratoxin A. |
+| popPK | Arce-López_2020 | irrelevant | 2 | 1 | This is a human biomonitoring review of mycotoxins in blood/plasma; the only OTA kinetic value (half-life of 35.6 days) is cited from another study [135], with no kinetic parameters of its own or readable values in the evidence. |
+| popPK | Arce-López_2021 | irrelevant | 2 | 3 | It is a biomonitoring/exposure study reporting only plasma OTA concentrations and incidence in children, with no kinetic parameters (half-life, clearance, rates, partitioning, or model); some group means/tables are in supplementary material. |
+| PGx | Ayed-Boussema_2012 | not_relevant | 0 | 0 | Paper reports OTA's induction of CYP expression in vitro, not a gene variant/genotype effect on OTA PK/PD parameters. |
+| popPK | Ayeni_2023 | irrelevant | 0 | 0 | Exposure biomonitoring study with measured urinary concentrations only, no kinetic parameters of any kind for OTA. |
+| popPK | Ayeni_2024 | irrelevant | 1 | 1 | This is a human biomonitoring/exposure study measuring OTA concentrations in breast milk, stool and urine with no kinetic parameters (half-life, clearance, rate constants, etc.), and detailed values appear in supplementary tables not provided. |
+| popPK | Berger_2025 | irrelevant | 3 | 4 | Analytical LC-MS/MS biomonitoring method paper; OTA half-life values (ca. 20 h, ca. 35 days) are only review-repetitions of cited literature (Studer-Rohr 2000), no new kinetic parameters of its own; some numeric values are in tables not fully shown. |
+| popPK | Braun_2020 | irrelevant | 1 | 2 | Exposure/occurrence study measuring OTA concentrations in breast milk and estimating infant intake; no kinetic parameter (half-life, clearance, etc.) is reported for OTA, and detailed values live in supplementary tables not provided. |
+| popPK | Charusalaipong_2024 | irrelevant | 2 | 4 | This is a urinary biomonitoring/exposure-risk study in children; the OTA urinary clearance rates (2.5%, 5.0%) were derived from the literature, not measured in this paper, and no kinetic parameters of OTA's own disposition were generated. |
+| popPK | Coronel_2010 | irrelevant | 2 | 2 | Review of plasma concentration/exposure data; no numeric kinetic parameters reported in the evidence, kinetic values referenced conceptually only. |
+| PGx | Creppy_1998 | not_relevant | 0 | 0 | Document contains only GROBID processing metadata, no study content on ochratoxin A or genetic effects. |
+| popPK | Das_2024 | irrelevant | 1 | 3 | This is a human biomonitoring/exposure study reporting OTA concentrations and estimated infant intake, with no kinetic parameters (half-life, clearance, rate constants) measured in the study itself. |
+| popPK | Dasí-Navarro_2022 | irrelevant | 0 | 0 | Analytical method development and biomonitoring of urinary mycotoxins; OTA not even quantified in samples and no kinetic parameters reported. |
+| popPK | Dasí-Navarro_2024 | irrelevant | 0 | 0 | Human urinary biomonitoring/exposure study with only detection frequencies and concentration ranges of ochratoxin-related analytes; no half-life, clearance, rate constants, or model parameters of OTA. |
+| popPK | De_2019 | irrelevant | 3 | 4 | An exposure/biomonitoring study reporting serum OTA concentrations and derived EDIs; the only kinetic value (Clp = 0.99 mL/kg·bw/day, bioavailability 0.5) is cited from other studies (Schlatter et al.), not measured here. |
+| popPK | Degen_2017 | relevant | 6 | 2 | In silico toxicokinetic modelling of OTA lactational transfer and infant exposure, but the underlying numeric kinetic parameter values are not shown in the evidence (only a 29.2-fold exceedance figure; values likely in tables/supplements not provided). |
+| popPK | Dietrich_2005 | irrelevant | 3 | 1 | A review discussing compartment models and kinetic discrepancies without presenting any numeric toxicokinetic parameter values for ochratoxin A in the evidence. |
+| PGx | Doricakova_2015 | not_relevant | 0 | 0 | In vitro study of OCHA effects on PXR/CYP3A4 expression; no gene variant/genotype effect on ochratoxin A PK/PD parameters reported. |
+| popPK | Duarte_2022 | irrelevant | 1 | 1 | This is a human breastmilk biomonitoring/exposure study reporting OTA concentrations and estimated daily intake, not kinetic parameters (no half-life, clearance, rate constants, or disposition model). |
+| popPK | El-Sayed_2009 | irrelevant | 2 | 4 | This reports an acute lethality LC50 (toxicity endpoint), not any toxicokinetic parameter (half-life, clearance, partitioning, etc.) for ochratoxin A. |
+| popPK | Escrivá_2017 | irrelevant | 2 | 2 | This is a review of analytical methods/biomonitoring; the numeric kinetic parameters shown (bioavailability, half-lives, clearances) belong mostly to other mycotoxins (DON, ZON, ENs, T-2) cited from original studies, with no OTA-specific numeric kinetic values of its own in the evidence. |
+| popPK | Ezekiel_2025 | irrelevant | 0 | 0 | Exposure/biomonitoring study reporting urinary concentrations and risk estimates, with no kinetic parameters (half-life, clearance, rate constants, etc.) for OTA. |
+| PGx | Ferguson_2008 | not_relevant | 2 | 1 | Only a general statement about polymorphisms affecting dietary risk; no specific gene variant effect on ochratoxin A PK/PD parameters is reported. |
+| popPK | Foerster_2021 | irrelevant | 1 | 2 | This is a human urinary biomonitoring/exposure study; OTA appears only as a single urine concentration (0.6% prevalence, 1.3 ng/mL) with no kinetic parameters (half-life, clearance, rates) for ochratoxin A. |
+| popPK | Fuchs_1988 | irrelevant | 2 | 1 | Autoradiographic distribution study with only qualitative persistence and timepoints; no numeric kinetic parameters and quantitative values would be figures, not provided. |
+| popPK | Fuchs_1988_2 | irrelevant | 4 | 3 | Autoradiographic tissue distribution/time-course in quail, but no numeric kinetic parameters (half-life, rate constants, clearance) are given; values mainly qualitative or in figures. |
+| popPK | Föllmann_2016 | irrelevant | 0 | 0 | This is a human biomonitoring/exposure study reporting urinary concentrations only, with no kinetic parameters (half-life, clearance, rates) for OTA. |
+| popPK | Gekle_2005 | irrelevant | 0 | 0 | A narrative review of cellular signalling effects of OTA in renal cells with no quantitative kinetic parameters reported. |
+| PGx | González-Arias_2015 | not_relevant | 3 | 4 | Study reports OTA effects on gene expression in vitro, not a gene variant/genotype altering OTA PK/PD parameters. |
+| popPK | Halldorsson_2026 | irrelevant | 0 | 0 | Urinary OTA concentrations in an exposure/epidemiological study; no kinetic parameters reported. |
+| popPK | Huang_2021 | irrelevant | 1 | 1 | This is a human biomonitoring/exposure and risk assessment study reporting urinary OTA concentrations and PDI/MOE values, not kinetic parameters such as half-life, clearance, or partition coefficients. |
+| popPK | Jaus_2022 | irrelevant | 2 | 1 | This is a human biomonitoring/exposure study measuring serum concentrations only; the 35-day half-life is cited from other studies, and no kinetic parameters of its own are reported. |
+| popPK | Karlog_1978 | irrelevant | 2 | 2 | Ochratoxin A appears only as a treatment used to alter kidney clearances of inulin and PAH in swine; no kinetic parameter of ochratoxin A itself is reported, and no numeric values are given. |
+| PGx | Kim_2016 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype is studied; effects of gene knockdown/toxin exposure on cell cycle and DNA adducts are not pharmacogenomic effects on a PK/PD parameter. |
+| PGx | Kinota_2023 | not_relevant | 0 | 0 | Population genetics study of PPARA variants and hypoxia adaptation; no ochratoxin_a PK/PD parameters measured. |
+| popPK | Krausová_2024 | irrelevant | 1 | 0 | This is a human biomonitoring/exposure study reporting concentration levels and margin of exposure, with no kinetic parameters (half-life, clearance, etc.) for ochratoxin A. |
+| popPK | Kuhn_2024 | relevant | 8 | 3 | Mouse study directly on OTA kinetics (plasma clearance, biliary/urinary excretion, metabolites), but abstract contains no numeric values — they appear to live in figures not provided. |
+| PGx | Kövesi_2025 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype linked to a PK or PD parameter of OTA; only dietary SeMet vs OTA gene expression effects. |
+| popPK | Kőszegi_2016 | irrelevant | 3 | 3 | A review repeating values from other studies (bioavailability ~93%, half-life ~1 month, binding constants) with only a few numeric values present and no original kinetic data. |
+| popPK | Larsen_1995 | irrelevant | 2 | 0 | Ochratoxin A is only listed briefly among examples of biomarkers; no kinetic parameters appear in this text. |
+| PGx | Lebrun_2002 | not_relevant | 7 | 6 | Reports genotype associations (GSTP1, NAT2) with OTA-induced DNA damage (comet tail length), a surrogate PD/biomarker endpoint, not a fitted pharmacodynamic parameter effect size. |
+| PGx | Lee_2018 | not_relevant | 0 | 0 | Study examines OTA-induced toxicity via AhR/PXR/Nrf2 signaling, not gene variants affecting PK/PD parameters. |
+| popPK | Lillehoj_1979 | relevant | 5 | 2 | Tissue distribution/retention time course of ochratoxin A in rats is reported, but the evidence contains only qualitative descriptions; numeric counts likely reside in tables/figures not provided. |
+| popPK | Liu_2022 | irrelevant | 2 | 0 | A review discussing OTA toxicokinetics qualitatively with no numeric kinetic parameters, which would repeat other papers' values anyway. |
+| popPK | Martins_2019 | irrelevant | 1 | 1 | This is a human biomonitoring exposure/risk study with urinary biomarker concentrations and hazard quotients, but no kinetic parameters (half-life, clearance, etc.) for ochratoxin A. |
+| popPK | Mihalache_2026 | irrelevant | 0 | 0 | This is a human biomonitoring/exposure study reporting urine concentrations and dietary associations, with no kinetic parameters of ochratoxin A such as half-life, clearance, or rate constants. |
+| PGx | Ming_2023 | not_relevant | 0 | 0 | Paper studies engineered thermostability of carboxypeptidase A, not a gene variant effect on OTA PK/PD parameters. |
+| popPK | Muñoz-Solano_2023 | irrelevant | 0 | 0 | This is a biomonitoring/analytical-validation study measuring plasma mycotoxin concentrations, with no kinetic parameters (half-life, clearance, rate constants, etc.) for ochratoxin A, which was in fact not detected in any sample. |
+| popPK | Muñoz-Solano_2024 | irrelevant | 1 | 1 | A systematic review of mycotoxin exposure monitoring in food-producing animals; OTA kinetic parameters, if any, belong to cited primary studies and no numeric toxicokinetic values for OTA appear in the provided evidence. |
+| popPK | Ning_2024 | irrelevant | 1 | 1 | An analytical-method/biomonitoring study where ochratoxin A is only an analyte/analytical target; no kinetic parameters (half-life, clearance, rates, partitioning) are reported, only detection rates and plasma concentrations in an exposure study. |
+| popPK | Obafemi_2023 | irrelevant | 2 | 0 | A narrative review of neurotoxicity mechanisms with no numeric kinetic parameters for ochratoxin A in the evidence. |
+| PGx | Paredes-Vázquez_2011 | not_relevant | 0 | 0 | Paper is about ankle fracture syndesmosis imaging; no ochratoxin_a or pharmacogenomic PK/PD content. |
+| PGx | Penalva-Olcina_2024 | not_relevant | 1 | 3 | Ecotoxicity gene-expression study in Daphnia magna; no gene variant/genotype altering a PK/PD parameter of OTA in humans. |
+| popPK | Popa-Cobianu_2025 | irrelevant | 0 | 0 | This is an analytical sensor paper for detecting OTA in food, with no kinetic parameters for ochratoxin_a disposition. |
+| PGx | Popescu_2021 | not_relevant | 2 | 4 | Reports mycotoxin and diet effects on CYP gene expression and histology in piglets, not a gene variant/genotype altering a PK or PD parameter of ochratoxin A. |
+| PGx | Popescu_2021_2 | not_relevant | 0 | 0 | Effects of OTA exposure on CYP/GST expression are due to toxin exposure and dietary antioxidants, not gene variant/genotype/phenotype, so no pharmacogenomic effect on PK/PD is reported. |
+| popPK | Prior_1976 | irrelevant | 1 | 1 | LD50 dose-response toxicity study in birds with no kinetic parameters (no half-life, clearance, excretion rates, or tissue distribution data). |
+| PGx | Pyo_2020 | not_relevant | 0 | 0 | Study examined OTA+acrylamide combined cytotoxicity in vitro; no gene variant/genotype effects on PK or PD parameters reported. |
+| PGx | Ribonnet_2011 | not_relevant | 0 | 0 | Study tests OTA effects in in vitro reporter/cell assays without any gene variant, genotype or phenotype linked to OTA PK or PD parameters. |
+| popPK | Roth_1988 | relevant | 6 | 4 | Mouse toxicokinetic study of OTA with time-course elimination and biliary excretion data, but numeric values largely appear in figures/profiles not included; only a 28-68% biliary range is given. |
+| popPK | Ráduly_2023 | irrelevant | 2 | 2 | Review on kidney biomarkers containing no quantitative OTA kinetic parameters of its own beyond a passing "&gt;72 h half-life" statement citing another review. |
+| popPK | Schmidt_2021 | irrelevant | 0 | 0 | Analytical biomonitoring method paper reporting only urine concentrations (exposure data), no kinetic parameters for OTA. |
+| popPK | Schmied_2026 | irrelevant | 0 | 0 | This is a human biomonitoring exposure study reporting urinary OTA detection frequencies and concentrations, with no kinetic parameters (half-life, clearance, rates, or model) of any kind. |
+| popPK | Silva_2020 | irrelevant | 1 | 2 | This is a urinary biomonitoring/exposure study reporting OTA concentrations and risk estimates, with no kinetic parameters (half-life, clearance, rate constants) beyond a cited excretion rate for PDI calculation. |
+| popPK | Tkaczyk_2021 | irrelevant | 1 | 1 | Analytical method/validation paper measuring urinary OTA concentrations (1.5–15 ng/mL) in pigs — an exposure biomarker study with no kinetic parameters (no half-life, rate constant, clearance etc.). |
+| popPK | Tkaczyk_2021_2 | irrelevant | 3 | 2 | This is a review of mycotoxin biomarkers in pigs; toxicokinetic parameters given are for ZEN/DON/T-2, with OTA discussed only toxicologically (LOAELs, residues), no numeric OTA kinetic parameters present. |
+| popPK | Tolosa_2016 | irrelevant | 0 | 0 | Analytical method development paper with no kinetic parameters for ochratoxin A; it merely notes suitability for future toxicokinetic studies. |
+| PGx | Vang_1993 | not_relevant | 2 | 3 | Ochratoxin A shows no inhibition of metabolic cooperation with or without CYP expression; no pharmacogenomic effect on any PK/PD parameter is reported. |
+| popPK | Wallin_2015 | irrelevant | 0 | 0 | This is a human urinary biomonitoring/exposure study with no kinetic parameters (half-life, clearance, rate constants, or model) for ochratoxin A. |
+| PGx | Wolf_1991 | not_relevant | 3 | 1 | Only speculative mention that CYP expression/genotype may affect ochratoxin A toxicity; no PK/PD parameter is reported or quantified. |
+| PGx | Woo_2012 | not_relevant | 3 | 5 | Study examines placental transporter (ABCG2/ABCC2) inhibition effects on OTA transfer, but no gene variant/genotype/phenotype effect on a PK/PD parameter is reported. |
+| popPK | Xia_2022 | irrelevant | 1 | 2 | This is a human biomonitoring/exposure study reporting urinary OTA concentrations and PDI, not toxicokinetic parameters (no half-life, clearance, rate constants, or PBPK model, and the urine excretion fraction was only borrowed from literature). |
+| PGx | Yang_2026 | not_relevant | 0 | 0 | Computational network/docking study of OTA in HCC; no gene variant/genotype effects on OTA PK/PD parameters reported. |
+| popPK | Zhang_2017 | irrelevant | 2 | 0 | A narrative review summarizing OTA's toxicokinetics in text only, with no numeric kinetic parameters of its own present. |
+| PGx | Zhao_2023 | not_relevant | 0 | 0 | Toxicology study of OTA in fish skin; transporter changes are OTA-induced effects, not a gene variant altering OTA PK/PD. |
+| PGx | Zou_2024 | not_relevant | 1 | 2 | Study reports OTA-induced changes in CYP/NR gene expression as toxicity markers, not a gene variant/genotype effect on OTA PK/PD parameters. |
+| PGx | de_1996 | not_relevant | 2 | 5 | CYP expression alters mutagenicity (genotoxicity endpoint), not a PK/PD parameter like AUC, clearance, or potency of ochratoxin A. |
+| popPK | Šarkanj_2018 | irrelevant | 0 | 0 | An analytical method/exposure biomarker study quantifying urinary OTA concentrations in humans, with no kinetic parameters (half-life, clearance, rates, etc.). |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bochratoxin_a%5D&body=Drug%3A%20ochratoxin_a%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_ochratoxin_a/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-15 15:43 UTC</sub>

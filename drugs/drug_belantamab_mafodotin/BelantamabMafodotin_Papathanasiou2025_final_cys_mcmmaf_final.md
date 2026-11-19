@@ -1,0 +1,351 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;belantamab mafodotin&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/&quot;},{&quot;label&quot;:&quot;Papathanasiou_2025 \u00b7 final_cys_mcmmaf_final_model&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BelantamabMafodotin_FerronBrady2021_reference&quot;,&quot;label&quot;:&quot;Ferron-Brady_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_belantamab_mafodotin/BelantamabMafodotin_FerronBrady2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# belantamab mafodotin — `BelantamabMafodotin_Papathanasiou2025_final_cys_mcmmaf_final`
+
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+
+> Belantamab mafodotin's clearance and volume of distribution lacked values, forcing the model to use library placeholders.
+
+<div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Papathanasiou2025_final_cys_mcmmaf_final" status="model_quarantined" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin ADC and cys-mcMMAF" parameterization="mechanistic" topology="parent_metabolite"></div>
+
+## Citation
+Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Population Pharmacokinetics for Belantamab Mafodotin Monotherapy and Combination Therapies in Patients with Relapsed/Refractory Multiple Myeloma. Clinical pharmacokinetics 64(6):925–942 (2025).
+  ·  DOI: [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1)
+
+## Population and dosing
+
+**Population:** patients with relapsed/refractory multiple myeloma · condition relapsed/refractory multiple myeloma · age group adult · n = 977.
+
+**Dosing:** 175 mg, iv, multiple, every 504 h.
+
+**Dosed compound ≠ measured compound:** dosed belantamab_mafodotin, measured belantamab_mafodotin ADC and cys-mcMMAF.
+
+## Model
+
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 3 extracted, plus 6 covariate effects.  
+**Availability:** Model withheld: a core parameter is unspecified.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| cys-mcMMAF Vc (L) | V | 12.3 | L |
+| K34 (1/day) | kfm | 186 | 1/day |
+| K43 (1/day) | kel | 5.97 | 1/day |
+| sBCMABL on CLMMAF (θCL_SBCMABL) | equation variable | 33.9 | θCL_SBCMABL |
+| theta_q319_weight | theta_q319_weight | 0.701 |  |
+| theta_v1_albumin | theta_v1_albumin | 28.8 |  |
+| theta_v1_weight | theta_v1_weight | 1.24 |  |
+| theta_v1_race | theta_v1_race | 0.816 |  |
+| theta_v1_race | theta_v1_race | 0.746 |  |
+| theta_v1_bmi | theta_v1_bmi | 23.8 |  |
+| CLMMAF | CLMMAF | 642 | L/day |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**Belantamab mafodotin's clearance and volume of distribution lacked values, forcing the model to use library placeholders.**
+
+The record contains clearance and volume values only for the metabolite cys-mcMMAF, leaving the parent drug without estimated parameters. Consequently, a library placeholder was used for the parent drug's clearance and volume, causing the model to be quarantined. Additionally, the defined covariate effects were not simulated, meaning only the reference individual was evaluated. Extracted — cys-mcMMAF: V 12.3 L, kfm 186 1/day, kel 5.97 1/day.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has belantamab_mafodotin ADC and cys-mcMMAF, the second reading belantamab_mafodotin; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| cys-mcMMAF Vc (L) | `Q61` · V | 12.3 | L | 0.0123 | m3 | l | exact (1) | Papathanasiou_2025_table_3:row3:col1, Papathanasiou_2025_table_3:row3:col2 |
+| K34 (1/day) | `Q305` · kfm | 186 | 1/day | 0.002153 | 1/s | 1/h | exact (1) | Papathanasiou_2025_table_3:row4:col1, Papathanasiou_2025_table_3:row4:col2 |
+| K43 (1/day) | `Q47` · kel | 5.97 | 1/day | 6.91e-05 | 1/s | 1/h | exact (1) | Papathanasiou_2025_table_3:row5:col1, Papathanasiou_2025_table_3:row5:col2 |
+| sBCMABL on CLMMAF (θCL_SBCMABL) | `Q900` · equation variable | 33.9 | θCL_SBCMABL |  |  | s·bcmabl·θcl_ | llm (0.6) | Papathanasiou_2025_table_3:row8:col2 |
+| theta_q319_weight | `Q900` · theta_q319_weight | 0.701 |  |  |  |  |  | Papathanasiou_2025_table_3:row9:col1, Papathanasiou_2025_table_3:row9:col2 |
+| theta_v1_albumin | `Q900` · theta_v1_albumin | 28.8 |  |  |  |  |  | Papathanasiou_2025_table_3:row10:col2 |
+| theta_v1_weight | `Q900` · theta_v1_weight | 1.24 |  |  |  |  |  | Papathanasiou_2025_table_3:row13:col1, Papathanasiou_2025_table_3:row13:col2 |
+| theta_v1_race | `Q900` · theta_v1_race | 0.816 |  |  |  |  |  | Papathanasiou_2025_table_3:row14:col1, Papathanasiou_2025_table_3:row14:col2 |
+| theta_v1_race | `Q900` · theta_v1_race | 0.746 |  |  |  |  |  | Papathanasiou_2025_table_3:row15:col1, Papathanasiou_2025_table_3:row15:col2 |
+| theta_v1_bmi | `Q900` · theta_v1_bmi | 23.8 |  |  |  |  |  | Papathanasiou_2025_table_3:row16:col2 |
+| CLMMAF | `Q900` · CLMMAF | 642 | L/day | 7.431e-06 | m3/s |  |  | Papathanasiou_2025_table_3:row2:col1, Papathanasiou_2025_table_3:row2:col2 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| CLMMAF (L/day) | Q22 | exact |
+| IMAXi | Q323 | boundary |
+
+## Departures & gaps
+
+**Interpretation flags:**
+- table section iov: 'On CLMMAF' routed out of structural estimates ('Inter-patient and inter-occasion variability CV%')
+- table section iov: 'CLMMAF-cys-mcMMAF Vc covariancea' routed out of structural estimates ('Inter-patient and inter-occasion variability CV%')
+- table section iov: 'On cys-mcMMAF Vc' routed out of structural estimates ('Inter-patient and inter-occasion variability CV%')
+- table section iov: 'cys-mcMMAF Vc-K43 covarianceb' routed out of structural estimates ('Inter-patient and inter-occasion variability CV%')
+- table section iov: 'On K43' routed out of structural estimates ('Inter-patient and inter-occasion variability CV%')
+- table section iov: 'On IOV CLMMAF' routed out of structural estimates ('Inter-patient and inter-occasion variability CV%')
+- table section iov: 'On IOV cys-mcMMAF Vc' routed out of structural estimates ('Inter-patient and inter-occasion variability CV%')
+- table section residual_error: 'Proportional error CV%' routed out of structural estimates ('Residual error')
+- table section residual_error: 'Y = IPRED + IPRED · ε1 + ε2' routed out of structural estimates ('Residual error')
+- dropped duplicate Q305 ('RATE-DAR (1/day)', value '0.0381') — already have one for this compound
+- unit_dimension_unknown: 'θCL_SBCMABL' (equation variable)
+- unit_dimension_unknown: 'θcys-mcMMAF Vc_IGGBL' (V1)
+- dropped duplicate Q63 ('IgG on cys-mcMMAF Vc (θcys-mcMMAF Vc_IGGBL)', value '0.184') — already have one for this compound
+- unit_dimension_unknown: 'θcys-mcMMAF Vc_SBCMABL' (V1)
+- dropped duplicate Q63 ('sBCMABL on cys-mcMMAF Vc (θcys-mcMMAF Vc_SBCMABL)', value '0.107') — already have one for this compound
+- unit_dimension_unknown: 'ηCLMMAF+ κCLMMAF, j' (CL)
+- dropped duplicate Q22 ('CLi = θCLMMAF · (SBCMABL/50)θCL_SBCMABL· (WTBL/75)θCL_WTBL · exp(ηCLMMAF+ κCLMMAF, j)', value None) — already have one for this compound
+- unit_dimension_unknown: 'ηcys-mcMMAF Vc + κcys-mcMMAF Vc, j' (V1)
+- dropped duplicate Q63 ('cys-mcMMAF Vci = θcys-mcMMAF Vc · (SBCMABL/50)θcys-mcMMAF Vc_SBCMABL · (IGGBL/15)θcys-mcMMAF Vc_IGGBL · (ALBBL/40)θcys-mcMMAF Vc_ALBBL · (WTBL/75)θcys-mcMMAF Vc_WTBL · (IBMIBL/27)θcys-mcMMAF Vc_IBMIBL · (θCLMMAF_RACEA) [if Asian] · (θCLMMAF_RACEB) [if AA] · exp(ηcys-mcMMAF Vc + κcys-mcMMAF Vc, j)', value None) — already have one for this compound
+- unit_dimension_unknown: 'ηK43' (kel)
+- dropped duplicate Q47 ('K43 = θK43·exp(ηK43)', value None) — already have one for this compound
+- routed 'Log-normal distribution CV% = SQRT(exp(Ω) − 1) · 100' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'K34 (1/day)' → 1/day (from the paper text: 'The parameter is identified as “K34 (1/day)” in the supplied parameter information.')
+- implicit units: 'K43 (1/day)' → 1/day (from the paper text: 'The parameter is identified as “K43 (1/day)” in the supplied parameter information.')
+- metabolite volume: 'cys-mcMMAF Vc (L)' Q63→Q61 for cys-mcMMAF — it is 1-compartment, so its central volume is its only volume
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=belantamab_mafodotin ADC and cys-mcMMAF
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — only the metabolite is modelled — no parent compartment
+- bound model equation to Q22 (CL): CLi = θCL*exp(CL,Time)*(ALBBL/40)^θCL_ALBBL * (SBCMABL/50)^θCL_SBCMABL * (IGGBL/15)^θCL_IGGBL
+- model equation 'Qi = θQ * (WTBL/75)^θCL_WTBL * exp(ηQ)' not bound — neither LHS nor base term 'θQ' linked to an ontology parameter
+- bound model equation to Q323 (Imax): IMAXi = θIMAX * (θIMAX_COMBO) [if not monotherapy] * (IGGBL/15)^θIMAX_IGGBL * (SBCMABL/50)^θIMAX_SBCMABL + (ηIMAX)
+- model equation 'TI50i = θTI50 * (IGGBL/15)^θΤΙ50_IGGBL * exp(ηTI50)' not bound — neither LHS nor base term 'θTI50' linked to an ontology parameter
+- Q22 (CL) is equation-defined: value moved to equation-variable 'CLMMAF (L/day)'; equation kept verbatim
+- Q323 (Imax) is equation-defined: value moved to equation-variable 'IMAXi'; equation kept verbatim
+- status held at "Needs review" — not promoted
+- model-stage split: 'cys-mcmmaf final model' is the final model of Papathanasiou_2025 (paper reports 5 stages: adc final model, adc, % changeb, covariate valuesa, cys-mcmmaf final model, cys-mcmmaf, % changeb); same population, different model-building step
+- row roles (LLM): model_class=compartmental; 75/75 row label(s) assigned, 54 linked by role; re-tagged belantamab_mafodotin ADC→cys-mcMMAF ×63
+- molar mass: no plausible PubChem entry for 'belantamab_mafodotin ADC' ('belantamab mafodotin antibody-drug conjugate') — left in mass units
+- molar mass: no plausible PubChem entry for 'belantamab_mafodotin ADC and cys-mcMMAF' ('belantamab mafodotin antibody-drug conjugate and cysteine maleimidocaproyl monomethyl auristatin F') — left in mass units
+- molar mass: none found for 'belantamab_mafodotin ADC' — its concentrations stay mass-only
+- molar mass: none found for 'belantamab_mafodotin ADC and cys-mcMMAF' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- unparsed cell Tab2:row3:col3 = '0.899 to 0.952'
+- unparsed cell Tab2:row4:col3 = '4.15 to 4.28'
+- unparsed cell Tab2:row5:col3 = '0.660 to 0.761'
+- unparsed cell Tab2:row6:col3 = '6.29 to 6.96'
+- unparsed cell Tab2:row7:col1 = '− 0.403'
+- unparsed cell Tab2:row7:col3 = '− 0.458 to − 0.347'
+- unparsed cell Tab2:row8:col3 = '63.5 to 69.2'
+- unparsed cell Tab2:row9:col3 = '2.47 to 3.27'
+- unparsed cell Tab2:row11:col3 = '0.845 to 1.01'
+- unparsed cell Tab2:row12:col3 = '0.449 to 0.635'
+- unparsed cell Tab2:row13:col1 = '− 0.698'
+- unparsed cell Tab2:row13:col3 = '− 0.839 to − 0.557'
+- unparsed cell Tab2:row14:col1 = '− 0.302'
+- unparsed cell Tab2:row14:col3 = '− 0.407 to − 0.19'
+- unparsed cell Tab2:row15:col3 = '0.0988 to 0.127'
+- unparsed cell Tab2:row16:col3 = '0.153 to 0.187'
+- unparsed cell Tab2:row17:col1 = '− 0.459'
+- unparsed cell Tab2:row17:col3 = '− 0.571 to − 0.348'
+- unparsed cell Tab2:row19:col3 = '0.0289 to 0.0513'
+- unparsed cell Tab2:row20:col3 = '0.867 to 0.958'
+- unparsed cell Tab2:row21:col3 = '0.801 to 0.921'
+- unparsed cell Tab2:row22:col3 = '1.23 to 1.66'
+- unparsed cell Tab2:row23:col3 = '0.117 to 0.266'
+- unparsed cell Tab2:row24:col3 = '0.0920 to 0.227'
+- unparsed cell Tab2:row25:col3 = '0.285 to 0.849'
+- unparsed cell Tab2:row27:col3 = '24.0 to 28.0'
+- unparsed cell Tab2:row27:col4 = '14.9%'
+- unparsed cell Tab2:row28:col3 = '0.0272 to 0.0383'
+- unparsed cell Tab2:row29:col3 = '18.5 to 21.3'
+- unparsed cell Tab2:row29:col4 = '15.7%'
+- unparsed cell Tab2:row30:col3 = 'NA to 31.0'
+- unparsed cell Tab2:row30:col4 = '69.1%'
+- unparsed cell Tab2:row31:col3 = '25.1 to 35.4'
+- unparsed cell Tab2:row31:col4 = '50.1%'
+- unparsed cell Tab2:row32:col3 = '22.5 to 34.5'
+- unparsed cell Tab2:row32:col4 = '40.6%'
+- unparsed cell Tab2:row33:col3 = '58.4 to 79.6'
+- unparsed cell Tab2:row33:col4 = '53.7%'
+- unparsed cell Tab2:row35:col3 = '0.0553 to 0.0714'
+- unparsed cell Tab2:row35:col4 = '12.6%'
+- unparsed cell Papathanasiou_2025_table_3:row2:col3 = '607 to 677'
+- unparsed cell Papathanasiou_2025_table_3:row3:col3 = '6.91 to 17.7'
+- unparsed cell Papathanasiou_2025_table_3:row4:col3 = '98.9 to 273'
+- unparsed cell Papathanasiou_2025_table_3:row5:col3 = '5.34 to 6.6'
+- unparsed cell Papathanasiou_2025_table_3:row6:col3 = '0.0351 to 0.0411'
+- unparsed cell Papathanasiou_2025_table_3:row8:col1 = '− 0.0448'
+- unparsed cell Papathanasiou_2025_table_3:row8:col3 = '− 0.0746 to − 0.0151'
+- unparsed cell Papathanasiou_2025_table_3:row9:col3 = '0.528 to 0.875'
+- unparsed cell Papathanasiou_2025_table_3:row10:col1 = '− 0.533'
+- unparsed cell Papathanasiou_2025_table_3:row10:col3 = '− 0.835 to − 0.232'
+- unparsed cell Papathanasiou_2025_table_3:row11:col3 = '0.148 to 0.22'
+- unparsed cell Papathanasiou_2025_table_3:row12:col3 = '0.0732 to 0.14'
+- unparsed cell Papathanasiou_2025_table_3:row13:col3 = '0.912 to 1.57'
+- unparsed cell Papathanasiou_2025_table_3:row14:col3 = '0.724 to 0.908'
+- unparsed cell Papathanasiou_2025_table_3:row15:col3 = '0.606 to 0.886'
+- unparsed cell Papathanasiou_2025_table_3:row16:col1 = '− 0.853'
+- unparsed cell Papathanasiou_2025_table_3:row16:col3 = '− 1.25 to − 0.455'
+- unparsed cell Papathanasiou_2025_table_3:row18:col3 = '22.4 to 35.5'
+- unparsed cell Papathanasiou_2025_table_3:row19:col3 = '0.0597 to 0.103'
+- unparsed cell Papathanasiou_2025_table_3:row20:col3 = '59.5 to 70.7'
+- unparsed cell Papathanasiou_2025_table_3:row21:col3 = '0.288 to 0.456'
+- unparsed cell Papathanasiou_2025_table_3:row22:col3 = '119 to 155'
+- unparsed cell Papathanasiou_2025_table_3:row23:col3 = '53.0 to 60.3'
+- unparsed cell Papathanasiou_2025_table_3:row24:col3 = '42.7 to 47.3'
+- unparsed cell Papathanasiou_2025_table_3:row26:col3 = '25.6 to 26.7'
+- companion parameter table 3 transcribed (67 record(s), model stage 'final')
+- unparsed cell Papathanasiou_2025_table_4:row1:col6 = '− 13.1'
+- unparsed cell Papathanasiou_2025_table_4:row1:col7 = '− 14.6'
+- unparsed cell Papathanasiou_2025_table_4:row2:col1 = '− 8.99'
+- unparsed cell Papathanasiou_2025_table_4:row2:col2 = '− 18.7'
+- unparsed cell Papathanasiou_2025_table_4:row2:col3 = '− 34.0'
+- unparsed cell Papathanasiou_2025_table_4:row3:col1 = 'ADC ADC VpADC ImaxADC TI50cys-mcMMAF cys-mcMMAF Vc'
+- unparsed cell Papathanasiou_2025_table_4:row3:col6 = '− 21.5'
+- unparsed cell Papathanasiou_2025_table_4:row3:col7 = '− 15.6'
+- unparsed cell Papathanasiou_2025_table_4:row4:col1 = '− 0.117'
+- unparsed cell Papathanasiou_2025_table_4:row4:col2 = '− 16.0'
+- unparsed cell Papathanasiou_2025_table_4:row4:col3 = '− 31.9'
+- unparsed cell Papathanasiou_2025_table_4:row5:col3 = '− 10.2'
+- unparsed cell Papathanasiou_2025_table_4:row5:col4 = '− 15.6'
+- unparsed cell Papathanasiou_2025_table_4:row5:col5 = '− 32.9'
+- unparsed cell Papathanasiou_2025_table_4:row6:col4 = '− 3.56'
+- unparsed cell Papathanasiou_2025_table_4:row6:col5 = '− 4.75'
+- unparsed cell Papathanasiou_2025_table_4:row7:col2 = '51.2 kg'
+- unparsed cell Papathanasiou_2025_table_4:row7:col3 = '− 2.84'
+- unparsed cell Papathanasiou_2025_table_4:row7:col4 = '− 12.9'
+- unparsed cell Papathanasiou_2025_table_4:row7:col5 = '− 18.6'
+- unparsed cell Papathanasiou_2025_table_4:row7:col7 = '− 6.53'
+- unparsed cell Papathanasiou_2025_table_4:row8:col4 = '− 6.12'
+- unparsed cell Papathanasiou_2025_table_4:row9:col6 = '− 2.45'
+- unparsed cell Papathanasiou_2025_table_4:row9:col7 = '− 3.52'
+- unparsed cell Papathanasiou_2025_table_4:row10:col4 = '− 5.33'
+- unparsed cell Papathanasiou_2025_table_4:row10:col5 = '− 5.78'
+- companion parameter table 4 transcribed (29 record(s))
+- LLM selected parameter table(s) 2, 3, 4
+- captured model equation CLi = θCL*exp(CL,Time)*(ALBBL/40)^θCL_ALBBL * (SBCMABL/50)^θCL_SBCMABL * (IGGBL/15)^θCL_IGGBL
+- captured model equation Qi = θQ * (WTBL/75)^θCL_WTBL * exp(ηQ)
+- captured model equation IMAXi = θIMAX * (θIMAX_COMBO) [if not monotherapy] * (IGGBL/15)^θIMAX_IGGBL * (SBCMABL/50)^θIMAX_SBCMABL + (ηIMAX)
+- captured model equation TI50i = θTI50 * (IGGBL/15)^θΤΙ50_IGGBL * exp(ηTI50)
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.455 (10/22 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `model.links` | [['belantamab_mafodotin adc', 'cys-mcmmaf', 'metabolism']] | [['belantamab_mafodotin', 'cys-mcmmaf', 'metabolism']] | mismatch |
+| `qwen3.8-27b` | `parameters[imaxi]` |  |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[imaxi]` |  |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[k34].parameter_id` | Q305 | Q47 | mismatch |
+| `qwen3.8-27b` | `parameters[k43].parameter_id` | Q47 | Q371 | mismatch |
+| `qwen3.8-27b` | `parameters[rate-dar]` |  | 0.0381 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[sbcmabl on clmmaf].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `qwen3.8-27b` | `parameters[sbcmabl on clmmaf].parameter_id` | Q900 | Q319 | mismatch |
+| `qwen3.8-27b` | `parameters[theta_allometric_exponent_weight]` |  | 0.701 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_q319_weight]` | 0.701 |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[theta_v1_albumin]` | 28.8 |  | only_one_extracted |
+| `qwen3.8-27b` | `screen.primary_analyte` | belantamab_mafodotin ADC and cys-mcMMAF | belantamab_mafodotin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Papathanasiou_2025_table_3:row2:col1', 'Papathanasiou_2025_table_3:row2:col2'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['Papathanasiou_2025_table_3:row4:col1', 'Papathanasiou_2025_table_3:row4:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Papathanasiou_2025_table_3:row5:col1', 'Papathanasiou_2025_table_3:row5:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Papathanasiou_2025_table_3:row3:col1', 'Papathanasiou_2025_table_3:row3:col2'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q61 | pass | volume within physiological range | 12.3 L | ['Papathanasiou_2025_table_3:row3:col1', 'Papathanasiou_2025_table_3:row3:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_rate_constant_conversion |  | pass | none (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 43.7 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.498 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.976 |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 22.9 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 13.0 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 16.8 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 19.1 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 13.2 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 17 |  | no simulated metric for this quantity (single reference sim) |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model downloads
+
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbelantamab_mafodotin%5D%20BelantamabMafodotin_Papathanasiou2025_final_cys_mcmmaf_final&body=Drug%3A%20belantamab_mafodotin%0ARecord%3A%20BelantamabMafodotin_Papathanasiou2025_final_cys_mcmmaf_final%0APaper%3A%20Papathanasiou_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_final_cys_mcmmaf_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 09:53 UTC</sub>

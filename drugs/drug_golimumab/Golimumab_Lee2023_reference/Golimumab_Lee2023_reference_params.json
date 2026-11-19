@@ -1,0 +1,28 @@
+{
+ "dose_source": "library default",
+ "model_id": "Golimumab_Lee2023_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.837962962962963e-09,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00022857142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 1.1689814814814814e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 266645.2905811623
+ },
+ "reference_peaks": {
+  "central.C": 0.005307262737838436
+ },
+ "stop_time": 6048000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

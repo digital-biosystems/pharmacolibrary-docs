@@ -1,0 +1,112 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;etodolac&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etodolac_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etodolac/Etodolac_de2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# etodolac
+
+- **generic name:** etodolac
+- **ATC codes:** `M01AB08`
+- **DrugBank:** [DB00749](https://go.drugbank.com/drugs/DB00749) · **PubChem:** [CID 3308](https://pubchem.ncbi.nlm.nih.gov/compound/3308)
+- **molar mass:** 287.3535 g/mol (C17H21NO3) — DrugBank
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+Etodolac is a nonsteroidal anti-inflammatory drug used to treat osteoarthritis, rheumatoid arthritis, and pain. It is taken orally, available in various tablet and capsule forms. It is used in the United States and is one of the most commonly prescribed medications there.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2465218](https://www.wikidata.org/wiki/Q2465218), [Wikipedia](https://en.wikipedia.org/wiki/Etodolac?oldid=1316039301) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| etodolac | parent | 287.353 | C17H21NO3 | DrugBank | [3308](https://pubchem.ncbi.nlm.nih.gov/compound/3308) | Baek_2019, de_2017 |
+
+## Start here
+
+> **de_2017_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers, n = in the analysis (a plain integer), or unknown. [Run it in the simulator](drugs/drug_etodolac/Etodolac_de2017_reference.md?tab=Simulation) · [record](drugs/drug_etodolac/Etodolac_de2017_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Baek_2019_reference](drugs/drug_etodolac/Etodolac_Baek2019_reference.md) | — | 1-compartment (no model) | 5 | Baek IH, Pharmacokinetic modeling and simulation…, Xenobiotica; the fate of fo… (2019) | [10.1080/00498254.2018.1524185](https://doi.org/10.1080/00498254.2018.1524185) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [de_2017_reference](drugs/drug_etodolac/Etodolac_de2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Miranda Silva C et al., Development of an Enantioselective and…, The AAPS journal (2017) | [10.1208/s12248-017-0138-9](https://doi.org/10.1208/s12248-017-0138-9) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Boni_1999_reference](drugs/drug_etodolac/Etodolac_Boni1999_reference.md) | — | 1-compartment (no model) | 0 | Boni J et al., Pharmacokinetic and pharmacodynamic act…, Journal of clinical pharmac… (1999) | [10.1177/00912709922008254](https://doi.org/10.1177/00912709922008254) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Boni_1999_pain_intensity_difference_scores](drugs/drug_etodolac/pd_Boni_1999_pain_intensity_difference_scores.md) | pain intensity difference scores ← etodolac · indirect response — drug inhibits the production of pain intensity difference scores | model (no simulator) | Boni J et al., Pharmacokinetic and pharmacodynamic act…, Journal of clinical pharmac… (1999) | [10.1177/00912709922008254](https://doi.org/10.1177/00912709922008254) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [de_2017_pain_score](drugs/drug_etodolac/pd_de_2017_pain_score.md) | pain score ← S-etodolac · direct Emax (saturable) effect | — | de Miranda Silva C et al., Development of an Enantioselective and…, The AAPS journal (2017) | [10.1208/s12248-017-0138-9](https://doi.org/10.1208/s12248-017-0138-9) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=etodolac).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C9` substrate, `UGT1A3` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | mammary gland | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor), RXRA (other), UGT1A10 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 00:48 | 0:21 | 2/1/0 | 1/1/0 | 0/0/0 | 47,202/3,550 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 9 matched, 9 returned
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Baek_2019.pdf` | Baek IH, Pharmacokinetic modeling and simulation…, Xenobiotica; the fate of fo… (2019) | popPK | 10 | [10.1080/00498254.2018.1524185](https://doi.org/10.1080/00498254.2018.1524185) | [30216103](https://pubmed.ncbi.nlm.nih.gov/30216103) | The abstract reports quantitative pharmacokinetic parameters including absorption rate (Ka = 1.49 h-1), half-life (39.55 h), and AUC values for etodolac in dogs. |
+| `Boni_1999.pdf` | Boni J et al., Pharmacokinetic and pharmacodynamic act…, Journal of clinical pharmac… (1999) | popPK | 10 | [10.1177/00912709922008254](https://doi.org/10.1177/00912709922008254) | [10392328](https://pubmed.ncbi.nlm.nih.gov/10392328) | The study reports quantitative population pharmacokinetic parameters (clearance, volume, ka) for etodolac in humans, with all numeric values explicitly provided in the text. |
+| `Davis_2007.pdf` | Davis JL et al., Pharmacokinetics of etodolac in the hor…, Journal of veterinary pharm… (2007) | popPK | 10 | [10.1111/j.1365-2885.2007.00811.x](https://doi.org/10.1111/j.1365-2885.2007.00811.x) | [17217400](https://pubmed.ncbi.nlm.nih.gov/17217400) | The paper explicitly reports quantitative pharmacokinetic parameters (half-life, volume of distribution, clearance, bioavailability) for etodolac in horses. |
+| `de_2017.pdf` | de Miranda Silva C et al., Development of an Enantioselective and…, The AAPS journal (2017) | popPK | 10 | [10.1208/s12248-017-0138-9](https://doi.org/10.1208/s12248-017-0138-9) | [28875479](https://pubmed.ncbi.nlm.nih.gov/28875479) | The evidence explicitly reports quantitative population PK parameters (clearance and volume of distribution) for both R- and S-etodolac in human subjects. |
+
+<sub>queue written 2026-10-07 00:48 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Benet_1993 | irrelevant | 3 | 0 | This appears to be a review article (based on the lack of specific study design details in the evidence) that only provides a general average half-life, without extracting specific compartmental parameters (CL, V, Q, ka) from a population or individual PK study in the provided text. |
+| popPK | Poradowski_2019 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assessment of NSAIDs on canine cancer cells and does not report any pharmacokinetic parameters for etodolac. |
+| popPK | Qosa_2016 | irrelevant | 0 | 0 | The study focuses on etodolac's ability to enhance blood-brain barrier integrity in an in-vitro cell model, reporting no pharmacokinetic parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betodolac%5D&body=Drug%3A%20etodolac%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etodolac/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 00:48 UTC</sub>

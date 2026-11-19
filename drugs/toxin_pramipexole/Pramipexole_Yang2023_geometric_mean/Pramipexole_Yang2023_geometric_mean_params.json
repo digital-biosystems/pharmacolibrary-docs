@@ -1,0 +1,86 @@
+{
+ "dose_source": "paper",
+ "model_id": "Pramipexole_Yang2023_geometric_mean",
+ "molar_masses": {
+  "retainedFraction": 0.211327
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.375
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Yang_2023:other_prose",
+    "value_si": 4.0933e-07
+   },
+   {
+    "source": "Yang_2023:other_prose",
+    "value_si": 4.1377000000000003e-07
+   },
+   {
+    "source": "Yang_2023:other_prose",
+    "value_si": 5.1479e-07
+   },
+   {
+    "source": "Yang_2023:other_prose",
+    "value_si": 5.2607e-07
+   },
+   {
+    "source": "Yang_2023:other_prose",
+    "value_si": 98.27
+   },
+   {
+    "source": "Yang_2023:other_prose",
+    "value_si": 98.31
+   },
+   {
+    "source": "Yang_2023:discussion_prose",
+    "value_si": 4.0933e-07
+   },
+   {
+    "source": "Yang_2023:discussion_prose",
+    "value_si": 2.68e-07
+   },
+   {
+    "source": "Yang_2023:discussion_prose",
+    "value_si": 50.0
+   },
+   {
+    "source": "Yang_2023:discussion_prose",
+    "value_si": 20.0
+   },
+   {
+    "source": "Yang_2023:discussion_prose",
+    "value_si": 25.0
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.211327,
+  "Tb[1]": 43128.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.75e-07
+ },
+ "reference_peak_times": {
+  "retainedFraction": 519.438877755511
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9963182493329997
+ },
+ "stop_time": 259200.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

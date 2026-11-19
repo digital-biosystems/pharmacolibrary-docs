@@ -1,0 +1,49 @@
+{
+ "model_id": "TenofovirDisoproxil_Jayachandran2021_PD_p24",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1.0,
+  "slope": 0.00011
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.0": 0.00011
+ },
+ "stop_time": 1000.0,
+ "subtitle": "cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) (p24) against tenofovir-diphosphate (TFVdp) in rectal mononuclear cells (MMCs) concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": true,
+   "display_unit": "fmol/million cells",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "pg/mL",
+  "slope": {
+   "display_only": true,
+   "display_unit": "(pg/mL)/(fmol/million cells)",
+   "factor": 1.0,
+   "si_unit": "1"
+  }
+ },
+ "x_axis": {
+  "display_unit": "fmol/million cells",
+  "factor": 1.0,
+  "label": "tenofovir-diphosphate (TFVdp) in rectal mononuclear cells (MMCs) concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "pg/mL",
+  "factor": 1.0,
+  "label": "cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) (p24)"
+ }
+}

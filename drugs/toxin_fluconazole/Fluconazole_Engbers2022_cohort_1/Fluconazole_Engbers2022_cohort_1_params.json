@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fluconazole_Engbers2022_cohort_1",
+ "molar_masses": {
+  "central.C": 0.306276
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  840.0,
+  1750.0,
+  2100.0
+ ],
+ "parameters": {
+  "Cl": 4.0833333333333335e-09,
+  "F": 0.9,
+  "MM": 0.306276,
+  "Tlag": 1800.0,
+  "VdPerKg": 1.2057142857142858e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00084,
+  "ka": 0.0010722222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7235.884665357537
+ },
+ "reference_peaks": {
+  "central.C": 0.8740058902377088
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

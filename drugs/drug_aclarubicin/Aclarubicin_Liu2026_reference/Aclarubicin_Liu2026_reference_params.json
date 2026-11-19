@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Aclarubicin_Liu2026_reference",
+ "molar_masses": {
+  "central.C": 0.811878
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.0361111111111113e-06,
+  "F": 1.0,
+  "MM": 0.811878,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002585714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 4.4444444444444447e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 41555.11022044088
+ },
+ "reference_peaks": {
+  "central.C": 0.0003468208095847685
+ },
+ "stop_time": 432000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

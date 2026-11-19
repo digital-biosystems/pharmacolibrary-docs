@@ -1,0 +1,27 @@
+{
+ "dose_source": "WHO ATC DDD 12 mg parenteral (L01FD03)",
+ "model_id": "TrastuzumabEmtansine_Betts2020_mouseb",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.8472222222222223e-08,
+  "F": 1.0,
+  "VdPerKg": 6.099999999999999e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.2e-05,
+  "k21": 7.208053248978515e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662171
+ },
+ "reference_peaks": {
+  "central.C": 2.137294189012813e-08
+ },
+ "stop_time": 864000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,0 +1,114 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;brentuximab vedotin&quot;}]"></div>
+
+# brentuximab vedotin
+
+- **generic name:** brentuximab vedotin
+- **ATC codes:** `L01FX05`
+- **DrugBank:** [DB08870](https://go.drugbank.com/drugs/DB08870) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Brentuximab vedotin is an antibody-drug conjugate used to treat certain types of lymphoma, including Hodgkin lymphoma and anaplastic large cell lymphoma. It is given intravenously. It is authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q422324](https://www.wikidata.org/wiki/Q422324), [Wikipedia](https://en.wikipedia.org/wiki/Brentuximab_vedotin?oldid=1382320712) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| brentuximab vedotin (ADC) | metabolite | 153000 | — | the paper | — | Li_2017 |
+| DM1 | metabolite | — (mass units only) | — | — | — | — |
+| MMAE | metabolite | 718 | — | the paper | — | Li_2017, Suri_2018 |
+| monomethyl auristatin E (MMAE) (MMAE (monomethyl auristatin E)) | metabolite | 717.993 | C39H67N5O7 | PubChem | [11542188](https://pubchem.ncbi.nlm.nih.gov/compound/11542188) | Suri_2019, Suri_2020 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67 — no SI value to build from</sub> | [Li_2017_reference](drugs/drug_brentuximab_vedotin/BrentuximabVedotin_Li2017_reference.md) | — | parent + metabolite (no model) | 15 | Li H et al., Population Pharmacokinetics of Brentuxi…, Journal of clinical pharmac… (2017) | [10.1002/jcph.920](https://doi.org/10.1002/jcph.920) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q63, Q61, Q64, Q30 — no SI val…</sub> | [Suri_2019_reference](drugs/drug_brentuximab_vedotin/BrentuximabVedotin_Suri2019_reference.md) | — | parent + metabolite (no model) | 6 | Suri A et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1530](https://doi.org/10.1002/cpt.1530) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Suri_2020_reference](drugs/drug_brentuximab_vedotin/BrentuximabVedotin_Suri2020_reference.md) | — | parent + metabolite (no model) | 2 | Suri A et al., Population Pharmacokinetics of Brentuxi…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1682](https://doi.org/10.1002/jcph.1682) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Ait-Oudhia_2017_reference](drugs/drug_brentuximab_vedotin/BrentuximabVedotin_AitOudhia2017_reference.md) | — | general linear (no model) | 0 | Ait-Oudhia S et al., A Mechanism-Based PK/PD Model for Hemat…, The AAPS journal (2017) | [10.1208/s12248-017-0113-5](https://doi.org/10.1208/s12248-017-0113-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Suri_2018_reference](drugs/drug_brentuximab_vedotin/BrentuximabVedotin_Suri2018_reference.md) | — | parent + metabolite (no model) | 3 | Suri A et al., Population PK and Exposure-Response Rel…, Clinical pharmacology and t… (2018) | [10.1002/cpt.1037](https://doi.org/10.1002/cpt.1037) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Liu-Kreyche_2019_cell_survival](drugs/drug_brentuximab_vedotin/pd_Liu_Kreyche_2019_cell_survival.md) | cell survival (brentuximab vedotin) ← brentuximab_vedotin · direct Emax (saturable) effect | — | Liu-Kreyche P et al., Lysosomal P-gp-MDR1 Confers Drug Resist…, Frontiers in pharmacology (2019) | [10.3389/fphar.2019.00749](https://doi.org/10.3389/fphar.2019.00749) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Shah_2012_CR](drugs/drug_brentuximab_vedotin/pd_Shah_2012_CR.md) | Complete response rate ← monomethyl auristatin E · categorical (graded) response model | — | Shah DK et al., Bench to bedside translation of antibod…, Journal of pharmacokinetics… (2012) | [10.1007/s10928-012-9276-y](https://doi.org/10.1007/s10928-012-9276-y) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Shah_2012_PFS](drugs/drug_brentuximab_vedotin/pd_Shah_2012_PFS.md) | Progression free survival ← monomethyl auristatin E · time-to-event model | — | Shah DK et al., Bench to bedside translation of antibod…, Journal of pharmacokinetics… (2012) | [10.1007/s10928-012-9276-y](https://doi.org/10.1007/s10928-012-9276-y) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Shah_2012_Tumor_growth](drugs/drug_brentuximab_vedotin/pd_Shah_2012_Tumor_growth.md) | Tumor growth ← monomethyl auristatin E · disease-progression model | — | Shah DK et al., Bench to bedside translation of antibod…, Journal of pharmacokinetics… (2012) | [10.1007/s10928-012-9276-y](https://doi.org/10.1007/s10928-012-9276-y) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=brentuximab_vedotin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ABCB5 (substrate), TNFRSF8 (antibody), TNFRSF8 (binder), TNFRSF8 (regulator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-13 12:49 | 12:33 | 3/2/0 | 2/0/0 | 0/0/0 | 132,418/67,549 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 20 matched, 20 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Flerlage_2016.pdf` | Flerlage JE et al., Pharmacokinetics, immunogenicity, and s…, Cancer chemotherapy and pha… (2016) | popPK | 10 | [10.1007/s00280-016-3180-x](https://doi.org/10.1007/s00280-016-3180-x) | [27837256](https://pubmed.ncbi.nlm.nih.gov/27837256) | A compartmental model reports brentuximab vedotin clearance and volume relationships, but their numeric values are not provided. |
+| `Zhang_2024.pdf` | Zhang D et al., Time-varying brentuximab vedotin pharma…, British journal of clinical… (2024) | popPK | 10 | [10.1111/bcp.16128](https://doi.org/10.1111/bcp.16128) | [38866401](https://pubmed.ncbi.nlm.nih.gov/38866401) | Human population-PK modeling is reported, but numeric disposition parameter values are not present in the evidence. |
+| `Shah_2012.pdf` | Shah DK et al., Bench to bedside translation of antibod…, Journal of pharmacokinetics… (2012) | popPK | 9 | [10.1007/s10928-012-9276-y](https://doi.org/10.1007/s10928-012-9276-y) | [23151991](https://pubmed.ncbi.nlm.nih.gov/23151991) | The study models brentuximab vedotin disposition, but no numeric parameter values are present in the provided evidence. |
+| `Ait-Oudhia_2017.pdf` | Ait-Oudhia S et al., A Mechanism-Based PK/PD Model for Hemat…, The AAPS journal (2017) | popPK | 8 | [10.1208/s12248-017-0113-5](https://doi.org/10.1208/s12248-017-0113-5) | [28646408](https://pubmed.ncbi.nlm.nih.gov/28646408) | The two-compartment PK model reports SGN-35’s numeric release rate (0.12 h⁻¹), but not numeric CL, V, or Q values. |
+
+<sub>queue written 2026-10-13 12:36 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Flerlage_2016 | relevant | 10 | 2 | A compartmental model reports brentuximab vedotin clearance and volume relationships, but their numeric values are not provided. |
+| popPK | Hedrich_2018 | irrelevant | 0 | 0 | This is a review and provides no quantitative brentuximab vedotin disposition values. |
+| popPK | Lhospice_2015 | irrelevant | 2 | 0 | ADCETRIS is a comparator and the evidence reports biodistribution, not quantitative disposition parameters; no such parameter values are provided. |
+| popPK | Liao_2024 | irrelevant | 0 | 0 | This review focuses on polatuzumab vedotin and uses brentuximab vedotin only as a comparator; no numeric brentuximab PK values are provided. |
+| popPK | Liu-Kreyche_2019 | irrelevant | 0 | 0 | The study reports in-vitro cytotoxicity and transporter results, not quantitative pharmacokinetic disposition parameters. |
+| popPK | Sapra_2013 | irrelevant | 2 | 0 | This review mentions PK/PD models but provides no readable quantitative brentuximab vedotin disposition parameters. |
+| popPK | Shah_2012 | relevant | 9 | 0 | The study models brentuximab vedotin disposition, but no numeric parameter values are present in the provided evidence. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | This systematic review reports survival outcomes, not quantitative pharmacokinetic disposition parameters. |
+| popPK | Zhang_2024 | relevant | 10 | 1 | Human population-PK modeling is reported, but numeric disposition parameter values are not present in the evidence. |
+| popPK | Zhang_2024_2 | relevant | 9 | 3 | Human pediatric PK data and a population-PK model are reported, but numeric disposition parameters are unclear or referenced in supplementary material not provided. |
+| popPK | Zhou_2025 | relevant | 10 | 2 | Human population-PK models are reported, but the numeric model parameter values are only in Tables S1 and S2, which are not provided. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbrentuximab_vedotin%5D&body=Drug%3A%20brentuximab_vedotin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_brentuximab_vedotin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 10:34 UTC</sub>

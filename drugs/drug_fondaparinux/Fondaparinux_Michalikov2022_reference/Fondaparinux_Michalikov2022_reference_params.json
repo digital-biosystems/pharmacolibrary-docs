@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 2.5 mg parenteral (B01AX05)",
+ "model_id": "Fondaparinux_Michalikov2022_reference",
+ "molar_masses": {
+  "central.C": 1.508263
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4691666666666668e-08,
+  "F": 1.0,
+  "MM": 1.508263,
+  "VdPerKg": 7.928571428571429e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662078
+ },
+ "reference_peaks": {
+  "central.C": 0.0004500929210457227
+ },
+ "stop_time": 1382400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

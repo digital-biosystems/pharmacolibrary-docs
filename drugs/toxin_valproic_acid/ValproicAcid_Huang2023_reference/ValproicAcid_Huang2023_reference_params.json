@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "ValproicAcid_Huang2023_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  31.25,
+  62.5,
+  125.0,
+  250.0,
+  375.0,
+  437.5,
+  468.75,
+  500.0,
+  693.0
+ ],
+ "parameters": {
+  "Cl": 9.483333333333333e-08,
+  "F": 0.9,
+  "Tlag": 1800.0,
+  "VdPerKg": 0.00015,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.125e-05,
+  "ka": 0.0007222222222222223,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8320.87220060327
+ },
+ "reference_peaks": {
+  "central.C": 0.002533738856017009
+ },
+ "review_status": "needs_review",
+ "stop_time": 432000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

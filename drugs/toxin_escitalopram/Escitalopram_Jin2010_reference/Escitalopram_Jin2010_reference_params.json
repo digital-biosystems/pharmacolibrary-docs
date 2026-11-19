@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 10 mg oral (N06AB10)",
+ "model_id": "Escitalopram_Jin2010_reference",
+ "molar_masses": {
+  "central.C": 0.324399
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.527777777777778e-06,
+  "F": 1.0,
+  "MM": 0.324399,
+  "Tlag": 0.0,
+  "VdPerKg": 0.012628571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 4.4444444444444447e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 48480.9619238477
+ },
+ "reference_peaks": {
+  "central.C": 7.91093439793046e-06
+ },
+ "stop_time": 604800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

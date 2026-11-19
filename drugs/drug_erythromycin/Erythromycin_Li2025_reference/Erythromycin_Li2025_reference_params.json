@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1000 mg parenteral (J01FA01)",
+ "model_id": "Erythromycin_Li2025_reference",
+ "molar_masses": {
+  "central.C": 0.7339268
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.1666666666666666e-08,
+  "F": 1.0,
+  "MM": 0.7339268,
+  "VdPerKg": 0.0003942857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "k12": 0.00013194444444444443,
+  "k21": 0.00021296296296296298,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662006
+ },
+ "reference_peaks": {
+  "central.C": 0.019302493375752995
+ },
+ "stop_time": 2419200.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

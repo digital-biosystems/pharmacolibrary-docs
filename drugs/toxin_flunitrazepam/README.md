@@ -1,0 +1,183 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Flunitrazepam&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flunitrazepam_Iisalo1984_reference&quot;,&quot;label&quot;:&quot;Iisalo_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_flunitrazepam/Flunitrazepam_Iisalo1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Adachi2021_reference&quot;,&quot;label&quot;:&quot;Adachi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_flunitrazepam/Flunitrazepam_Adachi2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Becherucci1985_reference&quot;,&quot;label&quot;:&quot;Becherucci_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_flunitrazepam/Flunitrazepam_Becherucci1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Boxenbaum1978_reference&quot;,&quot;label&quot;:&quot;Boxenbaum_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_flunitrazepam/Flunitrazepam_Boxenbaum1978_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flunitrazepam_Seppl1993_reference&quot;,&quot;label&quot;:&quot;Sepp\u00e4l\u00e4_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_flunitrazepam/Flunitrazepam_Seppl1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Flunitrazepam
+
+- **generic name:** Flunitrazepam
+- **T3DB:** [T3D3047](http://www.t3db.ca/toxins/T3D3047) · **DrugBank:** [DB01544](https://go.drugbank.com/drugs/DB01544) · **PubChem:** [CID 3380](https://pubchem.ncbi.nlm.nih.gov/compound/3380)
+- **groups:** approved, illicit
+
+## About
+
+A benzodiazepine with pharmacologic actions similar to those of diazepam that can cause anterograde amnesia. Some reports indicate that it is used as a date rape drug and suggest that it may precipitate violent behavior. The United States Government has banned the importation of this drug. [PubChem]
+
+- **Category:** Drug, Synthetic Toxin
+- **Route of exposure:** 50% (suppository) and 64-77% (oral)
+- **Sources and uses:** For short-term treatment of severe insomnias, that are not responsive to other hypnotics. Not approved by the FDA in the U.S. …
+- **Mechanism of toxicity:** Benzodiazepines bind nonspecifically to benzodiazepine receptors BNZ1, which mediates sleep, and BNZ2, which affects affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABAA) receptors, this enhances the effects of GABA by increasing GABA affinity for the GABA receptor. …
+- **Health effects:** They cause slurred speech, disorientation and "drunken" behavior. They are physically and psychologically addictive.
+- **Treatment:** General supportive measures should be employed, along with intravenous fluids, and an adequate airway maintained. …
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D3047">T3DB T3D3047</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 1622-62-4 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:111715">ChEBI 111715</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| flunitrazepam | parent | 313.288 | C16H12FN3O3 | PubChem | [3380](https://pubchem.ncbi.nlm.nih.gov/compound/3380) | Becherucci_1985, Boxenbaum_1978, Iisalo_1984, Luurila_1996, Pariente-Khayat_1999, Seppälä_1993 |
+
+## Start here
+
+> **Iisalo_1984_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> paediatric patients (children), n = 10. [Run it in the simulator](drugs/toxin_flunitrazepam/Flunitrazepam_Iisalo1984_reference.md?tab=Simulation) · [record](drugs/toxin_flunitrazepam/Flunitrazepam_Iisalo1984_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Adachi_2021 · CL</text><circle cx="394.9" cy="30.0" r="4" fill="#ef6c00"><title>Adachi_2021 · CL: 385 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Boxenbaum_1978 · CL</text><circle cx="394.9" cy="46.0" r="4" fill="#ef6c00"><title>Boxenbaum_1978 · CL: 385 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Luurila_1996 · CL</text><circle cx="394.9" cy="62.0" r="4" fill="#ef6c00"><title>Luurila_1996 · CL: 385 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Seppälä_1993 · CL</text><circle cx="394.9" cy="78.0" r="4" fill="#ef6c00"><title>Seppälä_1993 · CL: 385 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Boxenbaum_1978 · V</text><circle cx="357.0" cy="30.0" r="4" fill="#ef6c00"><title>Boxenbaum_1978 · V: 300 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Luurila_1996 · V</text><circle cx="357.0" cy="46.0" r="4" fill="#ef6c00"><title>Luurila_1996 · V: 300 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Seppälä_1993 · V</text><circle cx="357.0" cy="62.0" r="4" fill="#ef6c00"><title>Seppälä_1993 · V: 300 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Adachi_2021 · V1</text><circle cx="497.3" cy="78.0" r="4" fill="#ef6c00"><title>Adachi_2021 · V1: 755 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Iisalo_1984_reference](drugs/toxin_flunitrazepam/Flunitrazepam_Iisalo1984_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Iisalo E et al., Flunitrazepam as an induction agent in…, British journal of anaesthe… (1984) | [10.1093/bja/56.8.899](https://doi.org/10.1093/bja/56.8.899) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Adachi_2021_reference](drugs/toxin_flunitrazepam/Flunitrazepam_Adachi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Adachi K et al., Pharmacokinetics of duloxetine self-adm…, Journal of pharmaceutical h… (2021) | [10.1186/s40780-021-00189-9](https://doi.org/10.1186/s40780-021-00189-9) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q354 — no SI value to build from</sub> | [Becherucci_1985_reference](drugs/toxin_flunitrazepam/Flunitrazepam_Becherucci1985_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Becherucci C et al., Pharmacokinetics of flunitrazepam in ra…, Pharmacological research co… (1985) | [10.1016/0031-6989(85)90090-6](https://doi.org/10.1016/0031-6989(85)90090-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Boxenbaum_1978_reference](drugs/toxin_flunitrazepam/Flunitrazepam_Boxenbaum1978_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Boxenbaum HG et al., Pharmacokinetics of flunitrazepam follo…, Journal of pharmacokinetics… (1978) | [10.1007/BF01060092](https://doi.org/10.1007/BF01060092) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — retention function missing λ1 or its half-life — TK_Re…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q32, Q57 — no SI value to build from</sub> | [Luurila_1996_reference](drugs/toxin_flunitrazepam/Flunitrazepam_Luurila1996_reference.md) | held back | retention, 1 pool | 5 | Luurila H et al., Interaction between erythromycin and th…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb00191.x](https://doi.org/10.1111/j.1600-0773.1996.tb00191.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Seppälä_1993_reference](drugs/toxin_flunitrazepam/Flunitrazepam_Seppl1993_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Seppälä M et al., Midazolam and flunitrazepam: pharmacoki…, International journal of cl… (1993) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kanto_1981_reference](drugs/toxin_flunitrazepam/Flunitrazepam_Kanto1981_reference.md) | — | 1-compartment (no model) | 0 | Kanto J et al., Effect of age on the pharmacokinetics a…, International journal of cl… (1981) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Pariente-Khayat_1999_reference](drugs/toxin_flunitrazepam/Flunitrazepam_ParienteKhayat1999_reference.md) | — | 1-compartment (no model) | 4 | Pariente-Khayat A et al., Pharmacokinetics and tolerance of fluni…, Clinical pharmacology and t… (1999) | [10.1053/cp.1999.v66.100596001](https://doi.org/10.1053/cp.1999.v66.100596001) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=flunitrazepam).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `UGT2B7` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2E1` inhibitor, `CYP3A4` substrate, `UGT1A1` inhibitor, `UGT1A3` inhibitor, `UGT2B7` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` inhibitor, `UGT2B7` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), TSPO (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-13 05:56 | 14:46 | 6/2/0 | 0/0/0 | 0/0/0 | 485,423/74,074 | ollama / glm-5.3-flash | 6 | 3/2 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 241 matched, 151 returned
+- **screened:** 8  ·  **relevant:** 8
+- **records:** 8  ·  extracted 1  ·  needs review 5  ·  rejected 2  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Pariente-Khayat_1999.pdf` | Pariente-Khayat A et al., Pharmacokinetics and tolerance of fluni…, Clinical pharmacology and t… (1999) | popPK | 10 | [10.1053/cp.1999.v66.100596001](https://doi.org/10.1053/cp.1999.v66.100596001) | [10460067](https://pubmed.ncbi.nlm.nih.gov/10460067) | Full PK parameters (half-life, clearance, volume of distribution) for flunitrazepam are reported directly in the abstract for human neonates and infants. |
+| `Arendt_1983.pdf` | Arendt RM et al., In vitro correlates of benzodiazepine c…, The Journal of pharmacology… (1983) | popPK | 9 |  | [6137558](https://pubmed.ncbi.nlm.nih.gov/6137558) | Pharmacokinetic parameters (Vd, CSF uptake rates) for flunitrazepam were measured in cats, but the numeric values appear in figures/tables not included in the abstract. |
+| `Becherucci_1985.pdf` | Becherucci C et al., Pharmacokinetics of flunitrazepam in ra…, Pharmacological research co… (1985) | popPK | 9 | [10.1016/0031-6989(85)90090-6](https://doi.org/10.1016/0031-6989(85)90090-6) | [4048249](https://pubmed.ncbi.nlm.nih.gov/4048249) | Full numeric kinetic parameters (t1/2, Vd, clearance, kel, bioavailability, tissue levels) for flunitrazepam in rats are given directly in the abstract. |
+| `Boxenbaum_1978.pdf` | Boxenbaum HG et al., Pharmacokinetics of flunitrazepam follo…, Journal of pharmacokinetics… (1978) | popPK | 9 | [10.1007/BF01060092](https://doi.org/10.1007/BF01060092) | [29954](https://pubmed.ncbi.nlm.nih.gov/29954) | Full quantitative PK parameters for flunitrazepam (clearance, volume of distribution, half-lives, extraction ratio) are directly reported in the abstract. |
+| `Kanto_1981.pdf` | Kanto J et al., Effect of age on the pharmacokinetics a…, International journal of cl… (1981) | popPK | 8 |  | [6117521](https://pubmed.ncbi.nlm.nih.gov/6117521) | Human i.v. flunitrazepam pharmacokinetics via two-compartment model, but numeric parameters (half-life, Vd, clearance) are only described, not shown in the evidence text; "sea" likely typo for "serum". |
+| `Kim_2026.pdf` | Kim Y et al., Interaction between ethanol and flunitr…, Chemico-biological interact… (2026) | popPK | 8 | [10.1016/j.cbi.2026.111993](https://doi.org/10.1016/j.cbi.2026.111993) | [41747995](https://pubmed.ncbi.nlm.nih.gov/41747995) | Rat PK study of flunitrazepam with Cmax/AUC, metabolite ratios, and absorption findings, but the abstract mentions values directionally without numeric values, which likely reside in figures/tables not provided. |
+| `Luurila_1996.pdf` | Luurila H et al., Interaction between erythromycin and th…, Pharmacology & toxicology (1996) | popPK | 8 | [10.1111/j.1600-0773.1996.tb00191.x](https://doi.org/10.1111/j.1600-0773.1996.tb00191.x) | [8822046](https://pubmed.ncbi.nlm.nih.gov/8822046) | Human volunteer PK study reporting flunitrazepam AUC, t1/2 and Cmax, but abstract gives only percentage changes; exact numeric values may be in tables/figures not provided. |
+| `Seppälä_1993.pdf` | Seppälä M et al., Midazolam and flunitrazepam: pharmacoki…, International journal of cl… (1993) | popPK | 8 |  | [8500918](https://pubmed.ncbi.nlm.nih.gov/8500918) | Reports flunitrazepam's absorption (tmax = 0.6 h) and elimination half-life in elderly humans; some kinetic values (half-life, concentration curves) likely in figures/tables not fully provided. |
+| `Hovi-Viander_1982.pdf` | Hovi-Viander M et al., Flunitrazepam as an induction agent in…, Acta anaesthesiologica Scan… (1982) | popPK | 7 | [10.1111/j.1399-6576.1982.tb01808.x](https://doi.org/10.1111/j.1399-6576.1982.tb01808.x) | [6128858](https://pubmed.ncbi.nlm.nih.gov/6128858) | A human pharmacokinetic study of flunitrazepam, but the abstract gives no numeric parameter values; the actual kinetic numbers presumably appear in the full paper/figures not supplied here. |
+| `Iisalo_1984.pdf` | Iisalo E et al., Flunitrazepam as an induction agent in…, British journal of anaesthe… (1984) | popPK | 7 | [10.1093/bja/56.8.899](https://doi.org/10.1093/bja/56.8.899) | [6743452](https://pubmed.ncbi.nlm.nih.gov/6743452) | Paediatric pharmacokinetic study reporting an elimination half-life of about 12 h for flunitrazepam in children, though only the stated value in the abstract is available. |
+| `Jones_1988.pdf` | Jones DR et al., Brain uptake of benzodiazepines: effect…, The Journal of pharmacology… (1988) | popPK | 7 |  | [3385643](https://pubmed.ncbi.nlm.nih.gov/3385643) | Rat brain uptake/extraction data for flunitrazepam (a mechanistic uptake parameter study), but the abstract only references numeric findings (e.g., 5-25 fold) — actual parameter values likely in figures/tables not provided. |
+| `Huang_2004.pdf` | Huang W et al., Evidence of significant contribution fr…, Drug metabolism and disposi… (2004) | popPK | 6 | [10.1124/dmd.104.001313](https://doi.org/10.1124/dmd.104.001313) | [15383492](https://pubmed.ncbi.nlm.nih.gov/15383492) | Flunitrazepam hydroxylation kinetics (intrinsic clearance, Km) by CYP3A4/3A5 are reported in human liver microsomes, but only relative fold-differences appear in the abstract; numeric parameter values likely reside in tables not provided. |
+| `Jochemsen_1982.pdf` | Jochemsen R et al., [Comparative pharmacokinetics of 5 hypn…, La Nouvelle presse medicale (1982) | popPK | 6 |  | [6128720](https://pubmed.ncbi.nlm.nih.gov/6128720) | Human volunteer study computing half-lives for flunitrazepam, but no numeric values appear in the evidence (likely in full-text tables/figures not provided). |
+| `Sumirtapura_1981.pdf` | Sumirtapura Y et al., [Clinical pharmacokinetics of flunitraz…, Annales de l'anesthesiologi… (1981) | popPK | 5 |  | [6115606](https://pubmed.ncbi.nlm.nih.gov/6115606) | A three-compartment pharmacokinetic model of flunitrazepam is reported, but actual parameter values (t½, clearance, volumes) are not given in the evidence, only a 15 ng/ml target level; numbers may live in figures/tables not provided. |
+| `Turner_1985.pdf` | Turner JH et al., Localization of 11C-radiopharmaceutical…, European journal of nuclear… (1985) | popPK | 5 | [10.1007/BF00256577](https://doi.org/10.1007/BF00256577) | [3159576](https://pubmed.ncbi.nlm.nih.gov/3159576) | Reports quantitative tumour/organ tissue uptake (% injected dose/g) of 11C-flunitrazepam at 30 and 60 min in hamster melanoma-bearing animals, read directly from the text. |
+
+<sub>queue written 2026-11-13 05:50 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abanades_2007 | irrelevant | 2 | 1 | Flunitrazepam is a comparator in an abuse-liability study; kinetics reported are for GHB, and no numeric flunitrazepam parameter values appear in the evidence. |
+| popPK | Adachi_2021 | irrelevant | 3 | 2 | Flunitrazepam appears only as a co-ingestant with two measured plasma concentrations; the fitted kinetic parameters (ka, k12, k21, CLh,int, V1) in Table 2 are not clearly attributable to flunitrazepam and no specific numeric flunitrazepam kinetic values are readable in the evidence. |
+| popPK | Allain_1995 | irrelevant | 2 | 0 | Flunitrazepam serves only as a comparator drug; no numeric kinetic parameters for it appear in the evidence, which mentions pharmacokinetics only qualitatively. |
+| popPK | Arendt_1983 | relevant | 9 | 3 | Pharmacokinetic parameters (Vd, CSF uptake rates) for flunitrazepam were measured in cats, but the numeric values appear in figures/tables not included in the abstract. |
+| popPK | Boukhabza_1991 | irrelevant | 2 | 0 | Analytical HPLC method paper with no kinetic parameters for flunitrazepam; only assay precision values reported. |
+| popPK | Cano_1977 | irrelevant | 2 | 0 | Analytical-method paper only; no kinetic parameters reported, just detection limits and a suggestion the method is suitable for future pharmacokinetic studies. |
+| PGx | Cheng_1998 | not_relevant | 0 | 0 | Flunitrazepam is only studied as an inhibitor of UGT-mediated glucuronidation in vitro; no gene variant effect on flunitrazepam PK/PD is reported. |
+| PGx | Coller_1999 | not_relevant | 0 | 3 | In vitro enzyme identification by chemical inhibition/antibodies; no genotype/phenotype-based differences in flunitrazepam PK/PD parameters. |
+| popPK | Colson_1992 | irrelevant | 1 | 5 | Flunitrazepam is only one anesthetic arm in a renal hemodynamics outcome study; no kinetic parameter of flunitrazepam disposition is reported (the ERPF/GFR clearance values relate to renal function, not flunitrazepam kinetics). |
+| popPK | Colson_1992_2 | irrelevant | 0 | 0 | Flunitrazepam appears only as an anesthetic induction agent; no kinetic parameters for it are reported. |
+| popPK | Crettol_2007 | irrelevant | 0 | 0 | Flunitrazepam is only mentioned as a co-ingested drug in a methadone overdose commentary; no kinetic parameters for flunitrazepam are reported. |
+| popPK | Dinis-Oliveira_2017 | irrelevant | 3 | 1 | A qualitative review of flunitrazepam's metabolism with no numeric kinetic parameters in the extracted evidence. |
+| popPK | Fahey_1998 | irrelevant | 0 | 0 | Flunitrazepam appears only as a [3H]radioligand for receptor binding assays; the kinetic parameters (Ki, IC50, levels) belong to triazolam and ketoconazole, not flunitrazepam. |
+| PGx | Galetin_2004 | not_relevant | 4 | 3 | Paper examines recombinant enzyme kinetics for flunitrazepam clearance prediction but does not report a genotype/phenotype effect on in vivo PK/PD parameters, and no effect size is fitted for flunitrazepam. |
+| PGx | Galetin_2006 | not_relevant | 2 | 1 | In vitro hepatic vs intestinal microsome metabolism comparison, not a gene variant/genotype effect on flunitrazepam PK/PD in vivo. |
+| popPK | García_1997 | irrelevant | 2 | 0 | Only in vitro liposome (artificial membrane) partitioning studied, not toxicokinetic parameters in any organism, and the numeric partition coefficients themselves are not given, only a % change. |
+| PGx | Ghosal_2004 | not_relevant | 0 | 0 | Study concerns desloratadine glucuronidation; flunitrazepam is only used as a UGT inhibitor, no gene-variant effect on its PK/PD. |
+| PGx | Hallifax_2005 | not_relevant | 0 | 0 | In vitro hepatocyte clearance study with no genetic variant/genotype/phenotype effects on flunitrazalam PK/PD reported. |
+| PGx | Harris_2004 | not_relevant | 0 | 0 | Paper describes an HPLC-MS/MS assay using flunitrazepam only as internal standard in dogs; no gene variant or pharmacogenomic effect on flunitrazepam PK/PD reported. |
+| PGx | Hesse_2001 | not_relevant | 2 | 3 | In vitro enzyme kinetics in microsomes/recombinant CYPs, not a gene variant/genotype effect on in vivo PK/PD parameters. |
+| popPK | Hovi-Viander_1982 | relevant | 7 | 3 | A human pharmacokinetic study of flunitrazepam, but the abstract gives no numeric parameter values; the actual kinetic numbers presumably appear in the full paper/figures not supplied here. |
+| popPK | Huang_2004 | relevant | 6 | 3 | Flunitrazepam hydroxylation kinetics (intrinsic clearance, Km) by CYP3A4/3A5 are reported in human liver microsomes, but only relative fold-differences appear in the abstract; numeric parameter values likely reside in tables not provided. |
+| PGx | Huang_2004 | not_relevant | 4 | 6 | In vitro comparison of recombinant CYP3A4 vs CYP3A5 catalytic efficiency for flunitrazepam hydroxylation, not a genotype/phenotype effect on PK/PD parameters in vivo. |
+| popPK | Hähnel_1994 | irrelevant | 0 | 0 | Flunitrazepam is only mentioned as an anesthetic co-induction agent; no kinetic parameters for it are reported. |
+| popPK | Inoue_2022 | relevant | 9 | 4 | Mouse toxicokinetic study of flunitrazepam with Cmax, Tmax, half-life, AUC and brain/serum AUC ratios, but key numeric values are in Table 2 and Fig. 2, which are not provided (only BTU 0.0940 and fold-changes appear in text). |
+| popPK | Jochemsen_1982 | relevant | 6 | 2 | Human volunteer study computing half-lives for flunitrazepam, but no numeric values appear in the evidence (likely in full-text tables/figures not provided). |
+| popPK | Jones_1988 | relevant | 7 | 3 | Rat brain uptake/extraction data for flunitrazepam (a mechanistic uptake parameter study), but the abstract only references numeric findings (e.g., 5-25 fold) — actual parameter values likely in figures/tables not provided. |
+| PGx | Jones_2007 | not_relevant | 2 | 1 | Paper only mentions polymorphism of drug-metabolizing enzymes as a general consideration when interpreting blood concentrations; no gene-specific effect on flunitrazepam PK/PD is reported or quantified. |
+| popPK | Karolak-Wojciechowska_1998 | irrelevant | 0 | 0 | Flunitrazepam is only a radioligand for receptor binding assays; no kinetic parameters of flunitrazepam are reported. |
+| PGx | Kilicarslan_2000 | not_relevant | 2 | 3 | Genotype (CYP2C19*1/*1) only describes the microsome source; no gene variant effect on flunitrazepam PK/PD parameters is reported—only buprenorphine inhibition Ki values. |
+| PGx | Kilicarslan_2001 | not_relevant | 3 | 5 | Identifies CYP2C19/3A4 as flunitrazepam metabolism enzymes in vitro, but reports no genotype/phenotype effect on any PK/PD parameter in subjects. |
+| popPK | Kim_2026 | relevant | 8 | 3 | Rat PK study of flunitrazepam with Cmax/AUC, metabolite ratios, and absorption findings, but the abstract mentions values directionally without numeric values, which likely reside in figures/tables not provided. |
+| PGx | King_2000 | not_relevant | 3 | 10 | Flunitrazepam is an inhibitor of morphine glucuronidation; no gene variant/genotype effect on flunitrazepam PK/PD is reported. |
+| PGx | McAuley_1995 | not_relevant | 1 | 1 | Progesterone-drug interaction study; flunitrazepam binding is only in vitro background, no gene variant effect reported. |
+| popPK | Michel_2003 | irrelevant | 0 | 0 | A qualitative forensic review of benzodiazepine adverse effects with no numeric kinetic parameters for flunitrazepam. |
+| PGx | Mitamura_2025 | not_relevant | 0 | 0 |  |
+| PGx | Mizuno_2009 | not_relevant | 0 | 0 | In vitro CYP3A4 metabolic activation/cytotoxicity study with no gene variant, genotype/phenotype comparison, or PK/PD parameter change. |
+| PGx | Otani_2003 | not_relevant | 2 | 3 | Only qualitative mention that flunitrazepam is partly metabolized by CYP3A4; no genotype/phenotype-linked PK/PD parameter effects reported. |
+| PGx | Peng_2004 | not_relevant | 3 | 3 | Study identifies NADPH-cytochrome P-450 reductase involvement in flunitrazepam reduction, but no gene variant/genotype/phenotype effect on a PK/PD parameter is reported. |
+| popPK | Perillo_1991 | irrelevant | 3 | 8 | Reports an in vitro synaptosomal membrane/buffer partition coefficient (P=18.5±0.8), not a whole-body toxicokinetic parameter of flunitrazepam in humans or animals. |
+| popPK | Rey_1984 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
+| popPK | Saletu_1986 | irrelevant | 3 | 2 | Flunitrazepam is the comparator in a temazepam-focused pharmaco-EEG study; no numeric kinetic parameter (half-life, clearance, Vd) for flunitrazepam is given in the evidence. |
+| popPK | Schinkel_1996 | irrelevant | 1 | 1 | Flunitrazepam appears only qualitatively as a poor P-GP substrate ("hardly or not transported"); no numeric kinetic parameter for flunitrazepam is reported, and the quantitative tissue data in tables/figures concern domperidone, ondansetron and loperamide. |
+| PGx | Sellers_2000 | not_relevant | 3 | 2 | Flunitrazepam is only mentioned as a CYP2C19 substrate from in vitro work; no gene-variant effect on any PK/PD parameter is reported. |
+| PGx | Shimakura_2003 | not_relevant | 0 | 0 | In vitro drug-drug interaction study with microsomes; no gene variant/genotype effects on flunitrazepam PK/PD reported. |
+| popPK | Singlas_1979 | irrelevant | 0 | 0 | no_text gate: only 35 chars of text extracted (&lt; 400) |
+| popPK | Sloan_1991 | irrelevant | 2 | 1 | A dependence/pharmacodynamics study in dogs; no numeric toxicokinetic parameters (half-life, clearance, rate constants) for flunitrazepam appear in the evidence, only qualitative mention of plasma levels. |
+| popPK | Souza_2018 | irrelevant | 0 | 0 | Flunitrazepam appears only as a radiolabeled receptor-binding ligand, with no kinetic parameters. |
+| popPK | Sumirtapura_1981 | relevant | 5 | 2 | A three-compartment pharmacokinetic model of flunitrazepam is reported, but actual parameter values (t½, clearance, volumes) are not given in the evidence, only a 15 ng/ml target level; numbers may live in figures/tables not provided. |
+| popPK | Sumirtapura_1982 | irrelevant | 2 | 0 | This is an analytical method paper for measuring flunitrazepam in plasma; no kinetic parameters or numeric toxicokinetic values are reported. |
+| PGx | Suzuki_1998 | not_relevant | 2 | 5 | PHG effect is on bromperidol Css (not flunitrazepam PK/PD); flunitrazepam is only a coadministration factor and CYP2D6 showed no significant effect. |
+| PGx | Suzuki_2011 | not_relevant | 0 | 0 | The paper's PGx effect concerns aripiprazole, not flunitrazepam; flunitrazepam is merely a coadministered drug with no PK/PD result reported. |
+| PGx | Suzuki_2014 | not_relevant | 0 | 0 | Flunitrazepam is only mentioned as a coadministered drug; all reported PK/genotype effects concern aripiprazole, not flunitrazepam. |
+| PGx | Suzuki_2024 | not_relevant | 0 | 0 | Flunitrazepam is only mentioned as a co-medication; the pharmacogenomic findings concern aripiprazole/dehydroaripiprazole, not flunitrazepam PK/PD. |
+| popPK | Verstraete_2004 | irrelevant | 2 | 1 | No quantitative kinetic parameters (half-life, clearance, etc.) for flunitrazepam; only detection times reported, and the values in tables/figures are not provided in the evidence. |
+| popPK | Vikingsson_2017 | irrelevant | 1 | 3 | Flunitrazepam is only mentioned as a comparator in a paper about meclonazepam metabolism; no quantitative flunitrazepam kinetic parameters are reported and cited values are only references. |
+| popPK | Wickstrøm_1989 | irrelevant | 3 | 0 | Human dosing study with kinetics mentioned but no numeric kinetic parameters provided in the evidence. |
+| PGx | Youdim_2008 | not_relevant | 1 | 1 | Paper reports flunitrazepam only as a CYP inhibition test compound (IC50s); no gene variant effects on flunitrazepam PK/PD. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflunitrazepam%5D&body=Drug%3A%20flunitrazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_flunitrazepam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-13 05:50 UTC</sub>

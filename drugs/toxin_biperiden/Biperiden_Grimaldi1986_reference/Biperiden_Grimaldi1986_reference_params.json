@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 10 mg oral (N04AA02)",
+ "model_id": "Biperiden_Grimaldi1986_reference",
+ "molar_masses": {
+  "central.C": 0.311469
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.00021564578950753851,
+  "F": 1.0,
+  "MM": 0.311469,
+  "Tlag": 1944.0000000000002,
+  "VdPerKg": 0.024,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.0007583333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 5194.38877755511
+ },
+ "reference_peaks": {
+  "central.C": 4.13886708924246e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

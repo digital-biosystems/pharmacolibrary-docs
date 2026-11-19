@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Stavudine_Sinxadi2010_reference",
+ "molar_masses": {
+  "central.C": 0.2242133
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  30.0,
+  40.0
+ ],
+ "parameters": {
+  "Cl": 4.9444444444444444e-06,
+  "F": 1.0,
+  "MM": 0.2242133,
+  "Tlag": 1476.0,
+  "VdPerKg": 0.0335,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-05,
+  "ka": 0.0030833333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6925.851703406814
+ },
+ "reference_peaks": {
+  "central.C": 1.2665358463684457e-05
+ },
+ "stop_time": 1728000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

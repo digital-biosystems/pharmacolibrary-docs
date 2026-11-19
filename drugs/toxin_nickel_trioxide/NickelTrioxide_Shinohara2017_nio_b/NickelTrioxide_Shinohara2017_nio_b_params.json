@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "NickelTrioxide_Shinohara2017_nio_b",
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  46.9,
+  140.0,
+  420.0
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "Tb[1]": 399252.7760025285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4.69e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662119
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9994793859246407
+ },
+ "stop_time": 2419200.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

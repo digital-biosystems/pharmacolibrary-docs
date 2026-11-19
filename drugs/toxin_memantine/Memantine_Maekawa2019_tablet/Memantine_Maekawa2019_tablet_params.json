@@ -1,0 +1,66 @@
+{
+ "dose_source": "paper",
+ "model_id": "Memantine_Maekawa2019_tablet",
+ "molar_masses": {
+  "retainedFraction": 0.179307
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Maekawa_2019:other_prose",
+    "value_si": 2.73e-05
+   },
+   {
+    "source": "Maekawa_2019:other_prose",
+    "value_si": 2.7899999999999997e-05
+   },
+   {
+    "source": "Maekawa_2019:other_prose",
+    "value_si": 2.77e-05
+   },
+   {
+    "source": "Maekawa_2019:other_prose",
+    "value_si": 2.8499999999999998e-05
+   },
+   {
+    "source": "Maekawa_2019:other_prose",
+    "value_si": 0.981
+   },
+   {
+    "source": "Maekawa_2019:other_prose",
+    "value_si": 0.973
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.179307,
+  "Tb[1]": 217080.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662128
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9990428265868252
+ },
+ "stop_time": 1123200.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 10 mg oral (N05CF02)",
+ "model_id": "Zolpidem_Greenblatt1998_reference",
+ "molar_masses": {
+  "central.C": 0.307397
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.166666666666667e-05,
+  "F": 1.0,
+  "MM": 0.307397,
+  "Tlag": 1418.4,
+  "VdPerKg": 0.0010685714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.0015027777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2642.638114871205
+ },
+ "reference_peaks": {
+  "central.C": 5.928546169464676e-05
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

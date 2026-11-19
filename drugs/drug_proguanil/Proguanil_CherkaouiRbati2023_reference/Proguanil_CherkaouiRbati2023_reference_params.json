@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Proguanil_CherkaouiRbati2023_reference",
+ "molar_masses": {
+  "central.C": 0.253731
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.322222222222222e-07,
+  "F": 1.0,
+  "MM": 0.253731,
+  "VdPerKg": 0.0001225714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.0012011137011137011,
+  "k21": 0.00017985262749660658,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066213
+ },
+ "reference_peaks": {
+  "central.C": 3.661152166611181e-05
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

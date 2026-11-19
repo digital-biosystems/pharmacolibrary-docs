@@ -1,0 +1,120 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03B&quot;,&quot;href&quot;:&quot;atc/A03B.md&quot;},{&quot;label&quot;:&quot;methylatropine&quot;}]"></div>
+
+# methylatropine
+
+- **generic name:** methylatropine
+- **ATC codes:** `A03BB02`
+- **DrugBank:** [DB13833](https://go.drugbank.com/drugs/DB13833) · **PubChem:** none
+- **molar mass:** 304.409 g/mol (C18H26NO3) — DrugBank
+- **groups:** experimental
+
+## About
+
+Methylatropine is a quaternary ammonium derivative of atropine acting as a muscarinic cholinergic antagonist, used for pyloric spasm in infants and as a mydriatic. The drug is classified as experimental.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q1176323](https://www.wikidata.org/wiki/Q1176323), [Wikipedia](https://en.wikipedia.org/wiki/Methylatropine?oldid=1348982566) (CC BY-SA 4.0) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 13:27 | 1:20 | 0/0/0 | 0/0/0 | 0/0/0 | 48,488/1,380 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 1/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 68 matched, 47 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Alberts_1995.pdf` | Alberts P, Classification of the presynaptic musca…, The Journal of pharmacology… (1995) | pd | 4 |  | [7616431](https://www.ncbi.nlm.nih.gov/pubmed/7616431) | metadata signals extractable PD data (EC50) |
+| `Black_1985.pdf` | Black JW et al., The isolated stomach preparation of the…, British journal of pharmaco… (1985) | pd | 4 | [10.1111/j.1476-5381.1985.tb08933.x](https://doi.org/10.1111/j.1476-5381.1985.tb08933.x) | [2415196](https://www.ncbi.nlm.nih.gov/pubmed/2415196) | metadata signals extractable PD data (concentration-effect) |
+| `Durant_1991.pdf` | Durant PA et al., Pharmacological analysis of agonist-ant…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12399.x](https://doi.org/10.1111/j.1476-5381.1991.tb12399.x) | [1786508](https://www.ncbi.nlm.nih.gov/pubmed/1786508) | metadata signals extractable PD data (concentration-effect) |
+
+<sub>queue written 2026-10-04 13:27 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Ahrén_1981 | not_relevant | 0 | 0 | The paper studies the effects of cholecystokinin variants on insulin secretion and uses methylatropine only as a pharmacological blocker to demonstrate receptor dependence, not as the subject of a pharmacogenomic study. |
+| popPK | Alberts_1995 | irrelevant | 0 | 0 | no_text gate: only 146 chars of text extracted (&lt; 400) |
+| popPK | Aquilonius_1975 | irrelevant | 2 | 0 | The study measures elimination rates from spinal CSF perfusion in rabbits but does not report standard systemic pharmacokinetic parameters (CL, V, t1/2) for methylatropine. |
+| popPK | Baratti_1984 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice where methylatropine is used only as a comparator agent to distinguish muscarinic receptor subtypes, with no pharmacokinetic parameters reported. |
+| PD | Baratti_1984 | not_relevant | 0 | 0 | The paper reports behavioral dose-response data for naloxone, atropine, and oxotremorine, but methylatropine is only used as a negative control (0.5 mg/kg) to rule out muscarinic involvement; no concentration-effect or dose-response curve or numeric PD parameters are reported for methylatropine. |
+| popPK | Black_1985 | irrelevant | 0 | 0 | no_text gate: only 96 chars of text extracted (&lt; 400) |
+| PD | Black_1985 | not_relevant | 0 | 0 | The paper describes a physiological preparation for pharmacological analysis but does not report specific PD or exposure-response data for methylatropine. |
+| popPK | Brezenoff_1984 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of soman and the efficacy of atropine/methylatropine as antagonists, reporting no pharmacokinetic parameters for methylatropine. |
+| PD | Brezenoff_1984 | not_relevant | 0 | 0 | The paper reports a dose-response relationship for soman, but explicitly states that methylatropine did not prevent the pressor response, providing no PD parameters or exposure-response data for methylatropine. |
+| popPK | Dawe_2006 | irrelevant | 0 | 0 | The study is a neurophysiological investigation of atropine and methylatropine effects on hippocampal activity, reporting no pharmacokinetic parameters. |
+| popPK | Durant_1991 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
+| PD | Durant_1991 | not_relevant | 0 | 0 | The paper focuses on agonist-antagonist interactions at muscarinic receptors in a bladder assay and does not report pharmacokinetic or pharmacodynamic exposure-response data for methylatropine. |
+| popPK | Faiman_1991 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study where methylatropine is used only as a control agent to rule out muscarinic involvement, and no pharmacokinetic parameters are reported. |
+| PD | Faiman_1991 | not_relevant | 0 | 0 | Methylatropine is used only as a negative control to rule out muscarinic involvement; no dose-response or concentration-effect data for methylatropine is reported. |
+| popPK | Gomez_2025 | irrelevant | 0 | 0 | The paper studies cocaine chemogenetics in rats and does not involve methylatropine or its pharmacokinetics. |
+| PD | Gomez_2025 | not_relevant | 0 | 0 | The paper focuses on cocaine chemogenetics and does not report a pharmacodynamic or exposure-response relationship for methylatropine, which is only mentioned as a control compound in a binding assay. |
+| popPK | Gothóni_1981 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats measuring tremor intensity, with no pharmacokinetic parameters reported for methylatropine. |
+| PD | Gothóni_1981 | not_relevant | 1 | 0 | The paper describes a device for measuring tremor and reports a dose-response for physostigmine, but only provides a qualitative observation that methylatropine tended to potentiate the effect, without reporting numeric PD parameters or a quantitative concentration-effect relationship for methylatropine. |
+| popPK | Gower_1987 | irrelevant | 0 | 0 | The study is a pharmacological investigation of yawning and analgesia in rats where methylatropine is used only as a comparator antagonist, with no pharmacokinetic parameters reported. |
+| PD | Gower_1987 | not_relevant | 3 | 2 | The paper reports qualitative dose-response observations and antagonist inhibition for methylatropine but does not provide numeric PD parameters (e.g., ED50, Ki, or concentration-effect curve data) for methylatropine itself. |
+| popPK | Haigh_1980 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay investigating the effects of chlorpromazine on muscarinic receptors, not a pharmacokinetic study of methylatropine. |
+| PD | Haigh_1980 | not_relevant | 3 | 2 | The paper describes a qualitative shift in the methylatropinium inhibition curve in the presence of chlorpromazine but does not provide numeric PD parameters (e.g., Ki, IC50) or a full concentration-effect dataset for methylatropine itself. |
+| popPK | Hedner_1983 | irrelevant | 0 | 0 | The study investigates the respiratory effects of TRH in rats, using methylatropine only as a pretreatment agent, and reports no pharmacokinetic parameters for methylatropine. |
+| PD | Hedner_1983 | not_relevant | 0 | 0 | The paper studies the respiratory effects of TRH and its analogues; methylatropine is only mentioned as a pretreatment agent to potentiate TRH effects, with no dose-response or concentration-effect analysis or numeric PD parameters reported for methylatropine. |
+| popPK | Huangfu_1997 | irrelevant | 0 | 0 | The study is a neurophysiological investigation of cholinergic receptors in rat brain slices and anesthetized rats, using methylatropine as a pharmacological antagonist, not a pharmacokinetic study. |
+| popPK | Julien_2017 | irrelevant | 0 | 0 | Methylatropine is used only as a cardiac autonomic blocker (co-administered with atenolol) to isolate vascular responses, and no pharmacokinetic parameters for methylatropine are reported. |
+| popPK | Kopf_1995 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice where methylatropine is used as a comparator agent, and no pharmacokinetic parameters are reported. |
+| PD | Kopf_1995 | not_relevant | 0 | 0 | The paper reports a qualitative lack of effect for methylatropine in a behavioral interaction study and does not provide any concentration-effect data, dose-response curve, or numeric PD parameters for methylatropine. |
+| popPK | Kopf_1999 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice where methylatropine is used only as a peripheral control agent, with no pharmacokinetic parameters reported. |
+| PD | Kopf_1999 | not_relevant | 0 | 0 | The paper reports a dose-response relationship for insulin, not methylatropine; methylatropine is only used as a negative control to demonstrate lack of peripheral interaction, with no PD parameters or concentration-effect analysis provided for it. |
+| popPK | Lahlou_2005 | irrelevant | 0 | 0 | Methylatropine is used only as a pharmacological pretreatment agent to block muscarinic receptors, and no pharmacokinetic parameters for methylatropine are reported. |
+| PD | Lahlou_2005 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Aniba canelilla essential oil (EOAC), not methylatropine; methylatropine is used only as a pretreatment agent to characterize the mechanism of EOAC. |
+| popPK | Lahlou_2007 | irrelevant | 0 | 0 | Methylatropine is used only as a pharmacological blocker to investigate the cardiovascular effects of a different compound (Labd-8), and no pharmacokinetic parameters are reported. |
+| PD | Lahlou_2007 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Labd-8, not methylatropine; methylatropine is used only as a qualitative pharmacological tool to block vagal effects. |
+| popPK | Lehmann_1985 | irrelevant | 0 | 0 | Methylatropine is used only as a tool for vagal blockade in a pharmacodynamic study of gallopamil and propranolol, with no PK parameters reported. |
+| PD | Lehmann_1985 | not_relevant | 1 | 0 | The paper focuses on the interaction between gallopamil and propranolol, mentioning methylatropine only as a condition for vagal blockade without providing specific numeric PD parameters or concentration-effect curves for methylatropine itself. |
+| popPK | Lönnerholm_1975 | irrelevant | 0 | 0 | The study reports pharmacodynamic effects (heart rate, salivation) rather than quantitative pharmacokinetic parameters (CL, V, t1/2) for methylatropine. |
+| popPK | Malarkey_1989 | irrelevant | 0 | 0 | The study is a toxicology experiment examining the protective effects of methylatropine against anguidine lethality in rats, not a pharmacokinetic study reporting disposition parameters for methylatropine. |
+| PD | Malarkey_1989 | not_relevant | 2 | 1 | The paper reports a qualitative observation of protection over a dose range (2.5-20 mg/kg) but explicitly states there was "no clear dose response" and provides no numeric PD parameters or concentration-effect data. |
+| popPK | Martin_1992 | irrelevant | 0 | 0 | The study is a neuropharmacological investigation of receptor subtypes using methylatropine as a tool compound, and it does not report any pharmacokinetic parameters. |
+| popPK | Patil_2004 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological analysis of drug antagonism (IC50/KB ratios) on intraocular muscles, not a pharmacokinetic study reporting disposition parameters like clearance or volume for methylatropine. |
+| popPK | Quock_1986 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of microwave effects on drug action, not a pharmacokinetic study, and reports no disposition parameters. |
+| PD | Quock_1986 | not_relevant | 3 | 1 | The paper describes a qualitative shift in dose-response curves due to microwave irradiation but does not provide numeric PD parameters (e.g., EC50, Emax) or extractable concentration-effect data for methylatropine itself. |
+| popPK | Ringdahl_1984 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology paper on muscarinic receptor alkylation where methylatropine is used only as a protective antagonist, with no pharmacokinetic parameters reported. |
+| PD | Ringdahl_1984 | not_relevant | 1 | 0 | The paper focuses on the irreversible alkylation of receptors by BM 123 and BM 130; methylatropine is only mentioned qualitatively as a protective antagonist (20 nM) without providing a dose-response curve or numeric PD parameters for methylatropine itself. |
+| popPK | Schmeller_1995 | irrelevant | 0 | 0 | The paper reports in-vitro receptor binding affinities (IC50) rather than pharmacokinetic disposition parameters for methylatropine. |
+| popPK | Vickroy_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of muscarinic receptor mechanisms in rat hippocampus, not a pharmacokinetic study of methylatropine. |
+| popPK | Wahlström_1976 | irrelevant | 0 | 0 | Methylatropine is used only as a peripheral blocker to reduce pilocarpine effects, and no pharmacokinetic parameters for methylatropine are reported. |
+| PD | Wahlström_1976 | not_relevant | 2 | 1 | The paper describes a qualitative dose-response interaction between pilocarpine and hexobarbital thresholds, but methylatropine is used only as a fixed-dose control (2 mg/kg) to block peripheral effects, and no numeric PD parameters or concentration-effect curves for methylatropine are reported. |
+| popPK | Wess_1984 | irrelevant | 0 | 0 | The study is a pharmacodynamic comparison of antimuscarinic potencies (D10 values) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | de_1981 | irrelevant | 0 | 0 | The study investigates the cardiovascular effects of physostigmine in cats, using N-methylatropine only as a pharmacological antagonist to block muscarinic effects, with no pharmacokinetic parameters reported for methylatropine. |
+| PD | de_1981 | not_relevant | 2 | 1 | The paper focuses on the dose-response of physostigmine; N-methylatropine is used only as a qualitative antagonist to test mechanisms, with no numeric PD parameters or concentration-effect curve reported for it. |
+| popPK | de_2013 | irrelevant | 0 | 0 | Methylatropine is used only as a pharmacological tool to block vagal effects, and no pharmacokinetic parameters for methylatropine are reported. |
+| PD | de_2013 | not_relevant | 0 | 0 | The paper reports dose-response data for the essential oil of Croton zehntneri (EOCZ), not for methylatropine; methylatropine is used only as a pharmacological tool to block vagal effects. |
+| popPK | de_2015 | irrelevant | 0 | 0 | The study investigates the cardiovascular effects of a diterpene, using methylatropine only as a pharmacological probe to block muscarinic receptors, and does not report any pharmacokinetic parameters for methylatropine. |
+| PD | de_2015 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of labd-8, not methylatropine; methylatropine is used only as a qualitative pharmacological tool to block tachycardia, with no exposure-response or dose-response analysis performed for it. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethylatropine%5D&body=Drug%3A%20methylatropine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methylatropine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

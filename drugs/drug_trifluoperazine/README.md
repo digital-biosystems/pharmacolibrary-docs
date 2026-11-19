@@ -1,0 +1,171 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;trifluoperazine&quot;}]"></div>
+
+# trifluoperazine
+
+- **generic name:** trifluoperazine
+- **ATC codes:** `N05AB06`
+- **DrugBank:** [DB00831](https://go.drugbank.com/drugs/DB00831) · **PubChem:** [CID 5566](https://pubchem.ncbi.nlm.nih.gov/compound/5566)
+- **molar mass:** 407.496 g/mol (C21H24F3N3S) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Trifluoperazine is a typical antipsychotic of the phenothiazine class used to treat schizophrenia and schizophreniform disorder. It is given orally in forms such as tablets or syrup. It is used in the United States, where it was approved for medical use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q1752915](https://www.wikidata.org/wiki/Q1752915), [Wikipedia](https://en.wikipedia.org/wiki/Trifluoperazine?oldid=1384910147) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chae_2014_Kv4_3_current_block](drugs/drug_trifluoperazine/pd_Chae_2014_Kv4_3_current_block.md) | Kv4.3 current block ← trifluoperazine · direct sigmoid Emax (Hill) effect | — | Chae YJ et al., Block of Kv4.3 potassium channel by tri…, Neuroscience letters (2014) | [10.1016/j.neulet.2014.06.045](https://doi.org/10.1016/j.neulet.2014.06.045) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kim_2016_hNav1_5](drugs/drug_trifluoperazine/pd_Kim_2016_hNav1_5.md) | hNav1.5 current inhibition ← trifluoperazine · direct sigmoid Emax (Hill) effect | — | Kim DH et al., Trifluoperazine blocks the human cardia…, Biochemical and biophysical… (2016) | [10.1016/j.bbrc.2016.09.115](https://doi.org/10.1016/j.bbrc.2016.09.115) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [de_2015_HTC_cell_viability](drugs/drug_trifluoperazine/pd_de_2015_HTC_cell_viability.md) | HTC cell viability ← trifluoperazine · inhibition effect | — | de Faria PA et al., Cytotoxicity of phenothiazine derivativ…, Toxicology (2015) | [10.1016/j.tox.2015.02.004](https://doi.org/10.1016/j.tox.2015.02.004) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [de_2015_m](drugs/drug_trifluoperazine/pd_de_2015_m.md) | mitochondrial transmembrane potential in HTC cells ← trifluoperazine · inhibition effect | — | de Faria PA et al., Cytotoxicity of phenothiazine derivativ…, Toxicology (2015) | [10.1016/j.tox.2015.02.004](https://doi.org/10.1016/j.tox.2015.02.004) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Molins_2018_cell_growth_inhibition_of_PANC_1_cells](drugs/drug_trifluoperazine/pd_Molins_2018_cell_growth_inhibition_of_PANC_1_cells.md) | cell growth inhibition of PANC-1 cells ← trifluoperazine · direct sigmoid Emax (Hill) effect | — | Molins EAG et al., Assessment of Three-Drug Combination Ph…, The AAPS journal (2018) | [10.1208/s12248-018-0235-4](https://doi.org/10.1208/s12248-018-0235-4) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Heckler_2014_Inhibition_of_larval_migration_of_ivermectin_resistant_Haemonchus_placei_with_trifluoperazine_associated](drugs/drug_trifluoperazine/pd_Heckler_2014_Inhibition_of_larval_migration_of_ivermectin_re.md) | Inhibition of larval migration of ivermectin-resistant Haemonchus placei (with trifluoperazine associated) ← ivermectin (with trifluoperazine) · direct sigmoid Emax (Hill) effect | — | Heckler RP et al., P-gp modulating drugs greatly potentiat…, Veterinary parasitology (2014) | [10.1016/j.vetpar.2014.08.002](https://doi.org/10.1016/j.vetpar.2014.08.002) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Herzer_1994_IsK](drugs/drug_trifluoperazine/pd_Herzer_1994_IsK.md) | depolarization-activated IsK channel current ← trifluoperazine · inhibition effect | — | Herzer T et al., Inhibition of human IsK channels expres…, European journal of pharmac… (1994) | [10.1016/0014-2999(94)90664-5](https://doi.org/10.1016/0014-2999(94)90664-5) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Khan_2000_ER_Ca_2_ATPase](drugs/drug_trifluoperazine/pd_Khan_2000_ER_Ca_2_ATPase.md) | cerebellar ER Ca(2+)-ATPase activity (SERCA 2b) ← trifluoperazine · model not identified | — | Khan SZ et al., The effects of phenothiazines and other…, Biochemical pharmacology (2000) | [10.1016/s0006-2952(00)00505-0](https://doi.org/10.1016/s0006-2952(00)00505-0) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lin_1995_IP_formation](drugs/drug_trifluoperazine/pd_Lin_1995_IP_formation.md) | stimulated inositol phosphate accumulation (PI-PLC activation) ← trifluoperazine · direct Emax (saturable) effect | — | Lin WW, Potentiation of stimulus-induced phosph…, Naunyn-Schmiedeberg's archi… (1995) | [10.1007/BF00171328](https://doi.org/10.1007/BF00171328) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Massom_1990_TFP_CaM_binding](drugs/drug_trifluoperazine/pd_Massom_1990_TFP_CaM_binding.md) | TFP binding to porcine brain calmodulin (CaM) ← trifluoperazine · direct sigmoid Emax (Hill) effect | — | Massom L et al., Trifluoperazine binding to porcine brai…, Biochemistry (1990) | [10.1021/bi00455a012](https://doi.org/10.1021/bi00455a012) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Massom_1990_TFP_TnC_binding](drugs/drug_trifluoperazine/pd_Massom_1990_TFP_TnC_binding.md) | TFP binding to rabbit skeletal muscle troponin C (Tn C) ← trifluoperazine · direct sigmoid Emax (Hill) effect | — | Massom L et al., Trifluoperazine binding to porcine brai…, Biochemistry (1990) | [10.1021/bi00455a012](https://doi.org/10.1021/bi00455a012) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nilius_1997_ICl_Ca](drugs/drug_trifluoperazine/pd_Nilius_1997_ICl_Ca.md) | Ca(2+)-activated Cl- current (ICl,Ca) block by trifluoperazine ← trifluoperazine · inhibition effect | — | Nilius B et al., Kinetic and pharmacological properties…, Cell calcium (1997) | [10.1016/s0143-4160(97)90089-0](https://doi.org/10.1016/s0143-4160(97)90089-0) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Papadopoulos_1989_phosphatase_activity](drugs/drug_trifluoperazine/pd_Papadopoulos_1989_phosphatase_activity.md) | Ca2+-calmodulin-dependent protein phosphatase activity ← trifluoperazine · inhibition effect | — | Papadopoulos V et al., Isolation and characterisation of calci…, Molecular and cellular endo… (1989) | [10.1016/0303-7207(89)90078-6](https://doi.org/10.1016/0303-7207(89)90078-6) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.95).">in vitro</span> | [Phillips_1989_3H_Me_TRH_binding](drugs/drug_trifluoperazine/pd_Phillips_1989_3H_Me_TRH_binding.md) | [3H]Me-TRH binding to specific receptors ← trifluoperazine · inhibition effect | — | Phillips WJ et al., Pituitary thyrotropin-releasing hormone…, Molecular endocrinology (Ba… (1989) | [10.1210/mend-3-9-1345](https://doi.org/10.1210/mend-3-9-1345) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Qian_2019_IC50](drugs/drug_trifluoperazine/pd_Qian_2019_IC50.md) | HCT116 cell viability inhibition ← trifluoperazine · inhibition effect | — | Qian K et al., Trifluoperazine as an alternative strat…, Journal of cellular biochem… (2019) | [10.1002/jcb.28845](https://doi.org/10.1002/jcb.28845) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Qin_2009_Po](drugs/drug_trifluoperazine/pd_Qin_2009_Po.md) | RyR2 channel open probability (Po) of CSQ-free channels ← trifluoperazine · direct Emax (saturable) effect | — | Qin J et al., Trifluoperazine: a rynodine receptor ag…, Pflugers Archiv : European… (2009) | [10.1007/s00424-009-0658-y](https://doi.org/10.1007/s00424-009-0658-y) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other animal</span> | [Raphael_1984_H_secretion](drugs/drug_trifluoperazine/pd_Raphael_1984_H_secretion.md) | H+ secretion ← trifluoperazine · inhibition effect | — | Raphael N et al., Reversible effects of phenothiazines on…, The American journal of phy… (1984) | [10.1152/ajpgi.1984.247.4.G366](https://doi.org/10.1152/ajpgi.1984.247.4.G366) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Siebers_1990_45Ca2_efflux_from_inside_out_plasma_membrane_vesicles](drugs/drug_trifluoperazine/pd_Siebers_1990_45Ca2_efflux_from_inside_out_plasma_membrane_ve.md) | 45Ca2+ efflux from inside-out plasma membrane vesicles ← trifluoperazine · direct Emax (saturable) effect | — | Siebers B et al., Calcium Fluxes across the Plasma Membra…, Plant physiology (1990) | [10.1104/pp.93.3.940](https://doi.org/10.1104/pp.93.3.940) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Silver_1986_Ca2_calmodulin_regulated_myosin_light_chain_phosphorylation](drugs/drug_trifluoperazine/pd_Silver_1986_Ca2_calmodulin_regulated_myosin_light_chain_phos.md) | Ca2+-calmodulin-regulated myosin light chain phosphorylation ← trifluoperazine · inhibition effect | — | Silver PJ et al., Antidepressants and protein kinases: in…, European journal of pharmac… (1986) | [10.1016/0014-2999(86)90393-6](https://doi.org/10.1016/0014-2999(86)90393-6) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Szallasi_1996_3H_RTX_binding](drugs/drug_trifluoperazine/pd_Szallasi_1996_3H_RTX_binding.md) | Specific [3H]resiniferatoxin binding to porcine dorsal horn membranes ← trifluoperazine · direct sigmoid Emax (Hill) effect | — | Szallasi A et al., Binding of neuroleptic drugs (trifluope…, European journal of pharmac… (1996) | [10.1016/0014-2999(95)00805-5](https://doi.org/10.1016/0014-2999(95)00805-5) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">bird</span> | [Williams_1996_bone_resorption_cellular_degradation_of_3H_labeled_bone](drugs/drug_trifluoperazine/pd_Williams_1996_bone_resorption_cellular_degradation_of_3H_lab.md) | bone resorption (cellular degradation of 3H-labeled bone) ← trifluoperazine · inhibition effect | — | Williams JP et al., Regulation of avian osteoclastic H+ -AT…, The Journal of biological c… (1996) | [10.1074/jbc.271.21.12488](https://doi.org/10.1074/jbc.271.21.12488) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">bird</span> | [Williams_1996_membrane_HCl_transport_ATP_dependent_acridine_orange_uptake](drugs/drug_trifluoperazine/pd_Williams_1996_membrane_HCl_transport_ATP_dependent_acridine_.md) | membrane HCl transport (ATP-dependent acridine orange uptake) ← trifluoperazine · inhibition effect | — | Williams JP et al., Regulation of avian osteoclastic H+ -AT…, The Journal of biological c… (1996) | [10.1074/jbc.271.21.12488](https://doi.org/10.1074/jbc.271.21.12488) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=trifluoperazine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `UGT1A4` substrate, `XDH` modulator | DrugBank actor |
+| metabolism | small intestine | `XDH` modulator | DrugBank actor |
+| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), CALM1 (inhibitor), CALM2 (inhibitor), CALM3 (inhibitor), CALY (target), DRD2 (target), S100A4 (inhibitor), TNNC1 (allosteric modulator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 18:00 | 15:27 | 0/0/0 | 4/15/0 | 0/0/0 | 381,405/11,792 | ollama / glm-5.3-flash | 19 | 5/10 | 19/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 405 matched, 120 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Anderie_1996 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calmodulin antagonist in an in-vitro rat pancreatic secretion study; no PK parameters reported. |
+| popPK | Bertin_2023 | irrelevant | 0 | 0 | This is an in vitro drug-combination synergy machine learning study with no pharmacokinetic parameters for trifluoperazine. |
+| popPK | Chae_2014 | irrelevant | 0 | 0 | In-vitro electrophysiology study of Kv4.3 channel block; no pharmacokinetic disposition parameters for trifluoperazine. |
+| PGx | Court_2005 | not_relevant | 2 | 1 | Paper only lists trifluoperazine as a UGT1A4 probe substrate; no genotype effect on PK/PD parameters reported. |
+| PGx | Di_2005 | not_relevant | 2 | 3 | Paper only identifies UGT1A4 as the isoform glucuronidating trifluoperazine in vitro; no gene variant/genotype effect on a PK/PD parameter is reported. |
+| PGx | Dong_2014 | not_relevant | 1 | 5 | Trifluoperazine is only a probe substrate for UGT1A4 inhibition by bakuchiol; no gene variant/genotype effect on TFP PK/PD is reported. |
+| popPK | Eugene_2021 | irrelevant | 0 | 0 | Pharmacovigilance FAERS disproportionality study of sedation/somnolence; no PK parameters for trifluoperazine reported. |
+| popPK | Frolenkov_2001 | irrelevant | 0 | 0 | Trifluoperazine is only used as a phosphorylation-modulating comparator in an in vitro cochlear hair cell study; no PK parameters for it are reported. |
+| PGx | Fujiwara_2007 | not_relevant | 3 | 5 | Reports UGT isoform coexpression effects on trifluoperazine glucuronidation kinetics in vitro, not a gene variant/genotype effect on PK/PD parameters. |
+| PGx | Gagez_2012 | not_relevant | 3 | 3 | Trifluoperazine is only a probe substrate for UGT1A4 activity; genotyping covered UGT1A1*28 and UGT2B7, not UGT1A4, so no genotype effect on TFP glucuronidation is reported. |
+| PGx | Ghosheh_2002 | not_relevant | 0 | 0 | Trifluoperazine is only used as a UGT1A4 substrate in inhibition assays; no gene variant effect on its PK/PD is reported. |
+| PGx | Gradinaru_2015 | not_relevant | 0 | 0 | Trifluoperazine is only used as a probe substrate for UGT1A4 activity; no gene variant/genotype effect on its PK/PD is reported. |
+| PGx | Hashiba_2024 | not_relevant | 0 | 0 | Paper describes in vitro renal cell metabolism of trifluoperazine (N-glucuronidation) with no gene variant/genotype effect on PK/PD parameters. |
+| popPK | Haskew-Layton_2005 | irrelevant | 0 | 0 | Trifluoperazine is used only as a calmodulin antagonist tool in an in vitro astrocyte study; no PK parameters reported. |
+| popPK | Heckler_2014 | irrelevant | 0 | 0 | Trifluoperazine is only used as a P-gp modulator co-administered with ivermectin in an in vitro larval assay; no PK parameters for trifluoperazine are reported. |
+| popPK | Herzer_1994 | irrelevant | 0 | 0 | In-vitro electrophysiology study of channel inhibition; no pharmacokinetic parameters for trifluoperazine. |
+| popPK | Hirst_1995 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calmodulin antagonist in an in-vitro cell signaling study; no PK parameters for it are reported. |
+| PGx | Ji_2012 | not_relevant | 0 | 0 | In vitro enzyme inhibition study (efavirenz on UGTs) with no gene variant/genotype/phenotype effect on trifluoperazine PK/PD. |
+| popPK | Jordan_2023 | irrelevant | 0 | 0 | A scoping review of breastfeeding/pharmacovigilance databases with no trifluoperazine PK parameters reported. |
+| popPK | Kakehata_1993 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calmodulin inhibitor in a patch-clamp study of cochlear hair cells; no PK parameters reported. |
+| PGx | Kaku_2004 | not_relevant | 2 | 5 | Trifluoperazine is used only as a probe substrate for UGT1A4 activity; no gene variant/genotype effect on trifluoperazine PK/PD is reported. |
+| PGx | Kasteel_2020 | not_relevant | 3 | 2 | Trifluoperazine appears only as a UGT1A4 probe substrate for interindividual variability/uncertainty factors; the paper states polymorphism–PK relationships were rarely addressed and reports no genotype-specific PK effect for trifluoperazine. |
+| PGx | Kerdpin_2009 | not_relevant | 2 | 5 | In vitro site-directed mutagenesis of UGT enzymes, not a pharmacogenomic variant effect on trifluoperazine PK/PD in a clinical/physiological sense. |
+| popPK | Kim_2016 | irrelevant | 0 | 0 | In-vitro electrophysiology study of channel blockade; no PK disposition parameters for trifluoperazine. |
+| PGx | Kiyotaki_1984 | not_relevant | 0 | 0 | Trifluoperazine is only used as a metabolic inhibitor of superoxide production in macrophage cell lines; no gene variant/genotype effect on its PK/PD is reported. |
+| PGx | Korprasertthaworn_2019 | not_relevant | 0 | 0 | Study of kinase inhibitors inhibiting UGT enzymes in vitro; no gene variant/genotype effect on trifluoperazine PK/PD reported. |
+| popPK | Kutsuno_2013 | irrelevant | 1 | 1 | Trifluoperazine is only a substrate in an in-vitro UGT N-glucuronidation assay (qualitative, Fig. 6); no PK disposition parameters for trifluoperazine are reported. |
+| PGx | Laverdière_2011 | not_relevant | 0 | 0 | Trifluoperazine appears only as a probe substrate for UGT1A4 activity; no gene variant effect on trifluoperazine PK/PD is reported. |
+| PGx | Lee_2015 | not_relevant | 0 | 0 | Trifluoperazine is used only as a UGT1A4 probe substrate in an in vitro enzyme activity assay; no gene variant/genotype effect on its PK/PD is reported. |
+| PGx | Lee_2015_2 | not_relevant | 0 | 0 | Reports finasteride inhibition of UGT1A4-mediated trifluoperazine glucuronidation (a DDI), not a gene variant/genotype effect on trifluoperazine PK/PD. |
+| PGx | Leite_2006 | not_relevant | 2 | 5 | Trifluoperazine is used as an MDR modulator/inhibitor of ABCB1 activity, not studied for a gene variant effect on its PK/PD parameters. |
+| PGx | Limniatis_2021 | not_relevant | 3 | 3 | Reports ABCB1 expression altering cell sensitivity (PD-like collateral sensitivity) to trifluoperazine in vitro, but no gene variant/genotype effect on a fitted PK or PD parameter. |
+| popPK | Lin_1995 | irrelevant | 0 | 0 | In-vitro mechanistic study of calmodulin antagonists in glioma cells; no pharmacokinetic parameters for trifluoperazine. |
+| PGx | Liu_2016 | not_relevant | 0 | 0 | Trifluoperazine is only a probe substrate for UGT1A4 inhibition by flavonoids; no gene variant/genotype effect on its PK/PD is reported. |
+| PGx | Liu_2017 | not_relevant | 0 | 0 | In vitro study of vitamin A inhibiting UGTs using trifluoperazine as a probe substrate; no gene variant/genotype effect on TFP PK/PD reported. |
+| PGx | Loureiro_2011 | not_relevant | 1 | 5 | Trifluoperazine is only used as a probe substrate for UGT1A4 correlation; no gene variant/genotype effect on trifluoperazine PK/PD is reported. |
+| popPK | Luciani_1993 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calmodulin antagonist in an in-vitro myocardial ischemia study; no PK parameters reported. |
+| PGx | Ma_2014 | not_relevant | 0 | 0 | No gene variant/genotype effect on trifluoperazine PK/PD is reported; TFP is only used as a UGT1A4 probe substrate in an herb-drug inhibition study. |
+| popPK | Massom_1990 | irrelevant | 0 | 0 | In-vitro protein binding study (calmodulin/troponin C), no pharmacokinetic disposition parameters for trifluoperazine. |
+| popPK | Mitsui_2000 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calmodulin antagonist in an in-vitro enzyme study; no PK parameters for the drug. |
+| PGx | Nakajima_2002 | not_relevant | 1 | 3 | Trifluoperazine is used only as a UGT1A4 probe substrate correlated with imipramine glucuronidation; no gene variant/genotype effect on trifluoperazine PK/PD is reported. |
+| popPK | Nilius_1997 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study using trifluoperazine only as a pharmacological blocker of a chloride current, with no PK parameters. |
+| PGx | Onoda_1989 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on trifluoperazine PK/PD are reported; trifluoperazine is only tested as a calmodulin antagonist for cisplatin enhancement. |
+| popPK | Papadopoulos_1989 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calmodulin inhibitor in an in-vitro biochemistry study; no PK parameters are reported. |
+| popPK | Papadopoulos_1990 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calmodulin inhibitor in an in vitro biochemical study; no PK parameters are reported. |
+| popPK | Popp_2022 | irrelevant | 0 | 0 | This is a Cochrane review of ivermectin for COVID-19; trifluoperazine is not mentioned and no PK parameters are reported. |
+| PGx | Qi_2015 | not_relevant | 0 | 0 | Trifluoperazine is only used as a probe substrate for UGT1A4 activity; no gene variant/genotype/phenotype effect on its PK/PD is reported. |
+| popPK | Qin_2009 | irrelevant | 0 | 0 | In-vitro mechanistic study of TFP effects on cardiac ryanodine receptors; no PK disposition parameters reported. |
+| popPK | Rasouli_2006 | irrelevant | 0 | 0 | Trifluoperazine is only used as a pharmacological tool (calmodulin/alpha-antagonist) in an in-vitro hepatocyte study; no PK parameters for it. |
+| popPK | Rosenberg_1994 | irrelevant | 0 | 0 | Trifluoperazine is only used as a pharmacological test agent (10 µM) in an in-vitro cortical culture study of adenosine/cAMP release; no PK parameters for trifluoperazine are reported. |
+| popPK | Ruiz-Sanchez_2010 | irrelevant | 0 | 0 | Trifluoperazine is only used as a pharmacological tool (calmodulin inhibitor) in an insect muscle study; no PK parameters for trifluoperazine are reported. |
+| popPK | Savineau_1991 | irrelevant | 0 | 0 | Trifluoperazine is only used as a pharmacological tool (PKC antagonist) in an in vitro vascular contraction study; no PK parameters reported. |
+| popPK | Savineau_1994 | irrelevant | 0 | 0 | In vitro smooth muscle contraction study; trifluoperazine is only a pharmacological probe, no PK parameters. |
+| PGx | Seo_2014 | not_relevant | 0 | 0 | Trifluoperazine is only used as a UGT1A4 probe substrate; no gene variant effect on its PK/PD is reported. |
+| popPK | Siebers_1990 | irrelevant | 0 | 0 | In-vitro plant membrane study where trifluoperazine is only a pharmacological probe; no PK disposition parameters. |
+| popPK | Sirci_2017 | irrelevant | 0 | 0 | This is a chemoinformatics/transcriptional network study with no pharmacokinetic parameters for trifluoperazine; it only appears as one of many compounds in the CMAP dataset. |
+| PGx | Skryabin_2021 | not_relevant | 2 | 3 | Trifluoperazine is only mentioned as a CYP2D6-non-metabolized alternative; no gene-variant effect on its PK/PD parameters is reported. |
+| popPK | Szallasi_1996 | irrelevant | 0 | 0 | In-vitro receptor binding study of trifluoperazine at vanilloid receptors; no pharmacokinetic disposition parameters reported. |
+| popPK | Taha_2022 | irrelevant | 0 | 0 | Trifluoperazine is only used as a pharmacological blocker in organ-bath experiments on lead/cadmium effects; no PK parameters for trifluoperazine are reported. |
+| PGx | Torchia_2025 | not_relevant | 0 | 0 | Trifluoperazine is only mentioned as a preclinical agent for IIE; no gene variant effect on its PK/PD is reported. |
+| PGx | Uchaipichat_2006 | not_relevant | 2 | 5 | In vitro UGT enzyme selectivity/kinetics for trifluoperazine; no gene variant/genotype effect on in vivo PK or PD parameters. |
+| PGx | Uno_2018 | not_relevant | 2 | 3 | Reports trifluoperazine glucuronidation by UGT1A enzymes in macaques, but no gene variant/genotype effect on a PK/PD parameter. |
+| PGx | Uno_2020 | not_relevant | 2 | 3 | Paper characterizes marmoset UGT enzymes and notes trifluoperazine glucuronidation by liver microsomes, but reports no gene variant/genotype effect on a PK or PD parameter. |
+| popPK | Urata_1985 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calmodulin inhibitor in an in vitro cell assay; no PK parameters reported. |
+| popPK | Veldhuis_1987 | irrelevant | 0 | 0 | Trifluoperazine is only used as a calcium-ATPase inhibitor in an in vitro calcium exchange study; no PK parameters for the drug are reported. |
+| popPK | Wakamori_1993 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study of muscarinic responses in rat hippocampal neurons; trifluoperazine is only used as a calmodulin antagonist tool, with no PK parameters. |
+| PGx | Walsky_2012 | not_relevant | 2 | 0 | In vitro UGT assay methodology for trifluoperazine glucuronidation; no gene variant/genotype effect on PK/PD parameters reported. |
+| PGx | Wang_2016 | not_relevant | 0 | 0 | Trifluoperazine is only used as a probe substrate for UGT1A1 inhibition by sciadopitysin; no gene variant/genotype effect on its PK/PD is reported. |
+| PGx | Wang_2021 | not_relevant | 0 | 0 | Paper reports belinostat inhibition of UGTs (DDI), not a gene variant/genotype effect on trifluoperazine PK/PD. |
+| PGx | Wang_2022 | not_relevant | 1 | 3 | Trifluoperazine is only used as a probe substrate for UGT activity; no gene variant/genotype effect on its PK/PD is reported. |
+| popPK | Whorton_1984 | irrelevant | 0 | 0 | In-vitro mechanistic study of calcium/calmodulin in endothelial cells; trifluoperazine is only a pharmacologic probe with no PK parameters. |
+| popPK | Wright_1990 | irrelevant | 0 | 0 | Trifluoperazine is only used as a pharmacological inhibitor of a Paramecium Ca2+-ATPase; no PK parameters for trifluoperazine are reported. |
+| PGx | Yin_2021 | not_relevant | 0 | 0 | Paper reports dabrafenib inhibition of UGT-mediated trifluoperazine glucuronidation (DDI), not a gene variant/genotype effect on trifluoperazine PK/PD. |
+| popPK | de_2015 | irrelevant | 0 | 0 | In vitro cytotoxicity/structure-activity study of phenothiazines; no PK disposition parameters for trifluoperazine. |
+| PGx | den_2017 | not_relevant | 0 | 0 | Paper phenotypes UGT/CYP activities in vitro with probe substrates; no gene variant/genotype effect on trifluoperazine PK/PD is reported. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrifluoperazine%5D&body=Drug%3A%20trifluoperazine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trifluoperazine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

@@ -1,0 +1,35 @@
+{
+ "dose_source": "WHO ATC DDD 2.5 mg oral (L04AX03)",
+ "model_id": "Methotrexate_de2023_reference",
+ "molar_masses": {
+  "central.C": 0.454447
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.1194444444444444e-06,
+  "F": 0.9,
+  "MM": 0.454447,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00038285714285714285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "k12": 2.2595356550580433e-06,
+  "k21": 7.149416240325332e-06,
+  "ka": 0.0,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 0.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

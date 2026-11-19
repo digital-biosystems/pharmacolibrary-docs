@@ -1,0 +1,137 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;cibenzoline&quot;}]"></div>
+
+# cibenzoline
+
+- **generic name:** cibenzoline
+- **ATC codes:** `C01BG07`
+- **DrugBank:** [DB13358](https://go.drugbank.com/drugs/DB13358) · **PubChem:** none
+- **molar mass:** 262.356 g/mol (C18H18N2) — DrugBank
+- **groups:** investigational
+
+## About
+
+Cibenzoline is a Class Ia antiarrhythmic agent intended to treat heart rhythm disorders. It is classified as an investigational drug, meaning it has not yet been approved for routine clinical use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q867171](https://www.wikidata.org/wiki/Q867171), [Wikipedia](https://en.wikipedia.org/wiki/Cibenzoline?oldid=1371042143) (CC BY-SA 4.0) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| cibenzoline | parent | 262.356 | C18H18N2 | DrugBank | — | Brazzell_1985 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Brazzell_1985_reference](drugs/drug_cibenzoline/Cibenzoline_Brazzell1985_reference.md) | — | 1-compartment (no model) | 7 | Brazzell RK et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (1985) | [10.1002/j.1552-4604.1985.tb02869.x](https://doi.org/10.1002/j.1552-4604.1985.tb02869.x) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Brazzell_1984_PVC](drugs/drug_cibenzoline/pd_Brazzell_1984_PVC.md) | premature ventricular complex (PVC) frequency ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Brazzell RK et al., Cibenzoline plasma concentration and an…, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.35](https://doi.org/10.1038/clpt.1984.35) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Brazzell_1984_VC](drugs/drug_cibenzoline/pd_Brazzell_1984_VC.md) | ventricular couplet (VC) frequency ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Brazzell RK et al., Cibenzoline plasma concentration and an…, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.35](https://doi.org/10.1038/clpt.1984.35) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hiramatsu_2004_Ikr](drugs/drug_cibenzoline/pd_Hiramatsu_2004_Ikr.md) | HERG current ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Hiramatsu M et al., Block of HERG current expressed in HEK2…, Heart and vessels (2004) | [10.1007/s00380-003-0750-8](https://doi.org/10.1007/s00380-003-0750-8) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Holazo_1986_PVCs_hr_or_VCs_hr](drugs/drug_cibenzoline/pd_Holazo_1986_PVCs_hr_or_VCs_hr.md) | premature ventricular contractions (PVCs) per hour or ventricular contractions (VCs) per hour ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Holazo AA et al., Pharmacokinetic and pharmacodynamic mod…, Journal of clinical pharmac… (1986) | [10.1002/j.1552-4604.1986.tb03535.x](https://doi.org/10.1002/j.1552-4604.1986.tb03535.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Holck_1986_ICa](drugs/drug_cibenzoline/pd_Holck_1986_ICa.md) | Ca2+ current ← cibenzoline · direct Emax (saturable) effect | — | Holck M et al., Inhibition of the myocardial Ca2+ inwar…, British journal of pharmaco… (1986) | [10.1111/j.1476-5381.1986.tb14588.x](https://doi.org/10.1111/j.1476-5381.1986.tb14588.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Holck_1986_KCl_induced_contractures](drugs/drug_cibenzoline/pd_Holck_1986_KCl_induced_contractures.md) | KCl-induced contractures ← cibenzoline · direct Emax (saturable) effect | — | Holck M et al., Inhibition of the myocardial Ca2+ inwar…, British journal of pharmaco… (1986) | [10.1111/j.1476-5381.1986.tb14588.x](https://doi.org/10.1111/j.1476-5381.1986.tb14588.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Holck_1986_contractile_force_development](drugs/drug_cibenzoline/pd_Holck_1986_contractile_force_development.md) | contractile force development ← cibenzoline · direct Emax (saturable) effect | — | Holck M et al., Inhibition of the myocardial Ca2+ inwar…, British journal of pharmaco… (1986) | [10.1111/j.1476-5381.1986.tb14588.x](https://doi.org/10.1111/j.1476-5381.1986.tb14588.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span> | [Horie_1992_NP_NPc](drugs/drug_cibenzoline/pd_Horie_1992_NP_NPc.md) | cardiac KATP channel activities ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Horie M et al., Comparative studies of ATP sensitive po…, Cardiovascular research (1992) | [10.1093/cvr/26.11.1087](https://doi.org/10.1093/cvr/26.11.1087) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span> | [Horie_1992_NP_NPc_2](drugs/drug_cibenzoline/pd_Horie_1992_NP_NPc_2.md) | cardiac KATP channel activities ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Horie M et al., Comparative studies of ATP sensitive po…, Cardiovascular research (1992) | [10.1093/cvr/26.11.1087](https://doi.org/10.1093/cvr/26.11.1087) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM popPK screen).">rat</span> | [Horie_1992_NP_NPc_3](drugs/drug_cibenzoline/pd_Horie_1992_NP_NPc_3.md) | pancreatic KATP channel activities ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Horie M et al., Comparative studies of ATP sensitive po…, Cardiovascular research (1992) | [10.1093/cvr/26.11.1087](https://doi.org/10.1093/cvr/26.11.1087) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Ishida-Takahashi_1996_IRI](drugs/drug_cibenzoline/pd_Ishida_Takahashi_1996_IRI.md) | insulin secretory activity ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Ishida-Takahashi A et al., Block of pancreatic ATP-sensitive K+ ch…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb15349.x](https://doi.org/10.1111/j.1476-5381.1996.tb15349.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Ishida-Takahashi_1996_NPo_NPo](drugs/drug_cibenzoline/pd_Ishida_Takahashi_1996_NPo_NPo.md) | KATP channel activity ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Ishida-Takahashi A et al., Block of pancreatic ATP-sensitive K+ ch…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb15349.x](https://doi.org/10.1111/j.1476-5381.1996.tb15349.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM popPK screen).">pig</span> | [Matsuoka_1991_Fc](drugs/drug_cibenzoline/pd_Matsuoka_1991_Fc.md) | contractile force ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Matsuoka S et al., Comparison of Ca2+ channel inhibitory e…, General pharmacology (1991) | [10.1016/0306-3623(91)90314-v](https://doi.org/10.1016/0306-3623(91)90314-v) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM popPK screen).">pig</span> | [Matsuoka_1991_Ica](drugs/drug_cibenzoline/pd_Matsuoka_1991_Ica.md) | Ica ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Matsuoka S et al., Comparison of Ca2+ channel inhibitory e…, General pharmacology (1991) | [10.1016/0306-3623(91)90314-v](https://doi.org/10.1016/0306-3623(91)90314-v) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Sakuta_1993_KRN2391_induced_K_current](drugs/drug_cibenzoline/pd_Sakuta_1993_KRN2391_induced_K_current.md) | KRN2391-induced K+ current ← (±)-cibenzoline · direct Emax (saturable) effect | — | Sakuta H et al., Antiarrhythmic drugs, clofilium and cib…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Sakuta_1993_Y_26763_induced_K_current](drugs/drug_cibenzoline/pd_Sakuta_1993_Y_26763_induced_K_current.md) | Y-26763-induced K+ current ← (±)-cibenzoline · direct Emax (saturable) effect | — | Sakuta H et al., Antiarrhythmic drugs, clofilium and cib…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Takahashi_2011_C_ins](drugs/drug_cibenzoline/pd_Takahashi_2011_C_ins.md) | serum insulin concentration ← cibenzoline · indirect response — drug stimulates the production of serum insulin concentration | — | Takahashi Y et al., Pharmacodynamics of cibenzoline-induced…, Drug metabolism and pharmac… (2011) | [10.2133/dmpk.DMPK-10-RG-127](https://doi.org/10.2133/dmpk.DMPK-10-RG-127) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tamura_2009_I_f](drugs/drug_cibenzoline/pd_Tamura_2009_I_f.md) | HCN4 channel current ← cibenzoline · direct Emax (saturable) effect | — | Tamura A et al., Effects of antiarrhythmic drugs on the…, Journal of pharmacological… (2009) | [10.1254/jphs.08312fp](https://doi.org/10.1254/jphs.08312fp) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Yamakawa_2012_I_NCX](drugs/drug_cibenzoline/pd_Yamakawa_2012_I_NCX.md) | outward I NCX ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Yamakawa T et al., Inhibitory effect of cibenzoline on Na+…, Journal of pharmacological… (2012) | [10.1254/jphs.12050sc](https://doi.org/10.1254/jphs.12050sc) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Yamakawa_2012_I_NCX_2](drugs/drug_cibenzoline/pd_Yamakawa_2012_I_NCX_2.md) | inward I NCX ← cibenzoline · direct sigmoid Emax (Hill) effect | — | Yamakawa T et al., Inhibitory effect of cibenzoline on Na+…, Journal of pharmacological… (2012) | [10.1254/jphs.12050sc](https://doi.org/10.1254/jphs.12050sc) |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-08 17:04 | 18:20 | 0/1/0 | 11/0/0 | 0/0/0 | 331,718/38,627 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 17/1 | 6/9 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 41 matched, 40 returned
+- **screened:** 8  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Nawada_1994.pdf` | Nawada T et al., Evaluation of negative inotropic and an…, International journal of cl… (1994) | pd | 4 |  | [7952796](https://www.ncbi.nlm.nih.gov/pubmed/7952796) | metadata signals extractable PD data (IC50) |
+| `Yamamoto_1999.pdf` | Yamamoto N et al., A comparison of the binding characteris…, Journal of cardiovascular p… (1999) | pd | 4 | [10.1097/00005344-199907000-00009](https://doi.org/10.1097/00005344-199907000-00009) | [10413067](https://www.ncbi.nlm.nih.gov/pubmed/10413067) | metadata signals extractable PD data (IC50) |
+| `Niwa_2000.pdf` | Niwa T et al., Stereoselective metabolism of cibenzoli…, Drug metabolism and disposi… (2000) | pgx | 7 |  | [10950860](https://www.ncbi.nlm.nih.gov/pubmed/10950860) | metadata signals extractable PGX data (CYP2D, PK/PD-context) |
+
+<sub>queue written 2026-10-08 16:54 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Aronoff_1991 | not_relevant | 0 | 0 | The study investigates the effect of renal failure (a physiological condition) on cibenzoline pharmacokinetics, not the effect of a gene variant or genotype. |
+| popPK | Brazzell_1984 | irrelevant | 0 | 0 | no_text gate: only 58 chars of text extracted (&lt; 400) |
+| popPK | Galimberti_2011 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay measuring efficacy and potency (IC50) of cibenzoline on calcium waves, not a pharmacokinetic study reporting disposition parameters. |
+| PD | Galimberti_2011 | not_relevant | 0 | 0 | The paper reports that cibenzoline had no significant effect on Ca2+ waves at the highest tested concentration (100 μM), providing no numeric PD parameters (such as IC50 or Emax) or derivable dose-response curve for this specific drug. |
+| popPK | Hasannejad_2004 | irrelevant | 0 | 0 | no_text gate: only 81 chars of text extracted (&lt; 400) |
+| PD | Hasannejad_2004 | not_relevant | 3 | 2 | The paper reports in vitro transporter kinetics (Km, IC50) for drug uptake/inhibition, which is a pharmacokinetic/transport mechanism study, not a pharmacodynamic (exposure-response or dose-response) analysis of drug effect. |
+| popPK | Heusner_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of drug-drug interactions where cibenzoline is a comparator inhibitor, not the subject of a pharmacokinetic parameter analysis. |
+| PD | Heusner_1985 | not_relevant | 3 | 2 | The paper reports an IC50 &gt; 1 mM for cibenzoline in an in vitro metabolic inhibition assay, which is a pharmacokinetic interaction parameter, not a pharmacodynamic exposure-response relationship for cibenzoline itself. |
+| popPK | Hiiro_2023 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of negative inotropic effects in guinea pig tissue and does not report pharmacokinetic parameters for cibenzoline. |
+| popPK | Hiramatsu_2004 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment measuring channel block (IC50) in HEK293 cells, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Holazo_1986 | relevant | 9 | 0 | The paper describes a PK/PD modeling study of cibenzoline in humans, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Holck_1986 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological and contractility investigation reporting IC50 values for calcium current inhibition, not pharmacokinetic disposition parameters. |
+| popPK | Horie_1992 | irrelevant | 0 | 0 | no_text gate: only 138 chars of text extracted (&lt; 400) |
+| popPK | Ishida-Takahashi_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cibenzoline's effect on KATP channels and insulin secretion in rat pancreatic islets, reporting no pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Kakumoto_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of MDR1 transport inhibition by various drugs, and cibenzoline is only a comparator agent with no pharmacokinetic parameters reported. |
+| PD | Kakumoto_2002 | not_relevant | 0 | 0 | The paper reports IC50 values for amiodarone, DEA, quinidine, and dipyridamole, but cibenzoline is only tested qualitatively or without reported numeric PD parameters. |
+| popPK | Komatsu_2015 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for digoxin, not cibenzoline. |
+| PD | Komatsu_2015 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of digoxin, not cibenzoline, and does not report any pharmacodynamic or exposure-response parameters. |
+| popPK | Matsuoka_1991 | irrelevant | 0 | 0 | no_text gate: only 95 chars of text extracted (&lt; 400) |
+| popPK | Miyamoto_2000 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of antiarrhythmic effects in dogs and does not report any pharmacokinetic parameters for cibenzoline. |
+| PD | Miyamoto_2000 | not_relevant | 3 | 2 | The paper reports qualitative changes in arrhythmic ratio and QTc for cibenzoline but does not provide numeric dose-response parameters (e.g., ED50, Emax) or a quantitative concentration-effect curve for the drug itself. |
+| popPK | Nawada_1994 | irrelevant | 0 | 0 | no_text gate: only 91 chars of text extracted (&lt; 400) |
+| PD | Nawada_1994 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to evaluate PD relationships. |
+| PGx | Niwa_2000 | not_relevant | 0 | 0 | The paper investigates stereoselective metabolism and enzyme involvement (CYP2D6/3A4) in vitro but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters. |
+| popPK | Plosker_2010 | irrelevant | 0 | 0 | The paper is a review of pilsicainide where cibenzoline is only mentioned as a comparator in a clinical trial, with no pharmacokinetic parameters reported. |
+| PD | Plosker_2010 | not_relevant | 1 | 0 | The text is a qualitative review of clinical efficacy and safety for pilsicainide and cibenzoline, containing no numeric PD parameters, concentration-effect data, or dose-response curves. |
+| popPK | Rydberg_1997 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of glibenclamide and its metabolites, not cibenzoline. |
+| PD | Rydberg_1997 | not_relevant | 0 | 0 | The paper reports PD parameters for glibenclamide and its metabolites, not for cibenzoline. |
+| popPK | Sakuta_1993 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of K+ channel blockade in Xenopus oocytes, reporting IC50 values rather than pharmacokinetic disposition parameters. |
+| popPK | Sakuta_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel inhibition in Xenopus oocytes and does not report pharmacokinetic parameters for cibenzoline. |
+| popPK | Satoh_2000 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ionic currents in rat cells, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Tabuchi_2001 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating cibenzoline's inhibition of gastric H+,K+-ATPase, reporting IC50 and Ki values rather than pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Takahashi_2011 | relevant | 9 | 0 | The study describes a two-compartment PK model with Michaelis-Menten elimination for cibenzoline in rats, but no specific numeric parameter values (CL, V, etc.) are provided in the evidence. |
+| popPK | Tamura_2009 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel effects, not a pharmacokinetic study, and reports no disposition parameters for cibenzoline. |
+| popPK | Wu_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of electrophysiological effects in guinea pig atrial myocytes and does not report pharmacokinetic parameters. |
+| popPK | Yamakawa_2012 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of cibenzoline's effect on NCX currents in isolated myocytes, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Yamamoto_1999 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
+| PD | Yamamoto_1999 | not_relevant | 0 | 0 | The paper focuses on in vitro receptor binding characteristics (Ki, Bmax) of class I antiarrhythmics, not in vivo pharmacodynamic exposure-response or dose-response relationships. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcibenzoline%5D&body=Drug%3A%20cibenzoline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cibenzoline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-08 16:46 UTC</sub>

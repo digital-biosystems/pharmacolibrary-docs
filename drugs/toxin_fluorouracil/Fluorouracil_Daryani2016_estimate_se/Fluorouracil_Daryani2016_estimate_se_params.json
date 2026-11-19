@@ -1,0 +1,42 @@
+{
+ "dose_source": "library default",
+ "model_id": "Fluorouracil_Daryani2016_estimate_se",
+ "molar_masses": {
+  "central.C": 0.130078
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Daryani_2016:other_prose",
+    "value_si": 536.0
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 7.977222222222225e-06,
+  "F": 0.9,
+  "MM": 0.130078,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00010380000000000003,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.00010582010582010582,
+  "k21": 2.211166390270868e-05,
+  "ka": 0.00015305555555555556,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10908.21643286573
+ },
+ "reference_peaks": {
+  "central.C": 0.000196869353391281
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

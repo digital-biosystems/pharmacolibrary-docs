@@ -1,0 +1,48 @@
+{
+ "dose_source": "paper",
+ "model_id": "Levobupivacaine_Vake2024_reference",
+ "molar_masses": {
+  "central.C": 0.288435
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  70.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Vake_2024:results_prose",
+    "value_si": 0.00080998
+   },
+   {
+    "source": "Vake_2024:results_prose",
+    "value_si": 44.3
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.225e-06,
+  "F": 1.0,
+  "MM": 0.288435,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0005081428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05,
+  "ka": 0.003,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1910.922537973206
+ },
+ "reference_peaks": {
+  "central.C": 0.001865661863633263
+ },
+ "stop_time": 115200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

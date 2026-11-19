@@ -1,0 +1,26 @@
+{
+ "model_id": "Metformin_Sinnappah2020_parameter_estimates_rse",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4611111111111112e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00025,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 8.253968253968255e-05,
+  "k21": 2.9721079103795155e-05,
+  "ka": 1.9444444444444445e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 1.959469454467526e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

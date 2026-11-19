@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1200 mg oral (J01XX08)",
+ "model_id": "Linezolid_Fang2021_reference",
+ "molar_masses": {
+  "central.C": 0.337351
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.527777777777777e-07,
+  "F": 0.9,
+  "MM": 0.337351,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006428571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0012,
+  "ka": 0.00024166666666666667,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11795.45554120973
+ },
+ "reference_peaks": {
+  "central.C": 0.0193244603931859
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

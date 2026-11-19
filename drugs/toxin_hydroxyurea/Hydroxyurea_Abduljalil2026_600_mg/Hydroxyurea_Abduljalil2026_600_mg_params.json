@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Hydroxyurea_Abduljalil2026_600_mg",
+ "molar_masses": {
+  "central.C": 0.07605500000000001
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  1050.0,
+  2450.0
+ ],
+ "parameters": {
+  "Cl": 3.055555555555556e-07,
+  "F": 0.9,
+  "MM": 0.07605500000000001,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006471428571428571,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00105,
+  "ka": 0.0006944444444444445,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7110.704510536939
+ },
+ "reference_peaks": {
+  "central.C": 0.01993249355501036
+ },
+ "review_status": "needs_review",
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

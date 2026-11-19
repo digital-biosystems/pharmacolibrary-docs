@@ -1,0 +1,54 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ifosfamide_MadrigalBujaidar2019_reference",
+ "molar_masses": {
+  "retainedFraction": 0.261083
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  21000.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Madrigal-Bujaidar_2019:other_prose",
+    "value_si": 0.05808
+   },
+   {
+    "source": "Madrigal-Bujaidar_2019:other_prose",
+    "value_si": 0.06412000000000001
+   },
+   {
+    "source": "Madrigal-Bujaidar_2019:other_prose",
+    "value_si": 0.07135
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.261083,
+  "Tb[1]": 1412.9999999999998,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.021
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9727566256031176
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Ambrisentan_Hill2020_reference",
+ "molar_masses": {
+  "central.C": 0.378428
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.7777777777777776e-07,
+  "F": 1.0,
+  "MM": 0.378428,
+  "VdPerKg": 0.00019571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066209
+ },
+ "reference_peaks": {
+  "central.C": 0.0007255050268542445
+ },
+ "stop_time": 172800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

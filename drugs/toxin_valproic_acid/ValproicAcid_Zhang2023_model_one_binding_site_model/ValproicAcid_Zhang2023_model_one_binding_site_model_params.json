@@ -1,0 +1,28 @@
+{
+ "dose_source": "WHO ATC DDD 1500 mg oral (N03AG01)",
+ "model_id": "ValproicAcid_Zhang2023_model_one_binding_site_model",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.6666666666666666e-05,
+  "F": 1.0,
+  "Tlag": 1800.0,
+  "VdPerKg": 0.18571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0015,
+  "ka": 0.0007222222222222223,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10388.77755511022
+ },
+ "reference_peaks": {
+  "central.C": 0.0001128730013644685
+ },
+ "stop_time": 1296000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

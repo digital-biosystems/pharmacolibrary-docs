@@ -1,0 +1,75 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;alitretinoin&quot;}]"></div>
+
+# alitretinoin
+
+- **generic name:** alitretinoin
+- **ATC codes:** `D11AH04`, `L01XF02`, `L01XX22`
+- **DrugBank:** [DB00523](https://go.drugbank.com/drugs/DB00523) · **PubChem:** [CID 449171](https://pubchem.ncbi.nlm.nih.gov/compound/449171)
+- **molar mass:** 300.4351 g/mol (C20H28O2) — DrugBank
+- **groups:** approved
+
+## About
+
+Alitretinoin is a first-generation retinoid used to treat Kaposi's sarcoma and certain skin diseases. It is administered topically as a gel or cream, or orally as a capsule.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q3611854](https://www.wikidata.org/wiki/Q3611854), [Wikipedia](https://en.wikipedia.org/wiki/Alitretinoin?oldid=1381751585) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Al-Dhubaibi_2018_PGA](drugs/drug_alitretinoin/pd_Al_Dhubaibi_2018_PGA.md) | physician global assessment ← alitretinoin · inhibition effect | — | Al-Dhubaibi MS et al., The effectiveness of alitretinoin for t…, International journal of he… (2018) | — |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=alitretinoin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` substrate | DrugBank actor |
+| distribution | testis | `ABCB1` substrate | DrugBank actor |
+| excretion | kidney | `ABCB1` substrate | DrugBank actor |
+| excretion | liver | `ABCB1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CRABP1 (target), CRABP2 (target), CYP26C1 (unknown), IGFBP3 (unknown), PSG5 (unknown), RARA (target), RARB (target), RARG (target), RXRA (target), RXRB (target), RXRG (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 07:45 | 0:12 | 0/0/0 | 1/0/0 | 0/0/0 | 21,345/457 | einfracz / qwen3.8-27b | 4 | 0/1 | 3/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 8 matched, 8 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Heitel_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of LXR agonism and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for alitretinoin. |
+| popPK | Schmith_2015 | irrelevant | 1 | 0 | The paper focuses on longitudinal dose-response modeling for efficacy (PGA) and safety (triglycerides) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for alitretinoin. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balitretinoin%5D&body=Drug%3A%20alitretinoin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alitretinoin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

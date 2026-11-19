@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Caspofungin_BorsukDe2020_reference",
+ "molar_masses": {
+  "central.C": 1.0933309999999998
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  35.0,
+  50.0,
+  70.0
+ ],
+ "parameters": {
+  "Cl": 1.5638888888888887e-07,
+  "F": 1.0,
+  "MM": 1.0933309999999998,
+  "VdPerKg": 8.62857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.5e-05,
+  "k12": 6.0246504782928624e-05,
+  "k21": 7.093350660602123e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662081
+ },
+ "reference_peaks": {
+  "central.C": 0.0013643643968965563
+ },
+ "stop_time": 136800.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,0 +1,200 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;hemin&quot;}]"></div>
+
+# hemin
+
+- **generic name:** hemin
+- **ATC codes:** `B06AB01`
+- **DrugBank:** [DB03404](https://go.drugbank.com/drugs/DB03404) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Hemin is a heme product used to treat hematological conditions. It is administered intravenously as an injection or solution. Hemin is approved for clinical use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q425165](https://www.wikidata.org/wiki/Q425165), [Wikipedia](https://en.wikipedia.org/wiki/Hemin?oldid=1373467786) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Park_2024_ANO1](drugs/drug_hemin/pd_Park_2024_ANO1.md) | ANO1 channel activity ← hemin · direct sigmoid Emax (Hill) effect | — | Park SH et al., Anticancer Effect of Hemin through ANO1…, International journal of mo… (2024) | [10.3390/ijms25116032](https://doi.org/10.3390/ijms25116032) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Park_2024_ANO1_2](drugs/drug_hemin/pd_Park_2024_ANO1_2.md) | ANO1 channel activity ← hemin · direct sigmoid Emax (Hill) effect | — | Park SH et al., Anticancer Effect of Hemin through ANO1…, International journal of mo… (2024) | [10.3390/ijms25116032](https://doi.org/10.3390/ijms25116032) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Park_2024_ANO2](drugs/drug_hemin/pd_Park_2024_ANO2.md) | ANO2 channel activity ← hemin · direct sigmoid Emax (Hill) effect | — | Park SH et al., Anticancer Effect of Hemin through ANO1…, International journal of mo… (2024) | [10.3390/ijms25116032](https://doi.org/10.3390/ijms25116032) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Regan_2004_LDH](drugs/drug_hemin/pd_Regan_2004_LDH.md) | LDH release ← hemin · direct Emax (saturable) effect | — | Regan RF et al., Heme oxygenase-2 gene deletion attenuat…, BMC neuroscience (2004) | [10.1186/1471-2202-5-34](https://doi.org/10.1186/1471-2202-5-34) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Regan_2004_PI](drugs/drug_hemin/pd_Regan_2004_PI.md) | propidium iodide fluorescence intensity ← hemin · direct Emax (saturable) effect | — | Regan RF et al., Heme oxygenase-2 gene deletion attenuat…, BMC neuroscience (2004) | [10.1186/1471-2202-5-34](https://doi.org/10.1186/1471-2202-5-34) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Sahoo_2022_Kv10_1_current](drugs/drug_hemin/pd_Sahoo_2022_Kv10_1_current.md) | Kv10.1 current biomarker turnover ← hemin | — | Sahoo N et al., Intracellular hemin is a potent inhibit…, Scientific reports (2022) | [10.1038/s41598-022-18975-2](https://doi.org/10.1038/s41598-022-18975-2) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hemin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ALAS1 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 01:02 | 4:51 | 0/0/0 | 3/0/0 | 0/0/0 | 165,465/5,739 | ollama / qwen3.8:27b-mtp-q8_0 | 22 | 4/20 | 21/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 128 matched, 99 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Deshmukh_2013.pdf` | Deshmukh R et al., Pro-stimulatory role of methemoglobin i…, Inflammation & allergy drug… (2013) | pd | 4 | [10.2174/1871528111312010010](https://doi.org/10.2174/1871528111312010010) | [23441992](https://www.ncbi.nlm.nih.gov/pubmed/23441992) | metadata signals extractable PD data (IC50) |
+| `Elsabbagh_2023.pdf` | Elsabbagh S et al., Heme b inhibits class III adenylyl cycl…, Cellular signalling (2023) | pd | 4 | [10.1016/j.cellsig.2022.110568](https://doi.org/10.1016/j.cellsig.2022.110568) | [36565898](https://www.ncbi.nlm.nih.gov/pubmed/36565898) | metadata signals extractable PD data (IC50) |
+| `Eranti_2024.pdf` | Eranti B et al., Development and Characterization of Nov…, Assay and drug development… (2024) | pd | 4 | [10.1089/adt.2023.064](https://doi.org/10.1089/adt.2023.064) | [38150563](https://www.ncbi.nlm.nih.gov/pubmed/38150563) | metadata signals extractable PD data (IC50) |
+| `Garcia_2012.pdf` | Garcia LG et al., Pharmacodynamic evaluation of the activ…, Antimicrobial agents and ch… (2012) | pd | 4 | [10.1128/AAC.00285-12](https://doi.org/10.1128/AAC.00285-12) | [22564838](https://www.ncbi.nlm.nih.gov/pubmed/22564838) | metadata signals extractable PD data (concentration-effect) |
+| `Geroldinger_2020.pdf` | Geroldinger G et al., Activation of artemisinin and heme degr…, Biochemical pharmacology (2020) | pd | 4 | [10.1016/j.bcp.2019.113737](https://doi.org/10.1016/j.bcp.2019.113737) | [31786259](https://www.ncbi.nlm.nih.gov/pubmed/31786259) | metadata signals extractable PD data (IC50) |
+| `Li_2017.pdf` | Li J et al., Assay of DNA methyltransferase 1 activi…, Analytica chimica acta (2017) | pd | 4 | [10.1016/j.aca.2017.07.021](https://doi.org/10.1016/j.aca.2017.07.021) | [28870318](https://www.ncbi.nlm.nih.gov/pubmed/28870318) | metadata signals extractable PD data (IC50) |
+| `Majewska_1984.pdf` | Majewska MD et al., Modulation by calcium of gamma-aminobut…, Molecular pharmacology (1984) | pd | 4 |  | [6328262](https://www.ncbi.nlm.nih.gov/pubmed/6328262) | metadata signals extractable PD data (EC50) |
+| `Miller_1991.pdf` | Miller DM et al., Reactivity of Hg(II) with superoxide: e…, Journal of biochemical toxi… (1991) | pd | 4 | [10.1002/jbt.2570060409](https://doi.org/10.1002/jbt.2570060409) | [1663557](https://www.ncbi.nlm.nih.gov/pubmed/1663557) | metadata signals extractable PD data (IC50) |
+| `Rottet_2023.pdf` | Rottet S et al., Biochemical interactions between the At…, Archives of biochemistry an… (2023) | pd | 4 | [10.1016/j.abb.2023.109696](https://doi.org/10.1016/j.abb.2023.109696) | [37481198](https://www.ncbi.nlm.nih.gov/pubmed/37481198) | metadata signals extractable PD data (EC50) |
+| `Van_1999.pdf` | Van Bergen P et al., Hemoglobin and iron-evoked oxidative st…, Free radical research (1999) | pd | 4 | [10.1080/10715769900301201](https://doi.org/10.1080/10715769900301201) | [10630686](https://www.ncbi.nlm.nih.gov/pubmed/10630686) | metadata signals extractable PD data (EC50) |
+| `Wang_2011.pdf` | Wang HQ et al., Homogeneous label-free genotyping of si…, Analytical chemistry (2011) | pgx | 5 | [10.1021/ac200138v](https://doi.org/10.1021/ac200138v) | [21348511](https://www.ncbi.nlm.nih.gov/pubmed/21348511) | metadata signals extractable PGX data (CYP2C19*2) |
+| `Wang_2012.pdf` | Wang HQ et al., Label-free genotyping of cytochrome P45…, Analytica chimica acta (2012) | pgx | 5 | [10.1016/j.aca.2011.10.052](https://doi.org/10.1016/j.aca.2011.10.052) | [22123119](https://www.ncbi.nlm.nih.gov/pubmed/22123119) | metadata signals extractable PGX data (CYP2D6*10) |
+
+<sub>queue written 2026-10-06 00:58 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abraham_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of hemin's effect on erythroid progenitor cell colony formation, not a pharmacokinetic study. |
+| PGx | Ali_2026 | not_relevant | 0 | 0 | The paper is a case report of serotonin toxicity and FND where hemin was only briefly considered as a differential diagnosis for porphyria, with no data on pharmacogenomic effects on hemin PK/PD. |
+| popPK | Awede_2010 | irrelevant | 0 | 0 | The study investigates the hemodynamic and vascular effects of hemin (blood pressure, aortic ring relaxation) rather than its pharmacokinetic disposition parameters. |
+| PD | Awede_2010 | not_relevant | 3 | 2 | The study reports qualitative changes in vascular reactivity and specific effect magnitudes (e.g., % relaxation) at fixed concentrations, but does not provide a concentration-effect curve or derived PD parameters (EC50, Emax) for hemin itself. |
+| popPK | Bashir_2024 | irrelevant | 0 | 0 | The paper describes hemin as a catalyst in a chemical synthesis reaction, not as a drug subject to pharmacokinetic analysis. |
+| PD | Bashir_2024 | not_relevant | 0 | 0 | The paper reports the synthesis of isochromanones catalyzed by hemin and provides IC50 values for the synthesized products, but does not report a pharmacodynamic or exposure-response relationship for the drug hemin itself. |
+| PGx | Berendes_2024 | not_relevant | 0 | 0 | The paper describes a genetic deficiency in Heme Oxygenase-1 (HMOX1) and its clinical consequences, but does not report pharmacokinetic or pharmacodynamic parameters of hemin as a drug. |
+| PGx | Bianchi_2025 | not_relevant | 0 | 0 | The paper studies the bioactive properties of Origanum majorana extracts and does not report pharmacogenomic effects on the PK/PD of hemin. |
+| PGx | Bogut_2023 | not_relevant | 0 | 0 | The paper characterizes the genome of a bacterial strain (Staphylococcus epidermidis) that is auxotrophic for hemin, rather than investigating human pharmacogenomics or the PK/PD of hemin as a drug. |
+| popPK | Bonovolias_2009 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating the cellular effects of hemin on gene expression and cell survival, containing no pharmacokinetic parameters. |
+| popPK | Chanquia_2019 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on quinoline derivatives as antiparasitic agents, and hemin is only mentioned as a biological target for mechanism of action, not as a subject drug for pharmacokinetic analysis. |
+| PD | Chanquia_2019 | not_relevant | 0 | 0 | The paper reports IC50 values for quinoline derivatives against parasites, not for hemin, and does not provide a concentration-effect curve or PD parameters for hemin itself. |
+| PGx | Cheng_2025 | not_relevant | 0 | 0 | The paper describes a drug delivery system using hemin to target fungal infections and does not report any pharmacogenomic effects on hemin's PK or PD parameters. |
+| popPK | Coburger_2020 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology and biophysics investigation of hemin's mechanism of action on potassium channels, not a pharmacokinetic study of hemin disposition. |
+| popPK | Deshmukh_2013 | irrelevant | 0 | 0 | no_text gate: only 96 chars of text extracted (&lt; 400) |
+| PD | Deshmukh_2013 | not_relevant | 0 | 0 | The paper focuses on the mechanism of methemoglobin oxidation and polymerization in inflammation, not on the pharmacodynamic exposure-response or dose-response relationship of hemin. |
+| PGx | Desuzinges-Mandon_2010 | not_relevant | 0 | 0 | The paper describes the molecular mechanism of heme/hemin transport by the ABCG2 transporter and its interaction with albumin, but does not report pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters in a clinical or population context. |
+| popPK | Dighal_2021 | irrelevant | 0 | 0 | The study investigates the leishmanicidal mechanism of artemisinin and uses hemin only as a modulator/comparator in an in-vitro setting, reporting no pharmacokinetic parameters for hemin. |
+| PGx | Ding_1997 | not_relevant | 0 | 0 | The paper studies the expression of recombinant CYP3A4 in cell lines using hemin as a supplement, not the pharmacokinetics or pharmacodynamics of hemin in humans or the effect of genetic variants on hemin response. |
+| PGx | Ding_2001 | not_relevant | 0 | 0 | The paper investigates the regulation of CYP2D6 protein levels by NADPH-P450 oxidoreductase and the use of hemin as a stabilizer, not the pharmacokinetics or pharmacodynamics of hemin itself. |
+| popPK | Elliott_1993 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of lipid peroxidation where hemin is used as a potentiating agent, not a pharmacokinetic study of hemin disposition. |
+| popPK | Elsabbagh_2023 | irrelevant | 0 | 0 | no_text gate: only 43 chars of text extracted (&lt; 400) |
+| PD | Elsabbagh_2023 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to assess a PD relationship. |
+| popPK | Eranti_2024 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
+| PD | Eranti_2024 | not_relevant | 0 | 0 | The paper focuses on the development of curcumin nanophytosomes for malaria and does not report any pharmacodynamic or exposure-response data for hemin. |
+| popPK | Fardelli_2025 | irrelevant | 0 | 0 | The paper is a physicochemical study on the structural stability of human serum albumin microparticles, using hemin only as a probe ligand to assess binding capability, and does not report any pharmacokinetic parameters for hemin. |
+| PD | Fardelli_2025 | not_relevant | 0 | 0 | The paper characterizes the structural stability of albumin microparticles and qualitatively notes reduced hemin binding, but it does not report a pharmacodynamic exposure-response relationship or numeric PD parameters for hemin. |
+| popPK | Feng_2023 | irrelevant | 0 | 0 | The paper focuses on hemin as a nanoparticle coating agent for delivering other chemotherapeutic drugs (CPT, PTX, SOR), not on the pharmacokinetic parameters of hemin itself. |
+| PD | Feng_2023 | not_relevant | 0 | 0 | The paper describes a drug delivery system (hemin-coated nanoparticles) and qualitative efficacy/safety outcomes in a tumor model, but does not report any quantitative exposure-response or dose-response analysis for hemin itself. |
+| popPK | Garcia_2012 | irrelevant | 0 | 0 | no_text gate: only 225 chars of text extracted (&lt; 400) |
+| PD | Garcia_2012 | not_relevant | 0 | 0 | The paper evaluates antibiotic activity against hemin-dependent bacterial variants, not the pharmacodynamics of hemin itself as a drug. |
+| PGx | Garcia_2012 | not_relevant | 0 | 0 | The paper investigates antibiotic activity against bacterial variants dependent on hemin, not the pharmacokinetics or pharmacodynamics of hemin itself in humans or the effect of human gene variants on hemin. |
+| PGx | Garcia_2012_2 | not_relevant | 0 | 0 | The paper investigates the effect of PMA on antibiotic activity against S. aureus strains with hemin-auxotrophy, not the pharmacokinetics or pharmacodynamics of the drug hemin itself. |
+| popPK | Geroldinger_2017 | irrelevant | 0 | 0 | The paper is a mechanistic study on the activation of ascaridole in Leishmania, where hemin is used only as a reagent/co-factor, not as the subject drug for PK analysis. |
+| popPK | Geroldinger_2020 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
+| popPK | Ghajar-Rahimi_2022 | irrelevant | 0 | 0 | The study is a mechanistic investigation of HO-1 induction using hemin as a positive control, not a pharmacokinetic study of hemin. |
+| popPK | Goldstein_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of hemin's cytotoxicity in cell lines, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Guo_2023 | irrelevant | 0 | 0 | The study is a pharmacological/toxicological investigation of hemin's protective effects on hypoxia-induced tissue injury in mice and does not report any pharmacokinetic parameters. |
+| PD | Guo_2023 | not_relevant | 3 | 2 | The study reports qualitative dose-response trends (survival time, biomarkers) across three dose groups but lacks numeric concentration-effect parameters (EC50, Emax) or a fitted PD model. |
+| PGx | Hagiya_2008 | not_relevant | 0 | 0 | The paper investigates the mechanism of gene induction (ABCG2, HO-1) by porphyrins and hemin in cell lines, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of hemin. |
+| popPK | Hong_1996 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cell differentiation where hemin is used as a differentiation agent, not a pharmacokinetic study. |
+| popPK | Hossain_2013 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on trioxanes where hemin is used as a binding partner/substrate, not as the subject drug for pharmacokinetic analysis. |
+| PD | Hossain_2013 | not_relevant | 3 | 2 | The paper reports IC50/GI50 values for trioxanes against cancer cells and describes a qualitative interaction with hemin, but it does not report a pharmacodynamic (exposure-response) relationship for hemin itself with numeric PD parameters. |
+| PGx | Kahl_2014 | not_relevant | 0 | 0 | The paper discusses bacterial small colony variants and their dependence on hemin for growth, not the pharmacokinetics or pharmacodynamics of hemin as a drug in humans. |
+| PGx | Kim_2016 | not_relevant | 0 | 0 | The paper investigates yeast genetics and heme biosynthesis mechanisms, not human pharmacogenomics or the PK/PD of hemin as a drug. |
+| PGx | Kim_2016_2 | not_relevant | 0 | 0 | The paper describes the microbiological phenotype of Staphylococcus aureus (hemin dependence) and does not report human pharmacogenomic effects on the PK or PD of hemin. |
+| PGx | Kriegeskorte_2014 | not_relevant | 0 | 0 | The paper investigates the metabolic differences in Staphylococcus aureus small colony variants, not the pharmacokinetics or pharmacodynamics of the drug hemin in humans. |
+| popPK | Lechuga_2016 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on antiparasitic activity where hemin is used as a co-agent, not a subject drug for pharmacokinetic analysis. |
+| PGx | Leduc_2019 | not_relevant | 0 | 0 | The paper investigates the virulence of Haemophilus ducreyi strains in a human infection model, not the pharmacokinetics or pharmacodynamics of the drug hemin in humans. |
+| PGx | Lee_2007 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of hemin as an HO-1 agonist in cell lines, not the effect of genetic variants on hemin's pharmacokinetics or pharmacodynamics. |
+| popPK | Li_2017 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
+| PD | Li_2017 | not_relevant | 0 | 0 | The paper describes a biochemical assay for DNA methyltransferase 1 activity and does not report any pharmacodynamic or exposure-response relationship for hemin. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper describes a nanomedicine formulation for cancer therapy where hemin is a photothermal agent, not a pharmacokinetic study of hemin as a subject drug. |
+| PD | Li_2026 | not_relevant | 3 | 2 | The paper reports a single IC50 value for the combined nanoplatform (SNECHA) under laser illumination, but does not provide a dose-response curve, PK/PD model, or specific exposure-response parameters for hemin alone. |
+| PGx | Lu_2010 | not_relevant | 0 | 0 | The study investigates the expression of CYP1A2 and POR in a baculovirus system using heme precursors, not the pharmacokinetics or pharmacodynamics of hemin in humans or the effect of genetic variants on hemin response. |
+| popPK | Majewska_1984 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
+| PD | Majewska_1984 | not_relevant | 0 | 0 | The paper investigates the modulation of GABA binding by calcium in rat brain and does not mention hemin or report any pharmacodynamic parameters for it. |
+| PGx | Masoud-Landgraf_2016 | not_relevant | 0 | 0 | The paper characterizes Staphylococcus aureus small colony variants in cystic fibrosis patients and does not investigate pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of hemin. |
+| PGx | Melter_2010 | not_relevant | 0 | 0 | The paper reviews bacterial small colony variants of Staphylococcus aureus and their resistance mechanisms, not human pharmacogenomics of hemin. |
+| popPK | Miller_1991 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
+| PD | Miller_1991 | not_relevant | 0 | 0 | The paper investigates the chemical reactivity of Hg(II) with superoxide, not the pharmacodynamics of hemin. |
+| PGx | Miyauchi_2022 | not_relevant | 0 | 0 | The paper describes a method for expressing drug-metabolizing enzymes (CYP3A4) in cells and does not report pharmacogenomic effects on the PK/PD of hemin. |
+| PGx | Morgan_2022 | not_relevant | 0 | 0 | The paper investigates the mechanism of Cyp2a5 induction and cytoprotection against ER stress, not the pharmacokinetics or pharmacodynamics of hemin in relation to genetic variants. |
+| PGx | Mourer_2015 | not_relevant | 0 | 0 | The paper describes a biological mechanism for heme uptake in yeast, not a pharmacogenomic effect on the PK/PD of hemin as a drug. |
+| PGx | Nagai_2007 | not_relevant | 0 | 0 | The paper investigates the effect of hemin on CYP gene expression in cell lines, not the effect of a gene variant on hemin's pharmacokinetics or pharmacodynamics. |
+| popPK | Nagai_2008_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of hemin's effect on drug resistance via Nrf2, containing no pharmacokinetic parameters. |
+| PD | Nagai_2008_2 | not_relevant | 4 | 2 | The paper describes a qualitative dose-dependent increase in IC50 values for imatinib and anthracyclins due to hemin treatment, but the provided text does not contain specific numeric PD parameters (such as Emax, EC50, or specific IC50 values) or a quantitative concentration-effect curve. |
+| PGx | Narimatsu_2006 | not_relevant | 0 | 0 | The paper investigates the effect of DMSO on CYP2D6 enzyme activity in cell lines, not the pharmacokinetics or pharmacodynamics of hemin itself. |
+| PGx | Oliw_2001 | not_relevant | 0 | 0 | The paper studies the metabolism of prostaglandins by CYP450 enzymes and mentions hemin only as a non-enzymatic control for PGH2 decomposition, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Paeshuyse_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiviral activity and does not report pharmacokinetic parameters for hemin. |
+| popPK | Park_2024 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on hemin's anticancer effects via ANO1 inhibition and does not report any pharmacokinetic parameters. |
+| popPK | Peteu_2013 | irrelevant | 0 | 0 | The paper describes hemin as an electrocatalytic platform for detecting peroxynitrite, which is an electroanalytical/chemical study, not a pharmacokinetic study. |
+| PD | Peteu_2013 | not_relevant | 0 | 0 | The paper describes an electrochemical sensor for peroxynitrite detection, not a pharmacodynamic or exposure-response relationship for hemin as a drug. |
+| PGx | Pustimbara_2024 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic interaction between hemin and ALA in cancer cells, not the effect of a genetic variant on hemin's PK or PD parameters. |
+| PGx | Radulovic_2021 | not_relevant | 2 | 0 | The paper discusses pharmacogenomics of metamizole (an NSAID), not hemin; hemin is only mentioned as a binding partner for a toxic metabolite in the mechanism of agranulocytosis. |
+| popPK | Regan_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of hemin-induced oxidative stress and cell death in cultured neurons, reporting toxicity metrics (EC50, LDH release) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Romert_1992 | irrelevant | 0 | 0 | The study investigates the mutagenicity of chlorophyllin and hemin in vitro, containing no pharmacokinetic parameters or disposition data for hemin. |
+| PD | Romert_1992 | not_relevant | 2 | 1 | The paper describes qualitative dose-response trends (potentiation at low doses, inhibition at high doses) for hemin and chlorophyllin in mutagenicity assays, but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response model. |
+| popPK | Romert_1994 | irrelevant | 0 | 0 | The study is an in-vitro mutagenicity screening assay and does not report any pharmacokinetic parameters for hemin. |
+| PD | Romert_1994 | not_relevant | 0 | 0 | The paper is a qualitative screening study for antimutagenic activity using the Ames assay and does not report any numeric pharmacodynamic parameters (e.g., IC50, Emax) or concentration-effect curves for hemin. |
+| popPK | Rottet_2023 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
+| PD | Rottet_2023 | not_relevant | 0 | 0 | The paper investigates biochemical interactions between a bacterial transporter and heavy metals, not the pharmacodynamics of hemin in a biological system. |
+| PGx | Rutherford_1979 | not_relevant | 0 | 0 | The paper studies the effect of hemin on globin synthesis in cell lines, not the effect of a gene variant on hemin's pharmacokinetics or pharmacodynamics. |
+| popPK | Sahoo_2022 | irrelevant | 0 | 0 | The paper is a mechanistic biophysics study on hemin's inhibition of Kv10.1 ion channels, reporting binding constants (KD) and IC50 values, but it does not contain any pharmacokinetic parameters (CL, V, ka, t1/2) for hemin. |
+| popPK | Schalinske_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on iron regulation of mRNA translation, not a pharmacokinetic study, and contains no PK parameters for hemin. |
+| popPK | Segers_2005 | irrelevant | 0 | 0 | The study uses hemin as an inducer of heme oxygenase-1 to study cardiac contractility in vitro, not to characterize the pharmacokinetics of hemin itself. |
+| popPK | Sharma_2025 | irrelevant | 0 | 0 | The study is an in-vitro analytical chemistry paper using hemin as a target analyte for fluorescent sensing, not a pharmacokinetic study. |
+| PD | Sharma_2025 | not_relevant | 0 | 0 | The paper describes a chemical sensor (carbon dots) for detecting hemin and the antioxidant activity of the sensor material, not a pharmacodynamic or exposure-response relationship for hemin as a drug. |
+| popPK | Siegert_2008 | irrelevant | 2 | 0 | The paper is a literature review that describes a two-compartment model qualitatively but does not provide specific numeric values for clearance, volume, or half-life in the provided evidence. |
+| PGx | Smith_2025 | not_relevant | 0 | 0 | The paper investigates the role of TSPO and porphyrins in lipid metabolism and does not report pharmacogenomic effects on the PK/PD of hemin. |
+| PGx | Szafraniec_2021 | not_relevant | 0 | 0 | The paper investigates the transport mechanism of photosensitizers by ABCG2 and albumin dependence, but does not report pharmacogenomic effects (gene variants) on PK/PD parameters of hemin. |
+| PGx | Tang_2022 | not_relevant | 0 | 0 | The paper investigates bacterial physiology and host immune response to antibiotics, not the pharmacokinetics or pharmacodynamics of hemin in humans. |
+| popPK | Van_1999 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
+| PD | Van_1999 | not_relevant | 0 | 0 | The paper focuses on the neuroprotective effects of bile pigments, manganese, and S-nitrosoglutathione against oxidative stress, with no mention of hemin or any pharmacodynamic modeling. |
+| popPK | Vera-Yunca_2019 | irrelevant | 1 | 0 | The study focuses on a computational disease model of heme precursor excretion in AIP mice, and hemin is only mentioned as a theoretical effect for dosage optimization without any reported pharmacokinetic parameters. |
+| PD | Vera-Yunca_2019 | not_relevant | 2 | 0 | The paper focuses on a disease model for phenobarbital-induced attacks; hemin is only mentioned as a theoretical implementation for future dosage optimization without reporting any experimental PD data or numeric parameters. |
+| PGx | Wang_2011 | not_relevant | 0 | 0 | The paper describes a genotyping method using hemin as a detection reagent, not a pharmacogenomic study of hemin's PK/PD. |
+| PGx | Wang_2012 | not_relevant | 0 | 0 | The paper describes a genotyping assay for CYP2D6*10 where hemin is used as a detection reagent, not as the drug being studied for pharmacokinetic or pharmacodynamic effects. |
+| PGx | Wang_2021 | not_relevant | 0 | 0 | The paper investigates the role of heme biosynthesis genes in Staphylococcus aureus persister formation, not the pharmacogenomics of hemin in humans. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper is a clinical practice guideline for the diagnosis and management of acute hepatic porphyrias and does not report pharmacogenomic effects on the PK or PD of hemin. |
+| popPK | Wu_1984 | irrelevant | 0 | 0 | The study investigates the oxygen affinity and 2,3-DPG levels in hemoglobin-induced K562 cells, not the pharmacokinetic disposition parameters (CL, V, etc.) of hemin. |
+| PD | Wu_1984 | not_relevant | 2 | 1 | The paper reports oxygen affinity parameters (P50, Hill coefficient) for hemoglobin in hemin-induced cells, but does not provide a dose-response or exposure-response relationship for hemin itself (e.g., effect vs. hemin concentration/dose). |
+| PGx | Yin_2004 | not_relevant | 0 | 0 | The paper describes a chemical mechanism of metabolism involving hemin as a catalyst, not a pharmacogenomic effect of a gene variant on the PK/PD of hemin. |
+| popPK | Zaidi_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition by hemin, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Zheng_2026 | irrelevant | 0 | 0 | The study focuses on the antiviral mechanism of TPPS4 (a hemin analog) against PEDV, not the pharmacokinetic disposition of hemin. |
+| popPK | Zotta_2018 | irrelevant | 0 | 0 | The paper is a microbiology study on lactic acid bacteria growth and does not report pharmacokinetic parameters for hemin. |
+| PGx | da_2021 | not_relevant | 0 | 0 | The paper studies the effect of hemin on ABCC transporter activity in Trypanosoma cruzi, not the effect of human gene variants on hemin pharmacokinetics or pharmacodynamics. |
+| PGx | von_2006 | not_relevant | 0 | 0 | The paper describes bacterial genetics and metabolic phenotypes, not human pharmacogenomics or the PK/PD of hemin as a drug. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhemin%5D&body=Drug%3A%20hemin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hemin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

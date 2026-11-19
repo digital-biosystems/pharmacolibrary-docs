@@ -1,0 +1,121 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;propantheline&quot;}]"></div>
+
+# propantheline
+
+- **generic name:** propantheline
+- **ATC codes:** `A03AB05`, `A03CA34`
+- **DrugBank:** [DB00782](https://go.drugbank.com/drugs/DB00782) · **PubChem:** [CID 4934](https://pubchem.ncbi.nlm.nih.gov/compound/4934)
+- **molar mass:** 368.4892 g/mol (C23H30NO3) — DrugBank
+- **groups:** approved
+
+## About
+
+Propantheline is a synthetic anticholinergic medicine used for functional gastrointestinal disorders. It is given by mouth in tablet or capsule form. The drug is currently approved and in use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q3275451](https://www.wikidata.org/wiki/Q3275451), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Vose_1979_reference](drugs/drug_propantheline/Propantheline_Vose1979_reference.md) | — | 1-compartment (no model) | 2 | Vose CW et al., Pharmacokinetics of propantheline bromi…, British journal of clinical… (1979) | [10.1111/j.1365-2125.1979.tb00902.x](https://doi.org/10.1111/j.1365-2125.1979.tb00902.x) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Sadraei_2013_ACh_response](drugs/drug_propantheline/pd_Sadraei_2013_ACh_response.md) | ileum contraction induced by acetylcholine (ACh) ← propantheline · direct sigmoid Emax (Hill) effect | — | Sadraei H et al., Antispasmodic effects of Prangos ferula…, Research in pharmaceutical… (2013) | — |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=propantheline).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CHRM1 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 13:00 | 1:58 | 1/0/0 | 1/0/0 | 0/0/0 | 69,225/2,306 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 2/4 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 39 matched, 39 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Vose_1979.pdf` | Vose CW et al., Pharmacokinetics of propantheline bromi…, British journal of clinical… (1979) | popPK | 10 | [10.1111/j.1365-2125.1979.tb00902.x](https://doi.org/10.1111/j.1365-2125.1979.tb00902.x) | [760746](https://pubmed.ncbi.nlm.nih.gov/760746) | The study reports quantitative pharmacokinetic parameters (clearance, half-lives) for propantheline in humans with all numeric values present in the text. |
+| `Alberts_1995.pdf` | Alberts P, Classification of the presynaptic musca…, The Journal of pharmacology… (1995) | pd | 4 |  | [7616431](https://www.ncbi.nlm.nih.gov/pubmed/7616431) | metadata signals extractable PD data (EC50) |
+| `Guay_2003.pdf` | Guay DR, Clinical pharmacokinetics of drugs used…, Clinical pharmacokinetics (2003) | pgx | 8 | [10.2165/00003088-200342140-00004](https://doi.org/10.2165/00003088-200342140-00004) | [14606931](https://www.ncbi.nlm.nih.gov/pubmed/14606931) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+
+<sub>queue written 2026-10-04 13:00 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aghazadeh-Habashi_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of meloxicam, using propantheline only as a tool to suppress the vagus nerve, and does not report PK parameters for propantheline itself. |
+| popPK | Alberts_1995 | irrelevant | 0 | 0 | no_text gate: only 146 chars of text extracted (&lt; 400) |
+| popPK | Chiu_2008 | irrelevant | 0 | 0 | The study is an in-vitro/in-vivo ototoxicity screening assay measuring hair cell loss, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Dajani_1978 | irrelevant | 0 | 0 | The study reports pharmacodynamic efficacy (gastric secretion inhibition) and relative potency, but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for propantheline. |
+| popPK | Dajani_1979 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of propantheline on stress ulcer formation in rats and does not report any pharmacokinetic parameters. |
+| PD | Dajani_1979 | not_relevant | 4 | 2 | The paper reports dose-dependent inhibition and relative potency ratios (10x, 44x) but does not provide specific numeric dose-response parameters (e.g., ED50, Emax) or concentration-effect curves in the provided text. |
+| popPK | Dajani_1979_2 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of drug-induced diarrhea in mice using propantheline as an antidiarrheal agent, not its pharmacokinetics. |
+| PD | Dajani_1979_2 | not_relevant | 2 | 1 | The paper describes qualitative dose-dependent effects and attenuation by propantheline but does not provide numeric PD parameters (e.g., EC50, Emax) or extractable concentration-effect curves for propantheline. |
+| popPK | DeVault_1987 | irrelevant | 0 | 0 | The study measures salivary flow and acid neutralization capacity, not pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Forrest_1982 | irrelevant | 0 | 0 | The paper is a review of paracetamol pharmacokinetics, and propantheline is only mentioned as a drug that delays paracetamol absorption, not as the subject of PK analysis. |
+| popPK | Freijer_2007 | irrelevant | 0 | 0 | The study focuses on paracetamol absorption modeling, not propantheline. |
+| PD | Freijer_2007 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic absorption modeling of paracetamol using the convection-dispersion equation and does not contain any data or analysis for propantheline or any pharmacodynamic (exposure-response) relationships. |
+| popPK | Gibaldi_1975 | irrelevant | 1 | 0 | The study reports pharmacodynamic effects (salivary flow) rather than quantitative pharmacokinetic parameters (CL, V, ka) for propantheline. |
+| PD | Gibaldi_1975 | not_relevant | 3 | 1 | The text describes qualitative dose-response observations (15mg vs 30mg) and food effects in 3 subjects but does not provide numeric concentration-effect data, Emax/EC50 parameters, or a quantitative PD model. |
+| popPK | Gibiński_1979 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of trithiozine, with propantheline serving only as a comparator for gastric secretion suppression. |
+| popPK | Guay_2003 | irrelevant | 1 | 0 | The paper is a review that mentions propantheline but provides no quantitative pharmacokinetic parameters for it in the provided text. |
+| PGx | Guay_2003 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for tolterodine (CYP2D6/3A4) but only mentions propantheline in a general list of drugs without providing specific pharmacokinetic or pharmacodynamic data or genetic associations for it. |
+| popPK | Hough_1981 | irrelevant | 0 | 0 | The study investigates in-vitro histamine H2-receptor antagonism and does not report pharmacokinetic parameters for propantheline. |
+| PD | Hough_1981 | not_relevant | 2 | 1 | The text describes qualitative pharmacological effects (competitive vs. non-competitive inhibition) and relative potency but does not provide numeric PD parameters (e.g., Ki, IC50, Emax) or extractable concentration-effect curves. |
+| popPK | Hu_2018 | irrelevant | 0 | 0 | The study focuses on machine learning models for digoxin dosage prediction and does not involve propantheline. |
+| PD | Hu_2018 | not_relevant | 0 | 0 | The paper focuses on machine learning for digoxin dosage prediction and does not contain any pharmacodynamic or exposure-response analysis for propantheline. |
+| popPK | Hughes_1990 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cefpodoxime proxetil, using propantheline only as a gastric motility modifier/comparator. |
+| popPK | Joel_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of etoposide, using propantheline only as a co-administered agent to modify gastric emptying, rather than as the subject drug. |
+| popPK | Marathe_2000 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metformin, using propantheline only as a co-administered agent to alter gastrointestinal motility, and does not report PK parameters for propantheline itself. |
+| popPK | Martínez_1991 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of droxicam, using propantheline only as a gastric emptying modifier, and does not report PK parameters for propantheline. |
+| popPK | Melvin_1990 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of zidovudine (AZT), using propantheline only as a co-administered GI motility inhibitor, and does not report PK parameters for propantheline itself. |
+| popPK | Miyake_2025 | irrelevant | 0 | 0 | Propantheline is used only as a pretreatment agent (to induce diarrhea) to modify the physiological state of the dogs, while the pharmacokinetic parameters reported are for the subject drug dipyridamole. |
+| popPK | Nakade_2008 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of digoxin, with propantheline mentioned only as a background comparator for anticholinergic effects. |
+| popPK | Rigby_1983 | relevant | 8 | 0 | The study is a pharmacokinetic bioavailability comparison for propantheline, but the provided evidence contains only qualitative results and p-values, with no specific numeric PK parameters (e.g., CL, V, t1/2) listed. |
+| PD | Rigby_1983 | not_relevant | 2 | 1 | The study compares bioavailability using pharmacodynamic endpoints (salivary flow, heart rate) but does not report a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Sadraei_2013 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of antispasmodic effects on rat ileum, not a pharmacokinetic study, and propantheline is used only as a comparator agent. |
+| popPK | Sadraei_2014 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay on rat ileum where propantheline is used only as a reference comparator, and no pharmacokinetic parameters are reported. |
+| popPK | Shukla_1992 | irrelevant | 1 | 0 | Propantheline is used as a co-administered agent to study the pharmacokinetics of cefprozil, not as the subject drug. |
+| popPK | Singh-Franco_2005 | irrelevant | 0 | 0 | The paper is a review of trospium chloride, and propantheline is only mentioned as a search term or comparator, with no PK parameters reported for it. |
+| popPK | Sánchez_1989 | irrelevant | 0 | 0 | Propantheline is used only as a gastric emptying modifier (comparator agent) to study the pharmacokinetics of droxicam, not as the subject drug. |
+| popPK | Yarker_1995 | irrelevant | 0 | 0 | The paper is a review of oxybutynin, and propantheline is only mentioned as a comparator agent without any quantitative pharmacokinetic parameters provided. |
+| PD | Yarker_1995 | not_relevant | 1 | 0 | The text is a qualitative review of oxybutynin that mentions propantheline only for comparative efficacy without providing any numeric PD parameters or exposure-response data. |
+| popPK | Yu_1997 | irrelevant | 0 | 0 | The study focuses on clinical efficacy and pharmacodynamics (heart rate, blood pressure) in neurocardiogenic syncope, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PD | Yu_1997 | not_relevant | 2 | 1 | The study reports clinical efficacy and hemodynamic changes (heart rate, blood pressure) before and after treatment, but it does not provide plasma concentration data or fit a pharmacodynamic model to derive numeric parameters like Emax or EC50. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpropantheline%5D&body=Drug%3A%20propantheline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_propantheline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 13:00 UTC</sub>

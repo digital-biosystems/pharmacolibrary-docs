@@ -1,0 +1,111 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) oxodotreotide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base&quot;,&quot;label&quot;:&quot;Barakat_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_base_structural_model&quot;,&quot;label&quot;:&quot;Barakat_2023_base_structural_model_estimate_value_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base_structural_model.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Barakat2023_final&quot;,&quot;label&quot;:&quot;Barakat_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_1_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_1_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luOxodotreotide_Sood2026_netter_p_estimate&quot;,&quot;label&quot;:&quot;Sood_2026_netter_p_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# lutetium (177Lu) oxodotreotide
+
+- **generic name:** lutetium (177Lu) oxodotreotide
+- **ATC codes:** `V10XX04`
+- **DrugBank:** [DB13985](https://go.drugbank.com/drugs/DB13985) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Lutetium (177Lu) oxodotreotide is a therapeutic radiopharmaceutical used for cancers that express somatostatin receptors, such as carcinoid tumors. It is given by intravenous injection. It is authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q27273888](https://www.wikidata.org/wiki/Q27273888), [Wikipedia](https://en.wikipedia.org/wiki/Lutetium_(177Lu)_oxodotreotide?oldid=1381692155) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Start here
+
+> **Barakat_2023_base** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with gastroenteropancreatic neuroendocrine tumors, n = &gt;=28. [Run it in the simulator](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md?tab=Simulation) · [record](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="128" viewBox="0 0 560 128" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="106" stroke="#ddd"/><text x="190.0" y="120" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="106" stroke="#ddd"/><text x="540.0" y="120" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Barakat_2023 · CL</text><circle cx="339.8" cy="30.0" r="4" fill="#78909c"><title>Barakat_2023 · CL: 2.68 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Barakat_2023 · CL</text><circle cx="341.5" cy="46.0" r="4" fill="#78909c"><title>Barakat_2023 · CL: 2.71 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Sood_2026 · CL</text><circle cx="433.1" cy="62.0" r="4" fill="#78909c"><title>Sood_2026 · CL: 4.95 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Barakat_2023 · CL</text><circle cx="434.3" cy="78.0" r="4" fill="#78909c"><title>Barakat_2023 · CL: 4.99 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Sood_2026 · CL</text><circle cx="460.3" cy="94.0" r="4" fill="#78909c"><title>Sood_2026 · CL: 5.92 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="128" viewBox="0 0 560 128" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="106" stroke="#ddd"/><text x="190.0" y="120" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="106" stroke="#ddd"/><text x="365.0" y="120" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="106" stroke="#ddd"/><text x="540.0" y="120" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Barakat_2023 · V1</text><circle cx="349.7" cy="30.0" r="4" fill="#78909c"><title>Barakat_2023 · V1: 8.18 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Sood_2026 · V1</text><circle cx="409.1" cy="46.0" r="4" fill="#78909c"><title>Sood_2026 · V1: 17.86 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Sood_2026 · V1</text><circle cx="423.5" cy="62.0" r="4" fill="#78909c"><title>Sood_2026 · V1: 21.59 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Barakat_2023 · V1</text><circle cx="520.3" cy="78.0" r="4" fill="#78909c"><title>Barakat_2023 · V1: 77.2 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Barakat_2023 · V1</text><circle cx="521.0" cy="94.0" r="4" fill="#78909c"><title>Barakat_2023 · V1: 77.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Barakat_2023_base](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base.md) | ▶ model + simulator | 2-compartment, IV | 4 | Barakat A et al., Clinical Pharmacokinetics of Radiopharm…, European journal of drug me… (2023) | [10.1007/s13318-023-00829-5](https://doi.org/10.1007/s13318-023-00829-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [↳ base_structural_model_estimate_value_cv](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_base_structural_model.md) | ▶ model + simulator | 2-compartment, IV | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [↳ final](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Barakat2023_final.md) | ▶ model + simulator | 2-compartment, IV | 4 (+1 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Sood_2026_netter_1_estimate](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_1_estimate.md) | ▶ model + simulator | 2-compartment, IV | 4 | Sood M et al., [, Journal of nuclear medicine… (2026) | [10.2967/jnumed.125.270202](https://doi.org/10.2967/jnumed.125.270202) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [↳ netter_p_estimate](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_netter_p_estimate.md) | ▶ model + simulator | 2-compartment, IV | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ estimate_with_study_effect](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Sood2026_estimate_with_study_effe.md) | — | 1-compartment (no model) | 0 (+3 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Puszkiel_2019_reference](drugs/drug_lutetium_177lu_oxodotreotide/Lutetium177luOxodotreotide_Puszkiel2019_reference.md) | — | 1-compartment (no model) | 0 | Puszkiel A et al., Evaluation of the Interaction of Amino…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0674-1](https://doi.org/10.1007/s40262-018-0674-1) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lutetium_177lu_oxodotreotide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: SSTR1 (target), SSTR2 (target), SSTR3 (target), SSTR4 (target), SSTR5 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 17:21 | 12:53 | 5/2/0 | 0/0/0 | 0/0/0 | 240,752/37,414 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 5/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 263 matched, 20 returned
+- **screened:** 7  ·  **relevant:** 3
+- **records:** 7  ·  extracted 5  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Puszkiel_2019.pdf` | Puszkiel A et al., Evaluation of the Interaction of Amino…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0674-1](https://doi.org/10.1007/s40262-018-0674-1) | [29736841](https://pubmed.ncbi.nlm.nih.gov/29736841) | The study reports a population PK model for 177Lu-Dotatate (lutetium_177lu_oxodotreotide) with specific numeric values for the elimination rate constant (k10) and model structure provided in the abstract. |
+| `Lambert_2022.pdf` | Lambert M et al., Comparison of Two Types of Amino Acid S…, Current radiopharmaceuticals (2022) | popPK | 9 | [10.2174/1874471015666211228123525](https://doi.org/10.2174/1874471015666211228123525) | [35105299](https://pubmed.ncbi.nlm.nih.gov/35105299) | The study reports a population PK model for 177Lu-Dotatate (lutetium_177lu_oxodotreotide) in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided text, only relative changes in AUC. |
+| `Brolin_2015.pdf` | Brolin G et al., Pharmacokinetic digital phantoms for ac…, Physics in medicine and bio… (2015) | popPK | 8 | [10.1088/0031-9155/60/15/6131](https://doi.org/10.1088/0031-9155/60/15/6131) | [26215085](https://pubmed.ncbi.nlm.nih.gov/26215085) | The paper describes a compartmental PK model for Lu-177-DOTATATE fitted to patient data, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided evidence text. |
+
+<sub>queue written 2026-10-07 17:09 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Akhavanallaf_2025 | irrelevant | 2 | 0 | The study reports absorbed dose (Gy/GBq) and PET uptake values for dosimetry prediction, not compartmental pharmacokinetic parameters (CL, V, Q, ka) for the drug. |
+| PD | Bodei_2025 | not_relevant | 3 | 2 | The paper reports dosimetry and tumor response but explicitly states that no correlation was found between absorbed dose and tumor size change, and it does not provide numeric PD parameters (e.g., Emax, ED50) or a fitted dose-response curve. |
+| PD | Boursier_2026 | not_relevant | 2 | 1 | The study reports clinical outcomes and absorbed doses but explicitly states no association between tumor absorbed dose and tumor growth rate, providing no extractable dose-response curve or PD parameters. |
+| popPK | Brolin_2015 | relevant | 8 | 2 | The paper describes a compartmental PK model for Lu-177-DOTATATE fitted to patient data, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided evidence text. |
+| PD | Gaze_2025 | not_relevant | 0 | 0 | The paper reports pharmacokinetics and dosimetry (absorbed radiation dose) but does not provide a pharmacodynamic model or numeric exposure-response parameters (e.g., Emax, EC50) for efficacy or toxicity. |
+| popPK | Hagmarker_2017 | irrelevant | 2 | 0 | The study focuses on image-based dosimetry and hematological toxicity correlation rather than reporting quantitative pharmacokinetic parameters (CL, V, ka) for the drug. |
+| popPK | Hemmingsson_2023 | irrelevant | 2 | 0 | The study reports dosimetry and biodistribution data (absorbed dose in Gy/GBq) rather than standard population pharmacokinetic parameters (CL, V, Q, ka) for the drug. |
+| PD | Ladrière_2023 | not_relevant | 1 | 0 | The paper is a clinical review focusing on safety, administration, and radiation protection, and does not report any quantitative pharmacodynamic or exposure-response modeling for lutetium-177 oxodotreotide. |
+| popPK | Lambert_2022 | relevant | 9 | 2 | The study reports a population PK model for 177Lu-Dotatate (lutetium_177lu_oxodotreotide) in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided text, only relative changes in AUC. |
+| PD | Pomykala_2023 | not_relevant | 1 | 0 | The text is a general review of radiotheranostics and does not report specific pharmacodynamic or exposure-response data for lutetium (177Lu) oxodotreotide. |
+| PD | St_2021 | not_relevant | 1 | 0 | The text is a general review of radiopharmaceutical therapy and dosimetry principles; it does not report specific pharmacodynamic or exposure-response data for 177Lu-oxodotreotide. |
+| PD | Tran_2025 | not_relevant | 1 | 0 | The paper is a general review of the radiotheranostic landscape and does not report specific pharmacodynamic or exposure-response data for lutetium (177Lu) oxodotreotide. |
+| PGx | Ullrich_2024 | not_relevant | 0 | 0 | The paper is a preclinical study comparing radioligand variants in mice and does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Warfvinge_2024 | irrelevant | 0 | 0 | The study focuses on dosimetry and tumor response (absorbed dose vs. volume reduction) rather than reporting pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| PD | Xu_2025 | not_relevant | 0 | 0 | The text describes a Phase III clinical trial reporting clinical endpoints (PFS, ORR, OS) and safety, but contains no pharmacokinetic data, exposure-response analysis, or numeric PD parameters. |
+| PD | Yang_2025 | not_relevant | 0 | 0 | The paper focuses on dosimetry prediction (absorbed dose) using linear regression, not on pharmacodynamic exposure-response or dose-effect relationships for tumor response or biomarkers. |
+| PD | unknown_2018 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text or any numeric PD parameters, exposure-response data, or dose-effect curves. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blutetium_177lu_oxodotreotide%5D&body=Drug%3A%20lutetium_177lu_oxodotreotide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lutetium_177lu_oxodotreotide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 17:09 UTC</sub>

@@ -1,0 +1,114 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;acotiamide&quot;}]"></div>
+
+# acotiamide
+
+- **generic name:** acotiamide
+- **ATC codes:** `A03FA10`
+- **DrugBank:** [DB12482](https://go.drugbank.com/drugs/DB12482) · **PubChem:** [CID 5282338](https://pubchem.ncbi.nlm.nih.gov/compound/5282338)
+- **molar mass:** 450.55 g/mol (C21H30N4O5S) — DrugBank
+- **groups:** investigational
+
+## About
+
+Acotiamide is an acetylcholinesterase inhibitor used to treat symptoms like postprandial fullness and early satiation from functional dyspepsia. It is administered as an oral tablet. The drug is used in Japan and Russia.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q4674598](https://www.wikidata.org/wiki/Q4674598), [Wikipedia](https://en.wikipedia.org/wiki/Acotiamide?oldid=1354487138) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Yoshii_2016_ACh](drugs/drug_acotiamide/pd_Yoshii_2016_ACh.md) | acetylcholine ← acotiamide · indirect response — drug inhibits the loss of acetylcholine | — | Yoshii K et al., Physiologically-Based Pharmacokinetic a…, Pharmaceutical research (2016) | [10.1007/s11095-015-1787-y](https://doi.org/10.1007/s11095-015-1787-y) |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 13:34 | 2:42 | 0/0/0 | 1/0/0 | 0/0/0 | 98,782/3,068 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/9 | 10/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 24 matched, 46 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Li_2016.pdf` | Li J et al., Development and Validation of a Sensiti…, Journal of chromatographic… (2016) | popPK | 8 | [10.1093/chromsci/bmw035](https://doi.org/10.1093/chromsci/bmw035) | [26980723](https://pubmed.ncbi.nlm.nih.gov/26980723) | The study reports quantitative PK parameters (bioavailability and half-life) for acotiamide in rats, but lacks full compartmental model parameters (CL, V, Q, ka) in the provided text. |
+
+<sub>queue written 2026-10-04 13:34 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Camilleri_2016 | irrelevant | 0 | 0 | The paper is a clinical review of functional dyspepsia and gastroparesis that mentions acotiamide only as a therapeutic agent, without reporting any pharmacokinetic parameters. |
+| popPK | Ford_2013 | irrelevant | 0 | 0 | The paper is a review of dyspepsia treatments and mentions acotiamide only as a therapeutic agent, without reporting any pharmacokinetic parameters. |
+| popPK | Ford_2021 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of clinical efficacy for functional dyspepsia, not a pharmacokinetic study, and contains no PK parameters for acotiamide. |
+| popPK | Funaki_2020 | irrelevant | 0 | 0 | The study is a clinical trial assessing the efficacy of acotiamide on gastrointestinal symptoms and manometry parameters, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Grover_2019 | irrelevant | 0 | 0 | The paper is a clinical review of gastroparesis that mentions acotiamide only as a therapeutic agent without reporting any pharmacokinetic parameters. |
+| popPK | Hori_2011 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of TAK-438 and lansoprazole, not acotiamide. |
+| popPK | Ishimura_2015 | irrelevant | 0 | 0 | The study evaluates esophageal motor function and gastroesophageal reflux parameters (manometry, pH monitoring) rather than pharmacokinetic disposition parameters (CL, V, ka) for acotiamide. |
+| popPK | Jenkins_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of TAK-438 (vonoprazan), not acotiamide. |
+| popPK | Kaai_2021 | irrelevant | 0 | 0 | The study measures gastric emptying rates using a 13C breath test, not pharmacokinetic parameters (CL, V, ka) of acotiamide. |
+| popPK | Kaltbeitzel_2024 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new acetylcholinesterase inhibitors, mentioning acotiamide only as a comparator without reporting any pharmacokinetic parameters. |
+| PD | Kaltbeitzel_2024 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel donepezil analogues, not pharmacodynamic or exposure-response data for acotiamide. |
+| popPK | Kawachi_2011 | irrelevant | 1 | 0 | The study focuses on pharmacodynamic effects (gastric motility) and in-vitro AChE inhibition, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for acotiamide. |
+| popPK | Kogame_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vonoprazan (TAK-438), not acotiamide. |
+| popPK | Matsukawa_2011 | irrelevant | 0 | 0 | The study investigates the mechanism of action of TAK-438 and lansoprazole in rabbit gastric glands, not the pharmacokinetics of acotiamide. |
+| popPK | Matsukawa_2016 | irrelevant | 0 | 0 | The study investigates the radiographic localization of vonoprazan in rats, not the pharmacokinetics of acotiamide. |
+| popPK | Mearin_2016 | irrelevant | 0 | 0 | The paper is a review of conference presentations discussing the efficacy and mechanisms of acotiamide in functional dyspepsia, but it does not report any quantitative pharmacokinetic parameters. |
+| popPK | Miwa_2022 | irrelevant | 0 | 0 | The paper is a clinical practice guideline for functional dyspepsia that mentions acotiamide as a treatment option but does not report any pharmacokinetic parameters or quantitative disposition data. |
+| popPK | Napthali_2016 | irrelevant | 0 | 0 | The paper is a review of functional dyspepsia in women and mentions acotiamide only as a therapeutic agent without reporting any pharmacokinetic parameters. |
+| popPK | Otake_2016 | irrelevant | 0 | 0 | The paper is a review of vonoprazan fumarate, a different drug, and does not report pharmacokinetic parameters for acotiamide. |
+| popPK | Patel_2016 | irrelevant | 2 | 0 | The paper describes a bioanalytical method development and validation for acotiamide in rat plasma but does not report quantitative pharmacokinetic parameters (CL, V, etc.) in the provided evidence. |
+| popPK | Patel_2017 | irrelevant | 2 | 0 | The study focuses on metabolite identification and characterization rather than reporting quantitative pharmacokinetic parameters like clearance or volume. |
+| popPK | Pittayanon_2018 | irrelevant | 0 | 0 | This is a systematic review and meta-analysis of clinical efficacy for functional dyspepsia, not a pharmacokinetic study, and it contains no PK parameters for acotiamide. |
+| popPK | Qi_2023 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of clinical efficacy and safety for functional dyspepsia, containing no pharmacokinetic parameters for acotiamide. |
+| popPK | Qiao_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Vonoprazan, not acotiamide. |
+| popPK | Sakurai_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of TAK-438 (vonoprazan), not acotiamide. |
+| popPK | Sakurai_2016 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of vonoprazan, amoxicillin, clarithromycin, and metronidazole, and does not mention acotiamide. |
+| popPK | Shrestha_2021 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of clinical efficacy and safety in functional dyspepsia, containing no pharmacokinetic parameters (CL, V, ka, etc.) for acotiamide. |
+| popPK | St_2023 | irrelevant | 0 | 0 | The paper is a review of vonoprazan, a different drug, and does not contain pharmacokinetic data for acotiamide. |
+| popPK | Sun_2014 | irrelevant | 2 | 0 | This is a review article discussing pharmacokinetics qualitatively without providing original quantitative parameter values in the evidence. |
+| PD | Sun_2014 | not_relevant | 2 | 1 | The text is a review summary that qualitatively describes the mechanism of action (reducing impaired fundic relaxation) but does not provide specific numeric PD parameters, concentration-effect curves, or detailed PK/PD modeling results. |
+| popPK | Tack_2011 | irrelevant | 0 | 0 | This is a review of functional dyspepsia that mentions acotiamide as a therapeutic agent but does not report any quantitative pharmacokinetic parameters. |
+| popPK | Tack_2017 | irrelevant | 0 | 0 | This is a narrative review of functional dyspepsia and gastroparesis that mentions acotiamide as a treatment but does not report any quantitative pharmacokinetic parameters. |
+| popPK | Thummar_2017 | irrelevant | 0 | 0 | The paper describes a stability-indicating assay method and degradation product characterization, not a pharmacokinetic study with disposition parameters. |
+| PD | Thummar_2017 | not_relevant | 0 | 0 | The paper describes a stability-indicating analytical method for acotiamide and its degradation products, containing no pharmacodynamic or exposure-response data. |
+| popPK | Van_2019 | irrelevant | 0 | 0 | The paper is a narrative review of postprandial distress syndrome management and does not report any quantitative pharmacokinetic parameters for acotiamide. |
+| popPK | Vandenberghe_2020 | irrelevant | 0 | 0 | The paper is a narrative review of therapeutic options for functional dyspepsia and does not report original quantitative pharmacokinetic parameters for acotiamide. |
+| popPK | Vanheel_2014 | irrelevant | 0 | 0 | The paper is a review of therapeutic options for functional dyspepsia and mentions acotiamide only as an emerging therapy without reporting any pharmacokinetic parameters. |
+| popPK | Xiao_2014 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of clinical efficacy for functional dyspepsia, containing no pharmacokinetic parameters or disposition data for acotiamide. |
+| popPK | Yamasaki_2017 | irrelevant | 0 | 0 | The study investigates the in vitro metabolism of vonoprazan (TAK-438), not acotiamide. |
+| popPK | Yamashita_2015 | irrelevant | 0 | 0 | The study evaluates the pharmacodynamic effect of acotiamide on esophageal motility (TLESRs) and does not report any pharmacokinetic parameters. |
+| popPK | Yamawaki_2018 | irrelevant | 0 | 0 | The paper is a review of functional dyspepsia management and does not report any quantitative pharmacokinetic parameters for acotiamide. |
+| popPK | Yoshii_2011 | irrelevant | 2 | 0 | The study focuses on the mechanism of tissue distribution (Kp,app, permeability) in rats rather than reporting standard quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Yoshii_2016 | relevant | 9 | 2 | The paper presents a PBPK model for acotiamide in rats with quantitative parameters, but the specific numeric values for clearance and volume are in Table I which is not included in the provided evidence. |
+| popPK | Yoshii_2016_2 | irrelevant | 1 | 0 | The study is a tissue distribution/autoradiography analysis reporting local concentrations, not a pharmacokinetic study reporting systemic disposition parameters (CL, V, ka, etc.). |
+| PD | Yoshii_2016_2 | not_relevant | 3 | 2 | The paper reports tissue distribution concentrations and compares them to IC50 values, but does not provide a concentration-effect curve, dose-response data, or a PK/PD model with numeric PD parameters (Emax, slope, etc.) for acotiamide. |
+| popPK | Zala_2015 | irrelevant | 0 | 0 | The paper is a narrative review of functional dyspepsia treatments and does not report original quantitative pharmacokinetic parameters for acotiamide. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacotiamide%5D&body=Drug%3A%20acotiamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acotiamide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

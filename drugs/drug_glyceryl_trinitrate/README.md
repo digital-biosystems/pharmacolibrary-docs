@@ -1,0 +1,256 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;glyceryl trinitrate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycerylTrinitrate_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycerylTrinitrate_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# glyceryl trinitrate
+
+- **generic name:** glyceryl trinitrate
+- **ATC codes:** `C01DA02`, `C05AE01`
+- **DrugBank:** none · **PubChem:** none
+- **groups:** not captured
+
+## About
+
+Glyceryl trinitrate is an organic nitrate and vasodilator used to treat cardiac diseases and other cardiovascular conditions. No specific routes of administration are detailed in the provided facts. The drug is widely recognized as a medication and has a boxed warning regarding its explosive nature.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q162867](https://www.wikidata.org/wiki/Q162867), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Start here
+
+> **El-Nabarawy_2019_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md?tab=Simulation) · [record](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.001</text><line x1="277.5" y1="18" x2="277.5" y2="58" stroke="#ddd"/><text x="277.5" y="72" font-size="10" text-anchor="middle">0.01</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="452.5" y1="18" x2="452.5" y2="58" stroke="#ddd"/><text x="452.5" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">El-Nabarawy_2019 · CL</text><circle cx="456.9" cy="30.0" r="4" fill="#78909c"><title>El-Nabarawy_2019 · CL: 1.121 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kielbasa_2019 · CL/F</text><circle cx="269.0" cy="46.0" r="4" fill="#ef6c00"><title>Kielbasa_2019 · CL/F: 0.008 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">El-Nabarawy_2019 · V</text><circle cx="351.8" cy="30.0" r="4" fill="#78909c"><title>El-Nabarawy_2019 · V: 2.9 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kielbasa_2019 · V/F</text><circle cx="474.5" cy="46.0" r="4" fill="#ef6c00"><title>Kielbasa_2019 · V/F: 6.5 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [El-Nabarawy_2019_reference](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | El-Nabarawy NA et al., Assessment Of Spanlastic Vesicles Of Zo…, Drug design, development an… (2019) | [10.2147/DDDT.S220473](https://doi.org/10.2147/DDDT.S220473) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Kielbasa_2019_reference](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019) | [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Lee_1990_reference](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Lee1990_reference.md) | — | general linear (no model) | 5 | Lee FW et al., Pharmacokinetics and pharmacodynamics o…, The Journal of pharmacology… (1990) | — |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Eugene_2016_FBF](drugs/drug_glyceryl_trinitrate/pd_Eugene_2016_FBF.md) | forearm blood flow ← glyceryl_trinitrate · direct sigmoid Emax (Hill) effect | — | Eugene AR, A Model-Based Meta-Analysis Evaluating…, MEDtube science (2016) | — |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ALDH2** | `Q321` · EC50 | formation | [He_2023](drugs/drug_glyceryl_trinitrate/pgx_He_2023_ALDH2_Q321.md) | He JD et al., The effect of vitamin C on nitroglyceri…, British journal of clinical… (2023) | [10.1111/bcp.15755](https://doi.org/10.1111/bcp.15755) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ALDH2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Li_2006](drugs/drug_glyceryl_trinitrate/pgx_Li_2006_ALDH2_Q100.md) | Li Y et al., Mitochondrial aldehyde dehydrogenase-2…, The Journal of clinical inv… (2006) | [10.1172/JCI26564](https://doi.org/10.1172/JCI26564) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glyceryl_trinitrate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `ALDH2` formation | PGx paper |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 10:09 | 6:32 | 2/1/0 | 1/0/0 | 0/0/2 | 227,598/8,380 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 3/9 | 9/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 241 matched, 118 returned
+- **screened:** 7  ·  **relevant:** 7
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_22 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Fung_1984.pdf` | Fung HL et al., Pharmacokinetics of nitroglycerin after…, Journal of pharmaceutical s… (1984) | popPK | 10 | [10.1002/jps.2600730704](https://doi.org/10.1002/jps.2600730704) | [6432996](https://pubmed.ncbi.nlm.nih.gov/6432996) | The study reports quantitative pharmacokinetic parameters (clearance, half-life, bioavailability) for nitroglycerin (glyceryl trinitrate) in rats. |
+| `McNiff_1981.pdf` | McNiff EF et al., Nitroglycerin pharmacokinetics after in…, Journal of pharmaceutical s… (1981) | popPK | 10 | [10.1002/jps.2600700923](https://doi.org/10.1002/jps.2600700923) | [6101155](https://pubmed.ncbi.nlm.nih.gov/6101155) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for nitroglycerin (glyceryl trinitrate) in humans, with specific numeric ranges provided in the text. |
+| `Yap_1978.pdf` | Yap PS et al., Pharmacokinetics of nitroglycerin in ra…, Journal of pharmaceutical s… (1978) | popPK | 10 | [10.1002/jps.2600670446](https://doi.org/10.1002/jps.2600670446) | [417170](https://pubmed.ncbi.nlm.nih.gov/417170) | The study reports quantitative PK parameters (half-life, volume of distribution, bioavailability) for nitroglycerin (glyceryl trinitrate) in rats. |
+| `Armstrong_1983.pdf` | Armstrong PW et al., Steady state pharmacokinetic haemodynam…, British journal of clinical… (1983) | popPK | 9 | [10.1111/j.1365-2125.1983.tb02182.x](https://doi.org/10.1111/j.1365-2125.1983.tb02182.x) | [6414501](https://pubmed.ncbi.nlm.nih.gov/6414501) | The study reports quantitative pharmacokinetic parameters for glyceryl trinitrate (GTN), including a one-compartment model time constant and clearance values, in human patients. |
+| `Nakashima_1987.pdf` | Nakashima E et al., Transdermal bioavailability and first-p…, Journal of pharmacokinetics… (1987) | popPK | 9 | [10.1007/BF01066522](https://doi.org/10.1007/BF01066522) | [3119815](https://pubmed.ncbi.nlm.nih.gov/3119815) | The paper presents a compartmental PK model for nitroglycerin (glyceryl trinitrate) and reports a bioavailability fraction (F), but specific clearance, volume, or rate constant values are not explicitly listed in the provided text. |
+| `Blei_1984.pdf` | Blei AT et al., Role of the liver in the disposition of…, Biochemical pharmacology (1984) | popPK | 8 | [10.1016/0006-2952(84)90645-2](https://doi.org/10.1016/0006-2952(84)90645-2) | [6431989](https://pubmed.ncbi.nlm.nih.gov/6431989) | The study reports quantitative systemic clearance (Cls) values for nitroglycerin (glyceryl trinitrate) in rats. |
+| `Fenton_2006.pdf` | Fenton C et al., 0.4% nitroglycerin ointment : in the tr…, Drugs (2006) | popPK | 8 | [10.2165/00003495-200666030-00006](https://doi.org/10.2165/00003495-200666030-00006) | [16526822](https://pubmed.ncbi.nlm.nih.gov/16526822) | The evidence provides specific quantitative pharmacokinetic parameters (bioavailability, Cmax, Vd, CL, t1/2) for glyceryl trinitrate in the context of a clinical product summary. |
+| `Kwon_1992.pdf` | Kwon HR et al., Pharmacokinetics of nitroglycerin and i…, Biopharmaceutics & drug dis… (1992) | popPK | 8 | [10.1002/bdd.2510130208](https://doi.org/10.1002/bdd.2510130208) | [1550909](https://pubmed.ncbi.nlm.nih.gov/1550909) | The study reports pharmacokinetics of nitroglycerin (glyceryl trinitrate) and its metabolites in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Noonan_1986.pdf` | Noonan PK et al., The bioavailability of oral nitroglycer…, Journal of pharmaceutical s… (1986) | popPK | 8 | [10.1002/jps.2600750306](https://doi.org/10.1002/jps.2600750306) | [3084757](https://pubmed.ncbi.nlm.nih.gov/3084757) | The study reports on the pharmacokinetics (bioavailability) of oral nitroglycerin in humans, but the specific quantitative parameter values (e.g., exact bioavailability percentages, clearance, volume) are not explicitly listed in the provided abstract text, only qualitative descriptions like "less than 1%". |
+| `He_1992.pdf` | He GW et al., Inhibitory effects of glyceryl trinitra…, British journal of clinical… (1992) | pd | 5 | [10.1111/j.1365-2125.1992.tb04130.x](https://doi.org/10.1111/j.1365-2125.1992.tb04130.x) | [1356404](https://www.ncbi.nlm.nih.gov/pubmed/1356404) | metadata signals extractable PD data (EC50) |
+| `Huber_1991.pdf` | Huber T et al., [Biologic availability and hemodynamic…, Arzneimittel-Forschung (1991) | pd | 5 |  | [1772460](https://www.ncbi.nlm.nih.gov/pubmed/1772460) | metadata signals extractable PD data (EC50) |
+| `Ignarro_1989.pdf` | Ignarro LJ et al., Basic polyamino acids rich in arginine,…, Circulation research (1989) | pd | 5 | [10.1161/01.res.64.2.315](https://doi.org/10.1161/01.res.64.2.315) | [2492213](https://www.ncbi.nlm.nih.gov/pubmed/2492213) | metadata signals extractable PD data (EC50) |
+| `Kuhn_1989.pdf` | Kuhn M et al., Endothelium-dependent vasodilatation in…, Journal of cardiovascular p… (1989) | pd | 5 |  | [2484699](https://www.ncbi.nlm.nih.gov/pubmed/2484699) | metadata signals extractable PD data (EC50) |
+| `Argan_2022.pdf` | Argan O et al., In vitro effects of thirty-eight cardia…, Chemical biology & drug des… (2022) | pd | 4 | [10.1111/cbdd.14054](https://doi.org/10.1111/cbdd.14054) | [35395139](https://www.ncbi.nlm.nih.gov/pubmed/35395139) | metadata signals extractable PD data (IC50) |
+| `Dautov_2014.pdf` | Dautov RF et al., Hypoxic potentiation of nitrite effects…, Nitric oxide : biology and… (2014) | pd | 4 | [10.1016/j.niox.2014.05.005](https://doi.org/10.1016/j.niox.2014.05.005) | [24858215](https://www.ncbi.nlm.nih.gov/pubmed/24858215) | metadata signals extractable PD data (EC50) |
+| `De_1999.pdf` | De la Lande IS et al., Tolerance induction by transdermal glyc…, European journal of pharmac… (1999) | pd | 4 | [10.1016/s0014-2999(99)00319-2](https://doi.org/10.1016/s0014-2999(99)00319-2) | [10422642](https://www.ncbi.nlm.nih.gov/pubmed/10422642) | metadata signals extractable PD data (EC50) |
+| `Fujimoto_1994.pdf` | Fujimoto S, Effects of pimobendan, its active metab…, European journal of pharmac… (1994) | pd | 4 | [10.1016/0014-2999(94)90426-x](https://doi.org/10.1016/0014-2999(94)90426-x) | [7875231](https://www.ncbi.nlm.nih.gov/pubmed/7875231) | metadata signals extractable PD data (EC50) |
+| `Maragos_1991.pdf` | Maragos CM et al., Complexes of .NO with nucleophiles as a…, Journal of medicinal chemis… (1991) | pd | 4 | [10.1021/jm00115a013](https://doi.org/10.1021/jm00115a013) | [1956043](https://www.ncbi.nlm.nih.gov/pubmed/1956043) | metadata signals extractable PD data (EC50) |
+| `Salvemini_1993.pdf` | Salvemini D et al., Release of nitric oxide from glyceryl t…, British journal of pharmaco… (1993) | pd | 4 | [10.1111/j.1476-5381.1993.tb13587.x](https://doi.org/10.1111/j.1476-5381.1993.tb13587.x) | [8358544](https://www.ncbi.nlm.nih.gov/pubmed/8358544) | metadata signals extractable PD data (IC50) |
+| `Santamore_1993.pdf` | Santamore WP et al., Disassociation of intrinsic and haemody…, Cardiovascular research (1993) | pd | 4 | [10.1093/cvr/27.11.2058](https://doi.org/10.1093/cvr/27.11.2058) | [8287418](https://www.ncbi.nlm.nih.gov/pubmed/8287418) | metadata signals extractable PD data (EC50) |
+| `Torfgård_1990.pdf` | Torfgård K et al., Relaxation of bovine mesenteric arterie…, Pharmacology & toxicology (1990) | pd | 4 | [10.1111/j.1600-0773.1990.tb00816.x](https://doi.org/10.1111/j.1600-0773.1990.tb00816.x) | [2123985](https://www.ncbi.nlm.nih.gov/pubmed/2123985) | metadata signals extractable PD data (concentration-effect) |
+| `Wallis_1999.pdf` | Wallis RM et al., Tissue distribution of phosphodiesteras…, The American journal of car… (1999) | pd | 4 | [10.1016/s0002-9149(99)00042-9](https://doi.org/10.1016/s0002-9149(99)00042-9) | [10078537](https://www.ncbi.nlm.nih.gov/pubmed/10078537) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-06 10:06 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ahlner_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of drug retention in organ bath materials, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Ahmadi_2019 | irrelevant | 0 | 0 | The study investigates the protective effects of nitroglycerine on renal ischemia-reperfusion injury and reports functional outcomes (creatinine clearance, electrolytes) rather than pharmacokinetic disposition parameters (CL, V, ka) for the drug itself. |
+| popPK | Anfossi_1998 | irrelevant | 0 | 0 | The study investigates platelet sensitivity and cGMP levels (pharmacodynamics) rather than pharmacokinetic disposition parameters like clearance or volume. |
+| PGx | Angus_1982 | not_relevant | 0 | 0 | The paper investigates the pharmacological mechanism of verapamil on coronary arteries and does not report any pharmacogenomic effects on glyceryl trinitrate. |
+| popPK | Argan_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition (Ki values) and does not report pharmacokinetic disposition parameters for glyceryl trinitrate. |
+| PD | Argan_2022 | not_relevant | 0 | 0 | The paper investigates the in vitro effects of cardiac drugs on human serum paraoxonase, not the pharmacodynamic or exposure-response relationship of glyceryl trinitrate in vivo. |
+| popPK | Aronson_2008 | irrelevant | 0 | 0 | The study is a clinical trial comparing the efficacy and safety of clevidipine to nitroglycerin for acute hypertension, not a pharmacokinetic study reporting quantitative disposition parameters for glyceryl trinitrate. |
+| popPK | Axelsson_1992 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of concentration-effect curves in isolated arteries, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Aziz_2025 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of novel pyridazin-3-one derivatives, using nitroglycerin (glyceryl trinitrate) only as a reference standard for vasorelaxant activity, with no PK parameters reported. |
+| popPK | Bai_2011 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilator effects on urotensin II-induced contraction in human arteries, not a pharmacokinetic study reporting disposition parameters for glyceryl trinitrate. |
+| popPK | Bashir_1982 | relevant | 4 | 2 | The study reports pharmacokinetic data for glyceryl trinitrate but only provides peak plasma concentrations and times to half-peak levels, lacking explicit quantitative disposition parameters like clearance (CL), volume of distribution (V), or half-life (t1/2) values. |
+| PD | Bashir_1982 | not_relevant | 2 | 1 | The paper reports PK parameters and qualitative changes in blood pressure and heart rate, but it does not provide a quantitative concentration-effect relationship, dose-response curve, or numeric PD parameters (such as Emax or EC50). |
+| popPK | Bellien_2017 | irrelevant | 0 | 0 | The study focuses on endothelin-1 physiology and flow-mediated vasodilation, using glyceryl trinitrate only as a diagnostic agent for endothelium-independent dilation without reporting its pharmacokinetic parameters. |
+| popPK | Bennett_1988 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of nitrate tolerance in rat aorta, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Bennett_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular relaxation and biotransformation in isolated rat aorta, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for glyceryl trinitrate. |
+| popPK | Berner_1994 | irrelevant | 1 | 0 | The paper is a review of transdermal delivery systems that discusses nitroglycerin qualitatively but does not report original quantitative pharmacokinetic parameter values. |
+| PD | Berner_1994 | not_relevant | 1 | 0 | The text is a general review of transdermal pharmacokinetics that mentions concentration-effect relationships qualitatively but provides no numeric PD parameters or specific exposure-response data for glyceryl trinitrate. |
+| popPK | Bogaert_1987 | irrelevant | 2 | 2 | The text is a review summarizing general literature values (half-life 2-3 min, clearance 216-3270 L/h) rather than reporting original quantitative disposition parameters from a specific study. |
+| PD | Bogaert_1987 | not_relevant | 1 | 0 | The text is a review that explicitly states it has not been possible to find a relationship between plasma concentrations and pharmacological effects, and it provides no numeric PD parameters. |
+| popPK | Booth_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of GTN-induced relaxation and biotransformation in rabbit aorta, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Bozinovski_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxation mechanisms and does not report pharmacokinetic parameters for glyceryl trinitrate. |
+| popPK | Briejer_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of nitric oxide involvement in guinea-pig colon relaxation, using glyceryl trinitrate only as a positive control agent, and reports no pharmacokinetic parameters. |
+| PD | Briejer_1992 | not_relevant | 0 | 0 | The paper reports pharmacological data for 5-HT and uses glyceryl trinitrate (GTN) only as a positive control for NO-mediated relaxation, without providing a dose-response curve or numeric PD parameters for GTN itself. |
+| popPK | Caponas_2001 | irrelevant | 0 | 0 | The paper is a literature review focused on the pharmacodynamic effect of glyceryl trinitrate on uterine relaxation, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| popPK | Cundall_2001 | irrelevant | 0 | 0 | The study reports pharmacodynamic effects (sphincter relaxation) rather than pharmacokinetic parameters (CL, V, t1/2). |
+| popPK | Dautov_2014 | irrelevant | 0 | 0 | no_text gate: only 70 chars of text extracted (&lt; 400) |
+| PD | Dautov_2014 | not_relevant | 0 | 0 | The paper focuses on nitrite (NO2-) effects in hypoxia, not glyceryl trinitrate (GTN), and does not report GTN exposure-response or dose-response parameters. |
+| PGx | Dautov_2014 | not_relevant | 0 | 0 | The paper investigates the effects of hypoxia on nitrite, not the pharmacogenomics of glyceryl trinitrate. |
+| popPK | De_1999 | irrelevant | 0 | 0 | no_text gate: only 62 chars of text extracted (&lt; 400) |
+| PD | De_1999 | not_relevant | 0 | 0 | The provided text is only the title of a paper and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
+| popPK | Deeks_2009 | irrelevant | 0 | 0 | The paper is a review of clevidipine, a different drug, and does not report pharmacokinetic parameters for glyceryl trinitrate. |
+| popPK | DiFabio_2003 | irrelevant | 0 | 0 | The study is a mechanistic investigation of nitrate tolerance using concentration-response curves and enzyme activity assays, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | El-Nabarawy_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of zolmitriptan, using glyceryl trinitrate (NTG) only as an agent to induce a migraine model in rats, not as the subject drug for PK analysis. |
+| PD | El-Nabarawy_2019 | not_relevant | 0 | 0 | The paper reports PK parameters and behavioral scores for zolmitriptan but does not provide a concentration-effect or dose-response analysis with numeric PD parameters (e.g., Emax, EC50) for glyceryl trinitrate or zolmitriptan. |
+| popPK | Erb_1994 | irrelevant | 0 | 0 | The study reports pharmacodynamic equivalence (digital plethysmography) rather than pharmacokinetic parameters for glyceryl trinitrate. |
+| PD | Erb_1994 | not_relevant | 3 | 2 | The study reports bioequivalence metrics (max effect, AUC) for a fixed dose (0.8 mg) but does not provide a concentration-effect curve, dose-response relationship, or numeric PD parameters like Emax/EC50. |
+| popPK | Ernstsen_2021 | irrelevant | 0 | 0 | The study uses glyceryl trinitrate (GTN) as a migraine inducer in a behavioral pharmacology model, not as the subject of a pharmacokinetic analysis. |
+| PD | Ernstsen_2021 | not_relevant | 4 | 3 | The paper reports dose-response relationships for sumatriptan and olcegepant in a GTN mouse model, but it does not report numeric PD parameters (e.g., ED50, Emax) or concentration-effect curves, only statistical significance of dose groups. |
+| popPK | Eugene_2016 | irrelevant | 0 | 0 | The study models dose-response relationships for blood flow (pharmacodynamics) rather than pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Fujimoto_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of pimobendan on isolated rat vessels, using glyceryl trinitrate only as a comparator agent, and reports no pharmacokinetic parameters. |
+| popPK | Fujimoto_1994 | irrelevant | 0 | 0 | no_text gate: only 95 chars of text extracted (&lt; 400) |
+| PD | Fujimoto_1994 | not_relevant | 0 | 0 | The paper investigates the effects of pimobendan, UD-CG 212, and milrinone, not glyceryl trinitrate. |
+| popPK | Fujimoto_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular relaxation in guinea-pig aorta, not a pharmacokinetic study reporting disposition parameters for glyceryl trinitrate. |
+| PD | Fujimoto_2003 | not_relevant | 1 | 0 | The paper reports an EC50 for hydrogen peroxide, but only lists fixed concentrations for glyceryl trinitrate without providing a dose-response curve or numeric PD parameters for it. |
+| popPK | Grayson_1975 | irrelevant | 0 | 0 | The study investigates the hemodynamic and metabolic effects of nitroglycerine (glyceryl trinitrate) on the dog heart, not its pharmacokinetic disposition parameters. |
+| popPK | Greco_2022 | irrelevant | 0 | 0 | The study investigates FAAH inhibitors in a rat migraine model where nitroglycerin (glyceryl trinitrate) is used only as a model inducer, not as the subject of pharmacokinetic analysis. |
+| popPK | Greig_2005 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of vascular function (augmentation index) and does not report pharmacokinetic parameters such as clearance, volume, or half-life for glyceryl trinitrate. |
+| PD | Greig_2005 | not_relevant | 3 | 2 | The study reports time-course hemodynamic effects (peak % change in AIx) for a fixed dose, but does not provide plasma concentration data or fit a concentration-effect model, so no numeric PD parameters (EC50, Emax, etc.) are extractable. |
+| popPK | Gönel_2021 | irrelevant | 0 | 0 | The study is an in-vitro analytical interference test of glyceryl trinitrate on cardiac markers, not a pharmacokinetic study. |
+| popPK | Hashimoto_2003 | irrelevant | 2 | 0 | The paper is a review discussing general pharmacokinetic characteristics and metabolism without reporting specific quantitative disposition parameters (CL, V, ka) for glyceryl trinitrate. |
+| PD | Hashimoto_2003 | not_relevant | 2 | 0 | The text is a review summary that discusses PK/PD concepts and metabolite ratios qualitatively but does not provide specific numeric PD parameters (e.g., Emax, EC50) or extractable concentration-effect curves. |
+| popPK | He_1992 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
+| popPK | He_2023 | irrelevant | 2 | 1 | The paper is a pharmacodynamic/mechanistic study on GTN bioactivation and vasodilation, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
+| popPK | Hodoglugil_1997 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilator effects (EC50) in rat aorta, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Holtz_1989 | irrelevant | 0 | 0 | The study focuses on pharmacodynamics (vasomotion and tolerance) and dose-response curves, not pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Huber_1991 | irrelevant | 0 | 0 | no_text gate: only 129 chars of text extracted (&lt; 400) |
+| popPK | Hussain_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vasodilation and NO formation, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Ignarro_1989 | irrelevant | 0 | 0 | no_text gate: only 183 chars of text extracted (&lt; 400) |
+| PD | Ignarro_1989 | not_relevant | 0 | 0 | The paper focuses on the effects of polyamino acids on nitric oxide formation and does not report pharmacodynamic or exposure-response data for glyceryl trinitrate. |
+| popPK | Ishibashi_2013 | irrelevant | 1 | 0 | The study is a pharmacodynamic/mechanistic investigation of bioactivation pathways (ALDH2 inhibition) and does not report quantitative pharmacokinetic parameters (CL, V, ka, t1/2) for glyceryl trinitrate. |
+| popPK | Kawamoto_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of biotransformation and relaxation in isolated bovine tissues, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
+| popPK | Kielbasa_2019 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetics for monoclonal antibodies (galcanezumab, etc.) used for migraine, and glyceryl trinitrate is only mentioned as a trigger for migraine attacks, not as the subject of PK analysis. |
+| popPK | Korth_1975 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of inotropic effects and action potentials in guinea-pig myocardium, reporting no pharmacokinetic parameters. |
+| popPK | Kuhn_1989 | irrelevant | 0 | 0 | no_text gate: only 136 chars of text extracted (&lt; 400) |
+| popPK | Kulinowski_2026 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of Petasites hybridus constituents in a nitroglycerin-induced migraine model, not the pharmacokinetics of glyceryl trinitrate. |
+| popPK | Kwon_1992 | relevant | 8 | 2 | The study reports pharmacokinetics of nitroglycerin (glyceryl trinitrate) and its metabolites in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Lau_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vasorelaxation and metabolism in rabbit aortic strips, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Leftheriotis_1991 | irrelevant | 0 | 0 | The study investigates hemodynamic effects (blood flow and resistance) of nitroglycerin, not its pharmacokinetic disposition parameters (CL, V, ka). |
+| popPK | Lehenkyi_2002 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular smooth muscle relaxation and calcium dynamics, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Liu_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of metabolic activation in rabbit aorta, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| popPK | MacPherson_2006 | irrelevant | 0 | 0 | The study focuses on the mechanism of nitrate tolerance (PDE5 activity) and hemodynamic responses, not on the quantitative pharmacokinetic disposition parameters (CL, V, ka) of glyceryl trinitrate. |
+| popPK | Maniskas_2018 | irrelevant | 0 | 0 | The study is a mechanistic/efficacy trial in mice assessing neuroprotection and perfusion, not a pharmacokinetic study reporting quantitative disposition parameters for glyceryl trinitrate. |
+| popPK | Maragos_1991 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
+| PD | Maragos_1991 | not_relevant | 0 | 0 | The paper focuses on the chemistry of NO complexes and general vasorelaxant effects, without reporting specific exposure-response or dose-response data for glyceryl trinitrate. |
+| popPK | Matos_2022 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro vasorelaxant activity of nitrate-coumarin derivatives, using glyceryl trinitrate only as a reference compound, and contains no pharmacokinetic parameters. |
+| popPK | Mayer_2011 | irrelevant | 0 | 0 | The study investigates the vascular effects of vandetanib and uses nitroglycerin only as a diagnostic agent for vasodilation, without reporting pharmacokinetic parameters for glyceryl trinitrate. |
+| popPK | McGuire_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of GTN biotransformation and pharmacological action in isolated rat aorta, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Moe_1986 | irrelevant | 2 | 0 | The study reports peak concentrations and hemodynamic effects but does not provide quantitative pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Münzel_1992 | irrelevant | 0 | 0 | The study focuses on the mechanism of interaction between L-methionine and GTN (hemodynamic and cellular effects) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for GTN. |
+| popPK | Nakashima_1987 | relevant | 9 | 2 | The paper presents a compartmental PK model for nitroglycerin (glyceryl trinitrate) and reports a bioavailability fraction (F), but specific clearance, volume, or rate constant values are not explicitly listed in the provided text. |
+| popPK | Nethra_2022 | irrelevant | 1 | 0 | The study is a clinical trial assessing hemodynamic effects (blood pressure, heart rate) rather than pharmacokinetic parameters, and no quantitative PK values (CL, V, ka) are reported. |
+| popPK | Nigam_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition on vascular relaxation and does not report pharmacokinetic disposition parameters. |
+| popPK | Noonan_1986 | relevant | 8 | 2 | The study reports on the pharmacokinetics (bioavailability) of oral nitroglycerin in humans, but the specific quantitative parameter values (e.g., exact bioavailability percentages, clearance, volume) are not explicitly listed in the provided abstract text, only qualitative descriptions like "less than 1%". |
+| popPK | OByrne_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme activity (XOR) and platelet aggregation, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Peacock_2009 | irrelevant | 0 | 0 | The paper is a review of clevidipine, and while it mentions nitroglycerin (glyceryl trinitrate) as a comparator, it does not report quantitative pharmacokinetic parameters for glyceryl trinitrate. |
+| popPK | Pedersen_2015 | irrelevant | 0 | 0 | The study investigates the mechanism of mast cell degranulation (pharmacodynamics) rather than pharmacokinetic disposition parameters. |
+| popPK | Pollak_2001 | irrelevant | 0 | 0 | The paper is a case report on sertraline-induced hypoglycemia and does not report pharmacokinetic parameters for glyceryl trinitrate. |
+| popPK | Radice_1987 | irrelevant | 0 | 0 | The study focuses on radionuclide ventriculography using Au-195m and uses nitroglycerin only as a hemodynamic challenge agent, reporting no pharmacokinetic parameters for glyceryl trinitrate. |
+| popPK | Rösen_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxation and tolerance, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Salvemini_1993 | irrelevant | 0 | 0 | The study focuses on the mechanism of nitric oxide release and tolerance in vitro and in vivo, reporting no pharmacokinetic parameters such as clearance, volume, or half-life for glyceryl trinitrate. |
+| PD | Salvemini_1993 | not_relevant | 0 | 0 | The paper focuses on the mechanism of nitric oxide release by captopril versus enalaprilat, not on the pharmacodynamic exposure-response or dose-response relationship of glyceryl trinitrate itself. |
+| popPK | Santamore_1993 | irrelevant | 0 | 0 | no_text gate: only 75 chars of text extracted (&lt; 400) |
+| PD | Santamore_1993 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to assess a pharmacodynamic relationship. |
+| popPK | Scholefield_2003 | irrelevant | 0 | 0 | The study is a clinical trial assessing the efficacy of glyceryl trinitrate for healing anal fissures and does not report any pharmacokinetic parameters. |
+| popPK | Schröder_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of guanylate cyclase activation (EC50) and does not report pharmacokinetic disposition parameters. |
+| PGx | Schröder_1988 | not_relevant | 0 | 0 | The study investigates cellular tolerance mechanisms in rat fibroblasts and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Schütte_1997 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of aerosolized NO donors in an animal model but does not report any pharmacogenomic effects or gene variant associations. |
+| popPK | Serone_1996 | irrelevant | 0 | 0 | The study investigates hemodynamic tolerance and baroreflex resetting in rabbits, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for glyceryl trinitrate. |
+| popPK | Shackcloth_2008 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasoconstriction in human radial artery rings, not a pharmacokinetic study, and glyceryl trinitrate is used only as a comparator agent. |
+| PD | Shackcloth_2008 | not_relevant | 2 | 1 | The paper only mentions a single high concentration of glyceryl trinitrate (220 µM) that reduced contraction, without providing a dose-response curve, EC50, or other numeric PD parameters for the drug. |
+| popPK | Sherikar_2019 | irrelevant | 0 | 0 | The study investigates novel chalcone derivatives for anti-inflammatory and vasorelaxant effects, using glyceryl trinitrate only as a standard comparator for NO release and EC50, without reporting any pharmacokinetic parameters for glyceryl trinitrate. |
+| popPK | Singh_1987 | irrelevant | 0 | 0 | The paper is a review of sotalol, and glyceryl trinitrate is only mentioned as a comparator for angina consumption, with no PK parameters reported for it. |
+| PD | Singh_1987 | not_relevant | 0 | 0 | The paper is a review of sotalol and only qualitatively mentions that sotalol reduces glyceryl trinitrate consumption, without providing any numeric PD parameters or exposure-response data for glyceryl trinitrate. |
+| popPK | Somogyi-Végh_2019 | irrelevant | 0 | 0 | The paper is a retrospective analysis of drug interaction prevalence in pharmacy dispensing data and does not report any pharmacokinetic parameters for glyceryl trinitrate. |
+| PD | Somogyi-Végh_2019 | not_relevant | 0 | 0 | The paper is a retrospective analysis of drug interaction prevalence in prescription data and does not contain any pharmacokinetic or pharmacodynamic modeling or numeric PD parameters for glyceryl trinitrate. |
+| popPK | Torfgård_1989 | irrelevant | 2 | 0 | The study reports qualitative tissue distribution ratios and peak times but lacks quantitative compartmental PK parameters (CL, V, ka) for glyceryl trinitrate. |
+| PD | Torfgård_1989 | not_relevant | 2 | 1 | The paper reports tissue distribution and a qualitative increase in cGMP in the brain, but provides no numeric concentration-effect data, dose-response curve, or PD parameters (Emax, EC50, etc.) for glyceryl trinitrate. |
+| popPK | Torfgård_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular relaxation in bovine arteries and does not report pharmacokinetic parameters for glyceryl trinitrate. |
+| popPK | Vaksmann_2001 | irrelevant | 2 | 1 | The study is a hemodynamic/echocardiographic trial that reports only sparse plasma concentration measurements (Cmax-like values) without deriving or reporting quantitative pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Wallis_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of sildenafil's effects on phosphodiesterase activity, with glyceryl trinitrate used only as a nitric oxide donor comparator, and no pharmacokinetic parameters are reported. |
+| PD | Wallis_1999 | not_relevant | 0 | 0 | The paper focuses on sildenafil and phosphodiesterase distribution, not glyceryl trinitrate. |
+| popPK | Wiegand_1992 | irrelevant | 2 | 0 | The paper describes a pharmacokinetic study of glyceryl trinitrate but the provided evidence contains only qualitative descriptions of plasma concentration trends and AUC accumulation percentages, lacking specific quantitative disposition parameters (CL, V, ka, t1/2) or compartmental model values. |
+| PD | Wiegand_1992 | not_relevant | 3 | 2 | The paper reports qualitative changes in hemodynamic effects (tachycardia, blood pressure, digital pulse) over time and mentions accumulation, but it does not provide numeric PD parameters (Emax, EC50) or a quantitative concentration-effect curve. |
+| popPK | Yang_2023 | irrelevant | 0 | 0 | The study investigates the use of nitroglycerin as a vasodilator to improve imaging quality in CTA, not its pharmacokinetic parameters. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The paper is a bibliometric analysis of exercise therapy for neurological diseases and contains no pharmacokinetic data for glyceryl trinitrate. |
+| PD | Zhang_2024 | not_relevant | 0 | 0 | The paper is a bibliometric analysis of exercise therapy in neurological diseases and contains no pharmacodynamic or exposure-response data for glyceryl trinitrate. |
+| popPK | Zhou_2019 | irrelevant | 0 | 0 | The study is a mechanistic investigation of vascular endothelium and vasodilation, not a pharmacokinetic study, and reports no disposition parameters. |
+| PD | Zhou_2019 | not_relevant | 2 | 1 | The paper reports qualitative findings on the mechanism of action (endothelium independence) but does not provide numeric concentration-effect curves, dose-response parameters, or a formal PK/PD model fit. |
+| popPK | de_2002 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxation mechanisms, not a pharmacokinetic study, and reports no disposition parameters for glyceryl trinitrate. |
+| popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
+| PD | unknown_1991 | not_relevant | 0 | 0 | The provided text is only a citation header for a conference abstract collection and contains no scientific content, data, or PD parameters. |
+| popPK | unknown_1994 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
+| PD | unknown_1994 | not_relevant | 0 | 0 | The provided text is only a title and file description for a conference abstract collection, containing no specific data, models, or numeric parameters for glyceryl trinitrate. |
+| popPK | unknown_2013 | irrelevant | 0 | 0 | no_text gate: only 157 chars of text extracted (&lt; 400) |
+| PD | unknown_2013 | not_relevant | 0 | 0 | The provided text is only the title of a conference abstract collection and contains no specific data, models, or parameters for glyceryl trinitrate. |
+| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 16 chars of text extracted (&lt; 400) |
+| PD | unknown_2023 | not_relevant | 0 | 0 | The provided text is only a conference title and contains no data, analysis, or parameters regarding glyceryl trinitrate. |
+| popPK | unknown_2026 | irrelevant | 0 | 0 | no_text gate: only 56 chars of text extracted (&lt; 400) |
+| PD | unknown_2026 | not_relevant | 0 | 0 | The provided text is only a title for a conference abstract collection and contains no data, analysis, or parameters regarding glyceryl trinitrate. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglyceryl_trinitrate%5D&body=Drug%3A%20glyceryl_trinitrate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glyceryl_trinitrate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 10:03 UTC</sub>

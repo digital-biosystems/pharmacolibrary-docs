@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Potassium_Li2022v2_reference",
+ "molar_masses": {
+  "central.C": 0.0390983
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.1064814814814816e-09,
+  "F": 0.9,
+  "MM": 0.0390983,
+  "Tlag": 0.0,
+  "VdPerKg": 9.5e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 5.358796296296296e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 557531.0621242485
+ },
+ "reference_peaks": {
+  "central.C": 0.011330537910157779
+ },
+ "stop_time": 12096000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

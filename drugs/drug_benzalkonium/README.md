@@ -1,0 +1,251 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;benzalkonium&quot;}]"></div>
+
+# benzalkonium
+
+- **generic name:** benzalkonium
+- **ATC codes:** `D08AJ01`, `D09AA11`, `R02AA16`
+- **DrugBank:** [DB11105](https://go.drugbank.com/drugs/DB11105) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Benzalkonium is a quaternary ammonium antiseptic used on skin, wounds, and the throat to prevent infection. It is applied topically in liquid, gel, or soap forms, or used as swabs and medicated cloths. The substance is authorized for use in various antiseptic and medicated dressing products.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q72445001](https://www.wikidata.org/wiki/Q72445001), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Bang_2026_WST_1](drugs/drug_benzalkonium/pd_Bang_2026_WST_1.md) | Cell viability (WST-1 assay) ← benzalkonium chloride · inhibition effect | — | Bang JH et al., Effect of aerosolized benzalkonium chlo…, Toxicological research (2026) | [10.1007/s43188-025-00315-x](https://doi.org/10.1007/s43188-025-00315-x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Capper-Parkin_2023_IC50](drugs/drug_benzalkonium/pd_Capper_Parkin_2023_IC50.md) | BSM cell survival (MTT, cytotoxicity) ← benzalkonium chloride (BAC) · direct sigmoid Emax (Hill) effect | — | Capper-Parkin KL et al., Antimicrobial and cytotoxic synergism o…, The Journal of hospital inf… (2023) | [10.1016/j.jhin.2023.02.004](https://doi.org/10.1016/j.jhin.2023.02.004) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Datta_2017_ATP](drugs/drug_benzalkonium/pd_Datta_2017_ATP.md) | ATP synthesis rate ← benzalkonium chloride (BAK) · direct sigmoid Emax (Hill) effect | — | Datta S et al., In Vitro Evaluation of Mitochondrial Fu…, Environmental health perspe… (2017) | [10.1289/EHP1404](https://doi.org/10.1289/EHP1404) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Datta_2017_ER_activity](drugs/drug_benzalkonium/pd_Datta_2017_ER_activity.md) | Estrogen receptor transcriptional activity (luciferase) ← benzalkonium chloride (BAK) · direct sigmoid Emax (Hill) effect | — | Datta S et al., In Vitro Evaluation of Mitochondrial Fu…, Environmental health perspe… (2017) | [10.1289/EHP1404](https://doi.org/10.1289/EHP1404) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Datta_2017_O2_consumption](drugs/drug_benzalkonium/pd_Datta_2017_O2_consumption.md) | Mitochondrial O2 consumption ← benzalkonium chloride (BAK) · direct sigmoid Emax (Hill) effect | — | Datta S et al., In Vitro Evaluation of Mitochondrial Fu…, Environmental health perspe… (2017) | [10.1289/EHP1404](https://doi.org/10.1289/EHP1404) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Dragone_2009_delta](drugs/drug_benzalkonium/pd_Dragone_2009_delta.md) | respiratory inhibition (delta%) ← benzalkonium chloride · inhibition effect | — | Dragone R et al., A new respirometric endpoint-based bios…, Ecotoxicology and environme… (2009) | [10.1016/j.ecoenv.2008.02.011](https://doi.org/10.1016/j.ecoenv.2008.02.011) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Frühling_2001_ammonium_oxidation_activity_potential_nitrification](drugs/drug_benzalkonium/pd_Fr_hling_2001_ammonium_oxidation_activity_potential_nitrific.md) | ammonium oxidation activity (potential nitrification) ← benzalkonium chloride · inhibition effect | — | Frühling W et al., Effect of zinc and benzalkonium chlorid…, Environmental toxicology (2001) | [10.1002/tox.10002](https://doi.org/10.1002/tox.10002) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Huang_2026_5_R1](drugs/drug_benzalkonium/pd_Huang_2026_5_R1.md) | 5α-reductase 1 activity inhibition (testosterone to dihydrotestosterone) ← benzalkonium chloride C18 · inhibition effect | — | Huang Y et al., Benzalkonium chloride and its derivativ…, Bioorganic chemistry (2026) | [10.1016/j.bioorg.2026.109850](https://doi.org/10.1016/j.bioorg.2026.109850) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Huang_2026_2_5_R1_inhibition](drugs/drug_benzalkonium/pd_Huang_2026_2_5_R1_inhibition.md) | 5α-reductase type 1 inhibition ← benzalkonium · inhibition effect | — | Huang Y et al., Structural determinants of oxygenated b…, Ecotoxicology and environme… (2026) | [10.1016/j.ecoenv.2026.119751](https://doi.org/10.1016/j.ecoenv.2026.119751) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Huhtala_2003_WST_1](drugs/drug_benzalkonium/pd_Huhtala_2003_WST_1.md) | cell viability (WST-1) in HCE cells exposed to benzalkonium chloride ← benzalkonium chloride · inhibition effect | — | Huhtala A et al., A collaborative evaluation of the cytot…, Journal of ocular pharmacol… (2003) | [10.1089/108076803762718079](https://doi.org/10.1089/108076803762718079) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Jeong_2025_TU_EC50](drugs/drug_benzalkonium/pd_Jeong_2025_TU_EC50.md) | cytotoxicity (cell viability) ← benzalkonium chloride (BKC) · model not identified | — | Jeong HJ et al., Integrative assessment of mixture toxic…, Toxicology (2025) | [10.1016/j.tox.2025.154060](https://doi.org/10.1016/j.tox.2025.154060) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Türkoğlu_2026_root_growth_inhibition_Allium_cepa_root_meristem_cytotoxicity](drugs/drug_benzalkonium/pd_T_rko_lu_2026_root_growth_inhibition_Allium_cepa_root_merist.md) | root growth inhibition (Allium cepa root meristem, cytotoxicity) ← benzalkonium chloride · direct sigmoid Emax (Hill) effect | — | Türkoğlu Ş, Cytotoxicity and genotoxicity of benzal…, Mutation research. Genetic… (2026) | [10.1016/j.mrgentox.2026.503934](https://doi.org/10.1016/j.mrgentox.2026.503934) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Wang_2026_11_HSD2_inhibition](drugs/drug_benzalkonium/pd_Wang_2026_11_HSD2_inhibition.md) | 11β-HSD2 enzyme activity (cortisol metabolism) inhibition in human placental/renal microsomes ← C16 benzalkonium chloride · inhibition effect | — | Wang Q et al., Benzalkonium disinfectants as emerging…, Bioorganic chemistry (2026) | [10.1016/j.bioorg.2026.109594](https://doi.org/10.1016/j.bioorg.2026.109594) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Wang_2026_KD_SPR](drugs/drug_benzalkonium/pd_Wang_2026_KD_SPR.md) | 11β-HSD2 binding affinity (SPR) to human enzyme ← C16 benzalkonium chloride · inhibition effect | — | Wang Q et al., Benzalkonium disinfectants as emerging…, Bioorganic chemistry (2026) | [10.1016/j.bioorg.2026.109594](https://doi.org/10.1016/j.bioorg.2026.109594) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Wang_2026_cortisol_metabolism_BeWo](drugs/drug_benzalkonium/pd_Wang_2026_cortisol_metabolism_BeWo.md) | Cortisol metabolism in intact human BeWo cells ← C10-C18 benzalkonium chlorides · inhibition effect | — | Wang Q et al., Benzalkonium disinfectants as emerging…, Bioorganic chemistry (2026) | [10.1016/j.bioorg.2026.109594](https://doi.org/10.1016/j.bioorg.2026.109594) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhang_2011_glucose_degradation_in_activated_sludge](drugs/drug_benzalkonium/pd_Zhang_2011_glucose_degradation_in_activated_sludge.md) | glucose degradation in activated sludge ← benzalkonium chloride · inhibition effect | — | Zhang C et al., Evaluation and modeling of benzalkonium…, Water research (2011) | [10.1016/j.watres.2010.09.037](https://doi.org/10.1016/j.watres.2010.09.037) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.50).">in vitro</span> | [Burgalassi_2001_WST_1](drugs/drug_benzalkonium/pd_Burgalassi_2001_WST_1.md) | cell viability (WST-1 cytotoxicity test) ← benzalkonium chloride (BAC) · direct Emax (saturable) effect | — | Burgalassi S et al., Cytotoxicity of potential ocular permea…, Toxicology letters (2001) | [10.1016/s0378-4274(01)00261-2](https://doi.org/10.1016/s0378-4274(01)00261-2) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Rodríguez-López_2022_R](drugs/drug_benzalkonium/pd_Rodr_guez_L_pez_2022_R.md) | biofilm reduction of L. monocytogenes L34 after BAC treatment ← benzalkonium chloride (BAC) · inhibition effect | — | Rodríguez-López P et al., Architectural Features and Resistance t…, Frontiers in microbiology (2022) | [10.3389/fmicb.2022.917964](https://doi.org/10.3389/fmicb.2022.917964) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Seebeck_1998_PACAP_induced_serotonin_release_degranulation_from_rat_peritoneal_mast_cells](drugs/drug_benzalkonium/pd_Seebeck_1998_PACAP_induced_serotonin_release_degranulation_f.md) | PACAP-induced serotonin release (degranulation) from rat peritoneal mast cells ← benzalkonium chloride · inhibition effect | — | Seebeck J et al., Pituitary adenylate cyclase activating…, European journal of pharmac… (1998) | [10.1016/s0014-2999(98)00372-0](https://doi.org/10.1016/s0014-2999(98)00372-0) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Xu_2025_aromatase_activity_human_placental_microsomes](drugs/drug_benzalkonium/pd_Xu_2025_aromatase_activity_human_placental_microsomes.md) | aromatase activity (human placental microsomes) ← benzalkonium chloride (BAC-C10 to C18) · inhibition effect | — | Xu Y et al., Chain Length-Dependent Inhibition of Hu…, Environmental science & tec… (2025) | [10.1021/acs.est.5c05481](https://doi.org/10.1021/acs.est.5c05481) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Xu_2025_aromatase_activity_rat](drugs/drug_benzalkonium/pd_Xu_2025_aromatase_activity_rat.md) | aromatase activity (rat) ← benzalkonium chloride (BAC-C12, BAC-C14) · inhibition effect | — | Xu Y et al., Chain Length-Dependent Inhibition of Hu…, Environmental science & tec… (2025) | [10.1021/acs.est.5c05481](https://doi.org/10.1021/acs.est.5c05481) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Xu_2025_estradiol_secretion_human_BeWo_cells](drugs/drug_benzalkonium/pd_Xu_2025_estradiol_secretion_human_BeWo_cells.md) | estradiol secretion (human BeWo cells) ← benzalkonium chloride (BAC-C12, BAC-C18) · inhibition effect | — | Xu Y et al., Chain Length-Dependent Inhibition of Hu…, Environmental science & tec… (2025) | [10.1021/acs.est.5c05481](https://doi.org/10.1021/acs.est.5c05481) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=benzalkonium).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 23:00 | 8:54 | 0/0/0 | 12/4/0 | 0/0/0 | 201,923/12,174 | ollama / glm-5.3-flash | 8 | 6/16 | 8/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 220 matched, 139 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_13 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Elersek_2018.pdf` | Elersek T et al., Ecotoxicity of disinfectant benzalkoniu…, PeerJ (2018) | pd | 5 | [10.7717/peerj.4986](https://doi.org/10.7717/peerj.4986) | [29938131](https://www.ncbi.nlm.nih.gov/pubmed/29938131) | metadata signals extractable PD data (EC50) |
+| `Lemenuel-Diot_2007.pdf` | Lemenuel-Diot A et al., Mixture modeling for the detection of s…, Journal of pharmacokinetics… (2007) | pd | 5 | [10.1007/s10928-006-9039-8](https://doi.org/10.1007/s10928-006-9039-8) | [17151938](https://www.ncbi.nlm.nih.gov/pubmed/17151938) | metadata signals extractable PD data (PK/PD) |
+| `Costa_2014.pdf` | Costa SP et al., Automated evaluation of pharmaceuticall…, Journal of hazardous materi… (2014) | pd | 4 | [10.1016/j.jhazmat.2013.11.052](https://doi.org/10.1016/j.jhazmat.2013.11.052) | [24355776](https://www.ncbi.nlm.nih.gov/pubmed/24355776) | metadata signals extractable PD data (EC50) |
+| `Czarny_2019.pdf` | Czarny J et al., The Toxic Effect of Herbicidal Ionic Li…, International journal of en… (2019) | pd | 4 | [10.3390/ijerph16060916](https://doi.org/10.3390/ijerph16060916) | [30875750](https://www.ncbi.nlm.nih.gov/pubmed/30875750) | metadata signals extractable PD data (EC50) |
+| `Flanjak_2024.pdf` | Flanjak L et al., Ecotoxicity and rapid degradation of qu…, Chemosphere (2024) | pd | 4 | [10.1016/j.chemosphere.2023.140584](https://doi.org/10.1016/j.chemosphere.2023.140584) | [37925031](https://www.ncbi.nlm.nih.gov/pubmed/37925031) | metadata signals extractable PD data (EC50) |
+| `Gravel_2017.pdf` | Gravel J et al., Adaptation of a bacterial membrane perm…, MedChemComm (2017) | pd | 4 | [10.1039/c7md00113d](https://doi.org/10.1039/c7md00113d) | [30108851](https://www.ncbi.nlm.nih.gov/pubmed/30108851) | metadata signals extractable PD data (EC50) |
+| `Gromaire_2015.pdf` | Gromaire MC et al., Benzalkonium runoff from roofs treated…, Water research (2015) | pd | 4 | [10.1016/j.watres.2015.05.060](https://doi.org/10.1016/j.watres.2015.05.060) | [26081434](https://www.ncbi.nlm.nih.gov/pubmed/26081434) | metadata signals extractable PD data (EC50) |
+| `Higashijima_1990.pdf` | Higashijima T et al., Regulation of Gi and Go by mastoparan,…, The Journal of biological c… (1990) | pd | 4 |  | [2117607](https://www.ncbi.nlm.nih.gov/pubmed/2117607) | metadata signals extractable PD data (EC50) |
+| `Karamov_2022.pdf` | Karamov EV et al., Cationic Surfactants as Disinfectants a…, International journal of mo… (2022) | pd | 4 | [10.3390/ijms23126645](https://doi.org/10.3390/ijms23126645) | [35743090](https://www.ncbi.nlm.nih.gov/pubmed/35743090) | metadata signals extractable PD data (EC50) |
+| `Lytvynenko_2016.pdf` | Lytvynenko I et al., Molecular basis of polyspecificity of t…, Journal of molecular biology (2016) | pd | 4 | [10.1016/j.jmb.2015.12.006](https://doi.org/10.1016/j.jmb.2015.12.006) | [26707198](https://www.ncbi.nlm.nih.gov/pubmed/26707198) | metadata signals extractable PD data (IC50) |
+| `Nakamura_2013.pdf` | Nakamura H et al., Biofilm formation and resistance to ben…, Journal of food protection (2013) | pd | 4 | [10.4315/0362-028X.JFP-12-225](https://doi.org/10.4315/0362-028X.JFP-12-225) | [23834792](https://www.ncbi.nlm.nih.gov/pubmed/23834792) | metadata signals extractable PD data (EC50) |
+| `Park_2014.pdf` | Park KH et al., In vitro and in vivo efficacy of drugs…, Journal of fish diseases (2014) | pd | 4 | [10.1111/jfd.12104](https://doi.org/10.1111/jfd.12104) | [23952334](https://www.ncbi.nlm.nih.gov/pubmed/23952334) | metadata signals extractable PD data (EC50) |
+| `Schmidt_2024.pdf` | Schmidt SBI et al., Differential Selection for Survival and…, Evolutionary applications (2024) | pd | 4 | [10.1111/eva.70017](https://doi.org/10.1111/eva.70017) | [39399585](https://www.ncbi.nlm.nih.gov/pubmed/39399585) | metadata signals extractable PD data (EC50) |
+
+<sub>queue written 2026-10-07 22:56 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ballicu_2026 | irrelevant | 0 | 0 | In-vitro nanoparticle/protein-corona study with no benzalkonium PK parameters. |
+| PD | Ballicu_2026 | not_relevant | 0 | 0 | The paper investigates protein corona formation on silica nanoparticles and does not involve benzalkonium or any pharmacodynamic exposure-response relationship. |
+| popPK | Baquero_2022 | irrelevant | 0 | 0 | A review of antibiotic degradation in the environment with no benzalkonium PK parameters or numeric disposition values. |
+| PD | Baquero_2022 | not_relevant | 1 | 0 | The paper is a conceptual review on environmental antibiotic detoxification and does not report specific numeric PD parameters or concentration-effect data for benzalkonium. |
+| popPK | Bastia_2021 | irrelevant | 0 | 0 | Benzalkonium chloride is only a vehicle preservative; the PK data concern NCX 1741/avanafil, not benzalkonium. |
+| PD | Bastia_2021 | not_relevant | 2 | 1 | The paper reports pharmacodynamic effects (IOP lowering) for NCX 1741, not benzalkonium chloride, which is only listed as a vehicle excipient. |
+| popPK | Belenichev_2025 | irrelevant | 0 | 0 | Neuroprotection study of Angiolin gel in rats with no benzalkonium PK parameters reported. |
+| PD | Belenichev_2025 | not_relevant | 0 | 0 | The paper evaluates the efficacy of Angiolin gel (not benzalkonium) in a rat model using group comparisons without any pharmacokinetic data, concentration measurements, or dose-response modeling. |
+| popPK | Boone_2025 | irrelevant | 0 | 0 | The paper models vinyl chloride, not benzalkonium, and no benzalkonium PK parameters appear. |
+| PD | Boone_2025 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling for vinyl chloride exposure in an acute incident and does not contain any pharmacodynamic or exposure-response analysis for benzalkonium. |
+| popPK | Burgalassi_2001 | irrelevant | 0 | 0 | In-vitro cytotoxicity study of BAC on corneal epithelial cell lines; no PK parameters reported. |
+| popPK | Carbajo_2015 | irrelevant | 0 | 0 | This is an aquatic toxicity/risk assessment study with EC50 values, not a pharmacokinetic study reporting disposition parameters for benzalkonium. |
+| popPK | Cazaubon_2017 | irrelevant | 0 | 0 | The paper reports population PK parameters for teicoplanin, not benzalkonium, which is not mentioned at all. |
+| PD | Cazaubon_2017 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of teicoplanin, not benzalkonium, and does not report any pharmacodynamic or exposure-response parameters. |
+| popPK | Chahdi_1998 | irrelevant | 0 | 0 | Benzalkonium is only used as an inhibitor tool in an in-vitro mast cell mechanism study; no PK parameters. |
+| PD | Chahdi_1998 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50, Emax) for methoctramine, not benzalkonium chloride, which is only mentioned as an inhibitor of the response. |
+| popPK | Chen_2020 | irrelevant | 0 | 0 | Benzalkonium chloride is only used as a pre-growth stress condition for Listeria; no PK parameters for benzalkonium are reported. |
+| popPK | Christen_2017 | irrelevant | 0 | 0 | In-vitro cytotoxicity and gene-expression toxicity study with no pharmacokinetic parameters for benzalkonium. |
+| popPK | Costa_2014 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
+| popPK | Czarny_2019 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| PD | Czarny_2019 | not_relevant | 0 | 0 | The paper focuses on the toxic effects of herbicidal ionic liquids on microbial communities and does not mention benzalkonium or report any pharmacodynamic parameters. |
+| popPK | Daeffler_1999 | irrelevant | 0 | 0 | Benzalkonium is only used as a mast cell treatment tool; no PK parameters reported. |
+| PD | Daeffler_1999 | not_relevant | 4 | 5 | The paper reports concentration-dependent histamine release for spermine and arcaine (with EC50 values) but only qualitatively mentions benzalkonium chloride as an inhibitor without providing numeric PD parameters or a dose-response curve for it. |
+| popPK | Datta_2017 | irrelevant | 0 | 0 | In-vitro toxicity study of CPC with BAK only as a comparator; no PK disposition parameters for benzalkonium. |
+| popPK | Dick_2024 | irrelevant | 0 | 0 | This is a computational/in-vitro study of tetracycline adsorption on nanoplastics; benzalkonium is not the subject drug and no PK parameters are reported. |
+| PD | Dick_2024 | not_relevant | 0 | 0 | The paper investigates the adsorption of tetracycline on nanoplastics and its effect on antibiotic activity, but it does not report any pharmacodynamic or exposure-response relationship for benzalkonium. |
+| popPK | Duflot_2022 | irrelevant | 0 | 0 | The study reports population-PK parameters for morphine and its glucuronides, not for benzalkonium, which is not mentioned as the subject drug. |
+| PD | Duflot_2022 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of morphine and its metabolites, comparing nebulized vs. intravenous routes, and does not report any pharmacodynamic (PD) or exposure-response relationships for benzalkonium or any other drug. |
+| popPK | Elersek_2018 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
+| PD | Elersek_2018 | not_relevant | 0 | 0 | The paper is an ecotoxicology study on algae, not a pharmacodynamic study in humans or animals, and does not report drug PD parameters. |
+| PD | Estévez_1994 | not_relevant | 0 | 0 | The paper focuses on the mechanism of adriamycin-induced histamine release; benzalkonium chloride is only mentioned as a pretreatment that did not affect adriamycin's effect, with no dose-response or PD parameters reported for benzalkonium. |
+| PD | Fisher_1975 | not_relevant | 2 | 1 | The text provides only qualitative descriptions of effects (no effect vs. 10-fold increase) without a formal dose-response curve or numeric PD parameters for benzalkonium chloride. |
+| popPK | Flanjak_2024 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
+| PD | Flanjak_2024 | not_relevant | 0 | 0 | The paper focuses on the ecotoxicity and degradation kinetics of quaternary ammonium compounds (QACs) under UV treatment, not on the pharmacodynamic (exposure-response) relationship of benzalkonium in a biological system. |
+| PD | Fox_1986 | not_relevant | 0 | 0 | Benzalkonium chloride is used solely as a tool to ablate the myenteric plexus, not as the drug of interest for which a pharmacodynamic exposure-response relationship is being characterized. |
+| popPK | Frühling_2001 | irrelevant | 0 | 0 | This is a soil ecotoxicity bioassay reporting EC50 values, not pharmacokinetic disposition parameters for benzalkonium. |
+| popPK | Gao_2026 | irrelevant | 0 | 0 | This is a population PK study of hydromorphone, not benzalkonium; no benzalkonium parameters are present. |
+| PD | Gao_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for hydromorphone, not benzalkonium, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Goulooze_2022 | irrelevant | 0 | 0 | The paper models finerenone, not benzalkonium; no benzalkonium PK parameters are reported. |
+| PD | Goulooze_2022 | not_relevant | 0 | 0 |  |
+| popPK | Gravel_2017 | irrelevant | 0 | 0 | no_text gate: only 141 chars of text extracted (&lt; 400) |
+| popPK | Gromaire_2015 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
+| PD | Gromaire_2015 | not_relevant | 0 | 0 | The paper focuses on environmental runoff and leaching of benzalkonium from roofs, not on pharmacodynamic or exposure-response relationships in biological systems. |
+| popPK | Groothuis_2019 | irrelevant | 0 | 0 | In-vitro cytotoxicity study of benzalkonium sorption; no PK disposition parameters reported. |
+| popPK | Gula_2018 | irrelevant | 0 | 0 | This is a quality-of-life substudy of the VANISH trial with no benzalkonium pharmacokinetic parameters reported. |
+| popPK | He_2023 | irrelevant | 0 | 0 | This is an epidemic modeling paper with no pharmacokinetic parameters for benzalkonium or any drug. |
+| popPK | Higashijima_1990 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
+| PD | Higashijima_1990 | not_relevant | 0 | 0 | The paper focuses on the mechanism of action of mastoparan and related peptides on G-proteins, with no mention of benzalkonium or any exposure-response/PD analysis for it. |
+| popPK | Hilligoss_2026 | irrelevant | 0 | 0 | The paper is about causal mediation of postprandial glucose in type 1 diabetes; benzalkonium is not mentioned and no PK parameters are reported. |
+| PD | Hilligoss_2026 | not_relevant | 0 | 0 | The paper analyzes the causal mediation of carbohydrate intake on glucose in Type 1 diabetes and does not involve benzalkonium or any pharmacodynamic modeling of that drug. |
+| popPK | Huhtala_2003 | irrelevant | 0 | 0 | In-vitro cytotoxicity study (EC50) of benzalkonium chloride, with no pharmacokinetic disposition parameters. |
+| popPK | Jeong_2025 | irrelevant | 0 | 0 | In-vitro cytotoxicity study of benzalkonium mixtures with no pharmacokinetic disposition parameters. |
+| popPK | Kammann_2009 | irrelevant | 0 | 0 | This is an ecotoxicity study of nonylphenol in zebrafish embryos with no benzalkonium PK parameters. |
+| PD | Kammann_2009 | not_relevant | 0 | 0 | The paper studies the toxicity of nonylphenol and its metabolites, not benzalkonium. |
+| popPK | Karamov_2022 | irrelevant | 0 | 0 | no_text gate: only 56 chars of text extracted (&lt; 400) |
+| PD | Karamov_2022 | not_relevant | 0 | 0 | The provided text is only a title and does not contain any data, analysis, or numeric parameters regarding the pharmacodynamic or exposure-response relationship of benzalkonium. |
+| popPK | Kim_2020 | irrelevant | 0 | 0 | Environmental occurrence and ecotoxicity study with no pharmacokinetic disposition parameters for benzalkonium. |
+| popPK | Kolb_1975 | irrelevant | 0 | 0 | In-vitro protein binding study of anilinonaphthalenesulfonate to albumin; no benzalkonium PK parameters. |
+| PD | Kolb_1975 | not_relevant | 0 | 0 | The paper discusses protein-ligand binding cooperativity (anilinonaphthalenesulfonate to albumin) and does not involve benzalkonium or pharmacodynamic exposure-response relationships. |
+| popPK | Koziol_2020 | irrelevant | 0 | 0 | This is a tumor growth model of cisplatin in an animal model; benzalkonium is not mentioned and no PK disposition parameters for it appear. |
+| PD | Koziol_2020 | not_relevant | 0 | 0 | The paper discusses cisplatin dosing regimens and tumor growth modeling, not benzalkonium, and does not report specific numeric PD parameters for the target drug. |
+| PGx | Lambden_2018 | not_relevant | 0 | 0 | The paper concerns DDAH2 rs805305 effects on ADMA metabolism and septic shock mortality; benzalkonium is not studied and no pharmacogenomic effect on its PK/PD parameters is reported. |
+| PD | Lazarus_1989 | not_relevant | 3 | 2 | The paper reports qualitative toxicity rankings and specific concentrations for benzalkonium chloride (0.004-0.02%) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative dose-response curve for BAC in the text. |
+| popPK | Lemenuel-Diot_2007 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
+| PD | Lemenuel-Diot_2007 | not_relevant | 0 | 0 | The paper discusses mixture modeling for PK/PD analysis in general but does not report specific data or numeric PD parameters for benzalkonium. |
+| popPK | Li_2019 | irrelevant | 0 | 0 | The paper models the toxicokinetics of aconitine (a CaoWu alkaloid), not benzalkonium; benzalkonium is not the subject drug and no benzalkonium parameters appear. |
+| popPK | Li_2023 | irrelevant | 0 | 0 | This is a cell force imaging methods paper with no benzalkonium PK data or parameters. |
+| PD | Li_2023 | not_relevant | 0 | 0 | The paper describes a photonic crystal imaging technique for measuring cellular forces and does not report any pharmacodynamic or exposure-response data for benzalkonium. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | This is an exposure/biomonitoring study of QACs in dust and urine with no PK parameters (CL, V, half-life, or model) for benzalkonium. |
+| PGx | Lin_2013 | not_relevant | 0 | 0 | No genetic variants or pharmacogenomic effects on BAC PK/PD parameters are reported; the study describes a toxicology mouse model. |
+| popPK | Linkevicius_2026 | irrelevant | 0 | 0 | This is an ion channel gating kinetics modelling study with no pharmacokinetic parameters for benzalkonium or any drug. |
+| PD | Linkevicius_2026 | not_relevant | 0 | 0 | The paper models voltage-gated potassium channel gating kinetics using Hodgkin-Huxley equations and does not involve benzalkonium or any drug pharmacodynamics. |
+| popPK | Lu_2026 | irrelevant | 0 | 0 | This is a computational toxicity-prediction study of latanoprost analogs with no benzalkonium PK parameters; only in-vitro IC50 cytotoxicity values are reported. |
+| PD | Lu_2026 | not_relevant | 0 | 0 | The paper focuses on computational toxicity prediction for prostaglandin F2α analogs (latanoprost) and does not involve benzalkonium or report any pharmacodynamic exposure-response relationships for it. |
+| PD | Lytvynenko_2016 | not_relevant | 0 | 0 | The paper focuses on the molecular mechanism of the AbeS efflux pump and does not report pharmacodynamic or exposure-response relationships for benzalkonium. |
+| popPK | Mané_2020 | irrelevant | 0 | 0 | The study concerns ceftolozane/tazobactam, not benzalkonium; no benzalkonium parameters are present. |
+| PD | Mané_2020 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of ceftolozane/tazobactam in ECMO patients and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Marrec_2023 | irrelevant | 0 | 0 | This is an ecology paper on stochastic population growth dynamics, not a pharmacokinetic study of benzalkonium; no PK parameters or numeric drug values appear. |
+| PD | Marrec_2023 | not_relevant | 0 | 0 | The paper focuses on stochastic population growth dynamics in ecology and does not contain any pharmacodynamic or exposure-response analysis for benzalkonium. |
+| PD | Mendez_1990 | not_relevant | 0 | 0 | The text is a title regarding the prevention of STDs by a benzalkonium chloride spermicide and does not contain any pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
+| popPK | Mertens_2023 | irrelevant | 0 | 0 | The paper concerns isavuconazole PK in ECMO patients; benzalkonium is not mentioned as a subject drug and no benzalkonium parameters appear. |
+| PD | Mertens_2023 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of isavuconazole in patients on ECMO and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Mousli_1992 | irrelevant | 0 | 0 | Benzalkonium chloride is only used as an inhibitory tool agent in a mast cell mechanism study; no PK parameters for benzalkonium are reported. |
+| PD | Mousli_1992 | not_relevant | 0 | 0 | The paper reports dose-response data for C3a and its analogues, not for benzalkonium chloride, which is only mentioned as an inhibitor. |
+| popPK | Muetter_2026 | irrelevant | 0 | 0 | In vitro microbiology study of antimicrobial kill dynamics in E. coli; no benzalkonium PK parameters reported. |
+| PD | Muetter_2026 | not_relevant | 0 | 0 | The paper focuses on methodological comparisons of luminescence vs. CFU assays for 20 antimicrobials and does not report any data, analysis, or parameters for benzalkonium. |
+| popPK | Nakamura_2013 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
+| PD | Nakamura_2013 | not_relevant | 0 | 0 | The paper focuses on biofilm formation and resistance mechanisms in Listeria monocytogenes, not on pharmacodynamic modeling or exposure-response relationships for a drug. |
+| popPK | Pai_2026 | irrelevant | 0 | 0 | A review of pediatric extemporaneous compounding with no benzalkonium PK parameters or numeric disposition values. |
+| PD | Pai_2026 | not_relevant | 0 | 0 | The paper is a general review of extemporaneous formulations for pediatric patients and does not contain any pharmacodynamic or exposure-response data for benzalkonium. |
+| popPK | Park_2014 | irrelevant | 0 | 0 | no_text gate: only 175 chars of text extracted (&lt; 400) |
+| PD | Park_2014 | not_relevant | 0 | 0 | The paper focuses on the efficacy of drugs against a protozoan parasite in ascidians and does not report pharmacodynamic or exposure-response relationships for benzalkonium. |
+| PD | Patrick_1985 | not_relevant | 4 | 2 | The paper describes a dose-response relationship for benzalkonium chloride (incidence of prolonged thickness is dose-related) but does not provide specific numeric dose values or effect magnitudes in the text to derive parameters like EC50 or Emax. |
+| popPK | Paul_2026 | irrelevant | 0 | 0 | A review of AI in photodynamic therapy with no benzalkonium PK parameters or numeric values. |
+| PD | Paul_2026 | not_relevant | 0 | 0 | The paper is a review on AI in photodynamic therapy and does not report any pharmacodynamic or exposure-response data for benzalkonium. |
+| PD | Pearson_1986 | not_relevant | 0 | 0 | The provided text is a title or fragment about vaginal contraceptives and contains no data, analysis, or mention of benzalkonium or any pharmacodynamic parameters. |
+| PD | Poppinga_2015 | not_relevant | 0 | 0 | The paper concerns radiation dosimetry and detector response functions, not pharmacodynamics or drug exposure-response relationships. |
+| popPK | Qian_2022 | irrelevant | 0 | 0 | Toxicity study of benzalkonium on cyanobacteria with no pharmacokinetic disposition parameters. |
+| popPK | Raharinirina_2025 | irrelevant | 0 | 0 | This is a SARS-CoV-2 evolution/immunity modeling paper with no benzalkonium PK parameters reported. |
+| PD | Raharinirina_2025 | not_relevant | 0 | 0 | The paper focuses on SARS-CoV-2 viral evolution and immune landscape modeling, and does not contain any pharmacodynamic or exposure-response data for benzalkonium. |
+| popPK | Rassu_2024 | irrelevant | 0 | 0 | The PK parameters reported are for isorhamnetin, not benzalkonium, which is only a solubilizing excipient. |
+| popPK | Rouaz_2021 | irrelevant | 0 | 0 | A review of excipient safety in paediatrics with no benzalkonium PK parameters or numeric disposition values. |
+| PD | Rouaz_2021 | not_relevant | 0 | 0 | The paper is a theoretical review of excipients in paediatric formulations and does not report any pharmacodynamic or exposure-response data for benzalkonium. |
+| popPK | Sajjadi_2024 | irrelevant | 0 | 0 | This is a review of tacrolimus stability and formulations, not a PK study of benzalkonium, and no numeric PK parameters appear. |
+| PD | Sajjadi_2024 | not_relevant | 0 | 0 | The paper is a review on the physicochemical stability and formulations of tacrolimus, not benzalkonium, and contains no pharmacodynamic or exposure-response data. |
+| popPK | Sato_2025 | irrelevant | 0 | 0 | The study concerns dexmedetomidine, not benzalkonium; no benzalkonium PK parameters are reported. |
+| PD | Sato_2025 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of dexmedetomidine and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Schmidt_2024 | irrelevant | 0 | 0 | no_text gate: only 122 chars of text extracted (&lt; 400) |
+| PD | Schmidt_2024 | not_relevant | 0 | 0 | The paper focuses on adaptive laboratory evolution (microbiology) and does not report pharmacodynamic or exposure-response relationships for benzalkonium chloride in a pharmacological context. |
+| popPK | Scott_2022 | irrelevant | 0 | 0 | This is an in vitro/in vivo toxicity (LC50/EC50) study where benzalkonium is only one of several test chemicals; no PK disposition parameters are reported. |
+| popPK | Seebeck_1998 | irrelevant | 0 | 0 | Benzalkonium is only an in-vitro inhibitor tool (IC50 for mast cell degranulation), not a PK study of the drug. |
+| PD | Seeger_1976 | not_relevant | 0 | 0 | The paper focuses on the haemolytic properties of phallolysin and only mentions benzalkonium chloride in a single comparative sentence regarding membrane lipid liberation, without providing any dose-response data or PD parameters for benzalkonium. |
+| PGx | Seguin_2019 | not_relevant | 3 | 4 | Identifies CYP2D6/CYP4 enzymes metabolizing BAC in vitro, but no gene variant/genotype effect on PK/PD parameters is reported. |
+| popPK | Sibarov_2025 | irrelevant | 0 | 0 | Electrophysiology study in neuronal cultures with no benzalkonium PK parameters or dosing data. |
+| PD | Sibarov_2025 | not_relevant | 0 | 0 | The paper studies SK channels and Na/K-ATPase modulators (CyPPA, ouabain, NS309) in neuronal cultures and does not mention or analyze benzalkonium. |
+| popPK | Stamos_2025 | irrelevant | 0 | 0 | The paper concerns atropisomerism and crystallization of bRo5 tool compounds (ACBI1, BI201335), with no benzalkonium PK or disposition parameters reported. |
+| PD | Stamos_2025 | not_relevant | 0 | 0 | The paper focuses on the physical chemistry of atropisomerism and crystallization of bRo5 compounds, containing no pharmacodynamic or exposure-response data for benzalkonium. |
+| PD | Stamper_2019 | not_relevant | 0 | 0 | The paper models glucose-insulin dynamics in beta-cells and does not involve the drug benzalkonium. |
+| PD | Tan_2026 | not_relevant | 0 | 0 | The paper reports an IC50 for fenofibric acid (the drug of interest), not for benzalkonium chloride (BAC), which is only used as an agent to induce the disease model. |
+| popPK | Tanaka_1991 | irrelevant | 0 | 0 | This is a PK study of mannitol in cats, not benzalkonium; no benzalkonium parameters are present. |
+| PD | Tang_2023 | not_relevant | 3 | 2 | The paper reports a single IC50 value (&gt;100 μM) for cytotoxicity, which is a static toxicity endpoint rather than a dynamic pharmacodynamic exposure-response or dose-response relationship with derivable PD parameters like Emax or EC50. |
+| popPK | Tezel_2012 | irrelevant | 0 | 0 | In-vitro microbial biotransformation study, not a pharmacokinetic study with disposition parameters for benzalkonium. |
+| PD | Tezel_2012 | not_relevant | 2 | 1 | The paper reports a single EC50 value for a microbial toxicity assay (Microtox) and a biotransformation rate, but does not provide a pharmacodynamic exposure-response model or curve for a drug in a biological system. |
+| popPK | Türkoğlu_2026 | irrelevant | 0 | 0 | Plant (Allium cepa) cytotoxicity/genotoxicity study with EC50 values, not a pharmacokinetic study of benzalkonium disposition. |
+| popPK | Uchida_2022 | irrelevant | 0 | 0 | This is a neurophysiology study of xenon gas effects on rat neuronal networks, with no benzalkonium PK data. |
+| PD | Uchida_2022 | not_relevant | 0 | 0 | The paper investigates the effects of xenon gas on neuronal networks, not benzalkonium, and does not report any pharmacodynamic parameters for the specified drug. |
+| popPK | Vazquez-Rodriguez_2022 | irrelevant | 0 | 0 | The paper is about niclosamide-eluting catheters; benzalkonium is not the subject drug and no PK parameters appear. |
+| PD | Vazquez-Rodriguez_2022 | not_relevant | 0 | 0 | The paper focuses on niclosamide (NIC) and does not report any pharmacodynamic or exposure-response data for benzalkonium. |
+| popPK | Verhaeghe_2013 | irrelevant | 0 | 0 | PET water bolus signal-separation methodology study; no benzalkonium PK parameters reported. |
+| popPK | Villaverde_2019 | irrelevant | 0 | 0 | Methodology paper on observability analysis of biological models with no benzalkonium PK parameters or numeric disposition values. |
+| PD | Villaverde_2019 | not_relevant | 0 | 0 | The paper is a methodological study on system identification and observability for nonlinear biological models and does not report any pharmacodynamic or exposure-response data for benzalkonium. |
+| popPK | Wang_2020 | irrelevant | 0 | 0 | This is a population PK study of caspofungin, not benzalkonium; no benzalkonium parameters appear. |
+| PD | Wang_2020 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of caspofungin, not benzalkonium, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Warner_2016 | irrelevant | 0 | 0 | Disease-progression modeling of Huntington's disease imaging markers; no benzalkonium PK parameters reported. |
+| PD | Warner_2016 | not_relevant | 0 | 0 | The paper models Huntington's disease progression using age and CAG length, not a drug exposure-response or dose-response relationship for benzalkonium. |
+| popPK | Wu_2025 | irrelevant | 0 | 0 | Benzalkonium bromide is only a comparator in an antifungal synthesis study; no PK parameters for benzalkonium are reported. |
+| PGx | Yamada_2016 | not_relevant | 0 | 0 | Paper concerns mitochondrial replacement in oocytes, not benzalkonium PK/PD pharmacogenomics. |
+| popPK | Yamamoto_2021 | irrelevant | 0 | 0 | This is a dental materials study of benzalkonium chloride in resin; no pharmacokinetic parameters are reported. |
+| PD | Yanochko_2010 | not_relevant | 4 | 2 | The paper describes a qualitative shift in the dose-response curve for benzalkonium chloride but does not provide specific numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve in the provided text. |
+| popPK | Zhang_2011 | irrelevant | 0 | 0 | This is an in-vitro activated sludge biodegradation/inhibition study, not a pharmacokinetic study of benzalkonium in any organism. |
+| popPK | Zorko_1998 | irrelevant | 0 | 0 | In-vitro GTPase activity study in rat brain membranes; benzalkonium is only a co-administered agent, no PK parameters for it. |
+| PD | Zorko_1998 | not_relevant | 0 | 0 | The paper reports PD parameters for galparan and mastoparan, but benzalkonium chloride is only mentioned qualitatively as a control that did not prevent inhibition, with no numeric dose-response or PD parameters provided for it. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbenzalkonium%5D&body=Drug%3A%20benzalkonium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_benzalkonium/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

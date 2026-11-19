@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Modafinil_Tao2010_reference",
+ "molar_masses": {
+  "central.C": 0.27335000000000004
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.75e-07,
+  "F": 1.0,
+  "MM": 0.27335000000000004,
+  "VdPerKg": 5.5e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.0005346320346320346,
+  "k21": 4.494177583697234e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662169
+ },
+ "reference_peaks": {
+  "central.C": 4.402316125881854e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

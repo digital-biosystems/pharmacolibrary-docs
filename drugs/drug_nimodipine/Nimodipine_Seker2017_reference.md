@@ -1,0 +1,153 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nimodipine&quot;,&quot;href&quot;:&quot;drugs/drug_nimodipine/&quot;},{&quot;label&quot;:&quot;Seker_2017 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nimodipine_Foucher2025_reference&quot;,&quot;label&quot;:&quot;Foucher_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# nimodipine — `Nimodipine_Seker2017_reference`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> This record was reviewed on 2026-11-07 16:29 UTC (Rejected), but the paper was screened again on 2026-10-07 04:39 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Nimodipine model rejected because the central-peripheral clearance was assigned 200 ml/min, a flow unit, instead of a volume flow rate.
+
+<div class="pk-model-meta" hidden drug="nimodipine" model-id="Nimodipine_Seker2017_reference" status="rejected" stale="true" population="adults with subarachnoid hemorrhage" measured-compound="nimodipine" parameterization="mechanistic" topology="1C"></div>
+
+## Citation
+Seker F, Hesser J, Brockmann MA, Neumaier-Probst E, Groden C, Schubert R et al. Pharmacokinetic Modeling of Intra-arterial Nimodipine Therapy for Subarachnoid Hemorrhage-Related Cerebral Vasospasm. Clinical neuroradiology 27(2):199–203 (2017).
+  ·  DOI: [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1)
+
+## Population and dosing
+
+**Population:** adults with subarachnoid hemorrhage · condition subarachnoid hemorrhage · age group adult.
+
+## Model
+
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 3 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| ICA blood flow | Q | 200 | ml/min |
+| clearance | CL | 70 | l/h |
+| maximal concentration | Cmax | 85 | % |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**Nimodipine model rejected because the central-peripheral clearance was assigned 200 ml/min, a flow unit, instead of a volume flow rate.**
+
+The structural parameter for central-peripheral clearance was listed with a value of 200 and unit ml/min, creating a dimension mismatch with the required flow rate dimension. This error was identified in a record derived solely from the paper's abstract, where summary statistics substituted for fitted model estimates. A second reader also could not confirm the clearance value of 70 l/h or the maximal concentration of 85%. Extracted — nimodipine: Q 200 ml/min, CL 70 l/h, Cmax 85 %.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nimodipine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| ICA blood flow | `Q30` · Q | 200 | ml/min | 3.333e-06 | m3/s | ml/min | llm_corrected (0.6) | Seker_2017:abstract |
+| clearance | `Q22` · CL | 70 | l/h | 1.944e-05 | m3/s | l/h | exact (1) | Seker_2017:abstract |
+| maximal concentration | `Q32` · Cmax | 85 | % |  |  | % | llm_confirmed (0.6) | Seker_2017:abstract |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- dropped unlinked row (NIL): 'continuous IA nimodipine infusion' — extend the ontology if this is a real PK parameter (source ['Seker_2017:abstract', 'Seker_2017:abstract'])
+- unit_dimension_mismatch: 'maximal concentration' → Q32 (unit 'dimensionless' vs ontology '[mass] / [length] ** 3') — route to review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nimodipine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
+- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- no GROBID TEI available — transcribed from abstract in Seker_2017_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+
+<details><summary>9 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance]` | 70 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ica blood flow]` | 200 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ica blood flow]` |  | 200 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal concentration achieved within the first minute of ia infusion]` |  | 85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximal concentration]` | 85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state cerebral arterial concentration]` |  | 200 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | nimodipine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | nimodipine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 3 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Seker_2017:abstract'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Seker_2017:abstract'] |
+| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | % (dimensionless) | ['Seker_2017:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70 | ['Seker_2017:abstract'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 70 L/h | ['Seker_2017:abstract'] |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnimodipine%5D%20Nimodipine_Seker2017_reference&body=Drug%3A%20nimodipine%0ARecord%3A%20Nimodipine_Seker2017_reference%0APaper%3A%20Seker_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nimodipine/Nimodipine_Seker2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 04:39 UTC</sub>

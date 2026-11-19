@@ -1,0 +1,145 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J02A&quot;,&quot;href&quot;:&quot;atc/J02A.md&quot;},{&quot;label&quot;:&quot;micafungin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Caballero_2023_N&quot;,&quot;label&quot;:&quot;Caballero_2023 \u00b7 N&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_micafungin/pd_Caballero_2023_N.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# micafungin
+
+- **generic name:** micafungin
+- **ATC codes:** `J02AX05`
+- **DrugBank:** [DB01141](https://go.drugbank.com/drugs/DB01141) · **PubChem:** [CID 477468](https://pubchem.ncbi.nlm.nih.gov/compound/477468)
+- **molar mass:** 1270.274 g/mol (C56H71N9O23S) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+It is widely used and authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q6827850](https://www.wikidata.org/wiki/Q6827850), [Wikipedia](https://en.wikipedia.org/wiki/Micafungin?oldid=1338331511) (CC BY-SA 4.0), the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| micafungin | parent | 1270.27 | C56H71N9O23S | DrugBank | [477468](https://pubchem.ncbi.nlm.nih.gov/compound/477468) | Albanell-Fernández_2025 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [Albanell-Fernández_2025_dowell_2004_46](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_dowell_2004_46.md) | held back | 1-compartment, IV | 0 | Albanell-Fernández M, Echinocandins Pharmacokinetics: A Compr…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01461-5](https://doi.org/10.1007/s40262-024-01461-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ dupont_2017_45](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_dupont_2017_45.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ garbez_2021_16](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_garbez_2021_16.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ garbez_2021_31](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_garbez_2021_31.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ garbez_2022_40](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_garbez_2022_40.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ garc_a_de_lorenzo_2016_52](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_garc_a_de_lorenzo_2016_52.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ grau_2015_17](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_grau_2015_17.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ hall_2023_48](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_hall_2023_48.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ hope_2015_24](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_hope_2015_24.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ ikawa_2009_50](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_ikawa_2009_50.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ jullien_2017_34](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_jullien_2017_34.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ kapralos_2020_23](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_kapralos_2020_23.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ kapralos_2021_22](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_kapralos_2021_22.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ lakota_2018_61](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_lakota_2018_61.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ liu_2013_47](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_liu_2013_47.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ luque_2019_18](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_luque_2019_18.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ m_rtson_2020_38](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_m_rtson_2020_38.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ martial_2016_39](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_martial_2016_39.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ martial_2017_53](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_martial_2017_53.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ maseda_2014_51](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_maseda_2014_51.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ maseda_2018_19](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_maseda_2018_19.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ niu_2020_32](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_niu_2020_32.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ p_rez_pitarch_2018_15](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_p_rez_pitarch_2018_15.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ pressiat_2022_28](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_pressiat_2022_28.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ roepcke_2023_33](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_roepcke_2023_33.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ roger_2017_14](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_roger_2017_14.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ rubino_2021_62](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_rubino_2021_62.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ tabata_2006_58](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_tabata_2006_58.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ tenorio_ca_am_s_2019_54](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_tenorio_ca_am_s_2019_54.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ w_rthwein_2012_41](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_w_rthwein_2012_41.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ w_rthwein_2013_43](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_w_rthwein_2013_43.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ wang_2020_42](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_wang_2020_42.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ wasmann_2018_21](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_wasmann_2018_21.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ wasmann_2019_20](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_wasmann_2019_20.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ wu_2022_36](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_wu_2022_36.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ yang_2019_37](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_yang_2019_37.md) | held back | 1-compartment, IV | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub> | [↳ zhong_2021_35](drugs/drug_micafungin/Micafungin_AlbanellFernndez2025_zhong_2021_35.md) | held back | 1-compartment, IV | 0 |  |  |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Caballero_2023_N](drugs/drug_micafungin/pd_Caballero_2023_N.md) | log CFU/mL ← micafungin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Caballero U et al., PK/PD modeling and simulation of the in…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12949](https://doi.org/10.1002/psp4.12949) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kovanda_2018_mycologic_response](drugs/drug_micafungin/pd_Kovanda_2018_mycologic_response.md) | mycologic response ← micafungin · categorical (graded) response model | — | Kovanda LL et al., Exposure-Response Analysis of Micafungi…, The Pediatric infectious di… (2018) | [10.1097/INF.0000000000001957](https://doi.org/10.1097/INF.0000000000001957) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=micafungin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `COMT` substrate | DrugBank actor |
+| metabolism | kidney | `COMT` substrate | DrugBank actor |
+| metabolism | liver | `COMT` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ARSA (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 12:46 | 10:08 | 37/0/0 | 2/0/0 | 0/0/0 | 332,578/20,400 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 65 matched, 20 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 37  ·  extracted 0  ·  needs review 37  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Hope_2010.pdf` | Hope WW et al., Population pharmacokinetics of micafung…, Antimicrobial agents and ch… (2010) | popPK | 10 | [10.1128/AAC.01679-09](https://doi.org/10.1128/AAC.01679-09) | [20308367](https://pubmed.ncbi.nlm.nih.gov/20308367) | The study describes a population PK model and mentions specific parameter trends, but the specific numeric values for clearance, volume, or intercompartmental clearance are not explicitly listed in the provided text. |
+| `Mainas_2020.pdf` | Mainas E et al., Comparative pharmacokinetics of the thr…, The Journal of antimicrobia… (2020) | popPK | 9 | [10.1093/jac/dkaa265](https://doi.org/10.1093/jac/dkaa265) | [32696036](https://pubmed.ncbi.nlm.nih.gov/32696036) | The study reports quantitative PK parameters (AUC24) and discusses Clearance (CL) and Volume (V) contributions for micafungin in humans, but specific numeric values for CL and V are not explicitly listed in the abstract text. |
+| `Wei_2023.pdf` | Wei XC et al., Assessment of micafungin dosage regimen…, Journal of chemotherapy (Fl… (2023) | popPK | 5 | [10.1080/1120009X.2023.2212986](https://doi.org/10.1080/1120009X.2023.2212986) | [37190751](https://pubmed.ncbi.nlm.nih.gov/37190751) | The study uses micafungin PK parameters for Monte Carlo simulations, but the specific numeric PK values (CL, V, etc.) are not provided in the evidence; they are likely in the methods or supplementary material. |
+
+<sub>queue written 2026-10-07 12:37 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Beredaki_2023 | irrelevant | 3 | 0 | The study is an in vitro PK/PD model determining MIC breakpoints and pharmacodynamic indices (fAUC/MIC), rather than reporting quantitative disposition parameters (CL, V, Q) for micafungin; specific PK values are either simulated or referenced from other studies. |
+| popPK | Beredaki_2024 | irrelevant | 1 | 0 | The study is an in vitro pharmacodynamic (PD) model that simulates PK profiles to assess efficacy, rather than measuring population pharmacokinetic parameters (CL, V, ka) for micafungin in vivo. |
+| popPK | Caballero_2023 | irrelevant | 0 | 0 | The study is an in vitro PK/PD modeling study where micafungin is a co-administered drug, and no quantitative PK parameters (CL, V, etc.) for micafungin are reported or extracted. |
+| popPK | Gumbo_2007 | irrelevant | 2 | 0 | This is a review article summarizing the impact of PK/PD on dosing strategies; it discusses findings from other studies but does not provide original quantitative PK parameter values (CL, V, etc.) for micafungin in the text. |
+| popPK | Gumbo_2015 | irrelevant | 2 | 0 | The text is a review/opinion piece that cites literature values (e.g., t1/2 = 14h) but does not report original quantitative PK parameters (CL, V, Q, ka) or a compartmental model derived from the study. |
+| popPK | Hope_2010 | relevant | 10 | 3 | The study describes a population PK model and mentions specific parameter trends, but the specific numeric values for clearance, volume, or intercompartmental clearance are not explicitly listed in the provided text. |
+| popPK | Horcajada_2015 | irrelevant | 0 | 0 | The text is a general review/commentary mentioning micafungin as a potential alternative based on PK/PD concepts but does not report any quantitative PK parameters or original study data. |
+| popPK | McGrath_2025 | irrelevant | 1 | 0 | The study is an in-vitro/ex-vivo mechanistic investigation of CRRT clearance, not a human or animal pharmacokinetic study reporting disposition parameters like volume or elimination half-life. |
+| popPK | Scott_2020 | irrelevant | 2 | 0 | The paper is a review article that summarizes existing data but does not present original quantitative pharmacokinetic parameter values for micafungin in the provided text. |
+| popPK | Siopi_2021 | irrelevant | 2 | 1 | This is an in vitro PK/PD study modeling drug exposure against fungal isolates; it does not report quantitative disposition parameters (CL, V, Q, ka) for micafungin in a biological subject. |
+| popPK | Vazquez_2005 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of anidulafungin, not micafungin, which is only mentioned as a search keyword/comparator. |
+| popPK | Wei_2023 | relevant | 5 | 0 | The study uses micafungin PK parameters for Monte Carlo simulations, but the specific numeric PK values (CL, V, etc.) are not provided in the evidence; they are likely in the methods or supplementary material. |
+| popPK | Xie_2022 | irrelevant | 1 | 0 | The study utilizes existing population PK models for Monte Carlo simulations to assess PK/PD target attainment and does not report new quantitative disposition parameters (CL, V, etc.) for micafungin. |
+| popPK | Yang_2016 | irrelevant | 2 | 0 | The study is a Monte Carlo simulation of PK/PD target attainment using previously published data and reports only response rates (CFR), not specific pharmacokinetic parameter estimates (CL, V, etc.) for micafungin. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmicafungin%5D&body=Drug%3A%20micafungin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_micafungin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 12:37 UTC</sub>

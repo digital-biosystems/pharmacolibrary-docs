@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Glucose_Xiang2025_reference",
+ "molar_masses": {
+  "central.C": 0.180156
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.361111111111111e-06,
+  "F": 1.0,
+  "MM": 0.180156,
+  "Tlag": 0.0,
+  "VdPerKg": 0.03211428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0008583333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6925.851703406814
+ },
+ "reference_peaks": {
+  "central.C": 4.333375367178337e-05
+ },
+ "stop_time": 864000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

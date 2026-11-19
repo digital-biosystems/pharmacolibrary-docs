@@ -1,0 +1,55 @@
+{
+ "model_id": "Trofinetide_Darwish2024_PD_csbs_dp_it",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 8.67,
+  "exposure_per_s": 0.001,
+  "slope": -1.85185185185e-08
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 8.67,
+  "0.0009999999999999998": 8.669999999981481
+ },
+ "stop_time": 1000.0,
+ "subtitle": "CSBS-DP-IT Social Composite score (CSBS-DP-IT) against trofinetide concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "μg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "",
+  "slope": {
+   "display_only": false,
+   "display_unit": "1/day",
+   "factor": 1.1574074074074073e-05,
+   "si_unit": "1 / second"
+  }
+ },
+ "x_axis": {
+  "display_unit": "μg/mL",
+  "factor": 0.0009999999999999998,
+  "label": "trofinetide concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "CSBS-DP-IT Social Composite score (CSBS-DP-IT)"
+ }
+}

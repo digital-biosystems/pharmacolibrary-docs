@@ -1,0 +1,92 @@
+{
+ "dose_source": "paper",
+ "model_id": "Omeprazole_Zhao2018_reference",
+ "molar_masses": {
+  "C_M1": 0.361416,
+  "C_M2": 0.361416,
+  "central.C": 0.345416
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "5-hydroxy-omeprazole",
+  "C_M2": "omeprazole sulfone",
+  "C_central": "omeprazole"
+ },
+ "observables": [
+  "central.C",
+  "C_M1",
+  "C_M2"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  70.0,
+  210.0
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 2.35e-07,
+  "CLm2": 3.611111111111111e-08,
+  "F": 1.0,
+  "MW": 0.345416,
+  "MW_m1": 0.361416,
+  "MW_m2": 0.361416,
+  "Tlag": 9000.0,
+  "Vd1": 0.000513,
+  "Vd1m1": 0.001,
+  "Vd1m2": 0.001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05,
+  "ka": 0.00026388888888888886,
+  "q1_m11": 1.827777777777778e-07,
+  "q1_m21": 3.888888888888889e-08
+ },
+ "pgx": {
+  "effects": {
+   "Ultra": [
+    {
+     "compound": "5-hydroxy-omeprazole",
+     "parameter": "θ2",
+     "reference": 0.658,
+     "scale": "linear_fractional",
+     "theta": 1.0,
+     "value": 1.7886294431260517
+    }
+   ]
+  },
+  "gene": "CYP2C19",
+  "labels": {
+   "Normal": "Normal metabolizer (reference)",
+   "Ultra": "Ultrarapid metabolizer"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Normal",
+   "Ultra"
+  ],
+  "phenotypes": {
+   "Normal": {},
+   "Ultra": {
+    "q1_m11": 4.968415119794589e-07
+   }
+  },
+  "record": "Zhao_2018",
+  "reference": "Normal",
+  "sources": [
+   "Zhao_2018 covariate f_cyp2c19_em_um"
+  ]
+ },
+ "reference_peak_times": {
+  "C_M1": 16060.012031685326,
+  "C_M2": 21257.378553876937,
+  "central.C": 12302.06890168359
+ },
+ "reference_peaks": {
+  "C_M1": 0.020102894777033316,
+  "C_M2": 0.009042664962595948,
+  "central.C": 0.03837935463030661
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

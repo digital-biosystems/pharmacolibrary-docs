@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 3 mg oral (L04AH01)",
+ "model_id": "Sirolimus_Sabo2021_reference",
+ "molar_masses": {
+  "central.C": 0.9142
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.638888888888888e-06,
+  "F": 1.0,
+  "MM": 0.9142,
+  "Tlag": 2268.0,
+  "VdPerKg": 0.00127,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-06,
+  "ka": 0.00013472222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12466.53306613226
+ },
+ "reference_peaks": {
+  "central.C": 1.619800330491494e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,102 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R01A&quot;,&quot;href&quot;:&quot;atc/R01A.md&quot;},{&quot;label&quot;:&quot;antazoline&quot;}]"></div>
+
+# antazoline
+
+- **generic name:** antazoline
+- **ATC codes:** `R01AC04`, `R06AX05`
+- **DrugBank:** [DB08799](https://go.drugbank.com/drugs/DB08799) · **PubChem:** [CID 2200](https://pubchem.ncbi.nlm.nih.gov/compound/2200)
+- **molar mass:** 265.3529 g/mol (C17H19N3) — DrugBank
+- **groups:** approved
+
+## About
+
+Antazoline is a first-generation antihistamine used to treat nasal congestion and allergic conjunctivitis. It is administered as an ophthalmic solution in eye drops, often combined with other agents, to relieve eye symptoms. The drug is approved for use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q771975](https://www.wikidata.org/wiki/Q771975), [Wikipedia](https://en.wikipedia.org/wiki/Antazoline?oldid=1330661699) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Li_2021_HBV_DNA](drugs/drug_antazoline/pd_Li_2021_HBV_DNA.md) | HBV DNA in the extracellular supernatant ← antazoline hydrochloride · direct sigmoid Emax (Hill) effect | — | Li J et al., Repurposing of Antazoline Hydrochloride…, Virologica Sinica (2021) | [10.1007/s12250-020-00306-2](https://doi.org/10.1007/s12250-020-00306-2) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=antazoline).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: HRH1 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-13 12:07 | 2:48 | 0/0/0 | 1/0/0 | 0/0/0 | 68,979/4,674 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 33 matched, 33 returned
+- **screened:** 6  ·  **relevant:** 4
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Giebułtowicz_2016.pdf` | Giebułtowicz J et al., Application of a novel liquid chromatog…, Journal of pharmaceutical a… (2016) | popPK | 10 | [10.1016/j.jpba.2016.01.060](https://doi.org/10.1016/j.jpba.2016.01.060) | [26895496](https://pubmed.ncbi.nlm.nih.gov/26895496) | The abstract explicitly reports quantitative non-compartmental PK parameters (half-life, Vss, MRT, AUC, and Clearance) for antazoline in human subjects. |
+| `Wang_2013.pdf` | Wang R et al., Determination of antazoline hydrochlori…, Biomedical chromatography :… (2013) | popPK | 7 | [10.1002/bmc.2965](https://doi.org/10.1002/bmc.2965) | [23847054](https://pubmed.ncbi.nlm.nih.gov/23847054) | Reports IV PK in rats with terminal half-life (3.53 h) and excretion percentages, but lacks explicit numeric values for clearance (CL), volume (V), and rate constants (ka/kel). |
+| `Li_2013.pdf` | Li X et al., Determination of antazoline hydrochlori…, Journal of chromatography.… (2013) | popPK | 6 | [10.1016/j.jchromb.2013.04.021](https://doi.org/10.1016/j.jchromb.2013.04.021) | [23669609](https://pubmed.ncbi.nlm.nih.gov/23669609) | The study describes a PK analysis of antazoline in Beagle dogs, but the evidence text only contains analytical method details and lacks the specific numeric disposition parameters (CL, V, ka, etc.). |
+| `Mourtada_2000.pdf` | Mourtada M et al., Effects of imidazoline binding site lig…, Naunyn-Schmiedeberg's archi… (2000) | pd | 5 | [10.1007/s002109900158](https://doi.org/10.1007/s002109900158) | [10685869](https://www.ncbi.nlm.nih.gov/pubmed/10685869) | metadata signals extractable PD data (EC50) |
+| `Wethmar_2001.pdf` | Wethmar U et al., Interactions of ligands at angiotensin…, Japanese journal of pharmac… (2001) | pd | 5 | [10.1254/jjp.85.167](https://doi.org/10.1254/jjp.85.167) | [11286399](https://www.ncbi.nlm.nih.gov/pubmed/11286399) | metadata signals extractable PD data (IC50) |
+| `Berdeu_1995.pdf` | Berdeu D et al., Evidence for two different imidazoline…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0014-2999(94)00757-x](https://doi.org/10.1016/0014-2999(94)00757-x) | [7774667](https://www.ncbi.nlm.nih.gov/pubmed/7774667) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-13 12:07 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Berdeu_1995 | irrelevant | 0 | 0 | The study is a mechanistic investigation of imidazoline receptor binding and physiological effects (insulin secretion, vasoconstriction) in rat pancreas, not a pharmacokinetic study reporting disposition parameters for antazoline. |
+| popPK | Dunne_1991 | irrelevant | 0 | 0 | In-vitro patch-clamp study of K+ATP channel blockade; antazoline is only a test agent with no PK disposition parameters. |
+| popPK | Giebułtowicz_2016_2 | irrelevant | 0 | 0 | The paper is an analytical method development study focusing on sample extraction techniques and does not report pharmacokinetic parameters. |
+| popPK | Giebułtowicz_2020 | irrelevant | 1 | 0 | The study is a qualitative metabolite identification study using LC-MS/MS and does not report quantitative pharmacokinetic parameters (CL, V, ka) for antazoline. |
+| popPK | Li_2013 | relevant | 6 | 0 | The study describes a PK analysis of antazoline in Beagle dogs, but the evidence text only contains analytical method details and lacks the specific numeric disposition parameters (CL, V, ka, etc.). |
+| popPK | Li_2021 | irrelevant | 0 | 0 | In-vitro antiviral efficacy study of antazoline with no pharmacokinetic disposition parameters reported. |
+| popPK | Milhaud_2000 | irrelevant | 0 | 0 | This is a mechanistic in-vitro study investigating NMDA receptor blockade, not a pharmacokinetic study, and contains no PK parameters. |
+| popPK | Mourtada_1997 | irrelevant | 0 | 0 | In vitro rat islet pharmacology study; antazoline is only a test compound, no PK parameters reported. |
+| popPK | Mourtada_2000 | irrelevant | 0 | 0 | In-vitro cell biology study of imidazoline ligands on beta-cell growth; no PK parameters for antazoline. |
+| popPK | Okumura_1992 | irrelevant | 0 | 0 | In-vitro pharmacology study of K+ channel antagonism in rat portal vein; antazoline is only a comparator with no PK parameters. |
+| popPK | Olmos_1999 | irrelevant | 0 | 0 | In-vitro neuroprotection/pharmacology study; antazoline is a test compound, no PK parameters reported. |
+| popPK | Onaran_1990 | irrelevant | 0 | 0 | In-vitro receptor-binding kinetics of antazoline as an antagonist in rabbit arteries, not pharmacokinetic disposition parameters; no numeric PK values present. |
+| popPK | Pinthong_2004 | irrelevant | 0 | 0 | The study is an in-vitro investigation of platelet aggregation by imidazoline agents, not a pharmacokinetic study of antazoline disposition parameters. |
+| popPK | Raasch_1999 | irrelevant | 0 | 0 | The study is mechanistic/in-vitro pharmacology regarding MAO inhibition and does not report pharmacokinetic parameters for antazoline. |
+| popPK | Sakuta_1994 | irrelevant | 0 | 0 | The paper is an electrophysiological study in Xenopus oocytes measuring K+ current inhibition (IC50), not a pharmacokinetic study of antazoline. |
+| popPK | Sharif_1994 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay focused on emedastine, and antazoline is only used as a comparator ligand with no pharmacokinetic parameters reported. |
+| popPK | Sharif_1996 | irrelevant | 0 | 0 | The paper describes in vitro ligand binding and functional studies for olopatadine, using antazoline only as a comparator, and does not report any pharmacokinetic parameters. |
+| popPK | Sharif_1996_2 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of olopatadine where antazoline is only used as a comparator for binding affinity, and no pharmacokinetic parameters are reported. |
+| popPK | Wethmar_2001 | irrelevant | 0 | 0 | no_text gate: only 77 chars of text extracted (&lt; 400) |
+| popPK | Wiedmann_2026 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ion channel interactions and does not report pharmacokinetic disposition parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bantazoline%5D&body=Drug%3A%20antazoline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_antazoline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

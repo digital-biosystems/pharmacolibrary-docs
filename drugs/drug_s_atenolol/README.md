@@ -1,0 +1,197 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;s-atenolol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_2007_HR&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/pd_van_2007_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# s-atenolol
+
+- **generic name:** s-atenolol
+- **ATC codes:** `C07AB11`
+- **DrugBank:** [DB13443](https://go.drugbank.com/drugs/DB13443) · **PubChem:** none
+- **molar mass:** 266.341 g/mol (C14H22N2O3) — DrugBank
+- **groups:** experimental
+
+## About
+
+Atenolol is a selective beta blocker used for high blood pressure and heart attack. The drug is classified as experimental.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q24255323](https://www.wikidata.org/wiki/Q24255323) and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| atenolol | metabolite | 266.341 | C14H22N2O3 | PubChem | [2249](https://pubchem.ncbi.nlm.nih.gov/compound/2249) | Buck_1989, Kir_2025, Mason_1979 |
+| s_atenolol | metabolite | 266.341 | C14H22N2O3 | DrugBank | — | Buck_1989, Kir_2025, Mason_1979 |
+
+## Start here
+
+> **Buck_1989_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> children, n = &gt;=10. [Run it in the simulator](drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md?tab=Simulation) · [record](drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Buck_1989_reference](drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989) | [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Kir_2025_reference](drugs/drug_s_atenolol/SAtenolol_Kir2025_reference.md) | — | 1-compartment (no model) | 1 | Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025) | [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q73 — no SI value to build from</sub> | [Mason_1979_reference](drugs/drug_s_atenolol/SAtenolol_Mason1979_reference.md) | — | 1-compartment (no model) | 8 | Mason WD et al., Kinetics and absolute bioavailability o…, Clinical pharmacology and t… (1979) | [10.1002/cpt1979254408](https://doi.org/10.1002/cpt1979254408) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Jia_2011_blood_pressure](drugs/drug_s_atenolol/pd_Jia_2011_blood_pressure.md) | blood pressure ← atenolol · delayed effect through an effect compartment | — | Jia J et al., Evaluation of pharmacokinetic and pharm…, Journal of pharmaceutical a… (2011) | [10.1016/j.jpba.2011.01.044](https://doi.org/10.1016/j.jpba.2011.01.044) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sowinski_1995_percent_reductions_in_exercise_heart_rate](drugs/drug_s_atenolol/pd_Sowinski_1995_percent_reductions_in_exercise_heart_rate.md) | percent reductions in exercise heart rate ← atenolol · direct sigmoid Emax (Hill) effect | — | Sowinski KM et al., Effect of aging on atenolol pharmacokin…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04124.x](https://doi.org/10.1002/j.1552-4604.1995.tb04124.x) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2007_HR](drugs/drug_s_atenolol/pd_van_2007_HR.md) | heart rate ← S(-)-atenolol · direct sigmoid Emax (Hill) effect | ▶ model + simulator | van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2007) | [10.1038/sj.bjp.0707234](https://doi.org/10.1038/sj.bjp.0707234) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Van_2020](drugs/drug_s_atenolol/pgx_Van_2020_CYP2C9_safety.md) | Van Driest SL et al., Variants in ADRB1 and CYP2C9: Associati…, The Journal of pediatrics (2020) | [10.1016/j.jpeds.2020.03.064](https://doi.org/10.1016/j.jpeds.2020.03.064) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **APOB** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Liljedahl_2004](drugs/drug_s_atenolol/pgx_Liljedahl_2004_APOB_Q100.md) | Liljedahl U et al., Single nucleotide polymorphisms in the…, BMC cardiovascular disorders (2004) | [10.1186/1471-2261-4-16](https://doi.org/10.1186/1471-2261-4-16) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **LDLR** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Liljedahl_2004](drugs/drug_s_atenolol/pgx_Liljedahl_2004_LDLR_Q100.md) | Liljedahl U et al., Single nucleotide polymorphisms in the…, BMC cardiovascular disorders (2004) | [10.1186/1471-2261-4-16](https://doi.org/10.1186/1471-2261-4-16) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ABCB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [McDonough_2013](drugs/drug_s_atenolol/pgx_McDonough_2013_ABCB1_Q100.md) | McDonough CW et al., Atenolol induced HDL-C change in the ph…, PloS one (2013) | [10.1371/journal.pone.0076984](https://doi.org/10.1371/journal.pone.0076984) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ESR1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [McDonough_2013](drugs/drug_s_atenolol/pgx_McDonough_2013_ESR1_Q100.md) | McDonough CW et al., Atenolol induced HDL-C change in the ph…, PloS one (2013) | [10.1371/journal.pone.0076984](https://doi.org/10.1371/journal.pone.0076984) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **FTO** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [McDonough_2013](drugs/drug_s_atenolol/pgx_McDonough_2013_FTO_Q100.md) | McDonough CW et al., Atenolol induced HDL-C change in the ph…, PloS one (2013) | [10.1371/journal.pone.0076984](https://doi.org/10.1371/journal.pone.0076984) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **GALNT2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [McDonough_2013](drugs/drug_s_atenolol/pgx_McDonough_2013_GALNT2_Q100.md) | McDonough CW et al., Atenolol induced HDL-C change in the ph…, PloS one (2013) | [10.1371/journal.pone.0076984](https://doi.org/10.1371/journal.pone.0076984) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **LIPC** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [McDonough_2013](drugs/drug_s_atenolol/pgx_McDonough_2013_LIPC_Q100.md) | McDonough CW et al., Atenolol induced HDL-C change in the ph…, PloS one (2013) | [10.1371/journal.pone.0076984](https://doi.org/10.1371/journal.pone.0076984) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **LRP5** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [McDonough_2013](drugs/drug_s_atenolol/pgx_McDonough_2013_LRP5_Q100.md) | McDonough CW et al., Atenolol induced HDL-C change in the ph…, PloS one (2013) | [10.1371/journal.pone.0076984](https://doi.org/10.1371/journal.pone.0076984) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **STARD3NL** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [McDonough_2013](drugs/drug_s_atenolol/pgx_McDonough_2013_STARD3NL_Q100.md) | McDonough CW et al., Atenolol induced HDL-C change in the ph…, PloS one (2013) | [10.1371/journal.pone.0076984](https://doi.org/10.1371/journal.pone.0076984) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ADRB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Van_2020](drugs/drug_s_atenolol/pgx_Van_2020_ADRB1_Q100.md) | Van Driest SL et al., Variants in ADRB1 and CYP2C9: Associati…, The Journal of pediatrics (2020) | [10.1016/j.jpeds.2020.03.064](https://doi.org/10.1016/j.jpeds.2020.03.064) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=s_atenolol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` unknown | PGx paper |
+| distribution | blood-brain barrier | `ABCB1` unknown | PGx paper |
+| distribution | placenta | `ABCB1` unknown | PGx paper |
+| distribution | testis | `ABCB1` unknown | PGx paper |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C9` safety_allele, `CYP2D6` substrate | DrugBank actor |
+| excretion | kidney | `ABCB1` unknown | PGx paper |
+| excretion | liver | `ABCB1` unknown | PGx paper |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), APOB (target), ESR1 (unknown), FTO (unknown), GALNT2 (unknown), LDLR (target), LIPC (unknown), LRP5 (unknown), STARD3NL (unknown).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 01:13 | 12:56 | 3/0/0 | 3/0/0 | 1/0/10 | 215,543/37,975 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/9 | 11/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 192 matched, 62 returned
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 3  ·  extracted 1  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Buck_1989.pdf` | Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989) | popPK | 10 | [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198) | [2598566](https://pubmed.ncbi.nlm.nih.gov/2598566) | The paper reports quantitative two-compartment pharmacokinetic parameters (clearance, volumes, half-lives) for atenolol in children. |
+| `Mason_1979.pdf` | Mason WD et al., Kinetics and absolute bioavailability o…, Clinical pharmacology and t… (1979) | popPK | 10 | [10.1002/cpt1979254408](https://doi.org/10.1002/cpt1979254408) | [428185](https://pubmed.ncbi.nlm.nih.gov/428185) | The paper reports quantitative pharmacokinetic parameters (clearance, volume, half-life, bioavailability) for atenolol in humans with all numeric values present in the text. |
+| `Sowinski_1995.pdf` | Sowinski KM et al., Effect of aging on atenolol pharmacokin…, Journal of clinical pharmac… (1995) | popPK | 9 | [10.1002/j.1552-4604.1995.tb04124.x](https://doi.org/10.1002/j.1552-4604.1995.tb04124.x) | [8522638](https://pubmed.ncbi.nlm.nih.gov/8522638) | The study reports quantitative PK parameters (clearance, AUC) for atenolol in humans, but the specific numeric values are not present in the provided abstract text. |
+| `Wójcicki_2000.pdf` | Wójcicki J et al., Pharmacokinetics of propranolol and ate…, European journal of clinica… (2000) | popPK | 9 | [10.1007/s002280050724](https://doi.org/10.1007/s002280050724) | [10853882](https://pubmed.ncbi.nlm.nih.gov/10853882) | The study reports pharmacokinetic parameters for atenolol in humans, but the specific numeric values are not present in the provided abstract text. |
+| `Wójcicki_2003.pdf` | Wójcicki J et al., Comparative pharmacokinetics and pharma…, Biopharmaceutics & drug dis… (2003) | popPK | 9 | [10.1002/bdd.357](https://doi.org/10.1002/bdd.357) | [12784321](https://pubmed.ncbi.nlm.nih.gov/12784321) | The study reports quantitative PK parameters (Cl/F, Vd/F) for atenolol in humans, but the specific numeric values are not present in the provided abstract text. |
+| `van_2007.pdf` | van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2007) | popPK | 9 | [10.1038/sj.bjp.0707234](https://doi.org/10.1038/sj.bjp.0707234) | [17420778](https://pubmed.ncbi.nlm.nih.gov/17420778) | The study reports a three-compartment PK model for S(-)-atenolol in rats, but the specific numeric PK parameter values (CL, V, etc.) are not listed in the provided evidence, only PD parameters. |
+| `Hurst_1998.pdf` | Hurst AK et al., Pharmacokinetic and pharmacodynamic eva…, Pharmacotherapy (1998) | popPK | 8 |  | [9692658](https://pubmed.ncbi.nlm.nih.gov/9692658) | The study reports PK parameters (AUC, Cmax) for atenolol in humans, but specific clearance or volume values are not explicitly listed in the provided text. |
+| `Jia_2011.pdf` | Jia J et al., Evaluation of pharmacokinetic and pharm…, Journal of pharmaceutical a… (2011) | popPK | 8 | [10.1016/j.jpba.2011.01.044](https://doi.org/10.1016/j.jpba.2011.01.044) | [21353427](https://pubmed.ncbi.nlm.nih.gov/21353427) | The study reports PK parameters for atenolol in rats, but the specific numeric values are not present in the provided text, only relative comparisons (e.g., "2 times longer"). |
+| `Baek_2008.pdf` | Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmacal resea… (2008) | pd | 5 | [10.1007/s12272-001-1231-4](https://doi.org/10.1007/s12272-001-1231-4) | [18563366](https://www.ncbi.nlm.nih.gov/pubmed/18563366) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Celardo_1987.pdf` | Celardo A et al., Pharmacokinetic and pharmacodynamic mod…, European journal of drug me… (1987) | pd | 5 | [10.1007/BF03189860](https://doi.org/10.1007/BF03189860) | [3609072](https://www.ncbi.nlm.nih.gov/pubmed/3609072) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `McCoy_1994.pdf` | McCoy RA et al., Pharmacodynamics of racemic and S(-)-at…, Journal of clinical pharmac… (1994) | pd | 5 | [10.1002/j.1552-4604.1994.tb02045.x](https://doi.org/10.1002/j.1552-4604.1994.tb02045.x) | [7962669](https://www.ncbi.nlm.nih.gov/pubmed/7962669) | metadata signals extractable PD data (concentration-effect) |
+| `Stathopoulou_2019.pdf` | Stathopoulou K et al., Divergent off-target effects of RSK N-t…, Cellular signalling (2019) | pd | 5 | [10.1016/j.cellsig.2019.109362](https://doi.org/10.1016/j.cellsig.2019.109362) | [31344438](https://www.ncbi.nlm.nih.gov/pubmed/31344438) | metadata signals extractable PD data (EC50) |
+| `Montañés_2024.pdf` | Montañés MT et al., Effect of the anode material, applied c…, Heliyon (2024) | pd | 4 | [10.1016/j.heliyon.2024.e27266](https://doi.org/10.1016/j.heliyon.2024.e27266) | [38449618](https://www.ncbi.nlm.nih.gov/pubmed/38449618) | metadata signals extractable PD data (EC50) |
+| `Akazawa_2018.pdf` | Akazawa T et al., Application of Intestinal Epithelial Ce…, Drug metabolism and disposi… (2018) | pgx | 7 | [10.1124/dmd.118.083246](https://doi.org/10.1124/dmd.118.083246) | [30135242](https://www.ncbi.nlm.nih.gov/pubmed/30135242) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Brodde_2003.pdf` | Brodde OE et al., Drug-drug interactions of beta-adrenoce…, Arzneimittel-Forschung (2003) | pgx | 7 | [10.1055/s-0031-1299835](https://doi.org/10.1055/s-0031-1299835) | [14732961](https://www.ncbi.nlm.nih.gov/pubmed/14732961) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+
+<sub>queue written 2026-10-07 01:01 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Akazawa_2018 | not_relevant | 0 | 0 | The paper uses atenolol as a non-substrate probe to validate a cell model for intestinal absorption, but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| popPK | Baek_2008 | irrelevant | 0 | 0 | no_text gate: only 97 chars of text extracted (&lt; 400) |
+| PD | Baek_2008 | not_relevant | 0 | 0 | The provided text is only the title of a paper and does not contain the full text, data, or numeric PD parameters required to assess the relationship for s-atenolol. |
+| PGx | Brodde_2003 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions and general pharmacokinetics of beta-blockers but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Cao_2021 | not_relevant | 0 | 0 | The paper is a network pharmacology study comparing herbal strategies for coronary artery atherosclerosis and does not report pharmacogenomic effects on the PK or PD of atenolol. |
+| popPK | Celardo_1987 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
+| PGx | Chen_2018 | not_relevant | 0 | 0 | The paper is a review of food-drug interactions (fruit juices) and does not report pharmacogenomic effects of gene variants on atenolol PK/PD. |
+| PGx | Cooper-Dehoff_2014 | not_relevant | 2 | 5 | The paper reports an association between genetic variants and a pharmacodynamic adverse effect (impaired fasting glucose), but does not report a change in standard PK parameters (e.g., AUC, Cmax) or primary PD parameters (e.g., blood pressure) of atenolol. |
+| PGx | Davis_2021 | not_relevant | 2 | 0 | The paper reports population-level genotype frequencies and actionability statistics for ADRB1/atenolol but does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, BP response) associated with the variants. |
+| PGx | Dayer_1986 | not_relevant | 0 | 0 | The paper explicitly states that genetic polymorphism did not influence the kinetic behavior or pharmacological effects of atenolol. |
+| PGx | Deneer_2011 | not_relevant | 0 | 0 | The paper is a review of age-related changes in antiarrhythmic pharmacokinetics and pharmacodynamics; it does not report specific pharmacogenomic effects of gene variants on atenolol. |
+| popPK | Fayyaz_2021 | irrelevant | 2 | 0 | The study reports ocular tissue exposures (AUC ratios) for atenolol in rabbits, but does not provide standard systemic disposition parameters (CL, V, ka) or a compartmental model for the drug itself. |
+| PGx | Frampton_1992 | not_relevant | 0 | 0 | The paper is a review of nicorandil's pharmacology and efficacy, with no mention of pharmacogenomics or genetic variants affecting atenolol. |
+| PGx | Gedde-Dahl_2022 | not_relevant | 0 | 0 | The study analyzes co-prescription rates of metoprolol and CYP2D6 inhibitors, using atenolol only as a control group for secular trends, and does not report pharmacogenomic effects on atenolol's PK or PD parameters. |
+| popPK | Goldie_1986 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of beta-agonist desensitization in pig bronchus where atenolol is used only as a beta-blocker antagonist, not as a subject for PK analysis. |
+| PD | Goldie_1986 | not_relevant | 0 | 0 | The paper studies isoproterenol-induced desensitization in pig bronchus and mentions atenolol only as a protective antagonist, without reporting any exposure-response or dose-response PD parameters for s-atenolol. |
+| PGx | Gore_2008 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions in diabetes patients and does not report pharmacogenomic effects on the PK or PD of atenolol. |
+| PGx | Hallberg_2002 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect for irbesartan, while explicitly stating that no relation was seen between CYP2C9 genotype and the response to atenolol. |
+| popPK | Hurst_1998 | relevant | 8 | 2 | The study reports PK parameters (AUC, Cmax) for atenolol in humans, but specific clearance or volume values are not explicitly listed in the provided text. |
+| PGx | Ieiri_2012 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for celiprolol, not s_atenolol. |
+| PGx | Jeon_2013 | not_relevant | 2 | 5 | The study concludes that the SLCO2B1 genetic variation had a minimal effect on atenolol pharmacokinetics, failing to report a significant pharmacogenomic effect. |
+| popPK | Jia_2011 | relevant | 8 | 2 | The study reports PK parameters for atenolol in rats, but the specific numeric values are not present in the provided text, only relative comparisons (e.g., "2 times longer"). |
+| popPK | Kumar_2006 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of centchroman in rats, with atenolol serving only as a co-administered drug for interaction testing, not as the subject drug. |
+| PD | Kumar_2006 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions on the pharmacokinetics of centchroman and does not report any pharmacodynamic or exposure-response analysis for s-atenolol. |
+| PGx | Kurland_2008 | not_relevant | 0 | 0 | The study investigates the pharmacogenomics of irbesartan, not atenolol. |
+| PGx | Lennard_1986 | not_relevant | 0 | 0 | The paper explicitly states that the disposition of atenolol is independent of oxidation phenotype. |
+| PGx | Liljedahl_2003 | not_relevant | 5 | 2 | The paper reports associations between SNP profiles and blood pressure reduction (a clinical outcome) but does not report specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, ED50) for atenolol. |
+| PGx | Mannheimer_2010 | not_relevant | 0 | 0 | The study analyzes prescribing adherence to drug interaction labels using dispensing data and does not report pharmacokinetic or pharmacodynamic parameters for atenolol. |
+| popPK | McCoy_1994 | irrelevant | 0 | 0 | no_text gate: only 55 chars of text extracted (&lt; 400) |
+| PGx | Mehanna_2019 | not_relevant | 0 | 0 | The paper investigates plasma renin activity (PRA) as a biomarker for blood pressure response, not a genetic variant/genotype, and does not report pharmacokinetic parameters for atenolol. |
+| popPK | Montañés_2024 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
+| PD | Montañés_2024 | not_relevant | 0 | 0 | The paper focuses on the electrooxidation process and environmental toxicity of atenolol, not on pharmacodynamic exposure-response relationships in biological systems. |
+| PGx | Navare_2010 | not_relevant | 0 | 0 | The study evaluates the association between atenolol exposure and metabolic outcomes but does not report any gene variants or genotypes affecting PK or PD parameters. |
+| PGx | Nuotio_2022 | not_relevant | 0 | 0 | The paper investigates DNA methylation (epigenetics) rather than gene variants/genotypes, and the drug of interest (atenolol) was only used in a replication cohort where no robust associations were found; the primary findings relate to bisoprolol. |
+| PGx | Oomen_2005 | not_relevant | 0 | 0 | The study investigates the pharmacogenomic effect of beta2-AR polymorphisms on the response to salbutamol, using atenolol only as a beta1-blocker control, not as the primary drug of interest. |
+| PGx | Pandit_2017 | not_relevant | 0 | 0 | The study evaluates herb-drug interactions via CYP450 inhibition assays and does not report pharmacogenomic effects of gene variants on atenolol PK/PD. |
+| PGx | Rotroff_2015 | not_relevant | 0 | 0 | The study investigates metabolomic signatures associated with blood pressure response to atenolol, but does not report pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Saaby_2016 | not_relevant | 0 | 0 | The paper describes the development of a cell line for drug screening and identifies atenolol as a P-gp substrate, but it does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Scherholz_2018 | irrelevant | 2 | 0 | The paper is a methodological study on sensitivity analysis frameworks using atenolol as a demonstration case, and it does not report specific quantitative PK parameter values (CL, V, etc.) for atenolol in the provided evidence. |
+| PGx | Schumacher-Klinger_2018 | not_relevant | 0 | 0 | The paper focuses on the prodrug design of cyclic RGD peptides and uses atenolol only as a permeability marker, reporting no pharmacogenomic effects on atenolol. |
+| popPK | Sowinski_1995 | relevant | 9 | 2 | The study reports quantitative PK parameters (clearance, AUC) for atenolol in humans, but the specific numeric values are not present in the provided abstract text. |
+| popPK | Stathopoulou_2019 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
+| PD | Stathopoulou_2019 | not_relevant | 0 | 0 | The paper focuses on RSK kinase inhibitors in cardiac myocytes and does not mention s-atenolol or report any pharmacodynamic parameters for it. |
+| PGx | Turner_2012 | not_relevant | 0 | 0 | The paper focuses on statistical power and measurement methods for detecting genetic predictors of blood pressure response, rather than reporting a specific pharmacogenomic effect of a gene variant on a PK/PD parameter. |
+| PGx | Upton_1991 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions affecting theophylline clearance and notes that atenolol does not influence theophylline disposition, but it does not report pharmacogenomic effects on atenolol's PK/PD. |
+| popPK | Van_2020 | irrelevant | 0 | 0 | The study is a pharmacogenetic analysis of clinical response (aortic root dilation) to atenolol and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Wassermann_2013 | not_relevant | 0 | 0 | The paper focuses on ABCG2 transport in dairy animals and uses atenolol only as a paracellular marker for barrier integrity, not to study pharmacogenomic effects on its PK/PD. |
+| PGx | Wehling_2010 | not_relevant | 0 | 0 | The paper is a general review comparing beta-blockers and mentions atenolol's renal excretion and lack of CYP metabolism, but it does not report specific pharmacogenomic effects (gene variant -&gt; PK/PD change) for atenolol. |
+| popPK | Wójcicki_2000 | relevant | 9 | 2 | The study reports pharmacokinetic parameters for atenolol in humans, but the specific numeric values are not present in the provided abstract text. |
+| popPK | Wójcicki_2003 | relevant | 9 | 0 | The study reports quantitative PK parameters (Cl/F, Vd/F) for atenolol in humans, but the specific numeric values are not present in the provided abstract text. |
+| PGx | Yu_2017 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions mediated by OATP transporters, not pharmacogenomic effects of gene variants on atenolol PK/PD. |
+| popPK | van_2007 | relevant | 9 | 2 | The study reports a three-compartment PK model for S(-)-atenolol in rats, but the specific numeric PK parameter values (CL, V, etc.) are not listed in the provided evidence, only PD parameters. |
+| PGx | Ågesen_2019 | not_relevant | 0 | 0 | The paper is a review of general pharmacokinetic variability for beta-blockers and does not report specific pharmacogenomic effects (gene variant -&gt; PK/PD change) for atenolol. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bs_atenolol%5D&body=Drug%3A%20s_atenolol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_s_atenolol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 01:01 UTC</sub>

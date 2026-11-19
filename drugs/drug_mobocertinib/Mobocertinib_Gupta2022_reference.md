@@ -1,0 +1,227 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;mobocertinib&quot;,&quot;href&quot;:&quot;drugs/drug_mobocertinib/&quot;},{&quot;label&quot;:&quot;Gupta_2022 \u00b7 reference&quot;}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# mobocertinib — `Mobocertinib_Gupta2022_reference`
+
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> V1/F and CL/F have no unit.
+
+<div class="pk-model-meta" hidden drug="mobocertinib" model-id="Mobocertinib_Gupta2022_reference" status="needs_review" stale="false" population="healthy volunteers and patients with mNSCLC" measured-compound="mobocertinib" parameterization="apparent" topology="general_linear"></div>
+
+## Citation
+Gupta N, Pierrillas PB, Hanley MJ, Zhang S, Diderichsen PM. Population pharmacokinetics of mobocertinib in healthy volunteers and patients with non-small cell lung cancer. CPT: pharmacometrics & systems pharmacology 11(6):731–744 (2022).
+  ·  DOI: [10.1002/psp4.12785](https://doi.org/10.1002/psp4.12785)
+
+## Population and dosing
+
+**Population:** healthy volunteers and patients with mNSCLC · condition healthy or mNSCLC · age group adult · n = 427.
+
+**Dosing:** 5, 10, 20, 40, 60, 80, 120, 160, 180 mg, oral, multiple.
+
+## Model
+
+**Structure:** general linear; no model was built for this record.  
+**Parameterization:** CL/F, CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 4 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| Vp_mobo/F | V2/F | 7.01 | L | 1.68 |
+| Vp_AP32960/F | V2/F | 6.99 | L | 1.12 |
+| HV on Vc_mobo/F | V1/F | 0.787 |  | 12.7 |
+| HV on CL_mobo/F | CL/F | 0.900 |  | 15.0 |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**V1/F and CL/F have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — mobocertinib: V2/F 7.01 L, V1/F 0.787, CL/F 0.9; AP32960: V2/F 6.99 L.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl_mobo/f].parameter_id`: this record has Q351, the second reading Q27; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| Vp_mobo/F | `Q82` · V2/F | 7.01 | L | 0.00701 | m3 | L | 1.68 | llm (0.6) | Gupta_2022_table_p8_1:row5:col1, Gupta_2022_table_p8_1:row5:col2, Gupta_2022_table_p8_1:row5:col5 |
+| Vp_AP32960/F | `Q82` · V2/F | 6.99 | L | 0.00699 | m3 | L | 1.12 | exact (1) | Gupta_2022_table_p8_1:row9:col1, Gupta_2022_table_p8_1:row9:col2, Gupta_2022_table_p8_1:row9:col5 |
+| HV on Vc_mobo/F | `Q290` · V1/F | 0.787 |  |  |  |  | 12.7 | llm (0.6) | Gupta_2022_table_p8_1:row12:col1, Gupta_2022_table_p8_1:row12:col2, Gupta_2022_table_p8_1:row12:col4, Gupta_2022_table_p8_1:row12:col5 |
+| HV on CL_mobo/F | `Q27` · CL/F | 0.900 |  |  |  |  | 15.0 | llm (0.6) | Gupta_2022_table_p8_1:row13:col1, Gupta_2022_table_p8_1:row13:col2, Gupta_2022_table_p8_1:row13:col4, Gupta_2022_table_p8_1:row13:col5 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| CL_mobo/F | Q351 | llm |
+| Q_mobo/F | Q69 | llm |
+| CL_AP32960/F | Q27 | exact |
+| Q_AP32960/F | Q69 | exact |
+| CL_AP32914/F | Q27 | exact |
+| F | Q40 | exact |
+
+## Departures & gaps
+
+**Interpretation flags:**
+- table section iiv: 'IIV Kₐ' routed out of structural estimates ('IIV')
+- table section iiv: 'IIV Vc_mobo/F' routed out of structural estimates ('IIV')
+- table section iiv: 'IIV CL_mobo/F' routed out of structural estimates ('IIV')
+- table section iiv: 'Cov: CL_mobo/F and Vc_mobo/F' routed out of structural estimates ('IIV')
+- table section iiv: 'IIV CL_AP32960/F' routed out of structural estimates ('IIV')
+- table section iiv: 'Cov: CL_AP32960/F and Vc_mobo/F' routed out of structural estimates ('IIV')
+- table section iiv: 'Cov: CL_AP32960/F and CL_mobo/F' routed out of structural estimates ('IIV')
+- table section iiv: 'IIV CL_AP32914/F' routed out of structural estimates ('IIV')
+- table section iiv: 'Cov: CL_AP32914/F and Vc_mobo/F' routed out of structural estimates ('IIV')
+- table section iiv: 'Cov: CL_AP32914/F and CL_mobo/F' routed out of structural estimates ('IIV')
+- table section iiv: 'Cov: CL_AP32914/F and CL_AP32960/F' routed out of structural estimates ('IIV')
+- table section residual_error: 'Mobocertinib' routed out of structural estimates ('Residual variability, additive error on log scale')
+- table section residual_error: 'AP32960' routed out of structural estimates ('Residual variability, additive error on log scale')
+- table section residual_error: 'AP32914' routed out of structural estimates ('Residual variability, additive error on log scale')
+- column 'untransformed parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped value-less row: 'Kₐ'
+- dropped value-less row: 'Vc_mobo/F'
+- dropped value-less row: 'Vc_AP32960/F'
+- dropped value-less row: 'Vc_AP32914/F'
+- dropped duplicate Q27 ('HV on CL_AP32960/F', value '0.738') — already have one for this compound
+- dropped duplicate Q27 ('HV on CL_AP32914/F', value '0.909') — already have one for this compound
+- dropped value-less row: 'Kₑₙ𝑧'
+- dropped value-less row: 'EC₅₀'
+- dropped PD-category row 'Eₘₐₓ' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Gupta_2022_table_p8_1:row18:col1', 'Gupta_2022_table_p8_1:row18:col2', 'Gupta_2022_table_p8_1:row18:col4', 'Gupta_2022_table_p8_1:row18:col5'])
+- implicit units: 'Vp_mobo/F' → L (from the paper text: 'Table 3 lists Vp mobo/F with the untransformed parameter unit “L.”')
+- implicit units: 'Vp_AP32960/F' → L (from the paper text: 'Table 3 lists Vp AP32960/F with the untransformed parameter unit “L.”')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mobocertinib
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [1, 0]
+- row roles (LLM): model_class=compartmental; 33/33 row label(s) assigned, 29 linked by role; re-tagged parent→AP32960 ×23, parent→AP32914 ×17
+- molar mass: no plausible PubChem entry for 'AP32960' ('mobocertinib active metabolite AP32960') — left in mass units
+- molar mass: no plausible PubChem entry for 'AP32914' ('mobocertinib active metabolite AP32914') — left in mass units
+- molar mass: none found for 'AP32960' — its concentrations stay mass-only
+- molar mass: none found for 'AP32914' — its concentrations stay mass-only
+
+**Extraction notes:**
+- no TEI final-model table id; trying text-pointer table recovery
+- unparsed cell Gupta_2022_table_p8_1:row1:col1 = '0.752ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row1:col4 = '2.12 h⁻¹'
+- unparsed cell Gupta_2022_table_p8_1:row2:col1 = '7.76ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row2:col4 = '2340 L'
+- unparsed cell Gupta_2022_table_p8_1:row3:col1 = '4.68ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row4:col1 = '2.46ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row5:col4 = '1110 L'
+- unparsed cell Gupta_2022_table_p8_1:row6:col1 = '4.76ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row7:col1 = '2.55ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row7:col4 = '12.8 L'
+- unparsed cell Gupta_2022_table_p8_1:row8:col1 = '3.28ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row9:col4 = '1090 L'
+- unparsed cell Gupta_2022_table_p8_1:row10:col1 = '4.82ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row11:col1 = '3.42ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row11:col4 = '30.6 L'
+- unparsed cell Gupta_2022_table_p8_1:row16:col1 = '−5.54ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row16:col4 = '0.00392 h⁻¹'
+- unparsed cell Gupta_2022_table_p8_1:row17:col1 = '−1.55ᵃ'
+- unparsed cell Gupta_2022_table_p8_1:row17:col4 = '213 nM'
+- unparsed cell Gupta_2022_table_p8_1:row20:col4 = '45.7%'
+- unparsed cell Gupta_2022_table_p8_1:row21:col4 = '48.7%'
+- unparsed cell Gupta_2022_table_p8_1:row22:col4 = '49.6%'
+- unparsed cell Gupta_2022_table_p8_1:row24:col4 = '39.6%'
+- unparsed cell Gupta_2022_table_p8_1:row27:col4 = '54.3%'
+- unparsed cell Gupta_2022_table_p8_1:row32:col4 = '41.4%'
+- unparsed cell Gupta_2022_table_p8_1:row33:col4 = '37.3%'
+- unparsed cell Gupta_2022_table_p8_1:row34:col4 = '40.5%'
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.846 (22/26 fields) | 4 |
+
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[cl_mobo/f].parameter_id` | Q351 | Q27 | mismatch |
+| `qwen3.8-27b` | `parameters[f]` |  |  | only_one_extracted |
+| `qwen3.8-27b` | `parameters[hv on cl_mobo/f].parameter_id` | Q27 | Q351 | mismatch |
+| `qwen3.8-27b` | `parameters[hv on vc_mobo/f].parameter_id` | Q290 | Q354 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Gupta_2022_table_p8_1:row5:col1', 'Gupta_2022_table_p8_1:row5:col2', 'Gupta_2022_table_p8_1:row5:col5'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Gupta_2022_table_p8_1:row9:col1', 'Gupta_2022_table_p8_1:row9:col2', 'Gupta_2022_table_p8_1:row9:col5'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] |  | ['Gupta_2022_table_p8_1:row13:col1', 'Gupta_2022_table_p8_1:row13:col2', 'Gupta_2022_table_p8_1:row13:col4', 'Gupta_2022_table_p8_1:row13:col5'] |
+| C5_unit_missing_Q290 | fail | [length] ** 3 |  | ['Gupta_2022_table_p8_1:row12:col1', 'Gupta_2022_table_p8_1:row12:col2', 'Gupta_2022_table_p8_1:row12:col4', 'Gupta_2022_table_p8_1:row12:col5'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q82 | pass | volume within physiological range | 7.01 L | ['Gupta_2022_table_p8_1:row5:col1', 'Gupta_2022_table_p8_1:row5:col2', 'Gupta_2022_table_p8_1:row5:col5'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 6.99 L | ['Gupta_2022_table_p8_1:row9:col1', 'Gupta_2022_table_p8_1:row9:col2', 'Gupta_2022_table_p8_1:row9:col5'] |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model downloads
+
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmobocertinib%5D%20Mobocertinib_Gupta2022_reference&body=Drug%3A%20mobocertinib%0ARecord%3A%20Mobocertinib_Gupta2022_reference%0APaper%3A%20Gupta_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mobocertinib/Mobocertinib_Gupta2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 02:58 UTC</sub>

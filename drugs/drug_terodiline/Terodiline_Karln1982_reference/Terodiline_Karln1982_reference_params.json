@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 50 mg oral (G04BD05)",
+ "model_id": "Terodiline_Karln1982_reference",
+ "molar_masses": {
+  "central.C": 0.281443
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.3333333333333332e-06,
+  "F": 1.0,
+  "MM": 0.281443,
+  "Tlag": 0.0,
+  "VdPerKg": 0.005957142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 28860.000000000364
+ },
+ "reference_peaks": {
+  "central.C": 0.00010969541494539544
+ },
+ "stop_time": 1209600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

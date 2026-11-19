@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fruquintinib_Zhou2025_nct01975077",
+ "molar_masses": {
+  "central.C": 0.393399
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  1.0,
+  6.0
+ ],
+ "parameters": {
+  "Cl": 2.2444444444444445e-07,
+  "F": 1.0,
+  "MM": 0.393399,
+  "Tlag": 1666.8000000000002,
+  "VdPerKg": 0.0006928571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-06,
+  "ka": 0.0007,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9349.899799599198
+ },
+ "reference_peaks": {
+  "central.C": 1.993952581311446e-05
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,209 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Semere_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chang_2023_2_CFU_lung&quot;,&quot;label&quot;:&quot;Chang_2023_2 \u00b7 CFU/lung&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/pd_Chang_2023_2_CFU_lung.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# rifabutin — `Rifabutin_Semere2024_reference`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
+
+> Rifabutin clearance of 16.2 L/h is physiologically implausible, indicating a unit or scale extraction error that led to rejection.
+
+<div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Semere2024_reference" status="rejected" stale="false" population="HIV/TB co-infected children" measured-compound="rifabutin" parameterization="mechanistic" topology="parent_metabolite"></div>
+
+## Citation
+Semere Gebreyesus M, Wasmann RE, McIlleron H, Oladokun R, Okonkwo P, Wiesner L et al. Population pharmacokinetics of rifabutin among HIV/TB co-infected children on lopinavir/ritonavir-based antiretroviral therapy. Antimicrobial agents and chemotherapy 68(8):e0035424 (2024).
+  ·  DOI: [10.1128/aac.00354-24](https://doi.org/10.1128/aac.00354-24)
+
+## Population and dosing
+
+**Population:** HIV/TB co-infected children · condition HIV/TB co-infection · age group child · n = &gt;=28.
+
+**Dosing:** 175, 350, 1050, 1400 mg, oral, multiple, every 24 h.
+
+## Model
+
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 4 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| clearance conversion | CL | 16.2 | L/h |
+| volume | V | 0.135 | L |
+| Ka | kabs | 0.16 | h−1 |
+| LAGAM | tlag | 0.825 | h |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**Rifabutin clearance of 16.2 L/h is physiologically implausible, indicating a unit or scale extraction error that led to rejection.**
+
+A clearance of 16.2 L/h is excessively high for rifabutin, suggesting the value likely represents a different unit or contains a transcription error. This implausible magnitude triggered the failure of the physiological window check. Additionally, no value was extracted for the absolute bioavailability parameter, so a library placeholder would have been used. Extracted — rifabutin: CL 16.2 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rifabutin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| clearance conversion | `Q22` · CL | 16.2 | L/h | 4.5e-06 | m3/s | L/h | boundary (0.8) | Semere_2024:other_prose |
+| volume | `Q61` · V | 0.135 | L | 0.000135 | m3 | L | review_gapfill (0.7) | Chapagain_2022:review |
+| Ka | `Q49` · kabs | 0.16 | h−1 | 4.444e-05 | 1/s | 1/h | review_gapfill (0.7) | Bentley_2021:review |
+| LAGAM | `Q83` · tlag | 0.825 | h | 2970 | s | h | review_gapfill (0.7) | Wang_2020:review |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| Bioavailability, F | Q40 | llm_confirmed |
+
+## Departures & gaps
+
+**Interpretation flags:**
+- dropped value-less row: 'Clearance (Inhibitable CYP3A4 pathway) (L/h)c'
+- dropped value-less row: 'Clearance conversion (AADAC pathway) (L/h)c'
+- dropped value-less row: 'Central volume of distribution, VC,P (L)c'
+- dropped value-less row: 'Peripheral volume of distribution, VP,P (L)c'
+- dropped value-less row: 'Intercompartmental clearance, QP (L/h)c'
+- dropped value-less row: 'Absorption rate constant, Ka (1/h)' (captured trailing unit '1/h' for child rows)
+- dropped value-less row: 'Absorption lag time, Lag (h)' (captured trailing unit 'h' for child rows)
+- dropped value-less row: 'Clearance metabolite (L/h)c'
+- dropped value-less row: 'Central volume of distribution, VC,M (L)c'
+- dropped value-less row: 'Peripheral volume of distribution, VP,M (L)c'
+- dropped value-less row: 'Intercompartmental clearance, QM (L/h)c'
+- dropped value-less row: 'LPV/r effect on rifabutin clearance (inhibitable CYP3A4 pathway) (%)' (captured trailing unit '%' for child rows)
+- dropped value-less row: 'LPV/r effect on des-rifabutin clearance (%)' (captured trailing unit '%' for child rows)
+- dropped value-less row: 'Age effect (≤3 years old) on Ka (%)' (captured trailing unit '%' for child rows)
+- dropped value-less row: 'Rifabutin: proportional error (%)' (captured trailing unit '%' for child rows)
+- dropped value-less row: 'Rifabutin: additive error (µg/L)' (captured trailing unit 'µg/L' for child rows)
+- dropped value-less row: 'Des-rifabutin: proportional error (%)' (captured trailing unit '%' for child rows)
+- dropped value-less row: 'Des-rifabutin: additive error (µg/L)' (captured trailing unit 'µg/L' for child rows)
+- salvaged Q22 ('clearance conversion'=16.2) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rifabutin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — only the metabolite is modelled — no parent compartment
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=compartmental; 22/22 row label(s) assigned, 19 linked by role; re-tagged parent→des-rifabutin ×10
+- gap-filled Q61 (V) from Chapagain_2022's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Bentley_2021's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Wang_2020's review values (primary lacked it)
+
+**Extraction notes:**
+- unparsed cell T2:row2:col1 = '13.6 (8.77–18.8)'
+- unparsed cell T2:row2:col3 = 'BSV: 20.7 (15.6–26.0)'
+- unparsed cell T2:row3:col1 = '16.2 (12.8–20.7)'
+- unparsed cell T2:row4:col1 = '185 (135–251)'
+- unparsed cell T2:row5:col1 = '232 (171–313)'
+- unparsed cell T2:row6:col1 = '25.1 (17.3–33.1)'
+- unparsed cell T2:row7:col3 = 'BOV: 71.9 (59.5–85.1)'
+- unparsed cell T2:row8:col1 = '1.27 (0.810–2.14)'
+- unparsed cell T2:row8:col3 = 'BOV: 118 (84–175)'
+- unparsed cell T2:row9:col1 = '0.544 (0.338–0.805)'
+- unparsed cell T2:row9:col3 = 'BOV: 74.8 (44.4–105.0)'
+- unparsed cell T2:row11:col1 = '106 (82.1–142.0)'
+- unparsed cell T2:row11:col3 = 'BSV: 30.8 (23.2–39.2)'
+- unparsed cell T2:row12:col1 = '43.0 (25.9–64.4)'
+- unparsed cell T2:row13:col1 = '241 (169–322)'
+- unparsed cell T2:row14:col1 = '44.4 (31.5–63.3)'
+- unparsed cell T2:row16:col1 = '+158 (+105 to +239)'
+- unparsed cell T2:row18:col1 = '−76.6 (−79.8 to −73.1)'
+- unparsed cell T2:row19:col1 = '−26.0 (−34.1 to −18.1)'
+- unparsed cell T2:row20:col1 = '−72.3 (−83.3 to −57.1)'
+- unparsed cell T2:row22:col1 = '18.8 (16.3–21.7)'
+- unparsed cell T2:row23:col1 = '10.1 (5.24–15.9)'
+- unparsed cell T2:row24:col1 = '10.8 (8.41–13.6)'
+- unparsed cell T2:row25:col1 = '11.6 (9.75–14.1)'
+- unparsed cell T2:row26:col1 = '28.2 (14.6–42.1)'
+- LLM selected parameter table(s) 2
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [['rifabutin', 'des-rifabutin', 'metabolism']] | [['rifabutin', '25-o-desacetyl rifabutin', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[bioavailability, f]` |  |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability, f]` |  |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance conversion]` | 16.2 |  | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance conversion]` |  | 16.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[zwfa effect (each point below -3) on bioavailabilityd]` |  |  | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | rifabutin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | rifabutin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Bentley_2021:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Chapagain_2022:review'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Wang_2020:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.2 | ['Semere_2024:other_prose'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 16.2 L/h | ['Semere_2024:other_prose'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.135 L | ['Chapagain_2022:review'] |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brifabutin%5D%20Rifabutin_Semere2024_reference&body=Drug%3A%20rifabutin%0ARecord%3A%20Rifabutin_Semere2024_reference%0APaper%3A%20Semere_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rifabutin/Rifabutin_Semere2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-04 11:47 UTC</sub>

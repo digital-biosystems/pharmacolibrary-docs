@@ -1,0 +1,70 @@
+{
+ "dose_source": "library default",
+ "model_id": "Olopatadine_Meier2017_non_japanese_day_7",
+ "molar_masses": {
+  "retainedFraction": 0.33741899999999997
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Meier_2017:other_prose",
+    "value_si": 2.0699999999999997e-06
+   },
+   {
+    "source": "Meier_2017:other_prose",
+    "value_si": 1.75e-06
+   },
+   {
+    "source": "Meier_2017:other_prose",
+    "value_si": 1.2099999999999998e-07
+   },
+   {
+    "source": "Meier_2017:other_prose",
+    "value_si": 1.7399999999999997e-07
+   },
+   {
+    "source": "Meier_2017:discussion_prose",
+    "value_si": 1.8799999999999998e-06
+   },
+   {
+    "source": "Meier_2017:discussion_prose",
+    "value_si": 0.0001311
+   },
+   {
+    "source": "Meier_2017:discussion_prose",
+    "value_si": 1.6399999999999998e-06
+   },
+   {
+    "source": "Meier_2017:discussion_prose",
+    "value_si": 0.00014681999999999998
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.33741899999999997,
+  "Tb[1]": 12996.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9969895395182375
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

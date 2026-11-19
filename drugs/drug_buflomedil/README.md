@@ -1,0 +1,108 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;buflomedil&quot;}]"></div>
+
+# buflomedil
+
+- **generic name:** buflomedil
+- **ATC codes:** `C04AX20`
+- **DrugBank:** [DB13510](https://go.drugbank.com/drugs/DB13510) · **PubChem:** none
+- **molar mass:** 307.39 g/mol (C17H25NO4) — DrugBank
+- **groups:** experimental
+
+## About
+
+Buflomedil is a peripheral vasodilator used to treat symptoms of peripheral arterial disease, such as claudication. It is given by mouth in capsule, tablet, or pill form, or by parenteral injection as a solution. The drug is considered experimental and is not approved for use in the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q417862](https://www.wikidata.org/wiki/Q417862), [Wikipedia](https://en.wikipedia.org/wiki/Buflomedil?oldid=1370865172) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| buflomedil | parent | 307.39 | C17H25NO4 | DrugBank | — | Rey_1984 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Rey_1984_reference](drugs/drug_buflomedil/Buflomedil_Rey1984_reference.md) | — | 1-compartment (no model) | 2 | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984) | — |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 19:54 | 3:26 | 1/0/0 | 0/0/0 | 0/0/0 | 27,594/4,332 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 40 matched, 39 returned
+- **screened:** 5  ·  **relevant:** 4
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gundert-Remy_1981.pdf` | Gundert-Remy U et al., The clinical pharmacokinetics of buflom…, European journal of clinica… (1981) | popPK | 10 | [10.1007/BF00542100](https://doi.org/10.1007/BF00542100) | [7286057](https://pubmed.ncbi.nlm.nih.gov/7286057) | The study reports quantitative pharmacokinetic parameters (half-life, volume of distribution, bioavailability) for buflomedil in humans. |
+| `Rey_1984.pdf` | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984) | popPK | 10 |  | [6526539](https://pubmed.ncbi.nlm.nih.gov/6526539) | The study reports quantitative pharmacokinetic parameters (half-life, total clearance) for buflomedil in humans, with specific numeric values provided in the abstract. |
+| `Bourguignon_2012.pdf` | Bourguignon L et al., The value of population pharmacokinetic…, Fundamental & clinical phar… (2012) | popPK | 9 | [10.1111/j.1472-8206.2011.01000.x](https://doi.org/10.1111/j.1472-8206.2011.01000.x) | [22004557](https://pubmed.ncbi.nlm.nih.gov/22004557) | The paper describes a population PK study of buflomedil in humans using a three-compartment model, but the specific numeric parameter values (CL, V, Q, etc.) are not listed in the provided abstract text. |
+| `Rey_1980.pdf` | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1980) | popPK | 9 |  | [7203720](https://pubmed.ncbi.nlm.nih.gov/7203720) | The study reports quantitative pharmacokinetic parameters (clearance and half-life) for buflomedil in humans, with specific numeric values provided in the text. |
+| `Zecca_1989.pdf` | Zecca L et al., Pharmacokinetics of buflomedil after va…, Arzneimittel-Forschung (1989) | popPK | 9 |  | [2751740](https://pubmed.ncbi.nlm.nih.gov/2751740) | The study reports pharmacokinetic parameters for buflomedil in humans, but the specific numeric values are not present in the provided evidence text. |
+| `Rey_1986.pdf` | Rey E et al., Buflomedil kinetics in patients with li…, International journal of cl… (1986) | popPK | 8 |  | [3759277](https://pubmed.ncbi.nlm.nih.gov/3759277) | The study reports pharmacokinetic parameters for buflomedil in humans, but the specific numeric values are not present in the provided evidence. |
+| `de_1992.pdf` | de Bernardi di Valserra M et al., Pharmacokinetics of a sustained release…, Arzneimittel-Forschung (1992) | popPK | 8 |  | [1530676](https://pubmed.ncbi.nlm.nih.gov/1530676) | The study reports quantitative PK parameters (Cmax, Tmax, steady-state levels, urinary excretion) for buflomedil in humans, but lacks explicit clearance or volume of distribution values. |
+| `Tyagi_2019.pdf` | Tyagi V et al., Topical iontophoresis of buflomedil hyd…, International journal of ph… (2019) | pd | 4 | [10.1016/j.ijpharm.2019.118610](https://doi.org/10.1016/j.ijpharm.2019.118610) | [31415875](https://www.ncbi.nlm.nih.gov/pubmed/31415875) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-06 19:52 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bourguignon_2012 | relevant | 9 | 2 | The paper describes a population PK study of buflomedil in humans using a three-compartment model, but the specific numeric parameter values (CL, V, Q, etc.) are not listed in the provided abstract text. |
+| PD | Bourguignon_2012 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetics (PK) and Monte Carlo simulation for safety/toxicity risk assessment, without reporting any pharmacodynamic (PD) model, concentration-effect relationship, or numeric PD parameters. |
+| PD | Briguglio_2005 | not_relevant | 1 | 0 | The study reports qualitative neuroprotective effects and biomarker changes at a single dose (10 mg/kg) without providing concentration-effect data, dose-response curves, or numeric PD parameters. |
+| PD | Bucolo_2012 | not_relevant | 0 | 0 | The paper is a safety review of adverse drug reactions and overdose cases, containing no pharmacodynamic modeling, concentration-effect analysis, or numeric PD parameters. |
+| PD | Chiffoleau_2000 | not_relevant | 0 | 0 | The text is a case report of an adverse event due to accidental double dosing and does not contain any pharmacodynamic modeling, concentration-effect analysis, or numeric PD parameters. |
+| PD | Clissold_1987 | not_relevant | 2 | 0 | The text is a qualitative review summarizing therapeutic efficacy and general pharmacodynamic properties without providing specific numeric PD parameters (e.g., Emax, EC50) or concentration-effect data. |
+| popPK | Ding_2004 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of eperisone, using buflomedil only as an internal standard for the analytical method. |
+| popPK | Ding_2007 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of trimetazidine, using buflomedil only as an internal standard. |
+| popPK | Dubourg_1981 | irrelevant | 2 | 1 | The paper is a review that provides only a qualitative overview and a rough half-life range (2-3 hours) without reporting quantitative compartmental PK parameters (CL, V, Q) or population models. |
+| PD | Fort_1982 | not_relevant | 1 | 0 | The text describes a qualitative toxicology study with dose levels and observed adverse effects, but it does not report any numeric pharmacodynamic parameters (e.g., EC50, Emax) or quantitative exposure-response relationships. |
+| PD | Fort_1993 | not_relevant | 0 | 0 | The paper is a chronic toxicity study reporting qualitative safety observations and a no-observed-adverse-effect level (NOAEL), but it does not provide any pharmacodynamic modeling, concentration-effect curves, or numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Gundert-Remy_1983 | irrelevant | 0 | 0 | no_text gate: only 41 chars of text extracted (&lt; 400) |
+| PD | Labs_2000 | not_relevant | 3 | 2 | The study reports qualitative changes in hemodynamic parameters after a single fixed dose (200 mg) infusion but does not provide plasma concentration data or fit a dose-response model to derive numeric PD parameters like Emax or EC50. |
+| PD | Martínez-Sierra_1992 | not_relevant | 1 | 0 | The text is a qualitative case report of intoxication that mentions a specific dose (50 mg/kg) causing seizures but provides no concentration-effect data, curve, or numeric PD parameters. |
+| PD | Maurel_1995 | not_relevant | 2 | 1 | The study reports a clinical dose-response (600 mg vs placebo) with temperature changes, but lacks concentration data or formal PK/PD modeling parameters (Emax, EC50). |
+| popPK | Mo_2025 | irrelevant | 0 | 0 | The paper describes an analytical method (ECL sensor) for detecting buflomedil in mouse plasma but does not report any pharmacokinetic parameters (CL, V, t1/2, etc.). |
+| PD | Nowak_2002 | not_relevant | 2 | 1 | The study reports qualitative findings (non-significant effects) on RBC rheology and enzyme activity at two concentrations, but provides no numeric PD parameters, dose-response curves, or quantitative effect values to derive a relationship. |
+| popPK | Rey_1986 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for buflomedil in humans, but the specific numeric values are not present in the provided evidence. |
+| popPK | Rey_1996 | relevant | 4 | 5 | The study reports dialysis clearance and steady-state concentrations (Cmin/Cmax) for buflomedil in humans, but lacks standard compartmental PK parameters like total clearance, volume of distribution, or half-life. |
+| PD | Rey_1996 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (dialysis clearance, Cmin, Cmax) and does not measure or report any pharmacodynamic effects or exposure-response relationships. |
+| popPK | Salerno_1985 | irrelevant | 0 | 0 | The paper is a clinical efficacy study assessing therapeutic outcomes and blood flow, not a pharmacokinetic study reporting disposition parameters. |
+| PD | Scheffler_1990 | not_relevant | 1 | 0 | The paper describes qualitative observations of blood flow changes and redistribution phenomena following intra-arterial infusion but does not provide numeric concentration-effect data, dose-response curves, or PD parameters for buflomedil. |
+| PD | Szombathelyi_1991 | not_relevant | 3 | 2 | The paper reports qualitative dose-response comparisons and specific dose effects in animal models but does not provide numeric PD parameters (e.g., EC50, Emax) or a fitted concentration-effect curve for buflomedil. |
+| popPK | Tyagi_2019 | irrelevant | 0 | 0 | no_text gate: only 148 chars of text extracted (&lt; 400) |
+| PD | Tyagi_2019 | not_relevant | 0 | 0 | The paper focuses on PK (bioavailability) and safety of topical iontophoresis, with no reported concentration-effect or dose-response analysis for buflomedil. |
+| popPK | Wei_2004 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of eperisone hydrochloride, using buflomedil only as an internal standard for the assay. |
+| PD | Zaccara_2020 | not_relevant | 1 | 0 | The paper is a qualitative review of cardiovascular drugs' effects on seizures, mentioning buflomedil only as proconvulsant without providing any numeric PD parameters or exposure-response data. |
+| popPK | Zecca_1989 | relevant | 9 | 0 | The study reports pharmacokinetic parameters for buflomedil in humans, but the specific numeric values are not present in the provided evidence text. |
+| PD | Zecca_1989 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (absorption, plasma levels, excretion) and contains no pharmacodynamic or exposure-response data. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbuflomedil%5D&body=Drug%3A%20buflomedil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_buflomedil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 19:53 UTC</sub>

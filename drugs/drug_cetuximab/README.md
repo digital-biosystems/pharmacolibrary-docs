@@ -1,0 +1,325 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+
+# cetuximab
+
+- **generic name:** cetuximab
+- **ATC codes:** `L01FE01`
+- **DrugBank:** [DB00002](https://go.drugbank.com/drugs/DB00002) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Cetuximab is a chimeric monoclonal antibody that inhibits the epidermal growth factor receptor, used to treat various head and neck cancers as well as colorectal cancer. The drug is given by intravenous infusion. It is widely used and authorised in the European Union for neoplasms of the head, neck, and colorectum.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q420296](https://www.wikidata.org/wiki/Q420296), [Wikipedia](https://en.wikipedia.org/wiki/Cetuximab?oldid=1363676761) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Start here
+
+> **Azzopardi_2011_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> metastatic colorectal cancer patients cotreated with irinotecan and 5-fluorouracil, n = 96. [Run it in the simulator](drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md?tab=Simulation) · [record](drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="240" viewBox="0 0 560 240" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="218" stroke="#ddd"/><text x="190.0" y="232" font-size="10" text-anchor="middle">0.001</text><line x1="260.0" y1="18" x2="260.0" y2="218" stroke="#ddd"/><text x="260.0" y="232" font-size="10" text-anchor="middle">0.01</text><line x1="330.0" y1="18" x2="330.0" y2="218" stroke="#ddd"/><text x="330.0" y="232" font-size="10" text-anchor="middle">0.1</text><line x1="400.0" y1="18" x2="400.0" y2="218" stroke="#ddd"/><text x="400.0" y="232" font-size="10" text-anchor="middle">1</text><line x1="470.0" y1="18" x2="470.0" y2="218" stroke="#ddd"/><text x="470.0" y="232" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="218" stroke="#ddd"/><text x="540.0" y="232" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Grisic_2020 · CL</text><circle cx="232.8" cy="30.0" r="4" fill="#ef6c00"><title>Grisic_2020 · CL: 0.00409 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Grisic_2020 · CL</text><circle cx="271.5" cy="46.0" r="4" fill="#ef6c00"><title>Grisic_2020 · CL: 0.01458 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Grisic_2020 · CL</text><circle cx="272.9" cy="62.0" r="4" fill="#ef6c00"><title>Grisic_2020 · CL: 0.0153 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Grisic_2020 · CL</text><circle cx="276.8" cy="78.0" r="4" fill="#ef6c00"><title>Grisic_2020 · CL: 0.0174 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Azzopardi_2011 · CL</text><circle cx="282.1" cy="94.0" r="4" fill="#78909c"><title>Azzopardi_2011 · CL: 0.02071 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Grisic_2020 · CL</text><circle cx="289.3" cy="110.0" r="4" fill="#78909c"><title>Grisic_2020 · CL: 0.0262 L/h</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Cognetti_2026 · CL</text><circle cx="329.1" cy="126.0" r="4" fill="#78909c"><title>Cognetti_2026 · CL: 0.09708 L/h</title></circle><text x="184" y="146.0" font-size="11" text-anchor="end">Lobet_2023 · CL</text><circle cx="370.6" cy="142.0" r="4" fill="#ef6c00"><title>Lobet_2023 · CL: 0.38 L/h</title></circle><text x="184" y="162.0" font-size="11" text-anchor="end">Pointreau_2016 · CL</text><circle cx="378.9" cy="158.0" r="4" fill="#78909c"><title>Pointreau_2016 · CL: 0.5 L/h</title></circle><text x="184" y="178.0" font-size="11" text-anchor="end">van_2026_2 · CL</text><circle cx="389.8" cy="174.0" r="4" fill="#ef6c00"><title>van_2026_2 · CL: 0.716 L/h</title></circle><text x="184" y="194.0" font-size="11" text-anchor="end">Liu_2026 · CL</text><circle cx="443.8" cy="190.0" r="4" fill="#ef6c00"><title>Liu_2026 · CL: 4.22 L/h</title></circle><text x="184" y="210.0" font-size="11" text-anchor="end">Yang_2026 · CL/F</text><circle cx="476.0" cy="206.0" r="4" fill="#78909c"><title>Yang_2026 · CL/F: 12.2 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="240" viewBox="0 0 560 240" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="218" stroke="#ddd"/><text x="190.0" y="232" font-size="10" text-anchor="middle">1</text><line x1="277.5" y1="18" x2="277.5" y2="218" stroke="#ddd"/><text x="277.5" y="232" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="218" stroke="#ddd"/><text x="365.0" y="232" font-size="10" text-anchor="middle">100</text><line x1="452.5" y1="18" x2="452.5" y2="218" stroke="#ddd"/><text x="452.5" y="232" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="218" stroke="#ddd"/><text x="540.0" y="232" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cognetti_2026 · V</text><circle cx="260.0" cy="30.0" r="4" fill="#78909c"><title>Cognetti_2026 · V: 6.313 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Grisic_2020 · V</text><circle cx="260.0" cy="46.0" r="4" fill="#ef6c00"><title>Grisic_2020 · V: 6.313 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Lobet_2023 · V</text><circle cx="260.0" cy="62.0" r="4" fill="#ef6c00"><title>Lobet_2023 · V: 6.313 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">van_2026_2 · V</text><circle cx="312.5" cy="78.0" r="4" fill="#ef6c00"><title>van_2026_2 · V: 25.1 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Liu_2026 · V</text><circle cx="335.3" cy="94.0" r="4" fill="#ef6c00"><title>Liu_2026 · V: 45.8 L</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Yang_2026 · V/F</text><circle cx="457.0" cy="110.0" r="4" fill="#78909c"><title>Yang_2026 · V/F: 1126 L</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Azzopardi_2011 · V1</text><circle cx="231.2" cy="126.0" r="4" fill="#78909c"><title>Azzopardi_2011 · V1: 2.96 L</title></circle><text x="184" y="146.0" font-size="11" text-anchor="end">Pointreau_2016 · V1</text><circle cx="231.7" cy="142.0" r="4" fill="#78909c"><title>Pointreau_2016 · V1: 3 L</title></circle><text x="184" y="162.0" font-size="11" text-anchor="end">Grisic_2020 · V1</text><circle cx="239.2" cy="158.0" r="4" fill="#ef6c00"><title>Grisic_2020 · V1: 3.65 L</title></circle><text x="184" y="178.0" font-size="11" text-anchor="end">Grisic_2020 · V1</text><circle cx="239.4" cy="174.0" r="4" fill="#78909c"><title>Grisic_2020 · V1: 3.67 L</title></circle><text x="184" y="194.0" font-size="11" text-anchor="end">Grisic_2020 · V1</text><circle cx="239.8" cy="190.0" r="4" fill="#ef6c00"><title>Grisic_2020 · V1: 3.71 L</title></circle><text x="184" y="210.0" font-size="11" text-anchor="end">Grisic_2020 · V1</text><circle cx="240.2" cy="206.0" r="4" fill="#ef6c00"><title>Grisic_2020 · V1: 3.75 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Azzopardi_2011_reference](drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Azzopardi N et al., Cetuximab pharmacokinetics influences p…, Clinical cancer research :… (2011) | [10.1158/1078-0432.CCR-11-1081](https://doi.org/10.1158/1078-0432.CCR-11-1081) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Cognetti_2026_reference](drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Cognetti DM et al., Safety and Efficacy Findings From a Pha…, Head & neck (2026) | [10.1002/hed.70014](https://doi.org/10.1002/hed.70014) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Grisic_2020_tvarcl](drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md) | ▶ model + simulator | 2-compartment, IV | 4 | Grisic AM et al., Semimechanistic Clearance Models of Onc…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12558](https://doi.org/10.1002/psp4.12558) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [↳ lcl](drugs/drug_cetuximab/Cetuximab_Grisic2020_lcl.md) | — | 1-compartment (no model) | 2 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [↳ mmcl](drugs/drug_cetuximab/Cetuximab_Grisic2020_mmcl.md) | — | 2-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub> | [↳ mmcl_lcl](drugs/drug_cetuximab/Cetuximab_Grisic2020_mmcl_lcl.md) | — | 2-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66 — no SI value to build from</sub> | [↳ mmcl_tvarcl](drugs/drug_cetuximab/Cetuximab_Grisic2020_mmcl_tvarcl.md) | — | 2-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Pointreau_2016_reference](drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Pointreau Y et al., Cetuximab Pharmacokinetics Influences O…, Therapeutic drug monitoring (2016) | [10.1097/FTD.0000000000000321](https://doi.org/10.1097/FTD.0000000000000321) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Yang_2026_reference](drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yang DZ et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01608-y](https://doi.org/10.1007/s40262-025-01608-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Liu_2026_reference](drugs/drug_cetuximab/Cetuximab_Liu2026_reference.md) | — | 1-compartment (no model) | 2 | Liu T et al., Advances in Therapeutic Drug Monitoring…, Clinical interventions in a… (2026) | [10.2147/cia.s587530](https://doi.org/10.2147/cia.s587530) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Lobet_2023_reference](drugs/drug_cetuximab/Cetuximab_Lobet2023_reference.md) | — | 1-compartment (no model) | 3 | Lobet S et al., Relationship Between Cetuximab Target-M…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01270-2](https://doi.org/10.1007/s40262-023-01270-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [van_2026_2_reference](drugs/drug_cetuximab/Cetuximab_van2026v2_reference.md) | — | 1-compartment (no model) | 2 | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Delbaldo_2005_reference](drugs/drug_cetuximab/Cetuximab_Delbaldo2005_reference.md) | — | 1-compartment (no model) | 0 | Delbaldo C et al., Pharmacokinetic profile of cetuximab (E…, European journal of cancer… (2005) | [10.1016/j.ejca.2005.04.029](https://doi.org/10.1016/j.ejca.2005.04.029) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Dirks_2008_reference](drugs/drug_cetuximab/Cetuximab_Dirks2008_reference.md) | — | 3-compartment (no model) | 5 | Dirks NL et al., Population pharmacokinetics of cetuxima…, Journal of clinical pharmac… (2008) | [10.1177/0091270007313393](https://doi.org/10.1177/0091270007313393) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Le_2019_reference](drugs/drug_cetuximab/Cetuximab_Le2019_reference.md) | — | 1-compartment (no model) | 0 | Le Louedec F et al., Cetuximab pharmacokinetic/pharmacodynam…, British journal of clinical… (2019) | [10.1111/bcp.13907](https://doi.org/10.1111/bcp.13907) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Wang_2011_reference](drugs/drug_cetuximab/Cetuximab_Wang2011_reference.md) | — | 1-compartment (no model) | 0 | Wang C et al., Phase 1 study of anti-epidermal growth…, mAbs (2011) | [10.4161/mabs.3.1.14021](https://doi.org/10.4161/mabs.3.1.14021) |
+
+## Adverse drug reactions (ADR)
+
+16 reaction(s) reported in 7 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Endocrine and metabolic
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hypothyroidism | Hypothyroidism was reported in 6 of 19 patients (31.6%) with no events of grade 3 or higher severity. | 6 (31.6) | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: hypothyroidism (1)</summary>
+
+> “Hypothyroidism | 6 (31.6) | 0” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(cohort)</sub>
+
+</details>
+
+### Eye
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Eye disorders | The paper states that in patients treated with cetuximab for EGFR positive refractory colorectal cancer, inhibiting EGFR functions leads to additional side effects, including eye disorders, alongside changes in scalp and hair growth, xerosis, pruritus, and nail disorders. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+
+<details><summary>Evidence: eye disorders (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Constipation | In the treated population of 19 patients, 7 patients (36.8%) experienced constipation of any grade, and no patients experienced constipation of grade ≥ 3. | 7 (36.8) | — | — | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+| Mucositis | Mucositis was one of the toxicities analyzed in 21 patients with locally advanced head and neck squamous cell carcinoma (LAHNSCC) treated with cetuximab and radiotherapy, with grades ranging from 0 to 4 observed. | Grade 0: 2; Grade 1: 1; Grade 2: 6; Grade 3: 11; Grade 4: 1 | — | — | [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) |
+
+<details><summary>Evidence: constipation (1)</summary>
+
+> “Constipation | 7 (36.8) | 0 ... ASP‐1929 photoimmunotherapy was delayed for any grade ≥ 3 adverse events attributed to ASP‐1929 photoimmunotherapy, with the following exceptions: ... constipation that could be managed with supportive care;” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Mucositis (1)</summary>
+
+> “Toxicities (radiation dermatitis, mucositis, and folliculitis) were graded for severity from grades 1 to 5, according to the CTCAE v4.02 scale. Cetuximab-related toxicities were analyzed each week during radiotherapy in curative intent (and its potential impact) only in the LAHNSCC population (N = 21).” — [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) <sub>(case series)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Drug resistance | Epidermal growth factor receptor inhibitors cetuximab and panitumumab are restricted to specific wild-type patients, with risks of drug resistance and potential hypersensitivity reactions. | — | — | — | [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275) |
+| Fatigue | Fatigue was reported in 11 patients (57.9%) of the treated population, all with an unknown severity grade as no grade 3 or higher events were recorded for this term. | 11 (57.9) | pembrolizumab | primary_care: fatigue | [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: drug resistance (1)</summary>
+
+> “Epidermal growth factor receptor inhibitors cetuximab and panitumumab are restricted to specific wild-type patients, with risks of drug resistance and potential hypersensitivity reactions.” — [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: fatigue (1)</summary>
+
+> “The most frequent all‐grade TEAEs were fatigue, oral pain, and constipation (Table 3).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(randomised trial)</sub>
+
+</details>
+
+### Immune / hypersensitivity
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hypersensitivity | The paper states that epidermal growth factor receptor inhibitors cetuximab and panitumumab are associated with risks of potential hypersensitivity reactions in specific wild-type patients. | — | — | — | [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275), [Sheng 2026](https://pubmed.ncbi.nlm.nih.gov/41744483) |
+
+<details><summary>Evidence: hypersensitivity (2)</summary>
+
+> “Epidermal growth factor receptor inhibitors cetuximab and panitumumab are restricted to specific wild-type patients, with risks of drug resistance and potential hypersensitivity reactions.” — [Li 2026](https://pubmed.ncbi.nlm.nih.gov/42505275) <sub>(review)</sub>
+
+> “Early Japanese studies of cetuximab reported similar PK and safety to Western cohorts, likewise supporting unified dosing [25].” — [Sheng 2026](https://pubmed.ncbi.nlm.nih.gov/41744483) <sub>(case series)</sub>
+
+</details>
+
+### Infection
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Infusion-related reaction | The paper reports that 254 out of 3216 patients receiving ramucirumab experienced at least one immediate infusion-related reaction (any grade), with an overall incidence of 7.9%. | 254/3216 (7.9%) | residing in Asia; receiving chemotherapy; no premedication | — | [Gao 2021](https://pubmed.ncbi.nlm.nih.gov/33532866), [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) |
+
+<details><summary>Evidence: infusion-related reaction (2)</summary>
+
+> “In the pooled dataset, 254/3216 (7.9%) patients receiving ramucirumab experienced at least one immediate any-grade IRR (Table 1).” — [Gao 2021](https://pubmed.ncbi.nlm.nih.gov/33532866) <sub>(review)</sub>
+
+> “Infusion reactions, all related to ASP‐1929, were reported for five patients and consisted of non‐serious grade 1 or 2 events (rash, itching, back pain, dyspnea, hyperhidrosis, stomach cramps/ache, tightness of throat, fever, myalgia diarrhea, headache, chills, nausea, and vomiting).” — [Cognetti 2026](https://pubmed.ncbi.nlm.nih.gov/40852760) <sub>(case series)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Acne-like skin rash | In Phase II trials of cetuximab treatment in patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms (26). | more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Folliculitis | In 21 patients with locally advanced head and neck squamous cell carcinoma (LAHNSCC) treated with cetuximab and radiotherapy, 9 patients (43%) experienced low-grade folliculitis (CTCAE grades 0-1) and 12 patients (57%) experienced severe folliculitis (CTCAE grades 2-3). | Low = 9; Severe = 12 | radiotherapy | hospital: severity grade | [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) |
+| Hair growth changes | In patients with EGFR positive refractory colorectal cancer treated with cetuximab, side effects arise as changes in the scalp and hair growth due to the inhibition of EGFR functions in healthy tissue where EGFR is commonly expressed in the basal layer of the epidermis. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Nail and eye disorders | In patients treated with cetuximab, inhibiting EGFR functions leads to side effects including nail and eye disorders. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Pruritus | In patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, pruritus is reported as an additional side effect arising from the inhibition of EGFR functions. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+| Radiation dermatitis | Patients with locally advanced head and neck squamous cell carcinoma treated with cetuximab and radiotherapy developed radiation dermatitis, with 13 of 21 patients experiencing severe toxicity (grades 3-4) and 8 experiencing low toxicity (grades 0-2). | Severe = 13, Low = 8 (out of N = 21) | radiotherapy | hospital: severity from grades 1 to 5, according to the CTCAE v4.02 scale | [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) |
+| Rash | In a study of 33 patients treated with a combination of tislelizumab, cetuximab, and irinotecan, cetuximab dose was reduced in 9 patients (27%) due to rash. | 9 patients (27%) | — | — | [Xu 2024](https://pubmed.ncbi.nlm.nih.gov/39179622) |
+| Xerosis | In patients with EGFR positive refractory colorectal cancer treated with cetuximab, xerosis occurs as an additional side effect resulting from the inhibition of EGFR functions. | — | — | — | [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) |
+
+<details><summary>Evidence: acne-like skin rash (1)</summary>
+
+> “In Phase II trials of cetuximab treatment in patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms (26).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Folliculitis (1)</summary>
+
+> “Toxicities (radiation dermatitis, mucositis, and folliculitis) were graded for severity from grades 1 to 5, according to the CTCAE v4.02 scale. Cetuximab-related toxicities were analyzed each week during radiotherapy in curative intent (and its potential impact) only in the LAHNSCC population (N = 21).” — [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: hair growth changes (1)</summary>
+
+> “In healthy tissue, EFGR is commonly expressed in the basal layer of the epidermis and regulates growth, differentiation, and wound healing. By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: nail and eye disorders (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: pruritus (1)</summary>
+
+> “By inhibiting EGFR functions, additional side effects arise as changes in the scalp and hair growth, xerosis and pruritus, as well as nail and eye disorders (27–29).” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Radiation dermatitis (1)</summary>
+
+> “Patients with LAHNSCC who developed severe radiation dermatitis toxicity (grade more than 3) had a longer OS than that of the other patients (P = 0.005, Fig. 3).” — [Pointreau 2016](https://pubmed.ncbi.nlm.nih.gov/27631463) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: rash (1)</summary>
+
+> “The cetuximab dose was reduced in 9 patients (27%) due to rash, and irinotecan dose was reduced in 11 patients (33%) due to diarrhea or hematologic toxicity or vomiting.” — [Xu 2024](https://pubmed.ncbi.nlm.nih.gov/39179622) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: xerosis (1)</summary>
+
+> “In Phase II trials of cetuximab treatment in patients with epidermal growth factor receptor (EGFR) positive refractory colorectal cancer, more than 86% of patients developed acne-like skin rash, including 18% developing grade 3 symptoms (26). In healthy tissue, EFGR is commonly expressed in the basal layer of the epidermis and regulates growth, differentiation, and wound healing. By inhibiting EGFR functions…” — [Bloch 2025](https://pubmed.ncbi.nlm.nih.gov/41246356) <sub>(review)</sub>
+
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cetuximab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: C1QA (binder), C1QB (binder), C1QC (binder), EGFR (binder), FCGR1A (binder), FCGR2A (binder), FCGR3A (binder), FCGR3B (binder).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-13 12:55 | 2:55 | 12/4/0 | 0/0/0 | 0/0/0 | 65,737/5,145 | einfracz / qwen3.8-27b | 61 | 10/51 | 58/3 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 558 matched, 162 returned
+- **screened:** 31  ·  **relevant:** 8
+- **records:** 16  ·  extracted 5  ·  needs review 7  ·  rejected 4  ·  stale 5
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Azzopardi_2011.pdf` | Azzopardi N et al., Cetuximab pharmacokinetics influences p…, Clinical cancer research :… (2011) | popPK | 10 | [10.1158/1078-0432.CCR-11-1081](https://doi.org/10.1158/1078-0432.CCR-11-1081) | [21953502](https://pubmed.ncbi.nlm.nih.gov/21953502) | The human population-PK model reports numeric cetuximab volumes, clearances, and elimination rate. |
+| `Deschamps_2026.pdf` | Marin C et al., The CetuxIMAX study: a population pharm…, Cancer chemotherapy and pha… (2026) | popPK | 10 | [10.1007/s00280-026-04892-y](https://doi.org/10.1007/s00280-026-04892-y) | [42053579](https://pubmed.ncbi.nlm.nih.gov/42053579) | A human cetuximab population-PK model is described, but numeric disposition parameter values are not provided. |
+| `Dirks_2008.pdf` | Dirks NL et al., Population pharmacokinetics of cetuxima…, Journal of clinical pharmac… (2008) | popPK | 10 | [10.1177/0091270007313393](https://doi.org/10.1177/0091270007313393) | [18218786](https://pubmed.ncbi.nlm.nih.gov/18218786) | Human population-PK model reports numeric cetuximab disposition parameters in the evidence. |
+| `Le_2019.pdf` | Le Louedec F et al., Cetuximab pharmacokinetic/pharmacodynam…, British journal of clinical… (2019) | popPK | 10 | [10.1111/bcp.13907](https://doi.org/10.1111/bcp.13907) | [30811063](https://pubmed.ncbi.nlm.nih.gov/30811063) | A human cetuximab population-PK model is reported, with a numeric covariate effect but no absolute clearance or volume estimates shown. |
+| `Lobet_2023.pdf` | Lobet S et al., Relationship Between Cetuximab Target-M…, Clinical pharmacokinetics (2023) | popPK | 10 | [10.1007/s40262-023-01270-2](https://doi.org/10.1007/s40262-023-01270-2) | [37442917](https://pubmed.ncbi.nlm.nih.gov/37442917) | Human cetuximab TMDD model parameters, including clearance and target kinetics, are reported numerically in the evidence. |
+| `Delbaldo_2005.pdf` | Delbaldo C et al., Pharmacokinetic profile of cetuximab (E…, European journal of cancer… (2005) | popPK | 9 | [10.1016/j.ejca.2005.04.029](https://doi.org/10.1016/j.ejca.2005.04.029) | [16051481](https://pubmed.ncbi.nlm.nih.gov/16051481) | Human cetuximab PK is reported with numeric half-life and AUC values. |
+| `Ogungbenro_2019.pdf` | Ogungbenro K et al., An evaluation of cetuximab dosing strat…, The Journal of pharmacy and… (2019) | popPK | 9 | [10.1111/jphp.13108](https://doi.org/10.1111/jphp.13108) | [31124587](https://pubmed.ncbi.nlm.nih.gov/31124587) | Uses a cetuximab population-PK model, but no numeric disposition parameter values are present in the evidence. |
+| `Wang_2011.pdf` | Wang C et al., Phase 1 study of anti-epidermal growth…, mAbs (2011) | popPK | 9 | [10.4161/mabs.3.1.14021](https://doi.org/10.4161/mabs.3.1.14021) | [21051930](https://pubmed.ncbi.nlm.nih.gov/21051930) | Numeric half-lives and a two-compartment model are reported for CMAB009, which has the same amino acid sequence as cetuximab. |
+| `Wang_2024.pdf` | Wang J et al., Integrated PK/PD Modeling Relates Smoot…, Journal of pharmaceutical s… (2024) | popPK | 9 | [10.1016/j.xphs.2023.10.019](https://doi.org/10.1016/j.xphs.2023.10.019) | [37844759](https://pubmed.ncbi.nlm.nih.gov/37844759) | A cetuximab tumor-disposition model is described, but no numeric parameter values are provided in the evidence. |
+| `Cézé_2009.pdf` | Cézé N et al., An enzyme-linked immunosorbent assay fo…, Therapeutic drug monitoring (2009) | popPK | 8 | [10.1097/FTD.0b013e3181b33da3](https://doi.org/10.1097/FTD.0b013e3181b33da3) | [19730278](https://pubmed.ncbi.nlm.nih.gov/19730278) | Cetuximab concentrations were modeled with a two-compartment population-PK model, but no numeric model parameter values are provided. |
+
+<sub>queue written 2026-10-07 11:25 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Augustin_2026 | irrelevant | 1 | 0 | Cetuximab is only a comparator in a human blood assay; the PK values concern MAGE-A4-TCB, not cetuximab. |
+| popPK | Baaz_2022 | irrelevant | 2 | 1 | The paper uses a cited one-compartment cetuximab PK model but reports exposure concentrations, not numeric disposition parameters; derivation details are in supplementary material. |
+| popPK | Bisaso_2023 | irrelevant | 1 | 0 | This is a pharmacodynamic tumour-growth interaction study and reports no cetuximab disposition parameters. |
+| popPK | Bloch_2025 | irrelevant | 0 | 0 | This is an in vitro antibody-masking study and reports no cetuximab pharmacokinetic disposition parameters. |
+| popPK | Carmona_2014 | irrelevant | 0 | 0 | Cetuximab is only part of a treatment regimen; the study reports marrow fat changes, not cetuximab pharmacokinetic parameters. |
+| popPK | Castro-Suárez_2020 | irrelevant | 0 | 0 | This is a human nimotuzumab PK study; cetuximab is mentioned only as a comparator, with no cetuximab parameter values reported. |
+| popPK | Centanni_2026 | irrelevant | 0 | 0 | Cetuximab is only part of a treatment regimen, and no cetuximab disposition parameters are reported. |
+| popPK | Cognetti_2026 | irrelevant | 4 | 1 | The study measures ASP-1929, a cetuximab–dye conjugate, and shows AUC values but no qualifying disposition parameters for cetuximab. |
+| popPK | Cortés_2025 | irrelevant | 0 | 0 | Cetuximab is mentioned only as background; no cetuximab disposition parameters are reported. |
+| popPK | Cuffaro_2025 | irrelevant | 1 | 0 | This is an in-vitro ADC efficacy study with no quantitative cetuximab disposition parameters reported. |
+| popPK | Cézé_2009 | relevant | 8 | 1 | Cetuximab concentrations were modeled with a two-compartment population-PK model, but no numeric model parameter values are provided. |
+| popPK | Deschamps_2026 | relevant | 10 | 1 | A human cetuximab population-PK model is described, but numeric disposition parameter values are not provided. |
+| popPK | Filippini_2025 | irrelevant | 0 | 0 | This is a human outcomes study; cetuximab is only mentioned as a comparator and no cetuximab PK values are reported. |
+| popPK | Gao_2021 | irrelevant | 0 | 0 | This models ramucirumab, not cetuximab; its PK parameter values are referred to in supplementary Table S1, which is not provided. |
+| popPK | García-Illarramendi_2025 | irrelevant | 0 | 0 | Cetuximab is only used as a comparator in model calibration, with no cetuximab pharmacokinetic parameters reported. |
+| popPK | Hamakubo_2026 | irrelevant | 0 | 0 | This mouse antitumor-efficacy study reports no quantitative cetuximab disposition parameters. |
+| popPK | Hurwitz_2012 | irrelevant | 2 | 4 | Cetuximab is only a comparator; its 1.5-day half-life is reported, but its apparent distribution volume is only ranked, not quantified. |
+| popPK | Kakavoulia_2026 | irrelevant | 0 | 0 | Cetuximab is used in an in-vitro EV-binding assay, with no pharmacokinetic disposition parameters reported. |
+| popPK | Kołodziejczyk_2026 | irrelevant | 0 | 0 | This is a review of dendrimers and boron-based biomedical applications, with no cetuximab PK parameters. |
+| popPK | Ku_2012 | irrelevant | 0 | 0 | This meta-analysis reports treatment outcomes, not quantitative cetuximab pharmacokinetic parameters. |
+| popPK | Leeman-Neill_2010 | irrelevant | 0 | 0 | This is an antitumor study and reports no quantitative cetuximab disposition parameters. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | This in-vitro binding study reports EC50 values, not cetuximab disposition parameters. |
+| popPK | Li_2026_2 | irrelevant | 0 | 0 | This is a review and mentions cetuximab only as a CRC treatment, with no cetuximab PK values reported. |
+| popPK | Lin_2011 | irrelevant | 0 | 0 | Cetuximab is only a co-treatment in an in-vitro pharmacodynamic study, with no cetuximab disposition parameters reported. |
+| popPK | Lipinski_2023 | irrelevant | 0 | 0 | This antibody-engineering study reports no cetuximab pharmacokinetic parameters. |
+| popPK | Liu_2026 | irrelevant | 0 | 0 | This review covers linezolid, contezolid, and tedizolid, with no cetuximab disposition parameters reported. |
+| popPK | Macaire_2020 | irrelevant | 0 | 0 | This human FOLFIRINOX/G-CSF PK/PD study reports no cetuximab parameters. |
+| popPK | Mahomed_2025 | irrelevant | 1 | 2 | The study models other antibodies; cetuximab appears only in cited rat bioavailability values, with no cetuximab disposition parameters or model. |
+| popPK | Marin_2026 | irrelevant | 2 | 0 | This is a correction notice for a human cetuximab population-PK study, but it contains no quantitative parameter values. |
+| popPK | Meneses-Lorente_2017 | irrelevant | 0 | 0 | Cetuximab is only used in combination; no cetuximab disposition parameters are reported. |
+| popPK | Milenković-Grišić_2024 | irrelevant | 2 | 0 | This exposure-response analysis uses a previously established cetuximab PK model but reports no numeric disposition parameters. |
+| popPK | Ogungbenro_2019 | relevant | 9 | 0 | Uses a cetuximab population-PK model, but no numeric disposition parameter values are present in the evidence. |
+| popPK | Ooki_2022 | irrelevant | 0 | 0 | This clinical quality-of-life study reports no quantitative cetuximab disposition parameters. |
+| popPK | Panzeri_2020 | irrelevant | 0 | 0 | This is an in-vitro cell-line study of cowpea extracts and cetuximab efficacy, with no cetuximab disposition parameters. |
+| popPK | Park_2017 | irrelevant | 2 | 0 | Cetuximab is a monkey comparator, and no numeric PK parameter values specific to cetuximab are provided. |
+| popPK | Patel_2010 | irrelevant | 0 | 0 | This is an in-vitro ADCC study and reports no cetuximab disposition parameters. |
+| popPK | Pekar_2021 | irrelevant | 0 | 0 | Cetuximab is only a comparator, and no cetuximab disposition parameters are reported. |
+| popPK | Pekar_2021_2 | irrelevant | 0 | 0 | Cetuximab is used as a comparator in an in-vitro immunoligand study, with no pharmacokinetic parameters reported. |
+| popPK | Peña-Cabia_2021 | irrelevant | 2 | 1 | Human cetuximab trough concentrations are reported, but no quantitative disposition parameters or PK model are provided. |
+| popPK | Piscitelli_2024 | irrelevant | 0 | 0 | Cetuximab is only coadministered in a separate study; no cetuximab disposition parameters are reported. |
+| popPK | Rapic_2017 | irrelevant | 0 | 0 | The evidence reports irinotecan effects in mice, not cetuximab pharmacokinetics. |
+| popPK | Saba_2014 | irrelevant | 0 | 0 | The pharmacokinetic model is for everolimus, with no cetuximab disposition parameters reported. |
+| popPK | Samuels_2016 | irrelevant | 0 | 0 | This clinical outcomes study reports no quantitative cetuximab pharmacokinetic parameters. |
+| popPK | Schmitz_2015 | irrelevant | 0 | 0 | The reported kinetic parameters describe tumor contrast-agent perfusion, not cetuximab disposition; the referenced Table 1 values are not provided. |
+| popPK | Sen_2012 | irrelevant | 0 | 0 | This is a cancer-resistance study and reports no quantitative cetuximab disposition parameters. |
+| popPK | Seurat_2020 | irrelevant | 2 | 0 | This is a simulation/design study, and cetuximab clearance is assumed from prior work; its referenced Table 1 values are not provided here. |
+| popPK | Sheng_2026 | irrelevant | 0 | 0 | This is a sugemalimab study; cetuximab is only mentioned in discussion, and no cetuximab parameter values are provided. |
+| popPK | Sibieude_2021 | irrelevant | 2 | 0 | Cetuximab is only used for covariate screening, and no numeric cetuximab disposition parameters are present in the evidence. |
+| popPK | Tabernero_2010 | irrelevant | 2 | 0 | The human study mentions trough levels but provides no numeric cetuximab disposition parameters in the evidence. |
+| popPK | Ternant_2025 | irrelevant | 0 | 0 | The quantitative population-PK model is for rituximab, not cetuximab. |
+| popPK | Wang_2024 | relevant | 9 | 0 | A cetuximab tumor-disposition model is described, but no numeric parameter values are provided in the evidence. |
+| popPK | Wishart_2026 | irrelevant | 0 | 0 | This is a human hearing-outcomes analysis and reports no cetuximab pharmacokinetic parameters. |
+| popPK | Wu_2006 | irrelevant | 1 | 0 | Rat biodistribution of a cetuximab conjugate is reported at one timepoint, but no quantitative PK disposition parameters are provided. |
+| popPK | Wu_2022 | irrelevant | 0 | 0 | Cetuximab (Erbitux) is only a co-administered comparator in an antitumor study, with no cetuximab PK parameters reported. |
+| popPK | Xiang_2020 | irrelevant | 0 | 0 | This reports quantitative PK parameters for bemarituzumab, not cetuximab. |
+| popPK | Xu_2023 | irrelevant | 0 | 0 | The paper models sabatolimab, not cetuximab, and reports no cetuximab parameters. |
+| popPK | Xu_2024 | irrelevant | 0 | 0 | This human combination-treatment trial reports no quantitative cetuximab pharmacokinetic disposition parameters. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The model reports encorafenib parameters only; cetuximab is mentioned as a combination drug with no PK values reported. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study reports mouse PK parameters for EGFR-targeting PROTACs, not cetuximab. |
+| popPK | van_2026 | irrelevant | 0 | 0 | This is an in vitro analytical characterization study and reports no cetuximab pharmacokinetic parameters. |
+| popPK | van_2026_2 | irrelevant | 0 | 0 | The quantitative PK values are for procizumab, not cetuximab. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcetuximab%5D&body=Drug%3A%20cetuximab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cetuximab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:26 UTC</sub>

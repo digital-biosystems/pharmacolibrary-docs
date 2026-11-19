@@ -1,0 +1,212 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;guanethidine&quot;}]"></div>
+
+# guanethidine
+
+- **generic name:** guanethidine
+- **ATC codes:** `C02CC02`, `C02LF01`, `S01EX01`
+- **DrugBank:** [DB01170](https://go.drugbank.com/drugs/DB01170) · **PubChem:** [CID 3518](https://pubchem.ncbi.nlm.nih.gov/compound/3518)
+- **molar mass:** 198.3085 g/mol (C10H22N4) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Guanethidine is an antihypertensive drug that treats high blood pressure. It is given orally in tablet form. The drug is no longer in use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q420673](https://www.wikidata.org/wiki/Q420673), [Wikipedia](https://en.wikipedia.org/wiki/Guanethidine?oldid=1329256410) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=guanethidine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: SLC6A2 (inducer).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 13:57 | 3:42 | 0/0/0 | 0/0/0 | 0/0/0 | 49,665/2,516 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 2/1 | 1/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 155 matched, 111 returned
+- **screened:** 2  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Wethmar_2001.pdf` | Wethmar U et al., Interactions of ligands at angiotensin…, Japanese journal of pharmac… (2001) | pd | 5 | [10.1254/jjp.85.167](https://doi.org/10.1254/jjp.85.167) | [11286399](https://www.ncbi.nlm.nih.gov/pubmed/11286399) | metadata signals extractable PD data (IC50) |
+| `De_2003.pdf` | De Salvatore G et al., Effects of in vivo treatment with inter…, Autonomic & autacoid pharma… (2003) | pd | 4 | [10.1046/j.1474-8673.2003.00286.x](https://doi.org/10.1046/j.1474-8673.2003.00286.x) | [14511072](https://www.ncbi.nlm.nih.gov/pubmed/14511072) | metadata signals extractable PD data (Emax) |
+| `Dehpour_1994.pdf` | Dehpour AR et al., Effects of atropine, pirenzepine, cloni…, General pharmacology (1994) | pd | 4 | [10.1016/0306-3623(94)90102-3](https://doi.org/10.1016/0306-3623(94)90102-3) | [7835643](https://www.ncbi.nlm.nih.gov/pubmed/7835643) | metadata signals extractable PD data (IC50) |
+| `Ding_2023.pdf` | Ding N et al., The enhancing effect of 5-HT on phasic…, European journal of pharmac… (2023) | pd | 4 | [10.1016/j.ejphar.2023.175715](https://doi.org/10.1016/j.ejphar.2023.175715) | [37059373](https://www.ncbi.nlm.nih.gov/pubmed/37059373) | metadata signals extractable PD data (Emax) |
+| `Kitazawa_1998.pdf` | Kitazawa T et al., Involvement of 5-hydroxytryptamine7 rec…, British journal of pharmaco… (1998) | pd | 4 | [10.1038/sj.bjp.0701583](https://doi.org/10.1038/sj.bjp.0701583) | [9489604](https://www.ncbi.nlm.nih.gov/pubmed/9489604) | metadata signals extractable PD data (EC50) |
+| `Kohjitani_2005.pdf` | Kohjitani A et al., Peripheral N-methyl-D-aspartate recepto…, Anesthesia and analgesia (2005) | pd | 4 | [10.1213/01.ANE.0000184137.37687.B7](https://doi.org/10.1213/01.ANE.0000184137.37687.B7) | [16301241](https://www.ncbi.nlm.nih.gov/pubmed/16301241) | metadata signals extractable PD data (EC50) |
+| `Lefebvre_1992.pdf` | Lefebvre RA et al., Relaxant effects of BRL 38227 and pinac…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90087-k](https://doi.org/10.1016/0014-2999(92)90087-k) | [1582448](https://www.ncbi.nlm.nih.gov/pubmed/1582448) | metadata signals extractable PD data (Concentration-effect) |
+| `Maggi_1994.pdf` | Maggi CA et al., Tachykinin NK3 receptor mediates NANC h…, Regulatory peptides (1994) | pd | 4 | [10.1016/0167-0115(94)90174-0](https://doi.org/10.1016/0167-0115(94)90174-0) | [7531357](https://www.ncbi.nlm.nih.gov/pubmed/7531357) | metadata signals extractable PD data (EC50) |
+| `Menozzi_2018.pdf` | Menozzi A et al., Effects of selective α2 -adrenergic rec…, Journal of veterinary pharm… (2018) | pd | 4 | [10.1111/jvp.12470](https://doi.org/10.1111/jvp.12470) | [29164631](https://www.ncbi.nlm.nih.gov/pubmed/29164631) | metadata signals extractable PD data (Emax) |
+| `Morris_1991.pdf` | Morris JL, Roles of neuropeptide Y and noradrenali…, Regulatory peptides (1991) | pd | 4 | [10.1016/0167-0115(91)90023-a](https://doi.org/10.1016/0167-0115(91)90023-a) | [1678196](https://www.ncbi.nlm.nih.gov/pubmed/1678196) | metadata signals extractable PD data (EC50) |
+| `Wang_1993.pdf` | Wang YX et al., Functional integrity of the central and…, The Journal of pharmacology… (1993) | pd | 4 |  | [7682612](https://www.ncbi.nlm.nih.gov/pubmed/7682612) | metadata signals extractable PD data (Emax) |
+| `da_2016.pdf` | da Silva MT et al., α-Terpineol Induces Gastric Retention o…, Planta medica (2016) | pd | 4 | [10.1055/s-0042-104657](https://doi.org/10.1055/s-0042-104657) | [27124242](https://www.ncbi.nlm.nih.gov/pubmed/27124242) | metadata signals extractable PD data (concentration-effect) |
+
+<sub>queue written 2026-10-06 13:57 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | ARNOLD_1963 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
+| popPK | Akata_1995 | irrelevant | 0 | 0 | The study investigates the mechanism of volatile anesthetics on rat mesenteric arteries, using guanethidine only as a non-specific blocker of nerve terminals, and reports no pharmacokinetic parameters for guanethidine. |
+| PD | Akata_1995 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of volatile anesthetics (halothane, isoflurane, enflurane), not guanethidine, which is used only as a background agent to block nerve terminals. |
+| popPK | Boerman_2016 | irrelevant | 0 | 0 | The study is a vascular physiology investigation in mice where guanethidine is used solely as a tool to inhibit sympathetic neurotransmission, not as the subject of pharmacokinetic analysis. |
+| PD | Boerman_2016 | not_relevant | 0 | 0 | The paper uses guanethidine solely as a pharmacological tool to block sympathetic neurotransmission in an isolated organ bath experiment; it does not report a pharmacodynamic exposure-response or dose-response relationship for guanethidine itself. |
+| popPK | Briejer_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of nitric oxide in guinea-pig colon, where guanethidine is used only as a non-affecting control agent, not as the subject of PK analysis. |
+| popPK | Cession-Fossion_1965 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
+| popPK | Chang_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of bladder physiology where guanethidine is used only as a pharmacological tool to block adrenergic nerves, not as a subject for pharmacokinetic analysis. |
+| PD | Chang_2018 | not_relevant | 2 | 1 | The paper uses guanethidine as a qualitative pharmacological tool to block adrenergic nerves in an in vitro study of phenylephrine-induced bladder relaxation; it does not report a dose-response curve or numeric PD parameters for guanethidine itself. |
+| popPK | Consigny_2014 | irrelevant | 0 | 0 | The study uses guanethidine as a chemical agent for renal denervation in a rat model and reports neurochemical outcomes (NE depletion), not pharmacokinetic parameters. |
+| PD | Consigny_2014 | not_relevant | 1 | 0 | The paper mentions guanethidine as a validated neurotoxic agent for renal denervation but does not report any dose-response or concentration-effect data for it; the only dose-response curve provided is for paclitaxel. |
+| popPK | De_2003 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
+| PD | De_2003 | not_relevant | 0 | 0 | The paper investigates the effects of interleukins 1beta and 6 on vascular reactivity and does not mention guanethidine or report any exposure-response or dose-response data for it. |
+| popPK | Dehpour_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of gastric fundus contractions where guanethidine is used only as a tool compound to block adrenergic transmission, not as the subject of a pharmacokinetic analysis. |
+| PD | Dehpour_1994 | not_relevant | 0 | 0 | The paper reports IC50 values for atropine, pirenzepine, clonidine, morphine, and yohimbine, but guanethidine is only used as a fixed concentration (5 x 10^-6 M) to block adrenergic transmission; no dose-response curve or PD parameters are reported for guanethidine. |
+| popPK | Dehpour_2002 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation of NANC relaxation in rat muscles where guanethidine is used only as a blocking agent, not as the subject of pharmacokinetic analysis. |
+| PD | Dehpour_2002 | not_relevant | 0 | 0 | The paper uses guanethidine as a pharmacological tool to block adrenergic transmission, but does not report a dose-response or exposure-response relationship for guanethidine itself. |
+| popPK | Dick_1997 | irrelevant | 0 | 0 | Guanethidine is used only as a pharmacological tool to block adrenergic transmission in an in-vitro study of NOS inhibitors in pig gastric fundus, with no PK parameters reported. |
+| PD | Dick_1997 | not_relevant | 0 | 0 | The paper investigates NOS inhibitors in pig gastric fundus; guanethidine is used only as a pharmacological tool to block adrenergic tone, not as the subject of a PD or exposure-response analysis. |
+| popPK | Ding_2023 | irrelevant | 0 | 0 | no_text gate: only 126 chars of text extracted (&lt; 400) |
+| PD | Ding_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacology of 5-HT on human ureter and does not mention guanethidine or report any exposure-response or dose-response data for it. |
+| popPK | Ewert_2006 | irrelevant | 0 | 0 | Guanethidine is used only as a pharmacological tool (adrenolytic) in an in-vitro study of angiotensin II effects on intestinal smooth muscle, not as the subject of a pharmacokinetic analysis. |
+| PD | Ewert_2006 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Angiotensin II, not guanethidine; guanethidine is only mentioned as a negative control that did not affect the response. |
+| popPK | Faghir-Ghanesefat_2017 | irrelevant | 0 | 0 | The study is a mechanistic investigation of receptor expression and function in rat tissue, using guanethidine only as a pharmacological blocker, and reports no pharmacokinetic parameters. |
+| PD | Faghir-Ghanesefat_2017 | not_relevant | 0 | 0 | The paper investigates the role of α7-nAChR in rat corpus cavernosum using guanethidine only as a fixed-concentration blocker to isolate NANC responses, and does not report any exposure-response or dose-response relationship for guanethidine itself. |
+| PGx | Fischer_1990 | not_relevant | 0 | 0 | The paper investigates the metabolism of fluperlapine, not guanethidine, and does not report pharmacogenomic effects on guanethidine PK/PD. |
+| popPK | Gandía_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium channel blockade in chromaffin cells, not a pharmacokinetic study, and reports no disposition parameters for guanethidine. |
+| popPK | Giuliani_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of NK3 receptors in guinea-pig colon where guanethidine is used only as a non-specific adrenergic blocker, not as the subject drug for PK analysis. |
+| PD | Giuliani_1995 | not_relevant | 0 | 0 | The paper studies the pharmacology of SR 142801 and senktide in isolated guinea-pig colon; guanethidine is used only as a non-specific pharmacological tool (adrenergic blocker) and no PD relationship or parameters for guanethidine are reported. |
+| popPK | Grisk_2005 | irrelevant | 0 | 0 | The study uses guanethidine as a tool to induce sympathectomy in rats and investigates renal artery function, not the pharmacokinetics of guanethidine. |
+| PD | Grisk_2005 | not_relevant | 0 | 0 | The paper uses guanethidine as a tool for neonatal sympathectomy and reports pharmacological responses to other agonists (NE, vasopressin, ET-1), but does not report a pharmacodynamic or exposure-response relationship for guanethidine itself. |
+| popPK | Guettler_2008 | irrelevant | 0 | 0 | The study investigates the neuropharmacological mechanism of nitroglycerin tolerance using guanethidine as a tool compound, and does not report any pharmacokinetic parameters for guanethidine. |
+| PD | Guettler_2008 | not_relevant | 1 | 0 | The paper investigates the mechanism of nitroglycerin tolerance using guanethidine as a pharmacological tool (microinjection) rather than analyzing the pharmacodynamic exposure-response relationship of guanethidine itself. |
+| popPK | He_2025 | irrelevant | 0 | 0 | The paper describes a computational framework for drug repositioning and does not contain any pharmacokinetic data or parameters for guanethidine. |
+| PD | He_2025 | not_relevant | 0 | 0 | The paper describes a computational framework for drug repositioning using transcriptomic data and does not report any pharmacodynamic or exposure-response analysis for guanethidine. |
+| popPK | Jiang_1996 | irrelevant | 0 | 0 | The study investigates the sensitivity of aortic rings to nifedipine in hypertensive rats, using guanethidine only as an antihypertensive treatment agent, and does not report any pharmacokinetic parameters for guanethidine. |
+| PD | Jiang_1996 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of nifedipine on aortic rings, not guanethidine; guanethidine is only mentioned as a co-treatment for blood pressure control. |
+| popPK | KIRKENDALL_1962 | irrelevant | 0 | 0 | no_text gate: only 75 chars of text extracted (&lt; 400) |
+| PD | KIRKENDALL_1962 | not_relevant | 1 | 0 | The text is a title of a review article and does not contain the full text or specific numeric PD parameters for guanethidine. |
+| popPK | Kamata_1988 | irrelevant | 0 | 0 | The study is a pharmacological investigation of gastric relaxation mechanisms in rats where guanethidine is used only as a blocking agent, not as the subject of pharmacokinetic analysis. |
+| PD | Kamata_1988 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50, EC50) for VIP, not guanethidine; guanethidine is used only as a pharmacological blocker to isolate non-adrenergic/non-cholinergic pathways. |
+| popPK | Kim_1995 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation of VIP-mediated relaxation in rabbit tissue, where guanethidine is used only as a non-specific adrenergic blocker, not as the subject drug for PK analysis. |
+| PD | Kim_1995 | not_relevant | 0 | 0 | Guanethidine is used only as a pharmacological tool to block adrenergic transmission, and no exposure-response or dose-response relationship for guanethidine itself is reported. |
+| popPK | Kitazawa_1998 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
+| PD | Kitazawa_1998 | not_relevant | 0 | 0 | The paper investigates the pharmacology of 5-hydroxytryptamine (serotonin) on porcine myometrium and does not mention guanethidine or report any exposure-response relationship for it. |
+| popPK | Kohjitani_2001 | irrelevant | 0 | 0 | Guanethidine is used only as a pharmacological tool to block adrenergic nerves in an in-vitro study of esophageal motility, not as the subject of a pharmacokinetic analysis. |
+| PD | Kohjitani_2001 | not_relevant | 0 | 0 | Guanethidine is used only as a fixed-concentration pharmacological blocker to isolate NANC responses; the paper reports PD parameters (EC50) for ketamine and midazolam, not for guanethidine. |
+| popPK | Kohjitani_2005 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
+| PD | Kohjitani_2005 | not_relevant | 0 | 0 | Guanethidine is used only as a pharmacological tool to block adrenergic transmission in an in vitro tissue bath experiment; the paper reports PD parameters for NMDA receptor modulators (MK801, NMDA), not for guanethidine. |
+| PGx | Konstandi_2006 | not_relevant | 0 | 0 | The paper uses guanethidine as a tool to deplete peripheral catecholamines to study CYP1A2 regulation, rather than reporting a pharmacogenomic effect on guanethidine's own PK or PD parameters. |
+| PGx | Konstandi_2008 | not_relevant | 0 | 0 | The paper investigates the role of catecholamines in stress-induced CYP1A2 regulation using guanethidine as a pharmacological tool to deplete peripheral catecholamines, rather than reporting a pharmacogenomic effect of a gene variant on guanethidine's PK or PD. |
+| popPK | Korolkiewicz_1997 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of galanin analogs on rat gastric fundus, using guanethidine only as a non-specific antagonist to rule out adrenergic involvement, with no PK parameters reported. |
+| PD | Korolkiewicz_1997 | not_relevant | 0 | 0 | The paper studies galanin analogs; guanethidine is used only as a non-specific antagonist to rule out adrenergic involvement, with no dose-response or PD parameters reported for it. |
+| popPK | LECOMTE_1964 | irrelevant | 0 | 0 | no_text gate: only 65 chars of text extracted (&lt; 400) |
+| PD | LECOMTE_1964 | not_relevant | 0 | 0 | The paper discusses cystamine, not guanethidine, and does not report any exposure-response or dose-response relationship for the target drug. |
+| popPK | Lefebvre_1992 | irrelevant | 0 | 0 | no_text gate: only 69 chars of text extracted (&lt; 400) |
+| PD | Lefebvre_1992 | not_relevant | 0 | 0 | The paper investigates the relaxant effects of BRL 38227 and pinacidil, not guanethidine. |
+| popPK | Maggi_1994 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
+| PD | Maggi_1994 | not_relevant | 0 | 0 | The paper reports pharmacological data for tachykinins (senktide, neurokinin B), not guanethidine, which is used only as a background blocker. |
+| popPK | Maggi_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of CGRP in guinea-pig colon where guanethidine is used only as a non-specific blocker, not as the subject of pharmacokinetic analysis. |
+| popPK | Markowitz_1995 | irrelevant | 0 | 0 | The paper is a review of drug interactions and does not report original quantitative pharmacokinetic parameters for guanethidine. |
+| PD | Markowitz_1995 | not_relevant | 1 | 0 | The paper is a qualitative review of drug interactions and does not report any numeric pharmacodynamic parameters or concentration-effect curves for guanethidine. |
+| popPK | Martins_2006 | irrelevant | 0 | 0 | Guanethidine is used only as a pharmacological tool to block adrenergic transmission in an in-vitro study of CCK-induced duodenal relaxation, with no PK parameters reported. |
+| PD | Martins_2006 | not_relevant | 0 | 0 | Guanethidine is used only as a pharmacological tool to block adrenergic transmission, and no exposure-response or dose-response relationship for guanethidine itself is reported. |
+| popPK | Martínez_1994 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of vascular contraction in human tissue where guanethidine is used only as a tool compound to block nerve stimulation, not as the subject of pharmacokinetic analysis. |
+| PD | Martínez_1994 | not_relevant | 0 | 0 | The paper studies the pharmacology of the human deferential artery using noradrenaline and electrical stimulation; guanethidine is used only as a tool to block nerve-mediated contractions, and no exposure-response or dose-response relationship for guanethidine is reported. |
+| popPK | Medina_2000 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of sildenafil on penile vessels where guanethidine is used only as a tool to block norepinephrine release, not as the subject of pharmacokinetic analysis. |
+| PD | Medina_2000 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of sildenafil, not guanethidine; guanethidine is used only as a tool compound to block norepinephrine release. |
+| popPK | Meini_1996 | irrelevant | 0 | 0 | The study is a pharmacological assay for bradykinin receptors where guanethidine is used only as a non-specific blocker, not as the subject of pharmacokinetic analysis. |
+| PD | Meini_1996 | not_relevant | 0 | 0 | The paper uses guanethidine as a non-specific blocker in a bradykinin receptor assay and does not report any pharmacodynamic or exposure-response relationship for guanethidine itself. |
+| popPK | Menozzi_2018 | irrelevant | 0 | 0 | no_text gate: only 127 chars of text extracted (&lt; 400) |
+| PD | Menozzi_2018 | not_relevant | 0 | 0 | The paper studies α2-adrenergic agonists in horse bronchi and does not mention guanethidine or report any exposure-response or dose-response data for it. |
+| popPK | Middeke_2008 | irrelevant | 0 | 0 | The paper is a clinical review on dosing strategies for hypertension and mentions guanethidine only as a class of drug for withdrawal considerations, without reporting any pharmacokinetic parameters. |
+| PD | Middeke_2008 | not_relevant | 1 | 0 | The text is a general review of dosing strategies and withdrawal phenomena; it mentions guanethidine only as an example of a drug requiring caution during withdrawal and provides no numeric PD parameters or concentration-effect data. |
+| popPK | Minocha_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of erythromycin's effects on guinea pig intestine, where guanethidine is used only as a non-specific adrenergic blocker control, not as the subject drug for PK analysis. |
+| PD | Minocha_1991 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of erythromycin, not guanethidine; guanethidine is only used as a control agent. |
+| popPK | Morris_1991 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
+| PD | Morris_1991 | not_relevant | 0 | 0 | The paper focuses on the roles of neuropeptide Y and noradrenaline in guinea-pig vasculature and does not mention guanethidine or report any exposure-response or dose-response data for it. |
+| popPK | Nangle_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neural regulation in mouse penile tissue where guanethidine is used only as a pharmacological tool to block adrenergic transmission, not as the subject of pharmacokinetic analysis. |
+| popPK | Pagán_2009 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular reactivity in pig radial arteries where guanethidine is used only as a tool compound to block noradrenergic transmission, not as a subject for PK analysis. |
+| PD | Pagán_2009 | not_relevant | 1 | 0 | The paper reports qualitative inhibition of neurogenic vasoconstriction by guanethidine in an organ bath study but does not provide numeric concentration-effect parameters or a quantitative PD model for guanethidine. |
+| popPK | Pencheva_1993 | irrelevant | 0 | 0 | The study is a pharmacological investigation of GABA receptors in cat ileum where guanethidine is used only as a negative control agent, not as the subject of pharmacokinetic analysis. |
+| PD | Pencheva_1993 | not_relevant | 0 | 0 | The paper studies GABA and GABA-A receptors; guanethidine is only mentioned as a negative control that had no effect, with no PD parameters reported for it. |
+| popPK | Postorino_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of neurotransmission where guanethidine is used only as a blocking agent, not as the subject of pharmacokinetic analysis. |
+| PD | Postorino_1993 | not_relevant | 0 | 0 | The paper uses guanethidine only as a pharmacological tool to block adrenergic transmission and does not report any exposure-response or dose-response relationship for guanethidine itself. |
+| popPK | REUSE_1960 | irrelevant | 0 | 0 | no_text gate: only 44 chars of text extracted (&lt; 400) |
+| PD | REUSE_1960 | not_relevant | 0 | 0 | The provided text contains only the title and no body content, so no numeric PD parameters or exposure-response relationships can be extracted. |
+| popPK | Radomirov_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of endothelin-1 effects on rat vas deferens, using guanethidine only as a tool drug to block sympathetic innervation, with no pharmacokinetic parameters reported. |
+| PD | Radomirov_1992 | not_relevant | 0 | 0 | The paper studies the effect of endothelin-1 on rat vas deferens; guanethidine is used only as a tool to block sympathetic innervation, and no exposure-response or dose-response relationship for guanethidine itself is reported. |
+| popPK | Ralevic_1994 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology paper on neuropeptide Y in rat mesenteric arteries, where guanethidine is used only as a tool to block sympathetic transmission, and no pharmacokinetic parameters are reported. |
+| PD | Ralevic_1994 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of neuropeptide Y and its antagonist alpha-trinositol; guanethidine is used only as a tool to block sympathetic transmission and no PD parameters for guanethidine are reported. |
+| popPK | Ralevic_1996 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation of vitamin E deficiency in rat mesenteric arteries where guanethidine is used only as a tool compound to block sympathetic transmission, not as the subject of a pharmacokinetic analysis. |
+| PD | Ralevic_1996 | not_relevant | 0 | 0 | The paper uses guanethidine as a fixed-concentration tool compound to block sympathetic tone, but does not report a dose-response or exposure-response relationship for guanethidine itself. |
+| popPK | Ralevic_1996_2 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of vasoconstrictor responses in rat mesenteric arteries, using guanethidine only as a tool for sympathectomy, and reports no pharmacokinetic parameters. |
+| popPK | Ren_1994 | irrelevant | 0 | 0 | The study is a pharmacological investigation of vascular responses in isolated canine arteries where guanethidine is used only as a tool to inhibit nerve stimulation, not as a subject for pharmacokinetic analysis. |
+| PD | Ren_1994 | not_relevant | 1 | 0 | The paper mentions guanethidine only qualitatively as an inhibitor of nerve-stimulated vasoconstriction, without providing any numeric dose-response data, concentration-effect curves, or PD parameters for guanethidine itself. |
+| popPK | Sasaki_2007 | irrelevant | 0 | 0 | The study is a mechanistic organ culture experiment investigating testicular descent, using guanethidine only as a pharmacological antagonist without reporting any pharmacokinetic parameters. |
+| PD | Sasaki_2007 | not_relevant | 1 | 0 | The paper reports a qualitative observation that guanethidine had no effect on contractility compared to baseline, but provides no numeric concentration-effect data, dose-response curve, or PD parameters for guanethidine. |
+| popPK | Segarra_1999 | irrelevant | 0 | 0 | Guanethidine is used only as a pharmacological tool to block nerve stimulation in an in-vitro study of dog pulmonary artery contraction, with no pharmacokinetic parameters reported. |
+| PD | Segarra_1999 | not_relevant | 0 | 0 | Guanethidine is used only as a tool compound to block neurogenic contractions; no exposure-response or dose-response relationship for guanethidine itself is reported. |
+| popPK | Silva_2005 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic investigation of phentolamine in human corpus cavernosum, where guanethidine is used only as a background agent to block adrenergic influences, and no pharmacokinetic parameters are reported. |
+| popPK | Simionescu_1979 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
+| PD | Simionescu_1979 | not_relevant | 1 | 0 | The text is a title/abstract snippet describing a qualitative review of nonspecific pharmacodynamics without providing any numeric PD parameters or concentration-effect data. |
+| popPK | Spencer_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of mouse colon where guanethidine is used as a pharmacological tool to block sympathetic responses, not a pharmacokinetic study of guanethidine. |
+| popPK | Tabrizchi_1992 | irrelevant | 0 | 0 | The study investigates the hemodynamic effects of angiotensin II in rats using guanethidine as a pharmacological tool to block sympathetic neurons, rather than reporting pharmacokinetic parameters for guanethidine. |
+| PD | Tabrizchi_1992 | not_relevant | 0 | 0 | The paper investigates the dose-response relationship of angiotensin II, not guanethidine; guanethidine is used only as a pretreatment to block sympathetic effects. |
+| popPK | Van_2001 | irrelevant | 0 | 0 | Guanethidine is used only as a pharmacological tool to block adrenergic pathways in an in-vitro study of motilin effects on colonic smooth muscle, with no PK parameters reported. |
+| PD | Van_2001 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of motilin and erythromycin, mentioning guanethidine only as a negative control that did not interfere with the effects, without reporting any dose-response or exposure-response data for guanethidine itself. |
+| popPK | Vassilev_1992 | irrelevant | 0 | 0 | The study is a pharmacological investigation of prostaglandin E2 effects in rat rectum where guanethidine is used only as a tool compound to block adrenergic transmission, not as the subject of pharmacokinetic analysis. |
+| PD | Vassilev_1992 | not_relevant | 0 | 0 | The paper investigates the contractile effects of prostaglandin E2 and its antagonists; guanethidine is used only as a pharmacological tool to block neural effects, and no exposure-response or dose-response relationship for guanethidine itself is reported. |
+| popPK | Venkova_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of Met-enkephalin in cat intestine where guanethidine is used only as a non-specific blocker/comparator, with no PK parameters reported. |
+| popPK | Venkova_2000 | irrelevant | 0 | 0 | Guanethidine is used as a pharmacological tool to block adrenergic transmission in an in-vitro neuromuscular study, not as the subject of a pharmacokinetic analysis. |
+| PD | Venkova_2000 | not_relevant | 0 | 0 | The paper uses guanethidine as a pharmacological tool to block adrenergic transmission in an in vitro neuromuscular study, not to characterize the pharmacodynamic exposure-response relationship of guanethidine itself. |
+| popPK | Wang_1993 | irrelevant | 0 | 0 | no_text gate: only 188 chars of text extracted (&lt; 400) |
+| PD | Wang_1993 | not_relevant | 0 | 0 | The paper investigates the effects of diphenyleneiodonium, not guanethidine, and does not report any pharmacodynamic parameters for guanethidine. |
+| popPK | Wethmar_2001 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding/displacement experiment and does not report any pharmacokinetic disposition parameters for guanethidine. |
+| PD | Wethmar_2001 | not_relevant | 0 | 0 | The paper discusses ligand interactions at angiotensin II and imidazoline receptors but does not report any pharmacodynamic or exposure-response data for guanethidine. |
+| popPK | Yamamoto_1987 | irrelevant | 0 | 0 | The study focuses on coronary artery spasm pathogenesis in swine, using guanethidine only as a nerve transmitter blocker to test mechanism, with no pharmacokinetic parameters reported. |
+| PD | Yamamoto_1987 | not_relevant | 0 | 0 | The paper studies histamine-induced coronary spasm; guanethidine is used only as a blocker to show it does not influence the histamine dose-response, and no PD parameters for guanethidine itself are reported. |
+| popPK | Yu_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of furosemide on equine trachealis muscle, where guanethidine is used only as a pretreatment agent to block sympathetic transmission, not as the subject of pharmacokinetic analysis. |
+| PD | Yu_1992 | not_relevant | 0 | 0 | The paper investigates the effect of furosemide on equine trachealis, using guanethidine only as a pretreatment to block adrenergic transmission, and does not report any pharmacodynamic or exposure-response relationship for guanethidine itself. |
+| popPK | da_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of α-terpineol on gastric emptying, using guanethidine only as a mechanistic probe without reporting any pharmacokinetic parameters for it. |
+| PD | da_2016 | not_relevant | 0 | 0 | The paper focuses on the pharmacodynamics of alpha-terpineol; guanethidine is only mentioned as a negative control agent that did not interfere with the effect, with no exposure-response or dose-response analysis provided for it. |
+| popPK | van_2000 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of mibefradil where guanethidine is used only as a tool compound to block sympathetic neurotransmitter release, with no pharmacokinetic parameters reported. |
+| PD | van_2000 | not_relevant | 0 | 0 | The paper studies mibefradil and verapamil; guanethidine is only used as a tool compound to block EFS, not as the subject of a PD or exposure-response analysis. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bguanethidine%5D&body=Drug%3A%20guanethidine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_guanethidine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

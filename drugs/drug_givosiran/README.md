@@ -1,0 +1,124 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;givosiran&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e&quot;,&quot;label&quot;:&quot;Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# givosiran
+
+- **generic name:** givosiran
+- **ATC codes:** `A16AX16`
+- **DrugBank:** [DB15066](https://go.drugbank.com/drugs/DB15066) · **PubChem:** none
+- **groups:** approved
+
+## About
+
+Givosiran is a small interfering RNA medication used to treat adults with acute hepatic porphyria. It is administered as a subcutaneous injection solution. The drug is authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q56297041](https://www.wikidata.org/wiki/Q56297041), [Wikipedia](https://en.wikipedia.org/wiki/Givosiran?oldid=1328964097) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Start here
+
+> **Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with acute intermittent porphyria. [Run it in the simulator](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md?tab=Simulation) · [record](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag, k12 left at base-class defaults</sub> | [Sten_2023_model_fitted_to_olpasiran_data_only_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim.md) | held back | 2-compartment, oral | 6 | Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: unreported model parameter default(s): k12</sub> | [↳ model_simultaneously_fitted_to_all_data_estimate_se](drugs/drug_givosiran/Givosiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md) | ▶ model + simulator | 2-compartment, oral | 6 |  |  |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=givosiran).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ALAS1 (inhibitor), ALAS1 mRNA (cleavage).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 10:42 | 4:55 | 2/0/0 | 0/0/0 | 0/0/0 | 97,172/12,959 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/5 | 3/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 37 matched, 35 returned
+- **screened:** 2  ·  **relevant:** 1
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Vassiliou_2021.pdf` | Vassiliou D et al., A Drug-Drug Interaction Study Evaluatin…, Clinical pharmacology and t… (2021) | pgx | 7 | [10.1002/cpt.2419](https://doi.org/10.1002/cpt.2419) | [34510420](https://www.ncbi.nlm.nih.gov/pubmed/34510420) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
+
+<sub>queue written 2026-10-05 10:37 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abosalha_2022 | irrelevant | 0 | 0 | The paper is a general review of siRNA therapeutics and does not report specific quantitative pharmacokinetic parameters for givosiran. |
+| PD | Abosalha_2022 | not_relevant | 1 | 0 | The text is a general review of siRNA therapeutics and does not provide specific numeric PD parameters or exposure-response data for givosiran. |
+| popPK | Agarwal_2020 | relevant | 8 | 2 | The paper is a Phase I PK study of givosiran, but the evidence only provides qualitative ranges for half-life and metabolite exposure, lacking specific numeric values for clearance, volume, or compartmental parameters. |
+| popPK | An_2024 | irrelevant | 2 | 0 | The paper is a review article discussing GalNAc-conjugated siRNAs generally, and the provided evidence contains no original quantitative PK parameter values for givosiran. |
+| PD | An_2024 | not_relevant | 2 | 1 | The text is an abstract for a review article that discusses PK/PD concepts generally but does not present specific numeric PD parameters or extractable exposure-response data for givosiran. |
+| popPK | Ayyar_2024 | relevant | 9 | 2 | The paper describes a mechanistic PK-PD model for givosiran and reports specific parameters like KD and allometric exponents, but standard quantitative disposition parameters (CL, V, Q) are not explicitly listed in the provided text. |
+| popPK | Batra_2026 | irrelevant | 0 | 0 | The paper describes an in-vitro study of a PD-L1 siRNA for cancer immunotherapy and does not involve givosiran or report any pharmacokinetic parameters. |
+| PD | Batra_2026 | not_relevant | 0 | 0 | The paper studies a different drug (BioRNA/PD-L1-siRNA) in an in vitro setting and does not report any pharmacodynamic or exposure-response data for givosiran. |
+| popPK | Berk_2021 | irrelevant | 1 | 0 | The study focuses on a novel siRNA targeting Lin28B, mentioning givosiran only as a structural comparator without reporting quantitative PK parameters for givosiran itself. |
+| PD | Berk_2021 | not_relevant | 0 | 0 | The paper focuses on the stability and PK of a novel siRNA scaffold targeting Lin28B, mentioning givosiran only as a structural reference without providing any PD or exposure-response data for it. |
+| popPK | Cronin_2025 | irrelevant | 1 | 0 | The paper is a review of oligonucleotide drugs and mentions givosiran only as an approved siRNA in a list, without providing any specific quantitative pharmacokinetic parameters for it. |
+| PD | Cronin_2025 | not_relevant | 1 | 0 | The paper is a review discussing the challenges of evaluating drug-drug interactions for RNA therapeutics and does not report specific numeric PD parameters or exposure-response models for givosiran. |
+| popPK | Fan_2026 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
+| PD | Fan_2026 | not_relevant | 3 | 0 | The text is an abstract describing a computational platform and mentions givosiran as part of a dataset, but it does not report specific numeric PD parameters or extractable exposure-response relationships for givosiran in this text. |
+| popPK | Fontana_2026 | irrelevant | 0 | 0 | The study focuses on vutrisiran, not givosiran, and reports pharmacodynamic (TTR knockdown) data rather than givosiran PK parameters. |
+| popPK | George_2026 | irrelevant | 0 | 0 | The paper focuses on siRNA therapy for ovarian cancer and does not mention givosiran or report any pharmacokinetic parameters for it. |
+| PD | George_2026 | not_relevant | 0 | 0 | The paper investigates a novel siRNA (siFXR1-LNA) for ovarian cancer, not givosiran, and does not report any pharmacodynamic or exposure-response parameters for givosiran. |
+| popPK | Jeon_2022 | irrelevant | 2 | 0 | This is a minireview discussing modeling approaches for siRNA therapeutics generally, and the provided evidence contains no original quantitative PK parameter values for givosiran. |
+| PD | Jeon_2022 | not_relevant | 2 | 0 | The text is a minireview abstract that discusses the state of PK/PD modeling for siRNAs but does not present specific numeric PD parameters or extractable exposure-response data for givosiran. |
+| popPK | Lee_2023 | irrelevant | 0 | 0 | no_text gate: only 147 chars of text extracted (&lt; 400) |
+| popPK | Loganathan_2023 | irrelevant | 0 | 0 | The paper is a review of non-coding RNAs in human health and disease and contains no pharmacokinetic data for givosiran. |
+| PD | Loganathan_2023 | not_relevant | 0 | 0 | The paper is a general review of non-coding RNAs as biomarkers and therapeutic targets and does not contain any pharmacokinetic or pharmacodynamic data, models, or numeric parameters for givosiran. |
+| popPK | McDougall_2022 | irrelevant | 2 | 0 | This is a minireview discussing general GalNAc-siRNA properties and lacks specific quantitative PK parameter values for givosiran. |
+| PD | McDougall_2022 | not_relevant | 2 | 0 | The text is a nonclinical review summarizing ADME and PK/PD translation concepts for GalNAc-siRNAs but does not provide specific numeric PD parameters or extractable concentration-effect curves for givosiran. |
+| popPK | Melch_2023 | relevant | 10 | 0 | The paper describes a population PK model for givosiran, but the provided evidence contains only figure captions and no numeric parameter values. |
+| PGx | Petrides_2021 | not_relevant | 0 | 0 | The paper reports an adverse effect (hyperhomocysteinemia) caused by the drug's mechanism of action (heme depletion) and mentions MTHFR polymorphisms, but it does not report a pharmacogenomic effect on a pharmacokinetic or pharmacodynamic parameter of givosiran itself. |
+| popPK | Ranasinghe_2023 | irrelevant | 0 | 0 | The paper is a general introductory review of siRNA technology and does not report specific quantitative pharmacokinetic parameters for givosiran. |
+| PD | Ranasinghe_2023 | not_relevant | 1 | 0 | The text is a general introductory review of siRNA technology and mentions givosiran only as a licensed example without providing any specific pharmacokinetic or pharmacodynamic data or models. |
+| PGx | Ricci_2021 | not_relevant | 0 | 0 | The paper is a review of kidney involvement in porphyrias and mentions givosiran only as a licensed therapy, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Ricci_2022 | irrelevant | 2 | 0 | The paper is a review article summarizing givosiran's profile, but the provided evidence contains no original quantitative pharmacokinetic parameter values (CL, V, etc.). |
+| PD | Ricci_2022 | not_relevant | 2 | 0 | The text is an abstract of a review article that summarizes pharmacodynamics qualitatively but does not provide specific numeric PD parameters or exposure-response data. |
+| popPK | Sardh_2019 | irrelevant | 2 | 0 | The provided text is an abstract that mentions pharmacokinetic evaluation but does not contain any quantitative PK parameter values (e.g., CL, V, t1/2) for givosiran. |
+| PD | Sardh_2019 | not_relevant | 3 | 1 | The text describes a Phase 1 trial with dose escalation and reports qualitative reductions in biomarkers (ALAS1 mRNA, ALA, PBG) and attack rates, but it does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response/dose-response model in the provided abstract. |
+| PD | Sten_2023 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of GalNAc-siRNAs, including dose-proportionality and compartmental models, but does not report any pharmacodynamic (PD) or exposure-response relationships for givosiran. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The paper focuses on computational prediction of siRNA activity and does not report pharmacokinetic parameters for givosiran. |
+| PD | Tan_2026 | not_relevant | 0 | 0 | The paper focuses on computational prediction of siRNA activity (IC50) using deep learning and does not report pharmacokinetic or pharmacodynamic modeling for givosiran. |
+| PGx | To-Figueras_2021 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic side effect (homocysteine elevation) of givosiran but does not investigate how specific gene variants or genotypes modify the drug's PK or PD parameters. |
+| popPK | Vassiliou_2021 | irrelevant | 2 | 0 | The study focuses on drug-drug interactions and CYP450 activity rather than reporting quantitative population pharmacokinetic parameters (CL, V, etc.) for givosiran itself. |
+| PD | Vassiliou_2021 | not_relevant | 2 | 1 | The paper describes a qualitative drug-drug interaction study showing differential inhibition of CYP enzymes but does not report a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for givosiran. |
+| PGx | Vassiliou_2021 | not_relevant | 0 | 0 | The paper evaluates drug-drug interactions (DDI) on CYP450 activity, not pharmacogenomic effects of gene variants on givosiran PK/PD. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper is a clinical practice guideline for acute hepatic porphyrias and does not report pharmacogenomic effects on the PK or PD of givosiran. |
+| popPK | Yue_2019 | irrelevant | 0 | 0 | The paper is a review of substrate reduction therapy for inborn errors of metabolism and does not report quantitative pharmacokinetic parameters for givosiran. |
+| PD | Yue_2019 | not_relevant | 1 | 0 | The text is a general minireview on substrate reduction therapy for inborn errors of metabolism and does not contain specific data, models, or numeric PD parameters for givosiran. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgivosiran%5D&body=Drug%3A%20givosiran%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_givosiran/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 10:38 UTC</sub>

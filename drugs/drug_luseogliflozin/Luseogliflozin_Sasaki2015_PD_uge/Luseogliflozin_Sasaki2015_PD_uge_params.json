@@ -1,0 +1,63 @@
+{
+ "model_id": "Luseogliflozin_Sasaki2015_PD_uge",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 254.0,
+  "Emax": 1.37731481481e-06,
+  "exposure_per_s": 1.0,
+  "gamma": 0.931
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "254.0": 6.886574074074074e-07
+ },
+ "stop_time": 2600.0,
+ "subtitle": "urinary glucose excretion (UGE) against luseogliflozin concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "ng h/mL",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "g/day",
+   "factor": 1.1574074074074074e-08,
+   "si_unit": "kg/s"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "ng h/mL",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "g/day"
+ },
+ "x_axis": {
+  "display_unit": "ng h/mL",
+  "factor": 1.0,
+  "label": "luseogliflozin concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "g/day",
+  "factor": 1.1574074074074074e-08,
+  "label": "urinary glucose excretion (UGE)"
+ }
+}

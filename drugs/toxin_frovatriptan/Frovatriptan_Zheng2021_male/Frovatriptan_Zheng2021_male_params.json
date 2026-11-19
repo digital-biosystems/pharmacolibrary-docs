@@ -1,0 +1,70 @@
+{
+ "dose_source": "paper",
+ "model_id": "Frovatriptan_Zheng2021_male",
+ "molar_masses": {
+  "central.C": 0.24331
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.5,
+  5.0,
+  10.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zheng_2021:other_prose",
+    "value_si": 0.9999
+   },
+   {
+    "source": "Zheng_2021:other_prose",
+    "value_si": 0.01
+   },
+   {
+    "source": "Zheng_2021:discussion_prose",
+    "value_si": 1.79
+   },
+   {
+    "source": "Zheng_2021:discussion_prose",
+    "value_si": 4.23e-06
+   },
+   {
+    "source": "Zheng_2021:discussion_prose",
+    "value_si": 7e-06
+   },
+   {
+    "source": "Zheng_2021:discussion_prose",
+    "value_si": 4.1e-06
+   },
+   {
+    "source": "Zheng_2021:discussion_prose",
+    "value_si": 6.98e-06
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.2944444444444445e-05,
+  "F": 1.0,
+  "MM": 0.24331,
+  "Tlag": 0.0,
+  "VdPerKg": 0.030051714285714282,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 24240.48096192385
+ },
+ "reference_peaks": {
+  "central.C": 1.028526914762937e-06
+ },
+ "stop_time": 604800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

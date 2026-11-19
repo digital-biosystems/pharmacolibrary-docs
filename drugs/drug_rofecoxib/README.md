@@ -1,0 +1,121 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;rofecoxib&quot;}]"></div>
+
+# rofecoxib
+
+- **generic name:** rofecoxib
+- **ATC codes:** `M01AH02`
+- **DrugBank:** [DB00533](https://go.drugbank.com/drugs/DB00533) · **PubChem:** [CID 5090](https://pubchem.ncbi.nlm.nih.gov/compound/5090)
+- **molar mass:** 314.356 g/mol (C17H14O4S) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Rofecoxib is a cyclooxygenase-2 selective nonsteroidal anti-inflammatory drug that was used to relieve symptoms of osteoarthritis and pain. It was administered orally as tablets or a liquid suspension for patients who could not swallow pills. The drug was withdrawn from the market because of safety concerns regarding heart attacks and strokes.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q411412](https://www.wikidata.org/wiki/Q411412), [Wikipedia](https://en.wikipedia.org/wiki/Rofecoxib?oldid=1384005748) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=rofecoxib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C8` inhibitor, `CYP2C9` substrate, `CYP3A4` inducer/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+| excretion | kidney | `ABCC4` inhibitor | DrugBank actor |
+| excretion | liver | `ABCC4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ELN (other/unknown), PTGS1 (substrate), PTGS2 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 01:21 | 8:50 | 0/0/0 | 0/0/0 | 0/0/0 | 107,961/3,221 | einfracz / qwen3.8-27b | 5 | 1/2 | 4/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 149 matched, 82 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Huntjens_2008.pdf` | Huntjens DR et al., Population pharmacokinetic modelling of…, British journal of pharmaco… (2008) | popPK | 10 | [10.1038/sj.bjp.0707643](https://doi.org/10.1038/sj.bjp.0707643) | [18193075](https://pubmed.ncbi.nlm.nih.gov/18193075) | The paper reports a population PK model for rofecoxib in rats, but the abstract only provides qualitative outcomes (exposure increase %) and does not list specific numeric parameter values like CL, V, or Q. |
+| `Doret_2002.pdf` | Doret M et al., In vitro study of tocolytic effect of r…, BJOG : an international jou… (2002) | pd | 4 | [10.1111/j.1471-0528.2002.01518.x](https://doi.org/10.1111/j.1471-0528.2002.01518.x) | [12269693](https://www.ncbi.nlm.nih.gov/pubmed/12269693) | metadata signals extractable PD data (EC50) |
+| `Rodrigues_2005.pdf` | Rodrigues AD, Impact of CYP2C9 genotype on pharmacoki…, Drug metabolism and disposi… (2005) | pgx | 8 | [10.1124/dmd.105.006452](https://doi.org/10.1124/dmd.105.006452) | [16118328](https://www.ncbi.nlm.nih.gov/pubmed/16118328) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Werner_2002.pdf` | Werner U et al., Investigation of the pharmacokinetics o…, Biomedical chromatography :… (2002) | pgx | 8 | [10.1002/bmc.115](https://doi.org/10.1002/bmc.115) | [11816012](https://www.ncbi.nlm.nih.gov/pubmed/11816012) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Werner_2003.pdf` | Werner U et al., Celecoxib inhibits metabolism of cytoch…, Clinical pharmacology and t… (2003) | pgx | 8 | [10.1016/S0009-9236(03)00120-6](https://doi.org/10.1016/S0009-9236(03)00120-6) | [12891223](https://www.ncbi.nlm.nih.gov/pubmed/12891223) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Werner_2006.pdf` | Werner U et al., Valdecoxib does not interfere with the…, International journal of cl… (2006) | pgx | 8 | [10.5414/cpp44397](https://doi.org/10.5414/cpp44397) | [16995327](https://www.ncbi.nlm.nih.gov/pubmed/16995327) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Zhang_2003.pdf` | Zhang JY et al., Involvement of human UGT2B7 and 2B15 in…, Drug metabolism and disposi… (2003) | pgx | 8 | [10.1124/dmd.31.5.652](https://doi.org/10.1124/dmd.31.5.652) | [12695355](https://www.ncbi.nlm.nih.gov/pubmed/12695355) | metadata signals extractable PGX data (UGT2B7, PK/PD-context) |
+| `Bachmann_2003.pdf` | Bachmann K et al., An evaluation of the dose-dependent inh…, Journal of clinical pharmac… (2003) | pgx | 7 | [10.1177/0091270003257454](https://doi.org/10.1177/0091270003257454) | [14517190](https://www.ncbi.nlm.nih.gov/pubmed/14517190) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Backman_2006.pdf` | Backman JT et al., Rofecoxib is a potent inhibitor of cyto…, British journal of clinical… (2006) | pgx | 7 | [10.1111/j.1365-2125.2006.02653.x](https://doi.org/10.1111/j.1365-2125.2006.02653.x) | [16934051](https://www.ncbi.nlm.nih.gov/pubmed/16934051) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Jogiraju_2021.pdf` | Jogiraju VK et al., Physiologically based pharmacokinetic m…, Drug metabolism and pharmac… (2021) | pgx | 7 | [10.1016/j.dmpk.2020.100375](https://doi.org/10.1016/j.dmpk.2020.100375) | [33561738](https://www.ncbi.nlm.nih.gov/pubmed/33561738) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Karjalainen_2006.pdf` | Karjalainen MJ et al., Rofecoxib is a potent, metabolism-depen…, Drug metabolism and disposi… (2006) | pgx | 7 | [10.1124/dmd.106.011965](https://doi.org/10.1124/dmd.106.011965) | [16985100](https://www.ncbi.nlm.nih.gov/pubmed/16985100) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Karjalainen_2008.pdf` | Karjalainen MJ et al., Celecoxib is a CYP1A2 inhibitor in vitr…, European journal of clinica… (2008) | pgx | 7 | [10.1007/s00228-007-0456-4](https://doi.org/10.1007/s00228-007-0456-4) | [18197403](https://www.ncbi.nlm.nih.gov/pubmed/18197403) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Wang_2009.pdf` | Wang B et al., Synthetic and natural compounds that in…, Current medicinal chemistry (2009) | pgx | 7 | [10.2174/092986709789378198](https://doi.org/10.2174/092986709789378198) | [19754423](https://www.ncbi.nlm.nih.gov/pubmed/19754423) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Jarrar_2020.pdf` | Jarrar YB et al., Inhibition of 20-hydroxyeicosatetraenoi…, Prostaglandins, leukotriene… (2020) | pgx | 5 | [10.1016/j.plefa.2020.102055](https://doi.org/10.1016/j.plefa.2020.102055) | [31999978](https://www.ncbi.nlm.nih.gov/pubmed/31999978) | metadata signals extractable PGX data (UGT2B7) |
+| `Zhou_2023.pdf` | Zhou W et al., Genetic polymorphisms of pharmacogenomi…, Functional & integrative ge… (2023) | pgx | 5 | [10.1007/s10142-023-01021-3](https://doi.org/10.1007/s10142-023-01021-3) | [36930384](https://www.ncbi.nlm.nih.gov/pubmed/36930384) | metadata signals extractable PGX data (NAT2) |
+
+<sub>queue written 2026-10-07 01:20 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Bachmann_2003 | not_relevant | 0 | 0 | The paper studies rofecoxib as a drug-drug interaction inhibitor of CYP1A2 (affecting theophylline), and contains no pharmacogenomic analysis or gene variant data. |
+| PGx | Backman_2006 | not_relevant | 0 | 0 | The study investigates the effect of rofecoxib on the metabolism of other drugs (tizanidine and caffeine), not the effect of a gene variant on rofecoxib's own PK or PD. |
+| PGx | Baillie_2001 | not_relevant | 0 | 0 | The study describes mechanistic reversible metabolism in rats but does not investigate pharmacogenomic variants or their effects on pharmacokinetic parameters. |
+| PGx | Coulter_2004 | not_relevant | 0 | 0 | The paper is a case review of visual disturbances (adverse events) and explicitly states that the reactions are not related to standard factors, without reporting any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Doret_2002 | irrelevant | 0 | 0 | no_text gate: only 143 chars of text extracted (&lt; 400) |
+| PGx | Fosslien_2005 | not_relevant | 0 | 0 | The paper is a review of cardiovascular mechanisms of COX-2 inhibitors and only mentions genotyping in a concluding speculative statement without reporting any specific pharmacogenomic effects on PK/PD parameters. |
+| PGx | Fries_2006 | not_relevant | 2 | 1 | The paper discusses interindividual variability and hypothesizes genetic sources but does not report a specific pharmacogenomic effect (e.g., genotype vs. PK/PD parameter). |
+| PGx | Fung_1999 | not_relevant | 0 | 0 | The paper is a general review of COX-2 inhibitors and mentions CYP2C9 metabolism for celecoxib, but it does not report any pharmacogenomic data or specific PK/PD effects for rofecoxib. |
+| PGx | Garnett_2001 | not_relevant | 2 | 0 | Discusses drug-drug interactions of rofecoxib and celecoxib, not gene variants or pharmacogenomic effects on their PK/PD parameters. |
+| popPK | Hannam_2023 | irrelevant | 2 | 0 | The paper models celecoxib, valdecoxib, and rofecoxib for CSF transfer, but the text provides quantitative PK parameters (CL, V, t1/2) only for celecoxib; rofecoxib values are not explicitly reported in the provided evidence. |
+| popPK | Huntjens_2008 | relevant | 10 | 2 | The paper reports a population PK model for rofecoxib in rats, but the abstract only provides qualitative outcomes (exposure increase %) and does not list specific numeric parameter values like CL, V, or Q. |
+| PGx | Imbimbo_2009 | not_relevant | 0 | 0 | The paper discusses the efficacy of rofecoxib in Alzheimer's disease and mentions Apolipoprotein E as a risk factor for AD, but it does not report a pharmacogenomic effect on the pharmacokinetic or pharmacodynamic parameters of rofecoxib. |
+| PGx | Imbimbo_2010 | not_relevant | 0 | 0 | The paper discusses epidemiological associations between APOE genotype and NSAID efficacy in Alzheimer's disease, but does not report changes in rofecoxib pharmacokinetics or pharmacodynamics. |
+| PGx | Izzo_2009 | not_relevant | 0 | 0 | The paper is a review of herbal drug interactions and mentions rofecoxib in a case report but does not report pharmacogenomic effects (gene variants) on its PK/PD. |
+| PGx | Jarrar_2020 | not_relevant | 0 | 0 | The paper investigates the effect of rofecoxib as an inhibitor of 20-HETE glucuronidation, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of rofecoxib itself. |
+| PGx | Jogiraju_2021 | not_relevant | 0 | 0 | The paper focuses on tizanidine pharmacokinetics and CYP1A2 drug-drug interactions, not on rofecoxib's PK/PD. |
+| PGx | Karjalainen_2006 | not_relevant | 0 | 0 | The paper investigates the metabolic mechanism of rofecoxib's inhibition of CYP1A2 in vitro, but does not report any genetic variants, genotypes, or phenotypes affecting its pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Karjalainen_2008 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (celecoxib effect on tizanidine) and does not report any pharmacogenomic effects (gene variants) on rofecoxib. |
+| PGx | Karjalainen_2008_2 | not_relevant | 0 | 0 | The paper investigates in vitro CYP1A2 inhibition of rofecoxib to predict drug-drug interactions with tizanidine, rather than a pharmacogenomic effect of a gene variant on rofecoxib's PK/PD parameters. |
+| popPK | Klein_2007 | irrelevant | 0 | 0 | The study is an in vitro/mechanistic investigation of celecoxib's vascular effects, with rofecoxib used only as a negative comparator; no pharmacokinetic parameters are reported. |
+| PGx | Maghembe_2026 | not_relevant | 0 | 0 | The paper analyzes structural and population-genetic data of PTGS variants, with docking simulations explicitly yielding no functional effect, and states that effects on drug response were not demonstrated. |
+| popPK | Ouellet_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of Cox-1/2 selectivity and platelet function, not a pharmacokinetic study, and reports no disposition parameters for rofecoxib. |
+| PGx | Reines_2004 | not_relevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of rofecoxib for Alzheimer's disease and does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Rodrigues_2005 | not_relevant | 2 | 0 | The paper argues that CYP2C9 genotype has no clinically meaningful impact on rofecoxib PK because CYP2C9 is a minor clearance pathway, and it does not report specific quantitative pharmacogenomic data for rofecoxib. |
+| PGx | Swan_2000 | not_relevant | 0 | 0 | The study evaluates the pharmacodynamic effects of rofecoxib on renal function in elderly patients but does not analyze the influence of specific gene variants or genotypes. |
+| PGx | Vincent_2002 | not_relevant | 0 | 0 | The paper describes a case of drug-drug interaction (MTX and rofecoxib) causing toxicity, with no mention of gene variants or pharmacogenetics affecting PK/PD parameters. |
+| PGx | Wang_2009 | not_relevant | 1 | 0 | This is a review on CYP1A2 function and interactions; rofecoxib is only mentioned as a CYP1A2 inhibitor, and no pharmacogenomic PK/PD effects of rofecoxib itself are reported. |
+| PGx | Werner_2002 | not_relevant | 0 | 0 | The study reports pharmacogenomic effects on the pharmacokinetics of celecoxib, not rofecoxib. |
+| PGx | Werner_2003 | not_relevant | 3 | 5 | The paper investigates the drug-drug interaction between NSAIDs (celecoxib/rofecoxib) and metoprolol, showing no significant effect of rofecoxib on metoprolol's PK, and does not report a pharmacogenomic effect on rofecoxib's own PK/PD. |
+| popPK | Xu_2019 | irrelevant | 0 | 0 | The study investigates the interaction between levamlodipine and hemoglobin, using rofecoxib only as a co-administered probe to test for binding competition, and contains no rofecoxib pharmacokinetic parameters. |
+| PGx | Zhang_2003 | not_relevant | 2 | 0 | The paper discusses the role of UGT2B7 and 2B15 in rofecoxib metabolism and mentions that polymorphisms *may* explain variability, but it does not report data from specific genotypes or demonstrate a measured pharmacogenomic effect on PK parameters. |
+| PGx | Zhou_2023 | not_relevant | 0 | 0 | The paper reports allele frequencies for PTGS2 (associated with rofecoxib) in a specific population but does not measure or report any changes in pharmacokinetic or pharmacodynamic parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brofecoxib%5D&body=Drug%3A%20rofecoxib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rofecoxib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

@@ -1,0 +1,49 @@
+{
+ "dose_source": "paper",
+ "model_id": "Imipenem_Bhagunde2019_imipenem_bootstrapa_estimate_rse_b",
+ "molar_masses": {
+  "central.C": 0.299345
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  500.0,
+  1000.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Bhagunde_2019:other_prose",
+    "value_si": 364.1
+   },
+   {
+    "source": "Bhagunde_2019:other_prose",
+    "value_si": 250.8
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 3.4805555555555554e-06,
+  "F": 1.0,
+  "MM": 0.299345,
+  "VdPerKg": 0.00022514285714285713,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "k12": 0.00019652425267907501,
+  "k21": 0.0005285362153962836,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662011
+ },
+ "reference_peaks": {
+  "central.C": 0.01378973703473719
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

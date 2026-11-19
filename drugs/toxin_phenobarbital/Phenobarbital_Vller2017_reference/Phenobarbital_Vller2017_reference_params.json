@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Phenobarbital_Vller2017_reference",
+ "molar_masses": {
+  "central.C": 0.232239
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  91.0,
+  280.0,
+  1400.0,
+  2849.0
+ ],
+ "parameters": {
+  "Cl": 2.5277777777777782e-09,
+  "F": 0.9,
+  "MM": 0.232239,
+  "Tlag": 0.0,
+  "VdPerKg": 3.399999999999999e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 9.1e-05,
+  "ka": 0.013888888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1191.079808991542
+ },
+ "reference_peaks": {
+  "central.C": 0.03438141088929184
+ },
+ "review_status": "needs_review",
+ "stop_time": 3628800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

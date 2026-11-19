@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 4000 mg parenteral (J01DD01)",
+ "model_id": "Cefotaxime_Guerrini1986_reference",
+ "molar_masses": {
+  "central.C": 0.45546499999999995
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2250000000000001e-05,
+  "F": 1.0,
+  "MM": 0.45546499999999995,
+  "VdPerKg": 0.00047999999999999996,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.004,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662085
+ },
+ "reference_peaks": {
+  "central.C": 0.10692649365202876
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,0 +1,298 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;gelatin agents&quot;}]"></div>
+
+# gelatin agents
+
+- **generic name:** gelatin agents
+- **ATC codes:** `B05AA06`
+- **DrugBank:** [DB11242](https://go.drugbank.com/drugs/DB11242) · **PubChem:** none
+- **groups:** approved, investigational, vet_approved, withdrawn
+
+## About
+
+Gelatin is a blood substitute derived from animal collagen, primarily used for wound dressing and drug delivery systems. It is administered intravenously, orally, or topically. Gelatin serves as an excipient in capsules and films, and its hydrogel properties support medical applications.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q179254](https://www.wikidata.org/wiki/Q179254), [Wikipedia](https://en.wikipedia.org/wiki/Gelatin?oldid=1383631744) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=gelatin_agents).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 22:42 | 12:25 | 0/0/0 | 0/0/0 | 0/0/0 | 561,080/8,366 | ollama / qwen3.8:27b-mtp-q8_0 | 43 | 8/64 | 43/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 575 matched, 182 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gieschke_1999.pdf` | Gieschke R et al., Relationships between exposure to saqui…, Clinical pharmacokinetics (1999) | pd | 5 | [10.2165/00003088-199937010-00005](https://doi.org/10.2165/00003088-199937010-00005) | [10451784](https://www.ncbi.nlm.nih.gov/pubmed/10451784) | metadata signals extractable PD data (exposure-response) |
+| `Bittner_2015.pdf` | Bittner M et al., Polymer-immobilized ready-to-use recomb…, Chemosphere (2015) | pd | 4 | [10.1016/j.chemosphere.2015.02.063](https://doi.org/10.1016/j.chemosphere.2015.02.063) | [25797899](https://www.ncbi.nlm.nih.gov/pubmed/25797899) | metadata signals extractable PD data (EC50) |
+| `Cronstein_1992.pdf` | Cronstein BN et al., Neutrophil adherence to endothelium is…, Journal of immunology (Balt… (1992) | pd | 4 |  | [1347551](https://www.ncbi.nlm.nih.gov/pubmed/1347551) | metadata signals extractable PD data (IC50) |
+| `Golub_1995.pdf` | Golub LM et al., Doxycycline inhibits neutrophil (PMN)-t…, Journal of clinical periodo… (1995) | pd | 4 | [10.1111/j.1600-051x.1995.tb00120.x](https://doi.org/10.1111/j.1600-051x.1995.tb00120.x) | [7775665](https://www.ncbi.nlm.nih.gov/pubmed/7775665) | metadata signals extractable PD data (IC50) |
+| `Mirzapour-Kouhdasht_2021.pdf` | Mirzapour-Kouhdasht A et al., Structure-function relationship of ferm…, Food science and biotechnol… (2021) | pd | 4 | [10.1007/s10068-021-00998-6](https://doi.org/10.1007/s10068-021-00998-6) | [34925943](https://www.ncbi.nlm.nih.gov/pubmed/34925943) | metadata signals extractable PD data (IC50) |
+| `Osman_2002.pdf` | Osman MY et al., Synthetic organic hard capsule colourin…, British journal of biomedic… (2002) | pd | 4 | [10.1080/09674845.2002.11783662](https://doi.org/10.1080/09674845.2002.11783662) | [12572955](https://www.ncbi.nlm.nih.gov/pubmed/12572955) | metadata signals extractable PD data (IC50) |
+| `Park_2024.pdf` | Park SY et al., Enhanced hepatotoxicity assessment thro…, European journal of pharmac… (2024) | pd | 4 | [10.1016/j.ejpb.2024.114417](https://doi.org/10.1016/j.ejpb.2024.114417) | [39013493](https://www.ncbi.nlm.nih.gov/pubmed/39013493) | metadata signals extractable PD data (IC50) |
+| `Wang_2025.pdf` | Wang Z et al., Long-acting sustained release microcaps…, Food chemistry (2025) | pd | 4 | [10.1016/j.foodchem.2024.141680](https://doi.org/10.1016/j.foodchem.2024.141680) | [39427609](https://www.ncbi.nlm.nih.gov/pubmed/39427609) | metadata signals extractable PD data (EC50) |
+| `Gill_2001.pdf` | Gill J et al., Saquinavir soft gelatin capsule: a comp…, Drug safety (2001) | pgx | 7 | [10.2165/00002018-200124030-00005](https://doi.org/10.2165/00002018-200124030-00005) | [11347724](https://www.ncbi.nlm.nih.gov/pubmed/11347724) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Hull_2009.pdf` | Hull MW et al., Lopinavir/ritonavir pharmacokinetics in…, Journal of clinical pharmac… (2009) | pgx | 7 | [10.1177/0091270008329550](https://doi.org/10.1177/0091270008329550) | [19179294](https://www.ncbi.nlm.nih.gov/pubmed/19179294) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Trout_2004.pdf` | Trout H et al., Enhanced saquinavir exposure in human i…, Antimicrobial agents and ch… (2004) | pgx | 7 | [10.1128/AAC.48.2.538-545.2004](https://doi.org/10.1128/AAC.48.2.538-545.2004) | [14742207](https://www.ncbi.nlm.nih.gov/pubmed/14742207) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-05 22:34 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aiello_2024 | irrelevant | 0 | 0 | The paper is a food science study on the formulation of antioxidant gummies using gelatin and citrus extracts, reporting no pharmacokinetic parameters. |
+| PD | Aiello_2024 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (IC50) of extracts and gummies, which is a physicochemical/chemical property, not a pharmacodynamic exposure-response relationship for a drug in a biological system. |
+| popPK | Ali_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of clofazimine, not gelatin_agents. |
+| popPK | Ana_2022 | irrelevant | 0 | 0 | The paper is a materials science study on antibacterial biomaterials (apatites and gelatin composites) and does not report any pharmacokinetic parameters for gelatin or any other drug. |
+| PD | Ana_2022 | not_relevant | 3 | 2 | The paper reports IC50 values for osteoblast viability and antibacterial activity, but these are single-point toxicity/efficacy metrics for material composites, not a pharmacodynamic exposure-response or dose-response curve with derivable parameters (Emax, slope, etc.) for a drug. |
+| popPK | Aurnhammer_1977 | irrelevant | 0 | 0 | The study evaluates mucociliary clearance of radioactive particles in patients, not the pharmacokinetics of gelatin agents. |
+| popPK | Back_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of levonorgestrel and ethinylestradiol, not gelatin_agents. |
+| PD | Back_1987 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (bioavailability) and contains no pharmacodynamic or exposure-response analysis. |
+| PGx | Barancik_2012 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of pentoxifylline on cancer cells (P-gp downregulation, apoptosis) and does not report pharmacogenomic effects on the PK or PD of gelatin agents. |
+| popPK | Barnett_1982 | irrelevant | 0 | 0 | The study focuses on the immunological effects of 13-cis-retinoic acid in mice, not the pharmacokinetic parameters of gelatin agents. |
+| popPK | Benedetti_1982 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of toloxatone, not gelatin_agents. |
+| popPK | Bennett_1995 | irrelevant | 0 | 0 | The paper is an immunology study on choriocarcinoma cell lines where gelatin is used only as a culture medium component, not as a drug subject for pharmacokinetic analysis. |
+| popPK | Bittner_2015 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
+| PD | Bittner_2015 | not_relevant | 0 | 0 | The paper describes a yeast assay for detecting endocrine disruptors and does not report pharmacodynamic or exposure-response relationships for gelatin agents. |
+| PGx | Burgert_1975 | not_relevant | 0 | 0 | The paper describes a case of anemia caused by a lymph node hyperplasia and does not involve gelatin agents or pharmacogenomics. |
+| PGx | Carpentier_2024 | not_relevant | 0 | 0 | The paper focuses on tissue engineering and organoid culture matrices, not pharmacogenomics or drug PK/PD. |
+| PGx | Chen_1999 | not_relevant | 0 | 0 | The paper studies the antifungal mechanism of a corn protein inhibitor, not the pharmacogenomics of gelatin agents. |
+| popPK | Chen_2019 | irrelevant | 0 | 0 | The study focuses on pharmacodynamics (platelet activation and hemostasis) rather than pharmacokinetics, and no PK parameters are reported. |
+| PD | Chen_2019 | not_relevant | 3 | 2 | The paper reports qualitative comparisons of platelet activation markers across different molecular weight fractions but does not provide numeric concentration-effect data, dose-response curves, or specific PD parameters (e.g., Emax, EC50) in the text. |
+| PGx | Cheng_2026 | not_relevant | 0 | 0 | The paper describes a microneedle drug delivery system and monitoring platform, not a pharmacogenomic study of gelatin agents. |
+| PGx | Chitrangi_2017 | not_relevant | 0 | 0 | The paper describes an in vitro model for drug metabolism and does not report pharmacogenomic effects on PK/PD parameters for gelatin agents. |
+| popPK | Chniguir_2019 | irrelevant | 0 | 0 | The paper investigates the anti-inflammatory and antioxidant effects of Syzygium aromaticum extract, not the pharmacokinetics of gelatin agents. |
+| PGx | Choi_2024 | not_relevant | 0 | 0 | The paper investigates cell differentiation protocols using gelatin as a substrate and fasudil as a reagent, not the pharmacokinetics or pharmacodynamics of gelatin-based drugs in relation to genetic variants. |
+| popPK | Comisar_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for zavegepant, not gelatin_agents. |
+| PD | Comisar_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for zavegepant, describing concentration-time profiles and covariates affecting exposure, but it does not report any pharmacodynamic (PD) or exposure-response relationship, nor does it provide numeric PD parameters such as Emax or EC50. |
+| popPK | Cotabarren_2020 | irrelevant | 0 | 0 | The study focuses on the in vitro dissolution of 3D-printed PVA capsules, not the pharmacokinetics of gelatin agents. |
+| popPK | Cronstein_1992 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
+| PD | Cronstein_1992 | not_relevant | 0 | 0 | The paper investigates the mechanism of neutrophil adherence via adenosine receptors and does not report a pharmacodynamic exposure-response or dose-response relationship for gelatin agents. |
+| popPK | Deng_2026 | irrelevant | 0 | 0 | The paper describes a bioartificial liver model for AML and hepatotoxicity studies, not the pharmacokinetics of gelatin agents. |
+| popPK | Desai_2026 | irrelevant | 0 | 0 | The paper is an in vitro cytocompatibility study of a living biomaterial and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Desai_2026 | not_relevant | 0 | 0 | The paper evaluates the cytocompatibility and biosafety of a living biomaterial (Corynebacterium glutamicum-PVA) using in vitro assays, but it does not report a pharmacodynamic exposure-response or dose-response relationship for a drug with numeric PD parameters. |
+| popPK | Dings_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics/pharmacodynamics of cafedrine/theodrenaline and ephedrine, not gelatin agents. |
+| popPK | Dodda_2026 | irrelevant | 0 | 0 | The paper describes the material science and in vitro biocompatibility of gelatin-based composite films, not the pharmacokinetics of gelatin as a drug. |
+| PD | Dodda_2026 | not_relevant | 0 | 0 | The paper characterizes the mechanical and biological properties of composite films (PCL/MXene/Gelatin) but does not report a pharmacodynamic or exposure-response relationship for a drug, nor does it provide numeric PD parameters like Emax or EC50. |
+| popPK | Dogan_2025 | irrelevant | 0 | 0 | The paper describes an in vitro microphysiological system for cancer metastasis studies and does not report pharmacokinetic parameters for gelatin agents. |
+| PGx | Dragoj_2017 | not_relevant | 0 | 0 | The paper investigates doxorubicin resistance and invasion in lung cancer, not the pharmacokinetics or pharmacodynamics of gelatin agents. |
+| popPK | Dziarski_1991 | irrelevant | 0 | 0 | The paper is an immunological study on peptidoglycan binding sites and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Dziarski_1991 | not_relevant | 0 | 0 | The paper describes a binding assay for peptidoglycan and explicitly states that gelatin did not inhibit the binding, providing no pharmacodynamic or exposure-response data for gelatin agents. |
+| popPK | Ebrahimnejad_2023 | irrelevant | 0 | 0 | The study focuses on metformin delivery using gelatin nanoparticles and reports ex vivo/in vitro data, not population pharmacokinetic parameters for gelatin itself. |
+| PGx | Evans_2016 | not_relevant | 0 | 0 | The paper describes a method for preserving human hepatocytes using gelatin as a support matrix, not the pharmacokinetics or pharmacodynamics of gelatin-based drugs. |
+| popPK | Fabiyi_2026 | irrelevant | 0 | 0 | The paper is a review of dihydromyricetin (DHM), which is not the target drug gelatin_agents, and contains no quantitative PK parameters for the subject drug. |
+| PD | Fabiyi_2026 | not_relevant | 1 | 0 | The paper is a mechanistic review of dihydromyricetin focusing on SAR and molecular docking, lacking any quantitative exposure-response or dose-response data. |
+| popPK | Fagiolino_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclosporine A, not gelatin agents. |
+| popPK | Fradette_2005 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclosporine, not gelatin_agents. |
+| PGx | Fröhlich_2004 | not_relevant | 0 | 0 | The study investigates the effect of oral contraceptives on saquinavir pharmacokinetics and explicitly states that MDR1 polymorphisms were not associated with pharmacokinetic parameters. |
+| PGx | Gato-Diaz_2026 | not_relevant | 0 | 0 | The paper describes a 3D in vitro breast cancer model using gelatin as a structural component of the hydrogel matrix, not as a pharmacological agent, and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | German_2019 | not_relevant | 0 | 0 | The paper studies acetaminophen metabolism in cell cultures and does not involve gelatin agents or pharmacogenomic variants. |
+| popPK | Gieschke_1999 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
+| PD | Gieschke_1999 | not_relevant | 0 | 0 | The paper focuses on saquinavir (an HIV protease inhibitor), not gelatin agents. |
+| PGx | Gill_2001 | not_relevant | 0 | 0 | The paper discusses formulation differences and drug-drug interactions, but does not report pharmacogenomic effects of gene variants on PK/PD parameters. |
+| popPK | Gladigau_1981 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of isosorbide dinitrate, not gelatin agents. |
+| PGx | Goldman_2025 | not_relevant | 2 | 0 | The paper is a systematic review discussing the theoretical interaction between CYP450 polymorphisms and vaccine excipients (like gelatin) in infants, but it does not report specific quantitative pharmacokinetic or pharmacodynamic effect sizes for gelatin agents. |
+| popPK | Golub_1995 | irrelevant | 0 | 0 | The study investigates the in-vitro inhibition of matrix metalloproteinases by doxycycline and does not report pharmacokinetic parameters for gelatin agents. |
+| PGx | Greene_2015 | not_relevant | 0 | 0 | The paper describes the synthesis of gelatin-based hydrogels for cell culture and does not report pharmacogenomic effects on the PK/PD of gelatin agents. |
+| PGx | Ha_2003 | not_relevant | 0 | 0 | The paper investigates the mechanism of cholesterol efflux mediated by human serum albumin variants, not the pharmacokinetics or pharmacodynamics of gelatin agents. |
+| popPK | Handayani_2022 | irrelevant | 0 | 0 | The paper is an in-vitro study on the cytotoxic and antimigratory effects of brazilein and doxorubicin, containing no pharmacokinetic parameters for gelatin agents. |
+| popPK | Hariono_2020 | irrelevant | 0 | 0 | The paper describes the synthesis and biological evaluation of arylamide compounds as MMP9 inhibitors, not the pharmacokinetics of gelatin agents. |
+| popPK | Harsha_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carboplatin (the drug) delivered via gelatin microspheres, not the pharmacokinetics of gelatin itself. |
+| popPK | Hasanin_2024 | irrelevant | 0 | 0 | The paper describes the synthesis and antimicrobial/anticancer activity of a nanocomposite where gelatin is a structural material, not a pharmacokinetic study of gelatin as a drug. |
+| popPK | Hemdan_2025 | irrelevant | 0 | 0 | The study focuses on the synthesis and antibacterial properties of gelatin films, not the pharmacokinetics of gelatin as a drug. |
+| PD | Hemdan_2025 | not_relevant | 2 | 1 | The paper reports material characterization and qualitative/semi-quantitative antibacterial assays (zones of inhibition, log reduction) and a Microtox EC50 for toxicity, but lacks a pharmacodynamic model or exposure-response analysis for the gelatin agent itself. |
+| popPK | Henderson_2002 | irrelevant | 0 | 0 | The study investigates the performance of an immunoassay for oestrone sulphate, using gelatin only as a blocking agent, and contains no pharmacokinetic data for gelatin. |
+| PD | Henderson_2002 | not_relevant | 0 | 0 | The paper describes the optimization of an immunoassay method (dipstick PCI) and reports assay calibration parameters (EC50 of the assay), not a pharmacodynamic or exposure-response relationship for a drug. |
+| popPK | Hipwood_2026 | irrelevant | 0 | 0 | The paper is a biomaterials study on lung decellularized extracellular matrix (dECM) hydrogels and cancer cell culture, containing no pharmacokinetic data for gelatin agents. |
+| popPK | Hong_2021 | irrelevant | 0 | 0 | The study is an in-vitro hepatotoxicity assay using HepG2 cells and does not report pharmacokinetic parameters for gelatin agents. |
+| popPK | Hong_2022 | irrelevant | 0 | 0 | The study is an in vitro 3D bioprinting model for cancer drug resistance where gelatin is used as a hydrogel matrix, not as the subject drug for pharmacokinetic analysis. |
+| PGx | Hong_2022 | not_relevant | 0 | 0 | The paper describes a 3D bioprinting method for drug screening and does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | Hou_2020 | not_relevant | 0 | 0 | The paper investigates the antitumor effects of digoxin on colorectal cancer cells in vitro and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Hsu_1998 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of HIV protease inhibitors (ritonavir and saquinavir), not gelatin agents. |
+| popPK | Hu_2022 | irrelevant | 0 | 0 | The paper investigates the tyrosinase inhibitory activity and molecular docking of peptides derived from gelatin, not the pharmacokinetic disposition parameters (CL, V, etc.) of gelatin agents. |
+| popPK | Huang_2018 | irrelevant | 0 | 0 | The paper describes a diagnostic method for capturing circulating tumor cells using gelatin-coated beads and does not report any pharmacokinetic parameters for gelatin as a drug. |
+| PD | Huang_2018 | not_relevant | 0 | 0 | The paper describes a physical cell isolation method using gelatin-coated beads and reports capture efficiency metrics, but it does not contain any pharmacodynamic (exposure-response or dose-response) analysis or numeric PD parameters for a drug. |
+| PGx | Hull_2009 | not_relevant | 0 | 0 | The study compares pharmacokinetics between two formulations (capsule vs. tablet) and does not investigate the impact of any gene variant or genotype. |
+| popPK | Iakab_2026 | irrelevant | 0 | 0 | The paper describes a 3D MALDI imaging platform for spatial metabolomics in cell cultures and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Iakab_2026 | not_relevant | 0 | 0 | The paper describes a 3D MALDI imaging platform for spatial metabolomics in cell cultures and does not report any pharmacodynamic or exposure-response analysis for gelatin agents. |
+| popPK | Isla_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fosfomycin, not gelatin_agents. |
+| PD | Isla_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for fosfomycin calcium but contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Jacobson_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ponazuril, not gelatin_agents. |
+| PGx | Jayal_2021 | not_relevant | 0 | 0 | The paper describes a 3D cell culture model for HCV research and does not report pharmacogenomic effects on the PK/PD of gelatin agents. |
+| PGx | Katlama_2001 | not_relevant | 0 | 0 | The study evaluates the efficacy and safety of an antiretroviral regimen in HIV patients but does not investigate the impact of host gene variants on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Kawada_1995 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on a leupeptin analogue's effect on cell invasion and collagenase activity, not a pharmacokinetic study of gelatin agents. |
+| popPK | Kechagias_2026 | irrelevant | 0 | 0 | The study focuses on the extraction of oleuropein and its application in food products (salt and gelatin films), not on the pharmacokinetics of gelatin agents. |
+| PD | Kechagias_2026 | not_relevant | 2 | 2 | The paper reports in vitro antioxidant activity (EC50) and material properties of oleuropein-loaded gelatin films, but does not report a pharmacodynamic (exposure-response) relationship for a drug in a biological system. |
+| popPK | Kim_2019 | irrelevant | 0 | 0 | The paper describes the fabrication of an MRI phantom using gelatin as a structural material, not a pharmacokinetic study of gelatin as a drug. |
+| popPK | Klingensmith_1976 | irrelevant | 0 | 0 | The study investigates the uptake of 99mTc-sulfur colloid (a diagnostic radiopharmaceutical) in animal models, not the pharmacokinetics of gelatin agents. |
+| popPK | Köhler_1979 | irrelevant | 2 | 0 | The text is an abstract describing a study on gelatin but contains no quantitative pharmacokinetic parameter values (CL, V, etc.) for extraction. |
+| PD | Köhler_1979 | not_relevant | 1 | 0 | The text is an abstract that qualitatively mentions the study of pharmacodynamics and renal function effects but provides no numeric PD parameters, curves, or specific dose-response data. |
+| popPK | Lad_2026 | irrelevant | 0 | 0 | The paper describes the phytochemical characterization and in-vitro bioactivities of Eucalyptus globulus essential oil, not the pharmacokinetics of gelatin agents. |
+| popPK | Laghezza_2024 | irrelevant | 0 | 0 | The study investigates the phytochemical composition and biological effects of Taraxacum officinale extracts on cancer cells, not the pharmacokinetics of gelatin agents. |
+| PD | Laghezza_2024 | not_relevant | 3 | 2 | The study reports qualitative inhibition of gelatinases (MMP-2/9) at a single non-cytotoxic concentration (500 µg/mL) and provides IC50 values for antioxidant assays, but lacks a dose-response curve or numeric PD parameters (EC50/Emax) for the gelatinase effect. |
+| PGx | Lai_2018 | not_relevant | 0 | 0 | The paper investigates the material properties of gelatin matrices for tissue engineering, not the pharmacokinetics or pharmacodynamics of gelatin as a drug. |
+| popPK | Larkin_2018 | irrelevant | 0 | 0 | The paper investigates matrix metalloproteinases (MMPs) in sepsis and uses gelatin zymography as a method, but does not study the pharmacokinetics of gelatin or gelatin-based drugs. |
+| popPK | Levato_2017 | irrelevant | 0 | 0 | The paper is a tissue engineering study on cartilage regeneration using gelatin methacryloyl hydrogels and does not report pharmacokinetic parameters for gelatin agents. |
+| popPK | Levêque_1996 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for vinorelbine, not gelatin_agents. |
+| popPK | Li_2020 | irrelevant | 0 | 0 | The paper is a network pharmacology study of a traditional Chinese medicine formula (Yougui pill) for osteoporosis and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Li_2020 | not_relevant | 0 | 0 | The paper is a network pharmacology and bioinformatics study identifying compounds and targets; it does not report any experimental concentration-effect data, dose-response curves, or numeric PD parameters. |
+| popPK | Li_2024 | irrelevant | 0 | 0 | The study investigates gelatinolytic activity (enzymatic degradation) in dentin, not the pharmacokinetics of gelatin as a drug. |
+| popPK | Li_2025 | irrelevant | 0 | 0 | The study focuses on metabolomics and quality markers of a traditional Chinese medicine decoction, not the pharmacokinetic parameters of gelatin agents. |
+| PD | Li_2025 | not_relevant | 1 | 0 | The study focuses on identifying quality markers (Q-markers) via metabolomics and serum pharmacochemistry, reporting only qualitative changes in biomarkers (MDA, SOD, etc.) without providing numeric concentration-effect or dose-response parameters. |
+| PGx | Li_2025_2 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic effects of a flavonoid (TF3) on melanoma cells and does not involve gelatin agents or pharmacogenomic analysis. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper describes the design of mini-protein inhibitors for complement C9 and does not report pharmacokinetic parameters for gelatin agents. |
+| PGx | Liang_2004 | not_relevant | 0 | 0 | The paper studies drug resistance and invasiveness in lung carcinoma cell lines, not pharmacogenomic effects on PK/PD parameters of gelatin agents. |
+| popPK | Liao_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for lucitanib, not gelatin_agents. |
+| PD | Liao_2022 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for lucitanib but contains no pharmacodynamic (PD) or exposure-response analysis, nor any numeric PD parameters. |
+| PGx | Lin_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of a herbal extract on renal fibrosis and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Lin_2026 | irrelevant | 0 | 0 | The paper is a behavioral neuroscience study on reward learning and dopamine mechanisms, not a pharmacokinetic study of gelatin agents. |
+| PD | Lin_2026 | not_relevant | 0 | 0 | The paper investigates computational reinforcement learning models and the behavioral effects of a D2/3 antagonist (amisulpride) on exploration and reward learning, but it does not report pharmacokinetic data, drug concentrations, or numeric pharmacodynamic parameters (e.g., Emax, EC50) for the drug. |
+| PGx | Liu_2020 | not_relevant | 0 | 0 | The paper describes the fabrication of scaffolds for hepatocyte culture and does not report pharmacogenomic effects on the PK/PD of gelatin agents. |
+| popPK | Liu_2022 | irrelevant | 0 | 0 | The study focuses on the in vitro DPP-IV inhibitory activity and qualitative in vivo absorption of a specific peptide (GPXGPPGPGP) derived from gelatin, rather than reporting quantitative pharmacokinetic parameters (CL, V, etc.) for gelatin itself. |
+| popPK | Liu_2025 | irrelevant | 0 | 0 | The paper describes a method for preparing tumor spheroids for mass spectrometry imaging using gelatin as an embedding medium, not a pharmacokinetic study of gelatin as a drug. |
+| PD | Liu_2025 | not_relevant | 0 | 0 | The paper describes a sample preparation method for mass spectrometry imaging of tumor spheroids and does not report any pharmacodynamic or exposure-response data. |
+| popPK | Lowry_1992 | irrelevant | 0 | 0 | The paper describes the structural stability and catalytic activity of a collagenase enzyme fragment, not the pharmacokinetics of gelatin as a drug. |
+| PD | Lowry_1992 | not_relevant | 0 | 0 | The paper describes the biochemical stabilization of a collagenase fragment by metal ions (Ca/Zn) and its enzymatic activity on substrates, which is a biophysical/enzymatic study, not a pharmacodynamic (drug exposure-response) analysis. |
+| popPK | Lyu_2025 | irrelevant | 0 | 0 | The study investigates the effects of glucocorticoids on gut microbiota and metabolic markers, not the pharmacokinetics of gelatin agents. |
+| PD | Lyu_2025 | not_relevant | 0 | 0 | The study investigates the effects of glucocorticoids on gut microbiota and metabolic markers but does not report pharmacokinetic data or fit any exposure-response or dose-response models with numeric PD parameters. |
+| popPK | M_2025 | irrelevant | 0 | 0 | The paper is a mechanistic immunology study on caspase-8 in SARS-CoV-2 infection and contains no pharmacokinetic data for gelatin agents. |
+| PD | M_2025 | not_relevant | 0 | 0 | The paper investigates the role of caspase-8 in SARS-CoV-2 pathogenesis using gene-targeted mice and inhibitors, but it does not report a pharmacodynamic exposure-response or dose-response relationship with numeric PD parameters (e.g., Emax, EC50) for gelatin agents or any other drug. |
+| PGx | Malinen_2014 | not_relevant | 0 | 0 | The paper describes a 3D cell culture model using gelatin hydrogels for tissue engineering, not the pharmacokinetics or pharmacodynamics of gelatin as a drug agent. |
+| popPK | Manicourt_1993 | irrelevant | 0 | 0 | The paper describes an enzymatic assay for proteases using gelatin as a substrate, not a pharmacokinetic study of gelatin as a drug. |
+| PD | Manicourt_1993 | not_relevant | 0 | 0 | The paper describes an enzymatic assay method for proteases using gelatin as a substrate, not a pharmacodynamic study of a drug's effect on a biological system. |
+| popPK | Marchianò_2023 | irrelevant | 0 | 0 | The paper focuses on the formulation and characterization of nanovesicles and gelatin films for antimicrobial applications, containing no pharmacokinetic data or disposition parameters for gelatin agents. |
+| PD | Marchianò_2023 | not_relevant | 2 | 1 | The paper reports qualitative antimicrobial activity (inhibition zone diameters and time-kill curves) for vanillin-loaded niosomes but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for the gelatin agents. |
+| PGx | Masure_1997 | not_relevant | 0 | 0 | The paper describes the production and general pharmacokinetics of recombinant gelatinase B in rabbits, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Mezhoudi_2022 | irrelevant | 0 | 0 | The paper is a food science study on edible coatings for fish preservation and does not report any pharmacokinetic parameters for gelatin agents. |
+| PD | Mezhoudi_2022 | not_relevant | 0 | 0 | The paper reports food preservation efficacy and in vitro antioxidant/antibacterial assays (IC50 for DPPH), but does not report a pharmacodynamic exposure-response or dose-response relationship for the gelatin agent in a biological system with derivable PD parameters. |
+| popPK | Mileva_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of doxycycline, not gelatin agents (gelatin is only mentioned as the capsule excipient). |
+| popPK | Miller_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sulfur colloid (a tracer) in canines, not gelatin_agents. |
+| popPK | Miranda_2021 | irrelevant | 0 | 0 | The paper investigates the cytotoxic and chemosensitizing effects of a glycoalkaloidic extract on bladder cancer cells, not the pharmacokinetics of gelatin agents. |
+| popPK | Mirzapour-Kouhdasht_2021 | irrelevant | 0 | 0 | The study investigates the structure-function relationship and bioactivity (ACE/DPP-IV inhibition, antibacterial) of gelatin-derived peptides, not pharmacokinetic disposition parameters. |
+| popPK | Mohseni_2022 | irrelevant | 0 | 0 | The paper describes a 3D in vitro tumor model using gelatin as a structural hydrogel component, not as a pharmacokinetic subject drug, and reports no PK parameters. |
+| popPK | Movahhed_2023 | irrelevant | 0 | 0 | The paper is an in-vitro study on the anti-metastatic effects of taraxasterol on prostate cancer cells and does not report pharmacokinetic parameters for gelatin agents. |
+| PGx | Muirhead_2000 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (sildenafil with protease inhibitors) and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Möbus_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on endothelial cells and fibrosis, containing no pharmacokinetic data for gelatin agents. |
+| PD | Möbus_2025 | not_relevant | 2 | 1 | The paper reports qualitative dose-dependent transcriptomic changes and pathway enrichment for bleomycin and TGF-beta but does not provide numeric PD parameters (e.g., EC50, Emax) or a fitted concentration-effect curve. |
+| popPK | Narvaez-Flores_2021 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity and anti-inflammatory assay of chitosan and gelatin, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Navarro_2015 | irrelevant | 0 | 0 | The paper studies the toxicity of silver nanoparticles (including gelatin-coated ones) to algae, not the pharmacokinetics of gelatin as a drug. |
+| popPK | OConnor_2022 | irrelevant | 0 | 0 | The study is a nutritional trial on executive function where gelatin is used only as a placebo ingredient, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Olechno_2025 | irrelevant | 0 | 0 | The paper is a review of mucoadhesive drug delivery systems for oral candidiasis and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Olechno_2025 | not_relevant | 1 | 0 | The paper is a review of mucoadhesive drug delivery systems for oral candidiasis and does not report specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for gelatin agents. |
+| popPK | Osman_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition by capsule colorants, not a pharmacokinetic study of gelatin agents. |
+| popPK | Owczarek_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of aronia leaf extracts on cancer cells, where gelatin is used only as a substrate for zymography, not as a pharmacokinetic subject drug. |
+| popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain pharmacokinetic data for gelatin agents. |
+| PD | Papadopoulou_2025 | not_relevant | 0 | 0 | The paper is a review of marine bioactives for cosmetics and does not report any pharmacodynamic or exposure-response data for gelatin agents. |
+| popPK | Park_2024 | irrelevant | 0 | 0 | The paper describes an in-vitro hepatotoxicity assay using gelatin hydrogels as a culture matrix, not a pharmacokinetic study of gelatin as a drug. |
+| popPK | Parlocha_2026 | irrelevant | 0 | 0 | The paper is an in-vitro study on the ACE-inhibitory activity of a plant extract (Mayana) and does not involve the drug gelatin_agents or any pharmacokinetic parameters. |
+| PGx | Pawluczyk_2008 | not_relevant | 0 | 0 | The paper investigates the role of the kallikrein gene in fibrosis using siRNA in cell culture and does not report pharmacogenomic effects on the PK or PD of gelatin agents. |
+| popPK | Peterson_2022 | irrelevant | 0 | 0 | The study is an in vitro elution/release study of silver nanoparticles from a gelatin sponge, not a pharmacokinetic study of gelatin agents as a drug. |
+| popPK | Pierce_1984 | irrelevant | 0 | 0 | The study investigates lormetazepam, not gelatin_agents, and gelatin is only mentioned as a formulation component. |
+| PD | Pierce_1984 | not_relevant | 2 | 1 | The paper compares PK and PD effects of two formulations but only provides qualitative comparisons and time-point statistics, lacking a formal concentration-effect model or numeric PD parameters like Emax or EC50. |
+| popPK | Qiu_2019 | irrelevant | 0 | 0 | The paper describes the preparation and antioxidant activity of gelatin peptides in vitro, containing no pharmacokinetic data. |
+| popPK | Rani_2026 | irrelevant | 0 | 0 | The paper is a review of quercetin for burn healing and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Rani_2026 | not_relevant | 2 | 1 | The paper is a review of mechanisms and delivery systems for quercetin, lacking original PK/PD modeling or extractable numeric exposure-response parameters. |
+| popPK | Rezek_2026 | irrelevant | 0 | 0 | The paper describes an in vitro study of antisense oligonucleotide therapy for a retinal disease and does not report pharmacokinetic parameters for gelatin agents. |
+| popPK | Ryden_1983 | irrelevant | 0 | 0 | The study measures the biokinetics of [99Tcm]-sulfur colloid, not gelatin_agents. |
+| popPK | Rydén_1982 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of a radiotracer (99mTc-sulphur colloid) to assess RES function, using gelatin only as a blocking agent, not as the subject drug. |
+| popPK | Salonen_1986 | irrelevant | 0 | 0 | The study investigates temazepam, not gelatin_agents, and gelatin is only mentioned as the capsule formulation. |
+| PD | Salonen_1986 | not_relevant | 2 | 1 | The study compares PK and PD outcomes between two formulations but reports only qualitative differences and p-values, without providing numeric PD parameters (e.g., Emax, EC50) or concentration-effect curves. |
+| PGx | Sanchez-Gonzalez_2025 | not_relevant | 0 | 0 | The paper describes the development of a 3D in vitro liver model using gelatin hydrogels and does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Sandwall_2018 | irrelevant | 0 | 0 | The paper describes a gelatin-based radiation dosimeter for measuring absorbed dose, not a pharmacokinetic study of a drug. |
+| PD | Sandwall_2018 | not_relevant | 0 | 0 | The paper describes a radiation dosimetry method (gelatin dosimeter) and reports a linear dose-response to ionizing radiation, which is a physical/chemical calibration curve, not a pharmacodynamic (drug exposure-response) relationship. |
+| PGx | Sarkar_2017 | not_relevant | 0 | 0 | The paper describes a cell culture platform for toxicity screening and does not report pharmacogenomic effects on PK/PD parameters of gelatin agents. |
+| popPK | Schramm_1992 | irrelevant | 0 | 0 | The paper investigates immunoassay methodology and antibody immobilization, with gelatin serving only as a protective protein in the assay setup, not as a subject drug for pharmacokinetic analysis. |
+| PD | Schramm_1992 | not_relevant | 0 | 0 | The paper describes the formation of antibody-antigen complexes in an immunoassay context, not a pharmacodynamic drug response. |
+| popPK | Schwarz_1979 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of temazepam, not gelatin_agents. |
+| popPK | Shabani_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on sialic acid's effect on gene expression in glial cells and does not report pharmacokinetic parameters for gelatin agents. |
+| popPK | Silmore_2021 | irrelevant | 0 | 0 | The paper is a systematic review of cannabidiol (CBD) pharmacokinetics, not gelatin_agents. |
+| PD | Silmore_2021 | not_relevant | 1 | 0 | The paper is a systematic review focusing on food effects on CBD pharmacokinetics (bioavailability, variability) and only qualitatively discusses downstream pharmacodynamics without providing numeric PD parameters or exposure-response models. |
+| popPK | Song_2026 | irrelevant | 0 | 0 | The paper describes an immunological study on a vaccine and antibody against Neisseria gonorrhoeae, not a pharmacokinetic study of gelatin agents. |
+| PD | Song_2026 | not_relevant | 0 | 0 | The paper reports immunological efficacy (vaccine/antibody) and bactericidal titers, but does not provide a pharmacokinetic-pharmacodynamic (PK/PD) model or exposure-response analysis with numeric PD parameters (e.g., EC50, Emax) for a drug. |
+| popPK | Srinivasan_2024 | irrelevant | 0 | 0 | The paper investigates the anti-cancer effects of silymarin on lung cancer cells and does not report pharmacokinetic parameters for gelatin agents. |
+| popPK | Strand_1979 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of radiocolloids (Au-198, Tc-99m) in rabbits, not gelatin agents. |
+| popPK | Suleymanov_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levofloxacin, not gelatin, which is only a component of the implant matrix. |
+| PD | Suleymanov_2026 | not_relevant | 0 | 0 | The paper describes the development and validation of a spectrophotometric assay for levofloxacin in plasma, containing no pharmacodynamic or exposure-response data. |
+| popPK | Sychterz_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for iberdomide, not gelatin_agents (gelatin is only mentioned as a capsule excipient). |
+| PGx | Tabatabaei_2025 | not_relevant | 0 | 0 | The paper describes a tissue engineering model using gelatin-based hydrogels for drug screening, not a pharmacogenomic study of gelatin agents. |
+| popPK | Tang_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of propofol, with gelatin used only as a vehicle for hemodilution, not as the subject drug. |
+| PGx | Tang_2023 | not_relevant | 0 | 0 | The paper investigates the mechanism of quercetin in breast cancer (inhibiting CYP3A4-mediated arachidonic acid metabolism) and does not report pharmacogenomic effects on the PK/PD of gelatin agents. |
+| popPK | Tanzawa_1992 | irrelevant | 0 | 0 | The paper describes the enzymatic inhibition of collagenases by matlystatins, not the pharmacokinetics of gelatin agents. |
+| popPK | Tauzin-Fin_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of propofol, using gelatin only as a volume expander for hemodilution, not as the subject drug. |
+| popPK | Tavares-Negrete_2025 | irrelevant | 0 | 0 | The paper describes a 3D bioprinted colon model using gelatin methacrylate (GelMA) as a structural biomaterial, not as a drug subject for pharmacokinetic analysis. |
+| popPK | Thanishka_2026 | irrelevant | 0 | 0 | The study focuses on the formulation and in vitro evaluation of a herbal suppository containing Peperomia pellucida, with no pharmacokinetic data for gelatin agents. |
+| PGx | Torsahakul_2022 | not_relevant | 0 | 0 | The paper describes tissue engineering of corneal grafts using gelatin-based biomaterials, not the pharmacokinetics or pharmacodynamics of gelatin as a drug agent. |
+| popPK | Troches-Mafla_2025 | irrelevant | 0 | 0 | The paper is a review of diltiazem hydrochloride, which is not the target drug gelatin_agents. |
+| PD | Troches-Mafla_2025 | not_relevant | 1 | 0 | The paper is a review of formulation technologies for diltiazem and does not report specific numeric pharmacodynamic parameters or exposure-response relationships. |
+| PGx | Trout_2004 | not_relevant | 0 | 0 | The study investigates the effect of clinical conditions (diarrhea/wasting) on saquinavir PK, not the effect of a gene variant or genotype. |
+| popPK | Tsujiyama_1986 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content or pharmacokinetic data for gelatin_agents. |
+| PD | Tsujiyama_1986 | not_relevant | 0 | 0 | The provided text is metadata for the GROBID software and does not contain any pharmacological data, drug information, or PD parameters. |
+| popPK | Turchaninova_2026 | irrelevant | 0 | 0 | The paper describes a cell transdifferentiation protocol for cardiac repair and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Turchaninova_2026 | not_relevant | 2 | 1 | The paper describes a cell reprogramming protocol and qualitative/semi-quantitative functional improvements (conduction area %) in an animal model, but does not report a pharmacodynamic model (Emax, EC50, etc.) or a quantitative exposure-response relationship for the agents used. |
+| PGx | Viana_2018 | not_relevant | 0 | 0 | The paper studies the effect of drug polymorphs (solid-state forms) on PK/PD, not the effect of a gene variant/genotype. |
+| popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review on nanocarriers for phytochemicals in diabetic wound healing and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Wahyuningsih_2026 | not_relevant | 0 | 0 | The paper is a narrative review of nanocarrier delivery systems for phytochemicals and does not report any primary pharmacokinetic or pharmacodynamic data, exposure-response models, or numeric PD parameters. |
+| popPK | Wang_2003 | irrelevant | 0 | 0 | The paper describes an in vitro tissue engineering model using a gelatin scaffold, not a pharmacokinetic study of gelatin as a drug. |
+| popPK | Wang_2005 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lycopene, not gelatin_agents (gelatin is only the excipient in the microcapsules). |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper focuses on 3D bioprinting techniques and scaffold geometry, not pharmacogenomics or drug PK/PD. |
+| popPK | Wang_2025 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
+| PD | Wang_2025 | not_relevant | 0 | 0 | The paper focuses on the formulation and antimicrobial efficacy of oregano oil-loaded microcapsules, not on the pharmacokinetics or pharmacodynamics of gelatin as a drug. |
+| popPK | Ward_1978 | irrelevant | 0 | 0 | The study is a carcinogenicity/histopathology trial in rats where gelatin is used only as a dietary vehicle/beadlet component, not as a subject drug for pharmacokinetic analysis. |
+| PD | Ward_1978 | not_relevant | 1 | 0 | The paper describes a qualitative dose-response relationship for a carcinogen (NMU) and a lack of effect for retinoids, but it does not report any numeric PD parameters (e.g., EC50, Emax) or concentration-effect curves for the gelatin agents or retinoids. |
+| PGx | Westensee_2024 | not_relevant | 0 | 0 | The paper describes 3D bioprinting of artificial cells and HepG2 cells for tissue engineering and does not report pharmacogenomic effects on PK/PD parameters of gelatin agents. |
+| popPK | Wu_2015 | irrelevant | 0 | 0 | The study focuses on the physicochemical properties and biological effects (barrier function, enzyme inhibition) of gelatin nanoparticles, not on the pharmacokinetic disposition parameters of gelatin as a drug. |
+| PD | Wu_2015 | not_relevant | 3 | 2 | The paper reports an EC50 for DPPH radical scavenging and maximum adsorption capacity, but these are physicochemical/antioxidant assays, not pharmacodynamic exposure-response relationships for a drug's therapeutic effect in a biological system. |
+| PGx | Wüthrich_2018 | not_relevant | 0 | 0 | The paper discusses wine allergies and intolerance, not the pharmacokinetics or pharmacodynamics of gelatin agents. |
+| popPK | Xie_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of paclitaxel (the drug), not gelatin (the carrier material), and gelatin is not the subject drug. |
+| popPK | Yakavets_2025 | irrelevant | 0 | 0 | The paper is an in-vitro study on cancer organoids using gelatin as a hydrogel component, not a pharmacokinetic study of gelatin as a drug. |
+| popPK | Yang_2019 | irrelevant | 0 | 0 | The paper describes the preparation and antioxidant properties of gelatin peptides in vitro, not the pharmacokinetics of a drug. |
+| PD | Yang_2019 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (EC50) of peptides, which is a biochemical assay, not a pharmacodynamic (exposure-response) relationship for a drug in a biological system. |
+| popPK | Yee_1988 | irrelevant | 0 | 0 | The study investigates the effects of prostaglandins and indomethacin on endometrial alkaline phosphatase activity, with gelatin serving only as a vehicle component, and contains no pharmacokinetic parameters for gelatin. |
+| popPK | Youngren-Ortiz_2017 | irrelevant | 0 | 0 | The study focuses on the formulation, physicochemical characterization, and in vitro release of gemcitabine-loaded gelatin nanocarriers, not on the pharmacokinetic parameters of gelatin itself. |
+| popPK | Yuh_2026 | irrelevant | 0 | 0 | The paper describes a tumor microenvironment model for ameloblastoma and does not report pharmacokinetic parameters for gelatin agents. |
+| PD | Yuh_2026 | not_relevant | 0 | 0 | The paper describes a tumor microenvironment model and biological mechanisms (EMT, secretome) but does not report any pharmacodynamic or exposure-response analysis for a drug. |
+| popPK | Zhang_2018 | irrelevant | 1 | 0 | The study focuses on cefquinome (an antibiotic) as the subject drug, with gelatin serving only as the excipient for the microspheres, and no specific PK parameters for gelatin itself are reported. |
+| popPK | Zhang_2019 | irrelevant | 0 | 0 | The paper describes the production and in-vitro bioactivity (ACE inhibition) of gelatin hydrolysates, not pharmacokinetic disposition parameters. |
+| popPK | Zheng_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Panax notoginseng saponins (PNS), not gelatin agents; gelatin is only mentioned as a component of the capsule formulation. |
+| popPK | Zhou_2023 | irrelevant | 0 | 0 | The paper describes the physical coating of lignin nanospheres with gelatin and analyzes adsorption mechanisms, not the pharmacokinetics of gelatin as a drug. |
+| PD | Zhou_2023 | not_relevant | 0 | 0 | The paper describes the physical adsorption of gelatin onto lignin nanospheres using a Hill model for surface binding, which is a physicochemical interaction study, not a pharmacodynamic (drug effect) or exposure-response analysis. |
+| popPK | do_2020 | irrelevant | 0 | 0 | The paper describes the development and characterization of a gelatin-based wound dressing (material science and in-vivo wound healing), not a pharmacokinetic study of gelatin as a drug. |
+| PD | do_2020 | not_relevant | 0 | 0 | The paper reports material characterization and qualitative/semi-quantitative wound healing outcomes (contraction rates, histology) but does not provide a pharmacodynamic model, exposure-response curve, or numeric PD parameters (e.g., Emax, EC50) for the drug effect. |
+| popPK | Üstün_2026 | irrelevant | 0 | 0 | The study is an in-vitro release kinetics study of diltiazem from gelatin microcapsules, not a pharmacokinetic study of gelatin as a drug. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgelatin_agents%5D&body=Drug%3A%20gelatin_agents%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gelatin_agents/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

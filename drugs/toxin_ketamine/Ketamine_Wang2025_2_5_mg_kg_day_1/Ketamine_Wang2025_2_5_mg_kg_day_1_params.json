@@ -1,0 +1,59 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ketamine_Wang2025_2_5_mg_kg_day_1",
+ "molar_masses": {
+  "retainedFraction": 0.237727
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  70.0,
+  175.0,
+  210.0,
+  525.0,
+  700.0,
+  1750.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Wang_2025:other_prose",
+    "value_si": 1.08
+   },
+   {
+    "source": "Wang_2025:other_prose",
+    "value_si": 0.67
+   },
+   {
+    "source": "Wang_2025:other_prose",
+    "value_si": 2.14
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.237727,
+  "Tb[1]": 1879.2,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9794324944513615
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

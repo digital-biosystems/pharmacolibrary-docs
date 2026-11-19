@@ -1,0 +1,60 @@
+{
+ "dose_source": "library default",
+ "model_id": "Melphalan_Choi2026_reference",
+ "molar_masses": {
+  "central.C": 0.305199
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Choi_2026:other_prose",
+    "value_si": 0.005948
+   },
+   {
+    "source": "Choi_2026:other_prose",
+    "value_si": 0.006181
+   },
+   {
+    "source": "Choi_2026:other_prose",
+    "value_si": 0.0057269999999999995
+   },
+   {
+    "source": "Choi_2026:other_prose",
+    "value_si": 0.0005859999999999999
+   },
+   {
+    "source": "Choi_2026:other_prose",
+    "value_si": 0.005908
+   },
+   {
+    "source": "Choi_2026:other_prose",
+    "value_si": 0.005411
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.7291666666666666e-05,
+  "F": 1.0,
+  "MM": 0.305199,
+  "VdPerKg": 0.0004785714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.00012023217247097844,
+  "k21": 0.00021860394994723353,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662059
+ },
+ "reference_peaks": {
+  "central.C": 0.0001628990824071322
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

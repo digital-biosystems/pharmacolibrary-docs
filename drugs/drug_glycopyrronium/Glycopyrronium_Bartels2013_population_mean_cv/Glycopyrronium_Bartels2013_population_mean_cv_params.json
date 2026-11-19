@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Glycopyrronium_Bartels2013_population_mean_cv",
+ "molar_masses": {
+  "central.C": 0.3184305
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  120.0,
+  200.0,
+  400.0
+ ],
+ "parameters": {
+  "Cl": 1.2472222222222223e-05,
+  "F": 1.11,
+  "MM": 0.3184305,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00016142857142857145,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00012,
+  "k12": 0.00020231071779744348,
+  "k21": 3.1973581973581977e-05,
+  "ka": 2.4999999999999998e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 92113.82765531063
+ },
+ "reference_peaks": {
+  "central.C": 2.1160770287495522e-05
+ },
+ "stop_time": 1209600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,0 +1,152 @@
+{
+ "dose_source": "WHO ATC DDD 300 mg oral (N06AX12)",
+ "model_id": "Bupropion_Xue2017_threohydrobupropion_value",
+ "molar_masses": {
+  "central.C": 0.23974299999999998
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 0.000136
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 0.000457
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 9.6e-05
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.2e-05
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 0.000222
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 5.1e-05
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 7e-06
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 8.9e-05
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 0.000299
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 6.8e-05
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 9e-06
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.79
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.15
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.76
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.61
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.45
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 2.24
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.27
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.94
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.8
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.6
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 3.05
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 2.57
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.55
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 2.17
+   },
+   {
+    "source": "Xue_2017:other_prose",
+    "value_si": 1.21
+   },
+   {
+    "source": "Xue_2017:discussion_prose",
+    "value_si": 0.000443
+   },
+   {
+    "source": "Xue_2017:discussion_prose",
+    "value_si": 0.000107
+   },
+   {
+    "source": "Xue_2017:discussion_prose",
+    "value_si": 1.6e-05
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 5.875e-06,
+  "F": 1.0,
+  "MM": 0.23974299999999998,
+  "Tlag": 864.0,
+  "VdPerKg": 0.00583,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.0007833333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6446.653440378639
+ },
+ "reference_peaks": {
+  "central.C": 0.0006820006417809531
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,381 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;aminobutyric acid&quot;}]"></div>
+
+# aminobutyric acid
+
+- **generic name:** aminobutyric acid
+- **ATC codes:** `N03AG03`
+- **DrugBank:** none · **PubChem:** none
+- **groups:** not captured
+
+## About
+
+Gamma-aminobutyric acid is a fatty acid derivative classified as an antiepileptic agent. It is distributed as a supplement in various countries.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q210021](https://www.wikidata.org/wiki/Q210021), [Wikipedia](https://en.wikipedia.org/wiki/GABA?oldid=1377083018) (CC BY-SA 4.0) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span> | [González_1994_CAPs](drugs/drug_aminobutyric_acid/pd_Gonz_lez_1994_CAPs.md) | Postganglionic compound action potentials (CAPs) ← aminobutyric_acid · direct Emax (saturable) effect | — | González Burgos GR et al., Effect of gamma-aminobutyric acid on sy…, Brain research (1994) | [10.1016/s0006-8993(09)90002-6](https://doi.org/10.1016/s0006-8993(09)90002-6) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **GABRB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Kosaki_2024](drugs/drug_aminobutyric_acid/pgx_Kosaki_2024_GABRB1_Q100.md) | Kosaki Y et al., γ-Aminobutyric acid type A receptor β1…, Molecular brain (2024) | [10.1186/s13041-024-01141-2](https://doi.org/10.1186/s13041-024-01141-2) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **DRD2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Reynolds_2014](drugs/drug_aminobutyric_acid/pgx_Reynolds_2014_DRD2_Q100.md) | Reynolds GP et al., Pharmacogenomics in psychiatry: the rel…, British journal of clinical… (2014) | [10.1111/bcp.12312](https://doi.org/10.1111/bcp.12312) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **GRIK4** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Reynolds_2014](drugs/drug_aminobutyric_acid/pgx_Reynolds_2014_GRIK4_Q100.md) | Reynolds GP et al., Pharmacogenomics in psychiatry: the rel…, British journal of clinical… (2014) | [10.1111/bcp.12312](https://doi.org/10.1111/bcp.12312) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **GRM3** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Reynolds_2014](drugs/drug_aminobutyric_acid/pgx_Reynolds_2014_GRM3_Q100.md) | Reynolds GP et al., Pharmacogenomics in psychiatry: the rel…, British journal of clinical… (2014) | [10.1111/bcp.12312](https://doi.org/10.1111/bcp.12312) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **SLC1A2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Reynolds_2014](drugs/drug_aminobutyric_acid/pgx_Reynolds_2014_SLC1A2_Q100.md) | Reynolds GP et al., Pharmacogenomics in psychiatry: the rel…, British journal of clinical… (2014) | [10.1111/bcp.12312](https://doi.org/10.1111/bcp.12312) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **SLC6A4** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Reynolds_2014](drugs/drug_aminobutyric_acid/pgx_Reynolds_2014_SLC6A4_Q100.md) | Reynolds GP et al., Pharmacogenomics in psychiatry: the rel…, British journal of clinical… (2014) | [10.1111/bcp.12312](https://doi.org/10.1111/bcp.12312) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=aminobutyric_acid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| — | brain | `SLC6A4` target | PGx paper |
+| — | platelet | `SLC6A4` target | PGx paper |
+
+<sub>Actors without a tissue in the table: DRD2 (target), GABRB1 (target), GRIK4 (target), GRM3 (target), SLC1A2 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 06:53 | 7:35 | 0/0/0 | 0/1/0 | 0/0/6 | 726,682/51,281 | einfracz / qwen3.8-27b | 76 | 25/79 | 71/5 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 2207 matched, 287 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_24 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Bottemanne_2021.pdf` | Bottemanne H et al., Ketamine Augmentation of Exposure Respo…, Innovations in clinical neu… (2021) | pd | 5 |  | [35096475](https://www.ncbi.nlm.nih.gov/pubmed/35096475) | metadata signals extractable PD data (ExposureResponse) |
+| `Burkat_2022.pdf` | Burkat PM, Physiologically Based Pharmacokinetic a…, Journal of clinical pharmac… (2022) | pd | 5 | [10.1002/jcph.2071](https://doi.org/10.1002/jcph.2071) | [35533144](https://www.ncbi.nlm.nih.gov/pubmed/35533144) | metadata signals extractable PD data (PharmacodynamicModel) |
+| `Louiset_2000.pdf` | Louiset E et al., Subunit composition and pharmacological…, Endocrinology (2000) | pd | 5 | [10.1210/endo.141.3.7397](https://doi.org/10.1210/endo.141.3.7397) | [10698184](https://www.ncbi.nlm.nih.gov/pubmed/10698184) | metadata signals extractable PD data (EC50) |
+| `Mandema_1992.pdf` | Mandema JW et al., Electroencephalogram effect measures an…, Clinical pharmacokinetics (1992) | pd | 5 | [10.2165/00003088-199223030-00003](https://doi.org/10.2165/00003088-199223030-00003) | [1511536](https://www.ncbi.nlm.nih.gov/pubmed/1511536) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Morrow_1988.pdf` | Morrow AL et al., Chronic ethanol administration alters g…, The Journal of pharmacology… (1988) | pd | 5 |  | [2839659](https://www.ncbi.nlm.nih.gov/pubmed/2839659) | metadata signals extractable PD data (EC50) |
+| `Alba-Betancourt_2019.pdf` | Alba-Betancourt C et al., Antidiarrheal, vasorelaxant, and neurop…, Drug development research (2019) | pd | 4 | [10.1002/ddr.21578](https://doi.org/10.1002/ddr.21578) | [31343767](https://www.ncbi.nlm.nih.gov/pubmed/31343767) | metadata signals extractable PD data (EC50) |
+| `Barolet_1985.pdf` | Barolet AW et al., Antagonist actions of bicuculline methi…, Canadian journal of physiol… (1985) | pd | 4 | [10.1139/y85-240](https://doi.org/10.1139/y85-240) | [3000559](https://www.ncbi.nlm.nih.gov/pubmed/3000559) | metadata signals extractable PD data (EC50) |
+| `Bowery_1974.pdf` | Bowery NG et al., Depolarizing actions of gamma-aminobuty…, British journal of pharmaco… (1974) | pd | 4 | [10.1111/j.1476-5381.1974.tb08563.x](https://doi.org/10.1111/j.1476-5381.1974.tb08563.x) | [4154116](https://www.ncbi.nlm.nih.gov/pubmed/4154116) | metadata signals extractable PD data (sigmoid) |
+| `Frank_1995.pdf` | Frank S et al., Inhibitors for the in vitro assembly of…, Arteriosclerosis, thrombosi… (1995) | pd | 4 | [10.1161/01.atv.15.10.1774](https://doi.org/10.1161/01.atv.15.10.1774) | [7583555](https://www.ncbi.nlm.nih.gov/pubmed/7583555) | metadata signals extractable PD data (IC50) |
+| `González_1994.pdf` | González Burgos GR et al., Effect of gamma-aminobutyric acid on sy…, Brain research (1994) | pd | 4 | [10.1016/s0006-8993(09)90002-6](https://doi.org/10.1016/s0006-8993(09)90002-6) | [7834329](https://www.ncbi.nlm.nih.gov/pubmed/7834329) | metadata signals extractable PD data (IC50) |
+| `He_2024.pdf` | He L et al., GABA-Decorated Nanocarrier for Smart De…, Journal of agricultural and… (2024) | pd | 4 | [10.1021/acs.jafc.4c07549](https://doi.org/10.1021/acs.jafc.4c07549) | [39417336](https://www.ncbi.nlm.nih.gov/pubmed/39417336) | metadata signals extractable PD data (EC50) |
+| `Larsson_1986.pdf` | Larsson OM et al., Differential effect of gamma-vinyl GABA…, Neuropharmacology (1986) | pd | 4 | [10.1016/0028-3908(86)90214-5](https://doi.org/10.1016/0028-3908(86)90214-5) | [3092125](https://www.ncbi.nlm.nih.gov/pubmed/3092125) | metadata signals extractable PD data (IC50) |
+| `Liu_1993.pdf` | Liu GJ et al., Modulation of neuropeptide effects by a…, European journal of pharmac… (1993) | pd | 4 | [10.1016/0014-2999(93)90891-k](https://doi.org/10.1016/0014-2999(93)90891-k) | [7902281](https://www.ncbi.nlm.nih.gov/pubmed/7902281) | metadata signals extractable PD data (Emax) |
+| `Liu_2004.pdf` | Liu H et al., Effect of thiopental sodium on the rele…, Journal of Huazhong Univers… (2004) | pd | 4 | [10.1007/BF02911368](https://doi.org/10.1007/BF02911368) | [15791854](https://www.ncbi.nlm.nih.gov/pubmed/15791854) | metadata signals extractable PD data (IC50) |
+| `Locock_2013.pdf` | Locock KE et al., Γ-aminobutyric acid(C) (GABAC) selectiv…, Journal of medicinal chemis… (2013) | pd | 4 | [10.1021/jm4006548](https://doi.org/10.1021/jm4006548) | [23755849](https://www.ncbi.nlm.nih.gov/pubmed/23755849) | metadata signals extractable PD data (IC50) |
+| `Olander_2018.pdf` | Olander ER et al., Delineation of the functional propertie…, Biochemical pharmacology (2018) | pd | 4 | [10.1016/j.bcp.2018.02.015](https://doi.org/10.1016/j.bcp.2018.02.015) | [29454619](https://www.ncbi.nlm.nih.gov/pubmed/29454619) | metadata signals extractable PD data (EC50) |
+| `Prince_1992.pdf` | Prince RJ et al., Temperature and anion dependence of all…, Biochemical pharmacology (1992) | pd | 4 | [10.1016/0006-2952(92)90529-r](https://doi.org/10.1016/0006-2952(92)90529-r) | [1329765](https://www.ncbi.nlm.nih.gov/pubmed/1329765) | metadata signals extractable PD data (EC50) |
+| `Raiteri_1990.pdf` | Raiteri M et al., Muscarinic receptors mediating inhibiti…, The Journal of pharmacology… (1990) | pd | 4 |  | [2384883](https://www.ncbi.nlm.nih.gov/pubmed/2384883) | metadata signals extractable PD data (EC50) |
+| `Schumacher_2009.pdf` | Schumacher PM et al., Response surface modeling of the intera…, Anesthesiology (2009) | pd | 4 | [10.1097/ALN.0b013e3181b799ef](https://doi.org/10.1097/ALN.0b013e3181b799ef) | [19741484](https://www.ncbi.nlm.nih.gov/pubmed/19741484) | metadata signals extractable PD data (Emax) |
+| `Suzdak_1992.pdf` | Suzdak PD et al., NNC-711, a novel potent and selective g…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90804-d](https://doi.org/10.1016/0014-2999(92)90804-d) | [1468507](https://www.ncbi.nlm.nih.gov/pubmed/1468507) | metadata signals extractable PD data (IC50) |
+| `Wong_1984.pdf` | Wong EH et al., gamma-Aminobutyric acid activation of 3…, Brain research (1984) | pd | 4 | [10.1016/0006-8993(84)91213-7](https://doi.org/10.1016/0006-8993(84)91213-7) | [6331574](https://www.ncbi.nlm.nih.gov/pubmed/6331574) | metadata signals extractable PD data (EC50) |
+| `Yu_1994.pdf` | Yu B et al., Interleukin-1 beta inhibits synaptic tr…, The Journal of pharmacology… (1994) | pd | 4 |  | [7525939](https://www.ncbi.nlm.nih.gov/pubmed/7525939) | metadata signals extractable PD data (EC50) |
+| `Kassab_2026.pdf` | Kassab N et al., Pharmacogenomics of commonly used intra…, Pharmacogenetics and genomi… (2026) | pgx | 8 | [10.1097/FPC.0000000000000582](https://doi.org/10.1097/FPC.0000000000000582) | [41437621](https://www.ncbi.nlm.nih.gov/pubmed/41437621) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
+| `Sherif_2016.pdf` | Sherif M et al., Human Laboratory Studies on Cannabinoid…, Biological psychiatry (2016) | pgx | 5 | [10.1016/j.biopsych.2016.01.011](https://doi.org/10.1016/j.biopsych.2016.01.011) | [26970363](https://www.ncbi.nlm.nih.gov/pubmed/26970363) | metadata signals extractable PGX data (COMT) |
+
+<sub>queue written 2026-10-07 06:49 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aceves_1991 | irrelevant | 0 | 0 | The study investigates the neurochemical mechanism of GABA release in rats, not the pharmacokinetic disposition parameters of aminobutyric acid. |
+| popPK | Akaike_1985 | irrelevant | 0 | 0 | This is an electrophysiological study of GABA-gated chloride currents in frog neurons, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Al-Zubaydi_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for gabapentin, not aminobutyric acid. |
+| PD | Al-Zubaydi_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for gabapentin, focusing on clearance and volume of distribution, but contains no pharmacodynamic (PD) data, exposure-response analysis, or numeric PD parameters. |
+| popPK | Alba-Betancourt_2019 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
+| PD | Alba-Betancourt_2019 | not_relevant | 0 | 0 | The paper focuses on the diterpene tilifodiolide, not aminobutyric acid, and does not report PD parameters for the target drug. |
+| PGx | Anderson_2019 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions between cannabidiol and clobazam, not pharmacogenomic effects (gene variants) on PK/PD parameters of aminobutyric acid. |
+| popPK | Anderson_2025 | irrelevant | 0 | 0 | The paper is a review about the pharmacokinetics of propofol, not aminobutyric acid. |
+| PD | Anderson_2025 | not_relevant | 3 | 1 | The paper is a narrative review of propofol (not aminobutyric acid) and discusses PD concepts qualitatively without providing specific numeric PD parameters or extractable concentration-effect curves for the queried drug. |
+| popPK | André_2008 | irrelevant | 0 | 0 | The study examines electrophysiological responses of neurons to GABA application in tissue samples (in vitro/ex vivo mechanism) and does not report pharmacokinetic parameters such as clearance or volume of distribution. |
+| popPK | Barolet_1985 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
+| popPK | Bartkowiak_2026 | irrelevant | 0 | 0 | The study is a transcriptomic analysis in zebrafish examining gene expression changes after GABA_A receptor modulation, and it does not report pharmacokinetic parameters for GABA itself. |
+| PD | Bartkowiak_2026 | not_relevant | 0 | 0 | The paper reports qualitative transcriptomic changes (gene expression) in response to drug exposure but does not provide numeric concentration-effect curves, dose-response parameters (Emax, EC50), or PK/PD modeling. |
+| PGx | Batushansky_2015 | not_relevant | 0 | 0 | The paper studies GABA metabolism and transport in the plant Arabidopsis thaliana, not human pharmacogenomics or drug pharmacokinetics. |
+| popPK | Ben-Ari_2006 | irrelevant | 0 | 0 | The paper is a review discussing the electrophysiological mechanisms of GABA signaling in seizures, containing no pharmacokinetic parameters or disposition data for GABA. |
+| PGx | Besse_2016 | not_relevant | 1 | 2 | The paper describes ABAT deficiency (genetic variant) and the effect of vigabatrin (drug) in a functional assay, but it does not report how a gene variant changes the PK or PD parameters of GABA (4-aminobutyric acid); GABA is the substrate/metabolite, not the administered drug. |
+| popPK | Björnsson_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of AZD3043, a GABA-A receptor modulator, rather than aminobutyric acid itself. |
+| popPK | Bottemanne_2021 | irrelevant | 0 | 0 | no_text gate: only 95 chars of text extracted (&lt; 400) |
+| PD | Bottemanne_2021 | not_relevant | 0 | 0 | The paper discusses ketamine augmentation for OCD, not aminobutyric acid, and does not report PD parameters for the specified drug. |
+| popPK | Brandão_1982 | irrelevant | 0 | 0 | The study investigates the neuropharmacological effects of GABA and tranquilizers in rat brain tissue, not the systemic pharmacokinetic parameters of GABA. |
+| PGx | Brenner_2007 | not_relevant | 0 | 0 | The paper investigates metabolic changes in a knockout mouse model of schizophrenia and explicitly states that gamma-aminobutyric acid labeling was not influenced by genotype, reporting no pharmacokinetic or pharmacodynamic effects on a drug. |
+| PGx | Brown_2019 | not_relevant | 0 | 0 | The study investigates the pathogenic mechanism of a genetic metabolic disorder (SSADHD) and dietary intervention, not the pharmacokinetics or pharmacodynamics of an administered aminobutyric acid drug. |
+| popPK | Burkat_2022 | irrelevant | 0 | 0 | no_text gate: only 155 chars of text extracted (&lt; 400) |
+| PD | Burkat_2022 | not_relevant | 0 | 0 | The paper focuses on Diazepam, not aminobutyric acid (GABA), and does not report PD parameters for the specified drug. |
+| popPK | Böhme_2004 | irrelevant | 0 | 0 | The paper is an in vitro mechanistic study on GABA receptor subunits, not a pharmacokinetic study of aminobutyric acid. |
+| PGx | Caboni_2003 | not_relevant | 0 | 0 | The study compares two different insecticides and discusses general metabolic pathways and receptor binding, but does not report how a specific human gene variant affects the pharmacokinetics or pharmacodynamics of GABA. |
+| PGx | Caltagirone_2012 | not_relevant | 2 | 2 | The paper discusses APOE4 status affecting clinical outcomes (PD of Alzheimer's disease progression), not the pharmacokinetics or pharmacodynamics of the drug itself. |
+| PD | Celentano_1991 | not_relevant | 4 | 2 | The paper describes a qualitative electrophysiological dose-response relationship (potency order, partial surmountability) but does not provide specific numeric PD parameters (e.g., IC50, Emax values) or a quantitative curve in the provided text. |
+| popPK | Cha_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for zolpidem, not aminobutyric_acid. |
+| PD | Cha_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for zolpidem, not aminobutyric acid, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Chan_2017 | irrelevant | 0 | 0 | The paper describes a magnetic resonance spectroscopy (MRS) technique for detecting gamma-aminobutyric acid (GABA) in the brain, which is a diagnostic imaging study rather than a pharmacokinetic study of aminobutyric acid as a drug. |
+| PGx | Charlier_2022 | not_relevant | 0 | 0 | The paper develops and validates an analytical method (UHPLC–MS/MS) for quantifying cenobamate in plasma and does not report any pharmacogenomic data or analysis of gene variants. |
+| PGx | Chen_2022 | not_relevant | 0 | 0 | The paper models a genetic disease (SSADH deficiency) affecting endogenous GABA metabolism, not a pharmacogenomic effect on the PK/PD of GABA as an exogenous drug. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of the drug remimazolam, not the compound aminobutyric_acid (GABA). |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for remimazolam, not aminobutyric_acid. |
+| PD | Chen_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for remimazolam, but it does not include any pharmacodynamic (PD) modeling, exposure-response analysis, or numeric PD parameters (e.g., Emax, EC50). |
+| PD | Chidambaran_2015 | not_relevant | 1 | 0 | The text is a general review of propofol in pediatric anesthesia that mentions GABA-A receptor interaction qualitatively but does not report any specific numeric PD parameters, exposure-response curves, or dose-effect data for aminobutyric acid or propofol. |
+| PGx | Cho_2013 | not_relevant | 1 | 2 | The paper discusses genetic susceptibility to tardive dyskinesia (an adverse event/PD) in the context of antipsychotics, not the PK or PD of aminobutyric acid itself. |
+| popPK | Cho_2024 | irrelevant | 0 | 0 | The study measures endogenous GABA concentrations in the brain using MRS to study migraine pathophysiology, not the pharmacokinetics (disposition parameters like CL, V, t1/2) of dosed aminobutyric acid. |
+| popPK | Concas_1998 | irrelevant | 0 | 0 | The paper investigates GABA receptor pharmacology in Hydra vulgaris and does not report pharmacokinetic parameters for aminobutyric acid. |
+| PGx | Cong_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the PK of olanzapine (GABA-T gene impact on olanzapine Cmax/CL), not on a PK or PD parameter of gamma-aminobutyric acid (GABA). |
+| PGx | Creed_2014 | not_relevant | 0 | 0 | The paper focuses on the neurophysiological role of GABA neurons in reward circuits and the effects of benzodiazepines, not on pharmacogenomic variants affecting the PK/PD of GABA itself. |
+| popPK | Dardano_2026 | irrelevant | 0 | 0 | The paper is a review on gut microbiota, neuroinflammation, and epilepsy, containing no pharmacokinetic data for aminobutyric acid. |
+| PD | Dardano_2026 | not_relevant | 0 | 0 | The paper is a narrative review on the gut-brain axis and epilepsy, containing no pharmacokinetic or pharmacodynamic modeling, concentration-effect data, or numeric PD parameters for GABA or any other drug. |
+| popPK | Destexhe_1994 | irrelevant | 0 | 0 | The paper is a computational study of thalamic reticular nucleus dynamics using GABA as a neurotransmitter, not a pharmacokinetic study of GABA disposition parameters. |
+| popPK | Ding_2026 | irrelevant | 0 | 0 | The study investigates the association between gut microbiome and temperament in sheep, mentioning GABA only as a pathway/metabolite in a multi-omic context, not as a subject drug for PK parameter estimation. |
+| PD | Ding_2026 | not_relevant | 0 | 0 | The paper investigates associations between gut microbiome, plasma metabolites (including GABA), and behavioral temperament in sheep, but does not report a pharmacodynamic exposure-response or dose-response relationship for GABA as a drug. |
+| PGx | Dodd_2004 | not_relevant | 2 | 1 | The paper studies alcoholism and GABA receptor expression/genetics, not the pharmacokinetics or pharmacodynamics of a specific drug candidate (Aminobutyric Acid) in the context of therapeutic administration. |
+| PGx | Duc_2023 | not_relevant | 0 | 0 | The paper describes the physicochemical properties and predicted metabolites of quercetin and does not report on pharmacogenomic effects of drug metabolism or pharmacodynamics. |
+| popPK | Dumont_2026 | irrelevant | 0 | 0 | The paper is an educational study regarding pharmacology exam success in medical students and contains no pharmacokinetic data or parameter estimates for aminobutyric_acid. |
+| PD | Dumont_2026 | not_relevant | 0 | 0 | The paper analyzes educational factors (lecture attendance, study habits) affecting exam scores, not the pharmacodynamic or exposure-response relationship of aminobutyric acid. |
+| popPK | EFSA_2026 | irrelevant | 0 | 0 | The paper is a safety assessment of microbial species for food and feed use and contains no pharmacokinetic data for aminobutyric acid. |
+| PD | EFSA_2026 | not_relevant | 0 | 0 | The paper is a regulatory safety assessment of microbial agents (QPS list) and contains no pharmacodynamic or exposure-response data for aminobutyric acid. |
+| popPK | Edden_2007 | irrelevant | 0 | 0 | The paper describes an MRI spectroscopy method for detecting GABA concentrations (spatial effects/sensitivity) and does not report pharmacokinetic parameters (CL, V, etc.) for GABA as a drug. |
+| PGx | Fanton_2022 | not_relevant | 0 | 0 | The paper investigates the association between the TSPO gene variant and endogenous GABA/glutamate concentrations in the brain, not the pharmacokinetics or pharmacodynamics of an administered aminobutyric acid drug. |
+| PD | Faust_2010 | not_relevant | 3 | 3 | The paper reports in vitro IC50 values for GABA transporter inhibition, which are pharmacodynamic potency metrics, but it does not report an exposure-response or dose-response curve analysis (e.g., Emax, EC50 with slope, or PK/PD fit) for the drug in a biological system. |
+| popPK | Feng_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pregabalin, a GABA derivative, rather than GABA itself, and reports parameters for the drug rather than the neurotransmitter. |
+| PGx | Ferreira_2025 | not_relevant | 0 | 0 | The paper investigates plant pathology and host defense mechanisms in wheat, not human pharmacogenomics or drug pharmacokinetics. |
+| PD | Ferrendelli_1987 | not_relevant | 1 | 0 | The text is a general review of antiepileptic drug mechanisms and pharmacokinetics that mentions GABA qualitatively but provides no numeric PD parameters, concentration-effect curves, or dose-response data. |
+| popPK | Flores-Pérez_2022 | irrelevant | 0 | 0 | The paper is a systematic review on midazolam sedation in pediatric surgery and does not report pharmacokinetic parameters for aminobutyric acid. |
+| PD | Flores-Pérez_2022 | not_relevant | 1 | 0 | The paper is a systematic review of midazolam (not aminobutyric acid) that discusses PK/PD concepts qualitatively but does not report or derive specific numeric PD parameters or exposure-response curves. |
+| popPK | Fodor_2005 | irrelevant | 0 | 0 | The study is an electrophysiological/pharmacological investigation of GABA receptor modulation by allopregnanolone, not a pharmacokinetic study of aminobutyric acid. |
+| popPK | Fragata_2006 | irrelevant | 0 | 0 | This is an electrophysiology study investigating the interaction between GABA and adenosine receptors in rat hippocampal slices, reporting no pharmacokinetic parameters such as clearance or volume of distribution. |
+| PD | Frank_1995 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for gamma-aminobutyric acid (qualitative order of magnitude) and a clinical response to tranexamic acid, but does not provide a quantitative exposure-response or dose-response model with derivable PD parameters for GABA. |
+| popPK | Frankevich_2026 | irrelevant | 0 | 0 | This is a metabolomic study on gestational diabetes that measures endogenous amino acid concentrations (including GABA) in serum and amniotic fluid, but does not report pharmacokinetic parameters like clearance, volume, or half-life for aminobutyric_acid. |
+| popPK | Gallo_1985 | irrelevant | 0 | 0 | This is an in vitro receptor binding study examining GABA's modulation of TBPS binding, not a pharmacokinetic study. |
+| PD | Gallo_1985 | not_relevant | 0 | 0 | The paper describes in vitro receptor binding assays (TBPS binding) and does not report a pharmacodynamic exposure-response or dose-response relationship for aminobutyric acid with numeric PD parameters. |
+| popPK | Gao_2025 | irrelevant | 0 | 0 | The paper describes the discovery of a GABA receptor modulator (compound 10) and its antiepileptic efficacy, not the pharmacokinetic disposition parameters (CL, V, etc.) of aminobutyric acid itself. |
+| PGx | Garcia-Garcia_2009 | not_relevant | 0 | 0 | The paper describes endogenous neurochemical changes (GABA/glutamate levels) and behavioral phenotypes in VGLUT1 knockout mice, not the pharmacokinetic or pharmacodynamic effects of a specific drug on a patient's phenotype based on genetic variation. |
+| PGx | Geerts_2015 | not_relevant | 3 | 5 | The paper uses a computational model to simulate variability in patient response and identifies a GRIA4 variant associated with a mechanistic pathway, but it does not report fitted pharmacokinetic or pharmacodynamic parameter estimates (effect sizes) for the drug. |
+| popPK | Gong_2021 | irrelevant | 0 | 0 | The study is a magnetic resonance spectroscopy (MRS) analysis of GABA concentrations in brain tissue for epilepsy diagnosis, not a pharmacokinetic study of aminobutyric acid administration. |
+| PGx | Gong_2024 | not_relevant | 0 | 0 | The study measures GABA levels as a neurological outcome in an Alzheimer's mouse model, not as a pharmacokinetic or pharmacodynamic parameter of a drug. |
+| popPK | Granger_1995 | irrelevant | 0 | 0 | The paper describes in vitro modulation of GABAA receptors by carbamazepine and phenytoin, not the pharmacokinetics of gamma-aminobutyric acid. |
+| popPK | Guerguer_2026 | irrelevant | 0 | 0 | The study is a meta-analysis of remimazolam and sevoflurane anesthesia, with no data on the drug aminobutyric acid. |
+| PD | Guerguer_2026 | not_relevant | 0 | 0 | The paper is a meta-analysis comparing clinical outcomes (hemodynamics, PONV, etc.) of two anesthetic agents and does not report any pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters (e.g., Emax, EC50) for aminobutyric acid or any other drug. |
+| PGx | Guo_2022 | not_relevant | 0 | 0 | The paper reports on the toxicity mechanisms of Rhododendri Mollis Flos via metabolomics and does not investigate the effect of genetic variants on the PK or PD of GABA. |
+| popPK | Gyenes_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of GABA receptor phosphorylation and does not report pharmacokinetic disposition parameters for aminobutyric acid. |
+| PD | Gyenes_1994 | not_relevant | 4 | 2 | The paper describes electrophysiological changes in GABA potency (EC50) and efficacy (Emax) due to phosphorylation states, but the provided text lacks the specific numeric values for these parameters or the full concentration-response data required to derive them. |
+| popPK | He_2024 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
+| PD | He_2024 | not_relevant | 0 | 0 | The paper focuses on the delivery of the fungicide fludioxonil using GABA-decorated nanocarriers for plant disease control, not on the pharmacodynamics of GABA as a drug in a biological system. |
+| popPK | Heida_2008 | irrelevant | 0 | 0 | no_text gate: extracted text is mostly non-alphabetic (garbled or binary) |
+| popPK | Helfer_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pentobarbital, not aminobutyric_acid (GABA). |
+| PD | Helfer_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model and dosing simulations for pentobarbital, but it does not contain any pharmacodynamic (PD) data, exposure-response analysis, or numeric PD parameters. |
+| popPK | Heuschneider_1989 | irrelevant | 0 | 0 | The study investigates the mechanism of GABA-gated chloride channel modulation by cAMP in rat brain synaptoneurosomes, not the pharmacokinetic disposition of GABA. |
+| PD | Himmelseher_2021 | not_relevant | 1 | 0 | The text is a narrative review of ketamine pharmacology that mentions GABAergic mechanisms and PK/PD models qualitatively but provides no numeric PD parameters or extractable exposure-response data for aminobutyric acid. |
+| popPK | Ho_2019 | irrelevant | 0 | 0 | The paper is a study on salinity stress and gene expression in the snail *Batillaria attramentaria* and does not involve aminobutyric acid pharmacokinetics. |
+| PGx | Hoirisch-Clapauch_2014 | not_relevant | 0 | 0 | The paper is a review on the mechanism of electroconvulsive therapy and tPA, not a pharmacogenomic study of GABA parameters. |
+| popPK | Holthoff_1993 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for flumazenil in PET scans, and GABA is only mentioned in the context of receptor biology, not as a subject drug with PK modeling. |
+| popPK | Hydén_1986 | irrelevant | 0 | 0 | The study is an in vitro electrophysiological investigation of GABA's mechanism of action on chloride permeability, not a pharmacokinetic study of disposition parameters. |
+| PGx | Ivanov_2020 | not_relevant | 0 | 0 | The paper studies the pharmacogenetics of propofol, not aminobutyric acid. |
+| popPK | Jeong_2021 | irrelevant | 0 | 0 | The study investigates sleep behavior and receptor expression in response to GABA but does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Jiménez-Balado_2021 | not_relevant | 0 | 0 | The paper investigates neurobiology (GABA levels and memory) in relation to the ApoE genotype, not a pharmacokinetic or pharmacodynamic effect on the drug aminobutyric acid. |
+| popPK | Johno_1982 | irrelevant | 1 | 0 | The study measures the pharmacokinetics of progabide (a GABA-mimetic drug), not the pharmacokinetic disposition parameters of aminobutyric acid (GABA) itself. |
+| PGx | Kalia_2005 | not_relevant | 0 | 0 | The paper is a review of the neurobiology of depression and does not report specific pharmacogenomic effects on PK or PD parameters of a drug. |
+| PGx | Kang_2013 | not_relevant | 0 | 0 | The paper investigates the molecular mechanisms of GABRG2 mutations on epilepsy severity, not the pharmacokinetics or pharmacodynamics of exogenous aminobutyric acid as a drug. |
+| popPK | Kara_2025 | irrelevant | 0 | 0 | The study focuses on the in vitro mechanistic effects of a bilberry extract (enzyme inhibition) and clinical mood/cognitive outcomes, rather than the pharmacokinetics of aminobutyric acid. |
+| PD | Kara_2025 | not_relevant | 3 | 2 | The paper reports in vitro enzyme inhibition (GABA-T) and antioxidant EC50s, but lacks in vivo PK/PD modeling or exposure-response analysis for GABA or the extract in humans. |
+| popPK | Kardos_1990 | irrelevant | 0 | 0 | The paper is a mechanistic review and simulation of GABA receptor desensitization and 36Cl-flux assay kinetics (in vitro), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Ketharanathan_2023 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for pentobarbital, not aminobutyric acid. |
+| PD | Ketharanathan_2023 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for pentobarbital, not aminobutyric acid, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| PGx | Khalyfa_2019 | not_relevant | 1 | 0 | The paper is a narrative review of the genetic basis of epilepsy and CYP2C19's role in metabolizing phenobarbital (not GABA itself), and it does not report any quantitative PK or PD data or specific genotype-phenotype effect sizes. |
+| popPK | Khumpirapang_2022 | irrelevant | 0 | 0 | The paper investigates the binding of Alpinia galanga oil and its components to GABAA receptors, not the pharmacokinetics of aminobutyric acid. |
+| PGx | Kidd_2015 | not_relevant | 0 | 0 | The paper reviews the pathobiology and genetics of neuroendocrine tumors and does not report pharmacogenomic effects on PK/PD parameters for GABA. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics and pharmacodynamics of zolpidem, not aminobutyric acid (GABA). |
+| PGx | Kishimoto_2004 | not_relevant | 0 | 0 | The paper focuses on steroid 21-hydroxylation and GABA receptor modulator metabolism, not the pharmacokinetics or pharmacodynamics of gamma-aminobutyric acid itself. |
+| popPK | Kita_2017 | irrelevant | 0 | 0 | The study characterizes the pharmacology of housefly chloride channels using GABA as a ligand, rather than measuring the pharmacokinetics of GABA. |
+| popPK | Klein_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of alprazolam, not aminobutyric acid (GABA). |
+| PD | Klein_2026 | not_relevant | 0 | 0 | The paper reports population pharmacokinetic (PK) modeling and safety/tolerability data (VAS scores) but does not perform or report any pharmacodynamic (PD) or exposure-response modeling with numeric PD parameters. |
+| PGx | Korein_1994 | not_relevant | 0 | 0 | The paper discusses Maple Syrup Urine Disease and mentions GABA production defects but does not report a pharmacogenomic effect of a specific gene variant on the PK/PD of GABA as a drug, nor does it involve external administration of GABA. |
+| popPK | Kroboth_1997 | irrelevant | 1 | 0 | The study focuses on the pharmacodynamics of triazolam and its modulation by progesterone, with GABA mentioned only as part of the receptor complex (GABA-benzodiazepine receptor) and no pharmacokinetic parameters (CL, V, t1/2) for GABA itself are reported. |
+| popPK | Krůsek_1994 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study on receptor mechanisms, not a pharmacokinetic study reporting disposition parameters for GABA. |
+| popPK | Kurata_1999 | irrelevant | 0 | 0 | The study is an in vitro electrophysiology investigation of n-octanol's effects on GABA receptors, not a pharmacokinetic study of gamma-aminobutyric acid. |
+| PGx | Landolt_2019 | not_relevant | 2 | 0 | The paper is a general review of sleep-wake pharmacogenetics and mentions GABA as a neurotransmitter, but does not report specific gene variant effects on the PK or PD of GABA itself (which is not typically a drug in this context) or specific drugs affecting GABA. |
+| popPK | Lani_2026 | irrelevant | 0 | 0 | The paper is a review of the nutraceutical and therapeutic properties of date palm (Phoenix dactylifera) and does not contain any pharmacokinetic data for aminobutyric acid. |
+| PD | Lani_2026 | not_relevant | 0 | 0 | The paper is a narrative review of date palm nutraceuticals and does not report any pharmacodynamic or exposure-response data for aminobutyric acid. |
+| PGx | Li_2000 | not_relevant | 0 | 0 | The paper focuses on the pharmacogenetics of alcohol (ethanol), not aminobutyric acid (GABA), despite mentioning GABA pathways in the context of ethanol's mechanism of action. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper analyzes curcumol's targets and disease prognosis, not the pharmacogenomics of aminobutyric_acid. |
+| popPK | Liang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of remimazolam, not aminobutyric acid. |
+| PD | Liang_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetic (PopPK and PBPK) modeling to derive dose recommendations based on exposure matching; it does not report any pharmacodynamic (PD) or exposure-response relationship, nor does it provide numeric PD parameters such as Emax or EC50. |
+| PGx | Linskens_1973 | not_relevant | 0 | 0 | The paper describes the biochemical composition of maize pollen and amino acid content in plants, which is unrelated to the pharmacokinetics or pharmacodynamics of aminobutyric acid as a drug in humans. |
+| popPK | Liu_1993 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| PD | Liu_1993 | not_relevant | 0 | 0 | The paper discusses the modulation of neuropeptide effects by achatin-I, not aminobutyric acid, and does not report any pharmacodynamic or exposure-response relationships for GABA. |
+| PD | Liu_2004 | not_relevant | 0 | 0 | The paper reports the effect of thiopental sodium on GABA release, not the pharmacodynamics of GABA itself; GABA is the measured analyte, not the drug being modeled. |
+| popPK | Liu_2024 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of ciprofol (a GABA-A receptor potentiator), not aminobutyric acid (GABA) itself, and GABA is only mentioned as the target receptor. |
+| PD | Liu_2024 | not_relevant | 4 | 3 | The paper evaluates an exposure-safety relationship (hypotension) but explicitly concludes that no meaningful association was observed, and no numeric PD parameters (e.g., Emax, EC50) are reported. |
+| popPK | Livingston_2025 | irrelevant | 0 | 0 | This is a functional MRI study investigating the effect of diazepam on brain connectivity, not a pharmacokinetic study of gamma-aminobutyric acid (GABA). |
+| PD | Locock_2013 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for GABA_C antagonists, which are pharmacological potency metrics, but does not report a pharmacodynamic (exposure-response or dose-response) relationship for the drug aminobutyric acid itself. |
+| popPK | Louiset_2000 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
+| PGx | Ma_2007 | not_relevant | 0 | 0 | The paper focuses on the in vitro enzyme kinetics (CYP3A4/3A5) of TPA023 metabolism and does not report pharmacogenomic effects of genetic variants on pharmacokinetic or pharmacodynamic parameters in humans. |
+| popPK | Ma_2024 | irrelevant | 0 | 0 | The paper investigates neuroactive steroids as GABA receptor modulators, not the pharmacokinetics of the drug aminobutyric acid (GABA) itself. |
+| PD | Ma_2024 | not_relevant | 3 | 0 | The text is an abstract that mentions EC50 and Emax qualitatively but does not provide the specific numeric values or data curves required for extraction. |
+| popPK | Maex_1996 | irrelevant | 0 | 0 | The paper is a computational neuroscience study of retinal ganglion cells and does not report pharmacokinetic parameters for aminobutyric acid. |
+| popPK | Maglalang_2024 | irrelevant | 0 | 0 | The paper is a review of antiseizure medications in pediatric populations and does not focus on aminobutyric acid (GABA) or provide specific quantitative PK parameters for it. |
+| PD | Maglalang_2024 | not_relevant | 1 | 0 | The paper is a review discussing PK/PD variability and modeling strategies for antiseizure medications in pediatrics, but it does not report specific numeric PD parameters or exposure-response relationships for aminobutyric acid. |
+| PGx | Majumdar_2019 | not_relevant | 0 | 0 | The paper investigates the role of polyamine metabolism in maize disease resistance to Aspergillus flavus; it does not report pharmacogenomic effects on the PK/PD of a drug. |
+| popPK | Maksay_2011 | irrelevant | 0 | 0 | The study investigates GABA(A) receptor binding and function in vitro/in vivo using GABA as an agonist, rather than measuring the pharmacokinetic disposition parameters (CL, V, ka) of aminobutyric acid as a drug. |
+| PGx | Malhotra_2016 | not_relevant | 0 | 0 | The paper investigates the genetic association with alcohol dependence, not the effect of gene variants on pharmacokinetic or pharmacodynamic parameters of GABA. |
+| PD | Mandema_1992 | not_relevant | 1 | 0 | The text is a review discussing the utility of EEG for PK/PD modeling of benzodiazepines and anesthetics, but it does not report specific numeric PD parameters or concentration-effect curves for aminobutyric acid (GABA) itself. |
+| popPK | Marani_2008 | irrelevant | 0 | 0 | The provided text is a book order form and description for a monograph on the subthalamic nucleus anatomy, containing no pharmacokinetic data for aminobutyric acid. |
+| popPK | Marchand_2000 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic convulsant interaction between norfloxacin and BPAA, and aminobutyric acid (GABA) is only mentioned in the context of in vitro binding mechanisms, not as a subject of pharmacokinetic analysis. |
+| PGx | Markowska-Buńka_2026 | not_relevant | 1 | 0 | The paper reviews veterinary isoxazolines (parasiticides) that act on GABA receptors, but does not report a pharmacogenomic effect on the PK/PD of aminobutyric acid itself. |
+| PGx | Marček_2019 | not_relevant | 0 | 0 | The paper studies metabolic responses of wheat to drought, not human pharmacogenomics or PK/PD of aminobutyric acid. |
+| PGx | McAuley_1995 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (progesterone effect on triazolam), not a pharmacogenomic effect (gene variant/phenotype). |
+| popPK | McCann_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for diazepam, not aminobutyric acid. |
+| PD | McCann_2025 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetic (PK) modeling and exposure simulations for diazepam, with no pharmacodynamic (PD) or exposure-response analysis reported. |
+| popPK | Mencke_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetics for tigolaner, emodepside, and praziquantel, not aminobutyric acid. |
+| PD | Mencke_2023 | not_relevant | 0 | 0 | The paper reports pharmacokinetic (PK) parameters (Cmax, AUC, t1/2, Cl, Vd) and dose proportionality, but does not report any pharmacodynamic (PD) or exposure-response relationship (e.g., efficacy vs. concentration) for the active ingredients. |
+| popPK | Miao_2026 | irrelevant | 0 | 0 | The study investigates the analgesic efficacy (ED50) of oliceridine, not the pharmacokinetics of aminobutyric acid. |
+| PGx | Miljanovic_2021 | not_relevant | 0 | 0 | The paper describes endogenous GABA levels in a mouse model and does not report the pharmacokinetics or pharmacodynamics of GABA as a administered drug or external ligand. |
+| PGx | Mizuta_2008 | not_relevant | 0 | 0 | The paper reports the expression and functional signaling of GABA B receptors in airway epithelium but does not report any pharmacogenomic effects (gene variants/genotypes) on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Montes-Grajales_2013 | not_relevant | 0 | 0 | The paper discusses bisphenol A protein targets and does not involve aminobutyric acid or any pharmacogenomic effects on PK/PD parameters. |
+| popPK | Morrow_1988 | irrelevant | 0 | 0 | no_text gate: only 149 chars of text extracted (&lt; 400) |
+| PGx | Mott_2022 | not_relevant | 0 | 0 | The paper investigates genetic regulation of feather pecking behavior in chickens and mentions GABA receptors only as a biological mechanism for the behavior, not as a pharmacokinetic or pharmacodynamic parameter of a drug. |
+| PD | Muehlan_2023 | not_relevant | 1 | 0 | The paper is a review of orexin receptor antagonists and mentions GABA only to contrast mechanisms; it does not report any PD or exposure-response data for aminobutyric acid. |
+| popPK | Myers_2017 | irrelevant | 0 | 0 | The study investigates the PET radioligand [11C]Ro15-4513 and its binding to GABAA receptors, not the pharmacokinetics of aminobutyric acid (GABA) itself. |
+| popPK | Neelands_1999 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiology paper regarding GABA receptor subunits and does not report pharmacokinetic parameters for gamma-aminobutyric acid. |
+| popPK | Nelson_2002 | irrelevant | 0 | 0 | The study focuses on the electrophysiological actions of clomethiazole on GABA receptors in cells, not on the pharmacokinetic parameters of gamma-aminobutyric acid itself. |
+| popPK | Nielsen_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vigabatrin (a GABA transaminase inhibitor), not aminobutyric acid (GABA) itself. |
+| popPK | Norman_2026 | irrelevant | 0 | 0 | The study focuses on designer benzodiazepines (ethylbromazolam) and their in vitro GABA-A receptor activity, not the pharmacokinetics of aminobutyric acid (GABA) as a subject drug. |
+| popPK | OShea_2000 | irrelevant | 0 | 0 | This is a mechanistic in-vitro study of GABA(A) receptor structure and function, not a pharmacokinetic study. |
+| popPK | OToole_2011 | irrelevant | 0 | 0 | The paper is a mechanistic study of GABA_A receptor ion channel properties in HEK293 cells and does not report pharmacokinetic parameters for aminobutyric acid. |
+| PGx | Obaid_2025 | not_relevant | 0 | 0 | The study focuses on insecticide resistance in ticks (Rhipicephalus microplus) involving the GABA-gated chloride channel, not human pharmacogenomics of the drug gamma-aminobutyric acid. |
+| popPK | Olander_2018 | irrelevant | 0 | 0 | no_text gate: only 155 chars of text extracted (&lt; 400) |
+| PGx | Olkkola_2008 | not_relevant | 0 | 0 | The paper describes the general pharmacology and metabolism of benzodiazepines, mentioning CYP enzymes, but does not report specific pharmacogenomic variants or their impact on GABA-related PK/PD parameters. |
+| PGx | Ortiz_2026 | not_relevant | 0 | 0 | The paper investigates the association between GABRB2/3 genetic variants and neurodevelopmental phenotypes (seizures, motor function), not the impact of genotype on the pharmacokinetics or pharmacodynamics of a specific GABA analog drug. |
+| popPK | Pang_2023 | irrelevant | 0 | 0 | This is a neuroimaging study measuring GABA concentration in the brain via MRS, not a pharmacokinetic study of aminobutyric acid disposition parameters. |
+| PGx | Parezanović_2023 | not_relevant | 0 | 0 | The paper reports on a genetic deficiency affecting endogenous GABA metabolism, not the pharmacokinetic or pharmacodynamic profile of exogenous aminobutyric acid as a drug. |
+| PD | Pelkonen_2013 | not_relevant | 1 | 0 | The text is a toxicological review that qualitatively mentions dose-dependent neurotoxicity but does not provide numeric PD parameters or extractable concentration-effect data for GABA. |
+| PGx | Pelkonen_2013 | not_relevant | 0 | 0 | The paper discusses the general toxicology and metabolism of thujone (interacting with GABA receptors) but does not report specific pharmacogenomic effects on PK or PD parameters of GABA or GABAergic drugs. |
+| PGx | Peltoniemi_2016 | not_relevant | 0 | 0 | The paper is a general review of ketamine pharmacology and does not report pharmacogenomic effects on PK/PD parameters for gamma-aminobutyric acid (GABA). |
+| popPK | Plaindoux_2025 | irrelevant | 0 | 0 | The study uses MRS to map GABA concentrations in the brain for epilepsy localization (diagnostic/imaging), rather than analyzing pharmacokinetic disposition parameters (CL, V, t1/2) of GABA as an administered drug. |
+| PGx | Ponnala_2012 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on phenytoin, not aminobutyric acid. |
+| popPK | Poslusney_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of the drug LI-633, not aminobutyric acid (GABA); GABA is used as a tool compound/agonist to test receptor modulation. |
+| popPK | Prince_1992 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
+| popPK | Radnikow_2001 | irrelevant | 0 | 0 | The study investigates the mechanism of GABA(B) receptor autoregulation in mouse neurons, not the pharmacokinetic disposition of the drug. |
+| PGx | Radosavljevic_2023 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenetics in depression/anxiety treatment and does not report specific pharmacokinetic or pharmacodynamic data for aminobutyric acid. |
+| popPK | Raiteri_1990 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
+| popPK | Ramesh_2022 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of picrotoxin on GABA transporters in plants and in vitro systems, reporting no in vivo pharmacokinetic parameters (CL, V, etc.) for GABA. |
+| PGx | Reynolds_2014 | not_relevant | 5 | 2 | The paper is a review of pharmacogenetics in psychiatry and mentions GABA systems, but does not report a specific PK/PD effect of a variant for the drug aminobutyric_acid. |
+| PGx | Rižner_2014 | not_relevant | 0 | 0 | The paper discusses the role of AKR1 enzymes in steroid metabolism and neurosteroid regulation of GABA receptors, but does not report pharmacogenomic effects on the PK or PD of the specific drug aminobutyric_acid. |
+| popPK | Rodriguez_2015 | irrelevant | 0 | 0 | This is a neurochemical study measuring GABA concentration changes via MRS, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Roques_2013 | not_relevant | 0 | 0 | The paper investigates the PK of levothyroxine, not aminobutyric acid, and focuses on fipronil-induced gene expression regulation rather than human pharmacogenomics. |
+| popPK | Sacher_2002 | irrelevant | 0 | 0 | The study focuses on the electrophysiological kinetics of a GABA transporter (mGAT3) in oocytes, which is a mechanistic/in-vitro study, not a pharmacokinetic study of GABA disposition in an organism. |
+| PGx | Saha_2022 | not_relevant | 0 | 0 | The paper studies plant physiology and salt stress in rice genotypes, not pharmacogenomics or human pharmacokinetics/pharmacodynamics. |
+| popPK | Salmi_2004 | irrelevant | 0 | 0 | The study investigates GABA(A) receptor binding of the tracer flumazenil in humans, not the pharmacokinetics of aminobutyric acid as a drug. |
+| PGx | Sarris_2020 | not_relevant | 0 | 0 | The study tests Kava, not gamma-aminobutyric acid, and the SLC6A1 SNP is tested for modulation of clinical response, not PK/PD parameters of GABA. |
+| PGx | Savage_2015 | not_relevant | 0 | 0 | The paper is a study protocol that lists pharmacogenomics as a planned objective but contains no reported results, data, or effect sizes. |
+| popPK | Schlump_2026 | irrelevant | 0 | 0 | The paper investigates neurochemical metabolite ratios (GABA/Glx) using MRS in psychiatric patients and does not report pharmacokinetic parameters for the drug aminobutyric acid. |
+| popPK | Schumacher_2009 | irrelevant | 0 | 0 | no_text gate: only 77 chars of text extracted (&lt; 400) |
+| PD | Schumacher_2009 | not_relevant | 0 | 0 | The paper focuses on the interaction between propofol and sevoflurane, not aminobutyric acid. |
+| PGx | Shah_2025 | not_relevant | 0 | 0 | The paper investigates genetic variants of the GABA transporter (SLC6A1 gene) and its physiological effects, but it does not report how these variants change the pharmacokinetic or pharmacodynamic parameters of an exogenous drug or specific aminobutyric acid treatment in a pharmacogenomic context; rather, it is a basic biology study on protein folding and function. |
+| PGx | Sharew_2025 | not_relevant | 0 | 0 | The study examines how genetic scores (polygenic scores) predict the clinical response to lithium, not how a genetic variant affects the PK or PD parameters of gamma-aminobutyric acid (GABA). GABA is treated as a biological pathway for lithium's mechanism of action in the score construction, not as a drug whose pharmacokinetics are being measured. |
+| PGx | Sharma_2023 | not_relevant | 0 | 0 | The paper concerns plant physiology (mungbean metabolic response to salt stress and mycorrhiza) and is unrelated to human pharmacogenomics or the pharmacokinetics/pharmacodynamics of aminobutyric acid as a drug. |
+| PGx | Sherif_2016 | not_relevant | 2 | 2 | The paper discusses cannabinoid agonists and mentions gamma-aminobutyric acid (GABA) only as part of a general neurochemical mechanism for psychosis, not as the drug of interest for which pharmacogenomic effects on PK/PD are reported. |
+| PD | Shi_2025 | not_relevant | 2 | 1 | The text reports binding affinity (IC50) and qualitative efficacy comparisons but does not provide numeric dose-response or concentration-effect parameters for the drug's pharmacodynamic effect. |
+| popPK | Shoji_2011 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of pregabalin, which is described as a structural analogue of GABA, but is a distinct chemical entity and not GABA itself. |
+| popPK | Shu_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of cannabidiol and only reports qualitative/semi-quantitative changes in GABA levels, not pharmacokinetic parameters (CL, V, etc.) for GABA itself. |
+| popPK | Singh_2026 | irrelevant | 0 | 0 | The study is an in-silico investigation of botanical compounds targeting mGluR5 and does not report pharmacokinetic parameters for aminobutyric acid. |
+| PD | Singh_2026 | not_relevant | 0 | 0 | The paper is an in silico study on mGluR5 modulators and does not report any pharmacodynamic or exposure-response data for aminobutyric acid. |
+| PGx | Skinner_2026 | not_relevant | 0 | 0 | The paper focuses on a metabolite biomarker of mitochondrial disease and not on the pharmacokinetics or pharmacodynamics of GABA. |
+| PGx | Sobolev_2007 | not_relevant | 0 | 0 | The paper discusses metabolic changes in transgenic lettuce plants, not human pharmacogenomics of GABA. |
+| popPK | Sokal_2000 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of neuronal excitability and GABA receptor effects, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Song_2021 | irrelevant | 0 | 0 | The study measures GABA concentrations in the brainstem using MRS to assess neurochemical changes in Parkinson's disease, rather than reporting pharmacokinetic disposition parameters (CL, V, etc.) for aminobutyric acid as a dosed drug. |
+| PD | Sparling_2017 | not_relevant | 1 | 0 | The text is a review abstract that qualitatively mentions PK/PD relationships in pre-clinical models but does not report specific numeric PD parameters or extractable concentration-effect data for GABA or its modulators. |
+| popPK | Srivastava_1999 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oxazepam, not aminobutyric acid (GABA), which is only mentioned in the context of in vitro binding studies. |
+| PD | Srivastava_1999 | not_relevant | 0 | 0 | The provided text is metadata for the GROBID software and does not contain any pharmacological data, PD models, or information regarding aminobutyric acid. |
+| PD | Stahmer_1985 | not_relevant | 1 | 0 | The text is a qualitative review of benzodiazepine pharmacodynamics and GABA receptor mechanisms, containing no numeric PD parameters or exposure-response data. |
+| popPK | Steinwurzel_2025 | irrelevant | 0 | 0 | The study investigates the neural effects of beta-hydroxybutyrate and measures GABA as a neurometabolite via MRS, not as a pharmacokinetic subject with disposition parameters. |
+| popPK | Su_2025 | irrelevant | 0 | 0 | The paper is a computational psychiatry study using zebrafish and pathway modeling, containing no pharmacokinetic data for aminobutyric acid. |
+| PD | Su_2025 | not_relevant | 0 | 0 | The paper focuses on network pharmacology and pathway modeling (PathFX) to identify shared molecular functions of psychiatric drugs, not on pharmacokinetic or pharmacodynamic exposure-response relationships for aminobutyric acid. |
+| popPK | Sukhram_2026 | irrelevant | 0 | 0 | The paper is a review focusing on ketamine in diabetes, with no mention of aminobutyric_acid or its pharmacokinetic parameters. |
+| PD | Sukhram_2026 | not_relevant | 1 | 0 | The paper is a scoping review that discusses the need for future PK/PD studies but does not report any original data, numeric PD parameters, or extractable exposure-response relationships. |
+| popPK | Supavilai_1984 | irrelevant | 0 | 0 | The paper describes in vitro receptor binding studies for TBPS and GABA, containing no pharmacokinetic parameters such as clearance or volume of distribution. |
+| PD | Supavilai_1984 | not_relevant | 0 | 0 | The paper reports in vitro receptor binding affinity (Kd, IC50) for a ligand, which is a pharmacological binding parameter, not a pharmacodynamic exposure-response or dose-response relationship for a drug effect in a biological system. |
+| popPK | Tang_1997 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of alpha-fluorinated valproic acid and valproic acid, using GABA levels as a pharmacodynamic endpoint, rather than modeling the PK of gamma-aminobutyric acid itself. |
+| popPK | Tang_2025 | irrelevant | 0 | 0 | The study is a comparative metabolomics analysis of breath and blood that does not report pharmacokinetic parameters for aminobutyric acid. |
+| PD | Tang_2025 | not_relevant | 0 | 0 | The paper is a comparative metabolomics study of breath and blood in healthy volunteers and does not report any pharmacodynamic or exposure-response relationship for aminobutyric acid or any other drug. |
+| popPK | Tomlin_1998 | irrelevant | 0 | 0 | The study investigates the mechanism of action of etomidate on GABA receptors in tadpoles and cells, not the pharmacokinetics of aminobutyric acid. |
+| popPK | Topf_2003 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment investigating the mechanism of isoflurane on GABA receptors, not a pharmacokinetic study of GABA disposition. |
+| popPK | Townsend_2016 | irrelevant | 0 | 0 | The paper describes a mechanistic study of neural plasticity using GABA as a neurotransmitter, not a pharmacokinetic study of aminobutyric acid as a drug. |
+| PD | Townsend_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of an alpha-7 nicotinic acetylcholine receptor agonist (FRM-17848) and its effect on GABAergic circuits, but it does not report a pharmacodynamic exposure-response or dose-response relationship for the drug aminobutyric acid (GABA) itself. |
+| PGx | Tsolaki_2019 | not_relevant | 1 | 0 | The paper reviews the neuroprotective effects of homotaurine on Alzheimer's Disease, not the PK/PD of a drug (like GABA) modulated by a genetic variant. |
+| PGx | Tyagi_2022 | not_relevant | 0 | 0 | The study focuses on plant genetic modifications (MYB117) affecting metabolic pathways in tomatoes, not pharmacogenomics in humans or animals. |
+| popPK | Usman_2022 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for valproic acid, not aminobutyric acid. |
+| PD | Usman_2022 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) study of valproic acid, focusing on clearance and volume of distribution, with no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Van_2008 | irrelevant | 0 | 0 | The study investigates a GABA receptor agonist (TPA023B) and does not report pharmacokinetic parameters for gamma-aminobutyric acid itself. |
+| PGx | Vasiliou_2000 | not_relevant | 0 | 0 | The paper is a general review of aldehyde dehydrogenases and their role in metabolism; it does not report specific pharmacogenomic effects on PK or PD parameters of gamma-aminobutyric acid. |
+| popPK | Vellinga_2024 | irrelevant | 0 | 0 | The paper is a pharmacokinetic/pharmacodynamic study of remimazolam (a benzodiazepine), not aminobutyric acid; GABA is only mentioned as the receptor target. |
+| popPK | Venugopal_2011 | irrelevant | 0 | 0 | This is a computational modeling study of neural excitability mechanisms in spinal cord injury, not a pharmacokinetic study reporting disposition parameters for GABA. |
+| PGx | Vilela_2025 | not_relevant | 0 | 0 | The paper investigates associations between genetic variants and brain neurometabolite levels (including GABA) in autism using magnetic resonance spectroscopy; it does not report pharmacokinetic or pharmacodynamic effects of a drug treatment. |
+| popPK | Vrijdag_2021 | irrelevant | 0 | 0 | The study is about nitrous oxide pharmacodynamics and EEG complexity, not the pharmacokinetics of aminobutyric acid. |
+| popPK | Wald_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of brexanolone/allopregnanolone, not aminobutyric_acid. |
+| PD | Wald_2022 | not_relevant | 0 | 0 | The paper reports population pharmacokinetic (PopPK) modeling and relative infant dose (RID) calculations, but it does not report any pharmacodynamic (PD) or exposure-response relationship (e.g., Emax, EC50, effect-compartment) for the drug. |
+| PGx | Wang_2024 | not_relevant | 0 | 0 | The study investigates the association between GABA metabolism, microbiome, and genetics in the pathogenesis of schizophrenia, but does not report a pharmacogenomic effect on the PK or PD of a drug. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ciprofol, not aminobutyric acid. |
+| PD | Wang_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for ciprofol, not aminobutyric acid, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Wenzel_2021 | irrelevant | 0 | 0 | The study investigates neuroactive steroids (allopregnanolone, pregnanolone) and depression, where GABA is mentioned only as the target receptor, not as a pharmacokinetic subject. |
+| popPK | Wong_1984 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
+| popPK | Wongsamitkul_2016 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiological study on GABA receptor subunit arrangement, reporting binding parameters (EC50) but no pharmacokinetic disposition parameters (CL, V, ka, etc.) for aminobutyric acid. |
+| popPK | Woodbury_2022 | irrelevant | 0 | 0 | The study is a neuroimaging (MRS) investigation of GABA concentrations in the brain associated with pain scores, not a pharmacokinetic study of aminobutyric acid disposition. |
+| popPK | Wu_1990 | irrelevant | 0 | 0 | The paper studies the electrophysiological modulation of GABA-induced currents by progesterone, not the pharmacokinetics of GABA. |
+| PGx | Xiaochuang_2020 | not_relevant | 0 | 0 | The paper describes plant physiology and nitrogen metabolism in rice, not human pharmacogenomics or drug kinetics. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of Zuranolone and its analog S9 (a GABA-A receptor modulator), not the pharmacokinetics of the neurotransmitter aminobutyric acid (GABA) itself. |
+| popPK | Yin_2022 | irrelevant | 0 | 0 | The paper studies chloride channels in a fall armyworm using GABA as a pharmacological tool, not the pharmacokinetics of GABA. |
+| PGx | Yoganathan_2020 | not_relevant | 0 | 0 | The paper describes a clinical case of a metabolic disorder (SSADH deficiency) affecting GABA metabolism, but it does not report a pharmacogenomic effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Yokoshima_2018 | not_relevant | 0 | 0 | The study investigates GABA transaminase polymorphisms for opioid analgesic responsiveness, not for the pharmacokinetics or pharmacodynamics of aminobutyric_acid (GABA). |
+| popPK | Yu_1994 | irrelevant | 0 | 0 | no_text gate: only 108 chars of text extracted (&lt; 400) |
+| PD | Yu_1994 | not_relevant | 0 | 0 | The paper investigates the electrophysiological effects of Interleukin-1 beta on amygdala neurons and does not report any pharmacodynamic or exposure-response data for aminobutyric acid (GABA). |
+| PGx | Zabela_2018 | not_relevant | 0 | 0 | The paper describes in vitro metabolic stability and protein binding of piperine analogs, but does not investigate the effect of specific gene variants or genotypes on PK or PD parameters. |
+| PGx | Zhang_2016 | not_relevant | 0 | 0 | The paper is a microbiology study characterizing the GABA shunt as a TCA cycle variant in cyanobacteria and does not report pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of a drug named aminobutyric acid. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study focuses on the clinical efficacy of alfentanil and remimazolam anesthesia regimens and does not report any pharmacokinetic parameters for aminobutyric_acid. |
+| PD | Zhang_2026 | not_relevant | 0 | 0 | The paper is a clinical trial comparing two fixed-dose anesthetic regimens and does not report any pharmacokinetic data, concentration-effect relationships, or numeric PD parameters (e.g., Emax, EC50) for aminobutyric acid or any other drug. |
+| PGx | Zhao_2022 | not_relevant | 0 | 0 | The paper studies the effect of a chlorinated byproduct (MACB) on GABA metabolism and its own clearance via CYP1A2, not the pharmacokinetics or pharmacodynamics of GABA itself altered by a genetic variant. |
+| PGx | Zheng_2021 | not_relevant | 0 | 0 | The paper investigates the genetic association of ABAT variants with Alzheimer's disease risk and gene expression, not the pharmacokinetic or pharmacodynamic effects of GABA as a drug. |
+| popPK | Zheng_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vigabatrin; aminobutyric acid (GABA) is only measured as a metabolomics biomarker in tissue, not modeled as a drug subject for PK parameters. |
+| PGx | Zhong_2017 | not_relevant | 0 | 0 | The paper investigates pharmacogenetic effects on propofol susceptibility, not aminobutyric acid. |
+| popPK | Zhu_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug ciprofol, not aminobutyric acid (which is only mentioned as a receptor target in the introduction). |
+| PGx | Zhuang_2020 | not_relevant | 0 | 0 | The paper investigates the causal link between gut microbiota and neuropsychiatric disorders, not the effect of genetic variants on pharmacokinetic/pharmacodynamic parameters of the drug aminobutyric_acid. |
+| popPK | Zolkowska_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for allopregnanolone and ganaxolone, not for the subject drug aminobutyric acid (GABA). |
+| popPK | Zuppichini_2024 | irrelevant | 0 | 0 | The study measures GABA concentration levels in the brain using MR spectroscopy to assess age-related declines, but it does not report pharmacokinetic disposition parameters such as clearance, volume of distribution, or half-life for exogenous aminobutyric acid. |
+| popPK | de_2025 | irrelevant | 0 | 0 | The paper is a review of the pharmacokinetics of remimazolam (a benzodiazepine), not aminobutyric acid (GABA). |
+| PD | van_2023 | not_relevant | 0 | 0 | The paper is a clinical review on anorexia nervosa and perioperative management, containing no pharmacodynamic or exposure-response analysis for aminobutyric acid. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminobutyric_acid%5D&body=Drug%3A%20aminobutyric_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminobutyric_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

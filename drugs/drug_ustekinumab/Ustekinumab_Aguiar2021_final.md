@@ -1,0 +1,206 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;ustekinumab&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/&quot;},{&quot;label&quot;:&quot;Aguiar_2021 \u00b7 final&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ustekinumab_Adedokun2022_reference&quot;,&quot;label&quot;:&quot;Adedokun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Adedokun2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_Lam2026_reference&quot;,&quot;label&quot;:&quot;Lam_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_Lam2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ustekinumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ustekinumab/Ustekinumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# ustekinumab — `Ustekinumab_Aguiar2021_final`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> This record was reviewed on 2026-11-07 15:58 UTC (Rejected), but the paper was screened again on 2026-10-07 01:03 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The ustekinumab record was rejected because the albumin covariate effect on intercompartmental clearance lacked a valid pharmacokinetic unit for dimension checking.
+
+<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Aguiar2021_final" status="rejected" stale="true" population="patients with Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="3C"></div>
+
+## Citation
+Aguiar Zdovc J, Hanžel J, Kurent T, Sever N, Koželj M, Smrekar N et al. Ustekinumab Dosing Individualization in Crohn's Disease Guided by a Population Pharmacokinetic-Pharmacodynamic Model. Pharmaceutics 13(10) (2021).
+  ·  DOI: [10.3390/pharmaceutics13101587](https://doi.org/10.3390/pharmaceutics13101587)
+
+## Population and dosing
+
+**Population:** patients with Crohn's disease · condition Crohn's disease · age group adult.
+
+**Dosing:** 90, 260, 390, 520 mg, iv/sc, multiple, every 168 h.
+
+## Model
+
+**Structure:** 3-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 8 extracted, plus 1 covariate effect.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| Ka (day−1) | kabs | 0.381 | day−1 |
+| CL (L/day) a | CL | 0.277 |  |
+| FFM on CL | FG | 0.598 |  |
+| Vc (L) b | V1 | 3.57 |  |
+| Q (L/day) | Q | 1.89 | L/day |
+| Vp (L) c | V2 | 3.30 |  |
+| FFM on Vp | V | 0.586 |  |
+| Kd (nmol/L) | KD | 0.168 | nmol/L |
+| theta_q46_albumin | theta_q46_albumin | -0.0165 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**The ustekinumab record was rejected because the albumin covariate effect on intercompartmental clearance lacked a valid pharmacokinetic unit for dimension checking.**
+
+The albumin covariate on intercompartmental clearance was extracted with a value of -0.0165, but its unit could not be interpreted as a valid pharmacokinetic quantity, causing a dimension mismatch error. The second reader disagreed on parameter assignment, suggesting the -0.0165 value belonged to the clearance-albumin interaction rather than the intercompartmental clearance-albumin interaction. Extracted — ustekinumab: kabs 0.381 day−1, CL 0.277, FG 0.598, V1 3.57, Q 1.89 L/day, V2 3.3, V 0.586, KD 0.168 nmol/L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl (l/day) a].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Ka (day−1) | `Q49` · kabs | 0.381 | day−1 | 4.41e-06 | 1/s | 1/d | exact (1) | pharmaceutics-13-01587-t002:row3:col2 |
+| CL (L/day) a | `Q22` · CL | 0.277 |  |  |  |  | llm_confirmed (0.6) | pharmaceutics-13-01587-t002:row4:col2 |
+| FFM on CL | `Q41` · FG | 0.598 |  |  |  |  | llm_corrected (0.6) | pharmaceutics-13-01587-t002:row5:col2 |
+| Vc (L) b | `Q63` · V1 | 3.57 |  |  |  |  | llm_confirmed (0.6) | pharmaceutics-13-01587-t002:row8:col2 |
+| Q (L/day) | `Q30` · Q | 1.89 | L/day | 2.187e-08 | m3/s | l/d | exact (1) | pharmaceutics-13-01587-t002:row10:col2 |
+| Vp (L) c | `Q64` · V2 | 3.30 |  |  |  |  | llm_confirmed (0.6) | pharmaceutics-13-01587-t002:row11:col2 |
+| FFM on Vp | `Q61` · V | 0.586 |  |  |  |  | llm_corrected (0.6) | pharmaceutics-13-01587-t002:row12:col2 |
+| Kd (nmol/L) | `Q331` · KD | 0.168 | nmol/L |  |  | nM/l | exact (1) | pharmaceutics-13-01587-t002:row25:col2 |
+| theta_q46_albumin | `Q900` · theta_q46_albumin | -0.0165 |  |  |  |  |  | pharmaceutics-13-01587-t002:row7:col2 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- table section iiv: 'IIV CL (%, CV) e' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'IIV Vc (%, CV) e' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'IIV Vp (%, CV) e' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'IIV F (%, SD) e' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'IIV Ksyn (%, CV) e' routed out of structural estimates ('Interindividual variability')
+- table section residual_error: 'Additive RUV (nmol/L) e' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'Proportional RUV (%) e' routed out of structural estimates ('Residual variability')
+- dropped duplicate Q22 ('bio-naïve on CL', value '-0.227') — already have one for this compound
+- dropped duplicate Q63 ('FFM on Vc', value '0.590') — already have one for this compound
+- dropped unlinked row (NIL): 'FCGR3A-158 V/V' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-01587-t002:row14:col2'])
+- dropped unlinked row (NIL): 'FCGR3A-158 V/F, F/F' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-01587-t002:row15:col2'])
+- dropped unlinked row (NIL): 'Serum CRP on Ksyn' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-01587-t002:row18:col2'])
+- dropped duplicate Q63 ('Vc–target (L)', value '2.44') — already have one for this compound
+- dropped duplicate Q30 ('Qtarget (L/d)', value '0.493') — already have one for this compound
+- dropped unlinked row (NIL): 'Vp–target (L)' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-01587-t002:row22:col2'])
+- unit_dimension_mismatch: 'Kd (nmol/L)' → Q331 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
+- covariate effect for Q46 has no base parameter row (kept as unattached equation-variable)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/day) a); Q63 (Vc (L) b); Q30 (Q (L/day)); Q64 (Vp (L) c); Q61 (FFM on Vp)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ustekinumab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
+- model-stage split: 'final model' is the final model of Aguiar_2021 (paper reports 2 stages: base model, final model); same population, different model-building step
+- molar mass: none found for 'ustekinumab' — its concentrations stay mass-only
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- unparsed cell pharmaceutics-13-01587-t002:row3:col3 = '0.380 (0.341–0.422)'
+- unparsed cell pharmaceutics-13-01587-t002:row4:col3 = '0.275 (0.259–0.294)'
+- unparsed cell pharmaceutics-13-01587-t002:row5:col3 = '0.596 (0.539–0.673)'
+- unparsed cell pharmaceutics-13-01587-t002:row6:col3 = '−0.232 (−0.280–−0.192)'
+- unparsed cell pharmaceutics-13-01587-t002:row7:col3 = '−0.0170 (−0.0224–−0.0127)'
+- unparsed cell pharmaceutics-13-01587-t002:row8:col3 = '3.56 (3.41–3.70)'
+- unparsed cell pharmaceutics-13-01587-t002:row9:col3 = '0.587 (0.534–0.644)'
+- unparsed cell pharmaceutics-13-01587-t002:row10:col3 = '1.88 (1.69–2.11)'
+- unparsed cell pharmaceutics-13-01587-t002:row11:col3 = '3.27 (3.01–3.52)'
+- unparsed cell pharmaceutics-13-01587-t002:row12:col3 = '0.581 (0.512–0.660)'
+- unparsed cell pharmaceutics-13-01587-t002:row14:col3 = '88.8 (86.1–92.4)'
+- unparsed cell pharmaceutics-13-01587-t002:row15:col3 = '70.8 (65.3–75.8)'
+- unparsed cell pharmaceutics-13-01587-t002:row18:col3 = '0.0843 (0.0772–0.0883)'
+- unparsed cell pharmaceutics-13-01587-t002:row20:col3 = '2.44 (2.27–2.81)'
+- unparsed cell pharmaceutics-13-01587-t002:row21:col3 = '0.488 (0.440–0.539)'
+- unparsed cell pharmaceutics-13-01587-t002:row22:col3 = '10.9 (9.87–12.0)'
+- unparsed cell pharmaceutics-13-01587-t002:row25:col3 = '0.168 (0.154–0.196)'
+- unparsed cell pharmaceutics-13-01587-t002:row27:col3 = '18.0 (16.0–20.1)'
+- unparsed cell pharmaceutics-13-01587-t002:row28:col3 = '9.79 (8.88–10.8)'
+- unparsed cell pharmaceutics-13-01587-t002:row29:col3 = '23.6 (19.7–26.0)'
+- unparsed cell pharmaceutics-13-01587-t002:row30:col3 = '17.4 (15.8–20.2)'
+- unparsed cell pharmaceutics-13-01587-t002:row31:col3 = '98.4 (83.4–110)'
+- unparsed cell pharmaceutics-13-01587-t002:row33:col3 = '4.58 (4.09–5.86)'
+- unparsed cell pharmaceutics-13-01587-t002:row34:col3 = '7.74 (6.94–8.55)'
+- LLM selected parameter table(s) 2
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (10/15 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl (l/day) a].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[ffm on cl]` | 0.598 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ffm on vp]` | 0.586 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_albumin]` |  | -0.0165 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q46_albumin]` | -0.0165 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 8 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['pharmaceutics-13-01587-t002:row10:col2'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | nmol/L ([substance] / [length] ** 3) | ['pharmaceutics-13-01587-t002:row25:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['pharmaceutics-13-01587-t002:row3:col2'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['pharmaceutics-13-01587-t002:row4:col2'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['pharmaceutics-13-01587-t002:row12:col2'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 |  | ['pharmaceutics-13-01587-t002:row8:col2'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 |  | ['pharmaceutics-13-01587-t002:row11:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.277 | ['pharmaceutics-13-01587-t002:row4:col2'] |
+| C8_topology | pass |  |  |  |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bustekinumab%5D%20Ustekinumab_Aguiar2021_final&body=Drug%3A%20ustekinumab%0ARecord%3A%20Ustekinumab_Aguiar2021_final%0APaper%3A%20Aguiar_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ustekinumab/Ustekinumab_Aguiar2021_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 01:03 UTC</sub>

@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Metformin_Matzuka2016_2_cpt_fast_slow",
+ "molar_masses": {
+  "central.C": 0.1291636
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2000.0
+ ],
+ "parameters": {
+  "Cl": 1.0277777777777777e-05,
+  "F": 1.0,
+  "MM": 0.1291636,
+  "Tlag": 0.0,
+  "VdPerKg": 0.004057142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "k12": 4.166666666666666e-05,
+  "k21": 1.4037168841439304e-06,
+  "ka": 3.0555555555555554e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 15848.97464592244
+ },
+ "reference_peaks": {
+  "central.C": 0.0009000964710560099
+ },
+ "stop_time": 6048000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

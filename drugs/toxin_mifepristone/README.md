@@ -1,0 +1,223 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Mifepristone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mifepristone_Zhang2016_mcns&quot;,&quot;label&quot;:&quot;Zhang_2016_mcns&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_mifepristone/Mifepristone_Zhang2016_mcns.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mifepristone_Zhang2016_mif_suspension&quot;,&quot;label&quot;:&quot;Zhang_2016_mif_suspension&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_mifepristone/Mifepristone_Zhang2016_mif_suspension.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mifepristone_Fldesi1996_reference&quot;,&quot;label&quot;:&quot;F\u00f6ldesi_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_mifepristone/Mifepristone_Fldesi1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mifepristone_He1989_reference&quot;,&quot;label&quot;:&quot;He_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_mifepristone/Mifepristone_He1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mifepristone_OcaaArakachi2023_reference&quot;,&quot;label&quot;:&quot;Oca\u00f1a-Arakachi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_mifepristone/Mifepristone_OcaaArakachi2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Mifepristone
+
+- **generic name:** Mifepristone
+- **T3DB:** [T3D2907](http://www.t3db.ca/toxins/T3D2907) · **DrugBank:** [DB00834](https://go.drugbank.com/drugs/DB00834) · **PubChem:** [CID 55245](https://pubchem.ncbi.nlm.nih.gov/compound/55245)
+- **groups:** approved, investigational
+
+## About
+
+A progestational and glucocorticoid hormone antagonist. Its inhibition of progesterone induces bleeding during the luteal phase and in early pregnancy by releasing endogenous prostaglandins from the endometrium or decidua. As a glucocorticoid receptor antagonist, the drug has been used to treat hypercortisolism in patients with nonpituitary cushing syndrome [PubChem]. The two marketed forms of mifepristone are Mifeprex&#174; (mifepristone 200mg) and Korlym&#8482; (mifepristone 300mg). …
+
+- **Category:** Drug, Synthetic Toxin
+- **Route of exposure:** oral. The absolute bioavailability of a 20 mg oral dose is 69%
+- **Sources and uses:** For the medical termination of intrauterine pregnancy through 49 days' pregnancy. Also indicated to control hyperglycemia secondary to hypercortisolism in adult patients with endogenous Cushing's syndrome who have type 2 diabetes mellitus or glucose intolerance and are not candidates for surgery or have had unsuccessful surgery.
+- **Mechanism of toxicity:** Mifepristone is a cholinesterase or acetylcholinesterase (AChE) inhibitor. A cholinesterase inhibitor (or 'anticholinesterase') suppresses the action of acetylcholinesterase. …
+- **Health effects:** Acute exposure to cholinesterase inhibitors can cause a cholinergic crisis characterized by severe nausea/vomiting, salivation, sweating, bradycardia, hypotension, collapse, and convulsions. Increasing muscle weakness is a possibility and may result in death if respiratory muscles are involved. …
+- **Treatment:** If the compound has been ingested, rapid gastric lavage should be performed using 5% sodium bicarbonate. …
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D2907">T3DB T3D2907</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 84371-65-3 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:50692">ChEBI 50692</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| Mifepristone (RU 486 (Mifepristone)) | parent | 429.604 | C29H35NO2 | PubChem | [55245](https://pubchem.ncbi.nlm.nih.gov/compound/55245) | Földesi_1994, Földesi_1996, He_1989, Heikinheimo_1989_2, Zhang_2016 |
+| Active metabolites of RU 486 | metabolite | — (mass units only) | — | — | — | — |
+| RU486 metabolites | metabolite | — (mass units only) | — | — | — | — |
+
+## Start here
+
+> **Zhang_2016_mcns** — <span class="pk-badge pk-badge--blue">Simulated</span> male Sprague-Dawley rats. [Run it in the simulator](drugs/toxin_mifepristone/Mifepristone_Zhang2016_mcns.md?tab=Simulation) · [record](drugs/toxin_mifepristone/Mifepristone_Zhang2016_mcns.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Zhang_2016_mcns](drugs/toxin_mifepristone/Mifepristone_Zhang2016_mcns.md) | ▶ model + simulator | retention, 1 pool | 3 | Zhang H et al., Chitosan-based nanoparticles for improv…, Beilstein journal of nanote… (2016) | [10.3762/bjnano.7.178](https://doi.org/10.3762/bjnano.7.178) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [↳ mif_suspension](drugs/toxin_mifepristone/Mifepristone_Zhang2016_mif_suspension.md) | ▶ model + simulator | retention, 1 pool | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: a value printed only as a range — the record carries its midpoint</sub> | [Földesi_1996_reference](drugs/toxin_mifepristone/Mifepristone_Fldesi1996_reference.md) | ▶ model + simulator | retention, 1 pool | 1 | Földesi I et al., Determination of RU486 (mifepristone) i…, Contraception (1996) | [10.1016/0010-7824(96)00116-3](https://doi.org/10.1016/0010-7824(96)00116-3) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [He_1989_reference](drugs/toxin_mifepristone/Mifepristone_He1989_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | He CH et al., Pharmacokinetic study of orally adminis…, Contraception (1989) | [10.1016/0010-7824(89)90052-8](https://doi.org/10.1016/0010-7824(89)90052-8) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Ocaña-Arakachi_2023_reference](drugs/toxin_mifepristone/Mifepristone_OcaaArakachi2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ocaña-Arakachi K et al., Pharmacokinetics and Anti-Tumor Efficac…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph16101337](https://doi.org/10.3390/ph16101337) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Földesi_1994_reference](drugs/toxin_mifepristone/Mifepristone_Fldesi1994_reference.md) | — | 1-compartment (no model) | 0 | Földesi I et al., [Pharmacokinetics of RU 486 and its act…, Acta pharmaceutica Hungarica (1994) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Grimaldi_1992_reference](drugs/toxin_mifepristone/Mifepristone_Grimaldi1992_reference.md) | — | 1-compartment (no model) | 0 | Grimaldi B et al., [Respective role of mifepristone (RU486…, Comptes rendus de l'Academi… (1992) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Heikinheimo_1989_reference](drugs/toxin_mifepristone/Mifepristone_Heikinheimo1989_reference.md) | — | 1-compartment (no model) | 0 | Heikinheimo O et al., Distribution of RU 486 and its demethyl…, The Journal of clinical end… (1989) | [10.1210/jcem-68-2-270](https://doi.org/10.1210/jcem-68-2-270) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Heikinheimo_1989_2_reference](drugs/toxin_mifepristone/Mifepristone_Heikinheimo1989v2_reference.md) | — | 1-compartment (no model) | 0 | Heikinheimo O, Pharmacokinetics of the antiprogesteron…, Journal of steroid biochemi… (1989) | [10.1016/0022-4731(89)90008-3](https://doi.org/10.1016/0022-4731(89)90008-3) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by qwen3.8-flash-next, p(non-human) 1.00).">other animal</span> | [He_2003_ED50](drugs/toxin_mifepristone/pd_He_2003_ED50.md) | early pregnancy termination ← mifepristone · model not identified | — | He QJ et al., Synergistic effects of DL111-IT in comb…, Contraception (2003) | [10.1016/s0010-7824(03)00179-3](https://doi.org/10.1016/s0010-7824(03)00179-3) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Parra-Guillen_2013_IL12](drugs/toxin_mifepristone/pd_Parra_Guillen_2013_IL12.md) | IL12 concentration ← mifepristone · target-mediated drug disposition | — | Parra-Guillen ZP et al., Target-mediated disposition model descr…, The AAPS journal (2013) | [10.1208/s12248-012-9423-9](https://doi.org/10.1208/s12248-012-9423-9) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mifepristone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inducer/inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inducer/inhibitor, `ABCC1` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inducer/inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inducer/inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inducer/inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inducer/inhibitor, `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: NR1I2 (target), NR3C1 (target), PGR (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-15 11:09 | 27:45 | 5/4/0 | 2/0/0 | 0/0/0 | 696,044/45,857 | einfracz / qwen3.8-flash-next | 31 | 3/18 | 31/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 382 matched, 176 returned
+- **screened:** 11  ·  **relevant:** 11
+- **records:** 9  ·  extracted 2  ·  needs review 3  ·  rejected 4  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Földesi_1994.pdf` | Földesi I et al., [Pharmacokinetics of RU 486 and its act…, Acta pharmaceutica Hungarica (1994) | popPK | 10 |  | [8023681](https://pubmed.ncbi.nlm.nih.gov/8023681) | The paper reports quantitative kinetic parameters (half-life, Tmax, compartment model) for mifepristone (RU 486) in humans, though specific numeric values for Cmax and AUC are described qualitatively rather than tabulated. |
+| `He_1989.pdf` | He CH et al., Pharmacokinetic study of orally adminis…, Contraception (1989) | popPK | 10 | [10.1016/0010-7824(89)90052-8](https://doi.org/10.1016/0010-7824(89)90052-8) | [2582770](https://pubmed.ncbi.nlm.nih.gov/2582770) | The abstract explicitly reports quantitative toxicokinetic parameters for mifepristone (RU 486), including distribution and elimination half-lives, peak time, and total plasma clearance, with the numerical values present in the text. |
+| `Heikinheimo_1990_2.pdf` | Heikinheimo O et al., Pharmacokinetics of the antiprogesteron…, Acta endocrinologica (1990) | popPK | 10 | [10.1530/acta.0.1230298](https://doi.org/10.1530/acta.0.1230298) | [2239078](https://pubmed.ncbi.nlm.nih.gov/2239078) | The paper reports pharmacokinetics of RU 486 (mifepristone) in humans, but the provided evidence contains only the abstract and no specific numeric kinetic parameter values. |
+| `Földesi_1996.pdf` | Földesi I et al., Determination of RU486 (mifepristone) i…, Contraception (1996) | popPK | 9 | [10.1016/0010-7824(96)00116-3](https://doi.org/10.1016/0010-7824(96)00116-3) | [8804805](https://pubmed.ncbi.nlm.nih.gov/8804805) | The text explicitly reports the elimination half-life of mifepristone in humans. |
+| `Heikinheimo_1989_2.pdf` | Heikinheimo O, Pharmacokinetics of the antiprogesteron…, Journal of steroid biochemi… (1989) | popPK | 9 | [10.1016/0022-4731(89)90008-3](https://doi.org/10.1016/0022-4731(89)90008-3) | [2913396](https://pubmed.ncbi.nlm.nih.gov/2913396) | The paper reports quantitative kinetic parameters including elimination half-lives and area under the curve (AUC) for RU 486 (mifepristone) in women. |
+| `Teng_2011.pdf` | Teng YN et al., Determinations of mifepristone and its…, Yao xue xue bao = Acta phar… (2011) | popPK | 9 |  | [22242458](https://pubmed.ncbi.nlm.nih.gov/22242458) | The paper reports on pharmacokinetic parameters (t1/2, V, CL, AUC, etc.) of mifepristone in humans, but the specific numeric values for these parameters are not included in the provided text (abstract only). |
+| `Grimaldi_1992.pdf` | Grimaldi B et al., [Respective role of mifepristone (RU486…, Comptes rendus de l'Academi… (1992) | popPK | 8 |  | [1422922](https://pubmed.ncbi.nlm.nih.gov/1422922) | Reports quantitative association constants ($K_{ap}$) and calculates plasma/tissue partitioning ratios based on protein binding, constituting partition coefficient data, though full model parameters rely on calculations from these constants. |
+| `Heikinheimo_1986.pdf` | Heikinheimo O et al., Quantitation of RU 486 in human plasma…, Contraception (1986) | popPK | 8 | [10.1016/s0010-7824(86)80017-8](https://doi.org/10.1016/s0010-7824(86)80017-8) | [3829676](https://pubmed.ncbi.nlm.nih.gov/3829676) | The text reports a plasma half-life (&gt;27 hours) and peak concentrations for mifepristone (RU 486) in humans, but detailed kinetic parameters are limited in the abstract. |
+| `Holtyn_2019.pdf` | Holtyn AF et al., Evaluation of mifepristone effects on a…, Experimental and clinical p… (2019) | popPK | 8 | [10.1037/pha0000246](https://doi.org/10.1037/pha0000246) | [30570274](https://pubmed.ncbi.nlm.nih.gov/30570274) | The paper reports nonlinear pharmacokinetics in baboons, but specific numeric parameters (e.g., Cmax, AUC, half-life) are not present in the provided text evidence. |
+| `Heikinheimo_1989.pdf` | Heikinheimo O et al., Distribution of RU 486 and its demethyl…, The Journal of clinical end… (1989) | popPK | 5 | [10.1210/jcem-68-2-270](https://doi.org/10.1210/jcem-68-2-270) | [2918046](https://pubmed.ncbi.nlm.nih.gov/2918046) | The paper reports quantitative tissue:plasma distribution ratios (adipose and myometrium relative to serum) for mifepristone (RU 486) and its metabolites in humans, though it lacks specific kinetic parameters like half-life or clearance. |
+
+<sub>queue written 2026-11-15 10:58 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aronoff_2008 | irrelevant | 0 | 0 | The paper studies the immunological effects of misoprostol and only mentions mifepristone as a comparator without reporting any toxicokinetic parameters or numeric disposition data for it. |
+| popPK | Bardin_1997 | irrelevant | 0 | 0 | no_text gate: only 16 chars of text extracted (&lt; 400) |
+| popPK | Buhimschi_2004 | irrelevant | 0 | 0 | The paper uses mifepristone solely as a chemical inducer of preterm labor, not as the subject of a kinetic study; no toxicokinetic parameters for mifepristone are reported. |
+| PGx | Chen_2003 | not_relevant | 1 | 0 | The paper discusses mifepristone as a glucocorticoid receptor antagonist to inhibit dexamethasone-induced CYP2C19 promoter activation, not as a substrate with PK/PD parameters altered by gene variants. |
+| popPK | Chen_2014 | irrelevant | 0 | 0 | The paper focuses on dexamethasone and airway progenitor cell differentiation, using mifepristone (RU486) only as a glucocorticoid receptor antagonist, with no kinetic data for mifepristone. |
+| PGx | Chen_2017 | not_relevant | 2 | 8 | The study reports sex-related (phenotypic, not genotypic) pharmacokinetic differences of a metabolite (metapristone), not mifepristone. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | Mifepristone is used solely as a pharmacological tool to modulate AQP4 expression in a study focused on hematoma clearance mechanisms, with no toxicokinetic parameters reported for mifepristone itself. |
+| popPK | Cheng_1993 | irrelevant | 2 | 0 | The paper reports immunohistochemical staining of prostaglandins in human tissue, not quantitative toxicokinetic parameters for mifepristone itself. |
+| popPK | Dos_2025 | irrelevant | 0 | 0 | Mifepristone (RU486) appears only as a glucocorticoid receptor antagonist control to validate caulerpin's mechanism, with no kinetic parameters for mifepristone reported. |
+| popPK | Gemzell-Danielsson_2006 | irrelevant | 1 | 0 | The paper is a review of uterine contractility effects and does not report any quantitative toxicokinetic parameters (e.g., half-life, clearance, Vd) for mifepristone. |
+| PGx | Ghosh_2018 | not_relevant | 0 | 0 | The paper uses mifepristone as a pharmacological inhibitor of the glucocorticoid receptor to study blood-brain barrier mechanisms, not to report pharmacogenomic effects of mifepristone's own metabolism or action. |
+| popPK | Gubbi_2021 | irrelevant | 2 | 0 | The study reports pharmacodynamic outcomes (insulin sensitivity indices) and drug effects, but does not report any quantitative toxicokinetic parameters (such as half-life, clearance, or volume of distribution) for mifepristone. |
+| popPK | Haass-Koffler_2023 | irrelevant | 1 | 1 | The quantitative pharmacokinetic parameters (Tmax, Cmax) refer to alcohol (BrAC), not mifepristone; the study focuses on safety/behavioral outcomes without reporting mifepristone kinetic values. |
+| PGx | Haehner_2004 | not_relevant | 0 | 0 | The text discusses in vitro drug-drug interactions where mifepristone acts as an inhibitor of CYP3A4 metabolism of nifedipine; it does not report a pharmacogenomic effect of a gene variant on mifepristone's own pharmacokinetics or pharmacodynamics. |
+| PGx | He_1999 | not_relevant | 1 | 0 | The paper describes the mechanism of CYP3A4 inactivation by mifepristone but does not investigate genetic variants (genotypes/phenotypes) or their effect on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Heikinheimo_1986 | relevant | 8 | 4 | The text reports a plasma half-life (&gt;27 hours) and peak concentrations for mifepristone (RU 486) in humans, but detailed kinetic parameters are limited in the abstract. |
+| popPK | Heikinheimo_1990 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
+| popPK | Heikinheimo_1990_2 | relevant | 10 | 2 | The paper reports pharmacokinetics of RU 486 (mifepristone) in humans, but the provided evidence contains only the abstract and no specific numeric kinetic parameter values. |
+| PGx | Heikinheimo_1997 | not_relevant | 1 | 0 | The text reviews general pharmacokinetics and metabolic pathways (CYP3A4) but does not report specific gene variants, genotypes, or phenotypes affecting PK/PD parameters. |
+| PGx | Heikinheimo_2003 | not_relevant | 0 | 0 | The paper discusses general pharmacokinetics, AAG saturation, and CYP3A4 metabolism, but does not report any effects of specific gene variants, genotypes, or phenotypes on mifepristone PK/PD parameters. |
+| PGx | Ho_2023 | not_relevant | 1 | 0 | The paper investigates the regulation of ABC transporters by nuclear receptors in porcine cells, using mifepristone merely as a pharmacological antagonist of NR3C1, without reporting any pharmacogenomic effects on mifepristone's own PK/PD parameters. |
+| popPK | Holtyn_2019 | relevant | 8 | 2 | The paper reports nonlinear pharmacokinetics in baboons, but specific numeric parameters (e.g., Cmax, AUC, half-life) are not present in the provided text evidence. |
+| PGx | Hukkanen_2003 | not_relevant | 0 | 0 | The paper discusses CYP3A5 induction mechanisms and the effect of smoking/glucocorticoids, mentioning mifepristone only as a compound tested for induction capacity, not as a drug whose PK/PD is affected by genetic variants. |
+| popPK | Ingram_2026 | irrelevant | 0 | 0 | The study compares clinical failure rates of abortion procedures based on surgical history, reporting no pharmacokinetic parameters (such as half-life, clearance, or Cmax) for mifepristone. |
+| popPK | Ismail_2015 | irrelevant | 0 | 0 | The paper is a pharmacological study on CFTR and cAMP regulation in rat cervix where mifepristone is used as a progesterone antagonist; it reports no toxicokinetic parameters such as half-life, clearance, or partition coefficients. |
+| PGx | Jang_1996 | not_relevant | 0 | 0 | The study characterizes CYP3A4 as the metabolizing enzyme but does not assess pharmacogenomic effects of gene variants on PK/PD parameters. |
+| PGx | Jang_1998 | not_relevant | 1 | 0 | The paper describes mechanism-based inactivation of CYP3A4 by mifepristone in vitro but does not report any effects of human genetic variants (genotypes/phenotypes) on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Jiang_2010 | irrelevant | 1 | 0 | Mifepristone is used solely as an internal standard for the analysis of a different substance (cymipristone), with no toxicokinetic parameters reported for mifepristone itself. |
+| popPK | Jiang_2014 | irrelevant | 0 | 0 | Mifepristone is used only as a glucocorticoid receptor blocker to antagonize dexamethasone, not as the substance whose kinetics are being studied, and no kinetic parameters are reported. |
+| popPK | Johnstone_2013 | irrelevant | 0 | 0 | Mifepristone is only mentioned as a competitor/reagent in a radioreceptor binding assay for cortisol, with no kinetic parameters reported for mifepristone itself. |
+| PGx | Khan_2002 | not_relevant | 3 | 2 | The paper reports in vitro enzymatic kinetics (Vmax/Km) for recombinant CYP3A4 vs CYP3A5, but does not link specific human gene variants/phenotypes to in vivo pharmacokinetic or pharmacodynamic parameters in humans. |
+| popPK | Koorneef_2020 | irrelevant | 0 | 0 | Mifepristone is mentioned only as a comparator or in the context of coregulator binding assays (in vitro), with no quantitative toxicokinetic parameters (e.g., half-life, clearance, volume of distribution) reported for mifepristone itself. |
+| PGx | Kyle_2022 | not_relevant | 0 | 0 | The study investigates the pharmacological inhibition of the ABCC1 transporter using probenecid, not the effect of genetic variants (genotypes/phenotypes) on mifepristone PK or PD. |
+| popPK | Lanier-Smith_1991 | irrelevant | 0 | 0 | Mifepristone (RU 486) is used solely as a glucocorticoid receptor antagonist/comparator in an in vitro study on atrial natriuretic peptide receptors, with no toxicokinetic parameters reported for mifepristone. |
+| PGx | Lau_2013 | not_relevant | 0 | 0 | The paper investigates the interaction between Ginkgo biloba extract and glucocorticoid receptor activity/CYP induction, using mifepristone only as a pharmacological tool (antagonist) rather than as the drug subject to a pharmacogenomic effect study. |
+| PGx | Lee_2012 | not_relevant | 0 | 0 | The paper focuses on in vitro methods for characterizing cytochrome P450 inhibition mechanisms (inhibition kinetics) and uses mifepristone only as a positive control for irreversible inhibition; it does not assess pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Leppert_1993 | irrelevant | 0 | 0 | The provided evidence is an abstract about epilepsy, contraception, and teratogenicity, containing no quantitative toxicokinetic parameters for mifepristone. |
+| popPK | Li_2017 | irrelevant | 0 | 0 | The paper is a clinical outcome study comparing treatment methods, reporting patient demographics and hCG levels, but contains no pharmacokinetic parameters for mifepristone. |
+| popPK | Li_2022 | irrelevant | 1 | 2 | Mifepristone is used only to induce an abnormal uterine bleeding model in rats, while the pharmacokinetic parameters reported are for five compounds derived from *Clinopodium chinense*. |
+| popPK | Li_2023 | irrelevant | 3 | 1 | This is a bioequivalence study reporting only Cmax and AUC statistical results for a product comparison, lacking specific quantitative toxicokinetic parameters like half-life, clearance, or volume of distribution. |
+| PGx | Lin_2009 | not_relevant | 0 | 0 | The paper describes in vitro mechanism-based inactivation of CYP2B6 by mifepristone but does not investigate pharmacogenomic variants (genotypes/phenotypes) or their effect on human pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Ma_2007 | not_relevant | 0 | 0 | The text describes an in vitro drug-drug interaction study involving TPA023 and mifepristone, not a pharmacogenomic analysis of mifepristone's own PK/PD parameters. |
+| PGx | Maier_2007 | not_relevant | 0 | 0 | Mifepristone is used as a pharmacological antagonist to test mechanisms of P-gp regulation, not as the substrate whose PK/PD parameters are being studied in relation to genetic variants. |
+| popPK | Marions_2006 | irrelevant | 0 | 0 | The text is a summary abstract of a review discussing dose efficacy and vaguely mentions that pharmacokinetics are similar between doses, but provides no specific numeric toxicokinetic parameters. |
+| popPK | Martinez_2012 | irrelevant | 0 | 0 | The paper is a review of ulipristal acetate (UPA), mentioning mifepristone only as a comparator for efficacy and side effects, with no quantitative kinetic parameters for mifepristone. |
+| popPK | Micili_2019 | irrelevant | 0 | 0 | The paper focuses on the toxicokinetics and pharmacodynamics of alpha-Lipoic acid; mifepristone is used solely as a pharmacological trigger for preterm birth in rats, with no kinetic parameters reported for mifepristone itself. |
+| PGx | Morant_2023 | not_relevant | 0 | 0 | The paper describes the use of mifepristone as a non-drug inducer in a synthetic gene expression system (GeneSwitch), not its pharmacokinetic or pharmacodynamic properties in humans related to genetic variation. |
+| PGx | Nguyen_2017 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction between mifepristone and ketoconazole, not a pharmacogenomic effect related to gene variants or phenotypes. |
+| PGx | Oda_2013 | not_relevant | 1 | 0 | Mifepristone is used merely as a progesterone receptor antagonist to block the effect of mitoxantrone on ABCG2 expression; the study does not investigate how gene variants affect mifepristone's own PK or PD parameters. |
+| popPK | Parra-Guillen_2013 | irrelevant | 1 | 0 | Mifepristone is only mentioned as an inducer of gene expression, not as a subject of kinetic parameterization. |
+| PGx | Poutou_2015 | not_relevant | 0 | 0 | Mifepristone is used merely as a non-human drug switch to induce gene expression in an animal model, with no pharmacokinetic or pharmacodynamic analysis of mifepristone itself. |
+| popPK | Poutou_2017 | irrelevant | 0 | 0 | The paper uses mifepristone as a chemical inducer for a gene expression system and reports no toxicokinetic parameters for the drug itself. |
+| PGx | Raucy_2002 | not_relevant | 0 | 0 | The study describes a cell-based assay for CYP3A4 induction by mifepristone, not a pharmacogenomic effect of a gene variant on PK/PD parameters in humans. |
+| popPK | Refaeli_1995 | irrelevant | 0 | 0 | The paper discusses mifepristone as a pharmacological inhibitor in a molecular biology study, reporting no quantitative toxicokinetic parameters or disposition data. |
+| PGx | Reinen_2018 | not_relevant | 0 | 0 | The study investigates in vitro CYP inhibition mechanisms (metabolism-dependent inhibition) of mifepristone, not pharmacogenomic effects on human PK/PD parameters. |
+| PGx | Rew_2018 | not_relevant | 0 | 0 | The paper focuses on the discovery of a new drug (ORIC-101) and compares its properties to mifepristone, but does not report any pharmacogenomic effects on mifepristone's PK or PD parameters. |
+| popPK | Rojas_2002 | irrelevant | 0 | 0 | The paper studies stress-induced susceptibility to bacterial infection in mice and mentions RU486 (mifepristone) only as a receptor antagonist for a mechanistic experiment, with no toxicokinetic parameters reported. |
+| popPK | Sandhi_2014 | irrelevant | 0 | 0 | The paper studies the mechanism of drug action using mifepristone as a pharmacological antagonist/comparator, but reports no toxicokinetic parameters for mifepristone itself. |
+| popPK | Sarkar_2002 | irrelevant | 2 | 8 | The paper is a review summarizing pharmacokinetic values from other studies rather than reporting new primary toxicokinetic data from its own experiments. |
+| PGx | Savarese_2022 | not_relevant | 2 | 1 | The paper investigates how selective breeding alters glucocorticoid signaling and gene expression to affect the pharmacodynamic response (ethanol intake) to mifepristone in different mouse lines, but it does not report how a specific gene variant directly changes a PK or PD parameter of mifepristone itself; it characterizes the physiological state of the mice that makes them differentially sensitive to the drug. |
+| popPK | Savas_2005 | irrelevant | 0 | 0 | Mifepristone is used solely as a pharmacological antagonist to suppress gene induction in an *in vitro* study, with no toxicokinetic parameters reported. |
+| popPK | Scholl_2023 | irrelevant | 0 | 0 | Mifepristone is used only as a pharmacological tool (GR antagonist) in a study about corticosterone and serotonin transporters; no toxicokinetic parameters are reported. |
+| popPK | Sehajpal_2014 | irrelevant | 0 | 0 | Mifepristone is used solely as a pharmacological tool (progesterone antagonist) to investigate a mechanism, with no toxicokinetic parameters reported for the substance itself. |
+| popPK | Shang_2026 | irrelevant | 0 | 0 | The paper investigates 20(S)-Protopanaxadiol (PPD) pharmacokinetics in rats, with mifepristone (RU486) used only as a glucocorticoid receptor antagonist/control agent and not as a study subject for kinetic parameters. |
+| popPK | Shantikumar_2022 | irrelevant | 1 | 0 | The paper is an observational clinical study on abortion outcomes and dosing regimens, reporting no toxicokinetic parameters such as half-life, clearance, or partition coefficients. |
+| popPK | Singh_1991 | irrelevant | 0 | 0 | no_text gate: only 32 chars of text extracted (&lt; 400) |
+| popPK | Snow_2011 | irrelevant | 0 | 0 | The paper is a review of ulipristal acetate, not mifepristone, and mifepristone is mentioned only for structural comparison. |
+| popPK | Soon_2016 | irrelevant | 1 | 0 | This is a review article summarizing clinical guidelines and existing literature without reporting any original quantitative toxicokinetic parameters for mifepristone. |
+| popPK | Steelman_2009 | irrelevant | 0 | 0 | The paper studies Theiler's virus and stress immunology; mifepristone (RU486) is used only as a comparator/administered drug for mechanism reversal, with no quantitative toxicokinetic parameters reported for it. |
+| popPK | Sun_2010 | irrelevant | 0 | 0 | The paper investigates the protein binding of tetrahydropalmatine (THP), not mifepristone; mifepristone is mentioned only as a comparator drug to test AGP binding competition. |
+| PGx | Sun_2010 | not_relevant | 1 | 0 | The paper focuses on tetrahydropalmatine; mifepristone is only mentioned as an AGP-binding competitor and does not have its PK/PD parameters reported or modulated by a gene variant in this study. |
+| popPK | Sun_2020 | irrelevant | 0 | 0 | Mifepristone is used merely as a co-loader excipient in a cabazitaxel micelle formulation study, not as the subject of toxicokinetic analysis. |
+| popPK | Szpot_2022 | irrelevant | 2 | 0 | The paper reports single-point blood concentrations (ng/mL) and analytical validation parameters, but no quantitative toxicokinetic parameters such as half-lives, clearance, volumes, or rate constants. |
+| PGx | Takezawa_2012 | not_relevant | 1 | 1 | The paper focuses on rifampicin-mediated CYP3A4 induction and the role of HNF4alpha/PGC1alpha expression levels in human fetal liver cells. Mifepristone is mentioned only as a PXR ligand that failed to induce CYP3A4 in this specific model; no genotype-phenotype interaction (e.g., specific gene variants) is studied, nor are PK or PD parameters of mifepristone reported as affected by genetic variation. |
+| popPK | Tang_2006 | irrelevant | 0 | 0 | The paper focuses on misoprostol kinetics, with mifepristone appearing only as a co-exposure/comparator in the background context, and no kinetic parameters for mifepristone are reported. |
+| popPK | Teng_2011 | relevant | 9 | 2 | The paper reports on pharmacokinetic parameters (t1/2, V, CL, AUC, etc.) of mifepristone in humans, but the specific numeric values for these parameters are not included in the provided text (abstract only). |
+| popPK | Usulkar_2024 | irrelevant | 1 | 0 | Mifepristone is used solely as an agent to induce the PCOS disease model in rats, not as the substance being studied for toxicokinetics. |
+| popPK | Wei_2017 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of repaglinide, not mifepristone; RU486 (mifepristone) is only used as a chemical reagent/antagonist in vitro. |
+| popPK | Wei_2019 | irrelevant | 0 | 0 | The paper reports pharmacodynamic outcomes of mifepristone (as a glucocorticoid receptor antagonist) in mice, with no toxicokinetic parameters such as half-life, clearance, or volume of distribution. |
+| popPK | Weinstain_2013 | irrelevant | 2 | 0 | The paper describes the synthesis and cell imaging properties of fluorescent derivatives of mifepristone, not quantitative toxicokinetic parameters of the parent substance; the only kinetic mention is a qualitative reference to half-lives (30h human vs 1h rodent) attributed to external literature (ref 41), not measured in this study. |
+| PGx | Xu_2020 | not_relevant | 0 | 0 | The paper discusses a chemical polymorph of the drug (crystal form), not a genetic polymorphism in the patient, and thus reports no pharmacogenomic effect. |
+| popPK | Yang_2024 | irrelevant | 0 | 0 | Mifepristone is used only as a modeling agent to induce abortion in rats; no pharmacokinetic parameters for mifepristone are measured, reported, or analyzed in the evidence. |
+| PGx | Yao_2022 | not_relevant | 1 | 0 | The paper studies a gene knockout model in mice to determine the mechanism of drug-induced hepatomegaly, rather than reporting human pharmacogenomic effects on PK/PD parameters. |
+| PGx | Yueh_2005 | not_relevant | 0 | 0 | The paper describes a bioassay for CYP3A4 induction/inhibition using mifepristone as an inducer, but does not analyze how genetic variants alter PK/PD parameters. |
+| popPK | Zhang_1991 | irrelevant | 0 | 0 | no_text gate: only 51 chars of text extracted (&lt; 400) |
+| PGx | Zhou_2007 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions and mechanism-based inhibition of CYP3A4 by mifepristone, but does not address pharmacogenomic variants affecting mifepristone's PK or PD parameters. |
+| PGx | Zhou_2008 | not_relevant | 0 | 0 | The text describes mifepristone as a CYP3A4 inhibitor in a general review context, with no mention of gene variants, genotypes, or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Zhou_2025 | irrelevant | 1 | 0 | The paper focuses on molecular mechanisms (PGR/PDCD4 signaling, apoptosis) in trophoblast cells and does not report any quantitative toxicokinetic parameters (half-life, clearance, partition coefficients, etc.) for mifepristone. |
+| popPK | Zhu_2019 | irrelevant | 0 | 0 | Mifepristone (RU486) is used solely as a glucocorticoid receptor antagonist to block the effects of dexamethasone on cystatin C levels, not as the subject of toxicokinetic study. |
+| popPK | Šauer_2026 | irrelevant | 0 | 0 | Mifepristone appears only as an analytical standard/unit (equivalents) in an environmental exposure study, with no kinetic parameters reported for the substance itself. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmifepristone%5D&body=Drug%3A%20mifepristone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_mifepristone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-15 10:59 UTC</sub>

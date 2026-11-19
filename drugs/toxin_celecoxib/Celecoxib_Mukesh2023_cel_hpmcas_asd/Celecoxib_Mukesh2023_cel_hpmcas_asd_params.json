@@ -1,0 +1,78 @@
+{
+ "dose_source": "paper",
+ "model_id": "Celecoxib_Mukesh2023_cel_hpmcas_asd",
+ "molar_masses": {
+  "retainedFraction": 0.381372
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 21.0
+   },
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 56.0
+   },
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 52.0
+   },
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 167.0
+   },
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 116.0
+   },
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 84.0
+   },
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 60.0
+   },
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 8.0
+   },
+   {
+    "source": "Mukesh_2023:other_prose",
+    "value_si": 5.6
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.381372,
+  "Tb[1]": 68796.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662084
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9969840244968738
+ },
+ "stop_time": 950400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

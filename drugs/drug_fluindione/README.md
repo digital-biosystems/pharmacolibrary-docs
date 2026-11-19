@@ -1,0 +1,103 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;fluindione&quot;}]"></div>
+
+# fluindione
+
+- **generic name:** fluindione
+- **ATC codes:** `B01AA12`
+- **DrugBank:** [DB13136](https://go.drugbank.com/drugs/DB13136) · **PubChem:** [CID 68942](https://pubchem.ncbi.nlm.nih.gov/compound/68942)
+- **molar mass:** 240.233 g/mol (C15H9FO2) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Fluindione is a vitamin K antagonist used as an anticoagulant. It is no longer used as it has been withdrawn.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q3074488](https://www.wikidata.org/wiki/Q3074488), [Wikipedia](https://en.wikipedia.org/wiki/Fluindione?oldid=1244146144) (CC BY-SA 4.0) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Comets_1998_INR](drugs/drug_fluindione/pd_Comets_1998_INR.md) | International Normalized Ratio ← fluindione · indirect response — drug inhibits the loss of International Normalized Ratio | — | Comets E et al., Modeling INR data to predict maintenanc…, Therapeutic drug monitoring (1998) | [10.1097/00007691-199812000-00009](https://doi.org/10.1097/00007691-199812000-00009) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Comets_2012_2_INR](drugs/drug_fluindione/pd_Comets_2012_2_INR.md) | international normalized ratio ← fluindione · indirect response — drug inhibits the production of international normalized ratio | — | Comets E et al., Pharmacokinetic and pharmacodynamic var…, Clinical pharmacology and t… (2012) | [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Verstuyft_2012_2_INR](drugs/drug_fluindione/pd_Verstuyft_2012_2_INR.md) | international normalized ratio ← fluindione · indirect response — drug inhibits the loss of international normalized ratio | — | Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmacokinetics (2012) | [10.2165/11595560-000000000-00000](https://doi.org/10.2165/11595560-000000000-00000) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fluindione).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 15:55 | 0:56 | 0/0/0 | 0/3/0 | 0/0/0 | 20,128/1,803 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 2/0 | 2/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 39 matched, 38 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Comets_2012_2.pdf` | Comets E et al., Pharmacokinetic and pharmacodynamic var…, Clinical pharmacology and t… (2012) | popPK | 10 | [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309) | [22472992](https://pubmed.ncbi.nlm.nih.gov/22472992) | The paper describes a population PK study of fluindione in humans, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence text. |
+| `Verstuyft_2012_2.pdf` | Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmacokinetics (2012) | popPK | 10 | [10.2165/11595560-000000000-00000](https://doi.org/10.2165/11595560-000000000-00000) | [22149257](https://pubmed.ncbi.nlm.nih.gov/22149257) | The paper describes a population PK/PD model for fluindione in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| `Mentré_1998_2.pdf` | Mentré F et al., Population pharmacokinetic-pharmacodyna…, Clinical pharmacology and t… (1998) | popPK | 9 | [10.1016/S0009-9236(98)90122-9](https://doi.org/10.1016/S0009-9236(98)90122-9) | [9465843](https://pubmed.ncbi.nlm.nih.gov/9465843) | The study is a population PK/PD analysis of fluindione in humans, but the specific numeric PK parameter values (CL, V, Q) are not listed in the provided abstract, only the half-life and PD IC50 values. |
+| `Comets_1998.pdf` | Comets E et al., Modeling INR data to predict maintenanc…, Therapeutic drug monitoring (1998) | popPK | 8 | [10.1097/00007691-199812000-00009](https://doi.org/10.1097/00007691-199812000-00009) | [9853979](https://pubmed.ncbi.nlm.nih.gov/9853979) | The study models fluindione pharmacokinetics and estimates population characteristics, but the specific numeric parameter values are not present in the provided abstract or text. |
+| `Konecki_2024.pdf` | Konecki C et al., Population pharmacokinetics of unfracti…, Biomedicine & pharmacothera… (2024) | pd | 5 | [10.1016/j.biopha.2024.117700](https://doi.org/10.1016/j.biopha.2024.117700) | [39571244](https://www.ncbi.nlm.nih.gov/pubmed/39571244) | metadata signals extractable PD data (PK-PD) |
+| `Moreau_2012.pdf` | Moreau C et al., Vitamin K antagonists in children with…, Blood (2012) | pgx | 5 | [10.1182/blood-2011-07-365502](https://doi.org/10.1182/blood-2011-07-365502) | [22130800](https://www.ncbi.nlm.nih.gov/pubmed/22130800) | metadata signals extractable PGX data (VKORC1) |
+
+<sub>queue written 2026-10-05 15:54 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Comets_1998 | relevant | 8 | 0 | The study models fluindione pharmacokinetics and estimates population characteristics, but the specific numeric parameter values are not present in the provided abstract or text. |
+| PD | Comets_2000_2 | not_relevant | 4 | 2 | The paper discusses a PK/PD model involving C50 but reports only aggregate prediction errors and variability metrics (RMSE, %CV) for the product Cl*C50, without providing the specific numeric value for C50 or the underlying concentration-effect curve parameters. |
+| popPK | Comets_2012_2 | relevant | 10 | 0 | The paper describes a population PK study of fluindione in humans, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence text. |
+| PGx | Cullell_2018 | not_relevant | 2 | 0 | The paper is a general review of pharmacogenomics for oral anticoagulants and does not report specific quantitative PK/PD effects of gene variants on fluindione. |
+| PGx | Espana_2017 | not_relevant | 0 | 0 | The study investigates the role of ABC transporters in cell models but does not report any genetic variants or genotypes affecting pharmacokinetic or pharmacodynamic parameters. |
+| PD | Keréveur_1997_2 | not_relevant | 3 | 2 | The paper describes a case of resistance with qualitative PK/PD observations (e.g., low epoxide/vitamin K quotient) but does not provide a dose-response curve or numeric PD parameters (Emax, EC50) for fluindione. |
+| popPK | Konecki_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of unfractionated heparin, with fluindione mentioned only as a covariate for baseline activated clotting time. |
+| PD | Konecki_2024 | not_relevant | 0 | 0 | The paper reports a PK/PD model for unfractionated heparin, not fluindione; fluindione is only mentioned as a covariate affecting baseline ACT. |
+| PGx | Lamoureux_2017 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenetics in cardiovascular diseases and does not report specific data or effects for fluindione. |
+| popPK | Mentré_1998_2 | relevant | 9 | 2 | The study is a population PK/PD analysis of fluindione in humans, but the specific numeric PK parameter values (CL, V, Q) are not listed in the provided abstract, only the half-life and PD IC50 values. |
+| PGx | Militaru_2015 | not_relevant | 2 | 0 | The paper discusses fluindione only to classify it as an indandione metabolized by CYP2C9, but all reported pharmacogenomic data (dose reductions, INR times) are specific to warfarin and acenocoumarol, not fluindione. |
+| PD | Moreau_2012 | not_relevant | 3 | 2 | The paper reports a dose-requirement model (covariates predicting maintenance dose) rather than a pharmacodynamic exposure-response or concentration-effect relationship with numeric PD parameters like Emax or EC50. |
+| PGx | Moreau_2012 | not_relevant | 5 | 2 | The paper reports genetic determinants of warfarin dose, but the specific quantitative results and model predictions provided in the text are for warfarin, not fluindione. |
+| PD | Moreau_2014_2 | not_relevant | 3 | 0 | The paper reports a regression model for dose prediction based on genetic and clinical factors, not a pharmacodynamic exposure-response or dose-response curve with numeric PD parameters like Emax or EC50. |
+| PGx | Self_2015 | not_relevant | 0 | 0 | The paper reviews the effect of body weight on VKA dose, not the effect of gene variants on PK/PD parameters. |
+| PGx | Verstuyft_2003 | not_relevant | 2 | 5 | The study focuses on warfarin and acenocoumarol, explicitly excludes fluindione from the significant risk factor analysis, and reports clinical outcomes (INR/bleeding) rather than specific PK/PD parameters for fluindione. |
+| popPK | Verstuyft_2012_2 | relevant | 10 | 0 | The paper describes a population PK/PD model for fluindione in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| PD | Warot_2000_2 | not_relevant | 1 | 0 | The study reports PK parameters and qualitative PD observations (PT/INR) but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative exposure-response model. |
+| popPK | unknown_2019 | irrelevant | 0 | 0 | no_text gate: only 32 chars of text extracted (&lt; 400) |
+| PD | unknown_2019 | not_relevant | 0 | 0 | The provided text is only a header for conference oral presentations and contains no data, analysis, or mention of fluindione pharmacodynamics. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluindione%5D&body=Drug%3A%20fluindione%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluindione/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

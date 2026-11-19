@@ -1,0 +1,150 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;golimumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Golimumab_Lee2023_reference&quot;,&quot;label&quot;:&quot;Lee_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Lee2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_Dreesen2020_reference&quot;,&quot;label&quot;:&quot;Dreesen_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_Dreesen2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Golimumab_RodrguezFernndez2022_reference&quot;,&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_golimumab/Golimumab_RodrguezFernndez2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# golimumab
+
+- **generic name:** golimumab
+- **ATC codes:** `L04AB06`
+- **DrugBank:** [DB06674](https://go.drugbank.com/drugs/DB06674) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Golimumab is a monoclonal antibody immunosuppressant that blocks tumor necrosis factor alpha to treat conditions such as arthritis and ulcerative colitis. It is administered as a subcutaneous injection or an intravenous infusion. The medication is authorized in the European Union and is included in the World Health Organization list of essential medicines.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q413879](https://www.wikidata.org/wiki/Q413879), [Wikipedia](https://en.wikipedia.org/wiki/Golimumab?oldid=1367131716) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Start here
+
+> **Lee_2023_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> children and young adults with type 1 diabetes. [Run it in the simulator](drugs/drug_golimumab/Golimumab_Lee2023_reference.md?tab=Simulation) · [record](drugs/drug_golimumab/Golimumab_Lee2023_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">0.1</text><text x="184" y="34.0" font-size="11" text-anchor="end">Dreesen_2020 · CL/F</text><circle cx="282.8" cy="30.0" r="4" fill="#ef6c00"><title>Dreesen_2020 · CL/F: 0.01842 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Lee_2023 · CL/F</text><circle cx="382.2" cy="46.0" r="4" fill="#78909c"><title>Lee_2023 · CL/F: 0.03542 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Rodríguez-Fernández_2022 · CL/F</text><circle cx="455.9" cy="62.0" r="4" fill="#ef6c00"><title>Rodríguez-Fernández_2022 · CL/F: 0.0575 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Lee_2023 · V/F</text><circle cx="400.7" cy="30.0" r="4" fill="#78909c"><title>Lee_2023 · V/F: 16 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Rodríguez-Fernández_2022 · V/F</text><circle cx="434.3" cy="46.0" r="4" fill="#ef6c00"><title>Rodríguez-Fernández_2022 · V/F: 24.9 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Dreesen_2020 · V1/F</text><circle cx="353.9" cy="62.0" r="4" fill="#ef6c00"><title>Dreesen_2020 · V1/F: 8.64 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Lee_2023_reference](drugs/drug_golimumab/Golimumab_Lee2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Lee JB et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2217](https://doi.org/10.1002/jcph.2217) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Dreesen_2020_reference](drugs/drug_golimumab/Golimumab_Dreesen2020_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Dreesen E et al., A Population Pharmacokinetic and Exposu…, Inflammatory bowel diseases (2020) | [10.1093/ibd/izz144](https://doi.org/10.1093/ibd/izz144) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Rodríguez-Fernández_2022_reference](drugs/drug_golimumab/Golimumab_RodrguezFernndez2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Xu_2009_reference](drugs/drug_golimumab/Golimumab_Xu2009_reference.md) | — | 1-compartment (no model) | 0 | Xu Z et al., Population pharmacokinetics of golimuma…, Journal of clinical pharmac… (2009) | [10.1177/0091270009339192](https://doi.org/10.1177/0091270009339192) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Xu_2010_reference](drugs/drug_golimumab/Golimumab_Xu2010_reference.md) | — | 1-compartment (no model) | 0 | Xu ZH et al., Population pharmacokinetics of golimuma…, International journal of cl… (2010) | [10.5414/cpp48596](https://doi.org/10.5414/cpp48596) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Zhou_2007_reference](drugs/drug_golimumab/Golimumab_Zhou2007_reference.md) | — | 1-compartment (no model) | 0 | Zhou H et al., Pharmacokinetics and safety of golimuma…, Journal of clinical pharmac… (2007) | [10.1177/0091270006298188](https://doi.org/10.1177/0091270006298188) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hu_2011_ACR20](drugs/drug_golimumab/pd_Hu_2011_ACR20.md) | American College of Rheumatology index of improvement ← golimumab · indirect response — drug inhibits the production of American College of Rheumatology index of improvement | — | Hu C et al., Population approach for exposure-respon…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372520](https://doi.org/10.1177/0091270010372520) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hu_2013_ACR20_50_70](drugs/drug_golimumab/pd_Hu_2013_ACR20_50_70.md) | American College of Rheumatology disease severity criteria (ACR20/50/70) ← golimumab · indirect response — drug inhibits the production of American College of Rheumatology disease severity criteria (ACR20/50/70) | — | Hu C et al., Latent variable indirect response model…, Journal of pharmacokinetics… (2013) | [10.1007/s10928-012-9288-7](https://doi.org/10.1007/s10928-012-9288-7) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hu_2018_Mayo](drugs/drug_golimumab/pd_Hu_2018_Mayo.md) | Mayo scores ← golimumab · indirect response — drug inhibits the production of Mayo scores | — | Hu C et al., Modeling near-continuous clinical endpo…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9610-0](https://doi.org/10.1007/s10928-018-9610-0) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hutas_2010_Anti_TNF_alpha_activity](drugs/drug_golimumab/pd_Hutas_2010_Anti_TNF_alpha_activity.md) | Anti-TNF-alpha activity ← golimumab · inhibition effect | — | Hutas G, Golimumab as the first monthly subcutan…, Immunotherapy (2010) | [10.2217/imt.10.34](https://doi.org/10.2217/imt.10.34) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Molinelli_2020_PD](drugs/drug_golimumab/pd_Molinelli_2020_PD.md) | pharmacodynamics ← golimumab · inhibition effect | — | Molinelli E et al., Metabolic, pharmacokinetic, and toxicol…, Expert opinion on drug meta… (2020) | [10.1080/17425255.2020.1810233](https://doi.org/10.1080/17425255.2020.1810233) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Roblin_2024_TDM](drugs/drug_golimumab/pd_Roblin_2024_TDM.md) | TDM for golimumab ← golimumab · model not identified | — | Roblin X et al., Therapeutic drug monitoring in inflamma…, Expert review of gastroente… (2024) | [10.1080/17474124.2024.2409300](https://doi.org/10.1080/17474124.2024.2409300) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dreesen_2020_MES](drugs/drug_golimumab/pd_Dreesen_2020_MES.md) | Mayo endoscopic subscore (MES) ← golimumab · categorical (graded) response model | — | Dreesen E et al., A Population Pharmacokinetic and Exposu…, Inflammatory bowel diseases (2020) | [10.1093/ibd/izz144](https://doi.org/10.1093/ibd/izz144) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Hu_2010_latent_ACR](drugs/drug_golimumab/pd_Hu_2010_latent_ACR.md) | latent variable representing ACR20, ACR50, and ACR70 ← golimumab · categorical (graded) response model | — | Hu C et al., A latent variable approach for modeling…, Journal of pharmacokinetics… (2010) | [10.1007/s10928-010-9162-4](https://doi.org/10.1007/s10928-010-9162-4) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Xu_2019_Mayo_score](drugs/drug_golimumab/pd_Xu_2019_Mayo_score.md) | Mayo score-based efficacy outcomes ← golimumab · categorical (graded) response model | — | Xu Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1353](https://doi.org/10.1002/jcph.1353) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **HLA** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Jan_2025](drugs/drug_golimumab/pgx_Jan_2025_HLA_safety.md) | Jan Z et al., Pharmacogenomics of TNF inhibitors, Frontiers in immunology (2025) | [10.3389/fimmu.2025.1521794](https://doi.org/10.3389/fimmu.2025.1521794) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **Non-HLA variants** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Jan_2025](drugs/drug_golimumab/pgx_Jan_2025_Non_HLA_variants_Q100.md) | Jan Z et al., Pharmacogenomics of TNF inhibitors, Frontiers in immunology (2025) | [10.3389/fimmu.2025.1521794](https://doi.org/10.3389/fimmu.2025.1521794) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=golimumab).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: HLA (safety_allele), NON-HLA VARIANTS (unknown), TNF (antibody).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 00:16 | 10:48 | 3/3/0 | 9/0/0 | 1/0/1 | 354,502/55,987 | einfracz / qwen3.8-27b | 12 | 2/6 | 12/0 | 1 |
+
+## Coverage
+
+- **PubMed hits:** 94 matched, 73 returned
+- **screened:** 9  ·  **relevant:** 9
+- **records:** 6  ·  extracted 1  ·  needs review 2  ·  rejected 3  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Adedokun_2020.pdf` | Adedokun OJ et al., Population Pharmacokinetics and Exposur…, Clinical therapeutics (2020) | popPK | 10 | [10.1016/j.clinthera.2019.11.010](https://doi.org/10.1016/j.clinthera.2019.11.010) | [31982148](https://pubmed.ncbi.nlm.nih.gov/31982148) | The study reports a population PK model for golimumab with specific numeric values for clearance, volume of distribution, intercompartmental clearance, half-life, and bioavailability. |
+| `Hu_2011.pdf` | Hu C et al., Population approach for exposure-respon…, Journal of clinical pharmac… (2011) | popPK | 10 | [10.1177/0091270010372520](https://doi.org/10.1177/0091270010372520) | [20622199](https://pubmed.ncbi.nlm.nih.gov/20622199) | The paper describes a population PK/PD modeling study for golimumab in humans, but the specific numeric disposition parameters (CL, V) are not listed in the provided abstract text, likely residing in the full body or tables not included. |
+| `Lee_2023.pdf` | Lee JB et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2023) | popPK | 10 | [10.1002/jcph.2217](https://doi.org/10.1002/jcph.2217) | [36854991](https://pubmed.ncbi.nlm.nih.gov/36854991) | The evidence provides explicit numeric values for apparent clearance, volume of distribution, and absorption rate constant from a population PK model of golimumab in humans. |
+| `Shao_2024.pdf` | Shao J et al., Combination Therapy With Guselkumab and…, Clinical pharmacology and t… (2024) | popPK | 10 | [10.1002/cpt.3235](https://doi.org/10.1002/cpt.3235) | [38488354](https://pubmed.ncbi.nlm.nih.gov/38488354) | The paper describes population PK models for golimumab but provides no specific numeric parameter values (CL, V, etc.) in the text evidence. |
+| `Xu_2009.pdf` | Xu Z et al., Population pharmacokinetics of golimuma…, Journal of clinical pharmac… (2009) | popPK | 10 | [10.1177/0091270009339192](https://doi.org/10.1177/0091270009339192) | [19617465](https://pubmed.ncbi.nlm.nih.gov/19617465) | The paper reports specific quantitative population pharmacokinetic parameters (CL, V, Ka) for golimumab in patients with psoriatic arthritis. |
+| `Xu_2010.pdf` | Xu ZH et al., Population pharmacokinetics of golimuma…, International journal of cl… (2010) | popPK | 10 | [10.5414/cpp48596](https://doi.org/10.5414/cpp48596) | [20860913](https://pubmed.ncbi.nlm.nih.gov/20860913) | The paper reports a population PK model for golimumab in humans with specific numeric values for clearance, volume, and absorption rate directly in the text. |
+| `Xu_2019.pdf` | Xu Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | popPK | 10 | [10.1002/jcph.1353](https://doi.org/10.1002/jcph.1353) | [30536638](https://pubmed.ncbi.nlm.nih.gov/30536638) | The abstract provides the terminal half-life values (9.2 and 9.5 days) but omits specific numeric values for clearance and volume of distribution, which are central to the population PK model described. |
+| `Zhou_2007.pdf` | Zhou H et al., Pharmacokinetics and safety of golimuma…, Journal of clinical pharmac… (2007) | popPK | 10 | [10.1177/0091270006298188](https://doi.org/10.1177/0091270006298188) | [17322150](https://pubmed.ncbi.nlm.nih.gov/17322150) | The paper reports a full population pharmacokinetic model for golimumab in humans with all numeric parameter values (CL, Vc, Q, Vp) explicitly stated in the abstract. |
+| `Berends_2019.pdf` | Berends SE et al., Pharmacokinetics of golimumab in modera…, Scandinavian journal of gas… (2019) | popPK | 9 | [10.1080/00365521.2019.1619828](https://doi.org/10.1080/00365521.2019.1619828) | [31132014](https://pubmed.ncbi.nlm.nih.gov/31132014) | The paper reports a population PK model for golimumab in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only qualitative associations and drug concentrations. |
+
+<sub>queue written 2026-10-07 00:10 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Adedokun_2017 | relevant | 9 | 2 | The paper reports detailed serum concentration-time profiles and dose proportionality for golimumab in humans, but does not explicitly provide quantitative compartmental PK parameters (CL, V, Q, half-life) in the text. |
+| popPK | Berends_2019 | relevant | 9 | 2 | The paper reports a population PK model for golimumab in humans, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only qualitative associations and drug concentrations. |
+| PGx | Cordero-Coma_2015 | not_relevant | 0 | 0 | The paper is a clinical review of anti-TNF therapy for uveitis and does not report pharmacogenomic effects on golimumab PK/PD parameters. |
+| popPK | Detrez_2017 | irrelevant | 0 | 0 | no_text gate: only 196 chars of text extracted (&lt; 400) |
+| PGx | Dong_2025 | not_relevant | 2 | 0 | The paper reports a gene expression signature associated with clinical response to golimumab, not a specific pharmacokinetic or pharmacodynamic parameter alteration due to a genetic variant. |
+| popPK | Ebina_2025 | irrelevant | 0 | 0 | The study is a real-world cohort analysis of clinical effectiveness and safety (treatment retention, CDAI) in rheumatoid arthritis, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Hu_2010 | irrelevant | 2 | 0 | The paper focuses on a pharmacodynamic (efficacy) model for categorical endpoints and does not report quantitative pharmacokinetic parameter values (CL, V, etc.) for golimumab. |
+| popPK | Hu_2013 | irrelevant | 1 | 0 | This is a methodology paper for exposure-response (efficacy) modeling that uses golimumab data but does not report quantitative pharmacokinetic disposition parameters. |
+| popPK | Hu_2018 | irrelevant | 2 | 0 | The paper focuses on exposure-response modeling of clinical endpoints (Mayo scores) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for golimumab. |
+| popPK | Hu_2023 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic exposure-response modeling of clinical endpoints (fecal calprotectin, disease severity) for a combination therapy, not on quantitative pharmacokinetic parameters (CL, V, etc.) for golimumab. |
+| PGx | Jan_2025 | not_relevant | 5 | 2 | The text is a review that discusses pharmacogenomic principles and HLA variants generally for TNFi, but it does not report specific findings or quantitative data on how a gene variant changes the PK/PD of golimumab. |
+| popPK | Kinzer_2023 | irrelevant | 0 | 0 | The study is a physicochemical and functional characterization (binding/effector function) of anti-TNF antibodies, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Lee_2022 | irrelevant | 1 | 1 | The study uses a previously developed PK model to predict exposure (Cmax/Ctrough) rather than reporting new quantitative disposition parameters (CL, V, ka). |
+| PGx | Murdaca_2014 | not_relevant | 1 | 0 | The paper is a general review of pharmacogenetics for etanercept and does not report specific genetic associations or quantitative PK/PD effects for golimumab. |
+| PGx | Murdaca_2018 | not_relevant | 0 | 0 | The paper discusses the clinical efficacy and safety of etanercept, not golimumab, and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Pouillon_2016 | not_relevant | 0 | 0 | The paper is a review of anti-TNF therapy considerations, challenges, and future directions, and does not report specific pharmacogenomic effects on the PK or PD of golimumab. |
+| popPK | Ramanathan_2025 | irrelevant | 2 | 0 | The paper is a methodological review applying a diffusion model to previously published data for 13 antibodies, including golimumab, but it does not report original quantitative disposition parameters (CL, V, ka) for golimumab, nor are the specific numeric values from the original sources provided in the evidence. |
+| popPK | Roblin_2024 | irrelevant | 1 | 0 | This is a review article discussing therapeutic drug monitoring concepts and does not provide quantitative pharmacokinetic parameter values for golimumab. |
+| popPK | Shao_2024 | relevant | 10 | 1 | The paper describes population PK models for golimumab but provides no specific numeric parameter values (CL, V, etc.) in the text evidence. |
+| PGx | Shibata_2026 | not_relevant | 3 | 5 | The study evaluates ADA levels and HLA associations, noting free drug concentration changes in ADA-positive patients, but does not establish a causal link between specific host gene variants (genotypes) and PK parameters, which is required for pharmacogenomics. |
+| PGx | Standish_2017 | not_relevant | 1 | 5 | The study estimates the heritability of response phenotypes in a golimumab trial but does not report specific gene variants affecting pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Steenholdt_2025 | irrelevant | 0 | 0 | The study is a retrospective cohort analyzing treatment sequencing and outcomes in IBD, using drug concentration thresholds to classify PK/PD failure, but does not report pharmacokinetic disposition parameters (CL, V, Q, etc.) for golimumab. |
+| PGx | Telesco_2018 | not_relevant | 5 | 5 | The paper investigates gene expression signatures to predict clinical response, but does not report a pharmacogenomic effect on the pharmacokinetic or pharmacodynamic parameters of golimumab itself (e.g., drug levels or receptor activity). |
+| popPK | Vuyyuru_2024 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy outcomes (clinical response, remission, Mayo scores) and does not report pharmacokinetic parameters (CL, V, half-life) for golimumab. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgolimumab%5D&body=Drug%3A%20golimumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_golimumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 00:10 UTC</sub>

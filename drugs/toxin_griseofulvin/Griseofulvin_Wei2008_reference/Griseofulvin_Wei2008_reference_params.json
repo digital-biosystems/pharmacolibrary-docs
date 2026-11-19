@@ -1,0 +1,44 @@
+{
+ "dose_source": "paper",
+ "model_id": "Griseofulvin_Wei2008_reference",
+ "molar_masses": {
+  "central.C": 0.352767
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3500.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Wei_2008:prose",
+    "value_si": 0.0009809999999999999
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.8472222222222223e-06,
+  "F": 1.0,
+  "MM": 0.352767,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0005914285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0035,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12408.45655561165
+ },
+ "reference_peaks": {
+  "central.C": 0.04938728467898269
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Everolimus_Hirabatake2022_reference",
+ "molar_masses": {
+  "central.C": 0.95824
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.5,
+  5.0,
+  10.0
+ ],
+ "parameters": {
+  "Cl": 3.2500000000000002e-06,
+  "F": 1.0,
+  "MM": 0.95824,
+  "VdPerKg": 0.0007714285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "k12": 0.00021707818930041153,
+  "k21": 3.7886949651655534e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662069
+ },
+ "reference_peaks": {
+  "central.C": 1.9418462450562747e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

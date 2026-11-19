@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 5 mg oral (C08CA01)",
+ "model_id": "Amlodipine_Rohatagi2008_population_mean_se",
+ "molar_masses": {
+  "central.C": 0.40887599999999996
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.722222222222222e-07,
+  "F": 0.9,
+  "MM": 0.40887599999999996,
+  "Tlag": 0.0,
+  "VdPerKg": 2.857142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "k21": 0.00022444444444444443,
+  "ka": 0.0006388888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 19392.38476953908
+ },
+ "reference_peaks": {
+  "central.C": 1.603104698730764e-08
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

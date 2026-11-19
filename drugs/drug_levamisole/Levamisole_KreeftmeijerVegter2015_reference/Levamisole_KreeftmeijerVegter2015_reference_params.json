@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 150 mg oral (P02CE01)",
+ "model_id": "Levamisole_KreeftmeijerVegter2015_reference",
+ "molar_masses": {
+  "central.C": 0.204291
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.0008555555555555555,
+  "F": 1.0,
+  "MM": 0.204291,
+  "Tlag": 0.0,
+  "VdPerKg": 0.236,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00015,
+  "ka": 0.00022222222222222223,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8830.460921843687
+ },
+ "reference_peaks": {
+  "central.C": 5.831513509485031e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

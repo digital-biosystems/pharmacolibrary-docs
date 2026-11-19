@@ -1,0 +1,96 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D04A&quot;,&quot;href&quot;:&quot;atc/D04A.md&quot;},{&quot;label&quot;:&quot;clemastine&quot;}]"></div>
+
+# clemastine
+
+- **generic name:** clemastine
+- **ATC codes:** `D04AA14`, `R06AA04`
+- **DrugBank:** [DB00283](https://go.drugbank.com/drugs/DB00283) · **PubChem:** [CID 26987](https://pubchem.ncbi.nlm.nih.gov/compound/26987)
+- **molar mass:** 343.89 g/mol (C21H26ClNO) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Clemastine is a first-generation H1 antagonist used to treat conditions like urticaria. It is given by mouth in forms such as tablets, syrups, and gels, and is well absorbed. The drug is currently in use, indicated by its approved status.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q418145](https://www.wikidata.org/wiki/Q418145), [Wikipedia](https://en.wikipedia.org/wiki/Clemastine?oldid=1352982170) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Abbaali_2021_CC50](drugs/drug_clemastine/pd_Abbaali_2021_CC50.md) | HFF cytotoxicity (MTT) ← clemastine · stimulation effect | — | Abbaali I et al., Systematic Analysis of Clemastine, a Ca…, International journal of mo… (2021) | [10.3390/ijms23010068](https://doi.org/10.3390/ijms23010068) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Abbaali_2021_EC50](drugs/drug_clemastine/pd_Abbaali_2021_EC50.md) | percent total plaque area relative to control cultures ← clemastine · inhibition effect | — | Abbaali I et al., Systematic Analysis of Clemastine, a Ca…, International journal of mo… (2021) | [10.3390/ijms23010068](https://doi.org/10.3390/ijms23010068) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Planer_2014_T_cruzi_growth_inhibition](drugs/drug_clemastine/pd_Planer_2014_T_cruzi_growth_inhibition.md) | T. cruzi growth inhibition ← Clemastine · inhibition effect | — | Planer JD et al., Synergy testing of FDA-approved drugs i…, PLoS neglected tropical dis… (2014) | [10.1371/journal.pntd.0002977](https://doi.org/10.1371/journal.pntd.0002977) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_MERS_CoV_S_pseudovirus](drugs/drug_clemastine/pd_Yang_2021_MERS_CoV_S_pseudovirus.md) | MERS-CoV S pseudovirus infection ← Clemastine · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS2_S_pseudovirus](drugs/drug_clemastine/pd_Yang_2021_SARS2_S_pseudovirus.md) | SARS2-S pseudovirus infectivity ← Clemastine · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_SARS_CoV_S_pseudovirus](drugs/drug_clemastine/pd_Yang_2021_SARS_CoV_S_pseudovirus.md) | SARS-CoV S pseudovirus infection ← Clemastine · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2021_viral_RNA_load](drugs/drug_clemastine/pd_Yang_2021_viral_RNA_load.md) | SARS-CoV-2 virus replication ← Clemastine · direct sigmoid Emax (Hill) effect | — | Yang L et al., Identification of SARS-CoV-2 entry inhi…, Acta pharmacologica Sinica (2021) | [10.1038/s41401-020-00556-6](https://doi.org/10.1038/s41401-020-00556-6) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span> | [Wang_1998_QT](drugs/drug_clemastine/pd_Wang_1998_QT.md) | QT prolongation ← clemastine · stimulation effect | — | Wang WX et al., "Conventional" antihistamines slow card…, Journal of cardiovascular p… (1998) | [10.1097/00005344-199807000-00019](https://doi.org/10.1097/00005344-199807000-00019) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Wikberg_1992_3H_idazoxan_binding_to_I_receptors](drugs/drug_clemastine/pd_Wikberg_1992_3H_idazoxan_binding_to_I_receptors.md) | [3H]idazoxan binding to I-receptors ← clemastin · inhibition effect | — | Wikberg JE et al., Evidence that drug binding to non-adren…, Pharmacology & toxicology (1992) | [10.1111/j.1600-0773.1992.tb00459.x](https://doi.org/10.1111/j.1600-0773.1992.tb00459.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clemastine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: HRH1 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 14:15 | 2:37 | 0/0/0 | 3/2/0 | 0/0/0 | 85,887/11,755 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 17 matched, 17 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abbaali_2021 | irrelevant | 0 | 0 | This is an in-vitro antiparasitic activity study and reports no clemastine disposition parameters. |
+| popPK | Agostino_2024 | irrelevant | 0 | 0 | This is an in-vitro antileishmanial screening study and reports no clemastine pharmacokinetic parameters. |
+| popPK | Bomgren_1996 | irrelevant | 0 | 0 | Clemastine is only an in-vitro receptor antagonist, with no pharmacokinetic parameters reported. |
+| popPK | Bánovcin_1987 | irrelevant | 0 | 0 | Clemastine is used as an in-vitro pharmacological probe, with no pharmacokinetic parameters reported. |
+| popPK | Gozalo_1985 | irrelevant | 0 | 0 | Clemastine is used in a human bronchial-response study, with no pharmacokinetic parameters or values reported. |
+| popPK | Martin_2025 | irrelevant | 0 | 0 | The study measures remyelination effects, not clemastine pharmacokinetics or disposition parameters. |
+| popPK | Mina_2021 | irrelevant | 1 | 6 | The paper is not a PK study, though it quotes a numeric volume of distribution in the discussion. |
+| popPK | Noble_1986 | irrelevant | 0 | 0 | This in-vitro receptor-response study uses clemastine as an antagonist and reports no pharmacokinetic parameters. |
+| popPK | Planer_2014 | irrelevant | 0 | 0 | This is an antiparasitic efficacy study and reports no quantitative clemastine disposition parameters. |
+| popPK | Radermecker_1981 | irrelevant | 0 | 0 | This is an in-vitro histamine-release study and reports no clemastine pharmacokinetic parameters. |
+| popPK | Santos_1995 | irrelevant | 0 | 0 | Clemastine is only a receptor antagonist comparator in an in-vitro neuronal experiment, with no pharmacokinetic parameters reported. |
+| popPK | Vuurman_1994 | irrelevant | 0 | 0 | Clemastine was an active control in a driving-performance study, with no pharmacokinetic parameters reported. |
+| popPK | Wahlgren_1991 | irrelevant | 0 | 0 | Clemastine was used as an antihistamine treatment, but no pharmacokinetic disposition parameters are reported. |
+| popPK | Wang_1998 | irrelevant | 0 | 0 | This isolated-heart pharmacodynamic study reports QT effects, not clemastine disposition parameters. |
+| popPK | Wikberg_1992 | irrelevant | 0 | 0 | Clemastin is only a receptor-binding competitor; no pharmacokinetic disposition parameters are reported. |
+| popPK | Yamanaka_1981 | irrelevant | 0 | 0 | Clemastine is only a comparator in pharmacological experiments, with no quantitative pharmacokinetic parameters reported. |
+| popPK | Yang_2021 | irrelevant | 0 | 0 | This is an in-vitro antiviral screening study reporting efficacy values, not clemastine pharmacokinetic disposition parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclemastine%5D&body=Drug%3A%20clemastine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clemastine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

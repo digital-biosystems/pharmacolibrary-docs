@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg oral (R03DA04)",
+ "model_id": "Theophylline_Kurata2021v2_reference",
+ "molar_masses": {
+  "central.C": 0.180167
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.313888888888889e-08,
+  "F": 1.0,
+  "MM": 0.180167,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0012900000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "ka": 0.00041894444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 19796.11886026453
+ },
+ "reference_peaks": {
+  "central.C": 0.004417408077651143
+ },
+ "review_status": "needs_review",
+ "stop_time": 15552000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

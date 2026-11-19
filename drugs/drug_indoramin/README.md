@@ -1,0 +1,128 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;indoramin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indoramin_Norbury1983_reference&quot;,&quot;label&quot;:&quot;Norbury_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_indoramin/Indoramin_Norbury1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# indoramin
+
+- **generic name:** indoramin
+- **ATC codes:** `C02CA02`
+- **DrugBank:** [DB08950](https://go.drugbank.com/drugs/DB08950) · **PubChem:** [CID 33625](https://pubchem.ncbi.nlm.nih.gov/compound/33625)
+- **molar mass:** 347.4534 g/mol (C22H25N3O) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Indoramin is an alpha-adrenergic antagonist used to treat high blood pressure and prostate enlargement. It is administered orally as a tablet. The drug is currently withdrawn from use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q408963](https://www.wikidata.org/wiki/Q408963), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| indoramin | parent | 347.453 | C22H25N3O | DrugBank | [33625](https://pubchem.ncbi.nlm.nih.gov/compound/33625) | Norbury_1983 |
+
+## Start here
+
+> **Norbury_1983_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> middle-aged healthy volunteers, n = &gt;=10. [Run it in the simulator](drugs/drug_indoramin/Indoramin_Norbury1983_reference.md?tab=Simulation) · [record](drugs/drug_indoramin/Indoramin_Norbury1983_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Norbury_1983_reference](drugs/drug_indoramin/Indoramin_Norbury1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Norbury HM et al., Pharmacokinetics of intravenous indoram…, European journal of clinica… (1983) | [10.1007/BF00543798](https://doi.org/10.1007/BF00543798) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=indoramin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1D (inhibitor), ADRA2B (inhibitor), ADRA2C (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 14:03 | 3:37 | 1/0/0 | 0/0/0 | 0/0/0 | 49,360/6,563 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 44 matched, 43 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Neumann_1986.pdf` | Neumann G et al., Pharmacokinetics of indoramin and its m…, Journal of cardiovascular p… (1986) | popPK | 10 | [10.1097/00005344-198600082-00005](https://doi.org/10.1097/00005344-198600082-00005) | [2423791](https://pubmed.ncbi.nlm.nih.gov/2423791) | The abstract explicitly reports quantitative pharmacokinetic parameters (clearance, half-life, volume of distribution) for indoramin in human subjects. |
+| `Norbury_1983.pdf` | Norbury HM et al., Pharmacokinetics of intravenous indoram…, European journal of clinica… (1983) | popPK | 10 | [10.1007/BF00543798](https://doi.org/10.1007/BF00543798) | [6628508](https://pubmed.ncbi.nlm.nih.gov/6628508) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for indoramin in humans. |
+| `Pierce_1987_2.pdf` | Pierce DM et al., Pharmacokinetics and systemic availabil…, European journal of clinica… (1987) | popPK | 10 | [10.1007/BF02455999](https://doi.org/10.1007/BF02455999) | [3653231](https://pubmed.ncbi.nlm.nih.gov/3653231) | The paper reports quantitative pharmacokinetic parameters (Vd, CL, t1/2, bioavailability) for indoramin in healthy human subjects. |
+| `Norbury_1984.pdf` | Norbury HM et al., Pharmacokinetics of oral indoramin in e…, European journal of clinica… (1984) | popPK | 9 | [10.1007/BF00544054](https://doi.org/10.1007/BF00544054) | [6499905](https://pubmed.ncbi.nlm.nih.gov/6499905) | The study reports quantitative pharmacokinetic parameters (half-life, AUC) for indoramin in humans, with specific numeric values provided in the abstract. |
+| `Pierce_1987.pdf` | Pierce DM et al., The pharmacokinetics of indoramin and 6…, European journal of clinica… (1987) | popPK | 9 | [10.1007/BF00610381](https://doi.org/10.1007/BF00610381) | [3691597](https://pubmed.ncbi.nlm.nih.gov/3691597) | The study reports quantitative pharmacokinetic parameters (Cmax, AUC, t1/2) for indoramin in humans, with specific numeric values provided in the abstract. |
+| `Schabort_1990.pdf` | Schabort I et al., The pharmacokinetics of oral indoramin…, British journal of clinical… (1990) | popPK | 9 | [10.1111/j.1365-2125.1990.tb03656.x](https://doi.org/10.1111/j.1365-2125.1990.tb03656.x) | [2328193](https://pubmed.ncbi.nlm.nih.gov/2328193) | The study reports pharmacokinetic parameters for indoramin in humans, but the specific numeric values are described qualitatively (e.g., "similar order", "no significant differences") without providing the actual data in the evidence. |
+| `Abrams_1989.pdf` | Abrams SM et al., Pharmacokinetic interaction between ind…, Human toxicology (1989) | popPK | 8 | [10.1177/096032718900800306](https://doi.org/10.1177/096032718900800306) | [2744781](https://pubmed.ncbi.nlm.nih.gov/2744781) | The study reports pharmacokinetic parameters (Cpmax, AUC, half-life) for indoramin in humans, but only provides percentage changes relative to control rather than absolute numeric values for clearance or volume. |
+| `Pierce_1988.pdf` | Pierce DM et al., Pharmacokinetics of indoramin and its 6…, Biopharmaceutics & drug dis… (1988) | popPK | 8 | [10.1002/bod.2510090204](https://doi.org/10.1002/bod.2510090204) | [2897212](https://pubmed.ncbi.nlm.nih.gov/2897212) | The study reports qualitative PK findings (accumulation, AUC ratios) for indoramin in humans, but specific numeric parameter values (CL, V, t1/2) are not present in the provided text. |
+| `Volans_1982.pdf` | Volans GN et al., Pharmacokinetics of oral indoramin, Current medical research an… (1982) | popPK | 8 | [10.1185/03007998209109757](https://doi.org/10.1185/03007998209109757) | [7105823](https://pubmed.ncbi.nlm.nih.gov/7105823) | The study reports qualitative PK parameters (tmax, t1/2) for indoramin in humans, but specific numeric values for clearance, volume, or ka are not present in the provided text. |
+| `McPherson_1982.pdf` | McPherson GA et al., A study of alpha 1-adrenoceptors in rat…, British journal of pharmaco… (1982) | pd | 4 | [10.1111/j.1476-5381.1982.tb09284.x](https://doi.org/10.1111/j.1476-5381.1982.tb09284.x) | [6127133](https://www.ncbi.nlm.nih.gov/pubmed/6127133) | metadata signals extractable PD data (EC50) |
+| `Minneman_1983.pdf` | Minneman KP et al., Occupancy of alpha 1-adrenergic recepto…, Molecular pharmacology (1983) | pd | 4 |  | [6300645](https://www.ncbi.nlm.nih.gov/pubmed/6300645) | metadata signals extractable PD data (EC50) |
+| `Nedergaard_1986.pdf` | Nedergaard OA, Pre- and postsynaptic effects of indora…, Journal of cardiovascular p… (1986) | pd | 4 | [10.1097/00005344-198609000-00021](https://doi.org/10.1097/00005344-198609000-00021) | [2429075](https://www.ncbi.nlm.nih.gov/pubmed/2429075) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-06 14:01 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abrams_1989 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (Cpmax, AUC, half-life) for indoramin in humans, but only provides percentage changes relative to control rather than absolute numeric values for clearance or volume. |
+| popPK | Archibald_1986 | irrelevant | 2 | 0 | The paper is a review that summarizes findings without providing original quantitative PK parameter values (CL, V, Q, ka) or compartmental models, mentioning only a qualitative half-life estimate. |
+| popPK | Bauer_1984 | irrelevant | 0 | 0 | The study reports hemodynamic and renal function parameters (GFR, RPF, etc.) rather than pharmacokinetic disposition parameters (CL, V, t1/2) for indoramin. |
+| popPK | Bauer_1985 | irrelevant | 0 | 0 | The paper is a review of renal effects of adrenergic blocking agents and does not report pharmacokinetic parameters for indoramin. |
+| popPK | Bill_1989 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of thermogenic actions in mice where indoramin is used only as a comparator antagonist, with no pharmacokinetic parameters reported. |
+| PD | Bill_1989 | not_relevant | 1 | 0 | The paper reports dose-response relationships for alpha-2 agonists (clonidine, UK-14,304, B-HT 933), but indoramin is only mentioned as a partial antagonist with variable, non-dose-related effects and no numeric PD parameters are provided for it. |
+| popPK | Boe_1980 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenergic receptors where indoramine is used as a blocking agent, not a pharmacokinetic study of indoramine's disposition. |
+| popPK | Deering_1988 | irrelevant | 0 | 0 | The study focuses on baroreflex sensitivity and hemodynamic effects, not pharmacokinetic parameters like clearance or volume. |
+| popPK | Draffan_1976 | irrelevant | 2 | 0 | The study describes qualitative pharmacokinetic properties (absorption, metabolism, clearance relative to liver flow) but does not report specific quantitative parameter values (e.g., CL in L/h, V in L, t1/2 in h) for indoramin in the provided text. |
+| PD | Good_1988 | not_relevant | 2 | 0 | The text describes qualitative hemodynamic effects of indoramin compared to other agents but does not provide numeric concentration-effect data, dose-response curves, or specific PD parameters (e.g., Emax, EC50). |
+| PD | Holmes_1986 | not_relevant | 2 | 0 | The text is a qualitative review of therapeutic efficacy and side effects, lacking any numeric concentration-effect data, dose-response curves, or PD parameters (Emax, EC50). |
+| popPK | McAdams_1986 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenoceptor sensitivity in rat tissues, not a pharmacokinetic study of indoramin. |
+| PD | McAdams_1986 | not_relevant | 0 | 0 | The text is a correction notice regarding a grammatical error in a sentence about pA2 values and does not contain any numeric PD parameters or exposure-response data. |
+| popPK | McPherson_1982 | irrelevant | 0 | 0 | no_text gate: only 177 chars of text extracted (&lt; 400) |
+| PD | McPherson_1982 | not_relevant | 0 | 0 | The paper focuses on alpha-1 adrenoceptor binding and gluconeogenesis in rat renal cortex and does not mention indoramin or report any pharmacodynamic parameters for it. |
+| popPK | Minneman_1983 | irrelevant | 0 | 0 | no_text gate: only 77 chars of text extracted (&lt; 400) |
+| popPK | Morrison_1986 | irrelevant | 0 | 0 | The study investigates renal function and hemodynamics, not the pharmacokinetic disposition parameters (CL, V, t1/2) of indoramin. |
+| popPK | Nicholls_1983 | irrelevant | 0 | 0 | The study reports hemodynamic effects (blood pressure and heart rate) rather than pharmacokinetic parameters (clearance, volume, half-life). |
+| popPK | Paciorek_1984 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of adrenoceptor selectivity in rats, using indoramin only as a comparator agent, and reports no pharmacokinetic parameters. |
+| PD | Paciorek_1984 | not_relevant | 2 | 1 | The paper describes qualitative dose-response shifts and selectivity comparisons for indoramin but does not provide numeric PD parameters (e.g., pA2, Ki, Emax, EC50) or extractable concentration-effect curves. |
+| popPK | Pierce_1988 | relevant | 8 | 2 | The study reports qualitative PK findings (accumulation, AUC ratios) for indoramin in humans, but specific numeric parameter values (CL, V, t1/2) are not present in the provided text. |
+| popPK | Pierce_1988_2 | irrelevant | 2 | 0 | The study reports only coefficients of variation and sums of squares for variability, lacking specific quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Pierce_1990 | irrelevant | 2 | 8 | The paper is explicitly identified as a review of clinical pharmacokinetics, which falls under the exclusion criteria for reviews without original values, despite containing numeric ranges. |
+| PD | Pierce_1990 | not_relevant | 1 | 0 | The paper is a review of pharmacokinetics and metabolism; it qualitatively mentions that pharmacodynamics are related to the drug and metabolite but provides no numeric PD parameters or exposure-response data. |
+| PD | Punyauppa-Path_2026 | not_relevant | 0 | 0 | The paper is a food science study on yogurt formulation; indoramin is only mentioned as a metabolite in molecular docking simulations, with no pharmacodynamic or exposure-response data. |
+| popPK | Schabort_1990 | relevant | 9 | 2 | The study reports pharmacokinetic parameters for indoramin in humans, but the specific numeric values are described qualitatively (e.g., "similar order", "no significant differences") without providing the actual data in the evidence. |
+| popPK | Silke_1986 | irrelevant | 2 | 0 | The study reports haemodynamic dose-response effects and qualitative plasma concentration observations, but does not provide quantitative pharmacokinetic parameters (CL, V, t1/2) or a PK model. |
+| popPK | Studer_1993 | irrelevant | 0 | 0 | The paper is a review of antihypertensive therapy that mentions indoramin only as a class example without providing any quantitative pharmacokinetic parameters. |
+| popPK | Volans_1982 | relevant | 8 | 2 | The study reports qualitative PK parameters (tmax, t1/2) for indoramin in humans, but specific numeric values for clearance, volume, or ka are not present in the provided text. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindoramin%5D&body=Drug%3A%20indoramin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indoramin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 14:01 UTC</sub>

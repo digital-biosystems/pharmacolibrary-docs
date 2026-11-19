@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 4000 mg parenteral (J01CA17)",
+ "model_id": "Temocillin_van2024_reference",
+ "molar_masses": {
+  "central.C": 0.41445
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0250000000000001e-06,
+  "F": 1.0,
+  "MM": 0.41445,
+  "VdPerKg": 0.0002,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.004,
+  "k12": 0.00016765873015873016,
+  "k21": 0.00010816692268305172,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662034
+ },
+ "reference_peaks": {
+  "central.C": 0.06570341837352742
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

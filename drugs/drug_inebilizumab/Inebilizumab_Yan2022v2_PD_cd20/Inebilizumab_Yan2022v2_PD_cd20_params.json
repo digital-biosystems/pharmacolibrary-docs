@@ -1,0 +1,55 @@
+{
+ "model_id": "Inebilizumab_Yan2022v2_PD_cd20",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 135.0,
+  "exposure_per_s": 1.0,
+  "slope": 0.014
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 135.0,
+  "1.0": 135.014
+ },
+ "stop_time": 1000.0,
+ "subtitle": "CD20+ B-cell count (CD20+) against inebilizumab concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "cells μL−1",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "cells μL−1",
+  "slope": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  }
+ },
+ "x_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "inebilizumab concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "cells μL−1",
+  "factor": 1.0,
+  "label": "CD20+ B-cell count (CD20+)"
+ }
+}

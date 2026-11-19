@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Atorvastatin_ReigLpez2021_morse_et_al_2019",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0,
+  20.0,
+  40.0
+ ],
+ "parameters": {
+  "Cl": 1.4166666666666668e-05,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0054428571428571425,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.0007194444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4646.092184368737
+ },
+ "reference_peaks": {
+  "central.C": 2.009159163649194e-05
+ },
+ "review_status": "needs_review",
+ "stop_time": 100800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,52 @@
+{
+ "dose_source": "paper",
+ "model_id": "Aspirin_Zhang2026_reference",
+ "molar_masses": {
+  "central.C": 0.13812200000000002
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zhang_2026:other_prose",
+    "value_si": 0.027329000000000003
+   },
+   {
+    "source": "Zhang_2026:other_prose",
+    "value_si": 0.026904
+   },
+   {
+    "source": "Zhang_2026:other_prose",
+    "value_si": 0.021818999999999998
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.4583333333333333e-06,
+  "F": 1.0,
+  "MM": 0.13812200000000002,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000256,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9658.77613184282
+ },
+ "reference_peaks": {
+  "central.C": 0.01833047929638034
+ },
+ "stop_time": 93600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

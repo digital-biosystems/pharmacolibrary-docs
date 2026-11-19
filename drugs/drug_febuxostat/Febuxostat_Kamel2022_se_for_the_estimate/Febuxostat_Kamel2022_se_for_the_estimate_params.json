@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Febuxostat_Kamel2022_se_for_the_estimate",
+ "molar_masses": {
+  "central.C": 0.316375
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  40.0,
+  80.0,
+  160.0
+ ],
+ "parameters": {
+  "Cl": 1.6666666666666667e-06,
+  "F": 1.0,
+  "MM": 0.316375,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00014285714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4e-05,
+  "k12": 0.00038611111111111116,
+  "k21": 0.00032446311858076564,
+  "ka": 0.008138888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 683.771122193775
+ },
+ "reference_peaks": {
+  "central.C": 0.0005112731268976909
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,0 +1,129 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;otilonium bromide&quot;}]"></div>
+
+# otilonium bromide
+
+- **generic name:** otilonium bromide
+- **ATC codes:** `A03AB06`, `A03CA04`
+- **DrugBank:** [DB13500](https://go.drugbank.com/drugs/DB13500) · **PubChem:** none
+- **molar mass:** 483.672 g/mol (C29H43N2O4) — DrugBank
+- **groups:** investigational
+
+## About
+
+Otilonium bromide is a synthetic anticholinergic drug used for functional gastrointestinal disorders. It is taken orally in tablet or capsule form. It is currently classified as an investigational agent.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q27263551](https://www.wikidata.org/wiki/Q27263551), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Zhao_2025_PPM1A](drugs/drug_otilonium_bromide/pd_Zhao_2025_PPM1A.md) | PPM1A enzymatic activity biomarker turnover ← otilonium_bromide | — | Zhao T et al., Otilonium bromide ameliorates pulmonary…, Acta pharmacologica Sinica (2025) | [10.1038/s41401-024-01368-8](https://doi.org/10.1038/s41401-024-01368-8) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=otilonium_bromide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 12:47 | 3:07 | 0/0/0 | 1/0/0 | 0/0/0 | 136,282/2,655 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 3/6 | 10/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 23 matched, 52 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Alvarez-Berdugo_2015.pdf` | Alvarez-Berdugo D et al., Changes in the response to excitatory a…, Neurogastroenterology and m… (2015) | pd | 4 | [10.1111/nmo.12659](https://doi.org/10.1111/nmo.12659) | [26303606](https://www.ncbi.nlm.nih.gov/pubmed/26303606) | metadata signals extractable PD data (sigmoid) |
+| `Evangelista_1998.pdf` | Evangelista S et al., Receptor binding profile of Otilonium b…, Pharmacological research (1998) | pd | 4 | [10.1006/phrs.1998.0340](https://doi.org/10.1006/phrs.1998.0340) | [9721598](https://www.ncbi.nlm.nih.gov/pubmed/9721598) | metadata signals extractable PD data (IC50) |
+| `Gandía_1996.pdf` | Gandía L et al., Blocking effects of otilonium on Ca2+ c…, European journal of pharmac… (1996) | pd | 4 | [10.1016/0014-2999(95)00808-x](https://doi.org/10.1016/0014-2999(95)00808-x) | [8867109](https://www.ncbi.nlm.nih.gov/pubmed/8867109) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-04 12:46 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aaltonen_1984 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine, not otilonium_bromide. |
+| popPK | Adel_2014 | irrelevant | 0 | 0 | The study investigates drotaverine hydrochloride, not otilonium bromide. |
+| popPK | Alvarez-Berdugo_2015 | irrelevant | 0 | 0 | no_text gate: only 158 chars of text extracted (&lt; 400) |
+| PD | Alvarez-Berdugo_2015 | not_relevant | 0 | 0 | The paper studies colonic smooth muscle strips from patients with diverticulosis and does not mention otilonium bromide or report any exposure-response or dose-response data for it. |
+| popPK | Baldwin_1994 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of salbutamol and adrenaline on airway smooth muscle and does not involve otilonium_bromide. |
+| popPK | Bartels_2013 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for glycopyrronium bromide, not otilonium bromide. |
+| popPK | Begrow_2010 | irrelevant | 0 | 0 | The study investigates the antispasmodic and ciliary clearance effects of thyme extracts (thymol/carvacrol) in rats and mice, and does not involve otilonium_bromide or its pharmacokinetics. |
+| popPK | Bender_2017 | irrelevant | 0 | 0 | The paper describes the synthesis and SAR of novel muscarinic antagonists, not the pharmacokinetics of otilonium bromide. |
+| popPK | Bondesson_1980 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ketobemidone, not otilonium_bromide. |
+| popPK | Bousquet_1984 | irrelevant | 0 | 0 | The paper describes the synthesis and pharmacological activity (spasmolytic) of a series of compounds, not the pharmacokinetics of otilonium bromide. |
+| popPK | Camarda_2025 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study on new 1,4-dihydropyridine derivatives using otilonium bromide only as a reference comparator, and it reports no pharmacokinetic parameters for otilonium bromide. |
+| popPK | Carzaniga_2024 | irrelevant | 0 | 0 | The paper focuses on the discovery of a novel compound (CHF-6550) for respiratory diseases and does not report pharmacokinetic parameters for otilonium_bromide. |
+| popPK | Cornelissen_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of atropine and scopolamine, not otilonium_bromide. |
+| popPK | Demin_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of indacaterol and glycopyrronium, not otilonium bromide. |
+| popPK | Dickinson_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mebeverine, not otilonium_bromide. |
+| popPK | Eglen_1989 | irrelevant | 0 | 0 | The paper studies the in vitro receptor interactions of hexamethonium, not the pharmacokinetics of otilonium bromide. |
+| popPK | Evangelista_1998 | irrelevant | 0 | 0 | no_text gate: only 45 chars of text extracted (&lt; 400) |
+| PD | Evangelista_1998 | not_relevant | 0 | 0 | The paper describes the receptor binding profile (in vitro affinity) of otilonium bromide, which is a pharmacological mechanism study, not a pharmacodynamic (exposure-response or dose-response) analysis in a biological system with numeric PD parameters like Emax or EC50 for a clinical or physiological effect. |
+| popPK | Evangelista_2018 | irrelevant | 0 | 0 | The paper is a mechanistic review of otilonium bromide's pharmacodynamics and does not report quantitative pharmacokinetic parameters. |
+| PD | Evangelista_2018 | not_relevant | 1 | 0 | The text is a qualitative review of the mechanism of action and does not provide any numeric PD parameters or concentration-effect data. |
+| popPK | Gallego_2010 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of contractile patterns and does not report any pharmacokinetic parameters for otilonium bromide. |
+| popPK | Gandía_1996 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| popPK | Imbimbo_1986 | irrelevant | 0 | 0 | The study investigates cimetropium bromide, not otilonium bromide. |
+| popPK | Jeong_2020 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tiropramide, not otilonium_bromide. |
+| popPK | Kjaer_1992 | irrelevant | 0 | 0 | The study investigates cetobemidone, not otilonium_bromide. |
+| popPK | Leitold_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of glyceryl 2-nitrate and glyceryl trinitrate, not otilonium bromide. |
+| popPK | Lindqvist_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding and calcium signaling, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Lo_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for revefenacin and its metabolite THRX-195518, not otilonium bromide. |
+| popPK | Martin_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of otilonium bromide's effect on calcium channels in rat colon, reporting no pharmacokinetic parameters. |
+| popPK | Martínez-Cutillas_2013 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanisms of action (calcium channel inhibition, receptor antagonism) in vitro and in tissue strips, not pharmacokinetic disposition parameters. |
+| popPK | Matyanga_2020 | irrelevant | 0 | 0 | The paper is a systematic review of African Potato (Hypoxis hemerocallidea) and does not contain any data for otilonium bromide. |
+| popPK | Nakashima_1993 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of biperiden and scopolamine, not otilonium bromide. |
+| popPK | Nie_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cannabidiol (CBD), not otilonium_bromide. |
+| popPK | Pita_2014 | irrelevant | 0 | 0 | The study focuses on the analytical method optimization for trachylobane-360 in mice, not otilonium_bromide. |
+| popPK | Renner_2005 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of scopolamine, not otilonium_bromide. |
+| popPK | Roelz_2017 | irrelevant | 0 | 0 | The paper is a clinical study on subarachnoid hemorrhage treatment and does not involve otilonium_bromide or pharmacokinetics. |
+| popPK | Rychter_2014 | irrelevant | 0 | 0 | The paper is a mechanistic review of pharmacodynamic effects on colonic smooth muscle and does not report any pharmacokinetic parameters for otilonium bromide. |
+| PD | Rychter_2014 | not_relevant | 1 | 0 | The text is a qualitative review of mechanisms of action (calcium channel blockade, receptor inhibition) and does not provide numeric PD parameters, concentration-effect curves, or dose-response data. |
+| popPK | Salehi_2018 | irrelevant | 0 | 0 | The paper is a review of thymol and thyme, and does not contain any pharmacokinetic data for otilonium_bromide. |
+| popPK | Santicioli_1999 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on guinea-pig colon muscle and reports pharmacodynamic IC50/Ki values, not pharmacokinetic disposition parameters. |
+| popPK | Shin_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of imidafenacin, not otilonium bromide. |
+| popPK | Shrivastava_2022 | irrelevant | 0 | 0 | The paper is a mini-review focusing on analytical methods and general characteristics, containing no original quantitative pharmacokinetic parameter values for otilonium bromide. |
+| PD | Shrivastava_2022 | not_relevant | 1 | 0 | The paper is a mini-review focusing on analytical methods and general characteristics, containing no numeric PD parameters or exposure-response data. |
+| popPK | Tang_2023 | irrelevant | 0 | 0 | The paper is a review of glycycoumarin, a different drug, and does not contain pharmacokinetic data for otilonium bromide. |
+| popPK | Traserra_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of hyoscine butylbromide (HBB), not otilonium bromide. |
+| popPK | Tytgat_2007 | irrelevant | 0 | 0 | The paper is a review of hyoscine butylbromide, not otilonium bromide. |
+| popPK | Wang_2015 | irrelevant | 0 | 0 | The study investigates the effects of vitexin on CYP enzymes using probe drugs (phenacetin, tolbutamide, midazolam) in rats and does not involve otilonium_bromide. |
+| popPK | Xu_2023 | irrelevant | 0 | 0 | The paper is a mechanistic study on USP28 inhibition and cytotoxicity, reporting no pharmacokinetic parameters for otilonium bromide. |
+| popPK | Zhang_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of baclofen, not otilonium_bromide. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of otilonium bromide in pulmonary fibrosis (PPM1A activation) and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Botilonium_bromide%5D&body=Drug%3A%20otilonium_bromide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_otilonium_bromide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

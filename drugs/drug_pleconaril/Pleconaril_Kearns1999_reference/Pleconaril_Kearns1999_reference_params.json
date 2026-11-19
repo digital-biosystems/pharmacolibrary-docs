@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Pleconaril_Kearns1999_reference",
+ "molar_masses": {
+  "central.C": 0.381349
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.575e-05,
+  "F": 1.0,
+  "MM": 0.381349,
+  "Tlag": 2700.0,
+  "VdPerKg": 0.00468,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00020833333333333332,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12264.923745802793
+ },
+ "reference_peaks": {
+  "central.C": 0.00019657953527670374
+ },
+ "stop_time": 118800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

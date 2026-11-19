@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg parenteral (N06BC01)",
+ "model_id": "Caffeine_Thompson2025_reference",
+ "molar_masses": {
+  "central.C": 0.1941906
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2361111111111112e-07,
+  "F": 1.0,
+  "MM": 0.1941906,
+  "VdPerKg": 0.0012442857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662078
+ },
+ "reference_peaks": {
+  "central.C": 0.004590467813889031
+ },
+ "stop_time": 3024000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

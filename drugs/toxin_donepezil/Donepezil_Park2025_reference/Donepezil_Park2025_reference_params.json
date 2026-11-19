@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 7.5 mg oral (N06DA02)",
+ "model_id": "Donepezil_Park2025_reference",
+ "molar_masses": {
+  "central.C": 0.3795
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.6583333333333334e-06,
+  "F": 0.9,
+  "MM": 0.3795,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0008314285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7.5e-06,
+  "ka": 4.805555555555556e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 173459.9999826562
+ },
+ "reference_peaks": {
+  "central.C": 1.120021792294891e-06
+ },
+ "review_status": "needs_review",
+ "stop_time": 6652800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

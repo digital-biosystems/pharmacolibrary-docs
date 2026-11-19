@@ -1,0 +1,331 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;macrogol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macrogol_Jeon2013_reference&quot;,&quot;label&quot;:&quot;Jeon_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jeon2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Jian2025_reference&quot;,&quot;label&quot;:&quot;Jian_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Jian2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Harrison2022_reference&quot;,&quot;label&quot;:&quot;Harrison_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Harrison2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Macrogol_Wang2019_reference&quot;,&quot;label&quot;:&quot;Wang_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Wang2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Brunet_2022_MIC&quot;,&quot;label&quot;:&quot;Brunet_2022 \u00b7 MIC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/pd_Brunet_2022_MIC.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+
+# macrogol
+
+- **generic name:** macrogol
+- **ATC codes:** `A06AD15`
+- **DrugBank:** [DB09287](https://go.drugbank.com/drugs/DB09287) · **PubChem:** none
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+Macrogol is an osmotic laxative primarily used to treat constipation. It is usually taken orally, although topical routes exist, and is poorly absorbed from the gut. The substance has wide industrial and medical applications and is approved for veterinary use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q410083](https://www.wikidata.org/wiki/Q410083), [Wikipedia](https://en.wikipedia.org/wiki/Polyethylene_glycol?oldid=1380938662) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Start here
+
+> **Jeon_2013_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_macrogol/Macrogol_Jeon2013_reference.md?tab=Simulation) · [record](drugs/drug_macrogol/Macrogol_Jeon2013_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="144" viewBox="0 0 560 144" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="122" stroke="#ddd"/><text x="190.0" y="136" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="122" stroke="#ddd"/><text x="306.7" y="136" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="122" stroke="#ddd"/><text x="423.3" y="136" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="122" stroke="#ddd"/><text x="540.0" y="136" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jian_2025 · CL</text><circle cx="206.0" cy="30.0" r="4" fill="#78909c"><title>Jian_2025 · CL: 0.137 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Li_2022 · CL ·/kg</text><circle cx="527.2" cy="46.0" r="4" fill="#78909c"><title>Li_2022 · CL ·/kg: 77.7 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Harrison_2022 · CL/F</text><circle cx="380.6" cy="62.0" r="4" fill="#ef6c00"><title>Harrison_2022 · CL/F: 4.3 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Jeon_2013 · CL/F</text><circle cx="433.4" cy="78.0" r="4" fill="#78909c"><title>Jeon_2013 · CL/F: 12.2 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Wang_2019 · CL/F ·/kg</text><circle cx="469.2" cy="94.0" r="4" fill="#ef6c00"><title>Wang_2019 · CL/F ·/kg: 24.74 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Zhu_2018 · CL/F</text><circle cx="505.7" cy="110.0" r="4" fill="#78909c"><title>Zhu_2018 · CL/F: 50.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="144" viewBox="0 0 560 144" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="122" stroke="#ddd"/><text x="190.0" y="136" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="122" stroke="#ddd"/><text x="306.7" y="136" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="122" stroke="#ddd"/><text x="423.3" y="136" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="122" stroke="#ddd"/><text x="540.0" y="136" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Li_2022 · V</text><circle cx="466.7" cy="30.0" r="4" fill="#78909c"><title>Li_2022 · V: 235.4 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jian_2025 · V/F</text><circle cx="244.8" cy="46.0" r="4" fill="#78909c"><title>Jian_2025 · V/F: 2.95 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Wang_2019 · V/F</text><circle cx="376.0" cy="62.0" r="4" fill="#ef6c00"><title>Wang_2019 · V/F: 39.26 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Jeon_2013 · V/F</text><circle cx="521.3" cy="78.0" r="4" fill="#78909c"><title>Jeon_2013 · V/F: 691 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Zhu_2018 · V1/F</text><circle cx="385.7" cy="94.0" r="4" fill="#78909c"><title>Zhu_2018 · V1/F: 47.6 L</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Harrison_2022 · V1/F</text><circle cx="459.0" cy="110.0" r="4" fill="#ef6c00"><title>Harrison_2022 · V1/F: 202.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Jeon_2013_reference](drugs/drug_macrogol/Macrogol_Jeon2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Jeon S et al., Saturable human neopterin response to i…, Journal of translational me… (2013) | [10.1186/1479-5876-11-240](https://doi.org/10.1186/1479-5876-11-240) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Jian_2025_reference](drugs/drug_macrogol/Macrogol_Jian2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jian W et al., Population Pharmacokinetic Model of Peg…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70104](https://doi.org/10.1002/psp4.70104) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Li_2022_reference](drugs/drug_macrogol/Macrogol_Li2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Li Y et al., Generative deep learning enables the di…, Nature communications (2022) | [10.1038/s41467-022-34692-w](https://doi.org/10.1038/s41467-022-34692-w) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Zhu_2018_reference](drugs/drug_macrogol/Macrogol_Zhu2018_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and the… (2018) | [10.1007/s40121-018-0197-y](https://doi.org/10.1007/s40121-018-0197-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Harrison_2022_reference](drugs/drug_macrogol/Macrogol_Harrison2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Harrison SA et al., Rencofilstat, a cyclophilin inhibitor:…, Hepatology communications (2022) | [10.1002/hep4.2100](https://doi.org/10.1002/hep4.2100) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Wang_2019_reference](drugs/drug_macrogol/Macrogol_Wang2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Wang C et al., Long-Acting HIV-1 Fusion Inhibitory Pep…, Viruses (2019) | [10.3390/v11090811](https://doi.org/10.3390/v11090811) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Guo_2017_cAMP](drugs/drug_macrogol/pd_Guo_2017_cAMP.md) | cAMP-dependent luminescence ← PEG-PTHTMR · direct sigmoid Emax (Hill) effect | — | Guo J et al., Prolonged Pharmacokinetic and Pharmacod…, Journal of bone and mineral… (2017) | [10.1002/jbmr.2917](https://doi.org/10.1002/jbmr.2917) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Brunet_2022_MIC](drugs/drug_macrogol/pd_Brunet_2022_MIC.md) | AmB MIC ← PEG15HS · direct Emax (saturable) effect | ▶ model + simulator | Brunet K et al., Improved In Vitro Anti-Mucorales Activi…, Journal of fungi (Basel, Sw… (2022) | [10.3390/jof8020121](https://doi.org/10.3390/jof8020121) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **UGT1A1** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Sy_2018](drugs/drug_macrogol/pgx_Sy_2018_UGT1A1_safety.md) | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=macrogol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | liver | `UGT1A1` safety_allele | PGx paper |
+| metabolism | small intestine | `UGT1A1` safety_allele | PGx paper |
+| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 16:41 | 19:43 | 6/0/0 | 1/1/0 | 1/0/0 | 729,042/17,316 | ollama / qwen3.8:27b-mtp-q8_0 | 76 | 17/63 | 70/6 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 3261 matched, 198 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 6  ·  extracted 4  ·  needs review 2  ·  rejected 0  ·  stale 2
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Sharda_2021.pdf` | Sharda N et al., Pharmacokinetics of 40 kDa Polyethylene…, European journal of pharmac… (2021) | popPK | 10 | [10.1016/j.ejps.2021.105928](https://doi.org/10.1016/j.ejps.2021.105928) | [34265405](https://pubmed.ncbi.nlm.nih.gov/34265405) | The paper reports quantitative pharmacokinetic parameters (CL, Vss, bioavailability) for PEG40 (a form of macrogol) in mice, rats, and monkeys, with specific numeric values provided in the abstract. |
+| `Khandelwal_2019.pdf` | Khandelwal P et al., Pharmacokinetics of 40 kDa PEG in roden…, Journal of pharmaceutical a… (2019) | popPK | 9 | [10.1016/j.jpba.2019.03.066](https://doi.org/10.1016/j.jpba.2019.03.066) | [30959317](https://pubmed.ncbi.nlm.nih.gov/30959317) | The study reports quantitative PK parameters (Vd, half-life) for PEG (macrogol) in mice, with specific numeric values provided in the abstract. |
+| `Sundqvist_1988.pdf` | Sundqvist T et al., Characterization of size-dependent exch…, Computers and biomedical re… (1988) | popPK | 9 | [10.1016/0010-4809(88)90019-5](https://doi.org/10.1016/0010-4809(88)90019-5) | [3370951](https://pubmed.ncbi.nlm.nih.gov/3370951) | The study reports a compartmental PK model for PEG (macrogol) in pigs, but the specific numeric parameter values are not present in the provided evidence text. |
+| `Yamaoka_1994.pdf` | Yamaoka T et al., Distribution and tissue uptake of poly(…, Journal of pharmaceutical s… (1994) | popPK | 9 | [10.1002/jps.2600830432](https://doi.org/10.1002/jps.2600830432) | [8046623](https://pubmed.ncbi.nlm.nih.gov/8046623) | The study reports quantitative PK parameters (half-life, clearance trends) for PEG in mice using a two-compartment model, but specific numeric values for CL, V, and Q are not explicitly listed in the provided text. |
+| `Cheng_2022.pdf` | Cheng R et al., Population pharmacokinetic/pharmacodyna…, European journal of pharmac… (2022) | pd | 5 | [10.1016/j.ejps.2022.106304](https://doi.org/10.1016/j.ejps.2022.106304) | [36209987](https://www.ncbi.nlm.nih.gov/pubmed/36209987) | metadata signals extractable PD data (PK/PD) |
+| `Huang_2021.pdf` | Huang YW et al., Pharmacokinetics and Pharmacodynamics o…, Advances in therapy (2021) | pd | 5 | [10.1007/s12325-021-01863-y](https://doi.org/10.1007/s12325-021-01863-y) | [34328630](https://www.ncbi.nlm.nih.gov/pubmed/34328630) | metadata signals extractable PD data (Emax) |
+| `Ming_2026.pdf` | Ming C et al., Development of a SMEDDS for oral delive…, Journal of pharmaceutical s… (2026) | pd | 5 | [10.1016/j.xphs.2026.104356](https://doi.org/10.1016/j.xphs.2026.104356) | [42250802](https://www.ncbi.nlm.nih.gov/pubmed/42250802) | metadata signals extractable PD data (PK/PD) |
+| `Mouksassi_2025.pdf` | Mouksassi S et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2025) | pd | 5 | [10.1002/bcp.70165](https://doi.org/10.1002/bcp.70165) | [40662229](https://www.ncbi.nlm.nih.gov/pubmed/40662229) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Ryan_2011.pdf` | Ryan SM et al., PK/PD modelling of comb-shaped PEGylate…, Journal of controlled relea… (2011) | pd | 5 | [10.1016/j.jconrel.2010.10.004](https://doi.org/10.1016/j.jconrel.2010.10.004) | [20946924](https://www.ncbi.nlm.nih.gov/pubmed/20946924) | metadata signals extractable PD data (PK/PD) |
+| `Saito_2012.pdf` | Saito T et al., Population pharmacokinetic-pharmacodyna…, Drug metabolism and pharmac… (2012) | pd | 5 | [10.2133/dmpk.dmpk-11-rg-148](https://doi.org/10.2133/dmpk.dmpk-11-rg-148) | [22785255](https://www.ncbi.nlm.nih.gov/pubmed/22785255) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Ueno_2019.pdf` | Ueno T et al., Exposure-Response Analysis for Efficacy…, Clinical pharmacology in dr… (2019) | pd | 5 | [10.1002/cpdd.646](https://doi.org/10.1002/cpdd.646) | [30667592](https://www.ncbi.nlm.nih.gov/pubmed/30667592) | metadata signals extractable PD data (Exposure-Response) |
+| `Wolkersdorfer_2024.pdf` | Wolkersdorfer AM et al., PEGylation of Human Vascular Endothelia…, ACS biomaterials science &… (2024) | pd | 5 | [10.1021/acsbiomaterials.3c00253](https://doi.org/10.1021/acsbiomaterials.3c00253) | [37296497](https://www.ncbi.nlm.nih.gov/pubmed/37296497) | metadata signals extractable PD data (EC50) |
+| `Feng_2023.pdf` | Feng S et al., Mesoporous carbon nanoenzyme as nano-bo…, Colloids and surfaces. B, B… (2023) | pd | 4 | [10.1016/j.colsurfb.2022.113095](https://doi.org/10.1016/j.colsurfb.2022.113095) | [36577340](https://www.ncbi.nlm.nih.gov/pubmed/36577340) | metadata signals extractable PD data (IC50) |
+| `Hardegree_1990.pdf` | Hardegree SP et al., Effect of polyethylene glycol exclusion…, Plant physiology (1990) | pd | 4 | [10.1104/pp.92.2.462](https://doi.org/10.1104/pp.92.2.462) | [16667298](https://www.ncbi.nlm.nih.gov/pubmed/16667298) | metadata signals extractable PD data (concentrationeffect) |
+| `Talbot_1982.pdf` | Talbot CF et al., The purification and characterization o…, The Journal of biological c… (1982) | pd | 4 |  | [7054179](https://www.ncbi.nlm.nih.gov/pubmed/7054179) | metadata signals extractable PD data (sigmoid) |
+| `Wang_2021.pdf` | Wang W et al., The RPA190-pc gene participates in the…, Gene (2021) | pd | 4 | [10.1016/j.gene.2020.145081](https://doi.org/10.1016/j.gene.2020.145081) | [32860897](https://www.ncbi.nlm.nih.gov/pubmed/32860897) | metadata signals extractable PD data (EC50) |
+| `Wang_2014.pdf` | Wang HJ et al., Commonly used excipients modulate UDP-g…, Pharmaceutical research (2014) | pgx | 7 | [10.1007/s11095-013-1272-4](https://doi.org/10.1007/s11095-013-1272-4) | [24526241](https://www.ncbi.nlm.nih.gov/pubmed/24526241) | metadata signals extractable PGX data (UGT2B7, PK/PD-context) |
+
+<sub>queue written 2026-10-04 16:29 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Al-Ashgar_2012 | not_relevant | 0 | 0 | The paper studies peginterferon alpha-2a, not macrogol, and focuses on clinical response predictors rather than pharmacogenomic effects on PK/PD. |
+| popPK | Al-Huniti_2016 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for naloxegol, not macrogol. |
+| PGx | Al-Huniti_2016 | not_relevant | 0 | 0 | The study analyzes the pharmacokinetics of naloxegol (a PEG-conjugated drug) and reports effects of CYP3A4/P-gp inhibitors, but does not report pharmacogenomic effects of gene variants on macrogol itself. |
+| popPK | Al-Huniti_2016_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response modeling of naloxegol, not macrogol. |
+| popPK | Alotaibi_2024 | irrelevant | 0 | 0 | The paper studies the synthesis and in vitro anti-cancer efficacy of ZIF-8/Silica nanocomposites loaded with cisplatin and green platinum, and does not involve macrogol or pharmacokinetic parameters. |
+| PD | Alotaibi_2024 | not_relevant | 0 | 0 | The paper reports in vitro cytotoxicity (EC50) for platinum-based drugs (Cisplatin/Green Platinum) and sorption/release kinetics, but does not report a pharmacodynamic or exposure-response relationship for macrogol (PEG). |
+| PGx | Anufriev_2023 | not_relevant | 0 | 0 | The paper studies the physical chemistry and aggregation behavior of PEG-lipids in solution, not the pharmacokinetics or pharmacodynamics of macrogol in humans or animals, and contains no genetic or pharmacogenomic data. |
+| popPK | Appel_2008 | irrelevant | 0 | 0 | The study investigates PEG-asparaginase (a drug), not macrogol (polyethylene glycol) as the subject drug, and no PK parameters for macrogol are reported. |
+| PD | Appel_2008 | not_relevant | 3 | 2 | The study reports qualitative correlations between clinical response and genotype/resistance, but does not provide numeric exposure-response parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for macrogol-asparaginase. |
+| popPK | Assmus_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for emodepside, not macrogol (which is listed only as an excipient). |
+| PD | Assmus_2022 | not_relevant | 4 | 3 | The paper models the exposure-response relationship for adverse events using logistic regression, but the provided text does not contain the specific numeric coefficients (odds ratios or beta values) required to derive a quantitative PD curve or parameters. |
+| popPK | Avramis_2005 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of asparaginase (specifically PEG-asparaginase), not macrogol (PEG) itself. |
+| PGx | Bailey_2025 | not_relevant | 0 | 0 | The paper is a survey on pharmacogenomics education practices and does not report any pharmacokinetic or pharmacodynamic data for macrogol or any other drug. |
+| PD | Bjerkenstedt_1985 | not_relevant | 3 | 2 | The paper is a dose-response study for citalopram, not macrogol, and reports only qualitative dose comparisons without numeric PD parameters or concentration-effect curves. |
+| popPK | Bonewitz_1983 | irrelevant | 0 | 0 | The study investigates zinc absorption kinetics, using polyethylene glycol (macrogol) only as an inert volume marker, not as the subject drug. |
+| popPK | Bouley_2020 | irrelevant | 0 | 0 | The paper studies a GRK2 inhibitor (CCG258747) and does not involve macrogol. |
+| PD | Bouley_2020 | not_relevant | 0 | 0 | The paper discusses a GRK2 inhibitor (CCG258747) and does not mention macrogol or report any exposure-response or dose-response PD parameters for macrogol. |
+| popPK | Breimer_1976 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vinylbital, not macrogol (polyethylene glycol is only mentioned as the suppository base). |
+| PGx | Brennan_2012 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of peginterferon alfa-2a and ribavirin, not macrogol. |
+| PGx | Bressler_2009 | not_relevant | 0 | 0 | The study investigates the effect of obesity (a clinical phenotype) on the pharmacokinetics of PEG-IFN, not a genetic variant or genotype. |
+| popPK | Brunet_2022 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assessment of amphotericin B efficacy and cytotoxicity using macrogol (PEG15HS) as a surfactant, not a pharmacokinetic study of macrogol. |
+| PGx | Chen_2021 | not_relevant | 0 | 0 | The paper is a review on long non-coding RNAs as drug targets and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of macrogol. |
+| popPK | Cheng_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for BCT-100 (pegylated arginase), not macrogol. |
+| PD | Cheng_2021 | not_relevant | 0 | 0 | The paper concerns pegylated recombinant human arginase 1 (BCT-100), not macrogol, and the provided text contains no pharmacodynamic or exposure-response data. |
+| popPK | Cheng_2022 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
+| popPK | Chien_2014 | irrelevant | 0 | 0 | The study investigates the pharmacology of a pegylated enzyme (PEG-r-crisantaspase) for leukemia treatment, not the pharmacokinetics of macrogol (PEG) as a subject drug. |
+| PGx | Chu_2022 | not_relevant | 2 | 5 | The paper reports pharmacogenomic associations with clinical outcomes (OS, TTP) and baseline biomarkers (arginine levels), but does not report changes in pharmacokinetic parameters (e.g., AUC, Cmax) or specific pharmacodynamic parameters of the drug itself. |
+| popPK | Comets_2007 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of digoxin, not macrogol. |
+| PD | Comets_2007 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of digoxin and the influence of MDR1 polymorphisms on PK parameters, with no mention of macrogol or any pharmacodynamic/exposure-response modeling. |
+| PGx | Cornejo_2026 | not_relevant | 0 | 0 | The paper reports pharmacokinetic optimization of radiocopper-based theranostic pretargeting in mice and does not investigate pharmacogenomic effects on macrogol. |
+| popPK | Corsini_1994 | irrelevant | 0 | 0 | The study is an in-vitro toxicology/cytokine production study of surfactants, not a pharmacokinetic study of macrogol. |
+| popPK | Cummings_1986 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of adriamycin (doxorubicin) and the effects of etoposide/Tween 80, not macrogol. |
+| PGx | Cusato_2015 | not_relevant | 0 | 0 | The paper investigates the pharmacogenetics of telaprevir, not macrogol. |
+| popPK | De_2000 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for PEG-rHuMGDF (pegylated megakaryocyte growth and development factor), not macrogol. |
+| PGx | El_2009 | not_relevant | 0 | 0 | The paper studies the efficacy of pegylated interferon in hepatitis C patients and does not report pharmacogenomic effects on the PK or PD of macrogol. |
+| popPK | Eljack_2022 | irrelevant | 0 | 0 | The paper is a review on nanoparticle design for cancer therapy and does not report pharmacokinetic parameters for macrogol. |
+| PD | Eljack_2022 | not_relevant | 0 | 0 | The paper is a review on nanoparticle design for chemoresistance reversal and does not report any pharmacodynamic or exposure-response data for macrogol. |
+| PGx | Enomoto_2020 | not_relevant | 0 | 0 | The paper investigates the effect of gene variants on the efficacy of PEG-IFN (pegylated interferon), not macrogol. |
+| popPK | Farino_2020 | irrelevant | 0 | 0 | The paper is an in-vitro study on breast cancer dormancy using PEG hydrogels as a material scaffold, not a pharmacokinetic study of macrogol as a drug. |
+| PD | Farino_2020 | not_relevant | 0 | 0 | The paper investigates the effect of PEG-based hydrogels on breast cancer cell dormancy and subsequent chemoresistance to doxorubicin, paclitaxel, and 5-fluorouracil, but does not report any pharmacodynamic or exposure-response relationship for macrogol itself. |
+| PD | Feng_2023 | not_relevant | 0 | 0 | The paper focuses on nanomaterial synthesis and comparative anti-tumor efficacy (IC50) of ICG-loaded carriers, not on the pharmacodynamics or exposure-response of the drug macrogol. |
+| PGx | Filopanti_2014 | not_relevant | 0 | 0 | The paper studies pegvisomant (a PEGylated protein), not macrogol, and reports no association between the tested polymorphisms and liver toxicity. |
+| popPK | Funguetto-Ribeiro_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of clozapine, not macrogol. |
+| popPK | Galli_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of edoxaban, not macrogol. |
+| popPK | Grindy_2023 | irrelevant | 0 | 0 | The study focuses on the delivery of bupivacaine and ketorolac using a polyethylene glycol-based hydrogel, not the pharmacokinetics of macrogol itself. |
+| popPK | Gunia-Krzyżak_2023 | irrelevant | 0 | 0 | The paper investigates the safety profile of 4-methoxychalcone, not the pharmacokinetics of macrogol. |
+| PD | Gunia-Krzyżak_2023 | not_relevant | 0 | 0 | The paper evaluates 4-methoxychalcone, not macrogol, and reports toxicological EC50s rather than a pharmacodynamic exposure-response relationship for the target drug. |
+| PGx | Gurjar_2018 | not_relevant | 0 | 0 | The paper investigates the effect of excipients on P-gp activity in vitro, not the effect of a gene variant on the PK/PD of macrogol. |
+| popPK | Hadi_2021 | irrelevant | 0 | 0 | The paper investigates the effect of transcranial direct current stimulation (tDCS) on laparoscopic surgical skill acquisition and contains no pharmacokinetic data for macrogol. |
+| PGx | Hamurcu_2020 | not_relevant | 0 | 0 | The paper studies the effect of nitric oxide on watermelon plants under drought stress using PEG 6000 as a stress agent, not the pharmacokinetics or pharmacodynamics of macrogol in humans. |
+| popPK | Hanan_2026 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of HBsAg loss in chronic hepatitis B patients treated with pegylated-interferon-alpha and does not report pharmacokinetic parameters for macrogol. |
+| PD | Hardegree_1990 | not_relevant | 0 | 0 | The paper discusses the physical chemistry of polyethylene glycol (macrogol) in filter paper for seed germination studies, not pharmacodynamics or drug exposure-response relationships. |
+| popPK | Harrison_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rencofilstat (a cyclophilin inhibitor), not macrogol; macrogol is only mentioned as a treatment for constipation. |
+| PD | Harrison_2022 | not_relevant | 2 | 1 | The paper reports population PK and descriptive efficacy changes (dose-response trends for ALT/ProC3) but does not provide a formal PD model, simultaneous PK/PD fit, or numeric PD parameters (e.g., Emax, EC50) linking exposure to effect. |
+| popPK | He_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of PEG-rhIL-6 (a PEGylated protein), not macrogol (polyethylene glycol) as the subject drug. |
+| popPK | He_2025 | irrelevant | 0 | 0 | The paper focuses on machine learning modeling of magnetic nanoparticle drug delivery systems and does not report pharmacokinetic parameters for macrogol. |
+| PD | He_2025 | not_relevant | 0 | 0 | The paper focuses on machine learning models for predicting nanoparticle properties (like EC50) and does not report a pharmacodynamic or exposure-response relationship for macrogol. |
+| popPK | Hempel_2010 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pegylated-asparaginase, not macrogol. |
+| popPK | Hoppe_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of vanzacaftor, tezacaftor, and deutivacaftor for cystic fibrosis, not macrogol. |
+| PD | Hoppe_2025 | not_relevant | 0 | 0 | The paper reports clinical efficacy (FEV1, sweat chloride) and PK parameters (AUC) but does not report a pharmacodynamic model or exposure-response relationship with numeric PD parameters (e.g., Emax, EC50). |
+| PGx | Hsu_2021 | not_relevant | 0 | 0 | The paper evaluates the efficacy and safety of Ropeginterferon Alfa-2b in chronic hepatitis C patients and does not report pharmacogenomic effects on the PK or PD of macrogol. |
+| popPK | Hu_2011 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of PEG-conjugated interferon beta-1a, not macrogol (polyethylene glycol) as the subject drug. |
+| PGx | Hu_2019 | not_relevant | 0 | 0 | The paper compares the efficacy of two different drugs (Pegylated Interferon alpha-2a vs alpha-2b) and does not report pharmacogenomic effects on the PK/PD of macrogol. |
+| popPK | Huang_2021 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
+| PD | Huang_2021 | not_relevant | 0 | 0 | The paper reports pharmacokinetics and pharmacodynamics for ropeginterferon alfa-2b, not macrogol. |
+| PGx | Ikeda_2025 | not_relevant | 0 | 0 | The paper describes a PEGylated protein therapeutic (IL-2) and its pharmacological effects, but does not report on the drug macrogol or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Ikegami_2017 | not_relevant | 0 | 0 | The paper discusses hepatitis C treatment outcomes and viral resistance mutations, not the pharmacokinetics or pharmacodynamics of macrogol. |
+| popPK | Jeon_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of interferon-alpha (IFN-alpha), where polyethylene glycol (macrogol) is merely a formulation excipient, not the subject drug. |
+| popPK | Jian_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for Pegbing (peginterferon alpha-2b), not macrogol (polyethylene glycol), which is merely the chemical moiety used for pegylation. |
+| popPK | Jolling_2004 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pegylated human erythropoietin (PEG-EPO), not macrogol. |
+| popPK | Jolling_2005 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pegylated erythropoietin (PEG-EPO), not macrogol. |
+| popPK | Jung_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pegylated interferon alfa-2a, not macrogol. |
+| PGx | Jungmichel_2026 | not_relevant | 0 | 0 | The paper characterizes a novel complement C3 inhibitor antibody fragment and does not report pharmacogenomic effects on the PK/PD of macrogol. |
+| PGx | Kang_2020 | not_relevant | 0 | 0 | The paper investigates the size-dependent pharmacokinetics of PEG nanoparticles in mice, not the effect of human gene variants on macrogol PK/PD. |
+| PGx | Karpf_2011 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of PEGylated rFVIIa in animals, not the effect of a gene variant on the PK/PD of macrogol. |
+| popPK | Kavanaugh_1995 | irrelevant | 0 | 0 | The paper is a structural biology study of hemoglobin where polyethylene glycol (macrogol) is used only as a crystallization agent, not as the subject drug for pharmacokinetic analysis. |
+| PD | Kavanaugh_1995 | not_relevant | 0 | 0 | The paper describes the crystal structure and oxygen affinity of a hemoglobin variant, not a pharmacodynamic or exposure-response relationship for macrogol. |
+| popPK | Kayne_1993 | irrelevant | 0 | 0 | The study uses macrogol (PEG) as a non-absorbable marker to model phosphate absorption, not to characterize the pharmacokinetics of macrogol itself. |
+| popPK | Keating_1993 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of PEG-asparaginase (a conjugated enzyme), not macrogol (PEG) as the subject drug. |
+| PGx | Khairy_2016 | not_relevant | 0 | 0 | The paper investigates the effect of nitric oxide on heavy metal toxicity in tobacco plants, which is unrelated to human pharmacogenomics or macrogol pharmacokinetics/pharmacodynamics. |
+| PGx | Kim_2026 | not_relevant | 0 | 0 | The paper focuses on mRNA vaccine formulation and lipid nanoparticle engineering, not the pharmacogenomics of macrogol. |
+| popPK | Kitamura_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of PEG-modified monoclonal antibodies, not macrogol as a subject drug. |
+| PGx | Kumada_2015 | not_relevant | 0 | 0 | The paper studies telaprevir for hepatitis C and does not involve macrogol or its pharmacokinetics/pharmacodynamics. |
+| popPK | Kwong_2015 | irrelevant | 0 | 0 | The paper describes a theoretical mathematical framework for cancer biomarkers using PEG cores, not a pharmacokinetic study of macrogol as a drug with reported quantitative disposition parameters. |
+| PGx | Lawitz_2011 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of NIM811 and its interaction with pegylated interferon, not macrogol, and does not report pharmacogenomic effects. |
+| popPK | Lebreton_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lipid nanocapsules (LNCs) in rats, not the drug macrogol. |
+| PGx | Legler_2021 | not_relevant | 0 | 0 | The paper reports the pharmacokinetic and therapeutic effects of pegylation on a therapeutic enzyme (capsule depolymerase) in mice, not the pharmacogenomic effects of macrogol. |
+| popPK | Li_1991 | irrelevant | 0 | 0 | The paper describes the enzymatic properties of chicken liver phosphofructokinase-2, where polyethylene glycol is used only as a purification reagent, not as the subject drug for pharmacokinetic analysis. |
+| PD | Li_1991 | not_relevant | 0 | 0 | The paper describes the biochemical properties of an enzyme (phosphofructokinase-2) and uses polyethylene glycol only as a purification reagent, not as a drug for pharmacodynamic analysis. |
+| PGx | Li_2020 | not_relevant | 0 | 0 | The paper focuses on sorafenib-loaded nanoparticles and does not report pharmacogenomic effects on macrogol. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | The paper describes the discovery of a RIPK1 inhibitor (RI-962) using deep learning and reports PK for that compound, not for macrogol. |
+| PD | Li_2022 | not_relevant | 0 | 0 | The paper focuses on the discovery of a RIPK1 inhibitor (RI-962) using deep learning and reports PK parameters for RI-962, but does not contain any data, analysis, or PD parameters for macrogol. |
+| PGx | Li_2024 | not_relevant | 0 | 0 | The paper describes a nanomaterial for phototherapy and does not report pharmacogenomic effects on the PK/PD of macrogol. |
+| PGx | Lin_2021 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of ropeginterferon alfa-2b (a PEGylated interferon) but does not report pharmacogenomic effects on macrogol (PEG) PK/PD parameters. |
+| popPK | Lolli_2018 | irrelevant | 0 | 0 | The paper investigates the pH dependence of Green Fluorescent Protein (GFPmut2) using crystallography and spectroscopy, and contains no pharmacokinetic data for macrogol. |
+| PD | Lolli_2018 | not_relevant | 0 | 0 | The paper investigates the pH dependence and crystal structure of Green Fluorescent Protein (GFPmut2), not the pharmacodynamics of macrogol. |
+| popPK | Luan_2017 | irrelevant | 0 | 0 | The paper describes a microfabricated wound-healing assay for cell migration and does not involve the drug macrogol or pharmacokinetic parameters. |
+| PD | Luan_2017 | not_relevant | 0 | 0 | The paper describes a wound-healing assay for cell migration using FBS and CXCL12, not a pharmacodynamic study of macrogol. |
+| PGx | Lühmann_2020 | not_relevant | 0 | 0 | The paper studies the biodistribution of PEGylated FGF-2 in mice and does not report pharmacogenomic effects on the PK/PD of macrogol. |
+| PGx | Macías_2011 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of hepatitis C treatment (IL28B/IFN/RBV), not macrogol. |
+| PGx | Mai_2022 | not_relevant | 0 | 0 | The study investigates sex-specific effects of excipients on ranitidine bioavailability in rats, not pharmacogenomic effects on macrogol. |
+| PD | Mayer_1995 | not_relevant | 0 | 0 | The paper describes a method for measuring free drug concentrations (PK analysis) and does not report any pharmacodynamic or exposure-response relationships. |
+| popPK | Ming_2026 | irrelevant | 0 | 0 | no_text gate: only 139 chars of text extracted (&lt; 400) |
+| PD | Ming_2026 | not_relevant | 0 | 0 | The paper focuses on difelikefalin acetate, not macrogol, and does not report a PD relationship for macrogol. |
+| PGx | Miyasaka_2012 | not_relevant | 0 | 0 | The paper studies HCV viral dynamics and mutations, not the pharmacokinetics or pharmacodynamics of macrogol. |
+| PD | Momeni_2025 | not_relevant | 0 | 0 | The paper focuses on the synthesis and characterization of carbon nanotube drug carriers for doxorubicin, not on the pharmacodynamics of macrogol (PEG) itself; no exposure-response or dose-response relationship for macrogol is reported. |
+| popPK | Mouksassi_2025 | irrelevant | 0 | 0 | no_text gate: only 162 chars of text extracted (&lt; 400) |
+| PD | Mouksassi_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetic and pharmacodynamic modeling of continuous erythropoiesis receptor activator (CERA), not macrogol. |
+| PGx | Mummidivarapu_2018 | not_relevant | 0 | 0 | The paper describes structural analyses of noncovalent PEGylation of a model protein (cytochrome c) and does not report pharmacogenomic effects on the PK/PD of macrogol. |
+| PGx | Nagheh_2017 | not_relevant | 0 | 0 | The paper investigates the effect of a nanoparticle formulation on gene expression and cytotoxicity in cancer cells, not the effect of a patient's genotype on the pharmacokinetics or pharmacodynamics of macrogol. |
+| PGx | Obeid_2026 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of radiolabeled peptides for PET imaging, not the pharmacogenomics of macrogol. |
+| PD | Olsson_1987 | not_relevant | 3 | 1 | The paper uses polyethylene glycol (PEG) solely as a reagent for insulin precipitation in assays, not as a drug, and reports no exposure-response or dose-response relationship for PEG. |
+| popPK | Pagendarm_2023 | irrelevant | 0 | 0 | The paper describes the formulation of PEG-based nanocarriers for drug delivery and does not report pharmacokinetic parameters for macrogol. |
+| PGx | Pieper_2019 | not_relevant | 0 | 0 | The paper investigates the formulation of doxorubicin nanoparticles and their anticancer activity, not the pharmacokinetics or pharmacodynamics of macrogol. |
+| popPK | Plourde_1991 | irrelevant | 0 | 0 | The study uses polyethylene glycol (macrogol) as a precipitation reagent for receptor binding assays, not as a drug subject to pharmacokinetic analysis. |
+| PD | Plourde_1991 | not_relevant | 0 | 0 | The paper validates a laboratory precipitation technique (PEG) for receptor binding assays and does not report a pharmacodynamic exposure-response or dose-response relationship for the drug macrogol. |
+| PGx | Popović_2017 | not_relevant | 0 | 0 | The paper studies the effect of polyethylene glycol (PEG) on plant tissue culture, not the pharmacokinetics or pharmacodynamics of macrogol in humans. |
+| popPK | Qi_2017 | irrelevant | 0 | 0 | The paper is an in-vitro study on HIV-1 viral inactivation by proteins and peptides, and macrogol (PEG-6000) is used only as a reagent for separation, not as the subject drug for PK analysis. |
+| PD | Qi_2017 | not_relevant | 0 | 0 | The paper studies HIV-1 inactivation by proteins and peptides, not the pharmacodynamics of macrogol (PEG-6000 is used only as a separation agent). |
+| PGx | Ramcharran_2010 | not_relevant | 0 | 0 | The paper investigates the association between serum lipids and hepatitis C treatment efficacy, not the pharmacokinetics or pharmacodynamics of macrogol. |
+| PGx | Ravouru_2018 | not_relevant | 0 | 0 | The paper investigates the formulation of gliclazide nanocrystals using PEG as a stabilizer, not the pharmacogenomics of macrogol. |
+| PGx | Ren_2022 | not_relevant | 0 | 0 | The paper reports the pharmacokinetics of TPGS/PEG1000 in rats and CYP450 inhibition in human microsomes, but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Reynaldo-Fernández_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of erythropoietin (EPO) formulations, not macrogol. |
+| popPK | Reynaldo_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of PEGylated erythropoietin (rHuEPO), not the drug macrogol. |
+| PD | Rogers_2004 | not_relevant | 3 | 2 | The paper reports a single IC50 value for in vitro receptor binding and qualitative biodistribution data, but does not provide a dose-response curve, PK/PD model, or sufficient data points to derive a pharmacodynamic relationship for macrogol. |
+| PGx | Rosini_2020 | not_relevant | 0 | 0 | The paper discusses PEGylation of an enzyme for cancer therapy and does not report pharmacogenomic effects on the PK/PD of macrogol. |
+| popPK | Rouaz_2021 | irrelevant | 0 | 0 | The paper is a review of excipients in pediatric formulations and does not report pharmacokinetic parameters for macrogol as a subject drug. |
+| PD | Rouaz_2021 | not_relevant | 0 | 0 | The paper is a theoretical review of excipients in paediatric formulations and does not report any pharmacodynamic or exposure-response data for macrogol. |
+| popPK | Rubin_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 9-aminocamptothecin, not macrogol (which is only mentioned as a component of the vehicle). |
+| PGx | Rusiecka_2024 | not_relevant | 0 | 0 | The paper studies the neuroprotective effects of an imatinib conjugate in cell lines and does not report pharmacogenomic effects on the PK or PD of macrogol. |
+| popPK | Ryan_2011 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
+| PD | Ryan_2011 | not_relevant | 0 | 0 | The paper focuses on PEGylated salmon calcitonin, not macrogol, and does not report PD parameters for macrogol. |
+| PGx | Saafan_2020 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of sofosbuvir (an antiviral), not macrogol. |
+| popPK | Saito_2012 | irrelevant | 0 | 0 | no_text gate: only 122 chars of text extracted (&lt; 400) |
+| PD | Saito_2012 | not_relevant | 0 | 0 | The paper focuses on peg-interferon-alpha 2a, not macrogol. |
+| PGx | Sawhney_2016 | not_relevant | 0 | 0 | The paper describes the PEGylation of streptokinase to improve its pharmacokinetic properties, but it does not report on the effect of human gene variants or genotypes on the PK/PD of macrogol or any other drug. |
+| PD | Shahangian_1992 | not_relevant | 0 | 0 | The paper analyzes the effect of polyethylene glycol (macrogol) on the performance parameters (Tmax, C50) of an immunoturbidimetric assay, not the pharmacodynamic response of a biological system to macrogol as a drug. |
+| PGx | Sharma_2024 | not_relevant | 0 | 0 | The paper describes a case of macrolipasemia (macroenzyme) and uses PEG precipitation for diagnosis, but does not report a pharmacogenomic effect on the PK/PD of macrogol. |
+| popPK | Siddiqui_1979 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of triclosan, not macrogol (which is only mentioned as a vehicle). |
+| popPK | Siebel_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of PEGylated Asparaginase (PEG-ASNase), not macrogol (PEG) itself, as the subject drug. |
+| PGx | Silveira_2017 | not_relevant | 0 | 0 | The paper studies plant physiology (sugarcane drought tolerance) and uses polyethylene glycol (PEG) as an osmotic agent, not as a drug for pharmacokinetic/pharmacodynamic analysis in humans. |
+| PGx | Smolders_2018 | not_relevant | 0 | 0 | The paper studies ribavirin pharmacokinetics in HIV/HCV patients and does not mention macrogol or any pharmacogenomic effects. |
+| popPK | Solomon_2020 | irrelevant | 0 | 0 | The paper studies cixutumumab antibody-drug conjugates in mice and does not report pharmacokinetic parameters for macrogol. |
+| popPK | Sommer_2024 | irrelevant | 0 | 0 | The paper focuses on regression models for adverse drug reactions in polypharmacy and does not report pharmacokinetic parameters for macrogol. |
+| PD | Sommer_2024 | not_relevant | 0 | 0 | The paper analyzes adverse drug reactions using regression models on real-world data and explicitly drops macrogol combinations from the analysis; it does not report any pharmacodynamic or exposure-response parameters. |
+| popPK | Strumilo_1984 | irrelevant | 0 | 0 | The paper describes the purification and enzymatic kinetics of isocitrate dehydrogenase, where polyethylene glycol is used only as a purification reagent, not as a pharmacokinetic subject. |
+| PD | Strumilo_1984 | not_relevant | 0 | 0 | The paper describes the purification and enzymatic kinetics of isocitrate dehydrogenase, not the pharmacodynamics of macrogol (polyethylene glycol) as a drug. |
+| popPK | Sun_2018 | irrelevant | 0 | 0 | The study investigates the targeting properties of glycyrrhetinic acid derivatives in liposomes, not the pharmacokinetics of macrogol. |
+| PD | Sun_2018 | not_relevant | 0 | 0 | The paper investigates the receptor binding affinity (EC50) of glycyrrhetinic acid derivatives for liposome targeting, not the pharmacodynamic exposure-response relationship of macrogol (PEG). |
+| popPK | Sundqvist_1988 | relevant | 9 | 2 | The study reports a compartmental PK model for PEG (macrogol) in pigs, but the specific numeric parameter values are not present in the provided evidence text. |
+| popPK | Talbot_1982 | irrelevant | 0 | 0 | no_text gate: only 105 chars of text extracted (&lt; 400) |
+| PD | Talbot_1982 | not_relevant | 0 | 0 | The paper describes the purification and characterization of an enzyme (exo-beta (1-&gt;3)-glucanohydrolase) from sea urchin eggs and does not involve the drug macrogol or any pharmacodynamic analysis. |
+| popPK | Tan_2025 | irrelevant | 0 | 0 | The paper is a clinical study on multiple sclerosis and retinal nerve fiber layer thickness, unrelated to macrogol pharmacokinetics. |
+| popPK | Tanaka_2004 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pegylated recombinant human megakaryocyte growth and development factor (PEG-rHuMGDF), not macrogol. |
+| PGx | Thapaliya_2022 | not_relevant | 0 | 0 | The paper investigates the chemical structure of antibody-fluorophore conjugates and their targeting properties, not the pharmacogenomics of macrogol. |
+| popPK | Thi_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of buprenorphine in rabbits, not macrogol. |
+| PD | Thi_2025 | not_relevant | 0 | 0 | The paper evaluates the pharmacokinetics of buprenorphine, not macrogol, and reports only qualitative adverse effects (reduced output/consumption) without numeric PD parameters or exposure-response modeling. |
+| PGx | Thrivikraman_2025 | not_relevant | 0 | 0 | The paper focuses on drug delivery systems for gemcitabine and aspirin in pancreatic cancer and does not mention macrogol or any pharmacogenomic effects. |
+| PD | Tian_2017 | not_relevant | 2 | 1 | The paper reports an IC50 value for a drug delivery system (DOX-loaded micelles) but does not provide the underlying concentration-effect data, curve, or parameters required to derive a pharmacodynamic relationship for macrogol or the specific polymer. |
+| popPK | Tonduru_2023 | irrelevant | 0 | 0 | The paper investigates OATP1C1-mediated transport of l-thyroxine-derived prodrugs of NSAIDs (ketoprofen, naproxen, etc.) and does not study macrogol. |
+| PD | Tonduru_2023 | not_relevant | 0 | 0 | The paper focuses on the design and characterization of prodrugs for OATP1C1-mediated transport, reporting Michaelis-Menten kinetic parameters (Km, Vmax) for cellular uptake, but does not report a pharmacodynamic (exposure-response or dose-response) relationship for macrogol or any other drug with numeric PD parameters like Emax or EC50. |
+| popPK | Tsutsumi_2018 | irrelevant | 0 | 0 | The paper describes gold nanoparticles conjugated with glycopeptides for lectin detection and imaging, not the pharmacokinetics of macrogol. |
+| PD | Tsutsumi_2018 | not_relevant | 0 | 0 | The paper describes the binding affinity (EC50) of gold nanoparticle probes to a lectin (RCA120) for detection purposes, which is a physicochemical/biochemical binding study, not a pharmacodynamic (drug effect) or exposure-response relationship for macrogol. |
+| popPK | Ueno_2019 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
+| PD | Ueno_2019 | not_relevant | 0 | 0 | The paper analyzes the exposure-response relationship for HCV drugs (Daclatasvir, Asunaprevir, Beclabuvir), not macrogol. |
+| PGx | Veroni_2026 | not_relevant | 0 | 0 | The paper studies peginterferon beta-1a, not macrogol. |
+| popPK | Vinogradova_2015 | irrelevant | 0 | 0 | The study focuses on PEG-IFN alpha-2b (pegylated interferon), not macrogol, and does not report PK parameters for macrogol. |
+| PGx | Wadhwa_2025 | not_relevant | 0 | 0 | The paper reports on the efficacy of a radiopharmaceutical for AML treatment and does not investigate pharmacogenomic effects on the PK/PD of macrogol. |
+| PGx | Wadhwa_2025_2 | not_relevant | 0 | 0 | The paper focuses on radiotheranostics for AML and does not report pharmacogenomic effects on the PK/PD of macrogol. |
+| PGx | Wang_2014 | not_relevant | 0 | 0 | The paper investigates the effect of excipients (PEG 400) on the pharmacokinetics of nalbuphine, not the pharmacogenomics of macrogol itself. |
+| popPK | Wang_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of PEGylated C34 peptides (HIV fusion inhibitors), not the drug macrogol. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
+| PD | Wang_2021 | not_relevant | 0 | 0 | The paper discusses the RPA190-pc gene in Phytophthora capsici and its role in metalaxyl sensitivity, which is unrelated to the drug macrogol. |
+| popPK | Wang_2023 | irrelevant | 0 | 0 | The paper describes the physicochemical properties of a STING-activating polymer (PEG-b-PC7A) and is not a pharmacokinetic study of macrogol. |
+| PD | Wang_2023 | not_relevant | 0 | 0 | The paper characterizes the physicochemical properties (pH titration, micellization, drug release) of a polymer nanomaterial, not the pharmacodynamics of a drug in a biological system. |
+| popPK | Wolkersdorfer_2024 | irrelevant | 0 | 0 | no_text gate: only 54 chars of text extracted (&lt; 400) |
+| PD | Wolkersdorfer_2024 | not_relevant | 0 | 0 | The paper describes the biochemical engineering and characterization of PEGylated VEGF, not a pharmacodynamic or exposure-response analysis of macrogol. |
+| popPK | Würthwein_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for PEGylated Asparaginase (PEG-ASNase), not macrogol (polyethylene glycol) as a standalone drug. |
+| popPK | Würthwein_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of PEGylated asparaginase (PEG-ASNase), not macrogol (polyethylene glycol), which is only the conjugating agent. |
+| popPK | Yamaoka_1994 | relevant | 9 | 2 | The study reports quantitative PK parameters (half-life, clearance trends) for PEG in mice using a two-compartment model, but specific numeric values for CL, V, and Q are not explicitly listed in the provided text. |
+| popPK | Yang_2021 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral screening study for Hepatitis B and does not involve macrogol or pharmacokinetic parameters. |
+| PD | Yang_2021 | not_relevant | 0 | 0 | The paper reports dose-response relationships (EC50) for antiviral drugs (e.g., fludarabine, pranlukast) against Hepatitis B, but does not report any pharmacodynamic data for macrogol. |
+| popPK | Yang_2024 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for paclitaxel, not macrogol. |
+| PD | Yu_2018 | not_relevant | 0 | 0 | The provided text is an abstract that describes qualitative improvements in efficacy and side effects but does not contain any numeric PD parameters, dose-response curves, or specific exposure-response data. |
+| PGx | Yu_2022 | not_relevant | 0 | 0 | The paper studies Pegylated Interferon (PEG-IFN), not macrogol, and reports clinical efficacy/safety rather than pharmacogenomic effects on PK/PD parameters. |
+| popPK | Zarif_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atorvastatin, not macrogol. |
+| PD | Zarif_2025 | not_relevant | 0 | 0 | The paper focuses on atorvastatin delivery and does not report any pharmacodynamic or exposure-response relationship for macrogol. |
+| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper describes an analytical method (iCIEF) for characterizing PEGylated proteins and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Zheng_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of paclitaxel (PTX) in MCF-7 cells, not macrogol. |
+| popPK | Zheng_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Panax notoginseng saponins (ginsenosides Rb1, Rg1, R1) in beagle dogs, not macrogol. |
+| popPK | Zhu_2018 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for asunaprevir, not macrogol. |
+| PGx | Zhu_2018 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of asunaprevir, not macrogol. |
+| PGx | Zhu_2024 | not_relevant | 0 | 0 | The paper studies the physiological and transcriptomic response of quinoa plants to drought stress simulated by PEG, not the pharmacokinetics or pharmacodynamics of macrogol in humans. |
+| popPK | unknown_2018 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
+| PD | unknown_2018 | not_relevant | 0 | 0 | The provided text is only a header for conference abstracts and contains no specific study data, drug details, or pharmacodynamic parameters for macrogol. |
+| PGx | van_2023 | not_relevant | 0 | 0 | The paper investigates the immunomodulatory effects of PEGylated peptides, not the pharmacokinetics or pharmacodynamics of macrogol (PEG) itself, and does not report any pharmacogenomic effects. |
+| popPK | Özdemir_2021 | irrelevant | 0 | 0 | The paper is a synthetic chemistry and in-vitro pharmacological study of triterpenoid-PEG conjugates, not a pharmacokinetic study of macrogol. |
+| PD | Özdemir_2021 | not_relevant | 0 | 0 | The paper reports in vitro pharmacological activities (antimicrobial, antiviral, cytotoxic) of triterpenoid-PEG conjugates, not a pharmacokinetic/pharmacodynamic (PK/PD) or exposure-response relationship for macrogol. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmacrogol%5D&body=Drug%3A%20macrogol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_macrogol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-04 16:27 UTC</sub>

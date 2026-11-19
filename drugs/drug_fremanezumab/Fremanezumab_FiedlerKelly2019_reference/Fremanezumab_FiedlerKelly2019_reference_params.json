@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fremanezumab_FiedlerKelly2019_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  225.0,
+  675.0
+ ],
+ "parameters": {
+  "Cl": 5.324074074074074e-08,
+  "F": 0.658,
+  "Tlag": 6937.92,
+  "VdPerKg": 4.257142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.000225,
+  "k12": 1.0175863783246334e-06,
+  "k21": 1.7630275624461673e-06,
+  "ka": 0.00018287037037037038,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11406.191101650087
+ },
+ "reference_peaks": {
+  "central.C": 0.012917029783695915
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

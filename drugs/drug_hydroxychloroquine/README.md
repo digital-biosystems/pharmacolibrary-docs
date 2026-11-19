@@ -1,0 +1,143 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;hydroxychloroquine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_prenatal&quot;,&quot;label&quot;:&quot;Balevic_2019_prenatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_prenatal.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_corresponding_estimated_value&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_corresponding_estimated_value_in_model_by_carmichael_et_al_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_estimate&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_estimate&quot;,&quot;label&quot;:&quot;Balevic_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_postnatal&quot;,&quot;label&quot;:&quot;Balevic_2019_postnatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_postnatal.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_reference&quot;,&quot;label&quot;:&quot;Zahr_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# hydroxychloroquine
+
+- **generic name:** hydroxychloroquine
+- **ATC codes:** `P01BA02`
+- **DrugBank:** [DB01611](https://go.drugbank.com/drugs/DB01611) · **PubChem:** [CID 3652](https://pubchem.ncbi.nlm.nih.gov/compound/3652)
+- **molar mass:** 335.872 g/mol (C18H26ClN3O) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Hydroxychloroquine is an antimalarial aminoquinoline used to treat malaria, rheumatoid arthritis, lupus, and other conditions. It is given orally, typically in tablet form. It is widely used and listed on the World Health Organization's essential medicines list.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q421094](https://www.wikidata.org/wiki/Q421094), [Wikipedia](https://en.wikipedia.org/wiki/Hydroxychloroquine?oldid=1383960162) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| hydroxychloroquine | parent | 335.872 | C18H26ClN3O | DrugBank | [3652](https://pubchem.ncbi.nlm.nih.gov/compound/3652) | Alvarez_2022, Balevic_2019, Balevic_2022, Shimizu_2023, Thémans_2020, Yang_2025, Zahr_2021 |
+| desethylchloroquine | metabolite | 291.823 | C16H22ClN3 | PubChem | [95478](https://pubchem.ncbi.nlm.nih.gov/compound/95478) | Alvarez_2022 |
+| desethylhydroxychloroquine | metabolite | 307.822 | C16H22ClN3O | PubChem | [71826](https://pubchem.ncbi.nlm.nih.gov/compound/71826) | Alvarez_2022 |
+| didesethylchloroquine | metabolite | 263.769 | C14H18ClN3 | PubChem | [122672](https://pubchem.ncbi.nlm.nih.gov/compound/122672) | Alvarez_2022 |
+
+## Start here
+
+> **Thémans_2020_corresponding_estimated_value_in_model_by_carmichael_et_al_2** — <span class="pk-badge pk-badge--blue">Simulated</span> COVID-19 patients, n = 48. [Run it in the simulator](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.md?tab=Simulation) · [record](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="256" viewBox="0 0 560 256" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="234" stroke="#ddd"/><text x="190.0" y="248" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="234" stroke="#ddd"/><text x="306.7" y="248" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="234" stroke="#ddd"/><text x="423.3" y="248" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="234" stroke="#ddd"/><text x="540.0" y="248" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Thémans_2020 · CL</text><circle cx="306.1" cy="30.0" r="4" fill="#78909c"><title>Thémans_2020 · CL: 9.89 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Thémans_2020 · CL</text><circle cx="329.5" cy="46.0" r="4" fill="#78909c"><title>Thémans_2020 · CL: 15.7 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Shimizu_2023 · CL</text><circle cx="428.2" cy="62.0" r="4" fill="#ef6c00"><title>Shimizu_2023 · CL: 110 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Alvarez_2022 · CL/F</text><circle cx="277.3" cy="78.0" r="4" fill="#ef6c00"><title>Alvarez_2022 · CL/F: 5.6 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Zahr_2021 · CL/F</text><circle cx="326.2" cy="94.0" r="4" fill="#ef6c00"><title>Zahr_2021 · CL/F: 14.7 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Yang_2025 · CL/F</text><circle cx="331.7" cy="110.0" r="4" fill="#ef6c00"><title>Yang_2025 · CL/F: 16.4 L/h</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Balevic_2022 · CL/F</text><circle cx="367.5" cy="126.0" r="4" fill="#ef6c00"><title>Balevic_2022 · CL/F: 33.2 L/h</title></circle><text x="184" y="146.0" font-size="11" text-anchor="end">Balevic_2022 · CL/F</text><circle cx="379.5" cy="142.0" r="4" fill="#ef6c00"><title>Balevic_2022 · CL/F: 42.1 L/h</title></circle><text x="184" y="162.0" font-size="11" text-anchor="end">Balevic_2019 · CL/F</text><circle cx="385.1" cy="158.0" r="4" fill="#78909c"><title>Balevic_2019 · CL/F: 47 L/h</title></circle><text x="184" y="178.0" font-size="11" text-anchor="end">Balevic_2019 · CL/F</text><circle cx="385.1" cy="174.0" r="4" fill="#ef6c00"><title>Balevic_2019 · CL/F: 47 L/h</title></circle><text x="184" y="194.0" font-size="11" text-anchor="end">Balevic_2022 · CL/F</text><circle cx="387.0" cy="190.0" r="4" fill="#ef6c00"><title>Balevic_2022 · CL/F: 48.8 L/h</title></circle><text x="184" y="210.0" font-size="11" text-anchor="end">Balevic_2019 · CL/F</text><circle cx="389.2" cy="206.0" r="4" fill="#ef6c00"><title>Balevic_2019 · CL/F: 51 L/h</title></circle><text x="184" y="226.0" font-size="11" text-anchor="end">Balevic_2022 · CL/F</text><circle cx="391.2" cy="222.0" r="4" fill="#ef6c00"><title>Balevic_2022 · CL/F: 53 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="176" viewBox="0 0 560 176" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="154" stroke="#ddd"/><text x="190.0" y="168" font-size="10" text-anchor="middle">1</text><line x1="277.5" y1="18" x2="277.5" y2="154" stroke="#ddd"/><text x="277.5" y="168" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="154" stroke="#ddd"/><text x="365.0" y="168" font-size="10" text-anchor="middle">100</text><line x1="452.5" y1="18" x2="452.5" y2="154" stroke="#ddd"/><text x="452.5" y="168" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="154" stroke="#ddd"/><text x="540.0" y="168" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shimizu_2023 · V</text><circle cx="417.5" cy="30.0" r="4" fill="#ef6c00"><title>Shimizu_2023 · V: 398 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Thémans_2020 · V</text><circle cx="433.4" cy="46.0" r="4" fill="#78909c"><title>Thémans_2020 · V: 605 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Thémans_2020 · V</text><circle cx="446.8" cy="62.0" r="4" fill="#78909c"><title>Thémans_2020 · V: 860.8 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Yang_2025 · V</text><circle cx="460.1" cy="78.0" r="4" fill="#ef6c00"><title>Yang_2025 · V: 1220 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Zahr_2021 · V/F</text><circle cx="216.1" cy="94.0" r="4" fill="#ef6c00"><title>Zahr_2021 · V/F: 1.99 L</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Balevic_2019 · V/F ·/kg</text><circle cx="475.9" cy="110.0" r="4" fill="#ef6c00"><title>Balevic_2019 · V/F ·/kg: 1850 L</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Balevic_2019 · V/F ·/kg</text><circle cx="478.8" cy="126.0" r="4" fill="#78909c"><title>Balevic_2019 · V/F ·/kg: 2000 L</title></circle><text x="184" y="146.0" font-size="11" text-anchor="end">Balevic_2019 · V/F ·/kg</text><circle cx="478.8" cy="142.0" r="4" fill="#ef6c00"><title>Balevic_2019 · V/F ·/kg: 2000 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Balevic_2019_prenatal](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_prenatal.md) | ▶ model + simulator | 1-compartment, oral | 5 | Balevic SJ et al., Pharmacokinetics of Hydroxychloroquine…, Clinical pharmacokinetics (2019) | [10.1007/s40262-018-0712-z](https://doi.org/10.1007/s40262-018-0712-z) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [↳ estimate](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_estimate.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [↳ postnatal](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_postnatal.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Thémans_2020_corresponding_estimated_value_in_model_by_carmichael_et_al_2](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.md) | ▶ model + simulator | 1-compartment, oral | 5 | Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020) | [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [↳ estimate](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_estimate.md) | ▶ model + simulator | 1-compartment, oral | 4 (+1 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>blocking: unreported model parameter default(s): Q1</sub> | [Alvarez_2022_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md) | model (no simulator) | 2-compartment general linear | 10 | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Balevic_2022_first](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2022_first.md) | — | 1-compartment (no model) | 4 | Balevic SJ et al., Hydroxychloroquine PK and exposure-resp…, Lupus science & medicine (2022) | [10.1136/lupus-2021-000602](https://doi.org/10.1136/lupus-2021-000602) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ post_partum](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2022_post_partum.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ second](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2022_second.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ third](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2022_third.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Shimizu_2023_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Shimizu2023_reference.md) | — | 1-compartment (no model) | 4 | Shimizu M et al., Pharmacokinetics of hydroxychloroquine…, Modern rheumatology (2023) | [10.1093/mr/roac113](https://doi.org/10.1093/mr/roac113) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Yang_2025_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Yang2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Yang C et al., Population pharmacokinetics of long-ter…, British journal of clinical… (2025) | [10.1111/bcp.16257](https://doi.org/10.1111/bcp.16257) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Zahr_2021_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Zahr N et al., Pharmacokinetics and pharmacodynamics o…, Therapie (2021) | [10.1016/j.therap.2021.01.056](https://doi.org/10.1016/j.therap.2021.01.056) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Alvarez_2022_length_of_stay_duration_of_hospitalization](drugs/drug_hydroxychloroquine/pd_Alvarez_2022_length_of_stay_duration_of_hospitalization.md) | length of stay (duration of hospitalization) ← hydroxychloroquine (whole blood) · direct linear effect | — | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span> | [Ni_2022_viral_RNA_level_in_cell_supernatant_SARS_CoV_2_replication_inhibition](drugs/drug_hydroxychloroquine/pd_Ni_2022_viral_RNA_level_in_cell_supernatant_SARS_CoV_2_repli.md) | viral RNA level in cell supernatant (SARS-CoV-2 replication inhibition) ← hydroxychloroquine (Rac-HCQ, R-HCQ, S-HCQ) · inhibition effect | — | Ni Y et al., Synthesis and evaluation of enantiomers…, Bioorganic & medicinal chem… (2022) | [10.1016/j.bmc.2021.116523](https://doi.org/10.1016/j.bmc.2021.116523) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Balevic_2022_preterm_birth](drugs/drug_hydroxychloroquine/pd_Balevic_2022_preterm_birth.md) | preterm birth ← hydroxychloroquine · categorical (graded) response model | — | Balevic SJ et al., Hydroxychloroquine PK and exposure-resp…, Lupus science & medicine (2022) | [10.1136/lupus-2021-000602](https://doi.org/10.1136/lupus-2021-000602) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hydroxychloroquine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
+| excretion | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ACE2 (modulator), DNA (cross-linking/alkylation), TLR7 (target), TLR9 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 07:09 | 8:37 | 13/0/0 | 3/0/0 | 0/0/0 | 445,946/24,034 | ollama / glm-5.3-flash | 23 | 2/12 | 13/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 74 matched, 20 returned
+- **screened:** 7  ·  **relevant:** 7
+- **records:** 13  ·  extracted 3  ·  needs review 10  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Shimizu_2023.pdf` | Shimizu M et al., Pharmacokinetics of hydroxychloroquine…, Modern rheumatology (2023) | popPK | 10 | [10.1093/mr/roac113](https://doi.org/10.1093/mr/roac113) | [36112484](https://pubmed.ncbi.nlm.nih.gov/36112484) | Population PK (two-compartment) in SLE patients with numeric CL (110 l/h) and Vc (398 l) reported directly in the abstract. |
+| `Yang_2025.pdf` | Yang C et al., Population pharmacokinetics of long-ter…, British journal of clinical… (2025) | popPK | 10 | [10.1111/bcp.16257](https://doi.org/10.1111/bcp.16257) | [39315408](https://pubmed.ncbi.nlm.nih.gov/39315408) | Population PK model for HCQ with numeric CL (16.4 L/h) and V (1220 L) reported directly in the abstract. |
+| `Raj_2022.pdf` | Raj JP et al., Population Pharmacokinetics of Hydroxyc…, Journal of clinical pharmac… (2022) | popPK | 9 | [10.1002/jcph.2092](https://doi.org/10.1002/jcph.2092) | [35656997](https://pubmed.ncbi.nlm.nih.gov/35656997) | A population PK study of hydroxychloroquine in humans with a 2-compartment model, but the numeric parameter values (CL, V, etc.) are not present in the evidence — only the EC50 of 0.7 μmol appears. |
+
+<sub>queue written 2026-10-07 07:02 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Balevic_2023 | irrelevant | 1 | 0 | Exposure-response efficacy extrapolation study; no PK disposition parameters for hydroxychloroquine and data deemed insufficient to quantitatively characterize exposure-response. |
+| popPK | Friedland_2021 | irrelevant | 0 | 0 | This is a clinical trial design paper for HCQ prophylaxis with no PK parameters (no CL, V, ka, half-life, or PK model) reported. |
+| popPK | Kojima_2025 | irrelevant | 0 | 0 | This is a clinical efficacy study of belimumab in SLE; hydroxychloroquine is only a covariate (use/non-use), with no PK parameters for HCQ reported. |
+| popPK | Marzolini_2020 | irrelevant | 2 | 2 | HCQ is a co-administered comparator; only observed plasma concentrations (median 171 ng/ml) are reported, with no CL, V, half-life, or population-PK model for HCQ. |
+| popPK | Massonnaud_2025 | irrelevant | 0 | 0 | This is a biomarker/clinical-outcome study of HCQ in COVID-19 with no PK parameters (no CL, V, ka, half-life, or PK model) reported. |
+| popPK | Mok_2017 | irrelevant | 2 | 1 | Narrative review on therapeutic drug monitoring in SLE with no quantitative PK parameters for hydroxychloroquine reported. |
+| popPK | Ni_2022 | irrelevant | 1 | 1 | This is a synthesis and in-vitro antiviral/toxicity study of hydroxychloroquine enantiomers; no PK disposition parameters (CL, V, half-life) are reported, only EC50 values and a passing mention of prior enantioselective clearance findings. |
+| popPK | Rabie_2021 | irrelevant | 0 | 0 | This is a drug-design/antiviral activity paper about cyanorona-20; hydroxychloroquine is only a comparator with EC50/CC50 values, no PK disposition parameters. |
+| popPK | Raj_2022 | relevant | 9 | 3 | A population PK study of hydroxychloroquine in humans with a 2-compartment model, but the numeric parameter values (CL, V, etc.) are not present in the evidence — only the EC50 of 0.7 μmol appears. |
+| popPK | Sacramento_2022 | irrelevant | 1 | 1 | The PBPK model and its parameters concern mefloquine, not hydroxychloroquine, which appears only as a comparator antiviral; no HCQ disposition parameters are reported. |
+| popPK | Wang_2023 | irrelevant | 0 | 0 | In-vitro antiviral study of novel compounds; HCQ is only a comparator with EC50 values, no PK disposition parameters. |
+| popPK | Zeitlinger_2020 | irrelevant | 2 | 1 | Narrative review of COVID-19 antivirals; hydroxychloroquine appears only as a comparator with EC50/concentration data, no PK disposition parameters (CL, V, ka, half-life) for HCQ itself. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydroxychloroquine%5D&body=Drug%3A%20hydroxychloroquine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydroxychloroquine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 07:02 UTC</sub>

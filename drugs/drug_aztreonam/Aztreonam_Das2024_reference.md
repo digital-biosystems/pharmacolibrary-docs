@@ -1,0 +1,233 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;aztreonam&quot;,&quot;href&quot;:&quot;drugs/drug_aztreonam/&quot;},{&quot;label&quot;:&quot;Das_2024 \u00b7 reference&quot;}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# aztreonam — `Aztreonam_Das2024_reference`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> This record was reviewed on 2026-11-07 16:19 UTC (Rejected), but the paper was screened again on 2026-10-07 10:12 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance for aztreonam was recorded with area under the curve units, creating a dimension mismatch that prevents simulation.
+
+<div class="pk-model-meta" hidden drug="aztreonam" model-id="Aztreonam_Das2024_reference" status="rejected" stale="true" population="patients with complicated infections (healthy subjects and patients with cIAI/cUTI)" measured-compound="aztreonam" parameterization="mechanistic" topology="3C"></div>
+
+## Citation
+Das S, Riccobene T, Carrothers TJ, Wright JG, MacPherson M, Cristinacce A et al. Dose selection for aztreonam-avibactam, including adjustments for renal impairment, for Phase IIa and Phase III evaluation. European journal of clinical pharmacology 80(4):529–543 (2024).
+  ·  DOI: [10.1007/s00228-023-03609-x](https://doi.org/10.1007/s00228-023-03609-x)
+
+## Population and dosing
+
+**Population:** patients with complicated infections (healthy subjects and patients with cIAI/cUTI) · condition healthy | renal impairment | complicated intra-abdominal infection | complicated urinary tract infection · age group mixed · n = 1153.
+
+**Dosing:** 137, 167, 250, 410, 450, 500, 600, 750, 1500, 2000 mg, iv, multiple, every 6 h.
+
+## Model
+
+**Structure:** 3-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 11 extracted, plus 10 covariate effects.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit | RSE% | IIV |
+|---|---|---|---|---|---|
+| θ1: CL*WT/70** 0.75 (L/h) | CLnorm | 5.21 | L/h | 3.73 |  |
+| θ2: Vc*WT/70 (L) | V1 | 6.83 | L | 4.43 | 30.0 (25.4% RSE) |
+| θ3: Q*WT/70** 0.75 (L/h) | AUC | 10.7 | L/h | 12.2 |  |
+| θ4: Vp*WT/70 (L) | V2 | 5.76 | L | 5.27 | 21.9 (20.5% RSE) |
+| θ5: (CL + θ5*(CrCL–80)) | equation variable | 0.0158 |  | 21.3 |  |
+| θ6: (Bmax) a | Bmax | 3.24 |  | 19.7 |  |
+| θ1: CL (L/h) | CL | 10.4 | L/h | 3.3 | 14.1 (12.5% RSE) |
+| θ4: Q (L/h) | Q | 4.96 | L/h | 5.8 |  |
+| θ6: Ka | kabs | 0.459 | 1/h | 12.2 |  |
+| θ18: θ18** phase II cIAI patient effect on Vc | V | 2.66 |  | 11.2 |  |
+| ηCL2 | Q2 | 0.313 |  | 2.3 |  |
+| ηVp2 | V3 | 1.683 |  | 6.9 | 12.72 (None% RSE) |
+| theta_q356_category | theta_q356_category | 17.1 |  | 9.8 |  |
+| theta_clnorm_wt_power | theta_clnorm_wt_power | 0.206 |  | 57.3 |  |
+| theta_v1_wt_power | theta_v1_wt_power | 0.516 |  | 35.3 |  |
+| theta_q_wt_power | theta_q_wt_power | 1.33 |  | 31.7 |  |
+| theta_equation_variable_wt_power | theta_equation_variable_wt_power | 1.23 |  | 15.3 |  |
+| theta_q1_age | theta_q1_age | -1.13 |  | 47.3 |  |
+| theta_cl_sex | theta_cl_sex | 0.957 |  | 3.6 |  |
+| theta_cl_category | theta_cl_category | 20.5 | L/h | 7.9 |  |
+| theta_cl_crcl_power | theta_cl_crcl_power | 1.1 |  | 2.1 |  |
+| theta_v1_wt_power | theta_v1_wt_power | 0.998 |  | 8.2 |  |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**The intercompartmental clearance for aztreonam was recorded with area under the curve units, creating a dimension mismatch that prevents simulation.**
+
+The parameter labeled AUC has a meaning describing area under the concentration-time curve, yet its value is 10.7 with units of L/h, which is a clearance unit. The label for this parameter reads Q*WT/70** 0.75 (L/h), indicating it represents intercompartmental clearance, not area under the curve. This inconsistency between the pharmacokinetic meaning, the label, and the units constitutes a dimensional error in the model structure. Extracted — aztreonam: CLnorm 5.21 L/h, V1 6.83 L, AUC 10.7 L/h, V2 5.76 L, Bmax 3.24, CL 10.4 L/h, Q 4.96 L/h, kabs 0.459 1/h, … (+3).
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| θ1: CL*WT/70** 0.75 (L/h) | `Q354` · CLnorm | 5.21 | L/h | 1.447e-06 | m3/s | l/h | 3.73 | llm_corrected (0.6) | Das_2024_table_S3:row0:col1 |  |
+| θ2: Vc*WT/70 (L) | `Q63` · V1 | 6.83 | L | 0.00683 | m3 | l | 4.43 | llm_confirmed (0.6) | Das_2024_table_S3:row1:col1 | 30.0 (25.4% RSE) |
+| θ3: Q*WT/70** 0.75 (L/h) | `Q88` · AUC | 10.7 | L/h |  |  | l/h | 12.2 | llm (0.6) | Das_2024_table_S3:row2:col1 |  |
+| θ4: Vp*WT/70 (L) | `Q64` · V2 | 5.76 | L | 0.00576 | m3 | l | 5.27 | llm_confirmed (0.6) | Das_2024_table_S3:row3:col1 | 21.9 (20.5% RSE) |
+| θ5: (CL + θ5*(CrCL–80)) | `Q900` · equation variable | 0.0158 |  |  |  |  | 21.3 | llm_corrected (0.6) | Das_2024_table_S3:row5:col1 |  |
+| θ6: (Bmax) a | `Q332` · Bmax | 3.24 |  |  |  |  | 19.7 | llm_confirmed (0.6) | Das_2024_table_S3:row6:col1 |  |
+| θ1: CL (L/h) | `Q22` · CL | 10.4 | L/h | 2.889e-06 | m3/s | l/h | 3.3 | llm_confirmed (0.6) | Das_2024_table_S4:row0:col1, Das_2024_table_S5:row0:col1 | 14.1 (12.5% RSE) |
+| θ4: Q (L/h) | `Q30` · Q | 4.96 | L/h | 1.378e-06 | m3/s | l/h | 5.8 | llm (0.6) | Das_2024_table_S4:row3:col1 |  |
+| θ6: Ka | `Q49` · kabs | 0.459 | 1/h | 0.0001275 | 1/s | 1/h | 12.2 | llm_confirmed (0.6) | Das_2024_table_S4:row5:col1 |  |
+| θ18: θ18** phase II cIAI patient effect on Vc | `Q61` · V | 2.66 |  |  |  |  | 11.2 | llm_corrected (0.6) | Das_2024_table_S4:row17:col1 |  |
+| ηCL2 | `Q99` · Q2 | 0.313 |  |  |  |  | 2.3 | llm (0.6) | Das_2024_table_S5:row15:col1 |  |
+| ηVp2 | `Q77` · V3 | 1.683 |  |  |  |  | 6.9 | llm_confirmed (0.6) | Das_2024_table_S5:row18:col1 | 12.72 (None% RSE) |
+| theta_q356_category | `Q900` · theta_q356_category | 17.1 |  |  |  |  | 9.8 |  | Das_2024_table_S4:row1:col1 |  |
+| theta_clnorm_wt_power | `Q900` · theta_clnorm_wt_power | 0.206 |  |  |  |  | 57.3 |  | Das_2024_table_S4:row9:col1 |  |
+| theta_v1_wt_power | `Q900` · theta_v1_wt_power | 0.516 |  |  |  |  | 35.3 |  | Das_2024_table_S4:row10:col1 |  |
+| theta_q_wt_power | `Q900` · theta_q_wt_power | 1.33 |  |  |  |  | 31.7 |  | Das_2024_table_S4:row11:col1 |  |
+| theta_equation_variable_wt_power | `Q900` · theta_equation_variable_wt_power | 1.23 |  |  |  |  | 15.3 |  | Das_2024_table_S4:row12:col1 |  |
+| theta_q1_age | `Q900` · theta_q1_age | -1.13 |  |  |  |  | 47.3 |  | Das_2024_table_S4:row13:col1 |  |
+| theta_cl_sex | `Q900` · theta_cl_sex | 0.957 |  |  |  |  | 3.6 |  | Das_2024_table_S4:row14:col1 |  |
+| theta_cl_category | `Q900` · theta_cl_category | 20.5 | L/h |  |  |  | 7.9 |  | Das_2024_table_S5:row5:col1 |  |
+| theta_cl_crcl_power | `Q900` · theta_cl_crcl_power | 1.1 |  |  |  |  | 2.1 |  | Das_2024_table_S5:row6:col1 |  |
+| theta_v1_wt_power | `Q900` · theta_v1_wt_power | 0.998 |  |  |  |  | 8.2 |  | Das_2024_table_S5:row12:col1 |  |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- table section iiv: 'θ1: CL*WT/70** 0.75 (L/h)' routed out of structural estimates ('IIV, % (RSE%)')
+- table section iiv: 'θ2: Vc*WT/70 (L)' routed out of structural estimates ('IIV, % (RSE%)')
+- table section iiv: 'θ4: Vp*WT/70 (L)' routed out of structural estimates ('IIV, % (RSE%)')
+- table section iiv: 'θ1: CL (L/h)' routed out of structural estimates ('IIV, % (RSE%)')
+- table section iiv: 'θ3: Vc (L)' routed out of structural estimates ('IIV, % (RSE%)')
+- table section iiv: 'θ4: Q (L/h)' routed out of structural estimates ('IIV, % (RSE%)')
+- table section iiv: 'θ5: Vp (L)' routed out of structural estimates ('IIV, % (RSE%)')
+- table section iiv: 'θ1: CL (L/h)' routed out of structural estimates ('IIV, %')
+- table section iiv: 'θ2: Vc (L)' routed out of structural estimates ('IIV, %')
+- table section iiv: 'θ3: Q (L/h)' routed out of structural estimates ('IIV, %')
+- table section iiv: 'θ4: Vp (L)' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηCL2' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηVc2' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηCL–Vc covarianceb' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηVp2' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηVp–ηCL covarianceb' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηVp–ηVc covarianceb' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηQ 2' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηQ–ηCL covarianceb' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηQ–ηVc covarianceb' routed out of structural estimates ('IIV, %')
+- table section iiv: 'ηQ–ηVp covarianceb' routed out of structural estimates ('IIV, %')
+- table section iiv: 'Proportional error, phase Ib' routed out of structural estimates ('IIV, %')
+- table section iiv: 'Additive error, phase Ib' routed out of structural estimates ('IIV, %')
+- table section iiv: 'Proportional error, phase IIb' routed out of structural estimates ('IIV, %')
+- table section iiv: 'Proportional error, phase IIIb' routed out of structural estimates ('IIV, %')
+- column 'numbers of subjects (number of samples)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'modeling objectives and simulations' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Aztreonam Iteration 1aAztreonam-avibactam Phase I dose-finding trial (interim data) [18]' — extend the ontology if this is a real PK parameter (source ['Tab2:row1:col1', 'Tab2:row1:col2'])
+- dropped unlinked row (NIL): 'Aztreonam Iteration 1bAztreonam-avibactam Phase I dose-finding trial (interim data) [18]Published aztreonam renal impairment studies [32, 33]' — extend the ontology if this is a real PK parameter (source ['Tab2:row2:col1'])
+- dropped unlinked row (NIL): 'Avibactam Iteration 1Ceftazidime-avibactam program: 5 Phase I trials, 1 Phase II trial in cIAIAztreonam-avibactam Phase I dose-finding trial (interim data) [18]' — extend the ontology if this is a real PK parameter (source ['Tab2:row3:col1'])
+- dropped unlinked row (NIL): 'Aztreonam Iteration 2Aztreonam-avibactam Phase I dose-finding trial (final data) [18]Published aztreonam renal impairment studies [32, 33]' — extend the ontology if this is a real PK parameter (source ['Tab2:row4:col1', 'Tab2:row4:col2'])
+- dropped unlinked row (NIL): 'Avibactam Iteration 2Ceftazidime-avibactam program: 11 Phase I trials, 2 Phase II trials, 4 Phase III trials [21, 22]' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col1'])
+- unit_dimension_mismatch: 'θ3: Q*WT/70** 0.75 (L/h)' → Q88 (unit '[length] ** 3 / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped unlinked row (NIL): 'θ7: (B50) a' — extend the ontology if this is a real PK parameter (source ['Das_2024_table_S3:row7:col1'])
+- dropped duplicate Q900 ('θ8: (IF (AGE&gt;65) Vc&Vp*θ8AGE)', value '0.779') — already have one for this compound
+- unit_dimension_unknown: 'CrCL–80' (equation variable)
+- dropped duplicate Q900 ('θ9: (IF CrCL&lt;80) CrCL= θ5* θ9*(CrCL–80)', value '2.86') — already have one for this compound
+- dropped duplicate Q63 ('θ3: Vc (L)', value '12.8') — already have one for this compound
+- dropped duplicate Q63 ('θ5: Vp (L)', value '6.99') — already have one for this compound
+- dropped unlinked row (NIL): 'θ7: F1' — extend the ontology if this is a real PK parameter (source ['Das_2024_table_S4:row6:col1'])
+- dropped duplicate Q22 ('8: CL, (nCrCL/80)**8, nCrCL &lt;80 mL/min and not ESRD', value '1.23') — already have one for this compound
+- dropped duplicate Q22 ('θ9: CL, Change in CL due to ESRD', value '0.0447') — already have one for this compound
+- dropped duplicate Q22 ('θ16: Concomitant ceftazidime-avibactam on CL', value '0.963') — already have one for this compound
+- dropped duplicate Q22 ('θ17: θ17** phase II cIAI patient effect on CL', value '1.45') — already have one for this compound
+- dropped duplicate Q63 ('θ2: Vc (L)', value '12.0') — already have one for this compound
+- dropped duplicate Q30 ('θ3: Q (L/h)', value '4.99') — already have one for this compound
+- dropped unlinked row (NIL): 'θ4: Vp (L)' — extend the ontology if this is a real PK parameter (source ['Das_2024_table_S5:row3:col1'])
+- unit_dimension_unknown: 'CL*θ5' (equation variable)
+- dropped duplicate Q900 ('θ5: ESRD effect on CL (CL*θ5)', value '0.0671') — already have one for this compound
+- dropped unlinked row (NIL): '8: CL, (1+8*(CrCL–80)), CrCL ≥80 mL/min' — extend the ontology if this is a real PK parameter (source ['Das_2024_table_S5:row7:col1'])
+- dropped duplicate Q63 ('θ9: Population effect on Vc (cIAI, phase II), Vc*(1+9)', value '1.34') — already have one for this compound
+- dropped duplicate Q22 ('θ10: Population effect on CL (cIAI, phase II), CL*(1+10)', value '0.305') — already have one for this compound
+- dropped duplicate Q63 ('θ11: Population effect on Vc (cUTI), Vc*(1+11)', value '0.394') — already have one for this compound
+- dropped duplicate Q63 ('θ12: Population effect on Vc (cIAI, phase III), Vc*(1+12)', value '0.275') — already have one for this compound
+- dropped duplicate Q900 ('θ16: APACHE effect on CL, CL*(1+16)', value '-0.2') — already have one for this compound
+- dropped duplicate Q64 ('ηVc2', value '1.009') — already have one for this compound
+- dropped duplicate Q99 ('ηQ 2', value '5.302') — already have one for this compound
+- covariate effect for Q356 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'θ6: Ka' → 1/h (from the popPK convention: 'Ka (absorption rate constant) is a first-order rate constant; the value 0.459 is consistent with a typical absorption ra')
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (θ2: Vc*WT/70 (L)); Q64 (θ4: Vp*WT/70 (L)); Q22 (θ1: CL (L/h)); Q30 (θ4: Q (L/h)); Q61 (θ18: θ18** phase II cIAI patient effect on Vc); Q99 (ηCL2)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=aztreonam
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- unparsed cell Tab2:row1:col3 = 'Various aztreonam PK scenarios evaluated in Iteration 1a simulations, including patient factors for patients with CF and cIAI (see Supplementary Table 1)Patient factors for Phase II patients with cIAI and variability from avibactam models in the ceftazidime-avibactam program (Case 4) used for Iteration 1b simulations'
+- unparsed cell Tab2:row4:col3 = 'Scaling of aztreonam Vc larger in patients than healthy volunteers i.e., + 27.5% as per avibactamPatient factors and variability from avibactam models in ceftazidime-avibactam program (Phase I, Phase II cIAI, Phase III cIAI and cUTI)Simulations used ceftazidime-avibactam Phase III age, weight, and CrCL covariate distributionsNonlinear plasma protein binding for aztreonam'
+- companion parameter table S3 transcribed (15 record(s))
+- companion parameter table S4 transcribed (22 record(s))
+- companion parameter table S5 transcribed (46 record(s))
+- LLM selected parameter table(s) S2, S3, S4, S5
+
+## Validation
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 11 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_center_consistency_wt | fail |  | [70.0, 71.2] |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Das_2024_table_S4:row0:col1', 'Das_2024_table_S5:row0:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Das_2024_table_S4:row3:col1'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Das_2024_table_S3:row0:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Das_2024_table_S4:row5:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Das_2024_table_S3:row1:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Das_2024_table_S3:row3:col1'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | L/h ([length] ** 3 / [time]) | ['Das_2024_table_S3:row2:col1'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 |  | ['Das_2024_table_S4:row17:col1'] |
+| C5_unit_missing_Q77 | fail | [length] ** 3 |  | ['Das_2024_table_S5:row18:col1'] |
+| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['Das_2024_table_S5:row15:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.4 | ['Das_2024_table_S4:row0:col1', 'Das_2024_table_S5:row0:col1'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 10.4 L/h | ['Das_2024_table_S4:row0:col1', 'Das_2024_table_S5:row0:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 6.83 L | ['Das_2024_table_S3:row1:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 5.76 L | ['Das_2024_table_S3:row3:col1'] |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baztreonam%5D%20Aztreonam_Das2024_reference&body=Drug%3A%20aztreonam%0ARecord%3A%20Aztreonam_Das2024_reference%0APaper%3A%20Das_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aztreonam/Aztreonam_Das2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 10:12 UTC</sub>

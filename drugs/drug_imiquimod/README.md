@@ -1,0 +1,88 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06B&quot;,&quot;href&quot;:&quot;atc/D06B.md&quot;},{&quot;label&quot;:&quot;imiquimod&quot;}]"></div>
+
+# imiquimod
+
+- **generic name:** imiquimod
+- **ATC codes:** `D06BB10`
+- **DrugBank:** [DB00724](https://go.drugbank.com/drugs/DB00724) · **PubChem:** [CID 57469](https://pubchem.ncbi.nlm.nih.gov/compound/57469)
+- **molar mass:** 240.3036 g/mol (C14H16N4) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Imiquimod is an immune response modifier used to treat skin conditions such as genital warts, actinic keratosis, and superficial basal cell carcinoma. It is given topically, usually as a cream or gel, for direct application to the skin. The medication is widely used and authorized in the European Union for these indications.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q423417](https://www.wikidata.org/wiki/Q423417), [Wikipedia](https://en.wikipedia.org/wiki/Imiquimod?oldid=1329258046) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Arends_2015_IL_1ra](drugs/drug_imiquimod/pd_Arends_2015_IL_1ra.md) | urinary interleukin 1 receptor agonist ← imiquimod · stimulation effect | — | Arends TJ et al., Pharmacokinetic, Pharmacodynamic, and A…, Clinical genitourinary canc… (2015) | [10.1016/j.clgc.2014.12.010](https://doi.org/10.1016/j.clgc.2014.12.010) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=imiquimod).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: TLR7 (target), TLR8 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 22:16 | 0:22 | 0/0/0 | 0/1/0 | 0/0/0 | 40,104/923 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 8 matched, 8 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Arends_2015.pdf` | Arends TJ et al., Pharmacokinetic, Pharmacodynamic, and A…, Clinical genitourinary canc… (2015) | popPK | 6 | [10.1016/j.clgc.2014.12.010](https://doi.org/10.1016/j.clgc.2014.12.010) | [25660383](https://pubmed.ncbi.nlm.nih.gov/25660383) | The study is a Phase 1 PK/PD trial of imiquimod (TMX-101) in humans, but the provided text only reports a single value for maximum plasma concentration (Cmax) and lacks quantitative disposition parameters (CL, V, t1/2, ka). |
+
+<sub>queue written 2026-10-07 22:15 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abiri_2021 | irrelevant | 0 | 0 | The study is a computational drug discovery paper focusing on TLR7 agonists using QSAR and molecular docking, with no pharmacokinetic data or disposition parameters reported for imiquimod. |
+| popPK | Arends_2015 | relevant | 6 | 0 | The study is a Phase 1 PK/PD trial of imiquimod (TMX-101) in humans, but the provided text only reports a single value for maximum plasma concentration (Cmax) and lacks quantitative disposition parameters (CL, V, t1/2, ka). |
+| popPK | Kusi-Appiah_2015 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay using lipid microarrays to determine EC50 values for drug efficacy, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume of distribution. |
+| popPK | Lu_2012 | irrelevant | 0 | 0 | The paper studies VTX-2337 as the primary drug, with imiquimod used only as a comparative agent in in-vitro immunological assays, and reports no pharmacokinetic parameters. |
+| popPK | Sharma_2019 | irrelevant | 4 | 0 | The study reports dermatokinetic parameters for imiquimod in rat skin but lacks specific numeric PK values (CL, V, ka) in the provided text. |
+| popPK | Tian_2022 | irrelevant | 0 | 0 | The study uses imiquimod as a tool to induce a psoriasis model, rather than studying the pharmacokinetics of imiquimod itself. |
+| popPK | Zhang_2023 | irrelevant | 0 | 0 | Imiquimod is used as a disease inducer (psoriasis model) and is not the subject of pharmacokinetic analysis. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | Imiquimod is used as an inducer of psoriasis in an animal model to test the efficacy of a new AHR agonist, not as the subject of a pharmacokinetic study. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bimiquimod%5D&body=Drug%3A%20imiquimod%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_imiquimod/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

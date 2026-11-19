@@ -1,0 +1,147 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;clozapine&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/&quot;},{&quot;label&quot;:&quot;Reeves_2024 \u00b7 c_clozapine_mg_l&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clozapine_Geers2022_reference&quot;,&quot;label&quot;:&quot;Geers_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Geers2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parker_2001_beta_amplitude&quot;,&quot;label&quot;:&quot;Parker_2001 \u00b7 beta amplitude&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Parker_2001_beta_amplitude.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parker_2001_theta_amplitude&quot;,&quot;label&quot;:&quot;Parker_2001 \u00b7 theta amplitude&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Parker_2001_theta_amplitude.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Shang_2014_PANSS&quot;,&quot;label&quot;:&quot;Shang_2014 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Shang_2014_PANSS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zeng_1997_cAMP&quot;,&quot;label&quot;:&quot;Zeng_1997 \u00b7 cAMP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Zeng_1997_cAMP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# clozapine — `Clozapine_Reeves2024_c_clozapine_mg_l`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+
+> This record was reviewed on 2026-11-07 14:29 UTC (Rejected), but the paper was screened again on 2026-10-06 15:14 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The record for clozapine was rejected because the units for the clearance parameter, reported as mg L⁻¹, do not match its defined meaning.
+
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_c_clozapine_mg_l" status="rejected" stale="true" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
+
+## Citation
+Reeves S, Bertrand J, Obee SJ, Hunter S, Howard R, Flanagan RJ. A population pharmacokinetic model to guide clozapine dose selection, based on age, sex, ethnicity, body weight and smoking status. British journal of clinical pharmacology 90(1):135–145 (2024).
+  ·  DOI: [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691)
+
+## Population and dosing
+
+**Population:** patients with treatment-resistant schizophrenia on clozapine TDM · condition treatment-resistant schizophrenia · age group mixed · n = 5960.
+
+## Model
+
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 2 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| Base model Parameter estimates | V/F | 0.02 | mg L⁻¹ |
+| Smoke CL/F clozapine Parameter estimates | CL/F | 0.02 | mg L⁻¹ |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**The record for clozapine was rejected because the units for the clearance parameter, reported as mg L⁻¹, do not match its defined meaning.**
+
+The record lists the total clearance parameter with a value of 0.02, but assigns the unit mg L⁻¹ instead of the required flow units. This creates a dimensional inconsistency because clearance, unlike volume, cannot be expressed in mass per volume. The error prevented the system from converting the value to standard SI units, causing the dimension check to fail. Extracted — clozapine: V/F 0.02 mg L⁻¹, CL/F 0.02 mg L⁻¹.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
+|---|---|---|---|---|---|---|
+| Base model Parameter estimates | `Q76` · V/F | 0.02 | mg L⁻¹ | mg/l | llm (0.6) | Reeves_2024_table_2:row0:col22 |
+| Smoke CL/F clozapine Parameter estimates | `Q27` · CL/F | 0.02 | mg L⁻¹ | mg/l | llm_confirmed (0.6) | Reeves_2024_table_2:row2:col22 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- unit_dimension_mismatch: 'Base model Parameter estimates' → Q76 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3') — route to review
+- dropped unlinked row (NIL): 'Base model Relative standard error (%)' — extend the ontology if this is a real PK parameter (source ['Reeves_2024_table_2:row1:col22'])
+- unit_dimension_mismatch: 'Smoke CL/F clozapine Parameter estimates' → Q27 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'Smoke CL/F clozapine Relative standard error (%)' → Q27 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('Smoke CL/F clozapine Relative standard error (%)', value '17.2') — already have one for this compound
+- unit_dimension_mismatch: 'Sex CL/F clozapine Parameter estimates' → Q27 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('Sex CL/F clozapine Parameter estimates', value '0.02') — already have one for this compound
+- unit_dimension_mismatch: 'Sex CL/F clozapine Relative standard error (%)' → Q27 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('Sex CL/F clozapine Relative standard error (%)', value '14.6') — already have one for this compound
+- unit_dimension_mismatch: 'Age exp CL/F clozapine Parameter estimates' → Q27 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('Age exp CL/F clozapine Parameter estimates', value '0.02') — already have one for this compound
+- unit_dimension_mismatch: 'Age exp CL/F clozapine Relative standard error (%)' → Q27 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('Age exp CL/F clozapine Relative standard error (%)', value '16.2') — already have one for this compound
+- unit_dimension_mismatch: 'Ethnic CL/F clozapine Parameter estimates' → Q27 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('Ethnic CL/F clozapine Parameter estimates', value '0.02') — already have one for this compound
+- unit_dimension_mismatch: 'Ethnic CL/F clozapine Relative standard error (%)' → Q27 (unit '[mass] / [length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q27 ('Ethnic CL/F clozapine Relative standard error (%)', value '15.9') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=clozapine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- status held at "Needs review" — not promoted
+- population split: 'σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹)' subgroup of Reeves_2024 (paper reports 15 populations: age exp cl/fclozapine parameter estimates, base model parameter estimates, base model relative standard error (%), ethnic cl/fclozapine parameter estimates, sex cl/fclozapine parameter estimates, smoke cl/fclozapine parameter estimates, β afro-caribbean_cl/ 
+f_clozapine, β asian_cl/ 
+f_clozapine, β female_cl/ 
+f_clozapine, β smoking_cl/ 
+f_clozapine, β weight_cl/ 
+f_clozapine, β weight_cl/ 
+f_norclozapine, β weight_v/ 
+f_clozapine, β weight_v/ 
+f_norclozapine, σ₀_ᵢₙₜₑᵣcₑₚₖ clozapine (mg l⁻¹))
+- row roles: 4 per-group rows of clozapine covariate_effect but 0 reference group(s) — kept as printed
+- row roles: 4 per-group rows of clozapine variability but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 15 linked by role; re-tagged clozapine→parent ×122, parent→norclozapine ×4, clozapine→norclozapine ×16
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 2, 3
+- transposed table Reeves_2024_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+
+## Validation
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q27 | fail | [length] ** 3 / [time] | mg L⁻¹ ([mass] / [length] ** 3) | ['Reeves_2024_table_2:row2:col22'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | mg L⁻¹ ([mass] / [length] ** 3) | ['Reeves_2024_table_2:row0:col22'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclozapine%5D%20Clozapine_Reeves2024_c_clozapine_mg_l&body=Drug%3A%20clozapine%0ARecord%3A%20Clozapine_Reeves2024_c_clozapine_mg_l%0APaper%3A%20Reeves_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clozapine/Clozapine_Reeves2024_c_clozapine_mg_l%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 15:14 UTC</sub>

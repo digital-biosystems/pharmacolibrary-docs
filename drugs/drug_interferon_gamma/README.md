@@ -1,0 +1,87 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L03A&quot;,&quot;href&quot;:&quot;atc/L03A.md&quot;},{&quot;label&quot;:&quot;interferon gamma&quot;}]"></div>
+
+# interferon gamma
+
+- **generic name:** interferon gamma
+- **ATC codes:** `L03AB03`
+- **DrugBank:** [DB15753](https://go.drugbank.com/drugs/DB15753) · **PubChem:** none
+- **groups:** investigational
+
+## About
+
+Interferon gamma is an immunostimulant used to treat bacterial infections, osteopetrosis, and chronic granulomatous disease. It is currently classified as an investigational drug.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q582356](https://www.wikidata.org/wiki/Q582356) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Świerczek_2021_ALT](drugs/drug_interferon_gamma/pd_wierczek_2021_ALT.md) | ALT ← IFN-γ · indirect response — drug stimulates the production of ALT | — | Świerczek A et al., PK/PD Modeling of the PDE7 Inhibitor-GR…, Pharmaceutics (2021) | [10.3390/pharmaceutics13050597](https://doi.org/10.3390/pharmaceutics13050597) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Świerczek_2021_AST](drugs/drug_interferon_gamma/pd_wierczek_2021_AST.md) | AST ← IFN-γ · indirect response — drug stimulates the production of AST | — | Świerczek A et al., PK/PD Modeling of the PDE7 Inhibitor-GR…, Pharmaceutics (2021) | [10.3390/pharmaceutics13050597](https://doi.org/10.3390/pharmaceutics13050597) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Świerczek_2021_IL_10](drugs/drug_interferon_gamma/pd_wierczek_2021_IL_10.md) | IL-10 ← IFN-γ · indirect response — drug inhibits the production of IL-10 | — | Świerczek A et al., PK/PD Modeling of the PDE7 Inhibitor-GR…, Pharmaceutics (2021) | [10.3390/pharmaceutics13050597](https://doi.org/10.3390/pharmaceutics13050597) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=interferon_gamma).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: IFNGR1 (target), IFNGR2 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 23:09 | 1:00 | 0/0/0 | 0/1/0 | 0/0/0 | 151,727/3,152 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 227 matched, 20 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bielski_2025 | irrelevant | 0 | 0 | The study investigates the efficacy of bispecific antibodies targeting VISTA and PD-L1 in vitro, and Interferon-gamma is only measured as a cytokine biomarker of the immune response, not as the subject drug with PK parameters. |
+| popPK | Bolinger_1992 | irrelevant | 3 | 2 | The paper is a review article that summarizes pharmacokinetic data (half-life, bioavailability, two-compartment model) but does not provide original quantitative parameter estimates (e.g., specific CL, V, Q values) for extraction. |
+| popPK | Brossard_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for emapalumab (an anti-interferon-gamma monoclonal antibody), not for interferon-gamma itself. |
+| popPK | Brossard_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for emapalumab (an antibody), not for interferon_gamma, which is the target/ligand being neutralized. |
+| popPK | Brunet_2019 | irrelevant | 0 | 0 | The paper is a consensus report on Tacrolimus therapeutic drug monitoring and does not report pharmacokinetic parameters for interferon_gamma. |
+| popPK | Cavaillon_2006 | irrelevant | 0 | 0 | The paper is a review of inflammatory pathophysiology and does not report any pharmacokinetic parameters or quantitative disposition data for interferon gamma. |
+| popPK | Dai_2023 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiviral agents (mangiferin and taurine) against a fish virus, where interferon-gamma is merely mentioned as a measured cytokine, and no pharmacokinetic parameters are reported. |
+| popPK | Frances_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the drug glofitamab, with interferon-gamma serving only as a pharmacodynamic biomarker for cytokine release, not as the subject drug for PK modeling. |
+| popPK | Harmon_2020 | irrelevant | 0 | 0 | The study focuses on the synthesis and pharmacodynamics (EC50 values) of prodrugs for T-cell stimulation, not the pharmacokinetic parameters (CL, V, t1/2) of interferon_gamma itself. |
+| popPK | Leite_2022 | irrelevant | 0 | 0 | The study measures interferon-gamma concentrations in gingival crevicular fluid as a biomarker for inflammation, not as a pharmacokinetic parameter (CL, V, etc.). |
+| popPK | Li_2025 | irrelevant | 0 | 0 | The paper is a study on anti-parasitic drug discovery (Rocaglamide A against Cryptosporidium) and does not contain any pharmacokinetic data or parameters for interferon gamma. |
+| popPK | Moyles_2023 | irrelevant | 0 | 0 | The paper is a mathematical modeling study of mRNA vaccine-induced immune responses, where interferon-gamma is a modeled cytokine component, not the subject drug of a pharmacokinetic disposition study. |
+| popPK | Passey_2018 | irrelevant | 0 | 0 | The paper is a review of the clinical pharmacology of elotuzumab, not interferon_gamma, and reports PK parameters for the wrong drug. |
+| popPK | Tagmouti_2014 | irrelevant | 0 | 0 | The paper is a systematic review of the reproducibility of diagnostic assays for tuberculosis, not a pharmacokinetic study of interferon_gamma as a therapeutic drug. |
+| popPK | Wu_2022 | irrelevant | 0 | 0 | The paper investigates BCMA-CD3 bispecific antibodies and mentions IFN-gamma only as a secreted cytokine marker of immune activation, not as a pharmacokinetic subject. |
+| popPK | Wu_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of JNJ-64794964, and interferon_gamma is only mentioned as a PD marker (IP-10) or part of the mechanism, not as the subject drug for PK parameter estimation. |
+| popPK | Xu_2025 | irrelevant | 0 | 0 | The study investigates the mechanism of action of bakuchiol on colitis and mentions interferon-gamma (Ifn-γ) only as a proinflammatory cytokine whose expression is measured, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Yu_2021 | irrelevant | 0 | 0 | The paper studies the synthesis and biological activity of calcitroic acid, using interferon gamma only as an inflammatory stimulus in a mechanistic in vitro assay, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Świerczek_2021 | irrelevant | 1 | 1 | The study reports pharmacokinetic parameters for the drug GRMS-55, while interferon_gamma is only a measured biomarker/cytokine in the disease model, not the subject drug. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binterferon_gamma%5D&body=Drug%3A%20interferon_gamma%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_interferon_gamma/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

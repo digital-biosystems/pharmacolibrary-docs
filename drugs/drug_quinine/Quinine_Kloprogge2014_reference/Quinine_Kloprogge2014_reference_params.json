@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Quinine_Kloprogge2014_reference",
+ "molar_masses": {
+  "central.C": 0.3244168
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0
+ ],
+ "parameters": {
+  "Cl": 2.8888888888888894e-06,
+  "F": 1.0,
+  "MM": 0.3244168,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002485714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "k12": 1.7081736909323115e-05,
+  "k21": 5.4737057499488435e-05,
+  "ka": 0.00022694444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13058.966311344393
+ },
+ "reference_peaks": {
+  "central.C": 0.0029816056744582644
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

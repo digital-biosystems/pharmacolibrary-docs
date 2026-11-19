@@ -1,0 +1,139 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;escitalopram&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Escitalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Escitalopram_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# escitalopram
+
+- **generic name:** escitalopram
+- **ATC codes:** `N06AB10`
+- **DrugBank:** [DB01175](https://go.drugbank.com/drugs/DB01175) · **PubChem:** [CID 146570](https://pubchem.ncbi.nlm.nih.gov/compound/146570)
+- **molar mass:** 324.3919 g/mol (C20H21FN2O) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Escitalopram is a selective serotonin reuptake inhibitor used to treat major depressive disorder and various anxiety disorders. It is taken by mouth in tablet or solution forms.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q423757](https://www.wikidata.org/wiki/Q423757), [Wikipedia](https://en.wikipedia.org/wiki/Escitalopram?oldid=1384544999) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| escitalopram | parent | 324.392 | C20H21FN2O | DrugBank | [146570](https://pubchem.ncbi.nlm.nih.gov/compound/146570) | Liu_2022, Liu_2023, Poweleit_2023 |
+
+## Start here
+
+> **Friberg_2006_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with citalopram overdose, n = 52. [Run it in the simulator](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md?tab=Simulation) · [record](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Liu_2023 · CL</text><circle cx="482.8" cy="30.0" r="4" fill="#ef6c00"><title>Liu_2023 · CL: 68.63 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Poweleit_2023 · CL/F</text><circle cx="243.3" cy="46.0" r="4" fill="#ef6c00"><title>Poweleit_2023 · CL/F: 14.2 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Liu_2022 · CL/F</text><circle cx="264.3" cy="62.0" r="4" fill="#ef6c00"><title>Liu_2022 · CL/F: 16.3 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Liu_2023 · CL/F</text><circle cx="414.9" cy="78.0" r="4" fill="#ef6c00"><title>Liu_2023 · CL/F: 43.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Liu_2023 · V/F</text><circle cx="309.7" cy="30.0" r="4" fill="#ef6c00"><title>Liu_2023 · V/F: 48.32 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Poweleit_2023 · V/F</text><circle cx="475.5" cy="46.0" r="4" fill="#ef6c00"><title>Poweleit_2023 · V/F: 428 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Liu_2022 · V/F</text><circle cx="524.5" cy="62.0" r="4" fill="#ef6c00"><title>Liu_2022 · V/F: 815 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Liu_2023 · V1/F</text><circle cx="242.3" cy="78.0" r="4" fill="#ef6c00"><title>Liu_2023 · V1/F: 19.9 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T6_deviations</sub> | [Friberg_2006_reference](drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6931)</sub> | [Liu_2022_reference](drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md) | — | 1-compartment (no model) | 3 (+2 cov.) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C2_center_consistency_age failed (ratio None)</sub> | [Liu_2023_reference](drugs/drug_escitalopram/Escitalopram_Liu2023_reference.md) | — | 2-compartment (no model) | 4 (+5 cov.) | Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023) | [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Poweleit_2023_reference](drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Poweleit EA et al., Escitalopram and Sertraline Population…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01294-8](https://doi.org/10.1007/s40262-023-01294-8) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kim_2017_SERT_occupancy_DRN](drugs/drug_escitalopram/pd_Kim_2017_SERT_occupancy_DRN.md) | SERT occupancy in the dorsal raphe nucleus ← escitalopram · direct sigmoid Emax (Hill) effect | — | Kim E et al., Regional Differences in Serotonin Trans…, Clinical pharmacokinetics (2017) | [10.1007/s40262-016-0444-x](https://doi.org/10.1007/s40262-016-0444-x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kim_2017_SERT_occupancy_putamen](drugs/drug_escitalopram/pd_Kim_2017_SERT_occupancy_putamen.md) | SERT occupancy in the putamen ← escitalopram · direct sigmoid Emax (Hill) effect | — | Kim E et al., Regional Differences in Serotonin Trans…, Clinical pharmacokinetics (2017) | [10.1007/s40262-016-0444-x](https://doi.org/10.1007/s40262-016-0444-x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kim_2021_QTc](drugs/drug_escitalopram/pd_Kim_2021_QTc.md) | QTc change from baseline (QT prolongation) ← escitalopram · delayed effect through an effect compartment | — | Kim Y et al., Population pharmacokinetic/pharmacodyna…, Journal of affective disord… (2021) | [10.1016/j.jad.2021.02.048](https://doi.org/10.1016/j.jad.2021.02.048) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2025_depression_status](drugs/drug_escitalopram/pd_Wang_2025_depression_status.md) | depression status ← escitalopram · disease-progression model | — | Wang TY et al., PK/PD modeling of the effect of Escital…, Journal of pharmaceutical s… (2025) | [10.1016/j.xphs.2025.103994](https://doi.org/10.1016/j.xphs.2025.103994) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wang_2025_lung_metastatic_foci](drugs/drug_escitalopram/pd_Wang_2025_lung_metastatic_foci.md) | lung metastatic foci ← escitalopram · inhibition effect | — | Wang TY et al., PK/PD modeling of the effect of Escital…, Journal of pharmaceutical s… (2025) | [10.1016/j.xphs.2025.103994](https://doi.org/10.1016/j.xphs.2025.103994) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Friberg_2006_QTci](drugs/drug_escitalopram/pd_Friberg_2006_QTci.md) | Heart-rate corrected QT interval ← citalopram · delayed effect through an effect compartment | ▶ model + simulator | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=escitalopram).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` substrate | DrugBank actor |
+| distribution | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate, `MAOA` substrate, `MAOB` substrate | DrugBank actor |
+| metabolism | liver | `AOX1` substrate, `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
+| metabolism | platelet | `MAOB` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
+| excretion | kidney | `ABCB1` substrate | DrugBank actor |
+| excretion | liver | `ABCB1` substrate | DrugBank actor |
+| — | brain | `SLC6A4` binder | DrugBank actor |
+| — | platelet | `SLC6A4` binder | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (inhibitor), ADRA2A (inhibitor), CHRM1 (inhibitor), DRD2 (inhibitor), HRH1 (inhibitor), HTR1A (inhibitor), HTR2A (inhibitor), HTR2C (inhibitor), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 23:00 | 3:34 | 4/0/0 | 4/0/0 | 0/0/0 | 209,977/13,046 | ollama / glm-5.3-flash | 18 | 13/5 | 8/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 129 matched, 20 returned
+- **screened:** 15  ·  **relevant:** 3
+- **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Liu_2024.pdf` | Liu X et al., Escitalopram population pharmacokinetic…, Journal of affective disord… (2024) | popPK | 10 | [10.1016/j.jad.2023.11.016](https://doi.org/10.1016/j.jad.2023.11.016) | [37949237](https://pubmed.ncbi.nlm.nih.gov/37949237) | A population PK model of escitalopram (one-compartment, transit absorption, CYP2C19 covariates) is clearly the subject, but no numeric parameter values (CL, V, ka, θ estimates) appear in the evidence provided. |
+| `Poweleit_2023.pdf` | Poweleit EA et al., Escitalopram and Sertraline Population…, Clinical pharmacokinetics (2023) | popPK | 10 | [10.1007/s40262-023-01294-8](https://doi.org/10.1007/s40262-023-01294-8) | [37755681](https://pubmed.ncbi.nlm.nih.gov/37755681) | Population PK model for escitalopram with CL/F and V/F values reported directly in the abstract. |
+| `Kim_2021.pdf` | Kim Y et al., Population pharmacokinetic/pharmacodyna…, Journal of affective disord… (2021) | popPK | 8 | [10.1016/j.jad.2021.02.048](https://doi.org/10.1016/j.jad.2021.02.048) | [33647579](https://pubmed.ncbi.nlm.nih.gov/33647579) | Population PK model of escitalopram (two-compartment, first-order absorption) is described, but numeric PK parameter values (CL, V, ka) are not given in the evidence, only PD results. |
+| `Wang_2025.pdf` | Wang TY et al., PK/PD modeling of the effect of Escital…, Journal of pharmaceutical s… (2025) | popPK | 6 | [10.1016/j.xphs.2025.103994](https://doi.org/10.1016/j.xphs.2025.103994) | [40967486](https://pubmed.ncbi.nlm.nih.gov/40967486) | PK/PD modeling of escitalopram in tumor-bearing mice, but no numeric PK parameter values (CL, V, ka) appear in the evidence; they likely live in figures/supplements not provided. |
+
+<sub>queue written 2026-10-06 22:57 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ahmed_2019 | irrelevant | 1 | 0 | Escitalopram is only a prior treatment-failure comparator; no PK disposition parameters for it are reported, and no numeric values appear. |
+| popPK | Anderson_1996 | irrelevant | 0 | 0 | In vitro study of ADP inhibition of serotonin uptake; citalopram is only a binding ligand, no PK parameters for escitalopram. |
+| popPK | Baker_2026 | irrelevant | 0 | 0 | Clinical trial comparing MBSR vs escitalopram on self-compassion outcomes; no pharmacokinetic parameters reported. |
+| popPK | Baumann_1996 | irrelevant | 2 | 1 | This is a review of SSRI pharmacokinetics/pharmacodynamics with no original quantitative disposition parameters for escitalopram (which is not even mentioned; only racemic citalopram). |
+| popPK | Bosch_2026 | irrelevant | 2 | 1 | TDM serum-concentration and metabolite-ratio study with no clearance, volume, half-life, or population-PK model parameters for escitalopram; only concentration/dose estimates are given. |
+| popPK | Erritzoe_2024 | irrelevant | 0 | 0 | Clinical trial post hoc analysis of depression outcomes; no PK parameters for escitalopram reported. |
+| popPK | Friberg_2006 | irrelevant | 2 | 5 | This is a PKPD model of citalopram (not escitalopram) overdose; PK parameters (CL 22.1 l/h, V 1280 l, ka 1.48 h⁻¹) are present but for the wrong drug. |
+| popPK | Gatti_2021_2 | irrelevant | 2 | 4 | This is a pharmacovigilance/PK-PD correlation study of serotonin syndrome with linezolid; escitalopram is only one of many co-reported agents, with literature-derived Cmax/AUC/VD values (not a PK model of escitalopram itself). |
+| popPK | Isbister_2006 | irrelevant | 2 | 1 | This is a simulation study of citalopram (racemate) overdose QT management using a previously developed PKPD model, with no escitalopram-specific disposition parameters and no numeric PK values in the evidence. |
+| popPK | Kim_2017 | irrelevant | 3 | 2 | This is a PK-PD receptor occupancy study reporting EC50/Hill coefficients, not disposition parameters (CL, V, half-life); PK model details/numeric values are not present in the evidence. |
+| popPK | Kim_2021 | relevant | 8 | 4 | Population PK model of escitalopram (two-compartment, first-order absorption) is described, but numeric PK parameter values (CL, V, ka) are not given in the evidence, only PD results. |
+| popPK | Kofod_2022 | irrelevant | 0 | 0 | This is an inflammation/depression biomarker study using escitalopram as a treatment arm; no PK parameters (CL, V, ka, half-life, or PK model) for escitalopram are reported anywhere in the evidence. |
+| popPK | Liu_2024 | relevant | 10 | 3 | A population PK model of escitalopram (one-compartment, transit absorption, CYP2C19 covariates) is clearly the subject, but no numeric parameter values (CL, V, ka, θ estimates) appear in the evidence provided. |
+| popPK | Mégarbane_2008 | irrelevant | 3 | 1 | A review of PK/PD modeling in poisonings mentioning citalopram, with no numeric escitalopram PK parameters reported. |
+| popPK | Uher_2025 | irrelevant | 0 | 0 | Clinical trial of anhedonia predicting escitalopram treatment response; no PK parameters reported. |
+| popPK | Wang_2025 | relevant | 6 | 2 | PK/PD modeling of escitalopram in tumor-bearing mice, but no numeric PK parameter values (CL, V, ka) appear in the evidence; they likely live in figures/supplements not provided. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bescitalopram%5D&body=Drug%3A%20escitalopram%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_escitalopram/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:57 UTC</sub>

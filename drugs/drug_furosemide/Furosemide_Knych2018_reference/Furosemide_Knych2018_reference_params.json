@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 40 mg oral (C03CA01)",
+ "model_id": "Furosemide_Knych2018_reference",
+ "molar_masses": {
+  "central.C": 0.33074400000000004
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0519444444444445e-05,
+  "F": 0.9,
+  "MM": 0.33074400000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.005,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4e-05,
+  "ka": 0.0012527777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3458.359372266661
+ },
+ "reference_peaks": {
+  "central.C": 9.379233300150872e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

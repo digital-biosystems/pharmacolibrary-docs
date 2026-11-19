@@ -1,0 +1,275 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;levodopa&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levodopa_Senek2018_reference&quot;,&quot;label&quot;:&quot;Senek_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/Levodopa_Senek2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suksai_2026_TRS&quot;,&quot;label&quot;:&quot;Suksai_2026 \u00b7 TRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/pd_Suksai_2026_TRS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Westin_2011_motor_rating&quot;,&quot;label&quot;:&quot;Westin_2011 \u00b7 motor rating&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/pd_Westin_2011_motor_rating.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+
+# levodopa
+
+- **generic name:** levodopa
+- **ATC codes:** `N04BA01`, `N04BA02`
+- **DrugBank:** [DB01235](https://go.drugbank.com/drugs/DB01235) · **PubChem:** [CID 6047](https://pubchem.ncbi.nlm.nih.gov/compound/6047)
+- **molar mass:** 197.1879 g/mol (C9H11NO4) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Levodopa is a dopaminergic agent used primarily to treat Parkinson's disease and related movement disorders. It is typically given by mouth in tablet or capsule forms, with inhalation available as an alternative route. The drug is authorised in the European Union for the treatment of Parkinson disease.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q300989](https://www.wikidata.org/wiki/Q300989), [Wikipedia](https://en.wikipedia.org/wiki/L-DOPA?oldid=1380015676) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| levodopa | parent | 197.188 | C9H11NO4 | DrugBank | [6047](https://pubchem.ncbi.nlm.nih.gov/compound/6047) | Hammerstad_1990, Senek_2018, Westin_2011 |
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hammerstad_1990 · V</text><circle cx="190.0" cy="30.0" r="4" fill="#ef6c00"><title>Hammerstad_1990 · V: 10 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Westin_2011 · V</text><circle cx="190.0" cy="46.0" r="4" fill="#ef6c00"><title>Westin_2011 · V: 10 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Hammerstad_1990_reference](drugs/drug_levodopa/Levodopa_Hammerstad1990_reference.md) | — | 1-compartment (no model) | 3 | Hammerstad JP et al., L-dopa pharmacokinetics in plasma and c…, Annals of neurology (1990) | [10.1002/ana.410270507](https://doi.org/10.1002/ana.410270507) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Westin_2011_reference](drugs/drug_levodopa/Levodopa_Westin2011_reference.md) | — | 1-compartment (no model) | 5 | Westin J et al., A pharmacokinetic-pharmacodynamic model…, Clinical neuropharmacology (2011) | [10.1097/WNF.0b013e31820b570a](https://doi.org/10.1097/WNF.0b013e31820b570a) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nelson_1989_reference](drugs/drug_levodopa/Levodopa_Nelson1989_reference.md) | — | 1-compartment (no model) | 0 | Nelson MV et al., Pharmacokinetic and pharmacodynamic mod…, Clinical neuropharmacology (1989) | [10.1097/00002826-198904000-00002](https://doi.org/10.1097/00002826-198904000-00002) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T1_t_half_terminal</sub> | [Senek_2018_reference](drugs/drug_levodopa/Levodopa_Senek2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Senek M et al., Population pharmacokinetics of levodopa…, European journal of clinica… (2018) | [10.1007/s00228-018-2497-2](https://doi.org/10.1007/s00228-018-2497-2) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Adamiak_2010_UPDRS_III](drugs/drug_levodopa/pd_Adamiak_2010_UPDRS_III.md) | motor effects (global score of the Unified Parkinson's Disease Rating Scale-III) ← levodopa · direct Emax (saturable) effect | — | Adamiak U et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical neuropharmacology (2010) | [10.1097/WNF.0b013e3181d47849](https://doi.org/10.1097/WNF.0b013e3181d47849) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Baas_2001_CURSsigma](drugs/drug_levodopa/pd_Baas_2001_CURSsigma.md) | global score of the Columbia University Rating Scale ← levodopa · direct sigmoid Emax (Hill) effect | — | Baas H et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacokinetics (2001) | [10.2165/00003088-200140050-00005](https://doi.org/10.2165/00003088-200140050-00005) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Contin_1994_tapping_effect_motor_response](drugs/drug_levodopa/pd_Contin_1994_tapping_effect_motor_response.md) | tapping effect (motor response) ← levodopa · delayed effect through an effect compartment | — | Contin M et al., Longitudinal monitoring of the levodopa…, Neurology (1994) | [10.1212/wnl.44.7.1287](https://doi.org/10.1212/wnl.44.7.1287) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Dietz_2001_CURSSigma](drugs/drug_levodopa/pd_Dietz_2001_CURSSigma.md) | Sum score of the Columbia Rating Scale ← levodopa · delayed effect through an effect compartment | — | Dietz M et al., Levodopa pharmacokinetic-pharmacodynami…, Clinical pharmacology and t… (2001) | [10.1067/mcp.2001.116328](https://doi.org/10.1067/mcp.2001.116328) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Irwin_1992_BP](drugs/drug_levodopa/pd_Irwin_1992_BP.md) | hypotensive effect (blood pressure) ← levodopa · direct Emax (saturable) effect | — | Irwin RP et al., Pharmacodynamics of the hypotensive eff…, Clinical neuropharmacology (1992) | [10.1097/00002826-199210000-00003](https://doi.org/10.1097/00002826-199210000-00003) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Marsot_2017_CURS](drugs/drug_levodopa/pd_Marsot_2017_CURS.md) | CURSΣ ← levodopa · direct sigmoid Emax (Hill) effect | — | Marsot A et al., Levodopa in Parkinson's Disease: A Revi…, Journal of pharmacy & pharm… (2017) | [10.18433/J30H04](https://doi.org/10.18433/J30H04) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Marsot_2017_Dyskinesia](drugs/drug_levodopa/pd_Marsot_2017_Dyskinesia.md) | Dyskinesia ← levodopa · direct sigmoid Emax (Hill) effect | — | Marsot A et al., Levodopa in Parkinson's Disease: A Revi…, Journal of pharmacy & pharm… (2017) | [10.18433/J30H04](https://doi.org/10.18433/J30H04) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Marsot_2017_Tapping](drugs/drug_levodopa/pd_Marsot_2017_Tapping.md) | Tapping ← levodopa · direct sigmoid Emax (Hill) effect | — | Marsot A et al., Levodopa in Parkinson's Disease: A Revi…, Journal of pharmacy & pharm… (2017) | [10.18433/J30H04](https://doi.org/10.18433/J30H04) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Marsot_2017_UPDRS](drugs/drug_levodopa/pd_Marsot_2017_UPDRS.md) | Unified Parkinson's Disease Rating Scale ← levodopa · direct sigmoid Emax (Hill) effect | — | Marsot A et al., Levodopa in Parkinson's Disease: A Revi…, Journal of pharmacy & pharm… (2017) | [10.18433/J30H04](https://doi.org/10.18433/J30H04) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Marsot_2017_treatment_response_scale](drugs/drug_levodopa/pd_Marsot_2017_treatment_response_scale.md) | treatment response scale ← levodopa · direct sigmoid Emax (Hill) effect | — | Marsot A et al., Levodopa in Parkinson's Disease: A Revi…, Journal of pharmacy & pharm… (2017) | [10.18433/J30H04](https://doi.org/10.18433/J30H04) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Nelson_1990_global_assessment_of_motor_function](drugs/drug_levodopa/pd_Nelson_1990_global_assessment_of_motor_function.md) | global assessment of motor function ← levodopa · direct sigmoid Emax (Hill) effect | — | Nelson MV et al., Pharmacodynamic modeling of concentrati…, Neurology (1990) | [10.1212/wnl.40.1.70](https://doi.org/10.1212/wnl.40.1.70) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Nelson_1990_tapping_speed](drugs/drug_levodopa/pd_Nelson_1990_tapping_speed.md) | tapping speed ← levodopa · direct sigmoid Emax (Hill) effect | — | Nelson MV et al., Pharmacodynamic modeling of concentrati…, Neurology (1990) | [10.1212/wnl.40.1.70](https://doi.org/10.1212/wnl.40.1.70) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Nelson_1990_walking_speed](drugs/drug_levodopa/pd_Nelson_1990_walking_speed.md) | walking speed ← levodopa · direct sigmoid Emax (Hill) effect | — | Nelson MV et al., Pharmacodynamic modeling of concentrati…, Neurology (1990) | [10.1212/wnl.40.1.70](https://doi.org/10.1212/wnl.40.1.70) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Suksai_2026_TRS](drugs/drug_levodopa/pd_Suksai_2026_TRS.md) | therapeutic motor response (TRS-based motor outcome) ← levodopa · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Suksai S et al., A computational pharmacokinetic-pharmac…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1817435](https://doi.org/10.3389/fphar.2026.1817435) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Triggs_1996_tapping_times](drugs/drug_levodopa/pd_Triggs_1996_tapping_times.md) | motor effect behaviour (tapping times) ← levodopa · delayed effect through an effect compartment | — | Triggs EJ et al., Population pharmacokinetics and pharmac…, European journal of clinica… (1996) | [10.1007/s002280050161](https://doi.org/10.1007/s002280050161) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yanovsky_2011_excitation_of_histaminergic_TMN_neurons_firing](drugs/drug_levodopa/pd_Yanovsky_2011_excitation_of_histaminergic_TMN_neurons_firing.md) | excitation of histaminergic TMN neurons (firing) ← L-Dopa · stimulation effect | — | Yanovsky Y et al., L-Dopa activates histaminergic neurons, The Journal of physiology 5… (2011) | [10.1113/jphysiol.2010.203257](https://doi.org/10.1113/jphysiol.2010.203257) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Westin_2011_motor_rating](drugs/drug_levodopa/pd_Westin_2011_motor_rating.md) | motor ratings (clinical assessment of motor function on a 7-point treatment response scale ranging from "very off" to "very hyperkinetic") ← levodopa · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Westin J et al., A pharmacokinetic-pharmacodynamic model…, Clinical neuropharmacology (2011) | [10.1097/WNF.0b013e31820b570a](https://doi.org/10.1097/WNF.0b013e31820b570a) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **MTHFR** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Vuletić_2021](drugs/drug_levodopa/pgx_Vuleti_2021_MTHFR_safety.md) | Vuletić V et al., A Systematic Review of Parkinson's Dise…, International journal of mo… (2021) | [10.3390/ijms22137213](https://doi.org/10.3390/ijms22137213) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **COMT** | `Q27` · CL/F | metabolism | [Liu_2023](drugs/drug_levodopa/pgx_Liu_2023_COMT_Q27.md) | Liu JS et al., Pharmacogenomics-a New Frontier for Ind…, Current neuropharmacology (2023) | [10.2174/1570159X21666221229154830](https://doi.org/10.2174/1570159X21666221229154830) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **DRD2** | `Q321` · EC50 | target | [Liu_2023](drugs/drug_levodopa/pgx_Liu_2023_DRD2_Q321.md) | Liu JS et al., Pharmacogenomics-a New Frontier for Ind…, Current neuropharmacology (2023) | [10.2174/1570159X21666221229154830](https://doi.org/10.2174/1570159X21666221229154830) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **SLC6A3 (DAT)** | `Q320` · Emax | transport | [Liu_2023](drugs/drug_levodopa/pgx_Liu_2023_SLC6A3_DAT_Q320.md) | Liu JS et al., Pharmacogenomics-a New Frontier for Ind…, Current neuropharmacology (2023) | [10.2174/1570159X21666221229154830](https://doi.org/10.2174/1570159X21666221229154830) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **COMT** | `Q27` · CL/F | metabolism | [Senek_2020](drugs/drug_levodopa/pgx_Senek_2020_COMT_Q27.md) | Senek M et al., Population pharmacokinetics of levodopa…, Scientific reports (2020) | [10.1038/s41598-020-75052-2](https://doi.org/10.1038/s41598-020-75052-2) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **DDC** | `Q27` · CL/F | metabolism | [Senek_2020](drugs/drug_levodopa/pgx_Senek_2020_DDC_Q27.md) | Senek M et al., Population pharmacokinetics of levodopa…, Scientific reports (2020) | [10.1038/s41598-020-75052-2](https://doi.org/10.1038/s41598-020-75052-2) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **COMT** | `Q335` · slope | metabolism | [Vuletić_2021](drugs/drug_levodopa/pgx_Vuleti_2021_COMT_Q335.md) | Vuletić V et al., A Systematic Review of Parkinson's Dise…, International journal of mo… (2021) | [10.3390/ijms22137213](https://doi.org/10.3390/ijms22137213) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **DDC** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Vuletić_2021](drugs/drug_levodopa/pgx_Vuleti_2021_DDC_Q100.md) | Vuletić V et al., A Systematic Review of Parkinson's Dise…, International journal of mo… (2021) | [10.3390/ijms22137213](https://doi.org/10.3390/ijms22137213) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **HTR2A** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Vuletić_2021](drugs/drug_levodopa/pgx_Vuleti_2021_HTR2A_Q100.md) | Vuletić V et al., A Systematic Review of Parkinson's Dise…, International journal of mo… (2021) | [10.3390/ijms22137213](https://doi.org/10.3390/ijms22137213) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **OPRK1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Vuletić_2021](drugs/drug_levodopa/pgx_Vuleti_2021_OPRK1_Q100.md) | Vuletić V et al., A Systematic Review of Parkinson's Dise…, International journal of mo… (2021) | [10.3390/ijms22137213](https://doi.org/10.3390/ijms22137213) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=levodopa).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | brain | `COMT` metabolism | PGx paper |
+| metabolism | kidney | `COMT` metabolism | PGx paper |
+| metabolism | liver | `COMT` metabolism | PGx paper |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | lung | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: DDC (metabolism), DDC (substrate), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (target), HTR2A (unknown), MTHFR (safety_allele), OPRK1 (unknown), SLC16A10 (inhibitor), SLC6A3 (DAT) (transport), SLC7A5 (unknown), SLC7A8 (unknown).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 13:42 | 35:28 | 2/2/0 | 10/1/0 | 1/0/9 | 684,522/54,830 | ollama / glm-5.3-flash | 36 | 8/23 | 33/3 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 1426 matched, 181 returned
+- **screened:** 6  ·  **relevant:** 6
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Triggs_1996.pdf` | Triggs EJ et al., Population pharmacokinetics and pharmac…, European journal of clinica… (1996) | popPK | 10 | [10.1007/s002280050161](https://doi.org/10.1007/s002280050161) | [8880053](https://pubmed.ncbi.nlm.nih.gov/8880053) | Population PK (NONMEM, one-compartment, first-order absorption) of levodopa in parkinsonian patients, but no numeric parameter values appear in the abstract. |
+| `Hammerstad_1990.pdf` | Hammerstad JP et al., L-dopa pharmacokinetics in plasma and c…, Annals of neurology (1990) | popPK | 8 | [10.1002/ana.410270507](https://doi.org/10.1002/ana.410270507) | [2360790](https://pubmed.ncbi.nlm.nih.gov/2360790) | Original PK study of levodopa in monkeys with numeric half-lives and compartmental model parameters reported in the abstract. |
+| `Westin_2011.pdf` | Westin J et al., A pharmacokinetic-pharmacodynamic model…, Clinical neuropharmacology (2011) | popPK | 8 | [10.1097/WNF.0b013e31820b570a](https://doi.org/10.1097/WNF.0b013e31820b570a) | [21297456](https://pubmed.ncbi.nlm.nih.gov/21297456) | Population PK-PD model of duodenal levodopa with numeric parameters (MAT 28.5 min, lag 2.9 min, bioavailability 88%) reported in abstract; some disposition parameters may be fixed from literature. |
+| `Adamiak_2010.pdf` | Adamiak U et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical neuropharmacology (2010) | popPK | 7 | [10.1097/WNF.0b013e3181d47849](https://doi.org/10.1097/WNF.0b013e3181d47849) | [20216409](https://pubmed.ncbi.nlm.nih.gov/20216409) | Human PK/PD modeling study of levodopa in advanced Parkinson's patients, but no numeric disposition parameter values appear in the evidence (only EC50 mentioned without values). |
+| `Hardie_1986.pdf` | Hardie RJ et al., The pharmacokinetics of intravenous and…, British journal of clinical… (1986) | popPK | 7 | [10.1111/j.1365-2125.1986.tb02913.x](https://doi.org/10.1111/j.1365-2125.1986.tb02913.x) | [3533125](https://pubmed.ncbi.nlm.nih.gov/3533125) | Human PK study of levodopa with a two-compartment model, but numeric disposition parameters (CL, V, half-lives) are not shown in the abstract evidence. |
+| `Nelson_1989.pdf` | Nelson MV et al., Pharmacokinetic and pharmacodynamic mod…, Clinical neuropharmacology (1989) | popPK | 7 | [10.1097/00002826-198904000-00002](https://doi.org/10.1097/00002826-198904000-00002) | [2720699](https://pubmed.ncbi.nlm.nih.gov/2720699) | Human PK/PD study with one-compartment model of levodopa; some parameters (ka, CL, V) not given but EC50 and half-times are present numerically. |
+| `Baas_2001.pdf` | Baas H et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacokinetics (2001) | popPK | 6 | [10.2165/00003088-200140050-00005](https://doi.org/10.2165/00003088-200140050-00005) | [11432539](https://pubmed.ncbi.nlm.nih.gov/11432539) | Human levodopa PK-PD study with NONMEM population analysis; AUC/Cmax ratios and EC50 (1350 µg/L) are reported, but no CL/V/ka compartmental parameters are given. |
+| `Contin_1994.pdf` | Contin M et al., Longitudinal monitoring of the levodopa…, Neurology (1994) | popPK | 6 | [10.1212/wnl.44.7.1287](https://doi.org/10.1212/wnl.44.7.1287) | [8035932](https://pubmed.ncbi.nlm.nih.gov/8035932) | Population/PD modeling of levodopa with kinetic and effect-compartment parameters, but no numeric values are present in the evidence (they likely live in figures/tables not provided). |
+| `Dingemanse_1995.pdf` | Dingemanse J et al., Pharmacokinetic-pharmacodynamic interac…, British journal of clinical… (1995) | popPK | 6 | [10.1111/j.1365-2125.1995.tb05781.x](https://doi.org/10.1111/j.1365-2125.1995.tb05781.x) | [8527287](https://pubmed.ncbi.nlm.nih.gov/8527287) | Levodopa PK (AUC, t1/2) is reported but only as fold-changes vs placebo; no absolute CL/V/ka values appear in the evidence. |
+| `Garnett_1980.pdf` | Garnett ES et al., Blood-brain barrier transport and cereb…, The American journal of phy… (1980) | popPK | 6 | [10.1152/ajpregu.1980.238.5.R318](https://doi.org/10.1152/ajpregu.1980.238.5.R318) | [6769344](https://pubmed.ncbi.nlm.nih.gov/6769344) | PET-tracer [18F]fluoro-dopa kinetic model in monkeys with numeric fractional rate constants reported in the abstract, though it is a tracer flux model rather than classic disposition parameters. |
+| `Nishikawa_2023.pdf` | Nishikawa N et al., Classification of l-DOPA pharmacokineti…, Parkinsonism & related diso… (2023) | popPK | 6 | [10.1016/j.parkreldis.2023.105798](https://doi.org/10.1016/j.parkreldis.2023.105798) | [37556972](https://pubmed.ncbi.nlm.nih.gov/37556972) | Human levodopa PK study with NCA, but no numeric PK parameter values (Cmax, AUC, etc.) appear in the evidence; they likely reside in tables/figures not provided. |
+| `Rocha_2017.pdf` | Rocha JF et al., Effect of opicapone multiple-dose regim…, British journal of clinical… (2017) | popPK | 6 | [10.1111/bcp.13156](https://doi.org/10.1111/bcp.13156) | [27763682](https://pubmed.ncbi.nlm.nih.gov/27763682) | Human PK study of levodopa with opicapone, but only AUC/exposure summaries appear; numeric disposition parameters (CL, V, ka) are not present in the evidence. |
+| `Dietz_2001.pdf` | Dietz M et al., Levodopa pharmacokinetic-pharmacodynami…, Clinical pharmacology and t… (2001) | popPK | 5 | [10.1067/mcp.2001.116328](https://doi.org/10.1067/mcp.2001.116328) | [11452242](https://pubmed.ncbi.nlm.nih.gov/11452242) | PK-PD modeling of levodopa in Parkinson's patients, but only EC50/Teq correlations reported; actual numeric PK parameter values not shown in evidence. |
+| `Marsot_2017.pdf` | Marsot A et al., Levodopa in Parkinson's Disease: A Revi…, Journal of pharmacy & pharm… (2017) | popPK | 5 | [10.18433/J30H04](https://doi.org/10.18433/J30H04) | [28719359](https://pubmed.ncbi.nlm.nih.gov/28719359) | A review of population PK/PD models of levodopa, but no numeric parameter values are given in the evidence; values likely reside in the reviewed articles/tables not provided. |
+
+<sub>queue written 2026-10-06 13:31 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Aceves_1991 | irrelevant | 0 | 0 | In-vitro neurochemistry study of GABA release in rat brain slices; no PK disposition parameters for levodopa. |
+| popPK | Adamiak_2010 | relevant | 7 | 2 | Human PK/PD modeling study of levodopa in advanced Parkinson's patients, but no numeric disposition parameter values appear in the evidence (only EC50 mentioned without values). |
+| PGx | Antonini_2011 | not_relevant | 2 | 1 | Review of pramipexole PK only mentions potential genetic determinants abstractly, with no gene variant effect on levodopa PK/PD parameters reported. |
+| PGx | Barkatova_1978 | not_relevant | 0 | 0 | No levodopa administration or PK/PD parameters; only endogenous catecholamine excretion in dystonia patients. |
+| PGx | Bepler_1986 | not_relevant | 0 | 0 | Paper studies IFN-alpha/DFMO effects on lung cancer cell lines; L-dopa decarboxylase is only a marker enzyme, no gene variant effect on levodopa PK/PD. |
+| PGx | Białecka_2009 | not_relevant | 3 | 1 | Review abstract on homocysteine genetics and levodopa metabolism; no gene variant effect on levodopa PK/PD parameters reported. |
+| popPK | Brigham_2018 | irrelevant | 0 | 0 | The PK parameters reported are for amantadine, not levodopa, which is only the dyskinesia-inducing co-treatment. |
+| PGx | Brooks_2010 | not_relevant | 0 | 0 | Review of imaging in Parkinson disease; no pharmacogenomic effects on levodopa PK/PD reported. |
+| popPK | Brust_2004 | irrelevant | 2 | 2 | This is a PET study of BBB amino-acid transport of [18F]FDOPA in developing pigs, not a PK study of levodopa disposition; only K1/k2 transport constants are mentioned without numeric values. |
+| PGx | Cacabelos_2017 | not_relevant | 2 | 2 | Review discusses pharmacogenetics of PD drugs generally but reports no specific gene variant effect on levodopa PK/PD parameters. |
+| popPK | Cazzamali_2005 | irrelevant | 0 | 0 | This is a receptor pharmacology study in Drosophila; levodopa is only a non-activating test ligand, with no PK parameters reported. |
+| PGx | Cha_2020 | not_relevant | 3 | 5 | The pharmacogenomic effect (MDM4 rs16854023 on "off" time reduction) concerns zonisamide response, not a PK/PD parameter of levodopa itself. |
+| PGx | Cho_2013 | not_relevant | 0 | 0 | Review of genetic susceptibility to tardive dyskinesia from antipsychotics; no levodopa PK/PD pharmacogenomic effects reported. |
+| popPK | Clark_1991 | irrelevant | 0 | 0 | Pharmacology study of 3-PPP enantiomers on dopamine autoreceptors; levodopa/DOPA is only a biochemical readout, no PK parameters. |
+| popPK | Contin_1994 | relevant | 6 | 2 | Population/PD modeling of levodopa with kinetic and effect-compartment parameters, but no numeric values are present in the evidence (they likely live in figures/tables not provided). |
+| PGx | Corvol_2017 | not_relevant | 3 | 1 | Abstract of a review only; no specific gene-variant effects on levodopa PK/PD parameters reported. |
+| popPK | Cumming_1998 | irrelevant | 2 | 1 | A review of PET compartmental modelling of dopa decarboxylase tracers in brain; no numeric PK parameter values for levodopa disposition are present in the evidence. |
+| popPK | Cumming_2001 | irrelevant | 3 | 2 | PET tracer FDOPA kinetics in monkey brain, not levodopa disposition parameters; no numeric values present in evidence. |
+| PGx | De_2003 | not_relevant | 2 | 3 | Ddc polymorphisms associate with Drosophila longevity, not with a PK/PD parameter of levodopa. |
+| popPK | Dietz_2001 | relevant | 5 | 2 | PK-PD modeling of levodopa in Parkinson's patients, but only EC50/Teq correlations reported; actual numeric PK parameter values not shown in evidence. |
+| popPK | Ding_2011 | irrelevant | 0 | 0 | This is an in-vitro antioxidant/antimelanogenesis study of Paeonia extracts; DOPA is only a tyrosinase substrate, not a levodopa PK study. |
+| popPK | Dingemanse_1995 | relevant | 6 | 3 | Levodopa PK (AUC, t1/2) is reported but only as fold-changes vs placebo; no absolute CL/V/ka values appear in the evidence. |
+| popPK | Doudet_1991 | irrelevant | 4 | 2 | PET tracer metabolite kinetics in monkey brain; a compartmental model is mentioned but no numeric PK parameter values appear in the evidence. |
+| PGx | Džoljić_2015 | not_relevant | 3 | 1 | General narrative review on pharmacogenetics in PD with no specific gene-variant effects on levodopa PK/PD parameters reported. |
+| popPK | Erny_1984 | irrelevant | 0 | 0 | In-vitro PC12 cell study of tyrosine hydroxylase regulation; no levodopa PK parameters. |
+| popPK | Fujita_2021 | irrelevant | 1 | 1 | This is a BBB permeability PET study using rubidium-82, not a PK study of levodopa disposition; levodopa is only an infusion condition and no levodopa CL/V/ka values are reported. |
+| popPK | Furlanut_2001 | irrelevant | 3 | 1 | A narrative review/discussion of L-dopa therapeutic drug monitoring with no numeric PK parameter values reported in the evidence. |
+| PGx | Gasser_1994 | not_relevant | 0 | 0 | Linkage/exclusion study of parkinsonism genetics; no gene effect on levodopa PK/PD parameters reported. |
+| PGx | Gibson_2025 | not_relevant | 0 | 0 | Drosophila Hippo signaling and dopamine metabolism study; no levodopa PK/PD pharmacogenomic effects reported. |
+| PGx | Greenbaum_2015 | not_relevant | 2 | 3 | Hypothesis/review paper on antipsychotic-induced movement disorders and PD modifier genes; no gene variant effect on levodopa PK or PD parameters is reported. |
+| PGx | Greuel_2020 | not_relevant | 2 | 3 | GBA variants compared on disease severity/imaging (FDopa PET, LEDD) but no pharmacogenomic effect on levodopa PK or PD parameters is reported. |
+| popPK | Hacker_2020 | irrelevant | 0 | 0 | Clinical DBS outcomes study with no PK parameters for levodopa; only levodopa equivalent daily doses reported. |
+| popPK | Harder_1995 | irrelevant | 2 | 1 | A narrative review of concentration-effect (PD) relationships with no quantitative PK disposition parameters (CL, V, ka) reported; only EC50 variability ranges are mentioned. |
+| popPK | Hardie_1986 | relevant | 7 | 3 | Human PK study of levodopa with a two-compartment model, but numeric disposition parameters (CL, V, half-lives) are not shown in the abstract evidence. |
+| popPK | Hedges_2020 | irrelevant | 0 | 0 | In-vitro chemistry study of dopamine melanogenesis; levodopa is only a comparator in a melanogenesis rate assay, with no PK disposition parameters. |
+| popPK | Hetey_1985 | irrelevant | 0 | 0 | In-vitro neurochemistry study of tyrosine hydroxylase in rat synaptosomes; no levodopa PK parameters. |
+| PGx | Himmelreich_2021 | not_relevant | 3 | 2 | Discusses GCH1 variants and L-dopa responsiveness in DRD clinically, but reports no quantitative PK/PD parameter changes for levodopa. |
+| popPK | Hinow_2016 | irrelevant | 2 | 0 | A theoretical/mathematical modeling paper of liposomal BBB delivery with no quantitative PK parameter values for levodopa present in the evidence. |
+| popPK | Huang_1991 | irrelevant | 2 | 1 | This is a PET tracer (6-[18F]fluoro-L-dopa) blood-curve separation method, not a PK study of levodopa disposition, and no numeric PK parameter values are present. |
+| popPK | Huang_1991_2 | irrelevant | 2 | 6 | This is a PET tracer study of the analog 6-[18F]fluoro-DOPA (not levodopa itself), reporting tissue transport/decaboxylation rate constants rather than levodopa disposition PK parameters, though numeric values are present. |
+| popPK | Hume_1995 | irrelevant | 0 | 0 | Levodopa is only a probe modulating raclopride PET binding in rats; no levodopa PK parameters are reported. |
+| PGx | Hyland_2020 | not_relevant | 2 | 2 | Study reports DDC variant prevalence and enzyme/metabolite diagnostics, not effects of variants on levodopa PK/PD parameters. |
+| PGx | Ilias_2017 | not_relevant | 0 | 0 | Paper is about functional imaging of paragangliomas/pheochromocytomas, not levodopa PK/PD or pharmacogenomics. |
+| popPK | Irwin_1992 | irrelevant | 2 | 0 | This is a pharmacodynamic (Emax) study of levodopa's hypotensive effect; no PK disposition parameters or numeric PK values are reported. |
+| PGx | Ito_1982 | not_relevant | 0 | 0 | Study of ocular melanin metabolism in pallid mice; no drug PK/PD parameters or pharmacogenomic effects on levodopa reported. |
+| PGx | Izzo_2009 | not_relevant | 0 | 0 | Herbal-drug interaction case reports; no gene variant/genotype effects on levodopa PK/PD reported. |
+| popPK | Jorga_2000 | irrelevant | 2 | 3 | This is a population PK study of tolcapone, not levodopa; levodopa is only co-administered background therapy, though tolcapone's numeric parameters (CL ~4.5–5 l/h, V ~30 l, t½ 5–8 h) are present in the abstract. |
+| popPK | Jost_2026 | irrelevant | 0 | 0 | Clinical effectiveness/safety study of foslevodopa/foscarbidopa infusion with no PK parameters (CL, V, ka, half-life, or PK model) reported; only dosing rates and clinical outcome scores appear. |
+| popPK | Jung_2020 | irrelevant | 0 | 0 | This is an exercise rehabilitation trial in Parkinson's disease with no PK parameters for levodopa; levodopa is only mentioned as medication withdrawn before assessments. |
+| PGx | Kalinderi_2011 | not_relevant | 5 | 1 | Review abstract only; no specific gene-variant effect on levodopa PK/PD parameters is reported or extractable. |
+| PGx | Kalinderi_2019 | not_relevant | 5 | 1 | Review abstract only; no specific gene-variant effects on levodopa PK/PD parameters reported. |
+| PGx | Karroum_2008 | not_relevant | 1 | 1 | Review of RLS mentioning l-DOPA treatment and a resistant phenotype, but no gene variant effect on PK/PD parameters is reported. |
+| popPK | Kou_2025 | irrelevant | 0 | 0 | This is a systematic review/meta-analysis of clinical motor response to levodopa challenge tests, with no PK disposition parameters (CL, V, ka, half-life, or PK model) for levodopa. |
+| popPK | Kumakura_2004 | irrelevant | 2 | 2 | PET study of [18F]fluorodopa tracer kinetics in brain, not a PK study of levodopa disposition; levodopa is only a challenge agent and no levodopa CL/V/ka values appear. |
+| popPK | Kumakura_2005 | irrelevant | 2 | 2 | This is a PET tracer study of [18F]FDOPA brain influx kinetics, not a levodopa plasma PK/disposition study, and quantitative values appear only in figures/results not provided. |
+| popPK | Kumakura_2009 | irrelevant | 3 | 4 | A review of FDOPA-PET tracer kinetic modeling of cerebral levodopa metabolism, not a PK study reporting levodopa disposition parameters (CL, V, ka); only scattered tracer rate constants appear, not systemic levodopa PK values. |
+| PGx | Kvernmo_2008 | not_relevant | 2 | 1 | Review of DA agonists mentions CYP2D6 only speculatively regarding PD etiology, with no gene variant effect on levodopa PK/PD parameters. |
+| PGx | Lecht_2007 | not_relevant | 0 | 0 | Paper discusses rasagiline PK/PD and CYP1A2 metabolism but reports no gene variant/genotype effect on levodopa PK or PD parameters. |
+| PGx | Li_2014 | not_relevant | 2 | 3 | GWAS of treatment-resistant schizophrenia near DDC; no levodopa PK/PD parameter measured or reported. |
+| PGx | Lohr_2016 | not_relevant | 3 | 2 | Paper studies VMAT2 genotype effects on dopamine handling and MPTP toxicity in mice, not on levodopa PK/PD parameters; L-DOPA is only mentioned as context. |
+| PGx | Loonen_2019 | not_relevant | 3 | 1 | Discusses genetic associations with levodopa-induced dyskinesia susceptibility, not a PK/PD parameter effect, and provides no quantitative estimates. |
+| PGx | Löhle_2018 | not_relevant | 6 | 5 | Reports MAOB genotype effects on endogenous putaminal dopamine turnover (PET biomarker), not on levodopa PK or PD parameters. |
+| PGx | Markova_1989 | not_relevant | 2 | 1 | Mentions DOPA treatment efficacy in rigid forms but no gene variant linked to a PK/PD parameter of levodopa. |
+| popPK | Marsot_2017 | relevant | 5 | 2 | A review of population PK/PD models of levodopa, but no numeric parameter values are given in the evidence; values likely reside in the reviewed articles/tables not provided. |
+| PGx | Martelle_2016 | not_relevant | 0 | 0 | Study examines dopamine pathway gene variants and cognitive performance, not levodopa PK/PD parameters. |
+| popPK | Meyer_2020 | irrelevant | 0 | 0 | Nanotheranostic materials study with no levodopa PK parameters or disposition data. |
+| PGx | Michałowska_2020 | not_relevant | 3 | 4 | Outcomes are occurrence of motor levodopa-induced complications (clinical phenotype), not a PK or PD parameter, and only association/OR results are reported with no fitted effect on levodopa PK/PD. |
+| popPK | Moqadam_2025 | irrelevant | 0 | 0 | Neuroimaging study of apathy in Parkinson's disease; levodopa appears only as LEDD covariate, no PK parameters reported. |
+| popPK | Mukai_2026 | relevant | 4 | 4 | Human PK study of levodopa infusions reporting concentrations and dose-concentration slopes, but no CL/V/ka or population-PK model parameters; numeric values (SSConc, On-Conc) are present. |
+| popPK | Müller_2014 | irrelevant | 0 | 0 | A review of rasagiline for Parkinson's disease; levodopa is only mentioned as co-therapy, with no PK parameters for levodopa reported. |
+| popPK | Neef_1999 | irrelevant | 0 | 0 | The paper reports PK parameters for apomorphine, not levodopa, which is only mentioned as a comparator therapy. |
+| popPK | Nelson_1990 | irrelevant | 4 | 2 | This is a pharmacodynamic (PD) modeling study of levodopa; no quantitative PK disposition parameters (CL, V, ka, half-life) are reported, only concentration-effect thresholds. |
+| popPK | Nishikawa_2023 | relevant | 6 | 2 | Human levodopa PK study with NCA, but no numeric PK parameter values (Cmax, AUC, etc.) appear in the evidence; they likely reside in tables/figures not provided. |
+| PGx | Nomoto_2005 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on levodopa PK/PD are reported; only drug, food, and formulation interactions. |
+| PGx | Oertel_2008 | not_relevant | 0 | 0 | Paper concerns pain genetics and opioids; no levodopa PK/PD pharmacogenomic effects reported. |
+| PGx | Ohtsuki_2003 | not_relevant | 0 | 0 | Review of BBB transporters; no gene variant/genotype effect on levodopa PK/PD parameters reported. |
+| PGx | Padmakumar_2019 | not_relevant | 2 | 3 | Reports SLC18A2 deficiency causing L-DOPA treatment failure clinically, but no PK/PD parameter of levodopa is measured or quantified. |
+| popPK | Pardo_1995 | irrelevant | 0 | 0 | In-vitro mechanistic study of L-dopa toxicity in neuroblastoma cells with no PK disposition parameters. |
+| PGx | Park_2020 | not_relevant | 0 | 0 | No gene variant/genotype effect on levodopa PK/PD; paper studies dopamine/carbidopa AhR activity in cell lines. |
+| PGx | Paucar_2016 | not_relevant | 1 | 1 | Case report of FMR1 premutation with levodopa unresponsiveness; no gene-variant effect on any PK/PD parameter of levodopa is quantified. |
+| PGx | Pearl_2007 | not_relevant | 2 | 1 | Mentions levodopa responsiveness in Segawa disease (GCH1 deficiency) but no PK/PD parameter or effect size reported. |
+| PGx | Pearson-Fuhrhop_2013 | not_relevant | 2 | 1 | General discussion of pharmacogenetics in stroke recovery; no specific gene variant effect on levodopa PK/PD parameters reported. |
+| PGx | Politi_2018 | not_relevant | 5 | 2 | Review abstract only; no specific gene-variant effect on a levodopa PK/PD parameter is reported or extractable. |
+| popPK | Rajnák_2024 | irrelevant | 0 | 0 | Quantum-chemical DFT study of redox potentials of catecholamines/DOPA in water; no pharmacokinetic parameters (CL, V, ka, half-life) for levodopa. |
+| popPK | Rocha_2014 | irrelevant | 0 | 0 | This is a PK study of opicapone (a COMT inhibitor), not of levodopa; levodopa is only mentioned as co-therapy and no levodopa disposition parameters are reported. |
+| popPK | Rocha_2014_2 | irrelevant | 0 | 0 | Evidence contains only adverse-event frequency tables from a BIA 9-1067 clinical trial; no levodopa PK parameters or numeric disposition values appear. |
+| popPK | Rocha_2017 | relevant | 6 | 2 | Human PK study of levodopa with opicapone, but only AUC/exposure summaries appear; numeric disposition parameters (CL, V, ka) are not present in the evidence. |
+| PGx | Samsonov_1977 | not_relevant | 0 | 0 | No gene variant or levodopa PK/PD effect; only diet effects on catecholamine/DOPA excretion. |
+| PGx | Sarangi_2021 | not_relevant | 3 | 1 | Review abstract only mentions levodopa side-effect variability in PD without reporting any specific gene variant effect on a PK/PD parameter. |
+| popPK | Sato_1994 | irrelevant | 0 | 0 | The extracted evidence contains no paper content at all (only GROBID metadata), so no PK parameters for levodopa are present. |
+| popPK | Saunders-Pullman_2018 | irrelevant | 0 | 0 | Clinical progression study of Parkinson disease; levodopa appears only as a levodopa-equivalent dose covariate, with no PK parameters. |
+| popPK | Schiepers_2007 | irrelevant | 1 | 1 | This is a PET tracer study of 18F-FDOPA (a fluorinated analog) in brain tumors, not a PK study of levodopa itself, and no numeric parameter values appear in the evidence. |
+| PGx | Schumacher-Schuh_2014 | not_relevant | 3 | 1 | Review abstract discussing PD pharmacogenetics broadly, with no specific gene-variant effects on levodopa PK/PD parameters reported. |
+| PGx | Semenova_2017 | not_relevant | 2 | 3 | Zebrafish COMT characterization with inhibitor effects on catecholamine metabolites; no levodopa PK/PD parameter or genotype effect reported. |
+| popPK | Sethi_2021 | irrelevant | 0 | 0 | Clinical outcomes study of disease progression, no PK parameters or numeric disposition values reported. |
+| PGx | Sleiman_2022 | not_relevant | 1 | 1 | Levodopa trial in SHQ1 dystonia patients reported only as "no clear response," with no gene-variant effect on any PK/PD parameter quantified. |
+| popPK | Song_2021 | irrelevant | 0 | 0 | MRS study of brain GABA levels with L-dopa dosing; no PK parameters reported. |
+| popPK | Suksai_2026 | relevant | 6 | 4 | In silico PK-PD simulation of levodopa with a compartmental model; some rate constants (ka 1.2 h−1, k12 0.6, k21 0.5) appear in text but full parameter values are literature-derived and partly in figures/tables not fully provided. |
+| PGx | Tai_2002 | not_relevant | 4 | 2 | Review discussing COMT genotype's possible influence on levodopa response, but no PK/PD parameter effect sizes reported. |
+| PGx | Takeshige-Amano_2020 | not_relevant | 2 | 3 | Study examines caffeine metabolite levels and CYP1A2/CYP2E1 variants in parkinsonian disorders, not a gene effect on levodopa PK/PD; levodopa dose only correlated inversely with caffeine levels. |
+| popPK | Tedroff_1992 | irrelevant | 3 | 2 | PET tracer kinetic study of [11C]-L-DOPA in monkey brain; no numeric disposition parameters (CL, V, ka) are present in the evidence. |
+| PGx | Tremblay_2010 | not_relevant | 0 | 0 | Abstract about pain/opioid genetics; no levodopa PK/PD pharmacogenomic effects reported. |
+| popPK | Triggs_1996 | relevant | 10 | 2 | Population PK (NONMEM, one-compartment, first-order absorption) of levodopa in parkinsonian patients, but no numeric parameter values appear in the abstract. |
+| popPK | Trocóniz_1998 | irrelevant | 4 | 2 | This is a population pharmacodynamic (PD) model of levodopa's clinical effect, not a PK disposition study; no CL/V/ka values are reported, and PK parameters are only referenced as being elsewhere. |
+| popPK | Tsukita_2022 | irrelevant | 0 | 0 | This is a clinical observational study of physical activity in Parkinson disease; levodopa appears only as a covariate (LEDD) with no PK parameters reported. |
+| popPK | Vaz-da-Silva_2008 | relevant | 4 | 4 | Reports levodopa PK exposure metrics (AUC, Cmax GMRs) in humans, but no clearance/volume/ka or population-PK model parameters; values are present as ratios only. |
+| popPK | Venuto_2021 | irrelevant | 0 | 0 | This is a population-PK study of isradipine, not levodopa; levodopa appears only as levodopa equivalent dose outcome measures, so no levodopa disposition parameters are reported. |
+| popPK | Vu_2012 | irrelevant | 1 | 3 | This is a disease-progression model of Parkinson's symptoms with levodopa as a treatment (ED50 only), not a PK study reporting levodopa disposition parameters. |
+| popPK | Wahl_1996 | irrelevant | 2 | 3 | This is a PET tracer study of 6-[18F]fluoro-L-Dopa (an analog), not levodopa itself, and only a decarboxylation rate constant (k21) is reported, not disposition parameters like CL/V. |
+| PGx | Wang_2022 | not_relevant | 0 | 0 | In vitro UGT inhibition by opicapone (DDI study), no gene variant/genotype effect on levodopa PK/PD reported. |
+| PGx | Xiao_2020 | not_relevant | 0 | 0 | Insect melanin synthesis study in Harmonia axyridis; no levodopa PK/PD pharmacogenomic effects reported. |
+| popPK | Yanovsky_2011 | irrelevant | 0 | 0 | Mechanistic neurophysiology study of L-dopa's action on histaminergic neurons; no PK disposition parameters reported. |
+| popPK | Ye_2021 | irrelevant | 0 | 0 | Biomarker study of serum NFL in Parkinson's disease; levodopa only appears as an equivalent dose covariate, no PK parameters reported. |
+| popPK | Yu_1992 | irrelevant | 0 | 0 | In-vitro vascular pharmacology study of agonist responses; levodopa is only an unresponsive agonist, no PK parameters. |
+| popPK | Zhang_2009 | irrelevant | 0 | 0 | Levodopa (Madopar) is only a co-administered agent; PK parameters are for talipexole, not levodopa. |
+| PGx | Ztaou_2019 | not_relevant | 0 | 0 | Review of cholinergic interneurons in PD; no gene variant effects on levodopa PK/PD parameters reported. |
+| PGx | Zádori_2013 | not_relevant | 2 | 0 | Review abstract mentioning polymorphisms as risk factors for L-DOPA side effects, with no PK/PD parameter effects reported. |
+| PGx | von_1995 | not_relevant | 0 | 0 | Paper discusses macrolide drug-drug interactions via CYP3A4 inhibition, not gene variant effects on levodopa PK/PD. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevodopa%5D&body=Drug%3A%20levodopa%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levodopa/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 13:32 UTC</sub>

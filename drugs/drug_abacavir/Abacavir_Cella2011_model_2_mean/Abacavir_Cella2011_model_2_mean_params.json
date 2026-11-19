@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 600 mg oral (J05AF06)",
+ "model_id": "Abacavir_Cella2011_model_2_mean",
+ "molar_masses": {
+  "central.C": 0.2863323
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.7222222222222225e-06,
+  "F": 1.0,
+  "MM": 0.2863323,
+  "Tlag": 0.0,
+  "VdPerKg": 7.057142857142859e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "k12": 7.028789923526764e-05,
+  "k21": 4.276135741652984e-05,
+  "ka": 0.00021055555555555554,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9060.568920492893
+ },
+ "reference_peaks": {
+  "central.C": 0.00378162558239824
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

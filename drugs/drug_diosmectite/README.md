@@ -1,0 +1,143 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07B&quot;,&quot;href&quot;:&quot;atc/A07B.md&quot;},{&quot;label&quot;:&quot;diosmectite&quot;}]"></div>
+
+# diosmectite
+
+- **generic name:** diosmectite
+- **ATC codes:** `A07BC05`
+- **DrugBank:** [DB13654](https://go.drugbank.com/drugs/DB13654) · **PubChem:** none
+- **groups:** investigational
+
+## About
+
+Diosmectite is an intestinal adsorbent used to treat various gastrointestinal conditions, including acute and chronic diarrhea. The medication is administered orally or topically, with oral forms available as powders or suspensions for solution. Current records list this drug as investigational.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q4162027](https://www.wikidata.org/wiki/Q4162027), [Wikipedia](https://en.wikipedia.org/wiki/Diosmectite?oldid=1383300944) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 18:48 | 2:20 | 0/0/0 | 0/0/0 | 0/0/0 | 103,387/1,219 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/20 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 54 matched, 47 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gupta_2005.pdf` | Gupta G et al., Use of clay mineral (montmorillonite) f…, Journal of hazardous materi… (2005) | pd | 4 | [10.1016/j.jhazmat.2004.05.024](https://doi.org/10.1016/j.jhazmat.2004.05.024) | [15721531](https://www.ncbi.nlm.nih.gov/pubmed/15721531) | metadata signals extractable PD data (EC50) |
+| `Wu_2022.pdf` | Wu M et al., Cotransport of nano-hydroxyapatite and…, Water research (2022) | pd | 4 | [10.1016/j.watres.2022.118511](https://doi.org/10.1016/j.watres.2022.118511) | [35512536](https://www.ncbi.nlm.nih.gov/pubmed/35512536) | metadata signals extractable PD data (concentrationeffect) |
+
+<sub>queue written 2026-10-04 18:46 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Baquero_2022 | irrelevant | 0 | 0 | The paper is a review on the environmental fate of antibiotics and does not study diosmectite or report any pharmacokinetic parameters for it. |
+| PD | Baquero_2022 | not_relevant | 1 | 0 | The paper is a review on environmental antibiotic detoxification and does not report specific pharmacodynamic or exposure-response data for diosmectite. |
+| popPK | Bouguerra_2022 | irrelevant | 0 | 0 | The paper describes the chemical synthesis of hydroxytyrosol and does not involve the drug diosmectite or pharmacokinetic parameters. |
+| PD | Bouguerra_2022 | not_relevant | 0 | 0 | The paper describes the chemical synthesis of hydroxytyrosol and reports in vitro antioxidant (IC50) and antimicrobial (MIC/MBC) data, but does not contain any pharmacokinetic or pharmacodynamic modeling, exposure-response analysis, or dose-response relationship for diosmectite. |
+| popPK | Debray_2010 | irrelevant | 0 | 0 | The paper describes a chemical synthesis using montmorillonite K-10 as a catalyst and reports biological activity (IC50), containing no pharmacokinetic data for diosmectite. |
+| PD | Debray_2010 | not_relevant | 0 | 0 | The paper reports the synthesis of new heterocyclic compounds using montmorillonite K-10 as a catalyst and provides an IC50 for a synthesized derivative, but it does not report a pharmacodynamic or exposure-response relationship for diosmectite. |
+| popPK | Farooq_2020 | irrelevant | 0 | 0 | The paper describes the synthesis and cytotoxicity of dihydropyrimidinones using a Montmorillonite catalyst, and does not study the pharmacokinetics of diosmectite. |
+| popPK | Feng_2009 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Docetaxel delivered via montmorillonite nanoparticles, not diosmectite. |
+| PD | Feng_2009 | not_relevant | 2 | 1 | The paper reports IC50 values for in vitro cell viability and PK parameters (half-life, bioavailability) for docetaxel formulations, but does not report a pharmacodynamic model or exposure-response relationship for diosmectite (or montmorillonite) with numeric PD parameters. |
+| popPK | Fischer_2022 | irrelevant | 0 | 0 | The paper studies the toxicity of copper oxide nanoparticles in springtails and does not involve diosmectite or pharmacokinetic parameters. |
+| PD | Fischer_2022 | not_relevant | 0 | 0 | The paper studies the toxicity of copper oxide nanoparticles in soil, not the pharmacodynamics of diosmectite. |
+| popPK | Ghariani_2025 | irrelevant | 0 | 0 | The paper investigates the toxicological effects of silver-modified bentonite nanocomposites on microalgae and does not involve diosmectite or pharmacokinetic parameters. |
+| popPK | Girisa_2021 | irrelevant | 0 | 0 | The paper is a review of curcuminoids for oral diseases and does not mention diosmectite or report any pharmacokinetic parameters for it. |
+| PD | Girisa_2021 | not_relevant | 0 | 0 | The paper is a review on curcuminoids for oral diseases and does not mention diosmectite or report any pharmacodynamic parameters. |
+| popPK | Gupta_2005 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
+| PD | Gupta_2005 | not_relevant | 0 | 0 | The paper discusses montmorillonite (a clay mineral) and toxicity (EC50) in poultry litter, but does not report a pharmacodynamic or exposure-response relationship for the drug diosmectite. |
+| popPK | Haghparasti_2018 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro antioxidant/cytotoxicity properties of silver nanoparticle nanocomposites, containing no pharmacokinetic data for diosmectite. |
+| PD | Haghparasti_2018 | not_relevant | 0 | 0 | The paper studies silver nanoparticles and does not report any pharmacodynamic or exposure-response data for diosmectite. |
+| popPK | Han_2021 | irrelevant | 0 | 0 | The paper focuses on ocular delivery of montmorillonite-based particles for glaucoma, not the pharmacokinetics of the drug diosmectite. |
+| PD | Han_2021 | not_relevant | 2 | 1 | The paper discusses pharmacodynamic duration qualitatively (8h vs 12h) but does not provide numeric concentration-effect parameters, dose-response curves, or a formal PK/PD model. |
+| popPK | Huang_2017 | irrelevant | 0 | 0 | The study focuses on the ophthalmic delivery of betaxolol hydrochloride using a montmorillonite carrier, not the pharmacokinetics of diosmectite. |
+| PD | Huang_2017 | not_relevant | 2 | 1 | The paper reports PK parameters and qualitative IOP changes but does not provide numeric PD parameters (Emax, EC50) or a quantitative exposure-response model for diosmectite (or the active drug betaxolol). |
+| popPK | Jackson_2026 | irrelevant | 0 | 0 | The paper studies NutriClayZn (zinc oxide on montmorillonite clay) for antimicrobial efficacy in swine, not the pharmacokinetics of diosmectite. |
+| PD | Jackson_2026 | not_relevant | 0 | 0 | The paper studies NutriClayZn (zinc oxide on clay), not diosmectite, and reports no numeric dose-response parameters for the target drug. |
+| popPK | Jiao_2009 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sirolimus, not diosmectite. |
+| PD | Jiao_2009 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of sirolimus, not pharmacodynamics (PD) or exposure-response relationships for diosmectite. |
+| popPK | Karaman_2016 | irrelevant | 0 | 0 | The paper studies paracetamol degradation and removal, not diosmectite pharmacokinetics. |
+| PD | Karaman_2016 | not_relevant | 0 | 0 | The paper focuses on the environmental degradation and removal of paracetamol (not diosmectite) and does not report any pharmacodynamic or exposure-response relationships for the specified drug. |
+| popPK | Karunarathna_2025 | irrelevant | 0 | 0 | The paper is a review of the antimicrobial properties of Ganoderma mushrooms and does not mention diosmectite or report any pharmacokinetic parameters. |
+| PD | Karunarathna_2025 | not_relevant | 0 | 0 | The paper is a review of Ganoderma's antimicrobial properties and does not mention diosmectite or report any pharmacodynamic parameters. |
+| popPK | La_2020 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biological evaluation of sialic acid derivatives as antiviral inhibitors, with no mention of diosmectite or pharmacokinetic parameters. |
+| PD | La_2020 | not_relevant | 0 | 0 | The paper reports IC50 values for sialic acid derivatives against Newcastle disease virus, not for diosmectite. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a review on natural polysaccharide hydrogels for colorectal cancer and does not mention diosmectite or report any pharmacokinetic parameters. |
+| PD | Li_2026 | not_relevant | 0 | 0 | The paper is a review on natural polysaccharide hydrogels for colorectal cancer and does not mention diosmectite or report any pharmacodynamic or exposure-response data. |
+| popPK | Liu_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of betaxolol hydrochloride (a beta-blocker) in rabbits, not diosmectite. |
+| PD | Liu_2020 | not_relevant | 0 | 0 | The paper focuses on the formulation of montmorillonite-loaded solid lipid nanoparticles for betaxolol delivery and reports PK/PD outcomes (IOP reduction) but does not provide numeric PD parameters (e.g., Emax, EC50) or an exposure-response model for diosmectite. |
+| popPK | Liu_2021 | irrelevant | 0 | 0 | The study investigates betaxolol hydrochloride and montmorillonite for glaucoma treatment, not diosmectite. |
+| PD | Liu_2021 | not_relevant | 0 | 0 | The paper studies betaxolol hydrochloride, not diosmectite, and does not report specific numeric PD parameters (e.g., Emax, EC50) for the drug. |
+| popPK | Machado_2025 | irrelevant | 0 | 0 | The paper is an ecotoxicological study of a montmorillonite-based essential oil formulation, not a pharmacokinetic study of diosmectite. |
+| PD | Machado_2025 | not_relevant | 0 | 0 | The paper reports ecotoxicological data (EC50, NOEC) for a montmorillonite-essential oil formulation, not pharmacodynamic or exposure-response data for the drug diosmectite. |
+| popPK | Mahouachi_2020 | irrelevant | 0 | 0 | The paper is an environmental engineering study on clay adsorption of pharmaceuticals, not a pharmacokinetic study of diosmectite. |
+| PD | Mahouachi_2020 | not_relevant | 0 | 0 | The paper studies the adsorption of pharmaceuticals by clay in wastewater and does not mention diosmectite or report any pharmacodynamic or exposure-response relationships. |
+| popPK | Majewska_2007 | irrelevant | 0 | 0 | The paper studies cadmium sorption in soil and does not involve diosmectite or pharmacokinetics. |
+| popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not mention diosmectite or report any pharmacokinetic parameters. |
+| PD | Papadopoulou_2025 | not_relevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not mention diosmectite or report any pharmacodynamic or exposure-response data. |
+| popPK | Rivollier_2024 | irrelevant | 0 | 0 | The paper is a materials science study on polymer nanocomposites (montmorillonite in LLDPE) and contains no pharmacokinetic data for diosmectite. |
+| PD | Rivollier_2024 | not_relevant | 0 | 0 | The paper investigates the exfoliation and orientation of montmorillonite in polymer nanocomposites, which is a materials science study unrelated to pharmacodynamics or drug exposure-response relationships. |
+| popPK | Sabzevari_2024 | irrelevant | 0 | 0 | The paper is an in-vitro study on the antiproliferative effects of montmorillonite on breast cancer cells and does not report pharmacokinetic parameters for diosmectite. |
+| popPK | Safakas_2025 | irrelevant | 0 | 0 | The paper is a materials science study on food packaging films and does not involve diosmectite or pharmacokinetics. |
+| PD | Safakas_2025 | not_relevant | 0 | 0 | The paper focuses on the development of active packaging films containing carvacrol and thymol, not on the pharmacodynamics of diosmectite. |
+| popPK | Shah_2024 | irrelevant | 0 | 0 | The paper describes the fabrication and characterization of montmorillonite clay/agar magnetic composites and does not involve the drug diosmectite or pharmacokinetic studies. |
+| PD | Shah_2024 | not_relevant | 0 | 0 | The paper studies the fabrication and characterization of montmorillonite/agar magnetic composites, not the pharmacodynamics of diosmectite. |
+| popPK | Shao_2021 | irrelevant | 0 | 0 | The paper is a bibliometric review of electrochemical sensors for tea components and does not involve diosmectite or pharmacokinetics. |
+| PD | Shao_2021 | not_relevant | 0 | 0 | The paper is a bibliometric review of electrochemical sensors for tea components and contains no pharmacodynamic or exposure-response data for diosmectite. |
+| popPK | Soltan_2022 | irrelevant | 0 | 0 | The paper is an in-vitro study on montmorillonite clay (not diosmectite) and does not report pharmacokinetic parameters. |
+| popPK | Stueckle_2019 | irrelevant | 0 | 0 | The study is an in-vitro toxicology assessment of nanoclays on bronchial cells and does not report any pharmacokinetic parameters for diosmectite. |
+| popPK | Su_2025 | irrelevant | 0 | 0 | The paper is a review on nanotechnology in osteosarcoma treatment and does not mention diosmectite or report any pharmacokinetic parameters. |
+| PD | Su_2025 | not_relevant | 0 | 0 | The paper is a review on nanotechnology in osteosarcoma and does not contain any pharmacodynamic or exposure-response data for diosmectite. |
+| popPK | Sun_2008 | irrelevant | 0 | 0 | The paper focuses on paclitaxel-loaded nanoparticles and does not study diosmectite or report pharmacokinetic parameters for it. |
+| PD | Sun_2008 | not_relevant | 3 | 2 | The paper reports IC50 values for paclitaxel-loaded nanoparticles, which is a dose-response metric, but it does not report a pharmacodynamic model (Emax, EC50, slope) or an exposure-response relationship for diosmectite (the paper focuses on montmorillonite/PLGA nanoparticles and paclitaxel, not diosmectite). |
+| PGx | Sun_2019 | not_relevant | 0 | 0 | The paper studies Montmorillonite Powder, not diosmectite, and reports clinical efficacy (cure rate) rather than specific PK/PD parameters. |
+| popPK | Thanh_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro inhibitory activity of triazole-chromene hybrids against Mycobacterium tuberculosis, with no mention of diosmectite or pharmacokinetic parameters. |
+| PD | Thanh_2023 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for triazole-chromene hybrids, not pharmacodynamic or exposure-response data for diosmectite. |
+| popPK | Tian_2018 | irrelevant | 0 | 0 | The study investigates betaxolol hydrochloride using montmorillonite as a carrier, not diosmectite, and focuses on drug delivery/release rather than population pharmacokinetics. |
+| PD | Tian_2018 | not_relevant | 0 | 0 | The paper focuses on the formulation and in vitro release of betaxolol microspheres; it does not report any pharmacodynamic or exposure-response data for diosmectite (or betaxolol) with numeric parameters. |
+| popPK | Toan_2022 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on enzyme inhibitors and does not involve diosmectite or pharmacokinetic parameters. |
+| PD | Toan_2022 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for synthesized hybrid compounds, not pharmacodynamic or exposure-response data for diosmectite. |
+| popPK | Tullio_2024 | irrelevant | 0 | 0 | The study investigates the toxicological effects of nanoclays on fish and does not involve diosmectite or report any pharmacokinetic parameters. |
+| PD | Tullio_2024 | not_relevant | 0 | 0 | The paper studies nanoclays (montmorillonite, Cloisite, Novaclay) in fish, not the drug diosmectite. |
+| popPK | Vazquez-Rodriguez_2022 | irrelevant | 0 | 0 | The study focuses on niclosamide-releasing catheters and has no relation to diosmectite pharmacokinetics. |
+| PD | Vazquez-Rodriguez_2022 | not_relevant | 0 | 0 | The paper studies niclosamide, not diosmectite, and does not report a pharmacodynamic model or numeric PD parameters for the target drug. |
+| popPK | Wahoodi_2026 | irrelevant | 0 | 0 | The paper describes the synthesis and cytotoxic/anti-inflammatory screening of rosin acid derivatives and does not involve diosmectite or pharmacokinetic parameters. |
+| PD | Wahoodi_2026 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel rosin acid derivatives, not for diosmectite, and does not contain any pharmacokinetic or exposure-response data. |
+| popPK | Wen_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of pyrotinib, not diosmectite (which is not even mentioned; montmorillonite is a different clay mineral). |
+| popPK | Wu_2022 | irrelevant | 0 | 0 | The paper concerns the cotransport of nano-hydroxyapatite and cadmium, not the pharmacokinetics of diosmectite. |
+| PD | Wu_2022 | not_relevant | 0 | 0 | The paper focuses on the environmental chemistry of cadmium and hydroxyapatite, not the pharmacodynamics of diosmectite. |
+| popPK | Wu_2024 | irrelevant | 0 | 0 | The paper studies the adsorption of heavy metals (Pb, Cu) by montmorillonite composites, not the pharmacokinetics of diosmectite. |
+| popPK | Yew_2019 | irrelevant | 0 | 0 | The paper studies protocatechuic acid in nanocomposites, not diosmectite, and contains no pharmacokinetic parameters. |
+| PD | Yew_2019 | not_relevant | 0 | 0 | The paper studies protocatechuic acid loaded in nanocomposites, not diosmectite. |
+| popPK | Zhu_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pyrotinib, not diosmectite. |
+| PD | Zhu_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PPK) study for pyrotinib, not diosmectite, and contains no pharmacodynamic or exposure-response modeling. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiosmectite%5D&body=Drug%3A%20diosmectite%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diosmectite/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

@@ -1,0 +1,132 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;Methylnaltrexone&quot;}]"></div>
+
+# Methylnaltrexone
+
+- **generic name:** Methylnaltrexone
+- **ATC codes:** `A06AH01`
+- **DrugBank:** [DB06800](https://go.drugbank.com/drugs/DB06800) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Methylnaltrexone is a peripheral opioid receptor antagonist used to treat opioid-induced constipation. It is given by subcutaneous injection, orally as a tablet, or topically. Oral absorption is good. The drug is approved for use and is available under the brand name Relistor.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q59904170](https://www.wikidata.org/wiki/Q59904170), [Wikipedia](https://en.wikipedia.org/wiki/Methylnaltrexone?oldid=1341889075) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=methylnaltrexone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: MC4R (target), OPRK1 (target), OPRM1 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 16:35 | 1:15 | 0/0/0 | 0/0/0 | 0/0/0 | 47,320/1,104 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/3 | 4/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 38 matched, 43 returned
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Boscan_2006.pdf` | Boscan P et al., Pharmacokinetics of the opioid antagoni…, American journal of veterin… (2006) | popPK | 10 | [10.2460/ajvr.67.6.998](https://doi.org/10.2460/ajvr.67.6.998) | [16740093](https://pubmed.ncbi.nlm.nih.gov/16740093) | The abstract explicitly reports quantitative pharmacokinetic parameters (Vss, t1/2, CL) for methylnaltrexone in horses. |
+| `Foss_1997.pdf` | Foss JF et al., Safety and tolerance of methylnaltrexon…, Journal of clinical pharmac… (1997) | popPK | 10 | [10.1177/009127009703700105](https://doi.org/10.1177/009127009703700105) | [9048269](https://pubmed.ncbi.nlm.nih.gov/9048269) | The abstract explicitly reports quantitative pharmacokinetic parameters (clearance and half-life) for methylnaltrexone in healthy humans. |
+| `Lin_2014.pdf` | Lin DH et al., Bioavailability of oral methylnaltrexon…, Drug development and indust… (2014) | popPK | 8 | [10.3109/03639045.2012.753899](https://doi.org/10.3109/03639045.2012.753899) | [23327357](https://pubmed.ncbi.nlm.nih.gov/23327357) | The study reports quantitative PK parameters (Cmax, Tmax, T1/2, AUC) for methylnaltrexone in rats, though it lacks explicit clearance or volume of distribution values. |
+| `Murph_2001.pdf` | Murph DB et al., Pharmacokinetic profile of epidurally a…, British journal of anaesthe… (2001) | popPK | 8 | [10.1093/bja/86.1.120](https://doi.org/10.1093/bja/86.1.120) | [11575386](https://pubmed.ncbi.nlm.nih.gov/11575386) | The study reports a two-compartment PK model for methylnaltrexone in rabbits, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Meyer_2019.pdf` | Meyer MJ et al., Opioids as Substrates and Inhibitors of…, Journal of medicinal chemis… (2019) | pd | 5 | [10.1021/acs.jmedchem.9b01301](https://doi.org/10.1021/acs.jmedchem.9b01301) | [31597043](https://www.ncbi.nlm.nih.gov/pubmed/31597043) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-04 16:34 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Anselmi_2013 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of gastrointestinal motility in guinea pigs and does not report any pharmacokinetic parameters for methylnaltrexone. |
+| popPK | Best_2017 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats where methylnaltrexone is used as a co-administered agent to test effects on vocalizations, with no pharmacokinetic parameters reported. |
+| PD | Best_2017 | not_relevant | 1 | 0 | The paper reports qualitative behavioral observations (vocalization rates) in response to fixed doses of morphine and methylnaltrexone, but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response model for methylnaltrexone. |
+| popPK | Chase_2012 | irrelevant | 0 | 0 | no_text gate: only 31 chars of text extracted (&lt; 400) |
+| PD | Chase_2012 | not_relevant | 0 | 0 | The paper is an editorial discussing prognostic models (SAPS-II) and standardized mortality rates in ICU settings; it contains no pharmacokinetic or pharmacodynamic data for Methylnaltrexone. |
+| popPK | Foss_2001 | irrelevant | 1 | 0 | The paper is a review discussing the mechanism and clinical efficacy of methylnaltrexone but does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Franchi_2019 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of ticagrelor, with methylnaltrexone serving only as a co-administered agent to test its effect on ticagrelor absorption, and no PK parameters for methylnaltrexone are reported. |
+| PD | Franchi_2019 | not_relevant | 2 | 1 | The study reports PK changes and qualitative PD comparisons (no significant difference) but does not provide numeric PD parameters (e.g., Emax, EC50) or a concentration-effect curve for methylnaltrexone. |
+| popPK | Gatti_2012 | irrelevant | 1 | 0 | The paper is a narrative review discussing the clinical management of opioid-induced constipation and does not report original quantitative pharmacokinetic parameter values for methylnaltrexone. |
+| PD | Gatti_2012 | not_relevant | 2 | 0 | The text is a narrative review that qualitatively discusses pharmacodynamics but does not provide specific numeric PD parameters or exposure-response data. |
+| popPK | Guay_2009 | irrelevant | 2 | 0 | The paper is a review article that summarizes general pharmacokinetic properties but does not provide original quantitative disposition parameters (CL, V, etc.) for methylnaltrexone in the provided evidence. |
+| PD | Guay_2009 | not_relevant | 2 | 0 | The paper is a general review of methylnaltrexone's chemistry, PK, and clinical efficacy, but it does not report specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or an exposure-response model in the provided text. |
+| PGx | Gudin_2020 | not_relevant | 0 | 0 | The paper discusses pharmacokinetic variability due to drug-drug interactions, food, and age, but does not report effects of gene variants or genotypes on methylnaltrexone PK/PD. |
+| popPK | Gupta_2022 | irrelevant | 0 | 0 | The paper is a cost analysis of symptom management drugs and does not report any pharmacokinetic parameters for methylnaltrexone. |
+| PD | Gupta_2022 | not_relevant | 0 | 0 | The paper is a cost analysis of drugs for cancer-associated symptoms and contains no pharmacodynamic, exposure-response, or dose-response data. |
+| popPK | Holm_2019 | irrelevant | 0 | 0 | The study investigates the effect of methylnaltrexone on the pharmacokinetics of ticagrelor, not the pharmacokinetic parameters of methylnaltrexone itself. |
+| PD | Holm_2019 | not_relevant | 0 | 0 | The study is a randomized controlled trial comparing two fixed doses of methylnaltrexone against placebo, reporting only group-level means for platelet reactivity and drug concentrations without fitting a concentration-effect or dose-response model to derive PD parameters. |
+| popPK | Holzer_2010 | irrelevant | 0 | 0 | This is a narrative review of opioid antagonists for constipation and does not report original quantitative pharmacokinetic parameters for methylnaltrexone. |
+| popPK | Jones_2016 | irrelevant | 0 | 0 | The paper is a review of naloxegol, and methylnaltrexone is only mentioned as a comparator class without any quantitative pharmacokinetic parameters provided. |
+| PD | Jones_2016 | not_relevant | 1 | 0 | The text is a review of naloxegol that only qualitatively mentions methylnaltrexone as a comparator without providing any numeric PD parameters or exposure-response data. |
+| popPK | Kolbow_2016 | irrelevant | 2 | 0 | The study reports pharmacodynamic endpoints (transit time) and relative bioavailability percentages, but lacks quantitative disposition parameters (CL, V, ka, t1/2) or a PK model for methylnaltrexone. |
+| PD | Kolbow_2016 | not_relevant | 2 | 1 | The study reports qualitative efficacy comparisons and bioavailability ranges but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect model. |
+| popPK | Kraft_2008 | irrelevant | 0 | 0 | The paper is a clinical review of methylnaltrexone for postoperative ileus and contains no pharmacokinetic data or quantitative disposition parameters. |
+| PD | Kraft_2008 | not_relevant | 1 | 0 | The text is a review/summary of clinical trial outcomes for methylnaltrexone in postoperative ileus and does not report any pharmacokinetic data, concentration-effect curves, or numeric pharmacodynamic parameters. |
+| popPK | Leppert_2010 | irrelevant | 0 | 0 | The paper is a clinical review of opioid-induced constipation treatments and does not report any quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) for methylnaltrexone. |
+| popPK | Leppert_2015 | irrelevant | 0 | 0 | The paper is a clinical review of opioid-induced bowel dysfunction management and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for methylnaltrexone. |
+| PGx | Leppert_2016 | not_relevant | 0 | 0 | The paper focuses on naloxegol and does not report pharmacogenomic effects on the PK or PD of methylnaltrexone. |
+| popPK | Liu_2021 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro/in-vivo investigation of morphine's effects on lung cancer cells, using methylnaltrexone only as a pharmacological antagonist to block MOR signaling, with no pharmacokinetic parameters reported. |
+| PD | Liu_2021 | not_relevant | 2 | 1 | The study uses methylnaltrexone (MNTX) as a mechanistic antagonist to block morphine effects, but does not report a dose-response curve, Emax, or EC50 for MNTX itself; it only notes that a specific concentration (0.1 µg/µl) reversed morphine-induced changes. |
+| popPK | Meyer_2019 | irrelevant | 0 | 0 | The paper focuses on OCT1 transporter interactions with opioids and does not report pharmacokinetic parameters for methylnaltrexone. |
+| PD | Meyer_2019 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and transporter interactions (OCT1) of opioids, not on the pharmacodynamic or exposure-response relationship of Methylnaltrexone. |
+| PGx | Meyer_2019 | not_relevant | 0 | 0 | The paper focuses on opioids as substrates/inhibitors of OCT1 and does not report pharmacogenomic effects on the PK/PD of methylnaltrexone. |
+| popPK | Moss_2019 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for opioid-induced constipation and does not report any pharmacokinetic parameters for methylnaltrexone. |
+| PD | Moss_2019 | not_relevant | 2 | 1 | The text describes a clinical trial evaluating efficacy (laxation response and transit time) but does not report pharmacokinetic data, concentration-effect relationships, or numeric PD parameters like Emax or EC50. |
+| popPK | Mozaffari_2018 | irrelevant | 1 | 0 | The paper is a systematic review of clinical evidence and does not report original quantitative pharmacokinetic parameter values for methylnaltrexone. |
+| PD | Mozaffari_2018 | not_relevant | 2 | 0 | The text is an abstract of a systematic review that mentions a review of pharmacodynamic data but does not provide any specific numeric PD parameters, exposure-response curves, or dose-effect relationships in the provided text. |
+| popPK | Mucha_1989 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats focusing on taste aversion and receptor location, not a pharmacokinetic study reporting quantitative disposition parameters for methylnaltrexone. |
+| popPK | Murph_2001 | relevant | 8 | 2 | The study reports a two-compartment PK model for methylnaltrexone in rabbits, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| popPK | Portenoy_2008 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for opioid-induced constipation and does not report any pharmacokinetic parameters or quantitative disposition data for methylnaltrexone. |
+| popPK | Power_2011 | irrelevant | 0 | 0 | The paper is a general review of analgesics that mentions methylnaltrexone only as a clinical example without providing any pharmacokinetic data or quantitative disposition parameters. |
+| PD | Power_2011 | not_relevant | 1 | 0 | The text is a general review article that qualitatively mentions methylnaltrexone's clinical use but provides no numeric PD parameters, concentration-effect data, or dose-response analysis. |
+| popPK | Rotshteyn_2011 | irrelevant | 2 | 1 | This is a review article that summarizes pharmacokinetic properties but does not present original quantitative parameter values (CL, V, Q) or a compartmental model in the provided evidence. |
+| popPK | Rönnpagel_2025 | irrelevant | 0 | 0 | The study is an in-vitro transporter mechanism study using methylnaltrexone as a substrate/probe, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PD | Rönnpagel_2025 | not_relevant | 0 | 0 | The paper reports in vitro transporter kinetics (Km, Vmax, IC50 for OCT1 inhibition) using methylnaltrexone as a substrate, but does not report a pharmacodynamic (exposure-response or dose-response) relationship for the drug's clinical effect. |
+| popPK | Sakurada_2002 | irrelevant | 0 | 0 | The study is a pharmacological investigation of receptor subtypes in mice using methylnaltrexone as a probe antagonist, and it does not report any pharmacokinetic parameters. |
+| popPK | Singleton_2008 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of angiogenesis inhibition and does not report pharmacokinetic parameters for methylnaltrexone. |
+| popPK | Singleton_2010 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro and in-vivo study on angiogenesis and does not report pharmacokinetic parameters for methylnaltrexone. |
+| popPK | Walker_1999 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study in rats focusing on the antagonist effects of 3-O-methylnaltrexone on heroin and morphine self-administration, with no pharmacokinetic parameters reported. |
+| popPK | Yuan_2000 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for opioid-induced constipation and does not report any pharmacokinetic parameters for methylnaltrexone. |
+| PD | Yuan_2000 | not_relevant | 2 | 1 | The paper reports a binary clinical response (laxation yes/no) and mean change in transit time for a single dose, but does not provide concentration-effect data, dose-response curves, or numeric PD parameters like Emax or EC50. |
+| popPK | unknown_2006 | irrelevant | 0 | 0 | The text is a business and clinical development overview that mentions "predictable pharmacokinetics" but provides no quantitative PK parameters or model values. |
+| PD | unknown_2006 | not_relevant | 1 | 0 | The text is a business and clinical development overview that mentions dose levels and trial outcomes but does not report any pharmacokinetic data, concentration-effect curves, or numeric pharmacodynamic parameters. |
+| popPK | unknown_2018 | irrelevant | 0 | 0 | The provided evidence contains only a title fragment and no pharmacokinetic data or study details for methylnaltrexone. |
+| PD | unknown_2018 | not_relevant | 0 | 0 | The provided text is a title or fragment ("Opioids for pain") and contains no data, analysis, or parameters regarding Methylnaltrexone or any pharmacodynamic relationship. |
+| popPK | unknown_2022 | irrelevant | 0 | 0 | The provided evidence contains only a title fragment and no pharmacokinetic data or study details. |
+| PD | unknown_2022 | not_relevant | 0 | 0 | The provided text is a title or fragment ("Opioids for pain") and contains no data, analysis, or parameters regarding Methylnaltrexone or any pharmacodynamic relationship. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethylnaltrexone%5D&body=Drug%3A%20methylnaltrexone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methylnaltrexone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

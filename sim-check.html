@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulation tab — manual check (Tolvaptan / Lanke 2019)</title>
+<!--
+  sim-check.html — a MANUAL CHECK of the pieces the Simulation tab will be built from.
+  It is deliberately NOT part of the docsify SPA: docsify runs with executeScript unset and
+  no Vue, so a <script> inside a generated .md is never executed. Opening this file directly
+  proves the runtime works in a browser before any of it is wired into build.py.
+
+  It runs exactly the FMI 2.0 sequence scripts/docs/check-wasm-fmu.mjs uses under node —
+  instantiate → setupExperiment → setReal/setInteger → enter/exit init → doStep loop → getReal —
+  against the SAME PK_1C WebAssembly build and the SAME extracted parameter file. The peak it
+  reports is therefore comparable with the FMPy reference the engineer recorded, and that
+  comparison is shown on the page: if the browser number drifts from reference_peaks, the tab
+  would be lying to the reader and this page says so in red.
+-->
+<style>
+  :root { --blue: #0074d9; --ink: #1f2933; --muted: #6b7280; --line: #e3e7eb; }
+  body { font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--ink); margin: 0; padding: 32px 28px 60px; max-width: 1000px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 13.5px; margin-bottom: 22px; }
+  .sub a { color: var(--blue); }
+  .panel { border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; margin-bottom: 20px; }
+  .panel h2 { font-size: 15px; margin: 0 0 14px; font-weight: 600; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px 22px; }
+  label { display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 4px; }
+  label b { color: var(--ink); font-weight: 600; font-size: 13px; }
+  label .hint { margin-left: 7px; font-size: 11px; color: #9aa1a9; font-style: italic;
+                white-space: nowrap; cursor: help; }
+  input[type=range] { width: 100%; }
+  .val { font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink); }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 16px; }
+  button { font: inherit; font-size: 14px; padding: 7px 18px; border-radius: 6px; cursor: pointer;
+           border: 1px solid transparent; background: var(--blue); color: #fff; }
+  button.ghost { background: #fff; color: #334155; border-color: #cbd5e1; }
+  button[disabled] { opacity: .5; cursor: default; }
+  canvas { width: 100%; height: 340px; display: block; }
+  table { border-collapse: collapse; font-size: 13.5px; margin-top: 4px; }
+  th, td { text-align: left; padding: 5px 16px 5px 0; border-bottom: 1px solid #f1f5f9; }
+  th { color: var(--muted); font-weight: 600; }
+  td.num { font-variant-numeric: tabular-nums; }
+  .ok { color: #15803d; font-weight: 600; }
+  .fail { color: #b91c1c; font-weight: 600; }
+  .status { font-size: 13.5px; color: var(--muted); margin-top: 12px; }
+  .status.err { color: #b91c1c; }
+  code { background: #f8fafc; padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  .note { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<h1>Simulation tab</h1>
+<div class="sub">
+  <b>Tolvaptan · Lanke 2019</b> — template <code>PK_1C</code>, running in your browser as WebAssembly.
+  Record page: <a href="#/drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference" target="_blank">Tolvaptan_Lanke2019_reference</a>
+  · parameters: <code>models/fmu_params/Tolvaptan_Lanke2019_reference_params.json</code>
+</div>
+
+<div class="panel">
+  <h2>Reference check — browser result vs the FMPy peak the engineer recorded</h2>
+  <table id="ref">
+    <tr><th>observable</th><th>browser peak <span>(kg/m<sup>3</sup>)</span></th><th>FMPy reference</th><th>difference</th><th>verdict</th></tr>
+  </table>
+  <div class="note">
+    Compares simulation and extracted reference peaks. press <b>Reset to extracted values</b> to return to default values.
+  </div>
+  <div class="status" id="status">Loading the PK_1C WebAssembly build (1.8 MB)…</div>
+</div>
+
+<div class="panel">
+  <h2>Pharmacokinetics concentration–time curve</h2>
+  <canvas id="plot" width="1800" height="680"></canvas>
+  <div class="note" id="plotnote"></div>
+</div>
+
+<div class="panel">
+  <h2>Editable parameters &amp; dosing</h2>
+  <div class="grid" id="controls"></div>
+  <div class="row">
+    <button id="run">Re-run simulation</button>
+    <button id="reset" class="ghost">Reset to extracted values</button>
+  </div>
+</div>
+
+<script src="assets/fmu/PK_1C.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var PARAMS_URL = "models/fmu_params/Tolvaptan_Lanke2019_reference_params.json";
+  var META_URL   = "assets/fmu/PK_1C.vr.json";
+  var INT_NAMES  = { adminCount: true };          // Integer in the template; the file stores a float
+
+  var M = null, meta = null, base = null, cur = null, fmi = null, cb = null;
+  var statusEl = document.getElementById("status");
+
+  function status(msg, isErr) {
+    statusEl.textContent = msg;
+    statusEl.className = isErr ? "status err" : "status";
+  }
+
+  // Sliders. Each is a multiplier around the extracted value except the discrete dosing ones,
+  // so the page stays honest about what the record actually says: 1.00x IS the extracted value.
+  // `fallback: true` means the RECORD does not pin this parameter — the extracted file for
+  // Tolvaptan_Lanke2019 carries only Cl/VdPerKg/F/weight/adminMass/adminCount/adminDuration, so
+  // adminPeriod would silently keep the template's own default (28 800 s = 8 h). Showing it as a
+  // control makes that default visible and adjustable instead of invisible, and the label says
+  // where the starting value came from.
+  // `sim: true` is not an FMU parameter at all: stop time is the length of the doStep loop.
+  // UNITS. `scale` converts MODEL units (SI: seconds, kg, m^3…) to the DISPLAY unit shown to
+  // the reader. The slider itself always works in DISPLAY units, so min/max/step below read
+  // the way the label does — 4 to 48 hours, not 14400 to 172800 seconds — and the conversion
+  // back to model units happens in exactly one place (`show()`).
+  //
+  // `mult: true` is the exception: those sliders are a multiplier of the extracted value, so
+  // 1.00x is by definition what the record says, and min/max are dimensionless factors.
+  var CONTROLS = [
+    { key: "adminMass",    label: "Dose",              unit: "mg",   scale: 1e6,  min: 0.1, max: 4,  step: 0.05, mult: true },
+    { key: "Cl",           label: "Clearance",         unit: "L/h",  scale: 3.6e6,min: 0.2, max: 3,  step: 0.05, mult: true },
+    { key: "VdPerKg",      label: "Vd per kg",         unit: "L/kg", scale: 1e3,  min: 0.2, max: 3,  step: 0.05, mult: true },
+    { key: "weight",       label: "Body weight",       unit: "kg",   scale: 1,    min: 40,  max: 120,step: 1 },
+    { key: "F",            label: "Bioavailability",   unit: "",     scale: 1,    min: 0.05,max: 1,  step: 0.05 },
+    { key: "adminCount",   label: "Number of doses",   unit: "",     scale: 1,    min: 1,   max: 20, step: 1 },
+    { key: "adminPeriod",  label: "Dosage period",     unit: "h",    scale: 1/3600, min: 1, max: 48, step: 0.5, fallback: true },
+    { key: "stop_time",    label: "Simulated time",    unit: "h",    scale: 1/3600, min: 8, max: 120, step: 1, sim: true }
+  ];
+  // adminDuration is NOT offered as a control. It is an artefact of the export rather than a
+  // property of the patient or the regimen — the engineer writes a fixed 10 min for an oral
+  // dose and a fixed value for an infusion — so letting a reader drag it would invent a
+  // regimen the record never described. It stays pinned at the extracted value: simulate()
+  // sends every key in `parameters`, not just the ones with sliders, and it still sets the
+  // solver's communication step below.
+
+  function fmtSI(x, unit) {
+    if (x === undefined || x === null) return "-";
+    var a = Math.abs(x);
+    var s = (a >= 1000 || (a < 0.01 && a > 0)) ? x.toExponential(3) : x.toFixed(a < 1 ? 3 : 2);
+    return unit ? s + " " + unit : s;
+  }
+
+  // Where a control's starting value comes from: the record, the template's own default, or
+  // the record's stop_time. Returns null when nothing defines it, and that control is skipped.
+  function startValue(c) {
+    if (c.sim) return base.stop_time || 86400;
+    if (c.key in base.parameters) return base.parameters[c.key];
+    if (c.fallback && meta.parameters && c.key in meta.parameters) return meta.parameters[c.key];
+    return null;
+  }
+
+  function buildControls() {
+    var box = document.getElementById("controls");
+    box.innerHTML = "";
+    CONTROLS.forEach(function (c) {
+      var start = startValue(c);
+      if (start === null) return;
+
+      var wrap = document.createElement("div");
+      var lab = document.createElement("label");
+      var out = document.createElement("span");
+      out.className = "val";
+      lab.innerHTML = "<b>" + c.label + "</b> ";
+      lab.appendChild(out);
+
+      // A control whose key the record does not pin is running on the template's own value.
+      // Said inline, next to the number it qualifies, so the reader sees WHICH figure is the
+      // simulator's choice rather than a finding. Neutral grey, not amber: an assumption is
+      // not an error.
+      if (!c.sim && !(c.key in base.parameters)) {
+        var hint = document.createElement("span");
+        hint.className = "hint";
+        hint.textContent = "simulator value";
+        hint.title = "This record does not pin " + c.key +
+                     "; the value is the PK_1C template's own default.";
+        lab.appendChild(hint);
+      }
+
+      var inp = document.createElement("input");
+      inp.type = "range";
+      inp.min = c.min; inp.max = c.max; inp.step = c.step;
+      // The slider lives in DISPLAY units (or in multiples, for mult controls), so the start
+      // value has to be converted INTO them — setting it in model units is what made the
+      // 28 800 s dosage period clamp to the 48 h maximum and read as 0.013 h.
+      inp.value = c.mult ? 1 : start * c.scale;
+
+      function show() {
+        var shown = Number(inp.value);                       // display units / multiple
+        var v = c.mult ? base.parameters[c.key] * shown      // model units
+                       : shown / c.scale;
+        if (c.sim) { cur.stop_time = v; } else { cur.parameters[c.key] = v; }
+        out.textContent = fmtSI(c.mult ? v * c.scale : shown, c.unit)
+                        + (c.mult ? "  (" + shown.toFixed(2) + "\u00d7)" : "");
+      }
+      inp.addEventListener("input", show);
+      show();
+      wrap.appendChild(lab); wrap.appendChild(inp);
+      box.appendChild(wrap);
+    });
+  }
+
+  // ── the FMI 2.0 call sequence, identical to scripts/docs/check-wasm-fmu.mjs ───────────────
+  function bindFmi() {
+    var cw = function (n, r, a) { return M.cwrap(n, r, a); };
+    fmi = {
+      createCb:   cw("createFmi2CallbackFunctions", "number", ["number"]),
+      instantiate:cw("fmi2Instantiate", "number", ["string","number","string","string","number","number","number"]),
+      setup:      cw("fmi2SetupExperiment", "number", ["number","number","number","number","number","number"]),
+      enterInit:  cw("fmi2EnterInitializationMode", "number", ["number"]),
+      exitInit:   cw("fmi2ExitInitializationMode", "number", ["number"]),
+      setReal:    cw("fmi2SetReal", "number", ["number","number","number","number"]),
+      setInteger: cw("fmi2SetInteger", "number", ["number","number","number","number"]),
+      getReal:    cw("fmi2GetReal", "number", ["number","number","number","number"]),
+      doStep:     cw("fmi2DoStep", "number", ["number","number","number","number"]),
+      free:       cw("fmi2FreeInstance", "number", ["number"])
+    };
+    var logger = M.addFunction(function (env, name, st, cat, msg) {
+      if (st >= 2) console.error("[fmu]", M.UTF8ToString(msg));
+    }, "viiiiii");
+    cb = fmi.createCb(logger);
+  }
+
+  function alloc(arr, Type) {
+    var p = M._malloc(arr.length * Type.BYTES_PER_ELEMENT);
+    new Type(M.HEAPU8.buffer, p, arr.length).set(arr);
+    return p;
+  }
+
+  function simulate(p) {
+    var stop = p.stop_time || 86400;
+    // Same rule as the FMPy driver (export/fmu.py): the dose is a rectangular pulse
+    // adminDuration wide, so the communication step must resolve it.
+    var adminDuration = p.parameters.adminDuration != null ? p.parameters.adminDuration : 600;
+    var step = Math.min(30, Math.max(0.02, adminDuration / 50));
+
+    var inst = fmi.instantiate(meta.model_identifier, 1, meta.guid, "file:///", cb, 0, 0);
+    if (!inst) throw new Error("fmi2Instantiate failed");
+    fmi.setup(inst, 1, meta.tolerance, 0, 1, stop);
+
+    var reals = [], ints = [], missing = [];
+    Object.keys(p.parameters).forEach(function (k) {
+      if (!(k in meta.vr)) { missing.push(k); return; }
+      (INT_NAMES[k] ? ints : reals).push([k, p.parameters[k]]);
+    });
+    if (reals.length) {
+      var qr = alloc(reals.map(function (e) { return meta.vr[e[0]]; }), Uint32Array);
+      var vr = alloc(reals.map(function (e) { return e[1]; }), Float64Array);
+      if (fmi.setReal(inst, qr, reals.length, vr) !== 0) throw new Error("fmi2SetReal failed");
+    }
+    if (ints.length) {
+      var qi = alloc(ints.map(function (e) { return meta.vr[e[0]]; }), Uint32Array);
+      var vi = alloc(ints.map(function (e) { return Math.round(e[1]); }), Int32Array);
+      if (fmi.setInteger(inst, qi, ints.length, vi) !== 0) throw new Error("fmi2SetInteger failed");
+    }
+
+    fmi.enterInit(inst); fmi.exitInit(inst);
+
+    var outs = p.observables.filter(function (o) { return o in meta.vr; });
+    var q = alloc(outs.map(function (o) { return meta.vr[o]; }), Uint32Array);
+    var vp = M._malloc(outs.length * 8);
+    var peak = {}, series = {};
+    outs.forEach(function (o) { peak[o] = 0; series[o] = []; });
+    var times = [];
+
+    var t0 = performance.now(), t = 0, n = 0;
+    // Plot at most ~1200 points; the solver still steps at `step`.
+    var every = Math.max(1, Math.round((stop / step) / 1200));
+    while (t < stop) {
+      var h = Math.min(step, stop - t);
+      if (fmi.doStep(inst, t, h, 1) !== 0) throw new Error("fmi2DoStep failed at t=" + t);
+      t += h; n++;
+      fmi.getReal(inst, q, outs.length, vp);
+      var v = new Float64Array(M.HEAPU8.buffer, vp, outs.length);
+      outs.forEach(function (o, i) { if (v[i] > peak[o]) peak[o] = v[i]; });
+      if (n % every === 0) {
+        times.push(t);
+        outs.forEach(function (o, i) { series[o].push(v[i]); });
+      }
+    }
+    fmi.free(inst);
+    return { peak: peak, series: series, times: times, outs: outs,
+             steps: n, ms: performance.now() - t0, step: step, stop: stop };
+  }
+
+  // ── reference table ───────────────────────────────────────────────────────────────────────
+  // The recorded peak was produced by FMPy at the EXTRACTED values. Once a slider moves, a
+  // difference from that peak is the edit talking, not a fault — so the verdict is withheld
+  // rather than turned red. Compared against each control's start value (which for
+  // adminPeriod is the template default FMPy also ran with), not against raw key equality.
+  function isPristine() {
+    return CONTROLS.every(function (c) {
+      var start = startValue(c);
+      if (start === null) return true;
+      var now = c.sim ? cur.stop_time : cur.parameters[c.key];
+      return Math.abs(now - start) <= Math.abs(start) * 1e-12;
+    });
+  }
+
+  function renderRef(res) {
+    var tbl = document.getElementById("ref");
+    var pristine = isPristine();
+    while (tbl.rows.length > 1) tbl.deleteRow(1);
+    res.outs.forEach(function (o) {
+      var ref = base.reference_peaks ? base.reference_peaks[o] : null;
+      var rel = (ref && pristine) ? Math.abs(res.peak[o] - ref) / ref : null;
+      var verdict, cls = "";
+      if (!ref) { verdict = "no reference"; }
+      else if (!pristine) { verdict = "n/a — parameters edited"; }
+      else { verdict = rel <= 0.02 ? "OK" : "FAIL"; cls = rel <= 0.02 ? "ok" : "fail"; }
+      var tr = tbl.insertRow();
+      tr.insertCell().textContent = o;
+      tr.insertCell().outerHTML = "<td class='num'>" + res.peak[o].toExponential(4) + "</td>";
+      tr.insertCell().outerHTML = "<td class='num'>" + (ref != null ? ref.toExponential(4) : "-") + "</td>";
+      tr.insertCell().outerHTML = "<td class='num'>" + (rel != null ? (100 * rel).toFixed(2) + " %" : "-") + "</td>";
+      tr.insertCell().outerHTML = "<td class='" + cls + "'>" + verdict + "</td>";
+    });
+  }
+
+  // ── plot ──────────────────────────────────────────────────────────────────────────────────
+  // The model works in SI (kg, m^3), so concentration comes out in kg/m^3 — numerically g/L,
+  // which for these doses means ticks like 9.1e-4. Nobody reads a PK curve in exponents, so the
+  // axis is rescaled to mg/L, or to ug/L when the curve is too dilute for mg/L to have digits.
+  var CONC_UNITS = [
+    { unit: "mg/L", factor: 1e3 },      // model g/L -> mg/L
+    { unit: "\u00b5g/L", factor: 1e6 }  // model g/L -> ug/L
+  ];
+
+  function pickConcUnit(peakModel) {
+    var mg = peakModel * CONC_UNITS[0].factor;
+    return (mg >= 0.1) ? CONC_UNITS[0] : CONC_UNITS[1];
+  }
+
+  // Round tick step (1/2/5 x 10^n) so the axis reads 0.2, 0.4, 0.6 rather than 0.1819, 0.3638.
+  function niceStep(range, target) {
+    var raw = range / target, p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p;
+    return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p;
+  }
+
+  function fmtTick(v, step) {
+    var dec = Math.max(0, -Math.floor(Math.log10(step)));
+    return v.toFixed(Math.min(dec, 6));
+  }
+
+  function plot(res) {
+    var cv = document.getElementById("plot"), g = cv.getContext("2d");
+    var W = cv.width, H = cv.height, L = 190, R = 40, T = 26, B = 104;
+    g.clearRect(0, 0, W, H);
+    var o = res.outs[0];
+    var ys = res.series[o], xs = res.times;
+    if (!ys || !ys.length) return;
+
+    // x in hours, or days once hours stop being readable
+    var xmaxSec = xs[xs.length - 1];
+    var useDays = xmaxSec / 3600 > 48;
+    var xf = useDays ? 1 / 86400 : 1 / 3600;
+    var xUnit = useDays ? "d" : "h";
+    var xmax = xmaxSec * xf;
+
+    var cu = pickConcUnit(Math.max.apply(null, ys));
+    var ymaxRaw = Math.max.apply(null, ys) * cu.factor;
+    var ystep = niceStep(ymaxRaw || 1, 5);
+    var ymax = Math.ceil((ymaxRaw || 1) / ystep) * ystep;      // top tick is a round number
+    var xstep = niceStep(xmax || 1, 6);
+
+    var X = function (t) { return L + (W - L - R) * (t / xmax); };
+    var Y = function (v) { return H - B - (H - T - B) * (v / ymax); };
+
+    g.font = "22px sans-serif";
+    g.fillStyle = "#6b7280";
+    g.strokeStyle = "#e3e7eb";
+    g.lineWidth = 2;
+
+    for (var v = 0; v <= ymax + ystep * 1e-9; v += ystep) {
+      var y = Y(v);
+      g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke();
+      g.textAlign = "right"; g.textBaseline = "middle";
+      g.fillText(fmtTick(v, ystep), L - 14, y);
+    }
+    for (var t = 0; t <= xmax + xstep * 1e-9; t += xstep) {
+      var x = X(t);
+      g.textAlign = "center"; g.textBaseline = "top";
+      g.fillText(fmtTick(t, xstep), x, H - B + 14);
+    }
+
+    // axis titles
+    g.fillStyle = "#374151";
+    g.font = "600 24px sans-serif";
+    g.textAlign = "center"; g.textBaseline = "top";
+    g.fillText("time (" + xUnit + ")", L + (W - L - R) / 2, H - B + 54);
+    g.save();
+    g.translate(38, T + (H - T - B) / 2);
+    g.rotate(-Math.PI / 2);
+    g.textBaseline = "top";
+    g.fillText("concentration (" + cu.unit + ")", 0, 0);
+    g.restore();
+
+    // curve
+    g.strokeStyle = "#0074d9"; g.lineWidth = 3; g.beginPath();
+    xs.forEach(function (tt, i) {
+      var px = X(tt * xf), py = Y(ys[i] * cu.factor);
+      i ? g.lineTo(px, py) : g.moveTo(px, py);
+    });
+    g.stroke();
+
+    var peakDisp = res.peak[o] * cu.factor;
+    document.getElementById("plotnote").textContent =
+      "Peak " + peakDisp.toPrecision(4) + " " + cu.unit + " (" + o + ")  \u00b7  " +
+      res.steps + " solver steps (h = " + res.step + " s) over " +
+      (res.stop / 3600).toFixed(0) + " h in " + res.ms.toFixed(0) + " ms.";
+  }
+
+  function run() {
+    try {
+      var res = simulate(cur);
+      renderRef(res);
+      plot(res);
+      status("Simulation finished: " + res.steps + " steps in " + res.ms.toFixed(0) + " ms.");
+    } catch (e) {
+      status("Simulation failed: " + e.message, true);
+      console.error(e);
+    }
+  }
+
+  function reset() {
+    cur = JSON.parse(JSON.stringify(base));
+    buildControls();
+    run();
+  }
+
+  // ── boot ──────────────────────────────────────────────────────────────────────────────────
+  Promise.all([
+    fetch(META_URL).then(function (r) { if (!r.ok) throw new Error(META_URL + " → " + r.status); return r.json(); }),
+    fetch(PARAMS_URL).then(function (r) { if (!r.ok) throw new Error(PARAMS_URL + " → " + r.status); return r.json(); }),
+    Pharmacolibrary_Pharmacokinetic_Models_PK_1C()
+  ]).then(function (out) {
+    meta = out[0]; base = out[1]; M = out[2];
+    if (base.template !== "PK_1C") throw new Error("this page only drives PK_1C; the record wants " + base.template);
+    bindFmi();
+    status("Loaded " + meta.model + " (" + meta.generation_tool + ").");
+    reset();
+    document.getElementById("run").addEventListener("click", run);
+    document.getElementById("reset").addEventListener("click", reset);
+  }).catch(function (e) {
+    status("Could not start: " + e.message +
+           "  — serve this file over HTTP (the docsify server already does) rather than opening it as file://", true);
+    console.error(e);
+  });
+})();
+</script>
+</body>
+</html>

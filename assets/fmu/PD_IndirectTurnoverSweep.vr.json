@@ -1,0 +1,31 @@
+{
+ "guid": "{3adbc825-96fe-4f65-bfd1-c3e0cb83a778}",
+ "model": "Pharmacolibrary.Pharmacodynamic.IndirectTurnoverSweep",
+ "model_identifier": "Pharmacolibrary_Pharmacodynamic_IndirectTurnoverSweep",
+ "generation_tool": "OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc",
+ "start_time": 0.0,
+ "stop_time": 1000.0,
+ "tolerance": 1e-06,
+ "vr": {
+  "exposure": 0,
+  "frac": 1,
+  "inhibition_pct": 2,
+  "response": 3,
+  "stimulation": 4,
+  "E0": 5,
+  "EC50": 6,
+  "Emax": 7,
+  "exposure_per_s": 8,
+  "gamma": 9
+ },
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 1.0,
+  "Emax": 1.0,
+  "exposure_per_s": 1.0,
+  "gamma": 1.0
+ },
+ "outputs": [],
+ "fmu_sha256": "cd31325042a5db666e1dd40a72257075059708b0f8f0bef8d138b5ee01918475",
+ "js_bytes": 1734822
+}

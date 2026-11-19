@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 15 mg oral (N05CD08)",
+ "model_id": "Midazolam_Vller2019_reference",
+ "molar_masses": {
+  "central.C": 0.32577100000000003
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.047222222222222e-08,
+  "F": 0.9,
+  "MM": 0.32577100000000003,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0047,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-05,
+  "ka": 0.0017777777777777779,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 28860.00000000024
+ },
+ "reference_peaks": {
+  "central.C": 4.096216177945272e-05
+ },
+ "review_status": "needs_review",
+ "stop_time": 15552000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

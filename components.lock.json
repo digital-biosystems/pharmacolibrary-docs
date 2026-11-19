@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "release": "36743b67dd630b23",
+  "release_repository": "https://github.com/digital-biosystems/dbs-components",
+  "release_checkout_commit": "16c8bb12b4983e7e5b3c3f2098e058c2c851f633",
+  "release_manifest_sha256": "5e563d6cb52e83db0e238f2ea2e2512db3b9471687c1f9ff7888c42daf510b73",
+  "source_commit": "b7999abf3436fcf53e1237e7d487f3d87deb73ac",
+  "source_tree_sha256": "12f8a9e4f5d1f0b37704fde4b0715074163410d371eef360899a064759313cf6",
+  "base": "assets/vendor/dbs-components/36743b67dd630b23/",
+  "entrypoints": {
+    "dbs-fmusim": [
+      "dbs-shared.js",
+      "dbs-fmusim.js"
+    ]
+  },
+  "files": {
+    "dbs-fmusim.js": {
+      "sha256": "8553b94efc995610e5fa51e2791693321d0bb97507a0c24d0884a16820138ba1",
+      "bytes": 44367
+    },
+    "dbs-shared.js": {
+      "sha256": "a53721e6f252a58aeee196567ab4405349ad21099a4a1ebb6db4a984e3e04e27",
+      "bytes": 376324
+    },
+    "dbs-shared.js.LICENSE.txt": {
+      "sha256": "832ebde1847448bffc123478ae1fe8e5c596ca13833fa9a8be3649fac3165bee",
+      "bytes": 444
+    }
+  },
+  "release_checkout_dirty": false
+}

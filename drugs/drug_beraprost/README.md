@@ -1,0 +1,180 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;beraprost&quot;}]"></div>
+
+# beraprost
+
+- **generic name:** beraprost
+- **ATC codes:** `B01AC19`
+- **DrugBank:** [DB05229](https://go.drugbank.com/drugs/DB05229) · **PubChem:** [CID 23663404](https://pubchem.ncbi.nlm.nih.gov/compound/23663404)
+- **molar mass:** 398.499 g/mol (C24H30O5) — DrugBank
+- **groups:** investigational
+
+## About
+
+Beraprost is a prostacyclin analog that acts as a vasodilator and platelet aggregation inhibitor to treat pulmonary hypertension and prevent reperfusion injury. It is administered orally in tablet form.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q5977854](https://www.wikidata.org/wiki/Q5977854), [Wikipedia](https://en.wikipedia.org/wiki/Beraprost?oldid=1330663823) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Shen_2019_cAMP](drugs/drug_beraprost/pd_Shen_2019_cAMP.md) | cyclic AMP ← beraprost · direct sigmoid Emax (Hill) effect | — | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Shen_2019_cell_proliferation](drugs/drug_beraprost/pd_Shen_2019_cell_proliferation.md) | cell proliferation ← beraprost · direct sigmoid Emax (Hill) effect | — | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Shen_2019_vascular_tone](drugs/drug_beraprost/pd_Shen_2019_vascular_tone.md) | vascular tone ← beraprost · direct sigmoid Emax (Hill) effect | — | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=beraprost).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C8` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: PTGIR (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 14:09 | 4:12 | 0/0/0 | 1/0/0 | 0/0/0 | 158,367/2,993 | ollama / qwen3.8:27b-mtp-q8_0 | 50 | 34/12 | 19/31 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 655659 matched, 49 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Altschul_1982 | irrelevant | 0 | 0 | The paper discusses sodium intake and hypertension epidemiology and contains no pharmacokinetic data for beraprost. |
+| popPK | Amano_2013 | irrelevant | 0 | 0 | The study is a clinical assessment of left ventricular function using echocardiography and does not report any pharmacokinetic parameters for beraprost. |
+| popPK | An_2026 | irrelevant | 0 | 0 | The paper is a review on sodium's role in cancer and does not mention beraprost or report any pharmacokinetic parameters. |
+| popPK | Avidan_2022 | irrelevant | 0 | 0 | The paper discusses sodium oxybate and cardiovascular risk, not the pharmacokinetics of beraprost. |
+| popPK | Axelsen_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of selexipag and its metabolite, not beraprost. |
+| PD | Axelsen_2021 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic drug-drug interaction study for selexipag (not beraprost) and contains no pharmacodynamic or exposure-response modeling. |
+| popPK | Badesch_2004 | irrelevant | 2 | 1 | The paper is a clinical review of prostanoid therapies for PAH that mentions beraprost's half-life (35-40 min) but does not report quantitative disposition parameters like clearance, volume, or compartmental models. |
+| popPK | Barst_2003 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety trial for pulmonary arterial hypertension and does not report any pharmacokinetic parameters for beraprost. |
+| popPK | Bosetto_1999 | irrelevant | 0 | 0 | The paper describes a biofeedback system for dialysate sodium concentration control in hemodialysis patients and does not mention beraprost or report any pharmacokinetic parameters for it. |
+| popPK | Chang_2020 | irrelevant | 0 | 0 | The paper is a taxonomic description of new spider species and contains no pharmacokinetic data for beraprost. |
+| popPK | Chen_2014 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cardiac fibroblasts and does not report any pharmacokinetic parameters for beraprost. |
+| popPK | Coghlan_2019 | irrelevant | 0 | 0 | The paper is a review of selexipag where beraprost is only mentioned as a comparator or historical context without reporting any quantitative pharmacokinetic parameters for beraprost. |
+| popPK | Cumberbatch_1981 | irrelevant | 0 | 0 | The paper studies erythrocyte sodium transport and does not involve the drug beraprost or its pharmacokinetics. |
+| popPK | Da_2014 | irrelevant | 0 | 0 | The paper is a taxonomic revision of a mosquito genus and contains no pharmacokinetic data for beraprost. |
+| popPK | Dandel_2003 | irrelevant | 0 | 0 | The paper is a clinical review of pulmonary arterial hypertension treatments that mentions beraprost only as a therapeutic option without reporting any quantitative pharmacokinetic parameters. |
+| popPK | Deding_1971 | irrelevant | 0 | 0 | The paper is a clinical study on postoperative fluid and electrolyte balance (sodium retention) in humans and does not involve the drug beraprost or any pharmacokinetic parameters. |
+| popPK | Ehrlein_1999 | irrelevant | 0 | 0 | The study investigates intestinal sodium and water flux in pigs and does not involve beraprost or its pharmacokinetics. |
+| popPK | Fujita_2001 | irrelevant | 0 | 0 | The study is a clinical trial assessing renal hemodynamics (GFR, RBF) in patients with chronic renal insufficiency, not a pharmacokinetic study reporting disposition parameters like clearance or volume for beraprost. |
+| PGx | Fukazawa_2008 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions via P450 enzymes in vitro and does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Galiè_2003 | irrelevant | 0 | 0 | The paper is a review article that discusses beraprost only in the context of clinical efficacy trials (e.g., ALPHABET, AIR) and does not report quantitative pharmacokinetic parameters (CL, V, ka) for beraprost. |
+| PD | Galiè_2003 | not_relevant | 1 | 0 | The text is a qualitative review of prostanoids in PAH and mentions beraprost's clinical effects but provides no numeric PD parameters, concentration-effect data, or dose-response curves. |
+| popPK | Galié_2001 | irrelevant | 0 | 0 | The paper is a review of prostacyclins in pulmonary hypertension that mentions beraprost only as a stable analogue in development, without reporting any quantitative pharmacokinetic parameters for it. |
+| PD | Galié_2001 | not_relevant | 1 | 0 | The text is a general review of prostacyclin analogues in pulmonary hypertension and mentions beraprost only qualitatively without providing any numeric PD parameters or exposure-response data. |
+| popPK | Garrahan_1967 | irrelevant | 0 | 0 | The paper describes sodium ion transport mechanisms in red blood cells and does not involve the drug beraprost or any pharmacokinetic parameters. |
+| popPK | Gatfield_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of selexipag and its metabolite, with beraprost serving only as a comparator in in vitro assays without any PK parameter reporting. |
+| PD | Gatfield_2017 | not_relevant | 0 | 0 | The paper focuses on the pharmacodynamics of selexipag's metabolite (ACT-333679) and only qualitatively mentions beraprost as a comparator for full agonism without providing specific numeric PD parameters for beraprost. |
+| popPK | Gibson_1990 | irrelevant | 0 | 0 | The paper investigates the mechanism of NANC relaxation in mouse muscle using L-NMMA and L-NOARG, and does not involve beraprost or pharmacokinetic parameters. |
+| popPK | Giordano_1981 | irrelevant | 0 | 0 | The paper discusses L-glutaminase and L-asparaginase for leukemia therapy and does not involve beraprost or its pharmacokinetics. |
+| popPK | Gryglewski_2008 | irrelevant | 0 | 0 | The paper is a general review of prostacyclin and prostanoids that mentions beraprost only as a synthetic analogue without reporting any quantitative pharmacokinetic parameters. |
+| popPK | He_2020 | irrelevant | 0 | 0 | The paper is a mechanistic study on DP1 signaling in pulmonary arterial hypertension and does not report any pharmacokinetic parameters for beraprost. |
+| popPK | Hirano_2024 | irrelevant | 0 | 0 | The study is a mechanistic investigation of beraprost's effects on intestinal microcirculation and barrier function in mice, reporting physiological outcomes rather than quantitative pharmacokinetic parameters. |
+| popPK | Hirohama_2020 | irrelevant | 0 | 0 | The study is a mechanistic investigation of beraprost's renoprotective effects in rats and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Honorato_2017 | irrelevant | 2 | 3 | The paper is a review of selexipag that only lists terminal half-life values for beraprost in a summary table, lacking the comprehensive quantitative disposition parameters (CL, V, Q, ka) required for population PK extraction. |
+| PD | Honorato_2017 | not_relevant | 1 | 0 | The text is a qualitative pharmacology review abstract that mentions pharmacodynamics generally but does not provide specific numeric PD parameters or exposure-response data for beraprost. |
+| popPK | Hu_2025 | irrelevant | 0 | 0 | The study is a mechanistic investigation of beraprost's effect on oligodendrocyte precursor cells in a mouse model and does not report pharmacokinetic parameters. |
+| popPK | Hunter-Cooper_2026 | irrelevant | 0 | 0 | The study investigates the effects of sodium intake on blood pressure and arterial stiffness in humans and does not involve beraprost or any pharmacokinetic parameters. |
+| popPK | Ishihara_2015 | irrelevant | 2 | 0 | The study focuses on nanoparticle formulation and pharmacodynamics in animal models, reporting only a qualitative half-life range (&lt;40 min) for oral BPS without providing quantitative compartmental PK parameters (CL, V, Q) or population model estimates. |
+| popPK | Ishikawa_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular contractile mechanisms and receptor binding, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Ito_2023 | irrelevant | 0 | 0 | The study is a retrospective clinical trial assessing overall survival outcomes, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Karaky_2026 | irrelevant | 0 | 0 | The study is a mechanistic pain model investigation in mice where beraprost is used as a pharmacological tool, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Kato_1997 | irrelevant | 0 | 0 | The paper is a clinical case report describing the therapeutic efficacy of beraprost for spinal claudication and does not contain any pharmacokinetic data or quantitative disposition parameters. |
+| popPK | Katritch_2014 | irrelevant | 0 | 0 | The paper is a review of GPCR structure and sodium binding, containing no pharmacokinetic data for beraprost. |
+| popPK | Kim_2011 | irrelevant | 0 | 0 | The paper is an immunological study investigating beraprost's effect on B cell CD86 expression, not a pharmacokinetic study, and does not report quantitative disposition parameters like clearance or volume. |
+| popPK | Kim_2017 | irrelevant | 0 | 0 | The study is a clinical trial evaluating vascular access patency outcomes and does not report any pharmacokinetic parameters for beraprost. |
+| popPK | Kinoshita_2024 | irrelevant | 0 | 0 | The paper describes a machine learning model for predicting serum sodium concentration in hyponatremia patients and does not involve beraprost or pharmacokinetic parameters. |
+| popPK | Kobayashi_1991 | irrelevant | 0 | 0 | The paper studies a liposome-embedded-heme oxygen carrier in beagles and does not involve beraprost or its pharmacokinetics. |
+| popPK | Kotyk_1995 | irrelevant | 0 | 0 | The paper investigates sodium and potassium balance during hemodialysis and the effect of erythropoietin on endothelin, with no mention of beraprost or its pharmacokinetics. |
+| popPK | Kuwano_2008 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and receptor selectivity of NS-304/MRE-269, using beraprost only as a comparator agent without reporting any pharmacokinetic parameters for it. |
+| popPK | Lilyasari_2019 | irrelevant | 0 | 0 | The paper is an economic evaluation comparing sildenafil and beraprost, containing no pharmacokinetic data or disposition parameters for beraprost. |
+| popPK | Lonsdale_2017 | irrelevant | 0 | 0 | The paper is a taxonomic revision of the fly genus Liriomyza and contains no pharmacokinetic data for beraprost. |
+| popPK | Ma_2021 | irrelevant | 0 | 0 | The paper is a network meta-analysis of therapeutic efficacy (walking distance, ABI) and does not report any pharmacokinetic parameters for beraprost. |
+| popPK | MacDonald_1965 | irrelevant | 0 | 0 | The paper is a 1965 study on the biosynthesis of pulcherriminic acid in Candida pulcherrima and does not involve the drug beraprost or any pharmacokinetic parameters. |
+| popPK | Manzi_2023 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of clinical effectiveness (6MWD, clinical worsening) rather than a pharmacokinetic study, and it reports no PK parameters for beraprost. |
+| popPK | Matsuura_2024 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of hemodynamics and the renin-aldosterone axis, not a pharmacokinetic study, and it does not report any quantitative PK parameters (CL, V, ka, etc.) for beraprost. |
+| popPK | Meneely_1976 | irrelevant | 0 | 0 | The paper is a review of sodium and potassium nutrition and physiology, containing no data or mention of beraprost pharmacokinetics. |
+| popPK | Miyamoto_2010 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of platelet-leukocyte interactions and does not report any pharmacokinetic parameters for beraprost. |
+| PD | Miyamoto_2010 | not_relevant | 3 | 2 | The paper reports a concentration-dependent effect for the novel compound TRA-418 and mentions IC50 values for beraprost, but does not provide numeric PD parameters or a derivable curve for beraprost itself. |
+| popPK | Moore_1990 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on nitric oxide inhibitors and does not involve beraprost or pharmacokinetic parameters. |
+| popPK | Morrison_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of selexipag and beraprost on gastric function, not on the pharmacokinetic disposition parameters of beraprost. |
+| popPK | Mubarak_2010 | irrelevant | 1 | 0 | The paper is a review article that discusses beraprost as one of several prostaglandin analogs but does not report original quantitative pharmacokinetic parameters (CL, V, ka) for beraprost. |
+| PD | Mubarak_2010 | not_relevant | 2 | 0 | The text is a review article that qualitatively discusses pharmacodynamic distinctions and clinical studies but does not provide specific numeric PD parameters or exposure-response data for beraprost. |
+| popPK | Nagaya_2008 | irrelevant | 0 | 0 | The text is a general overview of prostacyclin derivatives and does not report any quantitative pharmacokinetic parameters for beraprost. |
+| popPK | Nakamura_2017 | irrelevant | 0 | 0 | The paper is a review of nanoparticle drug delivery systems for pulmonary arterial hypertension and does not report any quantitative pharmacokinetic parameters (CL, V, ka, etc.) for beraprost. |
+| popPK | Natale_2022 | irrelevant | 0 | 0 | This is a systematic review of clinical outcomes (efficacy/safety) for antiplatelet agents in CKD, not a pharmacokinetic study, and it contains no PK parameters for beraprost. |
+| popPK | Niehaus_1977 | irrelevant | 0 | 0 | The paper studies lipoprotein transfer into arterial intima and does not involve beraprost or its pharmacokinetics. |
+| popPK | Nijoukubo_2016 | irrelevant | 0 | 0 | The study is a toxicological/mechanistic investigation in zebrafish using beraprost as a pharmacological tool to assess edema, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Nishio_2001 | irrelevant | 0 | 0 | The paper is a general review of pharmacological and clinical properties without reporting any quantitative pharmacokinetic parameters for beraprost. |
+| popPK | Noerr_1989 | irrelevant | 0 | 0 | no_text gate: only 18 chars of text extracted (&lt; 400) |
+| popPK | Nony_1996 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic (platelet aggregation) and hemodynamic effects, and while PK measurements were performed, no quantitative PK parameters (CL, V, t1/2, etc.) are reported in the provided evidence. |
+| popPK | OConnell_2016 | irrelevant | 0 | 0 | The paper is a clinical review of prostacyclin analogues for pulmonary arterial hypertension that discusses beraprost's efficacy and availability but does not report any quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life) for beraprost. |
+| popPK | Oberleithner_2012 | irrelevant | 0 | 0 | The paper discusses sodium transport and endothelial mechanics and does not mention beraprost or report any pharmacokinetic parameters for it. |
+| PGx | Oshida_2017 | not_relevant | 0 | 0 | The paper investigates transporter-mediated pharmacokinetics of beraprost in vitro but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Owada_2002 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of beraprost on urinary albumin excretion in diabetic nephropathy and does not report pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Penne_2011 | irrelevant | 0 | 0 | The paper discusses dialysate sodium concentration in hemodialysis patients and contains no data regarding beraprost pharmacokinetics. |
+| popPK | Perera_1947 | irrelevant | 0 | 0 | The paper is a 1947 clinical study on sodium chloride restriction and hypertension, containing no data on beraprost or its pharmacokinetics. |
+| popPK | Perez_2016 | irrelevant | 0 | 0 | The paper is an in silico and mechanistic study investigating nuclear receptor binding and pharmacological effects, not a pharmacokinetic study reporting disposition parameters like clearance or volume for beraprost. |
+| popPK | Picard_2025 | irrelevant | 0 | 0 | The paper analyzes sodium and potassium content in food products and does not involve beraprost or pharmacokinetics. |
+| popPK | READ_1956 | irrelevant | 0 | 0 | The paper describes clinical cases of salt-losing nephritis and hypopituitarism, containing no pharmacokinetic data for beraprost. |
+| popPK | ROBINSON_1955 | irrelevant | 0 | 0 | The paper is a 1955 review on sodium-restricted diets and contains no pharmacokinetic data for beraprost. |
+| popPK | ROSENHEIM_1951 | irrelevant | 0 | 0 | The paper is a 1951 review on renal physiology and sodium excretion, containing no data or mention of beraprost. |
+| popPK | Rakotonirina_2014 | irrelevant | 0 | 0 | The paper is a taxonomic revision of ant species and contains no pharmacokinetic data for beraprost. |
+| popPK | SMITH_1953 | irrelevant | 0 | 0 | The paper is a historical review of salt and a clinical summary of infantile pellagra, containing no pharmacokinetic data for beraprost. |
+| popPK | Saito_1984 | irrelevant | 0 | 0 | The paper describes the metabolic synthesis of tartaric acid in grapes and does not involve beraprost or pharmacokinetics. |
+| popPK | Saji_2001 | irrelevant | 0 | 0 | The paper is a review discussing the clinical use of prostacyclin analogues and does not report any quantitative pharmacokinetic parameters for beraprost. |
+| popPK | Schmidt_1990 | irrelevant | 0 | 0 | The paper studies the effects of L-arginine and its analogues on blood vessels and endothelial cells, and does not involve beraprost or pharmacokinetic parameters. |
+| popPK | Shen_2019 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assessment of receptor potency (EC50) and vascular tone, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Shin_2022 | irrelevant | 0 | 0 | The paper studies the fracture mechanics of metallic sodium for batteries and contains no pharmacokinetic data for beraprost. |
+| popPK | Shivanna_2019 | irrelevant | 0 | 0 | This is a systematic review of clinical trials for efficacy and safety in neonates, not a pharmacokinetic study, and it reports no quantitative PK parameters for beraprost. |
+| popPK | Steinkamp_1968 | irrelevant | 0 | 0 | The paper discusses sodium content in water supplies and is unrelated to beraprost pharmacokinetics. |
+| popPK | Tanaka_2021 | irrelevant | 0 | 0 | The study is a toxicological investigation in zebrafish where beraprost is used as a pharmacological tool (prostacyclin receptor agonist) to modulate edema, not as a subject for pharmacokinetic analysis. |
+| popPK | Tribe_1994 | irrelevant | 0 | 0 | The paper investigates the relationship between dietary sodium intake, airway responsiveness, and cellular sodium transport in humans, and does not involve the drug beraprost or any pharmacokinetic parameters. |
+| popPK | Ueno_1993 | irrelevant | 0 | 0 | The study is an electrophysiological/mechanistic investigation of beraprost on guinea-pig ventricular muscles and does not report any pharmacokinetic parameters. |
+| popPK | Velayati_2016 | irrelevant | 0 | 0 | The paper is a review of pulmonary arterial hypertension pharmacotherapy and does not report quantitative pharmacokinetic parameters for beraprost. |
+| popPK | Vizza_2006 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting hemodynamic and functional outcomes, not a pharmacokinetic study with disposition parameters. |
+| popPK | Wang_1996 | irrelevant | 0 | 0 | The study is a pharmacodynamic/toxicological investigation of beraprost's effects on albuminuria and blood pressure in diabetic rats, and it does not report any quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life) for the drug. |
+| popPK | Warot_2000 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fluindione as the subject drug, with beraprost acting only as a co-administered agent to test for drug-drug interactions, and no PK parameters for beraprost are reported. |
+| PD | Warot_2000 | not_relevant | 1 | 0 | The study reports only qualitative findings (no effect on platelet function, no significant difference in INR) and PK parameters for the interacting drug, without providing numeric PD parameters or concentration-effect curves for beraprost. |
+| popPK | Yamada_2002 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study on renal function in a rat nephritis model and does not report pharmacokinetic parameters (CL, V, ka, etc.) for beraprost. |
+| popPK | Yamashita_2002 | irrelevant | 0 | 0 | The study is a mechanistic investigation of beraprost's effects on glomerular hyperfiltration and gene expression in diabetic rats, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Yang_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of platelet aggregation and does not report any pharmacokinetic parameters for beraprost. |
+| popPK | Zarzycka_2019 | irrelevant | 0 | 0 | The paper is a review on ion binding in GPCRs and does not contain pharmacokinetic data for beraprost. |
+| popPK | Zhang_2014 | irrelevant | 0 | 0 | The paper analyzes sodium content in packaged foods and contains no pharmacokinetic data for beraprost. |
+| popPK | Zheng_2021 | irrelevant | 0 | 0 | The paper is a mechanistic study on bone biology and does not report any pharmacokinetic parameters for beraprost. |
+| popPK | Zhou_2019 | irrelevant | 0 | 0 | The study focuses on the mechanism of nitrate tolerance involving prostacyclin synthase, and beraprost is used only as a therapeutic agent to test efficacy, not as the subject of a pharmacokinetic analysis. |
+| popPK | Zumoff_1978 | irrelevant | 0 | 0 | The paper studies sodium absorption from enemas and does not involve beraprost. |
+| popPK | de_1982 | irrelevant | 0 | 0 | The paper studies L-glutamate and L-glutamine uptake in rat cerebellum and does not involve beraprost or pharmacokinetic parameters. |
+| popPK | unknown_1953 | irrelevant | 0 | 0 | no_text gate: only 42 chars of text extracted (&lt; 400) |
+| popPK | unknown_2010 | irrelevant | 0 | 0 | no_text gate: only 39 chars of text extracted (&lt; 400) |
+| PD | unknown_2010 | not_relevant | 0 | 0 | The provided text is only a header for a poster session and contains no scientific content, data, or PD parameters for beraprost. |
+| popPK | unknown_2017 | irrelevant | 0 | 0 | The paper is a dietary study on sodium intake in students and contains no pharmacokinetic data for beraprost. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bberaprost%5D&body=Drug%3A%20beraprost%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_beraprost/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

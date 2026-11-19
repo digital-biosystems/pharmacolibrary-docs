@@ -1,0 +1,12 @@
+[
+ {
+  "key": "stop_time",
+  "label": "Enalaprilat concentration range",
+  "unit": "ng/mL",
+  "scale": 1.0,
+  "min": 100.0,
+  "max": 5000.0,
+  "step": 10.0,
+  "sim": true
+ }
+]

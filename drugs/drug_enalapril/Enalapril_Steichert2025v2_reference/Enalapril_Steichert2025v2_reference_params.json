@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Enalapril_Steichert2025v2_reference",
+ "molar_masses": {
+  "central.C": 0.348399
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  4.2,
+  7.7,
+  18.9
+ ],
+ "parameters": {
+  "Cl": 1.0108333333333333e-05,
+  "F": 1.0,
+  "MM": 0.348399,
+  "Tlag": 0.0,
+  "VdPerKg": 0.003195857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4.2000000000000004e-06,
+  "k12": 7.921962461321452e-06,
+  "k21": 1.637005562739906e-05,
+  "ka": 0.00033055555555555556,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6925.851703406814
+ },
+ "reference_peaks": {
+  "central.C": 1.2632071535217107e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

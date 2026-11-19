@@ -1,0 +1,55 @@
+{
+ "model_id": "Fluorouracil_Kobuchi2013_PD_tv",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 3.7,
+  "exposure_per_s": 0.001,
+  "slope": 1728000.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 3.7,
+  "0.0009999999999999998": 1731.7
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Tumor volume (TV) against 5-fluorouracil concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "mm3",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "µg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "mm3",
+  "slope": {
+   "display_only": false,
+   "display_unit": "mL µg-1 day-1",
+   "factor": 86400000.00000001,
+   "si_unit": "meter ** 3 * second / kilogram"
+  }
+ },
+ "x_axis": {
+  "display_unit": "µg/mL",
+  "factor": 0.0009999999999999998,
+  "label": "5-fluorouracil concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mm3",
+  "factor": 1.0,
+  "label": "Tumor volume (TV)"
+ }
+}

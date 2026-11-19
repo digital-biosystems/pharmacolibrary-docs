@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 300 mg oral (J02AC04)",
+ "model_id": "Posaconazole_Shu2024_final_model_estimates",
+ "molar_masses": {
+  "central.C": 0.7008
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.1944444444444443e-06,
+  "F": 0.9,
+  "MM": 0.7008,
+  "Tlag": 0.0,
+  "VdPerKg": 0.011842857142857145,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.00011111111111111112,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 32378.35671342685
+ },
+ "reference_peaks": {
+  "central.C": 0.0002886132199479528
+ },
+ "stop_time": 950400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,55 @@
+{
+ "model_id": "Scopolamine_LiemMoolenaar2011_PD_heart_rate",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 55.2,
+  "exposure_per_s": 1e-09,
+  "slope": -6750000.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 55.2,
+  "1e-09": 55.193250000000006
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Heart rate against scopolamine concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "beats min-1",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "pg ml-1",
+   "factor": 1e-09,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "beats min-1",
+  "slope": {
+   "display_only": false,
+   "display_unit": "beats min-1 (pg ml-1)",
+   "factor": 999999999.9999999,
+   "si_unit": "(1)/(kg/m3)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "pg ml-1",
+  "factor": 1e-09,
+  "label": "scopolamine concentration",
+  "per_s": 1e-09,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "beats min-1",
+  "factor": 1.0,
+  "label": "Heart rate"
+ }
+}

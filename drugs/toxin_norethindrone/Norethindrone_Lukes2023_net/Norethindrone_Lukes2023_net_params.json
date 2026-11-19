@@ -1,0 +1,98 @@
+{
+ "dose_source": "WHO ATC DDD 2.5 mg parenteral (G03AC01)",
+ "model_id": "Norethindrone_Lukes2023_net",
+ "molar_masses": {
+  "retainedFraction": 0.29842599999999997
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 1.76e-05
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 1.89e-05
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 40.6
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 1.07
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 2.1000000000000003e-08
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 2.2000000000000002e-08
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 2.5000000000000002e-08
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 2.85e-08
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 4.68e-08
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 2.53e-08
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 3.03e-07
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 7.22e-09
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 4.9200000000000004e-08
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 2.3100000000000002e-08
+   },
+   {
+    "source": "Lukes_2023:other_prose",
+    "value_si": 2.7e-07
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.29842599999999997,
+  "Tb[1]": 29807.999999999996,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06
+ },
+ "reference_peak_times": {
+  "retainedFraction": 303.0060120240481
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9971805587578755
+ },
+ "stop_time": 151200.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

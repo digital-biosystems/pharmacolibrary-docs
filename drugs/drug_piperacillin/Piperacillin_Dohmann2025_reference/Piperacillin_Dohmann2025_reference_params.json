@@ -1,0 +1,34 @@
+{
+ "dose_source": "paper",
+ "model_id": "Piperacillin_Dohmann2025_reference",
+ "molar_masses": {
+  "central.C": 0.517555
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  4500.0
+ ],
+ "parameters": {
+  "Cl": 9.777777777777778e-07,
+  "F": 1.0,
+  "MM": 0.517555,
+  "VdPerKg": 0.00022028571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0045,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662058
+ },
+ "reference_peaks": {
+  "central.C": 0.28634709594647856
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,0 +1,238 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;hydroxyethylstarch&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxyethylstarch_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Yamakage2012_reference&quot;,&quot;label&quot;:&quot;Yamakage_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# hydroxyethylstarch
+
+- **generic name:** hydroxyethylstarch
+- **ATC codes:** `B05AA07`
+- **DrugBank:** [DB09106](https://go.drugbank.com/drugs/DB09106) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Hydroxyethylstarch is a modified starch used as a volume expander. It is given by intravenous infusion. Its use is restricted in the European Union due to safety concerns and increased risk of kidney problems in critically ill patients.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q415775](https://www.wikidata.org/wiki/Q415775), [Wikipedia](https://en.wikipedia.org/wiki/Hydroxyethyl_starch?oldid=1357725099) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| hydroxyethylstarch | parent | 580.577 | C22H44O17 | PubChem | [16213095](https://pubchem.ncbi.nlm.nih.gov/compound/16213095) | Asskali_1999, Yamakage_2012 |
+
+## Start here
+
+> **Yamakage_2012_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy male Japanese volunteers, n = &gt;=12. [Run it in the simulator](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md?tab=Simulation) · [record](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">0.001</text><line x1="260.0" y1="18" x2="260.0" y2="74" stroke="#ddd"/><text x="260.0" y="88" font-size="10" text-anchor="middle">0.01</text><line x1="330.0" y1="18" x2="330.0" y2="74" stroke="#ddd"/><text x="330.0" y="88" font-size="10" text-anchor="middle">0.1</text><line x1="400.0" y1="18" x2="400.0" y2="74" stroke="#ddd"/><text x="400.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="470.0" y1="18" x2="470.0" y2="74" stroke="#ddd"/><text x="470.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Asskali_1999 · CL</text><circle cx="362.5" cy="30.0" r="4" fill="#ef6c00"><title>Asskali_1999 · CL: 0.2916 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Haefliger_2025 · CL</text><circle cx="479.8" cy="46.0" r="4" fill="#78909c"><title>Haefliger_2025 · CL: 13.8 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Singh_2022 · CL/F</text><circle cx="226.6" cy="62.0" r="4" fill="#ef6c00"><title>Singh_2022 · CL/F: 0.003333 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Asskali_1999 · V</text><circle cx="423.9" cy="30.0" r="4" fill="#ef6c00"><title>Asskali_1999 · V: 21.7 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Haefliger_2025 · V</text><circle cx="423.9" cy="46.0" r="4" fill="#78909c"><title>Haefliger_2025 · V: 21.7 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Singh_2022 · V/F</text><circle cx="327.6" cy="62.0" r="4" fill="#ef6c00"><title>Singh_2022 · V/F: 6.11 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Haefliger_2025_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Haefliger D et al., Individualization of piperacillin dosag…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf007](https://doi.org/10.1093/jac/dkaf007) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Yamakage_2012_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anesthesia (2012) | [10.1007/s00540-012-1430-6](https://doi.org/10.1007/s00540-012-1430-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Asskali_1999_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference.md) | — | 1-compartment (no model) | 3 | Asskali F et al., [The accumulation of different substitu…, Anasthesiologie, Intensivme… (1999) | [10.1055/s-1999-208](https://doi.org/10.1055/s-1999-208) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Singh_2022_reference](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Singh D et al., A Phase 1 study of the long-acting anti…, British journal of clinical… (2022) | [10.1111/bcp.15002](https://doi.org/10.1111/bcp.15002) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=hydroxyethylstarch).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 23:26 | 42:24 | 4/0/0 | 0/0/0 | 0/0/0 | 934,229/102,912 | ollama / qwen3.8:27b-mtp-q8_0 | 39 | 8/42 | 38/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 236 matched, 113 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 4  ·  extracted 2  ·  needs review 2  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Asskali_1999.pdf` | Asskali F et al., [The accumulation of different substitu…, Anasthesiologie, Intensivme… (1999) | popPK | 10 | [10.1055/s-1999-208](https://doi.org/10.1055/s-1999-208) | [10542895](https://pubmed.ncbi.nlm.nih.gov/10542895) | The study reports quantitative pharmacokinetic parameters (half-lives, clearance) for hydroxyethyl starch in humans, with specific numeric values provided in the text. |
+| `Lehmann_2007.pdf` | Lehmann G et al., Bioequivalence comparison between hydro…, Drugs in R&D (2007) | popPK | 10 | [10.2165/00126839-200708040-00003](https://doi.org/10.2165/00126839-200708040-00003) | [17596109](https://pubmed.ncbi.nlm.nih.gov/17596109) | The study reports quantitative pharmacokinetic parameters (AUC, CL, t1/2) for hydroxyethyl starch in humans, with specific numeric values provided in the abstract. |
+| `Yamakage_2012.pdf` | Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anesthesia (2012) | popPK | 10 | [10.1007/s00540-012-1430-6](https://doi.org/10.1007/s00540-012-1430-6) | [22729229](https://pubmed.ncbi.nlm.nih.gov/22729229) | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-lives) for hydroxyethyl starch in humans, with all numeric values explicitly provided in the abstract. |
+| `Wilkes_2002.pdf` | Wilkes NJ et al., Hydroxyethyl starch in balanced electro…, Anesthesia and analgesia (2002) | popPK | 9 | [10.1097/00000539-200203000-00011](https://doi.org/10.1097/00000539-200203000-00011) | [11867371](https://pubmed.ncbi.nlm.nih.gov/11867371) | The study reports PK parameters for hydroxyethyl starch in humans, including a specific median half-life (38.2 h) and model description, but lacks other quantitative values like clearance or volume of distribution in the provided text. |
+| `Couto_2022.pdf` | Couto M et al., Comparison of two pharmacokinetic-pharm…, British journal of anaesthe… (2022) | pd | 5 | [10.1016/j.bja.2021.12.010](https://doi.org/10.1016/j.bja.2021.12.010) | [35120713](https://www.ncbi.nlm.nih.gov/pubmed/35120713) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Hu_2025.pdf` | Hu J et al., Pregnane X receptor attenuates gold nan…, Aquatic toxicology (Amsterd… (2025) | pd | 4 | [10.1016/j.aquatox.2025.107399](https://doi.org/10.1016/j.aquatox.2025.107399) | [40339275](https://www.ncbi.nlm.nih.gov/pubmed/40339275) | metadata signals extractable PD data (EC50) |
+| `Saeed_1987.pdf` | Saeed M et al., Inhibition of vasoactive agents by perf…, Life sciences (1987) | pd | 4 | [10.1016/0024-3205(87)90286-4](https://doi.org/10.1016/0024-3205(87)90286-4) | [2437426](https://www.ncbi.nlm.nih.gov/pubmed/2437426) | metadata signals extractable PD data (EC50) |
+| `Zhang_2024.pdf` | Zhang Z et al., Hexestrol, an estrogen receptor agonist…, Journal of virology (2024) | pd | 4 | [10.1128/jvi.00714-24](https://doi.org/10.1128/jvi.00714-24) | [38809021](https://www.ncbi.nlm.nih.gov/pubmed/38809021) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-05 22:50 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PD | Adler_2008 | not_relevant | 0 | 0 | The paper focuses on establishing a developmental toxicity test method using 5-fluorouracil and retinoic acid, and does not mention hydroxyethylstarch or report any PD parameters for it. |
+| popPK | Alrahahleh_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vancomycin in neonates, not hydroxyethylstarch. |
+| PD | Alrahahleh_2024 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (PopPK) model selection for vancomycin in neonates and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| PGx | Auguet_2020 | not_relevant | 0 | 0 | The paper investigates Notch signaling in NAFLD and does not mention hydroxyethylstarch or any pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Balakina_2016 | not_relevant | 0 | 0 | The paper studies the effect of flavonoids on gene expression in rats intoxicated with carbon tetrachloride and does not involve hydroxyethylstarch or pharmacogenomics. |
+| PGx | Barbet_2012 | not_relevant | 0 | 0 | The paper analyzes ABC gene expression in stem cells and does not mention hydroxyethylstarch or any pharmacokinetic/pharmacodynamic parameters. |
+| PD | Boldt_2005 | not_relevant | 1 | 0 | The text is a general review of plasma substitutes and HES properties without reporting any specific numeric pharmacodynamic parameters or exposure-response data. |
+| popPK | Boyd_2019 | irrelevant | 0 | 0 | The study evaluates biomarkers of kidney injury in dogs and does not report pharmacokinetic parameters (CL, V, t1/2) for hydroxyethyl starch. |
+| popPK | Boyd_2021 | irrelevant | 0 | 0 | The study evaluates urine biomarkers of acute kidney injury in dogs and does not report any pharmacokinetic parameters (clearance, volume, half-life) for hydroxyethylstarch. |
+| popPK | Boyd_2022 | irrelevant | 0 | 0 | The study measures coagulation and inflammation biomarkers in dogs, not pharmacokinetic parameters (CL, V, t1/2) for hydroxyethylstarch. |
+| popPK | Brescia_2026 | irrelevant | 0 | 0 | The paper is an in-vitro study on doxorubicin cardiotoxicity in stem cell-derived cardiomyocytes and does not involve hydroxyethylstarch pharmacokinetics. |
+| PD | Brescia_2026 | not_relevant | 0 | 0 | The paper investigates doxorubicin cardiotoxicity in cell cultures and does not contain any data, analysis, or mention of hydroxyethylstarch. |
+| PGx | Burkert_2008 | not_relevant | 0 | 0 | The paper investigates side population phenotypes in gastrointestinal cancer cells and is unrelated to hydroxyethylstarch pharmacokinetics or pharmacodynamics. |
+| PGx | Chiappara_2022 | not_relevant | 0 | 0 | The paper investigates the effect of cigarette smoke on the Notch-1 pathway in lung cancer and does not mention hydroxyethylstarch or any pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Choi_2021 | irrelevant | 0 | 0 | The paper is a conceptual review of volume kinetics principles and does not report specific quantitative pharmacokinetic parameters for hydroxyethylstarch. |
+| PD | Choi_2021 | not_relevant | 0 | 0 | The paper describes volume kinetics (PK of fluids) using compartmental models but does not report a pharmacodynamic (exposure-response) model or numeric PD parameters (e.g., Emax, EC50) for hydroxyethylstarch. |
+| popPK | Courlet_2023 | irrelevant | 0 | 0 | The study models tumor dynamics in melanoma patients receiving immunotherapy (ipilimumab, nivolumab, pembrolizumab) and does not involve hydroxyethylstarch. |
+| PD | Courlet_2023 | not_relevant | 0 | 0 | The paper models tumor dynamics for immunotherapy (ICIs) and does not contain any data or analysis for hydroxyethylstarch. |
+| popPK | Couto_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of rocuronium bromide, not hydroxyethylstarch. |
+| PD | Couto_2022 | not_relevant | 0 | 0 | The paper focuses on rocuronium bromide, not hydroxyethylstarch. |
+| popPK | Dings_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cafedrine/theodrenaline and ephedrine, not hydroxyethylstarch. |
+| PD | Dings_2026 | not_relevant | 0 | 0 | The paper analyzes the pharmacodynamics of cafedrine/theodrenaline and ephedrine, not hydroxyethylstarch. |
+| PD | Ellan_2019 | not_relevant | 0 | 0 | The paper studies mushroom extracts against dengue virus, not hydroxyethylstarch. |
+| popPK | Fu_2008 | irrelevant | 0 | 0 | The paper describes an inducible gene expression system in stem cells and does not involve hydroxyethylstarch pharmacokinetics. |
+| PD | Fu_2008 | not_relevant | 0 | 0 | The paper describes a gene expression system in stem cells and reports dose-response parameters for doxycycline, not a pharmacodynamic relationship for hydroxyethylstarch. |
+| popPK | Garcia-Mauriño_2025 | irrelevant | 0 | 0 | The paper is a microbiome study investigating associations between gut bacteria and respiratory infections, containing no pharmacokinetic data for hydroxyethylstarch. |
+| popPK | Gay_2025 | irrelevant | 0 | 0 | The paper is a neuroimaging study of glymphatic function in football players and does not involve hydroxyethylstarch or pharmacokinetic parameters. |
+| popPK | Girisa_2021 | irrelevant | 0 | 0 | The paper is a review of curcuminoids for oral diseases and does not mention hydroxyethylstarch or report any pharmacokinetic parameters for it. |
+| PD | Girisa_2021 | not_relevant | 0 | 0 | The paper is a review on curcuminoids for oral diseases and does not mention hydroxyethylstarch or report any pharmacodynamic parameters. |
+| PD | Gleich_2021 | not_relevant | 0 | 0 | The paper concerns mepolizumab, not hydroxyethylstarch, and reports clinical outcomes (flare rates, eosinophil counts) without a formal PK/PD model or numeric exposure-response parameters. |
+| popPK | Goutelle_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, not hydroxyethylstarch. |
+| PD | Goutelle_2022 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of busulfan and does not contain any pharmacodynamic (PD) or exposure-response analysis for hydroxyethylstarch or any other drug. |
+| popPK | Haefliger_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of piperacillin, not hydroxyethylstarch. |
+| PD | Haefliger_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PK) and dosing optimization of piperacillin, not hydroxyethylstarch, and does not report any pharmacodynamic (PD) or exposure-response parameters. |
+| popPK | Heitzmann_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of daptomycin, not hydroxyethylstarch. |
+| PD | Heitzmann_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PK) of daptomycin and compares two TDM tools; it does not report a pharmacodynamic (PD) model or exposure-response relationship for hydroxyethylstarch. |
+| popPK | Holcomb_2023 | irrelevant | 0 | 0 | The paper is a biomechanical study of head acceleration in youth football and contains no pharmacokinetic data for hydroxyethylstarch. |
+| popPK | Holcomb_2025 | irrelevant | 0 | 0 | The paper studies head kinematics in youth football and does not involve hydroxyethylstarch or pharmacokinetics. |
+| PD | Hu_2021 | not_relevant | 0 | 0 | The paper focuses on the formulation of albendazole (ABZ) and reports bioavailability and efficacy improvements, but it does not contain any data, analysis, or parameters for hydroxyethylstarch. |
+| popPK | Hu_2025 | irrelevant | 0 | 0 | The study investigates the role of the pregnane X receptor in zebrafish embryo hatching after exposure to gold nanoparticles and does not involve hydroxyethylstarch or pharmacokinetic parameters. |
+| PD | Hu_2025 | not_relevant | 0 | 0 | The paper studies gold nanoparticles in zebrafish, not hydroxyethylstarch, and does not report a pharmacodynamic model for the target drug. |
+| popPK | Huang_2025 | irrelevant | 0 | 0 | The paper is an epidemiological study on opioid use in arthritis patients and does not involve hydroxyethylstarch or pharmacokinetic modeling. |
+| PD | Huang_2025 | not_relevant | 0 | 0 | The paper investigates factors associated with long-term opioid use in arthritis patients and does not contain any pharmacodynamic or exposure-response analysis for hydroxyethylstarch. |
+| PGx | Jalnapurkar_2019 | not_relevant | 0 | 0 | The paper discusses mesenchymal stromal cells and hematopoietic stem cell engraftment, with no mention of hydroxyethylstarch or pharmacogenomics. |
+| popPK | Jørgensen_2024 | irrelevant | 0 | 0 | The paper is a clinical trial about physical therapy for patellofemoral pain and does not involve hydroxyethylstarch or pharmacokinetics. |
+| PD | Kabała-Dzik_2018 | not_relevant | 0 | 0 | The paper investigates flavonoids in breast cancer cells, not hydroxyethylstarch. |
+| PGx | Kato_2021 | not_relevant | 0 | 0 | The paper studies the chemopreventive effects of luteolin on pancreatic cancer and the DPYD/STAT3 pathway, not the pharmacokinetics or pharmacodynamics of hydroxyethylstarch. |
+| PGx | Katoh_2006 | not_relevant | 0 | 0 | The paper discusses HHIP gene family and signaling pathways in vascular remodeling, with no mention of hydroxyethylstarch or its pharmacokinetics/pharmacodynamics. |
+| PD | Kim_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacological activity of Sargassum macrocarpum extracts, not hydroxyethylstarch. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of recombinant ADAMTS-1 in mice, not hydroxyethylstarch. |
+| PGx | Koltsova_2011 | not_relevant | 0 | 0 | The paper describes the characterization of human embryonic stem cell lines and does not involve hydroxyethylstarch or pharmacogenomic effects on its PK/PD. |
+| popPK | Kuchimanchi_2022 | irrelevant | 0 | 0 | The study models the pharmacokinetics of diroximel fumarate metabolites (MMF and HES), not the drug hydroxyethylstarch. |
+| PD | Kuchimanchi_2022 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for diroximel fumarate metabolites, but contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Kuijk_2022 | irrelevant | 0 | 0 | The paper investigates mutational signatures in stem cells induced by chemotherapy (5-FU and Oxaliplatin) and does not study the pharmacokinetics of hydroxyethylstarch. |
+| PD | Kuijk_2022 | not_relevant | 0 | 0 | The paper investigates the mutagenic effects of chemotherapy (Oxaliplatin/5-FU) and radiotherapy on stem cells, not hydroxyethylstarch, and does not report pharmacodynamic exposure-response parameters. |
+| popPK | Lanoiselée_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cefuroxime, not hydroxyethylstarch. |
+| PD | Lanoiselée_2020 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of cefuroxime, not hydroxyethylstarch, and does not report any pharmacodynamic or exposure-response parameters. |
+| PD | Li_2024 | not_relevant | 0 | 0 | The paper studies albendazole, not hydroxyethylstarch, and does not report specific numeric PD parameters for the target drug. |
+| PD | Lian_2017 | not_relevant | 0 | 0 | The paper investigates the mechanism of multidrug resistance reversal by AP-2α in gastric cancer cells and does not report any pharmacodynamic or exposure-response relationship for hydroxyethylstarch. |
+| PD | Luo_2024 | not_relevant | 2 | 1 | The paper reports a single-dose efficacy study (30 mg/kg) comparing formulations, providing only endpoint effect percentages (e.g., 69.93% reduction) without a dose-response curve, concentration-effect relationship, or derived PD parameters (Emax, EC50). |
+| popPK | László_2017 | irrelevant | 0 | 0 | The study is a hemodynamic fluid resuscitation experiment in pigs comparing volume replacement ratios, not a pharmacokinetic study reporting disposition parameters (CL, V, t1/2) for hydroxyethylstarch. |
+| popPK | Lê_2023 | irrelevant | 0 | 0 | The paper describes a DNP cryogenic probe technology and MRS experiments in mice, with no mention of hydroxyethylstarch or its pharmacokinetics. |
+| PD | Lê_2023 | not_relevant | 0 | 0 | The paper describes a physics/engineering technique for Dynamic Nuclear Polarization (DNP) and NMR instrumentation, containing no pharmacodynamic or exposure-response data for hydroxyethylstarch. |
+| popPK | M_2019 | irrelevant | 0 | 0 | The paper is a survey on pharmacology academician capacity building and contains no pharmacokinetic data for hydroxyethylstarch. |
+| PD | M_2019 | not_relevant | 0 | 0 | The paper is a survey on the capacity of pharmacology academicians to provide drug information services and contains no pharmacokinetic or pharmacodynamic data for hydroxyethylstarch. |
+| PD | Mahboobi_2009 | not_relevant | 0 | 0 | The paper reports in vitro biochemical and cellular IC50 values for novel imatinib hybrids, not a pharmacodynamic or exposure-response relationship for hydroxyethylstarch. |
+| PD | Mahmoud_2025 | not_relevant | 0 | 0 | The paper investigates the nephroprotective effects of hesperidin-loaded bilosomes against methotrexate toxicity and does not report any pharmacodynamic or exposure-response relationship for hydroxyethylstarch. |
+| PGx | Mao_2013 | not_relevant | 0 | 0 | The paper investigates paclitaxel resistance in breast cancer, not hydroxyethylstarch pharmacokinetics or pharmacodynamics. |
+| popPK | Marks_2022 | irrelevant | 0 | 0 | The paper studies head acceleration in youth football and does not involve hydroxyethylstarch or pharmacokinetics. |
+| PGx | Matsuda_2001 | not_relevant | 0 | 0 | The paper is a general perspective on inborn errors of metabolism and postgenome medicine, with no mention of hydroxyethylstarch or specific pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Mink_2025 | irrelevant | 0 | 0 | The paper is a biomechanical study of head acceleration in NASCAR drivers and contains no pharmacokinetic data for hydroxyethylstarch. |
+| popPK | Morath_2021 | irrelevant | 0 | 0 | The study is a retrospective cohort analysis of renal safety outcomes (AKI, mortality) and does not report pharmacokinetic parameters (CL, V, etc.) for hydroxyethylstarch. |
+| popPK | Muir_2026 | irrelevant | 0 | 0 | The paper is a review of fluid dynamics and hemodynamics that mentions hydroxyethyl starch only in the context of FDA safety warnings and general colloid properties, without reporting specific quantitative pharmacokinetic parameters for the drug. |
+| PD | Muir_2026 | not_relevant | 0 | 0 | The paper is a review of fluid physiology and volume kinetics models, containing no specific pharmacodynamic or exposure-response analysis for hydroxyethylstarch. |
+| PD | Nabil-Adam_2020 | not_relevant | 0 | 0 | The paper studies a marine sponge extract (HES), not the drug hydroxyethylstarch, and reports in vitro bioassay results rather than a pharmacokinetic/pharmacodynamic exposure-response relationship. |
+| PD | Nazdar_2024 | not_relevant | 0 | 0 | The paper investigates herbal extracts against aflatoxin B1 toxicity and does not involve hydroxyethylstarch or report any pharmacodynamic parameters for it. |
+| popPK | Okutomi_2006 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bupivacaine, with hydroxyethylstarch serving only as a co-administered fluid, so no PK parameters for hydroxyethylstarch are reported. |
+| popPK | Owen_2025 | irrelevant | 0 | 0 | The paper is a sports biomechanics study on head acceleration events in rugby and contains no pharmacokinetic data for hydroxyethylstarch. |
+| popPK | Parmley_2025 | irrelevant | 0 | 0 | The paper is a sports science study on head acceleration events in rugby league and contains no pharmacokinetic data for hydroxyethylstarch. |
+| PD | Patra_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Beauvericin, not hydroxyethylstarch. |
+| popPK | Pelland_2026 | irrelevant | 0 | 0 | The paper investigates the correlation between non-concussive head impacts and gut microbiome changes in football players, containing no pharmacokinetic data for hydroxyethylstarch. |
+| popPK | Pereira_2019 | irrelevant | 0 | 0 | The paper describes the in vitro activity of aryl-thiazole derivatives against Schistosoma mansoni and contains no data on hydroxyethylstarch pharmacokinetics. |
+| PD | Pereira_2019 | not_relevant | 0 | 0 | The paper investigates aryl-thiazole derivatives against Schistosoma mansoni, not hydroxyethylstarch. |
+| popPK | Perron_2018 | irrelevant | 0 | 0 | The paper describes a small-molecule screening for cancer therapeutics (Hes1/PHB2 inhibitors) and contains no data on hydroxyethylstarch pharmacokinetics. |
+| PD | Perron_2018 | not_relevant | 0 | 0 | The paper discusses small-molecule inhibitors (JI051/JI130) of Hes1/PHB2, not hydroxyethylstarch, and does not report a pharmacodynamic model for the target drug. |
+| popPK | Ravix_2025 | irrelevant | 0 | 0 | The paper is a numerical verification of a Bayesian PK software tool using virtual populations and unrelated drugs (vancomycin, imatinib), not a study of hydroxyethylstarch pharmacokinetics. |
+| PD | Ravix_2025 | not_relevant | 0 | 0 | The paper is a numerical verification of a Bayesian PK prediction software (Tucuxi) using virtual populations and does not report any pharmacodynamic or exposure-response data for hydroxyethylstarch. |
+| popPK | Ravix_2026 | irrelevant | 0 | 0 | The study focuses on vancomycin pharmacokinetics in neonates and does not involve hydroxyethylstarch. |
+| PD | Ravix_2026 | not_relevant | 0 | 0 | The paper focuses on vancomycin PK and TDM strategies in neonates and does not contain any data or analysis regarding hydroxyethylstarch. |
+| popPK | Reppel_2004 | irrelevant | 0 | 0 | The paper studies the hormonal modulation of embryonic stem cell-derived cardiomyocytes and does not involve hydroxyethylstarch or its pharmacokinetics. |
+| PD | Reppel_2004 | not_relevant | 0 | 0 | The paper reports pharmacological effects of isoproterenol and carbachol on stem cell-derived cardiomyocytes, not hydroxyethylstarch. |
+| popPK | Reynolds_2015 | irrelevant | 0 | 0 | The study models the pharmacokinetics of Mean Arterial Pressure (MAP) as a hemodynamic response, not the disposition parameters (CL, V, etc.) of the drug hydroxyethylstarch itself. |
+| popPK | Roe_2024 | irrelevant | 0 | 0 | The paper is a sports science study on head acceleration events in rugby players and contains no pharmacokinetic data for hydroxyethylstarch. |
+| popPK | Saeed_1987 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasoactive agent inhibition by hydroxyethylstarch, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Santak_1997 | irrelevant | 0 | 0 | The study focuses on nitric oxide production in pigs, and hydroxyethylstarch is only mentioned as a fluid used to maintain blood pressure, not as the subject of pharmacokinetic analysis. |
+| popPK | Scalabrin_2026 | irrelevant | 0 | 0 | The paper is an ophthalmology study on diabetic macular edema treated with faricimab and contains no pharmacokinetic data for hydroxyethylstarch. |
+| popPK | Schramm_2007 | relevant | 10 | 4 | The study reports quantitative pharmacokinetic parameters (CL, AUC, t1/2, ke1) for hydroxyethylstarch in pigs, but the specific numeric values for clearance and half-life are contained in Table 3 which is not fully provided in the evidence (only Cmax and AUC are visible). |
+| PGx | Schwartz_2014 | not_relevant | 0 | 0 | The paper is a review on pluripotent stem cell-derived hepatocyte-like cells and does not report pharmacogenomic effects on hydroxyethylstarch PK/PD. |
+| PD | Schäfer_2010 | not_relevant | 0 | 0 | The paper studies the dose-response of TNF-alpha, not hydroxyethylstarch; HAES is only used as a resuscitation fluid without any PD analysis or numeric parameters reported for it. |
+| PGx | Sha_2017 | not_relevant | 0 | 0 | The paper studies cancer stem-like cells and is unrelated to hydroxyethylstarch pharmacogenomics. |
+| popPK | Sillé_2026 | irrelevant | 0 | 0 | The paper is a review on AI-driven untargeted metabolomics and mass spectrometry quantification methods, containing no pharmacokinetic data or parameters for hydroxyethylstarch. |
+| PD | Sillé_2026 | not_relevant | 0 | 0 | The paper is a review on AI-driven metabolomics and exposure quantification methods; it does not report any pharmacodynamic or exposure-response data for hydroxyethylstarch. |
+| popPK | Singh_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of GSK3511294 (an anti-IL-5 monoclonal antibody), not hydroxyethylstarch. |
+| PGx | Singh_2025 | not_relevant | 0 | 0 | The paper focuses on identifying haemochromatosis patients using electronic health record codes and does not investigate the pharmacokinetics or pharmacodynamics of hydroxyethylstarch. |
+| popPK | Smith_2011 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for mepolizumab, not hydroxyethylstarch. |
+| PD | Sondeen_2016 | not_relevant | 0 | 0 | The paper studies tranexamic acid (TXA), not hydroxyethylstarch, and reports no exposure-response or dose-response relationship for hydroxyethylstarch. |
+| popPK | Song_2022 | irrelevant | 0 | 0 | The paper describes the enzymatic synthesis and biological activity of hydroxyequols (isoflavones) and does not involve the drug hydroxyethylstarch or its pharmacokinetics. |
+| PD | Song_2022 | not_relevant | 0 | 0 | The paper studies the synthesis and biological activity of isoflavonoid derivatives (hydroxyequols), not the pharmacodynamics of hydroxyethylstarch. |
+| PD | Sousa_2021 | not_relevant | 0 | 0 | The paper reports IC50 values for a magnetic nanocomposite (HES MNCs) loaded with a bioactive, not a pharmacodynamic or exposure-response relationship for hydroxyethyl starch itself. |
+| popPK | Stevens_2023 | irrelevant | 0 | 0 | The paper is a systematic review on nanoparticle delivery of flavonoids and does not involve hydroxyethylstarch or its pharmacokinetics. |
+| PD | Stevens_2023 | not_relevant | 0 | 0 | The paper is a systematic review on flavonoid nanoparticles and has no content regarding hydroxyethylstarch or any pharmacodynamic modeling. |
+| PD | Tacchini_2015 | not_relevant | 0 | 0 | The paper analyzes phytochemicals from plant extracts (Boerhaavia diffusa and Curculigo orchioides) and does not involve hydroxyethylstarch or any pharmacodynamic modeling of that drug. |
+| popPK | Thoma_2023 | irrelevant | 0 | 0 | The paper is a protocol for a clinical decision support system for rifampicin (anti-tuberculosis drug) and does not involve hydroxyethylstarch. |
+| PD | Thoma_2023 | not_relevant | 0 | 0 | The paper is a protocol for a population pharmacokinetic (PK) study of rifampicin and does not report any pharmacodynamic (PD) or exposure-response data for hydroxyethylstarch. |
+| popPK | Thoma_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rifampicin for tuberculosis treatment, not hydroxyethylstarch. |
+| PD | Thoma_2024 | not_relevant | 0 | 0 | The paper is a protocol for a population pharmacokinetic (popPK) model of rifampicin and does not involve hydroxyethylstarch or report any pharmacodynamic (PD) or exposure-response parameters. |
+| popPK | Ulbrich_1989 | irrelevant | 0 | 0 | The study investigates nitrogen balance and protein utilization in lambs, not the pharmacokinetics of hydroxyethylstarch. |
+| PD | Vecchia_2022 | not_relevant | 0 | 0 | The paper studies the gastroprotective effects of a plant extract (Sonchus oleraceus), not hydroxyethylstarch, and does not report any pharmacodynamic or exposure-response relationship for the target drug. |
+| PD | Verstovsek_2006 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for AMN107 and imatinib, not hydroxyethylstarch. |
+| popPK | Wali_2026 | irrelevant | 0 | 0 | The paper is a review of natural products as kinase inhibitors in lung cancer and does not mention hydroxyethylstarch or report any pharmacokinetic parameters for it. |
+| PD | Wali_2026 | not_relevant | 0 | 0 | The paper is a review of natural kinase inhibitors in lung cancer and does not mention hydroxyethylstarch or report any pharmacodynamic parameters. |
+| popPK | Wall_2026 | irrelevant | 0 | 0 | The paper is an ophthalmology study on diabetic retinal disease and does not involve hydroxyethylstarch or pharmacokinetics. |
+| PD | Wang_2026 | not_relevant | 0 | 0 | The paper investigates the neuroprotective effects of Astragalin in Parkinson's disease models and does not mention hydroxyethylstarch or report any pharmacodynamic/exposure-response parameters. |
+| popPK | Wilkes_2002 | relevant | 9 | 4 | The study reports PK parameters for hydroxyethyl starch in humans, including a specific median half-life (38.2 h) and model description, but lacks other quantitative values like clearance or volume of distribution in the provided text. |
+| PGx | Xu_2025 | not_relevant | 0 | 0 | The study describes the pharmacokinetics of hydroxyethyl starch in rats but does not investigate any gene variants or pharmacogenomic effects. |
+| PD | Yang_2018 | not_relevant | 0 | 0 | The paper describes an analytical method (lateral flow strip) for detecting hexoestrol in fish, not a pharmacodynamic study of hydroxyethylstarch. |
+| popPK | Yiew_2020_2 | irrelevant | 0 | 0 | The paper is a review of volume kinetics concepts and does not report specific quantitative pharmacokinetic parameters for hydroxyethylstarch. |
+| PD | Yiew_2020_2 | not_relevant | 1 | 0 | The paper is a review of volume kinetics (PK) for fluids and does not report specific pharmacodynamic (exposure-response) parameters or numeric effect curves for hydroxyethylstarch. |
+| popPK | Zecchin_2026 | irrelevant | 0 | 0 | The paper describes the pharmacokinetics and pharmacodynamics of depemokimab and mepolizumab (anti-IL-5 biologics), not hydroxyethylstarch. |
+| PGx | Zhang_2023 | not_relevant | 0 | 0 | The paper discusses PCSK9 monoclonal antibodies and hyperglycemic adverse events, not hydroxyethylstarch. |
+| PD | Zhang_2024 | not_relevant | 0 | 0 | The paper reports antiviral activity (IC50) for hexestrol against Lassa virus, not pharmacodynamic parameters for hydroxyethylstarch. |
+| PGx | Zhao_2026 | not_relevant | 0 | 0 | The paper describes a novel antiviral agent for SARS-CoV-2 and does not mention hydroxyethylstarch or any pharmacogenomic effects. |
+| popPK | unknown_2022 | irrelevant | 0 | 0 | The paper is a collection of abstracts regarding hematopoietic stem cell transplantation outcomes and does not contain any pharmacokinetic data for hydroxyethylstarch. |
+| PD | unknown_2022 | not_relevant | 0 | 0 | The text consists of abstract titles from a conference meeting and does not contain any pharmacodynamic or exposure-response data for hydroxyethylstarch. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydroxyethylstarch%5D&body=Drug%3A%20hydroxyethylstarch%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydroxyethylstarch/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 22:50 UTC</sub>

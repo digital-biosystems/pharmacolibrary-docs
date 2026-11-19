@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "NickelSulfate_Sunderman1989_reference",
+ "molar_masses": {
+  "retainedFraction": 0.058692999999999995
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.84,
+  1.26,
+  3.5
+ ],
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.058692999999999995,
+  "Tb[1]": 100800.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8.4e-07
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662046
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.997940330619724
+ },
+ "stop_time": 518400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

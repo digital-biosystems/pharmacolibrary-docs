@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 10 mg oral (L01EK01)",
+ "model_id": "Axitinib_Rini2013_reference",
+ "molar_masses": {
+  "central.C": 0.38647000000000004
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.055555555555556e-06,
+  "F": 0.9,
+  "MM": 0.38647000000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006757142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.0009108796296296296,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3247.4064183348073
+ },
+ "reference_peaks": {
+  "central.C": 0.0001486729604978105
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

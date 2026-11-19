@@ -1,0 +1,62 @@
+{
+ "dose_source": "WHO ATC DDD 1000 mg parenteral (J01AA06)",
+ "model_id": "Oxytetracycline_Tardiveau2022_goat",
+ "molar_masses": {
+  "retainedFraction": 0.4604
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Tardiveau_2022:other_prose",
+    "value_si": 0.00043
+   },
+   {
+    "source": "Tardiveau_2022:other_prose",
+    "value_si": 19.0
+   },
+   {
+    "source": "Tardiveau_2022:other_prose",
+    "value_si": 0.00252
+   },
+   {
+    "source": "Tardiveau_2022:other_prose",
+    "value_si": 12.0
+   },
+   {
+    "source": "Tardiveau_2022:other_prose",
+    "value_si": 0.0042699999999999995
+   },
+   {
+    "source": "Tardiveau_2022:other_prose",
+    "value_si": 6.0
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.4604,
+  "Tb[1]": 28440.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001
+ },
+ "reference_peak_times": {
+  "retainedFraction": 288.5771543086173
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9972203856187204
+ },
+ "stop_time": 144000.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

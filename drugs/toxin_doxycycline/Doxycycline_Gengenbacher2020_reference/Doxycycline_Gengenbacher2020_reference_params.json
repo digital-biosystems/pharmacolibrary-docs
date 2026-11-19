@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Doxycycline_Gengenbacher2020_reference",
+ "molar_masses": {
+  "central.C": 0.44439999999999996
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  350.0,
+  1050.0,
+  1400.0,
+  1680.0,
+  1750.0,
+  2100.0
+ ],
+ "parameters": {
+  "Cl": 4.333333333333333e-07,
+  "F": 0.9,
+  "MM": 0.44439999999999996,
+  "Tlag": 0.0,
+  "VdPerKg": 0.001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00035,
+  "ka": 0.002861111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2553.65047798588
+ },
+ "reference_peaks": {
+  "central.C": 0.004439341639911385
+ },
+ "stop_time": 604800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

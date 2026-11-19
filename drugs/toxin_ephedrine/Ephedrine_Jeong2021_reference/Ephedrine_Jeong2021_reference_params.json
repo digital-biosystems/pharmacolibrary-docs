@@ -1,0 +1,48 @@
+{
+ "dose_source": "WHO ATC DDD 50 mg oral (R03CA02)",
+ "model_id": "Ephedrine_Jeong2021_reference",
+ "molar_masses": {
+  "central.C": 0.165236
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Jeong_2021:other_prose",
+    "value_si": 1.03
+   },
+   {
+    "source": "Jeong_2021:other_prose",
+    "value_si": 9.96
+   },
+   {
+    "source": "Jeong_2021:other_prose",
+    "value_si": 4.07
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 0.00012619444444444443,
+  "F": 1.0,
+  "MM": 0.165236,
+  "Tlag": 0.0,
+  "VdPerKg": 0.01866,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9003.607214428857
+ },
+ "reference_peaks": {
+  "central.C": 1.669667702844146e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

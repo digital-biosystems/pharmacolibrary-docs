@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Alfaxalone_White2022_adjusted_typical_values",
+ "molar_masses": {
+  "central.C": 0.332484
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  36.4,
+  52.5,
+  116.9
+ ],
+ "parameters": {
+  "Cl": 4.2e-07,
+  "F": 1.0,
+  "MM": 0.332484,
+  "VdPerKg": 8.142857142857143e-06,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.64e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662034
+ },
+ "reference_peaks": {
+  "central.C": 0.051612604622309495
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

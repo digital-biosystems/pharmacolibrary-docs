@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 30 mg oral (A03FA02)",
+ "model_id": "Cisapride_Preechagoon1999_reference",
+ "molar_masses": {
+  "central.C": 0.465945
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4944444444444445e-07,
+  "F": 1.0,
+  "MM": 0.465945,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0003128571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-05,
+  "ka": 0.0007166666666666667,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6943.614566091564
+ },
+ "reference_peaks": {
+  "central.C": 0.0013098226036952687
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

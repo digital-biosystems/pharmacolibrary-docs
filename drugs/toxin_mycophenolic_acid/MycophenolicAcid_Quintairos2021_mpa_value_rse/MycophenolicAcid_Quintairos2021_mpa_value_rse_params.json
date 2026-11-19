@@ -1,0 +1,29 @@
+{
+ "dose_source": "WHO ATC DDD 2000 mg oral (L04AA06)",
+ "model_id": "MycophenolicAcid_Quintairos2021_mpa_value_rse",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.277777777777778e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0015142857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "k21": 1.2881944444444445e-05,
+  "ka": 0.0004972222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.204422708789
+ },
+ "reference_peaks": {
+  "central.C": 8.236077907858844e-07
+ },
+ "stop_time": 115200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 380 mg oral (L01EX09)",
+ "model_id": "Nintedanib_Schmid2018_reference",
+ "molar_masses": {
+  "central.C": 0.5396248
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.0002761111111111111,
+  "F": 1.0,
+  "MM": 0.5396248,
+  "Tlag": 2480.3999999999996,
+  "VdPerKg": 0.003785714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00038,
+  "ka": 2.261111111111111e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6579.559118236473
+ },
+ "reference_peaks": {
+  "central.C": 2.857312323503326e-05
+ },
+ "stop_time": 136800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

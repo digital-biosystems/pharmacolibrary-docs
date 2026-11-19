@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 1200 mg oral (C10AB04)",
+ "model_id": "Gemfibrozil_Zahir2025_reference",
+ "molar_masses": {
+  "central.C": 0.250338
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.225e-05,
+  "F": 1.0,
+  "MM": 0.250338,
+  "Tlag": 0.0,
+  "VdPerKg": 0.3678571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0012,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 29459.99999705453
+ },
+ "reference_peaks": {
+  "central.C": 4.337232077730492e-05
+ },
+ "stop_time": 1468800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

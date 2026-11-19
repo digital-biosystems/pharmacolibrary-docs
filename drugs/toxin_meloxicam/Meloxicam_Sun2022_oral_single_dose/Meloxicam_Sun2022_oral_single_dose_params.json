@@ -1,0 +1,55 @@
+{
+ "dose_source": "paper",
+ "model_id": "Meloxicam_Sun2022_oral_single_dose",
+ "molar_masses": {
+  "retainedFraction": 0.3514
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  94.5,
+  661.5
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Sun_2022:other_prose",
+    "value_si": 0.0026000000000000003
+   },
+   {
+    "source": "Sun_2022:other_prose",
+    "value_si": 8.0
+   },
+   {
+    "source": "Sun_2022:other_prose",
+    "value_si": 0.0007800000000000001
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.3514,
+  "Tb[1]": 117504.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 9.45e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662128
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9982328517211777
+ },
+ "stop_time": 604800.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

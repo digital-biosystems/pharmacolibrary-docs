@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 1 mg parenteral (N05CD03)",
+ "model_id": "Flunitrazepam_GmezSegura2022_reference",
+ "molar_masses": {
+  "central.C": 0.31328320000000004
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.083333333333334e-08,
+  "F": 1.0,
+  "MM": 0.31328320000000004,
+  "VdPerKg": 0.00032900000000000003,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662143
+ },
+ "reference_peaks": {
+  "central.C": 4.338158237567464e-05
+ },
+ "stop_time": 1209600.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

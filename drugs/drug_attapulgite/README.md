@@ -1,0 +1,114 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07B&quot;,&quot;href&quot;:&quot;atc/A07B.md&quot;},{&quot;label&quot;:&quot;attapulgite&quot;}]"></div>
+
+# attapulgite
+
+- **generic name:** attapulgite
+- **ATC codes:** `A07BC04`
+- **DrugBank:** [DB01574](https://go.drugbank.com/drugs/DB01574) · **PubChem:** [CID 73415752](https://pubchem.ncbi.nlm.nih.gov/compound/73415752)
+- **molar mass:** 412.684 g/mol (AlH9MgO15Si4) — DrugBank
+- **groups:** approved, vet_approved, withdrawn
+
+## About
+
+Attapulgite is an intestinal adsorbent used to treat diarrheal conditions. It is given orally in forms such as tablets, capsules, suspensions, or liquids. The drug is approved for use in both human and veterinary medicine, with some formulations withdrawn.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q20817221](https://www.wikidata.org/wiki/Q20817221), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 18:42 | 2:55 | 0/0/0 | 0/0/0 | 0/0/0 | 121,297/2,407 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/9 | 7/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 44 matched, 42 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Masse_1980.pdf` | Masse R et al., Experimental demonstration of the penet…, IARC scientific publications (1980) | pd | 4 |  | [7239651](https://www.ncbi.nlm.nih.gov/pubmed/7239651) | metadata signals extractable PD data (concentration-effect) |
+
+<sub>queue written 2026-10-04 18:41 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Argiri_2026 | irrelevant | 0 | 0 | The study focuses on soil remediation and toxicology of heavy metals, not the pharmacokinetics of attapulgite. |
+| popPK | Cao_2022 | irrelevant | 0 | 0 | The study investigates attapulgite as a soil amendment to reduce microcystin-LR bioaccumulation in lettuce, not as a drug for pharmacokinetic analysis. |
+| popPK | Chen_2018 | irrelevant | 0 | 0 | The study investigates the soil remediation and cadmium immobilization properties of attapulgite, not its pharmacokinetics. |
+| PD | Chen_2018 | not_relevant | 0 | 0 | The paper describes soil remediation and plant uptake reduction (environmental science/agriculture), not pharmacodynamic exposure-response relationships in a biological system. |
+| popPK | Chen_2022 | irrelevant | 0 | 0 | The paper is an environmental engineering study on adsorption of heavy metals by attapulgite, not a pharmacokinetic study. |
+| PD | Chen_2022 | not_relevant | 0 | 0 | The paper describes environmental remediation (adsorption of heavy metals from acid mine drainage) and reports adsorption capacities and isotherm parameters, which are not pharmacodynamic (drug exposure-response) relationships. |
+| popPK | Chen_2022_2 | irrelevant | 0 | 0 | The paper investigates attapulgite's role in heavy metal passivation and microbial communities during composting, not its pharmacokinetics. |
+| popPK | Cui_2023 | irrelevant | 0 | 0 | The paper describes attapulgite as an adsorbent for cadmium removal in aqueous solutions, not as a drug subject to pharmacokinetic analysis. |
+| PD | Cui_2023 | not_relevant | 0 | 0 | The paper describes the adsorption of cadmium by modified attapulgite (a material science/environmental chemistry study), not a pharmacodynamic or exposure-response relationship for a drug. |
+| popPK | Cui_2024 | irrelevant | 0 | 0 | The paper is a soil remediation study using attapulgite as a soil amendment, not a pharmacokinetic study. |
+| PD | Cui_2024 | not_relevant | 0 | 0 | The paper is an environmental soil science study on heavy metal remediation, not a pharmacological study, and does not report any drug exposure-response or dose-response relationships. |
+| popPK | Doser_1995 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of loperamide, not attapulgite. |
+| popPK | Gong_2025 | irrelevant | 0 | 0 | The study focuses on the drug delivery system (attapulgite microspheres) for berberine and reports therapeutic efficacy and release profiles, but does not provide quantitative pharmacokinetic parameters (CL, V, etc.) for attapulgite itself. |
+| popPK | Han_2026 | irrelevant | 0 | 0 | The paper is a review on 3D bioprinting of cartilage organoids where attapulgite is discussed only as a biomaterial component for scaffolds, not as a drug subject to pharmacokinetic analysis. |
+| popPK | Hao_2025 | irrelevant | 0 | 0 | The study investigates the mechanistic effects of attapulgite on lysosomal function and autophagy in cells and mice, but does not report pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | He_2021 | irrelevant | 0 | 0 | The study is an agricultural field experiment on cadmium immobilization in soil and rice, not a pharmacokinetic study of attapulgite. |
+| popPK | Li_2019 | irrelevant | 0 | 0 | The study is an environmental science paper on soil remediation using attapulgite as an amendment, not a pharmacokinetic study. |
+| popPK | Liang_2019 | irrelevant | 0 | 0 | The study investigates attapulgite as a soil amendment for cadmium remediation in wheat, not as a drug for pharmacokinetic analysis. |
+| popPK | Liu_2020 | irrelevant | 0 | 0 | The paper is a soil science study on cadmium immobilization and hydraulic characteristics, not a pharmacokinetic study of attapulgite. |
+| popPK | Liu_2024 | irrelevant | 0 | 0 | The paper describes attapulgite as a material for soil remediation (adsorption of cadmium), not as a drug for pharmacokinetic study. |
+| popPK | Luo_2023 | irrelevant | 0 | 0 | The paper describes a chemical process for phosphate removal using attapulgite as a material, not a pharmacokinetic study of attapulgite as a drug. |
+| PD | Luo_2023 | not_relevant | 0 | 0 | The paper describes a chemical engineering process for phosphate removal using attapulgite as a sorbent/co-precipitant, not a pharmacodynamic study of a drug. |
+| popPK | Masse_1980 | irrelevant | 2 | 0 | The study investigates the translocation of attapulgite fibres into lymph (a toxicological/physiological endpoint) rather than reporting standard pharmacokinetic disposition parameters (CL, V, ka) for the drug. |
+| PD | Masse_1980 | not_relevant | 2 | 1 | The paper reports qualitative kinetics of fiber absorption (time to 50% absorption, max passage fraction) but does not provide a concentration-effect curve or numeric PD parameters (Emax, EC50) for attapulgite. |
+| popPK | McGinity_1975 | irrelevant | 0 | 0 | The study investigates the adsorption of neomycin sulfate to attapulgite clay in vitro, not the pharmacokinetics of attapulgite itself. |
+| popPK | Pan_2025 | irrelevant | 0 | 0 | The paper is a soil remediation study using attapulgite as a passivation agent to reduce cadmium bioavailability in pakchoi, not a pharmacokinetic study of attapulgite. |
+| popPK | Ren_2021 | irrelevant | 0 | 0 | The paper investigates the environmental stabilization of heavy metals in sewage sludge using attapulgite as a clay amendment, not the pharmacokinetics of attapulgite as a drug. |
+| popPK | Ren_2026 | irrelevant | 0 | 0 | The paper describes attapulgite as a soil amendment for heavy metal remediation, not as a drug, and contains no pharmacokinetic data. |
+| popPK | Tao_2024 | irrelevant | 0 | 0 | The study investigates attapulgite as a soil amendment for cadmium immobilization, not as a drug for pharmacokinetic analysis. |
+| popPK | Tsakala_1990 | irrelevant | 0 | 0 | The study is an in vitro adsorption study of chloroquine by Mouboumou (a traditional remedy), not a pharmacokinetic study of attapulgite. |
+| popPK | Turan_2019 | irrelevant | 0 | 0 | The paper is a soil remediation study using attapulgite as an amendment to reduce nickel bioavailability in lettuce, not a pharmacokinetic study of attapulgite. |
+| popPK | Wang_2016 | irrelevant | 0 | 0 | The paper investigates the material science of attapulgite nanocomposites for oil absorption, not the pharmacokinetics of attapulgite as a drug. |
+| popPK | Wang_2019 | irrelevant | 0 | 0 | The paper studies attapulgite as a clay component in a biochar composite for heavy metal immobilization in sediment, not as a drug for pharmacokinetic analysis. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper describes attapulgite as a material for drug delivery nanofibers (loading doxorubicin) and does not report pharmacokinetic parameters for attapulgite itself. |
+| popPK | Wang_2023 | irrelevant | 0 | 0 | The study investigates attapulgite as a soil amendment for heavy metal immobilization, not as a drug for pharmacokinetic analysis. |
+| popPK | Wang_2024 | irrelevant | 0 | 0 | The paper is an ecological field study on herbicide effects on soil microflora where attapulgite is used as a soil amendment, not a pharmacokinetic study of the drug. |
+| PD | Wang_2024 | not_relevant | 0 | 0 | The paper focuses on the ecological impact of a herbicide on soil bacterial diversity and does not report any pharmacodynamic or exposure-response relationship for attapulgite. |
+| popPK | Wang_2024_2 | irrelevant | 0 | 0 | The paper is a phytoremediation study using attapulgite as a soil amendment, not a pharmacokinetic study of the drug. |
+| popPK | Xiao_2021 | irrelevant | 0 | 0 | The study is an agricultural/soil science experiment investigating cadmium accumulation in plants using attapulgite as a soil amendment, not a pharmacokinetic study. |
+| popPK | Xiaosan_2022 | irrelevant | 0 | 0 | The paper is an in-vitro adsorption study of tetracycline using attapulgite as a material, not a pharmacokinetic study of attapulgite as a drug. |
+| PD | Xiaosan_2022 | not_relevant | 0 | 0 | The paper describes the adsorption of tetracycline by an attapulgite composite in an environmental context, not a pharmacodynamic (drug effect) relationship in a biological system. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The paper describes attapulgite as a material component in a nanocomposite wound dressing, not as a drug subject to pharmacokinetic analysis. |
+| popPK | Yang_2026_2 | irrelevant | 0 | 0 | The paper is a materials science study on salt-storage pavement fillers, not a pharmacokinetic study, and attapulgite is used as a carrier material rather than a drug subject. |
+| PD | Yang_2026_2 | not_relevant | 0 | 0 | The paper describes the engineering development of a salt-storage pavement material and reports deicing performance metrics (e.g., deicing rate, service life), but it does not contain any pharmacodynamic (PD) or exposure-response analysis for the drug attapulgite. |
+| popPK | Zhang_2018 | irrelevant | 0 | 0 | The paper is about groundwater remediation and attapulgite is only mentioned as a material for absorbing ammonia/chroma, not as a drug subject to pharmacokinetic analysis. |
+| popPK | Zhang_2023 | irrelevant | 0 | 0 | The paper is a civil engineering study on the permeability of attapulgite-modified loess for landfill liners, not a pharmacokinetic study. |
+| PD | Zhang_2023 | not_relevant | 0 | 0 | The paper investigates the geotechnical properties (permeability) of attapulgite-modified soil, not the pharmacodynamic or exposure-response relationship of attapulgite as a drug. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper is a mechanistic environmental chemistry study on chromium adsorption by modified minerals, not a pharmacokinetic study of attapulgite. |
+| popPK | Zheng_2023 | irrelevant | 0 | 0 | The paper is an in-vitro adsorption study of biochar composites for water treatment, not a pharmacokinetic study of attapulgite as a drug. |
+| PD | Zheng_2023 | not_relevant | 0 | 0 | The paper describes the adsorption capacity of modified biochar for dyes and antibiotics, which is a physicochemical environmental engineering study, not a pharmacodynamic (drug effect) study. |
+| popPK | Zhu_2024 | irrelevant | 0 | 0 | The paper is a soil science study on heavy metal remediation using attapulgite-modified biochar, not a pharmacokinetic study. |
+| popPK | Zhu_2025 | irrelevant | 0 | 0 | The paper describes attapulgite as a material for heavy metal adsorption in soil, not as a drug for pharmacokinetic study. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Battapulgite%5D&body=Drug%3A%20attapulgite%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_attapulgite/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

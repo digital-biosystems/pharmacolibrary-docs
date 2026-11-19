@@ -1,0 +1,118 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;trovafloxacin&quot;}]"></div>
+
+# trovafloxacin
+
+- **generic name:** trovafloxacin
+- **ATC codes:** `J01MA13`
+- **DrugBank:** [DB00685](https://go.drugbank.com/drugs/DB00685) · **PubChem:** [CID 62959](https://pubchem.ncbi.nlm.nih.gov/compound/62959)
+- **molar mass:** 416.36 g/mol (C20H15F3N4O3) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Trovafloxacin is a fluoroquinolone antibiotic used to treat infections like bacterial pneumonia and gonorrhea. It is given orally or intravenously. The drug was removed from the market because of liver toxicity risks.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q544393](https://www.wikidata.org/wiki/Q544393), [Wikipedia](https://en.wikipedia.org/wiki/Trovafloxacin?oldid=1382844873) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Peterson_2002_K](drugs/drug_trovafloxacin/pd_Peterson_2002_K.md) | rate of bacterial kill ← trovafloxacin · inhibition effect | — | Peterson ML et al., Pharmacodynamics of trovafloxacin and l…, Antimicrobial agents and ch… (2002) | [10.1128/AAC.46.1.203-210.2002](https://doi.org/10.1128/AAC.46.1.203-210.2002) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Stearne_2001_B_fragilis](drugs/drug_trovafloxacin/pd_Stearne_2001_B_fragilis.md) | Bacteroides fragilis ← trovafloxacin · direct Emax (saturable) effect | — | Stearne LE et al., In vitro activity of trovafloxacin agai…, Antimicrobial agents and ch… (2001) | [10.1128/AAC.45.1.243-251.2001](https://doi.org/10.1128/AAC.45.1.243-251.2001) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [van_1999_E_R_max](drugs/drug_trovafloxacin/pd_van_1999_E_R_max.md) | growth inhibition of Staphylococcus aureus ← trovafloxacin · inhibition effect | — | van den Broek PJ et al., Intracellular activity of trovafloxacin…, The Journal of antimicrobia… (1999) | [10.1093/jac/44.2.193](https://doi.org/10.1093/jac/44.2.193) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **UGT1A1** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Annisa_2022](drugs/drug_trovafloxacin/pgx_Annisa_2022_UGT1A1_safety.md) | Annisa N et al., Transporter and metabolizer gene polymo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1063413](https://doi.org/10.3389/fphar.2022.1063413) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ABCB1** | `Q88` · AUC | transport | [Annisa_2022](drugs/drug_trovafloxacin/pgx_Annisa_2022_ABCB1_Q88.md) | Annisa N et al., Transporter and metabolizer gene polymo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1063413](https://doi.org/10.3389/fphar.2022.1063413) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **SLCO1B1** | `Q88` · AUC | transport | [Annisa_2022](drugs/drug_trovafloxacin/pgx_Annisa_2022_SLCO1B1_Q88.md) | Annisa N et al., Transporter and metabolizer gene polymo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1063413](https://doi.org/10.3389/fphar.2022.1063413) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **UGT1A9** | `Q88` · AUC | metabolism | [Annisa_2022](drugs/drug_trovafloxacin/pgx_Annisa_2022_UGT1A9_Q88.md) | Annisa N et al., Transporter and metabolizer gene polymo…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1063413](https://doi.org/10.3389/fphar.2022.1063413) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=trovafloxacin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` transport | PGx paper |
+| distribution | blood-brain barrier | `ABCB1` transport | PGx paper |
+| distribution | placenta | `ABCB1` transport | PGx paper |
+| distribution | testis | `ABCB1` transport | PGx paper |
+| metabolism | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | `UGT1A9` metabolism | PGx paper |
+| metabolism | liver | `CYP1A2` inhibitor, `SLCO1B1` transport, `UGT1A1` safety_allele, `UGT1A9` metabolism | DrugBank actor |
+| metabolism | small intestine | `UGT1A1` safety_allele | PGx paper |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` transport | PGx paper |
+| excretion | liver | `ABCB1` transport | PGx paper |
+
+<sub>Actors without a tissue in the table: TOP2A (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 12:27 | 2:10 | 0/0/0 | 0/3/0 | 1/0/3 | 32,540/2,053 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 16 matched, 16 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Peterson_2002.pdf` | Peterson ML et al., Pharmacodynamics of trovafloxacin and l…, Antimicrobial agents and ch… (2002) | pd | 5 | [10.1128/AAC.46.1.203-210.2002](https://doi.org/10.1128/AAC.46.1.203-210.2002) | [11751135](https://www.ncbi.nlm.nih.gov/pubmed/11751135) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Ross_2001.pdf` | Ross GH et al., Fluoroquinolone resistance in anaerobic…, Antimicrobial agents and ch… (2001) | pd | 5 | [10.1128/AAC.45.7.2136-2140.2001](https://doi.org/10.1128/AAC.45.7.2136-2140.2001) | [11408238](https://www.ncbi.nlm.nih.gov/pubmed/11408238) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `van_1999.pdf` | van den Broek PJ et al., Intracellular activity of trovafloxacin…, The Journal of antimicrobia… (1999) | pd | 4 | [10.1093/jac/44.2.193](https://doi.org/10.1093/jac/44.2.193) | [10473225](https://www.ncbi.nlm.nih.gov/pubmed/10473225) | metadata signals extractable PD data (EC50) |
+| `Fujiwara_2015.pdf` | Fujiwara R et al., UDP-glucuronosyltransferase (UGT) 1A1 m…, Drug metabolism and pharmac… (2015) | pgx | 8 | [10.1016/j.dmpk.2014.09.003](https://doi.org/10.1016/j.dmpk.2014.09.003) | [25760534](https://www.ncbi.nlm.nih.gov/pubmed/25760534) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+
+<sub>queue written 2026-10-07 12:27 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Chang_2013 | not_relevant | 0 | 0 | The paper investigates in vitro enzyme and transporter inhibition to predict bilirubin elevation, not the effect of a genetic variant on the pharmacokinetics or pharmacodynamics of trovafloxacin. |
+| popPK | Hamzah_2000 | irrelevant | 0 | 0 | The study is an in-vitro investigation of antimalarial activity and does not report any pharmacokinetic disposition parameters for trovafloxacin. |
+| PGx | Mitsugi_2016 | not_relevant | 2 | 0 | The paper investigates the toxicological mechanism (CXCL2 induction) of trovafloxacin acyl-glucuronide using induced cell models and knockout mice, but does not report pharmacogenomic effects on standard PK or PD parameters. |
+| popPK | Peterson_2002 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic investigation of antimicrobial efficacy (kill curves) and does not report pharmacokinetic disposition parameters such as clearance or volume. |
+| popPK | Ross_2001 | irrelevant | 1 | 0 | The study is an in vitro pharmacodynamic model assessing resistance in bacteria, not a pharmacokinetic study of the drug's disposition parameters in a biological system. |
+| PGx | Rubiano_2021 | not_relevant | 0 | 0 | The paper evaluates liver microphysiological systems for drug toxicity and metabolism using trovafloxacin but does not investigate genetic variants or pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Stearne_2001 | irrelevant | 0 | 0 | The study is an in-vitro microbiology experiment assessing antimicrobial activity (time-kill), not a pharmacokinetic study, and no disposition parameters are reported. |
+| popPK | Zinner_1998 | irrelevant | 1 | 0 | The study is an in vitro dynamic model assessing antimicrobial activity, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for trovafloxacin. |
+| popPK | van_1999 | irrelevant | 1 | 0 | The paper describes in vitro/intracellular antibacterial activity (microbiology) rather than pharmacokinetic disposition parameters for trovafloxacin. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrovafloxacin%5D&body=Drug%3A%20trovafloxacin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trovafloxacin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

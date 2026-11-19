@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 2000 mg oral (L04AA06)",
+ "model_id": "MycophenolicAcid_Rong2023_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2e-07,
+  "F": 0.9,
+  "Tlag": 597.6,
+  "VdPerKg": 0.00032571428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "k12": 0.00021442495126705653,
+  "k21": 2.263374485596708e-05,
+  "ka": 0.0007,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1450.319065930969
+ },
+ "reference_peaks": {
+  "central.C": 0.004865631057179575
+ },
+ "stop_time": 432000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

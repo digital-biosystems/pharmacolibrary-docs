@@ -1,0 +1,83 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;cetiedil&quot;}]"></div>
+
+# cetiedil
+
+- **generic name:** cetiedil
+- **ATC codes:** `C04AX26`
+- **DrugBank:** [DB13753](https://go.drugbank.com/drugs/DB13753) · **PubChem:** none
+- **molar mass:** 349.53 g/mol (C20H31NO2S) — DrugBank
+- **groups:** experimental
+
+## About
+
+Cetiedil is an experimental peripheral vasodilator that has been studied for sickle cell disease. It is administered orally in capsule form. It is currently an investigational compound and not approved for routine clinical use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q5065661](https://www.wikidata.org/wiki/Q5065661), [Wikipedia](https://en.wikipedia.org/wiki/Cetiedil?oldid=1330777862) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 19:55 | 0:41 | 0/0/0 | 0/0/0 | 0/0/0 | 29,968/468 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 17 matched, 17 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Orringer_1986.pdf` | Orringer EP et al., A single-dose pharmacokinetic study of…, Clinical pharmacology and t… (1986) | popPK | 9 | [10.1038/clpt.1986.39](https://doi.org/10.1038/clpt.1986.39) | [3512147](https://pubmed.ncbi.nlm.nih.gov/3512147) | The study reports a three-compartment model for cetiedil in humans, but specific numeric parameter values (CL, V, Q, t1/2) are not provided in the text, only concentration ranges. |
+| `Arrazola_1993.pdf` | Arrazola A et al., Cell volume regulation in rat thymocytes, The Journal of physiology (1993) | pd | 5 | [10.1113/jphysiol.1993.sp019683](https://doi.org/10.1113/jphysiol.1993.sp019683) | [8229842](https://www.ncbi.nlm.nih.gov/pubmed/8229842) | metadata signals extractable PD data (IC50) |
+| `Jensen_1998.pdf` | Jensen BS et al., Characterization of the cloned human in…, The American journal of phy… (1998) | pd | 5 | [10.1152/ajpcell.1998.275.3.C848](https://doi.org/10.1152/ajpcell.1998.275.3.C848) | [9730970](https://www.ncbi.nlm.nih.gov/pubmed/9730970) | metadata signals extractable PD data (IC50) |
+| `Dube_1987.pdf` | Dube MP et al., Bepridil and cetiedil reversibly inhibi…, Molecular endocrinology (Ba… (1987) | pd | 4 | [10.1210/mend-1-2-168](https://doi.org/10.1210/mend-1-2-168) | [2970587](https://www.ncbi.nlm.nih.gov/pubmed/2970587) | metadata signals extractable PD data (IC50) |
+| `Sandford_1992.pdf` | Sandford CA et al., Properties of a cell volume-sensitive p…, The Journal of physiology (1992) | pd | 4 | [10.1113/jphysiol.1992.sp018995](https://doi.org/10.1113/jphysiol.1992.sp018995) | [1593444](https://www.ncbi.nlm.nih.gov/pubmed/1593444) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-06 19:54 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Agre_1984 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of calmodulin inhibition and does not report any pharmacokinetic parameters for cetiedil. |
+| popPK | Arrazola_1993 | irrelevant | 0 | 0 | no_text gate: only 40 chars of text extracted (&lt; 400) |
+| PD | Arrazola_1993 | not_relevant | 0 | 0 | The paper discusses cell volume regulation in rat thymocytes and does not mention cetiedil or report any pharmacodynamic or exposure-response data for it. |
+| popPK | Barksmann_2004 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation of ion channels where cetiedil is used only as a negative control/comparator, with no pharmacokinetic parameters reported. |
+| PD | Barksmann_2004 | not_relevant | 0 | 0 | The paper reports that cetiedil had no effect on the channel, providing no numeric PD parameters or dose-response relationship for cetiedil. |
+| popPK | Benton_1996 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating the pharmacological effects of cetiedil on potassium channels, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Benton_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion channel blocking in red cells, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Dube_1987 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
+| popPK | Jensen_1998 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
+| PD | Jensen_1998 | not_relevant | 0 | 0 | The paper characterizes a cloned ion channel and does not report any pharmacodynamic or exposure-response data for the drug cetiedil. |
+| popPK | Maeno_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of neuromuscular transmission in frogs, not a pharmacokinetic study, and cetiedil is used only as a test compound for mechanism of action. |
+| popPK | Malik-Hall_2000 | irrelevant | 0 | 0 | The paper is a mechanistic study of ion channel blockers in rabbit blood cells and does not report pharmacokinetic parameters for cetiedil. |
+| popPK | Narenjkar_2004 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study reporting IC50 values for cellular inhibition, not pharmacokinetic disposition parameters. |
+| popPK | Narenjkar_2004_2 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cetiedil's effect on mast cell mediator release, reporting IC50 values rather than pharmacokinetic disposition parameters. |
+| popPK | Orringer_1986 | relevant | 9 | 2 | The study reports a three-compartment model for cetiedil in humans, but specific numeric parameter values (CL, V, Q, t1/2) are not provided in the text, only concentration ranges. |
+| popPK | Roxburgh_1996 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro pharmacological actions (K+ channel blocking, smooth muscle contraction) of cetiedil enantiomers, containing no pharmacokinetic or disposition parameters. |
+| popPK | Sandford_1992 | irrelevant | 0 | 0 | The paper is an electrophysiology study of potassium channels in hepatocytes where cetiedil is used as a pharmacological blocker, not a pharmacokinetic study reporting disposition parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcetiedil%5D&body=Drug%3A%20cetiedil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cetiedil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Ticarcillin_Economou2019_reference",
+ "molar_masses": {
+  "central.C": 0.384427
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.7805555555555555e-06,
+  "F": 0.9,
+  "MM": 0.384427,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0008065714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00021694444444444447,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10777.903474335344
+ },
+ "reference_peaks": {
+  "central.C": 0.0011481461679758564
+ },
+ "stop_time": 126000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

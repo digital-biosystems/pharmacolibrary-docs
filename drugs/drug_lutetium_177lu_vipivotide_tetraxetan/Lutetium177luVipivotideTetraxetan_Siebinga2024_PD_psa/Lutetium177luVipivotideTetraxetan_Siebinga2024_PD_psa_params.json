@@ -1,0 +1,55 @@
+{
+ "model_id": "Lutetium177luVipivotideTetraxetan_Siebinga2024_PD_psa",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.00014,
+  "exposure_per_s": 1.0,
+  "slope": 3.35e-09
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.00013999999999999996,
+  "1.0": 0.00014000334999999996
+ },
+ "stop_time": 1000.0,
+ "subtitle": "PSA against [177Lu]Lu-PSMA-I&T concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "µg/L",
+   "factor": 9.999999999999997e-07,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "MBq/L",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "µg/L",
+  "slope": {
+   "display_only": false,
+   "display_unit": "L·day−1·GBq−1",
+   "factor": 9.999999999999997e-07,
+   "si_unit": "(kg/m3)/(1)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "MBq/L",
+  "factor": 1.0,
+  "label": "[177Lu]Lu-PSMA-I&T concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "µg/L",
+  "factor": 9.999999999999997e-07,
+  "label": "PSA"
+ }
+}

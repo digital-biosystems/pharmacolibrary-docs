@@ -1,0 +1,46 @@
+{
+ "dose_source": "library default",
+ "model_id": "Hydroxychloroquine_Kolli2022_periciliary_layer",
+ "molar_masses": {
+  "retainedFraction": 0.33587599999999995
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Kolli_2022:other_prose",
+    "value_si": 55.2
+   },
+   {
+    "source": "Kolli_2022:other_prose",
+    "value_si": 41.7
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.33587599999999995,
+  "Tb[1]": 21060.000000000004,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 230.8617234468938
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9971944943908839
+ },
+ "stop_time": 115200.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

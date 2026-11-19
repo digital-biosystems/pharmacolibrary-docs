@@ -1,0 +1,64 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fentanyl_Mahdy2025_reference",
+ "molar_masses": {
+  "central.C": 0.336479
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.035,
+  0.21,
+  0.28
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Mahdy_2025:other_prose",
+    "value_si": 1.73e-06
+   },
+   {
+    "source": "Mahdy_2025:other_prose",
+    "value_si": 0.32
+   },
+   {
+    "source": "Mahdy_2025:other_prose",
+    "value_si": 1.4499999999999999e-06
+   },
+   {
+    "source": "Mahdy_2025:other_prose",
+    "value_si": 1.5599999999999999e-06
+   },
+   {
+    "source": "Mahdy_2025:other_prose",
+    "value_si": 1.2299999999999999e-06
+   },
+   {
+    "source": "Mahdy_2025:other_prose",
+    "value_si": 1.32e-06
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.7266666666666665e-05,
+  "F": 1.0,
+  "MM": 0.336479,
+  "VdPerKg": 3.5000000000000004e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.5e-08,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662076
+ },
+ "reference_peaks": {
+  "central.C": 3.327597018985617e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

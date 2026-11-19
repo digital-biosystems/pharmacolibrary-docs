@@ -1,0 +1,129 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G04B&quot;,&quot;href&quot;:&quot;atc/G04B.md&quot;},{&quot;label&quot;:&quot;sildenafil&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sildenafil_Cochiusden2020_reference&quot;,&quot;label&quot;:&quot;Cochius-den_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# sildenafil
+
+- **generic name:** sildenafil
+- **ATC codes:** `G04BE03`
+- **DrugBank:** [DB00203](https://go.drugbank.com/drugs/DB00203) · **PubChem:** [CID 5212](https://pubchem.ncbi.nlm.nih.gov/compound/5212)
+- **molar mass:** 474.576 g/mol (C22H30N6O4S) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Sildenafil is a phosphodiesterase 5 inhibitor prescribed primarily for erectile dysfunction and pulmonary arterial hypertension. The standard route is oral tablets, but it can also be administered intravenously or sublingually. It is widely used globally and is authorized in the European Union for its main indications.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q191521](https://www.wikidata.org/wiki/Q191521), [Wikipedia](https://en.wikipedia.org/wiki/Sildenafil?oldid=1383900454) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| sildenafil | parent | 474.576 | C22H30N6O4S | DrugBank | [5212](https://pubchem.ncbi.nlm.nih.gov/compound/5212) | Olguín_2017, Rhee_2022, Russo_2019, Yata_2026 |
+| desmethylsildenafil | metabolite | 460.55 | — | the paper | — | Russo_2019 |
+| N-desmethyl sildenafil | metabolite | 460.6 | — | the paper | — | Rhee_2022 |
+
+## Start here
+
+> **Cochius-den_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md?tab=Simulation) · [record](drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cochius-den_2020 · CL</text><circle cx="334.6" cy="30.0" r="4" fill="#78909c"><title>Cochius-den_2020 · CL: 6.7 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yata_2026 · CL/F ·/kg</text><circle cx="510.6" cy="46.0" r="4" fill="#ef6c00"><title>Yata_2026 · CL/F ·/kg: 67.9 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="112" viewBox="0 0 560 112" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="90" stroke="#ddd"/><text x="190.0" y="104" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="90" stroke="#ddd"/><text x="365.0" y="104" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="90" stroke="#ddd"/><text x="540.0" y="104" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rhee_2022 · V/F</text><circle cx="200.0" cy="30.0" r="4" fill="#ef6c00"><title>Rhee_2022 · V/F: 11.4 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yata_2026 · V/F ·/kg</text><circle cx="443.8" cy="46.0" r="4" fill="#ef6c00"><title>Yata_2026 · V/F ·/kg: 282.1 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Russo_2019 · V1</text><circle cx="278.6" cy="62.0" r="4" fill="#ef6c00"><title>Russo_2019 · V1: 32.1 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Cochius-den_2020 · V1</text><circle cx="343.2" cy="78.0" r="4" fill="#78909c"><title>Cochius-den_2020 · V1: 75.1 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Cochius-den_2020_reference](drugs/drug_sildenafil/Sildenafil_Cochiusden2020_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Cochius-den Otter SCM et al., Pharmacokinetic modeling of intravenous…, European journal of clinica… (2020) | [10.1007/s00228-019-02767-1](https://doi.org/10.1007/s00228-019-02767-1) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C2_reference failed (ratio None)</sub> | [Rhee_2022_reference](drugs/drug_sildenafil/Sildenafil_Rhee2022_reference.md) | — | parent + metabolite (no model) | 3 (+3 cov.) | Rhee SJ et al., Population pharmacokinetic analysis of…, Scientific reports (2022) | [10.1038/s41598-022-11038-6](https://doi.org/10.1038/s41598-022-11038-6) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: model_quarantined: Cl, Tlag left at base-class defaults</sub> | [Russo_2019_final](drugs/drug_sildenafil/Sildenafil_Russo2019_final.md) | held back | 1-compartment, oral | 5 | Russo FM et al., Pregnancy affects the pharmacokinetics…, Xenobiotica; the fate of fo… (2019) | [10.1080/00498254.2017.1422217](https://doi.org/10.1080/00498254.2017.1422217) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [↳ final_final_model_pregnant_rabbits_rse](drugs/drug_sildenafil/Sildenafil_Russo2019_final_final_model_pregnant_rabbits_rse.md) | — | parent + metabolite (no model) | 2 |  |  |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub> | [Yata_2026_reference](drugs/drug_sildenafil/Sildenafil_Yata2026_reference.md) | — | 1-compartment (no model) | 8 | Yata M et al., Population Pharmacokinetics of Sildenaf…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70057](https://doi.org/10.1111/jvp.70057) |
+| <span class="pk-rf" hidden data-species="sheep" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [De_2021_reference](drugs/drug_sildenafil/Sildenafil_De2021_reference.md) | — | 1-compartment (no model) | 0 | De Bie FR et al., Pharmacokinetics and pharmacodynamics o…, Biomedicine & pharmacothera… (2021) | [10.1016/j.biopha.2021.112161](https://doi.org/10.1016/j.biopha.2021.112161) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Milligan_2002_reference](drugs/drug_sildenafil/Sildenafil_Milligan2002_reference.md) | — | 1-compartment (no model) | 0 | Milligan PA et al., A population pharmacokinetic analysis o…, British journal of clinical… (2002) | [10.1046/j.0306-5251.2001.00032.x](https://doi.org/10.1046/j.0306-5251.2001.00032.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Olguín_2017_reference](drugs/drug_sildenafil/Sildenafil_Olgun2017_reference.md) | — | 1-compartment (no model) | 1 | Olguín HJ et al., Pharmacokinetics of sildenafil in child…, World journal of pediatrics… (2017) | [10.1007/s12519-017-0043-4](https://doi.org/10.1007/s12519-017-0043-4) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=sildenafil).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` substrate, `CYP2E1` inhibitor/substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor/substrate, `ABCC4` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/substrate, `ABCC4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC5 (inhibitor), CD274 (downregulator), ODC1 (downregulator), PDE5A (inhibitor), PDE6G (inhibitor), PDE6H (inhibitor), SERPING1 (modulator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 09:09 | 6:14 | 5/3/0 | 0/0/0 | 0/0/0 | 339,245/50,924 | einfracz / qwen3.8-27b | 9 | 3/6 | 9/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 88 matched, 20 returned
+- **screened:** 7  ·  **relevant:** 7
+- **records:** 8  ·  extracted 1  ·  needs review 4  ·  rejected 3  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gonzalez_2019.pdf` | Gonzalez D et al., Population pharmacokinetics of sildenaf…, British journal of clinical… (2019) | popPK | 10 | [10.1111/bcp.14111](https://doi.org/10.1111/bcp.14111) | [31475367](https://pubmed.ncbi.nlm.nih.gov/31475367) | The paper describes a population PK model for sildenafil in premature infants, but specific numeric parameter estimates (CL, V, etc.) are not present in the provided evidence, only qualitative model descriptions and qualitative results. |
+| `Milligan_2002.pdf` | Milligan PA et al., A population pharmacokinetic analysis o…, British journal of clinical… (2002) | popPK | 10 | [10.1046/j.0306-5251.2001.00032.x](https://doi.org/10.1046/j.0306-5251.2001.00032.x) | [11879259](https://pubmed.ncbi.nlm.nih.gov/11879259) | The paper is a population pharmacokinetic study of sildenafil in humans, and all key quantitative parameters (CL/F, V/F, ka) are explicitly provided in the results text. |
+| `Olguín_2017.pdf` | Olguín HJ et al., Pharmacokinetics of sildenafil in child…, World journal of pediatrics… (2017) | popPK | 10 | [10.1007/s12519-017-0043-4](https://doi.org/10.1007/s12519-017-0043-4) | [28791664](https://pubmed.ncbi.nlm.nih.gov/28791664) | The study reports explicit quantitative pharmacokinetic parameters (CL/F, Vd/F, ka, t1/2, AUC) for sildenafil in children with pulmonary arterial hypertension. |
+
+<sub>queue written 2026-10-07 09:04 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bender_2009 | irrelevant | 1 | 0 | The study models the pharmacokinetics of pregabalin to assess a drug-drug interaction with sildenafil; no population PK parameters (CL, V, etc.) for sildenafil itself are reported, only its effect on pregabalin clearance. |
+| popPK | Cochius-den_2020 | relevant | 10 | 2 | The paper presents a population PK model for sildenafil in newborns with CDH, but the specific numeric parameter estimates (CL, V, Q, IIV) are located in Table 1, which is not included in the provided evidence. |
+| popPK | Dresser_2000 | irrelevant | 0 | 0 | This is a general review of CYP3A4 drug interactions that mentions sildenafil only as an example of a drug causing hypotension when co-administered with inhibitors, without reporting any specific pharmacokinetic parameter values for sildenafil. |
+| popPK | Ehnes_2026 | irrelevant | 0 | 0 | The study investigates the effect of sildenafil on pulmonary diffusing capacity (DLCO) as a physiological response, not on its pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Gonzalez_2019 | relevant | 10 | 1 | The paper describes a population PK model for sildenafil in premature infants, but specific numeric parameter estimates (CL, V, etc.) are not present in the provided evidence, only qualitative model descriptions and qualitative results. |
+| popPK | Khan_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic study on myometrial relaxation and does not report pharmacokinetic parameters. |
+| popPK | Kumar_2020 | irrelevant | 0 | 0 | The study is a clinical trial assessing the efficacy of sildenafil for acute kidney injury prevention, reporting clinical outcomes and biomarkers rather than quantitative pharmacokinetic parameters (CL, V, etc.) for sildenafil. |
+| popPK | Lee_2023 | irrelevant | 1 | 1 | The study focuses on a novel analog (malonyl-sildenafil) and lacks any quantitative PK parameters (CL, V, etc.) for sildenafil itself. |
+| popPK | Läer_2019 | irrelevant | 4 | 0 | The paper is a review or methodological guide using sildenafil as a conceptual example for PBPK simulation in pediatrics, without providing original quantitative PK parameter values in the evidence. |
+| popPK | Medina_2000 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on isolated blood vessels, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Mo_2004 | irrelevant | 0 | 0 | The study is a mechanistic/cellular signaling analysis in rat platelets using sildenafil as a pharmacological tool to modulate PDE-5 activity, not a pharmacokinetic study of sildenafil disposition. |
+| popPK | Neto_2025 | irrelevant | 0 | 0 | The study uses sildenafil as a diagnostic vasodilator to assess vascular reactivity in rat arteries, not to measure sildenafil pharmacokinetic parameters. |
+| popPK | Soto_2018 | irrelevant | 0 | 0 | The study is a taste/aversion assessment of APIs, not a pharmacokinetic study, and reports no disposition parameters for sildenafil. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsildenafil%5D&body=Drug%3A%20sildenafil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sildenafil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 09:06 UTC</sub>

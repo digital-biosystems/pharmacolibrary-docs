@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 7.5 mg oral (N06DA02)",
+ "model_id": "Donepezil_Rolan2025_reference",
+ "molar_masses": {
+  "central.C": 0.3795
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.322222222222222e-06,
+  "F": 1.0,
+  "MM": 0.3795,
+  "Tlag": 3240.0,
+  "VdPerKg": 0.0009185714285714285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7.5e-06,
+  "ka": 0.00048333333333333334,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10388.77755511022
+ },
+ "reference_peaks": {
+  "central.C": 0.00010135726625991096
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

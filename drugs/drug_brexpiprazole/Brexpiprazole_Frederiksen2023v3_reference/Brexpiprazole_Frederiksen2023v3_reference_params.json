@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Brexpiprazole_Frederiksen2023v3_reference",
+ "molar_masses": {
+  "central.C": 0.43357
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  0.15,
+  12.0
+ ],
+ "parameters": {
+  "Cl": 6.222222222222222e-09,
+  "F": 1.0,
+  "MM": 0.43357,
+  "Tlag": 1479.6,
+  "VdPerKg": 0.0011600000000000002,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-07,
+  "k12": 2.4425287356321835e-06,
+  "k21": 4.945968412302576e-06,
+  "ka": 0.00028333333333333335,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 30339.60000000028
+ },
+ "reference_peaks": {
+  "central.C": 1.370107338636822e-06
+ },
+ "stop_time": 15552000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,0 +1,52 @@
+{
+ "dose_source": "paper",
+ "model_id": "Glasdegib_Lin2020v2_final_model",
+ "molar_masses": {
+  "central.C": 0.374448
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  5.0,
+  10.0,
+  20.0,
+  40.0,
+  80.0,
+  100.0,
+  120.0,
+  160.0,
+  180.0,
+  200.0,
+  270.0,
+  320.0,
+  400.0,
+  600.0,
+  640.0
+ ],
+ "parameters": {
+  "Cl": 1.7416666666666666e-06,
+  "F": 1.0,
+  "MM": 0.374448,
+  "Tlag": 0.0,
+  "VdPerKg": 4.7428571428571427e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "k12": 0.00010793172690763053,
+  "k21": 1.2833828778816426e-06,
+  "ka": 1.6666666666666667e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 138170.74148296594
+ },
+ "reference_peaks": {
+  "central.C": 8.735907861861886e-07
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

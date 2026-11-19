@@ -1,0 +1,121 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ibandronate_Nakai2016_postmenopausal_women_with_osteoporosis",
+ "molar_masses": {
+  "retainedFraction": 0.319231
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.25,
+  0.5,
+  1.0,
+  2.0,
+  20.0,
+  50.0,
+  100.0,
+  150.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 9.019999999999998e-06
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 2.43e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 4.72e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 8.599999999999999e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 1.29e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 1.66e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 3.65e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 3.12e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 9.6e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 0.000111
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 0.000272
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 0.000254
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 6.05e-05
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 0.000117
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 0.000186
+   },
+   {
+    "source": "Nakai_2016:other_prose",
+    "value_si": 0.000388
+   },
+   {
+    "source": "Nakai_2016:discussion_prose",
+    "value_si": 0.75
+   },
+   {
+    "source": "Nakai_2016:discussion_prose",
+    "value_si": 1.19
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.319231,
+  "Tb[1]": 34524.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-07
+ },
+ "reference_peak_times": {
+  "retainedFraction": 346.2925851703407
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9971323445376318
+ },
+ "stop_time": 172800.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

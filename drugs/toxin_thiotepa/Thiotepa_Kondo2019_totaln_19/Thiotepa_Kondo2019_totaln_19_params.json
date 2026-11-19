@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Thiotepa_Kondo2019_totaln_19",
+ "molar_masses": {
+  "central.C": 0.18921700000000002
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.219722222222223e-06,
+  "F": 1.0,
+  "MM": 0.18921700000000002,
+  "VdPerKg": 0.0003608285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662023
+ },
+ "reference_peaks": {
+  "central.C": 0.0003811526717250773
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

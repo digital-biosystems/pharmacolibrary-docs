@@ -1,0 +1,124 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;flurazepam&quot;}]"></div>
+
+# flurazepam
+
+- **generic name:** flurazepam
+- **ATC codes:** `N05CD01`
+- **DrugBank:** [DB00690](https://go.drugbank.com/drugs/DB00690) · **PubChem:** [CID 3393](https://pubchem.ncbi.nlm.nih.gov/compound/3393)
+- **molar mass:** 387.878 g/mol (C21H23ClFN3O) — DrugBank
+- **groups:** approved, illicit
+
+## About
+
+Flurazepam is a benzodiazepine derivative used to treat insomnia. It is given orally in forms such as capsules or tablets. It is an approved medication and one of the first benzodiazepine hypnotics to be marketed.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q418998](https://www.wikidata.org/wiki/Q418998), [Wikipedia](https://en.wikipedia.org/wiki/Flurazepam?oldid=1384271441) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Earl_2011_L_VGCC_inhibition](drugs/drug_flurazepam/pd_Earl_2011_L_VGCC_inhibition.md) | Inhibition of whole-cell Ba2+ current through recombinant L-type voltage-gated calcium channels (Ca(v)1.2/Ca(v)1.3) ← flurazepam · direct sigmoid Emax (Hill) effect | — | Earl DE et al., Inhibition of recombinant L-type voltag…, The Journal of pharmacology… (2011) | [10.1124/jpet.110.178244](https://doi.org/10.1124/jpet.110.178244) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ranna_2006_GABA_induced_current_potentiation_by_flurazepam_3_1_2_receptors](drugs/drug_flurazepam/pd_Ranna_2006_GABA_induced_current_potentiation_by_flurazepam_3.md) | GABA-induced current potentiation by flurazepam (α3β1γ2 receptors) ← flurazepam · direct sigmoid Emax (Hill) effect | — | Ranna M et al., Impact of epsilon and theta subunits on…, BMC pharmacology (2006) | [10.1186/1471-2210-6-1](https://doi.org/10.1186/1471-2210-6-1) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zheng_2020_SL](drugs/drug_flurazepam/pd_Zheng_2020_SL.md) | sleep latency ← flurazepam · inhibition effect | — | Zheng X et al., Pharmacological interventions for the t…, Sleep medicine (2020) | [10.1016/j.sleep.2020.03.022](https://doi.org/10.1016/j.sleep.2020.03.022) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zheng_2020_TST](drugs/drug_flurazepam/pd_Zheng_2020_TST.md) | total sleep time ← flurazepam · stimulation effect | — | Zheng X et al., Pharmacological interventions for the t…, Sleep medicine (2020) | [10.1016/j.sleep.2020.03.022](https://doi.org/10.1016/j.sleep.2020.03.022) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zheng_2020_WASO](drugs/drug_flurazepam/pd_Zheng_2020_WASO.md) | wake after sleep onset ← flurazepam · inhibition effect | — | Zheng X et al., Pharmacological interventions for the t…, Sleep medicine (2020) | [10.1016/j.sleep.2020.03.022](https://doi.org/10.1016/j.sleep.2020.03.022) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zheng_2020_sleep_quality](drugs/drug_flurazepam/pd_Zheng_2020_sleep_quality.md) | sleep quality ← flurazepam · stimulation effect | — | Zheng X et al., Pharmacological interventions for the t…, Sleep medicine (2020) | [10.1016/j.sleep.2020.03.022](https://doi.org/10.1016/j.sleep.2020.03.022) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chan_1985_gGABA](drugs/drug_flurazepam/pd_Chan_1985_gGABA.md) | GABA-induced conductance increase (potentiation of gGABA) ← flurazepam · direct Emax (saturable) effect | — | Chan CY et al., Modulation of neurotransmitter action:…, The Journal of neuroscience… (1985) | [10.1523/JNEUROSCI.05-09-02365.1985](https://doi.org/10.1523/JNEUROSCI.05-09-02365.1985) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Morlock_2011_I_GABA](drugs/drug_flurazepam/pd_Morlock_2011_I_GABA.md) | potentiation of GABA-induced chloride current (I(GABA)) ← flurazepam · direct Emax (saturable) effect | — | Morlock EV et al., Different residues in the GABAA recepto…, Molecular pharmacology (2011) | [10.1124/mol.110.069542](https://doi.org/10.1124/mol.110.069542) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wong_1994_Emax_of_GABA_stimulation](drugs/drug_flurazepam/pd_Wong_1994_Emax_of_GABA_stimulation.md) | GABA enhancement of [3H]flunitrazepam binding to BzR (efficacy, Emax) ← flurazepam · inhibition effect | — | Wong G et al., Chronic exposure to benzodiazepine rece…, Molecular pharmacology (1994) | — |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Zolk_2009_OCT2_mediated_uptake_inhibition_MPP_uptake_in_OCT2_expressing_HEK_cells](drugs/drug_flurazepam/pd_Zolk_2009_OCT2_mediated_uptake_inhibition_MPP_uptake_in_OCT2.md) | OCT2-mediated uptake inhibition (MPP+ uptake in OCT2-expressing HEK cells) ← flurazepam · inhibition effect | — | Zolk O et al., Functional characterization of the huma…, Drug metabolism and disposi… (2009) | [10.1124/dmd.108.023762](https://doi.org/10.1124/dmd.108.023762) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=flurazepam).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP2A6` substrate, `CYP2E1` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | `ABCB1` inhibitor, `SLC22A2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator), GABRA1 (target), TSPO (modulator).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 21:08 | 17:26 | 0/0/0 | 4/3/0 | 0/0/0 | 224,320/6,381 | ollama / glm-5.3-flash | 6 | 1/4 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 105 matched, 70 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Akutagawa_1983 | irrelevant | 0 | 0 | In-vitro pharmacology study of Ca2+ antagonism in guinea-pig atria; no PK disposition parameters for flurazepam. |
+| popPK | Amato_1999 | irrelevant | 0 | 0 | This is an electrophysiology study of GABAA receptor redox modulation; flurazepam is only a pharmacological tool, with no PK parameters. |
+| PGx | Benedetti_2001 | not_relevant | 1 | 1 | Flurazepam only mentioned as a possible MAO substrate; no gene variant effect on PK/PD parameters reported. |
+| popPK | Biscoe_1985 | irrelevant | 0 | 0 | Electrophysiology study of GABA-benzodiazepine interactions in mouse hippocampal slices; no pharmacokinetic disposition parameters for flurazepam. |
+| popPK | Bowery_1978 | irrelevant | 0 | 0 | In vitro/in vivo neuropharmacology study of GABA antagonism reversal; no PK disposition parameters for flurazepam are reported. |
+| popPK | Brodzki_2016 | irrelevant | 0 | 0 | This is an in vitro electrophysiology study of recombinant GABAA receptors; flurazepam is only a pharmacological tool, with no PK disposition parameters. |
+| popPK | Cha_2024 | irrelevant | 0 | 0 | This is a population PK study of zolpidem; flurazepam is only mentioned as a comparator benzodiazepine with no flurazepam parameters reported. |
+| popPK | Chan_1985 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology/pharmacodynamics study of benzodiazepine modulation of GABA responses in chick spinal cord neuron cultures; no PK disposition parameters (CL, V, half-life) for flurazepam are reported. |
+| popPK | Crawley_1981 | irrelevant | 1 | 0 | Behavioral pharmacology study in mice with no PK parameters for flurazepam reported. |
+| popPK | Friedman_1996 | irrelevant | 0 | 0 | In vitro receptor-binding study of GABAA receptor uncoupling; flurazepam is a treatment agent, no PK parameters reported. |
+| popPK | Hirshkowitz_1982 | irrelevant | 1 | 0 | EEG sleep-spindle pharmacology review; no PK disposition parameters for flurazepam reported. |
+| popPK | Hu_1994 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study in cultured neurons; no PK disposition parameters for flurazepam are reported. |
+| popPK | Hu_1994_2 | irrelevant | 0 | 0 | In vitro pharmacology study of chronic flurazepam effects on GABA receptors; no PK disposition parameters reported. |
+| popPK | Ishii_1983 | irrelevant | 0 | 0 | In-vitro pharmacodynamic study of flurazepam on isolated canine arteries; no PK disposition parameters reported. |
+| popPK | Jatczak-Śliwa_2020 | irrelevant | 0 | 0 | This is an electrophysiology study of GABAA receptor gating; flurazepam is only a modulator/probe, with no PK disposition parameters reported. |
+| popPK | Maksay_1984 | irrelevant | 0 | 0 | In vitro receptor binding study; flurazepam only modulates GABA binding, no PK parameters. |
+| popPK | Menon_1981 | irrelevant | 0 | 0 | This is a pharmacodynamic potency study (ED50 for blocking muscimol-induced jerks in mice), not a PK study with disposition parameters for flurazepam. |
+| popPK | Morlock_2011 | irrelevant | 0 | 0 | This is an in vitro electrophysiology/receptor-mutagenesis study with no pharmacokinetic disposition parameters for flurazepam. |
+| popPK | Nair_1990 | irrelevant | 0 | 0 | This is a dose-response efficacy study of zopiclone with flurazepam only as a comparator; no PK parameters for flurazepam are reported. |
+| popPK | Novack_1984 | irrelevant | 1 | 0 | This is a pharmacodynamic sleep study in cats with no PK parameters (CL, V, half-life with volume, or model) reported. |
+| popPK | Overton_1976 | irrelevant | 0 | 0 | Behavioral discrimination study in rats with no pharmacokinetic parameters reported. |
+| popPK | Ranna_2006 | irrelevant | 0 | 0 | In-vitro electrophysiology study of GABAA receptor subtypes in Xenopus oocytes; flurazepam is only a pharmacological modulator (EC50 values are receptor pharmacology, not PK disposition parameters). |
+| PGx | Renier_2007 | not_relevant | 2 | 1 | Zebrafish screen feasibility study; no gene variant effect on flurazepam PK/PD parameters reported. |
+| popPK | Reynolds_1996 | irrelevant | 0 | 0 | In-vitro electrophysiology study of GABAA receptor interaction; no pharmacokinetic parameters for flurazepam. |
+| popPK | Roca_1990 | irrelevant | 0 | 0 | In vitro receptor pharmacology study with no PK disposition parameters for flurazepam. |
+| popPK | Rodolico_2022 | irrelevant | 0 | 0 | This is a Cochrane review of antipsychotic dose reduction in schizophrenia with no flurazepam PK data. |
+| popPK | Rosenberg_1981 | irrelevant | 1 | 0 | Receptor-binding/tolerance study in rats with no PK disposition parameters (CL, V, half-life) for flurazepam. |
+| popPK | Rosenberg_1982 | irrelevant | 1 | 0 | Pharmacodynamic tolerance study in cats with no PK disposition parameters or numeric values reported. |
+| popPK | Sainati_1983 | irrelevant | 0 | 0 | Behavioral pharmacology study in rats with intracranial injections; no PK disposition parameters reported. |
+| popPK | Sannerud_1995 | irrelevant | 0 | 0 | Flurazepam is only a test drug in a behavioral drug discrimination study in rats; no PK parameters are reported. |
+| popPK | Sun_2023 | irrelevant | 0 | 0 | This is a cryo-EM structural/pharmacology study of GABA_A receptors; flurazepam's metabolite DID appears only as a bound ligand with a Ki, with no PK disposition parameters. |
+| popPK | Sunshine_1975 | irrelevant | 0 | 0 | This is a clinical efficacy (hypnotic activity) comparison with no pharmacokinetic parameters for flurazepam reported. |
+| popPK | Thomas_1997 | irrelevant | 0 | 0 | In vitro receptor pharmacology study; flurazepam is only a comparator ligand with an EC50, no PK disposition parameters. |
+| popPK | Tietz_1989 | irrelevant | 0 | 0 | This is a receptor-binding/pharmacodynamic study in rat brain with no PK disposition parameters for flurazepam. |
+| popPK | Westerling_1991 | irrelevant | 0 | 0 | Flurazepam is only used as a pharmacological probe of GABAA receptors in rat brain slices; no PK parameters are reported. |
+| popPK | Wong_1994 | irrelevant | 0 | 0 | In vitro receptor pharmacology study with no PK disposition parameters for flurazepam. |
+| popPK | Xie_1992 | irrelevant | 0 | 0 | In vitro electrophysiology study of benzodiazepine tolerance with no pharmacokinetic parameters for flurazepam. |
+| popPK | Yu_1988 | irrelevant | 0 | 0 | In vitro rat brain GABA chloride flux study with no pharmacokinetic parameters for flurazepam. |
+| PGx | Zolk_2009 | not_relevant | 3 | 5 | Flurazepam appears only as an OCT2 inhibitor with genotype-dependent IC50 in vitro; no PK/PD parameter of flurazepam itself is reported. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflurazepam%5D&body=Drug%3A%20flurazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flurazepam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

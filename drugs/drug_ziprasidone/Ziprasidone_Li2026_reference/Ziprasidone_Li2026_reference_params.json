@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 80 mg oral (N05AE04)",
+ "model_id": "Ziprasidone_Li2026_reference",
+ "molar_masses": {
+  "central.C": 0.41293599999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.3361111111111114e-06,
+  "F": 0.9,
+  "MM": 0.41293599999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.013571428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 29459.999997054045
+ },
+ "reference_peaks": {
+  "central.C": 7.047131529544909e-05
+ },
+ "stop_time": 1468800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

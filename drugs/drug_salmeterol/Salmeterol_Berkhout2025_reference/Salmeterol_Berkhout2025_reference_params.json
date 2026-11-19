@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "Salmeterol_Berkhout2025_reference",
+ "molar_masses": {
+  "central.C": 0.415574
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.0717592592592592e-09,
+  "F": 0.9,
+  "MM": 0.415574,
+  "Tlag": 0.0,
+  "VdPerKg": 4.671428571428571e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 1.6989466530750936e-06,
+  "k21": 3.0358227079538558e-06,
+  "ka": 2.7430555555555552e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1440659.9998559363
+ },
+ "reference_peaks": {
+  "central.C": 0.002157416033518261
+ },
+ "stop_time": 6652800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

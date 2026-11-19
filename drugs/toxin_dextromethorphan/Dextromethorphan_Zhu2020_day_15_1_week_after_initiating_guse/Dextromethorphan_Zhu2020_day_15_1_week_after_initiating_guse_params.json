@@ -1,0 +1,46 @@
+{
+ "dose_source": "paper",
+ "model_id": "Dextromethorphan_Zhu2020_day_15_1_week_after_initiating_guse",
+ "molar_masses": {
+  "retainedFraction": 0.271404
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  200.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Zhu_2020:other_prose",
+    "value_si": 1.33
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.271404,
+  "Tb[1]": 26640.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002
+ },
+ "reference_peak_times": {
+  "retainedFraction": 324.6492985971944
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9965658205748902
+ },
+ "stop_time": 162000.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

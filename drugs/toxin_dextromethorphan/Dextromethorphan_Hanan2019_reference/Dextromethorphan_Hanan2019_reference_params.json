@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 90 mg oral (R05DA09)",
+ "model_id": "Dextromethorphan_Hanan2019_reference",
+ "molar_masses": {
+  "central.C": 0.271404
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.750000000000001e-05,
+  "F": 1.0,
+  "MM": 0.271404,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0446,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 9e-05,
+  "ka": 0.00011666666666666667,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 16362.3246492986
+ },
+ "reference_peaks": {
+  "central.C": 1.836308157273126e-05
+ },
+ "stop_time": 151200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

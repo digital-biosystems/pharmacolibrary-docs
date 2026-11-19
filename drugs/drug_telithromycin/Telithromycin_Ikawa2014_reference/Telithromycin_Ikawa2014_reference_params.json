@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 800 mg oral (J01FA15)",
+ "model_id": "Telithromycin_Ikawa2014_reference",
+ "molar_masses": {
+  "central.C": 0.812018
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.555555555555555e-06,
+  "F": 1.0,
+  "MM": 0.812018,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0029242857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0008,
+  "ka": 0.0001888888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11246.76777240464
+ },
+ "reference_peaks": {
+  "central.C": 0.00202672449250942
+ },
+ "stop_time": 93600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

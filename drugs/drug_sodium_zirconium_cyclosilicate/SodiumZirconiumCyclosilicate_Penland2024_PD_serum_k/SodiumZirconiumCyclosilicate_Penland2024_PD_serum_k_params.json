@@ -1,0 +1,69 @@
+{
+ "model_id": "SodiumZirconiumCyclosilicate_Penland2024_PD_serum_k",
+ "note": "Values for the shared PD_IndirectTurnoverSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 1.68430656934,
+  "EC50": 0.0328,
+  "Emax": 63.3,
+  "exposure_per_s": 0.001,
+  "gamma": 1.36
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 1.6843065693430657,
+  "0.032799999999999996": 0.051586724941594664
+ },
+ "stop_time": 50.0,
+ "subtitle": "serum potassium concentration (serum K+) against dose",
+ "template": "PD_IndirectTurnoverSweep",
+ "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "mmol/L",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "g",
+   "factor": 0.001,
+   "si_unit": "kg"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "g",
+   "factor": 0.001,
+   "si_unit": "kg"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "mmol/L"
+ },
+ "x_axis": {
+  "display_unit": "g",
+  "factor": 0.001,
+  "label": "dose",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mmol/L",
+  "factor": 1.0,
+  "label": "serum potassium concentration (serum K+)"
+ }
+}

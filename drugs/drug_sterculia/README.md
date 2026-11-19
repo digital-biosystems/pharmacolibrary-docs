@@ -1,0 +1,136 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;sterculia&quot;}]"></div>
+
+# sterculia
+
+- **generic name:** sterculia
+- **ATC codes:** `A06AC03`
+- **DrugBank:** [DB10535](https://go.drugbank.com/drugs/DB10535) · **PubChem:** none
+- **groups:** approved
+
+## About
+
+Gum karaya is a bulk-forming laxative used to treat constipation. It is given intradermally, subcutaneously, percutaneously, or topically. It is approved for use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q421167](https://www.wikidata.org/wiki/Q421167), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Khairi_2025_elastase_inhibition](drugs/drug_sterculia/pd_Khairi_2025_elastase_inhibition.md) | elastase inhibition ← Sterculia populifolia DC stem bark extract · inhibition effect | — | Khairi N et al., Phytochemical profiling and enzyme inhi…, Narra J (2025) | [10.52225/narra.v5i3.1778](https://doi.org/10.52225/narra.v5i3.1778) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Khairi_2025_tyrosinase_inhibition](drugs/drug_sterculia/pd_Khairi_2025_tyrosinase_inhibition.md) | tyrosinase inhibition ← Sterculia populifolia DC stem bark extract · direct linear effect | — | Khairi N et al., Phytochemical profiling and enzyme inhi…, Narra J (2025) | [10.52225/narra.v5i3.1778](https://doi.org/10.52225/narra.v5i3.1778) |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 17:35 | 4:32 | 0/0/0 | 1/0/0 | 0/0/0 | 199,339/2,302 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 3/18 | 14/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 44 matched, 50 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Farag_2015.pdf` | Farag MA et al., Metabolomic fingerprint classification…, Natural product research (2015) | pd | 4 | [10.1080/14786419.2014.964710](https://doi.org/10.1080/14786419.2014.964710) | [25296242](https://www.ncbi.nlm.nih.gov/pubmed/25296242) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-04 17:32 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ahmad_2024 | irrelevant | 0 | 0 | The study is in vitro/in silico and reports predicted pharmacokinetic properties (e.g., permeability, protein binding) rather than quantitative disposition parameters (CL, V, ka) for the drug sterculia. |
+| popPK | Amrutkar_2012 | irrelevant | 0 | 0 | The study focuses on the formulation and delivery of indomethacin using Sterculia urens as a hydrogel excipient, not on the pharmacokinetics of Sterculia itself. |
+| PD | Amrutkar_2012 | not_relevant | 0 | 0 | The paper focuses on the formulation and in vivo gamma scintigraphy of a drug delivery system, reporting no pharmacodynamic or exposure-response data for Sterculia urens. |
+| popPK | BLANPIN_1963 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
+| PD | BLANPIN_1963 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the pharmacodynamic relationship. |
+| popPK | Babu_2003 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of theophylline, not sterculia. |
+| popPK | Dai_2012 | irrelevant | 0 | 0 | The paper reports on the isolation and antiproliferative activity of compounds from Sterculia tavia, not the pharmacokinetics of a drug named sterculia. |
+| popPK | Das_2017 | irrelevant | 0 | 0 | The study focuses on the antileishmanial and immunomodulatory activities of lupeol (a compound from Sterculia villosa) and does not report any pharmacokinetic parameters for sterculia. |
+| popPK | Das_2017_2 | irrelevant | 0 | 0 | The paper is an in-vitro and in-vivo pharmacological study on the antileishmanial activity and toxicity of Sterculia villosa extract, containing no pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Farag_2015 | irrelevant | 0 | 0 | The paper is a metabolomic and antioxidant activity study of plant organs, not a pharmacokinetic study, and contains no PK parameters for sterculia. |
+| PD | Farag_2015 | not_relevant | 0 | 0 | The paper is a metabolomic and chemometric study of plant organs; the reported IC50 is for the crude leaf extract's antioxidant activity, not a pharmacodynamic exposure-response relationship for a specific drug. |
+| popPK | Fazle_2022 | irrelevant | 0 | 0 | The study investigates anti-hyperglycemic activity and toxicity but does not report any pharmacokinetic parameters (CL, V, ka, etc.) for Sterculia. |
+| PD | Fazle_2022 | not_relevant | 3 | 2 | The study reports dose-dependent effects (50, 100, 200 mg/kg) on blood glucose but lacks plasma concentration data, preventing the derivation of an exposure-response (PD) relationship or specific PD parameters like EC50/Emax. |
+| popPK | Freitas_2020 | irrelevant | 0 | 0 | The study focuses on the formulation and in vitro characterization of a Sterculia striata gum-based delivery system for insulin, not the pharmacokinetics of Sterculia itself. |
+| popPK | Getyala_2013 | irrelevant | 0 | 0 | The study focuses on the formulation of Losartan potassium floating tablets, not the pharmacokinetics of sterculia. |
+| PD | Getyala_2013 | not_relevant | 0 | 0 | The paper focuses on the formulation and in vitro/in vivo evaluation of floating tablets for losartan potassium, with no pharmacodynamic or exposure-response analysis. |
+| popPK | Jamil_2017 | irrelevant | 0 | 0 | The study focuses on the in vitro formulation and dissolution of isoniazid using karaya gum, not the pharmacokinetics of sterculia. |
+| PD | Jamil_2017 | not_relevant | 0 | 0 | The paper describes in vitro dissolution studies of isoniazid formulations using karaya gum, not a pharmacodynamic or exposure-response analysis for sterculia. |
+| popPK | Khairi_2025 | irrelevant | 0 | 0 | The study is an in-vitro phytochemical and enzyme inhibition assay (tyrosinase/elastase) with no pharmacokinetic parameters reported. |
+| popPK | Kr_2017 | irrelevant | 0 | 0 | The study focuses on the in-vitro solubility and dissolution of albendazole microcrystals, not the pharmacokinetics of sterculia. |
+| popPK | Kumari_2025 | irrelevant | 0 | 0 | The paper is a review of polysaccharide-based drug delivery systems where sterculia gum is mentioned as a polymer excipient, not as the subject drug for pharmacokinetic analysis. |
+| PD | Kumari_2025 | not_relevant | 0 | 0 | The paper is a review of polysaccharide-based mucoadhesive hydrogels and does not report any pharmacodynamic or exposure-response data for sterculia. |
+| popPK | Laha_2019 | irrelevant | 0 | 0 | The study focuses on bosentan delivery using propyl karaya gum nanogels, not the pharmacokinetics of sterculia. |
+| PD | Laha_2019 | not_relevant | 0 | 0 | The paper focuses on the formulation and in vitro release of bosentan nanogels, mentioning only qualitative in vivo anti-hypertensive activity without providing any numeric PD parameters or exposure-response data. |
+| popPK | Lyzu_2022 | irrelevant | 0 | 0 | The paper is a phytochemical and in-silico study of plant extracts, not a pharmacokinetic study reporting quantitative disposition parameters for a specific drug. |
+| popPK | Mallika_2025 | irrelevant | 0 | 0 | The paper describes the photocatalytic and antimicrobial properties of a gum karaya-based hydrogel for dye degradation, containing no pharmacokinetic data for the drug sterculia. |
+| PD | Mallika_2025 | not_relevant | 0 | 0 | The paper describes a photocatalytic hydrogel material for dye degradation and antimicrobial activity, not a pharmacodynamic study of a drug (sterculia) with exposure-response or dose-response parameters. |
+| popPK | Moin_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of diltiazem (a model drug) in rabbits, using karaya gum (derived from Sterculia) only as an excipient/polymer matrix, not as the subject drug. |
+| popPK | Murali_2002 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of nimodipine using gum karaya as a carrier, not sterculia. |
+| popPK | Nath_2013 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of azathioprine using Sterculia gum as a formulation excipient, not Sterculia itself. |
+| PD | Nath_2013 | not_relevant | 0 | 0 | The paper focuses on formulation development and PK parameters (Tmax, Cmax, Ka) for azathioprine delivery, with no pharmacodynamic or exposure-response analysis reported. |
+| popPK | Nath_2013_2 | irrelevant | 1 | 1 | The study investigates sterculia gum as a drug carrier for azathioprine, not as the subject drug, and reports PK parameters for azathioprine/6-MP rather than sterculia. |
+| PD | Nath_2013_2 | not_relevant | 0 | 0 | The paper focuses on formulation development and PK parameters (Cmax, Tmax, AUC) for a drug delivery system, but does not report any pharmacodynamic (PD) or exposure-response relationship for sterculia or the drug. |
+| popPK | Onikanni_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacological effects (antioxidant, antidiabetic, neuroprotective) of Sterculia tragacantha extract and does not report any pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Oppong_2018 | irrelevant | 0 | 0 | The paper is a review of ethnopharmacology and phytochemistry that explicitly states pharmacokinetic studies are a scientific gap, containing no quantitative PK parameters. |
+| popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain any pharmacokinetic data for sterculia. |
+| PD | Papadopoulou_2025 | not_relevant | 0 | 0 | The paper is a review on marine by-products for cosmetics and does not contain any pharmacodynamic or exposure-response data for sterculia. |
+| popPK | Pasupathi_2023 | irrelevant | 0 | 0 | The paper describes the use of Sterculia foetida pods as a sorbent material for removing pollutants, not as a drug for pharmacokinetic analysis. |
+| PD | Pasupathi_2023 | not_relevant | 0 | 0 | The paper describes the sorption of pollutants by Sterculia foetida pod, which is a material science/environmental chemistry study, not a pharmacodynamic or exposure-response analysis of a drug. |
+| popPK | Patil_2014 | irrelevant | 0 | 0 | The study focuses on the formulation of Cefpodoxime Proxetil tablets using Karaya gum (derived from Sterculia) as an excipient, and does not report pharmacokinetic parameters for Sterculia itself. |
+| popPK | Patil_2015 | irrelevant | 0 | 0 | The study focuses on the formulation of lafutidine tablets using karaya gum (derived from Sterculia) as an excipient, and does not report pharmacokinetic parameters for Sterculia itself. |
+| popPK | Prastiwi_2022 | irrelevant | 0 | 0 | The paper is an in-vitro study on arginase inhibitory and antioxidant activity of Sterculia comosa extracts, containing no pharmacokinetic parameters. |
+| popPK | Rabbi_2021 | irrelevant | 0 | 0 | The paper reports on the isolation and cytotoxicity of compounds from Sterculia diversifolia, not the pharmacokinetics of the drug sterculia. |
+| popPK | Rahamathulla_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Losartan Potassium, not Sterculia (which is only mentioned as the source of the excipient Karaya Gum). |
+| popPK | Rehman_2021 | irrelevant | 0 | 0 | The study focuses on the formulation and in vitro release of cetirizine HCl using sterculia gum as a polymer carrier, not on the pharmacokinetics of sterculia itself. |
+| PD | Rehman_2021 | not_relevant | 0 | 0 | The paper focuses on the formulation, in vitro release, and acute toxicity of a drug delivery system, reporting no pharmacodynamic or exposure-response data for sterculia. |
+| popPK | Reolon_2023 | irrelevant | 0 | 0 | The paper focuses on the formulation and in vitro characterization of topical films containing 3,3'-diindolylmethane (DIM), not the pharmacokinetics of sterculia (which is only mentioned as the source of karaya gum). |
+| PD | Reolon_2023 | not_relevant | 3 | 2 | The paper reports a single IC50 value for cell viability (dose-response) but lacks a formal PD model, concentration-effect curve fitting, or simultaneous PK/PD analysis required for extractable PD parameters. |
+| popPK | Riwu_2024 | irrelevant | 0 | 0 | The study investigates the anti-inflammatory effects of Sterculia quadrifida on cytokine levels in a dengue model, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PD | Riwu_2024 | not_relevant | 2 | 1 | The study reports only qualitative group comparisons of cytokine levels at a single fixed dose without measuring drug concentrations or fitting a dose-response/PD model. |
+| popPK | Sana_2025 | irrelevant | 0 | 0 | The paper investigates the in-vitro properties of zinc oxide nanoflowers biofabricated from karaya gum, not the pharmacokinetics of sterculia. |
+| PD | Sana_2025 | not_relevant | 0 | 0 | The paper investigates zinc oxide nanoflowers from karaya gum, not the drug sterculia, and reports in vitro IC50 values for a nanomaterial rather than a pharmacodynamic model for the specified drug. |
+| popPK | Singh_2007 | irrelevant | 0 | 0 | The study focuses on the in vitro formulation and release of metoclopramide, not the pharmacokinetics of sterculia. |
+| popPK | Susanto_2026 | irrelevant | 0 | 0 | The study focuses on molecular docking, nanoliposome formulation, and in-vitro cytotoxicity, reporting no in-vivo or in-vitro pharmacokinetic parameters (CL, V, ka, etc.) for sterculia. |
+| popPK | Thabet_2018 | irrelevant | 0 | 0 | The paper is a review of the medicinal values and chemical composition of Sterculia and Brachychiton species, containing no pharmacokinetic studies or quantitative disposition parameters. |
+| PD | Thabet_2018 | not_relevant | 0 | 0 | The paper is a comprehensive review of ethnopharmacology, phytochemistry, and drug delivery applications of Sterculia and Brachychiton, containing no pharmacokinetic or pharmacodynamic modeling or numeric exposure-response data. |
+| popPK | Thabet_2018_2 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on Brachychiton species (related to Sterculia) focusing on anti-allergic and anti-inflammatory activities, with no pharmacokinetic parameters reported. |
+| PD | Thabet_2018_2 | not_relevant | 0 | 0 | The paper studies Brachychiton species, not Sterculia, and reports in vitro IC50 values for plant extracts rather than a pharmacodynamic exposure-response relationship for a specific drug. |
+| popPK | Troches-Mafla_2025 | irrelevant | 0 | 0 | The paper is a review of diltiazem hydrochloride, not sterculia, and contains no pharmacokinetic data for the target drug. |
+| PD | Troches-Mafla_2025 | not_relevant | 0 | 0 | The paper is a review of formulation technologies for diltiazem and does not report any pharmacodynamic or exposure-response data for sterculia. |
+| popPK | Vats_2025 | irrelevant | 0 | 0 | The paper is a review of *Tecomella undulata*, not *Sterculia*, and contains no pharmacokinetic data. |
+| PD | Vats_2025 | not_relevant | 0 | 0 | The paper is a review of Tecomella undulata (desert teak), not Sterculia, and contains no pharmacodynamic or exposure-response data. |
+| popPK | Waiganjo_2020 | irrelevant | 0 | 0 | The study investigates the in vitro and in vivo antiplasmodial and cytotoxic activities of plant extracts, not the pharmacokinetic parameters of sterculia. |
+| PD | Waiganjo_2020 | not_relevant | 3 | 3 | The paper reports single-point IC50 values and in vivo suppression data for plant extracts, but lacks a formal dose-response curve, PK/PD modeling, or exposure-response analysis required for extractable PD parameters. |
+| popPK | Zahiruddin_2021 | irrelevant | 0 | 0 | The study investigates the immunomodulatory activity of a polyherbal combination in mice and does not involve the drug sterculia or report any pharmacokinetic parameters. |
+| PD | Zahiruddin_2021 | not_relevant | 0 | 0 | The paper does not mention sterculia and focuses on a polyherbal combination of other plants, reporting only qualitative dose-response trends without numeric PD parameters. |
+| popPK | Zhou_2024 | irrelevant | 0 | 0 | The paper focuses on the formulation of Pickering emulsions for beta-carotene and does not involve the drug sterculia or any pharmacokinetic parameters. |
+| PGx | van_2008 | not_relevant | 0 | 0 | The paper investigates the potential of plant extracts to inhibit or induce CYP450 enzymes (drug-drug interactions), but it does not report how a specific human gene variant or genotype alters the pharmacokinetics or pharmacodynamics of Sterculia. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsterculia%5D&body=Drug%3A%20sterculia%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sterculia/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

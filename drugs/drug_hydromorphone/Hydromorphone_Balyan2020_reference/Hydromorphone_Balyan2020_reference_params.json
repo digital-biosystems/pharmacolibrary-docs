@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 4 mg parenteral (N02AA03)",
+ "model_id": "Hydromorphone_Balyan2020_reference",
+ "molar_masses": {
+  "central.C": 0.28533769999999997
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2466666666666665e-05,
+  "F": 1.0,
+  "MM": 0.28533769999999997,
+  "VdPerKg": 0.0004714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4e-06,
+  "k12": 9.545454545454545e-05,
+  "k21": 2.1575342465753424e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662034
+ },
+ "reference_peaks": {
+  "central.C": 5.594064920364224e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,0 +1,55 @@
+{
+ "model_id": "Fluorouracil_Kobuchi2014_PD_hb",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 15.0,
+  "exposure_per_s": 1.0,
+  "slope": 2.8
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 15.0,
+  "1.0": 17.8
+ },
+ "stop_time": 1000.0,
+ "subtitle": "hemoglobin (Hb) concentrations (Hb) against 5-FU concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "g•dL -1",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "μg•mL⁻¹",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "g•dL⁻¹",
+  "slope": {
+   "display_only": true,
+   "display_unit": "mL•μg -1",
+   "factor": 1.0,
+   "si_unit": "1"
+  }
+ },
+ "x_axis": {
+  "display_unit": "μg•mL⁻¹",
+  "factor": 1.0,
+  "label": "5-FU concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "g•dL -1",
+  "factor": 1.0,
+  "label": "hemoglobin (Hb) concentrations (Hb)"
+ }
+}

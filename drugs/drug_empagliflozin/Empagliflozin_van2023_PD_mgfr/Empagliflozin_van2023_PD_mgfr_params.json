@@ -1,0 +1,49 @@
+{
+ "model_id": "Empagliflozin_van2023_PD_mgfr",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1.0,
+  "slope": -1.3e-08
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.0": -1.3000000000000004e-08
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Measured glomerular filtration rate (mGFR) against dose",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "exposure": {
+   "display_only": true,
+   "display_unit": "nmol/L*h",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "mL/min",
+  "slope": {
+   "display_only": false,
+   "display_unit": "mL/min",
+   "factor": 1.666666666666667e-08,
+   "si_unit": "meter ** 3 / second"
+  }
+ },
+ "x_axis": {
+  "display_unit": "nmol/L*h",
+  "factor": 1.0,
+  "label": "dose",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mL/min",
+  "factor": 1.0,
+  "label": "Measured glomerular filtration rate (mGFR)"
+ }
+}

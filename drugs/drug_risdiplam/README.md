@@ -1,0 +1,93 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M09A&quot;,&quot;href&quot;:&quot;atc/M09A.md&quot;},{&quot;label&quot;:&quot;risdiplam&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risdiplam_Cleary2023_reference&quot;,&quot;label&quot;:&quot;Cleary_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# risdiplam
+
+- **generic name:** risdiplam
+- **ATC codes:** `M09AX10`
+- **DrugBank:** [DB15305](https://go.drugbank.com/drugs/DB15305) · **PubChem:** none
+- **molar mass:** 401.474 g/mol (C22H23N7O) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+It is given by mouth in tablet or powder form. It is approved for use in the United States and authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q48969152](https://www.wikidata.org/wiki/Q48969152), [Wikipedia](https://en.wikipedia.org/wiki/Risdiplam?oldid=1369496707) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| risdiplam | parent | 401.474 | C22H23N7O | DrugBank | — | Cleary_2023 |
+
+## Start here
+
+> **Cleary_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> SMA patients and healthy subjects. [Run it in the simulator](drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md?tab=Simulation) · [record](drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T6_deviations</sub> | [Cleary_2023_reference](drugs/drug_risdiplam/Risdiplam_Cleary2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 (+2 cov.) | Cleary Y et al., Estimation of FMO3 Ontogeny by Mechanis…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01241-7](https://doi.org/10.1007/s40262-023-01241-7) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=risdiplam).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | mammary gland | `ABCG2` substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` substrate | DrugBank actor |
+| distribution | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A7` substrate, `FMO3` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP2J2` substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` substrate, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` substrate, `ABCG2` substrate, `SLC47A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: FMO1 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 03:45 | 1:09 | 1/0/0 | 0/0/0 | 0/0/0 | 141,389/11,804 | einfracz / qwen3.8-27b | 9 | 0/2 | 9/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 12 matched, 12 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Crawford_2025 | irrelevant | 0 | 0 | This is a clinical efficacy and safety trial for apitegromab, not a pharmacokinetic study of risdiplam. |
+| popPK | Pane_2026 | irrelevant | 0 | 0 | The study is a clinical trial of onasemnogene abeparvovec for spinal muscular atrophy and does not report pharmacokinetic parameters for risdiplam, which is only mentioned as a prior therapy in a small subset of patients. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brisdiplam%5D&body=Drug%3A%20risdiplam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_risdiplam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:44 UTC</sub>

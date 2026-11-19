@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Imipenem_Qiao2026_final",
+ "molar_masses": {
+  "central.C": 0.299345
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  500.0,
+  1000.0
+ ],
+ "parameters": {
+  "Cl": 1.688888888888889e-06,
+  "F": 1.0,
+  "MM": 0.299345,
+  "VdPerKg": 0.00034857142857142856,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "k12": 3.6316029143898004e-05,
+  "k21": 7.384259259259259e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662044
+ },
+ "reference_peaks": {
+  "central.C": 0.01449386537911201
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

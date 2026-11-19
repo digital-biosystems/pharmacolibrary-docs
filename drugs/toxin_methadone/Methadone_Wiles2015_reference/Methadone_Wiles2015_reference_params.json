@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 25 mg oral (N07BC02)",
+ "model_id": "Methadone_Wiles2015_reference",
+ "molar_masses": {
+  "central.C": 0.309453
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.4833333333333334e-06,
+  "F": 1.0,
+  "MM": 0.309453,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0025285714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "ka": 0.0007555555555555556,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 5713.827655310622
+ },
+ "reference_peaks": {
+  "central.C": 0.000130959478552639
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

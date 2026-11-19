@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg oral (J01MA01)",
+ "model_id": "Ofloxacin_AlShaer2019_reference",
+ "molar_masses": {
+  "central.C": 0.3613675
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.7277777777777778e-06,
+  "F": 1.0,
+  "MM": 0.3613675,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0008642857142857142,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "ka": 0.0008194444444444445,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4617.712071301186
+ },
+ "reference_peaks": {
+  "central.C": 0.005854796202192365
+ },
+ "stop_time": 126000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

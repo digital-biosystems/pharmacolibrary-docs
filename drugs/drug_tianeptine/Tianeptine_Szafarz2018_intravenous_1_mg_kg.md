@@ -1,0 +1,223 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;tianeptine&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/&quot;},{&quot;label&quot;:&quot;Szafarz_2018 \u00b7 intravenous_1_mg_kg&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intravenous_1_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intravenous_1_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# tianeptine — `Tianeptine_Szafarz2018_intravenous_1_mg_kg`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+
+> The tianeptine model was rejected because it used a single-compartment structure instead of the reported parent-metabolite topology.
+
+<div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Szafarz2018_intravenous_1_mg_kg" status="rejected" stale="false" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></div>
+
+## Citation
+Szafarz M, Wencel A, Pociecha K, Fedak FA, Wlaź P, Wyska E. Pharmacokinetic study of tianeptine and its active metabolite MC5 in rats following different routes of administration using a novel liquid chromatography tandem mass spectrometry analytical method. Naunyn-Schmiedeberg's archives of pharmacology 391(2):185–196 (2018).
+  ·  DOI: [10.1007/s00210-017-1448-2](https://doi.org/10.1007/s00210-017-1448-2)
+
+## Population and dosing
+
+**Population:** rats · condition healthy · age group adult · n = 3.
+
+**Dosing:** 70, 700 mg, other, single.
+
+> **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
+
+## Model
+
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 8 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg.svg" alt="Tianeptine_Szafarz2018_intravenous_1_mg_kg diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| t max (h) | tmax | 86.6 | h |
+| λ z (h−1) | kel | 41.7 | h−1 |
+| t 0.5λz (h) | t1/2z | 64.34 | h |
+| V z(V z/F) (L/kg) | V | 40.25 | L/kg |
+| AUC0-inf (mg∙h/L) | AUC∞ | 19.44 | mg∙h/L |
+| CL/(CL/F) (L/h/kg) | CL/F | 21.39 | L/h/kg |
+| V ss (L/kg) | Vss | 55.64 | L/kg |
+| MRT (h) | MRT | 32.64 | h |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**The tianeptine model was rejected because it used a single-compartment structure instead of the reported parent-metabolite topology.**
+
+The record specifies a parent-metabolite structure with metabolite MC5, yet the constructed model used a single central compartment structure. Additionally, the absorption rate constant was not reported in the source and was defaulted rather than estimated. A second reader also disputed the parameterization, identifying the model as mechanistic rather than apparent. Extracted — tianeptine: tmax 86.6 h, kel 41.7 h−1, t1/2z 64.3 h, V 40.2 L/kg, AUC∞ 19.4 mg∙h/L, CL/F 21.4 L/h/kg, Vss 55.6 L/kg, MRT 32.6 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tianeptine → mc5 (metabolism), the second reading not captured → not captured (not captured); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| t max (h) | `Q56` · tmax | 86.6 | h | 3.118e+05 | s | h | space_fold (0.95) | Tab3:row4:col4 |
+| λ z (h−1) | `Q47` · kel | 41.7 | h−1 | 0.01158 | 1/s | 1/h | space_fold (0.95) | Tab3:row5:col2, Tab3:row5:col4 |
+| t 0.5λz (h) | `Q57` · t1/2z | 64.34 | h | 2.316e+05 | s | h | llm (0.6) | Tab3:row6:col2, Tab3:row6:col4 |
+| V z(V z/F) (L/kg) | `Q61` · V | 40.25 | L/kg | 2.817 | m3 | l/kg | space_fold (0.95) | Tab3:row7:col2, Tab3:row7:col4 |
+| AUC0-inf (mg∙h/L) | `Q17` · AUC∞ | 19.44 | mg∙h/L |  |  | (h·mg)/l | exact (1) | Tab3:row8:col2, Tab3:row8:col4 |
+| CL/(CL/F) (L/h/kg) | `Q27` · CL/F | 21.39 | L/h/kg | 0.0004159 | m3/s | l/(h·kg) | llm_confirmed (0.6) | Tab3:row9:col2, Tab3:row9:col4 |
+| V ss (L/kg) | `Q65` · Vss | 55.64 | L/kg | 3.895 | m3 | l/kg | space_fold (0.95) | Tab3:row10:col2 |
+| MRT (h) | `Q53` · MRT | 32.64 | h | 1.175e+05 | s | h | exact (1) | Tab3:row11:col2, Tab3:row11:col4 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
+**Interpretation flags:**
+- dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['Tab3:row0:col1', 'Tab3:row0:col2', 'Tab3:row0:col3', 'Tab3:row0:col4'])
+- dropped unlinked row (NIL): 'C o/C max (mg/L)' — extend the ontology if this is a real PK parameter (source ['Tab3:row3:col2', 'Tab3:row3:col4'])
+- dropped value-less row: 'Table 3. Serum pharmacokinetic parameters calculated from concentration vs. time data (n = 3) of tianeptine and MC5 metabolite determined by non-compartmental analysis after a single intravenous or intraperitoneal administration of tianeptine to rats at a dose of 1 or 10 mg/kg, respectively. Data are presented as geometric mean (GM), 90% confidence interval (CI), and coefficient of variation (CV)' (captured trailing unit 'CV' for child rows)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tianeptine
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- population split: 'intravenous 1 mg/kg' subgroup of Szafarz_2018 (paper reports 3 populations: estimate, intraperitoneal 10 mg/kg, intravenous 1 mg/kg)
+- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 12 linked by role; re-tagged parent→MC5 ×4
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
+
+**Extraction notes:**
+- unparsed cell Tab3:row3:col1 = '1.27(0.86–1.9)'
+- unparsed cell Tab3:row3:col3 = '0.117(0.064–0.212)'
+- unparsed cell Tab3:row3:col5 = '6.65(6.44–6.87)'
+- unparsed cell Tab3:row3:col7 = '2.02(1.1–3.43)'
+- unparsed cell Tab3:row4:col3 = '0.4(0.054–2.89)'
+- unparsed cell Tab3:row5:col1 = '0.59(0.25–1.42)'
+- unparsed cell Tab3:row5:col3 = '0.09(0.085–0.099)'
+- unparsed cell Tab3:row5:col5 = '0.475(0.332–0.68)'
+- unparsed cell Tab3:row5:col7 = '0.187(0.07–0.498)'
+- unparsed cell Tab3:row6:col1 = '1.16(0.49–2.75)'
+- unparsed cell Tab3:row6:col3 = '7.53(6.98–8.13)'
+- unparsed cell Tab3:row6:col5 = '1.46(1.018–2.085)'
+- unparsed cell Tab3:row6:col7 = '3.69(1.39–9.83)'
+- unparsed cell Tab3:row7:col1 = '2.41(0.91–6.4)'
+- unparsed cell Tab3:row7:col5 = '6.51(4.03–10.53)'
+- unparsed cell Tab3:row8:col1 = '1954.02(1411.02–2705.94)'
+- unparsed cell Tab3:row8:col3 = '2371.56(1617.78–3476.46)'
+- unparsed cell Tab3:row8:col5 = '11,621.28(9737.58–13,869.36)'
+- unparsed cell Tab3:row8:col7 = '14,415.96(12,323.88–16,863.24)'
+- unparsed cell Tab3:row9:col1 = '1.84(1.33–2.55)'
+- unparsed cell Tab3:row9:col5 = '3.1(2.59–3.69)'
+- unparsed cell Tab3:row10:col1 = '2.03(0.89–4.62)'
+- unparsed cell Tab3:row11:col1 = '1.25(0.66–2.36)'
+- unparsed cell Tab3:row11:col3 = '8.28(6.53–10.5)'
+- unparsed cell Tab3:row11:col5 = '0.66(0.51–0.87)'
+- unparsed cell Tab3:row11:col7 = '4.1(1.83–9.24)'
+- companion parameter table 4 transcribed (13 record(s))
+- LLM selected parameter table(s) 3, 4
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['tianeptine', 'mc5', 'metabolism']] | [['', '', '']] | mismatch |
+| `gpt-oss-120b` | `parameters[c o/c max]` |  | 23.64 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 8 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Tab3:row8:col2', 'Tab3:row8:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab3:row9:col2', 'Tab3:row9:col4'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Tab3:row5:col2', 'Tab3:row5:col4'] |
+| C5_dimension_Q53 | pass | [time] |  | ['Tab3:row11:col2', 'Tab3:row11:col4'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Tab3:row4:col4'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Tab3:row6:col2', 'Tab3:row6:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab3:row7:col2', 'Tab3:row7:col4'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Tab3:row10:col2'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.5e+03 L/h | ['Tab3:row9:col2', 'Tab3:row9:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.82e+03 L | ['Tab3:row7:col2', 'Tab3:row7:col4'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 3.89e+03 L | ['Tab3:row10:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | fail | Metabolite_C (measured=tianeptine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | deviation_id: not acceptable; defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | fail | 7.53 | 2.219 | 0.2947 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1.16 | 2.219 | 1.913 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 2.219 |  | non-numeric value |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 70 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 70, 700 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg/Tianeptine_Szafarz2018_intravenous_1_mg_kg_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Tianeptine_Szafarz2018_intravenous_1_mg_kg_params.json` · controls `Tianeptine_Szafarz2018_intravenous_1_mg_kg_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btianeptine%5D%20Tianeptine_Szafarz2018_intravenous_1_mg_kg&body=Drug%3A%20tianeptine%0ARecord%3A%20Tianeptine_Szafarz2018_intravenous_1_mg_kg%0APaper%3A%20Szafarz_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-06 23:48 UTC</sub>

@@ -1,0 +1,82 @@
+{
+ "dose_source": "paper",
+ "model_id": "Pramipexole_Chen2026_fasting_study",
+ "molar_masses": {
+  "retainedFraction": 0.211327
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.375
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Chen_2026:other_prose",
+    "value_si": 4.5e-07
+   },
+   {
+    "source": "Chen_2026:other_prose",
+    "value_si": 4.6999999999999995e-07
+   },
+   {
+    "source": "Chen_2026:other_prose",
+    "value_si": 5.2e-07
+   },
+   {
+    "source": "Chen_2026:other_prose",
+    "value_si": 5.3e-07
+   },
+   {
+    "source": "Chen_2026:other_prose",
+    "value_si": 96.8
+   },
+   {
+    "source": "Chen_2026:other_prose",
+    "value_si": 97.43
+   },
+   {
+    "source": "Chen_2026:discussion_prose",
+    "value_si": 4.5e-07
+   },
+   {
+    "source": "Chen_2026:discussion_prose",
+    "value_si": 4.6999999999999995e-07
+   },
+   {
+    "source": "Chen_2026:discussion_prose",
+    "value_si": 13.0
+   },
+   {
+    "source": "Chen_2026:discussion_prose",
+    "value_si": 5.2e-07
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.211327,
+  "Tb[1]": 30995.999999999996,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.75e-07
+ },
+ "reference_peak_times": {
+  "retainedFraction": 317.434869739479
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9971278405303781
+ },
+ "stop_time": 158400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Atracurium_Nie2023_reference",
+ "molar_masses": {
+  "central.C": 0.9291609999999999
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.283333333333335e-06,
+  "F": 1.0,
+  "MM": 0.9291609999999999,
+  "VdPerKg": 0.0004642857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.0020940170940170937,
+  "k21": 0.0008150365934797071,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662083
+ },
+ "reference_peaks": {
+  "central.C": 5.5921409976072326e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

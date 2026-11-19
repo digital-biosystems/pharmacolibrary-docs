@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 30 mg oral (N05BE01)",
+ "model_id": "Buspirone_Zhang2024v2_reference",
+ "molar_masses": {
+  "central.C": 0.38550310000000004
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.972222222222223e-07,
+  "F": 1.0,
+  "MM": 0.38550310000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002242857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-05,
+  "ka": 0.00029444444444444445,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13851.703406813627
+ },
+ "reference_peaks": {
+  "central.C": 0.00017673122536515965
+ },
+ "stop_time": 691200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

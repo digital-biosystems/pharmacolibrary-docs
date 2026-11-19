@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 2000 mg oral (A10BA02)",
+ "model_id": "D_11Dimethylbiguanide_Jeong2021_estimate_cv_mouse",
+ "molar_masses": {
+  "central.C": 0.129167
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.7499999999999998e-08,
+  "F": 0.995,
+  "MM": 0.129167,
+  "Tlag": 0.0,
+  "VdPerKg": 0.003942857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "ka": 0.00010416666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 68610.3870758856
+ },
+ "reference_peaks": {
+  "central.C": 0.007162240042533596
+ },
+ "review_status": "needs_review",
+ "stop_time": 15552000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,55 @@
+{
+ "model_id": "Vilanterol_Kempsford2014_PD_hr",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 23.6,
+  "exposure_per_s": 1e-09,
+  "slope": 17300000.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 23.6,
+  "1e-09": 23.6173
+ },
+ "stop_time": 1000.0,
+ "subtitle": "maximal heart rate (HR) against VI concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "beats min−1",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "pg ml−1",
+   "factor": 1e-09,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "beats min−1",
+  "slope": {
+   "display_only": false,
+   "display_unit": "beats min−1 pg−1 ml",
+   "factor": 999999999.9999999,
+   "si_unit": "(1)/(kg/m3)"
+  }
+ },
+ "x_axis": {
+  "display_unit": "pg ml−1",
+  "factor": 1e-09,
+  "label": "VI concentration",
+  "per_s": 1e-09,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "beats min−1",
+  "factor": 1.0,
+  "label": "maximal heart rate (HR)"
+ }
+}

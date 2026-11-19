@@ -1,0 +1,101 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;fulvestrant&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Chigutsa_2026_TS&quot;,&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 TS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# fulvestrant
+
+- **generic name:** fulvestrant
+- **ATC codes:** `L02BA03`
+- **DrugBank:** [DB00947](https://go.drugbank.com/drugs/DB00947) · **PubChem:** [CID 17756771](https://pubchem.ncbi.nlm.nih.gov/compound/17756771)
+- **molar mass:** 606.78 g/mol (C32H47F5O3S) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Fulvestrant is a selective estrogen receptor degrader used to treat advanced breast cancer in postmenopausal women. It is administered as an intramuscular injection solution. The medication is authorised in the European Union and used in clinical practice.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q5508491](https://www.wikidata.org/wiki/Q5508491), [Wikipedia](https://en.wikipedia.org/wiki/Fulvestrant?oldid=1368397620) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Robertson_2004_reference](drugs/drug_fulvestrant/Fulvestrant_Robertson2004_reference.md) | — | 1-compartment (no model) | 0 | Robertson JF et al., Pharmacokinetic profile of intramuscula…, Clinical pharmacokinetics (2004) | [10.2165/00003088-200443080-00003](https://doi.org/10.2165/00003088-200443080-00003) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Chigutsa_2026_TS](drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md) | Tumor size ← abemaciclib + fulvestrant · disease-progression model | ▶ model + simulator | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=fulvestrant).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ESR1 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 22:16 | 1:50 | 0/1/0 | 1/0/0 | 0/0/0 | 213,246/10,549 | einfracz / qwen3.8-27b | 5 | 2/3 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 22 matched, 20 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Daripelli_2026.pdf` | Daripelli S et al., Model-based steady state pharmacokineti…, Xenobiotica; the fate of fo… (2026) | popPK | 9 | [10.1080/00498254.2026.2637031](https://doi.org/10.1080/00498254.2026.2637031) | [41744318](https://pubmed.ncbi.nlm.nih.gov/41744318) | The study reports population PK parameters (clearance, volume) for fulvestrant in mice, but the specific numeric values are not present in the provided evidence. |
+| `Robertson_2004.pdf` | Robertson JF et al., Pharmacokinetic profile of intramuscula…, Clinical pharmacokinetics (2004) | popPK | 8 | [10.2165/00003088-200443080-00003](https://doi.org/10.2165/00003088-200443080-00003) | [15170367](https://pubmed.ncbi.nlm.nih.gov/15170367) | The paper reports quantitative pharmacokinetic parameters (AUC, Cmax, Cmin, tmax, trough concentrations) and describes a two-compartment model for fulvestrant in humans. |
+| `McCormack_2008.pdf` | McCormack P et al., Pharmacokinetic profile of the fulvestr…, Clinical breast cancer (2008) | popPK | 7 | [10.3816/CBC.2008.n.040](https://doi.org/10.3816/CBC.2008.n.040) | [18757262](https://pubmed.ncbi.nlm.nih.gov/18757262) | The study describes a population PK model for fulvestrant, but the only quantitative value provided in the text is the maximum plasma concentration (Cmax), while clearance and volume parameters are not explicitly listed in the evidence. |
+
+<sub>queue written 2026-10-06 22:15 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Ahmed_2024 | irrelevant | 0 | 0 | The study is a developmental toxicity assay in zebrafish where fulvestrant is used only as a mechanism-of-action probe (ER antagonist) and no pharmacokinetic parameters are reported. |
+| popPK | Chigutsa_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of abemaciclib, with fulvestrant acting only as a co-administered background therapy and not as the subject of PK parameter estimation. |
+| popPK | Daripelli_2026 | relevant | 9 | 0 | The study reports population PK parameters (clearance, volume) for fulvestrant in mice, but the specific numeric values are not present in the provided evidence. |
+| popPK | Dick_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion channel activity in canine cells and does not report any pharmacokinetic parameters for fulvestrant. |
+| popPK | Fang_2023 | irrelevant | 0 | 0 | The paper is a toxicology study on PAHs using fulvestrant solely as an ER-alpha antagonist to neutralize toxicity, not a pharmacokinetic study of fulvestrant. |
+| popPK | Fernandez-Teruel_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for capivasertib, while fulvestrant is only mentioned as a co-administered drug. |
+| popPK | Fernandez_2025 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for capivasertib (the subject drug), not for fulvestrant, which is only mentioned as a co-administered combination drug. |
+| popPK | Hertz_2016 | irrelevant | 0 | 0 | The study analyzes the effect of fulvestrant on anastrozole concentrations and does not report pharmacokinetic parameters for fulvestrant itself. |
+| popPK | Kubota_2023 | irrelevant | 0 | 0 | Fulvestrant is used only as a mechanistic control/antagonist to verify estrogen receptor activity in a toxicology study of bisphenols, with no pharmacokinetic data reported. |
+| popPK | Lemini_2015 | irrelevant | 0 | 0 | The study evaluates the estrogenic profile of 17βAE2, using fulvestrant only as an antagonist to demonstrate specificity, without reporting any PK parameters for fulvestrant. |
+| popPK | Long_2004 | irrelevant | 0 | 0 | The paper is a preclinical efficacy study in mice measuring tumor growth responses to various endocrine therapies, not a pharmacokinetic study reporting disposition parameters for fulvestrant. |
+| popPK | Lu_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ribociclib, with fulvestrant mentioned only as a concomitant drug in the covariate analysis. |
+| popPK | McCormack_2008 | relevant | 7 | 1 | The study describes a population PK model for fulvestrant, but the only quantitative value provided in the text is the maximum plasma concentration (Cmax), while clearance and volume parameters are not explicitly listed in the evidence. |
+| popPK | Ruamyod_2017 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of testosterone on human coronary artery endothelial cells, using fulvestrant only as a negative control antagonist, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Slaby_2024 | irrelevant | 0 | 0 | The study is an in vitro receptor bioassay evaluating endocrine disrupting chemicals and does not report pharmacokinetic parameters (CL, V, ka) for fulvestrant. |
+| popPK | Tan_2013 | irrelevant | 0 | 0 | This is a clinical efficacy meta-analysis of a drug combination, reporting no pharmacokinetic parameters for fulvestrant. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfulvestrant%5D&body=Drug%3A%20fulvestrant%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fulvestrant/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:15 UTC</sub>

@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Osimertinib_Jones2023_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1.4,
+  21.0,
+  70.0,
+  175.0,
+  700.0,
+  1050.0
+ ],
+ "parameters": {
+  "Cl": 8.361111111111111e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0014399999999999999,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.4e-06,
+  "ka": 6.666666666666667e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13707.41482965932
+ },
+ "reference_peaks": {
+  "central.C": 4.105775932025584e-06
+ },
+ "stop_time": 90000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

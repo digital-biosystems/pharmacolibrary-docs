@@ -1,0 +1,156 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;isosorbide dinitrate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsosorbideDinitrate_Jaruratanasirikul2020_reference&quot;,&quot;label&quot;:&quot;Jaruratanasirikul_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Jaruratanasirikul2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsosorbideDinitrate_Taylor1981_reference&quot;,&quot;label&quot;:&quot;Taylor_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1981_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# isosorbide dinitrate
+
+- **generic name:** isosorbide dinitrate
+- **ATC codes:** `C01DA08`, `C05AE02`
+- **DrugBank:** [DB00883](https://go.drugbank.com/drugs/DB00883) · **PubChem:** [CID 6883](https://pubchem.ncbi.nlm.nih.gov/compound/6883)
+- **molar mass:** 236.1363 g/mol (C6H8N2O8) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Isosorbide dinitrate is an organic nitrate vasodilator prescribed to treat heart failure, esophageal spasms, and angina pectoris. It is administered orally or sublingually, with an intravenous route also available for medical management. The drug is listed in the WHO essential medicines list and is available as a generic medication.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q179748](https://www.wikidata.org/wiki/Q179748), [Wikipedia](https://en.wikipedia.org/wiki/Isosorbide_dinitrate?oldid=1338220074) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| isosorbide 2-mononitrate | metabolite | 191.139 | C6H9NO6 | PubChem | [62989](https://pubchem.ncbi.nlm.nih.gov/compound/62989) | Straehl_1985 |
+| isosorbide-5-mononitrate (isosorbide 5-mononitrate) | metabolite | 191.139 | C6H9NO6 | PubChem | [27661](https://pubchem.ncbi.nlm.nih.gov/compound/27661) | Sponer_1984, Straehl_1985, Taylor_1981 |
+| isosorbide-dinitrate (isosorbide dinitrate, isosorbide_dinitrate) | metabolite | 236.136 | C6H8N2O8 | PubChem | [6883](https://pubchem.ncbi.nlm.nih.gov/compound/6883) | Sponer_1984, Straehl_1985, Taylor_1980, Taylor_1981 |
+
+## Start here
+
+> **Jaruratanasirikul_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Jaruratanasirikul2020_reference.md?tab=Simulation) · [record](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Jaruratanasirikul2020_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jaruratanasirikul_2020 · CL</text><circle cx="211.1" cy="30.0" r="4" fill="#78909c"><title>Jaruratanasirikul_2020 · CL: 13.2 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Taylor_1980 · CL</text><circle cx="239.6" cy="46.0" r="4" fill="#ef6c00"><title>Taylor_1980 · CL: 19.2 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Straehl_1985 · CL</text><circle cx="388.4" cy="62.0" r="4" fill="#ef6c00"><title>Straehl_1985 · CL: 136 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Jaruratanasirikul_2020 · V</text><circle cx="358.5" cy="30.0" r="4" fill="#78909c"><title>Jaruratanasirikul_2020 · V: 30.3 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Straehl_1985 · V</text><circle cx="358.5" cy="46.0" r="4" fill="#ef6c00"><title>Straehl_1985 · V: 30.3 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Taylor_1980 · V</text><circle cx="358.5" cy="62.0" r="4" fill="#ef6c00"><title>Taylor_1980 · V: 30.3 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Jaruratanasirikul_2020_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Jaruratanasirikul2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Jaruratanasirikul S et al., Pharmacokinetics and Monte Carlo Dosing…, European journal of drug me… (2020) | [10.1007/s13318-020-00643-3](https://doi.org/10.1007/s13318-020-00643-3) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Sponer_1984_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Sponer1984_reference.md) | — | 1-compartment (no model) | 3 | Sponer G et al., Pharmacokinetic aspects of isosorbide-5…, The Journal of pharmacology… (1984) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Straehl_1985_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Straehl1985_reference.md) | — | general linear (no model) | 5 | Straehl P et al., Isosorbide dinitrate bioavailability, k…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.150](https://doi.org/10.1038/clpt.1985.150) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Taylor_1980_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1980_reference.md) | — | 1-compartment (no model) | 2 | Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & drug dis… (1980) | [10.1002/bdd.2510010310](https://doi.org/10.1002/bdd.2510010310) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Taylor_1981_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1981_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Taylor T et al., Isosorbide 5-mononitrate pharmacokineti…, Biopharmaceutics & drug dis… (1981) | [10.1002/bdd.2510020306](https://doi.org/10.1002/bdd.2510020306) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Doyle_1981_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Doyle1981_reference.md) | — | 1-compartment (no model) | 0 | Doyle E et al., Pharmacokinetics of isosorbide dinitrat…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600701122](https://doi.org/10.1002/jps.2600701122) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=isosorbide_dinitrate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP2E1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: NPR1 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 10:39 | 20:42 | 5/1/0 | 0/0/0 | 0/0/0 | 215,871/45,496 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 4/1 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 154 matched, 81 returned
+- **screened:** 7  ·  **relevant:** 7
+- **records:** 6  ·  extracted 1  ·  needs review 4  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Doyle_1981.pdf` | Doyle E et al., Pharmacokinetics of isosorbide dinitrat…, Journal of pharmaceutical s… (1981) | popPK | 10 | [10.1002/jps.2600701122](https://doi.org/10.1002/jps.2600701122) | [7299675](https://pubmed.ncbi.nlm.nih.gov/7299675) | The study reports quantitative PK parameters (half-lives, plasma concentrations) for isosorbide dinitrate in non-human primates, though specific clearance and volume values are not explicitly listed in the text. |
+| `Platzer_1982.pdf` | Platzer R et al., Pharmacokinetics of intravenous isosorb…, Journal of pharmacokinetics… (1982) | popPK | 10 | [10.1007/BF01062541](https://doi.org/10.1007/BF01062541) | [7182455](https://pubmed.ncbi.nlm.nih.gov/7182455) | The study reports quantitative pharmacokinetic parameters (clearance, half-life, bioavailability) for isosorbide dinitrate in humans, with all values explicitly stated in the text. |
+| `Straehl_1985.pdf` | Straehl P et al., Isosorbide dinitrate bioavailability, k…, Clinical pharmacology and t… (1985) | popPK | 10 | [10.1038/clpt.1985.150](https://doi.org/10.1038/clpt.1985.150) | [4017416](https://pubmed.ncbi.nlm.nih.gov/4017416) | The paper reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-lives) for isosorbide dinitrate and its metabolites in humans. |
+| `Taylor_1980.pdf` | Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & drug dis… (1980) | popPK | 10 | [10.1002/bdd.2510010310](https://doi.org/10.1002/bdd.2510010310) | [7448342](https://pubmed.ncbi.nlm.nih.gov/7448342) | The study reports quantitative pharmacokinetic parameters including half-life, systemic clearance, and plasma concentrations for isosorbide dinitrate in humans. |
+| `Taylor_1981.pdf` | Taylor T et al., Isosorbide 5-mononitrate pharmacokineti…, Biopharmaceutics & drug dis… (1981) | popPK | 9 | [10.1002/bdd.2510020306](https://doi.org/10.1002/bdd.2510020306) | [7295882](https://pubmed.ncbi.nlm.nih.gov/7295882) | The study reports quantitative PK parameters (CL, V, t1/2) for isosorbide 5-mononitrate, which is the primary active metabolite of isosorbide dinitrate, and explicitly discusses the pharmacokinetics of the parent dinitrate in the context of its metabolite formation. |
+| `Assinder_1977.pdf` | Assinder DF et al., Plasma isosorbide dinitrate concentrati…, Journal of pharmaceutical s… (1977) | popPK | 8 | [10.1002/jps.2600660607](https://doi.org/10.1002/jps.2600660607) | [577507](https://pubmed.ncbi.nlm.nih.gov/577507) | The study reports quantitative PK parameters (half-life, peak concentrations, bioavailability) for isosorbide dinitrate in humans, though it lacks explicit clearance or volume values. |
+| `Gladigau_1981.pdf` | Gladigau V et al., Plasma levels of isosorbide dinitrate a…, Arzneimittel-Forschung (1981) | popPK | 8 |  | [7196746](https://pubmed.ncbi.nlm.nih.gov/7196746) | The study reports pharmacokinetic modeling (one-compartment, zero-order input) for isosorbide dinitrate in humans, but specific numeric parameter values (CL, V, ka, t1/2) are not present in the provided evidence. |
+| `Sponer_1984.pdf` | Sponer G et al., Pharmacokinetic aspects of isosorbide-5…, The Journal of pharmacology… (1984) | popPK | 8 |  | [6694105](https://pubmed.ncbi.nlm.nih.gov/6694105) | The study reports quantitative pharmacokinetic parameters (half-lives, bioavailability) for isosorbide-5-mononitrate, the primary active metabolite of isosorbide dinitrate, in dogs. |
+| `Stehlík_1990.pdf` | Stehlík P et al., [Determination of isosorbide dinitrate…, Ceskoslovenska farmacie (1990) | popPK | 8 |  | [2379245](https://pubmed.ncbi.nlm.nih.gov/2379245) | The study reports pharmacokinetic parameters derived from a one-compartmental model for isosorbide dinitrate in humans, but the specific numeric values are not present in the provided text. |
+| `Wallén_1993.pdf` | Wallén NH et al., Effects of an oral dose of isosorbide d…, British journal of clinical… (1993) | pd | 5 | [10.1111/j.1365-2125.1993.tb05680.x](https://doi.org/10.1111/j.1365-2125.1993.tb05680.x) | [8443032](https://www.ncbi.nlm.nih.gov/pubmed/8443032) | metadata signals extractable PD data (EC50) |
+
+<sub>queue written 2026-10-06 10:25 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abboud_1990 | irrelevant | 0 | 0 | The study uses isosorbide dinitrate as a hemodynamic load manipulation agent to assess left ventricular function, not to measure its pharmacokinetic parameters. |
+| popPK | Bozinovski_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxation mechanisms and does not report pharmacokinetic parameters for isosorbide dinitrate. |
+| popPK | Brynne_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of moxonidine, not the pharmacokinetics of isosorbide dinitrate. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacology and does not report any pharmacokinetic parameters for isosorbide dinitrate. |
+| PGx | Frampton_1992 | not_relevant | 0 | 0 | The paper is a review of nicorandil's pharmacology and efficacy, mentioning isosorbide dinitrate only for comparative efficacy, and contains no pharmacogenomic data. |
+| popPK | Gladigau_1981 | relevant | 8 | 0 | The study reports pharmacokinetic modeling (one-compartment, zero-order input) for isosorbide dinitrate in humans, but specific numeric parameter values (CL, V, ka, t1/2) are not present in the provided evidence. |
+| popPK | Greenberg_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular relaxation and cGMP elevation, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Henry_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of nitrate tolerance in isolated bovine coronary arteries, not a pharmacokinetic study reporting disposition parameters for isosorbide dinitrate. |
+| popPK | Hu_2010 | irrelevant | 0 | 0 | The study investigates the effect of isosorbide dinitrate on coronary MR imaging quality (SNR, vessel diameter) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Ishibashi_2013 | irrelevant | 0 | 0 | The study is a pharmacodynamic/mechanistic investigation of nitrate bioactivation pathways (ALDH2 inhibition) in rabbits, reporting dose-response ratios and plasma nitrite changes rather than quantitative pharmacokinetic parameters (CL, V, ka) for isosorbide dinitrate. |
+| PGx | Issa_2006 | not_relevant | 0 | 0 | The paper is a policy and clinical case study on the approval of BiDil based on race as a surrogate marker, and does not report specific pharmacogenomic effects on PK or PD parameters. |
+| popPK | Jaruratanasirikul_2015 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for meropenem, not isosorbide dinitrate. |
+| popPK | Jaruratanasirikul_2020 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for imipenem, not isosorbide dinitrate. |
+| popPK | Jiao_2009 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sirolimus, not isosorbide dinitrate. |
+| PGx | Kahn_2006 | not_relevant | 0 | 0 | The paper is a critical commentary on the marketing and race-specific approval of BiDil, not a study reporting pharmacogenomic effects on PK/PD parameters. |
+| popPK | Kita_1994 | irrelevant | 0 | 0 | The study compares the antianginal efficacy of FK409 and isosorbide dinitrate in rat models but does not report pharmacokinetic parameters (CL, V, ka, etc.) for isosorbide dinitrate. |
+| popPK | Koyuncu_2008 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of nitrate tolerance in rabbit smooth muscle, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Kreye_1983 | irrelevant | 0 | 0 | The study focuses on hemodynamic and vascular relaxant effects (pharmacodynamics) rather than pharmacokinetic disposition parameters like clearance or volume. |
+| PGx | MacDonald_2009 | not_relevant | 0 | 0 | The paper investigates the chemopreventive effects of NO-aspirin 2 on carcinogen metabolism and only mentions isosorbide dinitrate as a comparative NO-donor, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| PGx | McNamara_2008 | not_relevant | 2 | 0 | The paper is a review that mentions racial differences in efficacy and a polymorphism affecting outcomes, but it does not report specific pharmacokinetic or pharmacodynamic parameter changes for isosorbide dinitrate linked to a specific gene variant. |
+| PGx | McNamara_2014 | not_relevant | 2 | 8 | The study reports a pharmacogenomic effect on clinical outcomes (composite score, QoL, survival) rather than a specific pharmacokinetic or pharmacodynamic parameter. |
+| PGx | Minamiyama_1999 | not_relevant | 2 | 5 | The study investigates the role of CYP3A4 in nitric oxide formation but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters. |
+| PGx | Minamiyama_2002 | not_relevant | 0 | 0 | The study investigates the mechanism of nitrate tolerance via CYP450 degradation in rats, not the effect of a specific human gene variant or genotype on PK/PD parameters. |
+| PGx | Minamiyama_2007 | not_relevant | 0 | 0 | The paper discusses the metabolic pathway of NO-aspirin and mentions isosorbide dinitrate only as background context, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Naeem_2026 | irrelevant | 0 | 0 | The paper is a review of Terminalia arjuna for ulcerative colitis and does not contain any pharmacokinetic data for isosorbide dinitrate. |
+| popPK | Nahavandi_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of aortic responsiveness to isosorbide dinitrate, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Otrompke_2007 | not_relevant | 0 | 0 | The text is a brief news summary of conference presentations and does not report specific pharmacogenomic effects or quantitative data for isosorbide dinitrate. |
+| popPK | Sata_1997 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding isosorbide dinitrate pharmacokinetics. |
+| popPK | Schneider_1988 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxation and tolerance mechanisms, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Schröder_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of guanylate cyclase activation (EC50 values) and does not report pharmacokinetic disposition parameters (CL, V, ka, etc.) for isosorbide dinitrate. |
+| popPK | Shabanova_2005 | irrelevant | 0 | 0 | The study investigates platelet receptor pharmacodynamics (ADP sensitivity) rather than the pharmacokinetic disposition parameters (CL, V, t1/2) of isosorbide dinitrate. |
+| PGx | Sontoredjo_2013 | not_relevant | 2 | 0 | The text is a general review of ethnicity in pharmacogenetics that mentions isosorbide dinitrate only as a clinical example of ethnic prescribing differences, without reporting specific gene variants or quantitative PK/PD parameters. |
+| popPK | Stehlík_1990 | relevant | 8 | 2 | The study reports pharmacokinetic parameters derived from a one-compartmental model for isosorbide dinitrate in humans, but the specific numeric values are not present in the provided text. |
+| popPK | Stiefel_1984 | irrelevant | 1 | 0 | The study focuses on in vitro vasorelaxant effects and in vivo hemodynamic responses (hypotension) rather than quantitative pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| popPK | Stout_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neurotransmitter release in rat hippocampal slices, not a pharmacokinetic study of isosorbide dinitrate. |
+| popPK | Straehl_1984 | irrelevant | 2 | 8 | The study reports quantitative PK parameters for the metabolites (IS-5-MN and IS-2-MN) rather than the parent drug isosorbide dinitrate, which is only used as a comparator. |
+| popPK | Tsou_2011 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme kinetics and inactivation, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Vidrio_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasorelaxation in rat aorta, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Vincent_1992 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic tolerance (venodilation) and does not report quantitative pharmacokinetic parameters (CL, V, ka) for isosorbide dinitrate. |
+| PGx | Vuppugalla_2004 | not_relevant | 0 | 0 | The study investigates the effect of nitric oxide donors on CYP450 activity in rat livers and does not report any pharmacogenomic effects (gene variants) on the PK or PD of isosorbide dinitrate. |
+| popPK | Wallén_1993 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
+| PD | Wallén_1993 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
+| popPK | Yang_1997 | irrelevant | 2 | 0 | The study reports pharmacokinetics for the metabolite isosorbide-5-mononitrate (5-ISMN) after 5-ISMN dosing, not isosorbide dinitrate (ISDN) dosing, and no numeric PK parameters are provided in the evidence. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisosorbide_dinitrate%5D&body=Drug%3A%20isosorbide_dinitrate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isosorbide_dinitrate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 10:26 UTC</sub>

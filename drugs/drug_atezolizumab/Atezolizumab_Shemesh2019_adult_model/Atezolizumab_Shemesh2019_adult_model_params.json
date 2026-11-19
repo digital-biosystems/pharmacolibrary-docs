@@ -1,0 +1,80 @@
+{
+ "dose_source": "WHO ATC DDD 57.1 mg parenteral (L01FF05)",
+ "model_id": "Atezolizumab_Shemesh2019_adult_model",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.27
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.33
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.34900000000000003
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.492
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.486
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.326
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.4
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.463
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.46
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.664
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.651
+   },
+   {
+    "source": "Shemesh_2019:other_prose",
+    "value_si": 0.404
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 2.3148148148148148e-09,
+  "F": 1.0,
+  "VdPerKg": 4.685714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5.71e-05,
+  "k12": 1.9266598915989162e-06,
+  "k21": 1.740893786348332e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066201
+ },
+ "reference_peaks": {
+  "central.C": 0.014682852944665944
+ },
+ "stop_time": 5443200.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

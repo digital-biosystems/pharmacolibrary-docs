@@ -1,0 +1,33 @@
+{
+ "dose_source": "library default",
+ "model_id": "Pentamidine_Poola2002_reference",
+ "molar_masses": {
+  "central.C": 0.34042700000000004
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.999999999999999e-10,
+  "F": 0.9,
+  "MM": 0.34042700000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0002185714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0017416666666666665,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6634.72845918213
+ },
+ "reference_peaks": {
+  "central.C": 0.005879998409674903
+ },
+ "review_status": "needs_review",
+ "stop_time": 15552000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

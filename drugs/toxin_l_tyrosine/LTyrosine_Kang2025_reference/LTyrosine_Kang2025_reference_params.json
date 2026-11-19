@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "LTyrosine_Kang2025_reference",
+ "molar_masses": {
+  "central.C": 0.181191
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.3888888888888885e-06,
+  "F": 1.0,
+  "MM": 0.181191,
+  "Tlag": 0.0,
+  "VdPerKg": 0.012885714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 4.065040650406504e-05,
+  "k21": 7.064868336544636e-05,
+  "ka": 0.0004416666666666667,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10265.27994969691
+ },
+ "reference_peaks": {
+  "central.C": 9.981072109122767e-05
+ },
+ "stop_time": 518400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

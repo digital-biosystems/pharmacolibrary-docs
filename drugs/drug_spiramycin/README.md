@@ -1,0 +1,115 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01F&quot;,&quot;href&quot;:&quot;atc/J01F.md&quot;},{&quot;label&quot;:&quot;spiramycin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spiramycin_Elazab2021_iv&quot;,&quot;label&quot;:&quot;Elazab_2021_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Spiramycin_Elazab2021_oral&quot;,&quot;label&quot;:&quot;Elazab_2021_oral&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# spiramycin
+
+- **generic name:** spiramycin
+- **ATC codes:** `J01FA02`, `J01RA04`
+- **DrugBank:** [DB06145](https://go.drugbank.com/drugs/DB06145) · **PubChem:** [CID 6440717](https://pubchem.ncbi.nlm.nih.gov/compound/6440717)
+- **molar mass:** 843.065 g/mol (C43H74N2O14) — DrugBank
+- **groups:** approved, investigational, withdrawn
+
+## About
+
+Spiramycin is a macrolide antibiotic and antiparasitic used primarily for toxoplasmosis and soft-tissue infections. It is administered orally in tablet, capsule, or syrup forms. The drug is used in Europe, Canada, and Mexico, while in the United States it remains an experimental agent available by special permission.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q422265](https://www.wikidata.org/wiki/Q422265), [Wikipedia](https://en.wikipedia.org/wiki/Spiramycin?oldid=1384294468) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| spiramycin | parent | 843.065 | C43H74N2O14 | DrugBank | [6440717](https://pubchem.ncbi.nlm.nih.gov/compound/6440717) | Elazab_2021 |
+
+## Start here
+
+> **Elazab_2021_iv** — <span class="pk-badge pk-badge--blue">Simulated</span> chickens, n = &gt;= 48. [Run it in the simulator](drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md?tab=Simulation) · [record](drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Elazab_2021 · V ·/kg</text><circle cx="317.3" cy="30.0" r="4" fill="#78909c"><title>Elazab_2021 · V ·/kg: 231 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Elazab_2021 · V ·/kg</text><circle cx="422.2" cy="46.0" r="4" fill="#78909c"><title>Elazab_2021 · V ·/kg: 460.6 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [Elazab_2021_iv](drugs/drug_spiramycin/Spiramycin_Elazab2021_iv.md) | ▶ model + simulator | 1-compartment, IV | 7 | Elazab ST et al., Pharmacokinetic/Pharmacodynamic Modelin…, Pathogens (Basel, Switzerla… (2021) | [10.3390/pathogens10101238](https://doi.org/10.3390/pathogens10101238) |
+| <span class="pk-rf" hidden data-species="bird" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [↳ oral](drugs/drug_spiramycin/Spiramycin_Elazab2021_oral.md) | ▶ model + simulator | 1-compartment, IV | 9 |  |  |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Halling-Sørensen_2000_Algal_growth](drugs/drug_spiramycin/pd_Halling_S_rensen_2000_Algal_growth.md) | Algal growth ← spiramycin · inhibition effect | — | Halling-Sørensen B, Algal toxicity of antibacterial agents…, Chemosphere (2000) | [10.1016/s0045-6535(99)00445-2](https://doi.org/10.1016/s0045-6535(99)00445-2) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=spiramycin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 11:25 | 1:23 | 2/0/0 | 1/0/0 | 0/0/0 | 115,878/6,644 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 13 matched, 13 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 2  ·  extracted 2  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Friis_1991.pdf` | Friis C et al., Respiratory tract distribution and bioa…, American journal of veterin… (1991) | popPK | 10 |  | [1928908](https://pubmed.ncbi.nlm.nih.gov/1928908) | The study reports quantitative pharmacokinetic parameters for spiramycin in calves, including an open 3-compartment model, elimination half-life (28.7 h), and volume of distribution (23.5 L/kg). |
+| `Renard_1996.pdf` | Renard L et al., Pharmacokinetic-pharmacodynamic model f…, Journal of veterinary pharm… (1996) | popPK | 10 | [10.1111/j.1365-2885.1996.tb00019.x](https://doi.org/10.1111/j.1365-2885.1996.tb00019.x) | [8735415](https://pubmed.ncbi.nlm.nih.gov/8735415) | The paper reports a compartmental pharmacokinetic model for spiramycin in cows, but the specific numeric parameter values are not present in the provided text. |
+| `Schoondermark-Van_1994.pdf` | Schoondermark-Van de Ven E et al., Pharmacokinetics of spiramycin in the r…, Antimicrobial agents and ch… (1994) | popPK | 8 | [10.1128/AAC.38.9.1922](https://doi.org/10.1128/AAC.38.9.1922) | [7810999](https://pubmed.ncbi.nlm.nih.gov/7810999) | The study reports a two-compartment model and qualitative distribution/transfer data in rhesus monkeys, but specific numeric PK parameters (CL, V, t1/2) are not provided in the text, likely residing in tables or figures not included. |
+
+<sub>queue written 2026-10-07 11:24 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Biagini_2006 | irrelevant | 0 | 0 | The study is an in vitro hepatotoxicity screening (EC50) and does not report pharmacokinetic disposition parameters for spiramycin. |
+| popPK | Halling-Sørensen_2000 | irrelevant | 0 | 0 | The study investigates the ecotoxicological effects of spiramycin on algae, not its pharmacokinetics in a biological host. |
+| popPK | Isla_2005 | irrelevant | 1 | 0 | This is a review/simulation study evaluating PK/PD efficacy for 13 antibiotics, where spiramycin is included only as a comparator, and no original quantitative pharmacokinetic parameters (CL, V, etc.) for spiramycin are reported in the provided evidence. |
+| popPK | Isla_2008 | irrelevant | 2 | 0 | This is a PK/PD analysis using simulated data based on "mean population pharmacokinetic parameters" of multiple drugs including spiramycin, but the specific numeric parameter values for spiramycin are not provided in the evidence (likely cited from other sources or in a table not included). |
+| popPK | Liu_2012 | irrelevant | 0 | 0 | The study investigates the toxicity and effects of spiramycin on algae (Microcystis aeruginosa) in vitro, not its pharmacokinetics. |
+| popPK | Nakajo_2025 | irrelevant | 0 | 0 | This is an epidemiological study estimating the incidence of Toxoplasma gondii infection using spiramycin prescription data, not a pharmacokinetic study reporting disposition parameters for spiramycin. |
+| popPK | Renard_1993 | irrelevant | 0 | 0 | This is an in vitro pharmacodynamic study modeling bacterial killing kinetics, not a pharmacokinetic study measuring disposition parameters (CL, V, t1/2) of spiramycin in a biological system. |
+| popPK | Renard_1996 | relevant | 10 | 0 | The paper reports a compartmental pharmacokinetic model for spiramycin in cows, but the specific numeric parameter values are not present in the provided text. |
+| popPK | Schoondermark-Van_1994 | relevant | 8 | 2 | The study reports a two-compartment model and qualitative distribution/transfer data in rhesus monkeys, but specific numeric PK parameters (CL, V, t1/2) are not provided in the text, likely residing in tables or figures not included. |
+| popPK | Zhong_2021 | irrelevant | 0 | 0 | The study evaluates ecological toxicity (EC50) in algae and cyanobacteria, not pharmacokinetic parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bspiramycin%5D&body=Drug%3A%20spiramycin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_spiramycin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 11:24 UTC</sub>

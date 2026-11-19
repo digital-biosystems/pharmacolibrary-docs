@@ -1,0 +1,26 @@
+{
+ "dose_source": "WHO ATC DDD 0.0187 mg parenteral (L01FX07)",
+ "model_id": "Blinatumomab_Kuchimanchi2019_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.638888888888889e-07,
+  "F": 1.0,
+  "VdPerKg": 6.214285714285714e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.8700000000000002e-08,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662021
+ },
+ "reference_peaks": {
+  "central.C": 4.053103917380898e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

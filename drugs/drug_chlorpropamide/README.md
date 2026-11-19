@@ -1,0 +1,149 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;chlorpropamide&quot;}]"></div>
+
+# chlorpropamide
+
+- **generic name:** chlorpropamide
+- **ATC codes:** `A10BB02`
+- **DrugBank:** [DB00672](https://go.drugbank.com/drugs/DB00672) · **PubChem:** [CID 2727](https://pubchem.ncbi.nlm.nih.gov/compound/2727)
+- **molar mass:** 276.74 g/mol (C10H13ClN2O3S) — DrugBank
+- **groups:** approved, withdrawn
+
+## About
+
+Chlorpropamide is a sulfonylurea used to treat type 2 diabetes. It is given by mouth as a tablet. The drug is no longer used.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q1075324](https://www.wikidata.org/wiki/Q1075324), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Lang_2012_KATP_channel_inhibition](drugs/drug_chlorpropamide/pd_Lang_2012_KATP_channel_inhibition.md) | KATP channel inhibition ← chlorpropamide · direct sigmoid Emax (Hill) effect | — | Lang VY et al., Pharmacogenomic analysis of ATP-sensiti…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e32835001e7](https://doi.org/10.1097/FPC.0b013e32835001e7) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=chlorpropamide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate | DrugBank actor |
+| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inhibitor), KCNJ10 (blocker), PTGS1 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-13 13:22 | 0:58 | 0/0/0 | 1/0/0 | 0/0/0 | 4,713/1,501 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 45 matched, 45 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Vila_1979.pdf` | Vila Jato JL et al., [Relation between the pharmacokinetic a…, Bollettino chimico farmaceu… (1979) | popPK | 10 |  | [553527](https://pubmed.ncbi.nlm.nih.gov/553527) | The paper is a pharmacokinetic study of chlorpropamide in rabbits, but the provided evidence contains only the title and metadata, with no numeric parameter values present. |
+| `Vila_1980.pdf` | Vila JL et al., [Relationship between pharmacokinetic a…, Bollettino chimico farmaceu… (1980) | popPK | 10 |  | [7459053](https://pubmed.ncbi.nlm.nih.gov/7459053) | The title confirms a pharmacokinetic study of chlorpropamide in rabbits, but no numeric parameter values are present in the provided evidence. |
+| `Batenhorst_1982.pdf` | Batenhorst RL et al., Comparative bioavailability of chlorpro…, Clinical pharmacy (1982) | popPK | 9 |  | [7184670](https://pubmed.ncbi.nlm.nih.gov/7184670) | The study reports a two-compartment PK model for chlorpropamide in humans, but the specific numeric parameter values (ka, CL, V, etc.) are not present in the provided text, only qualitative comparisons and statistical outcomes. |
+| `Rosenkranz_1996.pdf` | Rosenkranz B, Pharmacokinetic basis for the safety of…, Hormone and metabolic resea… (1996) | pd | 5 | [10.1055/s-2007-979833](https://doi.org/10.1055/s-2007-979833) | [8911979](https://www.ncbi.nlm.nih.gov/pubmed/8911979) | metadata signals extractable PD data (concentration-effect) |
+| `Angel_1991.pdf` | Angel I et al., The binding site for [3H]glibenclamide…, Fundamental & clinical phar… (1991) | pd | 4 | [10.1111/j.1472-8206.1991.tb00704.x](https://doi.org/10.1111/j.1472-8206.1991.tb00704.x) | [1649112](https://www.ncbi.nlm.nih.gov/pubmed/1649112) | metadata signals extractable PD data (IC50) |
+| `Baruah_2021.pdf` | Baruah P et al., Sulfonylurea Class of Antidiabetic Drug…, ACS pharmacology & translat… (2021) | pd | 4 | [10.1021/acsptsci.0c00168](https://doi.org/10.1021/acsptsci.0c00168) | [33615172](https://www.ncbi.nlm.nih.gov/pubmed/33615172) | metadata signals extractable PD data (IC50) |
+| `Inoue_1995.pdf` | Inoue Y et al., Characterization of the binding sites f…, European journal of pharmac… (1995) | pd | 4 | [10.1016/0014-2999(95)00368-u](https://doi.org/10.1016/0014-2999(95)00368-u) | [8549639](https://www.ncbi.nlm.nih.gov/pubmed/8549639) | metadata signals extractable PD data (IC50) |
+| `Zini_1991.pdf` | Zini S et al., Characterization of sulfonylurea recept…, The Journal of pharmacology… (1991) | pd | 4 |  | [1658303](https://www.ncbi.nlm.nih.gov/pubmed/1658303) | metadata signals extractable PD data (IC50) |
+| `Bae_2014.pdf` | Bae SH et al., Simultaneous determination of metoprolo…, Journal of separation scien… (2014) | pgx | 8 | [10.1002/jssc.201301353](https://doi.org/10.1002/jssc.201301353) | [24648255](https://www.ncbi.nlm.nih.gov/pubmed/24648255) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Shon_2005.pdf` | Shon JH et al., Chlorpropamide 2-hydroxylation is catal…, British journal of clinical… (2005) | pgx | 8 | [10.1111/j.1365-2125.2005.02364.x](https://doi.org/10.1111/j.1365-2125.2005.02364.x) | [15842554](https://www.ncbi.nlm.nih.gov/pubmed/15842554) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Si_2012.pdf` | Si D et al., Distribution of CYP2C9*13 allele in the…, Biopharmaceutics & drug dis… (2012) | pgx | 8 | [10.1002/bdd.1804](https://doi.org/10.1002/bdd.1804) | [22886551](https://www.ncbi.nlm.nih.gov/pubmed/22886551) | metadata signals extractable PGX data (CYP2C9*13, PK/PD-context) |
+
+<sub>queue written 2026-10-13 13:22 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Algeelani_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of chlorpropamide as an inhibitor of canagliflozin metabolism, not a pharmacokinetic study of chlorpropamide disposition. |
+| popPK | Angel_1991 | irrelevant | 0 | 0 | The paper focuses on receptor binding sites for glibenclamide in rat cerebral cortex and does not report pharmacokinetic parameters for chlorpropamide. |
+| PD | Angel_1991 | not_relevant | 0 | 0 | The paper describes in vitro receptor binding affinity (Ki) for glibenclamide and other agents, not a pharmacodynamic exposure-response or dose-response relationship for chlorpropamide. |
+| PGx | Bae_2014 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of metoprolol and CYP2D6 genotypes; chlorpropamide is only used as an internal standard for the assay. |
+| popPK | Baruah_2021 | irrelevant | 0 | 0 | The paper focuses on the acetylcholinesterase inhibitory activity of sulfonylureas for Alzheimer's disease, not on the pharmacokinetic disposition parameters of chlorpropamide. |
+| PD | Baruah_2021 | not_relevant | 0 | 0 | The paper discusses the acetylcholinesterase inhibitory activity of sulfonylureas (including chlorpropamide) but does not report a pharmacokinetic/pharmacodynamic model, exposure-response analysis, or numeric PD parameters (e.g., IC50, Emax) for chlorpropamide in the context of its antidiabetic or Alzheimer's-related effects. |
+| popPK | Batenhorst_1982 | relevant | 9 | 2 | The study reports a two-compartment PK model for chlorpropamide in humans, but the specific numeric parameter values (ka, CL, V, etc.) are not present in the provided text, only qualitative comparisons and statistical outcomes. |
+| popPK | Bernaś_1992 | irrelevant | 0 | 0 | The study is a clinical efficacy trial comparing sulfonylureas and does not report pharmacokinetic parameters for chlorpropamide. |
+| PD | Bernaś_1992 | not_relevant | 2 | 0 | The study is a clinical trial comparing therapeutic efficacy and insulin levels, but it does not report a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for chlorpropamide. |
+| popPK | Chen_2011 | irrelevant | 0 | 0 | The paper is a review of herb-drug interactions where chlorpropamide is mentioned only as a comparator drug in a case report regarding garlic, with no original pharmacokinetic parameters reported. |
+| PD | Chen_2011 | not_relevant | 1 | 0 | The paper is a qualitative review of herb-drug interactions and mentions chlorpropamide only in the context of a qualitative hypoglycemic effect with garlic, without providing any numeric PD parameters or concentration-effect data. |
+| popPK | Davey_1988 | irrelevant | 0 | 0 | The paper is a review of quinolone drug interactions and mentions chlorpropamide only as a comparator to state that enoxacin does not impair its metabolism, without providing any quantitative PK parameters. |
+| PD | Davey_1988 | not_relevant | 0 | 0 | The text is a review of quinolone drug interactions and only qualitatively states that enoxacin does not impair chlorpropamide metabolism, providing no PD or exposure-response data for chlorpropamide. |
+| popPK | Ferner_1987 | irrelevant | 0 | 0 | The paper is a review discussing general pharmacokinetic concepts and adverse effects of oral hypoglycaemic agents without reporting specific quantitative disposition parameters for chlorpropamide. |
+| PD | Ferner_1987 | not_relevant | 1 | 0 | The text is a qualitative review discussing general PK/PD concepts and adverse effects of sulfonylureas without providing any numeric PD parameters or specific concentration-effect data for chlorpropamide. |
+| PGx | Ferner_1987 | not_relevant | 0 | 0 | The paper is a general review of oral hypoglycaemic drugs and does not report specific pharmacogenomic effects on chlorpropamide PK/PD parameters. |
+| popPK | Garcia-Bournissen_2003 | irrelevant | 0 | 0 | The paper is a review summarizing general pharmacokinetic data for hypoglycaemic drugs in pregnancy and does not report original quantitative disposition parameters for chlorpropamide. |
+| PD | Garcia-Bournissen_2003 | not_relevant | 1 | 0 | The text is a review summarizing general pharmacokinetic and placental transfer data, mentioning chlorpropamide only qualitatively without providing specific numeric PD parameters or exposure-response curves. |
+| popPK | García-Lara_2010 | irrelevant | 0 | 0 | The paper is a clinical review of diabetes management in the elderly and does not report any quantitative pharmacokinetic parameters for chlorpropamide. |
+| PD | García-Lara_2010 | not_relevant | 1 | 0 | The paper is a qualitative review of diabetes management in the elderly and mentions chlorpropamide only in the context of adverse effects, without providing any numeric PD parameters or exposure-response data. |
+| popPK | Gribaldo_2000 | irrelevant | 0 | 0 | The study is an in-vitro toxicology investigation of erythroid progenitors and does not report pharmacokinetic parameters for chlorpropamide. |
+| popPK | Haymer_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of amprenavir analogues, not chlorpropamide. |
+| PD | Haymer_2026 | not_relevant | 0 | 0 | The paper focuses on cannabinoid receptor 2 (CB2) agonists derived from amprenavir and does not contain any data, analysis, or mention of chlorpropamide. |
+| popPK | Hu_2005 | irrelevant | 0 | 0 | The paper is a literature review of herb-drug interactions where chlorpropamide is mentioned only as a comparator in a case report of hypoglycemia, with no quantitative pharmacokinetic parameters reported. |
+| PD | Hu_2005 | not_relevant | 1 | 0 | The paper is a qualitative literature review of herb-drug interactions that mentions chlorpropamide-induced hypoglycemia but provides no numeric PD parameters, concentration-effect curves, or dose-response data. |
+| popPK | Incerpi_1979 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme activity on liver membranes, not a pharmacokinetic study reporting disposition parameters. |
+| PD | Incerpi_1979 | not_relevant | 1 | 0 | The paper describes qualitative changes in enzyme kinetics (Hill coefficient) and inhibition of ATPase activity in isolated membranes, but does not provide numeric PD parameters (like IC50 or Emax) or an exposure-response curve for the drug. |
+| popPK | Inoue_1995 | irrelevant | 0 | 0 | The paper focuses on in-vitro binding sites for glibenclamide in rat liver membranes and does not report pharmacokinetic parameters for chlorpropamide. |
+| PD | Inoue_1995 | not_relevant | 0 | 0 | The paper characterizes the binding sites for [3H]glibenclamide (a different drug) in rat liver membranes and does not report pharmacodynamic or exposure-response data for chlorpropamide. |
+| popPK | Lang_2012 | irrelevant | 0 | 0 | The study is an in-vitro pharmacogenomic analysis of KATP channel inhibition (IC50 values) and does not report in-vivo pharmacokinetic disposition parameters for chlorpropamide. |
+| popPK | Laycock_1974 | irrelevant | 0 | 0 | The study investigates the effect of chlorpropamide on water balance in rats and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Little_1985 | irrelevant | 0 | 0 | The study focuses on the mechanism of acetaldehyde metabolism inhibition (pharmacodynamics/toxicology) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, t1/2) for chlorpropamide. |
+| popPK | Majid_2023 | irrelevant | 0 | 0 | The paper is an in-vitro biophysical study on amyloid aggregation inhibition and does not report any pharmacokinetic parameters for chlorpropamide. |
+| popPK | Melander_2004 | irrelevant | 0 | 0 | The paper is a qualitative review discussing kinetics-effect relations and clinical outcomes without reporting any quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) for chlorpropamide. |
+| PD | Melander_2004 | not_relevant | 2 | 1 | The text is a qualitative review discussing general kinetics-effect relations and mentions a bell-shaped dose-response curve, but it does not provide specific numeric PD parameters (Emax, EC50) or extractable concentration-effect data for chlorpropamide. |
+| popPK | Michalcová_2016 | irrelevant | 0 | 0 | The study is an in-vitro binding affinity analysis using capillary electrophoresis, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PD | Michalcová_2016 | not_relevant | 0 | 0 | The paper reports protein binding constants (affinity) via capillary electrophoresis, not a pharmacodynamic exposure-response or dose-response relationship for glucose lowering or other clinical effects. |
+| popPK | Nasr_2026 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro anticancer evaluation of thiazole-derived EGFR/CDK-2 inhibitors and does not involve chlorpropamide or its pharmacokinetics. |
+| PD | Nasr_2026 | not_relevant | 0 | 0 | The paper reports IC50 values for kinase inhibition (EGFR/CDK-2) of novel thiazole compounds, not chlorpropamide, and does not contain any pharmacodynamic or exposure-response analysis for the target drug. |
+| popPK | Nielsen-Kudsk_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular smooth muscle relaxation in rabbit coronary arteries, not a pharmacokinetic study of chlorpropamide. |
+| PGx | PMID36049896_2023 | not_relevant | 0 | 0 | The paper focuses on G6PD genotype and medication use, not chlorpropamide pharmacokinetics or pharmacodynamics. |
+| popPK | Prendergast_1984 | irrelevant | 0 | 0 | The paper is a review of glyburide and glipizide, with chlorpropamide mentioned only as a comparator for efficacy, not as the subject of PK analysis. |
+| popPK | Rekha_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on enzyme inhibition and tumor cell sensitization, reporting no pharmacokinetic parameters for chlorpropamide. |
+| popPK | Renner_1980 | irrelevant | 0 | 0 | The paper is a mutagenicity study and does not report any pharmacokinetic parameters for chlorpropamide. |
+| PD | Renner_1980 | not_relevant | 1 | 0 | The paper reports a qualitative dose-response relationship for mutagenicity but provides no numeric PD parameters, concentration-effect curves, or quantitative data. |
+| popPK | Rosenkranz_1996 | irrelevant | 0 | 0 | The paper focuses on glimepiride, not chlorpropamide, and no chlorpropamide PK parameters are reported. |
+| PD | Rosenkranz_1996 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of glimepiride, not chlorpropamide, and does not report PD or exposure-response relationships for the target drug. |
+| PGx | Si_2012 | not_relevant | 2 | 0 | The paper reports allele frequencies and haplotype associations but does not provide measured pharmacokinetic or pharmacodynamic data for chlorpropamide. |
+| popPK | Sládek_2001 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of enzyme inhibition by chlorpropamide analogues and does not report pharmacokinetic parameters for chlorpropamide. |
+| popPK | Sládek_2001_2 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of enzyme inhibition by chlorpropamide analogues and does not report pharmacokinetic parameters for chlorpropamide. |
+| popPK | Vila_1979 | relevant | 10 | 0 | The paper is a pharmacokinetic study of chlorpropamide in rabbits, but the provided evidence contains only the title and metadata, with no numeric parameter values present. |
+| popPK | Vila_1980 | relevant | 10 | 0 | The title confirms a pharmacokinetic study of chlorpropamide in rabbits, but no numeric parameter values are present in the provided evidence. |
+| PGx | WEST_1964 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics in the context of allergy and does not report specific PK/PD effects of gene variants on chlorpropamide. |
+| popPK | Xu_2009 | irrelevant | 1 | 0 | The paper is a review of genetic polymorphisms affecting sulfonylurea pharmacokinetics and does not report original quantitative disposition parameters for chlorpropamide. |
+| PD | Xu_2009 | not_relevant | 1 | 0 | The text is a review of genetic polymorphisms affecting sulfonylurea response and does not report specific numeric PD parameters or concentration-effect curves for chlorpropamide. |
+| PGx | Xu_2009 | not_relevant | 5 | 2 | The paper is a review of sulfonylureas generally; while it mentions chlorpropamide, it does not provide specific quantitative pharmacogenomic effect sizes for chlorpropamide PK/PD parameters. |
+| popPK | Zini_1991 | irrelevant | 0 | 0 | The paper focuses on receptor characterization and neurotransmission in guinea pig intestine, not on the pharmacokinetic disposition parameters of chlorpropamide. |
+| PD | Zini_1991 | not_relevant | 0 | 0 | The paper focuses on receptor characterization and potassium channel openers in guinea pig intestine, with no mention of chlorpropamide or its pharmacodynamic parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlorpropamide%5D&body=Drug%3A%20chlorpropamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlorpropamide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

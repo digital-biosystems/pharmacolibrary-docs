@@ -1,0 +1,472 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;albumin&quot;}]"></div>
+
+# albumin
+
+- **generic name:** albumin
+- **ATC codes:** `B05AA01`
+- **DrugBank:** [DB00062](https://go.drugbank.com/drugs/DB00062) · **PubChem:** none
+- **groups:** approved, investigational
+
+## About
+
+Albumin is a blood substitute derived from plasma protein fractions. It is administered via the intravenous or subcutaneous route. The drug is approved and also has investigational uses.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q20801768](https://www.wikidata.org/wiki/Q20801768), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Bisaso_2014_ALB](drugs/drug_albumin/pd_Bisaso_2014_ALB.md) | plasma albumin concentration ← none · disease-progression model | — | Bisaso KR et al., Characterizing plasma albumin concentra…, In silico pharmacology (2014) | [10.1186/s40203-014-0003-9](https://doi.org/10.1186/s40203-014-0003-9) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP3A4** | `Q27` · CL/F | metabolism | [Andrews_2019](drugs/drug_albumin/pgx_Andrews_2019_CYP3A4_Q27.md) | Andrews LM et al., A population pharmacokinetic model to p…, British journal of clinical… (2019) | [10.1111/bcp.13838](https://doi.org/10.1111/bcp.13838) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP3A5** | `Q27` · CL/F | metabolism | [Andrews_2019](drugs/drug_albumin/pgx_Andrews_2019_CYP3A5_Q27.md) | Andrews LM et al., A population pharmacokinetic model to p…, British journal of clinical… (2019) | [10.1111/bcp.13838](https://doi.org/10.1111/bcp.13838) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span> | **MDR1** | `Q22` · CL | transport | [Heit_2021](drugs/drug_albumin/pgx_Heit_2021_MDR1_Q22.md) | Heit MC et al., Tolerance and Pharmacokinetics of Galli…, Journal of veterinary pharm… (2021) | [10.1111/jvp.12984](https://doi.org/10.1111/jvp.12984) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2C19** | `Q22` · CL | metabolism | [Ling_2024](drugs/drug_albumin/pgx_Ling_2024_CYP2C19_Q22.md) | Ling J et al., Influence of C-reactive protein on the…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1455721](https://doi.org/10.3389/fphar.2024.1455721) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ABCB1** | `Q27` · CL/F | transport | [Riglet_2020](drugs/drug_albumin/pgx_Riglet_2020_ABCB1_Q27.md) | Riglet F et al., Population Pharmacokinetic Model of Pla…, Drugs in R&D (2020) | [10.1007/s40268-020-00319-y](https://doi.org/10.1007/s40268-020-00319-y) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=albumin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` transport | PGx paper |
+| distribution | blood-brain barrier | `ABCB1` transport | PGx paper |
+| distribution | placenta | `ABCB1` transport | PGx paper |
+| distribution | testis | `ABCB1` transport | PGx paper |
+| metabolism | kidney | `CYP3A5` metabolism | PGx paper |
+| metabolism | liver | `CYP2C19` metabolism, `CYP3A4` metabolism, `CYP3A5` metabolism | PGx paper |
+| metabolism | small intestine | `CYP3A4` metabolism, `CYP3A5` metabolism | PGx paper |
+| excretion | kidney | `ABCB1` transport | PGx paper |
+| excretion | liver | `ABCB1` transport | PGx paper |
+
+<sub>Actors without a tissue in the table: MDR1 (transport), Nitric oxide (binder).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 21:24 | 22:57 | 0/0/0 | 0/1/0 | 0/0/5 | 835,987/23,890 | ollama / qwen3.8:27b-mtp-q8_0 | 73 | 5/99 | 72/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 9838 matched, 309 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_47 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Brown_2017.pdf` | Brown K et al., Population pharmacokinetics and exposur…, British journal of clinical… (2017) | pd | 5 | [10.1111/bcp.13223](https://doi.org/10.1111/bcp.13223) | [28009438](https://www.ncbi.nlm.nih.gov/pubmed/28009438) | metadata signals extractable PD data (exposure-response) |
+| `Chen_2025.pdf` | Chen Y et al., Population pharmacokinetics/pharmacodyn…, International journal of an… (2025) | pd | 5 | [10.1016/j.ijantimicag.2025.107603](https://doi.org/10.1016/j.ijantimicag.2025.107603) | [40902913](https://www.ncbi.nlm.nih.gov/pubmed/40902913) | metadata signals extractable PD data (PK/PD) |
+| `Eissing_2024.pdf` | Eissing T et al., Pharmacokinetics and pharmacodynamics o…, Diabetes, obesity & metabol… (2024) | pd | 5 | [10.1111/dom.15387](https://doi.org/10.1111/dom.15387) | [38037539](https://www.ncbi.nlm.nih.gov/pubmed/38037539) | metadata signals extractable PD data (exposure-response) |
+| `Frey_1985.pdf` | Frey BM et al., The effect of altered prednisolone kine…, The Journal of clinical end… (1985) | pd | 5 | [10.1210/jcem-60-2-361](https://doi.org/10.1210/jcem-60-2-361) | [3155524](https://www.ncbi.nlm.nih.gov/pubmed/3155524) | metadata signals extractable PD data (EC50) |
+| `Hess_2021.pdf` | Hess B et al., Efficacy and Safety Exposure-Response A…, The AAPS journal (2021) | pd | 5 | [10.1208/s12248-021-00660-3](https://doi.org/10.1208/s12248-021-00660-3) | [34893942](https://www.ncbi.nlm.nih.gov/pubmed/34893942) | metadata signals extractable PD data (Exposure-Response) |
+| `Li_2021.pdf` | Li Y et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology in dr… (2021) | pd | 5 | [10.1002/cpdd.803](https://doi.org/10.1002/cpdd.803) | [32459889](https://www.ncbi.nlm.nih.gov/pubmed/32459889) | metadata signals extractable PD data (Exposure-Response) |
+| `Sager_1986.pdf` | Sager G et al., Effect of serum, alpha-1 acid glycoprot…, Acta pharmacologica et toxi… (1986) | pd | 5 | [10.1111/j.1600-0773.1986.tb00094.x](https://doi.org/10.1111/j.1600-0773.1986.tb00094.x) | [3012942](https://www.ncbi.nlm.nih.gov/pubmed/3012942) | metadata signals extractable PD data (EC50) |
+| `Thakre_2024.pdf` | Thakre N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacology and t… (2024) | pd | 5 | [10.1002/cpt.3330](https://doi.org/10.1002/cpt.3330) | [38863178](https://www.ncbi.nlm.nih.gov/pubmed/38863178) | metadata signals extractable PD data (Exposure-Response) |
+| `Wang_2022.pdf` | Wang Z et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2022) | pd | 5 | [10.1111/bcp.14971](https://doi.org/10.1111/bcp.14971) | [34197653](https://www.ncbi.nlm.nih.gov/pubmed/34197653) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Wang_2024.pdf` | Wang K et al., Evaluation of omadacycline dosing regim…, European journal of pharmac… (2024) | pd | 5 | [10.1016/j.ejps.2024.106713](https://doi.org/10.1016/j.ejps.2024.106713) | [38295963](https://www.ncbi.nlm.nih.gov/pubmed/38295963) | metadata signals extractable PD data (PK/PD) |
+| `Yu_2025.pdf` | Yu H et al., Pharmacokinetic-pharmacodynamic (PK/PD)…, British journal of clinical… (2025) | pd | 5 | [10.1002/bcp.70093](https://doi.org/10.1002/bcp.70093) | [40344607](https://www.ncbi.nlm.nih.gov/pubmed/40344607) | metadata signals extractable PD data (PK/PD) |
+| `Cioli_1992.pdf` | Cioli V et al., A new protein antidenaturant agent, bin…, The Journal of rheumatology (1992) | pd | 4 |  | [1491393](https://www.ncbi.nlm.nih.gov/pubmed/1491393) | metadata signals extractable PD data (EC50) |
+| `Colli_1985.pdf` | Colli S et al., Prostacyclin-lipoprotein interactions.…, Biochemical pharmacology (1985) | pd | 4 | [10.1016/0006-2952(85)90525-8](https://doi.org/10.1016/0006-2952(85)90525-8) | [3893439](https://www.ncbi.nlm.nih.gov/pubmed/3893439) | metadata signals extractable PD data (IC50) |
+| `Fujiwara_1995.pdf` | Fujiwara K et al., Determination of urinary acetylpolyamin…, Journal of biochemistry (1995) | pd | 4 | [10.1093/oxfordjournals.jbchem.a125009](https://doi.org/10.1093/oxfordjournals.jbchem.a125009) | [8720137](https://www.ncbi.nlm.nih.gov/pubmed/8720137) | metadata signals extractable PD data (EC50) |
+| `Hughes_1979.pdf` | Hughes SP et al., The extraction from the blood of phosph…, Nuklearmedizin. Nuclear med… (1979) | pd | 4 |  | [228254](https://www.ncbi.nlm.nih.gov/pubmed/228254) | metadata signals extractable PD data (Emax) |
+| `Pasandideh_2021.pdf` | Pasandideh S et al., Evaluation of antioxidant and inhibitor…, International journal of bi… (2021) | pd | 4 | [10.1016/j.ijbiomac.2021.04.043](https://doi.org/10.1016/j.ijbiomac.2021.04.043) | [33848544](https://www.ncbi.nlm.nih.gov/pubmed/33848544) | metadata signals extractable PD data (EC50) |
+| `Psychoyos_1989.pdf` | Psychoyos S et al., Comparison of LTB4- and C5a-stimulated…, Agents and actions (1989) | pd | 4 | [10.1007/BF01972828](https://doi.org/10.1007/BF01972828) | [2552766](https://www.ncbi.nlm.nih.gov/pubmed/2552766) | metadata signals extractable PD data (EC50) |
+| `Webber_1989.pdf` | Webber SE, Receptors mediating the effects of subs…, British journal of pharmaco… (1989) | pd | 4 | [10.1111/j.1476-5381.1989.tb12665.x](https://doi.org/10.1111/j.1476-5381.1989.tb12665.x) | [2482101](https://www.ncbi.nlm.nih.gov/pubmed/2482101) | metadata signals extractable PD data (EC50) |
+| `Chen_2013.pdf` | Chen Y et al., Clinical pharmacology of axitinib, Clinical pharmacokinetics (2013) | pgx | 8 | [10.1007/s40262-013-0068-3](https://doi.org/10.1007/s40262-013-0068-3) | [23677771](https://www.ncbi.nlm.nih.gov/pubmed/23677771) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Chen_2017.pdf` | Chen P et al., Dynamic effects of CYP3A5 polymorphism…, Journal of clinical pharmac… (2017) | pgx | 8 | [10.1111/jcpt.12480](https://doi.org/10.1111/jcpt.12480) | [27885697](https://www.ncbi.nlm.nih.gov/pubmed/27885697) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
+| `Cheng_2021.pdf` | Cheng F et al., Genetic Polymorphisms Affecting Tacroli…, Pharmacogenomics and person… (2021) | pgx | 8 | [10.2147/PGPM.S337947](https://doi.org/10.2147/PGPM.S337947) | [34824543](https://www.ncbi.nlm.nih.gov/pubmed/34824543) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
+| `Guo_2020.pdf` | Guo J et al., Impact of gender, albumin, and CYP2C19…, The Journal of internationa… (2020) | pgx | 8 | [10.1177/0300060520952281](https://doi.org/10.1177/0300060520952281) | [32865063](https://www.ncbi.nlm.nih.gov/pubmed/32865063) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
+| `Hu_2023.pdf` | Hu L et al., Therapeutic drug monitoring of voricona…, European journal of clinica… (2023) | pgx | 8 | [10.1007/s00228-023-03538-9](https://doi.org/10.1007/s00228-023-03538-9) | [37458772](https://www.ncbi.nlm.nih.gov/pubmed/37458772) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
+| `Jang_2023.pdf` | Jang JH et al., Population Pharmacokinetic Modeling of…, Pharmaceuticals (Basel, Swi… (2023) | pgx | 8 | [10.3390/ph16020161](https://doi.org/10.3390/ph16020161) | [37259312](https://www.ncbi.nlm.nih.gov/pubmed/37259312) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+| `Li_2026.pdf` | Li H et al., Genetic and clinical predictors of vori…, The Journal of antimicrobia… (2026) | pgx | 8 | [10.1093/jac/dkag065](https://doi.org/10.1093/jac/dkag065) | [41766350](https://www.ncbi.nlm.nih.gov/pubmed/41766350) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
+| `Liu_2023.pdf` | Liu J et al., Influence of SLCO1B1 Polymorphisms on t…, Current drug metabolism (2023) | pgx | 8 | [10.2174/1389200224666230124121304](https://doi.org/10.2174/1389200224666230124121304) | [36734895](https://www.ncbi.nlm.nih.gov/pubmed/36734895) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
+| `Mahdavi_2023.pdf` | Mahdavi S et al., CYP1A2 Genetic Variation, Coffee Intake…, JAMA network open (2023) | pgx | 8 | [10.1001/jamanetworkopen.2022.47868](https://doi.org/10.1001/jamanetworkopen.2022.47868) | [36701157](https://www.ncbi.nlm.nih.gov/pubmed/36701157) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Meng_2021.pdf` | Meng XM et al., Effect of albumin and CYP2B6 polymorphi…, European journal of pharmac… (2021) | pgx | 8 | [10.1016/j.ejps.2021.105986](https://doi.org/10.1016/j.ejps.2021.105986) | [34474119](https://www.ncbi.nlm.nih.gov/pubmed/34474119) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
+| `Peer_2016.pdf` | Peer CJ et al., UGT1A1 genotype-dependent dose adjustme…, Journal of clinical pharmac… (2016) | pgx | 8 | [10.1002/jcph.627](https://doi.org/10.1002/jcph.627) | [26637161](https://www.ncbi.nlm.nih.gov/pubmed/26637161) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+| `Robertsen_2018.pdf` | Robertsen I et al., A Limited Sampling Strategy to Estimate…, Clinical pharmacokinetics (2018) | pgx | 8 | [10.1007/s40262-018-0646-5](https://doi.org/10.1007/s40262-018-0646-5) | [29556934](https://www.ncbi.nlm.nih.gov/pubmed/29556934) | metadata signals extractable PGX data (CYP3A5*1, PK/PD-context) |
+| `Yildirim_2019.pdf` | Yildirim E et al., Effect of CYP3A5 and ABCB1 Gene Polymor…, Clinical laboratory (2019) | pgx | 8 | [10.7754/Clin.Lab.2019.190343](https://doi.org/10.7754/Clin.Lab.2019.190343) | [31710427](https://www.ncbi.nlm.nih.gov/pubmed/31710427) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
+| `Buters_1996.pdf` | Buters JT et al., Role of CYP1A2 in caffeine pharmacokine…, Pharmacogenetics (1996) | pgx | 7 | [10.1097/00008571-199608000-00002](https://doi.org/10.1097/00008571-199608000-00002) | [8873215](https://www.ncbi.nlm.nih.gov/pubmed/8873215) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Callaghan_1999.pdf` | Callaghan JT et al., Olanzapine. Pharmacokinetic and pharmac…, Clinical pharmacokinetics (1999) | pgx | 7 | [10.2165/00003088-199937030-00001](https://doi.org/10.2165/00003088-199937030-00001) | [10511917](https://www.ncbi.nlm.nih.gov/pubmed/10511917) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Chhonker_2018.pdf` | Chhonker YS et al., In-vitro metabolism, CYP profiling and…, Journal of pharmaceutical a… (2018) | pgx | 7 | [10.1016/j.jpba.2018.06.047](https://doi.org/10.1016/j.jpba.2018.06.047) | [30099292](https://www.ncbi.nlm.nih.gov/pubmed/30099292) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Cook_2020.pdf` | Cook I et al., The Human UGT2B7 Nanodisc, Drug metabolism and disposi… (2020) | pgx | 7 | [10.1124/dmd.119.089946](https://doi.org/10.1124/dmd.119.089946) | [31892527](https://www.ncbi.nlm.nih.gov/pubmed/31892527) | metadata signals extractable PGX data (UGT2B7, PK/PD-context) |
+| `Green_2022.pdf` | Green ML et al., Population pharmacokinetics of rucapari…, Cancer chemotherapy and pha… (2022) | pgx | 7 | [10.1007/s00280-022-04413-7](https://doi.org/10.1007/s00280-022-04413-7) | [35397664](https://www.ncbi.nlm.nih.gov/pubmed/35397664) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Kokubun_2020.pdf` | Kokubun H et al., Population Pharmacokinetics of Methadon…, Journal of pain & palliativ… (2020) | pgx | 7 | [10.1080/15360288.2020.1785070](https://doi.org/10.1080/15360288.2020.1785070) | [32870067](https://www.ncbi.nlm.nih.gov/pubmed/32870067) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Lapham_2018.pdf` | Lapham K et al., 6-Chloro-5-[4-(1-Hydroxycyclobutyl)Phen…, Drug metabolism and disposi… (2018) | pgx | 7 | [10.1124/dmd.118.083709](https://doi.org/10.1124/dmd.118.083709) | [30194276](https://www.ncbi.nlm.nih.gov/pubmed/30194276) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+| `Nalda-Molina_2009.pdf` | Nalda-Molina R et al., Population pharmacokinetics meta-analys…, Cancer chemotherapy and pha… (2009) | pgx | 7 | [10.1007/s00280-008-0841-4](https://doi.org/10.1007/s00280-008-0841-4) | [18941750](https://www.ncbi.nlm.nih.gov/pubmed/18941750) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Nguyen_2025.pdf` | Nguyen T et al., Aprocitentan: The First Endothelin Rece…, American journal of therape… (2025) | pgx | 7 | [10.1097/MJT.0000000000001950](https://doi.org/10.1097/MJT.0000000000001950) | [40638911](https://www.ncbi.nlm.nih.gov/pubmed/40638911) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+| `Niel_2006.pdf` | Niel E et al., Colchicine today, Joint bone spine (2006) | pgx | 7 | [10.1016/j.jbspin.2006.03.006](https://doi.org/10.1016/j.jbspin.2006.03.006) | [17067838](https://www.ncbi.nlm.nih.gov/pubmed/17067838) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Nomoto_2018.pdf` | Nomoto M et al., Population Pharmacokinetic/Pharmacodyna…, Journal of clinical pharmac… (2018) | pgx | 7 | [10.1002/jcph.1267](https://doi.org/10.1002/jcph.1267) | [29905956](https://www.ncbi.nlm.nih.gov/pubmed/29905956) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Suzuki_1994.pdf` | Suzuki T et al., Acute changes in liver gene expression…, Carcinogenesis (1994) | pgx | 7 | [10.1093/carcin/15.8.1759](https://doi.org/10.1093/carcin/15.8.1759) | [8055660](https://www.ncbi.nlm.nih.gov/pubmed/8055660) | metadata signals extractable PGX data (CYP2B7, PK/PD-context) |
+| `Suzuki_2018.pdf` | Suzuki S et al., An analysis on distribution and inter-r…, Drug metabolism and pharmac… (2018) | pgx | 7 | [10.1016/j.dmpk.2018.02.002](https://doi.org/10.1016/j.dmpk.2018.02.002) | [29773500](https://www.ncbi.nlm.nih.gov/pubmed/29773500) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Tian_2022.pdf` | Tian Q et al., Investigating the Metabolic Mechanisms…, Current drug metabolism (2022) | pgx | 7 | [10.2174/1389200223666220520115014](https://doi.org/10.2174/1389200223666220520115014) | [35619304](https://www.ncbi.nlm.nih.gov/pubmed/35619304) | metadata signals extractable PGX data (TPMT, PK/PD-context) |
+| `Tu_2024.pdf` | Tu YP et al., Population pharmacokinetics of mirvetux…, British journal of clinical… (2024) | pgx | 7 | [10.1111/bcp.15937](https://doi.org/10.1111/bcp.15937) | [37872122](https://www.ncbi.nlm.nih.gov/pubmed/37872122) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Meaddough_2025.pdf` | Meaddough EL et al., Assessment of CYP2D6 gene expression in…, Chemico-biological interact… (2025) | pgx | 5 | [10.1016/j.cbi.2025.111526](https://doi.org/10.1016/j.cbi.2025.111526) | [40280382](https://www.ncbi.nlm.nih.gov/pubmed/40280382) | metadata signals extractable PGX data (CYP2D6) |
+
+<sub>queue written 2026-10-05 21:10 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Abd_2013 | not_relevant | 2 | 0 | The paper is a review of mycophenolate pharmacokinetics that mentions UGT polymorphisms as a covariate but does not report specific quantitative pharmacogenomic effect sizes or fitted parameters. |
+| PGx | Acton_1994 | not_relevant | 0 | 0 | The paper describes the cloning and characterization of a scavenger receptor (SR-BI) and its binding to lipoproteins, not a pharmacogenomic effect on the PK/PD of albumin. |
+| popPK | Aguiar_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ustekinumab, not albumin; albumin is only mentioned as a covariate. |
+| PGx | Al-Nahari_2020 | not_relevant | 0 | 0 | The paper reports that serum albumin levels (a protein concentration, not a gene variant) affect the volume of distribution of daclatasvir, which is a pharmacokinetic study of a drug, not a pharmacogenomic study of albumin itself. |
+| popPK | Alqahtani_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rivaroxaban, not albumin, which is only mentioned as a covariate. |
+| popPK | Ampratwum_1995 | irrelevant | 2 | 0 | The study models fluid resuscitation and albumin redistribution in burn patients, but does not report standard quantitative PK parameters (CL, V, t1/2) for albumin as a subject drug, and no numeric values are provided in the evidence. |
+| PGx | Andersen_2014 | not_relevant | 0 | 0 | The paper reports on protein engineering (mutations) to improve pharmacokinetics, not on human genetic variants (pharmacogenomics) affecting albumin PK/PD. |
+| popPK | Andreasen_1983 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for frusemide, not albumin; albumin is only mentioned as a serum protein concentration measurement. |
+| PGx | Ansaar_2023 | not_relevant | 0 | 0 | The paper investigates the impact of physiological and molecular factors (e.g., UGT2B7 abundance, albumin concentration) on epirubicin PK, but does not report pharmacogenomic effects (gene variants) on albumin PK/PD parameters. |
+| popPK | Anwar_2022 | irrelevant | 0 | 0 | The paper is an in vitro study on the antioxidant and anti-inflammatory properties of Ajwa date extracts, using albumin (BSA) only as a substrate for denaturation and glycation assays, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Appeldoorn_2023 | not_relevant | 0 | 0 | The paper is a review of ruxolitinib pharmacokinetics and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PD | Arroyo_1990 | not_relevant | 0 | 0 | The text is a qualitative review of treatment options for refractory ascites and does not report any pharmacodynamic or exposure-response analysis for albumin. |
+| PGx | Atia_2024 | not_relevant | 0 | 0 | The study investigates warfarin-induced toxicity in wild rats and does not report any pharmacogenomic effects (gene variants) on albumin PK/PD parameters. |
+| popPK | Autmizguine_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of trimethoprim-sulfamethoxazole, where albumin is only a covariate, not the subject drug. |
+| popPK | Babel_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetics for the antibody-drug conjugate Telisotuzumab Vedotin, not for albumin (which is only listed as a covariate). |
+| PD | Badier_1988 | not_relevant | 0 | 0 | The paper studies airway response to cold air and acetylcholine in rabbits sensitized to albumin, but does not report a pharmacodynamic or exposure-response relationship for albumin itself. |
+| PGx | Bandyopadhyay_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of haptoglobin (a protein, not a drug) and its relationship with albumin as a marker for blood-brain barrier permeability, not the pharmacokinetics or pharmacodynamics of albumin itself. |
+| PGx | Barker_1994 | not_relevant | 0 | 0 | The paper investigates the effect of oxidative stress on CYP1A1/2 mRNA expression and does not report any pharmacogenomic effect on the PK or PD of albumin. |
+| popPK | Baroudi_2026 | irrelevant | 0 | 0 | The study focuses on population pharmacokinetic models for tacrolimus, not albumin. |
+| PD | Baroudi_2026 | not_relevant | 0 | 0 | The paper focuses on the external evaluation and selection of population pharmacokinetic (popPK) models for tacrolimus, reporting on AUC prediction and model ranking scores, but does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic models for therapeutic enzymes in lysosomal storage diseases, not a study of albumin pharmacokinetics. |
+| PD | Barzel_2026 | not_relevant | 3 | 0 | The paper is a review summarizing PK/PD models for therapeutic enzymes in lysosomal storage diseases; it does not report a PD relationship for albumin (which is only mentioned as a tested covariate in PK models) nor does it provide extractable numeric PD parameters for albumin. |
+| popPK | Bernardo_2021 | irrelevant | 0 | 0 | The study investigates the in vitro pharmacological effects of plant extracts on enzymes and cells, with no pharmacokinetic data for albumin. |
+| PD | Bernardo_2021 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50/EC50) for plant extracts, not a pharmacodynamic exposure-response relationship for the drug albumin. |
+| popPK | Bi_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for testosterone cypionate, not albumin; albumin is only mentioned as a covariate. |
+| popPK | Boonpeng_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for meropenem, not albumin; albumin is only mentioned as a covariate. |
+| PD | Bosse_2005 | not_relevant | 2 | 1 | The paper reports qualitative PK/PD assessments (serum albumin, colloid osmotic pressure, hematocrit) and states they were "as expected" with no differences, but provides no numeric PD parameters, dose-response curves, or quantitative effect data in the text. |
+| popPK | Brambillasca_2024 | irrelevant | 0 | 0 | The study focuses on macropinocytosis inhibitors in cancer cells and uses albumin only as a nutrient source for proliferation assays, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Brennan_1984 | not_relevant | 0 | 0 | The paper describes a rare genetic variant affecting proalbumin cleavage and half-life in a single patient, but does not report a pharmacogenomic effect on the PK/PD of a specific drug. |
+| popPK | Brown_2017 | irrelevant | 0 | 0 | no_text gate: only 108 chars of text extracted (&lt; 400) |
+| PD | Brown_2017 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and exposure-response of osimertinib, not albumin. |
+| popPK | Budha_2023 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the drug tislelizumab, where albumin is only a covariate, not the subject drug. |
+| PGx | Buters_1996 | not_relevant | 0 | 0 | The paper studies caffeine pharmacokinetics and explicitly states that albumin levels did not differ between groups, reporting no effect on albumin PK/PD. |
+| popPK | Bátora_2024 | irrelevant | 0 | 0 | The paper describes the synthesis and validation of fluorescent probes for calcium sensing receptors, where albumin is only mentioned as a binding partner affecting probe specificity, not as the subject of pharmacokinetic analysis. |
+| PGx | Callaghan_1999 | not_relevant | 0 | 0 | The paper discusses pharmacokinetics of olanzapine and its binding to albumin, but does not report how a gene variant affects the PK/PD of albumin itself. |
+| popPK | Carrothers_2020 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the antibiotic dalbavancin, not for albumin (which is only listed as a covariate). |
+| popPK | Carrothers_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of dalbavancin, using albumin only as a covariate rather than as the subject drug. |
+| PD | Carrothers_2023 | not_relevant | 0 | 0 | The paper reports a population PK model where albumin is a covariate on PK parameters, but it does not report a pharmacodynamic (exposure-response) relationship for albumin itself. |
+| PGx | Chantharit_2020 | not_relevant | 0 | 0 | The study identifies serum albumin levels as a covariate for voriconazole clearance, but explicitly states that CYP2C19 genotypes did not influence pharmacokinetic parameters, so no pharmacogenomic effect is reported. |
+| popPK | Chen_1978 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of salicylate, with albumin only mentioned as a coating for activated carbon in a treatment context, not as the subject drug. |
+| PGx | Chen_2013 | not_relevant | 0 | 0 | The paper reports that UGT1A1 genotype and CYP2C19 phenotype have no clinically relevant effects on axitinib clearance, and does not report any pharmacogenomic effect on albumin PK/PD parameters. |
+| PGx | Chen_2017 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus, not albumin. |
+| PGx | Chen_2024 | not_relevant | 0 | 0 | The paper investigates the transporters of the drug TRIAC, not the pharmacokinetics or pharmacodynamics of albumin. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | no_text gate: only 203 chars of text extracted (&lt; 400) |
+| PD | Chen_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of eravacycline, not albumin, and does not report a pharmacodynamic or exposure-response relationship for albumin. |
+| PGx | Cheng_2021 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics of tacrolimus, not albumin; albumin is only mentioned as a clinical covariate affecting tacrolimus exposure. |
+| PGx | Cheng_2023 | not_relevant | 0 | 0 | The text contains only genotyping and Hardy-Weinberg equilibrium data, with no reported pharmacokinetic or pharmacodynamic parameters for albumin. |
+| PGx | Chhonker_2018 | not_relevant | 0 | 0 | The paper reports in-vitro metabolic properties and plasma protein binding of guggulsterone but does not investigate the impact of any gene variant or genotype on these parameters. |
+| PGx | Chia_2018 | not_relevant | 0 | 0 | The paper investigates the cellular mechanism of FcRn-mediated recycling for albumin and a fusion protein, not the effect of human genetic variants on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Cho_2022 | not_relevant | 0 | 0 | The paper describes a drug delivery strategy exploiting albumin metabolism in KRAS mutant cancers, but does not report a pharmacogenomic effect on the PK or PD parameters of albumin itself. |
+| PGx | Cho_2024 | not_relevant | 0 | 0 | The paper describes a novel drug delivery mechanism (macropinocytosis) and efficacy in cancer models, but does not report pharmacogenomic effects on the PK or PD of albumin. |
+| popPK | Chrétien_2024 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of a plant extract using albumin denaturation as an in-vitro assay, not the pharmacokinetics of albumin. |
+| PD | Chrétien_2024 | not_relevant | 0 | 0 | The paper reports pharmacological assays (antioxidant, anti-ulcer) and IC50/EC50 values for the plant extract, but does not report a pharmacodynamic (exposure-response) relationship for the drug albumin. |
+| popPK | Chua_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the monoclonal antibody mirikizumab, not for albumin (which is only listed as a covariate). |
+| popPK | Cioli_1992 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
+| PD | Cioli_1992 | not_relevant | 0 | 0 | The paper describes a pharmacological study of bindarit in rats but does not report any exposure-response or dose-response analysis with numeric PD parameters. |
+| PGx | Clarke_1999 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of docetaxel and mentions albumin as a covariate affecting clearance, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Colli_1985 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
+| PD | Colli_1985 | not_relevant | 0 | 0 | The paper studies prostacyclin-lipoprotein interactions and platelet aggregation, not the pharmacodynamics of albumin. |
+| PGx | Colussi_1994 | not_relevant | 0 | 0 | The paper investigates calcium metabolism in Gitelman's syndrome and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of albumin. |
+| PGx | Constans_1992 | not_relevant | 0 | 0 | The paper reviews the biology and genetics of vitamin-D-binding protein (DBP), not the pharmacokinetics or pharmacodynamics of albumin. |
+| PGx | Cook_2020 | not_relevant | 0 | 0 | The paper describes the purification of a UGT2B7 nanodisc for biochemical studies and does not report pharmacogenomic effects on the PK or PD of albumin. |
+| popPK | Dahan_2026 | irrelevant | 0 | 0 | The paper is a narrative review of Model-Informed Drug Development for analgesics and does not report pharmacokinetic parameters for albumin. |
+| PD | Dahan_2026 | not_relevant | 2 | 0 | The paper is a narrative review of MIDD methodologies and regulatory applications; it describes PK/PD concepts and cites case studies but does not present original data or specific numeric PD parameters (Emax, EC50, etc.) for any drug. |
+| popPK | Dai_2025 | irrelevant | 0 | 0 | The paper is a systematic review of the pharmacokinetics of tigecycline, not albumin. |
+| PD | Dai_2025 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetics (PK) models for tigecycline and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| PGx | Dawson_1989 | not_relevant | 0 | 0 | The paper investigates the effect of transit time and albumin binding on the metabolism of an ACE substrate, but it does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | De_1985 | not_relevant | 0 | 0 | The paper studies the effect of plasma proteins (albumin/SBP) on estradiol entry into cells, but does not report any pharmacogenomic effect (gene variant/genotype) on PK or PD parameters. |
+| popPK | De_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for paclitaxel (the active drug), not for albumin, which serves only as the carrier vehicle in the nanoparticle formulation. |
+| popPK | Delavenne_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rFIX-FP (Factor IX), not albumin. |
+| PD | Delavenne_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model validation for rFIX-FP, but it does not model or report any pharmacodynamic (PD) or exposure-response relationship (e.g., hemostatic effect vs. concentration). |
+| PD | Di_2021 | not_relevant | 1 | 0 | The paper is a review discussing the importance of plasma protein binding and its impact on PK/PD predictions, but it does not report specific numeric PD parameters or exposure-response relationships for albumin. |
+| popPK | Diao_2013 | irrelevant | 0 | 0 | The paper is a general review of therapeutic peptides and mentions albumin only as a conjugation partner, without reporting any specific pharmacokinetic parameters for albumin itself. |
+| PD | Dixit_1986 | not_relevant | 2 | 1 | The paper describes qualitative binding interactions and concentration-dependent effects (quenching, absorbance) but does not provide numeric PD parameters (e.g., Kd, Emax, EC50) or a quantitative exposure-response model. |
+| PGx | Dobariya_2023 | not_relevant | 0 | 0 | The paper describes a protein engineering variant (fused hPON1) for improved pharmacokinetics, not a human genetic variant affecting the PK/PD of albumin. |
+| PGx | Ehsasatvatan_2023 | not_relevant | 0 | 0 | The paper is a computational study on protein engineering and does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Eissing_2024 | irrelevant | 0 | 0 | no_text gate: only 157 chars of text extracted (&lt; 400) |
+| PD | Eissing_2024 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and pharmacodynamics of finerenone, not albumin. |
+| popPK | Ekobena_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bictegravir, not albumin. |
+| PD | Ekobena_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bictegravir, including covariate effects on clearance and simulated exposure, but it does not contain any pharmacodynamic (PD) or exposure-response analysis, nor does it report numeric PD parameters such as Emax or EC50. |
+| PD | Fabiani_1995 | not_relevant | 3 | 2 | The paper describes a qualitative dose- and time-related effect of albumin on sperm motility but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve in the provided text. |
+| PGx | Feng_2024 | not_relevant | 0 | 0 | The paper describes the development of a novel radiotracer with albumin-binding properties but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PD | Fiedler-Kelly_2019 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for fremanezumab, where albumin was tested as a covariate but found to have no significant effect; no pharmacodynamic (PD) or exposure-response relationship for albumin is reported. |
+| PGx | Fiehn_2009 | not_relevant | 0 | 0 | The text is a general review of methotrexate in rheumatology and mentions albumin only as a carrier for conjugates, without reporting any pharmacogenomic effects on PK or PD parameters. |
+| PD | Firouzabadi_2023 | not_relevant | 2 | 1 | The paper reports a single IC50 value for a nanoparticle formulation, which is a static potency metric rather than a dynamic pharmacodynamic (exposure-response) relationship or model with derivable parameters like Emax or EC50 curves. |
+| PGx | Francke_2022 | not_relevant | 0 | 0 | The study investigates the effect of body composition (phase angle) on tacrolimus pharmacokinetics, not the effect of a gene variant on albumin pharmacokinetics or pharmacodynamics. |
+| popPK | Fresquet-Molina_2025 | irrelevant | 0 | 0 | The paper is a systematic review of vancomycin pharmacokinetics, not albumin. |
+| PD | Fresquet-Molina_2025 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacokinetic (PK) models for vancomycin and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Frey_1985 | irrelevant | 0 | 0 | no_text gate: only 166 chars of text extracted (&lt; 400) |
+| PD | Frey_1985 | not_relevant | 0 | 0 | The paper investigates the effect of prednisolone on lymphocyte cultures, not albumin, and does not report PD parameters for albumin. |
+| popPK | Fu_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug teicoplanin, where albumin is only a covariate, not the subject drug. |
+| popPK | Fujiwara_1995 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
+| PD | Fujiwara_1995 | not_relevant | 0 | 0 | The paper describes the development of an ELISA assay for urinary acetylpolyamines and does not report any pharmacodynamic or exposure-response relationship for albumin. |
+| PGx | Fukuchi_2017 | not_relevant | 0 | 0 | The paper investigates the mechanism of nonlinear pharmacokinetics driven by albumin-mediated uptake, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Furlong_1988 | not_relevant | 0 | 0 | The paper studies the hydrolysis of insecticide metabolites (paraoxon/chlorpyrifos oxon) by plasma paraoxonase, not the pharmacokinetics or pharmacodynamics of albumin. |
+| popPK | Gao_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Trastuzumab Rezetecan, where albumin is only mentioned as a covariate, not as the subject drug. |
+| PD | Gao_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model where albumin is a covariate affecting volume of distribution, but it does not report a pharmacodynamic (PD) or exposure-response relationship for albumin itself. |
+| popPK | Gaurav_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the monoclonal antibody favezelimab, not for albumin (which is only listed as a covariate). |
+| popPK | Gibiansky_2022 | irrelevant | 0 | 0 | The study reports population PK parameters for the drug tisotumab vedotin (and its payload MMAE), not for albumin, which is only mentioned as a covariate. |
+| PGx | Goetz_1987 | not_relevant | 0 | 0 | The paper investigates the immunological response of leukocytes to E. coli pili and does not involve albumin pharmacokinetics or pharmacodynamics. |
+| popPK | Goicolea_2022 | irrelevant | 0 | 0 | The study is a proof-of-concept for a polymer-based ELISA for lactoferrin, where albumin is only used as a negative control for cross-reactivity, not as the subject of pharmacokinetic analysis. |
+| PD | Goicolea_2022 | not_relevant | 0 | 0 | The paper describes a synthetic polymer recognition element for lactoferrin and reports an EC50 for the assay's detection of lactoferrin, not a pharmacodynamic exposure-response relationship for the drug albumin. |
+| PGx | Green_2022 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic model for rucaparib where albumin is a covariate, but it does not report a pharmacogenomic effect (gene variant/genotype) on albumin's PK/PD parameters. |
+| PGx | Grix_2018 | not_relevant | 0 | 0 | The paper describes a tissue engineering method for bioprinting liver organoids and does not investigate the effect of genetic variants on the pharmacokinetics or pharmacodynamics of albumin. |
+| PGx | Gu_2023 | not_relevant | 2 | 0 | The paper reports a clinical nomogram for predicting drug switching based on CYP3A4 genotype and other factors, but it does not report specific pharmacokinetic or pharmacodynamic parameter values (e.g., AUC, Cmin) or fitted effect sizes of the genotype on albumin or the drug's PK/PD. |
+| popPK | Guidi_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for isavuconazole, not albumin. |
+| popPK | Ha-Kawa_1992 | irrelevant | 2 | 2 | The study models the pharmacokinetics of a radiolabeled diagnostic agent (99mTc-GSA) for liver function assessment, not the disposition parameters of albumin itself as a therapeutic drug. |
+| PGx | Haeffner_1989 | not_relevant | 0 | 0 | The paper studies fatty acid uptake in tumor cells and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of albumin. |
+| PD | Harbi_2020 | not_relevant | 2 | 1 | The paper describes binding studies and compartmental distribution of polyphenols in blood, but does not report a pharmacodynamic exposure-response relationship or numeric PD parameters (e.g., Emax, EC50) for albumin. |
+| popPK | Heffernan_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ceftriaxone, where albumin is only a covariate for protein binding, not the subject drug. |
+| PGx | Heinig_2023 | not_relevant | 0 | 0 | The paper reports the pharmacokinetics of finerenone, not albumin, and does not report pharmacogenomic effects on albumin PK/PD parameters. |
+| popPK | Hess_2021 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
+| PD | Hess_2021 | not_relevant | 0 | 0 | The paper analyzes the exposure-response relationship for loncastuximab tesirine, not albumin. |
+| popPK | Hinderling_1984 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of digoxin and its analogues, with albumin serving only as a binding protein/comparator rather than the subject drug. |
+| popPK | Hirunsomboon_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vancomycin, not albumin. |
+| PD | Hirunsomboon_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for vancomycin, including covariate analysis (age, membrane use) and dose simulations for probability of target attainment (PTA), but it does not model or report any pharmacodynamic (PD) parameters (e.g., Emax, EC50) or concentration-effect relationships. |
+| popPK | Honoré_1992 | irrelevant | 0 | 0 | The study investigates the ionization of tyrosine residues in human serum albumin using spectrophotometry and stopped-flow kinetics, which is a biophysical/chemical characterization rather than a pharmacokinetic study of albumin disposition. |
+| PD | Honoré_1992 | not_relevant | 0 | 0 | The paper describes the ionization kinetics and cooperative binding of protons to tyrosine residues in albumin, which is a physicochemical/biochemical property study, not a pharmacodynamic exposure-response or dose-response analysis of a drug. |
+| popPK | Horgan_1991 | irrelevant | 0 | 0 | The study investigates the vasoconstrictor effects of endothelin-1 in guinea pig lungs, using albumin only as a component of the perfusate or a tracer for permeability, not as the subject drug for PK analysis. |
+| popPK | Hossain_2025 | irrelevant | 0 | 0 | The study focuses on covalent drug development (SOD1, KRAS, BTK) and uses albumin only as a plasma off-target or standard, not as the subject drug for PK parameter estimation. |
+| popPK | Hsu_2026 | irrelevant | 0 | 0 | The paper is a methodological simulation study on covariate identification in PopPK modeling and does not report pharmacokinetic parameters for albumin. |
+| PD | Hsu_2026 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (PopPK) covariate identification and simulation methods, with no mention of pharmacodynamics, exposure-response, or dose-response relationships. |
+| PGx | Hu_2023 | not_relevant | 0 | 0 | The paper reports the effect of CYP2C19 genotype on voriconazole pharmacokinetics, not on albumin. |
+| PGx | Huang_2026 | not_relevant | 0 | 0 | The paper investigates the effect of a gene variant on a disease biomarker (albuminuria) and the efficacy of a metabolic intervention, not the pharmacokinetics or pharmacodynamics of the drug albumin. |
+| popPK | Hughes_1979 | irrelevant | 0 | 0 | no_text gate: only 67 chars of text extracted (&lt; 400) |
+| PD | Hughes_1979 | not_relevant | 0 | 0 | The paper describes the extraction of phosphate compounds by bone, which is a physicochemical or in vitro binding study, not a pharmacodynamic exposure-response analysis for a drug. |
+| popPK | Husheng_2026 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetics for vancomycin, not albumin. |
+| PD | Husheng_2026 | not_relevant | 0 | 0 | The paper is a review of population pharmacokinetic (PK) models for vancomycin and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| PGx | Jang_2023 | not_relevant | 0 | 0 | The study explicitly states that CYP2C9 genetic polymorphisms were not significant covariates for zaltoprofen pharmacokinetics. |
+| popPK | Janků_1992 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metipranolol, and albumin is only mentioned as a covariate for correlation, not as the subject drug. |
+| popPK | Jia_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for rivaroxaban, not albumin. |
+| PD | Jia_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for rivaroxaban but does not include a pharmacodynamic (PD) model or exposure-response analysis with numeric PD parameters (e.g., Emax, EC50); it only uses external exposure thresholds for bleeding risk. |
+| popPK | Jovanović_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for adalimumab, not albumin. |
+| PD | Jovanović_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PK) modeling of Adalimumab, reporting PK parameters like clearance and volume, but contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Jullien_2017 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for micafungin, not albumin; albumin is only mentioned as a covariate affecting micafungin clearance. |
+| PGx | Kamei_2025 | not_relevant | 0 | 0 | The paper investigates genetic variants in nephrotic syndrome and their association with clinical features like serum albumin levels, but does not report a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Kan_2017 | not_relevant | 0 | 0 | The paper analyzes HCV drug resistance variants and lipid changes, not pharmacogenomic effects on albumin PK/PD. |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of multiple myeloma drugs (carfilzomib, daratumumab, etc.), where albumin is only a covariate, not the subject drug. |
+| popPK | Karlsen_2026 | irrelevant | 0 | 0 | The paper describes a simulation framework for benchmarking covariate model building methods and does not report specific pharmacokinetic parameters for albumin. |
+| PD | Karlsen_2026 | not_relevant | 0 | 0 | The paper describes a framework for benchmarking covariate model building in population pharmacokinetics (popPK) using simulated data; it does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| PGx | Kemal_2026 | not_relevant | 0 | 0 | The paper reports a population PK model for nemtabrutinib where albumin is a covariate, but it does not report a pharmacogenomic effect (gene variant/genotype) on PK or PD parameters. |
+| PD | Kim_2023 | not_relevant | 3 | 1 | The text is a qualitative review that mentions an exposure-efficacy relationship follows a maximal effect model and notes albumin affects exposure, but it does not provide numeric PD parameters (Emax, EC50) or a specific concentration-effect curve for albumin. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bevacizumab (CT-P16), not albumin; albumin is only mentioned as a covariate. |
+| PD | Kim_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model where albumin is a covariate on volume of distribution, but it does not model albumin as a drug with a pharmacodynamic (PD) effect or exposure-response relationship. |
+| PGx | Kokubun_2020 | not_relevant | 0 | 0 | The study investigates the effect of the ALBI score (a clinical liver function metric) on methadone pharmacokinetics, not a specific gene variant or genotype. |
+| popPK | Kuroishi_2021 | irrelevant | 0 | 0 | The study focuses on the development and in-vitro characterization of an adrenomedullin-albumin conjugate, not the pharmacokinetics of albumin itself. |
+| PGx | Lange_1992 | not_relevant | 0 | 0 | The paper discusses haptoglobin polymorphisms and their biological functions, noting an association with albumin levels, but does not report a pharmacogenomic effect on the PK or PD of a specific drug. |
+| PGx | Lapham_2018 | not_relevant | 0 | 0 | The paper characterizes the enzyme kinetics of a specific UGT isoform for a new drug candidate but does not report pharmacogenomic effects (gene variants) on PK/PD parameters of albumin. |
+| PGx | Laurenzana_1995 | not_relevant | 0 | 0 | The paper studies CYP2D1/2D6 expression and dextromethorphan metabolism, not albumin pharmacokinetics or pharmacodynamics. |
+| popPK | Li_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of posaconazole, not albumin, which is only mentioned as a binding protein. |
+| popPK | Li_2016 | irrelevant | 0 | 0 | The paper is a review of dexmedetomidine pharmacokinetics, where albumin is only mentioned as a covariate, not the subject drug. |
+| popPK | Li_2021 | irrelevant | 0 | 0 | no_text gate: only 140 chars of text extracted (&lt; 400) |
+| PD | Li_2021 | not_relevant | 0 | 0 | The paper analyzes nab-paclitaxel, not albumin, and does not report PD parameters for albumin. |
+| PD | Li_2024 | not_relevant | 0 | 0 | The paper analyzes the prognostic value of a biomarker ratio (CRP/Albumin) for mortality risk, not the pharmacodynamic effect of a drug (albumin) on a physiological endpoint. |
+| PGx | Li_2026 | not_relevant | 0 | 0 | The paper investigates voriconazole pharmacokinetics, not albumin. |
+| popPK | Li_2026_2 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug gotistobart, not albumin; albumin is only mentioned as a covariate. |
+| PD | Li_2026_2 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for gotistobart where albumin is a covariate, but it does not report any pharmacodynamic (PD) or exposure-response relationship for albumin itself. |
+| popPK | Liang_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for polymyxin B, not albumin; albumin is only used as a covariate. |
+| popPK | Liang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of remimazolam tosilate, not albumin. |
+| PD | Liang_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetic (PopPK and PBPK) modeling to derive dose recommendations based on exposure matching; it does not report any pharmacodynamic (PD) or exposure-response relationship, nor does it provide numeric PD parameters. |
+| PGx | Liao_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus pharmacokinetics, not albumin. |
+| PGx | Liu_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on Mycophenolic Acid (MPA), not albumin; albumin is only a covariate. |
+| PGx | Liu_2024 | not_relevant | 0 | 0 | The paper investigates genetic variants associated with neonatal hyperbilirubinemia (a disease state) and bilirubin levels, but does not report pharmacokinetic or pharmacodynamic parameters for the drug albumin. |
+| popPK | Liu_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tislelizumab, not albumin. |
+| PD | Liu_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for tislelizumab, where albumin is a covariate affecting clearance, but it does not report a pharmacodynamic (PD) or exposure-response relationship for albumin itself. |
+| PGx | Mahdavi_2023 | not_relevant | 0 | 0 | The study examines the association between CYP1A2 genotype, coffee intake, and kidney disease outcomes (albuminuria), not the pharmacokinetics or pharmacodynamics of the drug albumin. |
+| popPK | Masters_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for sasanlimab, not albumin. |
+| PD | Masters_2026 | not_relevant | 0 | 0 | The paper explicitly states that no association was found between sasanlimab exposure and safety or efficacy endpoints, meaning no PD relationship or numeric PD parameters were reported. |
+| PD | McLachlan_1986 | not_relevant | 0 | 0 | The paper describes the development and validation of a radioimmunoassay for inhibin, not a pharmacodynamic or exposure-response analysis for albumin. |
+| PGx | Meaddough_2025 | not_relevant | 0 | 0 | The paper analyzes CYP2D6 gene expression variability and mentions albumin (ALB) expression only as a covariate/predictor for CYP2D6 levels, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Mitin_2024 | irrelevant | 0 | 0 | The study focuses on the synthesis and MRI contrast properties (relaxivity, Overhauser enhancement) of albumin-nitroxide conjugates, not the pharmacokinetic disposition parameters of albumin itself. |
+| PD | Mitin_2024 | not_relevant | 0 | 0 | The paper describes the synthesis and physical characterization of MRI contrast agents (relaxivity, EPR, structure) but does not report a pharmacodynamic exposure-response or dose-response relationship for albumin in a biological system. |
+| popPK | Moein_2022 | irrelevant | 0 | 0 | The study reports population PK parameters for the drug etrolizumab, where albumin is only a covariate, not the subject drug. |
+| popPK | Moffett_2019 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of vancomycin, not albumin, which is only listed as a covariate. |
+| popPK | Monk_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetics for niraparib, not albumin; albumin is only mentioned as a covariate. |
+| PD | Monk_2024 | not_relevant | 0 | 0 | The paper reports a population PK model where albumin is a covariate affecting clearance, but it does not report a pharmacodynamic (exposure- or dose-response) relationship for albumin itself. |
+| popPK | Morgan_1993 | irrelevant | 0 | 0 | The study investigates the effect of albumin on the pharmacodynamics of isoprenaline and propranolol in isolated rat uterus, not the pharmacokinetics of albumin itself. |
+| PD | Mouton_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model where albumin is a covariate for binding capacity (Bmax), but it does not report a pharmacodynamic (PD) or exposure-response relationship for albumin itself. |
+| PGx | Muntané-Relat_1995 | not_relevant | 0 | 0 | The paper investigates the effect of cytokines on CYP expression and albumin production, not the effect of a gene variant on the PK/PD of albumin. |
+| popPK | Muthukrishnan_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the drug clazakizumab, not albumin; albumin is only listed as a covariate. |
+| popPK | Nakagawa_1987 | irrelevant | 2 | 5 | The study measures local tissue distribution parameters (Ve, K1) of [125I]albumin in rat brain tumors to assess dexamethasone effects, rather than reporting systemic population pharmacokinetic parameters (CL, V, t1/2) for albumin as a drug. |
+| PGx | Nalda-Molina_2009 | not_relevant | 0 | 0 | The paper reports that albumin was not a statistically significant covariate for plitidepsin pharmacokinetics and does not investigate any gene variants or genotypes. |
+| PGx | Nasre-Nasser_2025 | not_relevant | 0 | 0 | The paper investigates genetic associations with Type 1 Diabetes and its complications, not the pharmacokinetics or pharmacodynamics of albumin. |
+| PGx | Nguyen_2025 | not_relevant | 0 | 0 | The paper describes the general pharmacokinetics and clinical efficacy of aprocitentan but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| popPK | Nguyen_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetics for dupilumab, not albumin; albumin is only mentioned as a covariate affecting dupilumab clearance. |
+| PGx | Niel_2006 | not_relevant | 0 | 0 | The text describes general pharmacokinetics and protein interactions (CYP3A4, P-gp) but does not report any specific gene variant or genotype affecting these parameters. |
+| PGx | Nitsche_2026 | not_relevant | 0 | 0 | The paper characterizes a liver microphysiological system for bile acid secretion and does not report pharmacogenomic effects on albumin PK/PD parameters. |
+| PGx | Nomoto_2018 | not_relevant | 0 | 0 | The paper analyzes the effect of albumin levels (a covariate) on the PK/PD of avatrombopag, but does not report a pharmacogenomic effect (gene variant/genotype) on albumin's PK or PD parameters. |
+| PD | OReilly_1967 | not_relevant | 0 | 0 | The paper reports in vitro protein binding affinity (association constant) and thermodynamic parameters, not a pharmacodynamic exposure-response or dose-response relationship for a biological effect. |
+| popPK | Ohno_1993 | irrelevant | 0 | 0 | The study uses radiolabeled albumin as a diagnostic imaging agent to assess liver function, not to characterize the pharmacokinetic parameters of albumin itself. |
+| PGx | Onafuye_2019 | not_relevant | 0 | 0 | The paper investigates the effect of a drug formulation (albumin nanoparticles) on drug resistance in cell lines, not the effect of a human gene variant on the pharmacokinetics or pharmacodynamics of albumin. |
+| popPK | Ooi_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of elafibranor and its metabolite GFT1007, where albumin is only used as a covariate, not as the subject drug. |
+| popPK | Palareti_1996 | irrelevant | 0 | 0 | The paper focuses on warfarin pharmacokinetics and albumin is only mentioned as a binding protein, not as the subject drug. |
+| popPK | Papathanasiou_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the antibody-drug conjugate belantamab mafodotin and its payload, not for albumin, which is only included as a covariate. |
+| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a review on nanoparticle pharmacokinetic modeling and does not report quantitative PK parameters for albumin. |
+| PD | Parrot_2026 | not_relevant | 0 | 0 | The text is a review of pharmacokinetic modeling frameworks for nanoparticles and does not report any specific pharmacodynamic or exposure-response data for albumin. |
+| popPK | Pasandideh_2021 | irrelevant | 0 | 0 | no_text gate: only 158 chars of text extracted (&lt; 400) |
+| PD | Pasandideh_2021 | not_relevant | 0 | 0 | The paper evaluates the antioxidant and inhibitory properties of Citrus aurantium on acetylcholinesterase and amyloid fibrils, not the pharmacodynamics of albumin. |
+| PD | Paulus_1973 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters regarding albumin or any pharmacodynamic relationship. |
+| popPK | Pearson_1985 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for glyburide, not albumin; albumin is only mentioned as a binding protein. |
+| PGx | Penedo_1988 | not_relevant | 0 | 0 | The paper reports no genetic variants for albumin and focuses on blood group polymorphisms in llamas and alpacas, not pharmacogenomics. |
+| popPK | Pentikäinen_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bumetanide, not albumin; albumin is only mentioned as a covariate for protein binding. |
+| PGx | Perazzolo_2025 | not_relevant | 0 | 0 | The paper focuses on tacrolimus PK and uses albumin as a covariate, but does not report pharmacogenomic effects on albumin PK/PD parameters. |
+| popPK | Perera_2022 | irrelevant | 0 | 0 | The study is an in-vitro toxicity comparison using acetaminophen and ethanol, where albumin is only used as a marker for cell differentiation, not as the subject drug for PK analysis. |
+| popPK | Peña-Lorenzo_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of isavuconazole, where albumin is only a covariate, not the subject drug. |
+| popPK | Pierson_1978 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of bromide and sucrose as tracers for extracellular water, using albumin only as a reference tracer for plasma volume, not as the subject drug. |
+| PGx | Pilati_2020 | not_relevant | 0 | 0 | The paper is a review of albumin-based drug designs for pharmacokinetic modulation and does not report pharmacogenomic effects of gene variants on albumin PK/PD parameters. |
+| PGx | Pilkington_1992 | not_relevant | 0 | 0 | The paper is a general pharmacology review of acitretin and does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| popPK | Ponto_1990 | irrelevant | 0 | 0 | The paper is a review of furosemide pharmacokinetics, not albumin; albumin is only mentioned as a binding protein. |
+| PD | Ponto_1990 | not_relevant | 2 | 0 | The text is a review abstract that qualitatively discusses PK/PD relationships (noting correlations with urine rather than plasma concentrations) but does not provide any numeric PD parameters, Emax, EC50, or specific dose-response curves. |
+| PGx | Popp_2013 | not_relevant | 0 | 0 | The paper investigates cholesterol metabolism in Alzheimer's disease and does not report pharmacokinetic or pharmacodynamic parameters of albumin. |
+| popPK | Psychoyos_1989 | irrelevant | 0 | 0 | no_text gate: only 169 chars of text extracted (&lt; 400) |
+| PD | Psychoyos_1989 | not_relevant | 0 | 0 | The paper investigates neutrophil chemotaxis in response to LTB4 and C5a, not albumin, and does not report any exposure-response or dose-response relationship for albumin. |
+| popPK | Psychoyos_1989_2 | irrelevant | 0 | 0 | The study investigates the effect of albumin concentration on leukotriene B4-induced neutrophil chemotaxis, not the pharmacokinetics of albumin itself. |
+| popPK | Qiao_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for imipenem, not albumin. |
+| PD | Qiao_2026 | not_relevant | 2 | 0 | The study focuses on population pharmacokinetics (PopPK) and probability of target attainment (PTA) for imipenem, not on albumin pharmacodynamics or exposure-response relationships for albumin. |
+| PGx | Qin_2024 | not_relevant | 0 | 0 | The paper describes a 3D cell model for monitoring CYP3A4 drug interactions and does not report any pharmacogenomic effects (gene variants) on albumin PK/PD parameters. |
+| popPK | Qin_2024_2 | irrelevant | 0 | 0 | The study focuses on the antiviral activity of a BSA conjugate, not the pharmacokinetics of albumin itself. |
+| popPK | Quah_2020 | irrelevant | 0 | 0 | The study investigates the anti-allergic and anti-inflammatory properties of a plant extract (Cornus officinalis) and does not report pharmacokinetic parameters for albumin. |
+| PGx | Rexiti_2023 | not_relevant | 0 | 0 | The study reports the effect of serum albumin concentration (a clinical covariate) on MPA pharmacokinetics, not the effect of a gene variant or genotype. |
+| popPK | Riglet_2020 | irrelevant | 0 | 0 | The study models the pharmacokinetics of mycophenolic acid (MPA), where albumin is only a covariate influencing protein binding, not the subject drug. |
+| PD | Roberts_2014 | not_relevant | 1 | 0 | The text is a review discussing the importance of albumin in PK variability but does not report any specific PD model, exposure-response relationship, or numeric PD parameters for albumin. |
+| PGx | Robertsen_2018 | not_relevant | 0 | 0 | The study explicitly states that genetic variants (CYP3A5, ABCB1, etc.) were tested as covariates but none were retained in the final model, indicating no significant pharmacogenomic effect was found. |
+| popPK | Rosenthal_1992 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of pentamidine in mice, and albumin is only mentioned as a negative control for protein synthesis inhibition, with no PK parameters reported. |
+| popPK | Royer_1995 | irrelevant | 0 | 0 | The study focuses on the anti-HIV activity of gossypol derivatives and their binding affinity to albumin, not the pharmacokinetics of albumin itself. |
+| popPK | Sager_1986 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
+| PD | Sager_1986 | not_relevant | 0 | 0 | The paper investigates the effect of albumin on beta-adrenoceptor binding in vitro, not the pharmacodynamic response of albumin as a drug. |
+| PGx | Salinger_2019 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic model for pretomanid where albumin is a continuous covariate, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Sathe_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for sacituzumab govitecan and its payload SN-38, where albumin is only evaluated as a covariate, not as the subject drug. |
+| PGx | Sathe_2024 | not_relevant | 0 | 0 | The paper reports that UGT1A1 genotype did not have a clinically relevant impact on exposure, and albumin is treated as a continuous covariate rather than a genetic variant. |
+| popPK | Sathe_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of sacituzumab govitecan, free SN-38, and total antibody, where albumin is only mentioned as a covariate for clearance, not as the subject drug. |
+| PGx | Sathe_2025 | not_relevant | 0 | 0 | The paper reports that UGT1A1 genotype did not have a clinically relevant impact on exposure, and albumin is treated as a continuous covariate rather than a genetic variant. |
+| PGx | Scouten_1985 | not_relevant | 0 | 0 | The paper studies protein expression in rat brain tissue regulated by gonadal steroids, not the pharmacokinetics or pharmacodynamics of albumin as a drug. |
+| PD | Serchenya_2019 | not_relevant | 2 | 1 | The paper reports qualitative changes in immunoreactivity (1.2-2.3x reduction) upon complex formation but does not provide a concentration-response curve, dose-response data, or numeric PD parameters (Emax, EC50) for albumin. |
+| popPK | Shao_2022 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of ustekinumab, not albumin; albumin is only mentioned as a covariate. |
+| popPK | Shao_2023 | irrelevant | 0 | 0 | The study models the pharmacokinetics of bedaquiline, where albumin is only a covariate affecting clearance, not the subject drug. |
+| PGx | Shen_2022 | not_relevant | 0 | 0 | The paper investigates albumin as a biomarker for cognitive decline in Parkinson's disease, not as a drug subject to pharmacogenomic analysis of its PK/PD parameters. |
+| PGx | Sidhu_1995 | not_relevant | 0 | 0 | The paper investigates the modulation of cytochrome P450 gene expression by dexamethasone and phenobarbital in rat hepatocytes and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of albumin. |
+| PGx | Sidhu_1995_2 | not_relevant | 0 | 0 | The study investigates cAMP-mediated regulation of CYP gene expression in rat hepatocytes and explicitly states that albumin gene expression was not modulated; it does not report pharmacogenomic effects on albumin PK/PD. |
+| popPK | Silva_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug APX3330, not albumin; albumin is only mentioned as a covariate or physiological factor. |
+| PGx | Sivananthan_2024 | not_relevant | 0 | 0 | The paper reports pharmacokinetic changes resulting from protein engineering (albumin fusion) rather than a pharmacogenomic effect of a gene variant on a drug's PK/PD. |
+| PGx | Smouse_1986 | not_relevant | 0 | 0 | The paper discusses RFLPs for paternity analysis and mentions the albumin gene region only as a genetic marker for linkage, not as a pharmacogenomic determinant of albumin pharmacokinetics or pharmacodynamics. |
+| popPK | Song_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tremelimumab, and albumin is only mentioned as a baseline covariate or confounder, not as the subject drug. |
+| PGx | Sopko_2017 | not_relevant | 0 | 0 | The paper reports protein engineering of a DKK2 fusion protein to improve pharmacokinetics, not a pharmacogenomic effect of a gene variant on albumin. |
+| PGx | Stodtmann_2021 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic analysis of veliparib where albumin is a covariate, but it does not report a pharmacogenomic effect (gene variant/genotype) on albumin's PK/PD parameters. |
+| popPK | Strecker_1977 | irrelevant | 2 | 0 | The study focuses on CSF-blood transfer kinetics and transit times in dogs, not on standard systemic pharmacokinetic parameters (CL, V, ka) for albumin as a dosed drug, and no numeric parameter values are provided in the evidence. |
+| PD | Suki_1999 | not_relevant | 1 | 0 | The text is a qualitative review of diuretic resistance management and mentions albumin only as a strategy to increase blood concentration, without providing any numeric PD parameters or exposure-response data. |
+| popPK | Sun_2019 | irrelevant | 0 | 0 | The study is an in-vitro toxicology investigation of PFOA using a mouse liver cell model, where albumin is used only as a marker of liver function, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Sun_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bictegravir, not albumin; albumin is only a covariate. |
+| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The study is a systematic review of 5-fluorouracil pharmacokinetics, where albumin is only mentioned as a covariate, not as the subject drug. |
+| PD | Suthahar_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for 5-fluorouracil and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| PGx | Suzuki_1994 | not_relevant | 0 | 0 | The paper reports changes in albumin mRNA expression due to chemical carcinogen exposure, not a pharmacogenomic effect of a gene variant on albumin PK/PD. |
+| PGx | Suzuki_2018 | not_relevant | 0 | 0 | The study analyzes the pharmacokinetics and pharmacodynamics of rivaroxaban, not albumin, and does not report pharmacogenomic effects. |
+| PGx | Szafraniec_2021 | not_relevant | 0 | 0 | The paper investigates the effect of serum albumin levels on ABCG2-mediated transport of photosensitizers, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Sürmelioğlu_2026 | irrelevant | 0 | 0 | The study is a systematic review of vancomycin pharmacokinetics, where albumin is only mentioned as a covariate, not the subject drug. |
+| PD | Sürmelioğlu_2026 | not_relevant | 1 | 0 | The paper is a systematic review of population pharmacokinetic (PopPK) studies for vancomycin; it reports PK parameters (clearance, volume) and covariates (including albumin as a PK covariate) but does not report any pharmacodynamic (PD) or exposure-response models or numeric PD parameters. |
+| popPK | Takada_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vancomycin, where serum albumin is used only as a covariate, not as the subject drug. |
+| popPK | Thakre_2024 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
+| PD | Thakre_2024 | not_relevant | 0 | 0 | The paper focuses on Risankizumab, not albumin, and does not report PD parameters for albumin. |
+| PGx | Tian_2022 | not_relevant | 0 | 0 | The study investigates the metabolic mechanism of butaselen and its interaction with albumin, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Tsyplakova_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mycophenolic acid (MPA), not albumin. |
+| PD | Tsyplakova_2025 | not_relevant | 0 | 0 | The paper reports population pharmacokinetic (PopPK) modeling and machine learning for MPA exposure prediction, but does not include any pharmacodynamic (PD) modeling, exposure-response analysis, or dose-effect relationship with numeric PD parameters. |
+| PGx | Tu_2024 | not_relevant | 0 | 0 | The study identifies serum albumin as a covariate for mirvetuximab soravtansine PK, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Tulbah_2026 | irrelevant | 0 | 0 | The paper is a review of PKPD models for anesthetic agents (e.g., fentanyl, propofol) and does not report pharmacokinetic parameters for albumin. |
+| PD | Tulbah_2026 | not_relevant | 3 | 2 | The paper is a review of PK/PD modeling in anesthesia that describes model structures (e.g., Hill equation) and cites specific studies, but it does not report original experimental data or provide the specific numeric PD parameter values (Emax, EC50, etc.) for the drugs discussed. |
+| PGx | Ullrich_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of a radioligand in a mouse model and does not report any pharmacogenomic effects (gene variants) on albumin PK/PD parameters. |
+| PGx | Vafa_2014 | not_relevant | 0 | 0 | The paper describes the engineering of a specific IgG variant (IgG2σ) to eliminate immune effector functions, not the effect of a human gene variant on the PK/PD of albumin. |
+| PGx | Vallo_2017 | not_relevant | 0 | 0 | The paper investigates the mechanism of drug resistance (ABCB1 overexpression) in cancer cell lines, not the effect of a specific gene variant on the pharmacokinetics or pharmacodynamics of albumin. |
+| popPK | Vollmer_1986 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of gabapentin, not albumin; albumin is only mentioned as a plasma protein for binding studies. |
+| PGx | Wakonig_1988 | not_relevant | 0 | 0 | The paper describes a method for measuring thyroid hormone binding to albumin and does not report a pharmacogenomic effect on the PK/PD of albumin itself. |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper describes a protein engineering strategy (fusing an albumin binding domain) to extend the half-life of a nanoparticle, not a pharmacogenomic effect of a human gene variant on albumin PK/PD. |
+| popPK | Wang_2020 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of delamanid, not albumin; albumin is only mentioned as a covariate (hypoalbuminemia) affecting delamanid clearance. |
+| PD | Wang_2020 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for delamanid, where albumin is a covariate affecting clearance, but it does not report any pharmacodynamic (PD) or exposure-response relationship for albumin itself. |
+| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper analyzes the effect of albumin levels (a protein concentration) on delamanid clearance, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | no_text gate: only 143 chars of text extracted (&lt; 400) |
+| PD | Wang_2022 | not_relevant | 0 | 0 | The paper focuses on ustekinumab, not albumin, and does not report PD parameters for albumin. |
+| popPK | Wang_2024 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
+| popPK | Wang_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the monoclonal antibody serplulimab, not for albumin (which is only listed as a covariate). |
+| popPK | Wang_2025_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of anrikefon, where albumin is only mentioned as a covariate, not as the subject drug. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper focuses on population pharmacokinetic models for polymyxin B, not albumin. |
+| PD | Wang_2026 | not_relevant | 0 | 0 | The paper is a population pharmacokinetic (popPK) model library for polymyxin B and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Webber_1989 | irrelevant | 0 | 0 | no_text gate: only 171 chars of text extracted (&lt; 400) |
+| PD | Webber_1989 | not_relevant | 0 | 0 | The paper investigates the pharmacology of substance P and neurokinin A on ferret trachea, not the pharmacodynamics of albumin. |
+| PD | Wellhagen_2020 | not_relevant | 2 | 0 | The paper is a methodological simulation study evaluating a statistical model (DR-MMRM) using simulated data; it does not report an empirical pharmacodynamic relationship or extractable numeric PD parameters for a specific drug in real subjects. |
+| PD | Wen_1988 | not_relevant | 0 | 0 | The paper studies the dose-response of ENU (a genotoxic agent) on cell lines, not the pharmacodynamics of albumin; albumin is only a component of the exposure medium. |
+| popPK | Wosilait_1981 | irrelevant | 0 | 0 | The study investigates the binding of warfarin to albumin in vitro, not the pharmacokinetic disposition parameters of albumin itself. |
+| popPK | Wu_2022 | irrelevant | 0 | 0 | The study reports the population pharmacokinetics of caspofungin, where albumin is only a covariate, not the subject drug. |
+| PGx | Wymann_2021 | not_relevant | 0 | 0 | The paper reports pharmacokinetic effects of protein glycosylation (sialylation) on clearance, not the effect of a human gene variant/genotype on the PK/PD of albumin. |
+| popPK | Xajil-Ramos_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tacrolimus, not albumin. |
+| PD | Xajil-Ramos_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for tacrolimus, focusing on exposure and covariates (CYP3A5, eGFR), but does not include any pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Xie_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of daptomycin, not albumin. |
+| PD | Xie_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PopPK) modeling and simulation of daptomycin exposure (AUC, Cmin) and probability of target/toxicity attainment; it does not report a pharmacodynamic (PD) model or concentration-effect relationship with numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Xu_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of caspofungin, where albumin is only mentioned as a covariate, not as the subject drug. |
+| popPK | Xu_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polymyxin B, not albumin. |
+| PD | Xu_2026 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic (PK) modeling and exposure prediction (AUC) for polymyxin B, with no pharmacodynamic (PD) or exposure-response analysis reported. |
+| PGx | Yang_2021 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of mycophenolic acid, not albumin, and reports that genetic polymorphisms have no impact on its PK. |
+| PGx | Yang_2021_2 | not_relevant | 0 | 0 | The paper describes a drug delivery system and its interaction with albumin, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the drug iruplinalkib, where albumin is only a covariate, not the subject drug. |
+| popPK | Yang_2025_2 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug iruplinalkib, not albumin; albumin is only mentioned as a covariate in the population PK model. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for encorafenib, not albumin. |
+| PD | Yang_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (popPK) model for encorafenib, including an autoinduction mechanism, but does not report any pharmacodynamic (PD) or exposure-response relationship for albumin or any other endpoint. |
+| popPK | Yi_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and efficacy of albumin-drug conjugates (ADCs) and does not report pharmacokinetic parameters (CL, V, t1/2) for albumin itself. |
+| PGx | Yildirim_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of Tacrolimus, not albumin. |
+| popPK | Yin_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the drug trastuzumab deruxtecan, where albumin is only a covariate, not the subject drug. |
+| popPK | Yu_2020 | irrelevant | 0 | 0 | The study focuses on the antiviral activity and binding affinity of a synthetic albumin conjugate, not the pharmacokinetic disposition parameters of albumin itself. |
+| popPK | Yu_2025 | irrelevant | 0 | 0 | no_text gate: only 139 chars of text extracted (&lt; 400) |
+| PD | Yu_2025 | not_relevant | 0 | 0 | The provided text is only the title of a paper and does not contain the full text, results, or numeric PD parameters required to assess the relationship. |
+| popPK | Zaidi_2026 | irrelevant | 0 | 0 | The paper is a systematic review of opioid pharmacokinetics in pregnancy and does not study albumin. |
+| PD | Zaidi_2026 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacokinetic (PopPK and PBPK) models for opioids in pregnancy and explicitly identifies the lack of integrated PK/PD frameworks as a future research priority, reporting no numeric PD parameters. |
+| PD | Zamoner_2024 | not_relevant | 3 | 2 | The study reports PK parameters (AUC/MIC) and logistic regression odds ratios for therapeutic success, but does not provide a concentration-effect curve or numeric PD parameters (Emax, EC50) for albumin or vancomycin. |
+| PGx | Zhang_2022 | not_relevant | 0 | 0 | The paper reports a prediction model for drug-induced liver injury using albumin as a clinical predictor, but does not report a pharmacogenomic effect on the PK or PD of albumin itself. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of a peptide derived from bovine serum albumin on cognition in mice, not the pharmacokinetics of albumin itself. |
+| popPK | Zhang_2025_2 | irrelevant | 0 | 0 | The study is a systematic review of imipenem pharmacokinetics, not albumin; albumin is only mentioned as a covariate. |
+| PD | Zhang_2025_2 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for imipenem and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of imipenem, not albumin. |
+| PD | Zhang_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the external validation of population pharmacokinetic (PK) models for imipenem and does not report any pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Zhang_2026_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of linezolid, not albumin. |
+| PD | Zhang_2026_2 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetics (PopPK) and machine learning for concentration prediction, but does not report any pharmacodynamic (PD) or exposure-response relationship for albumin or any other drug. |
+| PGx | Zhen_2017 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on clinical efficacy (symptoms, scores) of ulinastatin, not on the PK or PD parameters of albumin. |
+| PD | Zheng_2021 | not_relevant | 0 | 0 | The paper analyzes the exposure-response relationship for palbociclib, not albumin; albumin is only listed as a baseline covariate in the Cox model. |
+| PGx | Zhong_2018 | not_relevant | 0 | 0 | The paper characterizes the pharmacokinetics of anlotinib in animals and in vitro, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Zhou_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for cetagliptin (a DPP-4 inhibitor), not albumin. |
+| popPK | Zhou_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of voriconazole, and albumin is only mentioned as a covariate/modifier, not as the subject drug. |
+| PGx | Zhou_2026 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of voriconazole, not albumin. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balbumin%5D&body=Drug%3A%20albumin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_albumin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

@@ -1,0 +1,213 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08D&quot;,&quot;href&quot;:&quot;atc/C08D.md&quot;},{&quot;label&quot;:&quot;verapamil&quot;}]"></div>
+
+# verapamil
+
+- **generic name:** verapamil
+- **ATC codes:** `C08DA01`, `C09BB10`
+- **DrugBank:** [DB00661](https://go.drugbank.com/drugs/DB00661) · **PubChem:** [CID 2520](https://pubchem.ncbi.nlm.nih.gov/compound/2520)
+- **molar mass:** 454.6016 g/mol (C27H38N2O4) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Verapamil is a calcium channel blocker used to treat high blood pressure, angina, and supraventricular tachycardia. It is typically given by mouth or by intravenous injection. The medication is widely used and listed as an essential medicine.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q410291](https://www.wikidata.org/wiki/Q410291), [Wikipedia](https://en.wikipedia.org/wiki/Verapamil?oldid=1370506845) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| verapamil | parent | 454.602 | C27H38N2O4 | DrugBank | [2520](https://pubchem.ncbi.nlm.nih.gov/compound/2520) | Koike_1979 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Koike_1979_reference](drugs/drug_verapamil/Verapamil_Koike1979_reference.md) | — | 1-compartment (no model) | 7 | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | — |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Bergenholm_2016_PR](drugs/drug_verapamil/pd_Bergenholm_2016_PR.md) | PR interval ← verapamil · direct Emax (saturable) effect | — | Bergenholm L et al., PKPD modelling of PR and QRS intervals…, Journal of pharmacological… (2016) | [10.1016/j.vascn.2016.01.002](https://doi.org/10.1016/j.vascn.2016.01.002) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q23` · CLb | metabolism | [Saedder_2019](drugs/drug_verapamil/pgx_Saedder_2019_CYP2D6_Q23.md) | Saedder EA et al., Heart insufficiency after combination o…, Clinical case reports (2019) | [10.1002/ccr3.2393](https://doi.org/10.1002/ccr3.2393) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **ABCB1** | `Q900` · equation variable | transport | [van_2012_2](drugs/drug_verapamil/pgx_van_2012_2_ABCB1_Q900.md) | van Assema DM et al., Blood-brain barrier P-glycoprotein func…, EJNMMI research (2012) | [10.1186/2191-219X-2-57](https://doi.org/10.1186/2191-219X-2-57) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=verapamil).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` blocker/inhibitor/substrate/transport, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` substrate, `ORM1` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` blocker/inhibitor/substrate/transport, `ABCC1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` blocker/inhibitor/substrate/transport | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` blocker/inhibitor/substrate/transport | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/metabolism | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2B6` activator/substrate, `CYP2C19` substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor/metabolism, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` blocker/inhibitor/substrate/transport, `ABCC4` inhibitor, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` blocker/inhibitor/substrate/transport, `ABCC3` inhibitor, `ABCC4` inhibitor, `SLC47A1` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC3` inhibitor | DrugBank actor |
+| — | brain | `SLC6A4` unknown | DrugBank actor |
+| — | platelet | `SLC6A4` unknown | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ADRA1A (target), ADRA1B (target), ADRA1D (target), CACNA1A (inhibitor), CACNA1B (inhibitor), CACNA1C (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNG1 (inhibitor), CYP2C18 (substrate), KCNH2 (inhibitor), KCNJ11 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 15:27 | 6:42 | 0/1/0 | 1/0/0 | 0/0/2 | 452,113/34,358 | einfracz / qwen3.8-27b | 22 | 7/16 | 22/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 1464 matched, 81 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_17 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gupta_2002.pdf` | Gupta S et al., Pharmacokinetics of controlled-release…, Biopharmaceutics & drug dis… (2002) | popPK | 10 | [10.1002/bdd.289](https://doi.org/10.1002/bdd.289) | [11891670](https://pubmed.ncbi.nlm.nih.gov/11891670) | The paper reports a population PK model for verapamil but only describes trends and relative comparisons (e.g., 4-fold greater clearance) without providing the specific numeric parameter values (CL, V, Ka) in the provided evidence. |
+| `Koike_1979.pdf` | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | popPK | 10 |  | [432439](https://pubmed.ncbi.nlm.nih.gov/432439) | The study reports quantitative compartmental PK parameters (CL, Vd, t1/2) for verapamil in humans, with all values explicitly stated in the text. |
+| `Lemmer_1997.pdf` | Lemmer B, Chronopharmacological aspects of PK/PD…, International journal of cl… (1997) | pd | 5 |  | [9352396](https://www.ncbi.nlm.nih.gov/pubmed/9352396) | metadata signals extractable PD data (PK/PD) |
+| `Zimmerman_2004.pdf` | Zimmerman JJ, Exposure-response relationships and dru…, The AAPS journal (2004) | pd | 5 | [10.1208/aapsj060428](https://doi.org/10.1208/aapsj060428) | [15760093](https://www.ncbi.nlm.nih.gov/pubmed/15760093) | metadata signals extractable PD data (Exposure-response) |
+| `Harder_1992.pdf` | Harder S et al., Concentration/effect relationship and e…, Journal of cardiovascular p… (1992) | pd | 4 |  | [1381762](https://www.ncbi.nlm.nih.gov/pubmed/1381762) | metadata signals extractable PD data (sigmoid) |
+| `Pan_2008.pdf` | Pan W et al., Dietary salt does not influence the dis…, Xenobiotica; the fate of fo… (2008) | pgx | 8 | [10.1080/00498250701832446](https://doi.org/10.1080/00498250701832446) | [18340565](https://www.ncbi.nlm.nih.gov/pubmed/18340565) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Botsch_1993.pdf` | Botsch S et al., Identification and characterization of…, Molecular pharmacology (1993) | pgx | 7 |  | [8423765](https://www.ncbi.nlm.nih.gov/pubmed/8423765) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Busse_1995.pdf` | Busse D et al., Cytochromes of the P450 2C subfamily ar…, Naunyn-Schmiedeberg's archi… (1995) | pgx | 7 | [10.1007/BF00168924](https://doi.org/10.1007/BF00168924) | [8750925](https://www.ncbi.nlm.nih.gov/pubmed/8750925) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Dadashzadeh_2006.pdf` | Dadashzadeh S et al., The effect of gender on the pharmacokin…, Biopharmaceutics & drug dis… (2006) | pgx | 7 | [10.1002/bdd.512](https://doi.org/10.1002/bdd.512) | [16892180](https://www.ncbi.nlm.nih.gov/pubmed/16892180) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Djebli_2021.pdf` | Djebli N et al., Physiologically-Based Pharmacokinetic M…, European journal of drug me… (2021) | pgx | 7 | [10.1007/s13318-021-00714-z](https://doi.org/10.1007/s13318-021-00714-z) | [34495458](https://www.ncbi.nlm.nih.gov/pubmed/34495458) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Hassan_2007.pdf` | Hassan HE et al., Oxycodone induces overexpression of P-g…, Journal of pharmaceutical s… (2007) | pgx | 7 | [10.1002/jps.20893](https://doi.org/10.1002/jps.20893) | [17593551](https://www.ncbi.nlm.nih.gov/pubmed/17593551) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Jamali_2026.pdf` | Jamali H et al., Targeting ABC transporters in glioma: f…, Neurogenetics (2026) | pgx | 7 | [10.1007/s10048-026-00881-8](https://doi.org/10.1007/s10048-026-00881-8) | [41831170](https://www.ncbi.nlm.nih.gov/pubmed/41831170) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Kim_1993.pdf` | Kim M et al., Inhibition of the enantioselective oxid…, Drug metabolism and disposi… (1993) | pgx | 7 |  | [8097702](https://www.ncbi.nlm.nih.gov/pubmed/8097702) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Oshida_2017.pdf` | Oshida K et al., Identification of Transporters Involved…, European journal of drug me… (2017) | pgx | 7 | [10.1007/s13318-016-0327-4](https://doi.org/10.1007/s13318-016-0327-4) | [26961540](https://www.ncbi.nlm.nih.gov/pubmed/26961540) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Othman_2007.pdf` | Othman AA et al., Transport, metabolism, and in vivo popu…, The Journal of pharmacology… (2007) | pgx | 7 | [10.1124/jpet.106.111245](https://doi.org/10.1124/jpet.106.111245) | [17003230](https://www.ncbi.nlm.nih.gov/pubmed/17003230) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Suroowan_2019.pdf` | Suroowan S et al., Herbal Medicine of the 21st Century: A…, Current topics in medicinal… (2019) | pgx | 7 | [10.2174/1568026619666191112121330](https://doi.org/10.2174/1568026619666191112121330) | [31721714](https://www.ncbi.nlm.nih.gov/pubmed/31721714) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Tomita_2020.pdf` | Tomita Y et al., Prediction methods of drug-drug interac…, Drug metabolism and pharmac… (2020) | pgx | 7 | [10.1016/j.dmpk.2020.03.006](https://doi.org/10.1016/j.dmpk.2020.03.006) | [32660818](https://www.ncbi.nlm.nih.gov/pubmed/32660818) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-07 15:21 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abutaima_2024 | irrelevant | 0 | 0 | Verapamil is used only as a positive control/probe drug to test p-gp inhibition on prednisolone pharmacokinetics, not as the subject drug for PK parameter extraction. |
+| popPK | Aguado-Sierra_2024 | irrelevant | 0 | 0 | The study is an in-silico computational modeling paper focusing on proarrhythmic risk (QT interval) where verapamil is used merely as a reference compound for comparison, with no population pharmacokinetic parameters (CL, V, etc.) reported. |
+| PD | Aguado-Sierra_2024 | not_relevant | 0 | 0 | The paper describes an in silico computational model for QT exposure-response but does not report specific numeric PD parameters (e.g., Emax, EC50) for verapamil in the provided text. |
+| PGx | Angus_1982 | not_relevant | 0 | 0 | The paper describes the pharmacological mechanism and tissue selectivity of verapamil in animal models, but does not report any pharmacogenomic effects (gene variant effects) on PK or PD parameters. |
+| popPK | Antunes_2017 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of oxcarbazepine and its metabolite, with verapamil serving only as a co-administered P-gp inhibitor/probe. |
+| popPK | Bergenholm_2016 | irrelevant | 1 | 0 | The paper focuses on PKPD modeling of cardiac effects (PR/QRS) where verapamil is one of several comparator drugs, and it does not report verapamil's own quantitative pharmacokinetic disposition parameters (like CL or V). |
+| PGx | Biwott_2025 | not_relevant | 0 | 0 | The paper investigates the effect of ruxolitinib on P-glycoprotein function and T-cell biology, using verapamil only as a positive control for ATPase activity, not as the subject of a pharmacogenomic study. |
+| PGx | Botsch_1993 | not_relevant | 0 | 0 | The paper focuses on the metabolism of propafenone; verapamil is only used as a tool compound (inhibitor) and its PK/PD parameters are not reported or linked to genetics. |
+| PGx | Bucana_1990 | not_relevant | 1 | 5 | The paper uses verapamil as an inhibitor of multidrug resistance (MDR) efflux pumps to study dye transport and adriamycin resistance in cancer cells, not to report a pharmacogenomic effect of a gene variant on verapamil's PK or PD. |
+| PGx | Busse_1995 | not_relevant | 3 | 0 | The paper identifies CYP2C subfamily enzymes involved in verapamil O-demethylation using in vitro methods, but it does not report a pharmacogenomic effect (linking a specific genetic variant to a PK/PD change) in vivo. |
+| popPK | Cao_2012 | irrelevant | 1 | 0 | Verapamil is used only as one of four example drugs to illustrate a modeling methodology, with no specific quantitative PK parameter values reported in the evidence. |
+| PGx | Chen_2025 | not_relevant | 0 | 0 | The study reports a pharmacokinetic drug-drug interaction (verapamil inhibits CYP3A4 affecting TQB3909), not a pharmacogenomic effect (gene variant/genotype) on the PK/PD of verapamil. |
+| PGx | Dadashzadeh_2006 | not_relevant | 0 | 0 | The paper investigates gender differences, not gene variants/genotypes, so it does not report a pharmacogenomic effect. |
+| PGx | Djebli_2021 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of entrectinib and involves drug-drug interactions (verapamil as an inhibitor), but it does not report a pharmacogenomic effect (gene variant/genotype) on the PK or PD of verapamil. |
+| PGx | Domínguez-Álvarez_2016 | not_relevant | 0 | 0 | The paper uses verapamil as a reference standard to compare the efficacy of selenocompounds in reversing multidrug resistance; it does not report pharmacogenomic variants affecting verapamil's PK/PD. |
+| PGx | Feng_2020 | not_relevant | 0 | 0 | The paper investigates the effect of a natural compound (Ginsenoside Rg5) on drug transport, not the effect of a genetic variant on verapamil pharmacokinetics. |
+| PGx | Freedman_1981 | not_relevant | 0 | 0 | The paper reports clinical response to verapamil in coronary artery spasm patients but does not mention any genetic variants or pharmacogenomic influences on PK/PD. |
+| PGx | Fuhr_1992 | not_relevant | 2 | 2 | The title suggests a study on CYP1A2 and Verapamil, but no text content or specific pharmacogenomic effect sizes (genotype -&gt; PK change) are provided to verify relevance. |
+| PGx | Gajdács_2017 | not_relevant | 0 | 0 | The paper investigates selenoesters as multidrug resistance reversing agents in cancer cell lines and does not involve verapamil or human pharmacogenomic variants. |
+| popPK | García-Varela_2021 | irrelevant | 4 | 6 | The study reports quantitative PK parameters (K1, VT, k2) for a radiolabeled verapamil tracer in nonhuman primates, but the values are not directly readable in the provided text and are primarily referenced in tables/figures not included. |
+| PGx | Gosselin_2023 | not_relevant | 0 | 0 | The study examines bleeding risk associated with drug-drug interactions (DOACs and antiarrhythmics) in a clinical cohort, and does not report pharmacogenomic effects on verapamil PK/PD parameters. |
+| PGx | Gronich_2021 | not_relevant | 0 | 0 | The paper reports clinical outcomes (bleeding/stroke) associated with drug-drug interactions, not gene variants affecting PK/PD parameters. |
+| popPK | Gupta_2002 | relevant | 10 | 2 | The paper reports a population PK model for verapamil but only describes trends and relative comparisons (e.g., 4-fold greater clearance) without providing the specific numeric parameter values (CL, V, Ka) in the provided evidence. |
+| popPK | Harder_1992 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
+| PGx | Hassan_2007 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetic effects of oxycodone and paclitaxel, utilizing verapamil only as an inhibitory control, and does not report pharmacogenomic effects on verapamil. |
+| popPK | Hu_2025 | irrelevant | 0 | 0 | The study is an ex vivo pharmacological investigation of verapamil's effect on prostate contractions, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Jamali_2026 | not_relevant | 0 | 0 | The paper is a computational study on farnesiferols as P-gp inhibitors and does not report any pharmacogenomic effect of a genetic variant on verapamil's pharmacokinetics or pharmacodynamics. |
+| PGx | Kawanabe_2006 | not_relevant | 0 | 0 | The paper uses verapamil as an inhibitor to identify ABCG2-dependent side population cells in periodontal ligaments, rather than studying the effect of a gene variant on verapamil's pharmacokinetics or pharmacodynamics. |
+| PGx | Kim_1993 | not_relevant | 0 | 0 | The paper studies the metabolic interaction between verapamil and metoprolol using human liver microsomes without reporting any gene variants or pharmacogenomic effects. |
+| PGx | Kim_2011 | not_relevant | 0 | 0 | The paper investigates the role of P-gp in chondrogenesis and does not report pharmacogenomic effects on verapamil's PK or PD parameters. |
+| PGx | Kroemer_1993 | not_relevant | 1 | 0 | The paper identifies CYP enzymes involved in verapamil metabolism using human liver microsomes and yeast systems, but does not report pharmacogenomic effects (gene variants changing PK/PD in patients). |
+| popPK | Kume_2018 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor crosstalk in airway smooth muscle where verapamil is used solely as a calcium channel inhibitor tool compound, not as the subject drug for pharmacokinetic analysis. |
+| PD | Kume_2018 | not_relevant | 0 | 0 | The provided text is a fragment of a title or heading ("Involvement of Allosteric Effect and K") and contains no data, analysis, or numeric parameters regarding verapamil pharmacodynamics. |
+| PGx | Lacher_2014 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of paraquat, not verapamil, which is only used as a P-gp inhibitor. |
+| popPK | Lacher_2015 | irrelevant | 0 | 0 | Verapamil is used only as an in-vitro positive control for P-glycoprotein function, not as the subject of a pharmacokinetic study. |
+| PD | Lacher_2015 | not_relevant | 3 | 5 | The paper reports in vitro kinetic parameters (Vmax, Km) for verapamil as a positive control for P-gp ATPase activity, but does not report a pharmacodynamic exposure-response or dose-response relationship for verapamil itself. |
+| PGx | Larrazabal_2021 | not_relevant | 0 | 0 | The paper investigates the effect of verapamil on parasite proliferation in bovine cells, not the effect of a human gene variant on verapamil pharmacokinetics or pharmacodynamics. |
+| popPK | Lemmer_1997 | irrelevant | 0 | 0 | no_text gate: only 48 chars of text extracted (&lt; 400) |
+| PD | Lemmer_1997 | not_relevant | 1 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the relationship. |
+| PGx | Lü_2022 | not_relevant | 0 | 0 | The study focuses on herb-drug interactions of citrus compounds with verapamil via network analysis and in vitro enzyme assays, reporting no human pharmacogenomic (genetic variant) effects on verapamil PK/PD parameters. |
+| PGx | Martin_2016 | not_relevant | 0 | 0 | The study investigates the effect of verapamil (a CYP3A4 inhibitor) on the pharmacokinetics of fostamatinib, not the effect of a specific gene variant or genotype on the pharmacokinetics or pharmacodynamics of verapamil itself. |
+| popPK | Methaneethorn_2014 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of simvastatin and its interaction with verapamil; verapamil is treated as a perpetrator/comparator in the DDI model, and no specific numeric PK parameter values for verapamil are provided in the evidence. |
+| PGx | Methaneethorn_2014 | not_relevant | 0 | 0 | The paper describes a pharmacokinetic drug-drug interaction between simvastatin and verapamil, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK/PD parameters. |
+| PGx | Mu_2025 | not_relevant | 0 | 0 | The paper models the impact of liver cirrhosis (reduced enzyme expression/physiological changes) on PK, but does not report specific genetic variants or genotypes influencing the pharmacokinetics of verapamil. |
+| PGx | Mukhtar_2023 | not_relevant | 0 | 0 | The paper studies the effect of Cymbopogon citratus/citral on doxorubicin resistance, not the pharmacogenomic effects of gene variants on verapamil PK/PD. |
+| PGx | Mäenpää_2016 | not_relevant | 0 | 0 | The paper discusses the cardiac safety of ophthalmic timolol and mentions verapamil only as a CYP2D6 inhibitor that increases timolol levels; it does not report how a gene variant changes the PK/PD of verapamil itself. |
+| PGx | Offord_2025 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between nirmatrelvir-ritonavir and verapamil, not a pharmacogenomic effect driven by a gene variant. |
+| PGx | Oshida_2017 | not_relevant | 0 | 0 | The paper investigates the transporters for beraprost sodium, using verapamil only as an inhibitor for P-gp, and does not report pharmacogenomic effects on verapamil PK/PD. |
+| PGx | Othman_2007 | not_relevant | 0 | 0 | The study investigates benztropine analogs and uses verapamil only as a P-glycoprotein inhibitor to study transport mechanisms, rather than examining the pharmacokinetics or pharmacodynamics of verapamil itself in relation to genetic variants. |
+| PGx | Pan_2008 | not_relevant | 5 | 1 | The study reports no statistically significant pharmacogenomic effect of ABCB1 haplotypes on verapamil PK parameters, finding only non-significant trends. |
+| PGx | Pillai_2009 | not_relevant | 2 | 5 | The paper describes a drug-drug interaction (grapefruit juice inhibiting CYP3A4) rather than a pharmacogenomic effect mediated by a specific gene variant or genotype. |
+| popPK | Rehman_2022 | irrelevant | 0 | 0 | The study is an ex vivo pharmacodynamic and in silico investigation of fenchone using guinea pig trachea, where verapamil is used only as a reference drug/comparator, with no pharmacokinetic parameters reported. |
+| PD | Rehman_2022 | not_relevant | 0 | 0 | The paper studies fenchone, not verapamil. |
+| PGx | Saedder_2019 | not_relevant | 1 | 2 | The paper mentions CYP2D6 status as a theoretical vulnerability factor in the abstract but is a case report focused on drug-drug interaction with metoprolol, without providing specific quantitative PK/PD data for verapamil in relation to genotype. |
+| PGx | Seo_2020 | not_relevant | 4 | 3 | The paper reports a change in brain xenobiotic clearance (measured via PET imaging with [11C]verapamil) due to ABCB1 loss-of-function, but it does not quantify systemic PK parameters (e.g., AUC, Cmax) or PD parameters for verapamil as a therapeutic drug. |
+| popPK | Sjögren_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fexofenadine with verapamil as a drug-drug interaction inhibitor, not the PK of verapamil itself. |
+| PGx | Slate_1991 | not_relevant | 0 | 0 | The paper studies pharmacodynamic reversal of cancer drug resistance, not pharmacogenomics. |
+| PGx | Spengler_2015 | not_relevant | 0 | 0 | The paper investigates the potency of novel phosphorus ylides as ABCB1 inhibitors and compares them to verapamil, but it does not report a pharmacogenomic effect of a gene variant on verapamil's PK or PD parameters. |
+| PGx | Srinivas_2008 | not_relevant | 0 | 0 | The paper focuses on dual drug-drug interactions (atorvastatin and verapamil) mediated by P-gp/CYP3A4, not on pharmacogenomic variants affecting verapamil's PK/PD. |
+| PGx | Sulová_2009 | not_relevant | 0 | 0 | The paper discusses verapamil only as an example of a drug that antagonizes P-gp mediated resistance, not as the drug subject of pharmacogenomic PK/PD analysis. |
+| PGx | Supino_1993 | not_relevant | 0 | 0 | The study examines multidrug resistance mechanisms in cancer cells and does not report on pharmacogenomic effects of verapamil on PK or PD parameters. |
+| PGx | Suroowan_2019 | not_relevant | 0 | 0 | The paper reviews herbal interactions with verapamil (displacement from serum proteins) but does not report any pharmacogenomic effects (gene variants) on its PK/PD parameters. |
+| PGx | Szczepańska_2020 | not_relevant | 0 | 0 | The paper reports in vitro inhibition of P-gp by novel compounds, comparing potency to verapamil, but does not report a pharmacogenomic effect on the PK or PD parameters of verapamil. |
+| PGx | Tam_1993 | not_relevant | 0 | 0 | The text mentions verapamil only as an example of enzymatic induction by rifampicin, not as a pharmacogenomic study involving a gene variant. |
+| PGx | Tomita_2020 | not_relevant | 0 | 0 | The paper focuses on predicting drug-drug interactions for non-oral CYP3A4 substrates and does not report pharmacogenomic effects (gene variants) on verapamil PK parameters. |
+| popPK | Tran_2023 | irrelevant | 0 | 0 | The study is an in-vitro biophysical analysis of P-glycoprotein ATPase activity modulated by lipids, not a pharmacokinetic study reporting disposition parameters for verapamil. |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper reports the in vitro reversal activity of new triazole-pyrimidine compounds against ABCB1-mediated multidrug resistance, using verapamil only as a standard comparator for potency, without investigating genetic variants or pharmacogenomic effects on verapamil's pharmacokinetics or pharmacodynamics. |
+| PGx | Wang_2026 | not_relevant | 0 | 0 | The paper investigates the interaction of litronesib with ABCB1 transporters; verapamil is used only as a standard reversal agent to confirm mechanism, not as the primary drug for pharmacogenomic analysis. |
+| PGx | Yamada_2003 | not_relevant | 0 | 0 | The paper studies the mechanism of intestinal tumorigenesis and the role of P-glycoprotein in Mdr1-deficient mice, using verapamil only as an inhibitor in in vitro assays, rather than reporting a pharmacogenomic effect on verapamil's PK or PD parameters. |
+| PGx | Yamazaki_2008 | not_relevant | 0 | 0 | The study investigates the presence of side-population stem cells in liver cells using verapamil as a dye efflux inhibitor, rather than analyzing the effect of genetic variants on verapamil pharmacokinetics or pharmacodynamics. |
+| popPK | Yukawa_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of digoxin, where verapamil is only a co-administered drug influencing digoxin clearance. |
+| PGx | Zhao_2017 | not_relevant | 0 | 0 | The study develops an in vitro organoid model for P-gp screening and tests verapamil as an inhibitor, but does not report pharmacogenomic effects on verapamil's own PK or PD parameters. |
+| PGx | Zhu_2016 | not_relevant | 0 | 0 | The study investigates the effect of a genetic variant on trandolapril, not verapamil. |
+| popPK | Zimmerman_2004 | irrelevant | 0 | 0 | no_text gate: only 66 chars of text extracted (&lt; 400) |
+| PD | Zimmerman_2004 | not_relevant | 0 | 0 | The paper focuses on sirolimus, not verapamil. |
+| PGx | do_2025 | not_relevant | 0 | 0 | The study evaluates drug-herb interactions (Maytenus ilicifolia) and does not investigate the effect of genetic variants on pharmacokinetics or pharmacodynamics. |
+| popPK | van_2012 | irrelevant | 1 | 1 | This is a PET imaging study assessing test-retest variability of Pgp function using radiolabeled verapamil as a tracer, not a systemic pharmacokinetic study reporting clearance, volume of distribution, or half-life for the drug. |
+| PGx | Żesławska_2016 | not_relevant | 0 | 0 | The study investigates the activity of hydantoin derivatives as P-gp inhibitors and compares the potency of the best compound to verapamil as a positive control, but it does not report any gene-specific effects on verapamil's PK or PD parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bverapamil%5D&body=Drug%3A%20verapamil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_verapamil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 15:22 UTC</sub>

@@ -1,0 +1,32 @@
+{
+ "dose_source": "paper",
+ "model_id": "Triheptanoin_Lee2022_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  87500.0
+ ],
+ "parameters": {
+  "Cl": 2.9722222222222224e-07,
+  "F": 1.0,
+  "Tlag": 13464.0,
+  "VdPerKg": 7.942857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0875,
+  "ka": 0.00011805555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 26091.20945709914
+ },
+ "reference_peaks": {
+  "central.C": 8.168722841704264
+ },
+ "stop_time": 93600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

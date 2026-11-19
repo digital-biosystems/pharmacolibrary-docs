@@ -1,0 +1,223 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Doxepin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxepin_Faulkner1984_reference&quot;,&quot;label&quot;:&quot;Faulkner_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_doxepin/Doxepin_Faulkner1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxepin_Sutherland1987_reference&quot;,&quot;label&quot;:&quot;Sutherland_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_doxepin/Doxepin_Sutherland1987_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxepin_Virtanen1980_reference&quot;,&quot;label&quot;:&quot;Virtanen_1980_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_doxepin/Doxepin_Virtanen1980_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxepin_Faulkner1983_reference&quot;,&quot;label&quot;:&quot;Faulkner_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_doxepin/Doxepin_Faulkner1983_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxepin_Ziegler1978_reference&quot;,&quot;label&quot;:&quot;Ziegler_1978_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_doxepin/Doxepin_Ziegler1978_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+
+# Doxepin
+
+- **generic name:** Doxepin
+- **T3DB:** [T3D2993](http://www.t3db.ca/toxins/T3D2993) · **DrugBank:** [DB01142](https://go.drugbank.com/drugs/DB01142) · **PubChem:** [CID 667468](https://pubchem.ncbi.nlm.nih.gov/compound/667468)
+- **groups:** approved
+
+## About
+
+Doxepin hydrochloride is a dibenzoxepin-derivative tricyclic antidepressant (TCA). TCAs are structurally similar to phenothiazines. They contain a tricyclic ring system with an alkyl amine substituent on the central ring. …
+
+- **Category:** Drug, Synthetic Toxin
+- **Route of exposure:** well-absorbed from the GI tract. Peak plasma concentrations occur within 2 hours of oral administration.
+- **Sources and uses:** Doxepin is used for the treatment of depression, insomina, alcohol and drug withdrawal, gastrointestinal ulceration and other GI-problems. It can also be used for chronic urticaria and in the management of pain.
+- **Mechanism of toxicity:** The mechanism of action of doxepin is not completely understood. It is thought that like amitriptyline, doxepin enhances the actions of norepinephrine and serotonin by blocking their reuptake at the neuronal membrane. …
+- **Health effects:** hypotension, postural collapse (if patient arises too fast from lying/sitting position to standing), arrhythmias (sinus-tachycardia, bradycardia, av-blockade). Allergic/toxic effetcs also include skin rash, photosensitivity, liver damage of the cholostatic type (rarely), hepatitis (extremely rare), leuko- or thrombopenia (rarely), agranulocytosis (very rarely), hypoplastic anemia (rarely). [Wikipedia]
+- **Acute toxicity:** LD50: 26 mg/kg (Intravenous, Mouse)
+LD50: 16 mg/kg (Intravenous, Rat)
+- **Treatment:** Obtain an ECG and immediately initiate cardiac monitoring. …
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D2993">T3DB T3D2993</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 1668-19-5 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4710">ChEBI 4710</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| Doxepin | parent | 279.383 | C19H21NO | PubChem | [667468](https://pubchem.ncbi.nlm.nih.gov/compound/667468) | Abernethy_1986, Faulkner_1983, Faulkner_1984, Seok_2026, Sutherland_1987, Virtanen_1980, Yan_2002, Ziegler_1978, el-Yazigi_1988 |
+| Desipramine | metabolite | 266.388 | C18H22N2 | PubChem | [2995](https://pubchem.ncbi.nlm.nih.gov/compound/2995) | el-Yazigi_1988 |
+| Desmethyldoxepin (N-desmethyldoxepin) | metabolite | 265.356 | C18H19NO | PubChem | [4535](https://pubchem.ncbi.nlm.nih.gov/compound/4535) | Abernethy_1986, Faulkner_1983, Faulkner_1984, Seok_2026, Sutherland_1987, Virtanen_1980, Ziegler_1978 |
+| E-N-desmethyldoxepin | metabolite | 265.356 | C18H19NO | PubChem | [6433351](https://pubchem.ncbi.nlm.nih.gov/compound/6433351) | Yan_2002 |
+| Imipramine | metabolite | 280.415 | C19H24N2 | PubChem | [3696](https://pubchem.ncbi.nlm.nih.gov/compound/3696) | el-Yazigi_1988 |
+| Z-N-desmethyldoxepin | metabolite | 265.356 | C18H19NO | PubChem | [5353833](https://pubchem.ncbi.nlm.nih.gov/compound/5353833) | Yan_2002 |
+
+## Start here
+
+> **Sutherland_1987_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy volunteers, n = 6. [Run it in the simulator](drugs/toxin_doxepin/Doxepin_Sutherland1987_reference.md?tab=Simulation) · [record](drugs/toxin_doxepin/Doxepin_Sutherland1987_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Virtanen_1980 · CL ·/kg</text><circle cx="332.4" cy="30.0" r="4" fill="#78909c"><title>Virtanen_1980 · CL ·/kg: 65.1 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Abernethy_1986 · CL/F</text><circle cx="438.8" cy="46.0" r="4" fill="#ef6c00"><title>Abernethy_1986 · CL/F: 264.2 L/h</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Faulkner_1984_reference](drugs/toxin_doxepin/Doxepin_Faulkner1984_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Faulkner RD et al., Hemodialysis of doxepin and desmethyldo…, Artificial organs (1984) | [10.1111/j.1525-1594.1984.tb04264.x](https://doi.org/10.1111/j.1525-1594.1984.tb04264.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Sutherland_1987_reference](drugs/toxin_doxepin/Doxepin_Sutherland1987_reference.md) | ▶ model + simulator | retention, 1 pool | 2 | Sutherland DL et al., The influence of cimetidine versus rani…, European journal of clinica… (1987) | [10.1007/BF00542189](https://doi.org/10.1007/BF00542189) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Virtanen_1980_reference](drugs/toxin_doxepin/Doxepin_Virtanen1980_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Virtanen R et al., Single dose pharmacokinetics of doxepin…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb01575.x](https://doi.org/10.1111/j.1600-0773.1980.tb01575.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Abernethy_1986_reference](drugs/toxin_doxepin/Doxepin_Abernethy1986_reference.md) | held back | 1-compartment, oral | 2 | Abernethy DR et al., Doxepin-cimetidine interaction: increas…, Journal of clinical psychop… (1986) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Faulkner_1983_reference](drugs/toxin_doxepin/Doxepin_Faulkner1983_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Faulkner RD et al., Multiple-dose doxepin kinetics in depre…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.206](https://doi.org/10.1038/clpt.1983.206) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Scheinin_1985_reference](drugs/toxin_doxepin/Doxepin_Scheinin1985_reference.md) | — | 1-compartment (no model) | 0 | Scheinin M et al., Effect of single and repeated doses of…, International journal of cl… (1985) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Seok_2026_input_value](drugs/toxin_doxepin/Doxepin_Seok2026_input_value.md) | — | parent + metabolite (no model) | 6 (+5 cov.) | Seok J et al., PBPK modeling of the antidepressant dox…, Archives of pharmacal resea… (2026) | [10.1007/s12272-026-01600-5](https://doi.org/10.1007/s12272-026-01600-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [↳ reference_value](drugs/toxin_doxepin/Doxepin_Seok2026_reference_value.md) | — | 1-compartment (no model) | 1 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Yan_2002_reference](drugs/toxin_doxepin/Doxepin_Yan2002_reference.md) | — | 1-compartment (no model) | 1 | Yan JH et al., Absolute bioavailability and stereosele…, Xenobiotica; the fate of fo… (2002) | [10.1080/00498250210131879](https://doi.org/10.1080/00498250210131879) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Ziegler_1978_reference](drugs/toxin_doxepin/Doxepin_Ziegler1978_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ziegler VE et al., Doxepin kinetics, Clinical pharmacology and t… (1978) | [10.1002/cpt1978235573](https://doi.org/10.1002/cpt1978235573) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [el-Yazigi_1988_reference](drugs/toxin_doxepin/Doxepin_elYazigi1988_reference.md) | — | retention function (no model) | 5 | el-Yazigi A et al., Steady-state kinetics of doxepin and im…, Psychopharmacology (1988) | [10.1007/BF00212768](https://doi.org/10.1007/BF00212768) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wolter_1977_heart_rate](drugs/toxin_doxepin/pd_Wolter_1977_heart_rate.md) | heart rate ← doxepin · model not identified | — | Wolter H et al., [The influence of doxepin on the effici…, Medizinische Klinik (1977) | — |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2C19** | `Q22` · CL | metabolism | [Hicks_2017](drugs/toxin_doxepin/pgx_Hicks_2017_CYP2C19_Q22.md) | Hicks JK et al., Clinical pharmacogenetics implementatio…, Clinical pharmacology and t… (2017) | [10.1002/cpt.597](https://doi.org/10.1002/cpt.597) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q22` · CL | metabolism | [Hicks_2017](drugs/toxin_doxepin/pgx_Hicks_2017_CYP2D6_Q22.md) | Hicks JK et al., Clinical pharmacogenetics implementatio…, Clinical pharmacology and t… (2017) | [10.1002/cpt.597](https://doi.org/10.1002/cpt.597) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2C19** | `Q25` · CLH | formation | [Seok_2026](drugs/toxin_doxepin/pgx_Seok_2026_CYP2C19_Q25.md) | Seok J et al., PBPK modeling of the antidepressant dox…, Archives of pharmacal resea… (2026) | [10.1007/s12272-026-01600-5](https://doi.org/10.1007/s12272-026-01600-5) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q25` · CLH | metabolism | [Seok_2026](drugs/toxin_doxepin/pgx_Seok_2026_CYP2D6_Q25.md) | Seok J et al., PBPK modeling of the antidepressant dox…, Archives of pharmacal resea… (2026) | [10.1007/s12272-026-01600-5](https://doi.org/10.1007/s12272-026-01600-5) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=doxepin).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` substrate | DrugBank actor |
+| distribution | testis | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` metabolism/substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | `ABCB1` substrate | DrugBank actor |
+| excretion | liver | `ABCB1` substrate | DrugBank actor |
+| — | brain | `SLC6A4` inhibitor | DrugBank actor |
+| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), HRH1 (target), HRH2 (target), HRH4 (binder), HTR1A (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR6 (binder), KCNH2 (inhibitor), SLC6A2 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 07:24 | 35:01 | 4/7/0 | 1/0/0 | 0/0/4 | 858,856/63,476 | einfracz / qwen3.8-flash-next | 12 | 1/7 | 12/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 184 matched, 144 returned
+- **screened:** 10  ·  **relevant:** 10
+- **records:** 11  ·  extracted 3  ·  needs review 1  ·  rejected 7  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Faulkner_1983.pdf` | Faulkner RD et al., Multiple-dose doxepin kinetics in depre…, Clinical pharmacology and t… (1983) | popPK | 10 | [10.1038/clpt.1983.206](https://doi.org/10.1038/clpt.1983.206) | [6617074](https://pubmed.ncbi.nlm.nih.gov/6617074) | The paper explicitly reports quantitative toxicokinetic parameters (half-life, plasma clearance, volume of distribution, first-pass metabolism) for doxepin in humans, with all numerical values present in the abstract. |
+| `Scheinin_1985.pdf` | Scheinin M et al., Effect of single and repeated doses of…, International journal of cl… (1985) | popPK | 10 |  | [3988390](https://pubmed.ncbi.nlm.nih.gov/3988390) | The paper reports quantitative pharmacokinetic parameters (clearance, half-life prolongation percentages, bioavailability reduction) for doxepin and its metabolite in human volunteers. |
+| `Sutherland_1987.pdf` | Sutherland DL et al., The influence of cimetidine versus rani…, European journal of clinica… (1987) | popPK | 10 | [10.1007/BF00542189](https://doi.org/10.1007/BF00542189) | [3582480](https://pubmed.ncbi.nlm.nih.gov/3582480) | The evidence explicitly provides numerical values for doxepin's elimination half-life in humans under different treatment conditions. |
+| `Virtanen_1980.pdf` | Virtanen R et al., Single dose pharmacokinetics of doxepin…, Acta pharmacologica et toxi… (1980) | popPK | 10 | [10.1111/j.1600-0773.1980.tb01575.x](https://doi.org/10.1111/j.1600-0773.1980.tb01575.x) | [7293791](https://pubmed.ncbi.nlm.nih.gov/7293791) | The paper explicitly reports quantitative pharmacokinetic parameters (half-lives, volume of distribution, clearance) for doxepin and its metabolite. |
+| `Yan_2002.pdf` | Yan JH et al., Absolute bioavailability and stereosele…, Xenobiotica; the fate of fo… (2002) | popPK | 10 | [10.1080/00498250210131879](https://doi.org/10.1080/00498250210131879) | [12162857](https://pubmed.ncbi.nlm.nih.gov/12162857) | The paper reports quantitative pharmacokinetic parameters (half-lives, volumes of distribution, bioavailability, clearance) for doxepin and its metabolite in humans. |
+| `Ziegler_1978.pdf` | Ziegler VE et al., Doxepin kinetics, Clinical pharmacology and t… (1978) | popPK | 10 | [10.1002/cpt1978235573](https://doi.org/10.1002/cpt1978235573) | [639432](https://pubmed.ncbi.nlm.nih.gov/639432) | The paper reports specific quantitative toxicokinetic parameters for doxepin (half-life, volume of distribution) and its metabolite in humans, with values clearly stated in the provided evidence. |
+| `Abernethy_1986.pdf` | Abernethy DR et al., Doxepin-cimetidine interaction: increas…, Journal of clinical psychop… (1986) | popPK | 9 |  | [3950073](https://pubmed.ncbi.nlm.nih.gov/3950073) | The paper reports specific quantitative pharmacokinetic parameters for doxepin, including elimination half-life, AUC, and oral clearance, directly in the abstract. |
+| `Faulkner_1984.pdf` | Faulkner RD et al., Hemodialysis of doxepin and desmethyldo…, Artificial organs (1984) | popPK | 9 | [10.1111/j.1525-1594.1984.tb04264.x](https://doi.org/10.1111/j.1525-1594.1984.tb04264.x) | [6732542](https://pubmed.ncbi.nlm.nih.gov/6732542) | The text explicitly reports quantitative plasma half-lives and dialysis clearances for doxepin and its metabolite in humans. |
+| `Wecker_1986.pdf` | Wecker MT et al., Pharmacokinetic evaluation of two doxep…, Clinical therapeutics (1986) | popPK | 9 |  | [3719617](https://pubmed.ncbi.nlm.nih.gov/3719617) | The paper reports pharmacokinetic parameters (AUC, Cmax) for doxepin and its metabolite, but the specific numeric values are not present in the provided evidence. |
+| `el-Yazigi_1988.pdf` | el-Yazigi A et al., Steady-state kinetics of doxepin and im…, Psychopharmacology (1988) | popPK | 9 | [10.1007/BF00212768](https://doi.org/10.1007/BF00212768) | [3133701](https://pubmed.ncbi.nlm.nih.gov/3133701) | The paper reports quantitative pharmacokinetic parameters for doxepin, specifically mean dose-normalized steady-state concentration and apparent clearance, in human patients. |
+| `Meyer-Barner_2002.pdf` | Meyer-Barner M et al., Pharmacokinetics of doxepin and desmeth…, European journal of clinica… (2002) | popPK | 8 | [10.1007/s00228-002-0448-3](https://doi.org/10.1007/s00228-002-0448-3) | [12136371](https://pubmed.ncbi.nlm.nih.gov/12136371) | The paper reports a population pharmacokinetic model (CL and Vd) for doxepin in humans, but the specific numeric values for these parameters are not included in the provided evidence. |
+| `Moharir_2024.pdf` | Moharir S et al., Improved Pharmacokinetic and Pharmacody…, European journal of drug me… (2024) | popPK | 8 | [10.1007/s13318-023-00870-4](https://doi.org/10.1007/s13318-023-00870-4) | [38172422](https://pubmed.ncbi.nlm.nih.gov/38172422) | The paper reports on PK parameters (Cmax, t1/2, AUC) for doxepin in animals, but the specific numeric values are not present in the provided text, only the qualitative trends. |
+| `Midha_1992.pdf` | Midha KK et al., Stereoselective pharmacokinetics of dox…, European journal of clinica… (1992) | popPK | 5 | [10.1007/BF00314865](https://doi.org/10.1007/BF00314865) | [1607001](https://pubmed.ncbi.nlm.nih.gov/1607001) | The paper studies doxepin pharmacokinetics in humans, but the provided evidence contains only qualitative descriptions and statistical summaries without specific numeric values for kinetic parameters (e.g., half-life, clearance, Vd). |
+| `Zarmpi_2026.pdf` | Zarmpi P et al., Raman-assessed cutaneous pharmacokineti…, International journal of ph… (2026) | popPK | 5 | [10.1016/j.ijpharm.2026.126680](https://doi.org/10.1016/j.ijpharm.2026.126680) | [41720364](https://pubmed.ncbi.nlm.nih.gov/41720364) | The paper mentions deriving first-order elimination rate constants for doxepin in pig skin, but no specific numeric values are provided in the text. |
+
+<sub>queue written 2026-11-14 07:00 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Amsterdam_1980 | irrelevant | 1 | 0 | The paper is a general review of tricyclic antidepressants that mentions doxepin as a comparator/substance needing more study, but provides no specific quantitative kinetic parameters for it. |
+| PGx | Anttila_2001 | not_relevant | 0 | 0 | The paper reviews mirtazapine, not doxepin, and contains no pharmacogenomic data for doxepin. |
+| popPK | Dargan_2005 | irrelevant | 0 | 0 | The paper is a clinical review of management strategies (lavage, charcoal, dialysis) for TCA poisoning and cites the lack of effect of MDAC on doxepin elimination without reporting any specific quantitative kinetic parameters or models. |
+| popPK | Davis_2003 | irrelevant | 0 | 0 | The paper is a clinical review on pain management in the elderly where doxepin is mentioned only as a drug to avoid, with no quantitative toxicokinetic parameters reported. |
+| popPK | Dilger_1988 | irrelevant | 0 | 0 | The paper describes an analytical HPLC method for measuring doxepin, not a study reporting quantitative toxicokinetic parameters such as half-life, clearance, or volume of distribution. |
+| popPK | Embil_1982 | irrelevant | 0 | 0 | The paper reports thermodynamic properties (pKa, solubility, octanol/water-type partition coefficients) which are not toxicokinetic parameters like half-life, clearance, or plasma-protein partition coefficients. |
+| popPK | Ereshefsky_1988 | irrelevant | 3 | 2 | This is a review discussing general pharmacokinetic principles and statistical correlations (clearance variability) without reporting specific, extractable numeric kinetic parameters (e.g., half-life, Vd, CL values) for doxepin. |
+| PGx | Foster_1997 | not_relevant | 2 | 1 | The paper reviews paroxetine, mentioning doxepin only as a comparator for cardiac effects, and reports no pharmacogenomic data for doxepin. |
+| popPK | Frank_2000 | irrelevant | 3 | 1 | The paper is a clinical case report describing treatment outcomes (QRS duration, hemodynamics) without reporting quantitative toxicokinetic parameters like half-life, clearance, or partition coefficients. |
+| popPK | Fraser_1985 | irrelevant | 1 | 0 | The paper discusses a clinical drug monitoring service and request forms; it reports percentages of sampling accuracy and request types but contains no quantitative pharmacokinetic parameters (e.g., half-life, clearance, Vd) for doxepin. |
+| PGx | Grasmäder_2004 | not_relevant | 4 | 2 | The paper reports pooled results for multiple antidepressants including doxepin, but does not report specific, extractable quantitative effect sizes for doxepin alone. |
+| popPK | Grimsley_1992 | irrelevant | 0 | 0 | The paper is a review of SSRIs where doxepin is mentioned only as a comparator drug in efficacy studies, with no kinetic parameters for doxepin reported. |
+| PGx | Haritos_2000 | not_relevant | 3 | 2 | The paper reports in vitro enzyme kinetics (Km, Vmax) and metabolic preference for E-isomers in microsomes, not the effect of a gene variant/genotype on in vivo PK/PD parameters. |
+| PGx | Haufroid_2015 | not_relevant | 2 | 1 | The paper is a general review on CYP2D6 polymorphisms and explicitly states that further data are needed for doxepin, providing no specific PK or PD effect size or data for doxepin. |
+| popPK | Hwang_2024 | irrelevant | 1 | 0 | The paper is a narrative review of lipid emulsion therapy outcomes (QTc, GCS) in patients overdosed on various neuropsychiatric drugs including doxepin, reporting no quantitative toxicokinetic parameters for doxepin. |
+| popPK | Ishiwata_1996 | irrelevant | 3 | 0 | The paper focuses on metabolite identification and rapid blood clearance for PET modeling but reports no specific quantitative kinetic parameters (e.g., half-lives, rate constants, volumes) in the provided evidence. |
+| PGx | Jessel_2020 | not_relevant | 2 | 0 | The paper reports epidemiological data on prescribing guideline adherence and medication switching rates based on genotype, but does not report specific changes in pharmacokinetic or pharmacodynamic parameters of doxepin. |
+| popPK | Johnson-Davis_2012 | irrelevant | 0 | 0 | The paper describes an analytical method for quantifying TCAs, not a toxicokinetic study with disposition parameters. |
+| popPK | Kasper_1997 | irrelevant | 0 | 0 | The paper is about mirtazapine, and doxepin is mentioned only as a comparator drug in efficacy trials with no kinetic parameters reported. |
+| PGx | Kasper_1997 | not_relevant | 0 | 0 | The paper is about mirtazapine, mentioning doxepin only as a comparator drug without reporting any pharmacogenomic data for doxepin. |
+| popPK | Kehoe_1991 | irrelevant | 2 | 0 | Doxepin is one of several mixed TCAs administered to a small subgroup, but the paper reports aggregate model performance metrics (prediction errors) rather than specific quantitative kinetic parameters (e.g., clearance, Vd) for doxepin. |
+| popPK | Kopanski_1983 | irrelevant | 0 | 0 | The paper reports pharmacodynamic effects on adrenergic receptors in rat brain slices, not toxicokinetic parameters like half-life, clearance, or partition coefficients for doxepin. |
+| PGx | Kordou_2021 | not_relevant | 2 | 1 | The paper discusses discrepancies in regulatory guidance and classification of actionable drug-gene pairs, but does not report specific changes in PK or PD parameters caused by genotypes. |
+| popPK | Li_1979 | irrelevant | 0 | 0 | The paper describes an analytical HPLC method for separating isomers of several drugs including doxepin, but reports no toxicokinetic parameters. |
+| popPK | Lim_1984 | irrelevant | 0 | 0 | The paper focuses on amiodarone toxicity; doxepin is mentioned only as a potential aggravating co-exposure with no kinetic parameters reported. |
+| popPK | Linnoila_1978 | irrelevant | 2 | 0 | The paper reports steady-state concentrations but provides no explicit quantitative kinetic parameters (e.g., half-life, clearance, partition coefficients) in the text, and the provided evidence contains no numeric values for doxepin disposition. |
+| popPK | Lundstrøm_2022 | irrelevant | 1 | 0 | This is a systematic review reporting statistical outcomes (significance) of smoking on doxepin concentrations, not quantitative kinetic parameters. |
+| PGx | Lundstrøm_2022 | not_relevant | 0 | 0 | The paper investigates the effect of smoking on plasma concentrations, which is an environmental/phenotypic factor, not a pharmacogenomic gene variant effect. |
+| popPK | Margaryan_2020 | irrelevant | 1 | 0 | The paper describes an analytical LC-MS/MS method for bioequivalence studies but reports no quantitative pharmacokinetic parameters (e.g., half-life, clearance, volume of distribution). |
+| popPK | Meyer-Barner_2002 | relevant | 8 | 2 | The paper reports a population pharmacokinetic model (CL and Vd) for doxepin in humans, but the specific numeric values for these parameters are not included in the provided evidence. |
+| popPK | Midha_1992 | relevant | 5 | 0 | The paper studies doxepin pharmacokinetics in humans, but the provided evidence contains only qualitative descriptions and statistical summaries without specific numeric values for kinetic parameters (e.g., half-life, clearance, Vd). |
+| PGx | Milani_2020 | not_relevant | 0 | 0 | The paper investigates UGT2B10 polymorphisms and their effect on drug metabolism, but doxepin is not the drug studied; rather, its isomer 'cidoxepin' (likely a typo for cis-clozapine or related, but definitely not doxepin) and other compounds are tested as substrates, and no specific pharmacokinetic parameter change for doxepin is reported. |
+| popPK | Moharir_2024 | relevant | 8 | 0 | The paper reports on PK parameters (Cmax, t1/2, AUC) for doxepin in animals, but the specific numeric values are not present in the provided text, only the qualitative trends. |
+| PGx | Myers_2022 | not_relevant | 2 | 0 | The text is a general review abstract that mentions genetic polymorphisms as a factor in variability but provides no specific data, results, or fitted effect sizes for any specific genotype on doxepin PK/PD parameters. |
+| popPK | Ormerod_1994 | irrelevant | 0 | 0 | Doxepin is mentioned only as a second-line therapeutic agent in a clinical review of urticaria treatment, with no quantitative toxicokinetic parameters reported. |
+| PGx | Paulzen_2018 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (doxepin inhibiting venlafaxine metabolism), not a pharmacogenomic effect of a gene variant on a doxepin PK/PD parameter. |
+| popPK | Peters_1990 | irrelevant | 0 | 0 | The paper reports pharmacokinetic data for clomipramine, with doxepin mentioned only as a comparator in clinical trials without any kinetic parameters. |
+| popPK | Puzantian_1998 | irrelevant | 0 | 0 | The paper is a review of mirtazapine, mentioning doxepin only as a comparator for clinical efficacy with no quantitative toxicokinetic parameters provided. |
+| popPK | Risch_1979 | irrelevant | 2 | 0 | The paper is a review of plasma levels and clinical efficacy, not toxicokinetics, and provides no specific quantitative kinetic parameters for doxepin. |
+| PGx | Russell_2023 | not_relevant | 3 | 2 | The paper reports a case study on drug-induced phenoconversion and mentions general literature findings (e.g., increased concentrations in PMs), but does not provide original fitted effect sizes or quantify a direct genotype-PK relationship for doxepin; the patient's specific issue was interaction-induced phenoconversion, not a genotype-PK association. |
+| popPK | Saito_2020 | irrelevant | 0 | 0 | The paper studies the chemical degradation kinetics of amoxapine in artificial gastric juice; doxepin is only listed as one of the stable substances in the mixture and has no quantitative kinetic parameters reported. |
+| PGx | Scherf-Clavel_2019 | not_relevant | 0 | 0 | The paper analyzes the effect of smoking behavior, not gene variants/genotypes, on pharmacokinetics. |
+| popPK | Schmid_2019 | irrelevant | 1 | 0 | The paper is a narrative review summarizing other studies and does not report original quantitative kinetic parameters for doxepin. |
+| popPK | Schroeck_2016 | irrelevant | 0 | 0 | The paper is a clinical review of sleep medicines that lists doxepin but contains no quantitative toxicokinetic parameters. |
+| popPK | Sharma_2026 | irrelevant | 0 | 0 | The paper uses doxepin solely as a pharmacological comparator to lemborexant to study amyloid pathology in mice and reports no toxicokinetic parameters for doxepin. |
+| popPK | Viala_1980 | irrelevant | 3 | 0 | The abstract mentions doxepin's half-life and pharmacokinetics but provides no numeric values, referring instead to general observations and other studies. |
+| popPK | Wang_2025 | irrelevant | 2 | 0 | The paper describes the validation of an analytical method (HPLC-MS/MS) for therapeutic drug monitoring and does not report quantitative toxicokinetic parameters such as half-life, clearance, or volume of distribution for doxepin. |
+| popPK | Warrings_2021 | irrelevant | 1 | 0 | The paper reports dose-corrected serum concentrations and BMI correlations in a therapeutic drug monitoring population, which is an outcome/exposure study rather than a report of kinetic parameters like half-life, clearance, or volume of distribution for doxepin. |
+| popPK | Wecker_1986 | relevant | 9 | 0 | The paper reports pharmacokinetic parameters (AUC, Cmax) for doxepin and its metabolite, but the specific numeric values are not present in the provided evidence. |
+| popPK | Wever_2026 | irrelevant | 0 | 0 | The study is an epidemiological/clinical outcome study on drug interventions, and explicitly states that no patients in the cohort used doxepin. |
+| popPK | Zarmpi_2026 | relevant | 5 | 0 | The paper mentions deriving first-order elimination rate constants for doxepin in pig skin, but no specific numeric values are provided in the text. |
+| popPK | Zheng_2022 | irrelevant | 3 | 2 | The paper focuses on analytical method development (LC-MS/MS) and mentions bioequivalence application but the provided evidence contains no specific pharmacokinetic parameters (e.g., half-life, clearance, Vd) for doxepin. |
+| popPK | Ziegler_1978_2 | irrelevant | 1 | 1 | The paper reports kinetic parameters for protriptyline, citing a previous study as the source for doxepin kinetics which are not reported here. |
+| PGx | Zioris_2026 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions where doxepin acts as a CYP2D6 inhibitor, rather than studying the effect of genetic variants on doxepin's own PK/PD parameters. |
+| popPK | Zitelli_2015 | irrelevant | 0 | 0 | Doxepin is mentioned only as a treatment agent for eosinophilic folliculitis, with no toxicokinetic parameters reported. |
+| popPK | el-Yazigi_1993 | irrelevant | 0 | 0 | Doxepin is used solely as an internal standard for the analytical method, with no toxicokinetic data or parameters reported for doxepin itself. |
+| popPK | unknown_1999 | irrelevant | 0 | 0 | The paper is a clinical guideline that mentions doxepin only to state that multi-dose charcoal did not increase its elimination, providing no kinetic parameter values. |
+| popPK | von_1993 | irrelevant | 0 | 0 | The paper is a review and explicitly states there are not enough data available on doxepin to make a conclusion, providing no quantitative parameters for it. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxepin%5D&body=Drug%3A%20doxepin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_doxepin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-14 07:00 UTC</sub>

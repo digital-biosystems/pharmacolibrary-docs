@@ -1,0 +1,91 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H01A&quot;,&quot;href&quot;:&quot;atc/H01A.md&quot;},{&quot;label&quot;:&quot;tetracosactide&quot;}]"></div>
+
+# tetracosactide
+
+- **generic name:** tetracosactide
+- **ATC codes:** `H01AA02`
+- **DrugBank:** [DB01284](https://go.drugbank.com/drugs/DB01284) · **PubChem:** [CID 16133751](https://pubchem.ncbi.nlm.nih.gov/compound/16133751)
+- **molar mass:** 2933.49 g/mol (C136H210N40O31S) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Tetracosactide is a synthetic hormone fragment used to diagnose adrenal gland function. It is given by intravenous or intramuscular injection, typically as a powder reconstituted for solution. It is used mainly as a diagnostic agent in clinical settings to assess adrenal function.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q560542](https://www.wikidata.org/wiki/Q560542), [Wikipedia](https://en.wikipedia.org/wiki/Adrenocorticotropic_hormone_(medication)?oldid=1329163841) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Dorin_2012_CSR](drugs/drug_tetracosactide/pd_Dorin_2012_CSR.md) | cortisol secretion rate ← ACTH · direct sigmoid Emax (Hill) effect | — | Dorin RI et al., Estimation of maximal cortisol secretio…, The Journal of clinical end… (2012) | [10.1210/jc.2011-2227](https://doi.org/10.1210/jc.2011-2227) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=tetracosactide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: MC2R (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 09:45 | 11:54 | 0/0/0 | 0/1/0 | 0/0/0 | 545,287/5,061 | einfracz / qwen3.8-27b | 40 | 2/27 | 40/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 10040 matched, 71 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetic models for therapeutic enzymes (imiglucerase, avalglucosidase, etc.) in lysosomal storage diseases and does not contain data for tetracosactide. |
+| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric model development using neonatal weight, simulated generic PK data, and warfarin as examples, with no mention or data for tetracosactide. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for rivaroxaban, not tetracosactide. |
+| popPK | Clements_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for belantamab mafodotin, not tetracosactide. |
+| popPK | Dahan_2026 | irrelevant | 0 | 0 | The paper is a review of Model-Informed Drug Development for analgesics and does not contain pharmacokinetic data for tetracosactide. |
+| popPK | Elder_2018 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of cortisol/cortisone response to Synacthen (tetracosactide) in humans, but does not report pharmacokinetic parameters (CL, V, ka) for tetracosactide itself. |
+| popPK | Hanke_2026 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics and pharmacodynamics of iclepertin, not tetracosactide. |
+| popPK | Hoeben_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of calaspargase pegol (an asparaginase enzyme), not tetracosactide. |
+| popPK | Jia_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for rivaroxaban, not tetracosactide. |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The study simulates pharmacokinetics for multiple myeloma drugs (carfilzomib, daratumumab, lenalidomide, melphalan, panobinostat) and does not involve tetracosactide. |
+| popPK | Karlsen_2026 | irrelevant | 0 | 0 | The paper describes a simulation framework for benchmarking covariate model building methods using generic simulated PK data from an unspecified Sanofi molecule, not a study on tetracosactide. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bevacizumab and its biosimilar CT-P16, not for tetracosactide. |
+| popPK | Kwack_2026 | irrelevant | 0 | 0 | The study focuses on an LLM agent for PK modeling using warfarin, theophylline, and tobramycin, and does not involve tetracosactide. |
+| PGx | Mathias_2020 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (CYP3A4 inhibition) and does not report on pharmacogenomic effects of tetracosactide. |
+| popPK | Mazzetti_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of clascoterone, a different drug from tetracosactide, and uses a cosyntropin stimulation test only for safety monitoring. |
+| popPK | Mermejo_2025 | irrelevant | 0 | 0 | The study focuses on adrenal vein sampling inconsistency in primary aldosteronism and does not report pharmacokinetic parameters for tetracosactide. |
+| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study models the pharmacokinetics of meropenem and colistin/polymyxin B, not tetracosactide. |
+| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of the pharmacokinetics of 5-Fluorouracil (5-FU), not tetracosactide. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The study investigates pharmacokinetic parameters and sampling strategies for busulfan, not tetracosactide. |
+| popPK | Vicente_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of infliximab, not tetracosactide. |
+| PGx | Wassner_2017 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic drug-drug interaction involving cobicistat and triamcinolone, not a pharmacogenomic effect on tetracosactide. |
+| popPK | Wu_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for bosutinib, not tetracosactide. |
+| popPK | Xie_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of daptomycin, not tetracosactide. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btetracosactide%5D&body=Drug%3A%20tetracosactide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tetracosactide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

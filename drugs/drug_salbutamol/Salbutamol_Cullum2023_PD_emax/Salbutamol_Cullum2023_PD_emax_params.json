@@ -1,0 +1,57 @@
+{
+ "model_id": "Salbutamol_Cullum2023_PD_emax",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": -6.73,
+  "Emax": 44.74,
+  "exposure_per_s": 1.0,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "-6.73": 22.37,
+  "0": 0.0
+ },
+ "stop_time": -67.3,
+ "subtitle": "peak cAMP GloSensor™ response (Emax) against salbutamol concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "M",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "% 1 μM isoprenaline",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "M",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "% 1 μM isoprenaline"
+ },
+ "x_axis": {
+  "display_unit": "M",
+  "factor": 1.0,
+  "label": "salbutamol concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "% 1 μM isoprenaline",
+  "factor": 1.0,
+  "label": "peak cAMP GloSensor™ response (Emax)"
+ }
+}

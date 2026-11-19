@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Tegafur_Zuo2024_reference",
+ "molar_masses": {
+  "central.C": 0.200169
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.5750000000000003e-05,
+  "F": 1.0,
+  "MM": 0.200169,
+  "Tlag": 0.0,
+  "VdPerKg": 0.009628571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 2.2222222222222223e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 44325.450901803604
+ },
+ "reference_peaks": {
+  "central.C": 5.321474367521479e-05
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

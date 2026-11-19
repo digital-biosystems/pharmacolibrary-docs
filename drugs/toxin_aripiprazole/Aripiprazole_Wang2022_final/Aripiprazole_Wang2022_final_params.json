@@ -1,0 +1,77 @@
+{
+ "dose_source": "paper",
+ "model_id": "Aripiprazole_Wang2022_final",
+ "molar_masses": {
+  "central.C": 0.44838799999999995
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  25.0,
+  50.0,
+  300.0,
+  400.0
+ ],
+ "parameters": {
+  "Cl": 1.2541666666666668e-06,
+  "F": 1.0,
+  "MM": 0.44838799999999995,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0013342857142857145,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "k12": 1.7576730906495357e-06,
+  "k21": 1.2251243781094526e-06,
+  "ka": 0.00015000000000000001,
+  "weight": 70.0
+ },
+ "pgx": {
+  "effects": {
+   "Intermediate": [
+    {
+     "compound": "Aripiprazole",
+     "parameter": "Ka: oral first‐order absorption rate (1/h)",
+     "reference": 0.54,
+     "scale": "linear_fractional",
+     "theta": 0.000904,
+     "value": 0.5404883807148237
+    }
+   ]
+  },
+  "gene": "CYP2D6",
+  "labels": {
+   "Intermediate": "Intermediate metabolizer",
+   "Normal": "Normal metabolizer (reference)"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Intermediate",
+   "Normal"
+  ],
+  "phenotypes": {
+   "Intermediate": {
+    "ka": 0.00015013566130967325
+   },
+   "Normal": {}
+  },
+  "record": "Wang_2022::final",
+  "reference": "Normal",
+  "sources": [
+   "Wang_2022::final covariate theta_kabs_im"
+  ]
+ },
+ "reference_peak_times": {
+  "central.C": 14178.92345598592
+ },
+ "reference_peaks": {
+  "central.C": 0.0001784879299168967
+ },
+ "review_status": "needs_review",
+ "stop_time": 345600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

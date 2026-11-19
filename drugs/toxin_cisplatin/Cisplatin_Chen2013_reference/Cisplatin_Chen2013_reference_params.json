@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "Cisplatin_Chen2013_reference",
+ "molar_masses": {
+  "central.C": 0.300042
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2861111111111113e-07,
+  "F": 0.9,
+  "MM": 0.300042,
+  "Tlag": 1728.0,
+  "VdPerKg": 0.00034571428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.00011707988980716253,
+  "k21": 8.854166666666666e-05,
+  "ka": 0.0026027777777777776,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2588.865921395917
+ },
+ "reference_peaks": {
+  "central.C": 0.001049715018011685
+ },
+ "stop_time": 691200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

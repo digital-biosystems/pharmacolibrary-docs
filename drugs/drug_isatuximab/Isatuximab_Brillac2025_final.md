@@ -1,0 +1,180 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Brillac_2025 \u00b7 final&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isatuximab_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein_2&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein_3&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_3.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# isatuximab — `Isatuximab_Brillac2025_final`
+
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
+
+> The model was rejected due to an unreachable peripheral compartment and a missing allometric exponent for V2.
+
+<div class="pk-model-meta" hidden drug="isatuximab" model-id="Isatuximab_Brillac2025_final" status="rejected" stale="false" population="Pediatric patients with R/R acute leukemia pooled with adults from ISLAY" measured-compound="isatuximab" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Brillac C, Sémiond D, Oprea C, Baruchel A, Zwaan CM, Nguyen L. Selection of isatuximab dosing regimen in pediatric patients with leukemia using population pharmacokinetics. Cancer chemotherapy and pharmacology 95(1):116 (2025).
+  ·  DOI: [10.1007/s00280-025-04832-2](https://doi.org/10.1007/s00280-025-04832-2)
+
+## Population and dosing
+
+**Population:** Pediatric patients with R/R acute leukemia pooled with adults from ISLAY · condition Relapsed/refractory acute lymphoblastic leukemia or acute myeloid leukemia; adult ISLAY cohort · age group mixed · n = 79.
+
+**Dosing:** 1400 mg, iv, multiple.
+
+## Model
+
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 3 extracted.  
+**Availability:** No model was generated from this record.
+
+## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| β_CL_log(WT/MedWT) | allometric_exponent | 0.833 | WT/MedWT |
+| V1 (L) | V1 | 1.98 | L |
+| V2 (L) | V2 | 2.20 | L |
+| CL | CL | 0.00556 | L/h |
+| Q | Q | 0.0358 | L/h |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**The model was rejected due to an unreachable peripheral compartment and a missing allometric exponent for V2.**
+
+The second reader noted that the allometric exponent for the peripheral volume (V2) was missing from the record, although a value of 0.72 was identified. This omission likely contributed to the structural issue where the peripheral compartment had no valid path from the dose. Extracted — isatuximab: allometric_exponent 0.833 WT/MedWT, V1 1.98 L, V2 2.2 L.
+
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[β_cl_log].parameter_id`: this record has Q319, the second reading Q31; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| β_CL_log(WT/MedWT) | `Q319` · allometric_exponent | 0.833 | WT/MedWT |  |  | wt/(m·edwt) | llm (0.6) | Tab1:row5:col3, Tab1:row5:col4 |
+| V1 (L) | `Q63` · V1 | 1.98 | L | 0.00198 | m3 | l | exact (1) | Tab1:row6:col3, Tab1:row6:col4 |
+| V2 (L) | `Q64` · V2 | 2.20 | L | 0.0022 | m3 | l | exact (1) | Tab1:row10:col3, Tab1:row10:col4 |
+| CL | `Q900` · CL | 0.00556 | L/h | 1.544e-09 | m3/s |  |  | Tab1:row4:col3, Tab1:row4:col4 |
+| Q | `Q900` · Q | 0.0358 | L/h | 9.944e-09 | m3/s |  |  | Tab1:row8:col3, Tab1:row8:col4 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| CL (L/h) | Q22 | exact |
+| Q (L/h) | Q30 | exact |
+
+## Departures & gaps
+
+**Interpretation flags:**
+- table section iiv: 'ω(CL)' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'ω(V1)' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'ω(Q)' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'ω(V2)' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'Residual error proportional (%)' routed out of structural estimates ('Interindividual variability (%)')
+- dropped unlinked row (NIL): '−2LL' — extend the ontology if this is a real PK parameter (source ['Tab1:row1:col3', 'Tab1:row1:col4', 'Tab1:row1:col5'])
+- dropped unlinked row (NIL): 'BIC' — extend the ontology if this is a real PK parameter (source ['Tab1:row2:col3', 'Tab1:row2:col4', 'Tab1:row2:col5'])
+- unit_dimension_unknown: 'WT/MedWT' (allometric_exponent)
+- dropped duplicate Q319 ('β_V1_log(WT/MedWT)', value '0.821') — already have one for this compound
+- dropped duplicate Q319 ('β_Q_log(WT/MedWT)', value '0.85') — already have one for this compound
+- dropped duplicate Q319 ('Β_V2_log(WT/MedWT)', value '0.72') — already have one for this compound
+- NIL: refused to back-fill base 'MW' from footnote/prose loose number 54 (source ['Tab1:footnote', 'Tab1:footnote']); the table cell was unparseable — needs review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=isatuximab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- bound model equation to Q22 (CL): CL = 0.00775 * (WT/54)^0.85(fixed)
+- bound model equation to Q30 (Q): Q = 0.0386 * (WT/54)^0.85(fixed)
+- Q22 (CL) is equation-defined: value moved to equation-variable 'CL (L/h)'; equation kept verbatim
+- Q30 (Q) is equation-defined: value moved to equation-variable 'Q (L/h)'; equation kept verbatim
+- status held at "Needs review" — not promoted
+- model-stage split: 'final model with β coefficient on q fixed (n = 79)' is the final model of Brillac_2025 (paper reports 2 stages: final model with β coefficient on q fixed (n = 79), model 1 (n = 32)); same population, different model-building step
+- molar mass: none found for 'isatuximab' — its concentrations stay mass-only
+
+**Extraction notes:**
+- unparsed cell Tab1:row5:col5 = '1.37E–08'
+- unparsed cell Tab1:row7:col5 = '&lt; 2.2E–16'
+- unparsed cell Tab1:row11:col5 = '7.08E–07'
+- captured model equation CL = 0.00775 * (WT/54)^0.85(fixed)
+- captured model equation Q = 0.0386 * (WT/54)^0.85(fixed)
+
+## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `qwen3.8-27b` | not confirmed | 0.818 (9/11 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `qwen3.8-27b` | `parameters[β_cl_log].parameter_id` | Q319 | Q31 | mismatch |
+| `qwen3.8-27b` | `parameters[β_v2_log]` |  | 0.72 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C2_base_Q63 | pass | 1.98 | 1.98 | 1 | 0.05 | footnote reference category |
+| C2_base_Q64 | pass | 2.2 | 2.2 | 1 | 0.05 | footnote reference category |
+| C2_base_Q900 | pass | 0.00556 | 0.00556 | 1 | 0.05 | footnote reference category |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Tab1:row4:col3', 'Tab1:row4:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['Tab1:row8:col3', 'Tab1:row8:col4'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['Tab1:row6:col3', 'Tab1:row6:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['Tab1:row10:col3', 'Tab1:row10:col4'] |
+| C8_topology | fail |  |  |  |  |  |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.98 L |  |  | ['Tab1:row6:col3', 'Tab1:row6:col4'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.2 L |  |  | ['Tab1:row10:col3', 'Tab1:row10:col4'] |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Models
+
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisatuximab%5D%20Isatuximab_Brillac2025_final&body=Drug%3A%20isatuximab%0ARecord%3A%20Isatuximab_Brillac2025_final%0APaper%3A%20Brillac_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isatuximab/Isatuximab_Brillac2025_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-10-07 13:03 UTC</sub>

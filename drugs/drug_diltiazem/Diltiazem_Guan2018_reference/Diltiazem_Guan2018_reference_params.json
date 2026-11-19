@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 240 mg oral (C08DB01)",
+ "model_id": "Diltiazem_Guan2018_reference",
+ "molar_masses": {
+  "central.C": 0.414518
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.566666666666667e-05,
+  "F": 1.0,
+  "MM": 0.414518,
+  "Tlag": 0.0,
+  "VdPerKg": 0.05071428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00024,
+  "ka": 0.0005444444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8311.022044088177
+ },
+ "reference_peaks": {
+  "central.C": 6.37805842365657e-05
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,29 @@
+{
+ "dose_source": "library default",
+ "model_id": "InterferonBeta1a_Savic2017_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0916666666666665e-05,
+  "F": 0.9,
+  "Tlag": 1148.4,
+  "VdPerKg": 0.005214285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 4.08675799086758e-05,
+  "ka": 0.00030000000000000003,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10100.200400801603
+ },
+ "reference_peaks": {
+  "central.C": 0.00019098783077515605
+ },
+ "stop_time": 126000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

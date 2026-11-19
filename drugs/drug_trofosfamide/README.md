@@ -1,0 +1,107 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;trofosfamide&quot;}]"></div>
+
+# trofosfamide
+
+- **generic name:** trofosfamide
+- **ATC codes:** `L01AA07`
+- **DrugBank:** [DB12902](https://go.drugbank.com/drugs/DB12902) · **PubChem:** [CID 65702](https://pubchem.ncbi.nlm.nih.gov/compound/65702)
+- **molar mass:** 323.58 g/mol (C9H18Cl3N2O2P) — DrugBank
+- **groups:** investigational
+
+## About
+
+Trofosfamide is an alkylating antineoplastic agent that has been investigated for the treatment of specific brain tumors and sarcomas. It is currently classified as an investigational medication and is not yet approved for routine clinical use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q10384947](https://www.wikidata.org/wiki/Q10384947), [Wikipedia](https://en.wikipedia.org/wiki/Trofosfamide?oldid=1329521088) (CC BY-SA 4.0) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Liang_2007_antitumor_activity](drugs/drug_trofosfamide/pd_Liang_2007_antitumor_activity.md) | antitumor activity ← trofosfamide · inhibition effect | — | Liang J et al., Design of new oxazaphosphorine anticanc…, Current pharmaceutical desi… (2007) | [10.2174/138161207780414296](https://doi.org/10.2174/138161207780414296) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Liang_2007_immunomodulating_activity](drugs/drug_trofosfamide/pd_Liang_2007_immunomodulating_activity.md) | immunomodulating activity ← trofosfamide · model not identified | — | Liang J et al., Design of new oxazaphosphorine anticanc…, Current pharmaceutical desi… (2007) | [10.2174/138161207780414296](https://doi.org/10.2174/138161207780414296) |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 16:37 | 0:45 | 0/0/0 | 0/1/0 | 0/0/0 | 64,035/2,081 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 16 matched, 35 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Jahnke_2005.pdf` | Jahnke K et al., Pharmacokinetics and efficacy of ifosfa…, Annals of oncology : offici… (2005) | popPK | 8 | [10.1093/annonc/mdi409](https://doi.org/10.1093/annonc/mdi409) | [16219622](https://pubmed.ncbi.nlm.nih.gov/16219622) | The study reports quantitative pharmacokinetic data (metabolite concentrations and aqueous/serum ratios) for trofosfamide in humans, but does not provide standard compartmental parameters like CL, Vd, or half-life. |
+
+<sub>queue written 2026-10-07 16:36 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Adolph_2021 | irrelevant | 0 | 0 | The paper is a clinical oncology study on ependymoma where trofosfamide is a comparator therapy, not a pharmacokinetic study. |
+| popPK | Brock_2000 | irrelevant | 0 | 0 | The text is a historical review of drug development in Germany and does not contain any pharmacokinetic parameters for trofosfamide. |
+| popPK | Fante_2022 | irrelevant | 0 | 0 | The paper is a retrospective clinical study evaluating the safety and efficacy of a chemotherapy regimen (TEPIP) and does not report any quantitative pharmacokinetic parameters for trofosfamide. |
+| popPK | Fante_2023 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study of a chemotherapy regimen containing trofosfamide, with no pharmacokinetic data reported. |
+| popPK | Freyer_2000 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of doxorubicin, etoposide, and ifosfamide, not trofosfamide. |
+| PD | Freyer_2000 | not_relevant | 0 | 0 | The paper reports population pharmacokinetic (PK) parameters for doxorubicin, etoposide, and ifosfamide, but contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Gutsch_2018 | irrelevant | 0 | 0 | The paper is a case report on a patient with lymphoma treated with trofosfamide and other agents, containing no pharmacokinetic data or disposition parameters. |
+| PD | Gutsch_2018 | not_relevant | 0 | 0 | The paper is a case report describing clinical outcomes and does not contain any pharmacokinetic or pharmacodynamic data, concentration-effect analysis, or numeric PD parameters for trofosfamide. |
+| popPK | Heinz_2024 | irrelevant | 0 | 0 | The paper is a clinical oncology study on rhabdomyosarcoma treatment outcomes where trofosfamide is listed only as a component of a chemotherapy regimen, and it contains no pharmacokinetic data or parameters. |
+| popPK | Jahnke_2004 | irrelevant | 0 | 0 | The paper is a clinical case report on the efficacy of trofosfamide for intraocular lymphoma and does not report any pharmacokinetic parameters. |
+| popPK | Jahnke_2005 | relevant | 8 | 2 | The study reports quantitative pharmacokinetic data (metabolite concentrations and aqueous/serum ratios) for trofosfamide in humans, but does not provide standard compartmental parameters like CL, Vd, or half-life. |
+| popPK | Jahnke_2009 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting response rates and survival outcomes, with no pharmacokinetic parameters (CL, V, etc.) measured or reported. |
+| popPK | Kerbusch_2000 | irrelevant | 1 | 0 | The study is an analytical method validation for ifosfamide and its metabolites, with trofosfamide used only as an internal standard, and reports no pharmacokinetic parameters for trofosfamide. |
+| popPK | Kroiss_2016 | irrelevant | 0 | 0 | The paper is a clinical efficacy study of trofosfamide in adrenocortical carcinoma and does not report any pharmacokinetic parameters (CL, V, t1/2, etc.). |
+| popPK | Liang_2007 | irrelevant | 0 | 0 | The paper is a review of oxazaphosphorine drug design and does not report quantitative pharmacokinetic parameters for trofosfamide. |
+| PD | Liang_2007 | not_relevant | 1 | 0 | The text is a review of oxazaphosphorine drug design and clinical trial status, containing no numeric PD parameters, exposure-response data, or dose-effect curves for trofosfamide. |
+| popPK | Lüke_2021 | irrelevant | 0 | 0 | The paper is a clinical case series regarding treatment efficacy in Hodgkin's lymphoma and does not report pharmacokinetic parameters for trofosfamide. |
+| PGx | May-Manke_1999 | not_relevant | 1 | 0 | The study reports general CYP3A4 involvement in trofosfamide metabolism but does not evaluate any genetic variants (CYP3A4*22, etc.) or pharmacogenomic effects on PK/PD. |
+| popPK | Mohn_1976 | irrelevant | 0 | 0 | no_text gate: only 64 chars of text extracted (&lt; 400) |
+| popPK | Perwein_2023 | irrelevant | 0 | 0 | The paper is a survey on treatment strategies for pediatric high-grade gliomas and mentions trofosfamide only as a chemotherapy option, containing no pharmacokinetic data or disposition parameters. |
+| popPK | Petri_1978 | irrelevant | 0 | 0 | no_text gate: only 316 chars of text extracted (&lt; 400) |
+| popPK | Pötzi_1979 | irrelevant | 0 | 0 | The paper is a clinical efficacy report on trofosfamide in lymphoma patients and contains no pharmacokinetic parameters or quantitative disposition data. |
+| popPK | Skarbek_2017 | irrelevant | 0 | 0 | The study focuses on in vitro activity and PK of ifosfamide (IFO) analogs, with trofosfamide mentioned only as a class comparator without quantitative data. |
+| popPK | Sottani_2013 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of doxorubicin and its metabolite, with trofosfamide used only as an internal standard. |
+| popPK | Tillmann_1998 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of etoposide, with trofosfamide only mentioned as a co-administered agent without any reported PK parameters for it. |
+| PD | Tillmann_1998 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics of oral etoposide and does not report any pharmacodynamic or exposure-response data for trofosfamide. |
+| popPK | Wagner_1997 | irrelevant | 2 | 0 | The paper is a review of pharmacodynamic and pharmacokinetic properties, but the provided evidence contains no quantitative PK parameter values (CL, V, etc.) for trofosfamide. |
+| PD | Wagner_1997 | not_relevant | 2 | 1 | The text is a review summary that qualitatively describes pharmacodynamic properties and clinical response rates but does not provide specific numeric PD parameters (e.g., Emax, EC50) or detailed exposure-response data. |
+| PGx | Wang_2012 | not_relevant | 0 | 0 | The paper is a general review focusing on xenobiotic receptor regulation of metabolism, does not report specific pharmacogenomic effects of gene variants on PK/PD parameters, and explicitly states the focus is on cyclophosphamide and ifosfamide, not trofosfamide. |
+| popPK | Witte_2019 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study of trofosfamide in lymphoma patients and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Wolff_1996 | irrelevant | 0 | 0 | The text describes a clinical trial protocol for pediatric glioblastoma using trofosfamide but contains no pharmacokinetic data, models, or numeric disposition parameters. |
+| popPK | Zhang_2005 | irrelevant | 0 | 0 | The paper is a review of metabolism and transport mechanisms for oxazaphosphorines and does not report quantitative pharmacokinetic parameters for trofosfamide. |
+| PD | Zhang_2005 | not_relevant | 1 | 0 | The text is a review of metabolism and transport mechanisms for oxazaphosphorines and mentions PK/PD relationships qualitatively but provides no numeric PD parameters or exposure-response data for trofosfamide. |
+| popPK | Zhang_2005_2 | irrelevant | 0 | 0 | The paper is a review of resistance mechanisms and does not report quantitative pharmacokinetic parameters for trofosfamide. |
+| PD | Zhang_2005_2 | not_relevant | 1 | 0 | The text is a review of oxazaphosphorine resistance mechanisms and circumvention strategies, containing no specific PK/PD data, models, or numeric parameters for trofosfamide. |
+| PGx | Zhang_2005_2 | not_relevant | 0 | 0 | The paper discusses mechanisms of tumor resistance to oxazaphosphorines (like trofosfamide) and strategies to overcome them, but it does not report a specific pharmacogenomic effect on a PK or PD parameter. |
+| PGx | Zhang_2006 | not_relevant | 1 | 0 | The text is a general review of oxazaphosphorine resistance mechanisms and reversal strategies, reporting no specific pharmacogenomic effect sizes or PK/PD changes for trofosfamide. |
+| popPK | Zhao_2024 | irrelevant | 0 | 0 | The paper is a review of clinical treatment progress for soft tissue sarcoma and does not contain any pharmacokinetic models or quantitative disposition parameters for trofosfamide. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrofosfamide%5D&body=Drug%3A%20trofosfamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trofosfamide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

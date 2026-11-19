@@ -1,0 +1,31 @@
+{
+ "guid": "{71fccba2-c497-4276-bcc9-f75e907370dc}",
+ "model": "Pharmacolibrary.Pharmacodynamic.LinearSweep",
+ "model_identifier": "Pharmacolibrary_Pharmacodynamic_LinearSweep",
+ "generation_tool": "OpenModelica Compiler OpenModelica 1.26.3",
+ "start_time": 0.0,
+ "stop_time": 1000.0,
+ "tolerance": 1e-06,
+ "vr": {
+  "exposure": 0,
+  "frac": 1,
+  "response": 2,
+  "E0": 3,
+  "EC50": 4,
+  "Emax": 5,
+  "exposure_per_s": 6,
+  "gamma": 7,
+  "slope": 8
+ },
+ "parameters": {
+  "E0": 1.46111111111e-08,
+  "EC50": 1.0,
+  "Emax": 0.0,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.0,
+  "slope": 0.941
+ },
+ "outputs": [],
+ "fmu_sha256": "f9eaaee008c513233809a3ca1640eba275d7c4d9c5e736ebc6b88b4f8e191299",
+ "js_bytes": 4753031
+}

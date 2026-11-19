@@ -1,0 +1,310 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;glycyrrhizic acid&quot;}]"></div>
+
+# glycyrrhizic acid
+
+- **generic name:** glycyrrhizic acid
+- **ATC codes:** `A05BA08`
+- **DrugBank:** [DB13751](https://go.drugbank.com/drugs/DB13751) · **PubChem:** none
+- **molar mass:** 822.942 g/mol (C42H62O16) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Glycyrrhizin is a liver therapeutic agent indicated for liver therapy. It is given orally, topically, or via dental routes in forms such as creams, gels, and pastes. It is approved and also used as an emulsifier in foodstuffs and cosmetics.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q418705](https://www.wikidata.org/wiki/Q418705), [Wikipedia](https://en.wikipedia.org/wiki/Glycyrrhizin?oldid=1357770412) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Orlando_2015_Hyal_1_activity](drugs/drug_glycyrrhizic_acid/pd_Orlando_2015_Hyal_1_activity.md) | Hyal-1 activity ← glycyrrhizic acid · direct sigmoid Emax (Hill) effect | — | Orlando Z et al., Autodisplay of Human Hyaluronidase Hyal…, Molecules (Basel, Switzerla… (2015) | [10.3390/molecules200915449](https://doi.org/10.3390/molecules200915449) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Li_2020_ICa_L](drugs/drug_glycyrrhizic_acid/pd_Li_2020_ICa_L.md) | ICa-L ← glycyrrhizic acid · direct Emax (saturable) effect | — | Li M et al., Cardioprotective effects of glycyrrhizi…, Naunyn-Schmiedeberg's archi… (2020) | [10.1007/s00210-019-01767-3](https://doi.org/10.1007/s00210-019-01767-3) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=glycyrrhizic_acid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: AKR1C2 (substrate), AKR1C3 (substrate), AKR1C4 (substrate), CASP3 (target), HSD11B1 (inhibitor), HSD11B1 (target), LPL (inducer), NFKB2 (translocation inhibitor), TNF (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 14:58 | 9:33 | 0/0/0 | 2/0/0 | 0/0/0 | 352,756/12,432 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 8/56 | 30/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 340 matched, 160 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_26 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Shao_2001.pdf` | Shao W et al., [Studies of the determination of glycyr…, Zhong yao cai = Zhongyaocai… (2001) | popPK | 10 |  | [11715198](https://pubmed.ncbi.nlm.nih.gov/11715198) | The study reports quantitative pharmacokinetic parameters (half-lives, AUC, clearance) for glycyrrhizic acid (GK) in mice, with all numeric values explicitly present in the text. |
+| `Ploeger_2001.pdf` | Ploeger B et al., A population physiologically based phar…, Toxicology and applied phar… (2001) | popPK | 9 | [10.1006/taap.2000.9078](https://doi.org/10.1006/taap.2000.9078) | [11141355](https://pubmed.ncbi.nlm.nih.gov/11141355) | The paper describes a population PK/PD model for glycyrrhetic acid (the active metabolite of glycyrrhizic acid) in humans, but the specific numeric parameter values are not present in the provided abstract text. |
+| `Tsai_1992.pdf` | Tsai TH et al., Pharmacokinetics of glycyrrhizin after…, Journal of pharmaceutical s… (1992) | popPK | 9 | [10.1002/jps.2600810925](https://doi.org/10.1002/jps.2600810925) | [1432649](https://pubmed.ncbi.nlm.nih.gov/1432649) | The study reports nonlinear pharmacokinetics of glycyrrhizin (metabolite of glycyrrhizic acid) in rats with a two-compartment model, but specific numeric parameter values are not present in the provided evidence. |
+| `Zhang_2000.pdf` | Zhang L et al., [Determination of glycyrrihizin in rats…, Zhong yao cai = Zhongyaocai… (2000) | popPK | 9 |  | [12575285](https://pubmed.ncbi.nlm.nih.gov/12575285) | The study reports a two-compartment pharmacokinetic model for glycyrrhizin in rats, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Li_2013.pdf` | Li T et al., [LC-MS quantification and pharmacokinet…, Yao xue xue bao = Acta phar… (2013) | popPK | 8 |  | [23984529](https://pubmed.ncbi.nlm.nih.gov/23984529) | The study reports pharmacokinetic parameters for glycyrrhizic acid in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Li_2014.pdf` | Li T et al., [Pharmacokinetics and pharmacodynamics…, Yao xue xue bao = Acta phar… (2014) | popPK | 8 |  | [25577872](https://pubmed.ncbi.nlm.nih.gov/25577872) | The study reports pharmacokinetic parameters for glycyrrhizic acid in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Sakoda_2025.pdf` | Sakoda R et al., Stereoisomerism at the 3-position of gl…, Drug metabolism and disposi… (2025) | popPK | 8 | [10.1016/j.dmd.2025.100180](https://doi.org/10.1016/j.dmd.2025.100180) | [41192341](https://pubmed.ncbi.nlm.nih.gov/41192341) | The study reports toxicokinetic parameters (half-life, AUC) for glycyrrhetinic acid (the primary metabolite of glycyrrhizic acid) in rats, but specific numeric values for clearance or volume are not explicitly listed in the provided text, only relative fold-changes. |
+| `Tsai_1992_2.pdf` | Tsai TH et al., Determination of glycyrrhizin in rabbit…, Journal of chromatography (1992) | popPK | 8 | [10.1016/0378-4347(92)80190-2](https://doi.org/10.1016/0378-4347(92)80190-2) | [1500453](https://pubmed.ncbi.nlm.nih.gov/1500453) | The study reports a two-compartment model for glycyrrhizin (glycyrrhizic acid) in rabbits, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Wang_2013.pdf` | Wang Y et al., Pharmacokinetic comparisons of differen…, Journal of chromatography.… (2013) | popPK | 8 | [10.1016/j.jchromb.2013.06.021](https://doi.org/10.1016/j.jchromb.2013.06.021) | [23831700](https://pubmed.ncbi.nlm.nih.gov/23831700) | The study reports pharmacokinetic parameters (CL, AUC) for glycyrrhizin (the salt form of glycyrrhizic acid) in rats, but the specific numeric values are not present in the provided evidence text. |
+| `Song_2024.pdf` | Song D et al., Natural Binary Herbal Small Molecules S…, ACS biomaterials science &… (2024) | pd | 5 | [10.1021/acsbiomaterials.4c01227](https://doi.org/10.1021/acsbiomaterials.4c01227) | [39324477](https://www.ncbi.nlm.nih.gov/pubmed/39324477) | metadata signals extractable PD data (EC50) |
+| `Cao_2023.pdf` | Cao X et al., Photothermal Therapy Mediated Hybrid Me…, AAPS PharmSciTech (2023) | pd | 4 | [10.1208/s12249-023-02594-9](https://doi.org/10.1208/s12249-023-02594-9) | [37380936](https://www.ncbi.nlm.nih.gov/pubmed/37380936) | metadata signals extractable PD data (IC50) |
+| `Homma_1994.pdf` | Homma M et al., A novel 11 beta-hydroxysteroid dehydrog…, The Journal of pharmacy and… (1994) | pd | 4 | [10.1111/j.2042-7158.1994.tb03799.x](https://doi.org/10.1111/j.2042-7158.1994.tb03799.x) | [8051615](https://www.ncbi.nlm.nih.gov/pubmed/8051615) | metadata signals extractable PD data (IC50) |
+| `Itoh_1989.pdf` | Itoh K et al., Effects of glycyrrhizin and glycyrrheti…, Biochemistry international (1989) | pd | 4 |  | [2541725](https://www.ncbi.nlm.nih.gov/pubmed/2541725) | metadata signals extractable PD data (IC50) |
+| `Liang_2020.pdf` | Liang RF et al., Involvement of organic anion-transporti…, Xenobiotica; the fate of fo… (2020) | pd | 4 | [10.1080/00498254.2019.1651921](https://doi.org/10.1080/00498254.2019.1651921) | [31368836](https://www.ncbi.nlm.nih.gov/pubmed/31368836) | metadata signals extractable PD data (IC50) |
+| `Okada_2023.pdf` | Okada S et al., Development of a Peptide Sensor Derived…, Analytical chemistry (2023) | pd | 4 | [10.1021/acs.analchem.2c05818](https://doi.org/10.1021/acs.analchem.2c05818) | [37028948](https://www.ncbi.nlm.nih.gov/pubmed/37028948) | metadata signals extractable PD data (EC50) |
+| `Schleimer_1991.pdf` | Schleimer RP, Potential regulation of inflammation in…, American journal of respira… (1991) | pd | 4 | [10.1165/ajrcmb/4.2.166](https://doi.org/10.1165/ajrcmb/4.2.166) | [1991073](https://www.ncbi.nlm.nih.gov/pubmed/1991073) | metadata signals extractable PD data (IC50) |
+| `Tao_2015.pdf` | Tao S et al., [Screening of active compounds with myo…, Zhejiang da xue xue bao. Yi… (2015) | pd | 4 | [10.3785/j.issn.1008-9292.2015.03.005](https://doi.org/10.3785/j.issn.1008-9292.2015.03.005) | [26038132](https://www.ncbi.nlm.nih.gov/pubmed/26038132) | metadata signals extractable PD data (EC50) |
+| `Wang_2006.pdf` | Wang XQ et al., [The anti-respiratory syncytial virus e…, Zhong yao cai = Zhongyaocai… (2006) | pd | 4 |  | [17059011](https://www.ncbi.nlm.nih.gov/pubmed/17059011) | metadata signals extractable PD data (EC50) |
+| `Xue_2026.pdf` | Xue L et al., Acid-responsive natural amphiphile self…, Colloids and surfaces. B, B… (2026) | pd | 4 | [10.1016/j.colsurfb.2026.116146](https://doi.org/10.1016/j.colsurfb.2026.116146) | [42704987](https://www.ncbi.nlm.nih.gov/pubmed/42704987) | metadata signals extractable PD data (EC50) |
+| `Zhang_1994.pdf` | Zhang YD et al., Inhibition of 11 beta-hydroxysteroid de…, The Journal of steroid bioc… (1994) | pd | 4 | [10.1016/0960-0760(94)90304-2](https://doi.org/10.1016/0960-0760(94)90304-2) | [8003443](https://www.ncbi.nlm.nih.gov/pubmed/8003443) | metadata signals extractable PD data (IC50) |
+| `Tu_2010.pdf` | Tu JH et al., Effect of glycyrrhizin on CYP2C19 and C…, Xenobiotica; the fate of fo… (2010) | pgx | 8 | [10.3109/00498251003748095](https://doi.org/10.3109/00498251003748095) | [20350051](https://www.ncbi.nlm.nih.gov/pubmed/20350051) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
+| `Hou_2012.pdf` | Hou YC et al., Liquorice reduced cyclosporine bioavail…, Food chemistry (2012) | pgx | 7 | [10.1016/j.foodchem.2012.07.061](https://doi.org/10.1016/j.foodchem.2012.07.061) | [22980806](https://www.ncbi.nlm.nih.gov/pubmed/22980806) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Huang_2013.pdf` | Huang YP et al., Glycyrrhetinic acid exhibits strong inh…, Phytotherapy research : PTR (2013) | pgx | 7 | [10.1002/ptr.4875](https://doi.org/10.1002/ptr.4875) | [23148031](https://www.ncbi.nlm.nih.gov/pubmed/23148031) | metadata signals extractable PGX data (UGT1A3, PK/PD-context) |
+| `Lin_2022.pdf` | Lin L et al., Herb-drug interaction between Shaoyao-G…, Journal of ethnopharmacology (2022) | pgx | 7 | [10.1016/j.jep.2022.115437](https://doi.org/10.1016/j.jep.2022.115437) | [35667582](https://www.ncbi.nlm.nih.gov/pubmed/35667582) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
+| `Liu_2023.pdf` | Liu J et al., Pharmacokinetic Interactions of a Licor…, Drug metabolism and disposi… (2023) | pgx | 7 | [10.1124/dmd.122.001050](https://doi.org/10.1124/dmd.122.001050) | [36328482](https://www.ncbi.nlm.nih.gov/pubmed/36328482) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Suroowan_2019.pdf` | Suroowan S et al., Herbal Medicine of the 21st Century: A…, Current topics in medicinal… (2019) | pgx | 7 | [10.2174/1568026619666191112121330](https://doi.org/10.2174/1568026619666191112121330) | [31721714](https://www.ncbi.nlm.nih.gov/pubmed/31721714) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-04 14:52 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abdel_2019 | irrelevant | 0 | 0 | The paper focuses on in vitro acetylcholinesterase inhibitory activity and molecular docking of glycyrrhetinic acid analogs, containing no pharmacokinetic data for glycyrrhizic acid. |
+| popPK | Auxtero_2021 | irrelevant | 0 | 0 | The paper is a literature review of herb-drug interactions and does not report original quantitative pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Auxtero_2021 | not_relevant | 0 | 0 | The paper is a literature review on herb-drug interactions based on target overlap (enzymes/transporters) and does not report any pharmacokinetic or pharmacodynamic data, concentration-effect curves, or numeric PD parameters for glycyrrhizic acid. |
+| popPK | Baltina_2021 | irrelevant | 0 | 0 | The paper focuses on the antiviral activity and mechanism of action of glycyrrhizic acid conjugates against Zika virus, reporting IC50 values rather than pharmacokinetic parameters. |
+| popPK | Baltina_2021_2 | irrelevant | 0 | 0 | The paper is a synthetic chemistry and in-vitro antiviral activity study, containing no pharmacokinetic data or disposition parameters for glycyrrhizic acid. |
+| popPK | Bibi_2022 | irrelevant | 0 | 0 | The paper is a computational study (virtual screening and molecular dynamics) of drug binding to SARS-CoV-2 proteins and does not report any pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Bibi_2022 | not_relevant | 0 | 0 | The paper is a computational study involving virtual screening and molecular dynamics simulations, reporting binding affinities rather than in vivo pharmacodynamic or exposure-response relationships. |
+| popPK | Bisht_2022 | irrelevant | 0 | 0 | The paper is a review of pharmacological mechanisms (anti-inflammatory, antiviral) and does not report quantitative pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Bisht_2022 | not_relevant | 1 | 0 | The paper is a narrative review of pharmacological activities and mechanisms, lacking any original PK/PD modeling or extractable numeric exposure-response parameters. |
+| popPK | Bjørklund_2026 | irrelevant | 0 | 0 | The paper is a review of Traditional Chinese Medicine in COVID-19 treatment and does not report quantitative pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Bjørklund_2026 | not_relevant | 1 | 0 | The text is a review that mentions glycyrrhizin qualitatively and provides EC50 values for other compounds (baicalein, quercetin), but does not report any numeric PD parameters or exposure-response relationship for glycyrrhizic acid. |
+| popPK | Broni_2023 | irrelevant | 0 | 0 | The paper is an in silico study on Ebola VP40 inhibitors and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Broni_2023 | not_relevant | 0 | 0 | The paper is an in silico study using molecular docking and MD simulations; it reports predicted binding affinities and machine-learning predicted IC50s, but contains no experimental pharmacodynamic data, exposure-response analysis, or PK/PD modeling for glycyrrhizic acid. |
+| PGx | Cai_2003 | not_relevant | 0 | 0 | The paper investigates the effect of the drug on gene expression (mechanism of action), not the effect of a gene variant on the drug's pharmacokinetics or pharmacodynamics. |
+| popPK | Cao_2022 | relevant | 8 | 4 | The study reports PK parameters for GAMG (a glycyrrhizic acid metabolite) in rats, but the specific quantitative values for clearance (CL), volume (Vd), and half-life (t1/2) are explicitly stated to be in Supplementary Tables S2 and S3, which are not provided in the evidence. |
+| PD | Cao_2022 | not_relevant | 0 | 0 | The paper is a pure pharmacokinetic study reporting concentration-time profiles and PK parameters (Cmax, AUC) without any measurement of pharmacodynamic effects or exposure-response modeling. |
+| popPK | Cao_2023 | irrelevant | 0 | 0 | The study focuses on the formulation and in-vitro antitumor efficacy of emodin nanoparticles where glycyrrhizin is used only as a solubility enhancer, with no pharmacokinetic parameters reported. |
+| PGx | Chayama_2002 | not_relevant | 0 | 0 | The paper discusses interferon therapy and general hepatocellular carcinoma prevention, mentioning glycyrrhizin only in the context of ALT reduction without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Chen_2019 | irrelevant | 2 | 0 | The study reports only qualitative trends and relative rankings of PK parameters (Cmax, AUC) for glycyrrhizic acid as a component of a mixture, without providing specific quantitative values for clearance, volume, or half-life. |
+| PD | Chen_2019 | not_relevant | 1 | 0 | The paper reports PK parameters (Cmax, AUC) and qualitative PD effects (fecal excretion) but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., EC50, Emax) for glycyrrhizic acid. |
+| PGx | Chen_2026 | not_relevant | 0 | 0 | The paper investigates the effects of ritonavir, lopinavir, and alcohol on hepatocyte transporters and does not report pharmacogenomic effects on the PK/PD of glycyrrhizic acid. |
+| PGx | Cheng_2022 | not_relevant | 0 | 0 | The paper investigates the mechanism of PXR activation by licorice components but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Chien_2023 | irrelevant | 0 | 0 | The study investigates the association between nonnutritive sweetener intake (including glycyrrhizin) and body composition changes, not the pharmacokinetic parameters of glycyrrhizic acid. |
+| PGx | Dubey_2026 | not_relevant | 0 | 0 | The paper is a computational study on antiviral drug discovery and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Ershov_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study identifying protein targets of glycyrrhizic acid and does not report any pharmacokinetic parameters. |
+| PD | Ershov_2025 | not_relevant | 0 | 0 | The paper identifies protein targets via affinity chromatography and docking but does not report any concentration-effect or dose-response data or numeric PD parameters. |
+| popPK | Ghosh_2007 | irrelevant | 0 | 0 | The paper discusses antiviral activity and EC50 values for SARS-CoV inhibition, not pharmacokinetic parameters. |
+| PD | Ghosh_2007 | not_relevant | 3 | 3 | The text is a review chapter that cites EC50 values for glycyrrhizin and its derivatives but does not present original PK/PD modeling, exposure-response analysis, or derivable PD parameters for glycyrrhizic acid. |
+| popPK | Golubović_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sirolimus, not glycyrrhizic acid. |
+| PD | Golubović_2019 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PK) of sirolimus and does not report any pharmacodynamic (PD) or exposure-response relationships for glycyrrhizic acid or any other drug. |
+| popPK | Gupta_2024 | irrelevant | 0 | 0 | The study focuses on the formulation of a 5-Fluorouracil nanoemulgel where glycyrrhizin is used solely as a penetration enhancer, and no pharmacokinetic parameters for glycyrrhizin are reported. |
+| popPK | Hasegawa_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on glucose transport and cytotoxicity, not a pharmacokinetic study, and glycyrrhizic acid is only mentioned as a comparator. |
+| PD | Hasegawa_1994 | not_relevant | 0 | 0 | The paper reports IC50/CC50 values for other triterpenoid saponins (Chikusetsusaponin Ia, zingibroside R1) and only qualitatively compares zingibroside R1 to glycyrrhizin without providing numeric PD parameters for glycyrrhizic acid. |
+| popPK | Hatano_1991 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no pharmacokinetic data or text regarding glycyrrhizic acid. |
+| PD | Hatano_1991 | not_relevant | 0 | 0 | The provided text is metadata from a document processing tool (GROBID) and does not contain any scientific content, pharmacokinetic data, or pharmacodynamic analysis for glycyrrhizic acid. |
+| popPK | Hejazi_2021 | irrelevant | 0 | 0 | The paper is an in silico molecular docking study of phytoconstituents against SARS-CoV-2 protease, containing no pharmacokinetic data for glycyrrhizic acid. |
+| PD | Hejazi_2021 | not_relevant | 0 | 0 | The paper is an in silico molecular docking and dynamics study reporting binding affinities (kcal/mol), not a pharmacodynamic exposure-response or dose-response analysis with numeric PD parameters like Emax or EC50. |
+| popPK | Homma_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition by herbal constituents, not a pharmacokinetic study reporting disposition parameters for glycyrrhizic acid. |
+| PGx | Hou_2012 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (liquorice affecting cyclosporine PK) and does not report any pharmacogenomic effects (gene variants) on the PK/PD of glycyrrhizic acid. |
+| popPK | Hour_2022 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral study of glycyrrhizic acid derivatives against Dengue virus and does not report any pharmacokinetic parameters. |
+| PGx | Huang_2013 | not_relevant | 0 | 0 | The study reports in vitro enzyme inhibition kinetics of glycyrrhetinic acid on UGTs but does not investigate the effect of genetic variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Huntjens_2008 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of diclofenac and rofecoxib, not glycyrrhizic acid. |
+| PD | Huntjens_2008 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of diclofenac and rofecoxib, not glycyrrhizic acid, and does not report specific numeric PD parameters for the target drug. |
+| popPK | Ibrahim_2026 | irrelevant | 0 | 0 | The paper is a systematic review of antiviral mechanisms and in-vitro efficacy (IC50/EC50) of plant metabolites, not a pharmacokinetic study reporting quantitative disposition parameters for glycyrrhizic acid. |
+| PD | Ibrahim_2026 | not_relevant | 1 | 0 | The paper is a systematic review that qualitatively summarizes findings from other studies and does not present original data, specific numeric PD parameters, or an exposure-response curve for glycyrrhizic acid. |
+| popPK | Ishida_1989 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding glycyrrhizic acid pharmacokinetics. |
+| popPK | Islam_2022 | irrelevant | 0 | 0 | The paper is a review on immune system rejuvenation and does not contain pharmacokinetic data for glycyrrhizic acid. |
+| PD | Islam_2022 | not_relevant | 0 | 0 | The paper is a general review on immune system rejuvenation and does not contain any pharmacokinetic or pharmacodynamic data, exposure-response analysis, or numeric PD parameters for glycyrrhizic acid. |
+| popPK | Israni_2026 | irrelevant | 0 | 0 | The paper is a review of anti-inflammatory mechanisms and does not report quantitative pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Israni_2026 | not_relevant | 1 | 0 | The paper is a narrative review of anti-inflammatory mechanisms and therapeutic strategies; it does not report original PK/PD data, concentration-effect curves, or numeric PD parameters for glycyrrhizic acid. |
+| popPK | Itoh_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition (ATPase) and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| popPK | Jach_2026 | irrelevant | 0 | 0 | The paper is a narrative review on probiotic-plant bioactive synergy and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Jach_2026 | not_relevant | 0 | 0 | The paper is a narrative review on probiotic-phytochemical synergy and does not report any specific pharmacodynamic or exposure-response data for glycyrrhizic acid. |
+| PGx | Jia_2021 | not_relevant | 0 | 0 | The paper investigates the hepatoprotective effects of a traditional decoction on lead toxicity in mice and does not report any pharmacogenomic effects on the PK or PD of glycyrrhizic acid. |
+| PGx | Jiang_2019 | not_relevant | 0 | 0 | The paper describes the immobilization of a bacterial enzyme for the synthesis of a pharmaceutical intermediate, not the pharmacogenomics of a drug in humans. |
+| popPK | Jiao_2009 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sirolimus, not glycyrrhizic acid (glycyrrhizin is only mentioned as a co-medication affecting sirolimus clearance). |
+| PD | Jiao_2009 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of sirolimus, not pharmacodynamics (PD) or exposure-response relationships for glycyrrhizic acid. |
+| popPK | Jing-Yan_2020 | irrelevant | 0 | 0 | The study focuses on in vitro release profiles and pharmacodynamics (eczema model) rather than in vivo pharmacokinetic parameters like clearance or volume of distribution. |
+| PD | Jing-Yan_2020 | not_relevant | 2 | 1 | The paper reports qualitative pharmacodynamic effects (reduced ear swelling, anti-inflammatory) and in vitro release kinetics, but does not provide numeric exposure-response or dose-response parameters (e.g., EC50, Emax) for glycyrrhizic acid. |
+| popPK | Junaid_2022 | irrelevant | 0 | 0 | This is a review of antiviral activity against coronaviruses and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Junaid_2022 | not_relevant | 1 | 0 | The paper is a review of natural products against coronaviruses and does not report specific numeric PD parameters or exposure-response relationships for glycyrrhizic acid. |
+| popPK | Kagelmacher_2025 | irrelevant | 0 | 0 | The paper investigates the anti-inflammatory mechanism of dendritic polyglycerol sulfate in macrophages and contains no pharmacokinetic data for glycyrrhizic acid. |
+| PD | Kagelmacher_2025 | not_relevant | 0 | 0 | The paper studies dendritic polyglycerol sulfate (dPGS), not glycyrrhizic acid, and reports qualitative/semi-quantitative cellular effects without a formal dose-response curve or numeric PD parameters for the target drug. |
+| popPK | Kato_2012 | irrelevant | 0 | 0 | The study investigates the anti-UV and anti-HIV biological activities of plant extracts in vitro and does not report any pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Kato_2012 | not_relevant | 3 | 2 | The paper reports single-point EC50/CC50 values and Selectivity Index (SI) for various extracts, but does not provide a dose-response curve, Emax, or a PK/PD model for glycyrrhizic acid specifically. |
+| PGx | Kheoane_2021 | not_relevant | 0 | 0 | The paper investigates glycyrrhizic acid as a drug absorption enhancer (inhibitor of CYP3A4/P-gp) rather than as the primary drug of interest, and it does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| popPK | Kobayashi_1993 | irrelevant | 0 | 0 | The study investigates the immunological mechanism of glycyrrhizin (induction of contrasuppressor T cells) in mice and does not report any pharmacokinetic parameters. |
+| PD | Kobayashi_1993 | not_relevant | 3 | 2 | The paper mentions a dose-response effect with a peak at 10 mg/kg but does not provide a concentration-effect curve, Emax/EC50, or other numeric PD parameters derivable from the text. |
+| popPK | Kong_2023 | irrelevant | 1 | 0 | The study focuses on chemical composition and pharmacological activity (immunomodulatory, anti-inflammatory) of processed licorice, not on quantitative pharmacokinetic parameters (CL, V, ka) for glycyrrhizic acid. |
+| PD | Kong_2023 | not_relevant | 1 | 0 | The study compares pharmacological activities of different processing methods qualitatively and identifies chemical markers, but does not report a quantitative exposure-response or dose-response relationship with numeric PD parameters for glycyrrhizic acid. |
+| popPK | Koyama_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of UGT inhibition by polyphenols and triterpenoids, reporting IC50 values rather than pharmacokinetic disposition parameters for glycyrrhizic acid. |
+| popPK | Le_2024 | irrelevant | 0 | 0 | The study focuses on the antiviral activity and molecular modeling of glycyrrhizic acid derivatives against SARS-CoV-2, reporting IC50 and EC50 values rather than pharmacokinetic parameters. |
+| PGx | Lee_2018 | not_relevant | 0 | 0 | The paper is a network pharmacology study of a traditional formula and does not report pharmacogenomic effects on the PK or PD of glycyrrhizic acid. |
+| popPK | Li_2013 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for glycyrrhizic acid in rats, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Li_2014 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for glycyrrhizic acid in rats, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Li_2020 | irrelevant | 0 | 0 | The study focuses on the cardioprotective mechanisms and electrophysiological effects of glycyrrhizic acid, not its pharmacokinetic disposition parameters. |
+| popPK | Li_2025 | irrelevant | 1 | 0 | The study focuses on the design and biological activity of novel glycyrrhetinic acid glycosides, with glycyrrhizic acid serving only as a comparator, and no quantitative PK parameters (CL, V, etc.) are reported for glycyrrhizic acid. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper describes a nanoformulation for crop protection and reports antifungal efficacy and metabolomics, but contains no pharmacokinetic parameters (CL, V, ka, etc.) for glycyrrhizic acid. |
+| popPK | Liang_2020 | irrelevant | 0 | 0 | The study focuses on the hepatic uptake mechanism of jatrorrhizine, using glycyrrhizic acid only as an inhibitor/comparator, and does not report PK parameters for glycyrrhizic acid. |
+| PD | Liang_2020 | not_relevant | 0 | 0 | The paper investigates the transport mechanisms of jatrorrhizine, not the pharmacodynamic or exposure-response relationship of glycyrrhizic acid. |
+| PGx | Lin_2022 | not_relevant | 0 | 0 | The paper investigates herb-drug interactions (SGFD affecting tofacitinib PK via CYP3A4 inhibition), not the effect of a gene variant on the PK/PD of glycyrrhizic acid. |
+| popPK | Lin_2024 | irrelevant | 0 | 0 | The study is an in-vitro antiviral and molecular docking investigation of glycyrrhizic acid conjugates, reporting IC50/EC50 values but no pharmacokinetic parameters (CL, V, ka, etc.). |
+| PGx | Liu_2023 | not_relevant | 0 | 0 | The paper describes a drug delivery system using glycyrrhetinic acid to encapsulate pyrazinamide, focusing on polymorph control and release kinetics, with no mention of pharmacogenomics or genetic variants. |
+| PGx | Liu_2023_2 | not_relevant | 0 | 0 | The study evaluates pharmacokinetic drug-drug interactions of a licorice extract with CYP450 probe substrates, not the effect of a gene variant on the PK/PD of glycyrrhizic acid. |
+| PGx | Liu_2025 | not_relevant | 0 | 0 | The paper focuses on the physical chemistry of polymorphism selection and drug delivery systems using glycyrrhizic acid, with no mention of human genetics, pharmacogenomics, or PK/PD parameters. |
+| popPK | Lu_2009 | irrelevant | 0 | 0 | The study focuses on in-vitro enzymatic kinetics (Km, Vmax) of glucuronidation for glycyrrhetinic acid, not pharmacokinetic disposition parameters (CL, V, ka) for glycyrrhizic acid. |
+| PD | Lu_2009 | not_relevant | 0 | 0 | The paper reports in vitro enzymatic kinetics (Km, Vmax) and inhibition constants (IC50) for UGT isoforms, which are pharmacokinetic/metabolic parameters, not pharmacodynamic (exposure-response or dose-response) parameters for the drug's therapeutic effect. |
+| popPK | Lu_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on ulcerative colitis where glycyrrhizic acid is identified as a bioactive component, but no pharmacokinetic parameters (CL, V, ka, etc.) are reported. |
+| PD | Lu_2025 | not_relevant | 2 | 1 | The paper identifies glycyrrhizic acid as a bioactive component and shows binding affinity via SPR, but it does not report a concentration-effect curve, dose-response relationship, or numeric PD parameters (e.g., Emax, EC50) for glycyrrhizic acid itself. |
+| popPK | Luo_2024 | irrelevant | 0 | 0 | The paper focuses on the formulation and pharmacodynamic effects of a hydrogel for traumatic brain injury, not on the pharmacokinetic parameters of glycyrrhizic acid. |
+| PD | Luo_2024 | not_relevant | 0 | 0 | The paper describes a drug delivery system and qualitative pharmacodynamic outcomes (RNA-seq, inflammation) but does not report any quantitative exposure-response or dose-response analysis with numeric PD parameters. |
+| popPK | Majnooni_2020 | irrelevant | 0 | 0 | The paper is a review of phytochemicals for lung injury and does not report quantitative pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Majnooni_2020 | not_relevant | 0 | 0 | The paper is a narrative review of phytochemical mechanisms and does not report any specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for glycyrrhizic acid. |
+| popPK | McCoy_2021 | irrelevant | 0 | 0 | The paper is a computational study on drug repurposing for COVID-19 and mentions glycyrrhizic acid only as a predicted candidate without providing any pharmacokinetic data. |
+| PD | McCoy_2021 | not_relevant | 0 | 0 | The paper is a computational study on link prediction for drug repurposing and mentions glycyrrhizic acid only as a predicted candidate, without reporting any pharmacodynamic or exposure-response data. |
+| PGx | Moon_1997 | not_relevant | 0 | 0 | The paper investigates the effect of glycyrrhizin on the metabolism of acetaminophen in rats, not the pharmacokinetics or pharmacodynamics of glycyrrhizin itself, and does not involve human pharmacogenomics. |
+| PGx | Nie_2023 | not_relevant | 0 | 0 | The study compares pharmacokinetics in normal vs. NAFLD rats (disease model) and correlates with protein expression levels, but does not report effects of specific gene variants or genotypes (pharmacogenomics). |
+| popPK | Okada_2023 | irrelevant | 0 | 0 | no_text gate: only 134 chars of text extracted (&lt; 400) |
+| PD | Okada_2023 | not_relevant | 0 | 0 | The paper describes a peptide sensor for SARS-CoV-2 RBD and does not mention glycyrrhizic acid or report any pharmacodynamic parameters. |
+| popPK | Omer_2023 | irrelevant | 0 | 0 | The study focuses on the formulation and in vitro dissolution of apigenin using glycyrrhizic acid as a carrier, and does not report any pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Omer_2023 | not_relevant | 0 | 0 | The paper focuses on the formulation and in vitro characterization of apigenin solid dispersions; while it reports an IC50 for apigenin, it does not report a pharmacodynamic or exposure-response relationship for glycyrrhizic acid. |
+| popPK | Omidian_2023 | irrelevant | 0 | 0 | The paper is a review focused on curcumin delivery systems and does not contain pharmacokinetic data for glycyrrhizic acid. |
+| PD | Omidian_2023 | not_relevant | 0 | 0 | The paper is a review on curcumin delivery systems and does not contain any pharmacodynamic or exposure-response data for glycyrrhizic acid. |
+| popPK | Orlando_2015 | irrelevant | 0 | 0 | The paper is an in-vitro enzyme inhibition study reporting IC50 values for glycyrrhizic acid, not a pharmacokinetic study with disposition parameters. |
+| PGx | Pandit_2011 | not_relevant | 0 | 0 | The paper investigates CYP enzyme inhibition by the extract but does not report any pharmacogenomic effects (gene variants) on the PK or PD of glycyrrhizic acid. |
+| popPK | Ploeger_2001 | relevant | 9 | 2 | The paper describes a population PK/PD model for glycyrrhetic acid (the active metabolite of glycyrrhizic acid) in humans, but the specific numeric parameter values are not present in the provided abstract text. |
+| popPK | Prakash_2026 | irrelevant | 0 | 0 | The paper is a review of phytochemicals for Type 2 Diabetes and does not mention glycyrrhizic acid or report any pharmacokinetic parameters. |
+| PD | Prakash_2026 | not_relevant | 0 | 0 | The paper is a review of phytochemicals and nanotechnology in T2DM and does not report specific pharmacodynamic or exposure-response data for glycyrrhizic acid. |
+| popPK | Qiu_2020 | irrelevant | 0 | 0 | The paper is a review of Traditional Chinese Medicine for COVID-19 and does not report quantitative pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Qiu_2020 | not_relevant | 0 | 0 | The paper is a general review of Traditional Chinese Medicine for COVID-19 and does not report specific pharmacodynamic or exposure-response data for glycyrrhizic acid. |
+| PGx | Quan_2025 | not_relevant | 0 | 0 | The paper discusses the use of licorice (glycyrrhizin) as a food additive for mutton flavor enhancement and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of glycyrrhizic acid. |
+| popPK | Rakhimova_2023 | irrelevant | 0 | 0 | The study investigates the in vitro effect of glycyrrhetinic acid derivatives on cell volume regulation in rat thymocytes, not the pharmacokinetic disposition parameters of glycyrrhizic acid. |
+| popPK | Ranasinghe_2025 | irrelevant | 0 | 0 | The paper is a systematic review of biomarkers for diabetic cardiomyopathy and does not involve glycyrrhizic acid or pharmacokinetic modeling. |
+| PD | Ranasinghe_2025 | not_relevant | 0 | 0 | The paper is a systematic review and meta-analysis of biomarkers for diabetic cardiomyopathy and does not report any pharmacodynamic or exposure-response data for glycyrrhizic acid. |
+| popPK | Rouaz_2021 | irrelevant | 0 | 0 | The paper is a review of excipients in pediatric formulations and does not contain any pharmacokinetic data for glycyrrhizic acid. |
+| PD | Rouaz_2021 | not_relevant | 0 | 0 | The paper is a review of excipients in paediatric formulations and does not contain any pharmacodynamic or exposure-response analysis for glycyrrhizic acid. |
+| PGx | Sabiu_2022 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (inhibition of CYP3A4 by myricetin/glycyrrhizin) and does not report any pharmacogenomic effects (gene variants) on the PK or PD of glycyrrhizic acid. |
+| popPK | Saifulazmi_2022 | irrelevant | 0 | 0 | The paper is a review of antiviral potentials of medicinal plants and does not report quantitative pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Saifulazmi_2022 | not_relevant | 2 | 2 | The paper is a review that compiles static in vitro potency values (IC50/EC50) for various plant compounds, including glycyrrhizin, but does not report a dynamic exposure-response or dose-response model with derivable PD parameters (e.g., Emax, slope) for glycyrrhizic acid. |
+| popPK | Sakoda_2025 | relevant | 8 | 2 | The study reports toxicokinetic parameters (half-life, AUC) for glycyrrhetinic acid (the primary metabolite of glycyrrhizic acid) in rats, but specific numeric values for clearance or volume are not explicitly listed in the provided text, only relative fold-changes. |
+| PGx | Satoh_2018 | not_relevant | 0 | 0 | The paper investigates the inhibitory effect of baicalein on SN-38 glucuronidation and does not report any pharmacogenomic effects (gene variants) on the PK/PD of glycyrrhizic acid. |
+| popPK | Schleimer_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition by glycyrrhetinic acid (a metabolite) and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| popPK | Shang_2026 | irrelevant | 0 | 0 | The study focuses on the mechanistic effects of a herbal formulation on ferroptosis in cerebral ischemia and does not report any pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Shang_2026 | not_relevant | 2 | 1 | The study reports qualitative pharmacodynamic effects and optimal doses for a complex herbal formulation but does not provide numeric concentration-effect parameters (e.g., EC50, Emax) or a quantitative PD model for glycyrrhizic acid. |
+| popPK | Shin_2026 | irrelevant | 0 | 0 | The study evaluates the antiviral efficacy of a turmeric and liquorice extract in fish, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for glycyrrhizic acid. |
+| popPK | Song_2024 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
+| PD | Song_2024 | not_relevant | 0 | 0 | The paper focuses on the formulation of a nanogel for RSV inhibition and does not report any pharmacodynamic or exposure-response analysis for glycyrrhizic acid. |
+| popPK | Sperker_1997 | irrelevant | 0 | 0 | The study investigates beta-glucuronidase enzyme kinetics in vitro and uses glycyrrhizin only as an inhibitor, not as the subject of a pharmacokinetic study. |
+| PD | Sperker_1997 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics (Km, Vmax, Ki) for beta-glucuronidase, not a pharmacodynamic exposure-response or dose-response relationship for glycyrrhizic acid in a biological system. |
+| popPK | Stanetty_2012 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the synthesis and antiviral activity of glycyrrhizin analogues, containing no pharmacokinetic data or disposition parameters. |
+| PGx | Su_2023 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (compound glycyrrhizin affecting pexidartinib PK) in rats, not the effect of a gene variant on glycyrrhizic acid PK/PD. |
+| popPK | Suganami_2014 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ion channel inhibition by herbal extracts and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for glycyrrhizic acid. |
+| PGx | Sun_2024 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of a traditional Chinese medicine formula in hepatocellular carcinoma and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of glycyrrhizic acid. |
+| PGx | Suroowan_2019 | not_relevant | 0 | 0 | The paper is a general review of herbal medicine pharmacokinetics and toxicity and does not report any pharmacogenomic effects (gene variants) on glycyrrhizic acid. |
+| popPK | Tai_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of triptolide (TP) and the effect of glycyrrhizin (GL) on TP metabolism, not the pharmacokinetic parameters of glycyrrhizin itself. |
+| popPK | Tanaka_1987 | irrelevant | 0 | 0 | The study is a pharmacodynamic evaluation of anti-inflammatory effects using corneal temperature measurements, not a pharmacokinetic study, and reports no disposition parameters for glycyrrhizic acid. |
+| popPK | Tao_2015 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
+| PD | Tao_2015 | not_relevant | 0 | 0 | The paper focuses on the screening of active compounds from a traditional Chinese medicine formula and does not report specific pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for glycyrrhizic acid. |
+| popPK | Toor_2021 | irrelevant | 0 | 0 | The paper is a computational docking study for SARS-CoV-2 and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Toor_2021 | not_relevant | 0 | 0 | The paper is a computational molecular docking study of drug candidates against the SARS-CoV-2 spike protein and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for glycyrrhizic acid or any other compound. |
+| popPK | Tsai_1992 | relevant | 9 | 0 | The study reports nonlinear pharmacokinetics of glycyrrhizin (metabolite of glycyrrhizic acid) in rats with a two-compartment model, but specific numeric parameter values are not present in the provided evidence. |
+| popPK | Tsai_1992_2 | relevant | 8 | 0 | The study reports a two-compartment model for glycyrrhizin (glycyrrhizic acid) in rabbits, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| PGx | Tsukamoto_2005 | not_relevant | 0 | 0 | The paper reports CYP3A4 inhibition by licorice constituents, which is a drug-drug interaction mechanism, not a pharmacogenomic effect of a gene variant on the PK/PD of glycyrrhizic acid. |
+| PGx | Tu_2010 | not_relevant | 0 | 0 | The study investigates the effect of glycyrrhizin on the pharmacokinetics of omeprazole, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of glycyrrhizin itself. |
+| popPK | Villapiano_2026 | irrelevant | 0 | 0 | The paper is a review on green nanoemulsion formulation and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Villapiano_2026 | not_relevant | 0 | 0 | The paper is a review on green nanoemulsion formulation and does not report any pharmacodynamic or exposure-response data for glycyrrhizic acid. |
+| popPK | Wan_2019 | irrelevant | 2 | 0 | The study analyzes glycyrrhizin (a metabolite/related compound) as one of many components in a complex mixture, and no specific quantitative PK parameter values for glycyrrhizic acid are provided in the evidence. |
+| popPK | Wan_2024 | irrelevant | 0 | 0 | The study is an in-vitro antiviral mechanism study focusing on SARS-CoV-2 fusion inhibition and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| popPK | Wang_2006 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
+| PGx | Wang_2012 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of glycyrrhizin on CYP3A expression and hepatoprotection, but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Wang_2013 | relevant | 8 | 0 | The study reports pharmacokinetic parameters (CL, AUC) for glycyrrhizin (the salt form of glycyrrhizic acid) in rats, but the specific numeric values are not present in the provided evidence text. |
+| PGx | Wang_2019 | not_relevant | 0 | 0 | The paper performs in silico network analysis to identify protein targets and pathways of glycyrrhizic acid, but does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (glycyrrhizin affecting nobiletin) and does not report any pharmacogenomic effects (gene variants) on the pharmacokinetics or pharmacodynamics of glycyrrhizic acid. |
+| popPK | Wang_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiviral activity and apoptosis pathways, reporting no pharmacokinetic parameters. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper is a mechanistic study on acute lung injury and molecular docking, containing no pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Wang_2022 | not_relevant | 2 | 1 | The paper reports qualitative dose-response effects of the decoction and docking scores for glycyrrhizic acid, but lacks numeric PD parameters (Emax, EC50) or concentration-effect curves for the specific compound. |
+| popPK | Wang_2022_2 | irrelevant | 2 | 0 | The study reports tissue distribution concentrations (mass/volume) rather than quantitative pharmacokinetic parameters (CL, V, ka, t1/2) or compartmental models for glycyrrhizic acid. |
+| PD | Wang_2022_2 | not_relevant | 0 | 0 | The study reports tissue distribution (PK) and qualitative efficacy (dose groups) but does not provide numeric concentration-effect data or PD parameters for glycyrrhizic acid. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The study investigates the metabolic enzymes (CYP450) involved in the metabolism of glycyrrhizic acid using chemical inhibitors in mouse liver microsomes, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Wang_2025 | irrelevant | 0 | 0 | The study is a pharmacodynamic/mechanistic investigation of liver injury protection and does not report any quantitative pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Wang_2025 | not_relevant | 1 | 0 | The study reports qualitative pharmacodynamic effects (liver injury amelioration, mechanism) but does not provide numeric concentration-effect or dose-response parameters (e.g., EC50, Emax) or a PK/PD model. |
+| PGx | Wang_2025 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic mechanism of glycyrrhizic acid in a mouse model but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Wang_2026 | irrelevant | 2 | 1 | The study reports raw plasma and brain concentration-time data for glycyrrhizic acid in a drug delivery context but does not provide derived pharmacokinetic parameters (CL, V, t1/2) or a compartmental model. |
+| PD | Wang_2026 | not_relevant | 2 | 1 | The paper reports PK data (concentration-time profiles) and qualitative pharmacodynamic effects (cytokine levels, cognitive scores) at a single fixed dose, but does not provide a dose-response curve, concentration-effect relationship, or numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Wei_2025 | irrelevant | 0 | 0 | The study focuses on the antidepressant mechanisms of a traditional Chinese medicine decoction in mice and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Wei_2025 | not_relevant | 0 | 0 | The paper focuses on network pharmacology and mechanism verification of a TCM decoction, reporting only qualitative dose-response trends (behavioral scores) without any concentration-effect modeling or numeric PD parameters for glycyrrhizic acid. |
+| popPK | Wu_2025 | irrelevant | 0 | 0 | The study focuses on the antiviral mechanism and efficacy of diammonium glycyrrhizinate (a derivative of glycyrrhizic acid) against coronaviruses, reporting no pharmacokinetic parameters (CL, V, ka, etc.). |
+| PGx | Xu_2021 | not_relevant | 0 | 0 | The paper focuses on the biosynthesis of glycyrrhizin in yeast using human enzymes, not on the pharmacokinetics or pharmacodynamics of the drug in humans or the effect of genetic variants on drug response. |
+| popPK | Xu_2025 | irrelevant | 0 | 0 | The paper is a review of flavonoids in digestive diseases and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Xu_2025 | not_relevant | 1 | 0 | The paper is a narrative review of flavonoids in digestive diseases and does not report specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for glycyrrhizic acid. |
+| popPK | Xue_2026 | irrelevant | 0 | 0 | no_text gate: only 134 chars of text extracted (&lt; 400) |
+| PD | Xue_2026 | not_relevant | 0 | 0 | The paper focuses on the formulation and biological efficacy of nanoparticles for plant disease management, not on the pharmacokinetics or pharmacodynamics of glycyrrhizic acid in a biological system. |
+| popPK | Yan_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of talinolol (a probe drug) in the presence of glycyrrhizin, not the pharmacokinetic parameters of glycyrrhizin itself. |
+| PGx | Yang_2024 | not_relevant | 0 | 0 | The paper investigates the drug-drug interaction between glycyrrhizin and diosbulbin B, not the effect of a gene variant on the PK/PD of glycyrrhizin. |
+| popPK | Yayehrad_2021 | irrelevant | 0 | 0 | The paper is a review of nanotechnology for COVID-19 and does not contain pharmacokinetic data for glycyrrhizic acid. |
+| PD | Yayehrad_2021 | not_relevant | 0 | 0 | The paper is a review of nanotechnology applications for COVID-19 and does not contain any pharmacodynamic or exposure-response data for glycyrrhizic acid. |
+| popPK | Yu_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on neuroprotection and autophagy in Parkinson's disease models, reporting no pharmacokinetic parameters for glycyrrhizic acid. |
+| PD | Yu_2025 | not_relevant | 2 | 1 | The paper reports qualitative dose-response trends (cell viability, behavioral scores) for glycyrrhizic acid but does not provide numeric PD parameters (Emax, EC50) or a fitted concentration-effect model. |
+| PGx | Yuan_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic associations for alarelin acetate-induced hepatotoxicity, not for glycyrrhizic acid. |
+| popPK | Zhang_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition (11 beta-OHSD) and does not report pharmacokinetic parameters for glycyrrhizic acid. |
+| popPK | Zhang_2000 | relevant | 9 | 0 | The study reports a two-compartment pharmacokinetic model for glycyrrhizin in rats, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| popPK | Zhang_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of oseltamivir and its interaction with Radix Scutellariae, not glycyrrhizic acid. |
+| PD | Zhang_2019 | not_relevant | 0 | 0 | The paper focuses on PK interactions between oseltamivir and Radix Scutellariae; glycyrrhizic acid is only listed as a screened compound without any reported PD or exposure-response analysis. |
+| PGx | Zhang_2019 | not_relevant | 0 | 0 | The paper investigates herb-drug interactions (oseltamivir and Radix Scutellariae) and does not involve glycyrrhizic acid or any pharmacogenomic analysis. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The study focuses on the solubility and antiviral activity of cepharanthine, using glycyrrhizic acid only as a solubilizing agent, with no pharmacokinetic parameters reported for glycyrrhizic acid. |
+| PD | Zhang_2025 | not_relevant | 0 | 0 | The paper focuses on cepharanthine solubility and antiviral activity; glycyrrhizic acid is only mentioned as a solubilizer that did not enhance activity, with no PD or exposure-response analysis for glycyrrhizic acid. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper focuses on antibacterial drug repurposing and does not involve glycyrrhizic acid or pharmacokinetic parameters. |
+| PD | Zhang_2026 | not_relevant | 0 | 0 | The paper focuses on drug repurposing for antibacterial discovery (specifically lifitegrast) and does not mention or analyze glycyrrhizic acid. |
+| PGx | Zhao_2012 | not_relevant | 0 | 0 | The study investigates in-vitro metabolism and drug-drug interactions of glycyrrhetinic acid but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Zhao_2021 | not_relevant | 0 | 0 | The paper is a systems pharmacology study of a TCM formula and does not report pharmacogenomic effects on PK/PD parameters of glycyrrhizic acid. |
+| PGx | Zhao_2026 | not_relevant | 0 | 0 | The paper describes the design and antiviral efficacy of a polymer-drug conjugate containing glycyrrhizic acid, but does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Zheng_2022 | irrelevant | 0 | 0 | The study focuses on cadmium detoxification and gut microbiome modulation, not the pharmacokinetics of glycyrrhizic acid, and no PK parameters are reported. |
+| PGx | Zhou_2018 | not_relevant | 0 | 0 | The paper investigates the effect of glycyrrhizic acid on multidrug resistance and gene expression in cancer cells, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of the drug. |
+| popPK | Zhu_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacological mechanisms of Kangxianhuanji formula and rutin in pulmonary fibrosis, with no pharmacokinetic data for glycyrrhizic acid. |
+| PD | Zhu_2026 | not_relevant | 2 | 1 | The study focuses on mechanistic pathways (GLUT1/HIF-1α) and qualitative efficacy in a mouse model; it explicitly states that a full dose-response relationship was not established, and no numeric PD parameters (Emax, EC50) or concentration-effect curves are reported. |
+| popPK | Zuo_2003 | irrelevant | 0 | 0 | The study reports that glycyrrhizic acid (GL) and its metabolite glycyrrhetinic acid (GA) plasma concentrations were too low to detect, so no quantitative pharmacokinetic parameters were obtained for the subject drug. |
+| PGx | unknown_2007 | not_relevant | 0 | 0 | The paper is a safety assessment of glycyrrhizic acid and its derivatives in cosmetics and does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | van_1999 | not_relevant | 0 | 0 | The paper reports clinical efficacy (ALT reduction) of glycyrrhizin in a general population but does not investigate the impact of any gene variant or genotype on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | van_2001 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of glycyrrhizin on ALT levels in a general population without analyzing any gene variants or pharmacogenomic factors. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bglycyrrhizic_acid%5D&body=Drug%3A%20glycyrrhizic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_glycyrrhizic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

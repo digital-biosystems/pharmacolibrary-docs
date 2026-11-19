@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Pentobarbital_Helfer2026_reference",
+ "molar_masses": {
+  "central.C": 0.2262722
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  27.3,
+  623.0
+ ],
+ "parameters": {
+  "Cl": 1.425e-06,
+  "F": 1.0,
+  "MM": 0.2262722,
+  "VdPerKg": 0.0005061428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.73e-05,
+  "k12": 0.0001396337065261705,
+  "k21": 7.889048353089176e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662034
+ },
+ "reference_peaks": {
+  "central.C": 0.00036219738199835523
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

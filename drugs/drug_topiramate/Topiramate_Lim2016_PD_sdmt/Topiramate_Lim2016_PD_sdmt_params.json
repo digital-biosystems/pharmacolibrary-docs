@@ -1,0 +1,57 @@
+{
+ "model_id": "Topiramate_Lim2016_PD_sdmt",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.00285,
+  "Emax": -0.255,
+  "exposure_per_s": 0.001,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.0028499999999999997": -0.1275
+ },
+ "stop_time": 29.0,
+ "subtitle": "Symbol-Digit Modalities Test score (SDMT) against topiramate concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "μg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "μg/mL",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "μg/mL",
+  "factor": 0.0009999999999999998,
+  "label": "topiramate concentration",
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "Symbol-Digit Modalities Test score (SDMT)"
+ }
+}

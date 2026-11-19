@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Pentazocine_Omori2022_reference",
+ "molar_masses": {
+  "central.C": 0.285431
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  15.0
+ ],
+ "parameters": {
+  "Cl": 2.3916666666666664e-05,
+  "F": 1.0,
+  "MM": 0.285431,
+  "VdPerKg": 0.00103,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-05,
+  "k12": 0.0009385113268608413,
+  "k21": 0.0003333333333333334,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662048
+ },
+ "reference_peaks": {
+  "central.C": 7.039119808488225e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

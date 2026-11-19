@@ -1,0 +1,63 @@
+{
+ "model_id": "Zolpidem_Perrais1999_PD_mipsc_duration",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 5.8,
+  "Emax": 221.0,
+  "exposure_per_s": 1.0,
+  "gamma": 0.36
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "5.8": 110.5
+ },
+ "stop_time": 58.0,
+ "subtitle": "mIPSC duration (relative to control) (mIPSC duration) against zolpidem concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "µM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "% of control duration",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "µM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "% of control"
+ },
+ "x_axis": {
+  "display_unit": "µM",
+  "factor": 1.0,
+  "label": "zolpidem concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "% of control duration",
+  "factor": 1.0,
+  "label": "mIPSC duration (relative to control) (mIPSC duration)"
+ }
+}

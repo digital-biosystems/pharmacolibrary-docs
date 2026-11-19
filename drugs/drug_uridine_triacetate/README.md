@@ -1,0 +1,92 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;uridine triacetate&quot;}]"></div>
+
+# uridine triacetate
+
+- **generic name:** uridine triacetate
+- **ATC codes:** `A16AX13`
+- **DrugBank:** [DB09144](https://go.drugbank.com/drugs/DB09144) · **PubChem:** [CID 20058](https://pubchem.ncbi.nlm.nih.gov/compound/20058)
+- **molar mass:** 370.314 g/mol (C15H18N2O9) — DrugBank
+- **groups:** approved
+
+## About
+
+It is given by mouth in granule form. It is authorised in the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q22075857](https://www.wikidata.org/wiki/Q22075857), [Wikipedia](https://en.wikipedia.org/wiki/Uridine_triacetate?oldid=1329897372) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=uridine_triacetate).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 12:10 | 0:42 | 0/0/0 | 0/0/0 | 0/0/0 | 14,763/1,219 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 23 matched, 19 returned
+- **screened:** 2  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Leung_2021.pdf` | Leung M et al., Use of Uridine Triacetate to Reverse Se…, Clinical colorectal cancer (2021) | pgx | 8 | [10.1016/j.clcc.2021.03.002](https://doi.org/10.1016/j.clcc.2021.03.002) | [33965356](https://www.ncbi.nlm.nih.gov/pubmed/33965356) | metadata signals extractable PGX data (DPYD, PK/PD-context) |
+| `Kats_2023.pdf` | Kats CJ et al., Two patients with fluoropyrimidine over…, Journal of oncology pharmac… (2023) | pgx | 5 | [10.1177/10781552231189818](https://doi.org/10.1177/10781552231189818) | [37499216](https://www.ncbi.nlm.nih.gov/pubmed/37499216) | metadata signals extractable PGX data (DPYD) |
+| `Saif_2007.pdf` | Saif MW et al., DIHYDROPYRIMIDINE DEHYDROGENASE DEFICIE…, Pakistan journal of medical… (2007) | pgx | 5 |  | [18846242](https://www.ncbi.nlm.nih.gov/pubmed/18846242) | metadata signals extractable PGX data (DPYD) |
+| `Saif_2016.pdf` | Saif MW et al., Benefit of uridine triacetate (Vistogar…, Cancer chemotherapy and pha… (2016) | pgx | 5 | [10.1007/s00280-016-3063-1](https://doi.org/10.1007/s00280-016-3063-1) | [27278667](https://www.ncbi.nlm.nih.gov/pubmed/27278667) | metadata signals extractable PGX data (DPYD) |
+
+<sub>queue written 2026-10-05 12:09 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Al_2021 | not_relevant | 0 | 0 | The paper reports a clinical case of a genetic disorder treated with uridine triacetate but does not analyze how the genotype affects the drug's pharmacokinetics or pharmacodynamics. |
+| PGx | Baldeo_2018 | not_relevant | 2 | 0 | The paper is a case report describing the clinical efficacy of uridine triacetate in a patient with a specific genotype, but it does not report quantitative changes in PK or PD parameters of uridine triacetate itself. |
+| popPK | Hidalgo_2000 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for fluorouracil (5-FU), not uridine triacetate (PN401), and only provides qualitative descriptions of uridine concentrations without quantitative PK model parameters for the subject drug. |
+| PGx | Jacob_2022 | not_relevant | 0 | 0 | The paper is a case report on the clinical use of uridine triacetate for toxicity management and does not report pharmacokinetic or pharmacodynamic parameters of uridine triacetate itself. |
+| PGx | Kats_2023 | not_relevant | 0 | 0 | The paper describes clinical management of overdose without the drug and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Leung_2021 | not_relevant | 2 | 1 | The paper reports a clinical case of uridine triacetate use in a patient with a DPYD variant, but it does not report pharmacokinetic or pharmacodynamic parameters of uridine triacetate itself being altered by the genotype. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper is a case report of capecitabine toxicity that only speculates about the future utility of DPYD genotyping and does not report any pharmacogenomic effects on PK or PD parameters of uridine triacetate. |
+| popPK | Ma_2017 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study of uridine triacetate as an antidote, reporting survival and toxicity outcomes rather than pharmacokinetic parameters. |
+| PD | Ma_2017 | not_relevant | 1 | 0 | Reports clinical survival and toxicity outcomes after uridine triacetate treatment but provides no exposure- or dose-response analysis and no numeric PD parameters or effect-versus-concentration relationship. |
+| PGx | Matar_2026 | not_relevant | 0 | 0 | The paper is a case report of fatal 5-FU toxicity despite uridine triacetate rescue and does not report a pharmacogenomic effect on the PK or PD parameters of uridine triacetate itself. |
+| popPK | Miller_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter interactions (IC50 values) and does not report pharmacokinetic disposition parameters (CL, V, etc.) for uridine triacetate. |
+| PGx | Natarajan_2023 | not_relevant | 0 | 0 | The paper is a case report of 5-FU toxicity treated with uridine triacetate and does not report pharmacogenomic effects on the PK or PD parameters of uridine triacetate itself. |
+| popPK | Saif_2006 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 5-fluorouracil, not uridine triacetate (PN401), which is used as a rescue agent. |
+| PGx | Saif_2007 | not_relevant | 0 | 0 | The paper discusses DPD deficiency and its effect on 5-Fluorouracil and capecitabine, not uridine triacetate. |
+| PGx | Saif_2016 | not_relevant | 2 | 5 | The paper reports clinical outcomes (toxicity delay) in DPYD-deficient patients treated with uridine triacetate, but does not report pharmacokinetic or pharmacodynamic parameters of uridine triacetate itself. |
+| PGx | Saif_2019 | not_relevant | 0 | 0 | The paper discusses capecitabine pharmacogenetics and toxicity, but does not report any pharmacokinetic or pharmacodynamic parameters for uridine triacetate. |
+| PGx | Shamaei_2025 | not_relevant | 0 | 0 | The paper is a case report on DPD deficiency and capecitabine toxicity, mentioning uridine triacetate only as a rescue treatment without reporting any pharmacokinetic or pharmacodynamic parameters for uridine triacetate itself. |
+| popPK | Wan_2026 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of trifluridine (FTD) and the effect of uridine triacetate (TAU) as a co-administered enzyme inhibitor, rather than reporting quantitative disposition parameters (CL, V, etc.) for uridine triacetate itself. |
+| popPK | Zurayk_2019 | irrelevant | 0 | 0 | The paper is a clinical case report regarding the therapeutic use of uridine triacetate as an antidote for capecitabine toxicity, not a pharmacokinetic study reporting quantitative disposition parameters for uridine triacetate. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Buridine_triacetate%5D&body=Drug%3A%20uridine_triacetate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_uridine_triacetate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

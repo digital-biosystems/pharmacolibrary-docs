@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Esomeprazole_Shin2020_i_v_brain",
+ "molar_masses": {
+  "central.C": 0.345417
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0,
+  3500.0
+ ],
+ "parameters": {
+  "Cl": 0.00029721999999999995,
+  "F": 1.0,
+  "MM": 0.345417,
+  "VdPerKg": 0.017793240000000002,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662124
+ },
+ "reference_peaks": {
+  "central.C": 0.0005236306444683229
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

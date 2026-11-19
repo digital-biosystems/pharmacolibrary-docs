@@ -1,0 +1,121 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;oxymetazoline&quot;}]"></div>
+
+# oxymetazoline
+
+- **generic name:** oxymetazoline
+- **ATC codes:** `D11AX27`, `R01AA05`, `R01AB07`, `S01GA04`
+- **DrugBank:** [DB00935](https://go.drugbank.com/drugs/DB00935) · **PubChem:** [CID 4636](https://pubchem.ncbi.nlm.nih.gov/compound/4636)
+- **molar mass:** 260.3746 g/mol (C16H24N2O) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Oxymetazoline is an alpha-adrenergic agonist and topical decongestant used to treat rhinitis, conjunctivitis, rosacea, and nasopharyngitis. It is administered via nasal, ophthalmic, and topical routes, typically as a spray, solution, or cream. Oxymetazoline is widely used and available over-the-counter for nasal and eye use, with prescription creams for rosacea in the United States.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q417813](https://www.wikidata.org/wiki/Q417813), [Wikipedia](https://en.wikipedia.org/wiki/Oxymetazoline?oldid=1354965009) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Cacek_2017_reference](drugs/drug_oxymetazoline/Oxymetazoline_Cacek2017_reference.md) | — | 1-compartment (no model) | 0 | Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017) | [10.1002/jcph.799](https://doi.org/10.1002/jcph.799) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Colucci_1998_evoked_tritium_outflow](drugs/drug_oxymetazoline/pd_Colucci_1998_evoked_tritium_outflow.md) | evoked tritium outflow ← oxymetazoline · direct sigmoid Emax (Hill) effect | — | Colucci R et al., Effects of imidazoline derivatives on c…, Naunyn-Schmiedeberg's archi… (1998) | [10.1007/pl00005225](https://doi.org/10.1007/pl00005225) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Colucci_1998_twitch_responses](drugs/drug_oxymetazoline/pd_Colucci_1998_twitch_responses.md) | twitch responses ← oxymetazoline · direct sigmoid Emax (Hill) effect | — | Colucci R et al., Effects of imidazoline derivatives on c…, Naunyn-Schmiedeberg's archi… (1998) | [10.1007/pl00005225](https://doi.org/10.1007/pl00005225) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Manoharan_2016_PNIF](drugs/drug_oxymetazoline/pd_Manoharan_2016_PNIF.md) | peak nasal inspiratory flow ← oxymetazoline · stimulation effect | — | Manoharan A et al., Effects of the inverse alpha-agonist do…, Clinical and experimental a… (2016) | [10.1111/cea.12700](https://doi.org/10.1111/cea.12700) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Pratt_1987_melatonin](drugs/drug_oxymetazoline/pd_Pratt_1987_melatonin.md) | melatonin release ← Oxymetazoline · direct sigmoid Emax (Hill) effect | — | Pratt BL et al., Alpha-2 adrenergic regulation of melato…, The Journal of neuroscience… (1987) | [10.1523/JNEUROSCI.07-11-03665.1987](https://doi.org/10.1523/JNEUROSCI.07-11-03665.1987) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Shujaa_2011_gastric_motor_activity](drugs/drug_oxymetazoline/pd_Shujaa_2011_gastric_motor_activity.md) | gastric motor activity ← oxymetazoline · direct linear effect | — | Shujaa N et al., α(2)-adrenoceptor agonist-induced inhib…, Neurochemistry international (2011) | [10.1016/j.neuint.2011.02.011](https://doi.org/10.1016/j.neuint.2011.02.011) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Wikberg-Matsson_2001_isometric_tension](drugs/drug_oxymetazoline/pd_Wikberg_Matsson_2001_isometric_tension.md) | isometric tension ← oxymetazoline · direct sigmoid Emax (Hill) effect | — | Wikberg-Matsson A et al., Potent alpha(2A)-adrenoceptor-mediated…, Investigative ophthalmology… (2001) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.50).">in vitro</span> | [Raiteri_1992_evoked_overflow_of_tritium](drugs/drug_oxymetazoline/pd_Raiteri_1992_evoked_overflow_of_tritium.md) | evoked overflow of tritium ← oxymetazoline · direct Emax (saturable) effect | — | Raiteri M et al., Subclassification of release-regulating…, British journal of pharmaco… (1992) | [10.1111/j.1476-5381.1992.tb13421.x](https://doi.org/10.1111/j.1476-5381.1992.tb13421.x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=oxymetazoline).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skin | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `UGT1A9` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRA1A (partial agonist), ADRA1B (target), ADRA1D (target), ADRA2A (partial agonist), ADRA2A (target), ADRA2B (target), ADRA2C (target), HTR1A (target), HTR1B (target), HTR1D (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 08:45 | 7:33 | 0/1/0 | 6/0/0 | 0/0/0 | 224,884/10,553 | einfracz / qwen3.8-27b | 2 | 1/0 | 2/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 141 matched, 67 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Cacek_2017.pdf` | Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017) | popPK | 10 | [10.1002/jcph.799](https://doi.org/10.1002/jcph.799) | [27436060](https://pubmed.ncbi.nlm.nih.gov/27436060) | The paper explicitly reports quantitative population PK parameters (ka, CL, V, Q) for oxymetazoline in healthy volunteers. |
+| `Cartabuke_2019.pdf` | Cartabuke RS et al., Hemodynamic and pharmacokinetic analysi…, The Laryngoscope (2019) | popPK | 5 | [10.1002/lary.27760](https://doi.org/10.1002/lary.27760) | [30786035](https://pubmed.ncbi.nlm.nih.gov/30786035) | The study reports population PK parameters including relative bioavailability and absorption half-life for oxymetazoline in children, providing quantitative disposition data for the subject drug. |
+
+<sub>queue written 2026-10-07 08:43 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Alberts_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of presynaptic adrenoceptors in guinea-pig urethra, not a pharmacokinetic study of oxymetazoline. |
+| popPK | Brown_1979 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of adrenoceptors in rat ganglia and contains no pharmacokinetic parameters for oxymetazoline. |
+| popPK | Cartabuke_2019 | relevant | 5 | 4 | The study reports population PK parameters including relative bioavailability and absorption half-life for oxymetazoline in children, providing quantitative disposition data for the subject drug. |
+| popPK | Colucci_1998 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of cholinergic motility in guinea-pig ileum and does not report any pharmacokinetic disposition parameters for oxymetazoline. |
+| popPK | Forster_1992 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamics study of vascular responsiveness using oxymetazoline as a probe agonist, not a pharmacokinetic study of the drug's disposition. |
+| popPK | Gerhardt_1990 | irrelevant | 0 | 0 | The paper is a pharmacological binding study of p-[125I]iodoclonidine, and oxymetazoline is only used as a comparator ligand in competition experiments. |
+| popPK | Holmberg_1998 | irrelevant | 0 | 0 | The paper is an in vitro pharmacological study of alpha2B-adrenoceptor signaling mechanisms and does not report pharmacokinetic parameters for oxymetazoline. |
+| popPK | Ishikawa_1996 | irrelevant | 0 | 0 | The study is an in vitro organ bath pharmacology study characterizing adrenoceptors, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Kaessner_2012 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of fentanyl, with oxymetazoline mentioned only as a co-administered excipient/covariate in the intranasal spray formulation. |
+| popPK | Kurko_2014 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of receptor signaling pathways and does not report pharmacokinetic disposition parameters (CL, V, t1/2, etc.). |
+| PGx | Mahajan_2011 | not_relevant | 0 | 0 | The paper describes in vitro metabolism and bioactivation of oxymetazoline by CYP2C19, but it does not report pharmacogenomic effects (gene variants) on PK or PD parameters in humans. |
+| popPK | McPherson_1982 | irrelevant | 0 | 0 | The study is a mechanistic receptor binding and functional assay study, not a pharmacokinetic study, and does not report disposition parameters for oxymetazoline. |
+| popPK | Newman-Tancredi_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of receptor binding and G-protein activation, containing no pharmacokinetic parameters such as clearance or volume. |
+| popPK | Odagaki_1993 | irrelevant | 0 | 0 | The study is a pharmacological investigation of GTPase activity in platelet membranes where oxymetazoline is used only as an antagonist in a rank order of potency, with no pharmacokinetic parameters reported. |
+| popPK | Parsley_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of alpha2-adrenoceptors using oxymetazoline as a ligand, reporting affinity (pEC50) rather than pharmacokinetic disposition parameters. |
+| popPK | Pauwels_2000 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of receptor agonist/antagonist interactions and does not report pharmacokinetic disposition parameters for oxymetazoline. |
+| popPK | Pratt_1987 | irrelevant | 0 | 0 | The paper is a receptor pharmacology study identifying alpha-2 adrenergic receptors in chick pineal cell cultures, not a pharmacokinetic study; oxymetazoline is used only as a ligand to determine EC50. |
+| popPK | Raiteri_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of alpha 2-autoreceptors in human brain cortex and does not report pharmacokinetic disposition parameters for oxymetazoline. |
+| popPK | Sharif_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of adrenoceptors where oxymetazoline is used as a comparator antagonist, not a pharmacokinetic study. |
+| popPK | Shujaa_2011 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of receptor subtypes in mouse gastric tissue, not a pharmacokinetic study, and oxymetazoline is used as a tool compound rather than the subject of PK analysis. |
+| popPK | Thorin_1998 | irrelevant | 0 | 0 | The study is an in vitro vascular physiology experiment where oxymetazoline is used as a pharmacological tool to test endothelial function, not a pharmacokinetic study. |
+| popPK | Trendelenburg_1994 | irrelevant | 0 | 0 | This is an in-vitro neuropharmacological study in rabbit brain slices measuring dopamine release and receptor antagonist potency, not a pharmacokinetic study reporting disposition parameters for oxymetazoline. |
+| popPK | Trendelenburg_1996 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of receptor subtypes using oxymetazoline as a probe, containing no pharmacokinetic disposition parameters. |
+| popPK | Trendelenburg_1997 | irrelevant | 0 | 0 | This is a receptor pharmacology study using oxymetazoline as a probe ligand to characterize alpha2-adrenoceptor subtypes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Umland_2001 | irrelevant | 0 | 0 | This is an in-vitro receptor pharmacology study determining affinity and efficacy, not a pharmacokinetic study reporting disposition parameters for oxymetazoline. |
+| popPK | Venkataraman_1996 | irrelevant | 0 | 0 | The study is a molecular pharmacology investigation of alpha-2D adrenergic receptors in bovine retina, not a pharmacokinetic study of oxymetazoline. |
+| popPK | Vázquez_2006 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study characterizing receptor binding and cell proliferation, not a pharmacokinetic study of oxymetazoline. |
+| popPK | Wan_1988 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on adrenoceptor effects in bovine adrenal chromaffin cells, not a pharmacokinetic study. |
+| popPK | Weinshank_1990 | irrelevant | 0 | 0 | This is a molecular pharmacology study characterizing a receptor, not a pharmacokinetic study, and oxymetazoline is only used as a ligand. |
+| popPK | Wikberg-Matsson_2001 | irrelevant | 0 | 0 | This is an in-vitro functional pharmacology study measuring vasoconstrictive potency (EC50) in porcine tissue, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Wurch_1999 | irrelevant | 0 | 0 | This is an in-vitro receptor pharmacology study investigating G-protein coupling and agonist efficacy, not a pharmacokinetic study reporting disposition parameters for oxymetazoline. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxymetazoline%5D&body=Drug%3A%20oxymetazoline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxymetazoline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 08:43 UTC</sub>

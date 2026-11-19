@@ -1,0 +1,32 @@
+{
+ "dose_source": "paper",
+ "model_id": "Durvalumab_Zhao2026_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1500.0
+ ],
+ "parameters": {
+  "Cl": 3.298611111111111e-09,
+  "F": 1.0,
+  "VdPerKg": 4.885714285714285e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0015,
+  "k12": 3.0945419103313844e-05,
+  "k21": 4.601449275362319e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662048
+ },
+ "reference_peaks": {
+  "central.C": 0.10172134857711637
+ },
+ "stop_time": 3628800.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

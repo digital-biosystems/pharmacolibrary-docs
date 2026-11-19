@@ -1,0 +1,55 @@
+{
+ "model_id": "Scopolamine_LiemMoolenaar2011_PD_smooth_pursuit",
+ "note": "Values for the shared PD_LinearSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.031,
+  "exposure_per_s": 1e-09,
+  "slope": -2.64e-13
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.031000000000000003,
+  "1e-09": 0.031000000000000003
+ },
+ "stop_time": 1000.0,
+ "subtitle": "Smooth pursuit against scopolamine concentration",
+ "template": "PD_LinearSweep",
+ "template_fmu": "PD_LinearSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "pg ml-1",
+   "factor": 1e-09,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "%",
+  "slope": {
+   "display_only": false,
+   "display_unit": "% (pg ml-1)",
+   "factor": 1e-11,
+   "si_unit": "kilogram / meter ** 3"
+  }
+ },
+ "x_axis": {
+  "display_unit": "pg ml-1",
+  "factor": 1e-09,
+  "label": "scopolamine concentration",
+  "per_s": 1e-09,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "Smooth pursuit"
+ }
+}

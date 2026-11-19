@@ -1,0 +1,64 @@
+{
+ "dose_source": "paper",
+ "model_id": "Metformin_Nikolaidis2026_base",
+ "molar_masses": {
+  "central.C": 0.1291636
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1000.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 1.9
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 2.7
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 2.1
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 1.66
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 1.23
+   },
+   {
+    "source": "Nikolaidis_2026:discussion_prose",
+    "value_si": 1.35
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.9861111111111114e-05,
+  "F": 1.0,
+  "MM": 0.1291636,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002651428571428571,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001,
+  "ka": 0.00012222222222222221,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9104.66448278027
+ },
+ "reference_peaks": {
+  "central.C": 0.002114780673033479
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

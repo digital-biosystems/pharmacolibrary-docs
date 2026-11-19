@@ -1,0 +1,57 @@
+{
+ "dose_source": "paper",
+ "model_id": "Paliperidone_Kozielska2012_reference",
+ "molar_masses": {
+  "C_M1": 0.4264839,
+  "central.C": 0.4264839
+ },
+ "note": "Values for the shared PK_3M_3C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "paliperidone",
+  "C_central": "risperidone"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  0.7,
+  2800.0
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 2.0222222222222222e-05,
+  "F": 1.0,
+  "MW": 0.4264839,
+  "MW_m1": 0.4264839,
+  "Tlag": 612.0,
+  "Vd1": 0.08960000000000001,
+  "Vd1m1": 0.0847,
+  "Vd2": 0.08960000000000001,
+  "Vd2m1": 0.019670000000000003,
+  "Vd3": 0.011760000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-07,
+  "ka": 0.0008055555555555556,
+  "q12": 2.4999999999999998e-05,
+  "q1_m11": 1.4719444444444444e-05,
+  "q21": 2.4999999999999998e-05,
+  "q23": 1.7325e-06,
+  "q32": 1.7325e-06,
+  "qm11_m12": 4.763888888888889e-06,
+  "qm12_m11": 4.763888888888889e-06
+ },
+ "reference_peak_times": {
+  "C_M1": 6925.851703406814,
+  "central.C": 6406.412825651302
+ },
+ "reference_peaks": {
+  "C_M1": 1.5287013604357476e-06,
+  "central.C": 2.3455607477574847e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_3C",
+ "template_fmu": "PK_3M_3C.fmu"
+}

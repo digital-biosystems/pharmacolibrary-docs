@@ -1,0 +1,79 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M05B&quot;,&quot;href&quot;:&quot;atc/M05B.md&quot;},{&quot;label&quot;:&quot;zoledronic acid&quot;}]"></div>
+
+# zoledronic acid
+
+- **generic name:** zoledronic acid
+- **ATC codes:** `M05BA08`
+- **DrugBank:** [DB00399](https://go.drugbank.com/drugs/DB00399) · **PubChem:** [CID 68740](https://pubchem.ncbi.nlm.nih.gov/compound/68740)
+- **molar mass:** 272.0896 g/mol (C5H10N2O7P2) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Zoledronic acid is a bisphosphonate used to treat osteoporosis, cancer-related bone issues, and hypercalcemia. It is delivered as an intravenous injection. The medication is authorized in the European Union and listed as an essential medicine worldwide.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q218507](https://www.wikidata.org/wiki/Q218507), [Wikipedia](https://en.wikipedia.org/wiki/Zoledronic_acid?oldid=1372632814) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wang_2023_APR](drugs/drug_zoledronic_acid/pd_Wang_2023_APR.md) | acute phase reaction ← zoledronic acid · model not identified | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Wang_2023_BMD](drugs/drug_zoledronic_acid/pd_Wang_2023_BMD.md) | bone mineral density ← zoledronic acid · indirect response — drug stimulates the production of bone mineral density | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=zoledronic_acid).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
+| distribution | lung | `ABCC1` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: FDPS (inhibitor), GGPS1 (inhibitor), Hydroxylapatite (binder), Hydroxylapatite (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 03:24 | 0:21 | 0/0/0 | 1/0/0 | 0/0/0 | 44,839/1,482 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 9 matched, 9 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Kumar_2026 | irrelevant | 0 | 0 | The study investigates the effects of zoledronic acid on thyroid hormones and inflammatory markers, reporting no pharmacokinetic parameters (clearance, volume, half-life) for the drug itself. |
+| popPK | Mandema_2014 | irrelevant | 0 | 0 | The paper is a meta-analysis of bone mineral density changes and does not report pharmacokinetic parameters for zoledronic acid. |
+| popPK | Massa_2025 | irrelevant | 0 | 0 | The study is a clinical outcomes analysis comparing pain relief and skeletal-related events between denosumab and zoledronic acid, with no pharmacokinetic parameters reported. |
+| popPK | Wang_2011 | irrelevant | 2 | 6 | The study reports pharmacokinetic parameters for the radiolabeled derivative (99mTc-i-PIDP), not zoledronic acid itself, and the subject is an imaging agent. |
+| popPK | Wang_2023 | irrelevant | 4 | 2 | The study reports a kinetic-pharmacodynamic (KPD) model parameters for bone mineral density response rather than standard population pharmacokinetic (PK) disposition parameters (CL, V, half-life) for zoledronic acid, and the specific numeric parameter values are located in Table 2 which is not included in the evidence. |
+| popPK | Weinfurt_2005 | irrelevant | 0 | 0 | The paper is a clinical trial analyzing health-related quality of life and skeletal-related events, reporting no pharmacokinetic parameters. |
+| popPK | Wu_2021 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic modeling of bone mineral density and bone turnover markers, not the pharmacokinetic disposition parameters (CL, V, ka) of zoledronic acid. |
+| popPK | Zecca_2025 | irrelevant | 0 | 0 | The study is a clinical trial comparing analgesic efficacy and survival, not a pharmacokinetic study, and it reports no disposition parameters like clearance or volume for zoledronic acid. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzoledronic_acid%5D&body=Drug%3A%20zoledronic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zoledronic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

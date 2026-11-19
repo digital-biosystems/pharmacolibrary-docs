@@ -1,0 +1,50 @@
+{
+ "dose_source": "paper",
+ "model_id": "Lidocaine_Greuber2021_lidocaine_5_4_3_ts",
+ "molar_masses": {
+  "central.C": 0.234343
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  108.0,
+  216.0,
+  324.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Greuber_2021:other_prose",
+    "value_si": 9.359999999999998e-05
+   },
+   {
+    "source": "Greuber_2021:other_prose",
+    "value_si": 0.00010625
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 9.56388888888889e-06,
+  "F": 1.0,
+  "MM": 0.234343,
+  "Tlag": 0.0,
+  "VdPerKg": 0.003875142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.000108,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13534.26853707415
+ },
+ "reference_peaks": {
+  "central.C": 0.0002497078954697361
+ },
+ "stop_time": 100800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

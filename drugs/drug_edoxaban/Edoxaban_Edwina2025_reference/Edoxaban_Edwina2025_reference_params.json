@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 60 mg oral (B01AF03)",
+ "model_id": "Edoxaban_Edwina2025_reference",
+ "molar_masses": {
+  "central.C": 0.54806
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.505555555555556e-06,
+  "F": 24.0,
+  "MM": 0.54806,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006771428571428571,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 6e-05,
+  "ka": 2.8888888888888888e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 25574.37623786875
+ },
+ "reference_peaks": {
+  "central.C": 0.008015866809015424
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

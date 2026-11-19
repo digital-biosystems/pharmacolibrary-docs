@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 100 mg oral (N03AX23)",
+ "model_id": "Brivaracetam_Li2025_reference",
+ "molar_masses": {
+  "central.C": 0.2122887
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.936111111111111e-05,
+  "F": 1.0,
+  "MM": 0.2122887,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00033857142857142853,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2371.4818272978173
+ },
+ "reference_peaks": {
+  "central.C": 0.00035792227250683344
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

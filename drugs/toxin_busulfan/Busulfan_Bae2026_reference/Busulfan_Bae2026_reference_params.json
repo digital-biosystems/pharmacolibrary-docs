@@ -1,0 +1,94 @@
+{
+ "dose_source": "library default",
+ "model_id": "Busulfan_Bae2026_reference",
+ "molar_masses": {
+  "retainedFraction": 0.246292
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Bae_2026:other_prose",
+    "value_si": 0.0042602
+   },
+   {
+    "source": "Bae_2026:other_prose",
+    "value_si": 0.0042696
+   },
+   {
+    "source": "Bae_2026:other_prose",
+    "value_si": 64.9
+   },
+   {
+    "source": "Bae_2026:other_prose",
+    "value_si": 73.1
+   },
+   {
+    "source": "Bae_2026:other_prose",
+    "value_si": 66.5
+   },
+   {
+    "source": "Bae_2026:other_prose",
+    "value_si": 80.8
+   },
+   {
+    "source": "Bae_2026:other_prose",
+    "value_si": 22.8
+   },
+   {
+    "source": "Bae_2026:other_prose",
+    "value_si": 9.9
+   },
+   {
+    "source": "Bae_2026:results_prose",
+    "value_si": 0.0042696
+   },
+   {
+    "source": "Bae_2026:discussion_prose",
+    "value_si": 0.00188
+   },
+   {
+    "source": "Bae_2026:discussion_prose",
+    "value_si": 0.0042696
+   },
+   {
+    "source": "Bae_2026:discussion_prose",
+    "value_si": 93.6
+   },
+   {
+    "source": "Bae_2026:discussion_prose",
+    "value_si": 86.0
+   },
+   {
+    "source": "Bae_2026:discussion_prose",
+    "value_si": 97.7
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.246292,
+  "Tb[1]": 61765.59034692582,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662086
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9966415745905538
+ },
+ "stop_time": 345600.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

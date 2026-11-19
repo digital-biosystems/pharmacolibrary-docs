@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tafenoquine_Watson2022_reference",
+ "molar_masses": {
+  "central.C": 0.463501
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  50.0,
+  600.0
+ ],
+ "parameters": {
+  "Cl": 8.722222222222222e-07,
+  "F": 1.0,
+  "MM": 0.463501,
+  "Tlag": 529.1999999999999,
+  "VdPerKg": 0.019,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "k12": 1.2155388471177944e-06,
+  "k21": 5.198285101822079e-06,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 43632.86573146292
+ },
+ "reference_peaks": {
+  "central.C": 3.625715967879549e-05
+ },
+ "stop_time": 5443200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

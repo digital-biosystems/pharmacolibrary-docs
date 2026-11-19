@@ -1,0 +1,140 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M03A&quot;,&quot;href&quot;:&quot;atc/M03A.md&quot;},{&quot;label&quot;:&quot;Mivacurium&quot;}]"></div>
+
+# Mivacurium
+
+- **generic name:** Mivacurium
+- **ATC codes:** `M03AC10`
+- **DrugBank:** [DB01226](https://go.drugbank.com/drugs/DB01226) · **PubChem:** none
+- **groups:** approved, withdrawn
+
+## About
+
+Mivacurium is a non-depolarizing neuromuscular-blocking drug used in anesthesia to facilitate intubation and provide muscle relaxation during surgery or ventilation. It is administered intravenously as an injection solution. It is no longer in use.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q413877](https://www.wikidata.org/wiki/Q413877), [Wikipedia](https://en.wikipedia.org/wiki/Mivacurium_chloride?oldid=1332192840) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Head-Rapson_1994_reference](drugs/drug_mivacurium/Mivacurium_HeadRapson1994_reference.md) | — | 1-compartment (no model) | 0 | Head-Rapson AG et al., Pharmacokinetics of the three isomers o…, British journal of anaesthe… (1994) | [10.1093/bja/73.5.613](https://doi.org/10.1093/bja/73.5.613) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Lugo_1998_reference](drugs/drug_mivacurium/Mivacurium_Lugo1998_reference.md) | — | 1-compartment (no model) | 0 | Lugo SI et al., Pharmacokinetics and pharmacodynamics o…, Biopharmaceutics & drug dis… (1998) | [10.1002/(sici)1099-081x(1998110)19:8&lt;485::aid-bdd131&gt;3.0.co;2-g](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8&lt;485::aid-bdd131&gt;3.0.co;2-g) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Trocóniz_1997_reference](drugs/drug_mivacurium/Mivacurium_Trocniz1997_reference.md) | — | 1-compartment (no model) | 0 | Trocóniz IF et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmaceutical s… (1997) | [10.1021/js960153d](https://doi.org/10.1021/js960153d) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Maddineni_1993_force_of_contraction_of_adductor_pollicis](drugs/drug_mivacurium/pd_Maddineni_1993_force_of_contraction_of_adductor_pollicis.md) | force of contraction of adductor pollicis ← mivacurium · direct sigmoid Emax (Hill) effect | — | Maddineni VR et al., Potency estimation of mivacurium: compa…, British journal of anaesthe… (1993) | [10.1093/bja/70.6.694](https://doi.org/10.1093/bja/70.6.694) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Markakis_1996_twitch_depression](drugs/drug_mivacurium/pd_Markakis_1996_twitch_depression.md) | twitch depression ← mivacurium · direct Emax (saturable) effect | — | Markakis DA et al., Does age or pseudocholinesterase activi…, Anesthesia and analgesia (1996) | [10.1097/00000539-199601000-00008](https://doi.org/10.1097/00000539-199601000-00008) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Markakis_1998_twitch](drugs/drug_mivacurium/pd_Markakis_1998_twitch.md) | adductor pollicis twitch tension in response to train-of-four stimuli ← mivacurium · direct sigmoid Emax (Hill) effect | — | Markakis DA et al., The pharmacokinetics and steady state p…, Anesthesiology (1998) | [10.1097/00000542-199804000-00018](https://doi.org/10.1097/00000542-199804000-00018) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [McCluskey_1996_Twitch](drugs/drug_mivacurium/pd_McCluskey_1996_Twitch.md) | neuromuscular blockade (adductor pollicis force) ← mivacurium · direct Emax (saturable) effect | — | McCluskey A et al., Dose-response and minimum time to satis…, Anaesthesia (1996) | [10.1111/j.1365-2044.1996.tb07787.x](https://doi.org/10.1111/j.1365-2044.1996.tb07787.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Moore_2001_neuromuscular_block](drugs/drug_mivacurium/pd_Moore_2001_neuromuscular_block.md) | neuromuscular block ← mivacurium · inhibition effect | — | Moore EW et al., The new neuromuscular blocking agents:…, British journal of anaesthe… (2001) | [10.1093/bja/87.6.912](https://doi.org/10.1093/bja/87.6.912) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Trocóniz_1997_E](drugs/drug_mivacurium/pd_Troc_niz_1997_E.md) | evoked tibialis anterior muscle tension ← mivacurium · delayed effect through an effect compartment | — | Trocóniz IF et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmaceutical s… (1997) | [10.1021/js960153d](https://doi.org/10.1021/js960153d) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Trocóniz_1997_E_2](drugs/drug_mivacurium/pd_Troc_niz_1997_E_2.md) | evoked tibialis anterior muscle tension ← mivacurium · direct sigmoid Emax (Hill) effect | — | Trocóniz IF et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmaceutical s… (1997) | [10.1021/js960153d](https://doi.org/10.1021/js960153d) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_1996_NEB](drugs/drug_mivacurium/pd_Yang_1996_NEB.md) | neuromuscular block ← mivacurium · categorical (graded) response model | — | Yang HS et al., The influence of the age of the rat on…, Paediatric anaesthesia (1996) | [10.1046/j.1460-9592.1996.d01-137.x](https://doi.org/10.1046/j.1460-9592.1996.d01-137.x) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **G6PD** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Vale_2003](drugs/drug_mivacurium/pgx_Vale_2003_G6PD_safety.md) | Vale NB et al., [Could the understanding of racial diff…, Revista brasileira de anest… (2003) | — |
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **UGT1A1** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Vale_2003](drugs/drug_mivacurium/pgx_Vale_2003_UGT1A1_safety.md) | Vale NB et al., [Could the understanding of racial diff…, Revista brasileira de anest… (2003) | — |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **BCHE** | `Q22` · CL | metabolism | [Pimenta_2005](drugs/drug_mivacurium/pgx_Pimenta_2005_BCHE_Q22.md) | Pimenta KB, [Prolonged neuromuscular block after mi…, Revista brasileira de anest… (2005) | [10.1590/s0034-70942005000500011](https://doi.org/10.1590/s0034-70942005000500011) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q305` · kfm | metabolism | [Vale_2003](drugs/drug_mivacurium/pgx_Vale_2003_CYP2D6_Q305.md) | Vale NB et al., [Could the understanding of racial diff…, Revista brasileira de anest… (2003) | — |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **NAT2** | `Q22` · CL | metabolism | [Vale_2003](drugs/drug_mivacurium/pgx_Vale_2003_NAT2_Q22.md) | Vale NB et al., [Could the understanding of racial diff…, Revista brasileira de anest… (2003) | — |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=mivacurium).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | `BCHE` metabolism/substrate/unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` metabolism | PGx paper |
+| metabolism | liver | `BCHE` metabolism/substrate/unknown, `CYP2D6` metabolism, `NAT2` metabolism, `UGT1A1` safety_allele | DrugBank actor |
+| metabolism | small intestine | `NAT2` metabolism, `UGT1A1` safety_allele | PGx paper |
+
+<sub>Actors without a tissue in the table: CHRM2 (partial agonist), CHRM2 (target), CHRM3 (target), CHRNA2 (target), G6PD (safety_allele).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 02:08 | 7:07 | 0/3/0 | 7/0/0 | 2/0/3 | 129,540/8,498 | einfracz / qwen3.8-27b | 6 | 4/2 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 154 matched, 58 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Head-Rapson_1994.pdf` | Head-Rapson AG et al., Pharmacokinetics of the three isomers o…, British journal of anaesthe… (1994) | popPK | 10 | [10.1093/bja/73.5.613](https://doi.org/10.1093/bja/73.5.613) | [7826789](https://pubmed.ncbi.nlm.nih.gov/7826789) | The abstract provides specific quantitative values for the clearance of mivacurium isomers in healthy humans and patients with hepatic cirrhosis. |
+| `Head-Rapson_1995.pdf` | Head-Rapson AG et al., Pharmacokinetics and pharmacodynamics o…, British journal of anaesthe… (1995) | popPK | 10 | [10.1093/bja/75.1.31](https://doi.org/10.1093/bja/75.1.31) | [7669465](https://pubmed.ncbi.nlm.nih.gov/7669465) | The abstract reports specific clearance values (median and range) for the cis-cis isomer of mivacurium in human subjects, though values for other isomers and volume/half-life are likely in the full text/tables not provided. |
+| `Lugo_1998.pdf` | Lugo SI et al., Pharmacokinetics and pharmacodynamics o…, Biopharmaceutics & drug dis… (1998) | popPK | 10 | [10.1002/(sici)1099-081x(1998110)19:8&lt;485::aid-bdd131&gt;3.0.co;2-g](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8<485::aid-bdd131>3.0.co;2-g) | [9840210](https://pubmed.ncbi.nlm.nih.gov/9840210) | The study reports quantitative pharmacokinetic parameters (Cl, Vdss) for mivacurium isomers in beagle dogs using a two-compartment model. |
+| `Trocóniz_1997.pdf` | Trocóniz IF et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmaceutical s… (1997) | popPK | 10 | [10.1021/js960153d](https://doi.org/10.1021/js960153d) | [9040105](https://pubmed.ncbi.nlm.nih.gov/9040105) | The paper reports a two-compartment PK model for mivacurium with explicit numeric values for clearance (9.9 mL min-1 kg-1) and volume of distribution (650 mL kg-1). |
+| `Markakis_1998.pdf` | Markakis DA et al., The pharmacokinetics and steady state p…, Anesthesiology (1998) | popPK | 9 | [10.1097/00000542-199804000-00018](https://doi.org/10.1097/00000542-199804000-00018) | [9579507](https://pubmed.ncbi.nlm.nih.gov/9579507) | The study reports quantitative pharmacokinetic parameters (clearance of mivacurium stereoisomers) for mivacurium, but specific numeric values are not provided in the evidence. |
+| `Ostergaard_2000.pdf` | Ostergaard D et al., The influence of drug-induced low plasm…, Anesthesiology (2000) | popPK | 9 | [10.1097/00000542-200006000-00014](https://doi.org/10.1097/00000542-200006000-00014) | [10839906](https://pubmed.ncbi.nlm.nih.gov/10839906) | The study reports quantitative PK parameters (clearance, half-life) for mivacurium in humans, but the specific numeric values are not provided in the text evidence, only qualitative descriptions of changes. |
+| `Markakis_1996.pdf` | Markakis DA et al., Does age or pseudocholinesterase activi…, Anesthesia and analgesia (1996) | popPK | 8 | [10.1097/00000539-199601000-00008](https://doi.org/10.1097/00000539-199601000-00008) | [8712423](https://pubmed.ncbi.nlm.nih.gov/8712423) | The study provides quantitative mivacurium infusion rates (IR50, IR90) derived from a pharmacodynamic model (Hill equation) that directly characterizes the drug's disposition/efficacy relationship in humans. |
+| `Hart_1995.pdf` | Hart PS et al., The effect of plasma cholinesterase act…, Anesthesia and analgesia (1995) | popPK | 6 | [10.1097/00000539-199504000-00019](https://doi.org/10.1097/00000539-199504000-00019) | [7893031](https://pubmed.ncbi.nlm.nih.gov/7893031) | The study models the relationship between mivacurium infusion rates and cholinesterase activity to characterize its elimination, which is a disposition parameter, but explicit numerical PK values (CL, V, half-life) are not provided in the evidence. |
+| `Laurin_2001.pdf` | Laurin J et al., Peripheral link model as an alternative…, Journal of pharmacokinetics… (2001) | popPK | 5 | [10.1023/a:1011513618081](https://doi.org/10.1023/a:1011513618081) | [11253615](https://pubmed.ncbi.nlm.nih.gov/11253615) | While the study concerns mivacurium PK/PD modeling, the abstract describes methodological comparisons and qualitative results (precision, fitting) without reporting specific quantitative parameter values (CL, V, t1/2) in the provided evidence. |
+| `Chen_2021.pdf` | Chen Y et al., [Maximum dose of continuous infusion of…, Nan fang yi ke da xue xue b… (2021) | pd | 4 | [10.12122/j.issn.1673-4254.2021.01.08](https://doi.org/10.12122/j.issn.1673-4254.2021.01.08) | [33509754](https://www.ncbi.nlm.nih.gov/pubmed/33509754) | metadata signals extractable PD data (EC50) |
+
+<sub>queue written 2026-10-07 02:07 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Borden_2021 | not_relevant | 0 | 0 | The paper is a systematic review and appraisal methodology study for clinical decision support, not an original research report measuring a specific pharmacokinetic or pharmacodynamic parameter of mivacurium based on genotype. |
+| PGx | Ceppa_2002 | not_relevant | 2 | 2 | The paper reports on a diagnostic PCR assay for the BChE Asp70Gly variant and its prevalence in patients with prolonged apnea, but it does not provide quantitative pharmacokinetic or pharmacodynamic parameter data (such as clearance or ED95) for mivacurium. |
+| popPK | Chen_2021 | irrelevant | 1 | 0 | The study reports pharmacodynamic parameters (EC50 infusion rate) rather than pharmacokinetic disposition parameters (clearance, volume). |
+| PGx | Dell_1996 | not_relevant | 4 | 0 | The text is a general review introducing the topic of plasma cholinesterase deficiency and its clinical implications for mivacurium, but it does not contain specific data, tables, or fitted effect sizes reporting how genetic variants change PK/PD parameters. |
+| PGx | Dimov_2012 | not_relevant | 0 | 0 | The paper investigates BChE variants and sensitivity to soman (toxicology), not the pharmacokinetic or pharmacodynamic parameters of mivacurium. |
+| popPK | Doufas_2009 | irrelevant | 0 | 0 | The study investigates the anesthetic effect (MAC) of desflurane and the impact of neuromuscular block on immobility and BIS, not the pharmacokinetic disposition parameters (CL, V, ka) of mivacurium. |
+| popPK | EFSA_2020 | irrelevant | 0 | 0 | The paper is a risk assessment for glycoalkaloids (solanine/chaconine) and does not involve the pharmacokinetics of mivacurium. |
+| PGx | Gardiner_2006 | not_relevant | 2 | 2 | The paper is a general review discussing the principles of pharmacogenetics and lists mivacurium as a drug with potential utility, but it does not report specific studies or fitted quantitative data on how genetic variants affect mivacurium's pharmacokinetics or pharmacodynamics. |
+| PGx | Gätke_2002 | not_relevant | 0 | 0 | The paper reports a method for genotyping BChE variants but does not present data linking these genotypes to specific pharmacokinetic or pharmacodynamic parameters of mivacurium. |
+| popPK | Hart_1995 | relevant | 6 | 2 | The study models the relationship between mivacurium infusion rates and cholinesterase activity to characterize its elimination, which is a disposition parameter, but explicit numerical PK values (CL, V, half-life) are not provided in the evidence. |
+| popPK | Kopman_2000 | irrelevant | 0 | 0 | The study focuses on rapacurium pharmacodynamics (dose-response), with mivacurium mentioned only as a comparator for recovery rates. |
+| PGx | Krasowski_1997 | not_relevant | 0 | 0 | The paper is a review discussing the evolutionary role of solanaceous glycoalkaloids in butyrylcholinesterase variation and does not report specific pharmacogenomic effect sizes for mivacurium PK/PD parameters. |
+| popPK | Laurin_1999 | irrelevant | 2 | 0 | The paper uses previously published data for simulations to test model assumptions, but does not report original quantitative PK parameter values for mivacurium in the provided text. |
+| popPK | Laurin_2001 | irrelevant | 5 | 0 | While the study concerns mivacurium PK/PD modeling, the abstract describes methodological comparisons and qualitative results (precision, fitting) without reporting specific quantitative parameter values (CL, V, t1/2) in the provided evidence. |
+| PGx | Lejus_1998 | not_relevant | 4 | 3 | This is a review article discussing butyrylcholinesterase genetics and mivacurium, but it does not report new primary data or fitted quantitative effects of specific variants on PK/PD parameters. |
+| PGx | Levano_2008 | not_relevant | 2 | 0 | The paper describes a genotyping method for BCHE variants but does not report measured changes in mivacurium PK or PD parameters. |
+| popPK | Markakis_1998 | relevant | 9 | 1 | The study reports quantitative pharmacokinetic parameters (clearance of mivacurium stereoisomers) for mivacurium, but specific numeric values are not provided in the evidence. |
+| PGx | Mikami_2008 | not_relevant | 3 | 1 | The paper reports a change in BChE enzyme activity towards the substrate butyrylthiocholine, not a change in pharmacokinetic or pharmacodynamic parameters of mivacurium in humans. |
+| popPK | Milchert_2009 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor binding and smooth muscle effects, not a pharmacokinetic study of drug disposition. |
+| PGx | Miller_1995 | not_relevant | 2 | 1 | The study's primary objective is dose-response for edrophonium reversal; while it notes that atypical cholinesterase genotype prolongs block, it does not provide a fitted pharmacokinetic/pharmacodynamic effect size for the genotype variant. |
+| popPK | Ostergaard_2000 | relevant | 9 | 3 | The study reports quantitative PK parameters (clearance, half-life) for mivacurium in humans, but the specific numeric values are not provided in the text evidence, only qualitative descriptions of changes. |
+| PGx | Snak_2026 | not_relevant | 5 | 4 | The paper is a systematic review of genotype-phenotype correlations for BChE enzyme activity and biochemic markers (dibucaine number), not the pharmacokinetic or pharmacodynamic parameters of mivacurium itself. |
+| popPK | Yang_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic investigation of neuromuscular response (EC50/EC95) and does not report pharmacokinetic parameters such as clearance or volume. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmivacurium%5D&body=Drug%3A%20mivacurium%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mivacurium/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 02:07 UTC</sub>

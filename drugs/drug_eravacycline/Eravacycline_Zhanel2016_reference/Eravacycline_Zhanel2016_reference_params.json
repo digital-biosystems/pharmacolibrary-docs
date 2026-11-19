@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 140 mg parenteral (J01AA13)",
+ "model_id": "Eravacycline_Zhanel2016_reference",
+ "molar_masses": {
+  "central.C": 0.558563
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.75e-06,
+  "F": 1.0,
+  "MM": 0.558563,
+  "VdPerKg": 8.285714285714285e-06,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00014,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662005
+ },
+ "reference_peaks": {
+  "central.C": 0.06093639577719403
+ },
+ "stop_time": 864000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

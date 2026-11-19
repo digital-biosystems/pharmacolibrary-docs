@@ -1,0 +1,208 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;toxins/DRUG.md&quot;},{&quot;label&quot;:&quot;Lorazepam&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/&quot;},{&quot;label&quot;:&quot;Healy_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorazepam_Bianconi2022_reference&quot;,&quot;label&quot;:&quot;Bianconi_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Bianconi2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chamberlain2012_reference&quot;,&quot;label&quot;:&quot;Chamberlain_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Chamberlain2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Berton2023_non_obese_individuals_observed_mean&quot;,&quot;label&quot;:&quot;Berton_2023_non_obese_individuals_observed_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Berton2023_non_obese_individuals_observed_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Berton2023_non_obese_individuals_predicted_mean&quot;,&quot;label&quot;:&quot;Berton_2023_non_obese_individuals_predicted_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Berton2023_non_obese_individuals_predicted_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Berton2023_obese_individuals_observed_mean&quot;,&quot;label&quot;:&quot;Berton_2023_obese_individuals_observed_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Berton2023_obese_individuals_observed_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Berton2023_obese_individuals_predicted_mean&quot;,&quot;label&quot;:&quot;Berton_2023_obese_individuals_predicted_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Berton2023_obese_individuals_predicted_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Berton2023_observed_mean&quot;,&quot;label&quot;:&quot;Berton_2023_observed_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Berton2023_observed_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Berton2023_ratio_predicted_observed_mean&quot;,&quot;label&quot;:&quot;Berton_2023_ratio_predicted_observed_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Berton2023_ratio_predicted_observed_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Berton2023_reference&quot;,&quot;label&quot;:&quot;Berton_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Berton2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Caill1983_reference&quot;,&quot;label&quot;:&quot;Caill\u00e9_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Caill1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Greenblatt1981_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Greenblatt1981_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Greenblatt1983_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Greenblatt1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_reference&quot;,&quot;label&quot;:&quot;Healy_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Healy2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lorazepam_Ochs1985_reference&quot;,&quot;label&quot;:&quot;Ochs_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Ochs1985_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Swart2004_reference&quot;,&quot;label&quot;:&quot;Swart_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/toxin_lorazepam/Lorazepam_Swart2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# Lorazepam — `Lorazepam_Healy2025_reference`
+
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+
+> Lorazepam distribution rate constants k12 and k21 use library defaults instead of paper-specific estimates, rendering the two-compartment model unsupported.
+
+<div class="pk-model-meta" hidden drug="Lorazepam" model-id="Lorazepam_Healy2025_reference" status="needs_review" stale="false" population="mechanically-ventilated pediatric patients" measured-compound="Lorazepam" parameterization="mechanistic" topology="2C"></div>
+
+## Citation
+Healy P, Marano M, Montibeller M, Goffredo BM, Pontrelli G, Della Pasqua O. Use of lorazepam for analgosedation during mechanical ventilation in pediatric intensive care. Frontiers in medicine 12:1600671 (2025).
+  ·  DOI: [10.3389/fmed.2025.1600671](https://doi.org/10.3389/fmed.2025.1600671)
+
+## Population and dosing
+
+**Population:** mechanically-ventilated pediatric patients · condition critical illness requiring mechanical ventilation · age group child · n = 6.
+
+**Dosing:** 2.1, 14 mg, iv, multiple, every 4 h.
+
+## Model
+
+**Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 5 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference.svg" alt="Lorazepam_Healy2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+
+## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
+| label | parameter | value | unit |
+|---|---|---|---|
+| Cmax | Cmax | 531.4 | ng/mL |
+| AUC | AUC | 12194.5 | h·ng/mL |
+| clearance (CL) | CL | 0.232 | L/h/kg |
+| central volume of distribution (Vc) | V1 | 1.15 | L |
+| volume of distribution values | V | 1.37 | L/kg |
+
+<details class="pk-evidence"><summary>Evidence &amp; review</summary>
+
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+### Reviewer guidance
+
+**Lorazepam distribution rate constants k12 and k21 use library defaults instead of paper-specific estimates, rendering the two-compartment model unsupported.**
+
+The record lacks extracted values for inter-compartmental clearance rates k12 and k21, so the model builder substituted library defaults. These substituted parameters dictate the peripheral distribution profile but are not derived from the provided lorazepam data in mechanically-ventilated pediatric patients. Consequently, the simulated concentration-time curve relies on unvalidated assumptions rather than fitted pharmacokinetic evidence. Extracted — lorazepam: Cmax 531 ng/mL, AUC 1.22e+04 h·ng/mL, CL 0.232 L/h/kg, V1 1.15 L, V 1.37 L/kg.
+
+<sub>reviewed by qwen3.8-flash-next</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Cmax | `Q32` · Cmax | 531.4 | ng/mL |  |  | ng/mL | exact (1) | T3:row2:col1, T3:row2:col2, T3:row5:col1, T3:row5:col2, T3:row8:col1, T3:row8:col2, T3:row11:col1, T3:row11:col2, T3:row14:col1, T3:row14:col2, T3:row17:col1, T3:row17:col2, T3:row20:col1, T3:row20:col2, T3:row23:col1, T3:row23:col2, T3:row26:col1, T3:row26:col2 |
+| AUC | `Q88` · AUC | 12194.5 | h·ng/mL |  |  | h·ng/mL | exact (1) | T3:row3:col1, T3:row3:col2, T3:row6:col1, T3:row6:col2, T3:row9:col1, T3:row9:col2, T3:row12:col1, T3:row12:col2, T3:row15:col1, T3:row15:col2, T3:row18:col1, T3:row18:col2, T3:row21:col1, T3:row21:col2, T3:row24:col1, T3:row24:col2, T3:row27:col1, T3:row27:col2 |
+| clearance (CL) | `Q22` · CL | 0.232 | L/h/kg | 4.511e-06 | m3/s | L/h | exact (1) | Healy_2025:results_prose |
+| central volume of distribution (Vc) | `Q63` · V1 | 1.15 | L | 0.00115 | m3 | L | boundary_compartment (0.9) | Healy_2025:results_prose |
+| volume of distribution values | `Q61` · V | 1.37 | L/kg | 0.0959 | m3 | L | boundary (0.8) | Healy_2025:discussion_prose |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['k12', 'k21']
+
+**Interpretation flags:**
+- competing summary columns for 'Cmax'; not population strata
+- table representations disagree for 'Cmax'; source reconciliation required
+- competing summary columns for 'AUC'; not population strata
+- table representations disagree for 'AUC'; source reconciliation required
+- dropped value-less row: 'Table 3. Overview of the secondary pharmacokinetic parameters of lorazepam, including the mean, median, standard deviation, and percentiles (5th and 95th) for the maximum concentration (Cmax) and area under the curve (AUC) across the different simulation scenarios.'
+- salvaged Q22 ('clearance (CL)'=0.232) from results prose — parameter table was unreadable
+- salvaged Q63 ('central volume of distribution (Vc)'=1.15) from results prose — parameter table was unreadable
+- salvaged Q61 ('volume of distribution values'=1.37) from results prose — parameter table was unreadable
+- implicit units: 'Cmax' → ng/mL (from the paper text: "The text states: 'median target concentrations around 500 ng/ml'. Since Cmax represents the maximum concentration and th")
+- implicit units: 'AUC' → h·ng/mL (from the popPK convention: 'AUC (Area Under the Curve) is the product of concentration and time. Given the concentration unit is ng/mL (from the tex')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=Lorazepam
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
+- status held at "Needs review" — not promoted
+
+**Extraction notes:**
+- table T3: competing_summary_estimates
+- table T3: ambiguous_uncertainty_binding
+- table T3: representations disagree; selected evidence retained, not merged
+- LLM selected parameter table(s) 3
+
+## Validation
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['T3:row2:col1', 'T3:row2:col2', 'T3:row5:col1', 'T3:row5:col2', 'T3:row8:col1', 'T3:row8:col2', 'T3:row11:col1', 'T3:row11:col2', 'T3:row14:col1', 'T3:row14:col2', 'T3:row17:col1', 'T3:row17:col2', 'T3:row20:col1', 'T3:row20:col2', 'T3:row23:col1', 'T3:row23:col2', 'T3:row26:col1', 'T3:row26:col2'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['T3:row3:col1', 'T3:row3:col2', 'T3:row6:col1', 'T3:row6:col2', 'T3:row9:col1', 'T3:row9:col2', 'T3:row12:col1', 'T3:row12:col2', 'T3:row15:col1', 'T3:row15:col2', 'T3:row18:col1', 'T3:row18:col2', 'T3:row21:col1', 'T3:row21:col2', 'T3:row24:col1', 'T3:row24:col2', 'T3:row27:col1', 'T3:row27:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.232 | ['Healy_2025:results_prose'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 16.2 L/h | ['Healy_2025:results_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 95.9 L | ['Healy_2025:discussion_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.15 L | ['Healy_2025:results_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=Lorazepam) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+
+<details class="legend">
+<summary>Validation definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>check</code></td><td>Validation identifier. C0: structural parameters; C0b: volume or clearance/elimination; C0c: both; C1: half-life consistency; C2: covariate-effect plausibility; C3: clearance–dose–AUC consistency; C4: analytic AUC; C5: dimensional consistency.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. Skipped checks lack required inputs and provide no validation evidence.</td></tr><tr><td><code>expected</code></td><td>Source- or ontology-derived reference value.</td></tr><tr><td><code>obtained</code></td><td>Value derived from the extracted record or simulation.</td></tr><tr><td><code>ratio</code></td><td>Obtained/reference value.</td></tr><tr><td><code>tol</code></td><td>Acceptance tolerance.</td></tr><tr><td><code>source</code></td><td>Reference-value provenance.</td></tr><tr><td><code>scenario</code></td><td>Evaluated covariate scenario (reviewer checks).</td></tr><tr><td><code>note</code></td><td>Evaluation or exclusion rationale.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+
+</details>
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model downloads
+
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference_modelica.zip" download>Lorazepam_Healy2025_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference_fmi.zip" download>Lorazepam_Healy2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference_matlab.zip" download>Lorazepam_Healy2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference_matlab_simbio.zip" download>Lorazepam_Healy2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference_sbml.zip" download>Lorazepam_Healy2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference_cellml.zip" download>Lorazepam_Healy2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.3212 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 2.1e-06 | kg |
+| input | model | `Cl` | 4.511e-06 | m3/s |
+| input | model | `VdPerKg` | 1.643e-05 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Healy P, Marano M, Montibeller M, Goffredo BM, Pontrelli G, Della Pasqua O. Use of lorazepam for analgosedation during mechanical ventilation in pediatric intensive care. Frontiers in medicine 12:1600671 (2025). [doi:10.3389/fmed.2025.1600671](https://doi.org/10.3389/fmed.2025.1600671)
+
+**This record:** Pharmacolibrary, model `Lorazepam_Healy2025_reference`. <https://pharmacolibrary.github.io/#/drugs/toxin_lorazepam/Lorazepam_Healy2025_reference>
+
+```bibtex
+@misc{pharmacolibrary_LorazepamHealy2025reference,
+  title  = {{Pharmacolibrary model Lorazepam_Healy2025_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/toxin_lorazepam/Lorazepam_Healy2025_reference},
+  note   = {Parameters from doi:10.3389/fmed.2025.1600671},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 2.1 mg infusion over 10 min, single dose. Doses in the paper: 2.1, 14 mg.
+
+<dbs-fmusim paramsurl="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/toxin_lorazepam/Lorazepam_Healy2025_reference/Lorazepam_Healy2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `Lorazepam_Healy2025_reference_params.json` · controls `Lorazepam_Healy2025_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blorazepam%5D%20Lorazepam_Healy2025_reference&body=Drug%3A%20lorazepam%0ARecord%3A%20Lorazepam_Healy2025_reference%0APaper%3A%20Healy_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_lorazepam/Lorazepam_Healy2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · extracted 2026-11-15 11:40 UTC</sub>

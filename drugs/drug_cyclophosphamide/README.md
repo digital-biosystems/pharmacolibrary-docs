@@ -1,0 +1,892 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;cyclophosphamide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyclophosphamide_Cao2025_reference&quot;,&quot;label&quot;:&quot;Cao_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Cao2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Huang2026_reference&quot;,&quot;label&quot;:&quot;Huang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Huang2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Shemesh2020_reference&quot;,&quot;label&quot;:&quot;Shemesh_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Shemesh2020_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Tsyplakova2025_reference&quot;,&quot;label&quot;:&quot;Tsyplakova_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Xie2025_reference&quot;,&quot;label&quot;:&quot;Xie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Xie2025_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Iliopoulou2021_reference&quot;,&quot;label&quot;:&quot;Iliopoulou_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Iliopoulou2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# cyclophosphamide
+
+- **generic name:** cyclophosphamide
+- **ATC codes:** `L01AA01`
+- **DrugBank:** [DB00531](https://go.drugbank.com/drugs/DB00531) · **PubChem:** [CID 2907](https://pubchem.ncbi.nlm.nih.gov/compound/2907)
+- **molar mass:** 261.086 g/mol (C7H15Cl2N2O2P) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Cyclophosphamide is an alkylating agent used for treating various cancers and autoimmune disorders. It is administered via intravenous injection or oral ingestion. The drug is listed on the World Health Organization's essential medicines list.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q408524](https://www.wikidata.org/wiki/Q408524), [Wikipedia](https://en.wikipedia.org/wiki/Cyclophosphamide?oldid=1341984314) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| cyclophosphamide | parent | 261.086 | C7H15Cl2N2O2P | DrugBank | [2907](https://pubchem.ncbi.nlm.nih.gov/compound/2907) | Cohen_1971, Iliopoulou_2021, Timm_2005, Veal_2016 |
+| hydroxycyclophosphamide | metabolite | 277.082 | C7H15Cl2N2O3P | PubChem | [99735](https://pubchem.ncbi.nlm.nih.gov/compound/99735) | Jaber_2023 |
+| phosphoramide mustard | metabolite | 221.018 | C4H11Cl2N2O2P | PubChem | [96356](https://pubchem.ncbi.nlm.nih.gov/compound/96356) | Jaber_2023 |
+
+## Start here
+
+> **Cao_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> review reference. [Run it in the simulator](drugs/drug_cyclophosphamide/Cyclophosphamide_Cao2025_reference.md?tab=Simulation) · [record](drugs/drug_cyclophosphamide/Cyclophosphamide_Cao2025_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="138" stroke="#ddd"/><text x="190.0" y="152" font-size="10" text-anchor="middle">0.01</text><line x1="277.5" y1="18" x2="277.5" y2="138" stroke="#ddd"/><text x="277.5" y="152" font-size="10" text-anchor="middle">0.1</text><line x1="365.0" y1="18" x2="365.0" y2="138" stroke="#ddd"/><text x="365.0" y="152" font-size="10" text-anchor="middle">1</text><line x1="452.5" y1="18" x2="452.5" y2="138" stroke="#ddd"/><text x="452.5" y="152" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="138" stroke="#ddd"/><text x="540.0" y="152" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Zhou_2026 · CL</text><circle cx="229.1" cy="30.0" r="4" fill="#78909c"><title>Zhou_2026 · CL: 0.028 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Shemesh_2020 · CL ·/kg</text><circle cx="239.8" cy="46.0" r="4" fill="#78909c"><title>Shemesh_2020 · CL ·/kg: 0.03704 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Tsyplakova_2025 · CL</text><circle cx="449.7" cy="62.0" r="4" fill="#78909c"><title>Tsyplakova_2025 · CL: 9.3 L/h</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Cao_2025 · CL</text><circle cx="450.8" cy="78.0" r="4" fill="#78909c"><title>Cao_2025 · CL: 9.57 L/h</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Huang_2026 · CL</text><circle cx="455.4" cy="94.0" r="4" fill="#78909c"><title>Huang_2026 · CL: 10.8 L/h</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Iliopoulou_2021 · CL</text><circle cx="463.3" cy="110.0" r="4" fill="#ef6c00"><title>Iliopoulou_2021 · CL: 13.3 L/h</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Xie_2025 · CL</text><circle cx="491.4" cy="126.0" r="4" fill="#78909c"><title>Xie_2025 · CL: 27.8 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="192" viewBox="0 0 560 192" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="170" stroke="#ddd"/><text x="190.0" y="184" font-size="10" text-anchor="middle">1</text><line x1="306.7" y1="18" x2="306.7" y2="170" stroke="#ddd"/><text x="306.7" y="184" font-size="10" text-anchor="middle">10</text><line x1="423.3" y1="18" x2="423.3" y2="170" stroke="#ddd"/><text x="423.3" y="184" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="170" stroke="#ddd"/><text x="540.0" y="184" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Shemesh_2020 · V</text><circle cx="281.6" cy="30.0" r="4" fill="#78909c"><title>Shemesh_2020 · V: 6.092 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Veal_2016 · V</text><circle cx="334.4" cy="46.0" r="4" fill="#ef6c00"><title>Veal_2016 · V: 17.3 L</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Cao_2025 · V</text><circle cx="359.2" cy="62.0" r="4" fill="#78909c"><title>Cao_2025 · V: 28.2 L</title></circle><text x="184" y="82.0" font-size="11" text-anchor="end">Cohen_1971 · V</text><circle cx="359.2" cy="78.0" r="4" fill="#ef6c00"><title>Cohen_1971 · V: 28.2 L</title></circle><text x="184" y="98.0" font-size="11" text-anchor="end">Huang_2026 · V</text><circle cx="384.4" cy="94.0" r="4" fill="#78909c"><title>Huang_2026 · V: 46.4 L</title></circle><text x="184" y="114.0" font-size="11" text-anchor="end">Iliopoulou_2021 · V</text><circle cx="397.3" cy="110.0" r="4" fill="#ef6c00"><title>Iliopoulou_2021 · V: 59.8 L</title></circle><text x="184" y="130.0" font-size="11" text-anchor="end">Xie_2025 · V</text><circle cx="417.0" cy="126.0" r="4" fill="#78909c"><title>Xie_2025 · V: 88.24 L</title></circle><text x="184" y="146.0" font-size="11" text-anchor="end">Tsyplakova_2025 · V</text><circle cx="456.5" cy="142.0" r="4" fill="#78909c"><title>Tsyplakova_2025 · V: 192.4 L</title></circle><text x="184" y="162.0" font-size="11" text-anchor="end">Zhou_2026 · V1</text><circle cx="296.1" cy="158.0" r="4" fill="#78909c"><title>Zhou_2026 · V1: 8.12 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Cao_2025_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Cao2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Cao D et al., Semi-mechanistic population pharmacokin…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1632588](https://doi.org/10.3389/fphar.2025.1632588) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Huang_2026_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Huang2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Huang C et al., Association of Busulfan Exposure with E…, Drug design, development an… (2026) | [10.2147/dddt.s593835](https://doi.org/10.2147/dddt.s593835) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Shemesh_2020_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Shemesh2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shemesh CS et al., Pharmacokinetics of polatuzumab vedotin…, Cancer chemotherapy and pha… (2020) | [10.1007/s00280-020-04054-8](https://doi.org/10.1007/s00280-020-04054-8) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Tsyplakova_2025_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Tsyplakova2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Tsyplakova A et al., Optimizing Mycophenolate Therapy in Ren…, Medical sciences (Basel, Sw… (2025) | [10.3390/medsci13040235](https://doi.org/10.3390/medsci13040235) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Not simulated" data-sim="yes"></span><span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Not simulated</sub> | [Xie_2025_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Xie2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Xie H et al., Association of NR1I2 Polymorphism with…, Drug design, development an… (2025) | [10.2147/dddt.s495647](https://doi.org/10.2147/dddt.s495647) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Zhou_2026_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Zhou2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Zhou WY et al., Population Pharmacokinetics of Rituxima…, Clinical and translational… (2026) | [10.1111/cts.70683](https://doi.org/10.1111/cts.70683) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [Cohen_1971_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Cohen1971_reference.md) | — | 1-compartment (no model) | 3 | Cohen JL et al., Pharmacokinetics of cyclophosphamide in…, British journal of pharmaco… (1971) | [10.1111/j.1476-5381.1971.tb07199.x](https://doi.org/10.1111/j.1476-5381.1971.tb07199.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Iliopoulou_2021_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Iliopoulou2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Iliopoulou VN et al., Population pharmacokinetics of cyclopho…, The Journal of pharmacy and… (2021) | [10.1093/jpp/rgab135](https://doi.org/10.1093/jpp/rgab135) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Veal_2016_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Veal2016_reference.md) | — | 1-compartment (no model) | 4 | Veal GJ et al., Cyclophosphamide pharmacokinetics and p…, European journal of cancer… (2016) | [10.1016/j.ejca.2015.12.007](https://doi.org/10.1016/j.ejca.2015.12.007) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Jaber_2023_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_Jaber2023_reference.md) | — | nonlinear / manual (no model) | 0 | Jaber MM et al., Influence of Renal Function on Phosphor…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2144](https://doi.org/10.1002/jcph.2144) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Timm_2005_all_patients](drugs/drug_cyclophosphamide/Cyclophosphamide_Timm2005_all_patients.md) | — | 1-compartment (no model) | 0 | Timm R et al., Association of cyclophosphamide pharmac…, The pharmacogenomics journal (2005) | [10.1038/sj.tpj.6500330](https://doi.org/10.1038/sj.tpj.6500330) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ patients_receiving_4_1000_mg_m_2_cp](drugs/drug_cyclophosphamide/Cyclophosphamide_Timm2005_patients_receiving_4_1000_mg_m_2_c.md) | — | 1-compartment (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ patients_receiving_p1000_mg_m_2_cp](drugs/drug_cyclophosphamide/Cyclophosphamide_Timm2005_patients_receiving_p1000_mg_m_2_cp.md) | — | 1-compartment (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Varela-González-Aller_2025_reference](drugs/drug_cyclophosphamide/Cyclophosphamide_VarelaGonzlezAller2025_reference.md) | — | 2-compartment (no model) | 3 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ishida_1982_growth_inhibition](drugs/drug_cyclophosphamide/pd_Ishida_1982_growth_inhibition.md) | growth inhibition ← cyclophosphamide · direct linear effect | — | Ishida R et al., Susceptibility of Fanconi's anemia lymp…, Cancer research (1982) | — |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Ahmed_2020](drugs/drug_cyclophosphamide/pgx_Ahmed_2020_CYP2C9_safety.md) | Ahmed JH et al., Population Pharmacokinetic, Pharmacogen…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.00406](https://doi.org/10.3389/fphar.2020.00406) |
+| <span class="pk-badge pk-badge--neutral" title="Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="Adverse-reaction risk allele; no quantitative PK/PD parameter effect.">safety allele</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Balasubramanian_2012](drugs/drug_cyclophosphamide/pgx_Balasubramanian_2012_CYP2C9_safety.md) | Balasubramanian P et al., Population pharmacokinetics of cyclopho…, Bone marrow transplantation (2012) | [10.1038/bmt.2011.254](https://doi.org/10.1038/bmt.2011.254) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP3A5** | `Q47` · kel | metabolism | [Ahmed_2020](drugs/drug_cyclophosphamide/pgx_Ahmed_2020_CYP3A5_Q47.md) | Ahmed JH et al., Population Pharmacokinetic, Pharmacogen…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.00406](https://doi.org/10.3389/fphar.2020.00406) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2B6** | `Q22` · CL | metabolism | [Barnett_2021](drugs/drug_cyclophosphamide/pgx_Barnett_2021_CYP2B6_Q22.md) | Barnett S et al., Pharmacokinetics and Pharmacogenetics o…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14030272](https://doi.org/10.3390/ph14030272) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2C19** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Barnett_2021](drugs/drug_cyclophosphamide/pgx_Barnett_2021_CYP2C19_Q100.md) | Barnett S et al., Pharmacokinetics and Pharmacogenetics o…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14030272](https://doi.org/10.3390/ph14030272) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2B6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Helsby_2021](drugs/drug_cyclophosphamide/pgx_Helsby_2021_CYP2B6_Q100.md) | Helsby N et al., Cyclophosphamide bioactivation pharmaco…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04307-0](https://doi.org/10.1007/s00280-021-04307-0) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2C19** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Helsby_2021](drugs/drug_cyclophosphamide/pgx_Helsby_2021_CYP2C19_Q100.md) | Helsby N et al., Cyclophosphamide bioactivation pharmaco…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04307-0](https://doi.org/10.1007/s00280-021-04307-0) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2C19** | `Q47` · kel | metabolism | [Timm_2005](drugs/drug_cyclophosphamide/pgx_Timm_2005_CYP2C19_Q47.md) | Timm R et al., Association of cyclophosphamide pharmac…, The pharmacogenomics journal (2005) | [10.1038/sj.tpj.6500330](https://doi.org/10.1038/sj.tpj.6500330) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2B6** | `Q22` · CL | metabolism | [Veal_2016](drugs/drug_cyclophosphamide/pgx_Veal_2016_CYP2B6_Q22.md) | Veal GJ et al., Cyclophosphamide pharmacokinetics and p…, European journal of cancer… (2016) | [10.1016/j.ejca.2015.12.007](https://doi.org/10.1016/j.ejca.2015.12.007) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | **CYP2B6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Xie_2003](drugs/drug_cyclophosphamide/pgx_Xie_2003_CYP2B6_Q100.md) | Xie HJ et al., Role of polymorphic human CYP2B6 in cyc…, The pharmacogenomics journal (2003) | [10.1038/sj.tpj.6500157](https://doi.org/10.1038/sj.tpj.6500157) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## Adverse drug reactions (ADR)
+
+64 reaction(s) reported in 22 paper(s). Read from the full texts by a language model, which also wrote the one-sentence descriptions; each sentence quoted under a reaction was checked to occur in the paper, the rest is not checked by a person. Frequencies are as the papers print them, for their own populations and definitions.
+
+### Blood
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Thrombocytopenia | In a study of 25 infants and young children (0-24 months) receiving cyclophosphamide, reduced platelet count was reported in 3 patients. | three in 25 | &lt;2 years of age; CYP2B6*6 (CYP2B6 *6); higher dose; romidepsin / HDAC inhibition | laboratory: platelet count; laboratory: assessed for treatment toxicity according to the National Cancer Institute-Common Terminology Criteria for Adverse Events version 4.03 | [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608), [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336), [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526), [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704), [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517), [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094) +2 |
+| Neutropenia | Neutropenia was observed in female dogs treated with either carboplatin alone or carboplatin plus cyclophosphamide, being more frequent in the group receiving cyclophosphamide (G2). | more frequent in G2 | cyclophosphamide; CPA dosage regimen (500 vs. 600 mg/m2); CYP3A5 (CYP3A5 *3 or *6); CYP2C9 (CYP2C9 *2 or *3) | laboratory: segmented neutrophils; primary_care: Complete blood count | [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336), [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526), [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608), [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827), [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094), [Hansen 2026](https://pubmed.ncbi.nlm.nih.gov/41532788) |
+| Anemia | The paper reports that A-CHP showed no statistically significant differences compared to CHOP in terms of grade ≥3 anemia, with an odds ratio of 1.40 (95% CI: 0.82–2.20). | OR = 1.40; 95% CI: 0.82–2.20 | higher MPA doses | laboratory: red blood cells (RBCs), hematocrit (Ht), hemoglobulin (Hb); laboratory: red blood cells | [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094), [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517), [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336), [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) |
+| Hemorrhagic cystitis | Development of hemorrhagic cystitis (HC) caused by the metabolite acrolein, which is more frequently seen with ifosamide but is also a particular issue after high-dose cyclophosphamide in conjunction with SCT, occurring in 20% to 25% of patients days or months after treatment. | 20% to 25% | mesna and bladder irrigation; ALDH3A1*2 (ALDH3A1 *2); increased exposure to metabolites of CY such as carboxyethylphosphoramide mustard and acrolein | — | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145), [Balasubramanian 2012](https://pubmed.ncbi.nlm.nih.gov/22231460), [Świerczek 2024](https://pubmed.ncbi.nlm.nih.gov/39771538) |
+| Leukopenia | The paper reports that at cyclophosphamide doses of 1 gm-2, there is a clear increase in the grade of leukopenia with increasing SR2508 dose in the range 2.5 to 7.2 g m-2. | 19 patients who developed grade 4 neutropenia | SR2508; CYP2C19 (CYP2C19 G) | laboratory: hematological | [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704), [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Myelosuppression | A major toxicity of treatment with SR2508 and cyclophosphamide was myelosuppression, with nadir counts usually observed on day 14 and recovery by day 21, where neutrophils were affected almost exclusively and thrombocytopenia was sporadic. | — | SR2508; SR2508 dose; renal clearance of SR2508 | laboratory: white cell count, platelets | [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704), [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137), [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) |
+| Anaemia | Decreased haemoglobin count was observed in approximately half of the 25 patients (12 in 25) following cyclophosphamide treatment. | approximately half of the patients (12 in 25) | other chemotherapeutic agents | laboratory: haemoglobin count; laboratory: anaemia | [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608), [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) |
+| Hematologic toxicity | The paper reports that associations were found between the MTHFR gene and drug hematologic toxicity, characterized by aplasia, neutropenia, anemia, and leukopenia, in children treated for osteosarcoma. | — | MTHFR; CYP2J2*7 variant alleles (CYP2J2 CYP2J2*7) | — | [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021), [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) |
+| Bone marrow suppression | In patients with peripheral T-cell lymphoma treated with the GDPT regimen, clinicians are advised to be vigilant regarding the risk of bone marrow suppression during clinical use. | — | — | — | [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094) |
+| Bone marrow toxicity | CTX is also toxic to the bone marrow and liver tissue. | — | — | — | [Choi 2021](https://pubmed.ncbi.nlm.nih.gov/34772451) |
+| Febrile neutropenia | Patients manifesting febrile neutropenia, a serious complication of chemotherapy with risk of confusion, cardiac complications, hypotension, respiratory and renal failure, and even death, often require hospitalization and administration of antibiotics. | — | — | — | [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) |
+| Granulocytopenia | The paper states that severe and rare side effects of cyclophosphamide include myelotoxicity, which presents as a risk of granulocytopenia leading to bacterial and opportunistic infections. | severe and rare | CYP2C19*1*1 and CYP2B6-750TT polymorphisms (extensive metabolism categories) (CYP2C19 extensive metabolism) | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Hematological toxicity | The paper states that high levels of mycophenolic acid (MPA) increase toxicity, such as hematological issues, and notes that MPA may cause dose-dependent leucopenia, anemia, and thrombocytopenia in renal transplant patients. | — | high levels; MPA dose | hospital: bone marrow; laboratory: bone marrow | [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517) |
+| Leucopenia | The paper states that MPA may cause dose-dependent leucopenia, noting that it will most likely arise in the early post-transplant phase, although the median values of white blood cells in the studied renal transplant patients were within the normal range. | — | MPA dose | — | [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517) |
+| Leukocytopenia | CP treatment may result in partly severe side effects such as anemia, leukocytopenia and thrombocytopenia, gonadal toxicity and even development of secondary tumors. | — | CYP2C19 (CYP2C19 CYP2C19*2); CP dose | — | [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) |
+| Myelodysplastic syndrome | The paper states that severe and rare side effects of cyclophosphamide include malignancy, specifically myelodysplastic syndrome, particularly associated with prescription of &gt; 2-3 years and cumulative dose of &gt;100 grams. | severe and rare | cumulative dose &gt;100 grams; prescription of &gt; 2-3 years | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Suppression of bone marrow function | In the treatment of autoimmune diseases, specifically systemic lupus erythematosus (SLE), cyclophosphamide can cause suppression of bone marrow function. | — | — | — | [Świerczek 2024](https://pubmed.ncbi.nlm.nih.gov/39771538) |
+
+<details><summary>Evidence: Thrombocytopenia (8)</summary>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(cohort)</sub>
+
+> “The major hematological adverse drug events included anemia, thrombocytopenia, and neutropenia. Thrombocytopenia was the most critical finding in both of the groups. A marked reduction in the red blood cells (p &lt; 0.0001) and platelets (p = 0.0005) was observed in G2 when it was compared to G1 (Figure 2A,B).” — [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336) <sub>(animal)</sub>
+
+> “Seven patients (16.3%) developed a NCI-CTC grade 2 anaemia, and six patients (14%) developed grade 2 thrombocytopenia.” — [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) <sub>(cohort)</sub>
+
+> “Nadir counts were usually observed on dl4 with recovery by d21, and neut- rophils were affected almost exclusively: thrombocytopenia was sporadic.” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Neutropenia (6)</summary>
+
+> “Neutropenia was observed in both groups, being more frequent in G2, with a lower numbers of total leukocytes (p = 0.0002) and segmented neutrophils (p = 0.0007) (Figure 2C,D).” — [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336) <sub>(case report)</sub>
+
+> “Only one patient showed grade 2 neutropenia and anorexia (2.3%).” — [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) <sub>(case series)</sub>
+
+> “The most common toxicities observed were haematological, with decreased neutrophil and haemoglobin count occurring in approximately half of the patients (12 in 25).” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case series)</sub>
+
+> “AUC of CPA was positively correlated with neutropenic toxicity. In conclusion, we report large between-patient variability in clearance of CPA. CYP3A5 and CYP2C9 genotypes, BSA, BMI, and CPA dosage regimen influence PK of CPA. Plasma CPA exposure positively predicts chemotherapy-associated neutropenic toxicity.” — [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: anemia (4)</summary>
+
+> “In the present meta-analysis, A-CHP showed no statistically significant differences compared to CHOP in terms of grade ≥3 anemia (OR = 1.40; 95% CI: 0.82–2.20) or grade ≥3 neutropenia (OR = 1.00; 95% CI: 0.056–18.0), suggesting that hematologic toxicities associated with A-CHP are manageable.” — [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094) <sub>(meta-analysis)</sub>
+
+> “MPA may cause dose-dependent leucopenia, anemia, and thrombocytopenia.” — [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517) <sub>(review)</sub>
+
+> “The major hematological adverse drug events included anemia, thrombocytopenia, and neutropenia. A marked reduction in the red blood cells (p &lt; 0.0001) and platelets (p = 0.0005) was observed in G2 when it was compared to G1 (Figure 2A,B).” — [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336) <sub>(animal)</sub>
+
+> “CP treatment may result in partly severe side effects such as anemia, leukocytopenia and thrombocytopenia, gonadal toxicity 5 and even development of secondary tumors. 6” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Hemorrhagic cystitis (4)</summary>
+
+> “An important adverse effect of cyclophosphamide and ifosfamide administration is the development of hemorrhagic cystitis (HC) caused by the metabolite acrolein.” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+> “Even though advances in transplantation practices including reducing the intensity of the conditioning regimen have improved the outcome of HSCT in recent years, 4,5 doselimiting toxicities such as sinusoidal obstruction syndrome (SOS) and hemorrhagic cystitis 6,7 remain as the major problems associated with BU-CY-based myeloablative-conditioning regimen. Several studies in adult patients have shown association…” — [Balasubramanian 2012](https://pubmed.ncbi.nlm.nih.gov/22231460) <sub>(review)</sub>
+
+> “Other drugs used in the treatment of AIDs include cyclophosphamide, an alkylating agent used in SLE, which can cause suppression of bone marrow function and hemorrhagic cystitis, as well as increasing the susceptibility to infections.” — [Świerczek 2024](https://pubmed.ncbi.nlm.nih.gov/39771538) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: leukopenia (3)</summary>
+
+> “At the doses at which cyc- lophosphamide was administered at 1 gm-2 there is a clear increase in the grade of leukopenia with increasing SR2508 dose in the range 2.5 to 7.2 g m-2 (Table III).” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(in vitro)</sub>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(cohort)</sub>
+
+> “The A allele is associated with a reduced risk of gastrointestinal toxicity and leukopenia in people with SLE when exposed to cyclophosphamide, compared with the G allele.” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(case-control)</sub>
+
+</details>
+
+<details><summary>Evidence: myelosuppression (3)</summary>
+
+> “As expected, a major toxicity of treatment with SR2508 and cyclophosphamide was myelosuppression. Nadir counts were usually observed on dl4 with recovery by d21, and neut- rophils were affected almost exclusively: thrombocytopenia was sporadic.” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(case series)</sub>
+
+> “Myelosuppression is a dose-limiting toxicity (DLT) of both cyclophosphamide and ifosfamide, and cardiac toxicity is dose limiting after the high doses of cyclophosphamide required before SCT.” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+> “Unlike other side effects (myelosuppression, dysuria, nausea, vomiting, alopecia, cardiotoxicity, hypersensitivity, immunosuppression) that can also be caused by other anticancer substances, hemorrhagic cystitis is a severe side effect caused especially by the oxazophosphoric drug class, namely CP and ifosfamide, to be precise by the urotoxic metabolite acrolein.” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Anaemia (2)</summary>
+
+> “The most common toxicities observed were haematological, with decreased neutrophil and haemoglobin count occurring in approximately half of the patients (12 in 25).” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case series)</sub>
+
+> “Seventeen patients (39.5%) experienced NCI-CTC grade 1 anaemia, and 12 patients (28%) experienced grade 1 asthenia.” — [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: hematologic toxicity (2)</summary>
+
+> “Associations were also found between MTHFR and drug hematologic toxicity (aplasia, neutropenia, anemia and leukopenia) in children treated for osteosarcoma [188].” — [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) <sub>(review)</sub>
+
+> “In a recent cohort study investigating the association of pharmacogenetic variations to hematologic toxicity in Ethiopian breast cancer patients, we reported that patients carrying CYP2J2*7 variant alleles were associated with higher incidence of hematological toxicity (Ahmed et al., 2019).” — [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: bone marrow suppression (1)</summary>
+
+> “the GDPT regimen has a higher objective response rate, but clinicians must be particularly vigilant regarding the risk of bone marrow suppression during clinical use.” — [Zhao 2026](https://pubmed.ncbi.nlm.nih.gov/42707094) <sub>(meta-analysis)</sub>
+
+</details>
+
+<details><summary>Evidence: Bone marrow toxicity (1)</summary>
+
+> “CTX is also toxic to the bone marrow and liver tissue [48].” — [Choi 2021](https://pubmed.ncbi.nlm.nih.gov/34772451) <sub>(other)</sub>
+
+</details>
+
+<details><summary>Evidence: Febrile neutropenia (1)</summary>
+
+> “Particularly, patients manifesting febrile neutropenia, a serious complication of chemotherapy with risk of confusion, cardiac complications, hypotension, respiratory and renal failure, and even death, often require hospitalization and administration of antibiotics (Weycker et al., 2014).” — [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Granulocytopenia (1)</summary>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections)” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Hematological toxicity (1)</summary>
+
+> “Low MPA levels are associated with an increased risk of graft rejection, while high levels increase toxicity, such as gastrointestinal and hematological issues [1,2,3,4,6]. ... MPA may cause dose-dependent leucopenia, anemia, and thrombocytopenia.” — [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Leucopenia (1)</summary>
+
+> “MPA may cause dose-dependent leucopenia, anemia, and thrombocytopenia. ... Although anaemia may occur at any point post-transplant, leucopenia will most likely arise in the early post-transplant phase [48].” — [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Leukocytopenia (1)</summary>
+
+> “CP treatment may result in partly severe side effects such as anemia, leukocytopenia and thrombocytopenia, gonadal toxicity 5 and even development of secondary tumors. 6” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Myelodysplastic syndrome (1)</summary>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: suppression of bone marrow function (1)</summary>
+
+> “Other drugs used in the treatment of AIDs include cyclophosphamide, an alkylating agent used in SLE, which can cause suppression of bone marrow function and hemorrhagic cystitis, as well as increasing the susceptibility to infections.” — [Świerczek 2024](https://pubmed.ncbi.nlm.nih.gov/39771538) <sub>(review)</sub>
+
+</details>
+
+### Cardiovascular
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Cardiotoxicity | High doses of cyclophosphamide, such as those required for autologous stem cell transplantation, can cause cardiomyopathy, with reported incidence rates between 7% and 28% and mortality rates ranging from 11% to 43% after doses of 170 to 180 mg/kg. | 7% and 28% | cumulative dose; high-dose CPA regimen; other anticancer substances | hospital: congestive heart failure | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137), [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827), [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Acute leukemia | The paper states that severe and rare side effects of cyclophosphamide include malignancy (acute leukemia), especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100 grams. | rare | &gt; 2-3 years and cumulative dose of &gt;100 grams | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Cardiomyopathy | High doses of cyclophosphamide can cause cardiomyopathy, with reported incidence rates between 7% and 28% and mortality rates ranging from 11% to 43% after doses of 170 to 180 mg/kg, often presenting as congestive heart failure or acute decompensating cardiomyopathy. | 7% and 28% | dose &gt;= 1.55 g/m2 per day (unknown unknown); thiotepa and carboplatin (unknown unknown) | — | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) |
+| Congestive heart failure | Patients with significantly lower AUC of cyclophosphamide developed congestive heart failure in a high-dose CPA regimen, and the occurrence of this adverse effect was inversely related to CPA AUC. | — | high-dose CPA regimen | — | [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) |
+| Non-Hodgkin's lymphoma | The paper identifies non-Hodgkin's lymphoma as a severe and rare side effect of cyclophosphamide, specifically noting its association with prescriptions lasting &gt; 2-3 years and a cumulative dose of &gt;100 grams. | severe and rare | cumulative dose &gt;100 grams; prescription &gt; 2-3 years | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Secondary tumor | Cyclophosphamide treatment may result in the development of secondary tumors. | — | — | — | [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) |
+
+<details><summary>Evidence: Cardiotoxicity (4)</summary>
+
+> “High doses of cyclophosphamide and ifosfamide can cause cardiomyopathy, and this remains a problem after the high doses of cyclophosphamide required for autologous stem cell transplantation (ASCT). ... In the literature, incidence rates between 7% and 28% have been reported, with mortality rates ranging from 11% to 43% after doses of 170 to 180 mg/kg (Iqubal et al., 2019).” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+> “In contrast, an inverse association was also reported between the AUC of CPA and its treatment-related cardiotoxicity and event-free survival in women with breast cancer (Ayash et al., 1992; Petros et al., 2002). Patient with significantly lower AUC developed congestive heart failure in a high-dose CPA regimen (Ayash et al., 1992).” — [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) <sub>(review)</sub>
+
+> “Unlike other side effects (myelosuppression, dysuria, nausea, vomiting, alopecia, cardiotoxicity, hypersensitivity, immunosuppression) that can also be caused by other anticancer substances, hemorrhagic cystitis is a severe side effect caused especially by the oxazophosphoric drug class, namely CP and ifosfamide, to be precise by the urotoxic metabolite acrolein.” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(review)</sub>
+
+> “Phosphoramide mustard is responsible for anticancer activity, and acrolein exhibits immunosuppressive and cardiotoxic effects.” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(in vitro)</sub>
+
+</details>
+
+<details><summary>Evidence: Acute leukemia (1)</summary>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Cardiomyopathy (1)</summary>
+
+> “High doses of cyclophosphamide and ifosfamide can cause cardiomyopathy, and this remains a problem after the high doses of cyclophosphamide required for autologous stem cell transplantation (ASCT). ... In the literature, incidence rates between 7% and 28% have been reported, with mortality rates ranging from 11% to 43% after doses of 170 to 180 mg/kg (Iqubal et al., 2019).” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Congestive heart failure (1)</summary>
+
+> “Patient with significantly lower AUC developed congestive heart failure in a high-dose CPA regimen (Ayash et al., 1992). Treatment effectiveness and occurrence of adverse effects like heart failure were also inversely related to CPA AUC in high-dose therapy (Petros et al., 2002).” — [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Non-Hodgkin's lymphoma (1)</summary>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Secondary tumor (1)</summary>
+
+> “CP treatment may result in partly severe side effects such as anemia, leukocytopenia and thrombocytopenia, gonadal toxicity 5 and even development of secondary tumors. 6” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(case series)</sub>
+
+</details>
+
+### Endocrine and metabolic
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Amenorrhea | The paper states that severe and rare side effects of cyclophosphamide affect the gonads, including amenorrhea. | rare | — | — | [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) |
+| Decreased serum testosterone levels | The paper states that decreased serum testosterone levels are an adverse effect of cyclophosphamide which severely threatens fertility in men of reproductive age. | — | — | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+
+<details><summary>Evidence: Amenorrhea (1)</summary>
+
+> “Meanwhile, severe and rare side effects of this medication affects gonads (amenorrhea) and bladder (hemorrhagic cystitis), as well as includes its myelotoxicity (risk of thrombocytopenia and granulocytopenia leading to bacterial and opportunistic infections) and malignancy (myelodysplastic syndrome, acute leukemia, and non-Hodgkin's lymphoma, especially for prescription of &gt; 2-3 years and cumulative dose of &gt;100…” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Decreased serum testosterone levels (1)</summary>
+
+> “These adverse effects comprise azoospermia, oligospermia, atrophy of testicular seminiferous tubules and decreased serum testosterone levels (Abarikwu et al. 2012; Gerres et al. 1998; Pectasides et al. 2009), which severely threatens fertility in men of reproductive age.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(review)</sub>
+
+</details>
+
+### Gastrointestinal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Nausea | The acute and delayed type of cytostatic drug-induced nausea and vomiting are presumably a result of direct stimulation of the chemoreceptor trigger zone by various nitrogen mustard metabolites of CP. Nausea and vomiting is seen in most patients who receive doses above 50 mg/kg body weight. | most patients | doses above 50 mg/kg body weight; combination chemotherapy regimens (FAC, AC, TAC, RCHOP, TC) | — | [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145), [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743), [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) |
+| Vomiting | The paper states that nausea and vomiting is seen in most patients who receive doses above 50 mg/kg body weight, presumably resulting from direct stimulation of the chemoreceptor trigger zone by nitrogen mustard metabolites. | most patients | CYP2B6 *6 allele variant; high or long-term CP chemotherapy | — | [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145), [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) |
+| Diarrhoea | Three patients (7%) experienced grade 1 diarrhoea in a study of 43 patients treated with metronomic cyclophosphamide plus celecoxib and dexamethasone. | 3 (7) | — | — | [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526), [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) |
+| Anorexia | In a study of 43 patients with advanced castration-resistant prostate cancer treated with metronomic cyclophosphamide, celecoxib, and dexamethasone, one patient (2.3%) developed grade 2 anorexia. | 2.3% | — | — | [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) |
+| Diarrhea | In a study of 16 female dogs with mammary carcinoma, 12.5% (2/16) showed diarrhea, mainly in the group treated with carboplatin plus cyclophosphamide (G2). | 12.5% (2/16) | — | — | [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336) |
+| Gastrointestinal toxicity | The paper states that high mycophenolic acid levels increase toxicity, such as gastrointestinal issues, in renal transplant patients. | — | high MPA levels | — | [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517) |
+| Nausea and vomiting | Thirty-one of the 47 patients (66%) had nausea and vomiting following SR2508 administration. | 31 of the 47 patients (66%) | — | — | [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) |
+
+<details><summary>Evidence: Nausea (4)</summary>
+
+> “The acute and delayed type of cytostatic drug-induced nausea and vomiting are presumably a result of direct stimulation of the chemoreceptor trigger zone by various nitrogen mustard metabolites of CP. 7 Nausea and vomiting is seen in most patients who receive doses above 50 mg/kg body weight. 8,9” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(review)</sub>
+
+> “Some of the most common side effects of cyclophosphamide are nausea, vomiting, thinning hair, and reversible alopecia.” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+> “Unlike other side effects (myelosuppression, dysuria, nausea, vomiting, alopecia, cardiotoxicity, hypersensitivity, immunosuppression) that can also be caused by other anticancer substances, hemorrhagic cystitis is a severe side effect caused especially by the oxazophosphoric drug class, namely CP and ifosfamide, to be precise by the urotoxic metabolite acrolein.” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(review)</sub>
+
+> “Nausea is common with these agents, and alopecia occurs in almost all patients.” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Vomiting (3)</summary>
+
+> “The acute and delayed type of cytostatic drug-induced nausea and vomiting are presumably a result of direct stimulation of the chemoreceptor trigger zone by various nitrogen mustard metabolites of CP. 7 Nausea and vomiting is seen in most patients who receive doses above 50 mg/kg body weight. 8,9” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(case report)</sub>
+
+> “Some of the most common side effects of cyclophosphamide are nausea, vomiting, thinning hair, and reversible alopecia.” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+> “Unlike other side effects (myelosuppression, dysuria, nausea, vomiting, alopecia, cardiotoxicity, hypersensitivity, immunosuppression) that can also be caused by other anticancer substances, hemorrhagic cystitis is a severe side effect caused especially by the oxazophosphoric drug class, namely CP and ifosfamide” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: diarrhoea (2)</summary>
+
+> “Table 2. Toxicities of the metronomic cyclophosphamide plus celecoxib and dexamethasone schedule as graded by the National Cancer Institute-Common Terminology Criteria for Adverse Events version 4.03 (CTCAE v.4.03, 2010) | G1 | G2 | G3–G4 Toxicity | No. (%) | No. (%) | No. (%) Neutropenia | 7 (16) | 1 (2.3) | 0 (0) Thrombocytopenia | 6 (14) | 6 (14) | 0 (0) Anaemia | 17 (39.5) | 7 (16.3) | 0 (0) Nausea | 0 (0) | 0…” — [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) <sub>(case series)</sub>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: anorexia (1)</summary>
+
+> “Only one patient showed grade 2 neutropenia and anorexia (2.3%).” — [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Diarrhea (1)</summary>
+
+> “12.5% (2/16) of them showed diarrhea, mainly in G2. Regardless of the chemotherapy session and treatment group allocation, most of the evaluated dogs did not show adverse drug reactions or had mild reactions without the indication of an intervention occurring.” — [Machado 2022](https://pubmed.ncbi.nlm.nih.gov/36428336) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Gastrointestinal toxicity (1)</summary>
+
+> “Low MPA levels are associated with an increased risk of graft rejection, while high levels increase toxicity, such as gastrointestinal and hematological issues [1,2,3,4,6].” — [Tsyplakova 2025](https://pubmed.ncbi.nlm.nih.gov/41133517) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: nausea and vomiting (1)</summary>
+
+> “Thirty-one of the 47 patients (66%) had nausea and vomiting following SR2508 administration. In all but three, symptoms were easily controlled with standard antiemetics, and treat- ment was only required during the 24 h following drug administration.” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(case series)</sub>
+
+</details>
+
+### General
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Urotoxicity | The paper states that the spontaneous breakdown of cyclophosphamide metabolites results in the release of acrolein, which is described as a urotoxic metabolite. | — | — | — | [Veal 2016](https://pubmed.ncbi.nlm.nih.gov/26773420), [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487), [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) |
+| Asthenia | Twelve patients (28%) experienced grade 1 asthenia while being treated with metronomic cyclophosphamide, celecoxib, and dexamethasone. | 28% | — | — | [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) |
+| Dysuria | Dysuria is listed as a side effect of cyclophosphamide that can also be caused by other anticancer substances. | — | other anticancer substances | — | [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) |
+| Genotoxicity | The paper states that the most deleterious effects of cyclophosphamide free radicals in vivo are genotoxic activities including DNA damages, chromosome aberrations, sister chromatid exchanges, and gene mutations, which can lead to many pathological conditions including cancer. | 1.64% in control (+) compared with 0.23% in control (−) | — | — | [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) |
+| Haemorrhagic cystitis | The paper states that acrolein, a metabolite of cyclophosphamide, is water soluble, clears out of the system via urine, and due to its high toxicity can cause haemorrhagic cystitis and other ADRs. | — | — | — | [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) |
+| Hypersensitivity | The paper lists hypersensitivity as a side effect of cyclophosphamide, noting that unlike hemorrhagic cystitis, it can also be caused by other anticancer substances. | — | other anticancer substances | — | [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) |
+| Infection | Infection was reported in four of the 25 infants studied following cyclophosphamide treatment, though the paper notes that attributing these toxicities solely to cyclophosphamide was not possible due to co-medications. | four in 25 | — | — | [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) |
+| Second malignancy | The relative risk of a second malignancy increases from 1.6 for cyclophosphamide doses of 1 to 4.3 g/m2 to 7.4 for doses above 13 g/m2 in long-term survivors of childhood cancer, with acute myelogenous leukemia (AML) being the most common malignancy associated with use. | relative risk of 1.6 for doses 1 to 4.3 g/m2; relative risk of 7.4 for doses above 13 g/m2 | cumulative dose &gt; 13 g/m2; cumulative dose &gt; 36 g; cumulative dose &gt; 11.25 g/m2; every 10 g increase | — | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) |
+
+<details><summary>Evidence: urotoxicity (3)</summary>
+
+> “Further spontaneous breakdown is required to form the active DNA-crosslinking metabolite, phosphoramide mustard, with the release of the urotoxic metabolite, acrolein” — [Veal 2016](https://pubmed.ncbi.nlm.nih.gov/26773420) <sub>(in vitro)</sub>
+
+> “Moreover, significant urotoxicity 10 is attributed to the direct toxic effect of the CP metabolite acrolein. 11” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(review)</sub>
+
+> “CPA is a prodrug and requires bio-activation in the liver to 4-hydroxy-cyclophosphamide (4-OH-CPA), which is subsequently converted to the ultimate alkylating metabolite, phosphoramide mustard, and acrolein, a urotoxic metabolite (Ekhart et al., 2008).” — [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: asthenia (1)</summary>
+
+> “Seventeen patients (39.5%) experienced NCI-CTC grade 1 anaemia, and 12 patients (28%) experienced grade 1 asthenia.” — [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) <sub>(cohort)</sub>
+
+</details>
+
+<details><summary>Evidence: dysuria (1)</summary>
+
+> “Unlike other side effects (myelosuppression, dysuria, nausea, vomiting, alopecia, cardiotoxicity, hypersensitivity, immunosuppression) that can also be caused by other anticancer substances, hemorrhagic cystitis is a severe side effect caused especially by the oxazophosphoric drug class, namely CP and ifosfamide, to be precise by the urotoxic metabolite acrolein.” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Genotoxicity (1)</summary>
+
+> “The most deleterious effects of cyclophosphamide free radicals in vivo were genotoxic activities including DNA damages, chromosome aberrations, sister chromatid exchanges, and gene mutations, which can lead to many pathological conditions including cancer” — [de 2019](https://pubmed.ncbi.nlm.nih.gov/30563925) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: haemorrhagic cystitis (1)</summary>
+
+> “Acrolein is water soluble and clears out of the system via urine, due to its high toxicity can cause haemorrhagic cystitis and other ADRs [303].” — [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: hypersensitivity (1)</summary>
+
+> “Unlike other side effects (myelosuppression, dysuria, nausea, vomiting, alopecia, cardiotoxicity, hypersensitivity, immunosuppression) that can also be caused by other anticancer substances, hemorrhagic cystitis is a severe side effect caused especially by the oxazophosphoric drug class, namely CP and ifosfamide, to be precise by the urotoxic metabolite acrolein.” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Infection (1)</summary>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Second malignancy (1)</summary>
+
+> “The relative risk of a second malignancy increases from 1.6 for cyclophosphamide doses of 1 to 4.3 g/m 2 to 7.4 for doses above 13 g/m 2 in long-term survivors of childhood cancer (Hawkins et al., 1987). Acute myelogenous leukemia (AML) is the most common malignancy associated with the use of the nitrogen mustards (Povirk and Shuker, 1994).” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+</details>
+
+### Immune / hypersensitivity
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Immunosuppression | The paper lists immunosuppression as a side effect of cyclophosphamide that can also be caused by other anticancer substances. | — | — | — | [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) |
+
+<details><summary>Evidence: immunosuppression (1)</summary>
+
+> “Unlike other side effects (myelosuppression, dysuria, nausea, vomiting, alopecia, cardiotoxicity, hypersensitivity, immunosuppression) that can also be caused by other anticancer substances” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(other)</sub>
+
+</details>
+
+### Infection
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Delayed clearance of spirochetemia | In mice given cyclophosphamide (300 mg/kg) 2 h before inoculation with Borrelia hermsii, the clearance of the initial spirochete population was usually delayed by approximately 36 hours. | — | — | — | [Stoenner 1982](https://pubmed.ncbi.nlm.nih.gov/7130900) |
+| Fever | Fever was reported in four out of 25 infants treated with cyclophosphamide as part of their standard clinical treatment, occurring to a lesser frequency compared to other toxicities. | four in 25 | — | — | [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) |
+| Infections | The paper states that cyclophosphamide, used in the treatment of SLE, increases the susceptibility to infections. | — | — | — | [Świerczek 2024](https://pubmed.ncbi.nlm.nih.gov/39771538) |
+| Infusion-related reactions | Infusion-related reactions occurred in 8.7% of patients in the first exposure quartile and 0% in the third exposure quartile of the daratumumab SC plus bortezomib, cyclophosphamide, and dexamethasone arm, with no apparent exposure-response relationship. | 8.7% (2.4-20.8) in 1st quartile; 8.7% (2.4-20.8) in 2nd quartile; 0% (0-7.9) in 3rd quartile | — | — | [Luo 2022](https://pubmed.ncbi.nlm.nih.gov/34708423) |
+| Sepsis | Three episodes of sepsis were observed in patients who developed grade 4 neutropenia while treated with SR2508 and cyclophosphamide. | three episodes | — | — | [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) |
+
+<details><summary>Evidence: delayed clearance of spirochetemia (1)</summary>
+
+> “In preliminary studies (H. Stoenner, unpublished observations), we showed that cyclophosphamide (300 mg/kg) would usually delay clearance of the initial population by ~36 h.” — [Stoenner 1982](https://pubmed.ncbi.nlm.nih.gov/7130900) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Fever (1)</summary>
+
+> “In addition, reduced WBC count (10 in 25), reduced platelet count (three in 25), fever (four in 25), infection (four in 25) and diarrhoea (two in 25) were reported in patients but to a lesser frequency.” — [Barnett 2021](https://pubmed.ncbi.nlm.nih.gov/33809608) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: infections (1)</summary>
+
+> “Other drugs used in the treatment of AIDs include cyclophosphamide, an alkylating agent used in SLE, which can cause suppression of bone marrow function and hemorrhagic cystitis, as well as increasing the susceptibility to infections.” — [Świerczek 2024](https://pubmed.ncbi.nlm.nih.gov/39771538) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Infusion-related reactions (1)</summary>
+
+> “There was no apparent E-R relationship between daratumumab exposure and safety endpoints (i.e., organ disorders, infections, infusion-related reactions, and cytopenia) using the C peak,first as the predictor for infusion-related reactions and C peak,max for other endpoints (Table 2).” — [Luo 2022](https://pubmed.ncbi.nlm.nih.gov/34708423) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: sepsis (1)</summary>
+
+> “Of a total of 19 patients who developed grade 4 neutropenia, there were only three episodes of sepsis: one of these patients who also had Grade 4 thrombocytopenia, developed a fever, fell at home, and died of an apparent intracerebral hemorrhage.” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(case report)</sub>
+
+</details>
+
+### Kidney and urinary tract
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Nephrotoxicity | The paper states that the metabolite acrolein, formed from 4-hydroxyphosphamide, is nephrotoxic. | — | — | — | [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) |
+
+<details><summary>Evidence: Nephrotoxicity (1)</summary>
+
+> “4-Hydroxyphosphamide spontaneously disintegrates nonenzymatically into the alkylating metabolite phosphoramide mustard and the nephrotoxic acrolein.” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(review)</sub>
+
+</details>
+
+### Liver
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Hepatic toxicity | Mild to moderate hepatic toxicity, indicated by increased liver enzymes or bilirubin, was observed in 13 patients (28%), many of whom had liver involvement with tumour, and was not dose-related. | 13 patients (28%) | liver involvement with tumour | — | [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) |
+| Liver injury | The paper states that cyclophosphamide monohydrate (CTX) is toxic to liver tissue and was used in mice to induce an acute liver failure model, where it caused significantly increased expression of liver damage markers (ALT, AST-GOT) and necrosis on mouse liver. | — | — | hospital: alanine aminotransferase (ALT), and aspartate aminotransferase (AST-GOT) | [Choi 2021](https://pubmed.ncbi.nlm.nih.gov/34772451) |
+| Venous-occlusive disease of the liver | The paper reports that high exposure to bioactivated cyclophosphamide has been associated with the occurrence of venous-occlusive disease of the liver in patients receiving high-dose regimens, citing previous literature. | — | — | — | [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) |
+
+<details><summary>Evidence: hepatic toxicity (1)</summary>
+
+> “Mild to moderate hepatic toxicity (as evidenced by in- creased liver enzymes or bilirubin) was also identified in 13 patients (28%). Many of those affected had liver involvement with tumour. Neither the nausea/vomiting nor the hepatic toxicity were dose-related.” — [ODwyer 1993](https://pubmed.ncbi.nlm.nih.gov/8398704) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Liver injury (1)</summary>
+
+> “CTX is also toxic to the bone marrow and liver tissue [48]. Based on our previous work, we devised an improved acute liver failure model using 0.025 mg/g CTX and 0.08 mg/g TAA (Fig. 7a). ... Our studies showed that TAA with CTX-induced mice has significantly increased expression of the liver damage markers (ALT, AST-GOT), and successfully induced necrosis on mouse liver.” — [Choi 2021](https://pubmed.ncbi.nlm.nih.gov/34772451) <sub>(animal)</sub>
+
+</details>
+
+<details><summary>Evidence: Venous-occlusive disease of the liver (1)</summary>
+
+> “High exposure to bioactivated CPA was also reported to relate to the occurrence of venous-occlusive disease of the liver following high-dose CPA (de Jonge et al., 2006).” — [Ahmed 2020](https://pubmed.ncbi.nlm.nih.gov/32390827) <sub>(cohort)</sub>
+
+</details>
+
+### Musculoskeletal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Stomatitis | Stomatitis was reported in 2 patients (4.6%) as grade 1 and 0 patients (0%) as grade 2 or 3-4 in 43 patients with advanced castration-resistant prostate cancer treated with metronomic cyclophosphamide plus celecoxib and dexamethasone. | G1: 2 (4.6) | — | — | [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) |
+
+<details><summary>Evidence: stomatitis (1)</summary>
+
+> “Table 2. Toxicities of the metronomic cyclophosphamide plus celecoxib and dexamethasone schedule as graded by the National Cancer Institute-Common Terminology Criteria for Adverse Events version 4.03 (CTCAE v.4.03, 2010)” — [Orlandi 2013](https://pubmed.ncbi.nlm.nih.gov/23860526) <sub>(case report)</sub>
+
+</details>
+
+### Neoplasm
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Neurotoxicity | Cyclophosphamide is converted to 2-dechloroethylcyclophosphamide, which forms neurotoxic chloroacetaldehyde, a reaction that is of concern when cyclophosphamide is used with other neurotoxic agents. | — | MTX or vincristine; CYP3A4 activity | — | [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021), [Hedrich 2016](https://pubmed.ncbi.nlm.nih.gov/27709010), [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) |
+| Acute myelogenous leukemia | The paper states that acute myelogenous leukemia is the most common malignancy associated with the use of nitrogen mustards, noting that it is commonly preceded by myelodysplastic syndrome. | — | — | — | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) |
+
+<details><summary>Evidence: neurotoxicity (3)</summary>
+
+> “CP is also converted directly to 2-dechloroethylcyclophosphamide. Although this reaction represents around 10% of total CP conversion, it is significant because it forms neurotoxic chloroacetaldehyde and is catalyzed by CYP3A4, CYP3A5 and CYP2B6 which is of concern when CP is used with other neurotoxic agents such as MTX or vincristine [302].” — [Mlakar 2016](https://pubmed.ncbi.nlm.nih.gov/27618021) <sub>(review)</sub>
+
+> “Alternatively, CPA may be metabolized via N-dechloroethylation exclusively by CYP3A4 yielding a neurotoxic metabolite, chloroacetaldehyde, which contributes to the narrow therapeutic index of CPA159, 160.” — [Hedrich 2016](https://pubmed.ncbi.nlm.nih.gov/27709010) <sub>(review)</sub>
+
+> “In a minor pathway, CP is dechloro-acetylated by CYP3A4/A5, generating the neurotoxic chloro-acetaldehyde.” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(other)</sub>
+
+</details>
+
+<details><summary>Evidence: Acute myelogenous leukemia (1)</summary>
+
+> “Acute myelogenous leukemia (AML) is the most common malignancy associated with the use of the nitrogen mustards (Povirk and Shuker, 1994). AML is commonly preceded by myelodysplastic syndrome.” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+</details>
+
+### Nervous system
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Cognitive impairment | The paper states that in patients, chemotherapy can cause the phenomenon of postchemotherapy cognitive impairment ("chemobrain") with neurocognitive deficits such as impaired learning and memory, noting that cancer treatment can reduce the proliferation of neural stem cells, thereby reducing… | — | — | — | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) |
+| Encephalopathy | Ifosfamide can cause life-threatening encephalopathy, which is thought to be produced by a metabolite, probably CAA, that disrupts mitochondrial function in rats and is a significant urinary metabolite of ifosfamide in humans. | incidence after intravenous infusion is 10% but increases to 50% when ifosfamide is given orally | liver impairment; higher total dose; previous or concomitant cisplatin; advanced age | — | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) |
+
+<details><summary>Evidence: Cognitive impairment (1)</summary>
+
+> “In patients, chemotherapy can cause the phenomenon of postchemotherapy cognitive impairment ("chemobrain") with neurocognitive deficits such as impaired learning and memory. The hippocampus is important in memory formation and spacial processing. Adult hippocampal neurogenesis is involved in the control of mood and anxiety, and when this is decreased, the likelihood of depression and anxiety increases. Cancer…” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Encephalopathy (1)</summary>
+
+> “Ifosfamide can cause life-threatening encephalopathy, the cause of which has not yet been firmly identified. It is thought to be produced by a metabolite, probably CAA.” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(case report)</sub>
+
+</details>
+
+### Reproductive and foetal
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Atrophy of testicular seminiferous tubules | The paper states that these adverse effects, which include atrophy of testicular seminiferous tubules, severely threaten fertility in men of reproductive age treated with cyclophosphamide. | — | — | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+| Azoospermia | CTX may cause azoospermia in men of reproductive age, which severely threatens fertility. | — | — | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+| Gonadal toxicity | Cyclophosphamide treatment may result in gonadal toxicity, which is listed among partly severe side effects. | — | CYP2C19*2 carrier (CYP2C19 CYP2C19*2) | — | [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) |
+| Infertility | Nitrogen mustards can cause gonadal dysfunction in males and females, with males being more sensitive, and cyclophosphamide specifically causes premature ovarian failure and a reduction in healthy oocytes. | — | male; younger than 30 years; low cumulative dose (&lt;7 g); doses below 300 mg/kg | — | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) |
+| Male reproductive toxicity | The paper states that cyclophosphamide (CTX) is a cytotoxic alkylating agent that may cause toxic adverse effects in multiple organ systems, including the testes, leading to male infertility in men of reproductive age with cancer. | — | reproductive age | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+| Oligospermia | Oligospermia is reported as one of the adverse effects of cyclophosphamide that severely threatens fertility in men of reproductive age. | — | — | — | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+| Premature ovarian failure | The paper states that cyclophosphamide causes premature ovarian failure, reducing healthy oocytes, and reports that 30% to 50% of women with systemic lupus erythematosus (SLE) treated with monthly intravenous cyclophosphamide develop this condition. | Thirty to fifty percent | younger than 30 years; CYP2C19*2 allele (CYP2C19 *2) | laboratory: CYP2C19 | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) |
+| Spermatogonia shedding | Male mice in the CTX + Ecn group demonstrated disrupted testicular tissue structure, including spermatogonia shedding. | — | — | hospital: testicular tissue structure, seminiferous tubules | [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) |
+
+<details><summary>Evidence: Atrophy of testicular seminiferous tubules (1)</summary>
+
+> “These adverse effects comprise azoospermia, oligospermia, atrophy of testicular seminiferous tubules and decreased serum testosterone levels (Abarikwu et al. 2012; Gerres et al. 1998; Pectasides et al. 2009), which severely threatens fertility in men of reproductive age.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(case series)</sub>
+
+</details>
+
+<details><summary>Evidence: Azoospermia (1)</summary>
+
+> “These adverse effects comprise azoospermia, oligospermia, atrophy of testicular seminiferous tubules and decreased serum testosterone levels (Abarikwu et al. 2012; Gerres et al. 1998; Pectasides et al. 2009), which severely threatens fertility in men of reproductive age.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Gonadal toxicity (1)</summary>
+
+> “CP treatment may result in partly severe side effects such as anemia, leukocytopenia and thrombocytopenia, gonadal toxicity 5 and even development of secondary tumors. 6” — [Timm 2005](https://pubmed.ncbi.nlm.nih.gov/16116487) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Infertility (1)</summary>
+
+> “Infertility is one such issue. Nitrogen mustards can cause gonadal dysfunction in males and females, with the former being more sensitive.” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Male reproductive toxicity (1)</summary>
+
+> “CTX may cause toxic adverse effects in multiple organ systems, including the testes, leading to male infertility (Madondo et al. 2016). Particularly, it affects men of reproductive age with cancer by jeopardising their ability to conceive offspring.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(case report)</sub>
+
+</details>
+
+<details><summary>Evidence: Oligospermia (1)</summary>
+
+> “CTX—a common chemotherapy drug—effectively treats cancer but can produce some adverse effects, such as male reproductive toxicity. These adverse effects comprise azoospermia, oligospermia, atrophy of testicular seminiferous tubules and decreased serum testosterone levels (Abarikwu et al. 2012; Gerres et al. 1998; Pectasides et al. 2009), which severely threatens fertility in men of reproductive age.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Premature ovarian failure (1)</summary>
+
+> “Cyclophosphamide can cause premature ovarian failure and causes a reduction in healthy oocytes (Hickman and Gordon, 2011). Thirty to fifty percent of women with SLE treated with monthly intravenous cyclophosphamide develop ovarian failure.” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+</details>
+
+<details><summary>Evidence: Spermatogonia shedding (1)</summary>
+
+> “Compared with the Ecn group, the CTX + Ecn group demonstrated a significant decrease in sperm count and disrupted testicular tissue structure, including severe atrophy of the seminiferous tubules, and spermatogonia shedding.” — [Ding 2025](https://pubmed.ncbi.nlm.nih.gov/41070630) <sub>(in vitro)</sub>
+
+</details>
+
+### Skin
+
+| reaction | description | reported frequency | risk factors | how to watch | source papers |
+|---|---|---|---|---|---|
+| Alopecia | Alopecia occurs in almost all patients treated with nitrogen mustards, which include cyclophosphamide. | almost all | — | — | [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137), [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145), [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) |
+
+<details><summary>Evidence: Alopecia (3)</summary>
+
+> “Myelosuppression is a dose-limiting toxicity (DLT) of both cyclophosphamide and ifosfamide, and cardiac toxicity is dose limiting after the high doses of cyclophosphamide required before SCT. Nausea is common with these agents, and alopecia occurs in almost all patients.” — [Highley 2022](https://pubmed.ncbi.nlm.nih.gov/35710137) <sub>(review)</sub>
+
+> “Some of the most common side effects of cyclophosphamide are nausea, vomiting, thinning hair, and reversible alopecia.” — [Indrawijaya 2023](https://pubmed.ncbi.nlm.nih.gov/37915145) <sub>(review)</sub>
+
+> “Unlike other side effects (myelosuppression, dysuria, nausea, vomiting, alopecia, cardiotoxicity, hypersensitivity, immunosuppression) that can also be caused by other anticancer substances, hemorrhagic cystitis is a severe side effect caused especially by the oxazophosphoric drug class, namely CP and ifosfamide, to be precise by the urotoxic metabolite acrolein.” — [Hasanah 2021](https://pubmed.ncbi.nlm.nih.gov/33536743) <sub>(review)</sub>
+
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=cyclophosphamide).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `CYP3A5` metabolism/substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` substrate, `CYP2B6` inducer/metabolism/substrate, `CYP2C19` metabolism/substrate, `CYP2C8` inducer/substrate, `CYP2C9` safety_allele/substrate, `CYP3A4` inducer/substrate, `CYP3A5` metabolism/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` metabolism/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CYP2C18 (substrate), DNA (cross-linking/alkylation), NR1I2 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 16:58 | 34:33 | 9/5/0 | 1/0/0 | 2/0/8 | 1,845,486/78,115 | einfracz / qwen3.8-27b | 66 | 12/50 | 62/4 | 1 |
+
+## Coverage
+
+- **PubMed hits:** 2272 matched, 224 returned
+- **screened:** 6  ·  **relevant:** 6
+- **records:** 14  ·  extracted 6  ·  needs review 3  ·  rejected 5  ·  stale 2
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Cohen_1971.pdf` | Cohen JL et al., Pharmacokinetics of cyclophosphamide in…, British journal of pharmaco… (1971) | popPK | 10 | [10.1111/j.1476-5381.1971.tb07199.x](https://doi.org/10.1111/j.1476-5381.1971.tb07199.x) | [5157730](https://pubmed.ncbi.nlm.nih.gov/5157730) | The study reports quantitative PK parameters (t1/2, renal clearance, fraction metabolized) for cyclophosphamide in humans, though total systemic clearance and volume of distribution are not explicitly provided. |
+| `Erlichman_1988.pdf` | Erlichman C et al., Disposition of cyclophosphamide on two…, Arzneimittel-Forschung (1988) | popPK | 10 |  | [3178926](https://pubmed.ncbi.nlm.nih.gov/3178926) | The text explicitly reports quantitative disposition parameters (clearance, volume of distribution, half-life) for cyclophosphamide in a 2-compartment model. |
+| `Iliopoulou_2021.pdf` | Iliopoulou VN et al., Population pharmacokinetics of cyclopho…, The Journal of pharmacy and… (2021) | popPK | 10 | [10.1093/jpp/rgab135](https://doi.org/10.1093/jpp/rgab135) | [34480477](https://pubmed.ncbi.nlm.nih.gov/34480477) | The evidence explicitly reports quantitative population pharmacokinetic parameters (clearance, volume, elimination rate) for cyclophosphamide and its metabolite. |
+| `de_2005.pdf` | de Jonge ME et al., Aprepitant inhibits cyclophosphamide bi…, Cancer chemotherapy and pha… (2005) | popPK | 6 | [10.1007/s00280-005-1005-4](https://doi.org/10.1007/s00280-005-1005-4) | [15838656](https://pubmed.ncbi.nlm.nih.gov/15838656) | The study reports population pharmacokinetic analysis but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only qualitative changes and IC50 values. |
+
+<sub>queue written 2026-10-07 16:42 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Aapro_2010 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions between aprepitant and cyclophosphamide, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK/PD parameters. |
+| popPK | Abdelraouf_2017 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of tedizolid, and cyclophosphamide is only used as a model inducer (immunomodulator) in mice, with no PK parameters reported for it. |
+| popPK | Altynova_2026 | irrelevant | 0 | 0 | The paper is a review on AI and precision dosing for immunosuppressants (tacrolimus, cyclosporine, mycophenolate) in kidney transplantation and does not report pharmacokinetic parameters for cyclophosphamide. |
+| popPK | Bagacean_2019 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for rituximab, not cyclophosphamide, which is only mentioned as a co-administered chemotherapy agent. |
+| popPK | Balevic_2023 | irrelevant | 1 | 0 | This is an exposure-response efficacy study which explicitly states that data for cyclophosphamide were insufficient to characterize the relationship, and no specific quantitative PK parameters (CL, V, etc.) are reported in the text. |
+| PGx | Bergh_2005 | not_relevant | 0 | 0 | The paper is a review discussing the general need for tailored chemotherapy and mentions that SNP technology may be important, but it does not report specific pharmacogenomic findings or data linking gene variants to cyclophosphamide PK/PD parameters. |
+| popPK | Białk-Bielińska_2017 | irrelevant | 0 | 0 | The study is an aquatic ecotoxicology assessment measuring toxicity endpoints (EC50/LC50) in organisms like daphnia and algae, not a pharmacokinetic study reporting disposition parameters (CL, V, ka) for cyclophosphamide. |
+| popPK | Blasco_2009 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of rituximab; cyclophosphamide is only a co-administered agent in the CHOP regimen, and no PK parameters for cyclophosphamide are reported. |
+| PGx | Boddy_1992 | not_relevant | 4 | 10 | The study reports phenotypic variation in cyclophosphamide PK (metabolite excretion) and suggests a potential ALDH polymorphism, but it does not perform genotyping or establish a direct gene-variant to PK/PD effect. |
+| popPK | Boddy_1995 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of ifosfamide (an analogue), and while cyclophosphamide is mentioned in the introduction, no quantitative PK parameters are provided for cyclophosphamide itself. |
+| PGx | Cao_2020 | not_relevant | 3 | 5 | The paper investigates the prognostic impact of B-vitamin levels and one-carbon metabolism SNPs on disease outcomes (PFS/OS) in DLBCL, rather than how genetic variants alter the pharmacokinetics or pharmacodynamics of cyclophosphamide itself. |
+| popPK | Cao_2025 | irrelevant | 0 | 0 | The study focuses exclusively on the pharmacokinetics of busulfan, not cyclophosphamide. |
+| PGx | Chang_1993 | not_relevant | 2 | 2 | The paper identifies the specific CYP enzymes (CYP2B6, CYP3A4) responsible for cyclophosphamide activation but does not report how genetic variants or genotypes in these enzymes alter PK or PD parameters in patients. |
+| PGx | Chang_2006 | not_relevant | 1 | 0 | The paper describes a laboratory method for measuring CYP2B6 activity in liver microsomes and does not report in vivo pharmacogenomic effects on cyclophosphamide PK or PD parameters. |
+| PGx | Chen_2021 | not_relevant | 0 | 0 | The study investigates the effect of a herbal supplement (ginseng saponins) on cyclophosphamide PK and toxicity, not a genetic variant or genotype. |
+| PGx | Choi_2021 | not_relevant | 0 | 0 | The study focuses on the differentiation of stem cells into hepatic progenitor cells; cyclophosphamide is used only to induce a liver failure model in mice, and no pharmacogenomic effects on PK/PD parameters are reported. |
+| PGx | Cole_1989 | not_relevant | 0 | 0 | The paper uses cyclophosphamide to immunocompromise mice and study fungal infections, rather than investigating how genetic variants affect the pharmacokinetics or pharmacodynamics of the drug. |
+| PGx | Cole_1990 | not_relevant | 0 | 0 | The paper uses cyclophosphamide to induce immunosuppression in a mouse model to study candidiasis, but it does not report any pharmacogenomic effects on the PK or PD parameters of cyclophosphamide itself. |
+| PGx | Crofton-Sleigh_1993 | not_relevant | 0 | 0 | The paper validates a cell line for genotoxicity testing using cyclophosphamide but does not report pharmacogenomic effects on PK or PD parameters. |
+| popPK | Dassprakash_2012 | irrelevant | 0 | 0 | The study evaluates the antioxidant properties of Punica granatum leaf extract, using cyclophosphamide only as a genotoxin to induce DNA damage, not as a subject for pharmacokinetic analysis. |
+| popPK | Deng_2024 | irrelevant | 0 | 0 | The study analyzes the population pharmacokinetics of polatuzumab vedotin, with cyclophosphamide only mentioned as a co-administered component of the R-CHP regimen. |
+| PD | Deng_2024 | not_relevant | 0 | 0 | The paper analyzes the exposure-response relationship for polatuzumab vedotin, not cyclophosphamide, and does not report numeric PD parameters for cyclophosphamide. |
+| PGx | Di_2009 | not_relevant | 2 | 0 | The paper is a general review of CYP2A6 biology and polymorphisms; it lists cyclophosphamide as a substrate but does not report specific pharmacogenomic data linking CYP2A6 genotypes to cyclophosphamide PK/PD parameters. |
+| PGx | Ding_2025 | not_relevant | 0 | 0 | The study investigates how gut bacterial genetic variation (E. coli mutants) mitigates cyclophosphamide-induced toxicity; it does not report how host human genetic variants or genotypes affect the PK or PD parameters of cyclophosphamide. |
+| popPK | Dunlap_2025 | irrelevant | 0 | 0 | The study is a population pharmacokinetic model for tacrolimus, not cyclophosphamide. |
+| PGx | Dutz_1998 | not_relevant | 0 | 0 | The paper is a general review of immunosuppressive agents in dermatology and mentions genetic polymorphisms only in the context of azathioprine, without discussing pharmacogenomics for cyclophosphamide. |
+| PGx | Ekhart_2008 | not_relevant | 8 | 5 | The study investigated the impact of gene variants on PK parameters but concluded that no effect could be demonstrated. |
+| PGx | Ekhart_2009 | not_relevant | 1 | 0 | The paper investigates pharmacogenomics for thiotepa, not cyclophosphamide. |
+| PGx | Ellard_1991 | not_relevant | 0 | 0 | The paper describes in vitro genotoxicity assays using engineered cell lines to study CYP-mediated bioactivation of cyclophosphamide, but it does not report in vivo pharmacokinetic or pharmacodynamic parameters in humans or patients. |
+| PGx | Ellard_1993 | not_relevant | 0 | 0 | The paper is an in vitro genotoxicity study focusing on the bioactivation of cyclophosphamide by specific CYP450 enzymes in cell lines, and does not report pharmacokinetic or pharmacodynamic parameters in a clinical pharmacogenomic context. |
+| popPK | Engin_2021 | irrelevant | 0 | 0 | The study focuses on histopathology and muscle contractility in a cystitis model and cytotoxicity in vitro, containing no pharmacokinetic parameters for cyclophosphamide. |
+| popPK | Erlichman_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cisplatin in patients receiving a regimen that includes cyclophosphamide, but cyclophosphamide is only a co-administered comparator and its PK parameters are not reported. |
+| popPK | Ferro_1993 | irrelevant | 0 | 0 | This is a mechanistic pulmonary physiology study using cyclophosphamide only as an immunosuppressant to deplete neutrophils; no pharmacokinetic parameters for cyclophosphamide are reported. |
+| popPK | Figat_2021 | irrelevant | 0 | 0 | The study is an in vitro cytotoxicity and genotoxicity assessment where cyclophosphamide is used only as a positive control genotoxin, not as the subject of pharmacokinetic analysis. |
+| popPK | Friberg_2010 | irrelevant | 2 | 0 | The study focuses on a semi-physiological model of myelosuppression (toxicity) in rats, using cyclophosphamide only as one of six drugs, and does not report quantitative PK parameter values for the drug itself. |
+| popPK | Fromage_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for mycophenolic acid (MPA) from enteric-coated mycophenolate sodium, not for cyclophosphamide. |
+| PGx | Fu_2015 | not_relevant | 0 | 0 | The paper focuses on the anticancer mechanism of cajanin stilbene acid and does not report pharmacogenomic effects on cyclophosphamide PK or PD. |
+| PGx | Gao_2020 | not_relevant | 0 | 0 | The paper reports gene expression modules associated with overall survival in DLBCL, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of cyclophosphamide. |
+| PGx | Gauntt_1979 | not_relevant | 0 | 0 | The paper investigates the pathogenesis of Coxsackievirus B3-induced myocarditis in mice and uses cyclophosphamide only as an immunosuppressive treatment to modify disease susceptibility, not to analyze pharmacokinetic or pharmacodynamic parameters influenced by genetic variants. |
+| popPK | Gawarammana_2011 | irrelevant | 0 | 0 | The paper is a review of paraquat poisoning, and cyclophosphamide is only mentioned as a co-administered immunosuppressant without any pharmacokinetic data for it. |
+| PGx | Gervot_1999 | not_relevant | 0 | 0 | The paper describes the cloning and expression of the CYP2B6 gene and its general induction by phenobarbital/cyclophosphamide, but does not report on specific human gene variants/genotypes or their effects on the PK/PD parameters of cyclophosphamide. |
+| popPK | Ghazal_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Antithymocyte Globulin (ATG), not cyclophosphamide. |
+| popPK | Giglio_2005 | irrelevant | 0 | 0 | The study investigates the pathophysiology of muscarinic receptors in cystitis induced by cyclophosphamide in rats, rather than measuring the pharmacokinetic disposition parameters of the drug itself. |
+| PGx | Glynn_2009 | not_relevant | 4 | 3 | The study reports a clinical outcome (surival/hazard ratio) linked to a polymorphism, rather than a direct pharmacokinetic (e.g., AUC, clearance) or pharmacodynamic (e.g., receptor binding, gene expression) parameter. |
+| popPK | Goldfarb_2021 | irrelevant | 0 | 0 | The study measures ovarian reserve (AMH) in breast cancer patients treated with chemotherapy regimens containing cyclophosphamide, but does not report any pharmacokinetic parameters for cyclophosphamide. |
+| popPK | Grung_2008 | irrelevant | 0 | 0 | The study is an environmental risk assessment focusing on environmental concentrations and toxicity, not pharmacokinetic disposition parameters. |
+| popPK | Hansen_2026 | irrelevant | 0 | 0 | The study is a standardized mouse pneumonia model for antibiotic efficacy, where cyclophosphamide is used solely as an agent to induce neutropenia, with no pharmacokinetic parameters reported for it. |
+| popPK | Hansson_2010 | irrelevant | 0 | 0 | The study models chemotherapy-induced myelosuppression (pharmacodynamics) rather than the pharmacokinetics of cyclophosphamide. |
+| PGx | Hasanah_2021 | not_relevant | 3 | 0 | This is a phenotyping study that categorizes metabolic rates (UM vs PM) based on observed drug levels (bioactivity ratio) without measuring specific gene variants or demonstrating a genotype-dependent effect size. |
+| popPK | He_2011 | irrelevant | 0 | 0 | This is an anesthetic efficacy study measuring EC50 of propofol and etomidate; cyclophosphamide is merely a component of a chemotherapy regimen and no PK parameters for it are reported. |
+| PGx | Hedrich_2016 | not_relevant | 7 | 0 | Review discusses CYP2B6 variants and cyclophosphamide, but only reports conflicting or clinical outcome associations (e.g., poor response to therapy, relapse rates) rather than specific quantitative pharmacokinetic (PK) parameter changes (e.g., AUC, Cmax, clearance). |
+| PGx | Helsby_2021 | not_relevant | 5 | 2 | The text is supplementary information containing only primer sequences, allele frequencies, and figure captions; it does not contain the actual results, quantitative effect sizes, or fitted PK/PD parameters. |
+| popPK | Henner_1986 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for carmustine (BCNU), not for cyclophosphamide, which is only mentioned as a co-administered drug. |
+| popPK | Hernández-Gago_2026 | irrelevant | 0 | 0 | The paper is a systematic review of high-alert medications in obese pediatric patients and does not report pharmacokinetic parameters for cyclophosphamide. |
+| PGx | Highley_2022 | not_relevant | 1 | 2 | This is a general review of nitrogen mustards that mentions polymorphisms exist but does not report specific studies or quantitative data on how gene variants alter PK/PD parameters. |
+| popPK | Holthuis_1985 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters exclusively for etoposide, while cyclophosphamide is only listed as a co-administered drug without any disposition data. |
+| PGx | Hsu_2015 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of voriconazole (autoinduction) and mentions cyclophosphamide only as part of the patient's history, without reporting a pharmacogenomic effect of cyclophosphamide. |
+| popPK | Huang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, not cyclophosphamide (which is only mentioned as part of the conditioning regimen name). |
+| PGx | Indrawijaya_2023 | not_relevant | 2 | 1 | The paper is a narrative review mapping SNP prevalence in Indonesia and discussing known associations qualitatively, but it does not report new quantitative pharmacogenomic data on PK/PD parameters. |
+| PGx | Innocenti_2002 | not_relevant | 0 | 0 | The paper is a general review mentioning MTHFR in the context of toxicity to a regimen containing cyclophosphamide, but it does not report specific pharmacokinetic or pharmacodynamic parameter changes for cyclophosphamide itself. |
+| PGx | Iorio_1987 | not_relevant | 0 | 0 | The paper investigates tumor resistance mechanisms and does not report how a gene variant affects the pharmacokinetics or pharmacodynamics of cyclophosphamide. |
+| popPK | Ishida_1982 | irrelevant | 0 | 0 | The study reports EC50 values for cytotoxicity in cell lines, which is an in-vitro toxicology/genetics assay, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Jones_1986 | not_relevant | 0 | 0 | The paper investigates the effects of cyclophosphamide on trypanosoma infection in mice without reporting any pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Jones_1993 | irrelevant | 2 | 0 | The study is a review/abstract discussing general PK interactions and toxicity correlations without providing specific quantitative parameter values for cyclophosphamide. |
+| popPK | Jones_2013 | irrelevant | 0 | 0 | The study focuses on DCE-MRI imaging biomarkers (percent enhancement and signal enhancement ratio) for breast cancer stroma, not the pharmacokinetic parameters (clearance, volume, half-life) of cyclophosphamide. |
+| PGx | Katayama_2016 | not_relevant | 0 | 0 | The paper investigates P-glycoprotein mediated resistance to ceritinib and other ALK inhibitors in lung cancer, but does not report pharmacogenomic effects on the PK or PD parameters of cyclophosphamide. |
+| PGx | Kato_1990 | not_relevant | 1 | 0 | The paper mentions P-450 human-2 catalyzes cyclophosphamide oxidation in a general capacity but does not report a specific pharmacogenomic effect (e.g., genotype-linked change in PK/PD parameter) for cyclophosphamide. |
+| PGx | Kellie_1988 | not_relevant | 0 | 0 | The paper reports clinical response to ifosfamide in neuroblastoma, with no mention of pharmacogenomics or PK/PD analysis for cyclophosphamide. |
+| PGx | Khrunin_2014 | not_relevant | 0 | 0 | The paper focuses on cisplatin-based chemotherapy outcomes in ovarian cancer, specifically regarding DNA repair and toxicity genes, and does not report pharmacogenomic effects on PK or PD parameters of cyclophosphamide. |
+| PGx | Kim_2021 | not_relevant | 2 | 0 | The paper is a general discussion introducing the concept that genetic variations influence chemotherapy sensitivity and PK, but it does not report specific gene-variant effects on PK/PD parameters for cyclophosphamide. |
+| PGx | Kirchheiner_2003 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of bupropion, not cyclophosphamide. |
+| popPK | Kuo_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of fludarabine, and cyclophosphamide is only mentioned as a concomitant medication. |
+| popPK | Lagache_2026 | irrelevant | 0 | 0 | The paper is a spatial proteomics and drug sensitivity study in breast cancer tumoroids and does not report any pharmacokinetic parameters for cyclophosphamide. |
+| popPK | Ledzewicz_2015 | irrelevant | 0 | 0 | This is a mathematical modeling paper on tumor dynamics and chemotherapy scheduling, not a pharmacokinetic study; it explicitly states it does not include a standard pharmacokinetic model. |
+| popPK | Li_2012 | irrelevant | 2 | 0 | The primary subject is rituximab PK, and the text explicitly states that cyclophosphamide disposition showed no change but provides no quantitative cyclophosphamide PK parameters. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | The study is an ecotoxicology paper focusing on the toxicity and developmental effects of cyclophosphamide in zebrafish, reporting no pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Liang_2016 | irrelevant | 0 | 0 | The study models doxorubicin PK-PD and NT-proBNP response; cyclophosphamide was co-administered but no parameters for it were reported. |
+| popPK | Liang_2019 | irrelevant | 0 | 0 | The paper focuses on a mechanism of action (sensitization via hCAR/CYP2B6 induction) and cytotoxicity, not on the quantitative pharmacokinetic parameters (CL, V, t1/2) of cyclophosphamide. |
+| popPK | Liu_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rituximab, with cyclophosphamide being only a co-administered chemotherapy agent in the R-CHOP regimen. |
+| popPK | Louie_2013 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of meropenem and tobramycin in mice, with cyclophosphamide used only as a tool to induce neutropenia, not as the subject drug. |
+| popPK | Luo_2022 | irrelevant | 0 | 0 | The study analyzes the population pharmacokinetics of daratumumab, while cyclophosphamide is only mentioned as a co-administered background therapy. |
+| PD | Luo_2022 | not_relevant | 0 | 0 | The paper reports population PK and exposure-response modeling for daratumumab, not cyclophosphamide. |
+| popPK | Machado_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for carboplatin, while cyclophosphamide is used only as a co-administered agent in a metronomic regimen without its own PK analysis. |
+| popPK | Maher_2023 | irrelevant | 0 | 0 | The study is a clinical efficacy trial comparing rituximab and cyclophosphamide for interstitial lung disease, with no pharmacokinetic parameters reported. |
+| popPK | Mc_2026 | irrelevant | 0 | 0 | The paper focuses on the population pharmacokinetics of CAR-T cell therapies (axicabtagene ciloleucel and brexucabtagene autoleucel), with cyclophosphamide mentioned only as a lymphodepletion agent and no PK parameters reported for it. |
+| PGx | Mlakar_2016 | not_relevant | 0 | 0 | The paper is a review focused on thiopurines, cisplatin, and other pediatric oncology drugs, but does not report pharmacogenomic effects on cyclophosphamide. |
+| PGx | Mohanan_2017 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect on fludarabine (F-araA) PK, not cyclophosphamide. |
+| popPK | Mulder_1989 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for mitoxantrone, while cyclophosphamide is only mentioned as part of the chemotherapy regimen without any PK data. |
+| popPK | Mythili_2006 | irrelevant | 0 | 0 | The study investigates cardiotoxicity and myofilament calcium sensitivity, not the pharmacokinetic parameters (clearance, volume, etc.) of cyclophosphamide. |
+| PGx | Nademanee_1995 | not_relevant | 0 | 0 | The paper focuses on HLA matching for donor selection and GVHD outcomes in bone marrow transplantation, not on how gene variants affect the pharmacokinetics or pharmacodynamics of cyclophosphamide. |
+| PGx | Nakamura_2003 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of the drug in patients with a specific SAA genotype (risk factor for disease), but does not report changes in pharmacokinetic (e.g., AUC, Cmax) or direct pharmacodynamic parameters of cyclophosphamide based on genotype. |
+| popPK | Nawa_2008 | irrelevant | 0 | 0 | The paper is a review discussing a prodrug of paclitaxel (TAX-2'-Et) for ovarian cancer, and cyclophosphamide is only mentioned as a context for other GDEPT strategies without providing any PK data. |
+| PGx | Nayagom_2019 | not_relevant | 0 | 0 | The paper studies the mechanism of immunogenic cell death induced by a suicide gene (CYP2B6*) and cyclophosphamide, but does not report pharmacogenomic effects of gene variants on PK/PD parameters of the drug. |
+| PGx | Nofal_2015 | not_relevant | 0 | 0 | The paper is a case report on a skin condition treated with cyclophosphamide and contains no pharmacogenomic data. |
+| popPK | ODwyer_1993 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for SR2508, while cyclophosphamide is only a co-administered comparator drug whose own disposition parameters are not measured or reported. |
+| PGx | Oesch-Bartlmowicz_2004 | not_relevant | 0 | 0 | The paper discusses the modulation of mutagenicity by enzyme phosphorylation, not genetic variants. |
+| popPK | Olivo_2024 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for methotrexate, not cyclophosphamide. |
+| PGx | Orlandi_2013 | not_relevant | 2 | 5 | The study reports an association between VEGF-A genotypes and clinical survival outcomes (PFS/OS), but does not report changes in pharmacokinetic parameters (e.g., Cmax, AUC, clearance) or specific pharmacodynamic biomarkers (e.g., drug receptor occupancy, enzyme activity) of cyclophosphamide itself. |
+| popPK | Pan_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of rituximab, and cyclophosphamide is only mentioned as a comedication affecting B-cell depletion, with no PK parameters for cyclophosphamide reported. |
+| PGx | Pearce_1994 | not_relevant | 0 | 0 | The paper discusses the role of T-cells in viral clearance and uses cyclophosphamide as an immunosuppressant tool in a mouse model, but it does not investigate how any gene variant affects the pharmacokinetic or pharmacodynamic parameters of cyclophosphamide. |
+| popPK | Penning_2009 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study of a PARP inhibitor (ABT-888) where cyclophosphamide is used only as a comparator drug in an efficacy model, with no PK parameters reported. |
+| PGx | Pinto_2009 | not_relevant | 4 | 2 | The text is a review introduction discussing the general role of genetics in cyclophosphamide toxicity/response, but it does not report specific quantitative findings, parameter changes, or data for a particular variant in this excerpt. |
+| popPK | Przepiorka_1995 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for thioTEPA and its metabolite TEPA; cyclophosphamide is only listed as a co-administered drug in the myeloablative regimen. |
+| PGx | Pukhalsky_1990 | not_relevant | 5 | 5 | The paper compares different mouse strains (genotypes) but does not report a specific human gene variant or SNP effect, which is typically required for a pharmacogenomic relevance score in this context. |
+| popPK | Radulescu_2007 | irrelevant | 0 | 0 | This is a clinical study of myocardial function (cardiovascular toxicity) using echocardiography, not a pharmacokinetic study of cyclophosphamide. |
+| PGx | Reinbolt_2016 | not_relevant | 0 | 0 | The paper studies gene variants affecting the pharmacodynamics (cardiotoxicity) of anthracyclines, not cyclophosphamide. |
+| PGx | Rengasamy_2017 | not_relevant | 0 | 0 | The paper is a review of teratogenic effects and congenital malformations, not a study of pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Roganović_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for Cyclosporine A (CsA), not cyclophosphamide. |
+| PGx | Rossi_2017 | not_relevant | 0 | 0 | The study focuses on using liquid biopsy (cfDNA) for tumor genotyping and monitoring treatment response in DLBCL, rather than pharmacogenomics of cyclophosphamide PK/PD. |
+| popPK | Rousseau_2002 | irrelevant | 1 | 0 | The paper is a review article discussing therapeutic drug monitoring tools and mentions cyclophosphamide only as an example where regression models have been developed, without providing any original quantitative pharmacokinetic parameter values. |
+| popPK | Russo_2018 | irrelevant | 0 | 0 | The study focuses on ecotoxicity (LC50/EC50) in aquatic organisms, not pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| popPK | Sabran_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of apoptosis and cell cycle arrest where cyclophosphamide is used only as a positive control agent, not a subject of pharmacokinetic analysis. |
+| popPK | Samineni_2022 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for venetoclax, not cyclophosphamide, which is only mentioned as part of the R-CHOP chemotherapy regimen. |
+| popPK | Saporta_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for meropenem, while cyclophosphamide is used only as an immunosuppressant to induce neutropenia in mice and is not the subject of PK analysis. |
+| popPK | Schroyen_2022 | irrelevant | 0 | 0 | This is a neuroimaging (FDG-PET) study of cerebral glucose metabolism changes after chemotherapy; it does not report pharmacokinetic parameters for cyclophosphamide. |
+| PGx | Seigers_2016 | not_relevant | 0 | 0 | The paper investigates the neurobiological effects of chemotherapy in mice, not the impact of gene variants on the pharmacokinetic or pharmacodynamic parameters of cyclophosphamide. |
+| popPK | Shemesh_2020 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for polatuzumab vedotin (acMMAE and unconjugated MMAE); cyclophosphamide is only a co-administered comparator agent with no quantitative PK values reported for it. |
+| popPK | Sidwell_2002 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of peramivir (an influenza neuraminidase inhibitor), with cyclophosphamide used only as an immunosuppressant agent in mice. |
+| popPK | Slott_1987 | irrelevant | 0 | 0 | The study is an in-vitro embryotoxicity investigation assessing the effects of cyclophosphamide metabolites on rat embryos, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Smith_1993 | not_relevant | 0 | 0 | The study focuses on myeloablative radiation and conditioning regimens in swine, reporting no pharmacogenomic data or genetic influences on cyclophosphamide PK/PD. |
+| PGx | Stoenner_1982 | not_relevant | 0 | 0 | The paper investigates the serology and antigenic variation of Borrelia hermsii in mice and uses cyclophosphamide only for immunosuppression, providing no pharmacogenomic or pharmacokinetic analysis. |
+| popPK | Stute_1992 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for recombinant human granulocyte colony-stimulating factor (rG-CSF), not cyclophosphamide, which is only listed as a co-administered chemotherapy agent. |
+| PGx | Suh_2008 | not_relevant | 0 | 0 | The paper is a review of Bortezomib in MCL and mentions cyclophosphamide only as part of standard chemotherapy regimens without reporting any pharmacogenomic effects on its PK or PD. |
+| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic models for 5-fluorouracil (5-FU), not cyclophosphamide. |
+| popPK | Sánchez-Salinas_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of fludarabine in the context of CAR T-cell therapy, with cyclophosphamide mentioned only as a co-administered agent in the lymphodepletion regimen. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, mentioning cyclophosphamide only as a co-administered conditioning agent in a referenced study, without reporting any PK parameters for cyclophosphamide. |
+| popPK | Tashkin_2016 | irrelevant | 0 | 0 | This is a clinical trial evaluating the efficacy and safety of treatments for scleroderma, not a pharmacokinetic study reporting quantitative disposition parameters for cyclophosphamide. |
+| PGx | Testoni_2015 | not_relevant | 0 | 0 | This is a general review of genetic lesions in lymphoma, not a pharmacogenomic study. |
+| popPK | Tsyplakova_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mycophenolic acid (MPA), not cyclophosphamide. |
+| popPK | Varela-González-Aller_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of fludarabine, with cyclophosphamide mentioned only as a co-administered agent without any PK parameters reported for it. |
+| popPK | Volkmann_2016 | irrelevant | 0 | 0 | The study focuses on CXCL4 biomarkers in systemic sclerosis-ILD patients treated with cyclophosphamide or mycophenolate, reporting lung function changes (FVC) and biomarker levels, but contains no pharmacokinetic parameters (CL, V, ka) for cyclophosphamide. |
+| PGx | Vulsteke_2015 | not_relevant | 1 | 1 | The study investigates epirubicin-induced cardiotoxicity and reports an association with ABCC1, but does not report pharmacogenomic effects on the PK or PD of cyclophosphamide. |
+| popPK | Wagstaff_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of tacrolimus, not cyclophosphamide. |
+| popPK | Wan_2013 | irrelevant | 0 | 0 | The study focuses on the immunomodulating mechanisms of astragalosides using cyclophosphamide only as an immunosuppressant to create a disease model, reporting no pharmacokinetic parameters for cyclophosphamide. |
+| PGx | Warr_2012 | not_relevant | 0 | 0 | The paper discusses antiemetic management and notes that aprepitant does not affect cyclophosphamide pharmacokinetics, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Wasser_2004 | irrelevant | 0 | 0 | The study is a diagnostic imaging study (dynamic MRI) for monitoring multiple myeloma treatment, not a pharmacokinetic study of cyclophosphamide. |
+| popPK | Watanabe_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of teicoplanin, using cyclophosphamide only as an agent to induce neutropenia in the animal model. |
+| popPK | Weigt_2011 | irrelevant | 0 | 0 | The study is a teratogenicity assay focusing on developmental toxicity (LC50/EC50) rather than pharmacokinetic disposition parameters for cyclophosphamide. |
+| PGx | Wilde_2007 | not_relevant | 5 | 2 | The study mentions CYP3A4 as a metabolic pathway and suggests phenotyping in future studies, but it does not present data or results showing how a specific gene variant/genotype alters PK parameters. |
+| popPK | Xie_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for midazolam and its metabolite 1-hydroxymidazolam, not for cyclophosphamide. |
+| popPK | Xu_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan (BU), with cyclophosphamide only mentioned as a potential co-administered drug in the conditioning regimen. |
+| popPK | Xu_2026 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for vancomycin, not cyclophosphamide. |
+| popPK | Yang_2015 | irrelevant | 1 | 0 | The paper is a review of PK modeling for SLE therapies and does not provide original quantitative PK parameters for cyclophosphamide in the extracted evidence. |
+| popPK | Yang_2023 | irrelevant | 0 | 0 | The study concerns pharmacokinetic parameters for ganciclovir and valganciclovir, not cyclophosphamide. |
+| popPK | Yao_2025 | irrelevant | 0 | 0 | The paper is a bibliometric analysis of population pharmacokinetic modeling research and does not contain original pharmacokinetic data or parameters for cyclophosphamide. |
+| PGx | Yap_2015 | not_relevant | 0 | 0 | The text is a general review of treatment issues in Asia and mentions pharmacogenomics only in a broad context without reporting specific gene-variant effects on cyclophosphamide PK/PD. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for nirmatrelvir, not cyclophosphamide. |
+| popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper is a network meta-analysis of clinical efficacy and safety for peripheral T-cell lymphoma regimens, not a pharmacokinetic study, and contains no PK parameters for cyclophosphamide. |
+| popPK | Zhenyan_2026 | irrelevant | 0 | 0 | The paper is a systematic review of rituximab pharmacokinetics and contains no data or parameters for cyclophosphamide. |
+| popPK | Zhou_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rituximab, not cyclophosphamide, which is only mentioned as a component of the chemotherapy regimen. |
+| PGx | Zhu_2024 | not_relevant | 0 | 0 | The paper uses cyclophosphamide to induce a disease model to test a traditional Chinese medicine formula, but does not report any pharmacogenomic effects on cyclophosphamide's PK or PD parameters. |
+| popPK | de-Carvalho_2022 | irrelevant | 0 | 0 | The study is an ecotoxicological developmental toxicity assay in freshwater snails, not a pharmacokinetic study, and contains no PK parameters. |
+| popPK | de_2005 | irrelevant | 6 | 0 | The study reports population pharmacokinetic analysis but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only qualitative changes and IC50 values. |
+| PGx | de_2019 | not_relevant | 0 | 0 | The study examines the effect of a plant extract on cyclophosphamide-induced genotoxicity, but it does not measure pharmacokinetic parameters (e.g., AUC, clearance) or investigate genetic variants/genotypes. |
+| PGx | van_2005 | not_relevant | 0 | 0 | The text is an introductory abstract that mentions CYP2B6 and cyclophosphamide as a potential application but does not report specific gene variants, genotypes, or quantitative changes in PK/PD parameters. |
+| PGx | van_2008 | not_relevant | 5 | 1 | The paper is a general review of CYP450 pharmacogenetics in cancer therapy and mentions cyclophosphamide but does not report specific quantitative changes to PK or PD parameters associated with specific genotypes. |
+| PGx | van_2015 | not_relevant | 0 | 0 | The study analyzes the impact of gender (phenotype) on treatment efficacy and toxicity, but does not report pharmacogenomic data (gene variants) or specific PK/PD parameters linked to genetics. |
+| popPK | Česen_2016 | irrelevant | 0 | 0 | The study focuses on ecotoxicity and genotoxicity in aquatic organisms and bacteria, not pharmacokinetic parameters. |
+| popPK | Świerczek_2024 | irrelevant | 0 | 0 | The paper is a review of pharmacometrics in autoimmune diseases and mentions cyclophosphamide only as a drug used in SLE treatment without providing any quantitative PK parameters for it. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcyclophosphamide%5D&body=Drug%3A%20cyclophosphamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cyclophosphamide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 16:43 UTC</sub>

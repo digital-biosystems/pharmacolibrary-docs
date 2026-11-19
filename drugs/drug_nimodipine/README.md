@@ -1,0 +1,154 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nimodipine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nimodipine_Foucher2025_reference&quot;,&quot;label&quot;:&quot;Foucher_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+
+# nimodipine
+
+- **generic name:** nimodipine
+- **ATC codes:** `C08CA06`
+- **DrugBank:** [DB00393](https://go.drugbank.com/drugs/DB00393) · **PubChem:** [CID 4497](https://pubchem.ncbi.nlm.nih.gov/compound/4497)
+- **molar mass:** 418.4403 g/mol (C21H26N2O7) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Nimodipine is a calcium channel blocker used to prevent vasospasm following subarachnoid hemorrhage. It is administered orally or intravenously, with good absorption from the mouth. It is in use in the United States and Germany.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q421429](https://www.wikidata.org/wiki/Q421429), [Wikipedia](https://en.wikipedia.org/wiki/Nimodipine?oldid=1350628279) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| nimodipine | parent | 418.44 | C21H26N2O7 | DrugBank | [4497](https://pubchem.ncbi.nlm.nih.gov/compound/4497) | Foucher_2025, Seker_2017 |
+
+## Start here
+
+> **Foucher_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adults with subarachnoid hemorrhage. [Run it in the simulator](drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md?tab=Simulation) · [record](drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Foucher_2025_reference](drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Foucher A et al., Impact of cerebral vasospasm therapy on…, Journal of the neurological… (2025) | [10.1016/j.jns.2025.125666](https://doi.org/10.1016/j.jns.2025.125666) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Seker_2017_reference](drugs/drug_nimodipine/Nimodipine_Seker2017_reference.md) | — | 1-compartment (no model) | 3 | Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017) | [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=nimodipine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: AHR (target), CACNA1C (inhibitor), CACNA1D (inhibitor), CACNA1F (inhibitor), CACNA1S (inhibitor), CACNB1 (inhibitor), CACNB2 (inhibitor), CACNB3 (inhibitor), CACNB4 (inhibitor), NR3C2 (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 04:45 | 7:18 | 1/1/0 | 0/0/0 | 0/0/0 | 150,423/15,295 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 4/7 | 10/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 122 matched, 58 returned
+- **screened:** 11  ·  **relevant:** 3
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_15 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Bellapart_2026.pdf` | Bellapart J et al., Nimodipine dosing and pharmacokinetic v…, Journal of clinical neurosc… (2026) | popPK | 10 | [10.1016/j.jocn.2026.111940](https://doi.org/10.1016/j.jocn.2026.111940) | [41712995](https://pubmed.ncbi.nlm.nih.gov/41712995) | The paper describes a population PK model for nimodipine in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Terziivanov_1999.pdf` | Terziivanov D et al., Pharmacokinetic variability of nimodipi…, International journal of cl… (1999) | popPK | 10 |  | [10475143](https://pubmed.ncbi.nlm.nih.gov/10475143) | The study is a population PK analysis of nimodipine in humans, but the evidence only provides variability metrics (CVs) and model validation statistics, lacking the specific central parameter estimates (CL, V, ka) required for extraction. |
+| `Yan_1993.pdf` | Yan XF et al., [Studies on the bioavailability and pha…, Yao xue xue bao = Acta phar… (1993) | popPK | 10 |  | [8328270](https://pubmed.ncbi.nlm.nih.gov/8328270) | The study reports quantitative pharmacokinetic parameters (ka, t1/2, Vd, AUC) for nimodipine in humans, with all numeric values explicitly provided in the text. |
+| `Shi_1997.pdf` | Shi XJ et al., [Comparison of bioavailability between…, Yao xue xue bao = Acta phar… (1997) | popPK | 9 |  | [11596299](https://pubmed.ncbi.nlm.nih.gov/11596299) | The study reports a two-compartment PK model for nimodipine in humans, but the specific numeric parameter values are located in Table 1 and Figure 1, which are not included in the provided evidence. |
+| `Seker_2017.pdf` | Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017) | popPK | 8 | [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1) | [26350588](https://pubmed.ncbi.nlm.nih.gov/26350588) | The paper presents a pharmacokinetic model for nimodipine and explicitly states a clearance value of 70 l/h in the results, although it is a simulation study rather than a primary population PK analysis of new data. |
+| `Wu_2014.pdf` | Wu C et al., Effect of natural borneol on the pharma…, European journal of drug me… (2014) | popPK | 8 | [10.1007/s13318-013-0135-z](https://doi.org/10.1007/s13318-013-0135-z) | [23673491](https://pubmed.ncbi.nlm.nih.gov/23673491) | The study reports quantitative PK parameters (AUC) for nimodipine in mice, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the provided text, only percentage changes. |
+| `Diochot_1995.pdf` | Diochot S et al., Dihydropyridines, phenylalkylamines and…, Pflugers Archiv : European… (1995) | pd | 4 | [10.1007/BF00374372](https://doi.org/10.1007/BF00374372) | [8584405](https://www.ncbi.nlm.nih.gov/pubmed/8584405) | metadata signals extractable PD data (EC50) |
+| `Hamilton_1987.pdf` | Hamilton SL et al., A comparison between the binding and el…, Molecular pharmacology (1987) | pd | 4 |  | [2436031](https://www.ncbi.nlm.nih.gov/pubmed/2436031) | metadata signals extractable PD data (EC50) |
+| `Hu_2022.pdf` | Hu X et al., The effect of CYP3A4 genetic polymorphi…, Chemico-biological interact… (2022) | pgx | 8 | [10.1016/j.cbi.2022.110123](https://doi.org/10.1016/j.cbi.2022.110123) | [36007633](https://www.ncbi.nlm.nih.gov/pubmed/36007633) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Liu_2000.pdf` | Liu XQ et al., Enzyme kinetics and inhibition of nimod…, Acta pharmacologica Sinica (2000) | pgx | 8 |  | [11501176](https://www.ncbi.nlm.nih.gov/pubmed/11501176) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
+| `Ye_2024.pdf` | Ye F et al., Gene Polymorphisms and Drug-Drug Intera…, The Journal of pharmacology… (2024) | pgx | 8 | [10.1124/jpet.123.001767](https://doi.org/10.1124/jpet.123.001767) | [37863485](https://www.ncbi.nlm.nih.gov/pubmed/37863485) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Zhao_2009.pdf` | Zhao Y et al., Effects of CYP3A5, MDR1 and CACNA1C pol…, European journal of clinica… (2009) | pgx | 8 | [10.1007/s00228-009-0619-6](https://doi.org/10.1007/s00228-009-0619-6) | [19205682](https://www.ncbi.nlm.nih.gov/pubmed/19205682) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
+| `Bailey_2004.pdf` | Bailey DG et al., Interactions between grapefruit juice a…, American journal of cardiov… (2004) | pgx | 7 | [10.2165/00129784-200404050-00002](https://doi.org/10.2165/00129784-200404050-00002) | [15449971](https://www.ncbi.nlm.nih.gov/pubmed/15449971) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Chen_2025.pdf` | Chen X et al., Inhibitory effects of nimodipine, nitre…, Biochemical pharmacology (2025) | pgx | 7 | [10.1016/j.bcp.2025.116854](https://doi.org/10.1016/j.bcp.2025.116854) | [40054784](https://www.ncbi.nlm.nih.gov/pubmed/40054784) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Cho_2011.pdf` | Cho YA et al., Effects of the antioxidant baicalein on…, Pharmacological reports : PR (2011) | pgx | 7 | [10.1016/s1734-1140(11)70624-7](https://doi.org/10.1016/s1734-1140(11)70624-7) | [22001996](https://www.ncbi.nlm.nih.gov/pubmed/22001996) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-07 04:39 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Bailey_2004 | not_relevant | 0 | 0 | The paper discusses drug-food interactions (grapefruit juice) and does not report any pharmacogenomic effects (gene variants) on nimodipine PK/PD. |
+| popPK | Bellapart_2026 | relevant | 10 | 0 | The paper describes a population PK model for nimodipine in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Bozdag_2024 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (dexamethasone) in an animal model, not a pharmacogenomic effect of a gene variant on nimodipine PK/PD. |
+| PGx | Chen_2023 | not_relevant | 0 | 0 | The paper investigates the mechanism of breviscapine in cerebral ischemia and mentions nimodipine only as a positive control, without reporting any pharmacogenomic effects on nimodipine's PK or PD parameters. |
+| PGx | Chen_2025 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (nimodipine inhibiting tamoxifen metabolism) and does not report any pharmacogenomic effects (gene variants) on nimodipine's PK or PD parameters. |
+| PGx | Cho_2011 | not_relevant | 0 | 0 | The study investigates the effect of a chemical inhibitor (baicalein) on nimodipine pharmacokinetics, not the effect of a genetic variant or genotype. |
+| PGx | Clough_2022 | not_relevant | 2 | 0 | The text is an abstract for a review article that mentions pharmacogenetic impact but does not report specific gene variants or quantitative PK/PD effect sizes. |
+| popPK | Crespo_2018 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular reactivity in aortic rings, not a pharmacokinetic study, and reports no disposition parameters for nimodipine. |
+| popPK | Cui_2016 | irrelevant | 0 | 0 | The paper is a virology study on cyclopiazonic acid, and nimodipine is only mentioned as a negative control calcium channel blocker with no pharmacokinetic data. |
+| PD | Cui_2016 | not_relevant | 0 | 0 | The paper focuses on cyclopiazonic acid and only mentions nimodipine as a negative control (calcium channel blocker) that did not inhibit RSV, providing no PD parameters or exposure-response data for nimodipine. |
+| popPK | Diochot_1995 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
+| PD | Diochot_1995 | not_relevant | 0 | 0 | The paper describes electrophysiological mechanisms of calcium channel blockers on different calcium current types and does not report pharmacokinetic or pharmacodynamic exposure-response relationships or numeric PD parameters for nimodipine. |
+| popPK | Fleishaker_1994 | irrelevant | 2 | 0 | The study focuses on tirilazad mesylate as the primary subject with quantitative PK parameters, while nimodipine is a co-administered agent for which no specific numeric PK values (CL, V, etc.) are reported in the evidence. |
+| PD | Fleishaker_1994 | not_relevant | 1 | 0 | The paper reports only qualitative hemodynamic changes (slight heart rate increase) and PK parameters, without providing numeric PD parameters or a quantitative exposure-response relationship. |
+| PGx | Fuhr_1998 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions with grapefruit juice, not pharmacogenomic effects of gene variants on nimodipine. |
+| PGx | Gepdiremen_2002 | not_relevant | 0 | 0 | The study investigates neurotoxicity mechanisms in cell cultures and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of nimodipine. |
+| popPK | Hamilton_1987 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
+| popPK | Hirasawa_2003 | irrelevant | 0 | 0 | The study focuses on the neurophysiological mechanism of nifedipine, with nimodipine serving only as a negative control/comparator, and no pharmacokinetic parameters are reported. |
+| PD | Hirasawa_2003 | not_relevant | 0 | 0 | The paper reports PD parameters for nifedipine, not nimodipine; nimodipine is only mentioned as a control that did not mimic the effect. |
+| PGx | Hu_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of istradefylline, not nimodipine; nimodipine is only mentioned as an interacting drug. |
+| PGx | James_2020 | not_relevant | 3 | 2 | The paper is a case report describing an adverse event (bradycardia) in a patient with a specific genotype, but it does not report quantitative pharmacokinetic or pharmacodynamic parameter changes attributable to the variant. |
+| PGx | Kaamini_2024 | not_relevant | 0 | 0 | The text is a letter to the editor discussing alternative drugs and the general concept of personalized medicine, without reporting specific pharmacogenomic data or PK/PD parameters for nimodipine. |
+| popPK | Kenny_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channel antagonism in guinea-pig tissue and rat membranes, containing no pharmacokinetic parameters for nimodipine. |
+| PD | Kenny_1990 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of fluspirilene; nimodipine is only mentioned as a reference compound for potency in a functional assay, with no exposure-response or PD model parameters reported for it. |
+| PGx | Kong_2022 | not_relevant | 0 | 0 | The study investigates the effect of CYP3A4 variants on cyclosporine metabolism and the effect of nimodipine on cyclosporine, not the effect of genetic variants on nimodipine pharmacokinetics or pharmacodynamics. |
+| PGx | Lee_2012 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (pravastatin inhibiting CYP3A4) in rats, not a pharmacogenomic effect based on a gene variant or genotype. |
+| PGx | Liu_2000 | not_relevant | 2 | 0 | The paper reports in vitro enzyme kinetics and inhibitor studies in human liver microsomes, not in vivo pharmacogenomic effects of specific gene variants on PK/PD parameters. |
+| PGx | Mahmoud_2020 | not_relevant | 2 | 0 | The paper is a narrative review that mentions genetic polymorphism as a source of variability but does not report specific quantitative pharmacogenomic effects or fitted parameters for nimodipine. |
+| PGx | Onoda_1989 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic interaction between calcium channel blockers and cisplatin in tumor models, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of nimodipine. |
+| PGx | Pachl_2005 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of sodium nitroprusside in preventing vasospasm and does not investigate the impact of genetic variants on the pharmacokinetics or pharmacodynamics of nimodipine. |
+| popPK | Pottkämper_2024 | irrelevant | 0 | 0 | The study is a clinical trial investigating the therapeutic effects of nimodipine on postictal recovery, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Román_2021 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular contraction in aortic rings, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Sczekan_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium release in rat brain microsomes, not a pharmacokinetic study of nimodipine. |
+| popPK | Shi_1997 | relevant | 9 | 0 | The study reports a two-compartment PK model for nimodipine in humans, but the specific numeric parameter values are located in Table 1 and Figure 1, which are not included in the provided evidence. |
+| PGx | Siller-Matula_2008 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction between clopidogrel and calcium channel blockers (including nimodipine) affecting clopidogrel's pharmacodynamics, but it does not report any pharmacogenomic effects (gene variants) on nimodipine's PK or PD parameters. |
+| popPK | Song_2022 | irrelevant | 0 | 0 | The study is a neurophysiological investigation of trans-spinal direct current stimulation in rats, using nimodipine only as a pharmacological tool to block calcium channels, and reports no pharmacokinetic parameters. |
+| popPK | Stoehr_2025 | irrelevant | 0 | 0 | The study is a clinical observational analysis of hemodynamic effects (blood pressure and autoregulation) and functional outcomes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Terziivanov_1999 | relevant | 10 | 2 | The study is a population PK analysis of nimodipine in humans, but the evidence only provides variability metrics (CVs) and model validation statistics, lacking the specific central parameter estimates (CL, V, ka) required for extraction. |
+| PGx | Vetulani_2001 | not_relevant | 0 | 0 | The paper is a review of pharmacotherapy strategies for addiction and mentions nimodipine only as a mechanism-based example, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| PGx | Vázquez-Medina_2024 | not_relevant | 0 | 0 | The paper investigates the association between dose reductions and clinical outcomes, not the effect of specific gene variants on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Wu_2014 | relevant | 8 | 2 | The study reports quantitative PK parameters (AUC) for nimodipine in mice, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the provided text, only percentage changes. |
+| popPK | Xia_2004 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology and molecular biology investigation of calcium channels in HL-1 cells, using nimodipine only as a pharmacological tool to characterize channel types, not as a subject for pharmacokinetic analysis. |
+| PGx | Xia_2024 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (CYP3A4 inhibition) affecting ivacaftor PK, not the effect of a gene variant on nimodipine PK/PD. |
+| PGx | Ye_2024 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of blonanserin, not nimodipine; nimodipine is only mentioned as an inhibitor of blonanserin metabolism. |
+| PGx | Zhou_2001 | not_relevant | 0 | 0 | The paper studies the metabolism of propafenone in rat microsomes and mentions nimodipine only as an inhibitor of propafenone metabolism, not as the subject of a pharmacogenomic study. |
+| PGx | Zhou_2014 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions between DHP-CCBs and statins, not pharmacogenomic effects of gene variants on nimodipine PK/PD. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnimodipine%5D&body=Drug%3A%20nimodipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nimodipine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 04:39 UTC</sub>

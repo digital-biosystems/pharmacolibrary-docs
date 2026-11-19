@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 100 mg parenteral (N05CA01)",
+ "model_id": "Pentobarbital_Zuppa2011_reference",
+ "molar_masses": {
+  "central.C": 0.226276
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.3333333333333336e-06,
+  "F": 1.0,
+  "MM": 0.226276,
+  "VdPerKg": 0.00045,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 3.386243386243386e-06,
+  "k21": 1.554907677356657e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066208
+ },
+ "reference_peaks": {
+  "central.C": 0.003008265536140452
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

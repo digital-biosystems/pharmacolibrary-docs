@@ -1,0 +1,47 @@
+{
+ "dose_source": "paper",
+ "model_id": "Midazolam_Xie2025_final",
+ "molar_masses": {
+  "C_M1": 0.34176999999999996,
+  "central.C": 0.32577100000000003
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "1-hydroxymidazolam",
+  "C_central": "Midazolam"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3.0,
+  4.0
+ ],
+ "parameters": {
+  "CL1": 2.5111111111111114e-06,
+  "CLm1": 1.8638888888888886e-05,
+  "F": 1.0,
+  "MW": 0.32577100000000003,
+  "MW_m1": 0.34176999999999996,
+  "Vd1": 0.016,
+  "Vd1m1": 0.0862,
+  "adminCount": 1.0,
+  "adminMass": 0.0,
+  "infusionDuration": 600.0,
+  "infusionMass": 3e-06,
+  "q1_m11": 3.766666666666667e-06
+ },
+ "reference_peak_times": {
+  "C_M1": 3809.218436873748,
+  "central.C": 660.0000000662105
+ },
+ "reference_peaks": {
+  "C_M1": 1.052705437588668e-05,
+  "central.C": 0.0001670635373208077
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 24 mg parenteral (R05CB02)",
+ "model_id": "Bromhexine_Behrens2026_reference",
+ "molar_masses": {
+  "central.C": 0.37613
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.1472222222222222e-06,
+  "F": 1.0,
+  "MM": 0.37613,
+  "VdPerKg": 0.00011414285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.4e-05,
+  "k12": 0.003170629954109303,
+  "k21": 8.646188850967009e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662083
+ },
+ "reference_peaks": {
+  "central.C": 2.2868156619027584e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

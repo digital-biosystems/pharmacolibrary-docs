@@ -1,0 +1,257 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;isoprenaline&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_van_2007_HR&quot;,&quot;label&quot;:&quot;van_2007 \u00b7 HR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_van_2007_HR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graves_1993_relaxation_of_rat_mesenteric_resistance_arteries&quot;,&quot;label&quot;:&quot;Graves_1993 \u00b7 relaxation of rat mesenteric resistance arteries pre-contracted with K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_Graves_1993_relaxation_of_rat_mesenteric_resistance_arteries.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jamet_2015_RFU&quot;,&quot;label&quot;:&quot;Jamet_2015 \u00b7 RFU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_Jamet_2015_RFU.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lacerda_J_nior_2025_uterine_relaxation&quot;,&quot;label&quot;:&quot;Lacerda-J\u00fanior_2025 \u00b7 uterine relaxation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_Lacerda_J_nior_2025_uterine_relaxation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Madders_2025_cAMP_i&quot;,&quot;label&quot;:&quot;Madders_2025 \u00b7 [cAMP]i&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/pd_Madders_2025_cAMP_i.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# isoprenaline
+
+- **generic name:** isoprenaline
+- **ATC codes:** `C01CA02`, `R03AB02`, `R03AK02`, `R03CB01`
+- **DrugBank:** [DB01064](https://go.drugbank.com/drugs/DB01064) · **PubChem:** [CID 3779](https://pubchem.ncbi.nlm.nih.gov/compound/3779)
+- **molar mass:** 211.2576 g/mol (C11H17NO3) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Isoprenaline is a non-selective beta-adrenergic agonist used to treat bronchospasm, congenital heart block, and acute bradycardia. It is administered by intravenous, intramuscular, subcutaneous, intracardiac, or inhalation routes. Isoprenaline is widely used in clinical practice, particularly for acute cardiac and respiratory emergencies.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q415550](https://www.wikidata.org/wiki/Q415550), [Wikipedia](https://en.wikipedia.org/wiki/Isoprenaline?oldid=1366255840) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [van_2007_HR](drugs/drug_isoprenaline/pd_van_2007_HR.md) | heart rate ← isoprenaline · direct sigmoid Emax (Hill) effect | ▶ model + simulator | van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2007) | [10.1038/sj.bjp.0707234](https://doi.org/10.1038/sj.bjp.0707234) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Graves_1993_relaxation_of_rat_mesenteric_resistance_arteries_pre_contracted_with_K](drugs/drug_isoprenaline/pd_Graves_1993_relaxation_of_rat_mesenteric_resistance_arteries.md) | relaxation of rat mesenteric resistance arteries pre-contracted with K+ ← isoprenaline · direct Emax (saturable) effect | ▶ model + simulator | Graves J et al., Beta-adrenoceptor agonist mediated rela…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb12853.x](https://doi.org/10.1111/j.1476-5381.1993.tb12853.x) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Jamet_2015_RFU](drugs/drug_isoprenaline/pd_Jamet_2015_RFU.md) | isoprenaline-induced calcium response ← isoprenaline · direct Emax (saturable) effect | ▶ model + simulator | Jamet S et al., In Vitro Mutational Analysis of the β2…, PloS one (2015) | [10.1371/journal.pone.0141696](https://doi.org/10.1371/journal.pone.0141696) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Lacerda-Júnior_2025_uterine_relaxation](drugs/drug_isoprenaline/pd_Lacerda_J_nior_2025_uterine_relaxation.md) | uterine relaxation ← isoprenaline · direct Emax (saturable) effect | ▶ model + simulator | Lacerda-Júnior FF et al., Primary Dysmenorrhea Induced Using Diet…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18081191](https://doi.org/10.3390/ph18081191) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Madders_2025_cAMP_i](drugs/drug_isoprenaline/pd_Madders_2025_cAMP_i.md) | cytosolic cAMP ← isoprenaline · direct Emax (saturable) effect | ▶ model + simulator | Madders GWP et al., Distinct functions of cardiac β-adrener…, eLife (2025) | [10.7554/elife.84243](https://doi.org/10.7554/elife.84243) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Cullum_2023_cAMP](drugs/drug_isoprenaline/pd_Cullum_2023_cAMP.md) | cAMP GloSensor™ luminescence (peak response) ← isoprenaline · direct sigmoid Emax (Hill) effect | — | Cullum SA et al., Kinetic analysis of endogenous β2 -adre…, British journal of pharmaco… (2023) | [10.1111/bph.16008](https://doi.org/10.1111/bph.16008) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Cullum_2023_cAMP_2](drugs/drug_isoprenaline/pd_Cullum_2023_cAMP_2.md) | cAMP GloSensor™ luminescence (initial rate) ← isoprenaline · direct sigmoid Emax (Hill) effect | — | Cullum SA et al., Kinetic analysis of endogenous β2 -adre…, British journal of pharmaco… (2023) | [10.1111/bph.16008](https://doi.org/10.1111/bph.16008) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Gunasekera_1990_relaxation_of_phenylephrine_induced_contraction](drugs/drug_isoprenaline/pd_Gunasekera_1990_relaxation_of_phenylephrine_induced_contract.md) | relaxation of phenylephrine-induced contraction ← isoprenaline · direct sigmoid Emax (Hill) effect | — | Gunasekera RD et al., The influence of thyroid states upon re…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb12965.x](https://doi.org/10.1111/j.1476-5381.1990.tb12965.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Saleem_2020_force](drugs/drug_isoprenaline/pd_Saleem_2020_force.md) | force ← isoprenaline · direct sigmoid Emax (Hill) effect | — | Saleem U et al., Regulation of ICa,L and force by PDEs i…, British journal of pharmaco… (2020) | [10.1111/bph.15032](https://doi.org/10.1111/bph.15032) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">rat</span> | [van_2008_HR](drugs/drug_isoprenaline/pd_van_2008_HR.md) | heart rate ← isoprenaline · stimulation effect | — | van Steeg TJ et al., Mechanism-based pharmacodynamic modelin…, The Journal of pharmacology… (2008) | [10.1124/jpet.107.131680](https://doi.org/10.1124/jpet.107.131680) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=isoprenaline).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | brain | `COMT` substrate | DrugBank actor |
+| metabolism | kidney | `COMT` substrate | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor, `COMT` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer/inhibitor, `CYP1B1` inducer | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer/inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target), IL12B (modulator), SOD1 (stabilization).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 09:35 | 12:35 | 0/0/0 | 5/4/0 | 0/0/0 | 559,136/12,949 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 14/30 | 30/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 1325 matched, 190 returned
+- **screened:** 10  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_27 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Abdel-Razaq_2007.pdf` | Abdel-Razaq W et al., The effects of antidepressants on cycli…, Biochemical pharmacology (2007) | pd | 5 | [10.1016/j.bcp.2007.02.015](https://doi.org/10.1016/j.bcp.2007.02.015) | [17382299](https://www.ncbi.nlm.nih.gov/pubmed/17382299) | metadata signals extractable PD data (EC50) |
+| `Jones_1990.pdf` | Jones SM et al., Contraction of cardiac myocytes from no…, European journal of pharmac… (1990) | pd | 5 | [10.1016/0014-2999(90)94140-s](https://doi.org/10.1016/0014-2999(90)94140-s) | [1964904](https://www.ncbi.nlm.nih.gov/pubmed/1964904) | metadata signals extractable PD data (EC50) |
+| `Stathopoulou_2019.pdf` | Stathopoulou K et al., Divergent off-target effects of RSK N-t…, Cellular signalling (2019) | pd | 5 | [10.1016/j.cellsig.2019.109362](https://doi.org/10.1016/j.cellsig.2019.109362) | [31344438](https://www.ncbi.nlm.nih.gov/pubmed/31344438) | metadata signals extractable PD data (EC50) |
+| `Abrahamsen_1991.pdf` | Abrahamsen J, Accumulation and release of adrenaline,…, Pharmacology & toxicology (1991) | pd | 4 | [10.1111/j.1600-0773.1991.tb01613.x](https://doi.org/10.1111/j.1600-0773.1991.tb01613.x) | [1762989](https://www.ncbi.nlm.nih.gov/pubmed/1762989) | metadata signals extractable PD data (IC50) |
+| `Advenier_1985.pdf` | Advenier C et al., The guinea-pig isolated bronchus for th…, British journal of pharmaco… (1985) | pd | 4 | [10.1111/j.1476-5381.1985.tb08905.x](https://doi.org/10.1111/j.1476-5381.1985.tb08905.x) | [4052734](https://www.ncbi.nlm.nih.gov/pubmed/4052734) | metadata signals extractable PD data (EC50) |
+| `Anesini_2002.pdf` | Anesini C et al., Modulatory effect of the adrenergic sys…, Autonomic & autacoid pharma… (2002) | pd | 4 | [10.1046/j.1474-8673.2002.00261.x](https://doi.org/10.1046/j.1474-8673.2002.00261.x) | [12452903](https://www.ncbi.nlm.nih.gov/pubmed/12452903) | metadata signals extractable PD data (EC50) |
+| `Baamonde_1999.pdf` | Baamonde C et al., Short-term effects of postnatal manipul…, Stress (Amsterdam, Netherla… (1999) | pd | 4 | [10.3109/10253899909001119](https://doi.org/10.3109/10253899909001119) | [10938576](https://www.ncbi.nlm.nih.gov/pubmed/10938576) | metadata signals extractable PD data (Emax) |
+| `Bevilacqua_1991.pdf` | Bevilacqua M et al., Alpha 1 adrenoceptor subtype mediates n…, Cardiovascular research (1991) | pd | 4 | [10.1093/cvr/25.4.290](https://doi.org/10.1093/cvr/25.4.290) | [1653111](https://www.ncbi.nlm.nih.gov/pubmed/1653111) | metadata signals extractable PD data (EC50) |
+| `Colbert_1991.pdf` | Colbert WE et al., Beta-adrenoceptor profile of ractopamin…, The Journal of pharmacy and… (1991) | pd | 4 | [10.1111/j.2042-7158.1991.tb03192.x](https://doi.org/10.1111/j.2042-7158.1991.tb03192.x) | [1687583](https://www.ncbi.nlm.nih.gov/pubmed/1687583) | metadata signals extractable PD data (EC50) |
+| `Fallgren_1988.pdf` | Fallgren B et al., Effect of pregnancy and sex steroids on…, Pharmacology & toxicology (1988) | pd | 4 | [10.1111/j.1600-0773.1988.tb00971.x](https://doi.org/10.1111/j.1600-0773.1988.tb00971.x) | [2853340](https://www.ncbi.nlm.nih.gov/pubmed/2853340) | metadata signals extractable PD data (Emax) |
+| `Garland_1981.pdf` | Garland LG et al., The extraneuronal O-methylation of 3H-(…, Naunyn-Schmiedeberg's archi… (1981) | pd | 4 | [10.1007/BF00508831](https://doi.org/10.1007/BF00508831) | [7329457](https://www.ncbi.nlm.nih.gov/pubmed/7329457) | metadata signals extractable PD data (IC50) |
+| `Goldie_1986.pdf` | Goldie RG et al., Influence of the epithelium on responsi…, British journal of pharmaco… (1986) | pd | 4 | [10.1111/j.1476-5381.1986.tb10150.x](https://doi.org/10.1111/j.1476-5381.1986.tb10150.x) | [3006855](https://www.ncbi.nlm.nih.gov/pubmed/3006855) | metadata signals extractable PD data (Emax) |
+| `Hall_1992.pdf` | Hall IP et al., Control of cyclic AMP levels in primary…, British journal of pharmaco… (1992) | pd | 4 | [10.1111/j.1476-5381.1992.tb12762.x](https://doi.org/10.1111/j.1476-5381.1992.tb12762.x) | [1384913](https://www.ncbi.nlm.nih.gov/pubmed/1384913) | metadata signals extractable PD data (EC50) |
+| `Komas_1991.pdf` | Komas N et al., Endothelium-dependent and independent r…, British journal of pharmaco… (1991) | pd | 4 | [10.1111/j.1476-5381.1991.tb12457.x](https://doi.org/10.1111/j.1476-5381.1991.tb12457.x) | [1665741](https://www.ncbi.nlm.nih.gov/pubmed/1665741) | metadata signals extractable PD data (EC50) |
+| `Martel_1999.pdf` | Martel F et al., Comparison between uptake2 and rOCT1: e…, Naunyn-Schmiedeberg's archi… (1999) | pd | 4 | [10.1007/pl00005356](https://doi.org/10.1007/pl00005356) | [10344529](https://www.ncbi.nlm.nih.gov/pubmed/10344529) | metadata signals extractable PD data (IC50) |
+| `Martinez_1997.pdf` | Martinez E et al., Discrepancy between inotropic response…, Research communications in… (1997) | pd | 4 |  | [9226750](https://www.ncbi.nlm.nih.gov/pubmed/9226750) | metadata signals extractable PD data (EC50) |
+| `Maselli_2014.pdf` | Maselli MA et al., Myogenic effect of SP-1f and SP-1h two…, European journal of pharmac… (2014) | pd | 4 | [10.1016/j.ejphar.2013.11.010](https://doi.org/10.1016/j.ejphar.2013.11.010) | [24275352](https://www.ncbi.nlm.nih.gov/pubmed/24275352) | metadata signals extractable PD data (EC50) |
+| `Naline_1994.pdf` | Naline E et al., Relaxant effects and durations of actio…, The European respiratory jo… (1994) | pd | 4 |  | [7914176](https://www.ncbi.nlm.nih.gov/pubmed/7914176) | metadata signals extractable PD data (EC50) |
+| `Niroomand_1997.pdf` | Niroomand F et al., Receptor-independent activation of card…, Journal of molecular and ce… (1997) | pd | 4 | [10.1006/jmcc.1997.0384](https://doi.org/10.1006/jmcc.1997.0384) | [9201632](https://www.ncbi.nlm.nih.gov/pubmed/9201632) | metadata signals extractable PD data (EC50) |
+| `Pino_1998.pdf` | Pino R et al., Effect of 5-HT4 receptor stimulation on…, Cardiovascular research (1998) | pd | 4 | [10.1016/s0008-6363(98)00198-9](https://doi.org/10.1016/s0008-6363(98)00198-9) | [10070492](https://www.ncbi.nlm.nih.gov/pubmed/10070492) | metadata signals extractable PD data (EC50) |
+| `Robinson_1989.pdf` | Robinson TN et al., Effects of the putative antagonists pha…, British journal of pharmaco… (1989) | pd | 4 | [10.1111/j.1476-5381.1989.tb14612.x](https://doi.org/10.1111/j.1476-5381.1989.tb14612.x) | [2556202](https://www.ncbi.nlm.nih.gov/pubmed/2556202) | metadata signals extractable PD data (IC50) |
+| `Schoeffter_1985.pdf` | Schoeffter P et al., Effect of vasoactive intestinal polypep…, European journal of pharmac… (1985) | pd | 4 | [10.1016/0014-2999(85)90430-3](https://doi.org/10.1016/0014-2999(85)90430-3) | [2986998](https://www.ncbi.nlm.nih.gov/pubmed/2986998) | metadata signals extractable PD data (EC50) |
+| `Souness_1991.pdf` | Souness JE et al., Characterization of guinea-pig eosinoph…, Biochemical pharmacology (1991) | pd | 4 | [10.1016/0006-2952(91)90056-b](https://doi.org/10.1016/0006-2952(91)90056-b) | [1651083](https://www.ncbi.nlm.nih.gov/pubmed/1651083) | metadata signals extractable PD data (IC50) |
+| `Svoboda_1986.pdf` | Svoboda P et al., Effect of catecholamines and metal chel…, Comparative biochemistry an… (1986) | pd | 4 | [10.1016/0742-8413(86)90095-2](https://doi.org/10.1016/0742-8413(86)90095-2) | [2874945](https://www.ncbi.nlm.nih.gov/pubmed/2874945) | metadata signals extractable PD data (EC50) |
+| `Van_1991.pdf` | Van Vliet BJ et al., Beta-adrenoceptor-sensitive adenylate c…, European journal of pharmac… (1991) | pd | 4 | [10.1016/0014-2999(91)90550-a](https://doi.org/10.1016/0014-2999(91)90550-a) | [1651867](https://www.ncbi.nlm.nih.gov/pubmed/1651867) | metadata signals extractable PD data (EC50) |
+| `Vigholt-Sørensen_1991.pdf` | Vigholt-Sørensen E et al., Comparative effects of beta-adrenocepto…, Pharmacology & toxicology (1991) | pd | 4 | [10.1111/j.1600-0773.1991.tb01309.x](https://doi.org/10.1111/j.1600-0773.1991.tb01309.x) | [1687080](https://www.ncbi.nlm.nih.gov/pubmed/1687080) | metadata signals extractable PD data (EC50) |
+| `Yue_1999.pdf` | Yue L et al., Adrenergic control of the ultrarapid de…, The Journal of physiology (1999) | pd | 4 | [10.1111/j.1469-7793.1999.0385v.x](https://doi.org/10.1111/j.1469-7793.1999.0385v.x) | [10087339](https://www.ncbi.nlm.nih.gov/pubmed/10087339) | metadata signals extractable PD data (EC50) |
+
+<sub>queue written 2026-10-09 20:06 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Alon_2021 | irrelevant | 0 | 0 | The paper focuses on the crystal structure of the sigma-2 receptor and ligand discovery, containing no pharmacokinetic data for isoprenaline. |
+| PD | Alon_2021 | not_relevant | 0 | 0 | The paper focuses on the sigma-2 receptor and its ligands (e.g., Z4857158944), not isoprenaline, and does not report any pharmacodynamic parameters for isoprenaline. |
+| PD | Anesini_2002 | not_relevant | 0 | 0 | The paper focuses on the modulatory effect of the adrenergic system on fibroblast proliferation and beta-3 adrenoceptors, with no mention of isoprenaline pharmacodynamics or exposure-response relationships. |
+| popPK | Anthonio_1997 | irrelevant | 0 | 0 | The study uses isoprenaline as a pharmacological tool to assess cardiac contractility in a heart failure model, not to characterize its pharmacokinetic parameters. |
+| popPK | Ariza-Carrasco_2026 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of isoprenaline on cerebral glucose metabolism (FDG-PET) in rats, not the pharmacokinetic disposition parameters (CL, V, etc.) of isoprenaline itself. |
+| popPK | Baamonde_1999 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
+| PD | Baamonde_1999 | not_relevant | 0 | 0 | The paper focuses on the developmental effects of postnatal manipulation on central beta-adrenoceptor transmission (likely via autoradiography or binding assays) and does not report a pharmacodynamic exposure-response or dose-response relationship for isoprenaline with numeric PD parameters. |
+| popPK | Benredjem_2019 | irrelevant | 0 | 0 | The study focuses on in vitro signaling profiles of GPCR ligands (MOR and beta-2 adrenergic) and does not report pharmacokinetic parameters for isoprenaline. |
+| PD | Benredjem_2019 | not_relevant | 0 | 0 | The paper focuses on GPCR signaling profiles (MOR and beta-2 ADR) and does not report pharmacodynamic or exposure-response data for isoprenaline. |
+| popPK | Bevilacqua_1991 | irrelevant | 0 | 0 | no_text gate: only 144 chars of text extracted (&lt; 400) |
+| PD | Bevilacqua_1991 | not_relevant | 0 | 0 | The paper focuses on noradrenaline and alpha-1 adrenoceptors in human internal mammary artery, not isoprenaline PD modeling. |
+| PGx | Billington_2017 | not_relevant | 0 | 0 | The text is an introductory overview of beta-agonists and mentions pharmacogenetics generally, but does not report specific data or effects for isoprenaline. |
+| popPK | Boskabady_2006 | irrelevant | 0 | 0 | The study measures tracheal responsiveness (EC50) to isoprenaline, which is a pharmacodynamic/pharmacological assay, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Boterman_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor desensitization in bovine tracheal smooth muscle and does not report pharmacokinetic parameters for isoprenaline. |
+| popPK | Brescia_2026 | irrelevant | 0 | 0 | The study focuses on doxorubicin cardiotoxicity in in vitro cell cultures and does not involve isoprenaline or pharmacokinetic parameters. |
+| PD | Brescia_2026 | not_relevant | 0 | 0 | The paper investigates doxorubicin cardiotoxicity in cell cultures and does not contain any data, analysis, or mention of isoprenaline. |
+| popPK | Brixius_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of levosimendan's effects on human myocardium, using isoprenaline only as a prestimulant, and reports no pharmacokinetic parameters for isoprenaline. |
+| popPK | Brown_1979 | irrelevant | 0 | 0 | The study is a pharmacological investigation of receptor mechanisms in rat ganglia, not a pharmacokinetic study, and reports no disposition parameters for isoprenaline. |
+| popPK | Brynne_1999 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of l-propranolol in rats and does not report pharmacokinetic parameters for isoprenaline. |
+| popPK | Carter_2005 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor-protein interactions and does not report pharmacokinetic disposition parameters for isoprenaline. |
+| popPK | Chang_2022 | irrelevant | 0 | 0 | The study focuses on methamphetamine's effect on blood-brain barrier permeability using doxorubicin as a probe, and does not involve isoprenaline. |
+| PD | Chang_2022 | not_relevant | 0 | 0 | The paper investigates methamphetamine's effect on blood-brain barrier permeability and drug delivery, not the pharmacodynamics of isoprenaline. |
+| popPK | Chang_2023 | irrelevant | 0 | 0 | The paper focuses on ALDH2 genetics and metabolic disorders in mice, with no mention of isoprenaline pharmacokinetics. |
+| PD | Chang_2023 | not_relevant | 0 | 0 | The paper investigates the metabolic effects of an ALDH2 activator (AD-9308) and does not report any pharmacodynamic or exposure-response analysis for isoprenaline. |
+| popPK | Colbert_1991 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
+| PD | Colbert_1991 | not_relevant | 0 | 0 | The paper focuses on the beta-adrenoceptor profile of ractopamine, not isoprenaline, and does not report PD parameters for isoprenaline. |
+| popPK | Cometa_2009 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of plant constituents where isoprenaline is used only as a reference agent to test potentiation, not as the subject of pharmacokinetic analysis. |
+| popPK | Cullum_2023 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological analysis of receptor signaling kinetics (cAMP production) in HEK293 cells, not a pharmacokinetic study of isoprenaline disposition. |
+| popPK | Demir_1999 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiological modeling of cardiac pacemaker activity where isoprenaline is used as a pharmacological agent, not a pharmacokinetic study of isoprenaline disposition. |
+| popPK | Dengler_1976 | irrelevant | 2 | 8 | The study investigates orciprenaline (a structural isomer), not isoprenaline, despite the title mentioning the isomer relationship. |
+| PGx | George_1981 | not_relevant | 0 | 0 | The paper discusses general gastrointestinal drug metabolism and mentions isoprenaline as an example of sulfate conjugation, but it does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| popPK | Graves_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxation mechanisms (NO release) and does not report pharmacokinetic parameters (CL, V, ka, etc.) for isoprenaline. |
+| popPK | Gulyás_2025 | irrelevant | 0 | 0 | The paper describes the synthesis and mechanism of metallo-β-lactamase inhibitors and contains no pharmacokinetic data for isoprenaline. |
+| PD | Gulyás_2025 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50/Ki) for metallo-beta-lactamases, not pharmacodynamic exposure-response or dose-response relationships for isoprenaline. |
+| popPK | Gunasekera_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenoceptor density and mechanical responses in rat aorta, not a pharmacokinetic study of isoprenaline disposition. |
+| PD | Hall_1992 | not_relevant | 0 | 0 | The paper focuses on cyclic AMP levels in tracheal smooth muscle cells and does not report a pharmacodynamic or exposure-response relationship for isoprenaline with numeric PD parameters. |
+| popPK | Hallsworth_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cytokine release in airway smooth muscle cells, not a pharmacokinetic study. |
+| popPK | Hawthorn_1982 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor binding and functional supersensitivity, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Head_1980 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic investigation of tissue uptake and metabolism in isolated rabbit ear arteries, not a pharmacokinetic study reporting systemic disposition parameters like clearance or volume. |
+| popPK | Heijenbrok_2000 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of beta-adrenoceptor function in rat carotid arteries, reporting concentration-response parameters (Emax, pD2) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Hernández-Gago_2026 | irrelevant | 0 | 0 | The paper is a systematic review of dosing strategies for high-alert medications in obese pediatric patients and does not report pharmacokinetic parameters for isoprenaline. |
+| PD | Hernández-Gago_2026 | not_relevant | 0 | 0 | The paper is a systematic review of dosing strategies and PK in obese pediatric patients and does not report specific pharmacodynamic (PD) or exposure-response parameters for isoprenaline. |
+| popPK | Hwang_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carvedilol, using isoproterenol only as a diagnostic agent for pharmacodynamic assessment, not as the subject drug for PK modeling. |
+| popPK | Jones_1990 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
+| PD | Kamel_1997 | not_relevant | 0 | 0 | The provided text is metadata for the GROBID software and does not contain any pharmacological data, PD models, or information regarding isoprenaline. |
+| popPK | Kerry_1983 | irrelevant | 0 | 0 | The study is a pharmacological investigation of adrenoceptor subtypes on platelets, not a pharmacokinetic study, and reports no disposition parameters (CL, V, t1/2) for isoprenaline. |
+| popPK | Khan_2015 | irrelevant | 0 | 0 | The study investigates the bronchodilator mechanism of Vitex negundo, using isoprenaline only as a reference agent in isolated tissue experiments, with no pharmacokinetic parameters reported. |
+| popPK | Komas_1991 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of PDE inhibitors on rat aorta, using isoprenaline only as a tool compound to stimulate adenylate cyclase, and reports no pharmacokinetic parameters for isoprenaline. |
+| popPK | Lacerda-Júnior_2025 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assessment of uterine reactivity where isoprenaline is used as a probe agonist, not a pharmacokinetic study of isoprenaline disposition. |
+| popPK | Lewis_2023 | irrelevant | 0 | 0 | The paper studies the pharmacology of 2-bromo-LSD, not the pharmacokinetics of isoprenaline. |
+| PD | Lewis_2023 | not_relevant | 0 | 0 | The paper profiles a different drug (2-Br-LSD) and does not contain any data, analysis, or mention of isoprenaline. |
+| PGx | Lipworth_1996 | not_relevant | 2 | 0 | The paper is a review discussing beta-3 adrenoceptors and mentions a polymorphism (Trp64Arg) associated with metabolic traits, but it does not report a pharmacogenomic effect on the PK or PD parameters of isoprenaline. |
+| PD | Lochan_1981 | not_relevant | 3 | 2 | The paper reports qualitative timing of onset (seconds) and relative speed of antagonism for beta-blockers, but does not provide numeric concentration-effect parameters (EC50, Emax) or a quantitative PD model for isoprenaline. |
+| popPK | Long_2009 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of airway smooth muscle contractility and receptor function in rats, not a pharmacokinetic study reporting disposition parameters for isoprenaline. |
+| popPK | Lues_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of EMD 53,998 enantiomers, and isoprenaline is used only as a stimulant/comparator, not as the subject of PK analysis. |
+| popPK | Luo_2025 | irrelevant | 0 | 0 | The study focuses on antiviral combination therapy for influenza and does not report pharmacokinetic parameters for isoprenaline. |
+| PD | Luo_2025 | not_relevant | 0 | 0 | The paper focuses on machine learning for drug combination screening and mechanistic validation of binding affinity; it does not report pharmacodynamic (PD) or exposure-response parameters for isoprenaline. |
+| popPK | Madders_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of beta-adrenergic receptor signaling in rat cardiomyocytes, not a pharmacokinetic study reporting disposition parameters for isoprenaline. |
+| popPK | Maselli_2014 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
+| PD | Maselli_2014 | not_relevant | 0 | 0 | The paper investigates the myogenic effects of novel beta-3 agonists (SP-1f and SP-1h) and does not report any pharmacodynamic or exposure-response data for isoprenaline. |
+| PGx | Mehta_2011 | not_relevant | 0 | 0 | The study characterizes the pharmacological response of hiPSC-derived cardiomyocytes to isoprenaline but does not report any association with specific gene variants or genotypes. |
+| popPK | Mende_1992 | irrelevant | 0 | 0 | The study investigates the molecular and functional effects of isoprenaline on rat heart tissue (receptor density and contractility) rather than its pharmacokinetic disposition parameters. |
+| popPK | Mesfin_2025 | irrelevant | 0 | 0 | The paper studies protein-like polymers targeting Keap1/Nrf2 for myocardial infarction and does not involve isoprenaline or its pharmacokinetics. |
+| PD | Mesfin_2025 | not_relevant | 0 | 0 | The paper discusses a protein-like polymer targeting Keap1/Nrf2 for myocardial infarction and does not mention isoprenaline or report any pharmacodynamic parameters for it. |
+| popPK | Mikaelian_2013 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cardiac troponin I (cTnI) in rats, using isoproterenol only as a positive control to induce myocardial necrosis, not as the subject drug for PK parameter estimation. |
+| popPK | Morris_2024 | irrelevant | 0 | 0 | The paper describes a mechanistic model of hemodynamics regulation in rats and dogs, not the pharmacokinetics of isoprenaline. |
+| PD | Morris_2024 | not_relevant | 0 | 0 | The paper develops a mechanistic physiological model of hemodynamics in rats and dogs but does not report a pharmacodynamic (exposure-response) relationship or numeric PD parameters for isoprenaline. |
+| popPK | Naline_1994 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
+| PD | Naline_1994 | not_relevant | 0 | 0 | The paper focuses on formoterol and salmeterol, not isoprenaline. |
+| PD | Nicholson_1979 | not_relevant | 3 | 1 | The paper describes qualitative changes in dose-response slopes and blockade duration but does not provide numeric PD parameters (e.g., EC50, Emax) or extractable concentration-effect curves. |
+| PGx | Nilsson_2007 | not_relevant | 3 | 5 | The paper reports a nominal, non-significant association between an ESR1 SNP and lipolytic responsiveness to isoprenaline, but does not report a definitive pharmacogenomic effect on a PK/PD parameter. |
+| popPK | Niroomand_1997 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
+| PD | Niroomand_1997 | not_relevant | 0 | 0 | The paper investigates the mechanism of adenylyl cyclase activation by GDP and nucleoside diphosphate kinase, not the pharmacodynamics or exposure-response relationship of isoprenaline. |
+| popPK | ODonnell_1978 | irrelevant | 0 | 0 | The study is an in vitro pharmacological comparison of beta-adrenoceptor stimulants on guinea-pig uterus, reporting potency values (EC50) rather than pharmacokinetic disposition parameters for isoprenaline. |
+| popPK | Padhi_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of levodopa (L-DOPA) and its delivery via engineered bacteria, not isoprenaline. |
+| PD | Padhi_2025 | not_relevant | 0 | 0 | The paper focuses on a bioengineered E. coli system for L-DOPA delivery and does not report any pharmacodynamic or exposure-response analysis for isoprenaline. |
+| popPK | Page_2009 | irrelevant | 0 | 0 | The paper is a case report on metoprolol overdose and does not involve isoprenaline or report its pharmacokinetic parameters. |
+| PD | Page_2009 | not_relevant | 0 | 0 | The paper is a case report on metoprolol overdose and does not report any pharmacodynamic or exposure-response analysis for isoprenaline. |
+| popPK | Quah_2020 | irrelevant | 0 | 0 | The study investigates the pharmacological activities of Cornus officinalis extract and does not involve isoprenaline or pharmacokinetic modeling. |
+| PD | Quah_2020 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of Cornus officinalis extract, not isoprenaline. |
+| popPK | Ravenstijn_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of L-DOPA in rats, not isoprenaline. |
+| PD | Ravenstijn_2012 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of L-DOPA and its metabolites (DOPAC, HVA) in a rat model, not on the pharmacodynamics of isoprenaline. |
+| popPK | Reddy_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor interactions in guinea-pig ileum, not a pharmacokinetic study, and reports no disposition parameters for isoprenaline. |
+| popPK | Rehman_2022 | irrelevant | 0 | 0 | The study investigates the spasmolytic activity of fenchone in guinea pig trachea, using isoprenaline only as a reference agent for PDE inhibition, and does not report any pharmacokinetic parameters for isoprenaline. |
+| PD | Rehman_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacodynamics of fenchone; isoprenaline is used only as a reference agonist to characterize fenchone's mechanism, and no specific PD parameters (e.g., EC50) for isoprenaline itself are reported. |
+| PD | Robinson_1989 | not_relevant | 2 | 1 | The paper reports IC50 values for GABA-B receptor binding and functional assays involving isoprenaline, but it does not provide a concentration-effect curve or numeric PD parameters (Emax, EC50) specifically for isoprenaline itself; isoprenaline is used as a fixed-stimulus tool compound to test antagonists. |
+| popPK | Rodriguez-Cuenca_2002 | irrelevant | 0 | 0 | The study is a mechanistic investigation of adrenergic receptor function and thermogenesis in brown adipose tissue, not a pharmacokinetic study of isoprenaline. |
+| popPK | Roffel_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor interactions in bovine trachea, not a pharmacokinetic study, and reports no disposition parameters for isoprenaline. |
+| popPK | Salas-Estrada_2023 | irrelevant | 0 | 0 | The paper focuses on the de novo design of kappa-opioid receptor antagonists and does not involve isoprenaline or its pharmacokinetics. |
+| PD | Salas-Estrada_2023 | not_relevant | 0 | 0 | The paper focuses on the de novo design of kappa-opioid receptor antagonists using deep learning and reports binding/functional assay data for these new compounds, but contains no pharmacodynamic or exposure-response analysis for isoprenaline. |
+| popPK | Saleem_2020 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of PDE regulation on cardiac contractility and calcium currents, not a pharmacokinetic study reporting disposition parameters for isoprenaline. |
+| popPK | Sarsero_2003 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor mechanisms and contractile force, not a pharmacokinetic study, and isoprenaline is used only as a reference standard for maximal stimulation. |
+| popPK | Scola_2004 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation of receptor desensitisation in mast cells and does not report any pharmacokinetic parameters for isoprenaline. |
+| popPK | Souness_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of phosphodiesterase activity in guinea-pig eosinophils, where isoprenaline is used only as a stimulant agent, not as the subject of pharmacokinetic analysis. |
+| PD | Souness_1991 | not_relevant | 0 | 0 | The paper characterizes phosphodiesterase activity and reports IC50s for PDE inhibitors, but does not report a pharmacodynamic exposure-response or dose-response relationship for isoprenaline itself. |
+| PD | Souness_1993 | not_relevant | 0 | 0 | The paper investigates the stereospecificity of rolipram on PDE IV and does not report any pharmacodynamic or exposure-response data for isoprenaline. |
+| popPK | Souness_1995 | irrelevant | 0 | 0 | The study investigates PDE IV inhibitors (RP 73401 and rolipram) in guinea-pig eosinophils and pig aorta, using isoprenaline only as a stimulant for cAMP accumulation, not as the subject of pharmacokinetic analysis. |
+| popPK | Stark_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adenylyl cyclase signaling in rat myocytes using isoprenaline as a pharmacological agonist, not a pharmacokinetic study. |
+| popPK | Stathopoulou_2019 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
+| PD | Stathopoulou_2019 | not_relevant | 0 | 0 | The paper focuses on RSK kinase inhibitors in cardiac myocytes and does not mention isoprenaline or report any exposure-response or dose-response data for it. |
+| popPK | Stoehr_2014 | irrelevant | 0 | 0 | The study is a mechanistic/functional analysis of contractile force and calcium transients in engineered heart tissue, not a pharmacokinetic study reporting disposition parameters for isoprenaline. |
+| PD | Stoehr_2014 | not_relevant | 4 | 2 | The paper reports a concentration-response curve for extracellular Ca2+ (with EC50 and Emax values) but only qualitatively describes the response to isoprenaline without providing numeric PD parameters or a dose-response curve for the drug. |
+| popPK | Sutanto_2020 | irrelevant | 0 | 0 | The study is an in silico electrophysiology simulation using isoproterenol as a stimulant, not a pharmacokinetic study of isoprenaline. |
+| popPK | Sutanto_2020_2 | irrelevant | 0 | 0 | The study is an in silico electrophysiological modeling of chloroquine and azithromycin, using isoproterenol only as a simulated beta-adrenergic stimulus, and reports no pharmacokinetic parameters for isoproterenol. |
+| popPK | Svoboda_1986 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
+| PD | Svoboda_1986 | not_relevant | 0 | 0 | The paper investigates the effect of catecholamines on Na,K-ATPase activity in tissue homogenates, which is a biochemical mechanism study, not a pharmacokinetic/pharmacodynamic (PK/PD) or exposure-response analysis in a biological system. |
+| popPK | Taha_2022 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of heavy metal effects on detrusor muscle contractility, using isoprenaline only as a tool compound to induce relaxation, with no pharmacokinetic parameters reported. |
+| PGx | Tasatargil_2003 | not_relevant | 0 | 0 | The study is an in vitro pharmacological investigation of PDE inhibitors on guinea-pig pulmonary arteries and does not report any pharmacogenomic effects (gene variants) on isoprenaline PK or PD. |
+| popPK | Trochu_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor-mediated vasorelaxation and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for isoprenaline. |
+| popPK | Tsujimoto_1986 | irrelevant | 0 | 0 | The study investigates cardiovascular pharmacodynamics (pressor response, heart rate) and receptor binding, not pharmacokinetic disposition parameters. |
+| popPK | Turrin_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adrenergic responsiveness in isolated rat atria, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Upton_1991 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions affecting theophylline clearance, not pharmacogenomic effects on isoprenaline. |
+| popPK | Van_1991 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
+| PD | Van_1991 | not_relevant | 0 | 0 | The paper investigates the interaction between mu-opioid receptors and beta-adrenoceptor-sensitive adenylate cyclase in rat striatal neurons and does not report a pharmacodynamic or exposure-response relationship for isoprenaline. |
+| PD | Verma_2014 | not_relevant | 2 | 1 | The study reports only qualitative percent inhibition of heart rate for different formulations without providing numeric concentration-effect parameters, dose-response curves, or PK/PD modeling. |
+| popPK | Vigholt-Sørensen_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assessment of receptor intrinsic activity and does not report pharmacokinetic parameters for isoprenaline. |
+| PGx | Vrydag_2009 | not_relevant | 0 | 0 | The study reports no significant difference in pharmacodynamic parameters (efficacy, potency, binding) between wild-type and variant beta3-adrenoceptors for isoprenaline. |
+| popPK | Watson_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor interactions on guinea-pig trachea, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Wilson_2018 | irrelevant | 0 | 0 | The paper describes a computational method (PathFX) for drug safety and efficacy analysis and does not report any pharmacokinetic parameters for isoprenaline. |
+| PD | Wilson_2018 | not_relevant | 0 | 0 | The paper describes a computational method (PathFX) for identifying drug-disease associations via protein interaction networks and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for isoprenaline or any other drug. |
+| PD | Winther_1985 | not_relevant | 3 | 2 | The paper reports qualitative agonist/antagonist effects and receptor binding IC50s, but does not provide a concentration-effect curve or numeric PD parameters (Emax, EC50) for isoprenaline. |
+| PGx | Xiao_1998 | not_relevant | 0 | 0 | The paper investigates the physiological role of Cytochrome P450 in modulating calcium channels and does not report any pharmacogenomic effects (gene variants) on the PK or PD of isoprenaline. |
+| popPK | Yabuuchi_1977 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological comparison of receptor potency (pD2, pA2) and does not report pharmacokinetic disposition parameters for isoprenaline. |
+| PD | Yamaguchi_1997 | not_relevant | 4 | 2 | The paper describes qualitative dose-response trends for isoprenaline (intrusive movement, BP decrease) but does not provide numeric PD parameters (Emax, EC50) or a quantitative concentration-effect curve in the text. |
+| popPK | Yang_2007 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of ethanol's mechanism of action using isoprenaline as a reference agonist, not a pharmacokinetic study. |
+| popPK | Yi_2020 | irrelevant | 0 | 0 | The paper describes the design and biological evaluation of new beta-2 adrenoceptor agonists, not the pharmacokinetics of isoprenaline. |
+| popPK | Yiew_2020 | irrelevant | 0 | 0 | The paper is a review of volume kinetics for fluid therapy and does not report pharmacokinetic parameters for isoprenaline. |
+| PD | Yiew_2020 | not_relevant | 0 | 0 | The paper is a review of volume kinetics for fluid therapy and does not contain any pharmacodynamic or exposure-response data for isoprenaline. |
+| popPK | unknown_2000 | irrelevant | 0 | 0 | no_text gate: only 74 chars of text extracted (&lt; 400) |
+| PD | unknown_2000 | not_relevant | 0 | 0 | The provided text is only the title of a proceedings volume and contains no data, analysis, or parameters regarding isoprenaline pharmacodynamics. |
+| popPK | van_2007 | relevant | 10 | 2 | The study reports a population PK model for isoprenaline in rats, but the specific numeric parameter values are in Table 1 which is not included in the provided evidence. |
+| popPK | van_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of S(-)-propranolol, using isoprenaline only as a tool to induce tachycardia (a comparator/probe agent), and does not report PK parameters for isoprenaline. |
+| popPK | van_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Procizumab, not isoprenaline. |
+| PD | van_2026 | not_relevant | 0 | 0 |  |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisoprenaline%5D&body=Drug%3A%20isoprenaline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isoprenaline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

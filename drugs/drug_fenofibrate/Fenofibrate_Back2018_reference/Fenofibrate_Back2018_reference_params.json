@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fenofibrate_Back2018_reference",
+ "molar_masses": {
+  "central.C": 0.318753
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  250.0
+ ],
+ "parameters": {
+  "Cl": 9.263333333333334e-07,
+  "F": 1.0,
+  "MM": 0.318753,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00017014285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00025,
+  "ka": 1.1666666666666668e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 29088.577154308616
+ },
+ "reference_peaks": {
+  "central.C": 0.0022527727890947814
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

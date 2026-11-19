@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 30 mg oral (G04BX14)",
+ "model_id": "Dapoxetine_Pu2026_reference",
+ "molar_masses": {
+  "central.C": 0.3054134
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.05e-05,
+  "F": 1.0,
+  "MM": 0.3054134,
+  "Tlag": 2448.0,
+  "VdPerKg": 0.000937142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-05,
+  "k12": 7.28319783197832e-05,
+  "k21": 2.4923201762012403e-05,
+  "ka": 0.00035833333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 5540.6813627254505
+ },
+ "reference_peaks": {
+  "central.C": 9.671182672040907e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

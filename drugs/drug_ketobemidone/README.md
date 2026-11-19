@@ -1,0 +1,102 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;ketobemidone&quot;}]"></div>
+
+# ketobemidone
+
+- **generic name:** ketobemidone
+- **ATC codes:** `N02AB01`, `N02AG02`
+- **DrugBank:** [DB06738](https://go.drugbank.com/drugs/DB06738) · **PubChem:** [CID 10101](https://pubchem.ncbi.nlm.nih.gov/compound/10101)
+- **molar mass:** 247.3327 g/mol (C15H21NO2) — DrugBank
+- **groups:** investigational
+
+## About
+
+Ketobemidone is a synthetic opioid analgesic used to manage severe pain. It is currently marketed in Denmark, Iceland, and Norway, and has been withdrawn from Sweden.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q2471714](https://www.wikidata.org/wiki/Q2471714), [Wikipedia](https://en.wikipedia.org/wiki/Ketobemidone?oldid=1358401474) (CC BY-SA 4.0) and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2023_MOR_activation](drugs/drug_ketobemidone/pd_Vandeputte_2023_MOR_activation.md) | MOR activation (β-arrestin 2 recruitment) ← ketobemidone · direct sigmoid Emax (Hill) effect | — | Vandeputte MM et al., Detection, chemical analysis, and pharm…, Analytical and bioanalytica… (2023) | [10.1007/s00216-023-04722-7](https://doi.org/10.1007/s00216-023-04722-7) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=ketobemidone).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: GRIN1 (target), OPRD1 (target), OPRK1 (target), OPRM1 (target), PTGS1 (substrate).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 05:11 | 0:18 | 0/0/0 | 1/0/0 | 0/0/0 | 40,352/1,502 | einfracz / qwen3.8-27b | 2 | 2/5 | 2/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 21 matched, 21 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Anderson_1981.pdf` | Anderson P et al., Clinical pharmacokinetics of ketobemido…, European journal of clinica… (1981) | popPK | 10 | [10.1007/BF00561953](https://doi.org/10.1007/BF00561953) | [7215421](https://pubmed.ncbi.nlm.nih.gov/7215421) | Study reports clinical PK for ketobemidone with half-lives and bioavailability values provided, though primary compartmental parameters (CL, V, ka) are not explicitly listed in the text. |
+| `Ebert_1998.pdf` | Ebert B et al., Ketobemidone plus (RS)-3-dimethylamino-…, Pharmacology & toxicology (1998) | pd | 4 | [10.1111/j.1600-0773.1998.tb01417.x](https://doi.org/10.1111/j.1600-0773.1998.tb01417.x) | [9553996](https://www.ncbi.nlm.nih.gov/pubmed/9553996) | metadata signals extractable PD data (IC50) |
+| `Vandeputte_2022.pdf` | Vandeputte MM et al., Characterization of recent non-fentanyl…, Archives of toxicology (2022) | pd | 4 | [10.1007/s00204-021-03207-9](https://doi.org/10.1007/s00204-021-03207-9) | [35072756](https://www.ncbi.nlm.nih.gov/pubmed/35072756) | metadata signals extractable PD data (EC50) |
+| `Al-Shurbaji_2002.pdf` | Al-Shurbaji A et al., The pharmacokinetics of ketobemidone ar…, European journal of clinica… (2002) | pgx | 8 | [10.1007/s00228-001-0413-6](https://doi.org/10.1007/s00228-001-0413-6) | [11936707](https://www.ncbi.nlm.nih.gov/pubmed/11936707) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Yasar_2005.pdf` | Yasar U et al., Ketobemidone is a substrate for cytochr…, Xenobiotica; the fate of fo… (2005) | pgx | 5 | [10.1080/00498250500183181](https://doi.org/10.1080/00498250500183181) | [16278191](https://www.ncbi.nlm.nih.gov/pubmed/16278191) | metadata signals extractable PGX data (CYP2C9) |
+
+<sub>queue written 2026-10-07 05:11 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Al-Shurbaji_2002 | not_relevant | 0 | 0 | The study reports that CYP2D6 and CYP2C19 genotypes do NOT affect ketobemidone pharmacokinetics, indicating a lack of pharmacogenomic effect. |
+| PGx | Cottrill_2021 | not_relevant | 1 | 1 | The paper provides a dataset of genotypes and predicted metabolic phenotypes for 30 patients but does not report observed pharmacokinetic or pharmacodynamic parameters for ketobemidone. |
+| popPK | Karlsen_2025 | irrelevant | 0 | 0 | This is a protocol for validating a machine-learning algorithm for opioid dosing and does not report pharmacokinetic parameters for ketobemidone. |
+| PD | Karlsen_2025 | not_relevant | 0 | 0 | The paper is a protocol for validating a machine learning algorithm for opioid dosing and does not report any pharmacodynamic parameters, concentration-effect relationships, or dose-response curves for ketobemidone. |
+| popPK | Pai_2026 | irrelevant | 0 | 0 | The paper is a general review on extemporaneous formulations for pediatric patients and does not report specific pharmacokinetic parameters for ketobemidone. |
+| PD | Pai_2026 | not_relevant | 0 | 0 | The paper is a review on extemporaneous formulations for pediatric patients and does not contain any pharmacodynamic or exposure-response data for ketobemidone. |
+| popPK | Pereira_2015 | irrelevant | 0 | 0 | The paper is a study protocol for a clinical trial using naloxone, and does not report pharmacokinetic parameters for ketobemidone. |
+| PD | Pereira_2015 | not_relevant | 0 | 0 | The paper is a study protocol for a trial involving naloxone, not ketobemidone, and contains no reported results or PD parameters. |
+| popPK | Persson_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of codeine, not ketobemidone, which is the target drug. |
+| PD | Persson_1995 | not_relevant | 0 | 0 | The paper studies codeine, not ketobemidone, and does not report a concentration-effect relationship or numeric PD parameters for the target drug. |
+| popPK | Vandeputte_2022 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of mu-opioid receptor affinity and activation, reporting no population pharmacokinetic parameters. |
+| popPK | Vandeputte_2023 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay and forensic analysis, reporting pharmacodynamic parameters (EC50, Emax) rather than pharmacokinetic disposition parameters (CL, V, ka) for ketobemidone. |
+| popPK | Weibel_2020 | irrelevant | 0 | 0 | The paper is a network meta-analysis of antiemetics for postoperative nausea and vomiting and does not study ketobemidone pharmacokinetics. |
+| popPK | Weinstein_2018 | irrelevant | 0 | 0 | The paper is a clinical review on regional anaesthesia and persistent postoperative pain, containing no pharmacokinetic data for ketobemidone. |
+| popPK | Weinstein_2018_2 | irrelevant | 0 | 0 | The paper is a review of regional anaesthesia for postoperative pain and does not contain pharmacokinetic data for ketobemidone. |
+| popPK | unknown_2015 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
+| popPK | unknown_2024 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |
+| PD | unknown_2024 | not_relevant | 0 | 0 | The provided text is a placeholder for a PDF file and contains no scientific content, data, or parameters regarding ketobemidone or any pharmacodynamic relationship. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bketobemidone%5D&body=Drug%3A%20ketobemidone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ketobemidone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

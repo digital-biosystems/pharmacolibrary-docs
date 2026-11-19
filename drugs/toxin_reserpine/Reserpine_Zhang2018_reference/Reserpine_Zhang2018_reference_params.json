@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 0.5 mg parenteral (C02AA02)",
+ "model_id": "Reserpine_Zhang2018_reference",
+ "molar_masses": {
+  "central.C": 0.608688
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.3333333333333332e-08,
+  "F": 1.0,
+  "MM": 0.608688,
+  "VdPerKg": 9.892765994667177e-06,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662046
+ },
+ "reference_peaks": {
+  "central.C": 0.0007178737192998634
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

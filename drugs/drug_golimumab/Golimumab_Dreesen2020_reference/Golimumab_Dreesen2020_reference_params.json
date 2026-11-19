@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Golimumab_Dreesen2020_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  50.0,
+  100.0,
+  200.0
+ ],
+ "parameters": {
+  "Cl": 5.115740740740741e-09,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00012342857142857142,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "k12": 5.760245198902606e-07,
+  "k21": 1.1109044312169312e-06,
+  "ka": 5.474537037037037e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 653280.9619238477
+ },
+ "reference_peaks": {
+  "central.C": 0.001104587005837241
+ },
+ "stop_time": 6652800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

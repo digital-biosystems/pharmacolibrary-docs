@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Doripenem_Tanaka2017_bayesian_estimated",
+ "molar_masses": {
+  "central.C": 0.42050400000000004
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  500.0
+ ],
+ "parameters": {
+  "Cl": 1.3055555555555556e-06,
+  "F": 1.0,
+  "MM": 0.42050400000000004,
+  "VdPerKg": 0.00013714285714285713,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "k12": 9.837962962962963e-05,
+  "k21": 0.0002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066209
+ },
+ "reference_peaks": {
+  "central.C": 0.019415020934266922
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

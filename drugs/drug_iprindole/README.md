@@ -1,0 +1,98 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;iprindole&quot;}]"></div>
+
+# iprindole
+
+- **generic name:** iprindole
+- **ATC codes:** `N06AA13`
+- **DrugBank:** [DB13496](https://go.drugbank.com/drugs/DB13496) · **PubChem:** none
+- **molar mass:** 284.447 g/mol (C19H28N2) — DrugBank
+- **groups:** experimental
+
+## About
+
+Iprindole is an atypical tricyclic antidepressant that was used to treat depression. The usual route of administration is unknown, as no specific routes are listed in the provided facts.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q904673](https://www.wikidata.org/wiki/Q904673), [Wikipedia](https://en.wikipedia.org/wiki/Iprindole?oldid=1359371545) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.95).">rat</span> | [Lavoie_1997_Ca_uptake](drugs/drug_iprindole/pd_Lavoie_1997_Ca_uptake.md) | net depolarization-induced calcium uptake in rat hippocampus synaptosomes ← iprindole · inhibition effect | — | Lavoie PA et al., Atypical antidepressants inhibit depola…, Canadian journal of physiol… (1997) | [10.1139/cjpp-75-8-983](https://doi.org/10.1139/cjpp-75-8-983) |
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 23:18 | 0:15 | 0/0/0 | 0/1/0 | 0/0/0 | 7,552/508 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 19 matched, 19 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Friedman_1977.pdf` | Friedman E et al., Antidepressant drugs and dopamine uptak…, European journal of pharmac… (1977) | pd | 4 | [10.1016/0014-2999(77)90189-3](https://doi.org/10.1016/0014-2999(77)90189-3) | [844489](https://www.ncbi.nlm.nih.gov/pubmed/844489) | metadata signals extractable PD data (IC50) |
+| `Harris_1973.pdf` | Harris M et al., Effect of centrally acting drugs on the…, British journal of pharmaco… (1973) | pd | 4 | [10.1111/j.1476-5381.1973.tb08320.x](https://doi.org/10.1111/j.1476-5381.1973.tb08320.x) | [4722039](https://www.ncbi.nlm.nih.gov/pubmed/4722039) | metadata signals extractable PD data (IC50) |
+| `Hrdina_1987.pdf` | Hrdina PD, Regulation of high- and low-affinity [3…, European journal of pharmac… (1987) | pd | 4 | [10.1016/0014-2999(87)90429-8](https://doi.org/10.1016/0014-2999(87)90429-8) | [3040430](https://www.ncbi.nlm.nih.gov/pubmed/3040430) | metadata signals extractable PD data (IC50) |
+| `Manier_1980.pdf` | Manier DH et al., Development of and recovery from subsen…, Naunyn-Schmiedeberg's archi… (1980) | pd | 4 | [10.1007/BF00498565](https://doi.org/10.1007/BF00498565) | [6252479](https://www.ncbi.nlm.nih.gov/pubmed/6252479) | metadata signals extractable PD data (EC50) |
+| `McMillen_1992.pdf` | McMillen BA et al., On central muscle relaxants, strychnine…, Journal of neural transmiss… (1992) | pd | 4 | [10.1007/BF01245348](https://doi.org/10.1007/BF01245348) | [1329854](https://www.ncbi.nlm.nih.gov/pubmed/1329854) | metadata signals extractable PD data (IC50) |
+| `Randrup_1977.pdf` | Randrup A et al., Uptake inhibition of biogenic amines by…, Psychopharmacology (1977) | pd | 4 | [10.1007/BF00492370](https://doi.org/10.1007/BF00492370) | [408861](https://www.ncbi.nlm.nih.gov/pubmed/408861) | metadata signals extractable PD data (IC50) |
+| `Silver_1986.pdf` | Silver PJ et al., Antidepressants and protein kinases: in…, European journal of pharmac… (1986) | pd | 4 | [10.1016/0014-2999(86)90393-6](https://doi.org/10.1016/0014-2999(86)90393-6) | [2869958](https://www.ncbi.nlm.nih.gov/pubmed/2869958) | metadata signals extractable PD data (IC50) |
+| `Wolfe_1978.pdf` | Wolfe BB et al., Presynaptic modulation of beta adrenerg…, The Journal of pharmacology… (1978) | pd | 4 |  | [213556](https://www.ncbi.nlm.nih.gov/pubmed/213556) | metadata signals extractable PD data (EC50) |
+
+<sub>queue written 2026-10-06 23:18 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bonnet_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine uptake/release in rat synaptosomes, not a pharmacokinetic study reporting disposition parameters for iprindole. |
+| PD | Bonnet_1984 | not_relevant | 3 | 2 | The paper reports a qualitative observation of dopamine release at high concentrations (&gt;3 x 10^-6 M) for iprindole but does not provide numeric PD parameters (like IC50 or Emax) or a quantitative concentration-effect curve for iprindole in this text. |
+| popPK | Friedman_1977 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine uptake inhibition (IC50) in rat synaptosomes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Gandolfi_1984 | irrelevant | 0 | 0 | The study is an in-vitro/in-vivo mechanistic investigation of receptor binding and adenylate cyclase activity, reporting no pharmacokinetic parameters for iprindole. |
+| PD | Gandolfi_1984 | not_relevant | 3 | 2 | The paper reports an in vitro IC50 and qualitative changes in receptor binding/function after chronic dosing, but lacks a formal PK/PD model or dose-response curve with derivable PD parameters like Emax or EC50 for the in vivo effects. |
+| popPK | Harris_1973 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
+| PD | Harris_1973 | not_relevant | 0 | 0 | The paper studies the effect of centrally acting drugs on GABA uptake in rat cortex and does not mention iprindole or report any pharmacodynamic parameters for it. |
+| popPK | Hrdina_1987 | irrelevant | 0 | 0 | The study is a receptor binding and neurochemical analysis in rats, not a pharmacokinetic study, and reports no disposition parameters for iprindole. |
+| PD | Hrdina_1987 | not_relevant | 1 | 0 | The paper reports qualitative changes in receptor affinity (IC50) and neurotransmitter levels after chronic treatment, but does not provide a concentration-effect or dose-response curve for iprindole, nor does it report numeric PD parameters (like Emax or EC50 for the drug's effect) that can be extracted. |
+| popPK | Kendall_1985 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study in rat brain slices; iprindole only tested for chronic antidepressant effects, no PK parameters. |
+| PD | Kendall_1985 | not_relevant | 2 | 1 | The paper describes qualitative changes in receptor-mediated signaling (inositol phospholipid hydrolysis) following chronic iprindole treatment but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response model for the drug itself. |
+| popPK | Lavoie_1997 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium channel inhibition in rat synaptosomes and does not report pharmacokinetic parameters for iprindole. |
+| popPK | Manier_1980 | irrelevant | 0 | 0 | no_text gate: only 193 chars of text extracted (&lt; 400) |
+| popPK | McMillen_1992 | irrelevant | 0 | 0 | The paper is a mechanistic study on muscle relaxants and NMDA receptors where iprindole is only mentioned as a co-administered agent in a neurotoxicity model, with no pharmacokinetic parameters reported. |
+| PD | McMillen_1992 | not_relevant | 0 | 0 | The paper focuses on zoxazolamine and HA-966; iprindole is only mentioned as a co-administered agent in a neurotoxicity assay without any exposure-response or dose-response analysis for iprindole itself. |
+| popPK | Meltzer_1981 | irrelevant | 0 | 0 | This is a pharmacodynamic (prolactin secretion) study in rats; iprindole is only one of many tested drugs and no PK parameters or numeric disposition values appear. |
+| PD | Meltzer_1981 | not_relevant | 1 | 0 | The paper describes qualitative pharmacological effects (inhibition/potentiation) of iprindole on prolactin secretion in a rat model but does not provide numeric concentration-effect data, dose-response curves, or PD parameters for iprindole. |
+| popPK | Ortega-Corona_1981 | irrelevant | 0 | 0 | Pharmacodynamic study of MAO inhibition and neurotransmitter content in mouse brain; no PK parameters reported. |
+| popPK | Randrup_1977 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
+| PD | Randrup_1977 | not_relevant | 0 | 0 | The paper is a review discussing the dopamine hypothesis and uptake inhibition mechanisms, but it does not report specific pharmacokinetic or pharmacodynamic data, exposure-response curves, or numeric PD parameters for iprindole. |
+| popPK | Silver_1986 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
+| popPK | Wolfe_1978 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
+| PD | Wolfe_1978 | not_relevant | 2 | 1 | The paper reports qualitative changes in receptor density and cAMP accumulation for iprindole but does not provide numeric PD parameters (e.g., Emax, EC50) or an exposure-response curve for the drug itself. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biprindole%5D&body=Drug%3A%20iprindole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iprindole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary</sub>

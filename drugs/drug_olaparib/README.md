@@ -1,0 +1,126 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;olaparib&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olaparib_Velev2021_reference&quot;,&quot;label&quot;:&quot;Velev_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olaparib/Olaparib_Velev2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sterl_2024_HB&quot;,&quot;label&quot;:&quot;Sterl\u00e9_2024 \u00b7 HB&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_olaparib/pd_Sterl_2024_HB.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_DeJongh_2025_TXeno&quot;,&quot;label&quot;:&quot;DeJongh_2025 \u00b7 TXeno&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_olaparib/pd_DeJongh_2025_TXeno.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# olaparib
+
+- **generic name:** olaparib
+- **ATC codes:** `L01XK01`
+- **DrugBank:** [DB09074](https://go.drugbank.com/drugs/DB09074) · **PubChem:** none
+- **molar mass:** 434.4628 g/mol (C24H23FN4O3) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Olaparib is a poly (ADP-ribose) polymerase (PARP) inhibitor used to treat cancers such as ovarian, breast, and prostate neoplasms. It is given orally as tablets or capsules and is well absorbed. Olaparib is widely used and authorised in the European Union.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q7083106](https://www.wikidata.org/wiki/Q7083106), [Wikipedia](https://en.wikipedia.org/wiki/Olaparib?oldid=1374207541) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| olaparib | parent | 434.463 | C24H23FN4O3 | DrugBank | — | DeJongh_2025, Overbeek_2025, Velev_2021 |
+
+## Start here
+
+> **Velev_2021_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> BRCA-mutated ovarian cancer patients, n = , 22. [Run it in the simulator](drugs/drug_olaparib/Olaparib_Velev2021_reference.md?tab=Simulation) · [record](drugs/drug_olaparib/Olaparib_Velev2021_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub> | [Overbeek_2025_reference](drugs/drug_olaparib/Olaparib_Overbeek2025_reference.md) | — | parent + metabolite (no model) | 3 | Overbeek JK et al., Population Pharmacokinetics of Cobicist…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01480-w](https://doi.org/10.1007/s40262-025-01480-w) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Velev_2021_reference](drugs/drug_olaparib/Olaparib_Velev2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Velev M et al., Association between Olaparib Exposure a…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14080804](https://doi.org/10.3390/ph14080804) |
+| <span class="pk-rf" hidden data-species="mouse" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [DeJongh_2025_reference](drugs/drug_olaparib/Olaparib_DeJongh2025_reference.md) | — | general linear (no model) | 7 (+1 cov.) | DeJongh J et al., Defining preclinical efficacy with the…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09962-x](https://doi.org/10.1007/s10928-025-09962-x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Peer_2017_reference](drugs/drug_olaparib/Olaparib_Peer2017_reference.md) | — | 1-compartment (no model) | 0 | Peer CJ et al., Population pharmacokinetic analyses of…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3346-1](https://doi.org/10.1007/s00280-017-3346-1) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Jackson_2024_SF](drugs/drug_olaparib/pd_Jackson_2024_SF.md) | surviving fraction ← olaparib · inhibition effect | — | Jackson MR et al., ClonoScreen3D - A Novel 3-Dimensional C…, International journal of ra… (2024) | [10.1016/j.ijrobp.2024.02.046](https://doi.org/10.1016/j.ijrobp.2024.02.046) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sterlé_2024_CREAT](drugs/drug_olaparib/pd_Sterl_2024_CREAT.md) | creatininaemia ← olaparib · indirect response — drug inhibits the loss of creatininaemia | — | Sterlé M et al., Improving olaparib exposure to optimize…, Therapeutic advances in med… (2024) | [10.1177/17588359241248328](https://doi.org/10.1177/17588359241248328) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Sterlé_2024_HB](drugs/drug_olaparib/pd_Sterl_2024_HB.md) | haemoglobinaemia ← olaparib · disease-progression model | ▶ model + simulator | Sterlé M et al., Improving olaparib exposure to optimize…, Therapeutic advances in med… (2024) | [10.1177/17588359241248328](https://doi.org/10.1177/17588359241248328) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [DeJongh_2025_TXeno](drugs/drug_olaparib/pd_DeJongh_2025_TXeno.md) | Tumor volume ← olaparib · delayed effect through an effect compartment | ▶ model + simulator | DeJongh J et al., Defining preclinical efficacy with the…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09962-x](https://doi.org/10.1007/s10928-025-09962-x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=olaparib).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| distribution | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: AKR1C3 (inhibitor), PARP1 (inhibitor), PARP2 (inhibitor), PARP3 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 21:19 | 4:39 | 2/2/0 | 3/0/0 | 0/0/0 | 408,584/17,826 | einfracz / qwen3.8-27b | 11 | 1/10 | 11/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 22 matched, 19 returned
+- **screened:** 7  ·  **relevant:** 7
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 2
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Peer_2017.pdf` | Peer CJ et al., Population pharmacokinetic analyses of…, Cancer chemotherapy and pha… (2017) | popPK | 10 | [10.1007/s00280-017-3346-1](https://doi.org/10.1007/s00280-017-3346-1) | [28577239](https://pubmed.ncbi.nlm.nih.gov/28577239) | The paper describes a population PK model for olaparib and reports key parameters (CL 6.8 L/h, V 33 L) in the abstract, but lacks detailed compartmental values (Q, ka) or individual patient data which would be in the full text/supplementary materials not fully provided. |
+| `Zhou_2019.pdf` | Zhou D et al., Bridging Olaparib Capsule and Tablet Fo…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0714-x](https://doi.org/10.1007/s40262-018-0714-x) | [30357650](https://pubmed.ncbi.nlm.nih.gov/30357650) | The study reports a population PK model, but the specific numeric parameter values (CL, V, Ka, etc.) are not explicitly listed in the provided abstract text, appearing only as qualitative descriptions or exposure metrics like AUC/Cmax. |
+| `Chen_2026.pdf` | Chen L et al., A pharmacokinetic-pharmacodynamic/toxic…, Cancer chemotherapy and pha… (2026) | popPK | 8 | [10.1007/s00280-025-04862-w](https://doi.org/10.1007/s00280-025-04862-w) | [41554954](https://pubmed.ncbi.nlm.nih.gov/41554954) | Although the study uses human olaparib PK parameters, the specific numeric values are not present in the provided evidence (likely in supplementary or text not shown). |
+
+<sub>queue written 2026-10-06 21:15 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bundred_2013 | irrelevant | 2 | 0 | The abstract describes a population PK study but does not provide specific numeric parameter values (e.g., CL, V) in the extracted evidence. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | The study is a mechanistic cardioprotection analysis (in vitro/in vivo) and does not report quantitative pharmacokinetic parameters for olaparib. |
+| popPK | Chen_2026 | irrelevant | 8 | 1 | Although the study uses human olaparib PK parameters, the specific numeric values are not present in the provided evidence (likely in supplementary or text not shown). |
+| popPK | Dimitrijevs_2026 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro biochemical/cellular activity of new mitochondria-targeted olaparib conjugates, containing no pharmacokinetic disposition parameters. |
+| popPK | Hodson_2023 | irrelevant | 0 | 0 | The study models tumor-immune interactions and efficacy, explicitly excluding pharmacokinetic modeling as uninformative for the high doses used; no PK parameters for olaparib are reported. |
+| popPK | Hodson_2023_2 | irrelevant | 0 | 0 | This is a tumor pharmacodynamic modeling study in mice where olaparib is used as a co-administered agent, and no olaparib-specific pharmacokinetic parameters are reported. |
+| popPK | Jackson_2024 | irrelevant | 0 | 0 | This is an in vitro mechanistic/cytotoxicity study (clonogenic survival assay) assessing radiosensitization; it reports EC50 and Radiation Interaction Ratios (RIR), not pharmacokinetic parameters (CL, V, ka, half-life) for olaparib. |
+| popPK | Majeed_2022 | irrelevant | 0 | 0 | The study is a preclinical efficacy trial of TAK-243 where olaparib is used only as a comparator agent for synergy testing, with no PK parameters reported. |
+| popPK | Mekhaeil_2023 | irrelevant | 0 | 0 | This is an in-vitro mechanistic and toxicology study investigating the therapeutic effects of olaparib on astrocytes, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka). |
+| popPK | Mohmaed_2023 | irrelevant | 4 | 0 | The study is an exposure-response analysis reporting only median Cmin values, without quantitative compartmental PK parameters (CL, V, ka, t1/2) or a population PK model. |
+| popPK | Zhou_2019 | relevant | 10 | 1 | The study reports a population PK model, but the specific numeric parameter values (CL, V, Ka, etc.) are not explicitly listed in the provided abstract text, appearing only as qualitative descriptions or exposure metrics like AUC/Cmax. |
+| popPK | Zhou_2019_2 | irrelevant | 1 | 0 | The study focuses on exposure-response relationships for efficacy and safety, not the quantification of population pharmacokinetic parameters (CL, V, ka, etc.). |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolaparib%5D&body=Drug%3A%20olaparib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olaparib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 21:16 UTC</sub>

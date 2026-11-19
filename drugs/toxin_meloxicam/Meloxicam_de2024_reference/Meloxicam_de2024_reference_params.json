@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 15 mg parenteral (M01AC06)",
+ "model_id": "Meloxicam_de2024_reference",
+ "molar_masses": {
+  "central.C": 0.3514
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.5666666666666666e-07,
+  "F": 1.0,
+  "MM": 0.3514,
+  "VdPerKg": 0.00018072352238207869,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662111
+ },
+ "reference_peaks": {
+  "central.C": 0.001178522370634668
+ },
+ "stop_time": 172800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

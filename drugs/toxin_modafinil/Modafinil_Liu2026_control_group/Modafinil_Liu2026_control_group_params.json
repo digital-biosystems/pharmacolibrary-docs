@@ -1,0 +1,44 @@
+{
+ "dose_source": "paper",
+ "model_id": "Modafinil_Liu2026_control_group",
+ "molar_masses": {
+  "central.C": 0.27335000000000004
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  8400.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Liu_2026:other_prose",
+    "value_si": 22.8
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 2.529722222222222e-05,
+  "F": 1.0,
+  "MM": 0.27335000000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0084,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7316.859769884742
+ },
+ "reference_peaks": {
+  "central.C": 0.01755446914917331
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

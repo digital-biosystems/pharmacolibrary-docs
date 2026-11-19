@@ -1,0 +1,50 @@
+{
+ "dose_source": "paper",
+ "model_id": "Primaquine_Chairat2018_reference",
+ "molar_masses": {
+  "C_M1": 0.27432,
+  "central.C": 0.2593467
+ },
+ "note": "Values for the shared PK_3M_3C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "carboxyprimaquine",
+  "C_central": "primaquine"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  30.0
+ ],
+ "parameters": {
+  "CL1": 3.4650000000000003e-06,
+  "CLm1": 1.0472222222222222e-07,
+  "F": 1.0,
+  "MW": 0.2593467,
+  "MW_m1": 0.27432,
+  "Tlag": 0.0,
+  "Vd1": 0.0223,
+  "Vd1m1": 0.0105,
+  "Vd2": 0.0223,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-05,
+  "ka": 0.0001388888888888889,
+  "q12": 2.4999999999999998e-05,
+  "q1_m11": 2.951666666666667e-06,
+  "q21": 2.4999999999999998e-05
+ },
+ "reference_peak_times": {
+  "C_M1": 31685.77154308617,
+  "central.C": 8137.875751503006
+ },
+ "reference_peaks": {
+  "C_M1": 0.0010730518256291829,
+  "central.C": 0.00023473383970602421
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_3C",
+ "template_fmu": "PK_3M_3C.fmu"
+}

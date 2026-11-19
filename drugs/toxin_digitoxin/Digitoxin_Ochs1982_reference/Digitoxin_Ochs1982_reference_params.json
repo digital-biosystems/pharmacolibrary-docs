@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 0.1 mg parenteral (C01AA04)",
+ "model_id": "Digitoxin_Ochs1982_reference",
+ "molar_masses": {
+  "central.C": 0.76495
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.716666666666667e-08,
+  "F": 1.0,
+  "MM": 0.76495,
+  "VdPerKg": 0.00076,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.0000000000000001e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662178
+ },
+ "reference_peaks": {
+  "central.C": 1.879092847908012e-06
+ },
+ "stop_time": 3628800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

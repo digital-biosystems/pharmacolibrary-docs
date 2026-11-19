@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Sufentanil_Khaowroongrueng2024_reference",
+ "molar_masses": {
+  "central.C": 0.386551
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4388888888888888e-05,
+  "F": 1.0,
+  "MM": 0.386551,
+  "VdPerKg": 0.0010357142857142856,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.00021149425287356324,
+  "k21": 3.931623931623932e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662118
+ },
+ "reference_peaks": {
+  "central.C": 6.837959737431235e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

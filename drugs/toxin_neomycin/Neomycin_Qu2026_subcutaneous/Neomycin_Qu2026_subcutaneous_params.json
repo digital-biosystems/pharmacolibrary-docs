@@ -1,0 +1,54 @@
+{
+ "dose_source": "paper",
+ "model_id": "Neomycin_Qu2026_subcutaneous",
+ "molar_masses": {
+  "retainedFraction": 0.61465
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2100.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Qu_2026:other_prose",
+    "value_si": 4.05
+   },
+   {
+    "source": "Qu_2026:other_prose",
+    "value_si": 59.41
+   },
+   {
+    "source": "Qu_2026:discussion_prose",
+    "value_si": 4.05
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.61465,
+  "Tb[1]": 67176.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0021
+ },
+ "reference_peak_times": {
+  "retainedFraction": 660.0000000662084
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9969114557564119
+ },
+ "stop_time": 345600.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

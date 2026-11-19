@@ -1,0 +1,58 @@
+{
+ "dose_source": "paper",
+ "model_id": "Aspirin_Cong2023_asa_ec",
+ "molar_masses": {
+  "retainedFraction": 0.18015899999999999
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Cong_2023:other_prose",
+    "value_si": 26.97
+   },
+   {
+    "source": "Cong_2023:other_prose",
+    "value_si": 44.63
+   },
+   {
+    "source": "Cong_2023:other_prose",
+    "value_si": 109.11
+   },
+   {
+    "source": "Cong_2023:other_prose",
+    "value_si": 97.99
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.18015899999999999,
+  "Tb[1]": 1548.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9751077939960661
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

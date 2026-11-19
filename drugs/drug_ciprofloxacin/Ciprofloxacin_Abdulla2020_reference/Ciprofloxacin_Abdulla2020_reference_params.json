@@ -1,0 +1,54 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ciprofloxacin_Abdulla2020_reference",
+ "molar_masses": {
+  "central.C": 0.3313415
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  400.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Abdulla_2020:other_prose",
+    "value_si": 0.0031000000000000003
+   },
+   {
+    "source": "Abdulla_2020:other_prose",
+    "value_si": 0.00302
+   },
+   {
+    "source": "Abdulla_2020:other_prose",
+    "value_si": 0.0030499999999999998
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 7.055555555555555e-06,
+  "F": 0.9,
+  "MM": 0.3313415,
+  "Tlag": 1188.0,
+  "VdPerKg": 0.0013014285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "k12": 0.00028021709964629835,
+  "k21": 0.00015565718157181573,
+  "ka": 0.0005277777777777777,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6832.73695436543
+ },
+ "reference_peaks": {
+  "central.C": 0.001446486879789487
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

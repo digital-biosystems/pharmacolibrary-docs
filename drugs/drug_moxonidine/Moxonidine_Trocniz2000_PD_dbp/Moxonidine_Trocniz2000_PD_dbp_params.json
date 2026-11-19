@@ -1,0 +1,57 @@
+{
+ "model_id": "Moxonidine_Trocniz2000_PD_dbp",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 1.33e-06,
+  "Emax": -30.9,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "1.3299999999999998e-06": -15.45
+ },
+ "stop_time": 14.0,
+ "subtitle": "24-hour ambulatory diastolic blood pressure (DBP) against moxonidine concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "microg/L",
+   "factor": 9.999999999999997e-07,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "mm Hg",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "microg/L",
+   "factor": 9.999999999999997e-07,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "mm Hg"
+ },
+ "x_axis": {
+  "display_unit": "microg/L",
+  "factor": 9.999999999999997e-07,
+  "label": "moxonidine concentration",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mm Hg",
+  "factor": 1.0,
+  "label": "24-hour ambulatory diastolic blood pressure (DBP)"
+ }
+}

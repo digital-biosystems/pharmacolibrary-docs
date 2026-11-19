@@ -1,0 +1,140 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;clomipramine&quot;}]"></div>
+
+# clomipramine
+
+- **generic name:** clomipramine
+- **ATC codes:** `N06AA04`
+- **DrugBank:** [DB01242](https://go.drugbank.com/drugs/DB01242) · **PubChem:** [CID 2801](https://pubchem.ncbi.nlm.nih.gov/compound/2801)
+- **molar mass:** 314.852 g/mol (C19H23ClN2) — DrugBank
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+Clomipramine is a tricyclic antidepressant prescribed for obsessive-compulsive disorder, panic disorder, and pain. The medication is administered orally, typically as a tablet or capsule, while injectable solutions are reserved for specific clinical situations. It appears on the World Health Organization's essential medicines list and is accessible as a generic formulation.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q58713](https://www.wikidata.org/wiki/Q58713), [Wikipedia](https://en.wikipedia.org/wiki/Clomipramine?oldid=1380422146) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| clomipramine | parent | 314.852 | C19H23ClN2 | DrugBank | [2801](https://pubchem.ncbi.nlm.nih.gov/compound/2801) | Nielsen-Kudsk_1980 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="cat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q17, Q22, Q88 — no SI value to buil…</sub> | [Lainesse_2006_reference](drugs/drug_clomipramine/Clomipramine_Lainesse2006_reference.md) | — | 1-compartment (no model) | 9 | Lainesse C et al., Pharmacokinetics of clomipramine and de…, Journal of veterinary pharm… (2006) | [10.1111/j.1365-2885.2006.00742.x](https://doi.org/10.1111/j.1365-2885.2006.00742.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gex-Fabry_2000_reference](drugs/drug_clomipramine/Clomipramine_GexFabry2000_reference.md) | — | general linear (no model) | 0 | Gex-Fabry M et al., Population pharmacokinetics of clomipra…, Therapeutic drug monitoring (2000) | [10.1097/00007691-200012000-00009](https://doi.org/10.1097/00007691-200012000-00009) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kurata_1986_reference](drugs/drug_clomipramine/Clomipramine_Kurata1986_reference.md) | — | 1-compartment (no model) | 0 | Kurata K et al., A pharmacokinetic study of clomipramine…, The Japanese journal of psy… (1986) | [10.1111/j.1440-1819.1986.tb03178.x](https://doi.org/10.1111/j.1440-1819.1986.tb03178.x) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>stale — current check: Rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nielsen-Kudsk_1980_reference](drugs/drug_clomipramine/Clomipramine_NielsenKudsk1980_reference.md) | — | 1-compartment (no model) | 3 | Nielsen-Kudsk F et al., Myocardial pharmacokinetics of amitript…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb02445.x](https://doi.org/10.1111/j.1600-0773.1980.tb02445.x) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Apparsundaram_2008_inhibition_of_3_H_DASB_and_3_H_S_citalopram_binding_to_SERT](drugs/drug_clomipramine/pd_Apparsundaram_2008_inhibition_of_3_H_DASB_and_3_H_S_citalopr.md) | inhibition of [(3)H]DASB and [(3)H]S-citalopram binding to SERT ← clomipramine · inhibition effect | — | Apparsundaram S et al., Antidepressants targeting the serotonin…, The Journal of pharmacology… (2008) | [10.1124/jpet.108.142315](https://doi.org/10.1124/jpet.108.142315) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Castaing_2000_dye_leakage](drugs/drug_clomipramine/pd_Castaing_2000_dye_leakage.md) | Sulphan blue dye leakage through liposome membrane ← clomipramine · direct sigmoid Emax (Hill) effect | — | Castaing M et al., Membrane permeation by multidrug-resist…, The Journal of pharmacy and… (2000) | [10.1211/0022357001773977](https://doi.org/10.1211/0022357001773977) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Di_2014_metamorphosis_rate_21_day_old_pediveliger_larvae_after_24_h_exposure](drugs/drug_clomipramine/pd_Di_2014_metamorphosis_rate_21_day_old_pediveliger_larvae_aft.md) | metamorphosis rate (21-day-old pediveliger larvae after 24 h exposure) ← clomipramine · inhibition effect | — | Di Poi C et al., Toxicity of five antidepressant drugs o…, Environmental science and p… (2014) | [10.1007/s11356-013-2211-y](https://doi.org/10.1007/s11356-013-2211-y) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Di_2014_percentage_of_normal_larval_development_embryotoxicity_D_shaped_larvae_after_36_h_exposure](drugs/drug_clomipramine/pd_Di_2014_percentage_of_normal_larval_development_embryotoxici.md) | percentage of normal larval development (embryotoxicity, D-shaped larvae after 36 h exposure) ← clomipramine · inhibition effect | — | Di Poi C et al., Toxicity of five antidepressant drugs o…, Environmental science and p… (2014) | [10.1007/s11356-013-2211-y](https://doi.org/10.1007/s11356-013-2211-y) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gruwez_2007_depression_clinical_score_response_to_treatment](drugs/drug_clomipramine/pd_Gruwez_2007_depression_clinical_score_response_to_treatment.md) | depression clinical score (response to treatment) ← clomipramine · delayed effect through an effect compartment | — | Gruwez B et al., A kinetic-pharmacodynamic model for cli…, Contemporary clinical trials (2007) | [10.1016/j.cct.2006.09.001](https://doi.org/10.1016/j.cct.2006.09.001) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Hrdina_1988_3H_imipramine_binding](drugs/drug_clomipramine/pd_Hrdina_1988_3H_imipramine_binding.md) | sodium-dependent [3H]imipramine binding in rat cerebral cortex ← clomipramine · direct sigmoid Emax (Hill) effect | — | Hrdina PD, Inhibition of sodium-dependent [3H]imip…, European journal of pharmac… (1988) | [10.1016/0014-2999(88)90575-4](https://doi.org/10.1016/0014-2999(88)90575-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Li_2018_Kv_current](drugs/drug_clomipramine/pd_Li_2018_Kv_current.md) | voltage-dependent K+ (Kv) channel current inhibition ← clomipramine · direct sigmoid Emax (Hill) effect | — | Li H et al., Blockade of voltage-dependent K, Journal of pharmacological… (2018) | [10.1016/j.jphs.2018.04.005](https://doi.org/10.1016/j.jphs.2018.04.005) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [López-Valdés_2002_ACh_response](drugs/drug_clomipramine/pd_L_pez_Vald_s_2002_ACh_response.md) | acetylcholine-elicited current (alpha2beta4 nAChR) ← clomipramine · direct sigmoid Emax (Hill) effect | — | López-Valdés HE et al., Effects of clomipramine on neuronal nic…, European journal of pharmac… (2002) | [10.1016/s0014-2999(02)01556-x](https://doi.org/10.1016/s0014-2999(02)01556-x) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=clomipramine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `GSTP1` inhibitor | DrugBank actor |
+| metabolism | lung | `GSTP1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor | DrugBank actor |
+| — | brain | `SLC6A4` inhibitor | DrugBank actor |
+| — | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HTR2A (target), HTR2B (target), HTR2C (target), SLC6A2 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 22:17 | 1:10 | 1/3/0 | 7/0/0 | 0/0/0 | 68,147/5,653 | ollama / glm-5.3-flash | 2 | 0/0 | 0/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 24 matched, 24 returned
+- **screened:** 4  ·  **relevant:** 3
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 1
+- **scholar-agent fallback query used:** True
+
+## Full-text requests
+
+_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gex-Fabry_2000.pdf` | Gex-Fabry M et al., Population pharmacokinetics of clomipra…, Therapeutic drug monitoring (2000) | popPK | 10 | [10.1097/00007691-200012000-00009](https://doi.org/10.1097/00007691-200012000-00009) | [11128238](https://pubmed.ncbi.nlm.nih.gov/11128238) | Population PK model of clomipramine and its metabolites in depressed patients, but the evidence gives only variability percentages, not CL/V values, which likely live in tables/figures not provided. |
+| `Lainesse_2006.pdf` | Lainesse C et al., Pharmacokinetics of clomipramine and de…, Journal of veterinary pharm… (2006) | popPK | 10 | [10.1111/j.1365-2885.2006.00742.x](https://doi.org/10.1111/j.1365-2885.2006.00742.x) | [16846464](https://pubmed.ncbi.nlm.nih.gov/16846464) | Full PK parameter values (CL, Vss, half-life, AUC, bioavailability) for clomipramine and DCMP are reported directly in the abstract. |
+| `Kurata_1986.pdf` | Kurata K et al., A pharmacokinetic study of clomipramine…, The Japanese journal of psy… (1986) | popPK | 7 | [10.1111/j.1440-1819.1986.tb03178.x](https://doi.org/10.1111/j.1440-1819.1986.tb03178.x) | [3599564](https://pubmed.ncbi.nlm.nih.gov/3599564) | Rat PK study with compartmental model; some numeric values (ratio 22.2±4.9) present but full CL/V parameters not shown in evidence. |
+| `Nielsen-Kudsk_1980.pdf` | Nielsen-Kudsk F et al., Myocardial pharmacokinetics of amitript…, Acta pharmacologica et toxi… (1980) | popPK | 7 | [10.1111/j.1600-0773.1980.tb02445.x](https://doi.org/10.1111/j.1600-0773.1980.tb02445.x) | [7361577](https://pubmed.ncbi.nlm.nih.gov/7361577) | Isolated perfused rabbit heart PK study with numeric myocardial half-life and accumulation for clomipramine, though compartmental rate constants are only partially given. |
+
+<sub>queue written 2026-10-06 22:16 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abdel-Razaq_2007 | irrelevant | 0 | 0 | In-vitro cell signaling study with no pharmacokinetic parameters for clomipramine. |
+| popPK | Apparsundaram_2008 | irrelevant | 0 | 0 | In-vitro radioligand binding study of SERT inhibitors; clomipramine is only a test ligand with Ki/IC50 values, no PK disposition parameters. |
+| popPK | Castaing_2000 | irrelevant | 0 | 0 | In-vitro liposome membrane permeation study; clomipramine is only one test compound, no PK disposition parameters reported. |
+| popPK | Chanut_1994 | irrelevant | 0 | 0 | In-vitro rat synaptosome study where clomipramine is only an uptake inhibitor; no PK parameters for clomipramine. |
+| PD | Chanut_1994 | not_relevant | 0 | 0 | The paper reports IC50/EC50 values for 6-fluoro-serotonin, not for clomipramine, and does not provide a dose-response or exposure-response relationship for clomipramine. |
+| popPK | Di_2014 | irrelevant | 0 | 0 | Ecotoxicity study of clomipramine in oyster larvae with EC50 toxicity endpoints, no pharmacokinetic disposition parameters. |
+| popPK | Fujita_1997 | irrelevant | 0 | 0 | Clomipramine is only a probe drug altering [123I]beta-CIT binding; no clomipramine PK parameters (CL, V, ka, half-life) are reported. |
+| popPK | Gex-Fabry_2000 | relevant | 10 | 3 | Population PK model of clomipramine and its metabolites in depressed patients, but the evidence gives only variability percentages, not CL/V values, which likely live in tables/figures not provided. |
+| popPK | Gruwez_2007 | irrelevant | 2 | 1 | This is a kinetic-pharmacodynamic (K-PD) model of clinical depression scores, not a PK disposition model, and no numeric PK parameter values (CL, V, ka, etc.) appear in the evidence. |
+| popPK | Hartmann_2017 | irrelevant | 0 | 0 | Clomipramine appears only as a reference inhibitor in an in-vitro enzyme assay; no pharmacokinetic parameters are reported. |
+| PD | Hartmann_2017 | not_relevant | 0 | 0 | The paper reports IC50 values for new neolignan analogues and mentions clomipramine only as a reference inhibitor with a single IC50 value, without providing a dose-response curve, PK/PD model, or extractable PD parameters for clomipramine. |
+| popPK | Hrdina_1988 | irrelevant | 0 | 0 | In-vitro receptor binding study with IC50 values, no pharmacokinetic disposition parameters for clomipramine. |
+| popPK | Komorowski_2012 | irrelevant | 0 | 0 | Behavioral pharmacology study in rats with no PK parameters (no CL, V, ka, half-life, or model) reported for clomipramine. |
+| popPK | Li_2018 | irrelevant | 0 | 0 | In-vitro electrophysiology study of Kv channel blockade in rabbit coronary smooth muscle cells; no PK disposition parameters for clomipramine. |
+| popPK | López-Valdés_2002 | irrelevant | 0 | 0 | In-vitro electrophysiology study of receptor blockade in Xenopus oocytes; no PK disposition parameters for clomipramine. |
+| popPK | Menargues_1990 | irrelevant | 0 | 0 | Pharmacodynamic receptor study in rats; no PK parameters for clomipramine. |
+| popPK | Minguez_2014 | irrelevant | 0 | 0 | Ecotoxicity study reporting EC50 toxicity values, not pharmacokinetic disposition parameters for clomipramine. |
+| popPK | Minguez_2014_2 | irrelevant | 0 | 0 | Ecotoxicity study reporting EC50 toxicity values in Daphnia magna, not pharmacokinetic disposition parameters for clomipramine. |
+| PD | Minguez_2014_2 | not_relevant | 3 | 4 | The paper reports an acute ecotoxicity EC50 for clomipramine in Daphnia magna, which is a toxicological endpoint rather than a pharmacodynamic exposure-response relationship in a clinical or therapeutic context. |
+| popPK | Muraoka_1998 | irrelevant | 0 | 0 | In-vitro cell signaling study with no pharmacokinetic parameters for clomipramine. |
+| popPK | Pellegrini_2025 | irrelevant | 0 | 0 | This is a clinical efficacy study of psilocybin in OCD; clomipramine is only mentioned as a first-line treatment, with no PK parameters for it. |
+| popPK | Shimizu_1996 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study in rat astrocytes; clomipramine is only a chronic exposure treatment with no PK parameters. |
+| PD | Shimizu_1996 | not_relevant | 1 | 0 | The paper reports a qualitative effect of clomipramine (mimicking mianserin) but provides no numeric concentration-effect data, EC50, or dose-response parameters for clomipramine itself. |
+| popPK | Simpson_2008 | irrelevant | 0 | 0 | This is a statistical-methods paper on OCD trial efficacy with no pharmacokinetic parameters for clomipramine reported. |
+| popPK | Yukawa_2002 | irrelevant | 0 | 0 | This is a population PK study of haloperidol; clomipramine is only mentioned as a co-administered CYP2D6 substrate, with no clomipramine PK parameters. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclomipramine%5D&body=Drug%3A%20clomipramine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clomipramine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-06 22:16 UTC</sub>

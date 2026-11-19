@@ -1,0 +1,245 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Toxins&quot;,&quot;href&quot;:&quot;toxins/README.md&quot;},{&quot;label&quot;:&quot;Food toxins&quot;,&quot;href&quot;:&quot;toxins/FOOD.md&quot;},{&quot;label&quot;:&quot;Calcitriol&quot;}]"></div>
+
+# Calcitriol
+
+- **generic name:** Calcitriol
+- **T3DB:** [T3D2692](http://www.t3db.ca/toxins/T3D2692) · **DrugBank:** [DB00136](https://go.drugbank.com/drugs/DB00136) · **PubChem:** [CID 5280453](https://pubchem.ncbi.nlm.nih.gov/compound/5280453)
+- **groups:** approved, investigational, nutraceutical
+
+## About
+
+Calcitriol or 1,25-dihydroxycholecalciferol (abbreviated 1,25-(OH)<sub>2</sub>-D3) is the active form of vitamin D found in the body (vitamin D3). Calcitriol is marketed under various trade names including Rocaltrol (Roche), Calcijex (Abbott) and Decostriol (Mibe, Jesalis). It is produced in the kidneys via 25-hydroxyvitamin D-1 &alpha;-hydroxylase by conversion from 25-hydroxycholecalciferol (calcidiol). …
+
+- **Category:** Drug, Food Toxin, Natural Toxin
+- **Route of exposure:** intravenous, Oral.
+Rapidly absorbed from the intestine.
+- **Sources and uses:** Used to treat vitamin D deficiency or insufficiency, refractory rickets (vitamin D resistant rickets), familial hypophosphatemia and hypoparathyroidism, and in the management of hypocalcemia and renal osteodystrophy in patients with chronic renal failure undergoing dialysis. Also used in conjunction with calcium in the management and prevention of primary or corticosteroid-induced osteoporosis.
+- **Mechanism of toxicity:** The mechanism of action of calcitriol in the treatment of psoriasis is accounted for by their antiproliferative activity for keratinocytes and their stimulation of epidermal cell differentiation. The anticarcinogenic activity of the active form of Calcitriol appears to be correlated with cellular vitamin D receptor (VDR) levels. …
+- **Acute toxicity:** LD<sub>50</sub> (oral, rat) = 620 &mu;g/kg; LD<sub>50</sub> (intraperitoneal, rat) > 5 mg/kg.
+- **Treatment:** The treatment of acute accidental overdosage of Calcitriol should consist of general supportive measures. …
+- **Detected in:** blood
+
+<p><small>Toxicology facts: <a href="http://www.t3db.ca/toxins/T3D2692">T3DB T3D2692</a> (free for non-commercial use with attribution), quoted in part; reference markers removed; the description above is T3DB's too.</small></p>
+
+<p><small>Also: CAS 32222-06-3 · <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17823">ChEBI 17823</a></small></p>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| calcitriol | parent | 416.646 | C27H44O3 | PubChem | [5280453](https://pubchem.ncbi.nlm.nih.gov/compound/5280453) | Bachmann_2013, Chae_2021, Ron_1984, Verhaeghe_1993 |
+| 1,25-dihydroxyvitamin D3 (calcitriol) | metabolite | — (mass units only) | — | — | — | — |
+| calcitriol (1,25-dihydroxycholecalciferol) | metabolite | — (mass units only) | — | — | — | — |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q310 — no SI value to build fr…</sub> | [Verhaeghe_1993_reference](drugs/toxin_calcitriol/Calcitriol_Verhaeghe1993_reference.md) | held back | 1-compartment, IV | 2 | Verhaeghe J et al., Increased clearance of 1,25(OH)2D3 and…, The American journal of phy… (1993) | [10.1152/ajpendo.1993.265.2.E215](https://doi.org/10.1152/ajpendo.1993.265.2.E215) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Vieth_1990_reference](drugs/toxin_calcitriol/Calcitriol_Vieth1990_reference.md) | held back | 1-compartment, oral | 1 | Vieth R et al., Role of 25-hydroxyvitamin D3 dose in de…, The American journal of phy… (1990) | [10.1152/ajpendo.1990.258.5.E780](https://doi.org/10.1152/ajpendo.1990.258.5.E780) |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Bachmann_2013_reference](drugs/toxin_calcitriol/Calcitriol_Bachmann2013_reference.md) | — | 1-compartment (no model) | 0 | Bachmann H et al., 1,25-Dihydroxyvitamin D3-glycoside of h…, The Journal of steroid bioc… (2013) | [10.1016/j.jsbmb.2012.09.016](https://doi.org/10.1016/j.jsbmb.2012.09.016) |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.10).">in vitro</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Chae_2021_heparg](drugs/toxin_calcitriol/Calcitriol_Chae2021_heparg.md) | — | 1-compartment (no model) | 4 | Chae YJ et al., Pharmacokinetic Estimation Models-based…, Pharmaceutics (2021) | [10.3390/pharmaceutics13020181](https://doi.org/10.3390/pharmaceutics13020181) |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.10).">in vitro</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [↳ hepatocytes_1](drugs/toxin_calcitriol/Calcitriol_Chae2021_hepatocytes_1.md) | — | 1-compartment (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.10).">in vitro</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [↳ hepatocytes_2](drugs/toxin_calcitriol/Calcitriol_Chae2021_hepatocytes_2.md) | — | 1-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.10).">in vitro</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [↳ hepatocytes_3](drugs/toxin_calcitriol/Calcitriol_Chae2021_hepatocytes_3.md) | — | 1-compartment (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.30).">in vitro</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Kamimura_1993_reference](drugs/toxin_calcitriol/Calcitriol_Kamimura1993_reference.md) | — | general linear (no model) | 0 | Kamimura S et al., Differential catabolism of 22-oxacalcit…, Endocrinology (1993) | [10.1210/endo.133.6.8243295](https://doi.org/10.1210/endo.133.6.8243295) |
+| <span class="pk-rf" hidden data-species="in vitro" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">in vitro</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Ron_1984_reference](drugs/toxin_calcitriol/Calcitriol_Ron1984_reference.md) | — | general linear (no model) | 1 | Ron M et al., Transfer of 25-hydroxyvitamin D3 and 1,…, American journal of obstetr… (1984) | [10.1016/0002-9378(84)90709-9](https://doi.org/10.1016/0002-9378(84)90709-9) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Salusky_1990_reference](drugs/toxin_calcitriol/Calcitriol_Salusky1990_reference.md) | — | 1-compartment (no model) | 0 | Salusky IB et al., Pharmacokinetics of calcitriol in conti…, American journal of kidney… (1990) | [10.1016/s0272-6386(12)80566-x](https://doi.org/10.1016/s0272-6386(12)80566-x) |
+| <span class="pk-rf" hidden data-species="dog" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: no kinetic quantity — no half-life, rate constant, volume or clearance (exposur…</sub> | [Tryfonidou_2003_reference](drugs/toxin_calcitriol/Calcitriol_Tryfonidou2003_reference.md) | — | 1-compartment (no model) | 1 | Tryfonidou MA et al., Dietary 135-fold cholecalciferol supple…, Domestic animal endocrinolo… (2003) | [10.1016/s0739-7240(03)00018-3](https://doi.org/10.1016/s0739-7240(03)00018-3) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP24A1** | `Q22` · CL | metabolism | [Aberger_2024](drugs/toxin_calcitriol/pgx_Aberger_2024_CYP24A1_Q22.md) | Aberger S et al., Targeting Calcitriol Metabolism in Acut…, International journal of mo… (2024) | [10.3390/ijms251810003](https://doi.org/10.3390/ijms251810003) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=calcitriol).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| metabolism | liver | `CYP3A4` inducer/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CYP24A1 (inducer), CYP24A1 (metabolism), CYP24A1 (substrate), GC (binder), HOXA10 (upregulator), VDR (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 23:56 | 35:43 | 2/9/0 | 0/0/0 | 0/0/1 | 873,072/118,570 | ollama / glm-5.3-flash | 47 | 5/34 | 47/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 527 matched, 175 returned
+- **screened:** 11  ·  **relevant:** 11
+- **records:** 11  ·  extracted 0  ·  needs review 2  ·  rejected 9  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_12 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Noh_2020.pdf` | Noh K et al., Noteworthy idiosyncrasies of 1α,25-dihy…, Biopharmaceutics & drug dis… (2020) | popPK | 10 | [10.1002/bdd.2223](https://doi.org/10.1002/bdd.2223) | [32319119](https://pubmed.ncbi.nlm.nih.gov/32319119) | Commentary on PBPK-PD modeling and allometric scaling of calcitriol clearance/production rates, but no numeric parameter values are present in the evidence (they reside in the referenced literature and figures not provided). |
+| `Bachmann_2013.pdf` | Bachmann H et al., 1,25-Dihydroxyvitamin D3-glycoside of h…, The Journal of steroid bioc… (2013) | popPK | 8 | [10.1016/j.jsbmb.2012.09.016](https://doi.org/10.1016/j.jsbmb.2012.09.016) | [23023100](https://pubmed.ncbi.nlm.nih.gov/23023100) | Direct TK/PK comparison in male rats reports numeric Tmax (1 h vs 6–12 h) and terminal half-life (~23 h vs ~30 h) after calcitriol; values are present in abstract (detailed curves may only be in figures/supplement). |
+| `Kissmeyer_2004.pdf` | Kissmeyer AM et al., The tissue-specific distribution of 3H-…, The Journal of steroid bioc… (2004) | popPK | 8 | [10.1016/j.jsbmb.2004.03.049](https://doi.org/10.1016/j.jsbmb.2004.03.049) | [15225745](https://pubmed.ncbi.nlm.nih.gov/15225745) | Quantitative tissue distribution data (tissue/serum concentrations, ratios) for 3H-calcitriol in rats, though full numeric values likely reside in figures/tables not fully provided. |
+| `Konety_2002.pdf` | Konety BR et al., Evaluation of intraprostatic metabolism…, Urology (2002) | popPK | 8 | [10.1016/s0090-4295(01)01652-1](https://doi.org/10.1016/s0090-4295(01)01652-1) | [12031392](https://pubmed.ncbi.nlm.nih.gov/12031392) | Quantitative in vivo calcitriol kinetics (tissue/serum concentrations, AUCs, time course) measured in rats; values are present in the abstract text. |
+| `Verhaeghe_1993.pdf` | Verhaeghe J et al., Increased clearance of 1,25(OH)2D3 and…, The American journal of phy… (1993) | popPK | 8 | [10.1152/ajpendo.1993.265.2.E215](https://doi.org/10.1152/ajpendo.1993.265.2.E215) | [8368291](https://pubmed.ncbi.nlm.nih.gov/8368291) | Numeric metabolic clearance rate of 1,25(OH)2D3 reported directly in the abstract for rats with values in text. |
+| `Vieth_1990.pdf` | Vieth R et al., Role of 25-hydroxyvitamin D3 dose in de…, The American journal of phy… (1990) | popPK | 8 | [10.1152/ajpendo.1990.258.5.E780](https://doi.org/10.1152/ajpendo.1990.258.5.E780) | [2185661](https://pubmed.ncbi.nlm.nih.gov/2185661) | Report includes numeric metabolic clearance rates (MCR) of 1,25(OH)2D3 directly in the abstract; values are readable in the evidence. |
+| `Mathis_2014.pdf` | Mathis GA et al., Human pharmacokinetic profile of 1,25-d…, The Journal of steroid bioc… (2014) | popPK | 7 | [10.1016/j.jsbmb.2013.11.016](https://doi.org/10.1016/j.jsbmb.2013.11.016) | [24316430](https://pubmed.ncbi.nlm.nih.gov/24316430) | Human first-in-man PK of 1,25(OH)2D3 (calcitriol) as the subject substance, but numeric parameter values (Cmax, tmax, AUC) are not shown in the provided evidence. |
+| `Ron_1984.pdf` | Ron M et al., Transfer of 25-hydroxyvitamin D3 and 1,…, American journal of obstetr… (1984) | popPK | 7 | [10.1016/0002-9378(84)90709-9](https://doi.org/10.1016/0002-9378(84)90709-9) | [6546472](https://pubmed.ncbi.nlm.nih.gov/6546472) | Reports quantitative placental transfer clearance indices for calcitriol (1,25-(OH)2D3, index 0.26) measured in an in vitro perfused human placenta system. |
+| `Salusky_1990.pdf` | Salusky IB et al., Pharmacokinetics of calcitriol in conti…, American journal of kidney… (1990) | popPK | 7 | [10.1016/s0272-6386(12)80566-x](https://doi.org/10.1016/s0272-6386(12)80566-x) | [2382648](https://pubmed.ncbi.nlm.nih.gov/2382648) | Reports numeric calcitriol AUC and bioavailability values after PO, IV, and IP dosing, though full kinetic parameters (t½, clearance) may be truncated. |
+| `Tryfonidou_2003.pdf` | Tryfonidou MA et al., Dietary 135-fold cholecalciferol supple…, Domestic animal endocrinolo… (2003) | popPK | 7 | [10.1016/s0739-7240(03)00018-3](https://doi.org/10.1016/s0739-7240(03)00018-3) | [12742547](https://pubmed.ncbi.nlm.nih.gov/12742547) | Reports a quantitative metabolic clearance rate (two-fold increase) and production/absorption changes for calcitriol (1,25(OH)2D3) in dogs, though some values are approximate percentage changes rather than full kinetic constants. |
+| `Kamimura_1993.pdf` | Kamimura S et al., Differential catabolism of 22-oxacalcit…, Endocrinology (1993) | popPK | 6 | [10.1210/endo.133.6.8243295](https://doi.org/10.1210/endo.133.6.8243295) | [8243295](https://pubmed.ncbi.nlm.nih.gov/8243295) | Reports apparent Km values for calcitriol (1,25-(OH)2D3) catabolism (~0.9 nM) and metabolic clearance effects measured directly in human peripheral monocytes, though these are in vitro enzyme-kinetic values rather than whole-body parameters. |
+| `Riggs_2012.pdf` | Riggs MM et al., Multiscale physiology-based modeling of…, Journal of clinical pharmac… (2012) | popPK | 5 | [10.1177/0091270011412967](https://doi.org/10.1177/0091270011412967) | [22232752](https://pubmed.ncbi.nlm.nih.gov/22232752) | Calcitriol is modeled within a multiscale PBPK-type model of CKD-MBD, but the only numeric parameters shown are BMD remodeling rates; calcitriol-specific kinetic values are not provided and appear to live in the referenced prior model/publication rather than the given evidence. |
+
+<sub>queue written 2026-11-14 23:39 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Abouzid_2023 | not_relevant | 1 | 0 | Bibliometric analysis of publication trends on vitamin D metabolism gene polymorphisms; no PK/PD effect of any gene variant on calcitriol is reported. |
+| PGx | Ahn_2016 | not_relevant | 1 | 2 | Review of vitamin D biology in prostate cancer with no gene variant effects on calcitriol PK/PD parameters reported. |
+| popPK | Al-Azem_2012 | irrelevant | 0 | 0 | A narrative review of hypoparathyroidism management with no kinetic parameters or numeric values for calcitriol of its own. |
+| PGx | Allegra_2018 | not_relevant | 3 | 5 | Gene polymorphisms are reported to affect pharmacokinetics of deferasirox, not calcitriol; calcitriol is only discussed as deficiency context, with no variant effect on calcitriol PK/PD parameters. |
+| popPK | Alshanwani_2021 | irrelevant | 0 | 0 | No kinetic parameters of calcitriol are reported; it is only a co-treatment dose in a nephrotoxicity outcome study. |
+| PGx | Amano_2009 | not_relevant | 3 | 4 | Review mentions VDR polymorphism associations with periodontal disease susceptibility, not variant effects on calcitriol PK/PD parameters. |
+| popPK | Avila_2023 | irrelevant | 0 | 0 | Narrative review of vitamin D and cervical cancer; no toxicokinetic parameters (half-life, clearance, Vd, etc.) for calcitriol are reported. |
+| PGx | Bahrami_2020 | not_relevant | 3 | 2 | Abstract of a narrative review mentioning genetic variants related to vitamin D metabolism but no reported effect sizes or PK/PD parameters for calcitriol. |
+| popPK | Bailie_2002 | irrelevant | 3 | 5 | A review that repeats half-life values from prior literature with no kinetic parameters of its own; calcitriol half-lives are given as ranges in the abstract. |
+| PGx | Ben-Eltriki_2024 | not_relevant | 3 | 3 | Narrative review discussing CYP-mediated vitamin D metabolism and enzyme expression associations with melanoma outcomes, but no gene variant/genotype effects on calcitriol PK/PD parameters are reported. |
+| popPK | Bertoli_1990 | irrelevant | 1 | 0 | This is a clinical renal-function/outcome study; only the calcitriol dose (0.5 µg/day) and creatinine/inulin clearance changes are given, with no kinetic parameters (no half-life, clearance of calcitriol, Vd, or model). |
+| popPK | Bhatt_2018 | irrelevant | 0 | 0 | TLC lipophilicity (logP chromatographic indices) for calcitriol is an analytical/physicochemical study, not a toxicokinetic parameter in vivo, and no numeric values appear in the evidence. |
+| popPK | Bikle_1982 | irrelevant | 0 | 0 | no_text gate: only 78 chars of text extracted (&lt; 400) |
+| popPK | Bikle_2022 | irrelevant | 0 | 0 | A narrative review of vitamin D immunology in COVID-19 with no kinetic parameters for calcitriol of any kind. |
+| popPK | Brown_2002 | irrelevant | 2 | 0 | A qualitative review of vitamin D analogs; calcitriol appears only as comparator, with no numeric kinetic parameters of its own given in the evidence. |
+| popPK | Brown_2002_2 | irrelevant | 2 | 0 | This is a narrative review of vitamin D analogues for secondary hyperparathyroidism; calcitriol appears only as a comparator/reference compound and no numeric kinetic parameters of its own are present in the evidence. |
+| popPK | Brown_2004 | relevant | 4 | 2 | Rats given radiolabeled calcitriol with tissue/serum level time-course data, but the numeric values are not shown in the evidence beyond qualitative comparisons (likely in figures/tables not provided). |
+| popPK | Buonerba_2013 | irrelevant | 0 | 0 | A speculative commentary with no kinetic parameters of calcitriol; only a creatinine clearance threshold is mentioned. |
+| popPK | Bushinsky_2006 | irrelevant | 0 | 0 | Calcitriol appears only as an experimental exposure in a hypercalciuria/stone pathophysiology review; no kinetic parameters (half-life, clearance, rate constants, etc.) are reported. |
+| PGx | Chae_2021 | not_relevant | 0 | 0 | DDI/induction study of calcitriol on CYPs; no gene variant/genotype/phenotype effect on calcitriol PK/PD is reported. |
+| popPK | Cheung_1994 | irrelevant | 0 | 0 | A review-style discussion of dialysis adequacy mentioning calcitriol only as replacement therapy, with no kinetic parameters. |
+| popPK | Coburn_1998 | irrelevant | 1 | 1 | Clinical review of calcitriol efficacy/outcomes in renal osteodystrophy with only dosing regimens, no kinetic parameters. |
+| PGx | Cusato_2015 | not_relevant | 2 | 3 | VDR BsmI genotype predicts ribavirin-induced anemia (ribavirin PD), not a PK/PD parameter of calcitriol itself; calcitriol is only discussed mechanistically. |
+| PGx | Cusato_2018 | not_relevant | 3 | 2 | The study reports gene variant effects on sofosbuvir/GS-331007 PK, not on calcitriol; calcitriol is not the analyzed drug. |
+| popPK | Daryadel_2019 | irrelevant | 0 | 0 | Calcitriol (1,25(OH)2D3) appears only as a measured plasma endpoint (in figures, values not shown); no kinetic parameters for calcitriol are reported. |
+| PGx | Davis_2024 | not_relevant | 3 | 2 | Reports FGF23 variant and iron status effect on disease biochemistry, but no gene variant effect on calcitriol PK/PD parameters. |
+| popPK | Dennis_2006 | irrelevant | 2 | 1 | The paper is about doxercalciferol's pharmacokinetics/applied therapy; calcitriol appears only as a comparator therapy with no numeric calcitriol kinetic parameters. |
+| popPK | Durna_2020 | irrelevant | 2 | 2 | All quantitative kinetic parameters (AUC, Cmax, tissue distribution, excretion) belong to doxorubicin; calcitriol is only the pretreatment modifier, with no kinetic parameter of calcitriol itself. |
+| popPK | ElKhooly_2024 | irrelevant | 0 | 0 | A pharmacodynamic outcome study in diabetic rats with no kinetic parameters for calcitriol. |
+| PGx | Erturk_2006 | not_relevant | 3 | 2 | Review abstract mentions polymorphisms associated with mineral metabolism abnormalities but reports no PK/PD parameter effects of calcitriol. |
+| popPK | Fakhoury_2020 | irrelevant | 0 | 0 | Review of vitamin D biology with no toxicokinetic parameters for calcitriol. |
+| PGx | Flynn_2018 | not_relevant | 0 | 0 | No pharmacogenomic or genetic variant effect on calcitriol PK/PD reported; study is Caco-2 permeability/enzyme interaction work. |
+| popPK | Forder_2019 | relevant | 6 | 4 | PBPK model of calcitriol-conjugated QDs in mice with partition coefficients, volumes, flows and a first-order clearance constant, but actual numeric coefficient values live in Tables 1–3 and Table S1/S2 which are not included in the evidence; only k_elim = 1.0×10⁻⁶ hr⁻¹ is given inline. Note calcitriol itself is a conjugate on the QD particle, so parameters describe the nanoparticle carrier. |
+| popPK | Freundlich_2017 | irrelevant | 0 | 0 | This is a commentary on a paricalcitol trial; calcitriol appears only as a comparator with no kinetic parameters for calcitriol. |
+| popPK | Gallagher_1990 | irrelevant | 1 | 2 | This is a clinical efficacy/safety trial reporting only dosing and urinary calcium, with no kinetic parameters (half-life, clearance, etc.) for calcitriol. |
+| PGx | Galyuk_2021 | not_relevant | 2 | 3 | Narrative hypothesis paper on vitamin D and addiction; mentions VDR polymorphisms affecting function but no specific gene-variant effect on a calcitriol PK/PD parameter is quantified. |
+| popPK | Gembillo_2020 | irrelevant | 0 | 0 | A narrative review of vitamin D's role in renal tubulopathies with no kinetic parameters (half-life, clearance, Vd, rate constants) for calcitriol; only binding affinities and biomarker changes are mentioned. |
+| PGx | Gomaa_2007 | not_relevant | 0 | 0 | Computational homology modeling of CYP24A1 structure with docking; no gene variant/genotype effect on calcitriol PK/PD parameters reported. |
+| popPK | Goodman_1992 | irrelevant | 0 | 0 | Review of clinical efficacy/safety in renal failure with dose ranges only, no kinetic parameters (half-life, clearance, etc.) for calcitriol. |
+| PGx | Hanna_2021 | not_relevant | 3 | 5 | CYP24A1 variants alter endogenous 1,25(OH)2D3 levels and 25(OH)D:24,25(OH)2D ratio, but these are endogenous vitamin D metabolites/disease biomarkers, not pharmacokinetic or pharmacodynamic parameters of exogenously administered calcitriol. |
+| PGx | Hashiba_2024 | not_relevant | 0 | 0 | Study evaluates CYP/UGT expression and calcitriol hydroxylation in 3D-RPTEC cell models with no gene variant/genotype/phenotype effects on calcitriol PK/PD parameters. |
+| PGx | Hayes_1991 | not_relevant | 2 | 3 | Cell-line phenotypic variation in enzyme activity, not a gene variant/genotype effect on calcitriol PK/PD parameter. |
+| popPK | He_2023 | irrelevant | 0 | 0 | Calcitriol appears only as a brief mention of folate-bioavailability synergy in a review about folate supplementation, with no kinetic parameters (half-life, clearance, Vd, rate constants) for calcitriol anywhere in the text. |
+| PGx | He_2023 | not_relevant | 3 | 3 | Paper addresses folate supplementation pharmacogenomics; calcitriol is discussed as an enzyme-expression modulator, not a drug with a reported gene-variant effect on its PK/PD parameters. |
+| popPK | Hörl_1998 | irrelevant | 0 | 0 | Review of uraemic toxins mentioning calcitriol only qualitatively (suppression of its synthesis/receptor) with no kinetic parameters or numeric values. |
+| PGx | Infante_2019 | not_relevant | 0 | 0 | Review discusses vitamin D polymorphisms and T1D risk/immunomodulation, but no gene variant altering a PK or PD parameter (e.g., calcitriol levels/response) is quantified. |
+| popPK | Jacob_1981 | irrelevant | 1 | 0 | Calcitriol (1,25(OH)2D) appears only as endogenous serum concentrations measured to show cimetidine's effect on vitamin D metabolism in dogs — no kinetic parameters (half-life, clearance, rates) for calcitriol are given. |
+| PGx | Jakob_1995 | not_relevant | 0 | 0 | No gene variant/genotype is studied; calcitriol is only a treatment stimulus in vitro, with no PGx effect on PK/PD parameters. |
+| popPK | Jeong_2024 | irrelevant | 2 | 1 | This is a narrative review of vitamin D neuroprotection/VDR polymorphisms in Alzheimer's disease with no toxicokinetic parameters of calcitriol itself (only half-life of calcifediol and tissue concentrations cited from other papers). |
+| PGx | Jeong_2024 | not_relevant | 4 | 2 | Review on VDR polymorphisms and Alzheimer's disease risk; no PK/PD parameter of calcitriol linked to genotype. |
+| popPK | Kaderli_2017 | irrelevant | 0 | 0 | Calcitriol (1,25-(OH)2D3) appears only as a covariate in a statistical model of calcium clearance ratios; no toxicokinetic parameters of calcitriol are reported. |
+| popPK | Katsanos_2002 | irrelevant | 0 | 0 | Calcitriol is merely a low-dose therapeutic co-treatment in a case report; no kinetic parameters of any kind are reported. |
+| PGx | Knabl_2017 | not_relevant | 3 | 3 | Review of VDR polymorphisms and pregnancy disorders; discusses associations with disease risk and birthweight, but no quantitative pharmacogenomic effect on calcitriol PK or PD parameters. |
+| popPK | Kobayashi_1994 | irrelevant | 3 | 2 | The subject substance is the analogue 22-oxacalcitriol (OCT); calcitriol appears only as a comparator, and no numeric kinetic values for calcitriol appear in the evidence. |
+| PGx | Koriyama_2006 | not_relevant | 0 | 0 | Case report of tumor-induced FGF23 effects on endogenous calcitriol; no gene variant or pharmacogenomic effect on drug PK/PD. |
+| PGx | Kowalówka_2020 | not_relevant | 3 | 1 | Review mentions vitamin D metabolite concentrations and VDR/CYP24A1 polymorphisms generally, but reports no fitted pharmacogenomic effect on calcitriol PK/PD parameters. |
+| popPK | Kravvas_2018 | irrelevant | 0 | 0 | Efficacy review of topical therapies; calcitriol is a treatment, no kinetic parameters of any kind. |
+| PGx | Krämer_2009 | not_relevant | 0 | 0 | In vitro sebocyte study of vitamin D metabolism with no gene variant/genotype effects on PK/PD parameters reported. |
+| popPK | Lammers_1996 | relevant | 4 | 1 | Toxicokinetic study of topically applied calcitriol in rats, but the evidence excerpt contains no numeric kinetic parameters (no concentrations, half-lives or rate constants given in text). |
+| popPK | Langman_1989 | irrelevant | 3 | 0 | The paper mentions increased metabolic clearance of calcitrilo but provides no numeric parameters; the evidence is a narrative abstract without values. |
+| PGx | Liao_2014 | not_relevant | 6 | 4 | Mentions VDR polymorphism interactions with calcitriol response (Morrison et al, fracture/BMD response) but no fitted PGx effect on calcitriol PK/PD parameters itself; review is not pharmacogenomic-focused. |
+| popPK | Liu_2025 | irrelevant | 0 | 0 | Calcitriol appears only as a fixed co-therapy dose (0.50 μg/d) during run-in; the kinetic parameters (serum concentrations, PK endpoints) belong to burosumab, with no kinetic parameters for calcitriol itself. |
+| PGx | Lu_2023 | not_relevant | 2 | 3 | Review discusses VDR polymorphisms and periodontitis severity, not effects of gene variants on calcitriol PK/PD parameters like AUC or clearance. |
+| PGx | Luo_2024 | not_relevant | 2 | 1 | Calcitriol is only listed as a medication category; no gene variant effect on calcitriol PK/PD parameters is reported. |
+| PGx | Luong_2013 | not_relevant | 6 | 3 | A narrative review of vitamin D/VDR genes in AIH susceptibility and immune modulation; no gene variant effect on a calcitriol PK or PD parameter is quantified or reported. |
+| popPK | Mahaffey_1983 | irrelevant | 0 | 0 | Review on lead toxicity; calcitriol (1,25-dihydroxycholecalciferol) is discussed only as a factor affecting lead absorption, with no kinetic parameters of calcitriol itself. |
+| popPK | Maia_2018 | irrelevant | 0 | 0 | Calcitriol appears only as a treatment dose in a case report; no kinetic parameters (half-life, clearance, Vd, rate constants) for calcitriol are reported. |
+| popPK | Marcucci_2021 | irrelevant | 1 | 1 | Clinical dosing and calcium biochemistry study in pregnant women; no kinetic parameters (half-life, clearance of calcitriol, Vd, rate constants) for calcitriol are reported. |
+| popPK | Martínez_1998 | irrelevant | 0 | 0 | Clinical outcome study measuring serum calcitriol concentrations in patients; no kinetic parameters of calcitriol disposition. |
+| popPK | Mathis_2014 | relevant | 7 | 3 | Human first-in-man PK of 1,25(OH)2D3 (calcitriol) as the subject substance, but numeric parameter values (Cmax, tmax, AUC) are not shown in the provided evidence. |
+| PGx | Mehta_2013 | not_relevant | 2 | 0 | Abstract only mentions VDR polymorphisms in potential responsiveness conceptually, with no PK/PD parameters or effect sizes reported. |
+| popPK | Minghetti_1988 | irrelevant | 0 | 0 | Review of receptor gene regulation with no quantitative toxicokinetic parameters for calcitriol. |
+| PGx | Miyaura_1983 | not_relevant | 1 | 2 | In vitro drug-resistant cell clones, not gene variants/genotypes affecting PK/PD of calcitriol. |
+| popPK | Mizobuchi_2014 | irrelevant | 1 | 0 | This is a review-style clinical discussion of 22-oxacalcitriol with no quantitative kinetic parameters for calcitriol and no numeric values present. |
+| PGx | Mok_2023 | not_relevant | 0 | 0 | Antiviral efficacy of calcitriol via VDR pathway is studied in cells/mice; no gene variant/genotype linked to any PK or PD parameter. |
+| popPK | Mosiołek_2025 | irrelevant | 0 | 0 | This is a systematic review of vitamin D and schizophrenia risk/outcomes; no kinetic parameters (half-life, clearance, rate constants, etc.) for calcitriol are reported, only serum concentrations and epidemiological associations. |
+| PGx | Muthusamy_2018 | not_relevant | 3 | 5 | Purely computational docking/MD of VDR variants; changes in ligand-binding pocket/energy are not measured PK/PD parameters and no fitted in vivo effect sizes are reported. |
+| PGx | Navarro-García_2025 | not_relevant | 2 | 5 | The paper describes calcitriol (the drug itself) inducing PON1 expression/activity in vitro, not a gene variant/genotype altering a PK or PD parameter of calcitriol. |
+| PGx | Negri_2014 | not_relevant | 7 | 2 | Narrative review only mentions VDR BsmI affects calcitriol response qualitatively, with no fitted effect sizes or PK/PD parameter data extractable. |
+| popPK | Noh_2020 | relevant | 10 | 2 | Commentary on PBPK-PD modeling and allometric scaling of calcitriol clearance/production rates, but no numeric parameter values are present in the evidence (they reside in the referenced literature and figures not provided). |
+| PGx | Noh_2022 | not_relevant | 3 | 3 | Review discusses calcitriol/VDR regulation of enzymes and transporters generally, without any gene variant effect on calcitriol's PK/PD parameters. |
+| popPK | Norman_1987 | irrelevant | 1 | 1 | A qualitative review of the avian vitamin D endocrine system with receptor and metabolism descriptions; no kinetic parameters for calcitriol of any kind. |
+| PGx | Papadimitriou_2023 | not_relevant | 1 | 0 | HLA/VDR genotypes are discussed only as disease risk factors/disease status, not as modifiers of calcitriol/paricalcitol PK or PD parameters. |
+| PGx | Paucarmayta_2020 | not_relevant | 0 | 0 | In vitro drug-combination study with no gene variant/genotype effects on calcitriol PK/PD parameters. |
+| PGx | Paul_2025 | not_relevant | 3 | 3 | GWAS of endogenous serum calcitriol levels, not pharmacokinetics/pharmacodynamics of an administered calcitriol drug; only associations and heritability, no fitted variant effects on PK/PD parameters. |
+| popPK | Pecosky_1992 | irrelevant | 1 | 4 | This is an in vitro stability/sorption study with polymer:water partition coefficients for syringe plastics — not a pharmacokinetic or toxicokinetic parameter of calcitriol in any living system, and no species is involved. |
+| PGx | Prié_2005 | not_relevant | 2 | 2 | Abstract mentions polymorphisms affecting vascular calcification/survival and calcitriol metabolism in FGF23 mouse models, but no gene variant effect on a calcitriol PK/PD parameter is reported. |
+| PGx | Quesada-Gomez_2022 | not_relevant | 2 | 0 | Narrative review discussing vitamin D metabolism genes and VDR polymorphisms and infection risk, but no gene variant effect on a PK/PD parameter of calcitriol. |
+| PGx | Quinlan_2012 | not_relevant | 2 | 2 | PHEX genotype relates to disease/treatment timing of calcitriol, not to any PK/PD parameter effect of genotype; no genotype effect on drug response reported. |
+| popPK | Ramberg_1984 | irrelevant | 3 | 3 | The kinetic model parameters (clearances, fractional absorptions, rate constants) describe calcium disposition, not calcitriol, which is mentioned only as a measured hormone concentration; numeric values are not shown in the evidence. |
+| popPK | Reichrath_2001 | irrelevant | 1 | 0 | A qualitative review abstract with no numeric toxicokinetic parameters for calcitriol; only mentions analog PK qualitatively. |
+| popPK | Riggs_2012 | relevant | 5 | 3 | Calcitriol is modeled within a multiscale PBPK-type model of CKD-MBD, but the only numeric parameters shown are BMD remodeling rates; calcitriol-specific kinetic values are not provided and appear to live in the referenced prior model/publication rather than the given evidence. |
+| PGx | Schmiedlin-Ren_2001 | not_relevant | 3 | 3 | Calcitriol is studied as an inducer of CYP3A4 in cell lines, not a gene variant/genotype affecting calcitriol's PK/PD. |
+| popPK | Schmitt_2005 | irrelevant | 0 | 0 | Review of PTH secretion dynamics; calcitriol appears only as a modulation of PTH secretion with no kinetic parameters for calcitriol itself. |
+| PGx | Starska-Kowarska_2023 | not_relevant | 2 | 1 | Review on vitamin D and HNSCC mentions VDR polymorphisms in cancer risk context but reports no pharmacogenomic effect on calcitriol PK/PD parameters. |
+| popPK | Sun_2007 | irrelevant | 0 | 0 | In vitro mechanistic study of calcitriol's effect on ROS in adipocytes, with no toxicokinetic parameters (half-life, clearance, rates, etc.) reported. |
+| PGx | Sun_2016 | not_relevant | 2 | 4 | Calcitriol alters intratumoral metabolism of irinotecan via miR-627/CYP3A4, not a gene variant/genotype effect on calcitriol's own PK/PD parameters. |
+| popPK | Suñer_2004 | irrelevant | 0 | 0 | Calcitriol appears only as co-treatment in a sevelamer clinical study; no kinetic parameters for calcitriol are reported. |
+| PGx | Tan_2018 | not_relevant | 3 | 6 | Calcitriol modulation of MRP1/P-gp/BCRP transport is studied in overexpressing cell lines, not a gene variant/genotype/phenotype altering calcitriol PK or PD in vivo. |
+| PGx | Teshima_2019 | not_relevant | 3 | 4 | CYP2R1 variant affects vitamin D metabolism/endogenous calcitriol production, not the PK/PD of administered calcitriol; responses are clinical, no PK/PD parameter quantified. |
+| popPK | Thiel_2023 | irrelevant | 2 | 1 | A review of vitamin D analogues in Alzheimer's disease with no quantitative calcitriol kinetic parameters, aside from passing mention of rat calcidiol-to-calcitriol conversion percentages; no numeric parameter set for calcitriol itself. |
+| popPK | Tiraboschi_2024 | irrelevant | 0 | 0 | In vitro cell-culture study of calcitriol's immunological effects with no kinetic parameters (no half-life, clearance, rate constants, or disposition model). |
+| popPK | Torregrosa_1996 | irrelevant | 0 | 0 | no_text gate: only 108 chars of text extracted (&lt; 400) |
+| popPK | Tsugawa_2016 | irrelevant | 2 | 0 | A review of active vitamin D3 pharmacokinetics with no numeric kinetic parameters present in the evidence; values likely reside in the full paper/figures not provided. |
+| PGx | Tuey_2021 | not_relevant | 0 | 0 | In vitro gene expression changes with vitamin D treatment, not a variant/genotype effect on PK/PD. |
+| popPK | Ugrica_2021 | irrelevant | 0 | 0 | Calcitriol levels are only reported as changed/increased outcome measures with no numeric kinetic parameters (half-life, clearance, rate constants, etc.) for calcitriol. |
+| popPK | Vo_2026 | irrelevant | 2 | 3 | Calcitriol is the dosed modulator, but all reported kinetic parameters (clearance, exposure, tissue distribution) belong to taurine, PDA and methotrexate, not to calcitriol itself; some numbers appear present in text/figures though. |
+| popPK | Wilkens_2013 | irrelevant | 1 | 3 | The pharmacokinetics (plasma half-life) reported are for 25-hydroxyvitamin D3, a different substance; calcitriol (1,25-dihydroxyvitamin D3) appears only as a measured comparator, and numeric half-life values are not present in the evidence. |
+| popPK | Wu-Wong_2005 | irrelevant | 0 | 0 | A narrative review with no quantitative kinetic parameters for calcitriol reported in the evidence. |
+| PGx | Wu_2025 | not_relevant | 1 | 2 | HRAS mutation relates to disease etiology and burosumab dosing, not a gene variant effect on calcitriol PK/PD parameters. |
+| popPK | Yanaka_1998 | irrelevant | 0 | 0 | In vitro/mechanistic gene expression study in mouse osteoblasts; only kinetic parameter is NPR-C mRNA half-life, not calcitriol toxicokinetics. |
+| popPK | Zhou_2001 | irrelevant | 0 | 0 | Calcitriol appears only as a stimulus of OCIL mRNA expression; no kinetic parameters reported. |
+| PGx | Żołek_2025 | not_relevant | 0 | 0 | Paper studies designed vitamin D analog metabolism by CYP24A1/CYP3A4 in vitro; no gene variant/genotype effect on PK/PD of calcitriol is reported. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcalcitriol%5D&body=Drug%3A%20calcitriol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/toxin_calcitriol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-11-14 23:40 UTC</sub>

@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Amlodipine_van2020_1_to_3_years",
+ "molar_masses": {
+  "central.C": 0.40887599999999996
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.5
+ ],
+ "parameters": {
+  "Cl": 3.055555555555555e-06,
+  "F": 1.0,
+  "MM": 0.40887599999999996,
+  "Tlag": 3132.0,
+  "VdPerKg": 0.003885714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.05e-05,
+  "ka": 0.00040555555555555554,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12985.97194388778
+ },
+ "reference_peaks": {
+  "central.C": 2.872049960888031e-05
+ },
+ "stop_time": 432000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

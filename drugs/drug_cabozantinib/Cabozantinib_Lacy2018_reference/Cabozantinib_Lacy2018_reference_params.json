@@ -1,0 +1,43 @@
+{
+ "dose_source": "paper",
+ "model_id": "Cabozantinib_Lacy2018_reference",
+ "molar_masses": {
+  "central.C": 0.501514
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0,
+  40.0,
+  60.0,
+  100.0,
+  140.0,
+  200.0
+ ],
+ "parameters": {
+  "Cl": 6.825e-07,
+  "F": 1.0,
+  "MM": 0.501514,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0022454000000000003,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "k12": 5.3290607534840184e-05,
+  "k21": 4.4396505523576646e-05,
+  "ka": 0.00022333333333333336,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 19046.09218436874
+ },
+ "reference_peaks": {
+  "central.C": 8.10301560328903e-05
+ },
+ "stop_time": 864000.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

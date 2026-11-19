@@ -1,0 +1,160 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;dipyridamole&quot;}]"></div>
+
+# dipyridamole
+
+- **generic name:** dipyridamole
+- **ATC codes:** `B01AC07`
+- **DrugBank:** [DB00975](https://go.drugbank.com/drugs/DB00975) · **PubChem:** [CID 3108](https://pubchem.ncbi.nlm.nih.gov/compound/3108)
+- **molar mass:** 504.6256 g/mol (C24H40N8O4) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Dipyridamole is an antiplatelet drug that inhibits blood clot formation. It is usually given orally in tablet or capsule form, or intravenously as an injection. The drug is approved for use and is also used for investigational purposes.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q419374](https://www.wikidata.org/wiki/Q419374), [Wikipedia](https://en.wikipedia.org/wiki/Dipyridamole?oldid=1386000017) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| dipyridamole | parent | 504.626 | C24H40N8O4 | DrugBank | [3108](https://pubchem.ncbi.nlm.nih.gov/compound/3108) | Nielsen-Kudsk_1979 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Nielsen-Kudsk_1979_reference](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_reference.md) | — | 1-compartment (no model) | 1 | Nielsen-Kudsk F et al., Pharmacokinetics of dipyridamole, Acta pharmacologica et toxi… (1979) | [10.1111/j.1600-0773.1979.tb02350.x](https://doi.org/10.1111/j.1600-0773.1979.tb02350.x) |
+| <span class="pk-rf" hidden data-species="rabbit" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Nielsen-Kudsk_1980_reference](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_reference.md) | — | 1-compartment (no model) | 0 | Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Herington_2015_AUC](drugs/drug_dipyridamole/pd_Herington_2015_AUC.md) | AUC ← dipyridamole · direct sigmoid Emax (Hill) effect | — | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Herington_2015_Amplitude](drugs/drug_dipyridamole/pd_Herington_2015_Amplitude.md) | Amplitude ← dipyridamole · direct sigmoid Emax (Hill) effect | — | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Herington_2015_Frequency](drugs/drug_dipyridamole/pd_Herington_2015_Frequency.md) | Frequency ← dipyridamole · direct sigmoid Emax (Hill) effect | — | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=dipyridamole).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
+| distribution | blood | `ORM1` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | `ABCB1` inhibitor/substrate, `ABCC4` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB1` inhibitor/substrate, `ABCB11` substrate, `ABCC4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC5 (inhibitor), ADA (inhibitor), PDE10A (inhibitor), PDE4A (inhibitor), PDE5A (inhibitor), RCAN1 (inhibitor).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-05 14:32 | 15:04 | 0/2/0 | 1/0/0 | 0/0/0 | 360,187/29,453 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 132 matched, 57 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Dresse_1982.pdf` | Dresse A et al., Pharmacokinetics of oral dipyridamole (…, European journal of clinica… (1982) | popPK | 10 | [10.1007/BF00547559](https://doi.org/10.1007/BF00547559) | [6756935](https://pubmed.ncbi.nlm.nih.gov/6756935) | The study describes a two-compartment pharmacokinetic model for dipyridamole in humans, but the specific numeric parameter values are not present in the provided evidence. |
+| `Nielsen-Kudsk_1979.pdf` | Nielsen-Kudsk F et al., Pharmacokinetics of dipyridamole, Acta pharmacologica et toxi… (1979) | popPK | 10 | [10.1111/j.1600-0773.1979.tb02350.x](https://doi.org/10.1111/j.1600-0773.1979.tb02350.x) | [474151](https://pubmed.ncbi.nlm.nih.gov/474151) | The study reports quantitative PK parameters (beta, half-life, ka, bioavailability) for dipyridamole in humans, though specific clearance and volume values are not explicitly listed in the text. |
+| `Cheng_2006.pdf` | Cheng J et al., Stability and pharmacokinetic studies o…, International journal of ph… (2006) | popPK | 9 | [10.1016/j.ijpharm.2006.01.031](https://doi.org/10.1016/j.ijpharm.2006.01.031) | [16540271](https://pubmed.ncbi.nlm.nih.gov/16540271) | The study reports pharmacokinetic parameters for dipyridamole in rats using a two-compartment model, but the specific numeric values are not present in the provided evidence. |
+| `Nielsen-Kudsk_1980.pdf` | Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980) | popPK | 9 | [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x) | [7446135](https://pubmed.ncbi.nlm.nih.gov/7446135) | The study reports quantitative pharmacokinetic parameters (half-lives, accumulation) for dipyridamole in an isolated rabbit heart model. |
+| `Li_2020.pdf` | Li Y et al., Metabolism and disposition of corylifol…, Xenobiotica; the fate of fo… (2020) | pgx | 7 | [10.1080/00498254.2020.1732496](https://doi.org/10.1080/00498254.2020.1732496) | [32116078](https://www.ncbi.nlm.nih.gov/pubmed/32116078) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
+| `Qin_2018.pdf` | Qin Z et al., Chemical inhibition and stable knock-do…, Food & function (2018) | pgx | 7 | [10.1039/c7fo01298e](https://doi.org/10.1039/c7fo01298e) | [29318243](https://www.ncbi.nlm.nih.gov/pubmed/29318243) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+| `Quan_2015.pdf` | Quan E et al., Characterization of chrysin glucuronida…, Drug metabolism and disposi… (2015) | pgx | 7 | [10.1124/dmd.114.061598](https://doi.org/10.1124/dmd.114.061598) | [25595598](https://www.ncbi.nlm.nih.gov/pubmed/25595598) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
+| `Zhang_2009.pdf` | Zhang ZY et al., Biotransformation and in vitro assessme…, Journal of pharmaceutical a… (2009) | pgx | 7 | [10.1016/j.jpba.2009.04.013](https://doi.org/10.1016/j.jpba.2009.04.013) | [19467820](https://www.ncbi.nlm.nih.gov/pubmed/19467820) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Dickens_2013.pdf` | Dickens D et al., ABCB1 single nucleotide polymorphisms (…, Pharmacogenetics and genomi… (2013) | pgx | 5 | [10.1097/FPC.0b013e328360d10c](https://doi.org/10.1097/FPC.0b013e328360d10c) | [23619510](https://www.ncbi.nlm.nih.gov/pubmed/23619510) | metadata signals extractable PGX data (ABCB1) |
+| `Keyany_2026.pdf` | Keyany A et al., Impact of CYP2C19 genotyping on clopido…, European journal of hospita… (2026) | pgx | 5 | [10.1136/ejhpharm-2025-004727](https://doi.org/10.1136/ejhpharm-2025-004727) | [41791861](https://www.ncbi.nlm.nih.gov/pubmed/41791861) | metadata signals extractable PGX data (CYP2C19) |
+| `Wright_2023.pdf` | Wright S et al., Development of a point-of-care genetic…, Wellcome open research (2023) | pgx | 5 | [10.12688/wellcomeopenres.19202.1](https://doi.org/10.12688/wellcomeopenres.19202.1) | [37869733](https://www.ncbi.nlm.nih.gov/pubmed/37869733) | metadata signals extractable PGX data (CYP2C19) |
+
+<sub>queue written 2026-10-05 14:18 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Adema_2012 | not_relevant | 0 | 0 | The paper investigates the metabolism of elacytarabine and CP-4126, using dipyridamole only as a transporter inhibitor control, and does not report pharmacogenomic effects on dipyridamole's PK or PD. |
+| PGx | Allon_2012 | not_relevant | 0 | 0 | The paper reports an association between a Factor V polymorphism and graft failure (clinical outcome), not a change in the pharmacokinetic or pharmacodynamic parameters of dipyridamole. |
+| PGx | Badruddin_2009 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for clopidogrel (CYP2C19) but provides no pharmacokinetic or pharmacodynamic data for dipyridamole. |
+| popPK | Candenas_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of contractile effects on guinea-pig trachea, not a pharmacokinetic study, and dipyridamole is used only as a modulator/comparator. |
+| PD | Candenas_1992 | not_relevant | 3 | 2 | The paper reports qualitative modulation of agonist effects by dipyridamole (reduction/suppression) but does not provide numeric PD parameters (e.g., EC50, Emax) for dipyridamole itself or a quantitative exposure-response relationship. |
+| popPK | Cheng_2006 | relevant | 9 | 0 | The study reports pharmacokinetic parameters for dipyridamole in rats using a two-compartment model, but the specific numeric values are not present in the provided evidence. |
+| popPK | Cichocki_2024 | irrelevant | 0 | 0 | The study uses dipyridamole as a pharmacological stress agent for myocardial perfusion imaging and does not report pharmacokinetic parameters for dipyridamole itself. |
+| popPK | Conesa-Buendía_2019 | irrelevant | 0 | 0 | The study investigates the mechanistic effects of dipyridamole on bone loss in mice and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for dipyridamole. |
+| PGx | Damont_2016 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effect of dipyridamole on P-glycoprotein function in nonhuman primates but does not report any pharmacogenomic effects (gene variants) on dipyridamole's PK or PD parameters. |
+| popPK | Deckert_1987 | irrelevant | 0 | 0 | The study is an in vitro receptor binding/autoradiography study characterizing adenosine transporters, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PD | Deckert_1987 | not_relevant | 0 | 0 | The paper reports in vitro receptor binding kinetics (Kd, Bmax, Ki) for [3H]dipyridamole, which are pharmacological binding parameters, not pharmacodynamic (exposure-response) parameters for the drug's physiological effect. |
+| PGx | Desai_1997 | not_relevant | 0 | 0 | The study investigates the pharmacological interaction between dipyridamole and doxorubicin in tumor models, not the effect of a gene variant on dipyridamole's PK or PD. |
+| PGx | Dickens_2013 | not_relevant | 0 | 0 | The paper investigates the functional impact of ABCB1 SNPs on P-gp transport activity using digoxin and imatinib as substrates, and lists dipyridamole only as a reference inhibitor in a rank order, without reporting any pharmacokinetic or pharmacodynamic parameters for dipyridamole itself. |
+| popPK | Dresse_1982 | relevant | 10 | 0 | The study describes a two-compartment pharmacokinetic model for dipyridamole in humans, but the specific numeric parameter values are not present in the provided evidence. |
+| PGx | El_2016 | not_relevant | 0 | 0 | The paper is a clinical trial assessing the efficacy of dipyridamole on myocardial injury markers and does not report any pharmacogenomic effects or gene-variant interactions. |
+| PGx | Ensor_2010 | not_relevant | 0 | 0 | The paper discusses antithrombotic therapy for an artificial heart and mentions warfarin genomics, but does not report any pharmacogenomic effects on the PK or PD of dipyridamole. |
+| popPK | Gesztelyi_2003 | irrelevant | 0 | 0 | The study is a pharmacological investigation of adenosine mechanisms in guinea pig atria where dipyridamole is used as a tool compound (transport inhibitor), not as the subject of pharmacokinetic analysis. |
+| PGx | Hao_2021 | not_relevant | 0 | 0 | The paper evaluates antithrombotic therapy in Kawasaki disease and mentions dipyridamole only as a comparator for platelet inhibition, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Herington_2015 | irrelevant | 0 | 0 | The study is a high-throughput screening and functional pharmacology assay for uterine contractility in mice, not a pharmacokinetic study, and reports no disposition parameters for dipyridamole. |
+| PGx | Keyany_2026 | not_relevant | 0 | 0 | The paper focuses on CYP2C19 genotyping for clopidogrel therapy adjustments, not on the pharmacokinetics or pharmacodynamics of dipyridamole. |
+| popPK | Klabunde_1983 | irrelevant | 0 | 0 | The study investigates the hemodynamic and pharmacodynamic effects of dipyridamole on vasodilation and adenosine levels in dog muscle, not its pharmacokinetic disposition parameters. |
+| popPK | Kleppe_2018 | irrelevant | 0 | 0 | The paper is a mathematical modeling study of platelet signaling pathways where dipyridamole is mentioned only as a pharmacological inhibitor/comparator, with no pharmacokinetic parameters reported. |
+| PGx | Kuczek_1992 | not_relevant | 0 | 0 | The paper discusses tumor resistance mechanisms and mentions dipyridamole only in the context of synergy with PALA, without reporting any pharmacogenomic effects on dipyridamole's PK or PD parameters. |
+| PGx | Kwan_2009 | not_relevant | 0 | 0 | The paper investigates the effect of dipyridamole as a transporter inhibitor on darunavir accumulation, not the effect of a gene variant on dipyridamole's PK/PD. |
+| PGx | Li_2020 | not_relevant | 0 | 0 | The paper investigates the metabolism of corylifol A, not dipyridamole; dipyridamole is only used as a transporter inhibitor. |
+| popPK | Lortie_2007 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the PET tracer 82Rb, using dipyridamole only as a stress agent to induce hyperemia, and does not report PK parameters for dipyridamole. |
+| popPK | Mediero_2015 | irrelevant | 0 | 0 | The study investigates the pharmacological effect of dipyridamole on bone regeneration in mice, not its pharmacokinetic parameters. |
+| PD | Mediero_2015 | not_relevant | 3 | 2 | The paper reports a single-dose efficacy study (1 μM) and lists the intrinsic EC50 of dipyridamole as a compound property, but does not provide an exposure-response curve, dose-response data, or fitted PD parameters (Emax, EC50 for the observed effect) for the drug in this context. |
+| PGx | Molina-Arcas_2009 | not_relevant | 2 | 0 | The text is a general review of nucleoside transporters and mentions dipyridamole as a target, but it does not report specific pharmacogenomic effects of gene variants on dipyridamole's PK or PD parameters. |
+| PGx | Offman_2013 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction with omeprazole, not a pharmacogenomic effect of a gene variant on dipyridamole PK/PD. |
+| popPK | Olivera_1992 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of adenosine receptors in rat glomeruli where dipyridamole is used only as a tool compound to inhibit adenosine uptake, not as the subject of pharmacokinetic analysis. |
+| PD | Olivera_1992 | not_relevant | 0 | 0 | The paper studies adenosine and its analogues; dipyridamole is only mentioned qualitatively as an enhancer of the adenosine response, with no specific dose-response or PD parameters reported for dipyridamole itself. |
+| PGx | Peters_2013 | not_relevant | 0 | 0 | The paper studies the metabolism and mechanism of action of fluorocyclopentenylcytosine (RX-3117), not dipyridamole, and does not report pharmacogenomic effects on dipyridamole PK/PD. |
+| PGx | Qin_2018 | not_relevant | 0 | 0 | The paper investigates the transport of wushanicaritin glucuronides and uses dipyridamole only as a negative control inhibitor, not as the drug of interest for pharmacogenomic analysis. |
+| PGx | Qin_2025 | not_relevant | 0 | 0 | The paper is a network meta-analysis of clinical outcomes (efficacy/safety) and does not report pharmacokinetic or pharmacodynamic parameters or specific gene variant effects on dipyridamole. |
+| PGx | Quan_2015 | not_relevant | 0 | 0 | The paper investigates the transporters responsible for the efflux of chrysin glucuronide, not the pharmacokinetics or pharmacodynamics of dipyridamole. |
+| popPK | Rosenberg_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of adenosine release in rat cortical cultures where dipyridamole is used only as a phosphodiesterase inhibitor tool compound, with no pharmacokinetic parameters reported. |
+| PD | Rosenberg_1994 | not_relevant | 0 | 0 | The paper investigates the effect of isoproterenol on adenosine/cAMP in cell cultures and does not mention dipyridamole or report any PD parameters for it. |
+| PGx | Shalinsky_1990 | not_relevant | 0 | 0 | The paper investigates dipyridamole as a pharmacological modulator of multidrug resistance in cell lines, not as a drug whose PK/PD is altered by a specific gene variant. |
+| PGx | Shankar_2006 | not_relevant | 0 | 0 | The paper uses dipyridamole as a transporter inhibitor to study the uptake of radiolabeled tracers, not to report pharmacogenomic effects on dipyridamole's own PK/PD parameters. |
+| popPK | Trump_1991 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of fluorouracil, with dipyridamole serving only as a co-administered agent. |
+| PGx | Tsukahara_2021 | not_relevant | 0 | 0 | The paper describes a clinical case of myocardial ischemia during therapy but does not report any pharmacogenomic effects on dipyridamole PK or PD parameters. |
+| popPK | Vallée_1997 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of the MRI contrast agent Gd-DTPA, using dipyridamole only as a vasodilator to induce stress. |
+| popPK | Ver_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of nucleoside transport inhibition on neutrophil luminescence, not a pharmacokinetic study reporting disposition parameters for dipyridamole. |
+| PGx | Verstuyft_2003 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetic effect of dipyridamole on digoxin, not the effect of a gene variant on dipyridamole's own PK/PD parameters. |
+| PGx | Wichaiyo_2026 | not_relevant | 0 | 0 | The paper is a general review of antiplatelet drugs and does not report specific pharmacogenomic effects on the PK or PD of dipyridamole. |
+| PGx | Wright_2023 | not_relevant | 0 | 0 | The paper is a cost-effectiveness analysis of a genetic test for clopidogrel and does not report pharmacokinetic or pharmacodynamic data for dipyridamole. |
+| popPK | Xi_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the radiotracer 99mTc-3SPboroxime, using dipyridamole only as a stress agent, and does not report PK parameters for dipyridamole itself. |
+| PGx | Yang_2018 | not_relevant | 0 | 0 | The paper investigates the efflux transporters of bisdemethoxycurcumin-O-glucuronide, using dipyridamole only as a chemical inhibitor, and does not report pharmacogenomic effects on dipyridamole's PK or PD. |
+| PGx | Zhang_2009 | not_relevant | 0 | 0 | The paper investigates in vitro metabolism and drug-drug interactions of dipyridamole but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| PGx | van_2022 | not_relevant | 0 | 0 | The paper uses dipyridamole as a reference compound to identify other drugs that potentiate statin activity, but it does not report how a specific gene variant or genotype alters the pharmacokinetic or pharmacodynamic parameters of dipyridamole itself. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdipyridamole%5D&body=Drug%3A%20dipyridamole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dipyridamole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-05 14:18 UTC</sub>

@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 3 mg oral (L04AX06)",
+ "model_id": "Pomalidomide_Ogasawara2021_reference",
+ "molar_masses": {
+  "central.C": 0.2732441
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0888888888888889e-06,
+  "F": 1.0,
+  "MM": 0.2732441,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00061,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3e-06,
+  "ka": 0.00021083333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11817.234468937875
+ },
+ "reference_peaks": {
+  "central.C": 5.253309737979788e-05
+ },
+ "stop_time": 151200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

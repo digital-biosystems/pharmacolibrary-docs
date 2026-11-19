@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg oral (C10AB05)",
+ "model_id": "Fenofibrate_Najib2002_reference",
+ "molar_masses": {
+  "central.C": 0.360834
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.997648520678416e-07,
+  "F": 1.0,
+  "MM": 0.360834,
+  "Tlag": 28800.0,
+  "VdPerKg": 0.0008900000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 49839.23834181427
+ },
+ "reference_peaks": {
+  "central.C": 0.002631492071352057
+ },
+ "stop_time": 432000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

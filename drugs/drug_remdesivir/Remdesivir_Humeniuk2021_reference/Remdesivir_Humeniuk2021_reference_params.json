@@ -1,0 +1,68 @@
+{
+ "dose_source": "library default",
+ "model_id": "Remdesivir_Humeniuk2021_reference",
+ "molar_masses": {
+  "central.C": 0.602585
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 0.0033499999999999997
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 0.0022299999999999998
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 4380.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 2230.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 143.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 145.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 370.0
+   },
+   {
+    "source": "Humeniuk_2021:other_prose",
+    "value_si": 246.0
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 1.808333333333333e-05,
+  "F": 1.0,
+  "MM": 0.602585,
+  "Tlag": 0.0,
+  "VdPerKg": 0.001322857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6406.412825651302
+ },
+ "reference_peaks": {
+  "central.C": 0.0003316825802550037
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

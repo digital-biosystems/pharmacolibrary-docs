@@ -1,0 +1,67 @@
+{
+ "dose_source": "paper",
+ "model_id": "SuccinicAcid_Jung2022_13c4sa_po",
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0,
+  7000.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Jung_2022:other_prose",
+    "value_si": 1167.6
+   },
+   {
+    "source": "Jung_2022:other_prose",
+    "value_si": 244.8
+   },
+   {
+    "source": "Jung_2022:other_prose",
+    "value_si": 149.0
+   },
+   {
+    "source": "Jung_2022:other_prose",
+    "value_si": 128.8
+   },
+   {
+    "source": "Jung_2022:other_prose",
+    "value_si": 44.5
+   },
+   {
+    "source": "Jung_2022:other_prose",
+    "value_si": 13.3
+   },
+   {
+    "source": "Jung_2022:discussion_prose",
+    "value_si": 1167.6
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "Tb[1]": 2988.0,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.986995356995056
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

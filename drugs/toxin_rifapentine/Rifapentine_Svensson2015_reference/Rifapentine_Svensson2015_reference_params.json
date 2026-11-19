@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 110 mg oral (J04AB05)",
+ "model_id": "Rifapentine_Svensson2015_reference",
+ "molar_masses": {
+  "central.C": 0.877
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.88888888888889e-07,
+  "F": 1.0,
+  "MM": 0.877,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00023142857142857142,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00011,
+  "k12": 8.076131687242798e-05,
+  "ka": 3.3333333333333335e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 23536.39239835303
+ },
+ "reference_peaks": {
+  "central.C": 0.001906926415194409
+ },
+ "stop_time": 154800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

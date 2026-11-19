@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Sevoflurane_Disma2023_reference",
+ "molar_masses": {
+  "central.C": 0.200053
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.1166666666666668e-05,
+  "F": 1.0,
+  "MM": 0.200053,
+  "VdPerKg": 0.00027142857142857144,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.0012017543859649123,
+  "k21": 0.0009474412171507606,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066206
+ },
+ "reference_peaks": {
+  "central.C": 0.0001056190674296298
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

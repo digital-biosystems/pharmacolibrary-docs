@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Docetaxel_Heerma2024_estimate_for_the_millidose_rse",
+ "molar_masses": {
+  "central.C": 0.80789
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.075,
+  0.1,
+  1.0
+ ],
+ "parameters": {
+  "Cl": 1.377777777777778e-05,
+  "F": 1.0,
+  "MM": 0.80789,
+  "VdPerKg": 9.571428571428571e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7.5e-08,
+  "k12": 0.001625207296849088,
+  "k21": 9.989806320081551e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662169
+ },
+ "reference_peaks": {
+  "central.C": 1.465116286188966e-07
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

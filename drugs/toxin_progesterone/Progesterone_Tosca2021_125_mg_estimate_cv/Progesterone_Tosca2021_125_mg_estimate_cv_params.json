@@ -1,0 +1,57 @@
+{
+ "dose_source": "paper",
+ "model_id": "Progesterone_Tosca2021_125_mg_estimate_cv",
+ "molar_masses": {
+  "retainedFraction": 0.314469
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  125.0,
+  375.0,
+  750.0,
+  1500.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Tosca_2021:other_prose",
+    "value_si": 5.52
+   },
+   {
+    "source": "Tosca_2021:discussion_prose",
+    "value_si": 16.4
+   },
+   {
+    "source": "Tosca_2021:discussion_prose",
+    "value_si": 20.0
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.314469,
+  "Tb[1]": 29600.591340638235,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.000125
+ },
+ "reference_peak_times": {
+  "retainedFraction": 317.434869739479
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.9969926164286148
+ },
+ "stop_time": 158400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

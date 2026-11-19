@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Posaconazole_McCann2023_reference",
+ "molar_masses": {
+  "central.C": 0.7008
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  6.0,
+  8.0,
+  200.0,
+  300.0
+ ],
+ "parameters": {
+  "Cl": 1.6666666666666667e-06,
+  "F": 0.9,
+  "MM": 0.7008,
+  "Tlag": 6444.0,
+  "VdPerKg": 0.002085714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 6e-06,
+  "ka": 4.4444444444444447e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 47615.23046092184
+ },
+ "reference_peaks": {
+  "central.C": 2.312027996449395e-05
+ },
+ "stop_time": 432000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

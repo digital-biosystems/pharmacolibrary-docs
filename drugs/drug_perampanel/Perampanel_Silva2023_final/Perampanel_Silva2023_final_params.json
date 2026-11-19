@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Perampanel_Silva2023_final",
+ "molar_masses": {
+  "central.C": 0.34939299999999995
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.0,
+  4.0,
+  6.0,
+  8.0,
+  10.0,
+  12.0
+ ],
+ "parameters": {
+  "Cl": 1.1638888888888888e-07,
+  "F": 1.0,
+  "MM": 0.34939299999999995,
+  "VdPerKg": 0.00042142857142857146,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662094
+ },
+ "reference_peaks": {
+  "central.C": 6.771643287544438e-05
+ },
+ "stop_time": 950400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

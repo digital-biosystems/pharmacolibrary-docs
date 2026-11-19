@@ -1,0 +1,152 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;lacidipine&quot;}]"></div>
+
+# lacidipine
+
+- **generic name:** lacidipine
+- **ATC codes:** `C08CA09`
+- **DrugBank:** [DB09236](https://go.drugbank.com/drugs/DB09236) · **PubChem:** [CID 5311217](https://pubchem.ncbi.nlm.nih.gov/compound/5311217)
+- **molar mass:** 455.551 g/mol (C26H33NO6) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+Lacidipine is a calcium channel blocker used to treat high blood pressure. It is given by mouth as a tablet. It is an approved medication used in clinical practice.
+
+<small>Summary written by `qwen3.8-27b` from [Wikidata Q1163827](https://www.wikidata.org/wiki/Q1163827), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
+
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| lacidipine | parent | 455.551 | C26H33NO6 | DrugBank | [5311217](https://pubchem.ncbi.nlm.nih.gov/compound/5311217) | Yang_2017 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>stale — current check: Needs review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q32, Q19, Q17 — no SI value to buil…</sub> | [Yang_2017_reference](drugs/drug_lacidipine/Lacidipine_Yang2017_reference.md) | — | 1-compartment (no model) | 6 | Yang B et al., Virtual population pharmacokinetic usin…, Asian journal of pharmaceut… (2017) | [10.1016/j.ajps.2016.03.003](https://doi.org/10.1016/j.ajps.2016.03.003) |
+
+## ADME sites
+
+Tissue mappings from DrugBank molecular actors and paper-derived PGx genes. Compare drugs in [Sites & interactions](sites?drugs=lacidipine).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| absorption | small intestine | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+| excretion | kidney | <sub>named in DrugBank's ADME text</sub> | DrugBank ADME |
+
+<sub>Actors without a tissue in the table: CACNA1C (target).</sub>
+
+<details class="legend">
+<summary>Status and cross-check definitions</summary>
+<table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
+<p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
+</details>
+
+<details class="pk-pipeline"><summary>Pipeline details</summary>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 03:12 | 4:47 | 1/0/0 | 0/0/0 | 0/0/0 | 85,179/10,697 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/3 | 2/1 | 0 |
+
+## Coverage
+
+- **PubMed hits:** 45 matched, 44 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 1
+- **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_10 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Angelico_1999.pdf` | Angelico P et al., Vascular-selective effect of lercanidip…, The Journal of pharmacy and… (1999) | pd | 4 | [10.1211/0022357991772844](https://doi.org/10.1211/0022357991772844) | [10454048](https://www.ncbi.nlm.nih.gov/pubmed/10454048) | metadata signals extractable PD data (IC50) |
+| `Argan_2022.pdf` | Argan O et al., In vitro effects of thirty-eight cardia…, Chemical biology & drug des… (2022) | pd | 4 | [10.1111/cbdd.14054](https://doi.org/10.1111/cbdd.14054) | [35395139](https://www.ncbi.nlm.nih.gov/pubmed/35395139) | metadata signals extractable PD data (IC50) |
+| `Bezemer_2022.pdf` | Bezemer B et al., The calcium channel inhibitor lacidipin…, Antiviral research (2022) | pd | 4 | [10.1016/j.antiviral.2022.105313](https://doi.org/10.1016/j.antiviral.2022.105313) | [35367280](https://www.ncbi.nlm.nih.gov/pubmed/35367280) | metadata signals extractable PD data (IC50) |
+| `Cominacini_1999.pdf` | Cominacini L et al., Comparative effects of different dihydr…, Journal of hypertension (1999) | pd | 4 | [10.1097/00004872-199917121-00009](https://doi.org/10.1097/00004872-199917121-00009) | [10703877](https://www.ncbi.nlm.nih.gov/pubmed/10703877) | metadata signals extractable PD data (IC50) |
+| `Godfraind_1991.pdf` | Godfraind T et al., Functional interaction of lacidipine wi…, Journal of cardiovascular p… (1991) | pd | 4 | [10.1097/00005344-199102001-00001](https://doi.org/10.1097/00005344-199102001-00001) | [1725443](https://www.ncbi.nlm.nih.gov/pubmed/1725443) | metadata signals extractable PD data (IC50) |
+| `Martinuc_2000.pdf` | Martinuc J et al., Action of mibefradil and lacidipine on…, Pflugers Archiv : European… (2000) | pd | 4 |  | [11005648](https://www.ncbi.nlm.nih.gov/pubmed/11005648) | metadata signals extractable PD data (IC50) |
+| `Martinuč_2000.pdf` | Martinuč J et al., Action of mibefradil and lacidipine on…, Pflugers Archiv : European… (2000) | pd | 4 | [10.1007/s004240000041](https://doi.org/10.1007/s004240000041) | [28008517](https://www.ncbi.nlm.nih.gov/pubmed/28008517) | metadata signals extractable PD data (IC50) |
+| `Pijl_1993.pdf` | Pijl AJ et al., Hemodynamic and antiischemic effects of…, Journal of cardiovascular p… (1993) | pd | 4 | [10.1097/00005344-199309000-00006](https://doi.org/10.1097/00005344-199309000-00006) | [7504127](https://www.ncbi.nlm.nih.gov/pubmed/7504127) | metadata signals extractable PD data (EC50) |
+| `Spampinato_1993.pdf` | Spampinato S et al., Ca2+ channel blocking activity of lacid…, European journal of pharmac… (1993) | pd | 4 | [10.1016/0922-4106(93)90019-6](https://doi.org/10.1016/0922-4106(93)90019-6) | [8432311](https://www.ncbi.nlm.nih.gov/pubmed/8432311) | metadata signals extractable PD data (IC50) |
+| `Ziviani_2001.pdf` | Ziviani L et al., The effects of lacidipine on the steady…, British journal of clinical… (2001) | pgx | 7 | [10.1111/j.1365-2125.2001.bcp119.x](https://doi.org/10.1111/j.1365-2125.2001.bcp119.x) | [11259986](https://www.ncbi.nlm.nih.gov/pubmed/11259986) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-10-07 03:08 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Angelico_1999 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
+| PD | Angelico_1999 | not_relevant | 0 | 0 | The paper studies lercanidipine, not lacidipine, and focuses on isolated tissue pharmacology rather than in vivo exposure-response or PK/PD modeling. |
+| popPK | Aouam_2003 | irrelevant | 0 | 0 | The paper is a narrative review of dihydropyridine generations and contains no original quantitative pharmacokinetic parameters for lacidipine. |
+| PD | Aouam_2003 | not_relevant | 1 | 0 | The text is a qualitative review of dihydropyridine generations and does not report any numeric pharmacodynamic parameters or exposure-response data for lacidipine. |
+| popPK | Argan_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme inhibition (PON1) and does not report pharmacokinetic disposition parameters for lacidipine. |
+| PGx | Bernard_2014 | not_relevant | 0 | 0 | The paper reports clinical efficacy and safety in a pediatric population but does not investigate the impact of specific gene variants or genotypes on lacidipine pharmacokinetics or pharmacodynamics. |
+| PGx | Bernard_2014_2 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between cyclosporine and calcium channel blockers, not a pharmacogenomic effect of a gene variant on lacidipine. |
+| popPK | Bezemer_2022 | irrelevant | 0 | 0 | The study is an in-vitro antiviral mechanism study reporting IC50 values, not a pharmacokinetic study with disposition parameters. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for lacidipine. |
+| PD | Cabré_2026 | not_relevant | 0 | 0 | The text is a narrative review of cardiovascular pharmacotherapy and does not contain specific data, models, or numeric parameters for lacidipine. |
+| popPK | Cagalinec_2006 | irrelevant | 0 | 0 | The study focuses on cardiomyocyte remodeling and contractility in rats, not on the pharmacokinetic disposition parameters (CL, V, etc.) of lacidipine. |
+| popPK | Cominacini_1999 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
+| PD | Cominacini_1999 | not_relevant | 0 | 0 | The paper focuses on the effects of dihydropyridines on adhesion molecules in an in vitro endothelial cell model and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for lacidipine in humans or animals. |
+| popPK | Godfraind_1991 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| popPK | Guan_2019 | irrelevant | 2 | 0 | The study reports relative bioavailability changes (Cmax/AUC ratios) for a formulation study but does not provide quantitative compartmental PK parameters (CL, V, ka) for lacidipine. |
+| PD | Guan_2019 | not_relevant | 0 | 0 | The paper focuses on formulation development, dissolution, and pharmacokinetics (Cmax, AUC) of lacidipine, but does not report any pharmacodynamic or exposure-response relationship. |
+| popPK | Hall_1991 | relevant | 8 | 2 | The study reports PK parameters for lacidipine, but the evidence only provides percentage changes in Cmax and AUC relative to placebo, lacking the absolute numeric values for clearance, volume, or half-life required for extraction. |
+| PD | Hall_1991 | not_relevant | 3 | 2 | The paper reports qualitative changes in blood pressure and heart rate (e.g., 6 mmHg reduction) but does not provide a concentration-effect model, Emax/EC50 parameters, or a derivable PD curve. |
+| popPK | Hall_1991_2 | irrelevant | 2 | 0 | The text describes qualitative pharmacokinetic properties (hepatic metabolism, low bioavailability) but lacks quantitative disposition parameters (CL, V, t1/2) or a compartmental model. |
+| PD | Hall_1991_2 | not_relevant | 2 | 1 | The text provides only qualitative descriptions of dose-related effects and a qualitative comparison to nifedipine, without reporting specific numeric PD parameters (e.g., Emax, EC50) or quantitative concentration-effect data. |
+| popPK | Hansson_1995 | irrelevant | 0 | 0 | The text is a general discussion on dose-response optimization and does not report any quantitative pharmacokinetic parameters for lacidipine. |
+| PD | Hansson_1995 | not_relevant | 1 | 0 | The text is a qualitative review discussing the concept of dose-response curves for lacidipine but does not present any specific numeric PD parameters, data, or curves. |
+| popPK | Kataria_2022 | irrelevant | 2 | 0 | The study reports relative bioavailability and formulation characteristics but lacks quantitative compartmental PK parameters (CL, V, ka) for lacidipine. |
+| PD | Kataria_2022 | not_relevant | 1 | 0 | The paper reports a comparative bioavailability and qualitative antihypertensive effect between formulations but does not provide numeric concentration-effect data, dose-response curves, or PD parameters (Emax, EC50) for lacidipine. |
+| popPK | Lee_1994 | irrelevant | 1 | 0 | The paper is a review of pharmacodynamic and pharmacokinetic properties but the provided evidence contains no quantitative PK parameter values (CL, V, t1/2, etc.) for lacidipine. |
+| PD | Lee_1994 | not_relevant | 2 | 1 | The text is a qualitative review summarizing clinical efficacy and dose ranges without providing specific numeric PD parameters (e.g., EC50, Emax) or concentration-effect data. |
+| popPK | Martinuc_2000 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
+| popPK | Martinuč_2000 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channel antagonism in isolated arteries, reporting IC50 values rather than pharmacokinetic disposition parameters. |
+| popPK | Mayer_1995 | irrelevant | 0 | 0 | The paper is a review of calcium channel blockers that mentions lacidipine only as a third-generation agent without providing any quantitative pharmacokinetic parameters. |
+| PD | Mayer_1995 | not_relevant | 1 | 0 | The text is a qualitative review of calcium channel blockers that mentions lacidipine only in the context of drug generations and general side effects, without providing any numeric PD parameters or exposure-response data. |
+| popPK | Meredith_2000 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy (blood pressure reduction) and contains no pharmacokinetic parameters or disposition data for lacidipine. |
+| PD | Meredith_2000 | not_relevant | 3 | 2 | The paper is a meta-analysis reporting qualitative dose-response trends and aggregate blood pressure reductions, but it does not provide specific numeric PD parameters (e.g., EC50, Emax) or individual concentration-effect data. |
+| popPK | Pijl_1993 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
+| popPK | Qumbar_2017 | irrelevant | 1 | 0 | The study focuses on formulation optimization and in-vitro/ex-vivo permeation, reporting no quantitative population pharmacokinetic parameters (CL, V, ka) for lacidipine. |
+| PD | Qumbar_2017 | not_relevant | 2 | 1 | The paper reports a qualitative comparison of in-vivo antihypertensive activity (blood pressure reduction) between formulations but does not provide numeric PD parameters (Emax, EC50) or an exposure-response/dose-response curve. |
+| popPK | Rizzini_1991 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study in elderly hypertensive patients and does not report quantitative pharmacokinetic parameters for lacidipine. |
+| PD | Rizzini_1991 | not_relevant | 3 | 0 | The paper describes clinical efficacy and dose-response trends (2mg vs 4mg) but does not provide numeric PD parameters (Emax, EC50) or concentration-effect data. |
+| popPK | Salomone_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of radioligand binding and functional effects in rat aorta, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Salomone_1997 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular contractility in rat basilar arteries, using lacidipine only as a calcium channel blocker to reverse tone, and reports no pharmacokinetic parameters. |
+| PD | Salomone_1997 | not_relevant | 0 | 0 | The paper studies the role of nitric oxide in 5-HT-induced contraction in rat arteries; lacidipine is only mentioned as a calcium channel blocker used to reverse L-NOARG-induced tone, with no exposure-response or dose-response analysis for lacidipine itself. |
+| popPK | Sharma_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on OXPHOS inhibition in cancer cells and does not report pharmacokinetic parameters for lacidipine. |
+| popPK | Sidorenko_2002 | irrelevant | 1 | 0 | The paper is a review discussing pharmacodynamics and clinical experience, mentioning only a qualitative half-life without reporting quantitative population PK parameters like clearance or volume. |
+| PD | Sidorenko_2002 | not_relevant | 2 | 0 | The text is a qualitative review discussing the mechanism of action and clinical outcomes (ELSA study) without providing specific numeric PD parameters or concentration-effect data. |
+| popPK | Spampinato_1993 | irrelevant | 0 | 0 | no_text gate: only 96 chars of text extracted (&lt; 400) |
+| popPK | Viguier_2024 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study analyzing adverse drug reaction signatures and does not report any pharmacokinetic parameters for lacidipine. |
+| PD | Viguier_2024 | not_relevant | 0 | 0 | The paper analyzes adverse drug reaction signatures using pharmacovigilance data (VigiBase) and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for lacidipine. |
+| PGx | Xia_2012 | not_relevant | 0 | 0 | The study investigates the inhibitory effects of lacidipine on CYP3A4 activity in vitro and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Zhang_2012 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects (vasodilation and hypotension) of a lacidipine analogue (CZ454) in rats, not the pharmacokinetic parameters of lacidipine itself. |
+| PGx | Zhou_2014 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions between DHP-CCBs and statins, and does not report pharmacogenomic effects on lacidipine PK/PD. |
+| PGx | Ziviani_2001 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (lacidipine affecting simvastatin PK) in healthy subjects without analyzing any genetic variants or pharmacogenomic factors. |
+| popPK | van_1993 | irrelevant | 0 | 0 | The paper is a pharmacological review discussing general characteristics of calcium antagonists and does not report quantitative pharmacokinetic parameters for lacidipine. |
+| PD | van_1993 | not_relevant | 1 | 0 | The text is a qualitative review of calcium antagonist classes and does not provide specific numeric PD parameters or exposure-response data for lacidipine. |
+| popPK | van_1993_2 | irrelevant | 1 | 0 | The paper is a mechanistic review discussing the relationship between lipophilicity and pharmacodynamic responses, lacking quantitative pharmacokinetic parameters (CL, V, ka) for lacidipine. |
+| PD | van_1993_2 | not_relevant | 2 | 0 | The text is a qualitative review discussing the pharmacological properties of lacidipine (lipophilicity, onset, duration) without providing any numeric PD parameters, concentration-effect curves, or quantitative exposure-response data. |
+| popPK | van_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assessment of vasodilator potency and time course in rat mesenteric arteries, not a pharmacokinetic study reporting disposition parameters for lacidipine. |
+
+
+</details>
+
+---
+<sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blacidipine%5D&body=Drug%3A%20lacidipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lacidipine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
+<sub>Pharmacolibrary · newest extraction 2026-10-07 03:08 UTC</sub>

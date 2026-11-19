@@ -1,0 +1,55 @@
+{
+ "dose_source": "paper",
+ "model_id": "Flucytosine_Ibnou2024_reference",
+ "molar_masses": {
+  "retainedFraction": 0.129094
+ },
+ "note": "Values for the shared TK_Retention_1.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "retainedFraction"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1500.0,
+  6000.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Ibnou_2024:other_prose",
+    "value_si": 20.0
+   },
+   {
+    "source": "Ibnou_2024:discussion_prose",
+    "value_si": 1.3
+   },
+   {
+    "source": "Ibnou_2024:prose",
+    "value_si": 1.3
+   }
+  ]
+ },
+ "parameters": {
+  "A[1]": 1.0,
+  "MM": 0.129094,
+  "Tb[1]": 71.29513857188009,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0015
+ },
+ "reference_peak_times": {
+  "retainedFraction": 173.1462925851703
+ },
+ "reference_peaks": {
+  "retainedFraction": 0.6064785196764252
+ },
+ "stop_time": 86400.0,
+ "template": "TK_Retention_1",
+ "template_fmu": "TK_Retention_1.fmu",
+ "title": "Body burden simulated by the retention function",
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "retained fraction of the intake"
+ }
+}

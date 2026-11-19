@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg parenteral (J02AC03)",
+ "model_id": "Voriconazole_Wang2024_reference",
+ "molar_masses": {
+  "central.C": 0.34931049999999997
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.944444444444445e-07,
+  "F": 1.0,
+  "MM": 0.34931049999999997,
+  "VdPerKg": 0.0027714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662048
+ },
+ "reference_peaks": {
+  "central.C": 0.0020590064173886665
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,0 +1,28 @@
+{
+ "dose_source": "WHO ATC DDD 0.16 mg parenteral (A10BJ05)",
+ "model_id": "Dulaglutide_Ng2018_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.6833333333333328e-06,
+  "F": 1.0,
+  "VdPerKg": 0.000111,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.6e-07,
+  "k12": 7.865007865007865e-05,
+  "k21": 6.87414073240845e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662086
+ },
+ "reference_peaks": {
+  "central.C": 4.57885012757575e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

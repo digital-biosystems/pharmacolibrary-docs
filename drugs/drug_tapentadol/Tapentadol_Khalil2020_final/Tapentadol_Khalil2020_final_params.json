@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tapentadol_Khalil2020_final",
+ "molar_masses": {
+  "central.C": 0.22133850000000002
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  21.0,
+  35.0,
+  42.0,
+  52.5,
+  70.0,
+  87.5
+ ],
+ "parameters": {
+  "Cl": 1.2749999999999998e-05,
+  "F": 0.195,
+  "MM": 0.22133850000000002,
+  "Tlag": 925.2,
+  "VdPerKg": 0.0026857142857142856,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.1e-05,
+  "ka": 0.0004555555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6233.266533066132
+ },
+ "reference_peaks": {
+  "central.C": 1.560301131885538e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

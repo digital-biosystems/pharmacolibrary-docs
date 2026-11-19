@@ -1,0 +1,63 @@
+{
+ "model_id": "Glibenclamide_Rambiritch2016_PD_mean_glucose_concentration",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 16.7,
+  "EC50": 1.85e-06,
+  "Emax": -0.34,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 16.699999999999996,
+  "1.85e-06": 16.529999999999994
+ },
+ "stop_time": 19.0,
+ "subtitle": "mean glucose concentration against dose",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "mmol/L",
+   "factor": 0.9999999999999999,
+   "si_unit": "mol/m3"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg",
+   "factor": 1e-06,
+   "si_unit": "kg"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "mmol/L",
+   "factor": 0.9999999999999999,
+   "si_unit": "mol/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg",
+   "factor": 1e-06,
+   "si_unit": "kg"
+  },
+  "response_unit": "mmol/L"
+ },
+ "x_axis": {
+  "display_unit": "mg",
+  "factor": 1e-06,
+  "label": "dose",
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mmol/L",
+  "factor": 0.9999999999999999,
+  "label": "mean glucose concentration"
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "model_id": "Salbutamol_Boger2019_PD_fev1",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.99,
+  "Emax": 0.0005,
+  "exposure_per_s": 1.0,
+  "gamma": 1.36
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.99": 0.00025000000000000006
+ },
+ "stop_time": 9.9,
+ "subtitle": "forced expiratory volume in 1 second (FEV1) against (R)-salbutamol concentration",
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "nM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "mL",
+   "factor": 1.0000000000000002e-06,
+   "si_unit": "m3"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "nM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "nM",
+  "factor": 1.0,
+  "label": "(R)-salbutamol concentration",
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mL",
+  "factor": 1.0000000000000002e-06,
+  "label": "forced expiratory volume in 1 second (FEV1)"
+ }
+}

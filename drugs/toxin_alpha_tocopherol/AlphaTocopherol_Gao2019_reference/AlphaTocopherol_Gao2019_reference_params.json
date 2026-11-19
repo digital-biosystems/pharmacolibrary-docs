@@ -1,0 +1,31 @@
+{
+ "dose_source": "library default",
+ "model_id": "AlphaTocopherol_Gao2019_reference",
+ "molar_masses": {
+  "central.C": 0.43071699999999996
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.281388888888889e-05,
+  "F": 1.0,
+  "MM": 0.43071699999999996,
+  "VdPerKg": 0.002522,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 3.77629243608625e-08,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662042
+ },
+ "reference_peaks": {
+  "central.C": 5.542878087452156e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}
