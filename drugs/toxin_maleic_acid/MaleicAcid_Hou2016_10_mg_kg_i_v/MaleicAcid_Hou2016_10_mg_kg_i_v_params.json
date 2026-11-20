@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "MaleicAcid_Hou2016_10_mg_kg_i_v",
+ "molar_masses": {
+  "central.C": 0.11607200000000001
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0,
+  2100.0
+ ],
+ "parameters": {
+  "Cl": 3.196666666666667e-05,
+  "F": 1.0,
+  "MM": 0.11607200000000001,
+  "VdPerKg": 0.0009749999999999998,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066211
+ },
+ "reference_peaks": {
+  "central.C": 0.008941280495431457
+ },
+ "review_status": "needs_review",
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

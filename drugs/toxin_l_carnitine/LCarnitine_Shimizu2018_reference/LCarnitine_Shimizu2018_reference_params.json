@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 2000 mg oral (A16AA01)",
+ "model_id": "LCarnitine_Shimizu2018_reference",
+ "molar_masses": {
+  "central.C": 0.16120099999999998
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.5777777777777777e-07,
+  "F": 0.9,
+  "MM": 0.16120099999999998,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006885714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "ka": 0.0002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 16545.5275831973
+ },
+ "reference_peaks": {
+  "central.C": 0.0354176957325329
+ },
+ "stop_time": 1123200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

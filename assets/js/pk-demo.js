@@ -94,7 +94,10 @@ window.$docsify = window.$docsify || {};
         var src = document.createElement('p');
         src.className = 'pk-demo-src';
         var open = document.createElement('a');
-        open.href = '#/sites?drugs=' + encodeURIComponent(anat.dataset.drug);
+        // the tile shows one drug; the link may open Sites with its interaction partners too
+        // (data-open-drugs="a,b,c"), commas kept literal
+        open.href = '#/sites?drugs=' + String(anat.dataset.openDrugs || anat.dataset.drug)
+          .split(',').map(function (d) { return encodeURIComponent(d.trim()); }).join(',');
         open.textContent = 'Open in Sites';
         src.appendChild(open);
         anat.appendChild(src);

@@ -18,8 +18,8 @@
 
 ## Databases
 
-Current file sizes, row counts and licences: [Data & downloads](data.md). The site publishes
-three SQLite databases, all queried locally using sql.js: this page uses the query and passage
+The data are published on Zenodo: [Data & downloads](data.md). The site runs on
+three SQLite databases (not offered as downloads), all queried locally using sql.js: this page uses the query and passage
 databases below; the ADME database (enzymes, transporters and their tissues) drives
 [Sites & interactions](sites.md). Results summarise literature evidence, not medical advice.
 
@@ -41,7 +41,6 @@ databases below; the ADME database (enzymes, transporters and their tissues) dri
 is the display unit (e.g. `L/h`). Cite source estimates using `value` and `unit_verbatim`;
 use `value_si` for cross-study comparison. `review_gapfill` identifies secondary-review
 substitutions. SQL statements can be inspected, edited, and rerun.
-Download: **[pharmacolibrary.sqlite](data/latest.json)**.
 
 **Passage database** (`knowledge-*.sqlite`, 26 MB; loaded when a language model is selected):
 19,690 passages covering 867 drugs; FTS4 index `passage_fts` with Porter stemming.
@@ -52,8 +51,6 @@ Download: **[pharmacolibrary.sqlite](data/latest.json)**.
 | `guideline` | 1,996 | ClinPGx guideline annotations (CPIC, DPWG, …) | CC BY-SA 4.0 |
 | `clinical` | 1,130 | ClinPGx clinical annotations, evidence level 1A–2B | CC BY-SA 4.0 |
 | `abstract` | 9,819 | PubMed abstracts of the papers behind the records | per paper |
-
-Download: **[knowledge.sqlite](data/knowledge-latest.json)**.
 
 **Simulation:** specify a drug and regimen, e.g. “tolvaptan 120 mg daily for 1 week”.
 Up to five PK models run with source-fitted parameters using WebAssembly (horizon ≤28 days).

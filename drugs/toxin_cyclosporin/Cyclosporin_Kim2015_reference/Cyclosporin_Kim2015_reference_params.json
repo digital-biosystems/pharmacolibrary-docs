@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 250 mg oral (L04AD01)",
+ "model_id": "Cyclosporin_Kim2015_reference",
+ "molar_masses": {
+  "central.C": 1.2026
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.888888888888889e-06,
+  "F": 1.49,
+  "MM": 1.2026,
+  "Tlag": 900.0,
+  "VdPerKg": 0.006142857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00025,
+  "ka": 0.0001888888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 16296.41158191613
+ },
+ "reference_peaks": {
+  "central.C": 0.0007055908088261155
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

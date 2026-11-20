@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Lamotrigine_Wang2019_base",
+ "molar_masses": {
+  "central.C": 0.25609
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0
+ ],
+ "parameters": {
+  "Cl": 2.663888888888889e-07,
+  "F": 1.0,
+  "MM": 0.25609,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00019428571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0005472222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6680.906029724304
+ },
+ "reference_peaks": {
+  "central.C": 0.006496892757138851
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

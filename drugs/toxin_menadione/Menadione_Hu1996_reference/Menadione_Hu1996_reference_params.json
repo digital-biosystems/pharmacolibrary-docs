@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 10 mg oral (B02BA02)",
+ "model_id": "Menadione_Hu1996_reference",
+ "molar_masses": {
+  "central.C": 0.172183
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.37e-05,
+  "F": 1.0,
+  "MM": 0.172183,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00044047142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.009816666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 814.6167374034972
+ },
+ "reference_peaks": {
+  "central.C": 0.0002658024854559381
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

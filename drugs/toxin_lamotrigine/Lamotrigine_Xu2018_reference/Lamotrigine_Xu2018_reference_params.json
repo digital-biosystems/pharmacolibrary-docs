@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 300 mg oral (N03AX09)",
+ "model_id": "Lamotrigine_Xu2018_reference",
+ "molar_masses": {
+  "central.C": 0.25609
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.9583333333333335e-07,
+  "F": 1.0,
+  "MM": 0.25609,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000982857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.00043611111111111113,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12000.40483943524
+ },
+ "reference_peaks": {
+  "central.C": 0.004218585019286048
+ },
+ "review_status": "needs_review",
+ "stop_time": 1296000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

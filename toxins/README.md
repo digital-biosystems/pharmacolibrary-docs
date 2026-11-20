@@ -4,9 +4,9 @@ A toxin has no ATC code, so the site groups toxins by their T3DB category — on
 
 ## [Polychlorinated biphenyls](toxins/PCB.md)
 
-PCB congeners: persistent industrial organochlorines. 8 toxins.
+PCB congeners: persistent industrial organochlorines. 34 toxins, 1 with records.
 
-- Benzenoids — 8
+- Benzenoids — 34
 
 ## [Cigarette toxins](toxins/CIG.md)
 
@@ -52,17 +52,19 @@ Toxins made by bacteria. 40 toxins, 16 with records.
 
 ## [Fungal toxins](toxins/FUNG.md)
 
-Mycotoxins and other fungal metabolites. 27 toxins, 12 with records.
+Mycotoxins and other fungal metabolites. 133 toxins, 48 with records.
 
-- Alkaloids and derivatives — 1
-- Benzenoids — 2
-- Lipids and lipid-like molecules — 4
-- Organic acids and derivatives — 3
+- Alkaloids and derivatives — 16
+- Benzenoids — 3
+- Ergoline and derivatives — 1
+- Lipids and lipid-like molecules — 26
+- Organic 1,3-dipolar compounds — 1
+- Organic acids and derivatives — 23
 - Organic nitrogen compounds — 1
-- Organic oxygen compounds — 1
-- Organoheterocyclic compounds — 4
-- Phenylpropanoids and polyketides — 10
-- Proteins and peptides — 1
+- Organic oxygen compounds — 3
+- Organoheterocyclic compounds — 37
+- Phenylpropanoids and polyketides — 17
+- Proteins and peptides — 5
 
 ## [Animal toxins](toxins/ANIM.md)
 
@@ -112,18 +114,20 @@ Insecticides, herbicides, fungicides and rodenticides. 17 toxins.
 
 ## [Food toxins](toxins/FOOD.md)
 
-Contaminants and natural toxicants in food. 236 toxins, 158 with records.
+Contaminants and natural toxicants in food. 294 toxins, 185 with records.
 
 - Alcohols and polyols — 1
 - Alkaloids and derivatives — 1
 - Aluminium and its compounds — 3
 - Amines — 2
-- Antimony and its compounds — 6
+- Antimony and its compounds — 7
 - Barium and its compounds — 1
-- Benzene and substituted derivatives — 14
-- Benzenoids — 60
-- Benzodiazepines — 1
-- Carboxylic acids and derivatives — 5
+- Benzazepines — 1
+- Benzene and substituted derivatives — 16
+- Benzenoids — 66
+- Benzocycloheptapyridines — 1
+- Benzodiazepines — 2
+- Carboxylic acids and derivatives — 6
 - Cinnamic acids and derivatives — 1
 - Cobalt and its compounds — 2
 - Copper and its compounds — 1
@@ -136,28 +140,37 @@ Contaminants and natural toxicants in food. 236 toxins, 158 with records.
 - Heteroaromatic compounds — 1
 - Homogeneous actinide compounds — 1
 - Homogeneous alkali metal compounds — 1
-- Homogeneous non-metal compounds — 8
-- Hydrocarbons — 3
+- Homogeneous non-metal compounds — 9
+- Hydrocarbons — 5
 - Imidazopyrimidines — 1
 - Inorganic salts — 1
+- Iodine and its compounds — 1
+- Iron and its compounds — 1
 - Lactones — 1
-- Lipids and lipid-like molecules — 8
-- Mixed metal/non-metal compounds — 2
+- Lignans, neolignans and related compounds — 1
+- Lipids and lipid-like molecules — 10
+- Lithium and its compounds — 2
+- Magnesium and its compounds — 1
+- Manganese and its compounds — 11
+- Mercury and its compounds — 1
+- Mixed metal/non-metal compounds — 3
 - Molybdenum and its compounds — 1
 - Morphinans — 1
+- Naphthalenes — 1
 - Nickel and its compounds — 1
-- Organic acids and derivatives — 7
-- Organic nitrogen compounds — 3
-- Organic oxygen compounds — 4
+- Organic acids and derivatives — 13
+- Organic nitrogen compounds — 4
+- Organic oxygen compounds — 5
 - Organic phosphoric acids and derivatives — 1
 - Organochlorides — 1
 - Organohalogen compounds — 4
-- Organoheterocyclic compounds — 18
-- Organonitrogen compounds — 1
-- Organooxygen compounds — 4
+- Organoheterocyclic compounds — 22
+- Organonitrogen compounds — 2
+- Organooxygen compounds — 6
 - Organosulfur compounds — 2
 - Phenol ethers — 1
 - Phenols — 1
+- Phenylpropanoic acids — 1
 - Phenylpropanoids and polyketides — 4
 - Piperazinoazepines — 1
 - Piperidines — 2
@@ -165,35 +178,53 @@ Contaminants and natural toxicants in food. 236 toxins, 158 with records.
 - Post-transition metal oxoanionic compounds — 1
 - Potassium and its compounds — 6
 - Prenol lipids — 4
-- Pyridines and derivatives — 3
+- Pyridines and derivatives — 4
 - Pyridopyrimidines — 1
 - Pyrrolopyrazines — 1
+- Quinolines and derivatives — 1
 - Saturated hydrocarbons — 1
 - Silver and its compounds — 1
 - Sodium and its compounds — 4
 - Steroids and steroid derivatives — 5
 - Sulfoxides — 1
 - Tetralins — 1
+- Thiadiazines — 1
 - Thorium and its compounds — 1
 - Triphenyl compounds — 1
 - Tungsten and its compounds — 1
 - Vanadium and its compounds — 1
 - Zinc and its compounds — 4
-- Unclassified — 9
+- Unclassified — 10
 
 ## [Household toxins](toxins/HOUS.md)
 
-Chemicals people meet at home. 19 toxins, 5 with records.
+Chemicals people meet at home. 78 toxins, 24 with records.
 
-- Aluminium and its compounds — 2
+- Aluminium and its compounds — 3
+- Azoles — 1
 - Barium and its compounds — 2
-- Benzenoids — 4
-- Chromium and its compounds — 1
+- Benzenoids — 11
+- Cadmium and its compounds — 2
+- Chromium and its compounds — 4
+- Cobalt and its compounds — 1
+- Copper and its compounds — 2
 - Dioxanes — 1
-- Homogeneous non-metal compounds — 1
-- Lipids and lipid-like molecules — 1
-- Organic acids and derivatives — 1
-- Organoheterocyclic compounds — 3
+- Furans — 1
+- Homogeneous non-metal compounds — 3
+- Hydrocarbons — 2
+- Iron and its compounds — 1
+- Lead and its compounds — 3
+- Lipids and lipid-like molecules — 3
+- Magnesium and its compounds — 2
+- Minerals and fibres — 2
+- Organic 1,3-dipolar compounds — 1
+- Organic acids and derivatives — 10
+- Organic nitrogen compounds — 1
+- Organic oxygen compounds — 4
+- Organohalogen compounds — 3
+- Organoheterocyclic compounds — 10
+- Organonitrogen compounds — 1
+- Organosulfur compounds — 1
 - Selenium and its compounds — 1
 - Sodium and its compounds — 1
 - Tin and its compounds — 1
@@ -245,16 +276,51 @@ Pollutants taken in with air. 133 toxins, 75 with records.
 
 ## [Industrial and workplace toxins](toxins/IND.md)
 
-Solvents, metals and process chemicals. 13 toxins.
+Solvents, metals and process chemicals. 331 toxins, 30 with records.
 
-- Benzenoids — 4
-- Homogeneous non-metal compounds — 2
-- Hydrocarbons — 1
+- Aluminium and its compounds — 18
+- Barium and its compounds — 12
+- Benzene and substituted derivatives — 1
+- Benzenoids — 73
+- Copper and its compounds — 4
+- Homogeneous non-metal compounds — 6
+- Hydrocarbon derivatives — 6
+- Hydrocarbons — 10
+- Indium and its compounds — 1
+- Inorganic salts — 1
+- Iron and its compounds — 5
+- Lignans, neolignans and related compounds — 1
+- Lipids and lipid-like molecules — 1
+- Lithium and its compounds — 4
+- Magnesium and its compounds — 2
+- Minerals and fibres — 1
+- Mixed metal/non-metal compounds — 11
+- Non-metal oxoanionic compounds — 1
 - Nucleosides, nucleotides, and analogues — 1
-- Organohalogen compounds — 1
-- Organometallic compounds — 2
+- Organic acids and derivatives — 24
+- Organic nitrogen compounds — 9
+- Organic oxygen compounds — 9
+- Organic salts — 2
+- Organohalogen compounds — 11
+- Organoheterocyclic compounds — 14
+- Organometallic compounds — 25
+- Organonitrogen compounds — 1
+- Organooxygen compounds — 1
+- Organosulfur compounds — 1
+- Palladium and its compounds — 3
+- Phenanthrolines — 1
+- Phenylpropanoids and polyketides — 1
 - Potassium and its compounds — 1
-- Titanium and its compounds — 1
+- Silver and its compounds — 17
+- Sodium and its compounds — 5
+- Sulfur and its compounds — 1
+- Tellurium and its compounds — 2
+- Tin and its compounds — 4
+- Titanium and its compounds — 2
+- Tungsten and its compounds — 2
+- Vanadium and its compounds — 19
+- Zinc and its compounds — 15
+- Unclassified — 2
 
 ## [Drugs](toxins/DRUG.md)
 

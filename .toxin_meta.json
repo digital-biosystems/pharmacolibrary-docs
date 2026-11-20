@@ -1,14 +1,34 @@
 {
  "toxins": {
+  "110_phenanthroline": {
+   "category": "IND",
+   "chem_class": "Phenanthrolines",
+   "label": "Industrial and workplace toxins"
+  },
   "111_trichloroethane": {
    "category": "FOOD",
    "chem_class": "Organohalogen compounds",
    "label": "Food toxins"
   },
+  "1122_tetrabromoethane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "112_trichloroethane": {
    "category": "AIR",
    "chem_class": "Organohalogen compounds",
    "label": "Airborne pollutants"
+  },
+  "11_azobiscyclohexanecarbonitrile": {
+   "category": "IND",
+   "chem_class": "Unclassified",
+   "label": "Industrial and workplace toxins"
+  },
+  "11_dibromoethane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
   },
   "11_dichloroethane": {
    "category": "AIR",
@@ -30,6 +50,16 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Airborne pollutants"
   },
+  "12_bisdimethylarsinobenzene": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "12_dibromopropane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "12_dichlorobenzene": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
@@ -40,10 +70,30 @@
    "chem_class": "Organochlorides",
    "label": "Food toxins"
   },
+  "135_trinitrobenzene": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "13_butadiene": {
    "category": "CIG",
    "chem_class": "Hydrocarbons",
    "label": "Cigarette toxins"
+  },
+  "13_dibromo_55_dimethylhydantoin": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "13_dibromopropane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "13_dinitrobenzene": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "14_dioxane": {
    "category": "HOUS",
@@ -75,6 +125,21 @@
    "chem_class": "Unclassified",
    "label": "Animal toxins"
   },
+  "1_bromobutane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "1_bromohexane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "1_bromopropane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "1_hexadecanol": {
    "category": "FOOD",
    "chem_class": "Unclassified",
@@ -89,6 +154,11 @@
    "category": "HOUS",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Household toxins"
+  },
+  "1_methyl_4_phenyl_1236_tetrahydropyridine": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
   },
   "1_methyl_6_phenyl_1h_imidazo45_bpyridin_2_amine": {
    "category": "FOOD",
@@ -105,6 +175,11 @@
    "chem_class": "Benzenoids",
    "label": "Animal toxins"
   },
+  "1_pentene": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
   "2223_dihydroavermectin_b1a": {
    "category": "DRUG",
    "chem_class": "Phenylpropanoids and polyketides",
@@ -114,6 +189,206 @@
    "category": "DRUG",
    "chem_class": "Phenylpropanoids and polyketides",
    "label": "Drugs"
+  },
+  "2233445566_decabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2233445566_decabromobiphenyl_ether": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "223344556_nonabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "223344556_nonachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22334455_octabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "22334455_octachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "223344566_nonabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "223344566_nonachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22334456_octabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "22334456_octachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2233445_heptabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2233445_heptachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22334466_octabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "22334466_octachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2233446_heptachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "223344_hexabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "223345566_nonabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "223345566_nonachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22334556_octachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2233455_heptabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2233455_heptachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22334566_octabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "22334566_octachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2233456_heptabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2233456_heptachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "223345_hexabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "223345_hexachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2233466_heptachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "223346_hexachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22335566_octachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2233556_heptachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "223355_hexachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2233566_heptachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "223356_hexachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22335_pentachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "223366_hexachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22336_pentachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2233_tetrachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "22344556_octachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
+  },
+  "2234455_heptachlorobiphenyl": {
+   "category": "PCB",
+   "chem_class": "Benzenoids",
+   "label": "Polychlorinated biphenyls"
   },
   "22346_pentachlorobiphenyl": {
    "category": "PCB",
@@ -135,10 +410,155 @@
    "chem_class": "Benzenoids",
    "label": "Polychlorinated biphenyls"
   },
+  "22455_pentabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "22456_pentabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2245_tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "22466_pentabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2246_tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "224_trimethylpentane": {
    "category": "AIR",
    "chem_class": "Hydrocarbons",
    "label": "Airborne pollutants"
+  },
+  "2255_tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2256_tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "225_tribromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2266_tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "22_dibromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "22_dimethylbutane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
+  "22_dimethylhexane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
+  "22_dimethylpentane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
+  "23344556_octabromobiphenyl_ether": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2334455_heptabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2334456_heptabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "233445_hexabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "233455_hexabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "233456_hexabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2334_tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "233_trimethylpentane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
+  "234455_hexabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "234456_hexabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "23445_pentabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "23446_pentabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2344_tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "23455_pentabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "23456_pentabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "2345_tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "2345_tetrachlorophenol": {
    "category": "FOOD",
@@ -310,10 +730,30 @@
    "chem_class": "Unclassified",
    "label": "Animal toxins"
   },
+  "4_methylheptane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
+  "4_methylnitrosamino_1_3_pyridyl_1_butanol": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "4_monobromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "4_nonylphenol": {
    "category": "FOOD",
    "chem_class": "Benzene and substituted derivatives",
    "label": "Food toxins"
+  },
+  "4_phenylphenol": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "4_tert_octylphenol": {
    "category": "FOOD",
@@ -324,6 +764,11 @@
    "category": "ANIM",
    "chem_class": "Organic acids and derivatives",
    "label": "Animal toxins"
+  },
+  "5_bromouracil": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
   },
   "5_hydroxy_l_tryptophan": {
    "category": "ANIM",
@@ -339,6 +784,11 @@
    "category": "FOOD",
    "chem_class": "Lipids and lipid-like molecules",
    "label": "Food toxins"
+  },
+  "9_hydroxyfluorene": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "9_hydroxyphenanthrene": {
    "category": "ANIM",
@@ -385,6 +835,11 @@
    "chem_class": "Unclassified",
    "label": "Food toxins"
   },
+  "acetone_cyanohydrin": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "acetonitrile": {
    "category": "AIR",
    "chem_class": "Organic nitrogen compounds",
@@ -420,6 +875,11 @@
    "chem_class": "Homogeneous metal compounds",
    "label": "Airborne pollutants"
   },
+  "adamsite": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "adapalene": {
    "category": "DRUG",
    "chem_class": "Prenol lipids",
@@ -444,6 +904,11 @@
    "category": "FOOD",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Food toxins"
+  },
+  "adiponitrile": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
   },
   "aflatoxicol": {
    "category": "FUNG",
@@ -495,10 +960,20 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
   },
+  "allyl_bromide": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "allyl_isothiocyanate": {
    "category": "FOOD",
    "chem_class": "Unclassified",
    "label": "Food toxins"
+  },
+  "allylpalladium_chloride_dimer": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
   },
   "almotriptan": {
    "category": "DRUG",
@@ -565,35 +1040,140 @@
    "chem_class": "Benzenoids",
    "label": "Fungal toxins"
   },
+  "aluminium_barium_titanium_oxide": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_bromide": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_carbide": {
+   "category": "IND",
+   "chem_class": "Hydrocarbon derivatives",
+   "label": "Industrial and workplace toxins"
+  },
   "aluminium_chlorohydrate": {
    "category": "FOOD",
    "chem_class": "Aluminium and its compounds",
    "label": "Food toxins"
+  },
+  "aluminium_diboride": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_dodecaboride": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_hydride": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "aluminium_hydroxide": {
    "category": "FOOD",
    "chem_class": "Post-transition metal organides",
    "label": "Food toxins"
   },
+  "aluminium_iodide": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_lactate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_molybdate": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "aluminium_monochloride": {
    "category": "HOUS",
    "chem_class": "Aluminium and its compounds",
    "label": "Household toxins"
+  },
+  "aluminium_monofluoride": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_nitrate": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_nitride": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_oxynitride": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminium_phosphate": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "aluminium_sulfate": {
    "category": "FOOD",
    "chem_class": "Post-transition metal oxoanionic compounds",
    "label": "Food toxins"
   },
+  "aluminium_sulfide": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "aluminiumi_oxide": {
    "category": "HOUS",
    "chem_class": "Aluminium and its compounds",
    "label": "Household toxins"
   },
+  "aluminiumii_oxide": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "aluminum": {
    "category": "FOOD",
    "chem_class": "Aluminium and its compounds",
    "label": "Food toxins"
+  },
+  "aluminum_ammonium_sulfate": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminum_butylate": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminum_ethylate": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminum_sodium_sulfate": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "aluminum_triacetate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "amanin": {
    "category": "FUNG",
@@ -650,10 +1230,25 @@
    "chem_class": "Homogeneous non-metal compounds",
    "label": "Food toxins"
   },
+  "ammonium_bromide": {
+   "category": "IND",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "ammonium_diuranate": {
    "category": "AIR",
    "chem_class": "Uranium and its compounds",
    "label": "Airborne pollutants"
+  },
+  "ammonium_hexachloro_palladateiv": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "ammonium_metavanadate": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "ammonium_nitrate": {
    "category": "HOUS",
@@ -664,6 +1259,11 @@
    "category": "FOOD",
    "chem_class": "Homogeneous non-metal compounds",
    "label": "Food toxins"
+  },
+  "ammonium_tetrachloro_palladateii": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
   },
   "amobarbital": {
    "category": "DRUG",
@@ -719,6 +1319,11 @@
    "category": "FOOD",
    "chem_class": "Organic acids and derivatives",
    "label": "Food toxins"
+  },
+  "aniline": {
+   "category": "IND",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "anthanthrene": {
    "category": "FOOD",
@@ -800,6 +1405,21 @@
    "chem_class": "Benzenoids",
    "label": "Polychlorinated biphenyls"
   },
+  "arsabenzene": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "arsanilic_acid": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "arsenamide": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "arsenic": {
    "category": "CIG",
    "chem_class": "Arsenic and its compounds",
@@ -825,6 +1445,11 @@
    "chem_class": "Miscellaneous inorganic compounds",
    "label": "Airborne pollutants"
   },
+  "arsole": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "ascorbyl_palmitate": {
    "category": "FOOD",
    "chem_class": "Lipids and lipid-like molecules",
@@ -834,6 +1459,11 @@
    "category": "FOOD",
    "chem_class": "Benzene and substituted derivatives",
    "label": "Food toxins"
+  },
+  "asteltoxin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
   },
   "astemizole": {
    "category": "DRUG",
@@ -854,6 +1484,16 @@
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "aurovertin_b": {
+   "category": "FUNG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Fungal toxins"
+  },
+  "aurovertin_d": {
+   "category": "FUNG",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Fungal toxins"
   },
   "avermectin_b1a": {
    "category": "BACT",
@@ -900,10 +1540,95 @@
    "chem_class": "Barium and its compounds",
    "label": "Food toxins"
   },
+  "barium_acetate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_azide": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_bromate": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_bromide": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_calcium_titanium_oxide": {
+   "category": "IND",
+   "chem_class": "Titanium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_chlorate": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "barium_chloride": {
    "category": "HOUS",
    "chem_class": "Barium and its compounds",
    "label": "Household toxins"
+  },
+  "barium_ferrate": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_ferrite": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_fluoride": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_hydroxide": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_hypochlorite": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_iodide": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_iron_oxide": {
+   "category": "IND",
+   "chem_class": "Iron and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_nitrate": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_oxalate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_oxide": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "barium_perchlorate": {
+   "category": "IND",
+   "chem_class": "Barium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "barium_sulfate": {
    "category": "HOUS",
@@ -924,6 +1649,11 @@
    "category": "ANIM",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Animal toxins"
+  },
+  "beauvericin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
   },
   "benzatropine": {
    "category": "DRUG",
@@ -1030,6 +1760,11 @@
    "chem_class": "Carboxylic acids and derivatives",
    "label": "Animal toxins"
   },
+  "beta_amanitin": {
+   "category": "FUNG",
+   "chem_class": "Proteins and peptides",
+   "label": "Fungal toxins"
+  },
   "beta_aminopropionitrile": {
    "category": "FOOD",
    "chem_class": "Organic nitrogen compounds",
@@ -1049,6 +1784,11 @@
    "category": "BACT",
    "chem_class": "Organic acids and derivatives",
    "label": "Bacterial toxins"
+  },
+  "beta_zearalenol": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
   },
   "bethanechol": {
    "category": "DRUG",
@@ -1085,6 +1825,11 @@
    "chem_class": "Benzenoids",
    "label": "Food toxins"
   },
+  "bis2_methoxyethyl_phthalate": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
   "bleomycin": {
    "category": "DRUG",
    "chem_class": "Organic acids and derivatives",
@@ -1119,6 +1864,11 @@
    "category": "BACT",
    "chem_class": "Proteins and peptides",
    "label": "Bacterial toxins"
+  },
+  "bovinocidin": {
+   "category": "FUNG",
+   "chem_class": "Organic 1,3-dipolar compounds",
+   "label": "Fungal toxins"
   },
   "brevetoxin": {
    "category": "ANIM",
@@ -1180,10 +1930,20 @@
    "chem_class": "Pyridines and derivatives",
    "label": "Food toxins"
   },
+  "bronopol": {
+   "category": "HOUS",
+   "chem_class": "Organic 1,3-dipolar compounds",
+   "label": "Household toxins"
+  },
   "brotizolam": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "bufotenin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
   },
   "bupivacaine": {
    "category": "DRUG",
@@ -1210,10 +1970,20 @@
    "chem_class": "Organic acids and derivatives",
    "label": "Drugs"
   },
+  "butenolide": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
   "butorphanol": {
    "category": "DRUG",
    "chem_class": "Phenanthrenes and derivatives",
    "label": "Drugs"
+  },
+  "butyl_cyanoacrylate": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
   },
   "butylate": {
    "category": "PEST",
@@ -1274,6 +2044,16 @@
    "category": "AIR",
    "chem_class": "Cadmium and its compounds",
    "label": "Airborne pollutants"
+  },
+  "cadmium_selenide": {
+   "category": "HOUS",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Household toxins"
+  },
+  "cadmium_sulphide": {
+   "category": "HOUS",
+   "chem_class": "Cadmium and its compounds",
+   "label": "Household toxins"
   },
   "cadmium_telluride": {
    "category": "AIR",
@@ -1435,6 +2215,11 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Food toxins"
   },
+  "cellulose_nitrate": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
+  },
   "cephalosporin": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
@@ -1454,6 +2239,11 @@
    "category": "FOOD",
    "chem_class": "Benzene and substituted derivatives",
    "label": "Food toxins"
+  },
+  "cetyl_trimethyl_ammonium": {
+   "category": "HOUS",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Household toxins"
   },
   "charybdotoxin": {
    "category": "ANIM",
@@ -1484,6 +2274,11 @@
    "category": "DRUG",
    "chem_class": "Benzenoids",
    "label": "Drugs"
+  },
+  "chloroethane": {
+   "category": "HOUS",
+   "chem_class": "Organohalogen compounds",
+   "label": "Household toxins"
   },
   "chloroform": {
    "category": "CIG",
@@ -1565,6 +2360,11 @@
    "chem_class": "Chromium and its compounds",
    "label": "Airborne pollutants"
   },
+  "chromium_trihydroxide": {
+   "category": "HOUS",
+   "chem_class": "Chromium and its compounds",
+   "label": "Household toxins"
+  },
   "chromiumii_chloride": {
    "category": "AIR",
    "chem_class": "Chromium and its compounds",
@@ -1580,10 +2380,25 @@
    "chem_class": "Chromium and its compounds",
    "label": "Airborne pollutants"
   },
+  "chromiumiii_oxide": {
+   "category": "HOUS",
+   "chem_class": "Chromium and its compounds",
+   "label": "Household toxins"
+  },
+  "chromiumiii_picolinate": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
+  },
   "chromiumiii_sulfate": {
    "category": "AIR",
    "chem_class": "Chromium and its compounds",
    "label": "Airborne pollutants"
+  },
+  "chromiumiv_oxide": {
+   "category": "HOUS",
+   "chem_class": "Chromium and its compounds",
+   "label": "Household toxins"
   },
   "chromiumvi_oxide": {
    "category": "AIR",
@@ -1594,6 +2409,11 @@
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "chrysotile_asbestos": {
+   "category": "HOUS",
+   "chem_class": "Minerals and fibres",
+   "label": "Household toxins"
   },
   "ciclopirox": {
    "category": "DRUG",
@@ -1639,6 +2459,16 @@
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "citreoviridin_a": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "citrinin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
   },
   "citrulline": {
    "category": "ANIM",
@@ -1695,6 +2525,11 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
   },
+  "clorophene": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
   "clotiazepam": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
@@ -1715,10 +2550,25 @@
    "chem_class": "Cobalt and its compounds",
    "label": "Cigarette toxins"
   },
+  "cobalt_bis2_ethylhexanoate": {
+   "category": "HOUS",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Household toxins"
+  },
   "cobalt_sulfate": {
    "category": "FOOD",
    "chem_class": "Cobalt and its compounds",
    "label": "Food toxins"
+  },
+  "cobaltii_acetate": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
+  },
+  "cobaltii_carbonate": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
   },
   "cobaltii_iii_oxide": {
    "category": "AIR",
@@ -1729,6 +2579,16 @@
    "category": "AIR",
    "chem_class": "Cobalt and its compounds",
    "label": "Airborne pollutants"
+  },
+  "cobaltii_naphthenate": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
+  "cobaltii_oxide": {
+   "category": "HOUS",
+   "chem_class": "Cobalt and its compounds",
+   "label": "Household toxins"
   },
   "cobaltiii_oxide": {
    "category": "AIR",
@@ -1745,6 +2605,11 @@
    "chem_class": "Benzenoids",
    "label": "Drugs"
   },
+  "cocoyl_sarcosine": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
+  },
   "codeine": {
    "category": "FOOD",
    "chem_class": "Morphinans",
@@ -1755,15 +2620,55 @@
    "chem_class": "Copper and its compounds",
    "label": "Food toxins"
   },
+  "copper_acetylacetonate": {
+   "category": "HOUS",
+   "chem_class": "Copper and its compounds",
+   "label": "Household toxins"
+  },
   "copper_gluconate": {
    "category": "FOOD",
    "chem_class": "Organic oxygen compounds",
    "label": "Food toxins"
   },
+  "copper_naphthenate": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
+  },
+  "copperii_oxide": {
+   "category": "HOUS",
+   "chem_class": "Copper and its compounds",
+   "label": "Household toxins"
+  },
+  "copperii_phosphate": {
+   "category": "IND",
+   "chem_class": "Copper and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "copperii_pyrophosphate": {
+   "category": "IND",
+   "chem_class": "Copper and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "copperii_sulfide": {
+   "category": "IND",
+   "chem_class": "Copper and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "copperii_triflate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
   "coronene": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "costaclavine": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
   },
   "cotinine": {
    "category": "ANIM",
@@ -1775,35 +2680,110 @@
    "chem_class": "Organic acids and derivatives",
    "label": "Animal toxins"
   },
+  "crocidolite_asbestos": {
+   "category": "HOUS",
+   "chem_class": "Minerals and fibres",
+   "label": "Household toxins"
+  },
   "crotamine": {
    "category": "ANIM",
    "chem_class": "Proteins and peptides",
    "label": "Animal toxins"
+  },
+  "crotocin": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
   },
   "crotoxin": {
    "category": "ANIM",
    "chem_class": "Proteins and peptides",
    "label": "Animal toxins"
   },
+  "cupriethylenediamine": {
+   "category": "IND",
+   "chem_class": "Organic salts",
+   "label": "Industrial and workplace toxins"
+  },
+  "cyanamide": {
+   "category": "IND",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "cyanide": {
    "category": "FOOD",
    "chem_class": "Homogeneous non-metal compounds",
    "label": "Food toxins"
+  },
+  "cyanoacetamide": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "cyanoacetic_acid": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "cyanocobalamin": {
    "category": "FOOD",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Food toxins"
   },
+  "cyanogen": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "cyanogen_bromide": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "cyanogen_chloride": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "cyanogen_iodide": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "cyclochlorotine": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
   "cyclohexane": {
    "category": "FOOD",
    "chem_class": "Unclassified",
    "label": "Food toxins"
   },
+  "cyclopentane": {
+   "category": "HOUS",
+   "chem_class": "Hydrocarbons",
+   "label": "Household toxins"
+  },
   "cyclophosphamide": {
    "category": "DRUG",
    "chem_class": "Organic nitrogen compounds",
    "label": "Drugs"
+  },
+  "cyclopiazonic_acid": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "cyclosporin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "cyclotrimethylenetrinitramine": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
   },
   "cylindrospermopsin": {
    "category": "BACT",
@@ -1824,6 +2804,41 @@
    "category": "DRUG",
    "chem_class": "Pyrimidine nucleosides",
    "label": "Drugs"
+  },
+  "cytochalasin_a": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "cytochalasin_b": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "cytochalasin_c": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "cytochalasin_d": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "cytochalasin_e": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "cytochalasin_h": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "cytochalasin_j": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
   },
   "d_2_hydroxyglutaric_acid": {
    "category": "ANIM",
@@ -1910,6 +2925,11 @@
    "chem_class": "Lipids and lipid-like molecules",
    "label": "Animal toxins"
   },
+  "deoxynivalenol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
   "dermonecrotic_toxin_pasteurella_multocida": {
    "category": "BACT",
    "chem_class": "Proteins and peptides",
@@ -1970,10 +2990,35 @@
    "chem_class": "Benzenoids",
    "label": "Food toxins"
   },
+  "di_n_octyltin_dichloride": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "diacetoxyscirpenol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
   "diacetyl": {
    "category": "ANIM",
    "chem_class": "Unclassified",
    "label": "Animal toxins"
+  },
+  "diacetylnivalenol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "diacetylverrucarol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "diaspore": {
+   "category": "IND",
+   "chem_class": "Minerals and fibres",
+   "label": "Industrial and workplace toxins"
   },
   "diazenedicarboxamide": {
    "category": "FOOD",
@@ -1990,20 +3035,45 @@
    "chem_class": "Organic acids and derivatives",
    "label": "Pesticides"
   },
+  "diazolidinyl_urea": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
+  },
   "diazoxon": {
    "category": "ANIM",
    "chem_class": "Organic acids and derivatives",
    "label": "Animal toxins"
+  },
+  "dibenzbf_14_oxazepine": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
   },
   "dibenzoahanthracene": {
    "category": "CIG",
    "chem_class": "Benzenoids",
    "label": "Cigarette toxins"
   },
+  "dibenzylideneacetone": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "dibromochloromethane": {
    "category": "FOOD",
    "chem_class": "Organohalogen compounds",
    "label": "Food toxins"
+  },
+  "dibromomethane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "dibrompropamidine": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "dibutyl_decanedioate": {
    "category": "FOOD",
@@ -2015,10 +3085,50 @@
    "chem_class": "Benzenoids",
    "label": "Food toxins"
   },
+  "dibutyltin_diacetate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "dibutyltin_dichloride": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "dibutyltin_dilaurate": {
+   "category": "HOUS",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Household toxins"
+  },
+  "dibutyltin_hydride": {
+   "category": "IND",
+   "chem_class": "Unclassified",
+   "label": "Industrial and workplace toxins"
+  },
+  "dibutyltin_oxide": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "dicamba": {
    "category": "PEST",
    "chem_class": "Benzenoids",
    "label": "Pesticides"
+  },
+  "dichloro15_cyclooctadiene_palladiumii": {
+   "category": "IND",
+   "chem_class": "Organic salts",
+   "label": "Industrial and workplace toxins"
+  },
+  "dichloroacetic_acid": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
+  },
+  "dichloroethylaluminum": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
   },
   "dichloromethane": {
    "category": "PEST",
@@ -2049,6 +3159,11 @@
    "category": "PEST",
    "chem_class": "Benzenoids",
    "label": "Pesticides"
+  },
+  "dicumarol": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
   },
   "dicyclohexyl_phthalate": {
    "category": "FOOD",
@@ -2100,6 +3215,16 @@
    "chem_class": "Organic acids and derivatives",
    "label": "Animal toxins"
   },
+  "diethyltoluamide": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
+  "diethylzinc": {
+   "category": "IND",
+   "chem_class": "Hydrocarbon derivatives",
+   "label": "Industrial and workplace toxins"
+  },
   "difenacoum": {
    "category": "PEST",
    "chem_class": "Benzenoids",
@@ -2114,6 +3239,16 @@
    "category": "DRUG",
    "chem_class": "Steroids and steroid derivatives",
    "label": "Drugs"
+  },
+  "dihydrocytochalasin_b": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "dihydrocytochalasin_b_gamma_lactone": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
   },
   "dihydroergotamine": {
    "category": "DRUG",
@@ -2134,6 +3269,16 @@
    "category": "ANIM",
    "chem_class": "Organic acids and derivatives",
    "label": "Animal toxins"
+  },
+  "diisobutyl_phthalate": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
+  "diisobutylaluminium_hydride": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
   },
   "diisodecyl_phthalate": {
    "category": "FOOD",
@@ -2159,6 +3304,11 @@
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "diisopropylzinc": {
+   "category": "IND",
+   "chem_class": "Hydrocarbon derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "diltiazem": {
    "category": "DRUG",
@@ -2189,6 +3339,11 @@
    "category": "FOOD",
    "chem_class": "Amines",
    "label": "Food toxins"
+  },
+  "dimethyltin_bisisooctyl_mercaptoacetate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "din_octyl_phthalate": {
    "category": "FOOD",
@@ -2300,6 +3455,11 @@
    "chem_class": "Proteins and peptides",
    "label": "Animal toxins"
   },
+  "elymoclavine": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
   "emamectin_b1a": {
    "category": "BACT",
    "chem_class": "Organic oxygen compounds",
@@ -2310,6 +3470,16 @@
    "chem_class": "Organic oxygen compounds",
    "label": "Bacterial toxins"
   },
+  "emestrin": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "emodin": {
+   "category": "FUNG",
+   "chem_class": "Benzenoids",
+   "label": "Fungal toxins"
+  },
   "encainide": {
    "category": "DRUG",
    "chem_class": "Benzenoids",
@@ -2319,6 +3489,26 @@
    "category": "DRUG",
    "chem_class": "Organohalogen compounds",
    "label": "Drugs"
+  },
+  "enniatin_a": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "enniatin_a1": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "enniatin_b": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "enniatin_b1": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
   },
   "entacapone": {
    "category": "FOOD",
@@ -2355,6 +3545,11 @@
    "chem_class": "Phenylpropanoids and polyketides",
    "label": "Drugs"
   },
+  "epsilon_amanitin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
   "equilin": {
    "category": "DRUG",
    "chem_class": "Lipids and lipid-like molecules",
@@ -2365,10 +3560,45 @@
    "chem_class": "Phenylpropanoids and polyketides",
    "label": "Animal toxins"
   },
+  "ergine": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
   "ergocalciferol": {
    "category": "FOOD",
    "chem_class": "Steroids and steroid derivatives",
    "label": "Food toxins"
+  },
+  "ergocornine": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "ergocristine": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "ergocryptine": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "ergonovine": {
+   "category": "FUNG",
+   "chem_class": "Ergoline and derivatives",
+   "label": "Fungal toxins"
+  },
+  "ergotamine": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "ergovaline": {
+   "category": "FUNG",
+   "chem_class": "Alkaloids and derivatives",
+   "label": "Fungal toxins"
   },
   "erioglaucine_a_disodium_salt": {
    "category": "FOOD",
@@ -2455,6 +3685,16 @@
    "chem_class": "Organic acids and derivatives",
    "label": "Food toxins"
   },
+  "ethyl_cyanoacrylate": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
+  },
+  "ethyl_ether": {
+   "category": "HOUS",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Household toxins"
+  },
   "ethyl_loflazepate": {
    "category": "DRUG",
    "chem_class": "Organic acids and derivatives",
@@ -2464,6 +3704,11 @@
    "category": "CIG",
    "chem_class": "Benzenoids",
    "label": "Cigarette toxins"
+  },
+  "ethylene_glycol": {
+   "category": "HOUS",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Household toxins"
   },
   "ethylene_oxide": {
    "category": "CIG",
@@ -2534,6 +3779,11 @@
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "ferric_hexacyanoferrate": {
+   "category": "HOUS",
+   "chem_class": "Iron and its compounds",
+   "label": "Household toxins"
   },
   "fexofenadine": {
    "category": "FOOD",
@@ -2645,6 +3895,11 @@
    "chem_class": "Benzenoids",
    "label": "Drugs"
   },
+  "folic_acid": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
   "forchlorfenuron": {
    "category": "FOOD",
    "chem_class": "Organoheterocyclic compounds",
@@ -2670,15 +3925,55 @@
    "chem_class": "Steroids and steroid derivatives",
    "label": "Drugs"
   },
+  "fumagillin": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
   "fumaric_acid": {
    "category": "ANIM",
    "chem_class": "Unclassified",
    "label": "Animal toxins"
   },
+  "fumitremorgin_a": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "fumitremorgin_b": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "fumitremorgin_c": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "fumonisin_b1": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "fumonisin_b2": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
   "furan": {
    "category": "CIG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Cigarette toxins"
+  },
+  "fusarenon_x": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "fusaric_acid": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
   },
   "gabapentin": {
    "category": "FOOD",
@@ -2695,6 +3990,11 @@
    "chem_class": "Gallium and its compounds",
    "label": "Airborne pollutants"
   },
+  "gamma_aluminum_oxide_hydroxide": {
+   "category": "HOUS",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Household toxins"
+  },
   "gamma_amanitin": {
    "category": "FUNG",
    "chem_class": "Proteins and peptides",
@@ -2708,6 +4008,11 @@
   "gamma_butyrolactone": {
    "category": "FOOD",
    "chem_class": "Lactones",
+   "label": "Food toxins"
+  },
+  "gamma_cyclodextrin": {
+   "category": "FOOD",
+   "chem_class": "Organic oxygen compounds",
    "label": "Food toxins"
   },
   "gatifloxacin": {
@@ -2735,6 +4040,11 @@
    "chem_class": "Benzene and substituted derivatives",
    "label": "Drugs"
   },
+  "glutaral": {
+   "category": "FOOD",
+   "chem_class": "Organooxygen compounds",
+   "label": "Food toxins"
+  },
   "glutathione": {
    "category": "ANIM",
    "chem_class": "Organic acids and derivatives",
@@ -2760,6 +4070,11 @@
    "chem_class": "Carboxylic acids and derivatives",
    "label": "Animal toxins"
   },
+  "glycolic_acid": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
   "gonyautoxin_i": {
    "category": "ANIM",
    "chem_class": "Phenylpropanoids and polyketides",
@@ -2769,6 +4084,11 @@
    "category": "DRUG",
    "chem_class": "Benzofurans",
    "label": "Drugs"
+  },
+  "guaifenesin": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
   },
   "halazepam": {
    "category": "DRUG",
@@ -2800,15 +4120,35 @@
    "chem_class": "Organohalogen compounds",
    "label": "Cigarette toxins"
   },
+  "heptanoic_acid": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "heptyl_4_hydroxybenzoate": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
   "heroin": {
    "category": "DRUG",
    "chem_class": "Morphinans",
    "label": "Drugs"
   },
+  "hexabromocyclododecane": {
+   "category": "HOUS",
+   "chem_class": "Organohalogen compounds",
+   "label": "Household toxins"
+  },
   "hexachlorobutadiene": {
    "category": "AIR",
    "chem_class": "Organohalogen compounds",
    "label": "Airborne pollutants"
+  },
+  "hexafluoroantimonic_acid": {
+   "category": "FOOD",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Food toxins"
   },
   "hexamethylene_diisocyanate": {
    "category": "AIR",
@@ -2824,6 +4164,11 @@
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "hexylresorcinol": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
   },
   "histrionicotoxin": {
    "category": "ANIM",
@@ -2855,15 +4200,35 @@
    "chem_class": "Homogeneous non-metal compounds",
    "label": "Industrial and workplace toxins"
   },
+  "hydrochlorothiazide": {
+   "category": "FOOD",
+   "chem_class": "Thiadiazines",
+   "label": "Food toxins"
+  },
   "hydrocodone": {
    "category": "DRUG",
    "chem_class": "Morphinans",
    "label": "Drugs"
   },
+  "hydrogen_cyanide": {
+   "category": "FOOD",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Food toxins"
+  },
+  "hydrogen_fluoride": {
+   "category": "HOUS",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Household toxins"
+  },
   "hydrogen_isocyanide": {
    "category": "AIR",
    "chem_class": "Unclassified",
    "label": "Airborne pollutants"
+  },
+  "hydrogen_selenide": {
+   "category": "FOOD",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Food toxins"
   },
   "hydrogen_sulfide": {
    "category": "BACT",
@@ -2879,6 +4244,11 @@
    "category": "CIG",
    "chem_class": "Phenols",
    "label": "Cigarette toxins"
+  },
+  "hydroxocobalamin": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
   },
   "hydroxychloroquine": {
    "category": "DRUG",
@@ -2900,20 +4270,45 @@
    "chem_class": "Organic acids and derivatives",
    "label": "Drugs"
   },
+  "ibuprofen": {
+   "category": "FOOD",
+   "chem_class": "Phenylpropanoic acids",
+   "label": "Food toxins"
+  },
+  "icaridin": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
+  },
   "ifosfamide": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "imidazolidinyl_urea": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
   },
   "imipenem": {
    "category": "DRUG",
    "chem_class": "Lactams",
    "label": "Drugs"
   },
+  "imipramine": {
+   "category": "FOOD",
+   "chem_class": "Benzazepines",
+   "label": "Food toxins"
+  },
   "indeno123_cdpyrene": {
    "category": "CIG",
    "chem_class": "Benzenoids",
    "label": "Cigarette toxins"
+  },
+  "indiumiii_bromide": {
+   "category": "IND",
+   "chem_class": "Indium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "infliximab": {
    "category": "ANIM",
@@ -2925,15 +4320,105 @@
    "chem_class": "Proteins and peptides",
    "label": "Animal toxins"
   },
+  "iodine": {
+   "category": "FOOD",
+   "chem_class": "Iodine and its compounds",
+   "label": "Food toxins"
+  },
   "iodine_131": {
    "category": "AIR",
    "chem_class": "Iodine and its compounds",
    "label": "Airborne pollutants"
   },
+  "iopanoic_acid": {
+   "category": "IND",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Industrial and workplace toxins"
+  },
+  "iron": {
+   "category": "FOOD",
+   "chem_class": "Iron and its compounds",
+   "label": "Food toxins"
+  },
+  "iron_cacodylate": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "iron_phosphide": {
+   "category": "IND",
+   "chem_class": "Iron and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "ironii_bromide": {
+   "category": "IND",
+   "chem_class": "Iron and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "ironiii_bromide": {
+   "category": "IND",
+   "chem_class": "Iron and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "ironiii_nitrate": {
+   "category": "IND",
+   "chem_class": "Iron and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "isobornyl_propionate": {
+   "category": "FOOD",
+   "chem_class": "Unclassified",
+   "label": "Food toxins"
+  },
+  "isobornyl_thiocyanoacetate": {
+   "category": "IND",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Industrial and workplace toxins"
+  },
+  "isobutane": {
+   "category": "FOOD",
+   "chem_class": "Hydrocarbons",
+   "label": "Food toxins"
+  },
+  "isocyanic_acid": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "isoflurane": {
+   "category": "HOUS",
+   "chem_class": "Organohalogen compounds",
+   "label": "Household toxins"
+  },
+  "isoniazid": {
+   "category": "FOOD",
+   "chem_class": "Pyridines and derivatives",
+   "label": "Food toxins"
+  },
+  "isopentane": {
+   "category": "HOUS",
+   "chem_class": "Hydrocarbons",
+   "label": "Household toxins"
+  },
+  "isophorone_diisocyanate": {
+   "category": "HOUS",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Household toxins"
+  },
   "isoprenaline": {
    "category": "DRUG",
    "chem_class": "Benzenoids",
    "label": "Drugs"
+  },
+  "isopropyl_alcohol": {
+   "category": "FOOD",
+   "chem_class": "Organooxygen compounds",
+   "label": "Food toxins"
+  },
+  "isopropylbenzene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
   },
   "itraconazole": {
    "category": "DRUG",
@@ -2949,6 +4434,11 @@
    "category": "DRUG",
    "chem_class": "Benzenoids",
    "label": "Drugs"
+  },
+  "ketoconazole": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
   },
   "kojic_acid": {
    "category": "FUNG",
@@ -2974,6 +4464,16 @@
    "category": "ANIM",
    "chem_class": "Organic acids and derivatives",
    "label": "Animal toxins"
+  },
+  "l_carnitine": {
+   "category": "FOOD",
+   "chem_class": "Organonitrogen compounds",
+   "label": "Food toxins"
+  },
+  "l_dopa": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
   },
   "l_glutamic_acid": {
    "category": "ANIM",
@@ -3055,6 +4555,21 @@
    "chem_class": "Benzene and substituted derivatives",
    "label": "Drugs"
   },
+  "lamotrigine": {
+   "category": "FOOD",
+   "chem_class": "Benzene and substituted derivatives",
+   "label": "Food toxins"
+  },
+  "lanthanumiii_bromide": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "lauroyl_sarcosine": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
+  },
   "lead": {
    "category": "CIG",
    "chem_class": "Lead and its compounds",
@@ -3065,6 +4580,11 @@
    "chem_class": "Lead and its compounds",
    "label": "Airborne pollutants"
   },
+  "lead_acetate": {
+   "category": "HOUS",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Household toxins"
+  },
   "lead_carbonate": {
    "category": "AIR",
    "chem_class": "Organic acids and derivatives",
@@ -3074,6 +4594,11 @@
    "category": "AIR",
    "chem_class": "Lead and its compounds",
    "label": "Airborne pollutants"
+  },
+  "lead_dioxide": {
+   "category": "HOUS",
+   "chem_class": "Lead and its compounds",
+   "label": "Household toxins"
   },
   "lead_hydroxide": {
    "category": "AIR",
@@ -3089,6 +4614,21 @@
    "category": "AIR",
    "chem_class": "Organic acids and derivatives",
    "label": "Airborne pollutants"
+  },
+  "lead_sulfate": {
+   "category": "HOUS",
+   "chem_class": "Lead and its compounds",
+   "label": "Household toxins"
+  },
+  "lead_sulfide": {
+   "category": "HOUS",
+   "chem_class": "Lead and its compounds",
+   "label": "Household toxins"
+  },
+  "lead_tetraacetate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "lethal_factor": {
    "category": "BACT",
@@ -3110,6 +4650,11 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
   },
+  "levofloxacin": {
+   "category": "FOOD",
+   "chem_class": "Quinolines and derivatives",
+   "label": "Food toxins"
+  },
   "levomethadyl_acetate": {
    "category": "DRUG",
    "chem_class": "Benzene and substituted derivatives",
@@ -3125,6 +4670,11 @@
    "chem_class": "Morphinans",
    "label": "Drugs"
   },
+  "lewisite": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "lidocaine": {
    "category": "DRUG",
    "chem_class": "Benzene and substituted derivatives",
@@ -3139,6 +4689,41 @@
    "category": "BACT",
    "chem_class": "Lipids and lipid-like molecules",
    "label": "Bacterial toxins"
+  },
+  "lithium_aluminate": {
+   "category": "IND",
+   "chem_class": "Lithium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "lithium_aluminium_hydride": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "lithium_bromide": {
+   "category": "IND",
+   "chem_class": "Lithium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "lithium_hexafluoroantimonatev": {
+   "category": "FOOD",
+   "chem_class": "Lithium and its compounds",
+   "label": "Food toxins"
+  },
+  "lithium_nitrate": {
+   "category": "IND",
+   "chem_class": "Lithium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "lithium_perchlorate": {
+   "category": "FOOD",
+   "chem_class": "Lithium and its compounds",
+   "label": "Food toxins"
+  },
+  "lithium_tetrachloroaluminate": {
+   "category": "IND",
+   "chem_class": "Lithium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "lithocholic_acid": {
    "category": "ANIM",
@@ -3160,10 +4745,20 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
   },
+  "loratadine": {
+   "category": "FOOD",
+   "chem_class": "Benzocycloheptapyridines",
+   "label": "Food toxins"
+  },
   "lorazepam": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "lormetazepam": {
+   "category": "FOOD",
+   "chem_class": "Benzodiazepines",
+   "label": "Food toxins"
   },
   "lovastatin": {
    "category": "DRUG",
@@ -3190,6 +4785,56 @@
    "chem_class": "Alkaloids and derivatives",
    "label": "Fungal toxins"
   },
+  "m_cresol": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "m_dichlorobenzene": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "m_xylene": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
+  "m_xylyl_bromide": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "magic_acid_fluorosulfuric_acid_antimony_pentafluoride": {
+   "category": "FOOD",
+   "chem_class": "Antimony and its compounds",
+   "label": "Food toxins"
+  },
+  "magnesium_aluminate": {
+   "category": "IND",
+   "chem_class": "Magnesium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "magnesium_bromide": {
+   "category": "IND",
+   "chem_class": "Magnesium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "magnesium_nitrate": {
+   "category": "HOUS",
+   "chem_class": "Magnesium and its compounds",
+   "label": "Household toxins"
+  },
+  "magnesium_perchlorate": {
+   "category": "FOOD",
+   "chem_class": "Magnesium and its compounds",
+   "label": "Food toxins"
+  },
+  "magnesium_sulfate": {
+   "category": "HOUS",
+   "chem_class": "Magnesium and its compounds",
+   "label": "Household toxins"
+  },
   "maitotoxin": {
    "category": "ANIM",
    "chem_class": "Unclassified",
@@ -3200,10 +4845,110 @@
    "chem_class": "Lipids and lipid-like molecules",
    "label": "Animal toxins"
   },
+  "maleic_acid": {
+   "category": "FOOD",
+   "chem_class": "Carboxylic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "malononitrile": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "mandelonitrile": {
+   "category": "FOOD",
+   "chem_class": "Benzenoids",
+   "label": "Food toxins"
+  },
   "mangafodipir": {
    "category": "AIR",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Airborne pollutants"
+  },
+  "manganese": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganese_bromide": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganese_carbonate": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "manganese_chloride": {
+   "category": "FOOD",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Food toxins"
+  },
+  "manganese_citrate": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "manganese_dioxide": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganese_diselenide": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganese_fluoride": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganese_heptaoxide": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganese_phthalocyanine": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
+  "manganese_sulfate": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganese_sulfide": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganese_triacetate": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
+  },
+  "manganese_trifluoride": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganeseii_oxide": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganeseiii_oxide": {
+   "category": "FOOD",
+   "chem_class": "Manganese and its compounds",
+   "label": "Food toxins"
+  },
+  "manganous_acetate": {
+   "category": "FOOD",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Food toxins"
   },
   "maprotiline": {
    "category": "DRUG",
@@ -3214,6 +4959,11 @@
    "category": "ANIM",
    "chem_class": "Lipids and lipid-like molecules",
    "label": "Animal toxins"
+  },
+  "masoprocol": {
+   "category": "FOOD",
+   "chem_class": "Lignans, neolignans and related compounds",
+   "label": "Food toxins"
   },
   "maurocalcin": {
    "category": "ANIM",
@@ -3265,6 +5015,11 @@
    "chem_class": "Organonitrogen compounds",
    "label": "Drugs"
   },
+  "menadione": {
+   "category": "FOOD",
+   "chem_class": "Naphthalenes",
+   "label": "Food toxins"
+  },
   "meperidine": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
@@ -3279,6 +5034,11 @@
    "category": "AIR",
    "chem_class": "Mercury and its compounds",
    "label": "Airborne pollutants"
+  },
+  "mercury": {
+   "category": "FOOD",
+   "chem_class": "Mercury and its compounds",
+   "label": "Food toxins"
   },
   "mercury_cadmium_telluride": {
    "category": "AIR",
@@ -3330,6 +5090,11 @@
    "chem_class": "Steroids and steroid derivatives",
    "label": "Drugs"
   },
+  "metenamine": {
+   "category": "FOOD",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Food toxins"
+  },
   "methadone": {
    "category": "DRUG",
    "chem_class": "Benzene and substituted derivatives",
@@ -3339,6 +5104,11 @@
    "category": "DRUG",
    "chem_class": "Benzene and substituted derivatives",
    "label": "Drugs"
+  },
+  "methane": {
+   "category": "FOOD",
+   "chem_class": "Hydrocarbons",
+   "label": "Food toxins"
   },
   "methanol": {
    "category": "FOOD",
@@ -3380,10 +5150,40 @@
    "chem_class": "Benzenoids",
    "label": "Fungal toxins"
   },
+  "methyl_aluminum_sesquibromide": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "methyl_cellusolve": {
+   "category": "IND",
+   "chem_class": "Organooxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "methyl_cyanoacrylate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "methyl_ethyl_ketone_peroxide": {
+   "category": "HOUS",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Household toxins"
+  },
   "methyl_thiocyanate": {
    "category": "FOOD",
    "chem_class": "Organosulfur compounds",
    "label": "Food toxins"
+  },
+  "methylaluminoxane": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "methylammonium_nitrate": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
   },
   "methylcobalamin": {
    "category": "FOOD",
@@ -3400,6 +5200,11 @@
    "chem_class": "Hydrocarbons",
    "label": "Food toxins"
   },
+  "methyldichloroarsine": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "methyldopa": {
    "category": "FOOD",
    "chem_class": "Phenylpropanoids and polyketides",
@@ -3409,6 +5214,16 @@
    "category": "AIR",
    "chem_class": "Organic nitrogen compounds",
    "label": "Airborne pollutants"
+  },
+  "methylene_diphenyl_diisocyanate": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
+  "methylene_thiocyanate": {
+   "category": "HOUS",
+   "chem_class": "Organosulfur compounds",
+   "label": "Household toxins"
   },
   "methylergonovine": {
    "category": "DRUG",
@@ -3444,6 +5259,16 @@
    "category": "DRUG",
    "chem_class": "Alkaloids and derivatives",
    "label": "Drugs"
+  },
+  "metronidazole": {
+   "category": "HOUS",
+   "chem_class": "Azoles",
+   "label": "Household toxins"
+  },
+  "mgk": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
   },
   "miconazole": {
    "category": "DRUG",
@@ -3515,10 +5340,35 @@
    "chem_class": "Organic acids and derivatives",
    "label": "Fungal toxins"
   },
+  "mono_benzyl_phthalate": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "mono_n_octyltin_trichloride": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "monobutylphthalate": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "monobutyltin": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "monobutyltin_hydride": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "monobutyltin_trichloride": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
   },
   "monoethyl_phthalate": {
    "category": "ANIM",
@@ -3540,6 +5390,16 @@
    "chem_class": "Benzenoids",
    "label": "Food toxins"
   },
+  "monomethyltin_trichloride": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "monomethyltin_trisisooctyl_mercaptoacetate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
   "morphine": {
    "category": "DRUG",
    "chem_class": "Morphinans",
@@ -3555,10 +5415,25 @@
    "chem_class": "Isocoumarans",
    "label": "Drugs"
   },
+  "n_2_cyanoethylvaline": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "n_bromosuccinimide": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "n_butane": {
    "category": "FOOD",
    "chem_class": "Saturated hydrocarbons",
    "label": "Food toxins"
+  },
+  "n_butyl_benzenesulfonamide": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "n_butyl_isocyanate": {
    "category": "AIR",
@@ -3620,6 +5495,11 @@
    "chem_class": "Organooxygen compounds",
    "label": "Drugs"
   },
+  "neopentane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
   "neosaxitoxin": {
    "category": "ANIM",
    "chem_class": "Phenylpropanoids and polyketides",
@@ -3680,20 +5560,60 @@
    "chem_class": "Azolidines",
    "label": "Drugs"
   },
+  "niobium_tin": {
+   "category": "IND",
+   "chem_class": "Tin and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "niobiumv_bromide": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "nitrapyrin": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "nitrazepam": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "nitric_acid": {
+   "category": "HOUS",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Household toxins"
+  },
+  "nitrilotriacetic_acid": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "nitrobenzene": {
    "category": "CIG",
    "chem_class": "Benzenoids",
    "label": "Cigarette toxins"
   },
+  "nitrofural": {
+   "category": "HOUS",
+   "chem_class": "Furans",
+   "label": "Household toxins"
+  },
   "nitrofurantoin": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "nitrogen_tribromide": {
+   "category": "IND",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "nitrous_acid": {
+   "category": "IND",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Industrial and workplace toxins"
   },
   "nivalenol": {
    "category": "FUNG",
@@ -3709,6 +5629,11 @@
    "category": "BACT",
    "chem_class": "Organic acids and derivatives",
    "label": "Bacterial toxins"
+  },
+  "nonabromobiphenyl_ether": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "nordiazepam": {
    "category": "DRUG",
@@ -3735,6 +5660,11 @@
    "chem_class": "Organic oxygen compounds",
    "label": "Drugs"
   },
+  "nysted_reagent": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "o_cresol": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
@@ -3750,6 +5680,11 @@
    "chem_class": "Unclassified",
    "label": "Food toxins"
   },
+  "o_xylyl_bromide": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "ochratoxin_a": {
    "category": "FUNG",
    "chem_class": "Phenylpropanoids and polyketides",
@@ -3760,10 +5695,20 @@
    "chem_class": "Phenylpropanoids and polyketides",
    "label": "Fungal toxins"
   },
+  "octabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "octane": {
    "category": "FOOD",
    "chem_class": "Unclassified",
    "label": "Food toxins"
+  },
+  "octyl_cyanoacrylate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "octyl_gallate": {
    "category": "FOOD",
@@ -3850,6 +5795,11 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
   },
+  "oxybenzone": {
+   "category": "HOUS",
+   "chem_class": "Benzenoids",
+   "label": "Household toxins"
+  },
   "oxycodone": {
    "category": "DRUG",
    "chem_class": "Phenanthrenes and derivatives",
@@ -3870,10 +5820,50 @@
    "chem_class": "Homogeneous non-metal compounds",
    "label": "Airborne pollutants"
   },
+  "p_azobenzenearsonate": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "p_chloroacetophenone": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "p_chlorobenzylidenemalonitrile": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "p_xylene": {
    "category": "FOOD",
    "chem_class": "Unclassified",
    "label": "Food toxins"
+  },
+  "p_xylyl_bromide": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "palladium": {
+   "category": "IND",
+   "chem_class": "Palladium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "palladium_acetylacetonate": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "palladium_hydride": {
+   "category": "IND",
+   "chem_class": "Palladium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "palladiumii_acetate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "pamidronate": {
    "category": "DRUG",
@@ -3885,6 +5875,51 @@
    "chem_class": "Piperidines",
    "label": "Food toxins"
   },
+  "paspalinine": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "paspalitrem_a": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "paspalitrem_b": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "patulin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "paxilline": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "penicillic_acid": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "penitrem_a": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "penitrem_b": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "penitrem_c": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
   "pentabromodiphenyl_ethers": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
@@ -3894,6 +5929,11 @@
    "category": "FOOD",
    "chem_class": "Hydrocarbons",
    "label": "Food toxins"
+  },
+  "pentaerythritol_tetranitrate": {
+   "category": "HOUS",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Household toxins"
   },
   "pentamidine": {
    "category": "DRUG",
@@ -3950,6 +5990,36 @@
    "chem_class": "Proteins and peptides",
    "label": "Bacterial toxins"
   },
+  "phallacidin": {
+   "category": "FUNG",
+   "chem_class": "Proteins and peptides",
+   "label": "Fungal toxins"
+  },
+  "phallacin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "phallisacin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "phallisin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "phalloidin": {
+   "category": "FUNG",
+   "chem_class": "Proteins and peptides",
+   "label": "Fungal toxins"
+  },
+  "phalloin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
   "phenanthrene": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
@@ -3974,6 +6044,11 @@
    "category": "FOOD",
    "chem_class": "Phenols",
    "label": "Food toxins"
+  },
+  "phenolphthalein": {
+   "category": "HOUS",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Household toxins"
   },
   "phenprocoumon": {
    "category": "DRUG",
@@ -4165,6 +6240,11 @@
    "chem_class": "Steroids and steroid derivatives",
    "label": "Drugs"
   },
+  "proamanullin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
   "procaine": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
@@ -4204,6 +6284,11 @@
    "category": "DRUG",
    "chem_class": "Benzothiazines",
    "label": "Drugs"
+  },
+  "prophalloin": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
   },
   "propionic_acid": {
    "category": "ANIM",
@@ -4264,6 +6349,16 @@
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "psilocin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "psilocybin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
   },
   "pyrene": {
    "category": "FOOD",
@@ -4370,6 +6465,11 @@
    "chem_class": "Alkaloids and derivatives",
    "label": "Drugs"
   },
+  "restrictocin_aspergillus_restrictus": {
+   "category": "FUNG",
+   "chem_class": "Proteins and peptides",
+   "label": "Fungal toxins"
+  },
   "retinol_acetate": {
    "category": "FOOD",
    "chem_class": "Lipids and lipid-like molecules",
@@ -4435,6 +6535,26 @@
    "chem_class": "Organic acids and derivatives",
    "label": "Drugs"
   },
+  "roquefortine": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "roridin_a": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "roridin_d": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "roridin_e": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
   "rosuvastatin": {
    "category": "DRUG",
    "chem_class": "Diazines",
@@ -4444,6 +6564,16 @@
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
+  },
+  "rubratoxin_a": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
+  },
+  "rubratoxin_b": {
+   "category": "FUNG",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Fungal toxins"
   },
   "s_adenosylhomocysteine": {
    "category": "ANIM",
@@ -4480,15 +6610,35 @@
    "chem_class": "Carboxylic acids and derivatives",
    "label": "Animal toxins"
   },
+  "satratoxin_h": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
   "saxitoxin": {
    "category": "BACT",
    "chem_class": "Phenylpropanoids and polyketides",
    "label": "Bacterial toxins"
   },
+  "scirpene": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "se_zearalenone": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
   "sebacic_acid": {
    "category": "ANIM",
    "chem_class": "Fatty Acyls",
    "label": "Animal toxins"
+  },
+  "secalonic_acid_d": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
   },
   "secobarbital": {
    "category": "DRUG",
@@ -4540,20 +6690,130 @@
    "chem_class": "Silver and its compounds",
    "label": "Food toxins"
   },
+  "silver_bromide": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_carbonate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_chlorate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_fulminate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_hexafluorophosphate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_iodate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_iodide": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_molybdate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_nitrate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_oxalate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_oxide": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_perchlorate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_subfluoride": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "silver_sulfadiazine": {
    "category": "DRUG",
    "chem_class": "Benzenoids",
    "label": "Drugs"
+  },
+  "silver_sulfate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_sulfide": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_telluride": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silver_tetrafluoroborate": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "silveri_selenide": {
    "category": "AIR",
    "chem_class": "Silver and its compounds",
    "label": "Airborne pollutants"
   },
+  "silverii_fluoride": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "silveriiii_oxide": {
+   "category": "IND",
+   "chem_class": "Silver and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "simvastatin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
   "sirolimus": {
    "category": "DRUG",
    "chem_class": "Phenylpropanoids and polyketides",
    "label": "Drugs"
+  },
+  "slaframine": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "sodium_aluminium_hydride": {
+   "category": "IND",
+   "chem_class": "Aluminium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "sodium_aluminum_phosphate": {
    "category": "FOOD",
@@ -4570,6 +6830,16 @@
    "chem_class": "Arsenic and its compounds",
    "label": "Airborne pollutants"
   },
+  "sodium_bis2_methoxyethoxyaluminumhydride": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "sodium_bromate": {
+   "category": "IND",
+   "chem_class": "Sodium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "sodium_bromide": {
    "category": "HOUS",
    "chem_class": "Sodium and its compounds",
@@ -4584,6 +6854,16 @@
    "category": "AIR",
    "chem_class": "Organic salts",
    "label": "Airborne pollutants"
+  },
+  "sodium_hypochlorite": {
+   "category": "IND",
+   "chem_class": "Sodium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "sodium_metavanadate": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "sodium_nitrate": {
    "category": "FOOD",
@@ -4600,10 +6880,20 @@
    "chem_class": "Sodium and its compounds",
    "label": "Drugs"
   },
+  "sodium_orthovanadate": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "sodium_perchlorate": {
    "category": "FOOD",
    "chem_class": "Sodium and its compounds",
    "label": "Food toxins"
+  },
+  "sodium_phosphide": {
+   "category": "IND",
+   "chem_class": "Sodium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "sodium_selenate": {
    "category": "HOUS",
@@ -4615,10 +6905,20 @@
    "chem_class": "Selenium and its compounds",
    "label": "Airborne pollutants"
   },
+  "sodium_tetrachloro_palladateii": {
+   "category": "IND",
+   "chem_class": "Sodium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "sodium_tetradecyl_sulfate": {
    "category": "DRUG",
    "chem_class": "Organic acids and derivatives",
    "label": "Drugs"
+  },
+  "sodium_zincate": {
+   "category": "IND",
+   "chem_class": "Sodium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "sorafenib": {
    "category": "DRUG",
@@ -4635,10 +6935,25 @@
    "chem_class": "Steroids and steroid derivatives",
    "label": "Drugs"
   },
+  "sporidesmin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "stannane": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "stavudine": {
    "category": "DRUG",
    "chem_class": "Nucleoside and nucleotide analogues",
    "label": "Drugs"
+  },
+  "sterigmatocystin": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
   },
   "stibine": {
    "category": "FOOD",
@@ -4680,6 +6995,11 @@
    "chem_class": "Strontium and its compounds",
    "label": "Airborne pollutants"
   },
+  "strykers_reagent": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "styrene": {
    "category": "CIG",
    "chem_class": "Benzenoids",
@@ -4689,6 +7009,11 @@
    "category": "ANIM",
    "chem_class": "Carboxylic acids and derivatives",
    "label": "Animal toxins"
+  },
+  "succinonitrile": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
   },
   "succinylacetone": {
    "category": "ANIM",
@@ -4705,10 +7030,30 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
   },
+  "sulfur_35": {
+   "category": "IND",
+   "chem_class": "Sulfur and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "sulfuric_acid": {
+   "category": "IND",
+   "chem_class": "Non-metal oxoanionic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "sumatriptan": {
    "category": "FOOD",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Food toxins"
+  },
+  "swainsonine": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "t2_toxin": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
   },
   "tacrolimus": {
    "category": "DRUG",
@@ -4720,10 +7065,35 @@
    "chem_class": "Stilbenes",
    "label": "Drugs"
   },
+  "tantalumiii_aluminide": {
+   "category": "IND",
+   "chem_class": "Inorganic salts",
+   "label": "Industrial and workplace toxins"
+  },
+  "tantalumv_bromide": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tebbes_reagent": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
   "telithromycin": {
    "category": "DRUG",
    "chem_class": "Unclassified",
    "label": "Drugs"
+  },
+  "tellurium_dibromide": {
+   "category": "IND",
+   "chem_class": "Tellurium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tellurium_tetrabromide": {
+   "category": "IND",
+   "chem_class": "Tellurium and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "temazepam": {
    "category": "DRUG",
@@ -4740,6 +7110,26 @@
    "chem_class": "Diazinanes",
    "label": "Drugs"
   },
+  "terbiumiii_bromide": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "territrem_a": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "territrem_b": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "territrem_c": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
   "testosterone": {
    "category": "ANIM",
    "chem_class": "Steroids and steroid derivatives",
@@ -4755,15 +7145,60 @@
    "chem_class": "Proteins and peptides",
    "label": "Bacterial toxins"
   },
+  "tetra_n_octylstannane": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetraammine_palladium_hydrogen_carbonate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetraammine_palladiumii_chloride": {
+   "category": "IND",
+   "chem_class": "Palladium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetrabromobiphenyl": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetrabromobisphenol_a": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "tetrabromodiphenyl_ethers": {
    "category": "FOOD",
    "chem_class": "Benzenoids",
    "label": "Food toxins"
   },
+  "tetrabromomethane": {
+   "category": "IND",
+   "chem_class": "Organohalogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetrachlorobisphenol_a": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "tetrachloroethylene": {
    "category": "CIG",
    "chem_class": "Organohalogen compounds",
    "label": "Cigarette toxins"
+  },
+  "tetracyanoethylene": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetracyanoquinodimethane": {
+   "category": "IND",
+   "chem_class": "Hydrocarbon derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "tetracycline": {
    "category": "DRUG",
@@ -4774,6 +7209,31 @@
    "category": "AIR",
    "chem_class": "Organometallic compounds",
    "label": "Airborne pollutants"
+  },
+  "tetraethyltin": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetrakistriphenylphosphinepalladium0": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetramethylsuccinonitrile": {
+   "category": "IND",
+   "chem_class": "Organic nitrogen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetramethyltin": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tetramminecopperii_sulfate": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
   },
   "tetrazepam": {
    "category": "DRUG",
@@ -4810,6 +7270,11 @@
    "chem_class": "Benzenoids",
    "label": "Airborne pollutants"
   },
+  "thionyl_bromide": {
+   "category": "IND",
+   "chem_class": "Homogeneous non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "thiopental": {
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
@@ -4830,6 +7295,11 @@
    "chem_class": "Organosulfur compounds",
    "label": "Food toxins"
   },
+  "thorin": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
   "thorium": {
    "category": "FOOD",
    "chem_class": "Thorium and its compounds",
@@ -4844,6 +7314,21 @@
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "tin_telluride": {
+   "category": "IND",
+   "chem_class": "Tin and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tinii_bromide": {
+   "category": "IND",
+   "chem_class": "Tin and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tinii_fluoroborate": {
+   "category": "IND",
+   "chem_class": "Tin and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "tinii_oxide": {
    "category": "HOUS",
@@ -4925,6 +7410,11 @@
    "chem_class": "Minerals and fibres",
    "label": "Airborne pollutants"
   },
+  "triacetoxyscirpenol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
   "triamcinolone": {
    "category": "DRUG",
    "chem_class": "Steroids and steroid derivatives",
@@ -4944,6 +7434,26 @@
    "category": "CIG",
    "chem_class": "Organohalogen compounds",
    "label": "Cigarette toxins"
+  },
+  "trichodermin": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "trichodermol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "trichothecin": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "trichothecolone": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
   },
   "triclosan": {
    "category": "FOOD",
@@ -4990,6 +7500,16 @@
    "chem_class": "Organometallic compounds",
    "label": "Industrial and workplace toxins"
   },
+  "trimethylarsine": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "trimethylarsine_oxide": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "trimetrexate": {
    "category": "DRUG",
    "chem_class": "Diazanaphthalenes",
@@ -4999,6 +7519,46 @@
    "category": "DRUG",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Drugs"
+  },
+  "trioctyltin_stannane": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "triphenylarsine": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "triphenyltin_chloride": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "triphenyltin_hydride": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
+  },
+  "tris2_chloroethylphosphate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "tris8_hydroxyquinolinatoaluminium": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "trisdodecylaluminum": {
+   "category": "IND",
+   "chem_class": "Organometallic compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tritetradecylaluminum": {
+   "category": "IND",
+   "chem_class": "Hydrocarbon derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "tritium": {
    "category": "AIR",
@@ -5014,6 +7574,16 @@
    "category": "FOOD",
    "chem_class": "Tungsten and its compounds",
    "label": "Food toxins"
+  },
+  "tungstenv_bromide": {
+   "category": "IND",
+   "chem_class": "Tungsten and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "tungstenvi_oxytetrabromide": {
+   "category": "IND",
+   "chem_class": "Tungsten and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "tyramine": {
    "category": "ANIM",
@@ -5095,6 +7665,101 @@
    "chem_class": "Vanadium and its compounds",
    "label": "Food toxins"
   },
+  "vanadium_carbide": {
+   "category": "IND",
+   "chem_class": "Hydrocarbon derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadium_carbonyl": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadium_nitride": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadium_oxytrichloride": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadium_tetrachloride": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumii_chloride": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumii_oxide": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumiii_bromide": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumiii_chloride": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumiii_fluoride": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumiii_iodide": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumiii_oxide": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumiii_sulfate": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumiv_fluoride": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumiv_oxide": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumv_oxide": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadiumv_oxytrifluoride": {
+   "category": "IND",
+   "chem_class": "Vanadium and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadocene_dichloride": {
+   "category": "IND",
+   "chem_class": "Hydrocarbons",
+   "label": "Industrial and workplace toxins"
+  },
+  "vanadyl_acetylacetonate": {
+   "category": "IND",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "vanadyl_sulfate": {
    "category": "FOOD",
    "chem_class": "Mixed metal/non-metal compounds",
@@ -5129,6 +7794,36 @@
    "category": "FOOD",
    "chem_class": "Benzene and substituted derivatives",
    "label": "Food toxins"
+  },
+  "verrucarin_a": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "verrucarin_b": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "verrucarin_j": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "verrucarol": {
+   "category": "FUNG",
+   "chem_class": "Lipids and lipid-like molecules",
+   "label": "Fungal toxins"
+  },
+  "verrucosidin": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
+  },
+  "verruculogen": {
+   "category": "FUNG",
+   "chem_class": "Organoheterocyclic compounds",
+   "label": "Fungal toxins"
   },
   "vigabatrin": {
    "category": "DRUG",
@@ -5185,6 +7880,31 @@
    "chem_class": "Organoheterocyclic compounds",
    "label": "Animal toxins"
   },
+  "xanthomegnin": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
+  },
+  "xantocillin": {
+   "category": "IND",
+   "chem_class": "Lignans, neolignans and related compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "ytterbiumiii_bromide": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "yttrium_barium_copper_oxide": {
+   "category": "IND",
+   "chem_class": "Copper and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "yttriumiii_bromide": {
+   "category": "IND",
+   "chem_class": "Mixed metal/non-metal compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "zalcitabine": {
    "category": "DRUG",
    "chem_class": "Nucleosides, nucleotides, and analogues",
@@ -5194,6 +7914,11 @@
    "category": "DRUG",
    "chem_class": "Diazines",
    "label": "Drugs"
+  },
+  "zeranol": {
+   "category": "FUNG",
+   "chem_class": "Phenylpropanoids and polyketides",
+   "label": "Fungal toxins"
   },
   "zidovudine": {
    "category": "DRUG",
@@ -5210,25 +7935,120 @@
    "chem_class": "Carboxylic acids and derivatives",
    "label": "Food toxins"
   },
+  "zinc_ammonium_chloride": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_ammonium_sulfate": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_bromide": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_chlorate": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "zinc_chloride": {
    "category": "FOOD",
    "chem_class": "Zinc and its compounds",
    "label": "Food toxins"
+  },
+  "zinc_diethyldithiocarbamate": {
+   "category": "IND",
+   "chem_class": "Organosulfur compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_fluoride": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_formate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_hydride": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_hydroxide": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_iodide": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_laurate": {
+   "category": "IND",
+   "chem_class": "Organic oxygen compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_molybdate": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_nitrate": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_oleate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
   },
   "zinc_oxide": {
    "category": "FOOD",
    "chem_class": "Zinc and its compounds",
    "label": "Food toxins"
   },
+  "zinc_peroxide": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_propionate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
   "zinc_pyrithione": {
    "category": "HOUS",
    "chem_class": "Organoheterocyclic compounds",
    "label": "Household toxins"
   },
+  "zinc_pyrophosphate": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
   "zinc_selenide": {
    "category": "AIR",
    "chem_class": "Zinc and its compounds",
    "label": "Airborne pollutants"
+  },
+  "zinc_silicate": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_silicofluoride": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
   },
   "zinc_stearate": {
    "category": "FOOD",
@@ -5240,10 +8060,25 @@
    "chem_class": "Zinc and its compounds",
    "label": "Food toxins"
   },
+  "zinc_telluride": {
+   "category": "IND",
+   "chem_class": "Zinc and its compounds",
+   "label": "Industrial and workplace toxins"
+  },
+  "zinc_trifluoromethanesulfonate": {
+   "category": "IND",
+   "chem_class": "Organic acids and derivatives",
+   "label": "Industrial and workplace toxins"
+  },
   "zincii_gluconate": {
    "category": "FOOD",
    "chem_class": "Organic acids and derivatives",
    "label": "Food toxins"
+  },
+  "zirconiumiv_bromide": {
+   "category": "IND",
+   "chem_class": "Benzenoids",
+   "label": "Industrial and workplace toxins"
   },
   "zoledronate": {
    "category": "DRUG",

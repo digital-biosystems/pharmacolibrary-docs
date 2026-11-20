@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Cyclosporin_Wang2019_reference",
+ "molar_masses": {
+  "central.C": 1.2026
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  25.0,
+  80.0
+ ],
+ "parameters": {
+  "Cl": 2.241666666666667e-05,
+  "F": 1.0,
+  "MM": 1.2026,
+  "Tlag": 0.0,
+  "VdPerKg": 0.029000000000000005,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "ka": 0.0001888888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 16622.04408817635
+ },
+ "reference_peaks": {
+  "central.C": 1.032331149557438e-05
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

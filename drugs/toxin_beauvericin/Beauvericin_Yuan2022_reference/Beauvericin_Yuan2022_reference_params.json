@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Beauvericin_Yuan2022_reference",
+ "molar_masses": {
+  "central.C": 0.7838999999999999
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  35.0,
+  140.0
+ ],
+ "parameters": {
+  "Cl": 2.788333333333333e-05,
+  "F": 1.0,
+  "MM": 0.7838999999999999,
+  "VdPerKg": 0.0339,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.5e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662031
+ },
+ "reference_peaks": {
+  "central.C": 1.469739977723379e-05
+ },
+ "review_status": "needs_review",
+ "stop_time": 90000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

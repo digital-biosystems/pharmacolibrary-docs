@@ -27,8 +27,8 @@ Built for model-informed drug development, precision dosing research and teachin
     <b><svg class="pk-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="M7 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M17 7a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M12 15a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M10.16 10.62l2.34 2.88"/><path d="M15.088 13.328l2.837 -4.586"/></svg> Pharmacometricians</b>
     <span>Population PK, PD and PGx models extracted from the literature, with covariates, variability and a reproduction check against each paper.</span>
     <ul>
-      <li><a href="#/query?ask=popPK%20models%20of%20midazolam">Compare popPK models for one drug</a></li>
-      <li><a href="#/query">Query every parameter in SQL</a></li>
+      <li><a href="#/drugs/drug_metformin/?id=parameters-across-studies">Compare clearance and volume across metformin popPK models</a></li>
+      <li><a href="#/drugs/drug_metformin/Metformin_Mak2023_focei_estimates?tab=Simulation">Simulate a curated metformin model</a></li>
     </ul>
   </div>
   <div class="pk-home-card">
@@ -36,7 +36,7 @@ Built for model-informed drug development, precision dosing research and teachin
     <span>What the published evidence says about genotype, interactions and special populations. An evidence summary, not a dosing tool.</span>
     <ul>
       <li><a href="#/drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45?tab=Simulation">Clopidogrel in a CYP2C19 poor metabolizer</a></li>
-      <li><a href="#/sites?drugs=simvastatin,clopidogrel">Check shared enzymes and transporters</a></li>
+      <li><a href="#/sites?drugs=simvastatin,clopidogrel">Check shared enzymes and transporters (simvastatin, clopidogrel)</a></li>
     </ul>
   </div>
   <div class="pk-home-card">
@@ -51,8 +51,8 @@ Built for model-informed drug development, precision dosing research and teachin
     <b><svg class="pk-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"/><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"/></svg> Students and curious readers</b>
     <span>See where a medicine goes in the body and why two people can respond to the same dose differently.</span>
     <ul>
-      <li><a href="#/sites?drugs=paracetamol">Follow paracetamol through the body</a></li>
-      <li><a href="#/drugs/drug_metformin/">Explore metformin, a well-checked example</a></li>
+      <li><a href="#/drugs/drug_allopurinol/Allopurinol_Wright2024_reference?tab=Simulation">Pharmacokinetics: how allopurinol moves through the body</a></li>
+      <li><a href="#/drugs/drug_allopurinol/pd_Wright_2024_E_ULT?tab=Simulation">Pharmacodynamics: how allopurinol lowers serum urate</a></li>
     </ul>
   </div>
 </div>
@@ -61,7 +61,7 @@ Built for model-informed drug development, precision dosing research and teachin
 <div class="pk-disclaimer" role="note">Research data extracted by software from published papers. Not clinically validated; not for dosing decisions.</div>
 <div class="pk-demo">
   <div class="pk-demo-sim" data-paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PGx_CYP2C19/Clopidogrel_Jung2024_PGx_CYP2C19_params.json" data-dosemg="75" data-metaurl="assets/fmu/PK_3M_3C.vr.json" data-wasmurl="assets/fmu/PK_3M_3C.js" data-observable="C_M1" data-model="PK clopidogrel" data-source="Jung et al. 2024" data-record="#/drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45?tab=Simulation"></div>
-  <div class="pk-demo-anat" data-drug="clopidogrel"></div>
+  <div class="pk-demo-anat" data-drug="clopidogrel" data-open-drugs="clopidogrel,hydrochlorothiazide,telmisartan,allopurinol"></div>
 </div>
 
 <p class="pk-demo-note">Left: the active metabolite, clopidogrel H4, on a logarithmic axis over 5 days of daily dosing. The dashed grey curve is a normal metabolizer at the paper's 75 mg a day; the blue curve starts as a CYP2C19 poor metabolizer at the same dose. Change the dose or phenotype to see Cmax and AUC respond. Right: the body sites with evidence for this drug. <a href="#/drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45?tab=Simulation">Open the full simulator</a> for every parameter, the paper's phenotype values and the model downloads (Modelica, FMU).</p>
@@ -69,9 +69,9 @@ Built for model-informed drug development, precision dosing research and teachin
 
 <div class="pklg">
 <div class="tiles"><div class="tile"><i>Drugs with extracted records</i><b>3,070</b><em>drugs and toxins; every one has a page</em></div>
-<div class="tile"><i>popPK · PD · PGx records</i><b>7,909 · 4,881 · 814</b><em>extracted population pharmacokinetics · pharmacodynamics · pharmacogenomics records</em></div>
+<div class="tile"><i>popPK · PD · PGx records</i><b>8,321 · 5,009 · 825</b><em>extracted population pharmacokinetics · pharmacodynamics · pharmacogenomics records</em></div>
 <div class="tile"><i>Papers behind the records</i><b>12,477</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>67,420</b><em>parameter values the records carry, with units</em></div></div>
 </div>
 
-<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 18/11/2026 07:20:49 UTC</p>
+<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 20/11/2026 18:57:27 UTC</p>
 <!-- AUTOGEN:intro END -->
