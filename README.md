@@ -68,10 +68,10 @@ Built for model-informed drug development, precision dosing research and teachin
 
 
 <div class="pklg">
-<div class="tiles"><div class="tile"><i>Drugs with extracted records</i><b>3,070</b><em>drugs and toxins; every one has a page</em></div>
-<div class="tile"><i>popPK · PD · PGx records</i><b>8,321 · 5,009 · 825</b><em>extracted population pharmacokinetics · pharmacodynamics · pharmacogenomics records</em></div>
-<div class="tile"><i>Papers behind the records</i><b>12,477</b><em>distinct papers with at least one extracted record</em></div><div class="tile"><i>Extracted parameters</i><b>67,420</b><em>parameter values the records carry, with units</em></div></div>
+<div class="tiles"><div class="tile"><i>Drugs and toxins with records</i><b>2,625</b><em>1,798 drugs · 827 toxins with at least one record that was not rejected</em></div>
+<div class="tile"><i>popPK · PD · PGx records</i><b>7,907 · 8,019 · 831</b><em>population pharmacokinetics · pharmacodynamics · pharmacogenomics records after validation and review, rejected ones not counted; PD per response, PGx per paper and gene</em></div>
+<div class="tile"><i>Papers behind the records</i><b>9,407</b><em>distinct papers (by DOI) with at least one such record</em></div><div class="tile"><i>Parameter values in the database</i><b>67,420</b><em>values with units, of every record in the shipped database, rejected ones and toxins included</em></div></div>
 </div>
 
-<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 20/11/2026 18:57:27 UTC</p>
+<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 22/11/2026 11:27:07 UTC</p>
 <!-- AUTOGEN:intro END -->
